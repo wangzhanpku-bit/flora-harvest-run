@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- v0.6.1 -->
 <html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <title>Flora 的丰收节大冒险</title>
@@ -25,6 +25,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:syste
 #ldots{width:220px;height:8px;background:#0002;border-radius:4px;overflow:hidden;margin-top:14px}#ldots div{width:40%;height:100%;background:#f07a12;border-radius:4px;animation:lbar 1.6s ease-in-out infinite alternate}@keyframes lbar{from{margin-left:0}to{margin-left:60%}}
 #teach{position:fixed;left:16px;bottom:16px;max-width:min(420px,60vw);background:#fff8e7f2;border:4px solid #c4560b;border-radius:14px;padding:10px 14px;color:#6a330a;font-size:17px;display:none;z-index:3;pointer-events:none;box-shadow:0 4px 12px #0005}
 .res{text-align:left;font-size:15px;border-top:1px dashed #c46a1b;padding:6px 0}
+#qch button .cz{display:block}#qch button .ce{display:block;font-size:.72em;opacity:.7;margin-top:2px}
 </style></head><body>
 <div id="loading" style="position:fixed;inset:0;z-index:9;background:#f4c27a;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#6a330a;font-size:24px;font-weight:700"><div id="lbara"><span>🦫</span></div><div style="margin-top:8px">Bara 正在努力加载游戏……</div><div style="font-size:15px;font-weight:400;margin-top:6px">Loading… 游戏约 14MB，第一次打开要等一会儿</div><div id="ldots"><div></div></div></div><div id="teach"></div>
 <div id="prog" style="position:fixed;top:52px;left:18px;right:18px;height:8px;background:#0005;border-radius:4px;z-index:2;pointer-events:none;display:none"><div style="position:absolute;left:8%;top:-3px;width:2px;height:14px;background:#fff8"></div><div style="position:absolute;left:58%;top:-3px;width:2px;height:14px;background:#fff8"></div><div id="progf" style="height:100%;width:0;background:#f07a12;border-radius:4px"></div><div id="progd" style="position:absolute;top:-9px;left:0;font-size:18px;transform:translateX(-50%)">🏃‍♀️</div><div style="position:absolute;right:-6px;top:-10px;font-size:18px">🏠</div></div>
@@ -3242,9 +3243,9 @@ three/build/three.module.js:
 const QDATA={
  "player": "Flora",
  "grade": 6,
- "version": 3,
+ "version": 4,
  "curriculum": "BC Grade 6 Math, Science, Social Studies + farm and capybara facts",
- "fields": "section: pumpkin_field|corn_maze; subject: math|science|farm|social|capybara (capybara = bonus); difficulty: easy|medium|hard; answer = index into choices; choices_zh present for non-numeric answers",
+ "fields": "section: pumpkin_field|corn_maze; subject: math|science|farm|social|capybara (capybara = bonus); difficulty: easy|medium|hard; answer = index into choices; choices_zh present for non-numeric answers; choices_zh now present on EVERY question (same order as choices)",
  "questions": [
   {
    "id": "q001",
@@ -3261,7 +3262,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "14 ÷ 2 = 7, × 1 = 7.",
-   "explain_zh": "14÷2=7，再×1=7。"
+   "explain_zh": "14÷2=7，再×1=7。",
+   "choices_zh": [
+    "10",
+    "11",
+    "7",
+    "6"
+   ]
   },
   {
    "id": "q002",
@@ -3277,7 +3284,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "18 ÷ 6 = 3, × 1 = 3.",
-   "explain_zh": "18÷6=3，再×1=3。"
+   "explain_zh": "18÷6=3，再×1=3。",
+   "choices_zh": [
+    "3",
+    "5",
+    "7"
+   ]
   },
   {
    "id": "q003",
@@ -3294,7 +3306,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "16 ÷ 2 = 8, × 1 = 8.",
-   "explain_zh": "16÷2=8，再×1=8。"
+   "explain_zh": "16÷2=8，再×1=8。",
+   "choices_zh": [
+    "5",
+    "8",
+    "9",
+    "10"
+   ]
   },
   {
    "id": "q004",
@@ -3310,7 +3328,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "32 ÷ 4 = 8, × 3 = 24.",
-   "explain_zh": "32÷4=8，再×3=24。"
+   "explain_zh": "32÷4=8，再×3=24。",
+   "choices_zh": [
+    "26",
+    "24",
+    "28"
+   ]
   },
   {
    "id": "q005",
@@ -3327,7 +3350,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "36 ÷ 6 = 6, × 5 = 30.",
-   "explain_zh": "36÷6=6，再×5=30。"
+   "explain_zh": "36÷6=6，再×5=30。",
+   "choices_zh": [
+    "30",
+    "33",
+    "34",
+    "31"
+   ]
   },
   {
    "id": "q006",
@@ -3344,7 +3373,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "54 ÷ 6 = 9, × 5 = 45.",
-   "explain_zh": "54÷6=9，再×5=45。"
+   "explain_zh": "54÷6=9，再×5=45。",
+   "choices_zh": [
+    "44",
+    "41",
+    "43",
+    "45"
+   ]
   },
   {
    "id": "q007",
@@ -3361,7 +3396,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "30 ÷ 5 = 6, × 2 = 12.",
-   "explain_zh": "30÷5=6，再×2=12。"
+   "explain_zh": "30÷5=6，再×2=12。",
+   "choices_zh": [
+    "12",
+    "16",
+    "9",
+    "13"
+   ]
   },
   {
    "id": "q008",
@@ -3377,7 +3418,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "48 ÷ 6 = 8, × 5 = 40.",
-   "explain_zh": "48÷6=8，再×5=40。"
+   "explain_zh": "48÷6=8，再×5=40。",
+   "choices_zh": [
+    "41",
+    "40",
+    "43"
+   ]
   },
   {
    "id": "q009",
@@ -3393,7 +3439,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Line up the decimal points: 2.2 + 8.1 = 10.3.",
-   "explain_zh": "小数点对齐：2.2+8.1=10.3。"
+   "explain_zh": "小数点对齐：2.2+8.1=10.3。",
+   "choices_zh": [
+    "11.3 公斤",
+    "11.2 公斤",
+    "10.3 公斤"
+   ]
   },
   {
    "id": "q010",
@@ -3410,7 +3461,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Line up the decimal points: 6.54 − 4.7 = 1.84.",
-   "explain_zh": "小数点对齐：6.54−4.7=1.84。"
+   "explain_zh": "小数点对齐：6.54−4.7=1.84。",
+   "choices_zh": [
+    "1.84 公斤",
+    "2.84 公斤",
+    "1.85 公斤",
+    "2.74 公斤"
+   ]
   },
   {
    "id": "q011",
@@ -3426,7 +3483,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Line up the decimal points: 8.33 + 1.8 = 10.13.",
-   "explain_zh": "小数点对齐：8.33+1.8=10.13。"
+   "explain_zh": "小数点对齐：8.33+1.8=10.13。",
+   "choices_zh": [
+    "10.14 公斤",
+    "10.13 公斤",
+    "11.03 公斤"
+   ]
   },
   {
    "id": "q012",
@@ -3442,7 +3504,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Line up the decimal points: 7.74 − 4.8 = 2.94.",
-   "explain_zh": "小数点对齐：7.74−4.8=2.94。"
+   "explain_zh": "小数点对齐：7.74−4.8=2.94。",
+   "choices_zh": [
+    "3.04 公斤",
+    "2.94 公斤",
+    "2.93 公斤"
+   ]
   },
   {
    "id": "q013",
@@ -3459,7 +3526,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Line up the decimal points: 6.98 + 4.3 = 11.28.",
-   "explain_zh": "小数点对齐：6.98+4.3=11.28。"
+   "explain_zh": "小数点对齐：6.98+4.3=11.28。",
+   "choices_zh": [
+    "12.28 公斤",
+    "11.29 公斤",
+    "11.28 公斤",
+    "10.28 公斤"
+   ]
   },
   {
    "id": "q014",
@@ -3475,7 +3548,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Line up the decimal points: 7.0 − 5.97 = 1.03.",
-   "explain_zh": "小数点对齐：7.0−5.97=1.03。"
+   "explain_zh": "小数点对齐：7.0−5.97=1.03。",
+   "choices_zh": [
+    "1.02 公斤",
+    "1.93 公斤",
+    "1.03 公斤"
+   ]
   },
   {
    "id": "q015",
@@ -3492,7 +3570,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Line up the decimal points: 6.32 + 5.6 = 11.92.",
-   "explain_zh": "小数点对齐：6.32+5.6=11.92。"
+   "explain_zh": "小数点对齐：6.32+5.6=11.92。",
+   "choices_zh": [
+    "12.82 公斤",
+    "11.92 公斤",
+    "12.92 公斤",
+    "11.91 公斤"
+   ]
   },
   {
    "id": "q016",
@@ -3509,7 +3593,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Line up the decimal points: 8.67 − 8.0 = 0.67.",
-   "explain_zh": "小数点对齐：8.67−8.0=0.67。"
+   "explain_zh": "小数点对齐：8.67−8.0=0.67。",
+   "choices_zh": [
+    "0.67 公斤",
+    "1.67 公斤",
+    "0.77 公斤",
+    "0.68 公斤"
+   ]
   },
   {
    "id": "q017",
@@ -3526,7 +3616,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Divide both by 6: 24:42 = 4:7.",
-   "explain_zh": "两边同除以 6，24:42=4:7。"
+   "explain_zh": "两边同除以 6，24:42=4:7。",
+   "choices_zh": [
+    "5:8",
+    "4:7",
+    "7:4",
+    "24:42"
+   ]
   },
   {
    "id": "q018",
@@ -3543,7 +3639,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Divide both by 5: 5:35 = 1:7.",
-   "explain_zh": "两边同除以 5，5:35=1:7。"
+   "explain_zh": "两边同除以 5，5:35=1:7。",
+   "choices_zh": [
+    "5:35",
+    "7:1",
+    "1:7",
+    "2:8"
+   ]
   },
   {
    "id": "q019",
@@ -3560,7 +3662,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "Divide both by 4: 28:12 = 7:3.",
-   "explain_zh": "两边同除以 4，28:12=7:3。"
+   "explain_zh": "两边同除以 4，28:12=7:3。",
+   "choices_zh": [
+    "3:7",
+    "28:12",
+    "8:4",
+    "7:3"
+   ]
   },
   {
    "id": "q020",
@@ -3577,7 +3685,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Divide both by 5: 20:25 = 4:5.",
-   "explain_zh": "两边同除以 5，20:25=4:5。"
+   "explain_zh": "两边同除以 5，20:25=4:5。",
+   "choices_zh": [
+    "5:6",
+    "5:4",
+    "4:5",
+    "20:25"
+   ]
   },
   {
    "id": "q021",
@@ -3594,7 +3708,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Divide both by 5: 25:15 = 5:3.",
-   "explain_zh": "两边同除以 5，25:15=5:3。"
+   "explain_zh": "两边同除以 5，25:15=5:3。",
+   "choices_zh": [
+    "25:15",
+    "5:3",
+    "3:5",
+    "6:4"
+   ]
   },
   {
    "id": "q022",
@@ -3610,7 +3730,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Area = length × width = 16 × 4 = 64 m².",
-   "explain_zh": "面积=长×宽=16×4=64 平方米。"
+   "explain_zh": "面积=长×宽=16×4=64 平方米。",
+   "choices_zh": [
+    "20 平方米",
+    "80 平方米",
+    "64 平方米"
+   ]
   },
   {
    "id": "q023",
@@ -3627,7 +3752,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Perimeter = 2 × (6 + 11) = 34 m.",
-   "explain_zh": "周长=2×(6+11)=34 米。"
+   "explain_zh": "周长=2×(6+11)=34 米。",
+   "choices_zh": [
+    "66 米",
+    "34 米",
+    "17 米",
+    "36 米"
+   ]
   },
   {
    "id": "q024",
@@ -3644,7 +3775,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Area = length × width = 13 × 3 = 39 m².",
-   "explain_zh": "面积=长×宽=13×3=39 平方米。"
+   "explain_zh": "面积=长×宽=13×3=39 平方米。",
+   "choices_zh": [
+    "52 平方米",
+    "39 平方米",
+    "16 平方米",
+    "32 平方米"
+   ]
   },
   {
    "id": "q025",
@@ -3660,7 +3797,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Perimeter = 2 × (8 + 5) = 26 m.",
-   "explain_zh": "周长=2×(8+5)=26 米。"
+   "explain_zh": "周长=2×(8+5)=26 米。",
+   "choices_zh": [
+    "26 米",
+    "28 米",
+    "13 米"
+   ]
   },
   {
    "id": "q026",
@@ -3676,7 +3818,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Area = length × width = 19 × 4 = 76 m².",
-   "explain_zh": "面积=长×宽=19×4=76 平方米。"
+   "explain_zh": "面积=长×宽=19×4=76 平方米。",
+   "choices_zh": [
+    "95 平方米",
+    "46 平方米",
+    "76 平方米"
+   ]
   },
   {
    "id": "q027",
@@ -3692,7 +3839,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Perimeter = 2 × (8 + 7) = 30 m.",
-   "explain_zh": "周长=2×(8+7)=30 米。"
+   "explain_zh": "周长=2×(8+7)=30 米。",
+   "choices_zh": [
+    "30 米",
+    "56 米",
+    "32 米"
+   ]
   },
   {
    "id": "q028",
@@ -3708,7 +3860,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Area = length × width = 13 × 5 = 65 m².",
-   "explain_zh": "面积=长×宽=13×5=65 平方米。"
+   "explain_zh": "面积=长×宽=13×5=65 平方米。",
+   "choices_zh": [
+    "18 平方米",
+    "65 平方米",
+    "36 平方米"
+   ]
   },
   {
    "id": "q029",
@@ -3724,7 +3881,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Perimeter = 2 × (14 + 11) = 50 m.",
-   "explain_zh": "周长=2×(14+11)=50 米。"
+   "explain_zh": "周长=2×(14+11)=50 米。",
+   "choices_zh": [
+    "25 米",
+    "52 米",
+    "50 米"
+   ]
   },
   {
    "id": "q030",
@@ -3740,7 +3902,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Triangle area = base × height ÷ 2 = 6 cm².",
-   "explain_zh": "三角形面积=底×高÷2=6 平方厘米。"
+   "explain_zh": "三角形面积=底×高÷2=6 平方厘米。",
+   "choices_zh": [
+    "6 平方厘米",
+    "7 平方厘米",
+    "8 平方厘米"
+   ]
   },
   {
    "id": "q031",
@@ -3756,7 +3923,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Triangle area = base × height ÷ 2 = 35 cm².",
-   "explain_zh": "三角形面积=底×高÷2=35 平方厘米。"
+   "explain_zh": "三角形面积=底×高÷2=35 平方厘米。",
+   "choices_zh": [
+    "37 平方厘米",
+    "35 平方厘米",
+    "70 平方厘米"
+   ]
   },
   {
    "id": "q032",
@@ -3772,7 +3944,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Triangle area = base × height ÷ 2 = 15 cm².",
-   "explain_zh": "三角形面积=底×高÷2=15 平方厘米。"
+   "explain_zh": "三角形面积=底×高÷2=15 平方厘米。",
+   "choices_zh": [
+    "11 平方厘米",
+    "15 平方厘米",
+    "30 平方厘米"
+   ]
   },
   {
    "id": "q033",
@@ -3789,7 +3966,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "Multiply first: 6×6=36, then + 5 = 41.",
-   "explain_zh": "先乘：6×6=36，再加 5，等于 41。"
+   "explain_zh": "先乘：6×6=36，再加 5，等于 41。",
+   "choices_zh": [
+    "36",
+    "42",
+    "66",
+    "41"
+   ]
   },
   {
    "id": "q034",
@@ -3806,7 +3989,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Multiply first: 4×3=12, then + 8 = 20.",
-   "explain_zh": "先乘：4×3=12，再加 8，等于 20。"
+   "explain_zh": "先乘：4×3=12，再加 8，等于 20。",
+   "choices_zh": [
+    "36",
+    "20",
+    "21",
+    "35"
+   ]
   },
   {
    "id": "q035",
@@ -3823,7 +4012,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "Multiply first: 7×6=42, then + 3 = 45.",
-   "explain_zh": "先乘：7×6=42，再加 3，等于 45。"
+   "explain_zh": "先乘：7×6=42，再加 3，等于 45。",
+   "choices_zh": [
+    "46",
+    "45",
+    "60",
+    "27"
+   ]
   },
   {
    "id": "q036",
@@ -3840,7 +4035,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Multiply first: 6×3=18, then + 6 = 24.",
-   "explain_zh": "先乘：6×3=18，再加 6，等于 24。"
+   "explain_zh": "先乘：6×3=18，再加 6，等于 24。",
+   "choices_zh": [
+    "24",
+    "39",
+    "36",
+    "25"
+   ]
   },
   {
    "id": "q037",
@@ -3857,7 +4058,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "Brackets first: 4, ×3 = 12, − 2 = 10.",
-   "explain_zh": "先算括号 4，×3=12，再减 2，等于 10。"
+   "explain_zh": "先算括号 4，×3=12，再减 2，等于 10。",
+   "choices_zh": [
+    "4",
+    "8",
+    "6",
+    "10"
+   ]
   },
   {
    "id": "q038",
@@ -3873,7 +4080,12 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Brackets first: 10, ×7 = 70, − 3 = 67.",
-   "explain_zh": "先算括号 10，×7=70，再减 3，等于 67。"
+   "explain_zh": "先算括号 10，×7=70，再减 3，等于 67。",
+   "choices_zh": [
+    "65",
+    "49",
+    "67"
+   ]
   },
   {
    "id": "q039",
@@ -3890,7 +4102,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "Brackets first: 14, ×8 = 112, − 5 = 107.",
-   "explain_zh": "先算括号 14，×8=112，再减 5，等于 107。"
+   "explain_zh": "先算括号 14，×8=112，再减 5，等于 107。",
+   "choices_zh": [
+    "107",
+    "72",
+    "105",
+    "42"
+   ]
   },
   {
    "id": "q040",
@@ -3907,7 +4125,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "Brackets first: 14, ×7 = 98, − 8 = 90.",
-   "explain_zh": "先算括号 14，×7=98，再减 8，等于 90。"
+   "explain_zh": "先算括号 14，×7=98，再减 8，等于 90。",
+   "choices_zh": [
+    "93",
+    "42",
+    "90",
+    "88"
+   ]
   },
   {
    "id": "q041",
@@ -3923,7 +4147,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "71 can only be divided by 1 and itself.",
-   "explain_zh": "71 只能被 1 和它本身整除。"
+   "explain_zh": "71 只能被 1 和它本身整除。",
+   "choices_zh": [
+    "71",
+    "57",
+    "33"
+   ]
   },
   {
    "id": "q042",
@@ -3939,7 +4168,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "The rule is: add 5. Next is 22.",
-   "explain_zh": "规律是每次加 5，下一个是 22。"
+   "explain_zh": "规律是每次加 5，下一个是 22。",
+   "choices_zh": [
+    "22",
+    "24",
+    "25"
+   ]
   },
   {
    "id": "q043",
@@ -3955,7 +4189,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "The rule is: add 6. Next is 25.",
-   "explain_zh": "规律是每次加 6，下一个是 25。"
+   "explain_zh": "规律是每次加 6，下一个是 25。",
+   "choices_zh": [
+    "25",
+    "21",
+    "24"
+   ]
   },
   {
    "id": "q044",
@@ -3971,7 +4210,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "The rule is: multiply by 2. Next is 48.",
-   "explain_zh": "规律是每次乘 2，下一个是 48。"
+   "explain_zh": "规律是每次乘 2，下一个是 48。",
+   "choices_zh": [
+    "48",
+    "46",
+    "49"
+   ]
   },
   {
    "id": "q045",
@@ -3987,7 +4231,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "The rule is: multiply by 3. Next is 324.",
-   "explain_zh": "规律是每次乘 3，下一个是 324。"
+   "explain_zh": "规律是每次乘 3，下一个是 324。",
+   "choices_zh": [
+    "294",
+    "324",
+    "351"
+   ]
   },
   {
    "id": "q046",
@@ -4003,7 +4252,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "The rule is: multiply by 3. Next is 243.",
-   "explain_zh": "规律是每次乘 3，下一个是 243。"
+   "explain_zh": "规律是每次乘 3，下一个是 243。",
+   "choices_zh": [
+    "243",
+    "225",
+    "213"
+   ]
   },
   {
    "id": "q047",
@@ -4019,7 +4273,12 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "The rule is: add 3. Next is 14.",
-   "explain_zh": "规律是每次加 3，下一个是 14。"
+   "explain_zh": "规律是每次加 3，下一个是 14。",
+   "choices_zh": [
+    "16",
+    "14",
+    "12"
+   ]
   },
   {
    "id": "q048",
@@ -4161,7 +4420,12 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "10% of 100 = 100 × 10/100 = 10.",
-   "explain_zh": "100×10%=10。"
+   "explain_zh": "100×10%=10。",
+   "choices_zh": [
+    "10",
+    "12",
+    "11"
+   ]
   },
   {
    "id": "q055",
@@ -4178,7 +4442,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "20% of 60 = 60 × 20/100 = 12.",
-   "explain_zh": "60×20%=12。"
+   "explain_zh": "60×20%=12。",
+   "choices_zh": [
+    "9",
+    "7",
+    "8",
+    "12"
+   ]
   },
   {
    "id": "q056",
@@ -4195,7 +4465,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "25% of 60 = 60 × 25/100 = 15.",
-   "explain_zh": "60×25%=15。"
+   "explain_zh": "60×25%=15。",
+   "choices_zh": [
+    "20",
+    "12",
+    "15",
+    "19"
+   ]
   },
   {
    "id": "q057",
@@ -4212,7 +4488,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "25% of 80 = 80 × 25/100 = 20.",
-   "explain_zh": "80×25%=20。"
+   "explain_zh": "80×25%=20。",
+   "choices_zh": [
+    "16",
+    "20",
+    "22",
+    "19"
+   ]
   },
   {
    "id": "q058",
@@ -4229,7 +4511,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "75% of 60 = 60 × 75/100 = 45.",
-   "explain_zh": "60×75%=45。"
+   "explain_zh": "60×75%=45。",
+   "choices_zh": [
+    "48",
+    "45",
+    "44",
+    "41"
+   ]
   },
   {
    "id": "q059",
@@ -4244,7 +4532,11 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "3/5 = 0.6.",
-   "explain_zh": "3/5=0.6。"
+   "explain_zh": "3/5=0.6。",
+   "choices_zh": [
+    "3/5",
+    "0.75"
+   ]
   },
   {
    "id": "q060",
@@ -4259,7 +4551,11 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "6/8 = 0.75.",
-   "explain_zh": "6/8=0.75。"
+   "explain_zh": "6/8=0.75。",
+   "choices_zh": [
+    "6/8",
+    "0.9"
+   ]
   },
   {
    "id": "q061",
@@ -4274,7 +4570,11 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "2/8 = 0.25.",
-   "explain_zh": "2/8=0.25。"
+   "explain_zh": "2/8=0.25。",
+   "choices_zh": [
+    "2/8",
+    "0.2"
+   ]
   },
   {
    "id": "q062",
@@ -4289,7 +4589,11 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "3/5 = 0.6.",
-   "explain_zh": "3/5=0.6。"
+   "explain_zh": "3/5=0.6。",
+   "choices_zh": [
+    "3/5",
+    "0.65"
+   ]
   },
   {
    "id": "q063",
@@ -4304,7 +4608,11 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "4/10 = 0.4.",
-   "explain_zh": "4/10=0.4。"
+   "explain_zh": "4/10=0.4。",
+   "choices_zh": [
+    "4/10",
+    "0.35"
+   ]
   },
   {
    "id": "q064",
@@ -4321,7 +4629,13 @@ const QDATA={
    ],
    "answer": 3,
    "explain_en": "15 × 8 = 120.",
-   "explain_zh": "15×8=120。"
+   "explain_zh": "15×8=120。",
+   "choices_zh": [
+    "118",
+    "116",
+    "122",
+    "120"
+   ]
   },
   {
    "id": "q065",
@@ -4338,7 +4652,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "13 × 10 = 130.",
-   "explain_zh": "13×10=130。"
+   "explain_zh": "13×10=130。",
+   "choices_zh": [
+    "139",
+    "136",
+    "130",
+    "122"
+   ]
   },
   {
    "id": "q066",
@@ -4355,7 +4675,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "8 × 14 = 112.",
-   "explain_zh": "8×14=112。"
+   "explain_zh": "8×14=112。",
+   "choices_zh": [
+    "112",
+    "108",
+    "109",
+    "103"
+   ]
   },
   {
    "id": "q067",
@@ -4372,7 +4698,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "12 × 6 = 72.",
-   "explain_zh": "12×6=72。"
+   "explain_zh": "12×6=72。",
+   "choices_zh": [
+    "83",
+    "72",
+    "70",
+    "78"
+   ]
   },
   {
    "id": "q068",
@@ -4389,7 +4721,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "13 × 14 = 182.",
-   "explain_zh": "13×14=182。"
+   "explain_zh": "13×14=182。",
+   "choices_zh": [
+    "182",
+    "176",
+    "184",
+    "187"
+   ]
   },
   {
    "id": "q069",
@@ -4406,7 +4744,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "6 × 12 = 72.",
-   "explain_zh": "6×12=72。"
+   "explain_zh": "6×12=72。",
+   "choices_zh": [
+    "72",
+    "65",
+    "60",
+    "84"
+   ]
   },
   {
    "id": "q070",
@@ -4423,7 +4767,13 @@ const QDATA={
    ],
    "answer": 0,
    "explain_en": "55 ÷ 5 = 11.",
-   "explain_zh": "55÷5=11。"
+   "explain_zh": "55÷5=11。",
+   "choices_zh": [
+    "11",
+    "13",
+    "12",
+    "14"
+   ]
   },
   {
    "id": "q071",
@@ -4440,7 +4790,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "24 ÷ 4 = 6.",
-   "explain_zh": "24÷4=6。"
+   "explain_zh": "24÷4=6。",
+   "choices_zh": [
+    "4",
+    "6",
+    "9",
+    "3"
+   ]
   },
   {
    "id": "q072",
@@ -4457,7 +4813,13 @@ const QDATA={
    ],
    "answer": 2,
    "explain_en": "65 ÷ 5 = 13.",
-   "explain_zh": "65÷5=13。"
+   "explain_zh": "65÷5=13。",
+   "choices_zh": [
+    "16",
+    "15",
+    "13",
+    "12"
+   ]
   },
   {
    "id": "q073",
@@ -4474,7 +4836,13 @@ const QDATA={
    ],
    "answer": 1,
    "explain_en": "48 ÷ 8 = 6.",
-   "explain_zh": "48÷8=6。"
+   "explain_zh": "48÷8=6。",
+   "choices_zh": [
+    "4",
+    "6",
+    "5",
+    "3"
+   ]
   },
   {
    "id": "q074",
@@ -5851,7 +6219,7 @@ function ask(q,kind,cb){S.mode='quiz';S.qSel=null;const ov=document.getElementBy
  document.getElementById('qzh').textContent=q.q_zh;document.getElementById('qen').textContent=q.q_en;
  const ch=document.getElementById('qch');ch.innerHTML='';const ex=document.getElementById('qex');ex.textContent='';const go=document.getElementById('qgo');go.style.display='none';
  const labels=kind==='maze'?['⬅ 左转：','➡ 右转：','⬆ 直走：','↩ 掉头：']:['A. ','B. ','C. ','D. '];
- q.choices.forEach((c,i)=>{const b=document.createElement('button');b.textContent=labels[i]+c;b.onclick=()=>{
+ q.choices.forEach((c,i)=>{const b=document.createElement('button');const cz=(q.choices_zh&&q.choices_zh[i])||c;b.innerHTML='<span class="cz"></span>'+(String(cz).trim()!==String(c).trim()?'<span class="ce"></span>':'');b.querySelector('.cz').textContent=labels[i]+cz;if(b.querySelector('.ce'))b.querySelector('.ce').textContent=c;b.onclick=()=>{
   const ok=i===q.answer;[...ch.children].forEach((bb,j)=>{bb.disabled=true;if(j===q.answer)bb.style.background='#9fe0b0';else if(j===i)bb.style.background='#f6a6a6';});
   play(ok?'sfx_correct':'sfx_wrong_baa');setTimeout(()=>play(ok?'sfx_bara_happy':'sfx_bara_purr'),500);if(ok){S.correct++;}S.answered.push({q,ok});{const W=store.get('wrong',{});if(ok){if(W[q.id]>0)W[q.id]--;}else W[q.id]=2;store.set('wrong',W);}updHud();
   ex.textContent=(ok?'CAPYBARA！答对啦！ ':'Bara：没关系，这条路也能到！ ')+q.explain_zh;go.style.display='block';
@@ -5941,7 +6309,7 @@ function finish(){S.mode='end';ghost.visible=false;document.getElementById('hb')
  const stars=1+(S.pumpkins>=20?1:0)+(S.pumpkins>=30&&S.correct>=5?1:0);
  setTimeout(()=>{document.getElementById('stars').textContent='⭐'.repeat(stars)+'☆'.repeat(3-stars);
   document.getElementById('sum').textContent=`收回南瓜 ${S.pumpkins} 个，答对 ${S.correct} / ${S.answered.length} 题`;
-  document.getElementById('review').innerHTML='<p style="font-size:15px;color:#7a5a3a;text-align:left">家长回顾：</p>'+S.answered.map(a=>`<div class="res">${a.ok?'✅':'❌'} ${a.q.q_zh}<br><b>答案：</b>${a.q.choices[a.q.answer]}　${a.q.explain_zh}</div>`).join('');
+  document.getElementById('review').innerHTML='<p style="font-size:15px;color:#7a5a3a;text-align:left">家长回顾：</p>'+S.answered.map(a=>`<div class="res">${a.ok?'✅':'❌'} ${a.q.q_zh}<br><b>答案：</b>${(a.q.choices_zh||a.q.choices)[a.q.answer]}　${a.q.explain_zh}</div>`).join('');
   showLetter();},4200);}
 function loop(){const dt=Math.min(clock.getDelta(),.05);if(S)step(dt);R.render(scene,cam);requestAnimationFrame(loop);}
 newGame();S.mode='title';loop();document.getElementById('loading').style.display='none';
