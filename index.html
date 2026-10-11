@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- v0.6.5 -->
+<!DOCTYPE html><!-- v0.7 -->
 <html lang="zh"><head><meta charset="utf-8"><link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <title>Flora 的丰收节大冒险</title>
@@ -26,18 +26,48 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:syste
 #teach{position:fixed;left:16px;bottom:16px;max-width:min(420px,60vw);background:#fff8e7f2;border:4px solid #c4560b;border-radius:14px;padding:10px 14px;color:#6a330a;font-size:17px;display:none;z-index:3;pointer-events:none;box-shadow:0 4px 12px #0005}
 .res{text-align:left;font-size:15px;border-top:1px dashed #c46a1b;padding:6px 0}
 #qch button .cz{display:block}#qch button .ce{display:block;font-size:.72em;opacity:.7;margin-top:2px}
+
+#namegate .card input{font-size:22px;padding:10px 14px;width:80%;max-width:320px;border:3px solid #c46a1b;border-radius:12px;text-align:center;margin:10px 0}
+.bi{display:block}.bi .en{font-weight:700;color:#5a3a1a}.bi .zh{font-size:.88em;color:#8a6a4a;margin-top:2px}
+#ltext .lp .en{font-family:Georgia,'Times New Roman',serif;font-size:1.05em;color:#4a2a10;margin:0}
+#ltext .lp .zh{font-family:'Kaiti SC','STKaiti','KaiTi',serif;font-size:.95em;color:#6a4a28;margin:.15em 0 .85em}
+#settingsBox{text-align:left;background:#fff3d6;border-radius:12px;padding:10px 14px;margin:8px 0;font-size:15px}
+#settingsBox label{display:block;margin:6px 0 2px;color:#7a5a3a}
+#settingsBox input,#settingsBox select{font-size:16px;padding:6px 10px;border-radius:8px;border:2px solid #c46a1b;width:100%;max-width:280px;box-sizing:border-box}
+
 </style></head><body>
 <div id="loading" style="position:fixed;inset:0;z-index:9;background:#f4c27a;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#6a330a;font-size:24px;font-weight:700"><div id="lbara"><span>🦫</span></div><div style="margin-top:8px">Bara 正在努力加载游戏……</div><div style="font-size:15px;font-weight:400;margin-top:6px">Loading… 第一次打开约 5MB，之后会快很多</div><div id="ldots"><div id="lfill" style="animation:none;margin:0;width:0%;transition:width .2s"></div></div><div id="lpct" style="font-size:14px;font-weight:400;margin-top:6px">0%</div></div><div id="teach"></div>
 <div id="prog" style="position:fixed;top:52px;left:18px;right:18px;height:8px;background:#0005;border-radius:4px;z-index:2;pointer-events:none;display:none"><div style="position:absolute;left:8%;top:-3px;width:2px;height:14px;background:#fff8"></div><div style="position:absolute;left:58%;top:-3px;width:2px;height:14px;background:#fff8"></div><div id="progf" style="height:100%;width:0;background:#f07a12;border-radius:4px"></div><div id="progd" style="position:absolute;top:-9px;left:0;font-size:18px;transform:translateX(-50%)">🏃‍♀️</div><div style="position:absolute;right:-6px;top:-10px;font-size:18px">🏠</div></div>
 <div id="hud"><span id="hp">🎃 0</span><span id="hq">✅ 0</span><span id="hs">农场入口</span><span id="ht">⏱ 0:00.0</span><span id="hb"></span></div>
 <div id="sub"></div><div id="mq" style="position:fixed;top:56px;left:50%;transform:translateX(-50%);max-width:86%;background:#fff8e7f0;border:4px solid #3f8f2f;border-radius:16px;padding:10px 18px;text-align:center;display:none;pointer-events:none;z-index:3"><div style="color:#3f8f2f;font-size:14px;font-weight:700">🌽 迷宫岔路：跑进写着正确答案的那条路！</div><div id="mqzh" style="font-size:21px;color:#6a330a;font-weight:700"></div><div id="mqen" style="font-size:14px;color:#8a6a4a"></div></div>
 <div class="ov" id="letter" style="background:#000c"><div id="lpaper" style="position:relative;width:min(92vw,163vh);aspect-ratio:16/9;background-size:cover;background-position:center;border-radius:12px;overflow:hidden"><div id="ltext" style="position:absolute;left:27%;right:27%;top:14%;bottom:23%;overflow:auto;scroll-behavior:smooth;color:#4a2a10;font-family:'Kaiti SC','STKaiti','KaiTi',serif;font-size:min(1.65vw,2.9vh);line-height:1.5"></div><div style="position:absolute;right:2%;bottom:3%;display:flex;gap:8px"><button id="llang" style="font-size:15px;padding:6px 12px;border-radius:10px;border:2px solid #c46a1b;background:#fff8e7">EN</button><button id="lskip" style="font-size:15px;padding:6px 12px;border-radius:10px;border:2px solid #c46a1b;background:#ffe3b3">跳过 →</button></div></div></div><div id="cd"></div>
-<div class="ov" id="title" style="display:flex"><div class="card">
-<h1>Flora 的丰收节大冒险</h1><p style="font-size:18px">昨晚一阵大风，南瓜滚了一地，稻草人老伯的帽子也飞进了玉米迷宫！<br>帮 Flora 和水豚 Bara 把南瓜收回来、找到帽子，丰收节才能开场。</p>
-<p style="font-size:16px;color:#7a5a3a">电脑：← → 换道，↑ / 空格 跳，↓ 滑铲<br>平板/手机：左右滑换道，上滑跳，下滑滑铲<br>答错不会失败，只是绕远路～</p>
-<p style="font-size:16px">画质：<select id="qual" style="font-size:16px"><option value="high">高画质</option><option value="smooth">流畅</option></select> <span id="qualhint" style="font-size:13px;color:#8a6a4a"></span></p><div id="hist" style="font-size:16px;color:#5a3a1a;margin:6px 0"></div><button class="big" id="start">开始冒险！</button></div></div>
-<div class="ov" id="quiz"><div class="card"><div class="tag" id="qtag"></div><h2 id="qzh"></h2><div class="en" id="qen"></div><div id="qch"></div><div class="ex" id="qex"></div><div style="font-size:13px;color:#9a7a5a">键盘：方向键选、回车确认，也可以直接按 1 2 3 4；回车继续</div><button id="qgo" style="display:none" class="big">继续跑！</button></div></div>
-<div class="ov" id="end"><div class="card"><h1 id="stars"></h1><h2>丰收节，开场！CAPYBARA！</h2><p id="timeRes" style="font-size:22px;font-weight:700;color:#c4560b"></p><div id="hist2" style="font-size:15px;text-align:left"></div><p id="sum" style="font-size:18px"></p><div id="review"></div><button class="big" id="again">再玩一次</button><button id="fb" style="display:none">💬 告诉我们你的想法 / Tell us what you think</button></div></div>
+<div class="ov" id="namegate" style="display:none"><div class="card">
+<div class="bi"><div class="en">What's your name, hero?</div><div class="zh">小英雄，你叫什么名字？</div></div>
+<input id="nameInput" maxlength="24" value="Flora" autocomplete="off" autocapitalize="words">
+<button class="big" id="nameGo">Start Adventure<br><span style="font-size:16px;font-weight:600">开始冒险</span></button>
+<p style="font-size:13px;color:#8a6a4a;margin-top:10px">You can change it later in Settings. / 之后可以在设置里修改。</p>
+</div></div>
+<div class="ov" id="title" style="display:none"><div class="card">
+<h1>Flora's Harvest Run</h1>
+<p class="bi" style="font-size:15px;margin:0"><span class="zh" style="font-size:18px;font-weight:700;color:#c4560b">Flora 的丰收节大冒险</span></p>
+<p class="bi" style="font-size:16px;text-align:left"><span class="en">Last night's wind scattered the pumpkins, and Scarecrow's hat blew into the maze! Help {name} &amp; Bara bring them back so the Harvest Festival can begin.</span><span class="zh">昨晚一阵大风，南瓜滚了一地，稻草人老伯的帽子也飞进了玉米迷宫！帮 {name} 和水豚 Bara 把南瓜收回来、找到帽子，丰收节才能开场。</span></p>
+<p class="bi" style="font-size:14px;color:#7a5a3a;text-align:left"><span class="en">PC: ← → lane, ↑ / Space jump, ↓ slide · Touch: swipe · Wrong answers just take the long way.</span><span class="zh">电脑：← → 换道，↑ / 空格 跳，↓ 滑铲 · 平板/手机：滑动 · 答错不会失败，只是绕远路～</span></p>
+<div id="settingsBox">
+<label class="bi"><span class="en">Settings / Hero name</span><span class="zh">设置 / 小英雄名字</span></label>
+<input id="heroEdit" maxlength="24" value="Flora">
+<label class="bi"><span class="en">Graphics</span><span class="zh">画质</span></label>
+<select id="qual"><option value="high">High / 高画质</option><option value="smooth">Smooth / 流畅</option></select>
+</div>
+<div id="hist" style="font-size:15px;color:#5a3a1a;margin:6px 0"></div>
+<button class="big" id="start">Start Adventure<br><span style="font-size:16px;font-weight:600">开始冒险</span></button></div></div>
+<div class="ov" id="quiz"><div class="card"><div class="tag" id="qtag"></div><h2 id="qen" style="margin-bottom:4px"></h2><div class="en" id="qzh" style="font-size:15px;color:#8a6a4a"></div><div id="qch"></div><div class="ex" id="qex"></div><div style="font-size:13px;color:#9a7a5a">Keys: arrows + Enter, or 1–4 / A–D · 键盘：方向键+回车，或 1–4</div><button id="qgo" style="display:none" class="big">Continue / 继续跑！</button></div></div>
+<div class="ov" id="end"><div class="card"><h1 id="stars"></h1>
+<h2 class="bi"><span class="en" id="endTitleEn">The Harvest Festival begins! CAPYBARA!</span><span class="zh" id="endTitleZh">丰收节，开场！CAPYBARA！</span></h2>
+<p id="timeRes" style="font-size:20px;font-weight:700;color:#c4560b"></p>
+<div id="hist2" style="font-size:15px;text-align:left"></div>
+<p id="sum" style="font-size:17px"></p><div id="review"></div>
+<button class="big" id="again">Play Again<br><span style="font-size:16px;font-weight:600">再玩一次</span></button>
+<button id="fb" style="display:none">💬 Tell us what you think<br><span style="font-size:14px">告诉我们你的想法</span></button></div></div>
 <script>
 (function(){const M={"eager": [["three", "assets/js/three.b28b92a2.js", 678502, "js"], ["corn", "assets/tex/corn.3e2ab220.webp", 71732, "tex"], ["flora", "assets/tex/flora.4bdbfd6b.webp", 31254, "tex"], ["bara", "assets/tex/bara.d8d2d195.webp", 48562, "tex"], ["pumpkin", "assets/tex/pumpkin.4ef96629.webp", 16876, "tex"], ["sky", "assets/tex/sky.f1bb9566.webp", 151490, "tex"], ["dirt_diff", "assets/tex/dirt_diff.5e6a88ba.jpg", 350729, "tex"], ["dirt_nor_gl", "assets/tex/dirt_nor_gl.aeb9f229.jpg", 310556, "tex"], ["soil_diff", "assets/tex/soil_diff.18d68e40.webp", 116242, "tex"], ["soil_nor_gl", "assets/tex/soil_nor_gl.06c7dc4c.jpg", 498603, "tex"], ["grass_diff", "assets/tex/grass_diff.6fe9cc16.webp", 166778, "tex"], ["grass_nor_gl", "assets/tex/grass_nor_gl.3304ea2e.jpg", 349892, "tex"], ["wood_diff", "assets/tex/wood_diff.ac35f62e.webp", 151894, "tex"], ["wood_nor_gl", "assets/tex/wood_nor_gl.3da2b577.jpg", 177355, "tex"], ["flora_jump", "assets/tex/flora_jump.520067fc.webp", 34884, "tex"], ["flora_slide", "assets/tex/flora_slide.a9bc8bf0.webp", 54152, "tex"], ["jack", "assets/tex/jack.513d1be5.webp", 17914, "tex"], ["bara_witch", "assets/tex/bara_witch.39f95a20.webp", 40566, "tex"], ["gold", "assets/tex/gold.1af98166.webp", 26486, "tex"], ["flora_run_0", "assets/tex/flora_run_0.1b632ea5.webp", 25228, "tex"], ["flora_run_1", "assets/tex/flora_run_1.57e1460f.webp", 22792, "tex"], ["flora_run_2", "assets/tex/flora_run_2.5892efc3.webp", 24832, "tex"], ["flora_run_3", "assets/tex/flora_run_3.8e936cb6.webp", 22486, "tex"], ["bara_run_0", "assets/tex/bara_run_0.1a2e77a4.webp", 51766, "tex"], ["bara_run_1", "assets/tex/bara_run_1.f0512418.webp", 57786, "tex"], ["bara3d", "assets/models/bara3d.f9f76af4.glb", 46792, "bin"], ["flora_girl", "assets/models/flora_girl_web.10bc9cf5.glb", 985920, "bin"], ["flora_girl_mobile", "assets/models/flora_girl_mobile.2bb3b304.glb", 546096, "bin"], ["sfx_bara_boost", "assets/audio/sfx_bara_boost.8a041341.mp3", 17284, "aud", "assets/audio_lite/sfx_bara_boost.7e6575a7.mp3", 5398], ["sfx_bara_brake", "assets/audio/sfx_bara_brake.caf3cca6.mp3", 15195, "aud", "assets/audio_lite/sfx_bara_brake.ea86a49b.mp3", 4771], ["sfx_bara_footsteps", "assets/audio/sfx_bara_footsteps.fc3520a3.mp3", 11537, "aud", "assets/audio_lite/sfx_bara_footsteps.194e8072.mp3", 3674], ["sfx_bara_happy", "assets/audio/sfx_bara_happy.867fb051.mp3", 17284, "aud", "assets/audio_lite/sfx_bara_happy.580528af.mp3", 5398], ["sfx_bara_purr", "assets/audio/sfx_bara_purr.48a6c073.mp3", 15195, "aud", "assets/audio_lite/sfx_bara_purr.6db18076.mp3", 4771], ["sfx_bara_smash", "assets/audio/sfx_bara_smash.8dcbe3a2.mp3", 21464, "aud", "assets/audio_lite/sfx_bara_smash.408979f4.mp3", 6652], ["sfx_correct", "assets/audio/sfx_correct.e56ef955.mp3", 15195, "aud", "assets/audio_lite/sfx_correct.9c74666b.mp3", 4928], ["sfx_countdown_beep", "assets/audio/sfx_countdown_beep.3b91087e.mp3", 4746, "aud", "assets/audio_lite/sfx_countdown_beep.0223f07b.mp3", 1793], ["sfx_countdown_go", "assets/audio/sfx_countdown_go.56d988f1.mp3", 10493, "aud", "assets/audio_lite/sfx_countdown_go.6ec8ebd4.mp3", 3360], ["sfx_footstep_dirt", "assets/audio/sfx_footstep_dirt.be99770e.mp3", 11537, "aud", "assets/audio_lite/sfx_footstep_dirt.60d8de8d.mp3", 3674], ["sfx_footstep_single", "assets/audio/sfx_footstep_single.230c94e1.mp3", 3178, "aud", "assets/audio_lite/sfx_footstep_single.15336b12.mp3", 1166], ["sfx_jump", "assets/audio/sfx_jump.ea2aa948.mp3", 4746, "aud", "assets/audio_lite/sfx_jump.4d016958.mp3", 1793], ["sfx_menu_confirm", "assets/audio/sfx_menu_confirm.23ea917f.mp3", 6313, "aud", "assets/audio_lite/sfx_menu_confirm.03ef8cd3.mp3", 2263], ["sfx_menu_move", "assets/audio/sfx_menu_move.243ed6af.mp3", 2133, "aud", "assets/audio_lite/sfx_menu_move.6233d547.mp3", 853], ["sfx_pickup_pumpkin", "assets/audio/sfx_pickup_pumpkin.583a3fac.mp3", 8403, "aud", "assets/audio_lite/sfx_pickup_pumpkin.543b09ac.mp3", 2734], ["sfx_slide", "assets/audio/sfx_slide.6ef261f9.mp3", 8403, "aud", "assets/audio_lite/sfx_slide.d482d1a2.mp3", 2734], ["sfx_wrong_baa", "assets/audio/sfx_wrong_baa.3d1a4438.mp3", 13105, "aud", "assets/audio_lite/sfx_wrong_baa.11b21c32.mp3", 4301]], "lazy": [["bgm_pumpkin_field", "assets/audio/bgm_pumpkin_field.0b989858.mp3", 1281088, "aud", "assets/audio_lite/bgm_pumpkin_field.8072a5cc.mp3", 384539], ["jingle_interlude_rest", "assets/audio/jingle_interlude_rest.1d70d32b.mp3", 105578, "aud", "assets/audio_lite/jingle_interlude_rest.1eda4680.mp3", 31886], ["bgm_corn_maze", "assets/audio/bgm_corn_maze.5029d404.mp3", 1281088, "aud", "assets/audio_lite/bgm_corn_maze.48ef87cf.mp3", 384539], ["jingle_capybara", "assets/audio/jingle_capybara.d7c3667b.mp3", 53333, "aud", "assets/audio_lite/jingle_capybara.d2ff3a49.mp3", 16213], ["jingle_level_complete", "assets/audio/jingle_level_complete.9c5e4ef5.mp3", 65350, "aud", "assets/audio_lite/jingle_level_complete.a837150b.mp3", 19818], ["jingle_new_record", "assets/audio/jingle_new_record.7af6de33.mp3", 57513, "aud", "assets/audio_lite/jingle_new_record.0a7381ab.mp3", 17467], ["bgm_dad_letter", "assets/audio/bgm_dad_letter.e105af1b.mp3", 1238248, "aud", "assets/audio_lite/bgm_dad_letter.31759885.mp3", 371687], ["dad_bg", "assets/tex/dad_bg.6526c104.webp", 249490, "tex"]], "tex": {"flora_jump_ar": 0.669921875, "flora_slide_ar": 1.24609375, "jack_ar": 1.0360824742268042, "bara_witch_ar": 1.0491803278688525, "gold_ar": 1.1752738654147106, "flora_run_ar": 0.6291666666666667, "bara_run_ar": 0.9545454545454546}};const qp=new URLSearchParams(location.search);const autoSmooth=matchMedia('(pointer:coarse)').matches||Math.min(screen.width,screen.height)<=820;let TIER=qp.get('tier')||(qp.get('mode')==='mobile'?'smooth':qp.get('mode')==='pc'?'high':null)||localStorage.flora_tier||(autoSmooth?'smooth':'high');if(TIER!=='high'&&TIER!=='smooth')TIER=autoSmooth?'smooth':'high';const SMOOTH=TIER==='smooth';window.__TIER=TIER;window.__SMOOTH=SMOOTH;window.__MOBILE=SMOOTH;window.__AUTO_SMOOTH=autoSmooth;window.__AUD_FULL={};window.__AUD_LITE={};M.eager.forEach(x=>{if(x[3]==='aud'){window.__AUD_FULL[x[0]]=x[1];if(x[4])window.__AUD_LITE[x[0]]=x[4];}});M.lazy.forEach(x=>{if(x[3]==='aud'){window.__AUD_FULL[x[0]]=x[1];if(x[4])window.__AUD_LITE[x[0]]=x[4];}});if(SMOOTH){const sw=x=>x[3]==='aud'&&x[4]?[x[0],x[4],x[5],'aud']:x;M.eager=M.eager.map(sw);M.lazy=M.lazy.map(sw);M.eager=M.eager.filter(x=>!(x[3]==='tex'&&/_nor_gl$/.test(x[0])));const hi=M.eager.findIndex(x=>x[0]==='flora_girl'),lo=M.eager.findIndex(x=>x[0]==='flora_girl_mobile');if(lo>=0){if(hi>=0)M.eager.splice(hi,1);M.eager.find(x=>x[0]==='flora_girl_mobile')[0]='flora_girl';}}else{M.eager=M.eager.filter(x=>x[0]!=='flora_girl_mobile');}const tot=M.eager.reduce((a,x)=>a+x[2],0);const got={};
 const fill=document.getElementById('lfill'),pct=document.getElementById('lpct');
@@ -63,17 +93,17 @@ all(M.eager,6).then(async R=>{const TEX=Object.assign({},M.tex),AUDIO={},BIN={};
 const QDATA={
  "player": "Flora",
  "grade": 6,
- "version": 4,
+ "version": 5,
  "curriculum": "BC Grade 6 Math, Science, Social Studies + farm and capybara facts",
- "fields": "section: pumpkin_field|corn_maze; subject: math|science|farm|social|capybara (capybara = bonus); difficulty: easy|medium|hard; answer = index into choices; choices_zh present for non-numeric answers; choices_zh now present on EVERY question (same order as choices)",
+ "fields": "section: pumpkin_field|corn_maze; subject: math|science|farm|social|capybara (capybara = bonus); difficulty: easy|medium|hard; answer = index into choices; choices_zh present for non-numeric answers; choices_zh now present on EVERY question (same order as choices); '{name}' in question text = player's chosen name (default Flora), replace at runtime. Display order: English on top, Chinese below.",
  "questions": [
   {
    "id": "q001",
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Flora collected 1/2 of 14 pumpkins. How many did she collect?",
-   "q_zh": "14 个南瓜，Flora 收回了 1/2，一共多少个？",
+   "q_en": "{name} collected 1/2 of 14 pumpkins. How many did she collect?",
+   "q_zh": "14 个南瓜，{name} 收回了 1/2，一共多少个？",
    "choices": [
     "10",
     "11",
@@ -95,8 +125,8 @@ const QDATA={
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Flora collected 1/6 of 18 pumpkins. How many did she collect?",
-   "q_zh": "18 个南瓜，Flora 收回了 1/6，一共多少个？",
+   "q_en": "{name} collected 1/6 of 18 pumpkins. How many did she collect?",
+   "q_zh": "18 个南瓜，{name} 收回了 1/6，一共多少个？",
    "choices": [
     "3",
     "5",
@@ -116,8 +146,8 @@ const QDATA={
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Flora collected 1/2 of 16 pumpkins. How many did she collect?",
-   "q_zh": "16 个南瓜，Flora 收回了 1/2，一共多少个？",
+   "q_en": "{name} collected 1/2 of 16 pumpkins. How many did she collect?",
+   "q_zh": "16 个南瓜，{name} 收回了 1/2，一共多少个？",
    "choices": [
     "5",
     "8",
@@ -139,8 +169,8 @@ const QDATA={
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Flora collected 3/4 of 32 pumpkins. How many did she collect?",
-   "q_zh": "32 个南瓜，Flora 收回了 3/4，一共多少个？",
+   "q_en": "{name} collected 3/4 of 32 pumpkins. How many did she collect?",
+   "q_zh": "32 个南瓜，{name} 收回了 3/4，一共多少个？",
    "choices": [
     "26",
     "24",
@@ -160,8 +190,8 @@ const QDATA={
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Flora collected 5/6 of 36 pumpkins. How many did she collect?",
-   "q_zh": "36 个南瓜，Flora 收回了 5/6，一共多少个？",
+   "q_en": "{name} collected 5/6 of 36 pumpkins. How many did she collect?",
+   "q_zh": "36 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "30",
     "33",
@@ -183,8 +213,8 @@ const QDATA={
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Flora collected 5/6 of 54 pumpkins. How many did she collect?",
-   "q_zh": "54 个南瓜，Flora 收回了 5/6，一共多少个？",
+   "q_en": "{name} collected 5/6 of 54 pumpkins. How many did she collect?",
+   "q_zh": "54 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "44",
     "41",
@@ -206,8 +236,8 @@ const QDATA={
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Flora collected 2/5 of 30 pumpkins. How many did she collect?",
-   "q_zh": "30 个南瓜，Flora 收回了 2/5，一共多少个？",
+   "q_en": "{name} collected 2/5 of 30 pumpkins. How many did she collect?",
+   "q_zh": "30 个南瓜，{name} 收回了 2/5，一共多少个？",
    "choices": [
     "12",
     "16",
@@ -229,8 +259,8 @@ const QDATA={
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Flora collected 5/6 of 48 pumpkins. How many did she collect?",
-   "q_zh": "48 个南瓜，Flora 收回了 5/6，一共多少个？",
+   "q_en": "{name} collected 5/6 of 48 pumpkins. How many did she collect?",
+   "q_zh": "48 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "41",
     "40",
@@ -1807,8 +1837,8 @@ const QDATA={
    "section": "pumpkin_field",
    "subject": "science",
    "difficulty": "medium",
-   "q_en": "Why does a jumping Flora always come back down?",
-   "q_zh": "Flora 跳起来为什么总会落回地面？",
+   "q_en": "Why does a jumping {name} always come back down?",
+   "q_zh": "{name} 跳起来为什么总会落回地面？",
    "choices": [
     "Gravity pulls her down",
     "Air is heavy",
@@ -2869,12 +2899,17 @@ const QDATA={
 const AUDIO=window.__AUDIO,BIN=window.__BIN;
 const TEX=window.__TEX;
 // Survey link for the end-screen feedback button. Empty = button hidden.
-const FEEDBACK_URL='';
+const FEEDBACK_URL='https://form.typeform.com/to/O7KzB7ex';
 const HALLOWEEN=new Date().getMonth()===9;
 const store={get(k,d){try{return JSON.parse(localStorage.getItem('flora_'+k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem('flora_'+k,JSON.stringify(v))}catch(e){}}};
+let HERO=(function(){const n=store.get('hero',null);return (n&&String(n).trim())||'Flora';})();
+function setHero(n){n=String(n||'').trim().slice(0,24)||'Flora';HERO=n;store.set('hero',n);store.set('hero_set',true);return n;}
+function N(s){return String(s==null?'':s).split('{name}').join(HERO);}
+function bi(en,zh){return en+(zh?'\n'+zh:'');}
+
 const fmt=s=>{const m=Math.floor(s/60),r=(s%60).toFixed(1);return m+':'+(r<10?'0':'')+r;};
-function histHtml(){const runs=store.get('runs',[]);if(!runs.length)return '还没有纪录，跑一局试试！';const best=Math.min(...runs.map(r=>r.t));
- return '🏆 历史最快：<b>'+fmt(best)+'</b><br>最近几局：'+runs.slice(-5).reverse().map(r=>fmt(r.t)+(r.t===best?'🏆':'')).join('，');}
+function histHtml(){const runs=store.get('runs',[]);if(!runs.length)return 'No records yet — run one! / 还没有纪录，跑一局试试！';const best=Math.min(...runs.map(r=>r.t));
+ return '🏆 Best / 最快：<b>'+fmt(best)+'</b><br>Recent / 最近：'+runs.slice(-5).reverse().map(r=>fmt(r.t)+(r.t===best?'🏆':'')).join(' · ');}
 const QP=new URLSearchParams(location.search),SMOOTH=!!window.__SMOOTH,MOBILE=SMOOTH,FPS=QP.get('fps')==='1',BOOT_TIER=window.__TIER;let QUAL=localStorage.q!=null?+localStorage.q:/iPad|iPhone|Android|Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1?1:2;
 // ---------- audio ----------
 const snd={};for(const k in AUDIO){snd[k]=new Audio();snd[k].preload=window.__LAZY.has(k)?'none':'auto';snd[k].src=AUDIO[k];if(k.startsWith('bgm')){snd[k].loop=true;snd[k].volume=.45;}}
@@ -3004,18 +3039,18 @@ function buildLevel(){forks.forEach(f=>scene.remove(f.g));forks=[];objs.forEach(
 }
 // ---------- state ----------
 let S;let ghostData=store.get('ghost',null);const hud={p:document.getElementById('hp'),q:document.getElementById('hq'),s:document.getElementById('hs')};
-function teach(q){const e=document.getElementById('teach');e.innerHTML='<b style="color:#c4560b">正确答案：'+(q.choices_zh||q.choices)[q.answer]+'</b><br>'+(q.explain_zh||'')+(q.explain_en?'<div style="font-size:13px;color:#8a6a4a">'+q.explain_en+'</div>':'');e.style.display='block';clearTimeout(teach.t);teach.t=setTimeout(()=>e.style.display='none',2600);}
-function sub(t,ms=2400){const e=document.getElementById('sub');e.textContent=t;e.style.display='block';clearTimeout(sub.t);sub.t=setTimeout(()=>e.style.display='none',ms);}
+function teach(q){const e=document.getElementById('teach');e.innerHTML='<b style="color:#c4560b">Answer / 正确答案：'+(q.choices_zh||q.choices)[q.answer]+'</b><br>'+(q.explain_en?N(q.explain_en)+'<br>':'')+'<span style="color:#8a6a4a">'+N(q.explain_zh||'')+'</span>';e.style.display='block';clearTimeout(teach.t);teach.t=setTimeout(()=>e.style.display='none',2600);}
+function sub(t,ms=2400){const e=document.getElementById('sub');e.style.whiteSpace='pre-line';e.textContent=N(t);e.style.display='block';clearTimeout(sub.t);sub.t=setTimeout(()=>e.style.display='none',ms);}
 function newGame(){document.getElementById('mq').style.display='none';S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],ghostLead:null,z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0};
  bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();}
 function updHud(){hud.p.textContent='🎃 '+S.pumpkins;hud.q.textContent='✅ '+S.correct;hud.s.textContent=['农场入口','南瓜田','玉米迷宫','终点谷仓'][S.section];}
 // ---------- intro ----------
-function intro(){S.mode='intro';S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};if(store.get('runs',[]).length)_st(()=>sub('按空格可以跳过开场',2500),300);
- sub('稻草人老伯：糟啦！昨晚一阵大风，南瓜滚了一地，我的帽子也飞进迷宫了！',3600);
- setTimeout(()=>sub('Flora：交给我！Bara，走！',2000),3700);setTimeout(()=>{sub('Bara：咕咕！',1300);play('sfx_correct');},5800);
- setTimeout(()=>countdown(),7200);}
+function intro(){S.mode='intro';S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};if(store.get('runs',[]).length)_st(()=>sub('Press Space to skip / 按空格可以跳过开场',2500),300);
+ sub(bi('Scarecrow: "Oh no! Last night\'s wind scattered the pumpkins everywhere, and my hat blew into the maze! The Harvest Festival starts tomorrow..."','稻草人老伯："糟啦！昨晚一阵大风，南瓜滚了一地，我的帽子也飞进迷宫了！丰收节明天就要开场……"'),4200);
+ setTimeout(()=>sub(bi('{name}: "Leave it to me! Bara, let\'s go!"','{name}："交给我！Bara，走！"'),2200),4300);setTimeout(()=>{sub(bi('Bara: "Gurr gurr!"','Bara："咕咕！"'),1300);play('sfx_correct');},6600);
+ setTimeout(()=>countdown(),8000);}
 function countdown(){S.mode='count';const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
- const iv=setInterval(()=>{n--;if(n>0){e.textContent=n;play('sfx_countdown_beep');}else{clearInterval(iv);e.textContent='GO!';play('sfx_countdown_go');setTimeout(()=>e.style.display='none',600);S.mode='run';S.speed=S.base;bgm('bgm_pumpkin_field');sub('← → 换道，↑ 跳，↓ 滑铲，先捡 5 个南瓜！',3000);}},800);}
+ const iv=setInterval(()=>{n--;if(n>0){e.textContent=n;play('sfx_countdown_beep');}else{clearInterval(iv);e.textContent='GO!';play('sfx_countdown_go');setTimeout(()=>e.style.display='none',600);S.mode='run';S.speed=S.base;bgm('bgm_pumpkin_field');sub(bi('← → lane, ↑ jump, ↓ slide — collect 5 pumpkins!','← → 换道，↑ 跳，↓ 滑铲，先捡 5 个南瓜！'),3000);}},800);}
 // ---------- input ----------
 function input(k){if(S.mode!=='run')return;
  const lk=forks.find(f=>S.z>f.zf-.5&&S.z<f.zf+f.D);if(!lk){if(k==='L'&&S.lane>0)S.lane--;if(k==='R'&&S.lane<2)S.lane++;}
@@ -3028,21 +3063,21 @@ addEventListener('keydown',e=>{const vis=id=>document.getElementById(id).style.d
   if(e.code==='Enter'&&!bs[0].disabled&&S.qSel!=null&&bs[S.qSel]){play('sfx_menu_confirm');bs[S.qSel].click();e.preventDefault();return;}if((e.code==='Enter'||e.code==='Space')&&document.getElementById('qgo').style.display==='block'){document.getElementById('qgo').click();e.preventDefault();}return;}
  if(vis('letter')){if(e.code==='Enter'||e.code==='Space'){closeLetter();e.preventDefault();}return;}
  if(S&&S.mode==='intro'&&(e.code==='Space'||e.code==='Enter')&&store.get('runs',[]).length){S.introT.forEach(clearTimeout);S.t=7;countdown();e.preventDefault();return;}
- if(vis('title')&&e.code==='Enter'){document.getElementById('start').click();return;}if(vis('end')&&e.code==='Enter'){document.getElementById('again').click();return;}
+ if(vis('namegate')&&e.code==='Enter'){document.getElementById('nameGo').click();return;}if(vis('title')&&e.code==='Enter'){document.getElementById('start').click();return;}if(vis('end')&&e.code==='Enter'){document.getElementById('again').click();return;}
  const m={ArrowLeft:'L',KeyA:'L',ArrowRight:'R',KeyD:'R',ArrowUp:'U',KeyW:'U',Space:'U',ArrowDown:'D',KeyS:'D'}[e.code];if(m){e.preventDefault();input(m);}});
 let ts=null;addEventListener('touchstart',e=>{ts=[e.touches[0].clientX,e.touches[0].clientY]},{passive:true});
 addEventListener('touchend',e=>{if(!ts)return;const dx=e.changedTouches[0].clientX-ts[0],dy=e.changedTouches[0].clientY-ts[1];ts=null;
  if(Math.max(Math.abs(dx),Math.abs(dy))<25){input('U');return;}if(Math.abs(dx)>Math.abs(dy))input(dx<0?'L':'R');else input(dy<0?'U':'D');},{passive:true});
 // ---------- quiz ----------
 function ask(q,kind,cb){S.mode='quiz';S.qSel=null;const ov=document.getElementById('quiz');
- document.getElementById('qtag').textContent={field:'稻草人考官',maze:'迷宫路牌',egg:'🦫 水豚彩蛋'}[kind];
- document.getElementById('qzh').textContent=q.q_zh;document.getElementById('qen').textContent=q.q_en;
+ document.getElementById('qtag').textContent={field:'Scarecrow / 稻草人考官',maze:'Maze sign / 迷宫路牌',egg:'🦫 Bara bonus / 水豚彩蛋'}[kind];
+ document.getElementById('qen').textContent=N(q.q_en);document.getElementById('qzh').textContent=N(q.q_zh);
  const ch=document.getElementById('qch');ch.innerHTML='';const ex=document.getElementById('qex');ex.textContent='';const go=document.getElementById('qgo');go.style.display='none';
  const labels=kind==='maze'?['⬅ 左转：','➡ 右转：','⬆ 直走：','↩ 掉头：']:['A. ','B. ','C. ','D. '];
  q.choices.forEach((c,i)=>{const b=document.createElement('button');const cz=(q.choices_zh&&q.choices_zh[i])||c;b.innerHTML='<span class="cz"></span>'+(String(cz).trim()!==String(c).trim()?'<span class="ce"></span>':'');b.querySelector('.cz').textContent=labels[i]+cz;if(b.querySelector('.ce'))b.querySelector('.ce').textContent=c;b.onclick=()=>{
   const ok=i===q.answer;[...ch.children].forEach((bb,j)=>{bb.disabled=true;if(j===q.answer)bb.style.background='#9fe0b0';else if(j===i)bb.style.background='#f6a6a6';});
   play(ok?'sfx_correct':'sfx_wrong_baa');setTimeout(()=>play(ok?'sfx_bara_happy':'sfx_bara_purr'),500);if(ok){S.correct++;}S.answered.push({q,ok});{const W=store.get('wrong',{});if(ok){if(W[q.id]>0)W[q.id]--;}else W[q.id]=2;store.set('wrong',W);}updHud();
-  ex.textContent=(ok?'CAPYBARA！答对啦！ ':'Bara：没关系，这条路也能到！ ')+q.explain_zh;go.style.display='block';
+  ex.textContent=(ok?'Correct! CAPYBARA! / 答对啦！ ':'Not quite / 差一点： ')+N(q.explain_zh||q.explain_en||'');go.style.display='block';
   go.onclick=()=>{ov.style.display='none';S.mode='run';cb(ok);};};ch.appendChild(b);});
  ov.style.display='flex';}
 // ---------- loop ----------
@@ -3057,7 +3092,7 @@ function step(dt){S.t+=dt;{const pr=document.getElementById('prog');const on=['r
  if(S.mode==='run'){
   let sp=S.speed*(S.slowT>0&&!(S.boostT>0)?.55:1)*(S.boostT>0?2:1)*(S.brakeT>0?.5:1);if(S.slowT>0)S.slowT-=dt;S.z+=sp*dt;
   if(S.boostT>0){S.boostT-=dt;if(S.boostT<=0)sub('冲刺结束，继续加油！',1200);}if(S.brakeT>0){S.brakeT-=dt;if(S.brakeT<=0)S.braked=S.z+40;}
-  if(S.braked&&S.z>S.braked){S.braked=0;sub('Flora：原来 Bara 是在保护我！',2200);}
+  if(S.braked&&S.z>S.braked){S.braked=0;sub(bi('{name}: "Bara was protecting me!"','{name}："原来 Bara 是在保护我！"'),2200);}
   {const nearFork=forks.some(f=>S.z>f.zf-38&&S.z<f.zf+f.D+3);if(S.section>=1&&S.section<=2&&!nearFork&&!S.smash){if(S.skillT==null)S.skillT=10+Math.random()*8;S.skillT-=dt;
    if(S.skillT<=0){S.skillT=15+Math.random()*15;const r=Math.random();if(r<.4)skill('boost');else if(r<.6)skill('brake');else skill('smash');}}}
   if(S.boostT>0)for(const o of objs){if(o.type==='pumpkin'&&!o.done){const dz=-o.m.position.z-S.z;if(dz>-1&&dz<7){o.done=true;scene.remove(o.m);S.pumpkins++;play('sfx_pickup_pumpkin');updHud();}}}
@@ -3076,7 +3111,7 @@ function step(dt){S.t+=dt;{const pr=document.getElementById('prog');const on=['r
   const sec=S.z<L_ENT?0:S.z<L_FIELD?1:S.z<L_MAZE?2:3;
   if(sec!==S.section){S.section=sec;updHud();
    if(sec===1)sub('南瓜田到啦！小心干草垛、小鸡和水坑！');
-   if(sec===2){S.mode='rest';S.restT=5;S.speed=10;bgm(null);play('jingle_interlude_rest');sub('Flora：呼……迷宫就在前面了！ / The maze is just ahead!',4600);setTimeout(()=>{if(S.mode==='rest')sub('（Bara 停下来啃了一根玉米 🌽）',2000);},2600);}
+   if(sec===2){S.mode='rest';S.restT=5;S.speed=10;bgm(null);play('jingle_interlude_rest');sub(bi('{name}: "The maze is just ahead!"','{name}："迷宫就在前面了！"'),4600);setTimeout(()=>{if(S.mode==='rest')sub(bi('(Bara stops to chew a corn cob 🌽)','（Bara 停下来啃了一根玉米 🌽）'),2000);},2600);}
    if(sec===3){finish();}}
   for(const o of objs){if(o.type==='chick'&&!o.done){o.m.position.x+=o.vx*dt;if(Math.abs(o.m.position.x)>LANE*1.3)o.vx*=-1;o.m.rotation.y=o.vx>0?-Math.PI/2:Math.PI/2;}
    if(o.type==='pumpkin'||o.type==='gold')o.m.rotation.y+=dt*2;
@@ -3086,10 +3121,10 @@ function step(dt){S.t+=dt;{const pr=document.getElementById('prog');const on=['r
    else if(o.type==='scare'){const q=S.set.field[o.qi];ask(q,'field',ok=>{if(ok){sub('Bara，我们走捷径！奖励南瓜来啦！');for(let k=0;k<4;k++)addObj('pumpkin',S.lane,S.z+6+k*1.8);S.z+=8;}
      else{S.slowT=3;sub('Bara：没关系，这条路也能到！（绕远路中…）',3000);}});}
    else if(o.type==='sign'){const q=S.set.maze[o.qi];ask(q,'maze',ok=>{if(ok){sub(o.qi===3?'看见迷宫中心了！':'方向对啦，继续往里走！');}
-     else{S.mode='dead';sub('前面是死胡同……Bara 领着 Flora 绕回来',2200);setTimeout(()=>{S.z-=12;S.mode='run';},1600);}});}
+     else{S.mode='dead';sub(bi('Dead end… Bara leads {name} back','前面是死胡同……Bara 领着 {name} 绕回来'),2200);setTimeout(()=>{S.z-=12;S.mode='run';},1600);}});}
    else{S.slowT=1.2;S.bounce=.4;play('sfx_wrong_baa');sub('哎呀，绊了一下！',1200);}}
  }
- if(S.mode==='rest'){S.restT-=dt;if(S.restT<=0){S.mode='run';bgm('bgm_corn_maze');sub('Flora：哇，玉米比我还高……Bara，跟紧我。',3000);}}
+ if(S.mode==='rest'){S.restT-=dt;if(S.restT<=0){S.mode='run';bgm('bgm_corn_maze');sub(bi('{name}: "Whoa, the corn is taller than me… Bara, stay close."','{name}："哇，玉米比我还高……Bara，跟紧我。"'),3000);}}
  // animate flora (sprite)
  const run=(S.mode==='run'||S.mode==='end')&&S.y===0&&S.slide<=0;const ph=S.t*12;const fc=flora.userData.c;
  const rf=Math.floor(S.t*11)%4;if(!F3.ready&&run&&rf!==S.lastRf){S.lastRf=rf;if(rf===0||rf===2)play('sfx_footstep_single');}
@@ -3110,33 +3145,63 @@ function step(dt){S.t+=dt;{const pr=document.getElementById('prog');const on=['r
  if(S.mode==='intro')cam.position.copy(cp);else cam.position.lerp(cp,Math.min(1,dt*5));cam.lookAt(ct);
  sky.position.set(0,60*SKS,-S.z-190*SKS);sky.scale.set(SKS*Math.max(1,cam.aspect/1.7),SKS,1);sky.lookAt(cam.position.x,60,cam.position.z);sun.position.set(-20,30,-S.z+10);sun.target.position.set(0,0,-S.z-10);
 }
-const LETTER={zh:['<b>亲爱的 Flora：</b>','恭喜你，丰收节可以开场啦！','你在玉米迷宫里奔跑的样子，爸爸一直记在心里：长发在风里飘，你一次也没有回头，就那么勇敢地往前跑。','那时候爸爸就想，这条路，以后你会自己走。会有岔路，会走错，会绕远。可是别怕，走错了的路也能带你看到别的风景，就像游戏里那样，绕一圈，还是能到。','<b>不管你跑得多远，回头的时候，爸爸一直都在这里。</b>','<div style="text-align:right">爱你的爸爸</div>','P.S. CAPYBARA！'],
- en:['<b>Dear Flora,</b>','Congratulations, the Harvest Festival can begin!','I still remember watching you run through the corn maze, your long hair flying, never once looking back.','I thought: one day you\'ll walk your own path. There will be forks, wrong turns, long ways around. Don\'t be afraid. Even the wrong path can show you something beautiful, and you\'ll still find your way.','<b>No matter how far you run, whenever you look back, Dad will always be right here.</b>','<div style="text-align:right">Love,<br>Dad</div>','P.S. CAPYBARA!']};
-const LT=[5,8,13,21,35,47,54];let lTimers=[],lLang='zh';
-function renderLetter(all){const el=document.getElementById('ltext');el.innerHTML=LETTER[lLang].map((p,i)=>`<p class="lp" style="margin:0 0 .7em;opacity:${all?1:0};transition:opacity 2.5s">${p}</p>`).join('');}
-function showLetter(){bgm(null);const ov=document.getElementById('letter');document.getElementById('lpaper').style.backgroundImage='url('+TEX.dad_bg+')';renderLetter(false);document.getElementById('lskip').textContent='跳过 →';ov.style.display='flex';
+function letterPairs(){
+ const flora=/^flora$/i.test(String(HERO).trim());
+ if(flora)return [
+  ['Dear Flora,','亲爱的 Flora：'],
+  ['Congratulations, the Harvest Festival can begin!','恭喜你，丰收节可以开场啦！'],
+  ['I still remember watching you run through the corn maze, your long hair flying, never once looking back.','你在玉米迷宫里奔跑的样子，爸爸一直记在心里：长发在风里飘，你一次也没有回头，就那么勇敢地往前跑。'],
+  ['I thought: one day you\'ll walk your own path. There will be forks, wrong turns, long ways around. Don\'t be afraid. Even the wrong path can show you something beautiful, and you\'ll still find your way.','那时候爸爸就想，这条路，以后你会自己走。会有岔路，会走错，会绕远。可是别怕，走错了的路也能带你看到别的风景，就像游戏里那样，绕一圈，还是能到。'],
+  ['<b>No matter how far you run, whenever you look back, Dad will always be right here.</b>','<b>不管你跑得多远，回头的时候，爸爸一直都在这里。</b>'],
+  ['Love, Dad','爱你的爸爸'],
+  ['P.S. CAPYBARA!','P.S. CAPYBARA!']
+ ];
+ return [
+  ['Dear {name},','亲爱的 {name}：'],
+  ['You did it! The Harvest Festival can begin, all thanks to you.','你做到了！丰收节能开场，全靠你。'],
+  ['Today you ran through a whole farm, solved every puzzle, and never gave up, even when the path went the long way round.','今天你跑遍了整个农场，解开了每一道难题，就算路绕了远，你也一次都没有放弃。'],
+  ['Life has corn mazes too. Some turns will be wrong, some roads will be long. But every step teaches you something, and you always find your way.','生活里也有玉米迷宫，有时会转错弯，有时路会很长。可是每一步都会让你学到点什么，你总能找到出口。'],
+  ['<b>However far you go, we\'re proud of you, and we\'ll always be cheering you on.</b>','<b>不管你走多远，我们都为你骄傲，也会一直为你加油。</b>'],
+  ['Love, Mom & Dad','爱你的爸爸妈妈'],
+  ['P.S. CAPYBARA!','P.S. CAPYBARA!']
+ ];
+}
+const LT=[4,7,11,17,28,38,44];let lTimers=[],lLang='bi';
+function renderLetter(all){const el=document.getElementById('ltext');el.innerHTML=letterPairs().map(([en,zh])=>`<p class="lp" style="opacity:${all?1:0};transition:opacity 2.5s"><div class="en">${N(en)}</div><div class="zh">${N(zh)}</div></p>`).join('');}
+function showLetter(){bgm(null);const ov=document.getElementById('letter');document.getElementById('lpaper').style.backgroundImage='url('+TEX.dad_bg+')';renderLetter(false);document.getElementById('lskip').textContent='Skip / 跳过 →';ov.style.display='flex';
  const a=snd.bgm_dad_letter;if(a){a.loop=false;a.volume=.8;a.currentTime=0;a.play().catch(()=>{});}
- lTimers=LT.map((s,i)=>setTimeout(()=>{const ps=document.querySelectorAll('#ltext .lp');if(ps[i]){ps[i].style.opacity=1;const el=document.getElementById('ltext');el.scrollTop=ps[i].offsetTop+ps[i].offsetHeight-el.clientHeight;}if(i===LT.length-1){play('jingle_capybara');document.getElementById('lskip').textContent='继续 →';}},s*1000));}
+ lTimers=LT.map((s,i)=>setTimeout(()=>{const ps=document.querySelectorAll('#ltext .lp');if(ps[i]){ps[i].style.opacity=1;const el=document.getElementById('ltext');el.scrollTop=ps[i].offsetTop+ps[i].offsetHeight-el.clientHeight;}if(i===LT.length-1){play('jingle_capybara');document.getElementById('lskip').textContent='Continue / 继续 →';}},s*1000));}
 function closeLetter(){lTimers.forEach(clearTimeout);const a=snd.bgm_dad_letter;if(a)a.pause();document.getElementById('letter').style.display='none';document.getElementById('end').style.display='flex';}
 function skill(k){if(k==='smash'){const o=objs.filter(o=>!o.done&&['hay','beam','chick','puddle'].includes(o.type)&&-o.m.position.z-S.z>12&&-o.m.position.z-S.z<45).sort((a,b)=>b.m.position.z-a.m.position.z)[0];if(!o)k='boost';else{S.smash={o,t:0};sub('Bara：看我的！冲呀！💥',1600);play('sfx_bara_boost');return;}}
- if(k==='boost'){S.boostT=3;play('sfx_bara_boost');sub('⚡ Bara 推着 Flora 冲刺！南瓜自动吸过来！',2200);}
- if(k==='brake'){S.brakeT=3;play('sfx_bara_brake');sub('Flora：Bara，别闹！（Bara 咬住了衣角……）',2400);const z0=S.z+34;const open=Math.floor(Math.random()*3);[0,1,2].forEach(l=>{if(l!==open)addObj('hay',l,z0);});const open2=(open+1+Math.floor(Math.random()*2))%3;[0,1,2].forEach(l=>{if(l!==open2)addObj(Math.random()<.5?'hay':'puddle',l,z0+9);});}}
+ if(k==='boost'){S.boostT=3;play('sfx_bara_boost');sub(bi('⚡ Bara boosts {name}! Pumpkins auto-collect!','⚡ Bara 推着 {name} 冲刺！南瓜自动吸过来！'),2200);}
+ if(k==='brake'){S.brakeT=3;play('sfx_bara_brake');sub(bi('{name}: "Bara, cut it out!" (Bara nibbles the sleeve…)','{name}："Bara，别闹！"（Bara 咬住了衣角……）'),2400);const z0=S.z+34;const open=Math.floor(Math.random()*3);[0,1,2].forEach(l=>{if(l!==open)addObj('hay',l,z0);});const open2=(open+1+Math.floor(Math.random()*2))%3;[0,1,2].forEach(l=>{if(l!==open2)addObj(Math.random()<.5?'hay':'puddle',l,z0+9);});}}
 function finish(){S.mode='end';ghost.visible=false;document.getElementById('hb').textContent='';
  const runs=store.get('runs',[]);const prevBest=runs.length?Math.min(...runs.map(r=>r.t)):Infinity;const T=+S.rt.toFixed(1);runs.push({t:T,d:new Date().toISOString().slice(0,16),p:S.pumpkins,c:S.correct});store.set('runs',runs.slice(-100));
  const isRec=T<prevBest;if(isRec){store.set('ghost',S.rec);ghostData=S.rec;}
- setTimeout(()=>{document.getElementById('timeRes').textContent='⏱ 本局用时 '+fmt(T)+(isRec?(prevBest<Infinity?'　🎉 新纪录！快了 '+(prevBest-T).toFixed(1)+' 秒':'　🎉 第一个纪录！'):'　（纪录 '+fmt(prevBest)+'）');document.getElementById('hist2').innerHTML=histHtml();document.getElementById('hist').innerHTML=histHtml();},4100);
- if(isRec&&prevBest<Infinity)setTimeout(()=>{sub('破纪录啦！CAPYBARA！',2500);play('jingle_new_record');},1200);S.speed=0;bgm(null);play('jingle_level_complete');sub('找到啦！丰收节，开场！CAPYBARA！',3000);setTimeout(()=>play('jingle_capybara'),2200);
+ setTimeout(()=>{document.getElementById('timeRes').textContent='⏱ Time / 用时 '+fmt(T)+(isRec?(prevBest<Infinity?'　🎉 New Record! / 新纪录！ −'+(prevBest-T).toFixed(1)+'s':'　🎉 First record! / 第一个纪录！'):'　(Best / 纪录 '+fmt(prevBest)+')');document.getElementById('hist2').innerHTML=histHtml();document.getElementById('hist').innerHTML=histHtml();},4100);
+ if(isRec&&prevBest<Infinity)setTimeout(()=>{sub(bi('New record! CAPYBARA!','破纪录啦！CAPYBARA！'),2500);play('jingle_new_record');},1200);S.speed=0;bgm(null);play('jingle_level_complete');sub(bi('{name}: "Found it! The Harvest Festival begins! CAPYBARA!"','{name}："找到啦！丰收节，开场！CAPYBARA！"'),3000);setTimeout(()=>play('jingle_capybara'),2200);
  const stars=1+(S.pumpkins>=20?1:0)+(S.pumpkins>=30&&S.correct>=5?1:0);
- setTimeout(()=>{document.getElementById('stars').textContent='⭐'.repeat(stars)+'☆'.repeat(3-stars);
-  document.getElementById('sum').textContent=`收回南瓜 ${S.pumpkins} 个，答对 ${S.correct} / ${S.answered.length} 题`;
-  document.getElementById('review').innerHTML='<p style="font-size:15px;color:#7a5a3a;text-align:left">家长回顾：</p>'+S.answered.map(a=>`<div class="res">${a.ok?'✅':'❌'} ${a.q.q_zh}<br><b>答案：</b>${(a.q.choices_zh||a.q.choices)[a.q.answer]}　${a.q.explain_zh}</div>`).join('');
+ setTimeout(()=>{document.getElementById('stars').textContent='⭐'.repeat(stars)+'☆'.repeat(3-stars);document.getElementById('endTitleEn').textContent=N('{name}: "The Harvest Festival begins! CAPYBARA!"');document.getElementById('endTitleZh').textContent=N('{name}："丰收节，开场！CAPYBARA！"');
+  document.getElementById('sum').textContent=`Pumpkins / 南瓜 ${S.pumpkins} · Correct / 答对 ${S.correct} / ${S.answered.length}`;
+  document.getElementById('review').innerHTML='<p style="font-size:15px;color:#7a5a3a;text-align:left">Parent review / 家长回顾</p>'+S.answered.map(a=>`<div class="res">${a.ok?'✅':'❌'} <b>${N(a.q.q_en)}</b><br>${N(a.q.q_zh)}<br><b>Answer / 答案：</b>${(a.q.choices_zh||a.q.choices)[a.q.answer]}　${N(a.q.explain_zh||'')}</div>`).join('');
   showLetter();},4200);}
 let fpsEl=null,fpsN=0,fpsT=0,fpsW=0;function fpsTick(dt){if(!fpsEl){fpsEl=document.createElement('div');fpsEl.style.cssText='position:fixed;right:6px;top:40px;z-index:50;background:#000a;color:#7f7;font:12px/1.35 monospace;padding:4px 7px;border-radius:6px;pointer-events:none;white-space:pre';document.body.appendChild(fpsEl);}const now=performance.now();fpsN++;if(!fpsT)fpsT=now;if(now-fpsT>=500){const fps=fpsN*1000/(now-fpsT);const i=R.info.render;fpsEl.textContent=fps.toFixed(0)+' fps  '+(1000/fps).toFixed(1)+' ms\n'+i.calls+' draws  '+(i.triangles/1000).toFixed(0)+'k tris\n'+(MOBILE?'mobile':'pc')+'  pr '+R.getPixelRatio().toFixed(2)+'  q'+QUAL;window.__fps={fps,calls:i.calls,tris:i.triangles};fpsN=0;fpsT=now;}}
 function loop(){const dt=Math.min(clock.getDelta(),.05);if(S){step(dt);instVis();}R.render(scene,cam);if(FPS)fpsTick(dt);requestAnimationFrame(loop);}
+
+function refreshTitleCopy(){
+ document.querySelectorAll('#title .bi .en, #title .bi .zh').forEach(el=>{if(el.dataset.raw==null)el.dataset.raw=el.innerHTML;el.innerHTML=N(el.dataset.raw);});
+ const he=document.getElementById('heroEdit');if(he)he.value=HERO;}
+function showTitle(){document.getElementById('namegate').style.display='none';document.getElementById('title').style.display='flex';refreshTitleCopy();document.getElementById('hist').innerHTML=histHtml();}
+function showNameGate(){document.getElementById('title').style.display='none';document.getElementById('namegate').style.display='flex';document.getElementById('nameInput').value=HERO||'Flora';}
+document.getElementById('nameGo').onclick=()=>{setHero(document.getElementById('nameInput').value);showTitle();};
+document.getElementById('heroEdit').onchange=e=>setHero(e.target.value);
+document.getElementById('heroEdit').onkeydown=e=>{if(e.code==='Enter'){e.preventDefault();setHero(e.target.value);}};
 newGame();S.mode='title';loop();document.getElementById('loading').style.display='none';setTimeout(window.__lazyStart,300);
-document.getElementById('lskip').onclick=closeLetter;document.getElementById('llang').onclick=e=>{lLang=lLang==='zh'?'en':'zh';e.target.textContent=lLang==='zh'?'EN':'中文';const shown=[...document.querySelectorAll('#ltext .lp')].map(p=>p.style.opacity==='1');renderLetter(false);document.querySelectorAll('#ltext .lp').forEach((p,i)=>{if(shown[i])p.style.opacity=1;});};
-document.getElementById('hist').innerHTML=histHtml();const qualEl=document.getElementById('qual');qualEl.value=window.__TIER;async function swapAudioPack(tier){const pack=tier==='smooth'?window.__AUD_LITE:window.__AUD_FULL;if(!pack)return;const jobs=[];for(const k in pack){const a=snd[k];if(!a)continue;const url=pack[k];if(!url)continue;const abs=new URL(url,location.href).href;if(a.src===abs)continue;const was=!a.paused&&!a.ended;const t0=a.currentTime;const loop=a.loop;const vol=a.volume;if(!was){a.src=url;a.loop=loop;a.volume=vol;continue;}jobs.push((async()=>{try{a.pause();}catch(e){}const n=new Audio();n.preload='auto';n.loop=loop;n.volume=vol;n.src=url;await new Promise((res,rej)=>{n.oncanplaythrough=()=>res();n.onerror=()=>res();setTimeout(res,8000);});snd[k]=n;if(window.__snd)window.__snd[k]=n;await new Promise(res=>{const done=()=>res();n.addEventListener('seeked',done,{once:true});try{n.currentTime=t0;}catch(e){}setTimeout(done,400);});if(was)await n.play().catch(()=>{});})());}await Promise.all(jobs);}qualEl.onchange=async e=>{const t=e.target.value;localStorage.flora_tier=t;window.__TIER=t;await swapAudioPack(t);const hint=document.getElementById('qualhint');if(t!==BOOT_TIER){hint.textContent='画质将在开始冒险时切换';}else{hint.textContent='';}};document.getElementById('start').onclick=()=>{const want=localStorage.flora_tier||window.__TIER;if(want!==BOOT_TIER){sessionStorage.flora_autostart='1';location.reload();return;}document.getElementById('title').style.display='none';newGame();intro();};if(sessionStorage.flora_autostart==='1'){sessionStorage.removeItem('flora_autostart');setTimeout(()=>{document.getElementById('title').style.display='none';newGame();intro();},0);}
-/* start wired with quality toggle */
+if(store.get('hero_set',false))showTitle();else showNameGate();
+
+document.getElementById('lskip').onclick=closeLetter;const _ll=document.getElementById('llang');if(_ll)_ll.style.display='none';
+document.getElementById('hist').innerHTML=histHtml();const qualEl=document.getElementById('qual');if(qualEl){qualEl.value=window.__TIER;async function swapAudioPack(tier){const pack=tier==='smooth'?window.__AUD_LITE:window.__AUD_FULL;if(!pack)return;const jobs=[];for(const k in pack){const a=snd[k];if(!a)continue;const url=pack[k];if(!url)continue;const abs=new URL(url,location.href).href;if(a.src===abs)continue;const was=!a.paused&&!a.ended;const t0=a.currentTime;const loop=a.loop;const vol=a.volume;if(!was){a.src=url;a.loop=loop;a.volume=vol;continue;}jobs.push((async()=>{try{a.pause();}catch(e){}const n=new Audio();n.preload='auto';n.loop=loop;n.volume=vol;n.src=url;await new Promise((res)=>{n.oncanplaythrough=()=>res();n.onerror=()=>res();setTimeout(res,8000);});snd[k]=n;if(window.__snd)window.__snd[k]=n;await new Promise(res=>{const done=()=>res();n.addEventListener('seeked',done,{once:true});try{n.currentTime=t0;}catch(e){}setTimeout(done,400);});if(was)await n.play().catch(()=>{});})());}await Promise.all(jobs);}qualEl.onchange=async e=>{const t=e.target.value;localStorage.flora_tier=t;window.__TIER=t;await swapAudioPack(t);const hint=document.getElementById('qualhint');if(hint){if(t!==BOOT_TIER)hint.textContent='Graphics apply on Start / 画质将在开始冒险时切换';else hint.textContent='';}};const _start=document.getElementById('start');const _prevStart=_start.onclick;_start.onclick=()=>{setHero(document.getElementById('heroEdit').value);const want=localStorage.flora_tier||window.__TIER;if(want!==BOOT_TIER){sessionStorage.flora_autostart='1';location.reload();return;}document.getElementById('title').style.display='none';newGame();intro();};if(sessionStorage.flora_autostart==='1'){sessionStorage.removeItem('flora_autostart');setTimeout(()=>{document.getElementById('namegate').style.display='none';document.getElementById('title').style.display='none';newGame();intro();},0);}}
+/* start wired with quality + hero */
 {const fb=document.getElementById('fb');if(FEEDBACK_URL){fb.style.display='block';fb.onclick=()=>window.open(FEEDBACK_URL,'_blank','noopener');}}
 document.getElementById('again').onclick=()=>{document.getElementById('end').style.display='none';newGame();intro();};
 </script></body></html>
