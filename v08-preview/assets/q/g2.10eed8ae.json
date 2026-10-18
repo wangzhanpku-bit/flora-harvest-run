@@ -1,0 +1,1627 @@
+{
+ "grade": 2,
+ "version": 1,
+ "curriculum": "BC Grade 2 Math, Science, Social Studies + farm + capybara facts",
+ "fields": "same format as questions_v6.json; {name} = player name; display English on top, Chinese below; corn_maze has ≤3 choices for left/middle/right forks; maze signs use sign_en/sign_zh; img = picture shown with the question (file name in /workspace/v09_art/quiz_icons/, no extension); fall back to text if missing; choice_imgs = one picture per choice, same order as choices (only when every choice has a picture)",
+ "questions": [
+  {
+   "id": "g2_001",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 19 corn cobs and gets 27 more. How many now?",
+   "q_zh": "{name} 有 19 根玉米，又拿到 27 根，现在有几根？",
+   "choices": [
+    "46",
+    "41",
+    "56",
+    "54"
+   ],
+   "choices_zh": [
+    "46",
+    "41",
+    "56",
+    "54"
+   ],
+   "answer": 0,
+   "explain_en": "19 + 27 = 46.",
+   "explain_zh": "19+27=46。",
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_002",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 46 corn cobs and gets 7 more. How many now?",
+   "q_zh": "{name} 有 46 根玉米，又拿到 7 根，现在有几根？",
+   "choices": [
+    "50",
+    "58",
+    "53",
+    "56"
+   ],
+   "choices_zh": [
+    "50",
+    "58",
+    "53",
+    "56"
+   ],
+   "answer": 2,
+   "explain_en": "46 + 7 = 53.",
+   "explain_zh": "46+7=53。",
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_003",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 54 corn cobs and gets 16 more. How many now?",
+   "q_zh": "{name} 有 54 根玉米，又拿到 16 根，现在有几根？",
+   "choices": [
+    "70",
+    "64",
+    "67"
+   ],
+   "choices_zh": [
+    "70",
+    "64",
+    "67"
+   ],
+   "answer": 0,
+   "explain_en": "54 + 16 = 70.",
+   "explain_zh": "54+16=70。",
+   "sign_en": [
+    "70",
+    "64",
+    "67"
+   ],
+   "sign_zh": [
+    "70",
+    "64",
+    "67"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_004",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 52 corn cobs and gets 9 more. How many now?",
+   "q_zh": "{name} 有 52 根玉米，又拿到 9 根，现在有几根？",
+   "choices": [
+    "53",
+    "61",
+    "62",
+    "71"
+   ],
+   "choices_zh": [
+    "53",
+    "61",
+    "62",
+    "71"
+   ],
+   "answer": 1,
+   "explain_en": "52 + 9 = 61.",
+   "explain_zh": "52+9=61。",
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_005",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 42 corn cobs and gets 32 more. How many now?",
+   "q_zh": "{name} 有 42 根玉米，又拿到 32 根，现在有几根？",
+   "choices": [
+    "69",
+    "74",
+    "77"
+   ],
+   "choices_zh": [
+    "69",
+    "74",
+    "77"
+   ],
+   "answer": 1,
+   "explain_en": "42 + 32 = 74.",
+   "explain_zh": "42+32=74。",
+   "sign_en": [
+    "69",
+    "74",
+    "77"
+   ],
+   "sign_zh": [
+    "69",
+    "74",
+    "77"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_006",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 50 corn cobs and gets 23 more. How many now?",
+   "q_zh": "{name} 有 50 根玉米，又拿到 23 根，现在有几根？",
+   "choices": [
+    "73",
+    "83",
+    "81"
+   ],
+   "choices_zh": [
+    "73",
+    "83",
+    "81"
+   ],
+   "answer": 0,
+   "explain_en": "50 + 23 = 73.",
+   "explain_zh": "50+23=73。",
+   "sign_en": [
+    "73",
+    "83",
+    "81"
+   ],
+   "sign_zh": [
+    "73",
+    "83",
+    "81"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_007",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 50 corn cobs and gets 39 more. How many now?",
+   "q_zh": "{name} 有 50 根玉米，又拿到 39 根，现在有几根？",
+   "choices": [
+    "85",
+    "89",
+    "92"
+   ],
+   "choices_zh": [
+    "85",
+    "89",
+    "92"
+   ],
+   "answer": 1,
+   "explain_en": "50 + 39 = 89.",
+   "explain_zh": "50+39=89。",
+   "sign_en": [
+    "85",
+    "89",
+    "92"
+   ],
+   "sign_zh": [
+    "85",
+    "89",
+    "92"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_008",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 44 corn cobs and gets 28 more. How many now?",
+   "q_zh": "{name} 有 44 根玉米，又拿到 28 根，现在有几根？",
+   "choices": [
+    "75",
+    "72",
+    "78",
+    "65"
+   ],
+   "choices_zh": [
+    "75",
+    "72",
+    "78",
+    "65"
+   ],
+   "answer": 1,
+   "explain_en": "44 + 28 = 72.",
+   "explain_zh": "44+28=72。",
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_009",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 59 corn cobs and gets 38 more. How many now?",
+   "q_zh": "{name} 有 59 根玉米，又拿到 38 根，现在有几根？",
+   "choices": [
+    "101",
+    "95",
+    "97"
+   ],
+   "choices_zh": [
+    "101",
+    "95",
+    "97"
+   ],
+   "answer": 2,
+   "explain_en": "59 + 38 = 97.",
+   "explain_zh": "59+38=97。",
+   "sign_en": [
+    "101",
+    "95",
+    "97"
+   ],
+   "sign_zh": [
+    "101",
+    "95",
+    "97"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_010",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 24 corn cobs and gets 38 more. How many now?",
+   "q_zh": "{name} 有 24 根玉米，又拿到 38 根，现在有几根？",
+   "choices": [
+    "72",
+    "68",
+    "62"
+   ],
+   "choices_zh": [
+    "72",
+    "68",
+    "62"
+   ],
+   "answer": 2,
+   "explain_en": "24 + 38 = 62.",
+   "explain_zh": "24+38=62。",
+   "sign_en": [
+    "72",
+    "68",
+    "62"
+   ],
+   "sign_zh": [
+    "72",
+    "68",
+    "62"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_011",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 27 corn cobs and gets 14 more. How many now?",
+   "q_zh": "{name} 有 27 根玉米，又拿到 14 根，现在有几根？",
+   "choices": [
+    "41",
+    "35",
+    "34",
+    "31"
+   ],
+   "choices_zh": [
+    "41",
+    "35",
+    "34",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "27 + 14 = 41.",
+   "explain_zh": "27+14=41。",
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_012",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 27 corn cobs and gets 33 more. How many now?",
+   "q_zh": "{name} 有 27 根玉米，又拿到 33 根，现在有几根？",
+   "choices": [
+    "56",
+    "64",
+    "60"
+   ],
+   "choices_zh": [
+    "56",
+    "64",
+    "60"
+   ],
+   "answer": 2,
+   "explain_en": "27 + 33 = 60.",
+   "explain_zh": "27+33=60。",
+   "sign_en": [
+    "56",
+    "64",
+    "60"
+   ],
+   "sign_zh": [
+    "56",
+    "64",
+    "60"
+   ],
+   "img": "corn_cob"
+  },
+  {
+   "id": "g2_013",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 54 pumpkins and sold 34. How many are left?",
+   "q_zh": "农场有 54 个南瓜，卖掉 34 个，还剩几个？",
+   "choices": [
+    "20",
+    "12",
+    "18",
+    "17"
+   ],
+   "choices_zh": [
+    "20",
+    "12",
+    "18",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "54 − 34 = 20.",
+   "explain_zh": "54−34=20。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_014",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 90 pumpkins and sold 22. How many are left?",
+   "q_zh": "农场有 90 个南瓜，卖掉 22 个，还剩几个？",
+   "choices": [
+    "68",
+    "66",
+    "65",
+    "72"
+   ],
+   "choices_zh": [
+    "68",
+    "66",
+    "65",
+    "72"
+   ],
+   "answer": 0,
+   "explain_en": "90 − 22 = 68.",
+   "explain_zh": "90−22=68。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_015",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 60 pumpkins and sold 50. How many are left?",
+   "q_zh": "农场有 60 个南瓜，卖掉 50 个，还剩几个？",
+   "choices": [
+    "2",
+    "16",
+    "3",
+    "10"
+   ],
+   "choices_zh": [
+    "2",
+    "16",
+    "3",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "60 − 50 = 10.",
+   "explain_zh": "60−50=10。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_016",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 50 pumpkins and sold 16. How many are left?",
+   "q_zh": "农场有 50 个南瓜，卖掉 16 个，还剩几个？",
+   "choices": [
+    "30",
+    "34",
+    "28",
+    "39"
+   ],
+   "choices_zh": [
+    "30",
+    "34",
+    "28",
+    "39"
+   ],
+   "answer": 1,
+   "explain_en": "50 − 16 = 34.",
+   "explain_zh": "50−16=34。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_017",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 73 pumpkins and sold 39. How many are left?",
+   "q_zh": "农场有 73 个南瓜，卖掉 39 个，还剩几个？",
+   "choices": [
+    "39",
+    "28",
+    "31",
+    "34"
+   ],
+   "choices_zh": [
+    "39",
+    "28",
+    "31",
+    "34"
+   ],
+   "answer": 3,
+   "explain_en": "73 − 39 = 34.",
+   "explain_zh": "73−39=34。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_018",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 49 pumpkins and sold 35. How many are left?",
+   "q_zh": "农场有 49 个南瓜，卖掉 35 个，还剩几个？",
+   "choices": [
+    "6",
+    "10",
+    "14",
+    "22"
+   ],
+   "choices_zh": [
+    "6",
+    "10",
+    "14",
+    "22"
+   ],
+   "answer": 2,
+   "explain_en": "49 − 35 = 14.",
+   "explain_zh": "49−35=14。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_019",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 94 pumpkins and sold 66. How many are left?",
+   "q_zh": "农场有 94 个南瓜，卖掉 66 个，还剩几个？",
+   "choices": [
+    "26",
+    "28",
+    "21",
+    "34"
+   ],
+   "choices_zh": [
+    "26",
+    "28",
+    "21",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "94 − 66 = 28.",
+   "explain_zh": "94−66=28。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_020",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 43 pumpkins and sold 8. How many are left?",
+   "q_zh": "农场有 43 个南瓜，卖掉 8 个，还剩几个？",
+   "choices": [
+    "29",
+    "27",
+    "35",
+    "30"
+   ],
+   "choices_zh": [
+    "29",
+    "27",
+    "35",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "43 − 8 = 35.",
+   "explain_zh": "43−8=35。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_021",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 47 pumpkins and sold 26. How many are left?",
+   "q_zh": "农场有 47 个南瓜，卖掉 26 个，还剩几个？",
+   "choices": [
+    "19",
+    "21",
+    "23"
+   ],
+   "choices_zh": [
+    "19",
+    "21",
+    "23"
+   ],
+   "answer": 1,
+   "explain_en": "47 − 26 = 21.",
+   "explain_zh": "47−26=21。",
+   "sign_en": [
+    "19",
+    "21",
+    "23"
+   ],
+   "sign_zh": [
+    "19",
+    "21",
+    "23"
+   ],
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_022",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The farm had 80 pumpkins and sold 18. How many are left?",
+   "q_zh": "农场有 80 个南瓜，卖掉 18 个，还剩几个？",
+   "choices": [
+    "64",
+    "63",
+    "68",
+    "62"
+   ],
+   "choices_zh": [
+    "64",
+    "63",
+    "68",
+    "62"
+   ],
+   "answer": 3,
+   "explain_en": "80 − 18 = 62.",
+   "explain_zh": "80−18=62。",
+   "img": "pumpkin"
+  },
+  {
+   "id": "g2_023",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 24, 34, 44, 54, …",
+   "q_zh": "下一个数是？24、34、44、54……",
+   "choices": [
+    "61",
+    "64",
+    "65"
+   ],
+   "choices_zh": [
+    "61",
+    "64",
+    "65"
+   ],
+   "answer": 1,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "sign_en": [
+    "61",
+    "64",
+    "65"
+   ],
+   "sign_zh": [
+    "61",
+    "64",
+    "65"
+   ]
+  },
+  {
+   "id": "g2_024",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 1, 6, 11, 16, …",
+   "q_zh": "下一个数是？1、6、11、16……",
+   "choices": [
+    "21",
+    "18",
+    "24"
+   ],
+   "choices_zh": [
+    "21",
+    "18",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "Add 5 each time.",
+   "explain_zh": "每次加 5。",
+   "sign_en": [
+    "21",
+    "18",
+    "24"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "24"
+   ]
+  },
+  {
+   "id": "g2_025",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 26, 36, 46, 56, …",
+   "q_zh": "下一个数是？26、36、46、56……",
+   "choices": [
+    "65",
+    "66",
+    "69"
+   ],
+   "choices_zh": [
+    "65",
+    "66",
+    "69"
+   ],
+   "answer": 1,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "sign_en": [
+    "65",
+    "66",
+    "69"
+   ],
+   "sign_zh": [
+    "65",
+    "66",
+    "69"
+   ]
+  },
+  {
+   "id": "g2_026",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 3, 13, 23, 33, …",
+   "q_zh": "下一个数是？3、13、23、33……",
+   "choices": [
+    "46",
+    "45",
+    "43"
+   ],
+   "choices_zh": [
+    "46",
+    "45",
+    "43"
+   ],
+   "answer": 2,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "sign_en": [
+    "46",
+    "45",
+    "43"
+   ],
+   "sign_zh": [
+    "46",
+    "45",
+    "43"
+   ]
+  },
+  {
+   "id": "g2_027",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 17, 19, 21, 23, …",
+   "q_zh": "下一个数是？17、19、21、23……",
+   "choices": [
+    "23",
+    "27",
+    "25"
+   ],
+   "choices_zh": [
+    "23",
+    "27",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "Add 2 each time.",
+   "explain_zh": "每次加 2。",
+   "sign_en": [
+    "23",
+    "27",
+    "25"
+   ],
+   "sign_zh": [
+    "23",
+    "27",
+    "25"
+   ]
+  },
+  {
+   "id": "g2_028",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 19, 24, 29, 34, …",
+   "q_zh": "下一个数是？19、24、29、34……",
+   "choices": [
+    "42",
+    "39",
+    "37"
+   ],
+   "choices_zh": [
+    "42",
+    "39",
+    "37"
+   ],
+   "answer": 1,
+   "explain_en": "Add 5 each time.",
+   "explain_zh": "每次加 5。",
+   "sign_en": [
+    "42",
+    "39",
+    "37"
+   ],
+   "sign_zh": [
+    "42",
+    "39",
+    "37"
+   ]
+  },
+  {
+   "id": "g2_029",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 838 or 559?",
+   "q_zh": "838 和 559 哪个大？",
+   "choices": [
+    "838",
+    "559"
+   ],
+   "choices_zh": [
+    "838",
+    "559"
+   ],
+   "answer": 0,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "838",
+    "559"
+   ],
+   "sign_zh": [
+    "838",
+    "559"
+   ]
+  },
+  {
+   "id": "g2_030",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 928 or 299?",
+   "q_zh": "928 和 299 哪个大？",
+   "choices": [
+    "299",
+    "928"
+   ],
+   "choices_zh": [
+    "299",
+    "928"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "299",
+    "928"
+   ],
+   "sign_zh": [
+    "299",
+    "928"
+   ]
+  },
+  {
+   "id": "g2_031",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 351 or 439?",
+   "q_zh": "351 和 439 哪个大？",
+   "choices": [
+    "439",
+    "351"
+   ],
+   "choices_zh": [
+    "439",
+    "351"
+   ],
+   "answer": 0,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "439",
+    "351"
+   ],
+   "sign_zh": [
+    "439",
+    "351"
+   ]
+  },
+  {
+   "id": "g2_032",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 953 or 705?",
+   "q_zh": "953 和 705 哪个大？",
+   "choices": [
+    "953",
+    "705"
+   ],
+   "choices_zh": [
+    "953",
+    "705"
+   ],
+   "answer": 0,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "953",
+    "705"
+   ],
+   "sign_zh": [
+    "953",
+    "705"
+   ]
+  },
+  {
+   "id": "g2_033",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 814 or 768?",
+   "q_zh": "814 和 768 哪个大？",
+   "choices": [
+    "814",
+    "768"
+   ],
+   "choices_zh": [
+    "814",
+    "768"
+   ],
+   "answer": 0,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "814",
+    "768"
+   ],
+   "sign_zh": [
+    "814",
+    "768"
+   ]
+  },
+  {
+   "id": "g2_034",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 491 or 249?",
+   "q_zh": "491 和 249 哪个大？",
+   "choices": [
+    "249",
+    "491"
+   ],
+   "choices_zh": [
+    "249",
+    "491"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the biggest place first.",
+   "explain_zh": "先比最高位。",
+   "sign_en": [
+    "249",
+    "491"
+   ],
+   "sign_zh": [
+    "249",
+    "491"
+   ]
+  },
+  {
+   "id": "g2_035",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 4 nickels?",
+   "q_zh": "4 个5 分硬币一共几分钱？",
+   "choices": [
+    "10¢",
+    "20¢",
+    "19¢",
+    "21¢"
+   ],
+   "choices_zh": [
+    "10 分",
+    "20 分",
+    "19 分",
+    "21 分"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 5¢ = 20¢.",
+   "explain_zh": "4×5 分=20 分。",
+   "img": "coin_5c"
+  },
+  {
+   "id": "g2_036",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 2 nickels?",
+   "q_zh": "2 个5 分硬币一共几分钱？",
+   "choices": [
+    "6¢",
+    "10¢",
+    "13¢",
+    "7¢"
+   ],
+   "choices_zh": [
+    "6 分",
+    "10 分",
+    "13 分",
+    "7 分"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 5¢ = 10¢.",
+   "explain_zh": "2×5 分=10 分。",
+   "img": "coin_5c"
+  },
+  {
+   "id": "g2_037",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 2 nickels?",
+   "q_zh": "2 个5 分硬币一共几分钱？",
+   "choices": [
+    "9¢",
+    "20¢",
+    "17¢",
+    "10¢"
+   ],
+   "choices_zh": [
+    "9 分",
+    "20 分",
+    "17 分",
+    "10 分"
+   ],
+   "answer": 3,
+   "explain_en": "2 × 5¢ = 10¢.",
+   "explain_zh": "2×5 分=10 分。",
+   "img": "coin_5c"
+  },
+  {
+   "id": "g2_038",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 3 dimes?",
+   "q_zh": "3 个10 分硬币一共几分钱？",
+   "choices": [
+    "30¢",
+    "36¢",
+    "32¢",
+    "20¢"
+   ],
+   "choices_zh": [
+    "30 分",
+    "36 分",
+    "32 分",
+    "20 分"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 10¢ = 30¢.",
+   "explain_zh": "3×10 分=30 分。",
+   "img": "coin_10c"
+  },
+  {
+   "id": "g2_039",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 4 nickels?",
+   "q_zh": "4 个5 分硬币一共几分钱？",
+   "choices": [
+    "18¢",
+    "22¢",
+    "20¢",
+    "17¢"
+   ],
+   "choices_zh": [
+    "18 分",
+    "22 分",
+    "20 分",
+    "17 分"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 5¢ = 20¢.",
+   "explain_zh": "4×5 分=20 分。",
+   "img": "coin_5c"
+  },
+  {
+   "id": "g2_040",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "How many cents are 3 quarters?",
+   "q_zh": "3 个25 分硬币一共几分钱？",
+   "choices": [
+    "75¢",
+    "77¢",
+    "78¢",
+    "70¢"
+   ],
+   "choices_zh": [
+    "75 分",
+    "77 分",
+    "78 分",
+    "70 分"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 25¢ = 75¢.",
+   "explain_zh": "3×25 分=75 分。",
+   "img": "coin_25c"
+  },
+  {
+   "id": "g2_041",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The hayride leaves at 3:00 and the ride is 30 minutes. When does it end?",
+   "q_zh": "干草车 3:00 出发，坐 30 分钟，几点结束？",
+   "choices": [
+    "3:30",
+    "4:30",
+    "4:00"
+   ],
+   "choices_zh": [
+    "3:30",
+    "4:30",
+    "4:00"
+   ],
+   "answer": 0,
+   "explain_en": "3:00 + 30 min = 3:30.",
+   "explain_zh": "3:00 再过 30 分钟是 3:30。",
+   "sign_en": [
+    "3:30",
+    "4:30",
+    "4:00"
+   ],
+   "sign_zh": [
+    "3:30",
+    "4:30",
+    "4:00"
+   ]
+  },
+  {
+   "id": "g2_042",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The hayride leaves at 3:00 and the ride is 30 minutes. When does it end?",
+   "q_zh": "干草车 3:00 出发，坐 30 分钟，几点结束？",
+   "choices": [
+    "3:30",
+    "4:00",
+    "4:30",
+    "3:15"
+   ],
+   "choices_zh": [
+    "3:30",
+    "4:00",
+    "4:30",
+    "3:15"
+   ],
+   "answer": 0,
+   "explain_en": "3:00 + 30 min = 3:30.",
+   "explain_zh": "3:00 再过 30 分钟是 3:30。"
+  },
+  {
+   "id": "g2_043",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The hayride leaves at 3:00 and the ride is 30 minutes. When does it end?",
+   "q_zh": "干草车 3:00 出发，坐 30 分钟，几点结束？",
+   "choices": [
+    "4:00",
+    "4:30",
+    "3:15",
+    "3:30"
+   ],
+   "choices_zh": [
+    "4:00",
+    "4:30",
+    "3:15",
+    "3:30"
+   ],
+   "answer": 3,
+   "explain_en": "3:00 + 30 min = 3:30.",
+   "explain_zh": "3:00 再过 30 分钟是 3:30。"
+  },
+  {
+   "id": "g2_044",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The hayride leaves at 4:00 and the ride is 30 minutes. When does it end?",
+   "q_zh": "干草车 4:00 出发，坐 30 分钟，几点结束？",
+   "choices": [
+    "4:30",
+    "5:00",
+    "4:15",
+    "5:30"
+   ],
+   "choices_zh": [
+    "4:30",
+    "5:00",
+    "4:15",
+    "5:30"
+   ],
+   "answer": 0,
+   "explain_en": "4:00 + 30 min = 4:30.",
+   "explain_zh": "4:00 再过 30 分钟是 4:30。"
+  },
+  {
+   "id": "g2_045",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What grows into a pumpkin plant?",
+   "q_zh": "什么会长成南瓜苗？",
+   "choices": [
+    "A worm",
+    "A seed",
+    "A leaf",
+    "A rock"
+   ],
+   "choices_zh": [
+    "虫子",
+    "种子",
+    "叶子",
+    "石头"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkin seeds sprout into plants.",
+   "explain_zh": "南瓜籽会发芽长成南瓜苗。",
+   "img": "pumpkin",
+   "choice_imgs": [
+    "worm",
+    "seed",
+    "leaf",
+    "rock"
+   ]
+  },
+  {
+   "id": "g2_046",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A baby horse is called a…",
+   "q_zh": "小马叫什么？",
+   "choices": [
+    "Foal",
+    "Calf",
+    "Lamb"
+   ],
+   "choices_zh": [
+    "马驹",
+    "牛犊",
+    "羊羔"
+   ],
+   "answer": 0,
+   "explain_en": "A baby horse is a foal.",
+   "explain_zh": "小马叫马驹。",
+   "sign_en": [
+    "Foal",
+    "Calf",
+    "Lamb"
+   ],
+   "sign_zh": [
+    "马驹",
+    "牛犊",
+    "羊羔"
+   ],
+   "img": "pony",
+   "choice_imgs": [
+    "foal",
+    "calf",
+    "lamb"
+   ]
+  },
+  {
+   "id": "g2_047",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A baby sheep is called a…",
+   "q_zh": "小羊叫什么？",
+   "choices": [
+    "Kitten",
+    "Lamb",
+    "Chick",
+    "Piglet"
+   ],
+   "choices_zh": [
+    "小猫",
+    "羊羔",
+    "小鸡",
+    "小猪"
+   ],
+   "answer": 1,
+   "explain_en": "A baby sheep is a lamb.",
+   "explain_zh": "小羊叫羊羔。",
+   "img": "lamb",
+   "choice_imgs": [
+    "kitten",
+    "lamb",
+    "chick",
+    "piglet"
+   ]
+  },
+  {
+   "id": "g2_048",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What happens to water when it gets very cold?",
+   "q_zh": "水变得很冷会怎样？",
+   "choices": [
+    "It boils",
+    "It burns",
+    "It freezes"
+   ],
+   "choices_zh": [
+    "沸腾",
+    "燃烧",
+    "结冰"
+   ],
+   "answer": 2,
+   "explain_en": "Water freezes into ice.",
+   "explain_zh": "水会冻成冰。",
+   "sign_en": [
+    "It boils",
+    "It burns",
+    "It freezes"
+   ],
+   "sign_zh": [
+    "沸腾",
+    "燃烧",
+    "结冰"
+   ]
+  },
+  {
+   "id": "g2_049",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which part of a plant drinks water from the soil?",
+   "q_zh": "植物哪个部分从土里吸水？",
+   "choices": [
+    "Flowers",
+    "Roots",
+    "Leaves",
+    "Fruit"
+   ],
+   "choices_zh": [
+    "花",
+    "根",
+    "叶子",
+    "果实"
+   ],
+   "answer": 1,
+   "explain_en": "Roots take in water.",
+   "explain_zh": "根负责吸水。",
+   "choice_imgs": [
+    "flowers",
+    "roots",
+    "leaf",
+    "fruit"
+   ]
+  },
+  {
+   "id": "g2_050",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which animal hatches from an egg?",
+   "q_zh": "哪种动物是从蛋里孵出来的？",
+   "choices": [
+    "Cow",
+    "Duck",
+    "Pig"
+   ],
+   "choices_zh": [
+    "牛",
+    "鸭子",
+    "猪"
+   ],
+   "answer": 1,
+   "explain_en": "Birds hatch from eggs.",
+   "explain_zh": "鸟是从蛋里孵出来的。",
+   "sign_en": [
+    "Cow",
+    "Duck",
+    "Pig"
+   ],
+   "sign_zh": [
+    "牛",
+    "鸭子",
+    "猪"
+   ],
+   "choice_imgs": [
+    "cow",
+    "duck",
+    "pig"
+   ]
+  },
+  {
+   "id": "g2_051",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "Which ocean is next to Vancouver?",
+   "q_zh": "温哥华旁边是哪个大洋？",
+   "choices": [
+    "Pacific",
+    "Arctic",
+    "Atlantic",
+    "Indian"
+   ],
+   "choices_zh": [
+    "太平洋",
+    "北冰洋",
+    "大西洋",
+    "印度洋"
+   ],
+   "answer": 0,
+   "explain_en": "Vancouver is on the Pacific coast.",
+   "explain_zh": "温哥华在太平洋海岸。"
+  },
+  {
+   "id": "g2_052",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "Who grows the food we eat?",
+   "q_zh": "我们吃的食物是谁种的？",
+   "choices": [
+    "Pilots",
+    "Farmers",
+    "Dentists"
+   ],
+   "choices_zh": [
+    "飞行员",
+    "农民",
+    "牙医"
+   ],
+   "answer": 1,
+   "explain_en": "Farmers grow fruits and vegetables.",
+   "explain_zh": "农民种水果和蔬菜。",
+   "sign_en": [
+    "Pilots",
+    "Farmers",
+    "Dentists"
+   ],
+   "sign_zh": [
+    "飞行员",
+    "农民",
+    "牙医"
+   ],
+   "choice_imgs": [
+    "pilot",
+    "farmer",
+    "dentist"
+   ]
+  },
+  {
+   "id": "g2_053",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "easy",
+   "q_en": "What do bees make?",
+   "q_zh": "蜜蜂会做什么？",
+   "choices": [
+    "Eggs",
+    "Honey",
+    "Wool",
+    "Milk"
+   ],
+   "choices_zh": [
+    "鸡蛋",
+    "蜂蜜",
+    "羊毛",
+    "牛奶"
+   ],
+   "answer": 1,
+   "explain_en": "Bees make honey from flowers.",
+   "explain_zh": "蜜蜂用花蜜做蜂蜜。",
+   "img": "bee_and_honey",
+   "choice_imgs": [
+    "egg",
+    "bee_and_honey",
+    "wool",
+    "milk"
+   ]
+  },
+  {
+   "id": "g2_054",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "easy",
+   "q_en": "Wool comes from…",
+   "q_zh": "羊毛来自哪里？",
+   "choices": [
+    "Ducks",
+    "Chickens",
+    "Sheep"
+   ],
+   "choices_zh": [
+    "鸭子",
+    "鸡",
+    "羊"
+   ],
+   "answer": 2,
+   "explain_en": "Sheep grow wool.",
+   "explain_zh": "羊身上长羊毛。",
+   "sign_en": [
+    "Ducks",
+    "Chickens",
+    "Sheep"
+   ],
+   "sign_zh": [
+    "鸭子",
+    "鸡",
+    "羊"
+   ],
+   "choice_imgs": [
+    "duck",
+    "hen",
+    "sheep"
+   ]
+  },
+  {
+   "id": "g2_055",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the water",
+    "Up a tree",
+    "In the snow"
+   ],
+   "choices_zh": [
+    "在水里",
+    "树上",
+    "雪地里"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。"
+  },
+  {
+   "id": "g2_056",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Grass",
+    "Candy",
+    "Fish"
+   ],
+   "choices_zh": [
+    "草",
+    "糖果",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "They are plant eaters.",
+   "explain_zh": "它们只吃植物。",
+   "sign_en": [
+    "Grass",
+    "Candy",
+    "Fish"
+   ],
+   "sign_zh": [
+    "草",
+    "糖果",
+    "鱼"
+   ],
+   "choice_imgs": [
+    "grass",
+    "candy",
+    "fish"
+   ]
+  },
+  {
+   "id": "g2_057",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Fish",
+    "Insect",
+    "Rodent",
+    "Bird"
+   ],
+   "choices_zh": [
+    "鱼",
+    "昆虫",
+    "啮齿动物",
+    "鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "choice_imgs": [
+    "fish",
+    "insect",
+    "mouse",
+    "bird"
+   ]
+  },
+  {
+   "id": "g2_058",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Australia",
+    "The North Pole",
+    "South America"
+   ],
+   "choices_zh": [
+    "澳大利亚",
+    "北极",
+    "南美洲"
+   ],
+   "answer": 2,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "Australia",
+    "The North Pole",
+    "South America"
+   ],
+   "sign_zh": [
+    "澳大利亚",
+    "北极",
+    "南美洲"
+   ]
+  }
+ ]
+}

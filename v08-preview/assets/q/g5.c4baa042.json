@@ -1,0 +1,1348 @@
+{
+ "grade": 5,
+ "version": 1,
+ "curriculum": "BC Grade 5 Math, Science, Social Studies + farm + capybara facts",
+ "fields": "same format as questions_v6.json; {name} = player name; display English on top, Chinese below; corn_maze has ≤3 choices for left/middle/right forks; maze signs use sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g5_001",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40 crates hold 20 apples each. How many apples?",
+   "q_zh": "40 箱，每箱 20 个苹果，一共几个？",
+   "choices": [
+    "780",
+    "800",
+    "818"
+   ],
+   "choices_zh": [
+    "780",
+    "800",
+    "818"
+   ],
+   "answer": 1,
+   "explain_en": "40 × 20 = 800.",
+   "explain_zh": "40×20=800。",
+   "sign_en": [
+    "780",
+    "800",
+    "818"
+   ],
+   "sign_zh": [
+    "780",
+    "800",
+    "818"
+   ]
+  },
+  {
+   "id": "g5_002",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "39 crates hold 16 apples each. How many apples?",
+   "q_zh": "39 箱，每箱 16 个苹果，一共几个？",
+   "choices": [
+    "630",
+    "610",
+    "624",
+    "613"
+   ],
+   "choices_zh": [
+    "630",
+    "610",
+    "624",
+    "613"
+   ],
+   "answer": 2,
+   "explain_en": "39 × 16 = 624.",
+   "explain_zh": "39×16=624。"
+  },
+  {
+   "id": "g5_003",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "31 crates hold 17 apples each. How many apples?",
+   "q_zh": "31 箱，每箱 17 个苹果，一共几个？",
+   "choices": [
+    "518",
+    "521",
+    "527"
+   ],
+   "choices_zh": [
+    "518",
+    "521",
+    "527"
+   ],
+   "answer": 2,
+   "explain_en": "31 × 17 = 527.",
+   "explain_zh": "31×17=527。",
+   "sign_en": [
+    "518",
+    "521",
+    "527"
+   ],
+   "sign_zh": [
+    "518",
+    "521",
+    "527"
+   ]
+  },
+  {
+   "id": "g5_004",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "38 crates hold 20 apples each. How many apples?",
+   "q_zh": "38 箱，每箱 20 个苹果，一共几个？",
+   "choices": [
+    "760",
+    "763",
+    "766",
+    "751"
+   ],
+   "choices_zh": [
+    "760",
+    "763",
+    "766",
+    "751"
+   ],
+   "answer": 0,
+   "explain_en": "38 × 20 = 760.",
+   "explain_zh": "38×20=760。"
+  },
+  {
+   "id": "g5_005",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "30 crates hold 15 apples each. How many apples?",
+   "q_zh": "30 箱，每箱 15 个苹果，一共几个？",
+   "choices": [
+    "450",
+    "457",
+    "453",
+    "467"
+   ],
+   "choices_zh": [
+    "450",
+    "457",
+    "453",
+    "467"
+   ],
+   "answer": 0,
+   "explain_en": "30 × 15 = 450.",
+   "explain_zh": "30×15=450。"
+  },
+  {
+   "id": "g5_006",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "30 crates hold 13 apples each. How many apples?",
+   "q_zh": "30 箱，每箱 13 个苹果，一共几个？",
+   "choices": [
+    "401",
+    "390",
+    "406",
+    "396"
+   ],
+   "choices_zh": [
+    "401",
+    "390",
+    "406",
+    "396"
+   ],
+   "answer": 1,
+   "explain_en": "30 × 13 = 390.",
+   "explain_zh": "30×13=390。"
+  },
+  {
+   "id": "g5_007",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "29 crates hold 14 apples each. How many apples?",
+   "q_zh": "29 箱，每箱 14 个苹果，一共几个？",
+   "choices": [
+    "406",
+    "426",
+    "397",
+    "389"
+   ],
+   "choices_zh": [
+    "406",
+    "426",
+    "397",
+    "389"
+   ],
+   "answer": 0,
+   "explain_en": "29 × 14 = 406.",
+   "explain_zh": "29×14=406。"
+  },
+  {
+   "id": "g5_008",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "26 crates hold 23 apples each. How many apples?",
+   "q_zh": "26 箱，每箱 23 个苹果，一共几个？",
+   "choices": [
+    "582",
+    "598",
+    "601",
+    "580"
+   ],
+   "choices_zh": [
+    "582",
+    "598",
+    "601",
+    "580"
+   ],
+   "answer": 1,
+   "explain_en": "26 × 23 = 598.",
+   "explain_zh": "26×23=598。"
+  },
+  {
+   "id": "g5_009",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "32 crates hold 25 apples each. How many apples?",
+   "q_zh": "32 箱，每箱 25 个苹果，一共几个？",
+   "choices": [
+    "785",
+    "799",
+    "800"
+   ],
+   "choices_zh": [
+    "785",
+    "799",
+    "800"
+   ],
+   "answer": 2,
+   "explain_en": "32 × 25 = 800.",
+   "explain_zh": "32×25=800。",
+   "sign_en": [
+    "785",
+    "799",
+    "800"
+   ],
+   "sign_zh": [
+    "785",
+    "799",
+    "800"
+   ]
+  },
+  {
+   "id": "g5_010",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "39 crates hold 20 apples each. How many apples?",
+   "q_zh": "39 箱，每箱 20 个苹果，一共几个？",
+   "choices": [
+    "775",
+    "762",
+    "780"
+   ],
+   "choices_zh": [
+    "775",
+    "762",
+    "780"
+   ],
+   "answer": 2,
+   "explain_en": "39 × 20 = 780.",
+   "explain_zh": "39×20=780。",
+   "sign_en": [
+    "775",
+    "762",
+    "780"
+   ],
+   "sign_zh": [
+    "775",
+    "762",
+    "780"
+   ]
+  },
+  {
+   "id": "g5_011",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "436 corn cobs are shared equally by 4 stands. How many each?",
+   "q_zh": "436 根玉米平分给 4 个摊位，每个几根？",
+   "choices": [
+    "109",
+    "105",
+    "114",
+    "108"
+   ],
+   "choices_zh": [
+    "109",
+    "105",
+    "114",
+    "108"
+   ],
+   "answer": 0,
+   "explain_en": "436 ÷ 4 = 109.",
+   "explain_zh": "436÷4=109。"
+  },
+  {
+   "id": "g5_012",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "189 corn cobs are shared equally by 9 stands. How many each?",
+   "q_zh": "189 根玉米平分给 9 个摊位，每个几根？",
+   "choices": [
+    "19",
+    "26",
+    "18",
+    "21"
+   ],
+   "choices_zh": [
+    "19",
+    "26",
+    "18",
+    "21"
+   ],
+   "answer": 3,
+   "explain_en": "189 ÷ 9 = 21.",
+   "explain_zh": "189÷9=21。"
+  },
+  {
+   "id": "g5_013",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "549 corn cobs are shared equally by 9 stands. How many each?",
+   "q_zh": "549 根玉米平分给 9 个摊位，每个几根？",
+   "choices": [
+    "61",
+    "56",
+    "62",
+    "59"
+   ],
+   "choices_zh": [
+    "61",
+    "56",
+    "62",
+    "59"
+   ],
+   "answer": 0,
+   "explain_en": "549 ÷ 9 = 61.",
+   "explain_zh": "549÷9=61。"
+  },
+  {
+   "id": "g5_014",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "510 corn cobs are shared equally by 5 stands. How many each?",
+   "q_zh": "510 根玉米平分给 5 个摊位，每个几根？",
+   "choices": [
+    "98",
+    "101",
+    "102",
+    "100"
+   ],
+   "choices_zh": [
+    "98",
+    "101",
+    "102",
+    "100"
+   ],
+   "answer": 2,
+   "explain_en": "510 ÷ 5 = 102.",
+   "explain_zh": "510÷5=102。"
+  },
+  {
+   "id": "g5_015",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "321 corn cobs are shared equally by 3 stands. How many each?",
+   "q_zh": "321 根玉米平分给 3 个摊位，每个几根？",
+   "choices": [
+    "111",
+    "108",
+    "103",
+    "107"
+   ],
+   "choices_zh": [
+    "111",
+    "108",
+    "103",
+    "107"
+   ],
+   "answer": 3,
+   "explain_en": "321 ÷ 3 = 107.",
+   "explain_zh": "321÷3=107。"
+  },
+  {
+   "id": "g5_016",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "954 corn cobs are shared equally by 9 stands. How many each?",
+   "q_zh": "954 根玉米平分给 9 个摊位，每个几根？",
+   "choices": [
+    "106",
+    "103",
+    "101"
+   ],
+   "choices_zh": [
+    "106",
+    "103",
+    "101"
+   ],
+   "answer": 0,
+   "explain_en": "954 ÷ 9 = 106.",
+   "explain_zh": "954÷9=106。",
+   "sign_en": [
+    "106",
+    "103",
+    "101"
+   ],
+   "sign_zh": [
+    "106",
+    "103",
+    "101"
+   ]
+  },
+  {
+   "id": "g5_017",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "336 corn cobs are shared equally by 8 stands. How many each?",
+   "q_zh": "336 根玉米平分给 8 个摊位，每个几根？",
+   "choices": [
+    "38",
+    "47",
+    "40",
+    "42"
+   ],
+   "choices_zh": [
+    "38",
+    "47",
+    "40",
+    "42"
+   ],
+   "answer": 3,
+   "explain_en": "336 ÷ 8 = 42.",
+   "explain_zh": "336÷8=42。"
+  },
+  {
+   "id": "g5_018",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "576 corn cobs are shared equally by 6 stands. How many each?",
+   "q_zh": "576 根玉米平分给 6 个摊位，每个几根？",
+   "choices": [
+    "96",
+    "100",
+    "98",
+    "92"
+   ],
+   "choices_zh": [
+    "96",
+    "100",
+    "98",
+    "92"
+   ],
+   "answer": 0,
+   "explain_en": "576 ÷ 6 = 96.",
+   "explain_zh": "576÷6=96。"
+  },
+  {
+   "id": "g5_019",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 3.61 kg and a squash 1.40 kg. Total weight?",
+   "q_zh": "南瓜 3.61 公斤，小南瓜 1.40 公斤，一共多重？",
+   "choices": [
+    "5.01 kg",
+    "6.01 kg",
+    "5.11 kg"
+   ],
+   "choices_zh": [
+    "5.01 公斤",
+    "6.01 公斤",
+    "5.11 公斤"
+   ],
+   "answer": 0,
+   "explain_en": "3.61 + 1.40 = 5.01.",
+   "explain_zh": "3.61+1.40=5.01。",
+   "sign_en": [
+    "5.01 kg",
+    "6.01 kg",
+    "5.11 kg"
+   ],
+   "sign_zh": [
+    "5.01kg",
+    "6.01kg",
+    "5.11kg"
+   ]
+  },
+  {
+   "id": "g5_020",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 3.73 kg and a squash 3.89 kg. Total weight?",
+   "q_zh": "南瓜 3.73 公斤，小南瓜 3.89 公斤，一共多重？",
+   "choices": [
+    "8.62 kg",
+    "7.62 kg",
+    "7.61 kg",
+    "7.72 kg"
+   ],
+   "choices_zh": [
+    "8.62 公斤",
+    "7.62 公斤",
+    "7.61 公斤",
+    "7.72 公斤"
+   ],
+   "answer": 1,
+   "explain_en": "3.73 + 3.89 = 7.62.",
+   "explain_zh": "3.73+3.89=7.62。"
+  },
+  {
+   "id": "g5_021",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 1.53 kg and a squash 3.69 kg. Total weight?",
+   "q_zh": "南瓜 1.53 公斤，小南瓜 3.69 公斤，一共多重？",
+   "choices": [
+    "6.22 kg",
+    "5.21 kg",
+    "5.32 kg",
+    "5.22 kg"
+   ],
+   "choices_zh": [
+    "6.22 公斤",
+    "5.21 公斤",
+    "5.32 公斤",
+    "5.22 公斤"
+   ],
+   "answer": 3,
+   "explain_en": "1.53 + 3.69 = 5.22.",
+   "explain_zh": "1.53+3.69=5.22。"
+  },
+  {
+   "id": "g5_022",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 3.18 kg and a squash 3.60 kg. Total weight?",
+   "q_zh": "南瓜 3.18 公斤，小南瓜 3.60 公斤，一共多重？",
+   "choices": [
+    "7.78 kg",
+    "6.78 kg",
+    "6.88 kg"
+   ],
+   "choices_zh": [
+    "7.78 公斤",
+    "6.78 公斤",
+    "6.88 公斤"
+   ],
+   "answer": 1,
+   "explain_en": "3.18 + 3.60 = 6.78.",
+   "explain_zh": "3.18+3.60=6.78。",
+   "sign_en": [
+    "7.78 kg",
+    "6.78 kg",
+    "6.88 kg"
+   ],
+   "sign_zh": [
+    "7.78kg",
+    "6.78kg",
+    "6.88kg"
+   ]
+  },
+  {
+   "id": "g5_023",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 3.54 kg and a squash 3.64 kg. Total weight?",
+   "q_zh": "南瓜 3.54 公斤，小南瓜 3.64 公斤，一共多重？",
+   "choices": [
+    "7.28 kg",
+    "7.18 kg",
+    "8.18 kg",
+    "7.17 kg"
+   ],
+   "choices_zh": [
+    "7.28 公斤",
+    "7.18 公斤",
+    "8.18 公斤",
+    "7.17 公斤"
+   ],
+   "answer": 1,
+   "explain_en": "3.54 + 3.64 = 7.18.",
+   "explain_zh": "3.54+3.64=7.18。"
+  },
+  {
+   "id": "g5_024",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 2.93 kg and a squash 2.84 kg. Total weight?",
+   "q_zh": "南瓜 2.93 公斤，小南瓜 2.84 公斤，一共多重？",
+   "choices": [
+    "5.87 kg",
+    "6.77 kg",
+    "5.77 kg"
+   ],
+   "choices_zh": [
+    "5.87 公斤",
+    "6.77 公斤",
+    "5.77 公斤"
+   ],
+   "answer": 2,
+   "explain_en": "2.93 + 2.84 = 5.77.",
+   "explain_zh": "2.93+2.84=5.77。",
+   "sign_en": [
+    "5.87 kg",
+    "6.77 kg",
+    "5.77 kg"
+   ],
+   "sign_zh": [
+    "5.87kg",
+    "6.77kg",
+    "5.77kg"
+   ]
+  },
+  {
+   "id": "g5_025",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 13 m by 12 m. What is its area?",
+   "q_zh": "一块菜地长 13 米、宽 12 米，面积是多少？",
+   "choices": [
+    "156 m²",
+    "168 m²",
+    "50 m²"
+   ],
+   "choices_zh": [
+    "156 平方米",
+    "168 平方米",
+    "50 平方米"
+   ],
+   "answer": 0,
+   "explain_en": "13 × 12 = 156 m².",
+   "explain_zh": "13×12=156 平方米。",
+   "sign_en": [
+    "156 m²",
+    "168 m²",
+    "50 m²"
+   ],
+   "sign_zh": [
+    "156m²",
+    "168m²",
+    "50m²"
+   ]
+  },
+  {
+   "id": "g5_026",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 15 m by 4 m. What is its area?",
+   "q_zh": "一块菜地长 15 米、宽 4 米，面积是多少？",
+   "choices": [
+    "64 m²",
+    "45 m²",
+    "60 m²",
+    "38 m²"
+   ],
+   "choices_zh": [
+    "64 平方米",
+    "45 平方米",
+    "60 平方米",
+    "38 平方米"
+   ],
+   "answer": 2,
+   "explain_en": "15 × 4 = 60 m².",
+   "explain_zh": "15×4=60 平方米。"
+  },
+  {
+   "id": "g5_027",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 18 m by 9 m. What is its area?",
+   "q_zh": "一块菜地长 18 米、宽 9 米，面积是多少？",
+   "choices": [
+    "162 m²",
+    "171 m²",
+    "54 m²"
+   ],
+   "choices_zh": [
+    "162 平方米",
+    "171 平方米",
+    "54 平方米"
+   ],
+   "answer": 0,
+   "explain_en": "18 × 9 = 162 m².",
+   "explain_zh": "18×9=162 平方米。",
+   "sign_en": [
+    "162 m²",
+    "171 m²",
+    "54 m²"
+   ],
+   "sign_zh": [
+    "162m²",
+    "171m²",
+    "54m²"
+   ]
+  },
+  {
+   "id": "g5_028",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 15 m by 12 m. What is its area?",
+   "q_zh": "一块菜地长 15 米、宽 12 米，面积是多少？",
+   "choices": [
+    "192 m²",
+    "165 m²",
+    "54 m²",
+    "180 m²"
+   ],
+   "choices_zh": [
+    "192 平方米",
+    "165 平方米",
+    "54 平方米",
+    "180 平方米"
+   ],
+   "answer": 3,
+   "explain_en": "15 × 12 = 180 m².",
+   "explain_zh": "15×12=180 平方米。"
+  },
+  {
+   "id": "g5_029",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 20 m by 9 m. What is its area?",
+   "q_zh": "一块菜地长 20 米、宽 9 米，面积是多少？",
+   "choices": [
+    "180 m²",
+    "160 m²",
+    "189 m²"
+   ],
+   "choices_zh": [
+    "180 平方米",
+    "160 平方米",
+    "189 平方米"
+   ],
+   "answer": 0,
+   "explain_en": "20 × 9 = 180 m².",
+   "explain_zh": "20×9=180 平方米。",
+   "sign_en": [
+    "180 m²",
+    "160 m²",
+    "189 m²"
+   ],
+   "sign_zh": [
+    "180m²",
+    "160m²",
+    "189m²"
+   ]
+  },
+  {
+   "id": "g5_030",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A garden is 18 m by 6 m. What is its area?",
+   "q_zh": "一块菜地长 18 米、宽 6 米，面积是多少？",
+   "choices": [
+    "90 m²",
+    "48 m²",
+    "108 m²",
+    "114 m²"
+   ],
+   "choices_zh": [
+    "90 平方米",
+    "48 平方米",
+    "108 平方米",
+    "114 平方米"
+   ],
+   "answer": 2,
+   "explain_en": "18 × 6 = 108 m².",
+   "explain_zh": "18×6=108 平方米。"
+  },
+  {
+   "id": "g5_031",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/3 of 27?",
+   "q_zh": "27 的 1/3 是多少？",
+   "choices": [
+    "12",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "27 ÷ 3 = 9.",
+   "explain_zh": "27÷3=9。",
+   "sign_en": [
+    "12",
+    "9",
+    "6"
+   ],
+   "sign_zh": [
+    "12",
+    "9",
+    "6"
+   ]
+  },
+  {
+   "id": "g5_032",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/2 of 20?",
+   "q_zh": "20 的 1/2 是多少？",
+   "choices": [
+    "9",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "20 ÷ 2 = 10.",
+   "explain_zh": "20÷2=10。",
+   "sign_en": [
+    "9",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "9",
+    "11",
+    "10"
+   ]
+  },
+  {
+   "id": "g5_033",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/3 of 15?",
+   "q_zh": "15 的 1/3 是多少？",
+   "choices": [
+    "2",
+    "5",
+    "8"
+   ],
+   "choices_zh": [
+    "2",
+    "5",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "15 ÷ 3 = 5.",
+   "explain_zh": "15÷3=5。",
+   "sign_en": [
+    "2",
+    "5",
+    "8"
+   ],
+   "sign_zh": [
+    "2",
+    "5",
+    "8"
+   ]
+  },
+  {
+   "id": "g5_034",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 44?",
+   "q_zh": "44 的 1/4 是多少？",
+   "choices": [
+    "11",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "44 ÷ 4 = 11.",
+   "explain_zh": "44÷4=11。",
+   "sign_en": [
+    "11",
+    "10",
+    "13"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "13"
+   ]
+  },
+  {
+   "id": "g5_035",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 32?",
+   "q_zh": "32 的 1/4 是多少？",
+   "choices": [
+    "8",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "32 ÷ 4 = 8.",
+   "explain_zh": "32÷4=8。",
+   "sign_en": [
+    "8",
+    "10",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "10",
+    "6"
+   ]
+  },
+  {
+   "id": "g5_036",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/5 of 45?",
+   "q_zh": "45 的 1/5 是多少？",
+   "choices": [
+    "11",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "11",
+    "7",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "45 ÷ 5 = 9.",
+   "explain_zh": "45÷5=9。",
+   "sign_en": [
+    "11",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "11",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "g5_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which organ pumps blood around your body?",
+   "q_zh": "哪个器官把血液送到全身？",
+   "choices": [
+    "Stomach",
+    "Lungs",
+    "Heart",
+    "Brain"
+   ],
+   "choices_zh": [
+    "胃",
+    "肺",
+    "心脏",
+    "大脑"
+   ],
+   "answer": 2,
+   "explain_en": "The heart is a muscle that pumps blood.",
+   "explain_zh": "心脏是一块会泵血的肌肉。"
+  },
+  {
+   "id": "g5_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which organ helps you breathe?",
+   "q_zh": "哪个器官帮助你呼吸？",
+   "choices": [
+    "Heart",
+    "Lungs",
+    "Liver"
+   ],
+   "choices_zh": [
+    "心脏",
+    "肺",
+    "肝"
+   ],
+   "answer": 1,
+   "explain_en": "Lungs take in oxygen.",
+   "explain_zh": "肺负责吸入氧气。",
+   "sign_en": [
+    "Heart",
+    "Lungs",
+    "Liver"
+   ],
+   "sign_zh": [
+    "心脏",
+    "肺",
+    "肝"
+   ]
+  },
+  {
+   "id": "g5_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Plants make food from sunlight. This is called…",
+   "q_zh": "植物用阳光制造养分，这叫什么？",
+   "choices": [
+    "Evaporation",
+    "Erosion",
+    "Digestion",
+    "Photosynthesis"
+   ],
+   "choices_zh": [
+    "蒸发",
+    "侵蚀",
+    "消化",
+    "光合作用"
+   ],
+   "answer": 3,
+   "explain_en": "Leaves use light, water and air to make sugar.",
+   "explain_zh": "叶子用阳光、水和空气制造糖分。"
+  },
+  {
+   "id": "g5_040",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which gas do plants give off that we breathe?",
+   "q_zh": "植物放出的、我们呼吸的气体是？",
+   "choices": [
+    "Helium",
+    "Smoke",
+    "Oxygen"
+   ],
+   "choices_zh": [
+    "氦气",
+    "烟",
+    "氧气"
+   ],
+   "answer": 2,
+   "explain_en": "Plants release oxygen.",
+   "explain_zh": "植物会释放氧气。",
+   "sign_en": [
+    "Helium",
+    "Smoke",
+    "Oxygen"
+   ],
+   "sign_zh": [
+    "氦气",
+    "烟",
+    "氧气"
+   ]
+  },
+  {
+   "id": "g5_041",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Which is a renewable resource?",
+   "q_zh": "哪种是可再生资源？",
+   "choices": [
+    "Gas",
+    "Wind",
+    "Coal",
+    "Oil"
+   ],
+   "choices_zh": [
+    "天然气",
+    "风能",
+    "煤",
+    "石油"
+   ],
+   "answer": 1,
+   "explain_en": "Wind never runs out.",
+   "explain_zh": "风能用不完。"
+  },
+  {
+   "id": "g5_042",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Soil washed away by rain is called…",
+   "q_zh": "土壤被雨水冲走叫什么？",
+   "choices": [
+    "Pollination",
+    "Erosion",
+    "Freezing"
+   ],
+   "choices_zh": [
+    "传粉",
+    "水土流失",
+    "结冰"
+   ],
+   "answer": 1,
+   "explain_en": "Plant roots help stop erosion.",
+   "explain_zh": "植物的根能防止水土流失。",
+   "sign_en": [
+    "Pollination",
+    "Erosion",
+    "Freezing"
+   ],
+   "sign_zh": [
+    "传粉",
+    "水土流失",
+    "结冰"
+   ]
+  },
+  {
+   "id": "g5_043",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Canada has how many provinces?",
+   "q_zh": "加拿大有几个省？",
+   "choices": [
+    "13",
+    "50",
+    "10",
+    "5"
+   ],
+   "choices_zh": [
+    "13",
+    "50",
+    "10",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "Canada has 10 provinces and 3 territories.",
+   "explain_zh": "加拿大有 10 个省和 3 个地区。"
+  },
+  {
+   "id": "g5_044",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Which mountains are in B.C.?",
+   "q_zh": "卑诗省有哪座山脉？",
+   "choices": [
+    "Alps",
+    "Rockies",
+    "Andes"
+   ],
+   "choices_zh": [
+    "阿尔卑斯山",
+    "落基山脉",
+    "安第斯山"
+   ],
+   "answer": 1,
+   "explain_en": "The Rocky Mountains run through B.C.",
+   "explain_zh": "落基山脉穿过卑诗省。",
+   "sign_en": [
+    "Alps",
+    "Rockies",
+    "Andes"
+   ],
+   "sign_zh": [
+    "阿尔卑斯山",
+    "落基山脉",
+    "安第斯山"
+   ]
+  },
+  {
+   "id": "g5_045",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Why do farmers rotate crops each year?",
+   "q_zh": "农民为什么每年轮换种的作物？",
+   "choices": [
+    "Change colours",
+    "Keep soil healthy",
+    "Confuse birds",
+    "Save water"
+   ],
+   "choices_zh": [
+    "换颜色",
+    "保持土壤健康",
+    "迷惑小鸟",
+    "省水"
+   ],
+   "answer": 1,
+   "explain_en": "Different crops use different nutrients.",
+   "explain_zh": "不同作物吸收的养分不同。"
+  },
+  {
+   "id": "g5_046",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Which B.C. area grows many blueberries?",
+   "q_zh": "卑诗省哪里种很多蓝莓？",
+   "choices": [
+    "The Arctic",
+    "Fraser Valley",
+    "Downtown"
+   ],
+   "choices_zh": [
+    "北极",
+    "菲沙河谷",
+    "市中心"
+   ],
+   "answer": 1,
+   "explain_en": "The Fraser Valley is a big farming area.",
+   "explain_zh": "菲沙河谷是一大片农业区。",
+   "sign_en": [
+    "The Arctic",
+    "Fraser Valley",
+    "Downtown"
+   ],
+   "sign_zh": [
+    "北极",
+    "菲沙河谷",
+    "市中心"
+   ]
+  },
+  {
+   "id": "g5_047",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "Up a tree",
+    "In the water"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "树上",
+    "在水里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。"
+  },
+  {
+   "id": "g5_048",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Fish",
+    "Candy",
+    "Grass"
+   ],
+   "choices_zh": [
+    "鱼",
+    "糖果",
+    "草"
+   ],
+   "answer": 2,
+   "explain_en": "They are plant eaters.",
+   "explain_zh": "它们只吃植物。",
+   "sign_en": [
+    "Fish",
+    "Candy",
+    "Grass"
+   ],
+   "sign_zh": [
+    "鱼",
+    "糖果",
+    "草"
+   ]
+  },
+  {
+   "id": "g5_049",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Fish",
+    "Rodent",
+    "Insect",
+    "Bird"
+   ],
+   "choices_zh": [
+    "鱼",
+    "啮齿动物",
+    "昆虫",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。"
+  },
+  {
+   "id": "g5_050",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "choices_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "sign_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ]
+  }
+ ]
+}
