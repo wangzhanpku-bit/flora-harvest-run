@@ -944,7 +944,7 @@ const HAT3D={hat_straw:'hat3d_straw',hat_pumpkin:'hat3d_pumpkin',reward_golden_h
 function hatSel(){const ho=hatsOwned();const sel=store.get('hat_sel',null);if(sel==='none')return null;const i=HATS.findIndex(h=>h.k===sel);if(i>=0&&ho[i])return sel;for(let j=HATS.length-1;j>=0;j--)if(ho[j])return HATS[j].k;return null;}
 function hat3dApply(){if(!F3.ready||!F3.m)return;let head=null;F3.m.traverse(o=>{if(!head&&o.isBone&&/mixamorig:?Head$/.test(o.name))head=o;});if(!head)return;
  if(F3.hat){F3.hat.parent&&F3.hat.parent.remove(F3.hat);F3.hat=null;}const k=hatSel();if(!k||!HAT3D[k]||typeof BIN==='undefined'||!BIN[HAT3D[k]])return;
- const put=g=>{if(F3.hat)return;const h=g.clone(true);h.position.set(...(/hero_boy/.test(F3.key||'')?(k==='hat_pumpkin'?[0,.09,.025]:[0,.095,.025]):[0,0.11,0.01]));h.scale.setScalar(1/1.5);h.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});head.add(h);F3.hat=h;F3.hatK=k;};
+ const put=g=>{if(F3.hat)return;const h=g.clone(true);{const boy=/hero_boy/.test(F3.key||'');h.position.set(...(boy?[0,.068,.025]:[0,0.11,0.01]));h.scale.setScalar(boy?1.2/1.5:1/1.5);}h.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});head.add(h);F3.hat=h;F3.hatK=k;};
  if(HAT3D_CACHE[k]){put(HAT3D_CACHE[k]);return;}new (THREE.GLTFLoader)().parse(BIN[HAT3D[k]].slice(0),'',g=>{HAT3D_CACHE[k]=g.scene;if(hatSel()===k)put(g.scene);},e=>console.warn('hat load',e));}
 function hatWear(k){store.set('hat_sel',k);hat3dApply();play('sfx_menu_confirm');showBook();}
 function hatsOwned(){const own=store.get('cards',{});const n=Object.keys(own).length;const set=cardPools().normal.every(c=>own[c.id]);return HATS.map(h=>h.need==='set'?set:n>=h.need);}
