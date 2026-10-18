@@ -498,7 +498,7 @@ function input(k){if(S.mode==='mwait'){mzInput(k);return;}if(S.mode!=='run')retu
  if(k==='U'&&S.y<=0.01){S.vy=9.5;S.slide=0;play('sfx_jump');}
  if(k==='D'){if(S.y>0.01)S.vy=-14;S.slide=.75;play('sfx_slide');}}
 // v0.8.1d: quiz + maze-junction keyboard (capture phase so nothing else swallows the keys)
-document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('#qch button');if(!b||b.disabled)return;const bs=[...document.querySelectorAll('#qch button')];const i=bs.indexOf(b);if(i>=0&&S&&S.qSel!==i)qSelSet(i);});
+window.__lastKeyT=0;addEventListener('keydown',()=>{window.__lastKeyT=performance.now();},true);document.addEventListener('mousemove',e=>{if(!(Math.abs(e.movementX)+Math.abs(e.movementY)))return;if(performance.now()-window.__lastKeyT<400)return;const b=e.target.closest&&e.target.closest('#qch button');if(!b||b.disabled)return;const bs=[...document.querySelectorAll('#qch button')];const i=bs.indexOf(b);if(i>=0&&S&&S.qSel!==i)qSelSet(i);});
 function qSelSet(i){const bs=[...document.querySelectorAll('#qch button')];if(!bs.length)return;S.qSel=(i+bs.length)%bs.length;bs.forEach((b,j)=>{b.classList.toggle('sel',j===S.qSel);b.style.outline='';b.style.background='';});}
 addEventListener('keydown',e=>{if(!S)return;const qv=document.getElementById('quiz').style.display==='flex';const code=e.code,key=e.key;
  const dig={Digit1:0,Digit2:1,Digit3:2,Digit4:3,Numpad1:0,Numpad2:1,Numpad3:2,Numpad4:3,KeyA:0,KeyB:1,KeyC:2,KeyD:3}[code];
