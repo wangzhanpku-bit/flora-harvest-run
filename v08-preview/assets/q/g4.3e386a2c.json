@@ -1086,7 +1086,7 @@
    ],
    "answer": 1,
    "explain_en": "Capybaras are herbivores.",
-   "explain_zh": "水豚就是食草动物。",
+   "explain_zh": "卡皮巴拉就是食草动物。",
    "sign_en": [
     "Predator",
     "Herbivore",
@@ -1264,7 +1264,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! Where do capybaras love to be?",
-   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "q_zh": "CAPYBARA！卡皮巴拉最喜欢待在哪里？",
    "choices": [
     "In the water",
     "Up a tree",
@@ -1277,7 +1277,7 @@
    ],
    "answer": 0,
    "explain_en": "Capybaras love swimming and soaking.",
-   "explain_zh": "水豚超爱游泳和泡水。"
+   "explain_zh": "卡皮巴拉超爱游泳和泡水。"
   },
   {
    "id": "g4_050",
@@ -1285,7 +1285,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! What do capybaras eat?",
-   "q_zh": "CAPYBARA！水豚吃什么？",
+   "q_zh": "CAPYBARA！卡皮巴拉吃什么？",
    "choices": [
     "Grass",
     "Fish",
@@ -1316,7 +1316,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! A capybara is the world's biggest…",
-   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "q_zh": "CAPYBARA！卡皮巴拉是世界上最大的……",
    "choices": [
     "Bird",
     "Insect",
@@ -1339,7 +1339,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! Capybaras come from…",
-   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "q_zh": "CAPYBARA！卡皮巴拉来自哪里？",
    "choices": [
     "The North Pole",
     "South America",

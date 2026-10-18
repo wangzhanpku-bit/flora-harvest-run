@@ -3109,7 +3109,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! What kind of animal is a capybara?",
-   "q_zh": "CAPYBARA！水豚是哪类动物？",
+   "q_zh": "CAPYBARA！卡皮巴拉是哪类动物？",
    "choices": [
     "A kind of dog",
     "The world's largest rodent",
@@ -3118,7 +3118,7 @@
    ],
    "answer": 1,
    "explain_en": "Capybaras are the largest rodents on Earth.",
-   "explain_zh": "水豚是地球上最大的啮齿动物。",
+   "explain_zh": "卡皮巴拉是地球上最大的啮齿动物。",
    "choices_zh": [
     "一种狗",
     "世界上最大的啮齿动物",
@@ -3132,7 +3132,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "Where do wild capybaras live?",
-   "q_zh": "野生水豚生活在哪里？",
+   "q_zh": "野生卡皮巴拉生活在哪里？",
    "choices": [
     "Canada",
     "Australia",
@@ -3155,7 +3155,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "What do capybaras mostly eat?",
-   "q_zh": "水豚主要吃什么？",
+   "q_zh": "卡皮巴拉主要吃什么？",
    "choices": [
     "Meat",
     "Insects",
@@ -3164,7 +3164,7 @@
    ],
    "answer": 2,
    "explain_en": "Capybaras are herbivores.",
-   "explain_zh": "水豚是食草动物。",
+   "explain_zh": "卡皮巴拉是食草动物。",
    "choices_zh": [
     "肉",
     "昆虫",
@@ -3178,7 +3178,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "Capybaras are great at…",
-   "q_zh": "水豚特别擅长……",
+   "q_zh": "卡皮巴拉特别擅长……",
    "choices": [
     "Swimming",
     "Digging tunnels",
@@ -3209,7 +3209,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "How long can a capybara hold its breath underwater?",
-   "q_zh": "水豚在水下能憋气多久？",
+   "q_zh": "卡皮巴拉在水下能憋气多久？",
    "choices": [
     "About 5 minutes",
     "A whole day",
@@ -3240,7 +3240,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "Capybaras are famous for being…",
-   "q_zh": "水豚以什么性格出名？",
+   "q_zh": "卡皮巴拉以什么性格出名？",
    "choices": [
     "Very calm",
     "Very fierce",
@@ -3271,7 +3271,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "Capybaras live in groups. About how many are in a typical group?",
-   "q_zh": "水豚群居，一群通常大约有多少只？",
+   "q_zh": "卡皮巴拉群居，一群通常大约有多少只？",
    "choices": [
     "Exactly 2",
     "About 10 to 20",
@@ -3294,7 +3294,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "Where are a capybara's eyes, ears and nose?",
-   "q_zh": "水豚的眼睛、耳朵和鼻子长在哪里？",
+   "q_zh": "卡皮巴拉的眼睛、耳朵和鼻子长在哪里？",
    "choices": [
     "High on top of its head",
     "On its tail",
@@ -3325,7 +3325,7 @@
    "subject": "capybara",
    "difficulty": "hard",
    "q_en": "A capybara's front teeth…",
-   "q_zh": "水豚的门牙……",
+   "q_zh": "卡皮巴拉的门牙……",
    "choices": [
     "Fall out every year",
     "Are made of wood",
@@ -3348,7 +3348,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "Which of these is a capybara's relative?",
-   "q_zh": "下面哪种动物是水豚的亲戚？",
+   "q_zh": "下面哪种动物是卡皮巴拉的亲戚？",
    "choices": [
     "Frog",
     "Cat",
@@ -3356,7 +3356,7 @@
    ],
    "answer": 2,
    "explain_en": "Capybaras and guinea pigs are both cavies.",
-   "explain_zh": "水豚和豚鼠是近亲。",
+   "explain_zh": "卡皮巴拉和豚鼠是近亲。",
    "choices_zh": [
     "青蛙",
     "猫",
@@ -3379,7 +3379,7 @@
    "subject": "capybara",
    "difficulty": "hard",
    "q_en": "About how heavy is an adult capybara?",
-   "q_zh": "成年水豚大约多重？",
+   "q_zh": "成年卡皮巴拉大约多重？",
    "choices": [
     "1 kg",
     "35 to 65 kg",
@@ -3388,7 +3388,7 @@
    ],
    "answer": 1,
    "explain_en": "Adults usually weigh about 35 to 65 kg, roughly as much as an adult person.",
-   "explain_zh": "成年水豚通常 35 到 65 公斤，差不多一个大人那么重。",
+   "explain_zh": "成年卡皮巴拉通常 35 到 65 公斤，差不多一个大人那么重。",
    "choices_zh": [
     "1 公斤",
     "35 到 65 公斤",
@@ -3402,7 +3402,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "Capybaras usually rest during the hot day and eat more in the…",
-   "q_zh": "水豚白天热的时候休息，多在什么时候吃东西？",
+   "q_zh": "卡皮巴拉白天热的时候休息，多在什么时候吃东西？",
    "choices": [
     "Only at noon",
     "Only in winter",
@@ -3433,7 +3433,7 @@
    "subject": "capybara",
    "difficulty": "medium",
    "q_en": "Why do capybaras love to sit in water or mud?",
-   "q_zh": "水豚为什么爱泡在水里或泥里？",
+   "q_zh": "卡皮巴拉为什么爱泡在水里或泥里？",
    "choices": [
     "To find gold",
     "To grow wings",
