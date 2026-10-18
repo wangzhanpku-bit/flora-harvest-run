@@ -170,7 +170,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:"Fred
 #ringFill,#ringWarn{-webkit-mask:conic-gradient(#000 calc(var(--f,1)*360deg),transparent 0);mask:conic-gradient(#000 calc(var(--f,1)*360deg),transparent 0);transition:opacity .4s}
 #ringWarn{opacity:0}#qtimer.warn #ringWarn{opacity:1}#qtimer.warn #ringFill{opacity:0}#qtimer.img #qsec{margin-top:0}
 #qch button{border:16px solid transparent!important;border-image:var(--btnbg) 34 fill stretch!important;background:transparent!important;border-radius:0!important;padding:6px 26px 6px 30px!important;color:#4a2a10;text-align:left}
-#qch button:hover:not(:disabled),#qch button.sel{border-image:var(--btnhi) 34 fill stretch!important}
+#qch button.sel{border-image:var(--btnhi) 34 fill stretch!important}
 #qch button[style*="159, 224, 176"]{border-image:var(--btnhi) 34 fill stretch!important;filter:hue-rotate(45deg) saturate(1.4);box-shadow:0 0 0 3px #3a9a4a}#qch button[style*="246, 166, 166"]{filter:hue-rotate(-25deg) saturate(1.6) brightness(.95);box-shadow:0 0 0 3px #d05050}
 #qch.imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px}#qch.imgs button{margin:0!important}
 .cimg{display:block;height:64px;width:auto;margin:0 auto 2px}#mqch .cimg{display:inline-block;height:1.6em;vertical-align:-.45em;margin:0 3px 0 0}
@@ -195,7 +195,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:"Fred
 #quiz #qch::before{display:none!important}
 #quiz #qch{display:flex;flex-direction:column;gap:10px;padding:6px 4px;background:none}
 #quiz #qch button{position:relative;z-index:1;display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;margin:0!important;padding:10px 16px 10px 12px!important;min-height:54px;border:2px solid #f3b56b!important;border-image:none!important;border-radius:16px!important;background:#fffaf0!important;color:#4a2a10;text-align:left;box-shadow:0 2px 6px rgba(150,90,20,.14);filter:none!important;outline:none!important;transform:none;transition:transform .12s,box-shadow .12s,border-color .12s,background .12s;cursor:pointer}
-#quiz #qch button:hover:not(:disabled),#quiz #qch button.sel{transform:translateY(-2px)!important;border-color:#f07c10!important;box-shadow:0 6px 14px rgba(240,124,16,.22),0 0 0 4px rgba(255,186,100,.35)!important}
+#quiz #qch button.sel{transform:translateY(-2px)!important;border-color:#f07c10!important;box-shadow:0 6px 14px rgba(240,124,16,.22),0 0 0 4px rgba(255,186,100,.35)!important}
 #quiz #qch button .qb{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:#f28c28;color:#fff;font:700 18px/34px Fredoka,sans-serif;text-align:center;box-shadow:inset 0 -2px 0 #c96a10}
 #quiz #qch button .qt{display:flex;flex-direction:column;justify-content:center;min-width:0;flex:1}
 #quiz #qch button .qe{display:block;font:700 clamp(16px,1.6vw,20px)/1.2 Fredoka,"Noto Sans SC",sans-serif}
@@ -498,6 +498,7 @@ function input(k){if(S.mode==='mwait'){mzInput(k);return;}if(S.mode!=='run')retu
  if(k==='U'&&S.y<=0.01){S.vy=9.5;S.slide=0;play('sfx_jump');}
  if(k==='D'){if(S.y>0.01)S.vy=-14;S.slide=.75;play('sfx_slide');}}
 // v0.8.1d: quiz + maze-junction keyboard (capture phase so nothing else swallows the keys)
+document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('#qch button');if(!b||b.disabled)return;const bs=[...document.querySelectorAll('#qch button')];const i=bs.indexOf(b);if(i>=0&&S&&S.qSel!==i)qSelSet(i);});
 function qSelSet(i){const bs=[...document.querySelectorAll('#qch button')];if(!bs.length)return;S.qSel=(i+bs.length)%bs.length;bs.forEach((b,j)=>{b.classList.toggle('sel',j===S.qSel);b.style.outline='';b.style.background='';});}
 addEventListener('keydown',e=>{if(!S)return;const qv=document.getElementById('quiz').style.display==='flex';const code=e.code,key=e.key;
  const dig={Digit1:0,Digit2:1,Digit3:2,Digit4:3,Numpad1:0,Numpad2:1,Numpad3:2,Numpad4:3,KeyA:0,KeyB:1,KeyC:2,KeyD:3}[code];
