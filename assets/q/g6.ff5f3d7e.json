@@ -1,0 +1,3487 @@
+{
+ "player": "Flora",
+ "grade": 6,
+ "version": 5,
+ "curriculum": "BC Grade 6 Math, Science, Social Studies + farm and capybara facts",
+ "fields": "section: pumpkin_field|corn_maze; subject: math|science|farm|social|capybara (capybara = bonus); difficulty: easy|medium|hard; answer = index into choices; choices_zh present for non-numeric answers; choices_zh now present on EVERY question (same order as choices); '{name}' in question text = player's chosen name (default Flora), replace at runtime. Display order: English on top, Chinese below.",
+ "questions": [
+  {
+   "id": "q001",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} collected 1/2 of 14 pumpkins. How many did she collect?",
+   "q_zh": "14 个南瓜，{name} 收回了 1/2，一共多少个？",
+   "choices": [
+    "10",
+    "11",
+    "7",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "14 ÷ 2 = 7, × 1 = 7.",
+   "explain_zh": "14÷2=7，再×1=7。",
+   "choices_zh": [
+    "10",
+    "11",
+    "7",
+    "6"
+   ]
+  },
+  {
+   "id": "q002",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} collected 1/6 of 18 pumpkins. How many did she collect?",
+   "q_zh": "18 个南瓜，{name} 收回了 1/6，一共多少个？",
+   "choices": [
+    "3",
+    "5",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "18 ÷ 6 = 3, × 1 = 3.",
+   "explain_zh": "18÷6=3，再×1=3。",
+   "choices_zh": [
+    "3",
+    "5",
+    "7"
+   ],
+   "sign_en": [
+    "3",
+    "5",
+    "7"
+   ],
+   "sign_zh": [
+    "3",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "q003",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} collected 1/2 of 16 pumpkins. How many did she collect?",
+   "q_zh": "16 个南瓜，{name} 收回了 1/2，一共多少个？",
+   "choices": [
+    "5",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "16 ÷ 2 = 8, × 1 = 8.",
+   "explain_zh": "16÷2=8，再×1=8。",
+   "choices_zh": [
+    "5",
+    "8",
+    "9",
+    "10"
+   ]
+  },
+  {
+   "id": "q004",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} collected 3/4 of 32 pumpkins. How many did she collect?",
+   "q_zh": "32 个南瓜，{name} 收回了 3/4，一共多少个？",
+   "choices": [
+    "26",
+    "24",
+    "28"
+   ],
+   "answer": 1,
+   "explain_en": "32 ÷ 4 = 8, × 3 = 24.",
+   "explain_zh": "32÷4=8，再×3=24。",
+   "choices_zh": [
+    "26",
+    "24",
+    "28"
+   ],
+   "sign_en": [
+    "26",
+    "24",
+    "28"
+   ],
+   "sign_zh": [
+    "26",
+    "24",
+    "28"
+   ]
+  },
+  {
+   "id": "q005",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} collected 5/6 of 36 pumpkins. How many did she collect?",
+   "q_zh": "36 个南瓜，{name} 收回了 5/6，一共多少个？",
+   "choices": [
+    "30",
+    "33",
+    "34",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "36 ÷ 6 = 6, × 5 = 30.",
+   "explain_zh": "36÷6=6，再×5=30。",
+   "choices_zh": [
+    "30",
+    "33",
+    "34",
+    "31"
+   ]
+  },
+  {
+   "id": "q006",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} collected 5/6 of 54 pumpkins. How many did she collect?",
+   "q_zh": "54 个南瓜，{name} 收回了 5/6，一共多少个？",
+   "choices": [
+    "44",
+    "41",
+    "43",
+    "45"
+   ],
+   "answer": 3,
+   "explain_en": "54 ÷ 6 = 9, × 5 = 45.",
+   "explain_zh": "54÷6=9，再×5=45。",
+   "choices_zh": [
+    "44",
+    "41",
+    "43",
+    "45"
+   ]
+  },
+  {
+   "id": "q007",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} collected 2/5 of 30 pumpkins. How many did she collect?",
+   "q_zh": "30 个南瓜，{name} 收回了 2/5，一共多少个？",
+   "choices": [
+    "12",
+    "16",
+    "9",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "30 ÷ 5 = 6, × 2 = 12.",
+   "explain_zh": "30÷5=6，再×2=12。",
+   "choices_zh": [
+    "12",
+    "16",
+    "9",
+    "13"
+   ]
+  },
+  {
+   "id": "q008",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} collected 5/6 of 48 pumpkins. How many did she collect?",
+   "q_zh": "48 个南瓜，{name} 收回了 5/6，一共多少个？",
+   "choices": [
+    "41",
+    "40",
+    "43"
+   ],
+   "answer": 1,
+   "explain_en": "48 ÷ 6 = 8, × 5 = 40.",
+   "explain_zh": "48÷6=8，再×5=40。",
+   "choices_zh": [
+    "41",
+    "40",
+    "43"
+   ],
+   "sign_en": [
+    "41",
+    "40",
+    "43"
+   ],
+   "sign_zh": [
+    "41",
+    "40",
+    "43"
+   ]
+  },
+  {
+   "id": "q009",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 2.2 kg and another weighs 8.1 kg. What is the total?",
+   "q_zh": "一个南瓜重 2.2 公斤，另一个重 8.1 公斤，一共多重？",
+   "choices": [
+    "11.3 kg",
+    "11.2 kg",
+    "10.3 kg"
+   ],
+   "answer": 2,
+   "explain_en": "Line up the decimal points: 2.2 + 8.1 = 10.3.",
+   "explain_zh": "小数点对齐：2.2+8.1=10.3。",
+   "choices_zh": [
+    "11.3 公斤",
+    "11.2 公斤",
+    "10.3 公斤"
+   ],
+   "sign_en": [
+    "11.3 kg",
+    "11.2 kg",
+    "10.3 kg"
+   ],
+   "sign_zh": [
+    "11.3kg",
+    "11.2kg",
+    "10.3kg"
+   ]
+  },
+  {
+   "id": "q010",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A big pumpkin weighs 6.54 kg and a small one 4.7 kg. How much heavier is the big one?",
+   "q_zh": "大南瓜重 6.54 公斤，小南瓜重 4.7 公斤，大的重多少？",
+   "choices": [
+    "1.84 kg",
+    "2.84 kg",
+    "1.85 kg",
+    "2.74 kg"
+   ],
+   "answer": 0,
+   "explain_en": "Line up the decimal points: 6.54 − 4.7 = 1.84.",
+   "explain_zh": "小数点对齐：6.54−4.7=1.84。",
+   "choices_zh": [
+    "1.84 公斤",
+    "2.84 公斤",
+    "1.85 公斤",
+    "2.74 公斤"
+   ]
+  },
+  {
+   "id": "q011",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 8.33 kg and another weighs 1.8 kg. What is the total?",
+   "q_zh": "一个南瓜重 8.33 公斤，另一个重 1.8 公斤，一共多重？",
+   "choices": [
+    "10.14 kg",
+    "10.13 kg",
+    "11.03 kg"
+   ],
+   "answer": 1,
+   "explain_en": "Line up the decimal points: 8.33 + 1.8 = 10.13.",
+   "explain_zh": "小数点对齐：8.33+1.8=10.13。",
+   "choices_zh": [
+    "10.14 公斤",
+    "10.13 公斤",
+    "11.03 公斤"
+   ],
+   "sign_en": [
+    "10.14 kg",
+    "10.13 kg",
+    "11.03 kg"
+   ],
+   "sign_zh": [
+    "10.14kg",
+    "10.13kg",
+    "11.03kg"
+   ]
+  },
+  {
+   "id": "q012",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A big pumpkin weighs 7.74 kg and a small one 4.8 kg. How much heavier is the big one?",
+   "q_zh": "大南瓜重 7.74 公斤，小南瓜重 4.8 公斤，大的重多少？",
+   "choices": [
+    "3.04 kg",
+    "2.94 kg",
+    "2.93 kg"
+   ],
+   "answer": 1,
+   "explain_en": "Line up the decimal points: 7.74 − 4.8 = 2.94.",
+   "explain_zh": "小数点对齐：7.74−4.8=2.94。",
+   "choices_zh": [
+    "3.04 公斤",
+    "2.94 公斤",
+    "2.93 公斤"
+   ],
+   "sign_en": [
+    "3.04 kg",
+    "2.94 kg",
+    "2.93 kg"
+   ],
+   "sign_zh": [
+    "3.04kg",
+    "2.94kg",
+    "2.93kg"
+   ]
+  },
+  {
+   "id": "q013",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 6.98 kg and another weighs 4.3 kg. What is the total?",
+   "q_zh": "一个南瓜重 6.98 公斤，另一个重 4.3 公斤，一共多重？",
+   "choices": [
+    "12.28 kg",
+    "11.29 kg",
+    "11.28 kg",
+    "10.28 kg"
+   ],
+   "answer": 2,
+   "explain_en": "Line up the decimal points: 6.98 + 4.3 = 11.28.",
+   "explain_zh": "小数点对齐：6.98+4.3=11.28。",
+   "choices_zh": [
+    "12.28 公斤",
+    "11.29 公斤",
+    "11.28 公斤",
+    "10.28 公斤"
+   ]
+  },
+  {
+   "id": "q014",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A big pumpkin weighs 7.0 kg and a small one 5.97 kg. How much heavier is the big one?",
+   "q_zh": "大南瓜重 7.0 公斤，小南瓜重 5.97 公斤，大的重多少？",
+   "choices": [
+    "1.02 kg",
+    "1.93 kg",
+    "1.03 kg"
+   ],
+   "answer": 2,
+   "explain_en": "Line up the decimal points: 7.0 − 5.97 = 1.03.",
+   "explain_zh": "小数点对齐：7.0−5.97=1.03。",
+   "choices_zh": [
+    "1.02 公斤",
+    "1.93 公斤",
+    "1.03 公斤"
+   ],
+   "sign_en": [
+    "1.02 kg",
+    "1.93 kg",
+    "1.03 kg"
+   ],
+   "sign_zh": [
+    "1.02kg",
+    "1.93kg",
+    "1.03kg"
+   ]
+  },
+  {
+   "id": "q015",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pumpkin weighs 6.32 kg and another weighs 5.6 kg. What is the total?",
+   "q_zh": "一个南瓜重 6.32 公斤，另一个重 5.6 公斤，一共多重？",
+   "choices": [
+    "12.82 kg",
+    "11.92 kg",
+    "12.92 kg",
+    "11.91 kg"
+   ],
+   "answer": 1,
+   "explain_en": "Line up the decimal points: 6.32 + 5.6 = 11.92.",
+   "explain_zh": "小数点对齐：6.32+5.6=11.92。",
+   "choices_zh": [
+    "12.82 公斤",
+    "11.92 公斤",
+    "12.92 公斤",
+    "11.91 公斤"
+   ]
+  },
+  {
+   "id": "q016",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A big pumpkin weighs 8.67 kg and a small one 8.0 kg. How much heavier is the big one?",
+   "q_zh": "大南瓜重 8.67 公斤，小南瓜重 8.0 公斤，大的重多少？",
+   "choices": [
+    "0.67 kg",
+    "1.67 kg",
+    "0.77 kg",
+    "0.68 kg"
+   ],
+   "answer": 0,
+   "explain_en": "Line up the decimal points: 8.67 − 8.0 = 0.67.",
+   "explain_zh": "小数点对齐：8.67−8.0=0.67。",
+   "choices_zh": [
+    "0.67 公斤",
+    "1.67 公斤",
+    "0.77 公斤",
+    "0.68 公斤"
+   ]
+  },
+  {
+   "id": "q017",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 24 orange pumpkins and 42 white pumpkins. What is the ratio orange:white in simplest form?",
+   "q_zh": "有 24 个橙南瓜和 42 个白南瓜，橙:白的最简比是多少？",
+   "choices": [
+    "5:8",
+    "4:7",
+    "7:4",
+    "24:42"
+   ],
+   "answer": 1,
+   "explain_en": "Divide both by 6: 24:42 = 4:7.",
+   "explain_zh": "两边同除以 6，24:42=4:7。",
+   "choices_zh": [
+    "5:8",
+    "4:7",
+    "7:4",
+    "24:42"
+   ]
+  },
+  {
+   "id": "q018",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 5 orange pumpkins and 35 white pumpkins. What is the ratio orange:white in simplest form?",
+   "q_zh": "有 5 个橙南瓜和 35 个白南瓜，橙:白的最简比是多少？",
+   "choices": [
+    "5:35",
+    "7:1",
+    "1:7",
+    "2:8"
+   ],
+   "answer": 2,
+   "explain_en": "Divide both by 5: 5:35 = 1:7.",
+   "explain_zh": "两边同除以 5，5:35=1:7。",
+   "choices_zh": [
+    "5:35",
+    "7:1",
+    "1:7",
+    "2:8"
+   ]
+  },
+  {
+   "id": "q019",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 28 orange pumpkins and 12 white pumpkins. What is the ratio orange:white in simplest form?",
+   "q_zh": "有 28 个橙南瓜和 12 个白南瓜，橙:白的最简比是多少？",
+   "choices": [
+    "3:7",
+    "28:12",
+    "8:4",
+    "7:3"
+   ],
+   "answer": 3,
+   "explain_en": "Divide both by 4: 28:12 = 7:3.",
+   "explain_zh": "两边同除以 4，28:12=7:3。",
+   "choices_zh": [
+    "3:7",
+    "28:12",
+    "8:4",
+    "7:3"
+   ]
+  },
+  {
+   "id": "q020",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 20 orange pumpkins and 25 white pumpkins. What is the ratio orange:white in simplest form?",
+   "q_zh": "有 20 个橙南瓜和 25 个白南瓜，橙:白的最简比是多少？",
+   "choices": [
+    "5:6",
+    "5:4",
+    "4:5",
+    "20:25"
+   ],
+   "answer": 2,
+   "explain_en": "Divide both by 5: 20:25 = 4:5.",
+   "explain_zh": "两边同除以 5，20:25=4:5。",
+   "choices_zh": [
+    "5:6",
+    "5:4",
+    "4:5",
+    "20:25"
+   ]
+  },
+  {
+   "id": "q021",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 25 orange pumpkins and 15 white pumpkins. What is the ratio orange:white in simplest form?",
+   "q_zh": "有 25 个橙南瓜和 15 个白南瓜，橙:白的最简比是多少？",
+   "choices": [
+    "25:15",
+    "5:3",
+    "3:5",
+    "6:4"
+   ],
+   "answer": 1,
+   "explain_en": "Divide both by 5: 25:15 = 5:3.",
+   "explain_zh": "两边同除以 5，25:15=5:3。",
+   "choices_zh": [
+    "25:15",
+    "5:3",
+    "3:5",
+    "6:4"
+   ]
+  },
+  {
+   "id": "q022",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A rectangular field is 16 m long and 4 m wide. What is its area?",
+   "q_zh": "长方形田地长 16 米、宽 4 米，面积是多少？",
+   "choices": [
+    "20 m²",
+    "80 m²",
+    "64 m²"
+   ],
+   "answer": 2,
+   "explain_en": "Area = length × width = 16 × 4 = 64 m².",
+   "explain_zh": "面积=长×宽=16×4=64 平方米。",
+   "choices_zh": [
+    "20 平方米",
+    "80 平方米",
+    "64 平方米"
+   ],
+   "sign_en": [
+    "20 m²",
+    "80 m²",
+    "64 m²"
+   ],
+   "sign_zh": [
+    "20 平方米",
+    "80 平方米",
+    "64 平方米"
+   ]
+  },
+  {
+   "id": "q023",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A fence goes around a rectangular pen 6 m by 11 m. How long is the fence?",
+   "q_zh": "围栏围住一个长 6 米、宽 11 米的长方形围栏圈，围栏多长？",
+   "choices": [
+    "66 m",
+    "34 m",
+    "17 m",
+    "36 m"
+   ],
+   "answer": 1,
+   "explain_en": "Perimeter = 2 × (6 + 11) = 34 m.",
+   "explain_zh": "周长=2×(6+11)=34 米。",
+   "choices_zh": [
+    "66 米",
+    "34 米",
+    "17 米",
+    "36 米"
+   ]
+  },
+  {
+   "id": "q024",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A rectangular field is 13 m long and 3 m wide. What is its area?",
+   "q_zh": "长方形田地长 13 米、宽 3 米，面积是多少？",
+   "choices": [
+    "52 m²",
+    "39 m²",
+    "16 m²",
+    "32 m²"
+   ],
+   "answer": 1,
+   "explain_en": "Area = length × width = 13 × 3 = 39 m².",
+   "explain_zh": "面积=长×宽=13×3=39 平方米。",
+   "choices_zh": [
+    "52 平方米",
+    "39 平方米",
+    "16 平方米",
+    "32 平方米"
+   ]
+  },
+  {
+   "id": "q025",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A fence goes around a rectangular pen 8 m by 5 m. How long is the fence?",
+   "q_zh": "围栏围住一个长 8 米、宽 5 米的长方形围栏圈，围栏多长？",
+   "choices": [
+    "26 m",
+    "28 m",
+    "13 m"
+   ],
+   "answer": 0,
+   "explain_en": "Perimeter = 2 × (8 + 5) = 26 m.",
+   "explain_zh": "周长=2×(8+5)=26 米。",
+   "choices_zh": [
+    "26 米",
+    "28 米",
+    "13 米"
+   ],
+   "sign_en": [
+    "26 m",
+    "28 m",
+    "13 m"
+   ],
+   "sign_zh": [
+    "26 米",
+    "28 米",
+    "13 米"
+   ]
+  },
+  {
+   "id": "q026",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A rectangular field is 19 m long and 4 m wide. What is its area?",
+   "q_zh": "长方形田地长 19 米、宽 4 米，面积是多少？",
+   "choices": [
+    "95 m²",
+    "46 m²",
+    "76 m²"
+   ],
+   "answer": 2,
+   "explain_en": "Area = length × width = 19 × 4 = 76 m².",
+   "explain_zh": "面积=长×宽=19×4=76 平方米。",
+   "choices_zh": [
+    "95 平方米",
+    "46 平方米",
+    "76 平方米"
+   ],
+   "sign_en": [
+    "95 m²",
+    "46 m²",
+    "76 m²"
+   ],
+   "sign_zh": [
+    "95 平方米",
+    "46 平方米",
+    "76 平方米"
+   ]
+  },
+  {
+   "id": "q027",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A fence goes around a rectangular pen 8 m by 7 m. How long is the fence?",
+   "q_zh": "围栏围住一个长 8 米、宽 7 米的长方形围栏圈，围栏多长？",
+   "choices": [
+    "30 m",
+    "56 m",
+    "32 m"
+   ],
+   "answer": 0,
+   "explain_en": "Perimeter = 2 × (8 + 7) = 30 m.",
+   "explain_zh": "周长=2×(8+7)=30 米。",
+   "choices_zh": [
+    "30 米",
+    "56 米",
+    "32 米"
+   ],
+   "sign_en": [
+    "30 m",
+    "56 m",
+    "32 m"
+   ],
+   "sign_zh": [
+    "30 米",
+    "56 米",
+    "32 米"
+   ]
+  },
+  {
+   "id": "q028",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A rectangular field is 13 m long and 5 m wide. What is its area?",
+   "q_zh": "长方形田地长 13 米、宽 5 米，面积是多少？",
+   "choices": [
+    "18 m²",
+    "65 m²",
+    "36 m²"
+   ],
+   "answer": 1,
+   "explain_en": "Area = length × width = 13 × 5 = 65 m².",
+   "explain_zh": "面积=长×宽=13×5=65 平方米。",
+   "choices_zh": [
+    "18 平方米",
+    "65 平方米",
+    "36 平方米"
+   ],
+   "sign_en": [
+    "18 m²",
+    "65 m²",
+    "36 m²"
+   ],
+   "sign_zh": [
+    "18 平方米",
+    "65 平方米",
+    "36 平方米"
+   ]
+  },
+  {
+   "id": "q029",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A fence goes around a rectangular pen 14 m by 11 m. How long is the fence?",
+   "q_zh": "围栏围住一个长 14 米、宽 11 米的长方形围栏圈，围栏多长？",
+   "choices": [
+    "25 m",
+    "52 m",
+    "50 m"
+   ],
+   "answer": 2,
+   "explain_en": "Perimeter = 2 × (14 + 11) = 50 m.",
+   "explain_zh": "周长=2×(14+11)=50 米。",
+   "choices_zh": [
+    "25 米",
+    "52 米",
+    "50 米"
+   ],
+   "sign_en": [
+    "25 m",
+    "52 m",
+    "50 m"
+   ],
+   "sign_zh": [
+    "25 米",
+    "52 米",
+    "50 米"
+   ]
+  },
+  {
+   "id": "q030",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular sign has a base of 4 cm and a height of 3 cm. What is its area?",
+   "q_zh": "三角形路牌底 4 厘米、高 3 厘米，面积是多少？",
+   "choices": [
+    "6 cm²",
+    "7 cm²",
+    "8 cm²"
+   ],
+   "answer": 0,
+   "explain_en": "Triangle area = base × height ÷ 2 = 6 cm².",
+   "explain_zh": "三角形面积=底×高÷2=6 平方厘米。",
+   "choices_zh": [
+    "6 平方厘米",
+    "7 平方厘米",
+    "8 平方厘米"
+   ],
+   "sign_en": [
+    "6 cm²",
+    "7 cm²",
+    "8 cm²"
+   ],
+   "sign_zh": [
+    "6 cm²",
+    "7 cm²",
+    "8 cm²"
+   ]
+  },
+  {
+   "id": "q031",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular sign has a base of 10 cm and a height of 7 cm. What is its area?",
+   "q_zh": "三角形路牌底 10 厘米、高 7 厘米，面积是多少？",
+   "choices": [
+    "37 cm²",
+    "35 cm²",
+    "70 cm²"
+   ],
+   "answer": 1,
+   "explain_en": "Triangle area = base × height ÷ 2 = 35 cm².",
+   "explain_zh": "三角形面积=底×高÷2=35 平方厘米。",
+   "choices_zh": [
+    "37 平方厘米",
+    "35 平方厘米",
+    "70 平方厘米"
+   ],
+   "sign_en": [
+    "37 cm²",
+    "35 cm²",
+    "70 cm²"
+   ],
+   "sign_zh": [
+    "37 cm²",
+    "35 cm²",
+    "70 cm²"
+   ]
+  },
+  {
+   "id": "q032",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular sign has a base of 6 cm and a height of 5 cm. What is its area?",
+   "q_zh": "三角形路牌底 6 厘米、高 5 厘米，面积是多少？",
+   "choices": [
+    "11 cm²",
+    "15 cm²",
+    "30 cm²"
+   ],
+   "answer": 1,
+   "explain_en": "Triangle area = base × height ÷ 2 = 15 cm².",
+   "explain_zh": "三角形面积=底×高÷2=15 平方厘米。",
+   "choices_zh": [
+    "11 平方厘米",
+    "15 平方厘米",
+    "30 平方厘米"
+   ],
+   "sign_en": [
+    "11 cm²",
+    "15 cm²",
+    "30 cm²"
+   ],
+   "sign_zh": [
+    "11 cm²",
+    "15 cm²",
+    "30 cm²"
+   ]
+  },
+  {
+   "id": "q033",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What is 5 + 6 × 6?",
+   "q_zh": "5 + 6 × 6 等于多少？",
+   "choices": [
+    "36",
+    "42",
+    "66",
+    "41"
+   ],
+   "answer": 3,
+   "explain_en": "Multiply first: 6×6=36, then + 5 = 41.",
+   "explain_zh": "先乘：6×6=36，再加 5，等于 41。",
+   "choices_zh": [
+    "36",
+    "42",
+    "66",
+    "41"
+   ]
+  },
+  {
+   "id": "q034",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What is 8 + 4 × 3?",
+   "q_zh": "8 + 4 × 3 等于多少？",
+   "choices": [
+    "36",
+    "20",
+    "21",
+    "35"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply first: 4×3=12, then + 8 = 20.",
+   "explain_zh": "先乘：4×3=12，再加 8，等于 20。",
+   "choices_zh": [
+    "36",
+    "20",
+    "21",
+    "35"
+   ]
+  },
+  {
+   "id": "q035",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3 + 7 × 6?",
+   "q_zh": "3 + 7 × 6 等于多少？",
+   "choices": [
+    "46",
+    "45",
+    "60",
+    "27"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply first: 7×6=42, then + 3 = 45.",
+   "explain_zh": "先乘：7×6=42，再加 3，等于 45。",
+   "choices_zh": [
+    "46",
+    "45",
+    "60",
+    "27"
+   ]
+  },
+  {
+   "id": "q036",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 6 + 6 × 3?",
+   "q_zh": "6 + 6 × 3 等于多少？",
+   "choices": [
+    "24",
+    "39",
+    "36",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "Multiply first: 6×3=18, then + 6 = 24.",
+   "explain_zh": "先乘：6×3=18，再加 6，等于 24。",
+   "choices_zh": [
+    "24",
+    "39",
+    "36",
+    "25"
+   ]
+  },
+  {
+   "id": "q037",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "What is (2 + 2) × 3 − 2?",
+   "q_zh": "(2 + 2) × 3 − 2 等于多少？",
+   "choices": [
+    "4",
+    "8",
+    "6",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "Brackets first: 4, ×3 = 12, − 2 = 10.",
+   "explain_zh": "先算括号 4，×3=12，再减 2，等于 10。",
+   "choices_zh": [
+    "4",
+    "8",
+    "6",
+    "10"
+   ]
+  },
+  {
+   "id": "q038",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "What is (3 + 7) × 7 − 3?",
+   "q_zh": "(3 + 7) × 7 − 3 等于多少？",
+   "choices": [
+    "65",
+    "49",
+    "67"
+   ],
+   "answer": 2,
+   "explain_en": "Brackets first: 10, ×7 = 70, − 3 = 67.",
+   "explain_zh": "先算括号 10，×7=70，再减 3，等于 67。",
+   "choices_zh": [
+    "65",
+    "49",
+    "67"
+   ],
+   "sign_en": [
+    "65",
+    "49",
+    "67"
+   ],
+   "sign_zh": [
+    "65",
+    "49",
+    "67"
+   ]
+  },
+  {
+   "id": "q039",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "What is (5 + 9) × 8 − 5?",
+   "q_zh": "(5 + 9) × 8 − 5 等于多少？",
+   "choices": [
+    "107",
+    "72",
+    "105",
+    "42"
+   ],
+   "answer": 0,
+   "explain_en": "Brackets first: 14, ×8 = 112, − 5 = 107.",
+   "explain_zh": "先算括号 14，×8=112，再减 5，等于 107。",
+   "choices_zh": [
+    "107",
+    "72",
+    "105",
+    "42"
+   ]
+  },
+  {
+   "id": "q040",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "What is (8 + 6) × 7 − 8?",
+   "q_zh": "(8 + 6) × 7 − 8 等于多少？",
+   "choices": [
+    "93",
+    "42",
+    "90",
+    "88"
+   ],
+   "answer": 2,
+   "explain_en": "Brackets first: 14, ×7 = 98, − 8 = 90.",
+   "explain_zh": "先算括号 14，×7=98，再减 8，等于 90。",
+   "choices_zh": [
+    "93",
+    "42",
+    "90",
+    "88"
+   ]
+  },
+  {
+   "id": "q041",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which of these is a prime number?",
+   "q_zh": "下面哪个是质数？",
+   "choices": [
+    "71",
+    "57",
+    "33"
+   ],
+   "answer": 0,
+   "explain_en": "71 can only be divided by 1 and itself.",
+   "explain_zh": "71 只能被 1 和它本身整除。",
+   "choices_zh": [
+    "71",
+    "57",
+    "33"
+   ],
+   "sign_en": [
+    "71",
+    "57",
+    "33"
+   ],
+   "sign_zh": [
+    "71",
+    "57",
+    "33"
+   ]
+  },
+  {
+   "id": "q042",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The maze sign shows 2, 7, 12, 17, … What comes next?",
+   "q_zh": "路牌上的规律是 2, 7, 12, 17……下一个数是多少？",
+   "choices": [
+    "22",
+    "24",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "The rule is: add 5. Next is 22.",
+   "explain_zh": "规律是每次加 5，下一个是 22。",
+   "choices_zh": [
+    "22",
+    "24",
+    "25"
+   ],
+   "sign_en": [
+    "22",
+    "24",
+    "25"
+   ],
+   "sign_zh": [
+    "22",
+    "24",
+    "25"
+   ]
+  },
+  {
+   "id": "q043",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The maze sign shows 1, 7, 13, 19, … What comes next?",
+   "q_zh": "路牌上的规律是 1, 7, 13, 19……下一个数是多少？",
+   "choices": [
+    "25",
+    "21",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "The rule is: add 6. Next is 25.",
+   "explain_zh": "规律是每次加 6，下一个是 25。",
+   "choices_zh": [
+    "25",
+    "21",
+    "24"
+   ],
+   "sign_en": [
+    "25",
+    "21",
+    "24"
+   ],
+   "sign_zh": [
+    "25",
+    "21",
+    "24"
+   ]
+  },
+  {
+   "id": "q044",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The maze sign shows 3, 6, 12, 24, … What comes next?",
+   "q_zh": "路牌上的规律是 3, 6, 12, 24……下一个数是多少？",
+   "choices": [
+    "48",
+    "46",
+    "49"
+   ],
+   "answer": 0,
+   "explain_en": "The rule is: multiply by 2. Next is 48.",
+   "explain_zh": "规律是每次乘 2，下一个是 48。",
+   "choices_zh": [
+    "48",
+    "46",
+    "49"
+   ],
+   "sign_en": [
+    "48",
+    "46",
+    "49"
+   ],
+   "sign_zh": [
+    "48",
+    "46",
+    "49"
+   ]
+  },
+  {
+   "id": "q045",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The maze sign shows 4, 12, 36, 108, … What comes next?",
+   "q_zh": "路牌上的规律是 4, 12, 36, 108……下一个数是多少？",
+   "choices": [
+    "294",
+    "324",
+    "351"
+   ],
+   "answer": 1,
+   "explain_en": "The rule is: multiply by 3. Next is 324.",
+   "explain_zh": "规律是每次乘 3，下一个是 324。",
+   "choices_zh": [
+    "294",
+    "324",
+    "351"
+   ],
+   "sign_en": [
+    "294",
+    "324",
+    "351"
+   ],
+   "sign_zh": [
+    "294",
+    "324",
+    "351"
+   ]
+  },
+  {
+   "id": "q046",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The maze sign shows 3, 9, 27, 81, … What comes next?",
+   "q_zh": "路牌上的规律是 3, 9, 27, 81……下一个数是多少？",
+   "choices": [
+    "243",
+    "225",
+    "213"
+   ],
+   "answer": 0,
+   "explain_en": "The rule is: multiply by 3. Next is 243.",
+   "explain_zh": "规律是每次乘 3，下一个是 243。",
+   "choices_zh": [
+    "243",
+    "225",
+    "213"
+   ],
+   "sign_en": [
+    "243",
+    "225",
+    "213"
+   ],
+   "sign_zh": [
+    "243",
+    "225",
+    "213"
+   ]
+  },
+  {
+   "id": "q047",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The maze sign shows 2, 5, 8, 11, … What comes next?",
+   "q_zh": "路牌上的规律是 2, 5, 8, 11……下一个数是多少？",
+   "choices": [
+    "16",
+    "14",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "The rule is: add 3. Next is 14.",
+   "explain_zh": "规律是每次加 3，下一个是 14。",
+   "choices_zh": [
+    "16",
+    "14",
+    "12"
+   ],
+   "sign_en": [
+    "16",
+    "14",
+    "12"
+   ],
+   "sign_zh": [
+    "16",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "q048",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 0.7 km and Path B is 850 m. Which is shorter?",
+   "q_zh": "A 路长 0.7 公里，B 路长 850 米，哪条更短？",
+   "choices": [
+    "Path B",
+    "Path A",
+    "Same length"
+   ],
+   "answer": 1,
+   "explain_en": "0.7 km = 700 m.",
+   "explain_zh": "0.7 公里=700 米。",
+   "choices_zh": [
+    "B 路",
+    "A 路",
+    "一样长"
+   ],
+   "sign_en": [
+    "Path B",
+    "Path A",
+    "Same length"
+   ],
+   "sign_zh": [
+    "B 路",
+    "A 路",
+    "一样长"
+   ]
+  },
+  {
+   "id": "q049",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 0.8 km and Path B is 650 m. Which is shorter?",
+   "q_zh": "A 路长 0.8 公里，B 路长 650 米，哪条更短？",
+   "choices": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "answer": 2,
+   "explain_en": "0.8 km = 800 m.",
+   "explain_zh": "0.8 公里=800 米。",
+   "choices_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ],
+   "sign_en": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "sign_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ]
+  },
+  {
+   "id": "q050",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 1.2 km and Path B is 1350 m. Which is shorter?",
+   "q_zh": "A 路长 1.2 公里，B 路长 1350 米，哪条更短？",
+   "choices": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "answer": 0,
+   "explain_en": "1.2 km = 1200 m.",
+   "explain_zh": "1.2 公里=1200 米。",
+   "choices_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ],
+   "sign_en": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "sign_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ]
+  },
+  {
+   "id": "q051",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 0.6 km and Path B is 450 m. Which is shorter?",
+   "q_zh": "A 路长 0.6 公里，B 路长 450 米，哪条更短？",
+   "choices": [
+    "Path A",
+    "Path B",
+    "Same length"
+   ],
+   "answer": 1,
+   "explain_en": "0.6 km = 600 m.",
+   "explain_zh": "0.6 公里=600 米。",
+   "choices_zh": [
+    "A 路",
+    "B 路",
+    "一样长"
+   ],
+   "sign_en": [
+    "Path A",
+    "Path B",
+    "Same length"
+   ],
+   "sign_zh": [
+    "A 路",
+    "B 路",
+    "一样长"
+   ]
+  },
+  {
+   "id": "q052",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 0.4 km and Path B is 450 m. Which is shorter?",
+   "q_zh": "A 路长 0.4 公里，B 路长 450 米，哪条更短？",
+   "choices": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "answer": 0,
+   "explain_en": "0.4 km = 400 m.",
+   "explain_zh": "0.4 公里=400 米。",
+   "choices_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ],
+   "sign_en": [
+    "Path A",
+    "Same length",
+    "Path B"
+   ],
+   "sign_zh": [
+    "A 路",
+    "一样长",
+    "B 路"
+   ]
+  },
+  {
+   "id": "q053",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Path A is 0.6 km and Path B is 550 m. Which is shorter?",
+   "q_zh": "A 路长 0.6 公里，B 路长 550 米，哪条更短？",
+   "choices": [
+    "Same length",
+    "Path B",
+    "Path A"
+   ],
+   "answer": 1,
+   "explain_en": "0.6 km = 600 m.",
+   "explain_zh": "0.6 公里=600 米。",
+   "choices_zh": [
+    "一样长",
+    "B 路",
+    "A 路"
+   ],
+   "sign_en": [
+    "Same length",
+    "Path B",
+    "Path A"
+   ],
+   "sign_zh": [
+    "一样长",
+    "B 路",
+    "A 路"
+   ]
+  },
+  {
+   "id": "q054",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10% of 100 pumpkins are white. How many white pumpkins?",
+   "q_zh": "100 个南瓜里有 10% 是白色的，白南瓜有多少个？",
+   "choices": [
+    "10",
+    "12",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "10% of 100 = 100 × 10/100 = 10.",
+   "explain_zh": "100×10%=10。",
+   "choices_zh": [
+    "10",
+    "12",
+    "11"
+   ],
+   "sign_en": [
+    "10",
+    "12",
+    "11"
+   ],
+   "sign_zh": [
+    "10",
+    "12",
+    "11"
+   ]
+  },
+  {
+   "id": "q055",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "20% of 60 pumpkins are white. How many white pumpkins?",
+   "q_zh": "60 个南瓜里有 20% 是白色的，白南瓜有多少个？",
+   "choices": [
+    "9",
+    "7",
+    "8",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "20% of 60 = 60 × 20/100 = 12.",
+   "explain_zh": "60×20%=12。",
+   "choices_zh": [
+    "9",
+    "7",
+    "8",
+    "12"
+   ]
+  },
+  {
+   "id": "q056",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 60 pumpkins are white. How many white pumpkins?",
+   "q_zh": "60 个南瓜里有 25% 是白色的，白南瓜有多少个？",
+   "choices": [
+    "20",
+    "12",
+    "15",
+    "19"
+   ],
+   "answer": 2,
+   "explain_en": "25% of 60 = 60 × 25/100 = 15.",
+   "explain_zh": "60×25%=15。",
+   "choices_zh": [
+    "20",
+    "12",
+    "15",
+    "19"
+   ]
+  },
+  {
+   "id": "q057",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 80 pumpkins are white. How many white pumpkins?",
+   "q_zh": "80 个南瓜里有 25% 是白色的，白南瓜有多少个？",
+   "choices": [
+    "16",
+    "20",
+    "22",
+    "19"
+   ],
+   "answer": 1,
+   "explain_en": "25% of 80 = 80 × 25/100 = 20.",
+   "explain_zh": "80×25%=20。",
+   "choices_zh": [
+    "16",
+    "20",
+    "22",
+    "19"
+   ]
+  },
+  {
+   "id": "q058",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "75% of 60 pumpkins are white. How many white pumpkins?",
+   "q_zh": "60 个南瓜里有 75% 是白色的，白南瓜有多少个？",
+   "choices": [
+    "48",
+    "45",
+    "44",
+    "41"
+   ],
+   "answer": 1,
+   "explain_en": "75% of 60 = 60 × 75/100 = 45.",
+   "explain_zh": "60×75%=45。",
+   "choices_zh": [
+    "48",
+    "45",
+    "44",
+    "41"
+   ]
+  },
+  {
+   "id": "q059",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 3/5 or 0.75?",
+   "q_zh": "3/5 和 0.75，哪个更大？",
+   "choices": [
+    "3/5",
+    "0.75"
+   ],
+   "answer": 1,
+   "explain_en": "3/5 = 0.6.",
+   "explain_zh": "3/5=0.6。",
+   "choices_zh": [
+    "3/5",
+    "0.75"
+   ],
+   "sign_en": [
+    "3/5",
+    "0.75"
+   ],
+   "sign_zh": [
+    "3/5",
+    "0.75"
+   ]
+  },
+  {
+   "id": "q060",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 6/8 or 0.9?",
+   "q_zh": "6/8 和 0.9，哪个更大？",
+   "choices": [
+    "6/8",
+    "0.9"
+   ],
+   "answer": 1,
+   "explain_en": "6/8 = 0.75.",
+   "explain_zh": "6/8=0.75。",
+   "choices_zh": [
+    "6/8",
+    "0.9"
+   ],
+   "sign_en": [
+    "6/8",
+    "0.9"
+   ],
+   "sign_zh": [
+    "6/8",
+    "0.9"
+   ]
+  },
+  {
+   "id": "q061",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 2/8 or 0.2?",
+   "q_zh": "2/8 和 0.2，哪个更大？",
+   "choices": [
+    "2/8",
+    "0.2"
+   ],
+   "answer": 0,
+   "explain_en": "2/8 = 0.25.",
+   "explain_zh": "2/8=0.25。",
+   "choices_zh": [
+    "2/8",
+    "0.2"
+   ],
+   "sign_en": [
+    "2/8",
+    "0.2"
+   ],
+   "sign_zh": [
+    "2/8",
+    "0.2"
+   ]
+  },
+  {
+   "id": "q062",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 3/5 or 0.65?",
+   "q_zh": "3/5 和 0.65，哪个更大？",
+   "choices": [
+    "3/5",
+    "0.65"
+   ],
+   "answer": 1,
+   "explain_en": "3/5 = 0.6.",
+   "explain_zh": "3/5=0.6。",
+   "choices_zh": [
+    "3/5",
+    "0.65"
+   ],
+   "sign_en": [
+    "3/5",
+    "0.65"
+   ],
+   "sign_zh": [
+    "3/5",
+    "0.65"
+   ]
+  },
+  {
+   "id": "q063",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 4/10 or 0.35?",
+   "q_zh": "4/10 和 0.35，哪个更大？",
+   "choices": [
+    "4/10",
+    "0.35"
+   ],
+   "answer": 0,
+   "explain_en": "4/10 = 0.4.",
+   "explain_zh": "4/10=0.4。",
+   "choices_zh": [
+    "4/10",
+    "0.35"
+   ],
+   "sign_en": [
+    "4/10",
+    "0.35"
+   ],
+   "sign_zh": [
+    "4/10",
+    "0.35"
+   ]
+  },
+  {
+   "id": "q064",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 15 rows with 8 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 15 行，每行 8 个南瓜，一共多少个？",
+   "choices": [
+    "118",
+    "116",
+    "122",
+    "120"
+   ],
+   "answer": 3,
+   "explain_en": "15 × 8 = 120.",
+   "explain_zh": "15×8=120。",
+   "choices_zh": [
+    "118",
+    "116",
+    "122",
+    "120"
+   ]
+  },
+  {
+   "id": "q065",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 13 rows with 10 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 13 行，每行 10 个南瓜，一共多少个？",
+   "choices": [
+    "139",
+    "136",
+    "130",
+    "122"
+   ],
+   "answer": 2,
+   "explain_en": "13 × 10 = 130.",
+   "explain_zh": "13×10=130。",
+   "choices_zh": [
+    "139",
+    "136",
+    "130",
+    "122"
+   ]
+  },
+  {
+   "id": "q066",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 8 rows with 14 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 8 行，每行 14 个南瓜，一共多少个？",
+   "choices": [
+    "112",
+    "108",
+    "109",
+    "103"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 14 = 112.",
+   "explain_zh": "8×14=112。",
+   "choices_zh": [
+    "112",
+    "108",
+    "109",
+    "103"
+   ]
+  },
+  {
+   "id": "q067",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 12 rows with 6 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 12 行，每行 6 个南瓜，一共多少个？",
+   "choices": [
+    "83",
+    "72",
+    "70",
+    "78"
+   ],
+   "answer": 1,
+   "explain_en": "12 × 6 = 72.",
+   "explain_zh": "12×6=72。",
+   "choices_zh": [
+    "83",
+    "72",
+    "70",
+    "78"
+   ]
+  },
+  {
+   "id": "q068",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 13 rows with 14 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 13 行，每行 14 个南瓜，一共多少个？",
+   "choices": [
+    "182",
+    "176",
+    "184",
+    "187"
+   ],
+   "answer": 0,
+   "explain_en": "13 × 14 = 182.",
+   "explain_zh": "13×14=182。",
+   "choices_zh": [
+    "182",
+    "176",
+    "184",
+    "187"
+   ]
+  },
+  {
+   "id": "q069",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The pumpkin patch has 6 rows with 12 pumpkins in each row. How many pumpkins in total?",
+   "q_zh": "南瓜田有 6 行，每行 12 个南瓜，一共多少个？",
+   "choices": [
+    "72",
+    "65",
+    "60",
+    "84"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 12 = 72.",
+   "explain_zh": "6×12=72。",
+   "choices_zh": [
+    "72",
+    "65",
+    "60",
+    "84"
+   ]
+  },
+  {
+   "id": "q070",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "55 pumpkins are shared equally into 5 baskets. How many in each basket?",
+   "q_zh": "55 个南瓜平均放进 5 个篮子，每篮几个？",
+   "choices": [
+    "11",
+    "13",
+    "12",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "55 ÷ 5 = 11.",
+   "explain_zh": "55÷5=11。",
+   "choices_zh": [
+    "11",
+    "13",
+    "12",
+    "14"
+   ]
+  },
+  {
+   "id": "q071",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "24 pumpkins are shared equally into 4 baskets. How many in each basket?",
+   "q_zh": "24 个南瓜平均放进 4 个篮子，每篮几个？",
+   "choices": [
+    "4",
+    "6",
+    "9",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "24 ÷ 4 = 6.",
+   "explain_zh": "24÷4=6。",
+   "choices_zh": [
+    "4",
+    "6",
+    "9",
+    "3"
+   ]
+  },
+  {
+   "id": "q072",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "65 pumpkins are shared equally into 5 baskets. How many in each basket?",
+   "q_zh": "65 个南瓜平均放进 5 个篮子，每篮几个？",
+   "choices": [
+    "16",
+    "15",
+    "13",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "65 ÷ 5 = 13.",
+   "explain_zh": "65÷5=13。",
+   "choices_zh": [
+    "16",
+    "15",
+    "13",
+    "12"
+   ]
+  },
+  {
+   "id": "q073",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "48 pumpkins are shared equally into 8 baskets. How many in each basket?",
+   "q_zh": "48 个南瓜平均放进 8 个篮子，每篮几个？",
+   "choices": [
+    "4",
+    "6",
+    "5",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "48 ÷ 8 = 6.",
+   "explain_zh": "48÷8=6。",
+   "choices_zh": [
+    "4",
+    "6",
+    "5",
+    "3"
+   ]
+  },
+  {
+   "id": "q074",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Botanically, a pumpkin is a…",
+   "q_zh": "从植物学上讲，南瓜属于……",
+   "choices": [
+    "Fruit",
+    "Stem",
+    "Leaf",
+    "Root"
+   ],
+   "answer": 0,
+   "explain_en": "Pumpkins grow from flowers and hold seeds, so they are fruits.",
+   "explain_zh": "南瓜由花发育而来、有种子，所以是果实。",
+   "choices_zh": [
+    "果实",
+    "茎",
+    "叶",
+    "根"
+   ]
+  },
+  {
+   "id": "q075",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What do plants need for photosynthesis?",
+   "q_zh": "植物进行光合作用需要什么？",
+   "choices": [
+    "Only water",
+    "Soil, sugar and oxygen",
+    "Moonlight and salt",
+    "Sunlight, water and carbon dioxide"
+   ],
+   "answer": 3,
+   "explain_en": "Plants use sunlight, water and CO₂ to make sugar and give off oxygen.",
+   "explain_zh": "植物用阳光、水和二氧化碳制造糖分，放出氧气。",
+   "choices_zh": [
+    "只要水",
+    "土壤、糖和氧气",
+    "月光和盐",
+    "阳光、水和二氧化碳"
+   ]
+  },
+  {
+   "id": "q076",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which gas do plants give off during photosynthesis?",
+   "q_zh": "光合作用时植物放出哪种气体？",
+   "choices": [
+    "Helium",
+    "Nitrogen",
+    "Oxygen",
+    "Carbon dioxide"
+   ],
+   "answer": 2,
+   "explain_en": "Plants release oxygen, which we breathe.",
+   "explain_zh": "植物放出氧气，正是我们呼吸需要的。",
+   "choices_zh": [
+    "氦气",
+    "氮气",
+    "氧气",
+    "二氧化碳"
+   ]
+  },
+  {
+   "id": "q077",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which part of the plant takes in water from the soil?",
+   "q_zh": "植物的哪个部分从土里吸水？",
+   "choices": [
+    "Seeds",
+    "Roots",
+    "Flowers",
+    "Leaves"
+   ],
+   "answer": 1,
+   "explain_en": "Roots soak up water and nutrients.",
+   "explain_zh": "根负责吸收水和养分。",
+   "choices_zh": [
+    "种子",
+    "根",
+    "花",
+    "叶子"
+   ]
+  },
+  {
+   "id": "q078",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Bees visiting pumpkin flowers help the plant by…",
+   "q_zh": "蜜蜂飞到南瓜花上能帮植物……",
+   "choices": [
+    "Scaring birds",
+    "Pollinating the flowers",
+    "Watering the roots",
+    "Eating the leaves"
+   ],
+   "answer": 1,
+   "explain_en": "Bees carry pollen between flowers so pumpkins can form.",
+   "explain_zh": "蜜蜂在花之间传粉，南瓜才能结出来。",
+   "choices_zh": [
+    "吓跑小鸟",
+    "给花传粉",
+    "浇根",
+    "吃叶子"
+   ]
+  },
+  {
+   "id": "q079",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "You push a hay bale and it slides. What made it move?",
+   "q_zh": "你推干草垛，它滑动了，是什么让它动？",
+   "choices": [
+    "A force (your push)",
+    "Sound",
+    "Light",
+    "Magnetism"
+   ],
+   "answer": 0,
+   "explain_en": "Objects start moving when an unbalanced force acts on them.",
+   "explain_zh": "物体受到不平衡的力才会开始运动。",
+   "choices_zh": [
+    "力（你的推力）",
+    "声音",
+    "光",
+    "磁力"
+   ]
+  },
+  {
+   "id": "q080",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why does a jumping {name} always come back down?",
+   "q_zh": "{name} 跳起来为什么总会落回地面？",
+   "choices": [
+    "Gravity pulls her down",
+    "Air is heavy",
+    "Wind pushes her",
+    "The ground is magnetic"
+   ],
+   "answer": 0,
+   "explain_en": "Earth's gravity pulls everything toward its centre.",
+   "explain_zh": "地球的重力把一切往地心拉。",
+   "choices_zh": [
+    "重力把她拉下来",
+    "空气很重",
+    "风把她推下来",
+    "地面有磁力"
+   ]
+  },
+  {
+   "id": "q081",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Running on rough dirt is easier to stop than on ice because of more…",
+   "q_zh": "在粗糙土路上比在冰上更容易停下，因为……更大",
+   "choices": [
+    "Friction",
+    "Magnetism",
+    "Gravity",
+    "Light"
+   ],
+   "answer": 0,
+   "explain_en": "Rough surfaces create more friction, which slows you down.",
+   "explain_zh": "粗糙表面摩擦力大，能让你减速。",
+   "choices_zh": [
+    "摩擦力",
+    "磁力",
+    "重力",
+    "光"
+   ]
+  },
+  {
+   "id": "q082",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A heavy pumpkin and a light pumpkin are pushed with the same force. Which speeds up more?",
+   "q_zh": "用同样大的力推一个重南瓜和一个轻南瓜，哪个加速更快？",
+   "choices": [
+    "Neither moves",
+    "The light pumpkin",
+    "The heavy pumpkin",
+    "Both the same"
+   ],
+   "answer": 1,
+   "explain_en": "The same force accelerates a smaller mass more (Newton's second law).",
+   "explain_zh": "同样的力，质量越小加速越快（牛顿第二定律）。",
+   "choices_zh": [
+    "都不动",
+    "轻的南瓜",
+    "重的南瓜",
+    "一样快"
+   ]
+  },
+  {
+   "id": "q083",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which is a mixture you can separate with a sieve?",
+   "q_zh": "下面哪种混合物能用筛子分开？",
+   "choices": [
+    "Salt water",
+    "Sugar in tea",
+    "Sand and pebbles",
+    "Air"
+   ],
+   "answer": 2,
+   "explain_en": "Pebbles stay in the sieve while sand falls through.",
+   "explain_zh": "石子留在筛子里，沙子漏下去。",
+   "choices_zh": [
+    "盐水",
+    "茶里的糖",
+    "沙子和石子",
+    "空气"
+   ]
+  },
+  {
+   "id": "q084",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "How can you get salt back from salt water?",
+   "q_zh": "怎样从盐水里把盐取回来？",
+   "choices": [
+    "Let the water evaporate",
+    "Use a sieve",
+    "Freeze it quickly"
+   ],
+   "answer": 0,
+   "explain_en": "When water evaporates, the salt is left behind.",
+   "explain_zh": "水蒸发后，盐就留下来了。",
+   "choices_zh": [
+    "让水蒸发掉",
+    "用筛子",
+    "快速冷冻"
+   ],
+   "sign_en": [
+    "Evaporate",
+    "Use a sieve",
+    "Freeze it"
+   ],
+   "sign_zh": [
+    "蒸发",
+    "用筛子",
+    "冷冻"
+   ]
+  },
+  {
+   "id": "q085",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tool separates iron nails from sawdust?",
+   "q_zh": "哪种工具能把铁钉从木屑里分出来？",
+   "choices": [
+    "A filter paper",
+    "A sieve",
+    "A magnet"
+   ],
+   "answer": 2,
+   "explain_en": "Iron is magnetic; sawdust is not.",
+   "explain_zh": "铁会被磁铁吸住，木屑不会。",
+   "choices_zh": [
+    "滤纸",
+    "筛子",
+    "磁铁"
+   ],
+   "sign_en": [
+    "A filter paper",
+    "A sieve",
+    "A magnet"
+   ],
+   "sign_zh": [
+    "滤纸",
+    "筛子",
+    "磁铁"
+   ]
+  },
+  {
+   "id": "q086",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Sugar stirred into water seems to disappear. This mixture is called a…",
+   "q_zh": "糖搅进水里好像不见了，这种混合物叫……",
+   "choices": [
+    "Solution",
+    "Solid",
+    "Magnet"
+   ],
+   "answer": 0,
+   "explain_en": "The sugar dissolves evenly, making a solution.",
+   "explain_zh": "糖均匀溶解，形成溶液。",
+   "choices_zh": [
+    "溶液",
+    "固体",
+    "磁铁"
+   ],
+   "sign_en": [
+    "Solution",
+    "Solid",
+    "Magnet"
+   ],
+   "sign_zh": [
+    "溶液",
+    "固体",
+    "磁铁"
+   ]
+  },
+  {
+   "id": "q087",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which planet is closest to the Sun?",
+   "q_zh": "哪颗行星离太阳最近？",
+   "choices": [
+    "Venus",
+    "Mars",
+    "Mercury"
+   ],
+   "answer": 2,
+   "explain_en": "Mercury is the closest planet to the Sun.",
+   "explain_zh": "水星离太阳最近。",
+   "choices_zh": [
+    "金星",
+    "火星",
+    "水星"
+   ],
+   "sign_en": [
+    "Venus",
+    "Mars",
+    "Mercury"
+   ],
+   "sign_zh": [
+    "金星",
+    "火星",
+    "水星"
+   ]
+  },
+  {
+   "id": "q088",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which is the largest planet in our solar system?",
+   "q_zh": "太阳系最大的行星是哪颗？",
+   "choices": [
+    "Saturn",
+    "Jupiter",
+    "Neptune"
+   ],
+   "answer": 1,
+   "explain_en": "Jupiter is bigger than all the other planets combined.",
+   "explain_zh": "木星比其他行星加起来还大。",
+   "choices_zh": [
+    "土星",
+    "木星",
+    "海王星"
+   ],
+   "sign_en": [
+    "Saturn",
+    "Jupiter",
+    "Neptune"
+   ],
+   "sign_zh": [
+    "土星",
+    "木星",
+    "海王星"
+   ]
+  },
+  {
+   "id": "q089",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "How many planets are in our solar system?",
+   "q_zh": "太阳系有几颗行星？",
+   "choices": [
+    "7",
+    "8",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+   "explain_zh": "水金地火木土天海，一共 8 颗。",
+   "choices_zh": [
+    "7 颗",
+    "8 颗",
+    "9 颗"
+   ],
+   "sign_en": [
+    "7",
+    "8",
+    "9"
+   ],
+   "sign_zh": [
+    "7 颗",
+    "8 颗",
+    "9 颗"
+   ]
+  },
+  {
+   "id": "q090",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why do we have day and night?",
+   "q_zh": "为什么会有白天和黑夜？",
+   "choices": [
+    "Earth spins on its axis",
+    "Earth goes around the Moon",
+    "The Sun turns off"
+   ],
+   "answer": 0,
+   "explain_en": "Earth rotates once about every 24 hours.",
+   "explain_zh": "地球大约每 24 小时自转一圈。",
+   "choices_zh": [
+    "地球绕着地轴自转",
+    "地球绕着月亮转",
+    "太阳关灯了"
+   ],
+   "sign_en": [
+    "Earth spins",
+    "Orbits Moon",
+    "Sun turns off"
+   ],
+   "sign_zh": [
+    "地球自转",
+    "绕月亮转",
+    "太阳关灯"
+   ]
+  },
+  {
+   "id": "q091",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "How long does Earth take to go around the Sun once?",
+   "q_zh": "地球绕太阳转一圈要多久？",
+   "choices": [
+    "100 days",
+    "About 365 days",
+    "30 days"
+   ],
+   "answer": 1,
+   "explain_en": "One trip around the Sun is one year.",
+   "explain_zh": "绕太阳一圈就是一年。",
+   "choices_zh": [
+    "100 天",
+    "大约 365 天",
+    "30 天"
+   ],
+   "sign_en": [
+    "100 days",
+    "~365 days",
+    "30 days"
+   ],
+   "sign_zh": [
+    "100 天",
+    "约365天",
+    "30 天"
+   ]
+  },
+  {
+   "id": "q092",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which body system carries oxygen around your body?",
+   "q_zh": "哪个身体系统把氧气送到全身？",
+   "choices": [
+    "Nervous system",
+    "Skeletal system",
+    "Circulatory system"
+   ],
+   "answer": 2,
+   "explain_en": "The heart pumps blood that carries oxygen.",
+   "explain_zh": "心脏泵出的血液把氧气带到全身。",
+   "choices_zh": [
+    "神经系统",
+    "骨骼系统",
+    "循环系统"
+   ],
+   "sign_en": [
+    "Nervous system",
+    "Skeletal system",
+    "Circulatory"
+   ],
+   "sign_zh": [
+    "神经系统",
+    "骨骼系统",
+    "循环系统"
+   ]
+  },
+  {
+   "id": "q093",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which organ do you use to breathe in air?",
+   "q_zh": "你用哪个器官吸进空气？",
+   "choices": [
+    "Lungs",
+    "Kidneys",
+    "Liver"
+   ],
+   "answer": 0,
+   "explain_en": "Lungs take in oxygen and let out carbon dioxide.",
+   "explain_zh": "肺吸入氧气，呼出二氧化碳。",
+   "choices_zh": [
+    "肺",
+    "肾",
+    "肝"
+   ],
+   "sign_en": [
+    "Lungs",
+    "Kidneys",
+    "Liver"
+   ],
+   "sign_zh": [
+    "肺",
+    "肾",
+    "肝"
+   ]
+  },
+  {
+   "id": "q094",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which body system helps you move your legs to run?",
+   "q_zh": "哪个身体系统让你的腿动起来跑步？",
+   "choices": [
+    "Immune system",
+    "Respiratory system",
+    "Muscular system"
+   ],
+   "answer": 2,
+   "explain_en": "Muscles pull on bones to make you move.",
+   "explain_zh": "肌肉拉动骨头，让你动起来。",
+   "choices_zh": [
+    "免疫系统",
+    "呼吸系统",
+    "肌肉系统"
+   ],
+   "sign_en": [
+    "Immune system",
+    "Respiratory",
+    "Muscular system"
+   ],
+   "sign_zh": [
+    "免疫系统",
+    "呼吸系统",
+    "肌肉系统"
+   ]
+  },
+  {
+   "id": "q095",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Which body system sends messages from your brain to your feet?",
+   "q_zh": "哪个系统把大脑的指令传到脚上？",
+   "choices": [
+    "Digestive system",
+    "Skeletal system",
+    "Nervous system"
+   ],
+   "answer": 2,
+   "explain_en": "Nerves carry signals from the brain to the body.",
+   "explain_zh": "神经把大脑的信号传遍全身。",
+   "choices_zh": [
+    "消化系统",
+    "骨骼系统",
+    "神经系统"
+   ],
+   "sign_en": [
+    "Digestive",
+    "Skeletal system",
+    "Nervous system"
+   ],
+   "sign_zh": [
+    "消化系统",
+    "骨骼系统",
+    "神经系统"
+   ]
+  },
+  {
+   "id": "q096",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Where does digestion of your lunch mostly finish?",
+   "q_zh": "午饭的消化主要在哪里完成？",
+   "choices": [
+    "Small intestine",
+    "Brain",
+    "Lungs"
+   ],
+   "answer": 0,
+   "explain_en": "Most nutrients are absorbed in the small intestine.",
+   "explain_zh": "大部分营养在小肠被吸收。",
+   "choices_zh": [
+    "小肠",
+    "大脑",
+    "肺"
+   ],
+   "sign_en": [
+    "Small intestine",
+    "Brain",
+    "Lungs"
+   ],
+   "sign_zh": [
+    "小肠",
+    "大脑",
+    "肺"
+   ]
+  },
+  {
+   "id": "q097",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Some tiny animals called tardigrades can survive in…",
+   "q_zh": "一种叫水熊虫的小动物能在哪里活下来？",
+   "choices": [
+    "Extreme cold and dryness",
+    "Only inside fruit",
+    "Only warm ponds"
+   ],
+   "answer": 0,
+   "explain_en": "Tardigrades are famous for surviving extreme environments.",
+   "explain_zh": "水熊虫以能在极端环境中生存而闻名。",
+   "choices_zh": [
+    "极冷和极干的环境",
+    "只在水果里",
+    "只在温暖的池塘"
+   ],
+   "sign_en": [
+    "Cold & dry",
+    "Inside fruit",
+    "Warm ponds"
+   ],
+   "sign_zh": [
+    "极冷极干",
+    "只在水果里",
+    "温暖池塘"
+   ]
+  },
+  {
+   "id": "q098",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Corn plants grow tall to reach more…",
+   "q_zh": "玉米长得很高，是为了得到更多……",
+   "choices": [
+    "Sunlight",
+    "Snow",
+    "Rain clouds"
+   ],
+   "answer": 0,
+   "explain_en": "More sunlight means more photosynthesis.",
+   "explain_zh": "阳光越多，光合作用越多。",
+   "choices_zh": [
+    "阳光",
+    "雪",
+    "雨云"
+   ],
+   "sign_en": [
+    "Sunlight",
+    "Snow",
+    "Rain clouds"
+   ],
+   "sign_zh": [
+    "阳光",
+    "雪",
+    "雨云"
+   ]
+  },
+  {
+   "id": "q099",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "easy",
+   "q_en": "Corn (maize) was first grown by people in…",
+   "q_zh": "玉米最早是在哪里被人类种植的？",
+   "choices": [
+    "Mexico",
+    "Egypt",
+    "France"
+   ],
+   "answer": 0,
+   "explain_en": "Indigenous peoples in Mexico domesticated corn thousands of years ago.",
+   "explain_zh": "几千年前墨西哥原住民培育了玉米。",
+   "choices_zh": [
+    "墨西哥",
+    "埃及",
+    "法国"
+   ],
+   "sign_en": [
+    "Mexico",
+    "Egypt",
+    "France"
+   ],
+   "sign_zh": [
+    "墨西哥",
+    "埃及",
+    "法国"
+   ]
+  },
+  {
+   "id": "q100",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "The silky threads on top of an ear of corn are called…",
+   "q_zh": "玉米棒顶上那一缕缕的丝叫……",
+   "choices": [
+    "Corn wool",
+    "Corn rope",
+    "Corn silk"
+   ],
+   "answer": 2,
+   "explain_en": "Each silk thread connects to one kernel.",
+   "explain_zh": "每根玉米须连着一粒玉米粒。",
+   "choices_zh": [
+    "玉米绒",
+    "玉米绳",
+    "玉米须"
+   ],
+   "sign_en": [
+    "Corn wool",
+    "Corn rope",
+    "Corn silk"
+   ],
+   "sign_zh": [
+    "玉米绒",
+    "玉米绳",
+    "玉米须"
+   ]
+  },
+  {
+   "id": "q101",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "easy",
+   "q_en": "In what season are pumpkins usually harvested in BC?",
+   "q_zh": "BC 省的南瓜通常在哪个季节收获？",
+   "choices": [
+    "Early summer",
+    "Spring",
+    "Fall (autumn)",
+    "Winter"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins ripen in September and October.",
+   "explain_zh": "南瓜在九、十月成熟。",
+   "choices_zh": [
+    "初夏",
+    "春天",
+    "秋天",
+    "冬天"
+   ]
+  },
+  {
+   "id": "q102",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Which of these grows on a vine along the ground?",
+   "q_zh": "下面哪种作物是藤蔓贴着地面长的？",
+   "choices": [
+    "Wheat",
+    "Apple",
+    "Corn",
+    "Pumpkin"
+   ],
+   "answer": 3,
+   "explain_en": "Pumpkins grow on long vines that spread across the field.",
+   "explain_zh": "南瓜长在铺满田地的长藤上。",
+   "choices_zh": [
+    "小麦",
+    "苹果",
+    "玉米",
+    "南瓜"
+   ]
+  },
+  {
+   "id": "q103",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "easy",
+   "q_en": "Which farm animal says 'baa'?",
+   "q_zh": "哪种农场动物会“咩”地叫？",
+   "choices": [
+    "Horse",
+    "Duck",
+    "Sheep",
+    "Cow"
+   ],
+   "answer": 2,
+   "explain_en": "Sheep say baa!",
+   "explain_zh": "羊会咩咩叫！",
+   "choices_zh": [
+    "马",
+    "鸭子",
+    "羊",
+    "牛"
+   ]
+  },
+  {
+   "id": "q104",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Hay bales are mostly made of…",
+   "q_zh": "干草垛主要是用什么做的？",
+   "choices": [
+    "Cotton",
+    "Corn kernels",
+    "Dried grass",
+    "Wood"
+   ],
+   "answer": 2,
+   "explain_en": "Farmers cut and dry grass to feed animals in winter.",
+   "explain_zh": "农民把草割下晒干，冬天喂动物。",
+   "choices_zh": [
+    "棉花",
+    "玉米粒",
+    "晒干的草",
+    "木头"
+   ]
+  },
+  {
+   "id": "q105",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "hard",
+   "q_en": "Pumpkins, cucumbers and melons are in the same plant family called…",
+   "q_zh": "南瓜、黄瓜和甜瓜属于同一个植物家族，叫……",
+   "choices": [
+    "Grass family",
+    "Gourd family",
+    "Rose family"
+   ],
+   "answer": 1,
+   "explain_en": "They all belong to the gourd family (Cucurbitaceae).",
+   "explain_zh": "它们都属于葫芦科。",
+   "choices_zh": [
+    "禾本科",
+    "葫芦科",
+    "蔷薇科"
+   ],
+   "sign_en": [
+    "Grass family",
+    "Gourd family",
+    "Rose family"
+   ],
+   "sign_zh": [
+    "禾本科",
+    "葫芦科",
+    "蔷薇科"
+   ]
+  },
+  {
+   "id": "q106",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "Which province is Vancouver in?",
+   "q_zh": "温哥华在哪个省？",
+   "choices": [
+    "Quebec",
+    "British Columbia",
+    "Ontario"
+   ],
+   "answer": 1,
+   "explain_en": "Vancouver is in British Columbia.",
+   "explain_zh": "温哥华在 BC 省。",
+   "choices_zh": [
+    "魁北克省",
+    "不列颠哥伦比亚省",
+    "安大略省"
+   ],
+   "sign_en": [
+    "Quebec",
+    "B.C.",
+    "Ontario"
+   ],
+   "sign_zh": [
+    "魁北克省",
+    "卑诗省",
+    "安大略省"
+   ]
+  },
+  {
+   "id": "q107",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "What is the capital city of Canada?",
+   "q_zh": "加拿大的首都是哪里？",
+   "choices": [
+    "Ottawa",
+    "Toronto",
+    "Montreal"
+   ],
+   "answer": 0,
+   "explain_en": "Ottawa is Canada's capital.",
+   "explain_zh": "渥太华是加拿大首都。",
+   "choices_zh": [
+    "渥太华",
+    "多伦多",
+    "蒙特利尔"
+   ],
+   "sign_en": [
+    "Ottawa",
+    "Toronto",
+    "Montreal"
+   ],
+   "sign_zh": [
+    "渥太华",
+    "多伦多",
+    "蒙特利尔"
+   ]
+  },
+  {
+   "id": "q108",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "What is the capital of British Columbia?",
+   "q_zh": "BC 省的省会是哪里？",
+   "choices": [
+    "Surrey",
+    "Kelowna",
+    "Victoria"
+   ],
+   "answer": 2,
+   "explain_en": "Victoria, on Vancouver Island, is BC's capital.",
+   "explain_zh": "维多利亚在温哥华岛上，是 BC 省省会。",
+   "choices_zh": [
+    "素里",
+    "基隆拿",
+    "维多利亚"
+   ],
+   "sign_en": [
+    "Surrey",
+    "Kelowna",
+    "Victoria"
+   ],
+   "sign_zh": [
+    "素里",
+    "基隆拿",
+    "维多利亚"
+   ]
+  },
+  {
+   "id": "q109",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "Which ocean is next to Vancouver?",
+   "q_zh": "温哥华旁边是哪个大洋？",
+   "choices": [
+    "Atlantic Ocean",
+    "Pacific Ocean",
+    "Arctic Ocean"
+   ],
+   "answer": 1,
+   "explain_en": "BC is on Canada's Pacific coast.",
+   "explain_zh": "BC 省在加拿大的太平洋沿岸。",
+   "choices_zh": [
+    "大西洋",
+    "太平洋",
+    "北冰洋"
+   ],
+   "sign_en": [
+    "Atlantic Ocean",
+    "Pacific Ocean",
+    "Arctic Ocean"
+   ],
+   "sign_zh": [
+    "大西洋",
+    "太平洋",
+    "北冰洋"
+   ]
+  },
+  {
+   "id": "q110",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "What leaf is on Canada's flag?",
+   "q_zh": "加拿大国旗上是什么叶子？",
+   "choices": [
+    "Maple leaf",
+    "Pine needle",
+    "Corn leaf"
+   ],
+   "answer": 0,
+   "explain_en": "The red maple leaf is Canada's symbol.",
+   "explain_zh": "红枫叶是加拿大的象征。",
+   "choices_zh": [
+    "枫叶",
+    "松针",
+    "玉米叶"
+   ],
+   "sign_en": [
+    "Maple leaf",
+    "Pine needle",
+    "Corn leaf"
+   ],
+   "sign_zh": [
+    "枫叶",
+    "松针",
+    "玉米叶"
+   ]
+  },
+  {
+   "id": "q111",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Buying food from local farms helps…",
+   "q_zh": "买本地农场的食物有什么好处？",
+   "choices": [
+    "Cut transport pollution and support farmers",
+    "Nothing",
+    "Make food travel farther"
+   ],
+   "answer": 0,
+   "explain_en": "Local food travels less and supports the community.",
+   "explain_zh": "本地食物运输距离短，还支持社区。",
+   "choices_zh": [
+    "减少运输污染、支持农民",
+    "没好处",
+    "让食物运得更远"
+   ],
+   "sign_en": [
+    "Less pollution",
+    "Nothing",
+    "Travel farther"
+   ],
+   "sign_zh": [
+    "减污染助农",
+    "没好处",
+    "运得更远"
+   ]
+  },
+  {
+   "id": "q112",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "hard",
+   "q_en": "The Fraser River flows into the ocean near which city?",
+   "q_zh": "菲沙河在哪个城市附近流入大海？",
+   "choices": [
+    "Toronto",
+    "Winnipeg",
+    "Vancouver area (Richmond/Delta)"
+   ],
+   "answer": 2,
+   "explain_en": "The Fraser River reaches the Pacific south of Vancouver, between Richmond and Delta.",
+   "explain_zh": "菲沙河在温哥华南边的列治文和三角洲之间入海。",
+   "choices_zh": [
+    "多伦多",
+    "温尼伯",
+    "温哥华一带（列治文、三角洲）"
+   ],
+   "sign_en": [
+    "Toronto",
+    "Winnipeg",
+    "Vancouver area"
+   ],
+   "sign_zh": [
+    "多伦多",
+    "温尼伯",
+    "温哥华一带"
+   ]
+  },
+  {
+   "id": "q113",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Which river valley east of Vancouver has lots of farms?",
+   "q_zh": "温哥华东边哪个河谷有很多农场？",
+   "choices": [
+    "Death Valley",
+    "Okanagan Lake",
+    "Grand Canyon",
+    "Fraser Valley"
+   ],
+   "answer": 3,
+   "explain_en": "The Fraser Valley is one of BC's biggest farming regions.",
+   "explain_zh": "菲沙河谷是 BC 省最重要的农业区之一。",
+   "choices_zh": [
+    "死亡谷",
+    "奥卡纳根湖",
+    "大峡谷",
+    "菲沙河谷"
+   ]
+  },
+  {
+   "id": "q114",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "hard",
+   "q_en": "Canada has how many provinces?",
+   "q_zh": "加拿大有几个省？",
+   "choices": [
+    "13",
+    "10",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "Canada has 10 provinces and 3 territories.",
+   "explain_zh": "加拿大有 10 个省和 3 个地区。",
+   "choices_zh": [
+    "13 个",
+    "10 个",
+    "8 个"
+   ],
+   "sign_en": [
+    "13",
+    "10",
+    "8"
+   ],
+   "sign_zh": [
+    "13 个",
+    "10 个",
+    "8 个"
+   ]
+  },
+  {
+   "id": "q115",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What kind of animal is a capybara?",
+   "q_zh": "CAPYBARA！水豚是哪类动物？",
+   "choices": [
+    "A kind of dog",
+    "The world's largest rodent",
+    "A small bear",
+    "A type of pig"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras are the largest rodents on Earth.",
+   "explain_zh": "水豚是地球上最大的啮齿动物。",
+   "choices_zh": [
+    "一种狗",
+    "世界上最大的啮齿动物",
+    "一种小熊",
+    "一种猪"
+   ]
+  },
+  {
+   "id": "q116",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "Where do wild capybaras live?",
+   "q_zh": "野生水豚生活在哪里？",
+   "choices": [
+    "Canada",
+    "Australia",
+    "Africa",
+    "South America"
+   ],
+   "answer": 3,
+   "explain_en": "They live near rivers and wetlands in South America.",
+   "explain_zh": "它们生活在南美洲的河流和湿地附近。",
+   "choices_zh": [
+    "加拿大",
+    "澳大利亚",
+    "非洲",
+    "南美洲"
+   ]
+  },
+  {
+   "id": "q117",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "What do capybaras mostly eat?",
+   "q_zh": "水豚主要吃什么？",
+   "choices": [
+    "Meat",
+    "Insects",
+    "Grass and water plants",
+    "Fish"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras are herbivores.",
+   "explain_zh": "水豚是食草动物。",
+   "choices_zh": [
+    "肉",
+    "昆虫",
+    "草和水生植物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "q118",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "Capybaras are great at…",
+   "q_zh": "水豚特别擅长……",
+   "choices": [
+    "Swimming",
+    "Digging tunnels",
+    "Flying"
+   ],
+   "answer": 0,
+   "explain_en": "They have slightly webbed feet.",
+   "explain_zh": "它们的脚有一点蹼。",
+   "choices_zh": [
+    "游泳",
+    "挖地道",
+    "飞"
+   ],
+   "sign_en": [
+    "Swimming",
+    "Digging tunnels",
+    "Flying"
+   ],
+   "sign_zh": [
+    "游泳",
+    "挖地道",
+    "飞"
+   ]
+  },
+  {
+   "id": "q119",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "How long can a capybara hold its breath underwater?",
+   "q_zh": "水豚在水下能憋气多久？",
+   "choices": [
+    "About 5 minutes",
+    "A whole day",
+    "5 seconds"
+   ],
+   "answer": 0,
+   "explain_en": "They can stay under for about five minutes to hide from predators.",
+   "explain_zh": "它们能在水下待大约五分钟躲避天敌。",
+   "choices_zh": [
+    "大约 5 分钟",
+    "一整天",
+    "5 秒"
+   ],
+   "sign_en": [
+    "~5 minutes",
+    "A whole day",
+    "5 seconds"
+   ],
+   "sign_zh": [
+    "约5分钟",
+    "一整天",
+    "5 秒"
+   ]
+  },
+  {
+   "id": "q120",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "Capybaras are famous for being…",
+   "q_zh": "水豚以什么性格出名？",
+   "choices": [
+    "Very calm",
+    "Very fierce",
+    "Afraid of water"
+   ],
+   "answer": 0,
+   "explain_en": "Other animals often sit right next to them.",
+   "explain_zh": "其他动物常常挨着它们坐。",
+   "choices_zh": [
+    "非常淡定",
+    "非常凶",
+    "怕水"
+   ],
+   "sign_en": [
+    "Very calm",
+    "Very fierce",
+    "Afraid of water"
+   ],
+   "sign_zh": [
+    "非常淡定",
+    "非常凶",
+    "怕水"
+   ]
+  },
+  {
+   "id": "q121",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "Capybaras live in groups. About how many are in a typical group?",
+   "q_zh": "水豚群居，一群通常大约有多少只？",
+   "choices": [
+    "Exactly 2",
+    "About 10 to 20",
+    "Always alone",
+    "About 1,000"
+   ],
+   "answer": 1,
+   "explain_en": "Groups are usually around 10 to 20, sometimes more in the dry season.",
+   "explain_zh": "一群通常十到二十只，旱季会聚得更多。",
+   "choices_zh": [
+    "正好 2 只",
+    "大约 10 到 20 只",
+    "总是独居",
+    "大约 1000 只"
+   ]
+  },
+  {
+   "id": "q122",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "Where are a capybara's eyes, ears and nose?",
+   "q_zh": "水豚的眼睛、耳朵和鼻子长在哪里？",
+   "choices": [
+    "High on top of its head",
+    "On its tail",
+    "On its back"
+   ],
+   "answer": 0,
+   "explain_en": "So it can see, hear and breathe while almost fully underwater, like a hippo.",
+   "explain_zh": "这样几乎整个身子泡在水里时还能看、听和呼吸，跟河马一样。",
+   "choices_zh": [
+    "在头顶比较高的位置",
+    "尾巴上",
+    "背上"
+   ],
+   "sign_en": [
+    "Top of head",
+    "On its tail",
+    "On its back"
+   ],
+   "sign_zh": [
+    "头顶",
+    "尾巴上",
+    "背上"
+   ]
+  },
+  {
+   "id": "q123",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "hard",
+   "q_en": "A capybara's front teeth…",
+   "q_zh": "水豚的门牙……",
+   "choices": [
+    "Fall out every year",
+    "Are made of wood",
+    "Never stop growing",
+    "Are very small"
+   ],
+   "answer": 2,
+   "explain_en": "Like all rodents, its front teeth keep growing, so it chews a lot to wear them down.",
+   "explain_zh": "和所有啮齿动物一样，门牙一直长，所以要不停啃东西磨牙。",
+   "choices_zh": [
+    "每年都掉",
+    "是木头做的",
+    "一辈子都在长",
+    "非常小"
+   ]
+  },
+  {
+   "id": "q124",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "Which of these is a capybara's relative?",
+   "q_zh": "下面哪种动物是水豚的亲戚？",
+   "choices": [
+    "Frog",
+    "Cat",
+    "Guinea pig"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras and guinea pigs are both cavies.",
+   "explain_zh": "水豚和豚鼠是近亲。",
+   "choices_zh": [
+    "青蛙",
+    "猫",
+    "豚鼠"
+   ],
+   "sign_en": [
+    "Frog",
+    "Cat",
+    "Guinea pig"
+   ],
+   "sign_zh": [
+    "青蛙",
+    "猫",
+    "豚鼠"
+   ]
+  },
+  {
+   "id": "q125",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "hard",
+   "q_en": "About how heavy is an adult capybara?",
+   "q_zh": "成年水豚大约多重？",
+   "choices": [
+    "1 kg",
+    "35 to 65 kg",
+    "5 kg",
+    "500 kg"
+   ],
+   "answer": 1,
+   "explain_en": "Adults usually weigh about 35 to 65 kg, roughly as much as an adult person.",
+   "explain_zh": "成年水豚通常 35 到 65 公斤，差不多一个大人那么重。",
+   "choices_zh": [
+    "1 公斤",
+    "35 到 65 公斤",
+    "5 公斤",
+    "500 公斤"
+   ]
+  },
+  {
+   "id": "q126",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "Capybaras usually rest during the hot day and eat more in the…",
+   "q_zh": "水豚白天热的时候休息，多在什么时候吃东西？",
+   "choices": [
+    "Only at noon",
+    "Only in winter",
+    "Evening"
+   ],
+   "answer": 2,
+   "explain_en": "They graze more in the cooler evening.",
+   "explain_zh": "它们在凉快的傍晚多出来吃草。",
+   "choices_zh": [
+    "只在中午",
+    "只在冬天",
+    "傍晚"
+   ],
+   "sign_en": [
+    "Only at noon",
+    "Only in winter",
+    "Evening"
+   ],
+   "sign_zh": [
+    "只在中午",
+    "只在冬天",
+    "傍晚"
+   ]
+  },
+  {
+   "id": "q127",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "Why do capybaras love to sit in water or mud?",
+   "q_zh": "水豚为什么爱泡在水里或泥里？",
+   "choices": [
+    "To find gold",
+    "To grow wings",
+    "To stay cool and protect their skin",
+    "To sleep standing up"
+   ],
+   "answer": 2,
+   "explain_en": "Water and mud keep them cool and protect against sun and insects.",
+   "explain_zh": "水和泥能降温，还能防晒防虫。",
+   "choices_zh": [
+    "为了找金子",
+    "为了长翅膀",
+    "降温和保护皮肤",
+    "为了站着睡觉"
+   ]
+  },
+  {
+   "id": "q128",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "hard",
+   "q_en": "The name 'capybara' comes from an Indigenous South American language. It roughly means…",
+   "q_zh": "“capybara”这个名字来自南美原住民语言，大意是……",
+   "choices": [
+    "Fish hunter",
+    "Tree climber",
+    "Grass eater"
+   ],
+   "answer": 2,
+   "explain_en": "It comes from the Tupi language and is often translated as 'grass eater'.",
+   "explain_zh": "名字来自图皮语，常被译作“吃草的家伙”。",
+   "choices_zh": [
+    "抓鱼的",
+    "会爬树的",
+    "吃草的"
+   ],
+   "sign_en": [
+    "Fish hunter",
+    "Tree climber",
+    "Grass eater"
+   ],
+   "sign_zh": [
+    "抓鱼的",
+    "会爬树的",
+    "吃草的"
+   ]
+  }
+ ],
+ "maze_rule": "Every corn_maze question has 2 or 3 choices. Show choice 0/1/2 on signs over the LEFT/MIDDLE/RIGHT path at a real fork; running into the correct path continues forward, a wrong path is a short dead-end loop that leads back. No question text says 'turn left/right' anymore.",
+ "sign_rule": "Maze signs show sign_en (top) and sign_zh (below); full text stays in the top bar."
+}

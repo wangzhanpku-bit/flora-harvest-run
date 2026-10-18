@@ -1,0 +1,2081 @@
+{
+ "player": "Mora",
+ "grade": 3,
+ "version": 3,
+ "curriculum": "BC Grade 3 Math, Science, Social Studies + capybara facts",
+ "fields": "same format as Flora's bank; corn_maze questions have at most 3 choices for left/middle/right forks; choices_zh now present on EVERY question (same order as choices); '{name}' in question text = player's chosen name (default Flora), replace at runtime. Display order: English on top, Chinese below.",
+ "questions": [
+  {
+   "id": "g3_001",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 83 pumpkins and finds 31 more. How many now?",
+   "q_zh": "{name} 有 83 个南瓜，又找到 31 个，现在有多少个？",
+   "choices": [
+    "114",
+    "120",
+    "122",
+    "112"
+   ],
+   "answer": 0,
+   "explain_en": "83 + 31 = 114.",
+   "explain_zh": "83+31=114。",
+   "choices_zh": [
+    "114",
+    "120",
+    "122",
+    "112"
+   ]
+  },
+  {
+   "id": "g3_002",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 97 pumpkins and finds 77 more. How many now?",
+   "q_zh": "{name} 有 97 个南瓜，又找到 77 个，现在有多少个？",
+   "choices": [
+    "174",
+    "166",
+    "179"
+   ],
+   "answer": 0,
+   "explain_en": "97 + 77 = 174.",
+   "explain_zh": "97+77=174。",
+   "choices_zh": [
+    "174",
+    "166",
+    "179"
+   ],
+   "sign_en": [
+    "174",
+    "166",
+    "179"
+   ],
+   "sign_zh": [
+    "174",
+    "166",
+    "179"
+   ]
+  },
+  {
+   "id": "g3_003",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 16 pumpkins and finds 87 more. How many now?",
+   "q_zh": "{name} 有 16 个南瓜，又找到 87 个，现在有多少个？",
+   "choices": [
+    "103",
+    "101",
+    "111"
+   ],
+   "answer": 0,
+   "explain_en": "16 + 87 = 103.",
+   "explain_zh": "16+87=103。",
+   "choices_zh": [
+    "103",
+    "101",
+    "111"
+   ],
+   "sign_en": [
+    "103",
+    "101",
+    "111"
+   ],
+   "sign_zh": [
+    "103",
+    "101",
+    "111"
+   ]
+  },
+  {
+   "id": "g3_004",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 37 pumpkins and finds 18 more. How many now?",
+   "q_zh": "{name} 有 37 个南瓜，又找到 18 个，现在有多少个？",
+   "choices": [
+    "55",
+    "48",
+    "52"
+   ],
+   "answer": 0,
+   "explain_en": "37 + 18 = 55.",
+   "explain_zh": "37+18=55。",
+   "choices_zh": [
+    "55",
+    "48",
+    "52"
+   ],
+   "sign_en": [
+    "55",
+    "48",
+    "52"
+   ],
+   "sign_zh": [
+    "55",
+    "48",
+    "52"
+   ]
+  },
+  {
+   "id": "g3_005",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 81 pumpkins and finds 60 more. How many now?",
+   "q_zh": "{name} 有 81 个南瓜，又找到 60 个，现在有多少个？",
+   "choices": [
+    "136",
+    "134",
+    "141"
+   ],
+   "answer": 2,
+   "explain_en": "81 + 60 = 141.",
+   "explain_zh": "81+60=141。",
+   "choices_zh": [
+    "136",
+    "134",
+    "141"
+   ],
+   "sign_en": [
+    "136",
+    "134",
+    "141"
+   ],
+   "sign_zh": [
+    "136",
+    "134",
+    "141"
+   ]
+  },
+  {
+   "id": "g3_006",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 21 pumpkins and finds 25 more. How many now?",
+   "q_zh": "{name} 有 21 个南瓜，又找到 25 个，现在有多少个？",
+   "choices": [
+    "50",
+    "37",
+    "46"
+   ],
+   "answer": 2,
+   "explain_en": "21 + 25 = 46.",
+   "explain_zh": "21+25=46。",
+   "choices_zh": [
+    "50",
+    "37",
+    "46"
+   ],
+   "sign_en": [
+    "50",
+    "37",
+    "46"
+   ],
+   "sign_zh": [
+    "50",
+    "37",
+    "46"
+   ]
+  },
+  {
+   "id": "g3_007",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 68 pumpkins and finds 86 more. How many now?",
+   "q_zh": "{name} 有 68 个南瓜，又找到 86 个，现在有多少个？",
+   "choices": [
+    "163",
+    "162",
+    "154"
+   ],
+   "answer": 2,
+   "explain_en": "68 + 86 = 154.",
+   "explain_zh": "68+86=154。",
+   "choices_zh": [
+    "163",
+    "162",
+    "154"
+   ],
+   "sign_en": [
+    "163",
+    "162",
+    "154"
+   ],
+   "sign_zh": [
+    "163",
+    "162",
+    "154"
+   ]
+  },
+  {
+   "id": "g3_008",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 71 pumpkins and finds 58 more. How many now?",
+   "q_zh": "{name} 有 71 个南瓜，又找到 58 个，现在有多少个？",
+   "choices": [
+    "129",
+    "126",
+    "122"
+   ],
+   "answer": 0,
+   "explain_en": "71 + 58 = 129.",
+   "explain_zh": "71+58=129。",
+   "choices_zh": [
+    "129",
+    "126",
+    "122"
+   ],
+   "sign_en": [
+    "129",
+    "126",
+    "122"
+   ],
+   "sign_zh": [
+    "129",
+    "126",
+    "122"
+   ]
+  },
+  {
+   "id": "g3_009",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 99 pumpkins and finds 30 more. How many now?",
+   "q_zh": "{name} 有 99 个南瓜，又找到 30 个，现在有多少个？",
+   "choices": [
+    "129",
+    "120",
+    "135"
+   ],
+   "answer": 0,
+   "explain_en": "99 + 30 = 129.",
+   "explain_zh": "99+30=129。",
+   "choices_zh": [
+    "129",
+    "120",
+    "135"
+   ],
+   "sign_en": [
+    "129",
+    "120",
+    "135"
+   ],
+   "sign_zh": [
+    "129",
+    "120",
+    "135"
+   ]
+  },
+  {
+   "id": "g3_010",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 64 pumpkins and finds 74 more. How many now?",
+   "q_zh": "{name} 有 64 个南瓜，又找到 74 个，现在有多少个？",
+   "choices": [
+    "138",
+    "136",
+    "148"
+   ],
+   "answer": 0,
+   "explain_en": "64 + 74 = 138.",
+   "explain_zh": "64+74=138。",
+   "choices_zh": [
+    "138",
+    "136",
+    "148"
+   ],
+   "sign_en": [
+    "138",
+    "136",
+    "148"
+   ],
+   "sign_zh": [
+    "138",
+    "136",
+    "148"
+   ]
+  },
+  {
+   "id": "g3_011",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 91 apples. The horses ate 51. How many are left?",
+   "q_zh": "原来有 91 个苹果，马吃了 51 个，还剩几个？",
+   "choices": [
+    "33",
+    "40",
+    "41",
+    "35"
+   ],
+   "answer": 1,
+   "explain_en": "91 − 51 = 40.",
+   "explain_zh": "91−51=40。",
+   "choices_zh": [
+    "33",
+    "40",
+    "41",
+    "35"
+   ]
+  },
+  {
+   "id": "g3_012",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 88 apples. The horses ate 55. How many are left?",
+   "q_zh": "原来有 88 个苹果，马吃了 55 个，还剩几个？",
+   "choices": [
+    "37",
+    "34",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "88 − 55 = 33.",
+   "explain_zh": "88−55=33。",
+   "choices_zh": [
+    "37",
+    "34",
+    "33"
+   ],
+   "sign_en": [
+    "37",
+    "34",
+    "33"
+   ],
+   "sign_zh": [
+    "37",
+    "34",
+    "33"
+   ]
+  },
+  {
+   "id": "g3_013",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 45 apples. The horses ate 35. How many are left?",
+   "q_zh": "原来有 45 个苹果，马吃了 35 个，还剩几个？",
+   "choices": [
+    "19",
+    "10",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "45 − 35 = 10.",
+   "explain_zh": "45−35=10。",
+   "choices_zh": [
+    "19",
+    "10",
+    "2"
+   ],
+   "sign_en": [
+    "19",
+    "10",
+    "2"
+   ],
+   "sign_zh": [
+    "19",
+    "10",
+    "2"
+   ]
+  },
+  {
+   "id": "g3_014",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 44 apples. The horses ate 39. How many are left?",
+   "q_zh": "原来有 44 个苹果，马吃了 39 个，还剩几个？",
+   "choices": [
+    "9",
+    "14",
+    "5",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "44 − 39 = 5.",
+   "explain_zh": "44−39=5。",
+   "choices_zh": [
+    "9",
+    "14",
+    "5",
+    "12"
+   ]
+  },
+  {
+   "id": "g3_015",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 66 apples. The horses ate 11. How many are left?",
+   "q_zh": "原来有 66 个苹果，马吃了 11 个，还剩几个？",
+   "choices": [
+    "49",
+    "46",
+    "60",
+    "55"
+   ],
+   "answer": 3,
+   "explain_en": "66 − 11 = 55.",
+   "explain_zh": "66−11=55。",
+   "choices_zh": [
+    "49",
+    "46",
+    "60",
+    "55"
+   ]
+  },
+  {
+   "id": "g3_016",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 90 apples. The horses ate 81. How many are left?",
+   "q_zh": "原来有 90 个苹果，马吃了 81 个，还剩几个？",
+   "choices": [
+    "10",
+    "11",
+    "2",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "90 − 81 = 9.",
+   "explain_zh": "90−81=9。",
+   "choices_zh": [
+    "10",
+    "11",
+    "2",
+    "9"
+   ]
+  },
+  {
+   "id": "g3_017",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 95 apples. The horses ate 49. How many are left?",
+   "q_zh": "原来有 95 个苹果，马吃了 49 个，还剩几个？",
+   "choices": [
+    "52",
+    "46",
+    "36",
+    "45"
+   ],
+   "answer": 1,
+   "explain_en": "95 − 49 = 46.",
+   "explain_zh": "95−49=46。",
+   "choices_zh": [
+    "52",
+    "46",
+    "36",
+    "45"
+   ]
+  },
+  {
+   "id": "g3_018",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There were 86 apples. The horses ate 52. How many are left?",
+   "q_zh": "原来有 86 个苹果，马吃了 52 个，还剩几个？",
+   "choices": [
+    "35",
+    "34",
+    "40",
+    "37"
+   ],
+   "answer": 1,
+   "explain_en": "86 − 52 = 34.",
+   "explain_zh": "86−52=34。",
+   "choices_zh": [
+    "35",
+    "34",
+    "40",
+    "37"
+   ]
+  },
+  {
+   "id": "g3_019",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 baskets with 10 pumpkins each. How many pumpkins?",
+   "q_zh": "3 个篮子，每篮 10 个南瓜，一共几个？",
+   "choices": [
+    "27",
+    "30",
+    "29",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 10 = 30.",
+   "explain_zh": "3×10=30。",
+   "choices_zh": [
+    "27",
+    "30",
+    "29",
+    "26"
+   ]
+  },
+  {
+   "id": "g3_020",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4 baskets with 9 pumpkins each. How many pumpkins?",
+   "q_zh": "4 个篮子，每篮 9 个南瓜，一共几个？",
+   "choices": [
+    "34",
+    "37",
+    "36"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 9 = 36.",
+   "explain_zh": "4×9=36。",
+   "choices_zh": [
+    "34",
+    "37",
+    "36"
+   ],
+   "sign_en": [
+    "34",
+    "37",
+    "36"
+   ],
+   "sign_zh": [
+    "34",
+    "37",
+    "36"
+   ]
+  },
+  {
+   "id": "g3_021",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7 baskets with 4 pumpkins each. How many pumpkins?",
+   "q_zh": "7 个篮子，每篮 4 个南瓜，一共几个？",
+   "choices": [
+    "28",
+    "27",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "7 × 4 = 28.",
+   "explain_zh": "7×4=28。",
+   "choices_zh": [
+    "28",
+    "27",
+    "26"
+   ],
+   "sign_en": [
+    "28",
+    "27",
+    "26"
+   ],
+   "sign_zh": [
+    "28",
+    "27",
+    "26"
+   ]
+  },
+  {
+   "id": "g3_022",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6 baskets with 6 pumpkins each. How many pumpkins?",
+   "q_zh": "6 个篮子，每篮 6 个南瓜，一共几个？",
+   "choices": [
+    "35",
+    "33",
+    "36",
+    "31"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 6 = 36.",
+   "explain_zh": "6×6=36。",
+   "choices_zh": [
+    "35",
+    "33",
+    "36",
+    "31"
+   ]
+  },
+  {
+   "id": "g3_023",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 baskets with 3 pumpkins each. How many pumpkins?",
+   "q_zh": "3 个篮子，每篮 3 个南瓜，一共几个？",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 3 = 9.",
+   "explain_zh": "3×3=9。",
+   "choices_zh": [
+    "10",
+    "11",
+    "9",
+    "7"
+   ]
+  },
+  {
+   "id": "g3_024",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4 baskets with 10 pumpkins each. How many pumpkins?",
+   "q_zh": "4 个篮子，每篮 10 个南瓜，一共几个？",
+   "choices": [
+    "42",
+    "36",
+    "40",
+    "45"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 10 = 40.",
+   "explain_zh": "4×10=40。",
+   "choices_zh": [
+    "42",
+    "36",
+    "40",
+    "45"
+   ]
+  },
+  {
+   "id": "g3_025",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 baskets with 6 pumpkins each. How many pumpkins?",
+   "q_zh": "8 个篮子，每篮 6 个南瓜，一共几个？",
+   "choices": [
+    "48",
+    "46",
+    "50"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 6 = 48.",
+   "explain_zh": "8×6=48。",
+   "choices_zh": [
+    "48",
+    "46",
+    "50"
+   ],
+   "sign_en": [
+    "48",
+    "46",
+    "50"
+   ],
+   "sign_zh": [
+    "48",
+    "46",
+    "50"
+   ]
+  },
+  {
+   "id": "g3_026",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 baskets with 7 pumpkins each. How many pumpkins?",
+   "q_zh": "3 个篮子，每篮 7 个南瓜，一共几个？",
+   "choices": [
+    "19",
+    "18",
+    "21"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 7 = 21.",
+   "explain_zh": "3×7=21。",
+   "choices_zh": [
+    "19",
+    "18",
+    "21"
+   ],
+   "sign_en": [
+    "19",
+    "18",
+    "21"
+   ],
+   "sign_zh": [
+    "19",
+    "18",
+    "21"
+   ]
+  },
+  {
+   "id": "g3_027",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7 baskets with 9 pumpkins each. How many pumpkins?",
+   "q_zh": "7 个篮子，每篮 9 个南瓜，一共几个？",
+   "choices": [
+    "60",
+    "65",
+    "61",
+    "63"
+   ],
+   "answer": 3,
+   "explain_en": "7 × 9 = 63.",
+   "explain_zh": "7×9=63。",
+   "choices_zh": [
+    "60",
+    "65",
+    "61",
+    "63"
+   ]
+  },
+  {
+   "id": "g3_028",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4 baskets with 10 pumpkins each. How many pumpkins?",
+   "q_zh": "4 个篮子，每篮 10 个南瓜，一共几个？",
+   "choices": [
+    "36",
+    "40",
+    "42",
+    "45"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 10 = 40.",
+   "explain_zh": "4×10=40。",
+   "choices_zh": [
+    "36",
+    "40",
+    "42",
+    "45"
+   ]
+  },
+  {
+   "id": "g3_029",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 baskets with 9 pumpkins each. How many pumpkins?",
+   "q_zh": "3 个篮子，每篮 9 个南瓜，一共几个？",
+   "choices": [
+    "27",
+    "26",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 9 = 27.",
+   "explain_zh": "3×9=27。",
+   "choices_zh": [
+    "27",
+    "26",
+    "31"
+   ],
+   "sign_en": [
+    "27",
+    "26",
+    "31"
+   ],
+   "sign_zh": [
+    "27",
+    "26",
+    "31"
+   ]
+  },
+  {
+   "id": "g3_030",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5 baskets with 8 pumpkins each. How many pumpkins?",
+   "q_zh": "5 个篮子，每篮 8 个南瓜，一共几个？",
+   "choices": [
+    "40",
+    "35",
+    "37"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 8 = 40.",
+   "explain_zh": "5×8=40。",
+   "choices_zh": [
+    "40",
+    "35",
+    "37"
+   ],
+   "sign_en": [
+    "40",
+    "35",
+    "37"
+   ],
+   "sign_zh": [
+    "40",
+    "35",
+    "37"
+   ]
+  },
+  {
+   "id": "g3_031",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 18 carrots equally among 3 bunnies. How many each?",
+   "q_zh": "18 根胡萝卜平分给 3 只小兔子，每只几根？",
+   "choices": [
+    "4",
+    "6",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "18 ÷ 3 = 6.",
+   "explain_zh": "18÷3=6。",
+   "choices_zh": [
+    "4",
+    "6",
+    "3"
+   ],
+   "sign_en": [
+    "4",
+    "6",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "3"
+   ]
+  },
+  {
+   "id": "g3_032",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 6 carrots equally among 3 bunnies. How many each?",
+   "q_zh": "6 根胡萝卜平分给 3 只小兔子，每只几根？",
+   "choices": [
+    "2",
+    "0",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "6 ÷ 3 = 2.",
+   "explain_zh": "6÷3=2。",
+   "choices_zh": [
+    "2",
+    "0",
+    "4"
+   ],
+   "sign_en": [
+    "2",
+    "0",
+    "4"
+   ],
+   "sign_zh": [
+    "2",
+    "0",
+    "4"
+   ]
+  },
+  {
+   "id": "g3_033",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 8 carrots equally among 4 bunnies. How many each?",
+   "q_zh": "8 根胡萝卜平分给 4 只小兔子，每只几根？",
+   "choices": [
+    "2",
+    "5",
+    "0"
+   ],
+   "answer": 0,
+   "explain_en": "8 ÷ 4 = 2.",
+   "explain_zh": "8÷4=2。",
+   "choices_zh": [
+    "2",
+    "5",
+    "0"
+   ],
+   "sign_en": [
+    "2",
+    "5",
+    "0"
+   ],
+   "sign_zh": [
+    "2",
+    "5",
+    "0"
+   ]
+  },
+  {
+   "id": "g3_034",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 12 carrots equally among 4 bunnies. How many each?",
+   "q_zh": "12 根胡萝卜平分给 4 只小兔子，每只几根？",
+   "choices": [
+    "6",
+    "2",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "12 ÷ 4 = 3.",
+   "explain_zh": "12÷4=3。",
+   "choices_zh": [
+    "6",
+    "2",
+    "3"
+   ],
+   "sign_en": [
+    "6",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "6",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "g3_035",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 15 carrots equally among 5 bunnies. How many each?",
+   "q_zh": "15 根胡萝卜平分给 5 只小兔子，每只几根？",
+   "choices": [
+    "4",
+    "3",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "15 ÷ 5 = 3.",
+   "explain_zh": "15÷5=3。",
+   "choices_zh": [
+    "4",
+    "3",
+    "0"
+   ],
+   "sign_en": [
+    "4",
+    "3",
+    "0"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "0"
+   ]
+  },
+  {
+   "id": "g3_036",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 20 carrots equally among 5 bunnies. How many each?",
+   "q_zh": "20 根胡萝卜平分给 5 只小兔子，每只几根？",
+   "choices": [
+    "4",
+    "2",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "20 ÷ 5 = 4.",
+   "explain_zh": "20÷5=4。",
+   "choices_zh": [
+    "4",
+    "2",
+    "7"
+   ],
+   "sign_en": [
+    "4",
+    "2",
+    "7"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "7"
+   ]
+  },
+  {
+   "id": "g3_037",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 8 carrots equally among 4 bunnies. How many each?",
+   "q_zh": "8 根胡萝卜平分给 4 只小兔子，每只几根？",
+   "choices": [
+    "4",
+    "2",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "8 ÷ 4 = 2.",
+   "explain_zh": "8÷4=2。",
+   "choices_zh": [
+    "4",
+    "2",
+    "0"
+   ],
+   "sign_en": [
+    "4",
+    "2",
+    "0"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "0"
+   ]
+  },
+  {
+   "id": "g3_038",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Share 25 carrots equally among 5 bunnies. How many each?",
+   "q_zh": "25 根胡萝卜平分给 5 只小兔子，每只几根？",
+   "choices": [
+    "4",
+    "5",
+    "7",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "25 ÷ 5 = 5.",
+   "explain_zh": "25÷5=5。",
+   "choices_zh": [
+    "4",
+    "5",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "g3_039",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 8, 10, 12, 14, …",
+   "q_zh": "下一个数是？8、10、12、14……",
+   "choices": [
+    "16",
+    "19",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "Add 2 each time.",
+   "explain_zh": "每次加 2。",
+   "choices_zh": [
+    "16",
+    "19",
+    "13"
+   ],
+   "sign_en": [
+    "16",
+    "19",
+    "13"
+   ],
+   "sign_zh": [
+    "16",
+    "19",
+    "13"
+   ]
+  },
+  {
+   "id": "g3_040",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 10, 15, 20, 25, …",
+   "q_zh": "下一个数是？10、15、20、25……",
+   "choices": [
+    "29",
+    "30",
+    "31"
+   ],
+   "answer": 1,
+   "explain_en": "Add 5 each time.",
+   "explain_zh": "每次加 5。",
+   "choices_zh": [
+    "29",
+    "30",
+    "31"
+   ],
+   "sign_en": [
+    "29",
+    "30",
+    "31"
+   ],
+   "sign_zh": [
+    "29",
+    "30",
+    "31"
+   ]
+  },
+  {
+   "id": "g3_041",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 2, 12, 22, 32, …",
+   "q_zh": "下一个数是？2、12、22、32……",
+   "choices": [
+    "39",
+    "42",
+    "45"
+   ],
+   "answer": 1,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "choices_zh": [
+    "39",
+    "42",
+    "45"
+   ],
+   "sign_en": [
+    "39",
+    "42",
+    "45"
+   ],
+   "sign_zh": [
+    "39",
+    "42",
+    "45"
+   ]
+  },
+  {
+   "id": "g3_042",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 8, 18, 28, 38, …",
+   "q_zh": "下一个数是？8、18、28、38……",
+   "choices": [
+    "48",
+    "45",
+    "51"
+   ],
+   "answer": 0,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "choices_zh": [
+    "48",
+    "45",
+    "51"
+   ],
+   "sign_en": [
+    "48",
+    "45",
+    "51"
+   ],
+   "sign_zh": [
+    "48",
+    "45",
+    "51"
+   ]
+  },
+  {
+   "id": "g3_043",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 1, 6, 11, 16, …",
+   "q_zh": "下一个数是？1、6、11、16……",
+   "choices": [
+    "21",
+    "18",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "Add 5 each time.",
+   "explain_zh": "每次加 5。",
+   "choices_zh": [
+    "21",
+    "18",
+    "19"
+   ],
+   "sign_en": [
+    "21",
+    "18",
+    "19"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "19"
+   ]
+  },
+  {
+   "id": "g3_044",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "What comes next? 6, 16, 26, 36, …",
+   "q_zh": "下一个数是？6、16、26、36……",
+   "choices": [
+    "44",
+    "49",
+    "46"
+   ],
+   "answer": 2,
+   "explain_en": "Add 10 each time.",
+   "explain_zh": "每次加 10。",
+   "choices_zh": [
+    "44",
+    "49",
+    "46"
+   ],
+   "sign_en": [
+    "44",
+    "49",
+    "46"
+   ],
+   "sign_zh": [
+    "44",
+    "49",
+    "46"
+   ]
+  },
+  {
+   "id": "g3_045",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 429, what is the value of the digit 4?",
+   "q_zh": "在 429 里，数字 4 代表多少？",
+   "choices": [
+    "4000",
+    "40",
+    "400",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "4 is in the hundreds place: 400.",
+   "explain_zh": "4 在百位，代表 400。",
+   "choices_zh": [
+    "4000",
+    "40",
+    "400",
+    "4"
+   ]
+  },
+  {
+   "id": "g3_046",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 314, what is the value of the digit 3?",
+   "q_zh": "在 314 里，数字 3 代表多少？",
+   "choices": [
+    "300",
+    "30",
+    "3",
+    "3000"
+   ],
+   "answer": 0,
+   "explain_en": "3 is in the hundreds place: 300.",
+   "explain_zh": "3 在百位，代表 300。",
+   "choices_zh": [
+    "300",
+    "30",
+    "3",
+    "3000"
+   ]
+  },
+  {
+   "id": "g3_047",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 178, what is the value of the digit 1?",
+   "q_zh": "在 178 里，数字 1 代表多少？",
+   "choices": [
+    "1000",
+    "100",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "1 is in the hundreds place: 100.",
+   "explain_zh": "1 在百位，代表 100。",
+   "choices_zh": [
+    "1000",
+    "100",
+    "1"
+   ],
+   "sign_en": [
+    "1000",
+    "100",
+    "1"
+   ],
+   "sign_zh": [
+    "1000",
+    "100",
+    "1"
+   ]
+  },
+  {
+   "id": "g3_048",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 165, what is the value of the digit 1?",
+   "q_zh": "在 165 里，数字 1 代表多少？",
+   "choices": [
+    "1000",
+    "1",
+    "100",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "1 is in the hundreds place: 100.",
+   "explain_zh": "1 在百位，代表 100。",
+   "choices_zh": [
+    "1000",
+    "1",
+    "100",
+    "10"
+   ]
+  },
+  {
+   "id": "g3_049",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 301, what is the value of the digit 3?",
+   "q_zh": "在 301 里，数字 3 代表多少？",
+   "choices": [
+    "30",
+    "3",
+    "3000",
+    "300"
+   ],
+   "answer": 3,
+   "explain_en": "3 is in the hundreds place: 300.",
+   "explain_zh": "3 在百位，代表 300。",
+   "choices_zh": [
+    "30",
+    "3",
+    "3000",
+    "300"
+   ]
+  },
+  {
+   "id": "g3_050",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "In the number 520, what is the value of the digit 5?",
+   "q_zh": "在 520 里，数字 5 代表多少？",
+   "choices": [
+    "5",
+    "5000",
+    "50",
+    "500"
+   ],
+   "answer": 3,
+   "explain_en": "5 is in the hundreds place: 500.",
+   "explain_zh": "5 在百位，代表 500。",
+   "choices_zh": [
+    "5",
+    "5000",
+    "50",
+    "500"
+   ]
+  },
+  {
+   "id": "g3_051",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 131 or 538?",
+   "q_zh": "131 和 538 哪个大？",
+   "choices": [
+    "538",
+    "131"
+   ],
+   "answer": 0,
+   "explain_en": "Compare hundreds first.",
+   "explain_zh": "先比百位。",
+   "choices_zh": [
+    "538",
+    "131"
+   ],
+   "sign_en": [
+    "538",
+    "131"
+   ],
+   "sign_zh": [
+    "538",
+    "131"
+   ]
+  },
+  {
+   "id": "g3_052",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 362 or 969?",
+   "q_zh": "362 和 969 哪个大？",
+   "choices": [
+    "969",
+    "362"
+   ],
+   "answer": 0,
+   "explain_en": "Compare hundreds first.",
+   "explain_zh": "先比百位。",
+   "choices_zh": [
+    "969",
+    "362"
+   ],
+   "sign_en": [
+    "969",
+    "362"
+   ],
+   "sign_zh": [
+    "969",
+    "362"
+   ]
+  },
+  {
+   "id": "g3_053",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 452 or 327?",
+   "q_zh": "452 和 327 哪个大？",
+   "choices": [
+    "452",
+    "327"
+   ],
+   "answer": 0,
+   "explain_en": "Compare hundreds first.",
+   "explain_zh": "先比百位。",
+   "choices_zh": [
+    "452",
+    "327"
+   ],
+   "sign_en": [
+    "452",
+    "327"
+   ],
+   "sign_zh": [
+    "452",
+    "327"
+   ]
+  },
+  {
+   "id": "g3_054",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 489 or 273?",
+   "q_zh": "489 和 273 哪个大？",
+   "choices": [
+    "273",
+    "489"
+   ],
+   "answer": 1,
+   "explain_en": "Compare hundreds first.",
+   "explain_zh": "先比百位。",
+   "choices_zh": [
+    "273",
+    "489"
+   ],
+   "sign_en": [
+    "273",
+    "489"
+   ],
+   "sign_zh": [
+    "273",
+    "489"
+   ]
+  },
+  {
+   "id": "g3_055",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Which number is bigger: 818 or 415?",
+   "q_zh": "818 和 415 哪个大？",
+   "choices": [
+    "415",
+    "818"
+   ],
+   "answer": 1,
+   "explain_en": "Compare hundreds first.",
+   "explain_zh": "先比百位。",
+   "choices_zh": [
+    "415",
+    "818"
+   ],
+   "sign_en": [
+    "415",
+    "818"
+   ],
+   "sign_zh": [
+    "415",
+    "818"
+   ]
+  },
+  {
+   "id": "g3_056",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The farm opens at 9:00. The hayride starts 15 minutes later. What time is that?",
+   "q_zh": "农场 9:00 开门，干草车 15 分钟后出发，几点出发？",
+   "choices": [
+    "9:15",
+    "10:00",
+    "9:30"
+   ],
+   "answer": 0,
+   "explain_en": "9:00 plus 15 minutes is 9:15.",
+   "explain_zh": "9:00 再过 15 分钟是 9:15。",
+   "choices_zh": [
+    "9:15",
+    "10:00",
+    "9:30"
+   ],
+   "sign_en": [
+    "9:15",
+    "10:00",
+    "9:30"
+   ],
+   "sign_zh": [
+    "9:15",
+    "10:00",
+    "9:30"
+   ]
+  },
+  {
+   "id": "g3_057",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The farm opens at 2:00. The hayride starts 15 minutes later. What time is that?",
+   "q_zh": "农场 2:00 开门，干草车 15 分钟后出发，几点出发？",
+   "choices": [
+    "2:15",
+    "2:30",
+    "3:00"
+   ],
+   "answer": 0,
+   "explain_en": "2:00 plus 15 minutes is 2:15.",
+   "explain_zh": "2:00 再过 15 分钟是 2:15。",
+   "choices_zh": [
+    "2:15",
+    "2:30",
+    "3:00"
+   ],
+   "sign_en": [
+    "2:15",
+    "2:30",
+    "3:00"
+   ],
+   "sign_zh": [
+    "2:15",
+    "2:30",
+    "3:00"
+   ]
+  },
+  {
+   "id": "g3_058",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The farm opens at 1:00. The hayride starts 45 minutes later. What time is that?",
+   "q_zh": "农场 1:00 开门，干草车 45 分钟后出发，几点出发？",
+   "choices": [
+    "1:45",
+    "1:15",
+    "2:00",
+    "1:00"
+   ],
+   "answer": 0,
+   "explain_en": "1:00 plus 45 minutes is 1:45.",
+   "explain_zh": "1:00 再过 45 分钟是 1:45。",
+   "choices_zh": [
+    "1:45",
+    "1:15",
+    "2:00",
+    "1:00"
+   ]
+  },
+  {
+   "id": "g3_059",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The farm opens at 6:00. The hayride starts 45 minutes later. What time is that?",
+   "q_zh": "农场 6:00 开门，干草车 45 分钟后出发，几点出发？",
+   "choices": [
+    "6:45",
+    "6:00",
+    "6:15"
+   ],
+   "answer": 0,
+   "explain_en": "6:00 plus 45 minutes is 6:45.",
+   "explain_zh": "6:00 再过 45 分钟是 6:45。",
+   "choices_zh": [
+    "6:45",
+    "6:00",
+    "6:15"
+   ],
+   "sign_en": [
+    "6:45",
+    "6:00",
+    "6:15"
+   ],
+   "sign_zh": [
+    "6:45",
+    "6:00",
+    "6:15"
+   ]
+  },
+  {
+   "id": "g3_060",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What does a seed need to start growing?",
+   "q_zh": "种子发芽需要什么？",
+   "choices": [
+    "Darkness only",
+    "Salt",
+    "Water and warmth",
+    "Candy"
+   ],
+   "answer": 2,
+   "explain_en": "Seeds sprout with water, warmth and air.",
+   "explain_zh": "种子需要水、温度和空气才能发芽。",
+   "choices_zh": [
+    "只要黑暗",
+    "盐",
+    "水和温暖",
+    "糖果"
+   ]
+  },
+  {
+   "id": "g3_061",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which part of a plant makes seeds?",
+   "q_zh": "植物的哪个部分会结种子？",
+   "choices": [
+    "Stem",
+    "Soil",
+    "Root",
+    "Flower"
+   ],
+   "answer": 3,
+   "explain_en": "Flowers turn into fruits that hold seeds.",
+   "explain_zh": "花变成果实，果实里有种子。",
+   "choices_zh": [
+    "茎",
+    "土",
+    "根",
+    "花"
+   ]
+  },
+  {
+   "id": "g3_062",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which animal lays eggs on the farm?",
+   "q_zh": "农场里哪种动物会下蛋？",
+   "choices": [
+    "Pig",
+    "Chicken",
+    "Horse",
+    "Cow"
+   ],
+   "answer": 1,
+   "explain_en": "Hens lay eggs.",
+   "explain_zh": "母鸡会下蛋。",
+   "choices_zh": [
+    "猪",
+    "鸡",
+    "马",
+    "牛"
+   ]
+  },
+  {
+   "id": "g3_063",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A baby cow is called a…",
+   "q_zh": "小牛叫什么？",
+   "choices": [
+    "Chick",
+    "Calf",
+    "Puppy",
+    "Kitten"
+   ],
+   "answer": 1,
+   "explain_en": "A baby cow is a calf.",
+   "explain_zh": "小牛叫牛犊。",
+   "choices_zh": [
+    "小鸡",
+    "牛犊",
+    "小狗",
+    "小猫"
+   ]
+  },
+  {
+   "id": "g3_064",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What is the life cycle order of a pumpkin?",
+   "q_zh": "南瓜的生长顺序是？",
+   "choices": [
+    "Seed → sprout → vine → pumpkin",
+    "Pumpkin → seed → flower",
+    "Vine → seed → sprout"
+   ],
+   "answer": 0,
+   "explain_en": "It starts as a seed.",
+   "explain_zh": "一切从种子开始。",
+   "choices_zh": [
+    "种子→发芽→藤→南瓜",
+    "南瓜→种子→花",
+    "藤→种子→发芽"
+   ],
+   "sign_en": [
+    "Seed→pumpkin",
+    "Pumpkin→flower",
+    "Vine→sprout"
+   ],
+   "sign_zh": [
+    "种子→南瓜",
+    "南瓜→花",
+    "藤→发芽"
+   ]
+  },
+  {
+   "id": "g3_065",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which is a living thing?",
+   "q_zh": "下面哪个是有生命的？",
+   "choices": [
+    "A corn plant",
+    "A fence",
+    "A tractor"
+   ],
+   "answer": 0,
+   "explain_en": "Living things grow and need food and water.",
+   "explain_zh": "生物会生长，需要食物和水。",
+   "choices_zh": [
+    "玉米苗",
+    "篱笆",
+    "拖拉机"
+   ],
+   "sign_en": [
+    "A corn plant",
+    "A fence",
+    "A tractor"
+   ],
+   "sign_zh": [
+    "玉米苗",
+    "篱笆",
+    "拖拉机"
+   ]
+  },
+  {
+   "id": "g3_066",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Leaves change colour in which season?",
+   "q_zh": "树叶在哪个季节变色？",
+   "choices": [
+    "Summer",
+    "Fall",
+    "Spring"
+   ],
+   "answer": 1,
+   "explain_en": "In fall, leaves turn red, orange and yellow.",
+   "explain_zh": "秋天树叶会变红、变橙、变黄。",
+   "choices_zh": [
+    "夏天",
+    "秋天",
+    "春天"
+   ],
+   "sign_en": [
+    "Summer",
+    "Fall",
+    "Spring"
+   ],
+   "sign_zh": [
+    "夏天",
+    "秋天",
+    "春天"
+   ]
+  },
+  {
+   "id": "g3_067",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water turning into ice is called…",
+   "q_zh": "水变成冰叫什么？",
+   "choices": [
+    "Boiling",
+    "Freezing",
+    "Melting",
+    "Raining"
+   ],
+   "answer": 1,
+   "explain_en": "Water freezes at 0 °C.",
+   "explain_zh": "水在 0 °C 结冰。",
+   "choices_zh": [
+    "沸腾",
+    "结冰",
+    "融化",
+    "下雨"
+   ]
+  },
+  {
+   "id": "g3_068",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which animal is a mammal?",
+   "q_zh": "哪个是哺乳动物？",
+   "choices": [
+    "Frog",
+    "Capybara",
+    "Chicken"
+   ],
+   "answer": 1,
+   "explain_en": "Mammals have fur and feed milk to babies.",
+   "explain_zh": "哺乳动物有毛，用奶喂宝宝。",
+   "choices_zh": [
+    "青蛙",
+    "水豚",
+    "鸡"
+   ],
+   "sign_en": [
+    "Frog",
+    "Capybara",
+    "Chicken"
+   ],
+   "sign_zh": [
+    "青蛙",
+    "水豚",
+    "鸡"
+   ]
+  },
+  {
+   "id": "g3_069",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "What city do you live near?",
+   "q_zh": "你住在哪个城市附近？",
+   "choices": [
+    "New York",
+    "Paris",
+    "Vancouver",
+    "Tokyo"
+   ],
+   "answer": 2,
+   "explain_en": "West Vancouver is next to Vancouver.",
+   "explain_zh": "西温哥华就在温哥华旁边。",
+   "choices_zh": [
+    "纽约",
+    "巴黎",
+    "温哥华",
+    "东京"
+   ]
+  },
+  {
+   "id": "g3_070",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "What colour is the maple leaf on Canada's flag?",
+   "q_zh": "加拿大国旗上的枫叶是什么颜色？",
+   "choices": [
+    "Red",
+    "Green",
+    "Blue"
+   ],
+   "answer": 0,
+   "explain_en": "Red and white are Canada's colours.",
+   "explain_zh": "红和白是加拿大的颜色。",
+   "choices_zh": [
+    "红色",
+    "绿色",
+    "蓝色"
+   ],
+   "sign_en": [
+    "Red",
+    "Green",
+    "Blue"
+   ],
+   "sign_zh": [
+    "红色",
+    "绿色",
+    "蓝色"
+   ]
+  },
+  {
+   "id": "g3_071",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "easy",
+   "q_en": "Who grows the food we eat?",
+   "q_zh": "我们吃的食物是谁种的？",
+   "choices": [
+    "Pilots",
+    "Firefighters",
+    "Doctors",
+    "Farmers"
+   ],
+   "answer": 3,
+   "explain_en": "Farmers grow fruits, vegetables and grains.",
+   "explain_zh": "农民种水果、蔬菜和粮食。",
+   "choices_zh": [
+    "飞行员",
+    "消防员",
+    "医生",
+    "农民"
+   ]
+  },
+  {
+   "id": "g3_072",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras love to do?",
+   "q_zh": "CAPYBARA！水豚最喜欢做什么？",
+   "choices": [
+    "Swim and relax in water",
+    "Fly",
+    "Climb trees"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love water.",
+   "explain_zh": "水豚超爱水。",
+   "choices_zh": [
+    "在水里游泳、泡澡",
+    "飞",
+    "爬树"
+   ]
+  },
+  {
+   "id": "g3_073",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "Capybaras eat…",
+   "q_zh": "水豚吃什么？",
+   "choices": [
+    "Candy",
+    "Fish",
+    "Grass"
+   ],
+   "answer": 2,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是吃草的。",
+   "choices_zh": [
+    "糖果",
+    "鱼",
+    "草"
+   ],
+   "sign_en": [
+    "Candy",
+    "Fish",
+    "Grass"
+   ],
+   "sign_zh": [
+    "糖果",
+    "鱼",
+    "草"
+   ]
+  },
+  {
+   "id": "g3_074",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "A capybara is the biggest…",
+   "q_zh": "水豚是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Rodent",
+    "Insect",
+    "Fish"
+   ],
+   "answer": 1,
+   "explain_en": "Rodents include mice and guinea pigs.",
+   "explain_zh": "啮齿动物包括老鼠和豚鼠。",
+   "choices_zh": [
+    "鸟",
+    "啮齿动物",
+    "昆虫",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g3_075",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "Capybaras come from…",
+   "q_zh": "水豚来自哪里？",
+   "choices": [
+    "The ocean",
+    "South America",
+    "The North Pole"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "choices_zh": [
+    "大海",
+    "南美洲",
+    "北极"
+   ],
+   "sign_en": [
+    "The ocean",
+    "South America",
+    "The North Pole"
+   ],
+   "sign_zh": [
+    "大海",
+    "南美洲",
+    "北极"
+   ]
+  }
+ ],
+ "sign_rule": "Maze signs show sign_en (top) and sign_zh (below); full text stays in the top bar."
+}
