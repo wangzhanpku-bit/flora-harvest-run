@@ -10,7 +10,7 @@
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "{name} collected 1/2 of 14 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 1/2 of 14 pumpkins. How many did {name} collect?",
    "q_zh": "14 个南瓜，{name} 收回了 1/2，一共多少个？",
    "choices": [
     "10",
@@ -33,7 +33,7 @@
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "{name} collected 1/6 of 18 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 1/6 of 18 pumpkins. How many did {name} collect?",
    "q_zh": "18 个南瓜，{name} 收回了 1/6，一共多少个？",
    "choices": [
     "3",
@@ -64,7 +64,7 @@
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "{name} collected 1/2 of 16 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 1/2 of 16 pumpkins. How many did {name} collect?",
    "q_zh": "16 个南瓜，{name} 收回了 1/2，一共多少个？",
    "choices": [
     "5",
@@ -87,7 +87,7 @@
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "{name} collected 3/4 of 32 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 3/4 of 32 pumpkins. How many did {name} collect?",
    "q_zh": "32 个南瓜，{name} 收回了 3/4，一共多少个？",
    "choices": [
     "26",
@@ -118,7 +118,7 @@
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "{name} collected 5/6 of 36 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 5/6 of 36 pumpkins. How many did {name} collect?",
    "q_zh": "36 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "30",
@@ -141,7 +141,7 @@
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "{name} collected 5/6 of 54 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 5/6 of 54 pumpkins. How many did {name} collect?",
    "q_zh": "54 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "44",
@@ -164,7 +164,7 @@
    "section": "pumpkin_field",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "{name} collected 2/5 of 30 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 2/5 of 30 pumpkins. How many did {name} collect?",
    "q_zh": "30 个南瓜，{name} 收回了 2/5，一共多少个？",
    "choices": [
     "12",
@@ -187,7 +187,7 @@
    "section": "corn_maze",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "{name} collected 5/6 of 48 pumpkins. How many did she collect?",
+   "q_en": "{name} collected 5/6 of 48 pumpkins. How many did {name} collect?",
    "q_zh": "48 个南瓜，{name} 收回了 5/6，一共多少个？",
    "choices": [
     "41",
@@ -2098,18 +2098,18 @@
    "q_en": "Why does a jumping {name} always come back down?",
    "q_zh": "{name} 跳起来为什么总会落回地面？",
    "choices": [
-    "Gravity pulls her down",
+    "Gravity pulls down",
     "Air is heavy",
-    "Wind pushes her",
+    "Wind pushes down",
     "The ground is magnetic"
    ],
    "answer": 0,
    "explain_en": "Earth's gravity pulls everything toward its centre.",
    "explain_zh": "地球的重力把一切往地心拉。",
    "choices_zh": [
-    "重力把她拉下来",
+    "重力往下拉",
     "空气很重",
-    "风把她推下来",
+    "风往下推",
     "地面有磁力"
    ]
   },
