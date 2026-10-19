@@ -1879,7 +1879,7 @@
    "explain_zh": "哺乳动物有毛，用奶喂宝宝。",
    "choices_zh": [
     "青蛙",
-    "水豚",
+    "卡皮巴拉",
     "鸡"
    ],
    "sign_en": [
@@ -1889,7 +1889,7 @@
    ],
    "sign_zh": [
     "青蛙",
-    "水豚",
+    "卡皮巴拉",
     "鸡"
    ]
   },
@@ -1976,7 +1976,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "CAPYBARA! What do capybaras love to do?",
-   "q_zh": "CAPYBARA！水豚最喜欢做什么？",
+   "q_zh": "CAPYBARA！卡皮巴拉最喜欢做什么？",
    "choices": [
     "Swim and relax in water",
     "Fly",
@@ -1984,7 +1984,7 @@
    ],
    "answer": 0,
    "explain_en": "Capybaras love water.",
-   "explain_zh": "水豚超爱水。",
+   "explain_zh": "卡皮巴拉超爱水。",
    "choices_zh": [
     "在水里游泳、泡澡",
     "飞",
@@ -1997,7 +1997,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "Capybaras eat…",
-   "q_zh": "水豚吃什么？",
+   "q_zh": "卡皮巴拉吃什么？",
    "choices": [
     "Candy",
     "Fish",
@@ -2028,7 +2028,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "A capybara is the biggest…",
-   "q_zh": "水豚是世界上最大的……",
+   "q_zh": "卡皮巴拉是世界上最大的……",
    "choices": [
     "Bird",
     "Rodent",
@@ -2051,7 +2051,7 @@
    "subject": "capybara",
    "difficulty": "easy",
    "q_en": "Capybaras come from…",
-   "q_zh": "水豚来自哪里？",
+   "q_zh": "卡皮巴拉来自哪里？",
    "choices": [
     "The ocean",
     "South America",
