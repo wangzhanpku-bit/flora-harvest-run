@@ -1344,7 +1344,7 @@ document.getElementById('start').addEventListener('click',()=>{audUnlock();if(AC
 {const _fin=finish;finish=function(){const r=_fin.apply(this,arguments);try{const u=lvUnlocked();if(!u[2]){u[2]=1;store.set('levels',u);store.set('levels_new',2);}}catch(e){}return r;};}
 
 // ---------------- in-game Back to home (pause + confirm) ----------------
-document.body.insertAdjacentHTML('beforeend','<button id="gHome" aria-label="Home"><img class="gi" alt=""><span class="gh">🏠</span><span>'+BI('Home','主界面')+'</span></button>');
+document.body.insertAdjacentHTML('beforeend','<button id="gHome" aria-label="Back to home"><img class="gi" alt=""><span class="gh">🏠</span><span>'+BI('Back to home','回主界面')+'</span></button>');
 const gHome=document.getElementById('gHome');window.__PAUSE=false;let _pauseBgm=null;
 gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;play('sfx_pause');
  const cur=window.__bgmCur&&snd[window.__bgmCur];_pauseBgm=cur&&!cur.paused?cur:null;if(_pauseBgm)_pauseBgm.pause();const th=snd.bgm_question_think;if(th&&!th.paused){th.pause();th._pz=1;}
@@ -1419,7 +1419,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #gHome.art{background:none;border:0;box-shadow:none;padding:0;gap:4px;min-height:0;flex-direction:row-reverse}
 #gHome.art .gh,#gHome.art .gi{display:none}#gHome.art .hd{display:block;width:50px;height:50px;background:var(--n) center/contain no-repeat;flex:none;filter:drop-shadow(0 2px 3px #0005)}
 #gHome.art:active .hd{background-image:var(--p)}
-#gHome.art>span:last-child{background:#0006;border-radius:10px;padding:3px 7px}
+#gHome.art>span:last-child{background:#0006;border-radius:10px;padding:3px 8px;white-space:nowrap;text-align:right}
 #gHome.art .en{text-shadow:0 1px 2px #000}#gHome.art .zh{text-shadow:0 1px 2px #000}
 #qtop #qsub.art{container-type:inline-size;aspect-ratio:560/160;width:min(100%,300px);min-height:0;padding:0 0 1.6%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important}
 #qtop #qsub.art:active:not(:disabled){background-image:var(--p)!important;padding-top:1.8%!important}
