@@ -1050,7 +1050,7 @@ function pumpGeo3(body,stem){const a=new THREE.SphereGeometry(.36,12,8);const P=
  ['position','normal'].forEach(n=>{const x=A.attributes[n].array,y=B.attributes[n].array;const arr=new Float32Array(x.length+y.length);arr.set(x);arr.set(y,x.length);g.setAttribute(n,new THREE.BufferAttribute(arr,3));});
  const nA=A.attributes.position.count,nB=B.attributes.position.count;const C=new Float32Array((nA+nB)*3);const c1=new THREE.Color(body),c2=new THREE.Color(stem);for(let i=0;i<nA+nB;i++)C.set(i<nA?[c1.r,c1.g,c1.b]:[c2.r,c2.g,c2.b],i*3);g.setAttribute('color',new THREE.BufferAttribute(C,3));return g;}
 const MP3={n:0,cap:2400,y0:.05};const _d3=new THREE.Object3D(),_zero=new THREE.Matrix4().makeScale(0,0,0);
-MP3.im=new THREE.InstancedMesh(pumpGeo3(0xffffff,0x7a8a2a),new THREE.MeshStandardMaterial({vertexColors:true,color:0xf2b433,metalness:.55,roughness:.32,emissive:0x3a2600}),MP3.cap);
+MP3.im=new THREE.InstancedMesh(pumpGeo3(0xffffff,0x5f7a22),new THREE.MeshStandardMaterial({vertexColors:true,color:0xf07a12,metalness:0,roughness:.75}),MP3.cap);
 MP3.im.frustumCulled=false;MP3.im.castShadow=true;MP3.im.count=0;scene.add(MP3.im);
 function mp3Slot(){if(MP3.n===0){for(let i=0;i<MP3.cap;i++)MP3.im.setMatrixAt(i,_zero);MP3.im.instanceMatrix.needsUpdate=true;}return MP3.n<MP3.cap?MP3.n++:-1;}
 function mp3Step(){if(!S)return;const im=MP3.im;im.count=MP3.n;const t=S.t;for(const o of objs){if(o.type!=='pumpkin'||o.ii==null||o.ii<0)continue;const p=o.m.position;const dz=-p.z-S.z;
@@ -1073,7 +1073,7 @@ function jackSwap(fp){const B=PDECO.jackList;if(!B||!ART.field_jack)return;const
 
 // swap everything to the real GLBs once parsed (also upgrades objects already on the track)
 Promise.all(ART_KEYS.map(glbParse)).then(()=>{try{
- const mp=meshOf(ART.mini_pumpkin3d);if(mp){MP3.im.geometry=normGeo(mp,.5,true);{const mm=mp.material.clone();if(mm.emissiveIntensity!=null)mm.emissiveIntensity*=.45;if(mm.color)mm.color.multiplyScalar(.92).lerp(new THREE.Color(0xf0a020),.35);mm.metalness=Math.max(mm.metalness||0,.45);mm.roughness=.35;MP3.im.material=mm;}MP3.y0=.45;}
+ const mp=meshOf(ART.mini_pumpkin3d);if(mp){MP3.im.geometry=normGeo(mp,.5,true);{const mm=mp.material.clone();mm.color=new THREE.Color(0xf07a12);mm.metalness=0;mm.roughness=.75;if(mm.emissive)mm.emissive.setHex(0x000000);if(mm.emissiveIntensity!=null)mm.emissiveIntensity=0;MP3.im.material=mm;}MP3.y0=.45;}
  const fp=meshOf(ART.field_pumpkin);if(fp){const g=normGeo(fp,.6,false);PDECO.forEach(im=>{if(im.userData.kind==='p'||im.userData.kind==='jstand'){im.geometry=g;im.material=fp.material;}});}try{jackSwap(fp);}catch(e){console.warn('jack',e);}
  const cs=meshOf(ART.corn_stalk),cl=meshOf(ART.corn_stalk_lod);
  if(cs){_cornC=normGeo(cs,1,true);_cornC.scale(1.45,1,1.45);_cornM=cs.material;scene.traverse(o=>{if(o.userData&&o.userData.cornCard){o.geometry=_cornC;o.material=_cornM;}});}
