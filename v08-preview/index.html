@@ -1197,6 +1197,26 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 #title #settingsBox select,#title #settingsBox #qual{display:none!important}
 #leaveOv p .en,#leaveOv p .zh{display:block}
 /* ---- main menu ---- */
+
+#daily .card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding-top:calc(env(safe-area-inset-top,0px) + 20px)!important}
+#daily h2.dtitle,#daily h2.bi{display:flex!important;flex-direction:column;align-items:center;margin:8px 0 4px}
+#daily h2 .en{display:block!important;font:800 28px/1.15 Fredoka,sans-serif!important;color:#c4560b!important}
+#daily h2 .zh{display:block!important;font:700 18px/1.2 "Noto Sans SC",sans-serif!important;color:#d0701a!important;margin-top:4px}
+#daily .dnote .en,#daily .dnote .zh{display:block!important}
+#daily .dnote{max-width:420px;margin:0 auto}
+#daily #dailyGo,#daily .dailyGoBtn{
+  display:flex!important;flex-direction:column;align-items:center;justify-content:center;
+  width:min(100%,400px)!important;min-height:72px!important;margin:16px auto 8px!important;
+  padding:14px 18px!important;border-radius:18px!important;border:3px solid #fff!important;
+  background:linear-gradient(#ff9a3a,#f07a12)!important;
+  box-shadow:0 4px 0 #b8560a,0 6px 14px #0003!important;
+  cursor:pointer;flex:none!important;flex-shrink:0!important;
+  color:#fff!important;font:700 22px/1.15 Fredoka,"Noto Sans SC",sans-serif!important
+}
+#daily #dailyGo .en{display:block!important;color:#fff!important;margin:0!important;font:700 22px/1.15 Fredoka,sans-serif!important}
+#daily #dailyGo .zh{display:block!important;color:#fff3df!important;margin-top:4px!important;font:600 15px/1.2 "Noto Sans SC",sans-serif!important}
+#daily #dailyGo.art{aspect-ratio:672/192;min-height:0!important;height:auto!important;padding:0 5% 1% 25%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important}
+
 #menu .mtools{display:none!important}
 
 
@@ -1230,7 +1250,7 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 #settings .setPick button .en,#settings .setPick button .zh{display:block;margin:0}#settings .setPick button .zh{font:600 13px/1.15 "Noto Sans SC",sans-serif;color:#8a5a2a}
 #settings .setPick button.sel{border-color:#5aa04a;box-shadow:0 0 0 3px #bde8a8;background:linear-gradient(#eaffea,#c8f0c0)}
 #settings .sHint{font-size:12px;color:#8a6a4a;margin:8px 0 4px;line-height:1.35}#settings .sHint .en,#settings .sHint .zh{display:block}
-#settings #setSave{margin-top:12px}#settings #setBack{margin-top:8px}
+#settings #setSave{margin-top:12px}#settings #setBack{margin-top:8px;flex:none!important;flex-shrink:0!important;min-height:48px}
 @media (orientation:landscape) and (max-height:500px){#menu .mcol{display:grid;grid-template-columns:1fr 1fr;max-width:720px;gap:6px 10px}#menu .mbtn{min-height:48px}#settings .setCard{max-width:min(96vw,860px)!important;width:min(96vw,860px)}}
 
 #menu .mcol{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:420px;margin:10px auto 0}
@@ -1363,8 +1383,8 @@ mk('settings','<div class="card setCard"><h2 class="bi">'+BI('Settings','设置'
  '<div class="pick setPick" id="setGfx"><button type="button" data-q="smooth"><span class="en">Smooth</span><span class="zh">流畅</span></button><button type="button" data-q="high"><span class="en">High quality</span><span class="zh">高画质</span></button></div>'+
  '<p class="bi sHint"><span class="en">Smooth ≈ High graphics, sound off. High keeps full sound.</span><span class="zh">流畅：画面接近高画质，声音关闭。高画质保留全部声音。</span></p>'+
  '<button type="button" class="big" id="setSave">'+BI('Save','保存')+'</button>'+
- '<button type="button" class="setBackLink" id="setBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
-mk('daily','<div class="card"><h2 class="bi">'+BI('Daily Challenge','每日挑战')+'</h2><p class="bi dnote" id="dailyNote"></p><button type="button" class="mbtn main" id="dailyGo">'+BI('Start today\'s run','开始今日挑战')+'</button></div>','fb');
+ '<button type="button" class="backart setBackBtn" id="setBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
+mk('daily','<div class="card"><h2 class="bi dtitle"><span class="en">Daily Challenge</span><span class="zh">每日挑战</span></h2><p class="bi dnote" id="dailyNote"></p><button type="button" class="mbtn main dailyGoBtn" id="dailyGo"><span class="en">Start today\'s run</span><span class="zh">开始今日挑战</span></button></div>','fb');
 mk('levels','<div class="card"><h2 class="bi">'+BI('Choose Level','选择关卡')+'</h2><div class="lgrid" id="lgrid"></div><button class="lback" id="lBack">'+BI('Back','返回')+'</button></div>','fb');
 mk('bye','<div class="card"><div class="byeArt"></div><h1>'+BI('See you next time!','下次见！')+'</h1><button class="bback" id="byeBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
 mk('leaveOv','<div class="card"><h2>'+BI('Leave this run?','要离开这一局吗？')+'</h2><p class="bi" style="margin:4px 0 0">'+BI('Your mini pumpkins are kept.','南瓜篮里的小南瓜会保留。')+'</p><div class="lrow"><button class="leave" id="lvLeave">'+BI('Leave','离开')+'</button><button class="keep" id="lvKeep">'+BI('Keep playing','继续玩')+'</button></div></div>');
@@ -1417,7 +1437,7 @@ function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',nu
   const hdr='<span class="lhdr">'+BI('Level '+L.n,'第 '+L.n+' 关')+'</span>';
   let body='';
   if(cst==='locked'){body='<span class="lname">'+BI('Locked','未解锁')+'<span class="lsub">'+BI('Finish Level '+(L.n-1)+' to unlock','通关第 '+(L.n-1)+' 关解锁')+'</span></span>';}
-  else if(tbd||cst==='coming_soon'&&!L.en1){body='<span class="lname">'+BI('Level '+L.n,'第 '+L.n+' 关')+'</span>';}
+  else if(tbd||cst==='coming_soon'&&!L.en1){body='<span class="lname lname-empty" aria-hidden="true"></span>';}
   else{const en=L.en1||L.en||('Level '+L.n);const zhA=L.zh1||L.zh||('第 '+L.n+' 关');const zhB=L.zh2||'';
    body='<span class="lname"><span class="len"><span class="en">'+en+'</span></span><span class="lzh"><span class="zh">'+zhA+'</span>'+(zhB?'<span class="zh">'+zhB+'</span>':'')+'</span></span>';}
   if(art)return '<button class="lt art '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+hdr+(cst==='coming_soon'?'<span class="rib">'+BI('Coming soon','敬请期待')+'</span>':'')+body+'</button>';
@@ -1465,7 +1485,13 @@ function beginAdventure(opts){opts=opts||{};
 }
 window.beginAdventure=beginAdventure;
 
-function showSettings(){hideAllOv('settings');const ov=document.getElementById('settings');ov.style.display='flex';
+
+function wireSetBackArt(){const b=document.getElementById('setBack');if(!b)return;
+ b.classList.add('backart','setBackBtn');b.classList.remove('setBackLink');
+ if(TEX.ui83_btn_back_normal){b.style.setProperty('--n','url('+TEX.ui83_btn_back_normal+')');b.style.setProperty('--p','url('+(TEX.ui83_btn_back_pressed||TEX.ui83_btn_back_normal)+')');}
+ if(TEX.ui83_icon_house&&!b.querySelector('.bi_')){b.insertAdjacentHTML('afterbegin','<img class="bi_" src="'+TEX.ui83_icon_house+'" alt="">');}
+}
+function showSettings(){hideAllOv('settings');const ov=document.getElementById('settings');ov.style.display='flex';wireSetBackArt();
  const name=store.get('hero',null)||HERO||'Flora';document.getElementById('setName').value=name;
  const g=heroG();document.querySelectorAll('#setGender button').forEach(b=>b.classList.toggle('sel',b.dataset.g===g));
  const ZH=['一','二','三','四','五','六'];const gp=document.getElementById('setGrade');
@@ -1668,7 +1694,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art .sLab:nth-of-type(2){left:8.8%;top:28.7%;width:21.4%;height:13.4%}
 #settings .setCard.art #setGender{left:31.4%;top:28.7%;width:59.8%;height:13.4%;display:flex;gap:1.6%;padding:0}
 #settings .setCard.art .sLab:nth-of-type(3){left:8.8%;top:42.9%;width:21.4%;height:13.4%}
-#settings .setCard.art #setGrade{left:31.4%;top:42.9%;width:59.8%;height:13.4%;display:flex;flex-wrap:nowrap;gap:1%;overflow:auto;padding:0}
+#settings .setCard.art #setGrade{left:31.4%;top:42.9%;width:59.8%;height:13.4%;display:grid!important;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2% 1.5%;overflow:hidden;padding:0;align-content:stretch}
 #settings .setCard.art .sLab:nth-of-type(4){left:8.8%;top:57.1%;width:21.4%;height:13.4%}
 #settings .setCard.art #setMode{left:31.4%;top:57.1%;width:59.8%;height:13.4%;display:flex;gap:1.6%;padding:0}
 #settings .setCard.art .sLab:nth-of-type(5){left:8.8%;top:71.3%;width:21.4%;height:13.4%}
@@ -1680,7 +1706,9 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art .setPick button .en{font:700 3cqw/1.05 Fredoka,sans-serif!important;color:#5a2a00!important}
 #settings .setCard.art .setPick button .zh{font:600 2.4cqw/1.1 "Noto Sans SC",sans-serif!important;color:#8a5a2a!important}
 #settings .setCard.art .setPick button.sel{border-color:#5aa04a;box-shadow:0 0 0 2px #bde8a8;background:linear-gradient(#eaffea,#c8f0c0)}
-#settings .setCard.art #setGrade button{flex:1 1 14%;min-width:14%}
+#settings .setCard.art #setGrade button{flex:none!important;min-width:0!important;width:auto!important;height:auto!important;min-height:0!important;padding:1% 1%!important;overflow:hidden}
+#settings .setCard.art #setGrade button .en{font:700 max(9px,2.4cqw)/1.05 Fredoka,sans-serif!important;white-space:nowrap!important;writing-mode:horizontal-tb!important}
+#settings .setCard.art #setGrade button .zh{font:600 max(8px,2cqw)/1.05 "Noto Sans SC",sans-serif!important;white-space:nowrap!important;writing-mode:horizontal-tb!important}
 #settings .setCard.art .sHint{display:none!important}
 
 
@@ -1692,7 +1720,21 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art #setBack{left:20%;right:20%;top:auto;bottom:1.2%;width:auto;min-height:0!important;height:auto!important;position:absolute;padding:4px 8px!important;font-size:12px!important;opacity:.95;background:#0000!important;border:0!important;box-shadow:none!important;aspect-ratio:auto!important}
 #settings .setCard.art #setSave.art{left:27.6%;top:83%;width:44.8%;height:10.5%;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important;padding:0 0 1%!important;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2}
 #settings .setBackLink{display:block;margin:8px auto 0;padding:6px 12px;border:0;background:transparent;font:600 14px Fredoka,"Noto Sans SC",sans-serif;color:#5a2a00;cursor:pointer;text-align:center}
-#settings .setCard.art #setBack,#settings .setCard.art .setBackLink{position:absolute;left:15%;right:15%;top:93.5%;bottom:auto;height:5%;min-height:0!important;margin:0;padding:0!important;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;background:transparent!important;border:0!important;box-shadow:none!important;aspect-ratio:auto!important}
+#settings .setCard.art #setBack.backart,#settings .setCard.art #setBack.setBackBtn{
+  position:absolute!important;left:50%!important;right:auto!important;transform:translateX(-50%);
+  top:auto!important;bottom:1.2%!important;width:min(70%,320px)!important;max-width:320px!important;
+  height:auto!important;min-height:0!important;aspect-ratio:452/152!important;
+  flex:none!important;flex-shrink:0!important;z-index:4!important;
+  margin:0!important;padding:0 7% 1% 29%!important;
+  background:var(--n) center/100% 100% no-repeat transparent!important;
+  border:0!important;box-shadow:none!important;border-radius:0!important;
+  display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer
+}
+#settings .setCard.art #setBack.backart:active{background-image:var(--p)!important;padding-top:2%!important}
+#settings .setCard.art #setBack.backart .en{font:700 5.5cqw/1.05 Fredoka,sans-serif!important;color:#fff!important;text-shadow:0 .35cqw 0 #1d5e5a!important}
+#settings .setCard.art #setBack.backart .zh{font:700 4.2cqw/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;text-shadow:0 .3cqw 0 #1d5e5a!important;margin-top:.2cqw}
+#settings .setCard.art #setBack.backart .bi_{position:absolute;left:9%;top:26%;height:44%;aspect-ratio:1;pointer-events:none}
+
 #settings .setCard.art #setBack .en,#settings .setCard.art .setBackLink .en{font:700 2.8cqw/1.1 Fredoka,sans-serif!important;color:#7a4a1a!important}
 #settings .setCard.art #setBack .zh,#settings .setCard.art .setBackLink .zh{font:600 2.4cqw/1.1 "Noto Sans SC",sans-serif!important;color:#9a6a3a!important}
 @media (orientation:landscape){
@@ -1701,7 +1743,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  #settings .setCard.art .sLab:nth-of-type(2){left:6.7%;top:30.7%;width:22.4%;height:11.2%}
  #settings .setCard.art #setGender{left:30.1%;top:30.7%;width:63.2%;height:11.2%}
  #settings .setCard.art .sLab:nth-of-type(3){left:6.7%;top:43.1%;width:22.4%;height:11.2%}
- #settings .setCard.art #setGrade{left:30.1%;top:43.1%;width:63.2%;height:11.2%}
+ #settings .setCard.art #setGrade{left:30.1%;top:43.1%;width:63.2%;height:11.2%;display:grid!important;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2% 1.5%;overflow:hidden}
  #settings .setCard.art .sLab:nth-of-type(4){left:6.7%;top:55.5%;width:22.4%;height:11.2%}
  #settings .setCard.art #setMode{left:30.1%;top:55.5%;width:63.2%;height:11.2%}
  #settings .setCard.art .sLab:nth-of-type(5){left:6.7%;top:67.8%;width:22.4%;height:11.2%}
@@ -1710,12 +1752,12 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  #settings .setCard.art .setPick button .en{font-size:2.3cqw!important}#settings .setCard.art .setPick button .zh{font-size:1.9cqw!important}
  #settings .setCard.art #setSave.art{left:32.9%;top:81.3%;width:34.2%;height:18.4%}
  #settings .setCard.art #setSave.art .en{font-size:3.6cqw!important}#settings .setCard.art #setSave.art .zh{font-size:2.6cqw!important}
- #settings .setCard.art #setBack{display:none}
+ #settings .setCard.art #setBack.backart{display:flex!important;bottom:1.5%!important;width:min(42%,280px)!important}
 }
 `;document.head.appendChild(st);
  const rs=document.documentElement.style;rs.setProperty('--mbgL',U('menu_bg_1920x1080'));rs.setProperty('--mbgP',U('menu_bg_1080x1920'));rs.setProperty('--gbL',U('goodbye_bg_1920x1080'));rs.setProperty('--gbP',U('goodbye_bg_1080x1920'));
  const set=(el,m)=>{for(const k in m)el.style.setProperty(k,U(m[k]));};
- [['mNew','new_adventure','play'],['mLevels','choose_level','map'],['mDaily','daily_challenge','daily'],['mShop','pumpkin_shop','pumpkin_bag'],['mBook','collection','collection'],['mExit','exit_game','door_wave']].forEach(([id,b,ic])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('art');e.classList.remove('main');set(e,{'--n':'btn_'+b+'_normal','--h':'btn_'+b+'_hover','--p':'btn_'+b+'_pressed'});const im=e.querySelector('.mi');if(im&&T('icon_'+ic))im.src=T('icon_'+ic);});
+ [['mNew','new_adventure','play'],['mLevels','choose_level','map'],['mDaily','daily_challenge','daily'],['mShop','pumpkin_shop','pumpkin_bag'],['mBook','collection','collection'],['mExit','exit_game','door_wave']].forEach(([id,b,ic])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('art');e.classList.remove('main');set(e,{'--n':'btn_'+b+'_normal','--h':'btn_'+b+'_hover','--p':'btn_'+b+'_pressed'});const im=e.querySelector('.mi');if(im&&T('icon_'+ic))im.src=T('icon_'+ic);});{const dg=document.getElementById('dailyGo');if(dg&&T('btn_new_adventure_normal')){dg.classList.add('art','mbtn');set(dg,{'--n':'btn_new_adventure_normal','--h':'btn_new_adventure_hover','--p':'btn_new_adventure_pressed'});}}
 
  // v3 gear (96×96) top-right
  const gear=document.getElementById('mGear');
