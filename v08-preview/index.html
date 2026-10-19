@@ -1257,6 +1257,12 @@ body.quizOn #gHome{z-index:7}
  #quiz #qen{font-size:17px!important;margin:0!important}#quiz #qzh{font-size:13px!important}
  #qthink{width:40px!important}#qsub,#qtop #qgo{min-height:44px;padding:4px 12px!important;font-size:17px!important}
 }
+/* quiz header row: [Bara think] [Submit] [timer] — timer gets its own reserved slot, never under Submit */
+#quiz .card{position:relative}
+#qtimer{z-index:8!important}#sub{z-index:4!important}
+#qtop{padding:0 88px 0 52px!important;box-sizing:border-box;min-height:78px;align-items:center}
+@media (orientation:portrait) and (max-width:520px){#qtimer{width:62px!important;height:62px!important;right:6px!important;top:6px!important}#qtop{padding:0 70px 0 46px!important;min-height:62px}}
+@media (orientation:landscape) and (max-height:500px){#qtimer{width:56px!important;height:56px!important;right:6px!important;top:4px!important}#qtop{padding:0 64px 0 44px!important;min-height:56px}}
 `;document.head.appendChild(st);})();
 
 const V083={ver:'v0.8.3'};
