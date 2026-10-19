@@ -1489,13 +1489,13 @@ function beginAdventure(opts){opts=opts||{};
 window.beginAdventure=beginAdventure;
 
 
-function wireSetBackArt(){const b=document.getElementById('setBack');if(!b)return;
- const ov=document.getElementById('settings');const card=ov&&ov.querySelector('.setCard');
- b.classList.add('backart','setBackBtn');b.classList.remove('setBackLink');
- if(TEX.ui83_btn_back_normal){b.style.setProperty('--n','url('+TEX.ui83_btn_back_normal+')');b.style.setProperty('--p','url('+(TEX.ui83_btn_back_pressed||TEX.ui83_btn_back_normal)+')');}
- if(TEX.ui83_icon_house&&!b.querySelector('.bi_')){b.insertAdjacentHTML('afterbegin','<img class="bi_" src="'+TEX.ui83_icon_house+'" alt="">');}
- // Outside the art card (like shop) so it never covers Save and keeps full plate + type size
- if(ov&&card&&b.parentElement!==ov){ov.appendChild(b);}
+function wireSetBackArt(){const ov=document.getElementById('settings');const card=ov&&ov.querySelector('.setCard');
+ const b=document.getElementById('setBack');const sv=document.getElementById('setSave');
+ if(b){b.classList.add('backart','setBackBtn');b.classList.remove('setBackLink');
+  if(TEX.ui83_btn_back_normal){b.style.setProperty('--n','url('+TEX.ui83_btn_back_normal+')');b.style.setProperty('--p','url('+(TEX.ui83_btn_back_pressed||TEX.ui83_btn_back_normal)+')');}
+  if(TEX.ui83_icon_house&&!b.querySelector('.bi_')){b.insertAdjacentHTML('afterbegin','<img class="bi_" src="'+TEX.ui83_icon_house+'" alt="">');}}
+ // Save + Back below art card so Graphics row stays fully tappable
+ if(ov&&card){if(sv&&sv.parentElement!==ov){sv.classList.add('setSaveOut');ov.appendChild(sv);}if(b&&b.parentElement!==ov)ov.appendChild(b);}
 }
 function showSettings(){hideAllOv('settings');const ov=document.getElementById('settings');ov.style.display='flex';wireSetBackArt();
  const name=store.get('hero',null)||HERO||'Flora';document.getElementById('setName').value=name;
@@ -1703,8 +1703,8 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art #setGrade{left:31.4%;top:42.9%;width:59.8%;height:13.4%;display:grid!important;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2% 1.5%;overflow:hidden;padding:0;align-content:stretch}
 #settings .setCard.art .sLab:nth-of-type(4){left:8.8%;top:57.1%;width:21.4%;height:13.4%}
 #settings .setCard.art #setMode{left:31.4%;top:57.1%;width:59.8%;height:13.4%;display:flex;gap:1.6%;padding:0}
-#settings .setCard.art .sLab:nth-of-type(5){left:8.8%;top:71.3%;width:21.4%;height:13.4%}
-#settings .setCard.art #setGfx{left:31.4%;top:71.3%;width:59.8%;height:13.4%;display:flex;gap:1.6%;padding:0}
+#settings .setCard.art .sLab:nth-of-type(5){left:8.8%;top:71.3%;width:21.4%;height:10%}
+#settings .setCard.art #setGfx{left:31.4%;top:71.3%;width:59.8%;height:10%;display:flex;gap:1.6%;padding:0;z-index:2}
 #settings .setCard.art .sLab{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:0 1%}
 #settings .setCard.art .sLab .en{font:700 3.2cqw/1.1 Fredoka,sans-serif!important;color:#7a3d0a!important}
 #settings .setCard.art .sLab .zh{font:600 2.6cqw/1.15 "Noto Sans SC",sans-serif!important;color:#9a5a20!important}
@@ -1719,17 +1719,24 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 
 
 /* Save + Back: clear vertical gap; Back matches shop/levels teal plate type size */
-#settings .setCard.art #setSave.art{
-  left:50%!important;right:auto!important;transform:translateX(-50%);
-  top:82%!important;width:min(48%,260px)!important;height:10%!important;
+/* Save below art card (above Back) — never covers Graphics */
+#settings .setCard.art #setSave.art{top:86%!important;height:10%!important;left:50%!important;transform:translateX(-50%);width:min(48%,260px)!important;z-index:3}
+#settings .setCard.art #setSave{display:none!important}
+#settings>#setSave,#settings>#setSave.setSaveOut,#settings>#setSave.art{
+  position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;
+  width:min(70%,300px)!important;max-width:300px!important;
+  height:auto!important;min-height:56px!important;aspect-ratio:452/152!important;
+  flex:none!important;flex-shrink:0!important;align-self:center;z-index:3!important;
+  margin:10px auto 0!important;padding:0 0 1%!important;
   border:0!important;border-radius:0!important;box-shadow:none!important;
-  background:var(--n) center/100% 100% no-repeat transparent!important;
-  padding:0 0 1%!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;
-  z-index:3!important;flex:none!important
+  background:var(--n,#5aa04a) center/100% 100% no-repeat transparent!important;
+  display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;
+  container-type:inline-size
 }
-#settings .setCard.art #setSave.art:active{background-image:var(--p)!important;padding-top:1.5%!important}
-#settings .setCard.art #setSave.art .en{font:800 max(14px,4.6cqw)/1.05 Fredoka,sans-serif!important;color:#fff!important;text-shadow:0 .4cqw 0 #2f6a24}
-#settings .setCard.art #setSave.art .zh{font:700 max(11px,3.2cqw)/1.1 "Noto Sans SC",sans-serif!important;color:#effbe8!important}
+#settings>#setSave.art:active{background-image:var(--p)!important;padding-top:1.5%!important}
+#settings>#setSave .en{font:800 max(16px,11cqw)/1.05 Fredoka,sans-serif!important;color:#fff!important;text-shadow:0 .4cqw 0 #2f6a24}
+#settings>#setSave .zh{font:700 max(12px,8cqw)/1.1 "Noto Sans SC",sans-serif!important;color:#effbe8!important;margin-top:.3cqw}
+
 /* Back lives under #settings (sibling of .setCard) — full teal plate, shop-matching type */
 #settings{flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;overflow:auto!important}
 #settings .setCard.art{flex:none!important;margin:calc(env(safe-area-inset-top,0px) + 8px) auto 0!important}
@@ -1738,7 +1745,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
   width:min(92%,380px)!important;max-width:380px!important;
   height:auto!important;min-height:0!important;aspect-ratio:452/152!important;
   flex:none!important;flex-shrink:0!important;align-self:center;z-index:4!important;
-  margin:12px auto calc(env(safe-area-inset-bottom,0px) + 14px)!important;
+  margin:8px auto calc(env(safe-area-inset-bottom,0px) + 14px)!important;
   padding:0 7.1% 1% 29.2%!important;
   background:var(--n) center/100% 100% no-repeat transparent!important;
   border:0!important;box-shadow:none!important;border-radius:0!important;
@@ -1764,9 +1771,8 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  #settings .setCard.art #setGfx{left:30.1%;top:62%;width:63.2%;height:10%}
  #settings .setCard.art .sLab .en{font-size:2.4cqw!important}#settings .setCard.art .sLab .zh{font-size:2cqw!important}
  #settings .setCard.art .setPick button .en{font-size:2.3cqw!important}#settings .setCard.art .setPick button .zh{font-size:1.9cqw!important}
- #settings .setCard.art #setSave.art{top:78%!important;width:min(28%,220px)!important;height:14%!important}
- #settings .setCard.art #setSave.art .en{font-size:3.4cqw!important}#settings .setCard.art #setSave.art .zh{font-size:2.4cqw!important}
- #settings>#setBack.backart{width:min(70%,320px)!important;margin:8px auto calc(env(safe-area-inset-bottom,0px) + 8px)!important}
+ #settings>#setSave{width:min(42%,260px)!important;min-height:48px!important;margin:6px auto 0!important}
+ #settings>#setBack.backart{width:min(70%,320px)!important;margin:6px auto calc(env(safe-area-inset-bottom,0px) + 8px)!important}
 }
 `;document.head.appendChild(st);
  const rs=document.documentElement.style;rs.setProperty('--mbgL',U('menu_bg_1920x1080'));rs.setProperty('--mbgP',U('menu_bg_1080x1920'));rs.setProperty('--gbL',U('goodbye_bg_1920x1080'));rs.setProperty('--gbP',U('goodbye_bg_1080x1920'));
