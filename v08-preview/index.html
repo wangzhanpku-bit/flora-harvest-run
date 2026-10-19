@@ -769,10 +769,10 @@ function answered(ok){if(ok){S.combo=(S.combo||0)+1;if(S.combo>=3){S.combo=0;S.c
 function duckRun(on){if(window.__SMOOTH)return;const a=snd[window.__bgmCur];if(a)a.volume=on?.1:.45;}
 function thinkStart(){if(window.__SMOOTH)return;const a=snd.bgm_question_think;if(!a)return;if(!a.getAttribute('src')&&AUDIO.bgm_question_think)a.src=AUDIO.bgm_question_think;a.loop=false;a.volume=.5;try{a.currentTime=0;}catch(e){}a.play().catch(e=>console.warn('[audio] bgm failed',e&&e.name));}
 function thinkStop(){const a=snd.bgm_question_think;if(a&&!a.paused)a.pause();}
-function lowpass(sec){/* v0.8.3 preview: disabled — createMediaElementSource + 2nd AudioContext permanently routed BGM through WebAudio and killed iPhone FPS after first hard hit */}
+function lowpass(sec){/* v0.8.3: BGM muffle removed for good (caused iPhone stutter after first hard hit). No-op. */}
 // ---------- obstacle hits ----------
 function tip(k,en,zh,delay){const T=store.get('tips',{});if(T[k])return false;T[k]=1;store.set('tips',T);setTimeout(()=>sub(bi(en,zh),3200),delay||0);return true;}
-function hitHard(o){if(S.shield){shieldPop(o);return;}S.hardHits=(S.hardHits||0)+1;S.slowT=Math.max(S.slowT,2);S.bounce=.4;play('sfx_stun_bonk');lowpass(2);
+function hitHard(o){if(S.shield){shieldPop(o);return;}S.hardHits=(S.hardHits||0)+1;S.slowT=Math.max(S.slowT,2);S.bounce=.4;play('sfx_stun_bonk');
  const safe=!CH()||S.runT<CFG.SAFE_START||S.invT>0;S.stunT=CFG.STUN?(safe?1:2):0;
  if(safe){sub(bi('Bonk! Watch out!','咚！小心哦！'),1200);return;}
  if(CFG.STUN&&S.dizzy>0){S.hurtLog=(S.hurtLog||[]);S.hurtLog.push(['double',0,+S.runT.toFixed(1)]);sub(bi('Bonk again! Too dizzy…','又撞了！晕乎乎的……'),1500);gameOver('double');return;}
