@@ -1195,6 +1195,21 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 #shopBtn,#shopBtn2,#shopBtn3{display:none!important}
 #leaveOv p .en,#leaveOv p .zh{display:block}
 /* ---- main menu ---- */
+#menu .mtools{display:none!important}
+#menu .mgear{position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:calc(env(safe-area-inset-right,0px) + 10px);z-index:2;width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:rgba(90,42,0,.45);color:#fff;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 2px 8px #0005;display:flex;align-items:center;justify-content:center;padding:0}
+#menu .mcol{max-width:440px;gap:6px}
+#menu .mbtn{min-height:56px}
+#settings .setCard{max-width:min(96vw,520px)!important;width:min(96vw,520px);text-align:left;padding:16px 18px 18px!important}
+#settings h2{text-align:center;margin:0 0 8px}#settings h2 .en{font:800 28px/1.15 Fredoka,sans-serif;color:#c4560b}#settings h2 .zh{font:700 18px/1.2 "Noto Sans SC",sans-serif;color:#d0701a}
+#settings .sLab{display:block;margin:10px 0 4px}#settings .sLab .en{font:700 15px Fredoka,sans-serif;color:#7a3d0a}#settings .sLab .zh{font:600 13px "Noto Sans SC",sans-serif;color:#9a5a20}
+#settings #setName{width:100%;box-sizing:border-box;padding:10px 12px;font:600 18px Fredoka,"Noto Sans SC",sans-serif;border:2px solid #e8a24a;border-radius:12px;background:#fffdf6}
+#settings .setPick{display:flex;flex-wrap:wrap;gap:8px}#settings .setPick button{flex:1 1 40%;min-width:calc(50% - 8px);margin:0;padding:10px 8px;border-radius:14px;border:3px solid #e8a24a;background:linear-gradient(#fff8e8,#ffe7bd);font:700 16px/1.15 Fredoka,"Noto Sans SC",sans-serif;color:#5a2a00;cursor:pointer}
+#settings .setPick button .en,#settings .setPick button .zh{display:block;margin:0}#settings .setPick button .zh{font:600 13px/1.15 "Noto Sans SC",sans-serif;color:#8a5a2a}
+#settings .setPick button.sel{border-color:#5aa04a;box-shadow:0 0 0 3px #bde8a8;background:linear-gradient(#eaffea,#c8f0c0)}
+#settings .sHint{font-size:12px;color:#8a6a4a;margin:8px 0 4px;line-height:1.35}#settings .sHint .en,#settings .sHint .zh{display:block}
+#settings #setSave{margin-top:12px}#settings #setBack{margin-top:8px}
+@media (orientation:landscape) and (max-height:500px){#menu .mcol{display:grid;grid-template-columns:1fr 1fr;max-width:720px;gap:6px 10px}#menu .mbtn{min-height:48px}#settings .setCard{max-width:min(96vw,860px)!important;width:min(96vw,860px)}}
+
 #menu .mcol{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:420px;margin:10px auto 0}
 #menu .mbtn,#levels .lback,#bye .bback,#leaveOv button,.homeBack{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;margin:0;padding:12px 14px;border-radius:18px;border:3px solid #e8a24a;background:var(--btnArt,none) center/100% 100% no-repeat,linear-gradient(#fff8e8,#ffe7bd);color:#5a2a00;font:700 21px/1.15 Fredoka,"Noto Sans SC",sans-serif;cursor:pointer;box-shadow:0 4px 0 #d08a3a,0 6px 14px #0002;min-height:62px}
 #menu .mbtn .zh,#levels .lback .zh,#bye .bback .zh,#leaveOv button .zh,.homeBack .zh{display:block;font:600 15px/1.2 "Noto Sans SC",sans-serif;color:#8a5a2a;margin-top:2px}
@@ -1269,12 +1284,17 @@ const V083={ver:'v0.8.3'};
 // ---------------- audio: one AudioContext, unlocked on first gesture; all SFX pre-decoded during loading ----------------
 const AB={};let ACTX=null;window.__audLog=[];
 function actx(){if(window.__SMOOTH)return null;if(!ACTX){const C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ACTX=new C();window.__actx=ACTX;}return ACTX;}
-async function audPrep(){if(window.__SMOOTH)return;const C=actx();if(!C)return;
+window.__audReady=!!window.__SMOOTH;window.__audReadyP=null;
+function whenAudioReady(fn){if(window.__SMOOTH||window.__audReady){fn&&fn();return Promise.resolve();}
+ if(!window.__audReadyP)window.__audReadyP=new Promise(r=>{window.__audReadyResolve=r;});
+ return window.__audReadyP.then(()=>{fn&&fn();});}
+function markAudioReady(){window.__audReady=true;try{window.__audReadyResolve&&window.__audReadyResolve();}catch(e){}window.__audReadyResolve=null;}
+async function audPrep(){if(window.__SMOOTH){markAudioReady();return;}const C=actx();if(!C){markAudioReady();return;}
  const keys=Object.keys(AUDIO).filter(k=>!k.startsWith('bgm')&&String(AUDIO[k]).startsWith('blob:'));
  const pctEl=document.getElementById('lpct');let done=0;const show=()=>{if(pctEl)pctEl.innerHTML='Preparing sounds… '+done+' / '+keys.length+'<br>准备声音中… '+done+' / '+keys.length;};show();
  let i=0;await Promise.all(Array.from({length:4},async()=>{while(i<keys.length){const k=keys[i++];try{const ab=await (await fetch(AUDIO[k])).arrayBuffer();AB[k]=await new Promise((res,rej)=>{const p=C.decodeAudioData(ab,res,rej);if(p&&p.then)p.then(res,rej);});}catch(e){}done++;show();}}));
  // BGM elements: point at the already-downloaded blobs and preload them so the first second plays
- ['bgm_pumpkin_field','bgm_main_menu','bgm_question_think'].forEach(k=>{const a=snd[k];if(a&&AUDIO[k]){a.preload='auto';if(!a.getAttribute('src'))a.src=AUDIO[k];try{a.load();}catch(e){}}});}
+ ['bgm_pumpkin_field','bgm_main_menu','bgm_question_think'].forEach(k=>{const a=snd[k];if(a&&AUDIO[k]){a.preload='auto';if(!a.getAttribute('src'))a.src=AUDIO[k];try{a.load();}catch(e){}}});markAudioReady();}
 window.__abPlay=function(k,vol){if(window.__SMOOTH)return true;const C=ACTX,b=AB[k];if(!C||!b)return false;try{if(C.state!=='running')C.resume();const s=C.createBufferSource();s.buffer=b;const g=C.createGain();g.gain.value=vol==null?.7:vol;s.connect(g);g.connect(C.destination);s.start();window.__audLog.push({k,t:performance.now(),runT:S?+(S.runT||0).toFixed(2):null,mode:S&&S.mode,ctx:C.state});return true;}catch(e){return false;}};
 let _audUnlocked=false;
 function audUnlock(){if(window.__SMOOTH||_audUnlocked)return;const C=actx();if(!C)return;_audUnlocked=true;
@@ -1294,17 +1314,33 @@ function tap(k){play(k||'sfx_menu_tap');}
 function stopAllAudio(){try{bgm(null);thinkStop();}catch(e){}try{boostEnd(true);}catch(e){}try{_protLoopStop();}catch(e){}try{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}catch(e){}for(const k in snd){try{if(!snd[k].paused)snd[k].pause();}catch(e){}}}
 
 // ---------------- screens ----------------
-const OVS=['menu','levels','bye','namegate','title','end','over','book','shop','cardView','leaveOv','share'];
+const OVS=['menu','levels','bye','settings','namegate','title','end','over','book','shop','cardView','leaveOv','share'];
 function hideAllOv(keep){OVS.forEach(id=>{if(id===keep)return;const e=document.getElementById(id);if(e)e.style.display='none';});}
 function mk(id,html,cls){let e=document.getElementById(id);if(!e){e=document.createElement('div');e.id=id;e.className='ov '+(cls||'');document.body.appendChild(e);}e.innerHTML=html;return e;}
 const BI=(en,zh)=>'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';
 function menuShown(){const m=document.getElementById('menu');return !!(m&&m.style.display==='flex');}
-mk('menu','<div class="card"><div class="mlogo"></div><div class="mcol">'+
+mk('menu','<div class="card"><button type="button" id="mGear" class="mgear" aria-label="Settings">⚙</button><div class="mlogo"></div><div class="mcol">'+
  '<button class="mbtn main" id="mNew"><img class="mi" alt="">'+BI('New Adventure','新的冒险')+'</button>'+
  '<button class="mbtn" id="mLevels"><img class="mi" alt="">'+BI('Choose Level','选择关卡')+'</button>'+
+ '<button class="mbtn" id="mDaily"><img class="mi" alt="">'+BI('Daily Challenge','每日挑战')+'</button>'+
  '<button class="mbtn" id="mShop"><img class="mi" alt="">'+BI('Pumpkin Shop','南瓜小店')+'</button>'+
+ '<button class="mbtn" id="mBook"><img class="mi" alt="">'+BI('Collection','收集册')+'</button>'+
  '<button class="mbtn" id="mExit"><img class="mi" alt="">'+BI('Exit Game','退出游戏')+'</button></div>'+
- '<div class="mtools"><button id="mSettings">⚙ <span>'+BI('Settings','设置')+'</span></button><button id="mBook">📖 <span>'+BI('Collection','收集册')+'</span></button></div><div id="mver" style="font-size:11px;color:#b09070;margin-top:8px">'+V083.ver+'</div></div>','fb');
+ '<div id="mver" style="font-size:11px;color:#b09070;margin-top:8px">'+V083.ver+'</div></div>','fb');
+mk('settings','<div class="card setCard"><h2 class="bi">'+BI('Settings','设置')+'</h2>'+
+ '<label class="bi sLab"><span class="en">Name</span><span class="zh">孩子的名字</span></label>'+
+ '<input id="setName" maxlength="24" autocomplete="off">'+
+ '<label class="bi sLab"><span class="en">Gender</span><span class="zh">性别</span></label>'+
+ '<div class="pick setPick" id="setGender"><button type="button" data-g="girl"><span class="en">Girl</span><span class="zh">女孩</span></button><button type="button" data-g="boy"><span class="en">Boy</span><span class="zh">男孩</span></button></div>'+
+ '<label class="bi sLab"><span class="en">Grade</span><span class="zh">几年级</span></label>'+
+ '<div class="pick setPick grades" id="setGrade"></div>'+
+ '<label class="bi sLab"><span class="en">Mode</span><span class="zh">模式</span></label>'+
+ '<div class="pick setPick" id="setMode"><button type="button" data-m="challenge"><span class="en">Challenge</span><span class="zh">挑战</span></button><button type="button" data-m="easy"><span class="en">Easy</span><span class="zh">轻松</span></button></div>'+
+ '<label class="bi sLab"><span class="en">Graphics</span><span class="zh">画质</span></label>'+
+ '<div class="pick setPick" id="setGfx"><button type="button" data-q="smooth"><span class="en">Smooth</span><span class="zh">流畅</span></button><button type="button" data-q="high"><span class="en">High</span><span class="zh">高画质</span></button></div>'+
+ '<p class="bi sHint"><span class="en">Smooth ≈ High graphics, sound off. High keeps full sound.</span><span class="zh">流畅：画面接近高画质，声音关闭。高画质保留全部声音。</span></p>'+
+ '<button type="button" class="big" id="setSave">'+BI('Save','保存')+'</button>'+
+ '<button type="button" class="homeBack" id="setBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
 mk('levels','<div class="card"><h2 class="bi">'+BI('Choose Level','选择关卡')+'</h2><div class="lgrid" id="lgrid"></div><button class="lback" id="lBack">'+BI('Back','返回')+'</button></div>','fb');
 mk('bye','<div class="card"><div class="byeArt"></div><h1>'+BI('See you next time!','下次见！')+'</h1><button class="bback" id="byeBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
 mk('leaveOv','<div class="card"><h2>'+BI('Leave this run?','要离开这一局吗？')+'</h2><p class="bi" style="margin:4px 0 0">'+BI('Your mini pumpkins are kept.','南瓜篮里的小南瓜会保留。')+'</p><div class="lrow"><button class="leave" id="lvLeave">'+BI('Leave','离开')+'</button><button class="keep" id="lvKeep">'+BI('Keep playing','继续玩')+'</button></div></div>');
@@ -1327,15 +1363,65 @@ function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',nu
   const cst=open?'unlocked':(L.built?'locked':'coming_soon');const tbd=!L.en&&!L.built;const art=TEX['ui83_card_l'+L.n+'_'+cst];if(tbd)name=BI('Level '+L.n,'第 '+L.n+' 关');
   if(art)return '<button class="lt art '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+(cst==='coming_soon'?'<span class="rib">'+BI('Coming soon','敬请期待')+'</span>':'')+'<span class="lname">'+(cst==='locked'?BI('Locked','未解锁')+'<span class="lsub">'+BI('Finish Level '+(L.n-1)+' to unlock','通关第 '+(L.n-1)+' 关解锁')+'</span>':name)+'</span></button>';
   return '<button class="lt '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+'<div class="ln">LEVEL '+L.n+' · 第 '+L.n+' 关</div>'+name+stt+'</button>';}).join('');
- g.querySelectorAll('.lt').forEach(b=>b.onclick=()=>{const n=+b.dataset.n;const L=LEVELS[n-1];if(L.built&&u[n]){play('sfx_level_select');if(n===1){hideAllOv('title');showTitle();}return;}
+ g.querySelectorAll('.lt').forEach(b=>b.onclick=()=>{const n=+b.dataset.n;const L=LEVELS[n-1];if(L.built&&u[n]){play('sfx_level_select');if(n===1){if(!store.get('hero_set',false)){showSettings();return;}beginAdventure();}return;}
   play('sfx_level_locked');b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');});
  if(fresh){play('sfx_level_unlock');store.set('levels_new',null);}}
+// ---- begin a run (High: wait for audPrep; must not double-intro) ----
+function beginAdventure(opts){opts=opts||{};
+ audUnlock();if(ACTX&&ACTX.state!=='running')try{ACTX.resume();}catch(e){}
+ primeBgm('bgm_pumpkin_field');menuBgm(false);
+ const go=()=>{hideAllOv();document.getElementById('title').style.display='none';document.getElementById('end').style.display='none';
+  // clear any stale intro countdowns before starting
+  try{(S&&S.introT||[]).forEach(clearTimeout);}catch(e){}
+  if(opts.daily){window.__dailyNext=true;DAILY=true;}else{window.__dailyNext=false;DAILY=false;}
+  startRun(true);};
+ if(window.__SMOOTH||window.__audReady)go();
+ else{const L=document.getElementById('loading');if(L){L.style.display='flex';const pct=document.getElementById('lpct');if(pct)pct.textContent='Preparing sounds…';}
+  whenAudioReady(()=>{if(L)L.style.display='none';go();});}
+}
+window.beginAdventure=beginAdventure;
+
+function showSettings(){hideAllOv('settings');const ov=document.getElementById('settings');ov.style.display='flex';
+ const name=store.get('hero',null)||HERO||'Flora';document.getElementById('setName').value=name;
+ const g=heroG();document.querySelectorAll('#setGender button').forEach(b=>b.classList.toggle('sel',b.dataset.g===g));
+ const ZH=['一','二','三','四','五','六'];const gp=document.getElementById('setGrade');
+ gp.innerHTML=[1,2,3,4,5,6].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">Grade '+n+'</span><span class="zh">'+ZH[n-1]+'年级</span></button>').join('');
+ gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);gp.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));});
+ document.querySelectorAll('#setMode button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);document.querySelectorAll('#setMode button').forEach(x=>x.classList.toggle('sel',x===b));};});
+ const curQ=(localStorage.flora_tier||window.__TIER||'high');document.querySelectorAll('#setGfx button').forEach(b=>{b.classList.toggle('sel',b.dataset.q===curQ);b.onclick=()=>{document.querySelectorAll('#setGfx button').forEach(x=>x.classList.toggle('sel',x===b));b.dataset._pick='1';};});
+ menuBgm(true);}
+window.showSettings=showSettings;
+
+document.getElementById('setGender').onclick=e=>{const b=e.target.closest('button[data-g]');if(!b)return;tap();
+ const g=b.dataset.g==='boy'?'boy':'girl';HERO_PICK=g;document.querySelectorAll('#setGender button').forEach(x=>x.classList.toggle('sel',x===b));
+ const el=document.getElementById('setName');const v=String(el.value||'').trim();const typed=el.dataset.typed==='1';
+ if(g==='boy'&&(!v||v===HERO_DEFAULT_NAME.girl&&!typed)){el.value=HERO_DEFAULT_NAME.boy;el.dataset.typed='';}
+ else if(g==='girl'&&v===HERO_DEFAULT_NAME.boy&&!typed){el.value=HERO_DEFAULT_NAME.girl;el.dataset.typed='';}};
+document.getElementById('setName').addEventListener('input',e=>{e.target.dataset.typed='1';});
+
+document.getElementById('setSave').onclick=()=>{tap();
+ const n=String(document.getElementById('setName').value||'').trim();
+ const g=document.querySelector('#setGender button.sel');HERO_PICK=(g&&g.dataset.g==='boy')?'boy':'girl';
+ setHero(n||HERO_DEFAULT_NAME[heroG()]);heroApply();
+ const gfx=document.querySelector('#setGfx button.sel');const want=gfx?gfx.dataset.q:(localStorage.flora_tier||window.__TIER||'high');
+ const cur=(localStorage.flora_tier||window.__TIER||'high');
+ store.set('hero_set',true);
+ if(want&&want!==cur){localStorage.flora_tier=want;sessionStorage.removeItem('flora_autostart');location.reload();return;}
+ play('sfx_menu_confirm');showMenu();};
+document.getElementById('setBack').onclick=()=>{play('sfx_menu_back');showMenu();};
+
 // ---- buttons ----
-document.getElementById('mNew').onclick=()=>{tap();hideAllOv();showNameGate();heroPickDraw();};
+document.getElementById('mNew').onclick=()=>{tap();
+ if(!store.get('hero_set',false)){showSettings();return;}
+ beginAdventure();};
 document.getElementById('mLevels').onclick=()=>{tap();hideAllOv('levels');document.getElementById('levels').style.display='flex';drawLevels();};
 document.getElementById('lBack').onclick=()=>{play('sfx_menu_back');showMenu();};
+document.getElementById('mDaily').onclick=()=>{tap();
+ // Daily Challenge is already wired in real.html — run it (or open settings first if no name)
+ if(!store.get('hero_set',false)){showSettings();return;}
+ beginAdventure({daily:true});};
 document.getElementById('mShop').onclick=()=>{tap();openShop();};
-document.getElementById('mSettings').onclick=()=>{tap();hideAllOv();showTitle();};
+document.getElementById('mGear').onclick=()=>{tap();showSettings();};
 document.getElementById('mBook').onclick=()=>{tap();showBook();};
 document.getElementById('mExit').onclick=()=>{tap();stopAllAudio();try{window.close();}catch(e){}setTimeout(()=>{hideAllOv('bye');document.getElementById('bye').style.display='flex';menuBgm(true);},150);};
 document.getElementById('byeBack').onclick=()=>{play('sfx_menu_back');showMenu();};
@@ -1460,12 +1546,62 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 `;document.head.appendChild(st);
  const rs=document.documentElement.style;rs.setProperty('--mbgL',U('menu_bg_1920x1080'));rs.setProperty('--mbgP',U('menu_bg_1080x1920'));rs.setProperty('--gbL',U('goodbye_bg_1920x1080'));rs.setProperty('--gbP',U('goodbye_bg_1080x1920'));
  const set=(el,m)=>{for(const k in m)el.style.setProperty(k,U(m[k]));};
- [['mNew','new_adventure','play'],['mLevels','choose_level','map'],['mShop','pumpkin_shop','pumpkin_bag'],['mExit','exit_game','door_wave']].forEach(([id,b,ic])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('art');e.classList.remove('main');set(e,{'--n':'btn_'+b+'_normal','--h':'btn_'+b+'_hover','--p':'btn_'+b+'_pressed'});const im=e.querySelector('.mi');if(im&&T('icon_'+ic))im.src=T('icon_'+ic);});
+ [['mNew','new_adventure','play'],['mLevels','choose_level','map'],['mDaily','choose_level','map'],['mShop','pumpkin_shop','pumpkin_bag'],['mBook','pumpkin_shop','pumpkin_bag'],['mExit','exit_game','door_wave']].forEach(([id,b,ic])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('art');e.classList.remove('main');set(e,{'--n':'btn_'+b+'_normal','--h':'btn_'+b+'_hover','--p':'btn_'+b+'_pressed'});const im=e.querySelector('.mi');if(im&&T('icon_'+ic))im.src=T('icon_'+ic);});
  const gh=document.getElementById('gHome');if(gh&&T('btn_home_normal')){gh.classList.add('art');gh.insertAdjacentHTML('afterbegin','<span class="hd"></span>');set(gh,{'--n':'btn_home_normal','--p':'btn_home_pressed'});}
  const qs=document.getElementById('qsub');if(qs&&T('btn_submit_normal')){qs.classList.add('art');set(qs,{'--n':'btn_submit_normal','--p':'btn_submit_pressed','--d':'btn_submit_disabled'});}
  const lc=document.querySelector('#leaveOv .card');if(lc&&T('btn_leave_normal')){lc.classList.add('art');if(T('dialog_confirm_frame_v2'))set(lc,{'--f':'dialog_confirm_frame_v2'});set(document.getElementById('lvLeave'),{'--n':'btn_leave_normal','--p':'btn_leave_pressed'});set(document.getElementById('lvKeep'),{'--n':'btn_keep_playing_normal','--p':'btn_keep_playing_pressed'});}
- if(T('btn_back_normal'))[['lBack','back','Back','返回'],['byeBack','house','Back to home','回主界面'],['ngHome','house','Back to home','回主界面'],['tHome','house','Back to home','回主界面'],['endHome','house','Back to home','回主界面']].forEach(([id,ic,en,zh])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('backart');set(e,{'--n':'btn_back_normal','--p':'btn_back_pressed'});e.innerHTML=(T('icon_'+ic)?'<img class="bi_" src="'+T('icon_'+ic)+'" alt="">':'')+'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';});
+ if(T('btn_back_normal'))[['lBack','back','Back','返回'],['byeBack','house','Back to home','回主界面'],['ngHome','house','Back to home','回主界面'],['tHome','house','Back to home','回主界面'],['endHome','house','Back to home','回主界面'],['setBack','house','Back to home','回主界面']].forEach(([id,ic,en,zh])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('backart');set(e,{'--n':'btn_back_normal','--p':'btn_back_pressed'});e.innerHTML=(T('icon_'+ic)?'<img class="bi_" src="'+T('icon_'+ic)+'" alt="">':'')+'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';});
  const bc=document.querySelector('#bye .card');if(bc){const h=bc.querySelector('h1'),bb=bc.querySelector('.bback');const w=document.createElement('div');w.className='byeTxt';bc.appendChild(w);w.appendChild(h);w.appendChild(bb);}
+})();
+
+
+// ---------- v0.8.3: countdown exactly once; High waits for audPrep ----------
+(function(){
+ let _cdIv=null,_cdGen=0;
+ const _countdown0=countdown;
+ countdown=function(force){
+  // Mid-run re-entry is the bug James hit ("跑了几秒钟又321"). Only restartCP may force.
+  if(!force && S && (S.mode==='run'||S.mode==='quiz'||S.mode==='mwait'||S.mode==='rest')){
+   console.warn('[countdown] ignored in mode',S.mode);return;}
+  if(!force && S && S.mode==='count' && _cdIv){console.warn('[countdown] already counting');return;}
+  if(_cdIv){clearInterval(_cdIv);_cdIv=null;}
+  const go=()=>{
+   const my=++_cdGen;
+   S.mode='count';const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
+   _cdIv=setInterval(()=>{
+    if(my!==_cdGen){clearInterval(_cdIv);return;}
+    n--;
+    if(n>0){e.textContent=n;play('sfx_countdown_beep');}
+    else{clearInterval(_cdIv);_cdIv=null;e.textContent='GO!';play('sfx_countdown_go');
+     setTimeout(()=>{if(my===_cdGen)e.style.display='none';},600);
+     S.mode='run';S.speed=S.base;bgm('bgm_pumpkin_field');
+     sub(bi('← → lane, ↑ jump, ↓ slide — collect 5 pumpkins!','← → 换道，↑ 跳，↓ 滑铲，先捡 5 个南瓜！'),3000);}
+   },800);
+  };
+  if(window.__SMOOTH||window.__audReady)go();
+  else{
+   const L=document.getElementById('loading');if(L){L.style.display='flex';}
+   whenAudioReady(()=>{if(L)L.style.display='none';go();});
+  }
+ };
+ // intro: always clear prior timeouts before scheduling (double-start left a stale countdown@8s)
+ const _intro0=intro;
+ intro=function(){
+  try{(S.introT||[]).forEach(clearTimeout);}catch(e){}
+  if(S)S.introT=[];
+  return _intro0.apply(this,arguments);
+ };
+ // restartCP must force a fresh countdown after revive
+ const _restartCP0=restartCP;
+ restartCP=function(){const r=_restartCP0.apply(this,arguments);try{/* restartCP ends with countdown() — our wrapper blocks mid-run, so force */}catch(e){}return r;};
+ // Patch the countdown() call at end of restartCP by wrapping after the fact: intercept when mode set from over
+ const _cdDirect=countdown;
+ // Re-bind restartCP body call: monkey-patch by replacing countdown during restartCP
+ restartCP=function(){
+  const real=countdown;
+  countdown=function(){return real(true);};
+  try{return _restartCP0.apply(this,arguments);}finally{countdown=real;}
+ };
 })();
 
 // per-frame hook (called from v082Frame)
@@ -1473,11 +1609,10 @@ function v083Frame(){homeStep();}
 
 window.__v083={LEVELS,AB};
 
-newGame();S.mode='title';loop();audPrep().catch(()=>{}).then(()=>{document.getElementById('loading').style.display='none';setTimeout(window.__lazyStart,300);});
-showMenu();
+newGame();S.mode='title';loop();(window.__SMOOTH?Promise.resolve(markAudioReady()):audPrep().catch(()=>markAudioReady())).then(()=>{document.getElementById('loading').style.display='none';setTimeout(window.__lazyStart,300);showMenu();});
 
 document.getElementById('lskip').onclick=closeLetter;const _ll=document.getElementById('llang');if(_ll)_ll.style.display='none';
-document.getElementById('hist').innerHTML=histHtml();const qualEl=document.getElementById('qual');if(qualEl){qualEl.value=window.__TIER;qualEl.onchange=e=>{const t=e.target.value;localStorage.flora_tier=t;window.__TIER=t;if(t==='smooth'){for(const k in snd){try{snd[k].pause();snd[k].removeAttribute('src');snd[k].load();}catch(err){}}}const hint=document.getElementById('qualhint');if(hint){const en=hint.querySelector('.en'),zh=hint.querySelector('.zh');if(t!==BOOT_TIER){if(en)en.textContent='Applies on Start';if(zh)zh.textContent='画质将在开始冒险时切换';}else{if(en)en.textContent='Smooth ≈ High graphics, sound off';if(zh)zh.textContent='流畅档：画面接近高画质，声音关闭';}}};const _start=document.getElementById('start');_start.onclick=()=>{setHero(document.getElementById('heroEdit').value);const want=localStorage.flora_tier||window.__TIER;if(want!==BOOT_TIER){sessionStorage.flora_autostart='1';location.reload();return;}document.getElementById('title').style.display='none';startRun(true);};if(sessionStorage.flora_autostart==='1'){sessionStorage.removeItem('flora_autostart');setTimeout(()=>{document.getElementById('namegate').style.display='none';document.getElementById('title').style.display='none';startRun(true);},0);}}
+document.getElementById('hist').innerHTML=histHtml();const qualEl=document.getElementById('qual');if(qualEl){qualEl.value=window.__TIER;qualEl.onchange=e=>{const t=e.target.value;localStorage.flora_tier=t;window.__TIER=t;if(t==='smooth'){for(const k in snd){try{snd[k].pause();snd[k].removeAttribute('src');snd[k].load();}catch(err){}}}const hint=document.getElementById('qualhint');if(hint){const en=hint.querySelector('.en'),zh=hint.querySelector('.zh');if(t!==BOOT_TIER){if(en)en.textContent='Applies on Start';if(zh)zh.textContent='画质将在开始冒险时切换';}else{if(en)en.textContent='Smooth ≈ High graphics, sound off';if(zh)zh.textContent='流畅档：画面接近高画质，声音关闭';}}};const _start=document.getElementById('start');_start.onclick=()=>{try{const el=document.getElementById('heroEdit');if(el)setHero(el.value);}catch(e){}const want=localStorage.flora_tier||window.__TIER;if(want!==BOOT_TIER){sessionStorage.flora_autostart=window.__dailyNext?'daily':'1';location.reload();return;}beginAdventure({daily:!!window.__dailyNext});};if(sessionStorage.flora_autostart){const _as=sessionStorage.flora_autostart;sessionStorage.removeItem('flora_autostart');const _go=()=>{document.getElementById('namegate').style.display='none';document.getElementById('title').style.display='none';const _m=document.getElementById('menu');if(_m)_m.style.display='none';beginAdventure({daily:_as==='daily'});};if(window.__SMOOTH||window.__audReady)_go();else whenAudioReady(_go);}}
 /* start wired with quality + hero */
 {const fb=document.getElementById('fb');if(FEEDBACK_URL){fb.style.display='block';fb.onclick=()=>window.open(FEEDBACK_URL,'_blank','noopener');}}
 document.getElementById('again').onclick=()=>{play('sfx_retry_whoosh');document.getElementById('end').style.display='none';startRun();};document.getElementById('endHome').onclick=()=>{play('sfx_menu_back');hideAllOv();newGame();S.mode='title';hpDraw();showMenu();};
