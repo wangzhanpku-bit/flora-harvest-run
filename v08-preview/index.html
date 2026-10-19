@@ -769,9 +769,7 @@ function answered(ok){if(ok){S.combo=(S.combo||0)+1;if(S.combo>=3){S.combo=0;S.c
 function duckRun(on){if(window.__SMOOTH)return;const a=snd[window.__bgmCur];if(a)a.volume=on?.1:.45;}
 function thinkStart(){if(window.__SMOOTH)return;const a=snd.bgm_question_think;if(!a)return;if(!a.getAttribute('src')&&AUDIO.bgm_question_think)a.src=AUDIO.bgm_question_think;a.loop=false;a.volume=.5;try{a.currentTime=0;}catch(e){}a.play().catch(e=>console.warn('[audio] bgm failed',e&&e.name));}
 function thinkStop(){const a=snd.bgm_question_think;if(a&&!a.paused)a.pause();}
-function lowpass(sec){if(window.__SMOOTH)return;try{const a=snd[window.__bgmCur];if(!a||a.paused)return;const C=window.__actx||(window.__actx=new (window.AudioContext||window.webkitAudioContext)());
- if(!a.__lp){const src=C.createMediaElementSource(a);a.__lp=C.createBiquadFilter();a.__lp.type='lowpass';a.__lp.frequency.value=22000;src.connect(a.__lp);a.__lp.connect(C.destination);}
- if(C.state==='suspended')C.resume();const f=a.__lp.frequency,t=C.currentTime;f.cancelScheduledValues(t);f.setValueAtTime(800,t);f.setValueAtTime(800,t+sec);f.linearRampToValueAtTime(22000,t+sec+.35);}catch(e){}}
+function lowpass(sec){/* v0.8.3 preview: disabled — createMediaElementSource + 2nd AudioContext permanently routed BGM through WebAudio and killed iPhone FPS after first hard hit */}
 // ---------- obstacle hits ----------
 function tip(k,en,zh,delay){const T=store.get('tips',{});if(T[k])return false;T[k]=1;store.set('tips',T);setTimeout(()=>sub(bi(en,zh),3200),delay||0);return true;}
 function hitHard(o){if(S.shield){shieldPop(o);return;}S.hardHits=(S.hardHits||0)+1;S.slowT=Math.max(S.slowT,2);S.bounce=.4;play('sfx_stun_bonk');lowpass(2);
@@ -1182,7 +1180,7 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 .ov.fb{background:var(--fbArt,none) center/cover no-repeat,radial-gradient(120% 90% at 50% 20%,#fff6df 0%,#ffe2ad 55%,#f6c27a 100%);align-items:flex-start;justify-content:center;overflow:auto;-webkit-overflow-scrolling:touch}
 .ov.fb>.card{border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;width:100%!important;max-width:720px!important;max-height:none!important;min-height:100%;box-sizing:border-box;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 14px) calc(env(safe-area-inset-right,0px) + 16px) calc(env(safe-area-inset-bottom,0px) + 18px) calc(env(safe-area-inset-left,0px) + 16px)!important;overflow:visible!important}
 #cardView.fb{background:radial-gradient(110% 80% at 50% 35%,#fff8e6 0%,#ffe0a6 60%,#f2b866 100%);align-items:center;z-index:8}
-#cardView.fb .bcard.big{width:min(72vw,calc((100dvh - 230px)*600/680),340px)!important}#levels .lback{max-width:420px;margin:0 auto!important}
+#cardView.fb .bcard.big{width:min(72vw,calc((100dvh - 230px)*600/680),340px)!important}#levels .lback,#lBack{display:none!important}
 #cardView.fb>.card{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%}
 /* card art: no lighter box peeking at the frame corners */
 .bcard .cart{background-color:transparent!important;border-radius:6%/5.3%}
@@ -1190,7 +1188,7 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 #shop{background:var(--bgL) center/cover no-repeat,#5a3a1a!important}@media (orientation:portrait){#shop{background-image:var(--bgP)!important}}
 #shop{align-items:stretch;justify-content:flex-start;overflow:hidden!important;flex-direction:column;padding:0!important}
 #shop>.ovBack.top,#shop>.ovBack.topbar{flex:none;position:relative!important;top:auto!important;margin:calc(env(safe-area-inset-top,0px) + 6px) auto 4px!important;z-index:2}
-#shop>#shopBackBot,#shop>.ovBack.bot{flex:none!important;flex-shrink:0!important;align-self:center;width:min(100%,380px)!important;aspect-ratio:452/152!important;min-height:0!important;height:auto!important;max-height:none!important;margin:8px auto calc(env(safe-area-inset-bottom,0px) + 10px)!important;z-index:2}
+#shop>#shopBackBot,#shop>.ovBack.bot{display:none!important}
 #shop .shopCard{flex:1 1 auto;min-height:0;max-height:none!important;overflow:auto!important;-webkit-overflow-scrolling:touch;margin:0 auto calc(env(safe-area-inset-bottom,0px) + 8px);border:0!important;width:min(100%,720px);padding:0 12px 12px;box-sizing:border-box}
 #shopBtn,#shopBtn2,#shopBtn3{display:none!important}
 #title,#qual,#qualhint{display:none!important}
@@ -1223,26 +1221,27 @@ window.__v082={ITEM_LAYOUT,BOOSTX};
 #menu .mtools{display:none!important}
 
 
-.ovBack.topbar{position:sticky;top:0;z-index:6;container-type:inline-size;aspect-ratio:384/96;width:min(100%,360px)!important;max-width:360px!important;min-height:0!important;margin:8px auto!important;padding:0 4% 1% 24%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
+.ovBack.topbar{position:sticky;top:0;z-index:6;container-type:inline-size;aspect-ratio:384/96;width:min(100%,400px)!important;max-width:400px!important;min-height:0!important;margin:8px auto!important;padding:0 3% 1% 22%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
 .ovBack.topbar:active{background-image:var(--p)!important;padding-top:2%!important}
 .ovBack.topbar .bi_{position:absolute;left:7.5%;top:28%;height:44%;aspect-ratio:1;pointer-events:none}
-.ovBack.topbar .en{display:block;font:700 5.8cqw/1.05 Fredoka,sans-serif!important;color:#fff!important;margin:0!important;text-shadow:0 .35cqw 0 #1d5e5a}
-.ovBack.topbar .zh{display:block;font:700 4.6cqw/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;margin-top:.3cqw!important;text-shadow:0 .3cqw 0 #1d5e5a}
-.ovBack.top{position:sticky;top:0;z-index:6;width:min(100%,380px)!important;margin:8px auto!important}
-.ovBack.bot{position:relative;width:min(100%,380px)!important;margin:12px auto 10px!important}
+.ovBack.topbar .en{display:block;font:800 7.6cqw/1.05 Fredoka,sans-serif!important;color:#fff!important;margin:0!important;text-shadow:0 .35cqw 0 #1d5e5a}
+.ovBack.topbar .zh{display:block;font:800 6.2cqw/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;margin-top:.3cqw!important;text-shadow:0 .3cqw 0 #1d5e5a}
+.ovBack.top{position:sticky;top:0;z-index:6;width:min(100%,400px)!important;margin:8px auto!important}
+.ovBack.bot,#shopBackBot,#levelsBackBot,#dailyBackBot,#bookBackBot{display:none!important}
 #levels .card,#book .card,#daily .card{display:flex;flex-direction:column}
 #shop .shopCard{display:flex;flex-direction:column}
 #shop .ovBack.top,#book .ovBack.top,#levels .ovBack.top,#daily 
-.ovBack.topbar{position:sticky;top:0;z-index:6;container-type:inline-size;aspect-ratio:384/96;width:min(100%,360px)!important;max-width:360px!important;min-height:0!important;margin:8px auto!important;padding:0 4% 1% 24%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
+.ovBack.topbar{position:sticky;top:0;z-index:6;container-type:inline-size;aspect-ratio:384/96;width:min(100%,400px)!important;max-width:400px!important;min-height:0!important;margin:8px auto!important;padding:0 3% 1% 22%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--n) center/100% 100% no-repeat transparent!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
 .ovBack.topbar:active{background-image:var(--p)!important;padding-top:2%!important}
 .ovBack.topbar .bi_{position:absolute;left:7.5%;top:28%;height:44%;aspect-ratio:1;pointer-events:none}
-.ovBack.topbar .en{display:block;font:700 5.8cqw/1.05 Fredoka,sans-serif!important;color:#fff!important;margin:0!important;text-shadow:0 .35cqw 0 #1d5e5a}
-.ovBack.topbar .zh{display:block;font:700 4.6cqw/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;margin-top:.3cqw!important;text-shadow:0 .3cqw 0 #1d5e5a}
+.ovBack.topbar .en{display:block;font:800 7.6cqw/1.05 Fredoka,sans-serif!important;color:#fff!important;margin:0!important;text-shadow:0 .35cqw 0 #1d5e5a}
+.ovBack.topbar .zh{display:block;font:800 6.2cqw/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;margin-top:.3cqw!important;text-shadow:0 .3cqw 0 #1d5e5a}
 .ovBack.top{flex:none}
+.ovBack.bot,#shopBackBot,#levelsBackBot,#dailyBackBot,#bookBackBot{display:none!important}
 #book,#levels,#daily,#shop,#settings{z-index:6}
 #menu{z-index:5}
 #book.fb>.card,#daily.fb>.card,#levels.fb>.card{overflow:auto;max-height:100%;-webkit-overflow-scrolling:touch}
-#menu .mgear{position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:calc(env(safe-area-inset-right,0px) + 10px);z-index:2;width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:rgba(90,42,0,.45);color:#fff;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 2px 8px #0005;display:flex;align-items:center;justify-content:center;padding:0}
+#menu .mgear{display:none!important}
 #menu .mcol{max-width:440px;gap:6px}
 #menu .mbtn{min-height:56px}
 #settings .setCard{max-width:min(96vw,520px)!important;width:min(96vw,520px);text-align:left;padding:16px 18px 18px!important}
@@ -1365,13 +1364,14 @@ function hideAllOv(keep){OVS.forEach(id=>{if(id===keep)return;const e=document.g
 function mk(id,html,cls){let e=document.getElementById(id);if(!e){e=document.createElement('div');e.id=id;e.className='ov '+(cls||'');document.body.appendChild(e);}e.innerHTML=html;return e;}
 const BI=(en,zh)=>'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';
 function menuShown(){const m=document.getElementById('menu');return !!(m&&m.style.display==='flex');}
-mk('menu','<div class="card"><button type="button" id="mGear" class="mgear" aria-label="Settings">⚙</button><div class="mlogo"></div><div class="mcol">'+
+mk('menu','<div class="card"><button type="button" id="mGear" class="mgear" aria-label="Settings" hidden>⚙</button><div class="mlogo"></div><div class="mcol">'+
  '<button class="mbtn main" id="mNew"><img class="mi" alt="">'+BI('New Adventure','新的冒险')+'</button>'+
- '<button class="mbtn" id="mLevels"><img class="mi" alt="">'+BI('Choose Level','选择关卡')+'</button>'+
+ '<button class="mbtn" id="mSettings"><img class="mi" alt="">'+BI('Game Settings','游戏设置')+'</button>'+
+ '<button class="mbtn" id="mLevels"><img class="mi" alt="">'+BI('Level Select','选择关卡')+'</button>'+
  '<button class="mbtn" id="mDaily"><img class="mi" alt="">'+BI('Daily Challenge','每日挑战')+'</button>'+
  '<button class="mbtn" id="mShop"><img class="mi" alt="">'+BI('Pumpkin Shop','南瓜小店')+'</button>'+
  '<button class="mbtn" id="mBook"><img class="mi" alt="">'+BI('Collection','收集册')+'</button>'+
- '<button class="mbtn" id="mExit"><img class="mi" alt="">'+BI('Exit Game','退出游戏')+'</button></div>'+
+ '<button class="mbtn" id="mExit"><img class="mi" alt="">'+BI('Quit','退出游戏')+'</button></div>'+
  '<div id="mver" style="font-size:11px;color:#b09070;margin-top:8px">'+V083.ver+'</div></div>','fb');
 mk('settings','<div class="card setCard"><h2 class="bi">'+BI('Settings','设置')+'</h2>'+
  '<label class="bi sLab"><span class="en">Name</span><span class="zh">孩子的名字</span></label>'+
@@ -1388,7 +1388,7 @@ mk('settings','<div class="card setCard"><h2 class="bi">'+BI('Settings','设置'
  '<button type="button" class="big" id="setSave">'+BI('Save','保存')+'</button>'+
  '<button type="button" class="backart setBackBtn" id="setBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
 mk('daily','<div class="card"><h2 class="bi dtitle"><span class="en">Daily Challenge</span><span class="zh">每日挑战</span></h2><p class="bi dnote" id="dailyNote"></p><button type="button" class="mbtn main dailyGoBtn" id="dailyGo"><img class="mi" alt=""><span class="en">Start today\'s run</span><span class="zh">开始今日挑战</span></button></div>','fb');
-mk('levels','<div class="card"><h2 class="bi">'+BI('Choose Level','选择关卡')+'</h2><div class="lgrid" id="lgrid"></div><button class="lback" id="lBack">'+BI('Back','返回')+'</button></div>','fb');
+mk('levels','<div class="card"><h2 class="bi">'+BI('Level Select','选择关卡')+'</h2><div class="lgrid" id="lgrid"></div></div>','fb');
 mk('bye','<div class="card"><div class="byeArt"></div><h1>'+BI('See you next time!','下次见！')+'</h1><button class="bback" id="byeBack">'+BI('Back to home','回主界面')+'</button></div>','fb');
 mk('leaveOv','<div class="card"><h2>'+BI('Leave this run?','要离开这一局吗？')+'</h2><p class="bi" style="margin:4px 0 0">'+BI('Your mini pumpkins are kept.','南瓜篮里的小南瓜会保留。')+'</p><div class="lrow"><button class="leave" id="lvLeave">'+BI('Leave','离开')+'</button><button class="keep" id="lvKeep">'+BI('Keep playing','继续玩')+'</button></div></div>');
 ['title','namegate','book'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.add('fb');});
@@ -1404,15 +1404,14 @@ function showMenu(){hideAllOv('menu');document.getElementById('menu').style.disp
 window.showMenu=showMenu;
 // ---- levels ----
 const LEVELS=(function(){
- const e1=String(LEVEL_TITLE.en).replace(/^Level\s*\d+\s*[:：]\s*/i,'').trim();
- const z1=String(LEVEL_TITLE.zh).replace(/^第.关[:：]\s*/,'').trim();
- // L1: split sensibly into two bilingual lines when possible
- let L1={n:1,built:true,en:e1,zh:z1,en1:e1,zh1:z1,en2:'',zh2:''};
- if(z1.indexOf('·')>=0){const i=z1.indexOf('·');L1.zh1=z1.slice(0,i+1);L1.zh2=z1.slice(i+1);}
- else if(/^(.+节)(.+)$/.test(z1)){L1.zh1=RegExp.$1;L1.zh2=RegExp.$2;}
- return [L1,
-  {n:2,built:false,en:'Stanley Park Halloween Ride',zh:'斯坦利公园·万圣夜骑行',en1:'Stanley Park Halloween Ride',enWrap:['Stanley Park','Halloween Ride'],zh1:'斯坦利公园·',zh2:'万圣夜骑行',en2:''},
-  {n:3,built:false},{n:4,built:false},{n:5,built:false},{n:6,built:false}];
+ // James + 创意张: level cards ENGLISH ONLY (clearer, larger)
+ return [
+  {n:1,built:true,en:'Harvest Run',en1:'Harvest Run',enWrap:['Harvest Run']},
+  {n:2,built:false,en:'Stanley Park Halloween Ride',en1:'Stanley Park Halloween Ride',enWrap:['Stanley Park','Halloween Ride']},
+  {n:3,built:false,en:'Coming soon',en1:'Coming soon'},
+  {n:4,built:false,en:'Coming soon',en1:'Coming soon'},
+  {n:5,built:false,en:'Coming soon',en1:'Coming soon'},
+  {n:6,built:false,en:'Coming soon',en1:'Coming soon'}];
 })();
 function lvUnlocked(){const u=store.get('levels',{1:1});u[1]=1;return u;}
 
@@ -1436,42 +1435,42 @@ function lvUnlocked(){const u=store.get('levels',{1:1});u[1]=1;return u;}
  });}
 function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',null);const g=document.getElementById('lgrid');
  g.innerHTML=LEVELS.map(L=>{const open=L.built&&u[L.n];
-  const cst=open?'unlocked':(L.built?'locked':'coming_soon');const tbd=!L.built&&!L.en1;const art=TEX['ui83_card_l'+L.n+'_'+cst];
-  const hdr='<span class="lhdr">'+BI('Level '+L.n,'第 '+L.n+' 关')+'</span>';
+  const cst=open?'unlocked':(L.built?'locked':'coming_soon');const art=TEX['ui83_card_l'+L.n+'_'+cst];
+  const hdr='<span class="lhdr"><span class="en">Level '+L.n+'</span></span>';
   let body='';
-  if(cst==='locked'){body='<span class="lname">'+BI('Locked','未解锁')+'<span class="lsub">'+BI('Finish Level '+(L.n-1)+' to unlock','通关第 '+(L.n-1)+' 关解锁')+'</span></span>';}
-  else if(tbd||cst==='coming_soon'&&!L.en1){body='<span class="lname lname-empty" aria-hidden="true"></span>';}
-  else{const en=L.en1||L.en||('Level '+L.n);const zhA=L.zh1||L.zh||('第 '+L.n+' 关');const zhB=L.zh2||'';
-   body='<span class="lname"><span class="len"><span class="en">'+en+'</span></span><span class="lzh"><span class="zh">'+zhA+'</span>'+(zhB?'<span class="zh">'+zhB+'</span>':'')+'</span></span>';}
-  if(art)return '<button class="lt art '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+hdr+(cst==='coming_soon'?'<span class="rib">'+BI('Coming soon','敬请期待')+'</span>':'')+body+'</button>';
-  return '<button class="lt '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+hdr+body+'</button>';
+  if(cst==='locked'){body='<span class="lname"><span class="len"><span class="en">Locked</span></span><span class="lsub"><span class="en">Finish Level '+(L.n-1)+' to unlock</span></span></span>';}
+  else{const en=L.en1||L.en||('Level '+L.n);
+   const wrap=(L.enWrap&&L.enWrap.length)?L.enWrap:[en];
+   body='<span class="lname"><span class="len">'+wrap.map(t=>'<span class="en">'+t+'</span>').join('')+'</span></span>';}
+  // Coming soon: title in body only (no Chinese ribbon)
+  if(art)return '<button class="lt art enonly '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+hdr+body+'</button>';
+  return '<button class="lt enonly '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+hdr+body+'</button>';
  }).join('');
  g.querySelectorAll('.lt').forEach(b=>b.onclick=()=>{const n=+b.dataset.n;const L=LEVELS[n-1];if(L.built&&u[n]){play('sfx_level_select');if(n===1){if(!store.get('hero_set',false)){showSettings();return;}beginAdventure();}return;}
   play('sfx_level_locked');b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');});
  if(fresh){play('sfx_level_unlock');store.set('levels_new',null);}requestAnimationFrame(fitLevelTitles);}
 
-// ---- sticky Back to home (top+bottom) on shop / collection / levels / daily ----
+// ---- sticky Back to home (TOP ONLY — James: no bottom Back) on shop / collection / levels / daily ----
 function ensureBackPair(root, opts){
  opts=opts||{};if(!root)return;
- const mkB=(id,where)=>{
+ const mkTop=(id)=>{
   let b=document.getElementById(id);
-  if(!b){b=document.createElement('button');b.type='button';b.id=id;b.className='ovBack '+where+(where==='top'?' backTop':' backart');
+  if(!b){b=document.createElement('button');b.type='button';b.id=id;b.className='ovBack top backTop topbar';
    b.innerHTML=(TEX.ui83_icon_house?'<img class="bi_" src="'+TEX.ui83_icon_house+'" alt="">':'')+'<span class="en">Back to home</span><span class="zh">回主界面</span>';
    b.onclick=e=>{e.stopPropagation();play('sfx_menu_back');if(opts.onBack)opts.onBack();else showMenu();};}
-  if(where==='top'&&TEX.ui83_btn_back_topbar_normal){
+  if(TEX.ui83_btn_back_topbar_normal){
    b.classList.add('topbar');b.classList.remove('backart');
    b.style.setProperty('--n','url('+TEX.ui83_btn_back_topbar_normal+')');
    b.style.setProperty('--p','url('+(TEX.ui83_btn_back_topbar_pressed||TEX.ui83_btn_back_topbar_normal)+')');
-  }else if(TEX.ui83_btn_back_normal){
-   b.classList.add('backart');
-   b.style.setProperty('--n','url('+TEX.ui83_btn_back_normal+')');
-   b.style.setProperty('--p','url('+(TEX.ui83_btn_back_pressed||TEX.ui83_btn_back_normal)+')');
   }
+  // remove any leftover bottom back from older builds
+  const bot=document.getElementById((opts.id||root.id||'ov')+'BackBot');if(bot)bot.remove();
   return b;};
- if(root.dataset.backPair){mkB((opts.id||root.id||'ov')+'BackTop','top');mkB((opts.id||root.id||'ov')+'BackBot','bot');return;}
+ const tid=(opts.id||root.id||'ov')+'BackTop';
+ if(root.dataset.backPair){mkTop(tid);return;}
  root.dataset.backPair='1';
- const top=mkB((opts.id||root.id||'ov')+'BackTop','top');const bot=mkB((opts.id||root.id||'ov')+'BackBot','bot');
- root.insertBefore(top,root.firstChild);root.appendChild(bot);
+ const top=mkTop(tid);
+ root.insertBefore(top,root.firstChild);
 }
 // ---- begin a run (High: wait for audPrep; must not double-intro) ----
 function beginAdventure(opts){opts=opts||{};
@@ -1538,7 +1537,8 @@ document.getElementById('mDaily').onclick=()=>{tap();
  ensureBackPair(d.querySelector('.card'),{id:'daily',onBack:showMenu});};
  document.getElementById('dailyGo').onclick=()=>{tap();beginAdventure({daily:true});};
 document.getElementById('mShop').onclick=()=>{tap();openShop();};
-document.getElementById('mGear').onclick=()=>{tap();showSettings();};
+document.getElementById('mSettings').onclick=()=>{tap();showSettings();};
+{const g=document.getElementById('mGear');if(g){g.style.display='none';g.onclick=null;}}
 document.getElementById('mBook').onclick=()=>{tap();hideAllOv('book');showBook();const bk=document.getElementById('book');bk.classList.add('fb');const card=bk&&bk.querySelector('.card');if(card)ensureBackPair(card,{id:'book',onBack:()=>{bk.style.display='none';showMenu();}});const bc=document.getElementById('bookClose');if(bc)bc.style.display='none';menuBgm(true);};
 document.getElementById('mExit').onclick=()=>{tap();stopAllAudio();try{window.close();}catch(e){}setTimeout(()=>{hideAllOv('bye');document.getElementById('bye').style.display='flex';menuBgm(true);},150);};
 document.getElementById('byeBack').onclick=()=>{play('sfx_menu_back');showMenu();};
@@ -1551,12 +1551,6 @@ document.getElementById('byeBack').onclick=()=>{play('sfx_menu_back');showMenu()
   top.onclick=goHome;
   if(TEX.ui83_btn_back_topbar_normal){top.style.setProperty('--n','url('+TEX.ui83_btn_back_topbar_normal+')');top.style.setProperty('--p','url('+(TEX.ui83_btn_back_topbar_pressed||TEX.ui83_btn_back_topbar_normal)+')');}
   ov.insertBefore(top,ov.firstChild);
-  const bot=document.createElement('button');bot.type='button';bot.id='shopBackBot';bot.className='ovBack bot backart';
-  bot.innerHTML=(TEX.ui83_icon_house?'<img class="bi_" src="'+TEX.ui83_icon_house+'" alt="">':'')+'<span class="en">Back to home</span><span class="zh">回主界面</span>';
-  bot.onclick=goHome;
-  if(TEX.ui83_btn_back_normal){bot.style.setProperty('--n','url('+TEX.ui83_btn_back_normal+')');bot.style.setProperty('--p','url('+(TEX.ui83_btn_back_pressed||TEX.ui83_btn_back_normal)+')');}
-  // Outside scrolling .shopCard so flex column can't crush the 452×152 plate
-  ov.appendChild(bot);
  }const c=document.getElementById('shopClose');if(c){c.style.display='none';}menuBgm(true);};}
 // end screen "Back to home" → main menu
 document.getElementById('endHome').onclick=()=>{play('sfx_menu_back');hideAllOv();newGame();S.mode='title';showMenu();};
@@ -1631,8 +1625,14 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #levels .lt.art .lname .len{display:flex;flex-direction:column;align-items:center;width:100%;flex:0 0 auto;text-align:center}
 #levels .lt.art .lname .len .en{display:block;font:700 max(13px,5cqw)/1.08 Fredoka,sans-serif!important;color:#5a2a00!important;white-space:nowrap;overflow:hidden;text-align:center;max-width:100%}
 #levels .lt.art .lname .len .en + .en{margin-top:0}
-#levels .lt.art .lname .lzh{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:.3cqw;flex:0 0 auto}
-#levels .lt.art .lname .lzh .zh{display:block;font:600 max(14px,5.4cqw)/1.1 "Noto Sans SC",sans-serif!important;color:#8a5a2a!important;white-space:nowrap;overflow:hidden;text-align:center;max-width:100%}
+#levels .lt.art .lname .lzh{display:none!important}
+#levels .lt.art.enonly .lhdr .zh,#levels .lt.art.enonly .lname .zh,#levels .lt.art.enonly .rib{display:none!important}
+#levels .lt.art.enonly .lhdr{top:56%!important;height:10%!important}
+#levels .lt.art.enonly .lhdr .en{font:800 max(14px,5.6cqw)/1.05 Fredoka,sans-serif!important;color:#3a1a00!important;letter-spacing:.02em}
+#levels .lt.art.enonly .lname{top:66%!important;bottom:3%!important;justify-content:center!important}
+#levels .lt.art.enonly .lname .len .en{font:800 max(15px,6.2cqw)/1.1 Fredoka,sans-serif!important;color:#2a1000!important;white-space:normal!important;overflow:visible!important;text-wrap:balance;max-width:100%;padding:0 2%}
+#levels .lt.art.enonly.coming_soon .lname .len .en{color:#4a3a5a!important;font-size:max(14px,5.8cqw)!important}
+#levels .lt.art .lname .lzh .zh{display:none!important}
 
 /* tall-card title slot (26,316)–(334,496) on 360×520 — dark text on cream */
 #levels .lt.art .lnum{display:flex!important;position:absolute;left:calc((40 - 27)/360*100%);top:calc((38 - 27)/520*100%);width:calc(54/360*100%);aspect-ratio:1;align-items:center;justify-content:center;font:800 max(14px,9cqw)/1 Fredoka,sans-serif;color:#fff;text-shadow:0 .35cqw 0 #0007;pointer-events:none;z-index:3;background:transparent;border:0;padding:0;margin:0;box-sizing:border-box}
@@ -1716,6 +1716,9 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art #setGrade button .en{font:700 max(9px,2.4cqw)/1.05 Fredoka,sans-serif!important;white-space:nowrap!important;writing-mode:horizontal-tb!important}
 #settings .setCard.art #setGrade button .zh{font:600 max(8px,2cqw)/1.05 "Noto Sans SC",sans-serif!important;white-space:nowrap!important;writing-mode:horizontal-tb!important}
 #settings .setCard.art .sHint{display:none!important}
+/* trim leftover cream strip under Graphics row (Save/Back live outside card) */
+#settings .setCard.art{background-color:transparent!important}
+#settings .setCard.art::after{display:none!important}
 
 
 /* Save + Back: clear vertical gap; Back matches shop/levels teal plate type size */
@@ -1778,13 +1781,13 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  const rs=document.documentElement.style;rs.setProperty('--mbgL',U('menu_bg_1920x1080'));rs.setProperty('--mbgP',U('menu_bg_1080x1920'));rs.setProperty('--gbL',U('goodbye_bg_1920x1080'));rs.setProperty('--gbP',U('goodbye_bg_1080x1920'));
  const set=(el,m)=>{for(const k in m)el.style.setProperty(k,U(m[k]));};
  [['mNew','new_adventure','play'],['mLevels','choose_level','map'],['mDaily','daily_challenge','daily'],['mShop','pumpkin_shop','pumpkin_bag'],['mBook','collection','collection'],['mExit','exit_game','door_wave']].forEach(([id,b,ic])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('art');e.classList.remove('main');set(e,{'--n':'btn_'+b+'_normal','--h':'btn_'+b+'_hover','--p':'btn_'+b+'_pressed'});const im=e.querySelector('.mi');if(im&&T('icon_'+ic))im.src=T('icon_'+ic);});{const dg=document.getElementById('dailyGo');if(dg&&T('btn_submit_normal')){dg.classList.add('art','mbtn');dg.classList.remove('main');set(dg,{'--n':'btn_submit_normal','--h':'btn_submit_normal','--p':'btn_submit_pressed'});const im=dg.querySelector('.mi');const ico=T('icon_daily_start')||T('icon_play')||T('icon_daily');if(im&&ico)im.src=ico;}}
-
- // v3 gear (96×96) top-right
- const gear=document.getElementById('mGear');
- if(gear&&T('btn_settings_gear_normal')){
-  gear.classList.add('art');gear.textContent='';
-  set(gear,{'--n':'btn_settings_gear_normal','--p':'btn_settings_gear_pressed'});
- }
+ // Game Settings: reuse choose_level plate chrome until 美图王 supplies btn_game_settings_*; gear icon if present
+ {const e=document.getElementById('mSettings');if(e){e.classList.add('art');e.classList.remove('main');
+  if(T('btn_choose_level_normal'))set(e,{'--n':'btn_choose_level_normal','--h':'btn_choose_level_hover','--p':'btn_choose_level_pressed'});
+  const im=e.querySelector('.mi');if(im&&T('btn_settings_gear_normal'))im.src=T('btn_settings_gear_normal');
+  else if(im&&T('icon_map'))im.src=T('icon_map');}}
+ // gear removed from top-right (James: Game Settings is a normal menu button)
+ {const gear=document.getElementById('mGear');if(gear)gear.style.display='none';}
  // v3 settings panel (5-row frames; portrait 720×960 / landscape 960×640)
  const sc=document.querySelector('#settings .setCard');
  if(sc&&T('settings_panel_720x960')){
@@ -1797,7 +1800,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  const gh=document.getElementById('gHome');if(gh&&T('btn_home_normal')){gh.classList.add('art');gh.insertAdjacentHTML('afterbegin','<span class="hd"></span>');set(gh,{'--n':'btn_home_normal','--p':'btn_home_pressed'});}
  const qs=document.getElementById('qsub');if(qs&&T('btn_submit_normal')){qs.classList.add('art');set(qs,{'--n':'btn_submit_normal','--p':'btn_submit_pressed','--d':'btn_submit_disabled'});}
  const lc=document.querySelector('#leaveOv .card');if(lc&&T('btn_leave_normal')){lc.classList.add('art');if(T('dialog_confirm_frame_v2'))set(lc,{'--f':'dialog_confirm_frame_v2'});set(document.getElementById('lvLeave'),{'--n':'btn_leave_normal','--p':'btn_leave_pressed'});set(document.getElementById('lvKeep'),{'--n':'btn_keep_playing_normal','--p':'btn_keep_playing_pressed'});}
- if(T('btn_back_normal'))[['lBack','back','Back','返回'],['byeBack','house','Back to home','回主界面'],['ngHome','house','Back to home','回主界面'],['tHome','house','Back to home','回主界面'],['endHome','house','Back to home','回主界面'],].forEach(([id,ic,en,zh])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('backart');set(e,{'--n':'btn_back_normal','--p':'btn_back_pressed'});e.innerHTML=(T('icon_'+ic)?'<img class="bi_" src="'+T('icon_'+ic)+'" alt="">':'')+'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';});
+ if(T('btn_back_normal'))[['byeBack','house','Back to home','回主界面'],['ngHome','house','Back to home','回主界面'],['tHome','house','Back to home','回主界面'],['endHome','house','Back to home','回主界面'],].forEach(([id,ic,en,zh])=>{const e=document.getElementById(id);if(!e)return;e.classList.add('backart');set(e,{'--n':'btn_back_normal','--p':'btn_back_pressed'});e.innerHTML=(T('icon_'+ic)?'<img class="bi_" src="'+T('icon_'+ic)+'" alt="">':'')+'<span class="en">'+en+'</span><span class="zh">'+zh+'</span>';});
  const bc=document.querySelector('#bye .card');if(bc){const h=bc.querySelector('h1'),bb=bc.querySelector('.bback');const w=document.createElement('div');w.className='byeTxt';bc.appendChild(w);w.appendChild(h);w.appendChild(bb);}
 })();
 
@@ -1853,7 +1856,6 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 
 // per-frame hook (called from v082Frame)
 function v083Frame(){homeStep();}
-
 window.__v083={LEVELS,AB};
 
 newGame();S.mode='title';loop();(window.__SMOOTH?Promise.resolve(markAudioReady()):audPrep().catch(()=>markAudioReady())).then(()=>{document.getElementById('loading').style.display='none';setTimeout(window.__lazyStart,300);showMenu();});
