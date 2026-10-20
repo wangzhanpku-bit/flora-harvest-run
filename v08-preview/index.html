@@ -640,7 +640,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
  flora.position.set(S.x,S.y+(run&&!F3.ready?(rf%2?.09:0):0),-S.z);flora.userData.sh.position.y=.03-flora.position.y;
  if(S.mode!=='intro')flora.rotation.y=0;fc.lookAt(cam.position.x,fc.getWorldPosition(new THREE.Vector3()).y,cam.position.z);
  // bara follows
- let _bx=(curLevel()>=2?-0.85:1.1);let bt=new THREE.Vector3(S.x+_bx,0,-S.z+(curLevel()>=2?1.2:1.8));if(S.boostT>0)bt.set(S.x+.35,0,-S.z+1.0);if(S.brakeT>0)bt.set(S.x+.5,0,-S.z+1.1);if(S.mode==='rest')bt.set(S.x+1.0,0,-S.z-.4);if(bara.userData.cob)bara.userData.cob.visible=S.mode==='rest';
+ let _bx=(curLevel()>=2?-0.85:1.1);let bt=new THREE.Vector3(S.x+_bx,0,-S.z+(curLevel()>=2?1.2:1.8));if(S.boostT>0)bt.set(S.x+(curLevel()>=2?_bx:.35),0,-S.z+1.0);if(S.brakeT>0)bt.set(S.x+(curLevel()>=2?_bx:.5),0,-S.z+1.1);/* L2: Bara stays on bike left always */if(S.mode==='rest')bt.set(S.x+1.0,0,-S.z-.4);if(bara.userData.cob)bara.userData.cob.visible=S.mode==='rest';
  if(S.mode==='over'){bt.set(S.x+1.1,0,-S.z-.5);bara.rotation.z+=(-1.5-bara.rotation.z)*Math.min(1,dt*4);}if(S.rescueT>0){bt.set(S.x-.9,0,-S.z+.4);}const _shooing=shooStep(dt,bt);
  if(S.smash){const sm=S.smash;sm.t+=dt;const op=sm.o.m.position;if(sm.t<1.1){bt.set(op.x+.0,0,op.z+1.0);bara.position.lerp(bt,Math.min(1,dt*7));}if(sm.t>=.9&&!sm.hit){sm.hit=true;sm.o.done=true;sm.o.fly={vx:(Math.random()<.5?-1:1)*6,vy:9,t:0};play('sfx_bara_smash');sub(baraSay('smash'),1500);}if(sm.t>2.2)S.smash=null;}
  if(!(curLevel()>=2&&typeof L2BIKE!=='undefined'&&L2BIKE.baraOn)&&(!S.smash||S.smash.t>=1.1)&&!_shooing)bara.position.lerp(bt,Math.min(1,dt*(S.smash?3:6)));const brun=S.mode==='run';const bspd=S.boostT>0||S.smash||S.shoo?14:8;const bf=brun?Math.floor(S.t*bspd)%2:0;const bc=bara.userData.c;bc.material=SPR['bara_run_'+bf];bc.scale.set(brun?(bf?.96:1.04):1,brun?(bf?1.04:.96):1,1);
@@ -1372,7 +1372,7 @@ function protectStep(dt){
   SAFE_G.visible=true;if(t>=1){_protFading=0;SAFE_G.visible=false;}}
  else{SAFE_G.visible=false;_protLoopStop();}}
 
-function v082Frame(dt){if(!S)return;mp3Step();fxaStep(dt);protectStep(dt);for(const m of PDECO){const u=m.userData;let v=u.z1>S.z-20&&u.z0<S.z+150;if(u.kind==='p'&&curLevel()>=2)v=false;/* L2: no harvest pumpkin piles, lanterns only */if(u.kind==='jn')v=v&&u.z0<S.z+55;else if(u.kind==='jf')v=v&&u.z0>=S.z+55;m.visible=v;}if(JGLOW&&JGLOW.emissiveIntensity!=null)JGLOW.emissiveIntensity=.925+.075*Math.sin(S.t*2.2);
+function v082Frame(dt){if(!S)return;mp3Step();fxaStep(dt);protectStep(dt);for(const m of PDECO){const u=m.userData;let v=u.z1>S.z-20&&u.z0<S.z+150;if(curLevel()>=2)v=false;/* L2: no L1 field pumpkins/jacks at all; Drop5 roadside lanterns only */if(u.kind==='jn')v=v&&u.z0<S.z+55;else if(u.kind==='jf')v=v&&u.z0>=S.z+55;m.visible=v;}if(JGLOW&&JGLOW.emissiveIntensity!=null)JGLOW.emissiveIntensity=.925+.075*Math.sin(S.t*2.2);
  for(const o of objs){if(o.done&&!o.flap)continue;const u=o.m.userData;if(!u||!u.mx)continue;const dz=-o.m.position.z-S.z;if(dz<-8||dz>60)continue;
   if(o.type==='duck'&&u.A){if(o.flap&&!u.flying&&u.A.fly){u.flying=1;u.A.waddle&&u.A.waddle.stop();u.A.fly.play();}if(!o.flap&&!o.done){u.body.rotation.y=Math.cos((o.ph||0)*.45)>0?Math.PI/2:-Math.PI/2;}}
   u.mx.update(dt);}
