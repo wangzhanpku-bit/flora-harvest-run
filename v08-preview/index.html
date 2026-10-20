@@ -1372,7 +1372,7 @@ function protectStep(dt){
   SAFE_G.visible=true;if(t>=1){_protFading=0;SAFE_G.visible=false;}}
  else{SAFE_G.visible=false;_protLoopStop();}}
 
-function v082Frame(dt){if(!S)return;mp3Step();fxaStep(dt);protectStep(dt);for(const m of PDECO){const u=m.userData;let v=u.z1>S.z-20&&u.z0<S.z+150;if(u.kind==='jn')v=v&&u.z0<S.z+55;else if(u.kind==='jf')v=v&&u.z0>=S.z+55;m.visible=v;}if(JGLOW&&JGLOW.emissiveIntensity!=null)JGLOW.emissiveIntensity=.925+.075*Math.sin(S.t*2.2);
+function v082Frame(dt){if(!S)return;mp3Step();fxaStep(dt);protectStep(dt);for(const m of PDECO){const u=m.userData;let v=u.z1>S.z-20&&u.z0<S.z+150;if(u.kind==='p'&&curLevel()>=2)v=false;/* L2: no harvest pumpkin piles, lanterns only */if(u.kind==='jn')v=v&&u.z0<S.z+55;else if(u.kind==='jf')v=v&&u.z0>=S.z+55;m.visible=v;}if(JGLOW&&JGLOW.emissiveIntensity!=null)JGLOW.emissiveIntensity=.925+.075*Math.sin(S.t*2.2);
  for(const o of objs){if(o.done&&!o.flap)continue;const u=o.m.userData;if(!u||!u.mx)continue;const dz=-o.m.position.z-S.z;if(dz<-8||dz>60)continue;
   if(o.type==='duck'&&u.A){if(o.flap&&!u.flying&&u.A.fly){u.flying=1;u.A.waddle&&u.A.waddle.stop();u.A.fly.play();}if(!o.flap&&!o.done){u.body.rotation.y=Math.cos((o.ph||0)*.45)>0?Math.PI/2:-Math.PI/2;}}
   u.mx.update(dt);}
