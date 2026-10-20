@@ -1899,7 +1899,8 @@ const V4CSS="\n/* ===== Class 1 SHARED A: main-menu big buttons — all 7 identi
     // James override: Back sticky TOP, Save sticky BOTTOM. Wood board scrolls in middle.
     if(b){ov.insertBefore(b,ov.firstChild);}
     const card=ov.querySelector('.setCard');if(card&&b&&b.nextSibling!==card)ov.insertBefore(card,b.nextSibling);
-    if(s){s.classList.add('setSaveOut');ov.appendChild(s);};
+    if(s){s.classList.add('setSaveOut');ov.appendChild(s);}
+   };
    const st4=document.createElement('style');st4.id='v4css';st4.textContent=V4CSS;document.head.appendChild(st4);}
   else{const st4=document.createElement('style');st4.id='v4css';st4.textContent=V4CSS;document.head.appendChild(st4);}}
  const bc=document.querySelector('#bye .card');if(bc){const h=bc.querySelector('h1'),bb=bc.querySelector('.bback');const w=document.createElement('div');w.className='byeTxt';bc.appendChild(w);w.appendChild(h);w.appendChild(bb);}
