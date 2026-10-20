@@ -382,24 +382,25 @@ scene.fog=new THREE.Fog(0xe9b98a,35,140);const DRAW=150,SKS=1;
 const INST=[];function inst(k,list){if(!list.length)return;const CH={};list.forEach(p=>{const c=Math.floor(-p[2]/40);(CH[c]=CH[c]||[]).push(p);});let last;for(const c in CH){last=inst1(k,CH[c]);last.userData={k,z0:c*40-6,z1:c*40+46};INST.push(last);}return last;}function instVis(){for(const m of INST)m.visible=m.userData.z1>S.z-20&&m.userData.z0<S.z+DRAW;}function inst1(k,list){const g=k==='corn'?crossGeo(true):new THREE.PlaneGeometry(1,1);if(k!=='corn')g.translate(0,.5,0);const im=new THREE.InstancedMesh(g,SPR[k],list.length);const d=new THREE.Object3D();list.forEach((p,i)=>{d.position.set(p[0],p[1]||0,p[2]);d.rotation.set(0,p[5]||0,0);d.scale.set(p[3],p[4],1);d.updateMatrix();im.setMatrixAt(i,d.matrix);});im.frustumCulled=false;scene.add(im);return im;}
 // ---------- level layout (z goes negative forward) ----------
 const LANE=2.2,L_ENT=220,L_FIELD=1600,L_MAZE=2700,L_END=2740;
-const ground=[];function strip(z0,z1,k,w=80){const L=z1-z0;const g=new THREE.Mesh(new THREE.PlaneGeometry(w,L),pbr(k,[w/6,L/6]));g.rotation.x=-Math.PI/2;g.position.set(0,0,-(z0+z1)/2);g.receiveShadow=true;scene.add(g);ground.push(g);}
+const ground=[];function strip(z0,z1,k,w=80){const L=z1-z0;const g=new THREE.Mesh(new THREE.PlaneGeometry(w,L),pbr(k,[w/6,L/6]));g.rotation.x=-Math.PI/2;g.position.set(0,0,-(z0+z1)/2);g.receiveShadow=true;g.userData.farmWorld=1;g.userData.farmKind=k;scene.add(g);ground.push(g);}
 strip(-20,L_ENT,'grass');strip(L_ENT,L_FIELD,'soil');strip(L_FIELD,L_MAZE,'grass');strip(L_MAZE,L_END+60,'grass');
-// dirt path
-{const pl=L_END+80;const p=new THREE.Mesh(new THREE.PlaneGeometry(LANE*3+1.2,pl),pbr('dirt',[1.5,pl/4.5]));p.rotation.x=-Math.PI/2;p.position.set(0,.02,-pl/2+20);p.receiveShadow=true;scene.add(p);}
+// dirt path (L2 retints to seawall asphalt via FARM_WORLD.path)
+const FARM_WORLD={path:null,fencePosts:[],hayRolls:[],corn:[],ropes:[],barn:null,strips:ground,_lit:false,_bak:null};
+{const pl=L_END+80;const p=new THREE.Mesh(new THREE.PlaneGeometry(LANE*3+1.2,pl),pbr('dirt',[1.5,pl/4.5]));p.rotation.x=-Math.PI/2;p.position.set(0,.02,-pl/2+20);p.receiveShadow=true;p.userData.farmWorld=1;p.userData.farmKind='dirtPath';scene.add(p);FARM_WORLD.path=p;}
 // fences + rope at entrance
-for(let z=0;z<L_ENT;z+=6){[-1,1].forEach(s=>{const f=new THREE.Mesh(new THREE.BoxGeometry(.25,1.4,.25),pbr('wood',[.3,1]));f.position.set(s*(LANE*1.5+1),.7,-z);f.castShadow=true;scene.add(f);});}
+for(let z=0;z<L_ENT;z+=6){[-1,1].forEach(s=>{const f=new THREE.Mesh(new THREE.BoxGeometry(.25,1.4,.25),pbr('wood',[.3,1]));f.position.set(s*(LANE*1.5+1),.7,-z);f.castShadow=true;f.userData.farmWorld=1;scene.add(f);FARM_WORLD.fencePosts.push(f);});}
 // pumpkin field decoration
 const pumpGeo=new THREE.DodecahedronGeometry(.55,0);
 {const NP=[500,1200,2000][QUAL];const A=[],B=[];for(let i=0;i<NP;i++){const z=L_ENT+Math.random()*(L_FIELD-L_ENT),x=(Math.random()<.5?-1:1)*(4.5+Math.random()*24),s=.7+Math.random()*.6;(HALLOWEEN&&Math.random()<.4?B:A).push([x,0,-z,s*1.04,s]);}pump3dDeco(A,B);}
-for(let i=0;i<60;i++){const z=L_ENT+Math.random()*(L_FIELD-L_ENT),x=(Math.random()<.5?-1:1)*(8+Math.random()*18);mesh(new THREE.CylinderGeometry(.9,.9,1.4,8),0xe8c35a,x,.7,-z).rotation.z=Math.PI/2;}
+for(let i=0;i<60;i++){const z=L_ENT+Math.random()*(L_FIELD-L_ENT),x=(Math.random()<.5?-1:1)*(8+Math.random()*18);const hr=mesh(new THREE.CylinderGeometry(.9,.9,1.4,8),0xe8c35a,x,.7,-z);hr.rotation.z=Math.PI/2;hr.userData.farmWorld=1;FARM_WORLD.hayRolls.push(hr);}
 // corn walls (maze)
-{const CR=[2,3,4][QUAL];const L=[];for(let z=L_FIELD-4;z<L_MAZE;z+=[1.1,.8,.6][QUAL]){[-1,1].forEach(s=>{for(let k=0;k<CR;k++){const hh=3.2+Math.random()*1.2;L.push([s*(LANE*1.5+1.1+k*.9+Math.random()*.4),-.05,-z-Math.random()*.5,hh*.69,hh,(Math.random()-.5)*.6]);}});}inst('corn',L);}
+{const CR=[2,3,4][QUAL];const L=[];for(let z=L_FIELD-4;z<L_MAZE;z+=[1.1,.8,.6][QUAL]){[-1,1].forEach(s=>{for(let k=0;k<CR;k++){const hh=3.2+Math.random()*1.2;L.push([s*(LANE*1.5+1.1+k*.9+Math.random()*.4),-.05,-z-Math.random()*.5,hh*.69,hh,(Math.random()-.5)*.6]);}});}const im=inst('corn',L);if(im){im.userData.farmWorld=1;FARM_WORLD.corn.push(im);}}
 // corn far field
-{const L=[];for(let i=0;i<[800,2000,4000][QUAL];i++){const z=L_FIELD+Math.random()*(L_MAZE-L_FIELD),x=(Math.random()<.5?-1:1)*(8+Math.random()*30),hh=3.4+Math.random();L.push([x,0,-z,hh*.69,hh,Math.random()*3]);}inst('corn',L);}
+{const L=[];for(let i=0;i<[800,2000,4000][QUAL];i++){const z=L_FIELD+Math.random()*(L_MAZE-L_FIELD),x=(Math.random()<.5?-1:1)*(8+Math.random()*30),hh=3.4+Math.random();L.push([x,0,-z,hh*.69,hh,Math.random()*3]);}const im=inst('corn',L);if(im){im.userData.farmWorld=1;FARM_WORLD.corn.push(im);}}
 // rope lines along maze like the photo
-[-1,1].forEach(s=>mesh(new THREE.BoxGeometry(.06,.06,L_MAZE-L_FIELD),0xe8d8a8,s*(LANE*1.5+.6),.6,-(L_FIELD+L_MAZE)/2));
+[-1,1].forEach(s=>{const r=mesh(new THREE.BoxGeometry(.06,.06,L_MAZE-L_FIELD),0xe8d8a8,s*(LANE*1.5+.6),.6,-(L_FIELD+L_MAZE)/2);r.userData.farmWorld=1;FARM_WORLD.ropes.push(r);});
 // barn
-const barn=new THREE.Group();scene.add(barn);barn.position.set(0,0,-L_END-8);
+const barn=new THREE.Group();scene.add(barn);barn.position.set(0,0,-L_END-8);barn.userData.farmWorld=1;FARM_WORLD.barn=barn;
 mesh(new THREE.BoxGeometry(12,7,8),0xb22222,0,3.5,0,barn);const roof=mesh(new THREE.CylinderGeometry(0,8.5,4,4,1),0x6b1111,0,9,0,barn);roof.rotation.y=Math.PI/4;roof.scale.z=.7;
 mesh(new THREE.BoxGeometry(4,5,.2),0xfff1d6,0,2.5,4.05,barn);
 // ---------- characters ----------
@@ -473,6 +474,11 @@ function buildFork(zf,qi){const q=S.set.maze[qi];if(!q)return;const n=q.choices.
  lanes.forEach((ln,ci)=>{if(ci===q.answer)return;const x=(ln-1)*LANE;for(let k=-1;k<=1;k++){const hh=3.6+Math.random()*.5;card('corn',hh*.69,hh,x+k*.7,hh/2,-(zf+D-1)-Math.random()*.2,g);}});
  forks.push({zf,qi,q,lanes,g,shown:false,done:false,D});}
 function buildLevel(){forks.forEach(f=>scene.remove(f.g));forks=[];objs.forEach(o=>scene.remove(o.m));objs=[];MP3.n=0;
+ // L2: seawall corridor — no farm Mini Pumpkins / hay / fence / barrel / scare / maze forks
+ if(curLevel()>=2){try{l2DressTrack(true);}catch(e){console.warn('[L2] dress',e);}
+  // keep 3-lane strip playable; roadside props wait for 美图王 track pack; lantern collect stubbed
+  placeItemsL2();if(typeof MP3!=='undefined'&&MP3.im)MP3.im.visible=false;return;}
+ try{l2DressTrack(false);}catch(e){}if(typeof MP3!=='undefined'&&MP3.im)MP3.im.visible=true;
  // entrance tutorial
  [[1,14],[0,20],[2,26],[1,32],[1,38]].forEach(([l,z])=>addObj('pumpkin',l,z));addObj('hay',1,46);addObj('beam',1,54);
  // pumpkin field
@@ -501,7 +507,7 @@ function sub(t,ms=2400){const e=document.getElementById('sub');t=N(t);
  e.style.display='block';clearTimeout(sub.t);sub.t=setTimeout(()=>e.style.display='none',ms);}
 function newGame(){hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],ghostLead:null,z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,level:(+window.__LEVEL)||(window.__L2?2:1)};
  bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}try{l2EnsureRide();}catch(e){}}}
-function updHud(){hud.p.textContent='🎃 '+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港'],['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
+function updHud(){hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港'],['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
 // ---------- intro ----------
 function intro(){S.mode='intro';S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};
  // L2: place intro only (no protect lines); High plays sfx_bara_l2_intro once with the bubble
@@ -670,7 +676,7 @@ function showLetter(){bgm(null);const ov=document.getElementById('letter');docum
 function closeLetter(){lTimers.forEach(clearTimeout);const a=snd.bgm_dad_letter;if(a)a.pause();document.getElementById('letter').style.display='none';document.getElementById('end').style.display='flex';revealEnd();}
 function skill(k){if(k==='smash'){const o=objs.filter(o=>!o.done&&(HARD.has(o.type)||WET.has(o.type))&&-o.m.position.z-S.z>12&&-o.m.position.z-S.z<45).sort((a,b)=>b.m.position.z-a.m.position.z)[0];if(!o)k='boost';else{S.smash={o,t:0};sub(baraSay('smash'),1600);play('sfx_bara_boost');return;}}
  if(k==='boost'){S.boostT=3;play('sfx_bara_boost');sub(baraSay('boost'),2200);}
- if(k==='brake'){S.brakeT=3;play(curLevel()>=2?'sfx_bike_brake':'sfx_bara_brake');sub(baraSay('brake'),2400);const z0=S.z+34;const open=Math.floor(Math.random()*3);[0,1,2].forEach(l=>{if(l!==open)addObj('hay',l,z0);});const open2=(open+1+Math.floor(Math.random()*2))%3;[0,1,2].forEach(l=>{if(l!==open2)addObj(Math.random()<.5?'hay':'puddle',l,z0+9);});}}
+ if(k==='brake'){S.brakeT=3;play(curLevel()>=2?'sfx_bike_brake':'sfx_bara_brake');sub(baraSay('brake'),2400);if(curLevel()<2){const z0=S.z+34;const open=Math.floor(Math.random()*3);[0,1,2].forEach(l=>{if(l!==open)addObj('hay',l,z0);});const open2=(open+1+Math.floor(Math.random()*2))%3;[0,1,2].forEach(l=>{if(l!==open2)addObj(Math.random()<.5?'hay':'puddle',l,z0+9);});}}}
 function finish(){S.mode='end';ghost.visible=false;document.getElementById('hb').textContent='';hideStrip();thinkStop();{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}
  const runs=store.get('runs',[]);const prevBest=runs.length?Math.min(...runs.map(r=>r.t)):Infinity;const T=+S.runT.toFixed(1);runs.push({g:GRADE,m:GAME_MODE,t:T,d:new Date().toISOString().slice(0,16),p:S.pumpkins,c:S.correct});store.set('runs',runs.slice(-100));
  const gotMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;S.result_mp=gotMP;const isRec=T<prevBest;if(isRec){store.set('ghost',S.rec);ghostData=S.rec;}
@@ -725,6 +731,34 @@ function l2OnSection(sec){if(curLevel()<2)return false;l2ApplyPlate(sec);const b
  if(sec===3){sub(bi('Lost Lagoon — look, a beaver couple!','迷失湖——快看，一对海狸！'),3000);if(!window.__SMOOTH)play('sfx_beaver_couple');}
  return true;}
 window.l2ApplyPlate=l2ApplyPlate;window.l2OnSection=l2OnSection;
+/* L2 tip: dress seawall path under bike (not farmland + sky plate only). Track pack empty → code materials. */
+function l2DressTrack(on){on=!!on;if(typeof FARM_WORLD==='undefined'||!FARM_WORLD)return;
+ if(on===FARM_WORLD._lit)return;FARM_WORLD._lit=on;
+ const hide=(arr,v)=>{ (arr||[]).forEach(o=>{if(o)o.visible=v;});};
+ // farm clutter off on L2
+ hide(FARM_WORLD.fencePosts,!on);hide(FARM_WORLD.hayRolls,!on);hide(FARM_WORLD.corn,!on);hide(FARM_WORLD.ropes,!on);
+ if(FARM_WORLD.barn)FARM_WORLD.barn.visible=!on;
+ if(typeof PDECO!=='undefined'&&PDECO)PDECO.forEach(im=>{if(im&&im.isInstancedMesh)im.visible=!on;});
+ // path + flanking strips: cool gray asphalt / dark water-rock edge
+ const path=FARM_WORLD.path;if(path&&path.material){
+  if(!FARM_WORLD._bak){FARM_WORLD._bak={pathC:path.material.color?path.material.color.clone():null,pathR:path.material.roughness,pathM:path.material.metalness,
+   strips:(FARM_WORLD.strips||[]).map(g=>({c:g.material.color?g.material.color.clone():null,r:g.material.roughness})),
+   hemi:hemi.color.clone(),hemiG:hemi.groundColor.clone(),fog:scene.fog?scene.fog.color.clone():null,fogN:scene.fog?scene.fog.near:35,fogF:scene.fog?scene.fog.far:140,bg:scene.background?scene.background.clone():null,sun:sun.color.clone(),sunI:sun.intensity,hemiI:hemi.intensity};}
+  if(on){path.material.color.setHex(0x6a7480);path.material.roughness=.92;path.material.metalness=.08;path.material.needsUpdate=true;
+   (FARM_WORLD.strips||[]).forEach((g,i)=>{const k=g.userData.farmKind;if(k==='soil'||k==='grass'){g.material.color.setHex(i%2?0x1a2a38:0x152430);g.material.roughness=.98;g.material.needsUpdate=true;}});
+   hemi.color.setHex(0xb8c8e0);hemi.groundColor.setHex(0x1a2430);hemi.intensity=.55;sun.color.setHex(0xc8d0e8);sun.intensity=.85;
+   if(scene.fog){scene.fog.color.setHex(0x1a1830);scene.fog.near=28;scene.fog.far=160;}
+   /* mild sky plate nudge so plate path sits nearer horizon under cam — do not break cam */
+   if(typeof sky!=='undefined'&&sky){sky.position.y=Math.max(sky.position.y||0,18);sky.scale.set(1.05,1.02,1);}
+  }else{const B=FARM_WORLD._bak;if(B.pathC)path.material.color.copy(B.pathC);path.material.roughness=B.pathR;path.material.metalness=B.pathM;path.material.needsUpdate=true;
+   (FARM_WORLD.strips||[]).forEach((g,i)=>{const s=B.strips[i];if(s&&s.c){g.material.color.copy(s.c);g.material.roughness=s.r;g.material.needsUpdate=true;}});
+   hemi.color.copy(B.hemi);hemi.groundColor.copy(B.hemiG);hemi.intensity=B.hemiI;sun.color.copy(B.sun);sun.intensity=B.sunI;
+   if(scene.fog&&B.fog){scene.fog.color.copy(B.fog);scene.fog.near=B.fogN;scene.fog.far=B.fogF;}
+   if(typeof sky!=='undefined'&&sky){sky.scale.set(1,1,1);}
+  }
+ }
+ console.info('[L2] dressTrack',on?'seawall':'farm');}
+window.l2DressTrack=l2DressTrack;window.FARM_WORLD=FARM_WORLD;
 // ---- L2 bike ride (tip): real bike.glb + seated Flora/Leo + Bara in basket ----
 const L2BIKE={ready:false,_loading:null,root:null,nodes:{},state:{spin:0,pedal:0},helm:null,baraOn:false,seatY:.72,bones:null,_rest:null,_seated:false,pose:'idle'};
 const L2_HELM_OFF={flora:[0,.10,.01],leo:[0,.085,.025],bara:[0,.06,0]};
@@ -1186,6 +1220,11 @@ function placeItems(){const daily=typeof DAILY!=='undefined'&&DAILY;
   objs.forEach(o=>{if(o.done||o.type==='scare'||o.type==='gold')return;const dz=Math.abs(o.z-z);if((o.lane===lane&&dz<4.5)||(risk&&o.lane===lane&&Math.abs(o.z-(z-5))<3)){o.done=true;scene.remove(o.m);}});
   if(risk)addObj(risk,lane,z-5);addObj('item',lane,z,{kind});});
  objs=objs.filter(o=>{const rm=o.done&&o.type!=='scare';if(rm&&o.type==='pumpkin'&&o.ii>=0)MP3.im.setMatrixAt(o.ii,_zero);return !rm;});}
+/* L2: no farm Mini Pumpkins; keep boost pickups; skip hay/puddle risk props (track pack / 手机南瓜灯 later) */
+function placeItemsL2(){const daily=typeof DAILY!=='undefined'&&DAILY;
+ ITEM_LAYOUT.forEach(([kind,lane,z,risk])=>{if(kind==='yuzu')return;/* life-pumpkin metaphor — defer until lantern HP art */
+  if(daily)lane=(lane+Math.floor(Math.random()*3))%3;
+  addObj('item',lane,z,{kind});});}
 // ---- 3D art: 美图王's GLBs (v09_art/boost) with procedural fallbacks until they are parsed ----
 const ART={};const ART_KEYS=['pickup_orange','pickup_melon','pickup_bird','pickup_yuzu','mini_pumpkin3d','egg_chest','duck3d','feather3d','puddle3d','mud3d','corn_stalk','corn_stalk_lod','field_pumpkin','field_jack','field_jack_lod'];
 function glbParse(k){return new Promise(res=>{try{if(typeof BIN==='undefined'||!BIN||!BIN[k])return res(null);const L=new (THREE.GLTFLoader)();if(THREE.MeshoptDecoder&&L.setMeshoptDecoder)L.setMeshoptDecoder(THREE.MeshoptDecoder);
