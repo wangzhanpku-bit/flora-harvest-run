@@ -1,0 +1,1008 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 3,
+ "version": 1,
+ "fields": "same as level-1 banks; sections: seawall (stop-and-answer, up to 4 choices) and forest_fork (≤3 choices → left/middle/right trail; sign_en/sign_zh for signs); {name} = player name; English on top, Chinese below",
+ "questions": [
+  {
+   "id": "l2g3_001",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 raccoons each find 2 cookies. How many cookies?",
+   "q_zh": "3 只浣熊每只找到 2 块饼干，一共几块？",
+   "choices": [
+    "9",
+    "6",
+    "4",
+    "11"
+   ],
+   "choices_zh": [
+    "9",
+    "6",
+    "4",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 2 = 6.",
+   "explain_zh": "3×2=6。"
+  },
+  {
+   "id": "l2g3_002",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 raccoons each find 5 cookies. How many cookies?",
+   "q_zh": "2 只浣熊每只找到 5 块饼干，一共几块？",
+   "choices": [
+    "7",
+    "11",
+    "6",
+    "10"
+   ],
+   "choices_zh": [
+    "7",
+    "11",
+    "6",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "2 × 5 = 10.",
+   "explain_zh": "2×5=10。"
+  },
+  {
+   "id": "l2g3_003",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6 raccoons each find 8 cookies. How many cookies?",
+   "q_zh": "6 只浣熊每只找到 8 块饼干，一共几块？",
+   "choices": [
+    "44",
+    "48",
+    "46"
+   ],
+   "choices_zh": [
+    "44",
+    "48",
+    "46"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 8 = 48.",
+   "explain_zh": "6×8=48。",
+   "sign_en": [
+    "44",
+    "48",
+    "46"
+   ],
+   "sign_zh": [
+    "44",
+    "48",
+    "46"
+   ]
+  },
+  {
+   "id": "l2g3_004",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 raccoons each find 2 cookies. How many cookies?",
+   "q_zh": "3 只浣熊每只找到 2 块饼干，一共几块？",
+   "choices": [
+    "6",
+    "8",
+    "11"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 2 = 6.",
+   "explain_zh": "3×2=6。",
+   "sign_en": [
+    "6",
+    "8",
+    "11"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "11"
+   ]
+  },
+  {
+   "id": "l2g3_005",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7 raccoons each find 7 cookies. How many cookies?",
+   "q_zh": "7 只浣熊每只找到 7 块饼干，一共几块？",
+   "choices": [
+    "47",
+    "46",
+    "49",
+    "44"
+   ],
+   "choices_zh": [
+    "47",
+    "46",
+    "49",
+    "44"
+   ],
+   "answer": 2,
+   "explain_en": "7 × 7 = 49.",
+   "explain_zh": "7×7=49。"
+  },
+  {
+   "id": "l2g3_006",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 raccoons each find 8 cookies. How many cookies?",
+   "q_zh": "3 只浣熊每只找到 8 块饼干，一共几块？",
+   "choices": [
+    "22",
+    "27",
+    "23",
+    "24"
+   ],
+   "choices_zh": [
+    "22",
+    "27",
+    "23",
+    "24"
+   ],
+   "answer": 3,
+   "explain_en": "3 × 8 = 24.",
+   "explain_zh": "3×8=24。"
+  },
+  {
+   "id": "l2g3_007",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 raccoons each find 9 cookies. How many cookies?",
+   "q_zh": "2 只浣熊每只找到 9 块饼干，一共几块？",
+   "choices": [
+    "22",
+    "18",
+    "19",
+    "13"
+   ],
+   "choices_zh": [
+    "22",
+    "18",
+    "19",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 9 = 18.",
+   "explain_zh": "2×9=18。"
+  },
+  {
+   "id": "l2g3_008",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5 raccoons each find 2 cookies. How many cookies?",
+   "q_zh": "5 只浣熊每只找到 2 块饼干，一共几块？",
+   "choices": [
+    "10",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 2 = 10.",
+   "explain_zh": "5×2=10。",
+   "sign_en": [
+    "10",
+    "9",
+    "7"
+   ],
+   "sign_zh": [
+    "10",
+    "9",
+    "7"
+   ]
+  },
+  {
+   "id": "l2g3_009",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 raccoons each find 5 cookies. How many cookies?",
+   "q_zh": "2 只浣熊每只找到 5 块饼干，一共几块？",
+   "choices": [
+    "7",
+    "6",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "10",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 5 = 10.",
+   "explain_zh": "2×5=10。"
+  },
+  {
+   "id": "l2g3_010",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 raccoons each find 10 cookies. How many cookies?",
+   "q_zh": "2 只浣熊每只找到 10 块饼干，一共几块？",
+   "choices": [
+    "18",
+    "20",
+    "17"
+   ],
+   "choices_zh": [
+    "18",
+    "20",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 10 = 20.",
+   "explain_zh": "2×10=20。",
+   "sign_en": [
+    "18",
+    "20",
+    "17"
+   ],
+   "sign_zh": [
+    "18",
+    "20",
+    "17"
+   ]
+  },
+  {
+   "id": "l2g3_011",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 raccoons each find 6 cookies. How many cookies?",
+   "q_zh": "3 只浣熊每只找到 6 块饼干，一共几块？",
+   "choices": [
+    "17",
+    "16",
+    "18",
+    "22"
+   ],
+   "choices_zh": [
+    "17",
+    "16",
+    "18",
+    "22"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 6 = 18.",
+   "explain_zh": "3×6=18。"
+  },
+  {
+   "id": "l2g3_012",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 raccoons each find 3 cookies. How many cookies?",
+   "q_zh": "8 只浣熊每只找到 3 块饼干，一共几块？",
+   "choices": [
+    "24",
+    "19",
+    "26",
+    "28"
+   ],
+   "choices_zh": [
+    "24",
+    "19",
+    "26",
+    "28"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 3 = 24.",
+   "explain_zh": "8×3=24。"
+  },
+  {
+   "id": "l2g3_013",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 raccoons each find 3 cookies. How many cookies?",
+   "q_zh": "8 只浣熊每只找到 3 块饼干，一共几块？",
+   "choices": [
+    "22",
+    "23",
+    "24",
+    "20"
+   ],
+   "choices_zh": [
+    "22",
+    "23",
+    "24",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "8 × 3 = 24.",
+   "explain_zh": "8×3=24。"
+  },
+  {
+   "id": "l2g3_014",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4 raccoons each find 3 cookies. How many cookies?",
+   "q_zh": "4 只浣熊每只找到 3 块饼干，一共几块？",
+   "choices": [
+    "15",
+    "16",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "10",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 3 = 12.",
+   "explain_zh": "4×3=12。"
+  },
+  {
+   "id": "l2g3_015",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10 raccoons each find 6 cookies. How many cookies?",
+   "q_zh": "10 只浣熊每只找到 6 块饼干，一共几块？",
+   "choices": [
+    "62",
+    "65",
+    "63",
+    "60"
+   ],
+   "choices_zh": [
+    "62",
+    "65",
+    "63",
+    "60"
+   ],
+   "answer": 3,
+   "explain_en": "10 × 6 = 60.",
+   "explain_zh": "10×6=60。"
+  },
+  {
+   "id": "l2g3_016",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 raccoons each find 2 cookies. How many cookies?",
+   "q_zh": "8 只浣熊每只找到 2 块饼干，一共几块？",
+   "choices": [
+    "16",
+    "18",
+    "21"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 2 = 16.",
+   "explain_zh": "8×2=16。",
+   "sign_en": [
+    "16",
+    "18",
+    "21"
+   ],
+   "sign_zh": [
+    "16",
+    "18",
+    "21"
+   ]
+  },
+  {
+   "id": "l2g3_017",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 raccoons each find 7 cookies. How many cookies?",
+   "q_zh": "8 只浣熊每只找到 7 块饼干，一共几块？",
+   "choices": [
+    "60",
+    "55",
+    "56",
+    "53"
+   ],
+   "choices_zh": [
+    "60",
+    "55",
+    "56",
+    "53"
+   ],
+   "answer": 2,
+   "explain_en": "8 × 7 = 56.",
+   "explain_zh": "8×7=56。"
+  },
+  {
+   "id": "l2g3_018",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7 raccoons each find 6 cookies. How many cookies?",
+   "q_zh": "7 只浣熊每只找到 6 块饼干，一共几块？",
+   "choices": [
+    "45",
+    "42",
+    "39"
+   ],
+   "choices_zh": [
+    "45",
+    "42",
+    "39"
+   ],
+   "answer": 1,
+   "explain_en": "7 × 6 = 42.",
+   "explain_zh": "7×6=42。",
+   "sign_en": [
+    "45",
+    "42",
+    "39"
+   ],
+   "sign_zh": [
+    "45",
+    "42",
+    "39"
+   ]
+  },
+  {
+   "id": "l2g3_019",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Stanley Park is in which city?",
+   "q_zh": "斯坦利公园在哪个城市？",
+   "choices": [
+    "Toronto",
+    "Vancouver",
+    "Calgary",
+    "Victoria"
+   ],
+   "choices_zh": [
+    "多伦多",
+    "温哥华",
+    "卡尔加里",
+    "维多利亚"
+   ],
+   "answer": 1,
+   "explain_en": "It is right next to downtown Vancouver.",
+   "explain_zh": "它就在温哥华市中心旁边。"
+  },
+  {
+   "id": "l2g3_020",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Tower Bridge",
+    "Golden Gate",
+    "Lions Gate",
+    "Port Mann"
+   ],
+   "choices_zh": [
+    "伦敦塔桥",
+    "金门大桥",
+    "狮门大桥",
+    "曼港大桥"
+   ],
+   "answer": 2,
+   "explain_en": "Lions Gate Bridge opened in 1938. It links Stanley Park to the North Shore.",
+   "explain_zh": "狮门大桥 1938 年通车，连接斯坦利公园和北岸。"
+  },
+  {
+   "id": "l2g3_021",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "Nine O'Clock Gun 每天晚上几点开炮？",
+   "choices": [
+    "9:00 pm",
+    "Midnight",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 9 点",
+    "半夜 12 点",
+    "晚上 6 点"
+   ],
+   "answer": 0,
+   "explain_en": "It's been a Vancouver tradition for over 100 years.",
+   "explain_zh": "这是温哥华一百多年的传统。",
+   "sign_en": [
+    "9:00 pm",
+    "Midnight",
+    "6:00 pm"
+   ],
+   "sign_zh": [
+    "晚上 9 点",
+    "半夜 12 点",
+    "晚上 6 点"
+   ]
+  },
+  {
+   "id": "l2g3_022",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Never",
+    "Only in winter",
+    "At noon",
+    "At night"
+   ],
+   "choices_zh": [
+    "从来不动",
+    "只在冬天",
+    "中午",
+    "晚上"
+   ],
+   "answer": 3,
+   "explain_en": "Nocturnal animals sleep in the day.",
+   "explain_zh": "夜行动物白天睡觉。"
+  },
+  {
+   "id": "l2g3_023",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类动物？",
+   "choices": [
+    "Birds",
+    "Mammals",
+    "Insects"
+   ],
+   "choices_zh": [
+    "鸟类",
+    "哺乳动物",
+    "昆虫"
+   ],
+   "answer": 1,
+   "explain_en": "Bats have fur and feed milk to babies.",
+   "explain_zh": "蝙蝠有毛，用奶喂宝宝。",
+   "sign_en": [
+    "Birds",
+    "Mammals",
+    "Insects"
+   ],
+   "sign_zh": [
+    "鸟类",
+    "哺乳动物",
+    "昆虫"
+   ]
+  },
+  {
+   "id": "l2g3_024",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Penguin",
+    "Ostrich",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "鸵鸟",
+    "火烈鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Herons build big nests high in the trees.",
+   "explain_zh": "大蓝鹭在高高的树上搭大窝。"
+  },
+  {
+   "id": "l2g3_025",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, found all over Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是什么树？",
+   "choices": [
+    "Palm tree",
+    "Maple",
+    "Red cedar"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "枫树",
+    "红雪松"
+   ],
+   "answer": 2,
+   "explain_en": "The western red cedar is B.C.'s tree.",
+   "explain_zh": "西部红雪松是卑诗省的省树。",
+   "sign_en": [
+    "Palm tree",
+    "Maple",
+    "Red cedar"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "枫树",
+    "红雪松"
+   ]
+  },
+  {
+   "id": "l2g3_026",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Water",
+    "Air",
+    "Sugar",
+    "Sand"
+   ],
+   "choices_zh": [
+    "水",
+    "空气",
+    "糖",
+    "沙子"
+   ],
+   "answer": 0,
+   "explain_en": "A pumpkin is about 90% water.",
+   "explain_zh": "南瓜大约 90% 是水。"
+  },
+  {
+   "id": "l2g3_027",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Long ago in Ireland, the first jack-o'-lanterns were carved from…",
+   "q_zh": "很久以前在爱尔兰，最早的南瓜灯是用什么雕的？",
+   "choices": [
+    "Apples",
+    "Rocks",
+    "Turnips"
+   ],
+   "choices_zh": [
+    "苹果",
+    "石头",
+    "芜菁"
+   ],
+   "answer": 2,
+   "explain_en": "People switched to pumpkins in North America.",
+   "explain_zh": "到了北美，人们才改用南瓜。",
+   "sign_en": [
+    "Apples",
+    "Rocks",
+    "Turnips"
+   ],
+   "sign_zh": [
+    "苹果",
+    "石头",
+    "芜菁"
+   ]
+  },
+  {
+   "id": "l2g3_028",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which star do we see that lights up the Moon?",
+   "q_zh": "月亮的光其实来自哪颗星？",
+   "choices": [
+    "Venus",
+    "The Sun",
+    "The North Star",
+    "Mars"
+   ],
+   "choices_zh": [
+    "金星",
+    "太阳",
+    "北极星",
+    "火星"
+   ],
+   "answer": 1,
+   "explain_en": "The Moon reflects sunlight.",
+   "explain_zh": "月亮反射的是太阳光。"
+  },
+  {
+   "id": "l2g3_029",
+   "level": 2,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "On the Stanley Park seawall, bikes must ride…",
+   "q_zh": "在斯坦利公园海堤上，自行车必须朝哪个方向骑？",
+   "choices": [
+    "One way",
+    "Zig-zag",
+    "Any way",
+    "Backwards"
+   ],
+   "choices_zh": [
+    "单向",
+    "绕 S 形",
+    "随便骑",
+    "倒着骑"
+   ],
+   "answer": 0,
+   "explain_en": "Bikes go one way around the park, counter-clockwise, in their own lane.",
+   "explain_zh": "自行车在自己的车道上，绕公园逆时针单向骑行。"
+  },
+  {
+   "id": "l2g3_030",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is famous for its path along the water called the…",
+   "q_zh": "斯坦利公园沿水边的那条著名小路叫什么？",
+   "choices": [
+    "Highway",
+    "SkyTrain",
+    "Seawall"
+   ],
+   "choices_zh": [
+    "高速公路",
+    "轻轨",
+    "海堤"
+   ],
+   "answer": 2,
+   "explain_en": "People walk, run and bike on the seawall.",
+   "explain_zh": "人们在海堤上散步、跑步、骑车。",
+   "sign_en": [
+    "Highway",
+    "SkyTrain",
+    "Seawall"
+   ],
+   "sign_zh": [
+    "高速公路",
+    "轻轨",
+    "海堤"
+   ]
+  },
+  {
+   "id": "l2g3_031",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "How many legs does a spider have?",
+   "q_zh": "蜘蛛有几条腿？",
+   "choices": [
+    "10",
+    "6",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "10",
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "Spiders have 8 legs. Insects have 6.",
+   "explain_zh": "蜘蛛有 8 条腿，昆虫有 6 条。"
+  },
+  {
+   "id": "l2g3_032",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "What do we carve for Halloween?",
+   "q_zh": "万圣节我们会雕刻什么？",
+   "choices": [
+    "A rock",
+    "A pumpkin",
+    "A shoe"
+   ],
+   "choices_zh": [
+    "石头",
+    "南瓜",
+    "鞋子"
+   ],
+   "answer": 1,
+   "explain_en": "Carved pumpkins are called jack-o'-lanterns.",
+   "explain_zh": "雕好的南瓜叫南瓜灯。",
+   "sign_en": [
+    "A rock",
+    "A pumpkin",
+    "A shoe"
+   ],
+   "sign_zh": [
+    "石头",
+    "南瓜",
+    "鞋子"
+   ]
+  },
+  {
+   "id": "l2g3_033",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal has a black mask on its face?",
+   "q_zh": "哪种动物脸上像戴着黑色面罩？",
+   "choices": [
+    "Canada goose",
+    "Duck",
+    "Raccoon",
+    "Rabbit"
+   ],
+   "choices_zh": [
+    "加拿大鹅",
+    "鸭子",
+    "浣熊",
+    "兔子"
+   ],
+   "answer": 2,
+   "explain_en": "Raccoons live in Stanley Park and come out at night.",
+   "explain_zh": "斯坦利公园里有浣熊，晚上出来活动。"
+  },
+  {
+   "id": "l2g3_034",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal says 'hoo-hoo' at night?",
+   "q_zh": "晚上“呼呼”叫的是什么动物？",
+   "choices": [
+    "Pig",
+    "Cow",
+    "Owl"
+   ],
+   "choices_zh": [
+    "猪",
+    "牛",
+    "猫头鹰"
+   ],
+   "answer": 2,
+   "explain_en": "Owls hunt at night.",
+   "explain_zh": "猫头鹰在晚上捕猎。",
+   "sign_en": [
+    "Pig",
+    "Cow",
+    "Owl"
+   ],
+   "sign_zh": [
+    "猪",
+    "牛",
+    "猫头鹰"
+   ]
+  },
+  {
+   "id": "l2g3_035",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara loves water. Would Bara like the seawall?",
+   "q_zh": "CAPYBARA！Bara 爱水，它会喜欢海堤吗？",
+   "choices": [
+    "Only in snow",
+    "Yes!",
+    "No way"
+   ],
+   "choices_zh": [
+    "只在下雪时",
+    "喜欢！",
+    "才不"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love water, though they prefer fresh water.",
+   "explain_zh": "卡皮巴拉爱水，不过它们更喜欢淡水。"
+  },
+  {
+   "id": "l2g3_036",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What costume suits a capybara best?",
+   "q_zh": "CAPYBARA！哪套万圣节服装最适合卡皮巴拉？",
+   "choices": [
+    "Ice skates",
+    "Scuba tank",
+    "Pumpkin hat"
+   ],
+   "choices_zh": [
+    "溜冰鞋",
+    "氧气瓶",
+    "南瓜帽"
+   ],
+   "answer": 2,
+   "explain_en": "Bara can't skate, but a pumpkin hat looks great!",
+   "explain_zh": "Bara 不会溜冰，但戴南瓜帽超好看！",
+   "sign_en": [
+    "Ice skates",
+    "Scuba tank",
+    "Pumpkin hat"
+   ],
+   "sign_zh": [
+    "溜冰鞋",
+    "氧气瓶",
+    "南瓜帽"
+   ]
+  },
+  {
+   "id": "l2g3_037",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras and raccoons both come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉和浣熊老家都在哪个大洲？",
+   "choices": [
+    "Europe",
+    "Asia",
+    "The Americas",
+    "Africa"
+   ],
+   "choices_zh": [
+    "欧洲",
+    "亚洲",
+    "美洲",
+    "非洲"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras are from South America; raccoons from North America.",
+   "explain_zh": "卡皮巴拉来自南美洲，浣熊来自北美洲。"
+  }
+ ]
+}

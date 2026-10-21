@@ -1,0 +1,1120 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 5,
+ "version": 1,
+ "fields": "same as level-1 banks; sections: seawall (stop-and-answer, up to 4 choices) and forest_fork (≤3 choices → left/middle/right trail; sign_en/sign_zh for signs); {name} = player name; English on top, Chinese below",
+ "questions": [
+  {
+   "id": "l2g5_001",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 8 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 8 天，一共多远？",
+   "choices": [
+    "31.5 km",
+    "36.0 km",
+    "40.5 km",
+    "37.0 km"
+   ],
+   "choices_zh": [
+    "31.5 公里",
+    "36.0 公里",
+    "40.5 公里",
+    "37.0 公里"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 4.5 = 36.0 km.",
+   "explain_zh": "8×4.5=36.0 公里。"
+  },
+  {
+   "id": "l2g5_002",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 4 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 4 天，一共多远？",
+   "choices": [
+    "7.0 km",
+    "4.5 km",
+    "6.0 km",
+    "7.5 km"
+   ],
+   "choices_zh": [
+    "7.0 公里",
+    "4.5 公里",
+    "6.0 公里",
+    "7.5 公里"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 1.5 = 6.0 km.",
+   "explain_zh": "4×1.5=6.0 公里。"
+  },
+  {
+   "id": "l2g5_003",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 7 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 7 天，一共多远？",
+   "choices": [
+    "11.5 km",
+    "10.5 km",
+    "12.0 km"
+   ],
+   "choices_zh": [
+    "11.5 公里",
+    "10.5 公里",
+    "12.0 公里"
+   ],
+   "answer": 1,
+   "explain_en": "7 × 1.5 = 10.5 km.",
+   "explain_zh": "7×1.5=10.5 公里。",
+   "sign_en": [
+    "11.5 km",
+    "10.5 km",
+    "12.0 km"
+   ],
+   "sign_zh": [
+    "11.5 公里",
+    "10.5 公里",
+    "12.0 公里"
+   ]
+  },
+  {
+   "id": "l2g5_004",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 3 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 3 天，一共多远？",
+   "choices": [
+    "3.0 km",
+    "4.5 km",
+    "5.5 km"
+   ],
+   "choices_zh": [
+    "3.0 公里",
+    "4.5 公里",
+    "5.5 公里"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 1.5 = 4.5 km.",
+   "explain_zh": "3×1.5=4.5 公里。",
+   "sign_en": [
+    "3.0 km",
+    "4.5 km",
+    "5.5 km"
+   ],
+   "sign_zh": [
+    "3.0 公里",
+    "4.5 公里",
+    "5.5 公里"
+   ]
+  },
+  {
+   "id": "l2g5_005",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 3.5 km on the seawall each day for 6 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 3.5 公里，骑了 6 天，一共多远？",
+   "choices": [
+    "21.0 km",
+    "24.5 km",
+    "17.5 km",
+    "22.0 km"
+   ],
+   "choices_zh": [
+    "21.0 公里",
+    "24.5 公里",
+    "17.5 公里",
+    "22.0 公里"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 3.5 = 21.0 km.",
+   "explain_zh": "6×3.5=21.0 公里。"
+  },
+  {
+   "id": "l2g5_006",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 6 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 6 天，一共多远？",
+   "choices": [
+    "10.0 km",
+    "7.5 km",
+    "9.0 km",
+    "10.5 km"
+   ],
+   "choices_zh": [
+    "10.0 公里",
+    "7.5 公里",
+    "9.0 公里",
+    "10.5 公里"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 1.5 = 9.0 km.",
+   "explain_zh": "6×1.5=9.0 公里。"
+  },
+  {
+   "id": "l2g5_007",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 7 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 7 天，一共多远？",
+   "choices": [
+    "27.0 km",
+    "31.5 km",
+    "36.0 km"
+   ],
+   "choices_zh": [
+    "27.0 公里",
+    "31.5 公里",
+    "36.0 公里"
+   ],
+   "answer": 1,
+   "explain_en": "7 × 4.5 = 31.5 km.",
+   "explain_zh": "7×4.5=31.5 公里。",
+   "sign_en": [
+    "27.0 km",
+    "31.5 km",
+    "36.0 km"
+   ],
+   "sign_zh": [
+    "27.0 公里",
+    "31.5 公里",
+    "36.0 公里"
+   ]
+  },
+  {
+   "id": "l2g5_008",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 6 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 6 天，一共多远？",
+   "choices": [
+    "9.0 km",
+    "10.5 km",
+    "7.5 km",
+    "10.0 km"
+   ],
+   "choices_zh": [
+    "9.0 公里",
+    "10.5 公里",
+    "7.5 公里",
+    "10.0 公里"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 1.5 = 9.0 km.",
+   "explain_zh": "6×1.5=9.0 公里。"
+  },
+  {
+   "id": "l2g5_009",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 4 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 4 天，一共多远？",
+   "choices": [
+    "18.0 km",
+    "19.0 km",
+    "13.5 km"
+   ],
+   "choices_zh": [
+    "18.0 公里",
+    "19.0 公里",
+    "13.5 公里"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 4.5 = 18.0 km.",
+   "explain_zh": "4×4.5=18.0 公里。",
+   "sign_en": [
+    "18.0 km",
+    "19.0 km",
+    "13.5 km"
+   ],
+   "sign_zh": [
+    "18.0 公里",
+    "19.0 公里",
+    "13.5 公里"
+   ]
+  },
+  {
+   "id": "l2g5_010",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 6 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 6 天，一共多远？",
+   "choices": [
+    "27.0 km",
+    "22.5 km",
+    "31.5 km"
+   ],
+   "choices_zh": [
+    "27.0 公里",
+    "22.5 公里",
+    "31.5 公里"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 4.5 = 27.0 km.",
+   "explain_zh": "6×4.5=27.0 公里。",
+   "sign_en": [
+    "27.0 km",
+    "22.5 km",
+    "31.5 km"
+   ],
+   "sign_zh": [
+    "27.0 公里",
+    "22.5 公里",
+    "31.5 公里"
+   ]
+  },
+  {
+   "id": "l2g5_011",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 2.5 km on the seawall each day for 6 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 2.5 公里，骑了 6 天，一共多远？",
+   "choices": [
+    "17.5 km",
+    "16.0 km",
+    "15.0 km",
+    "12.5 km"
+   ],
+   "choices_zh": [
+    "17.5 公里",
+    "16.0 公里",
+    "15.0 公里",
+    "12.5 公里"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 2.5 = 15.0 km.",
+   "explain_zh": "6×2.5=15.0 公里。"
+  },
+  {
+   "id": "l2g5_012",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 1.5 km on the seawall each day for 4 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 1.5 公里，骑了 4 天，一共多远？",
+   "choices": [
+    "7.0 km",
+    "7.5 km",
+    "4.5 km",
+    "6.0 km"
+   ],
+   "choices_zh": [
+    "7.0 公里",
+    "7.5 公里",
+    "4.5 公里",
+    "6.0 公里"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 1.5 = 6.0 km.",
+   "explain_zh": "4×1.5=6.0 公里。"
+  },
+  {
+   "id": "l2g5_013",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 3.5 km on the seawall each day for 5 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 3.5 公里，骑了 5 天，一共多远？",
+   "choices": [
+    "18.5 km",
+    "17.5 km",
+    "21.0 km"
+   ],
+   "choices_zh": [
+    "18.5 公里",
+    "17.5 公里",
+    "21.0 公里"
+   ],
+   "answer": 1,
+   "explain_en": "5 × 3.5 = 17.5 km.",
+   "explain_zh": "5×3.5=17.5 公里。",
+   "sign_en": [
+    "18.5 km",
+    "17.5 km",
+    "21.0 km"
+   ],
+   "sign_zh": [
+    "18.5 公里",
+    "17.5 公里",
+    "21.0 公里"
+   ]
+  },
+  {
+   "id": "l2g5_014",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 8 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 8 天，一共多远？",
+   "choices": [
+    "40.5 km",
+    "31.5 km",
+    "37.0 km",
+    "36.0 km"
+   ],
+   "choices_zh": [
+    "40.5 公里",
+    "31.5 公里",
+    "37.0 公里",
+    "36.0 公里"
+   ],
+   "answer": 3,
+   "explain_en": "8 × 4.5 = 36.0 km.",
+   "explain_zh": "8×4.5=36.0 公里。"
+  },
+  {
+   "id": "l2g5_015",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 4.5 km on the seawall each day for 3 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 4.5 公里，骑了 3 天，一共多远？",
+   "choices": [
+    "13.5 km",
+    "14.5 km",
+    "18.0 km",
+    "9.0 km"
+   ],
+   "choices_zh": [
+    "13.5 公里",
+    "14.5 公里",
+    "18.0 公里",
+    "9.0 公里"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 4.5 = 13.5 km.",
+   "explain_zh": "3×4.5=13.5 公里。"
+  },
+  {
+   "id": "l2g5_016",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 3.5 km on the seawall each day for 9 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 3.5 公里，骑了 9 天，一共多远？",
+   "choices": [
+    "31.5 km",
+    "35.0 km",
+    "28.0 km",
+    "32.5 km"
+   ],
+   "choices_zh": [
+    "31.5 公里",
+    "35.0 公里",
+    "28.0 公里",
+    "32.5 公里"
+   ],
+   "answer": 0,
+   "explain_en": "9 × 3.5 = 31.5 km.",
+   "explain_zh": "9×3.5=31.5 公里。"
+  },
+  {
+   "id": "l2g5_017",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 2.5 km on the seawall each day for 3 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 2.5 公里，骑了 3 天，一共多远？",
+   "choices": [
+    "8.5 km",
+    "5.0 km",
+    "7.5 km",
+    "10.0 km"
+   ],
+   "choices_zh": [
+    "8.5 公里",
+    "5.0 公里",
+    "7.5 公里",
+    "10.0 公里"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 2.5 = 7.5 km.",
+   "explain_zh": "3×2.5=7.5 公里。"
+  },
+  {
+   "id": "l2g5_018",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} bikes 2.5 km on the seawall each day for 8 days. How far in total?",
+   "q_zh": "{name} 每天在海堤骑车 2.5 公里，骑了 8 天，一共多远？",
+   "choices": [
+    "20.0 km",
+    "17.5 km",
+    "21.0 km",
+    "22.5 km"
+   ],
+   "choices_zh": [
+    "20.0 公里",
+    "17.5 公里",
+    "21.0 公里",
+    "22.5 公里"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 2.5 = 20.0 km.",
+   "explain_zh": "8×2.5=20.0 公里。"
+  },
+  {
+   "id": "l2g5_019",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1888",
+    "1950",
+    "2001",
+    "1776"
+   ],
+   "choices_zh": [
+    "1888",
+    "1950",
+    "2001",
+    "1776"
+   ],
+   "answer": 0,
+   "explain_en": "It opened in 1888, two years after Vancouver became a city.",
+   "explain_zh": "1888 年开放，比温哥华建市晚两年。"
+  },
+  {
+   "id": "l2g5_020",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ],
+   "answer": 1,
+   "explain_en": "He also donated hockey's Stanley Cup.",
+   "explain_zh": "他还捐出了冰球的斯坦利杯。",
+   "sign_en": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "sign_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ]
+  },
+  {
+   "id": "l2g5_021",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (about 400 ha) compared with New York's Central Park (about 341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，纽约中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "The same",
+    "Bigger",
+    "Half the size",
+    "Smaller"
+   ],
+   "choices_zh": [
+    "一样大",
+    "更大",
+    "只有一半",
+    "更小"
+   ],
+   "answer": 1,
+   "explain_en": "400 ha is more than 341 ha.",
+   "explain_zh": "400 公顷比 341 公顷大。"
+  },
+  {
+   "id": "l2g5_022",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the land of which peoples?",
+   "q_zh": "斯坦利公园在哪些原住民族的土地上？",
+   "choices": [
+    "Vikings",
+    "Coast Salish",
+    "Inca"
+   ],
+   "choices_zh": [
+    "维京人",
+    "海岸萨利希人",
+    "印加人"
+   ],
+   "answer": 1,
+   "explain_en": "Musqueam, Squamish and Tsleil-Waututh Nations.",
+   "explain_zh": "马斯昆、斯阔米什和茨莱尔-沃图斯原住民。",
+   "sign_en": [
+    "Vikings",
+    "Coast Salish",
+    "Inca"
+   ],
+   "sign_zh": [
+    "维京人",
+    "海岸萨利希人",
+    "印加人"
+   ]
+  },
+  {
+   "id": "l2g5_023",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "45°",
+    "90°",
+    "270°",
+    "360° twice"
+   ],
+   "choices_zh": [
+    "45°",
+    "90°",
+    "270°",
+    "转两圈"
+   ],
+   "answer": 2,
+   "explain_en": "Owls can't move their eyes, so they turn their heads.",
+   "explain_zh": "猫头鹰的眼睛不能转，所以靠转头。"
+  },
+  {
+   "id": "l2g5_024",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "choices_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ],
+   "answer": 2,
+   "explain_en": "They hear the echoes of their own calls.",
+   "explain_zh": "它们听自己叫声的回声。",
+   "sign_en": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "sign_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ]
+  },
+  {
+   "id": "l2g5_025",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why does the seawall path flood at very high tide?",
+   "q_zh": "海堤小路在大潮时为什么会被淹？",
+   "choices": [
+    "Rain only",
+    "Earthquakes",
+    "Wind turbines",
+    "The Moon's pull"
+   ],
+   "choices_zh": [
+    "只因为下雨",
+    "地震",
+    "风力发电机",
+    "月球引力"
+   ],
+   "answer": 3,
+   "explain_en": "The Moon's gravity causes tides.",
+   "explain_zh": "月球的引力造成潮汐。"
+  },
+  {
+   "id": "l2g5_026",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Decomposers",
+    "Sunscreen",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "分解者",
+    "防晒霜",
+    "磁铁"
+   ],
+   "answer": 0,
+   "explain_en": "Fungi, worms and bacteria recycle them into soil.",
+   "explain_zh": "真菌、蚯蚓和细菌把它们变成泥土。",
+   "sign_en": [
+    "Decomposers",
+    "Sunscreen",
+    "Magnets"
+   ],
+   "sign_zh": [
+    "分解者",
+    "防晒霜",
+    "磁铁"
+   ]
+  },
+  {
+   "id": "l2g5_027",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) stands next to the seawall. It is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语叫 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Ice",
+    "Volcanic rock",
+    "Plastic",
+    "Wood"
+   ],
+   "choices_zh": [
+    "冰",
+    "火山岩",
+    "塑料",
+    "木头"
+   ],
+   "answer": 1,
+   "explain_en": "It formed about 32 million years ago when magma cooled underground.",
+   "explain_zh": "它是约 3200 万年前地下岩浆冷却形成的。"
+  },
+  {
+   "id": "l2g5_028",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "29.5 days",
+    "7 days",
+    "365 days"
+   ],
+   "choices_zh": [
+    "29.5 天",
+    "7 天",
+    "365 天"
+   ],
+   "answer": 0,
+   "explain_en": "That's one lunar cycle.",
+   "explain_zh": "这是一个月相周期。",
+   "sign_en": [
+    "29.5 days",
+    "7 days",
+    "365 days"
+   ],
+   "sign_zh": [
+    "29.5 天",
+    "7 天",
+    "365 天"
+   ]
+  },
+  {
+   "id": "l2g5_029",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了什么？",
+   "choices": [
+    "Find candy",
+    "Hibernate",
+    "Learn to fly",
+    "Lay eggs"
+   ],
+   "choices_zh": [
+    "找糖果",
+    "冬眠",
+    "学飞",
+    "产卵"
+   ],
+   "answer": 3,
+   "explain_en": "They return to the stream where they hatched.",
+   "explain_zh": "它们回到自己出生的小溪产卵。"
+  },
+  {
+   "id": "l2g5_030",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math_science",
+   "difficulty": "hard",
+   "q_en": "The Stanley Park seawall loop is about 9 km. At 12 km/h, about how long is one loop?",
+   "q_zh": "斯坦利公园海堤一圈约 9 公里，每小时骑 12 公里，骑一圈大约多久？",
+   "choices": [
+    "2 hours",
+    "9 minutes",
+    "45 minutes",
+    "12 minutes"
+   ],
+   "choices_zh": [
+    "2 小时",
+    "9 分钟",
+    "45 分钟",
+    "12 分钟"
+   ],
+   "answer": 2,
+   "explain_en": "9 ÷ 12 = 0.75 hour = 45 minutes.",
+   "explain_zh": "9÷12=0.75 小时=45 分钟。"
+  },
+  {
+   "id": "l2g5_031",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Halloween is on October 31. How many days until November 11?",
+   "q_zh": "万圣节是 10 月 31 日，离 11 月 11 日还有几天？",
+   "choices": [
+    "11",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "1 day to Nov 1, then 10 more.",
+   "explain_zh": "到 11 月 1 日 1 天，再过 10 天。",
+   "sign_en": [
+    "11",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g5_032",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Lions Gate",
+    "Golden Gate",
+    "Port Mann",
+    "Tower Bridge"
+   ],
+   "choices_zh": [
+    "狮门大桥",
+    "金门大桥",
+    "曼港大桥",
+    "伦敦塔桥"
+   ],
+   "answer": 0,
+   "explain_en": "Lions Gate Bridge opened in 1938. It links Stanley Park to the North Shore.",
+   "explain_zh": "狮门大桥 1938 年通车，连接斯坦利公园和北岸。"
+  },
+  {
+   "id": "l2g5_033",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "Nine O'Clock Gun 每天晚上几点开炮？",
+   "choices": [
+    "Midnight",
+    "9:00 pm",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "半夜 12 点",
+    "晚上 9 点",
+    "晚上 6 点"
+   ],
+   "answer": 1,
+   "explain_en": "It's been a Vancouver tradition for over 100 years.",
+   "explain_zh": "这是温哥华一百多年的传统。",
+   "sign_en": [
+    "Midnight",
+    "9:00 pm",
+    "6:00 pm"
+   ],
+   "sign_zh": [
+    "半夜 12 点",
+    "晚上 9 点",
+    "晚上 6 点"
+   ]
+  },
+  {
+   "id": "l2g5_034",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Never",
+    "At night",
+    "Only in winter",
+    "At noon"
+   ],
+   "choices_zh": [
+    "从来不动",
+    "晚上",
+    "只在冬天",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "Nocturnal animals sleep in the day.",
+   "explain_zh": "夜行动物白天睡觉。"
+  },
+  {
+   "id": "l2g5_035",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类动物？",
+   "choices": [
+    "Insects",
+    "Mammals",
+    "Birds"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "哺乳动物",
+    "鸟类"
+   ],
+   "answer": 1,
+   "explain_en": "Bats have fur and feed milk to babies.",
+   "explain_zh": "蝙蝠有毛，用奶喂宝宝。",
+   "sign_en": [
+    "Insects",
+    "Mammals",
+    "Birds"
+   ],
+   "sign_zh": [
+    "昆虫",
+    "哺乳动物",
+    "鸟类"
+   ]
+  },
+  {
+   "id": "l2g5_036",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Ostrich",
+    "Flamingo",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "鸵鸟",
+    "火烈鸟",
+    "企鹅"
+   ],
+   "answer": 0,
+   "explain_en": "Herons build big nests high in the trees.",
+   "explain_zh": "大蓝鹭在高高的树上搭大窝。"
+  },
+  {
+   "id": "l2g5_037",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, found all over Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是什么树？",
+   "choices": [
+    "Palm tree",
+    "Maple",
+    "Red cedar"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "枫树",
+    "红雪松"
+   ],
+   "answer": 2,
+   "explain_en": "The western red cedar is B.C.'s tree.",
+   "explain_zh": "西部红雪松是卑诗省的省树。",
+   "sign_en": [
+    "Palm tree",
+    "Maple",
+    "Red cedar"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "枫树",
+    "红雪松"
+   ]
+  },
+  {
+   "id": "l2g5_038",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Air",
+    "Water",
+    "Sugar",
+    "Sand"
+   ],
+   "choices_zh": [
+    "空气",
+    "水",
+    "糖",
+    "沙子"
+   ],
+   "answer": 1,
+   "explain_en": "A pumpkin is about 90% water.",
+   "explain_zh": "南瓜大约 90% 是水。"
+  },
+  {
+   "id": "l2g5_039",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara loves water. Would Bara like the seawall?",
+   "q_zh": "CAPYBARA！Bara 爱水，它会喜欢海堤吗？",
+   "choices": [
+    "No way",
+    "Yes!",
+    "Only in snow"
+   ],
+   "choices_zh": [
+    "才不",
+    "喜欢！",
+    "只在下雪时"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love water, though they prefer fresh water.",
+   "explain_zh": "卡皮巴拉爱水，不过它们更喜欢淡水。"
+  },
+  {
+   "id": "l2g5_040",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What costume suits a capybara best?",
+   "q_zh": "CAPYBARA！哪套万圣节服装最适合卡皮巴拉？",
+   "choices": [
+    "Scuba tank",
+    "Pumpkin hat",
+    "Ice skates"
+   ],
+   "choices_zh": [
+    "氧气瓶",
+    "南瓜帽",
+    "溜冰鞋"
+   ],
+   "answer": 1,
+   "explain_en": "Bara can't skate, but a pumpkin hat looks great!",
+   "explain_zh": "Bara 不会溜冰，但戴南瓜帽超好看！",
+   "sign_en": [
+    "Scuba tank",
+    "Pumpkin hat",
+    "Ice skates"
+   ],
+   "sign_zh": [
+    "氧气瓶",
+    "南瓜帽",
+    "溜冰鞋"
+   ]
+  },
+  {
+   "id": "l2g5_041",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras and raccoons both come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉和浣熊老家都在哪个大洲？",
+   "choices": [
+    "Asia",
+    "Africa",
+    "The Americas",
+    "Europe"
+   ],
+   "choices_zh": [
+    "亚洲",
+    "非洲",
+    "美洲",
+    "欧洲"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras are from South America; raccoons from North America.",
+   "explain_zh": "卡皮巴拉来自南美洲，浣熊来自北美洲。"
+  }
+ ]
+}

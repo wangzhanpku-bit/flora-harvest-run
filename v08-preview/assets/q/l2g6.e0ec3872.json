@@ -1,0 +1,1120 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 6,
+ "version": 1,
+ "fields": "same as level-1 banks; sections: seawall (stop-and-answer, up to 4 choices) and forest_fork (≤3 choices → left/middle/right trail; sign_en/sign_zh for signs); {name} = player name; English on top, Chinese below",
+ "questions": [
+  {
+   "id": "l2g6_001",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 40 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 40 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "10",
+    "2",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "10",
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 2,
+   "explain_en": "10% × 40 = 4.",
+   "explain_zh": "40×10%=4。"
+  },
+  {
+   "id": "l2g6_002",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 80 jack-o'-lanterns on the trail. 25% of them are lit. How many are lit?",
+   "q_zh": "小路上 80 个南瓜灯，25% 亮着，亮着的有几个？",
+   "choices": [
+    "23",
+    "20",
+    "25",
+    "16"
+   ],
+   "choices_zh": [
+    "23",
+    "20",
+    "25",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "25% × 80 = 20.",
+   "explain_zh": "80×25%=20。"
+  },
+  {
+   "id": "l2g6_003",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 120 jack-o'-lanterns on the trail. 25% of them are lit. How many are lit?",
+   "q_zh": "小路上 120 个南瓜灯，25% 亮着，亮着的有几个？",
+   "choices": [
+    "32",
+    "28",
+    "30"
+   ],
+   "choices_zh": [
+    "32",
+    "28",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "25% × 120 = 30.",
+   "explain_zh": "120×25%=30。",
+   "sign_en": [
+    "32",
+    "28",
+    "30"
+   ],
+   "sign_zh": [
+    "32",
+    "28",
+    "30"
+   ]
+  },
+  {
+   "id": "l2g6_004",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 80 jack-o'-lanterns on the trail. 25% of them are lit. How many are lit?",
+   "q_zh": "小路上 80 个南瓜灯，25% 亮着，亮着的有几个？",
+   "choices": [
+    "25",
+    "26",
+    "20",
+    "15"
+   ],
+   "choices_zh": [
+    "25",
+    "26",
+    "20",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "25% × 80 = 20.",
+   "explain_zh": "80×25%=20。"
+  },
+  {
+   "id": "l2g6_005",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 120 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 120 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "12",
+    "15",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "12",
+    "15",
+    "7",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "10% × 120 = 12.",
+   "explain_zh": "120×10%=12。"
+  },
+  {
+   "id": "l2g6_006",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 60 jack-o'-lanterns on the trail. 20% of them are lit. How many are lit?",
+   "q_zh": "小路上 60 个南瓜灯，20% 亮着，亮着的有几个？",
+   "choices": [
+    "18",
+    "8",
+    "7",
+    "12"
+   ],
+   "choices_zh": [
+    "18",
+    "8",
+    "7",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "20% × 60 = 12.",
+   "explain_zh": "60×20%=12。"
+  },
+  {
+   "id": "l2g6_007",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 60 jack-o'-lanterns on the trail. 50% of them are lit. How many are lit?",
+   "q_zh": "小路上 60 个南瓜灯，50% 亮着，亮着的有几个？",
+   "choices": [
+    "33",
+    "30",
+    "34"
+   ],
+   "choices_zh": [
+    "33",
+    "30",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "50% × 60 = 30.",
+   "explain_zh": "60×50%=30。",
+   "sign_en": [
+    "33",
+    "30",
+    "34"
+   ],
+   "sign_zh": [
+    "33",
+    "30",
+    "34"
+   ]
+  },
+  {
+   "id": "l2g6_008",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 200 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 200 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "22",
+    "26",
+    "20"
+   ],
+   "choices_zh": [
+    "22",
+    "26",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "10% × 200 = 20.",
+   "explain_zh": "200×10%=20。",
+   "sign_en": [
+    "22",
+    "26",
+    "20"
+   ],
+   "sign_zh": [
+    "22",
+    "26",
+    "20"
+   ]
+  },
+  {
+   "id": "l2g6_009",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 200 jack-o'-lanterns on the trail. 20% of them are lit. How many are lit?",
+   "q_zh": "小路上 200 个南瓜灯，20% 亮着，亮着的有几个？",
+   "choices": [
+    "46",
+    "45",
+    "41",
+    "40"
+   ],
+   "choices_zh": [
+    "46",
+    "45",
+    "41",
+    "40"
+   ],
+   "answer": 3,
+   "explain_en": "20% × 200 = 40.",
+   "explain_zh": "200×20%=40。"
+  },
+  {
+   "id": "l2g6_010",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 80 jack-o'-lanterns on the trail. 50% of them are lit. How many are lit?",
+   "q_zh": "小路上 80 个南瓜灯，50% 亮着，亮着的有几个？",
+   "choices": [
+    "38",
+    "45",
+    "40",
+    "34"
+   ],
+   "choices_zh": [
+    "38",
+    "45",
+    "40",
+    "34"
+   ],
+   "answer": 2,
+   "explain_en": "50% × 80 = 40.",
+   "explain_zh": "80×50%=40。"
+  },
+  {
+   "id": "l2g6_011",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 60 jack-o'-lanterns on the trail. 20% of them are lit. How many are lit?",
+   "q_zh": "小路上 60 个南瓜灯，20% 亮着，亮着的有几个？",
+   "choices": [
+    "12",
+    "14",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "14",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "20% × 60 = 12.",
+   "explain_zh": "60×20%=12。",
+   "sign_en": [
+    "12",
+    "14",
+    "11"
+   ],
+   "sign_zh": [
+    "12",
+    "14",
+    "11"
+   ]
+  },
+  {
+   "id": "l2g6_012",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 40 jack-o'-lanterns on the trail. 20% of them are lit. How many are lit?",
+   "q_zh": "小路上 40 个南瓜灯，20% 亮着，亮着的有几个？",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "13"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "8",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "20% × 40 = 8.",
+   "explain_zh": "40×20%=8。"
+  },
+  {
+   "id": "l2g6_013",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 120 jack-o'-lanterns on the trail. 25% of them are lit. How many are lit?",
+   "q_zh": "小路上 120 个南瓜灯，25% 亮着，亮着的有几个？",
+   "choices": [
+    "24",
+    "35",
+    "30",
+    "27"
+   ],
+   "choices_zh": [
+    "24",
+    "35",
+    "30",
+    "27"
+   ],
+   "answer": 2,
+   "explain_en": "25% × 120 = 30.",
+   "explain_zh": "120×25%=30。"
+  },
+  {
+   "id": "l2g6_014",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 40 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 40 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "9",
+    "1",
+    "4",
+    "7"
+   ],
+   "choices_zh": [
+    "9",
+    "1",
+    "4",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "10% × 40 = 4.",
+   "explain_zh": "40×10%=4。"
+  },
+  {
+   "id": "l2g6_015",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 200 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 200 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "20",
+    "18",
+    "23",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "18",
+    "23",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "10% × 200 = 20.",
+   "explain_zh": "200×10%=20。"
+  },
+  {
+   "id": "l2g6_016",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 200 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 200 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "15",
+    "22",
+    "20",
+    "25"
+   ],
+   "choices_zh": [
+    "15",
+    "22",
+    "20",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "10% × 200 = 20.",
+   "explain_zh": "200×10%=20。"
+  },
+  {
+   "id": "l2g6_017",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 40 jack-o'-lanterns on the trail. 20% of them are lit. How many are lit?",
+   "q_zh": "小路上 40 个南瓜灯，20% 亮着，亮着的有几个？",
+   "choices": [
+    "4",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "4",
+    "8",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "20% × 40 = 8.",
+   "explain_zh": "40×20%=8。",
+   "sign_en": [
+    "4",
+    "8",
+    "10"
+   ],
+   "sign_zh": [
+    "4",
+    "8",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g6_018",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 60 jack-o'-lanterns on the trail. 10% of them are lit. How many are lit?",
+   "q_zh": "小路上 60 个南瓜灯，10% 亮着，亮着的有几个？",
+   "choices": [
+    "6",
+    "12",
+    "2"
+   ],
+   "choices_zh": [
+    "6",
+    "12",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "10% × 60 = 6.",
+   "explain_zh": "60×10%=6。",
+   "sign_en": [
+    "6",
+    "12",
+    "2"
+   ],
+   "sign_zh": [
+    "6",
+    "12",
+    "2"
+   ]
+  },
+  {
+   "id": "l2g6_019",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1950",
+    "2001",
+    "1776",
+    "1888"
+   ],
+   "choices_zh": [
+    "1950",
+    "2001",
+    "1776",
+    "1888"
+   ],
+   "answer": 3,
+   "explain_en": "It opened in 1888, two years after Vancouver became a city.",
+   "explain_zh": "1888 年开放，比温哥华建市晚两年。"
+  },
+  {
+   "id": "l2g6_020",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Stanley Cup",
+    "Grey Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "斯坦利杯",
+    "格雷杯",
+    "世界杯"
+   ],
+   "answer": 0,
+   "explain_en": "He also donated hockey's Stanley Cup.",
+   "explain_zh": "他还捐出了冰球的斯坦利杯。",
+   "sign_en": [
+    "Stanley Cup",
+    "Grey Cup",
+    "World Cup"
+   ],
+   "sign_zh": [
+    "斯坦利杯",
+    "格雷杯",
+    "世界杯"
+   ]
+  },
+  {
+   "id": "l2g6_021",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (about 400 ha) compared with New York's Central Park (about 341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，纽约中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Half the size",
+    "The same",
+    "Bigger",
+    "Smaller"
+   ],
+   "choices_zh": [
+    "只有一半",
+    "一样大",
+    "更大",
+    "更小"
+   ],
+   "answer": 2,
+   "explain_en": "400 ha is more than 341 ha.",
+   "explain_zh": "400 公顷比 341 公顷大。"
+  },
+  {
+   "id": "l2g6_022",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the land of which peoples?",
+   "q_zh": "斯坦利公园在哪些原住民族的土地上？",
+   "choices": [
+    "Inca",
+    "Vikings",
+    "Coast Salish"
+   ],
+   "choices_zh": [
+    "印加人",
+    "维京人",
+    "海岸萨利希人"
+   ],
+   "answer": 2,
+   "explain_en": "Musqueam, Squamish and Tsleil-Waututh Nations.",
+   "explain_zh": "马斯昆、斯阔米什和茨莱尔-沃图斯原住民。",
+   "sign_en": [
+    "Inca",
+    "Vikings",
+    "Coast Salish"
+   ],
+   "sign_zh": [
+    "印加人",
+    "维京人",
+    "海岸萨利希人"
+   ]
+  },
+  {
+   "id": "l2g6_023",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "360° twice",
+    "270°",
+    "45°",
+    "90°"
+   ],
+   "choices_zh": [
+    "转两圈",
+    "270°",
+    "45°",
+    "90°"
+   ],
+   "answer": 1,
+   "explain_en": "Owls can't move their eyes, so they turn their heads.",
+   "explain_zh": "猫头鹰的眼睛不能转，所以靠转头。"
+  },
+  {
+   "id": "l2g6_024",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "choices_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ],
+   "answer": 2,
+   "explain_en": "They hear the echoes of their own calls.",
+   "explain_zh": "它们听自己叫声的回声。",
+   "sign_en": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "sign_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ]
+  },
+  {
+   "id": "l2g6_025",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why does the seawall path flood at very high tide?",
+   "q_zh": "海堤小路在大潮时为什么会被淹？",
+   "choices": [
+    "Earthquakes",
+    "Rain only",
+    "The Moon's pull",
+    "Wind turbines"
+   ],
+   "choices_zh": [
+    "地震",
+    "只因为下雨",
+    "月球引力",
+    "风力发电机"
+   ],
+   "answer": 2,
+   "explain_en": "The Moon's gravity causes tides.",
+   "explain_zh": "月球的引力造成潮汐。"
+  },
+  {
+   "id": "l2g6_026",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Magnets",
+    "Decomposers",
+    "Sunscreen"
+   ],
+   "choices_zh": [
+    "磁铁",
+    "分解者",
+    "防晒霜"
+   ],
+   "answer": 1,
+   "explain_en": "Fungi, worms and bacteria recycle them into soil.",
+   "explain_zh": "真菌、蚯蚓和细菌把它们变成泥土。",
+   "sign_en": [
+    "Magnets",
+    "Decomposers",
+    "Sunscreen"
+   ],
+   "sign_zh": [
+    "磁铁",
+    "分解者",
+    "防晒霜"
+   ]
+  },
+  {
+   "id": "l2g6_027",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) stands next to the seawall. It is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语叫 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Ice",
+    "Wood",
+    "Volcanic rock",
+    "Plastic"
+   ],
+   "choices_zh": [
+    "冰",
+    "木头",
+    "火山岩",
+    "塑料"
+   ],
+   "answer": 2,
+   "explain_en": "It formed about 32 million years ago when magma cooled underground.",
+   "explain_zh": "它是约 3200 万年前地下岩浆冷却形成的。"
+  },
+  {
+   "id": "l2g6_028",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "365 天",
+    "7 天",
+    "29.5 天"
+   ],
+   "answer": 2,
+   "explain_en": "That's one lunar cycle.",
+   "explain_zh": "这是一个月相周期。",
+   "sign_en": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "sign_zh": [
+    "365 天",
+    "7 天",
+    "29.5 天"
+   ]
+  },
+  {
+   "id": "l2g6_029",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了什么？",
+   "choices": [
+    "Lay eggs",
+    "Learn to fly",
+    "Hibernate",
+    "Find candy"
+   ],
+   "choices_zh": [
+    "产卵",
+    "学飞",
+    "冬眠",
+    "找糖果"
+   ],
+   "answer": 0,
+   "explain_en": "They return to the stream where they hatched.",
+   "explain_zh": "它们回到自己出生的小溪产卵。"
+  },
+  {
+   "id": "l2g6_030",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math_science",
+   "difficulty": "hard",
+   "q_en": "The Stanley Park seawall loop is about 9 km. At 12 km/h, about how long is one loop?",
+   "q_zh": "斯坦利公园海堤一圈约 9 公里，每小时骑 12 公里，骑一圈大约多久？",
+   "choices": [
+    "45 minutes",
+    "9 minutes",
+    "2 hours",
+    "12 minutes"
+   ],
+   "choices_zh": [
+    "45 分钟",
+    "9 分钟",
+    "2 小时",
+    "12 分钟"
+   ],
+   "answer": 0,
+   "explain_en": "9 ÷ 12 = 0.75 hour = 45 minutes.",
+   "explain_zh": "9÷12=0.75 小时=45 分钟。"
+  },
+  {
+   "id": "l2g6_031",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Halloween is on October 31. How many days until November 11?",
+   "q_zh": "万圣节是 10 月 31 日，离 11 月 11 日还有几天？",
+   "choices": [
+    "11",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "1 day to Nov 1, then 10 more.",
+   "explain_zh": "到 11 月 1 日 1 天，再过 10 天。",
+   "sign_en": [
+    "11",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g6_032",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Tower Bridge",
+    "Port Mann",
+    "Lions Gate",
+    "Golden Gate"
+   ],
+   "choices_zh": [
+    "伦敦塔桥",
+    "曼港大桥",
+    "狮门大桥",
+    "金门大桥"
+   ],
+   "answer": 2,
+   "explain_en": "Lions Gate Bridge opened in 1938. It links Stanley Park to the North Shore.",
+   "explain_zh": "狮门大桥 1938 年通车，连接斯坦利公园和北岸。"
+  },
+  {
+   "id": "l2g6_033",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "Nine O'Clock Gun 每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "9:00 pm",
+    "Midnight"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "晚上 9 点",
+    "半夜 12 点"
+   ],
+   "answer": 1,
+   "explain_en": "It's been a Vancouver tradition for over 100 years.",
+   "explain_zh": "这是温哥华一百多年的传统。",
+   "sign_en": [
+    "6:00 pm",
+    "9:00 pm",
+    "Midnight"
+   ],
+   "sign_zh": [
+    "晚上 6 点",
+    "晚上 9 点",
+    "半夜 12 点"
+   ]
+  },
+  {
+   "id": "l2g6_034",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At night",
+    "At noon",
+    "Only in winter",
+    "Never"
+   ],
+   "choices_zh": [
+    "晚上",
+    "中午",
+    "只在冬天",
+    "从来不动"
+   ],
+   "answer": 0,
+   "explain_en": "Nocturnal animals sleep in the day.",
+   "explain_zh": "夜行动物白天睡觉。"
+  },
+  {
+   "id": "l2g6_035",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类动物？",
+   "choices": [
+    "Mammals",
+    "Birds",
+    "Insects"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鸟类",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Bats have fur and feed milk to babies.",
+   "explain_zh": "蝙蝠有毛，用奶喂宝宝。",
+   "sign_en": [
+    "Mammals",
+    "Birds",
+    "Insects"
+   ],
+   "sign_zh": [
+    "哺乳动物",
+    "鸟类",
+    "昆虫"
+   ]
+  },
+  {
+   "id": "l2g6_036",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Penguin",
+    "Ostrich",
+    "Flamingo",
+    "Great blue heron"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "鸵鸟",
+    "火烈鸟",
+    "大蓝鹭"
+   ],
+   "answer": 3,
+   "explain_en": "Herons build big nests high in the trees.",
+   "explain_zh": "大蓝鹭在高高的树上搭大窝。"
+  },
+  {
+   "id": "l2g6_037",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, found all over Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是什么树？",
+   "choices": [
+    "Maple",
+    "Palm tree",
+    "Red cedar"
+   ],
+   "choices_zh": [
+    "枫树",
+    "棕榈树",
+    "红雪松"
+   ],
+   "answer": 2,
+   "explain_en": "The western red cedar is B.C.'s tree.",
+   "explain_zh": "西部红雪松是卑诗省的省树。",
+   "sign_en": [
+    "Maple",
+    "Palm tree",
+    "Red cedar"
+   ],
+   "sign_zh": [
+    "枫树",
+    "棕榈树",
+    "红雪松"
+   ]
+  },
+  {
+   "id": "l2g6_038",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Sand",
+    "Sugar",
+    "Air",
+    "Water"
+   ],
+   "choices_zh": [
+    "沙子",
+    "糖",
+    "空气",
+    "水"
+   ],
+   "answer": 3,
+   "explain_en": "A pumpkin is about 90% water.",
+   "explain_zh": "南瓜大约 90% 是水。"
+  },
+  {
+   "id": "l2g6_039",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara loves water. Would Bara like the seawall?",
+   "q_zh": "CAPYBARA！Bara 爱水，它会喜欢海堤吗？",
+   "choices": [
+    "Only in snow",
+    "Yes!",
+    "No way"
+   ],
+   "choices_zh": [
+    "只在下雪时",
+    "喜欢！",
+    "才不"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love water, though they prefer fresh water.",
+   "explain_zh": "卡皮巴拉爱水，不过它们更喜欢淡水。"
+  },
+  {
+   "id": "l2g6_040",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What costume suits a capybara best?",
+   "q_zh": "CAPYBARA！哪套万圣节服装最适合卡皮巴拉？",
+   "choices": [
+    "Pumpkin hat",
+    "Ice skates",
+    "Scuba tank"
+   ],
+   "choices_zh": [
+    "南瓜帽",
+    "溜冰鞋",
+    "氧气瓶"
+   ],
+   "answer": 0,
+   "explain_en": "Bara can't skate, but a pumpkin hat looks great!",
+   "explain_zh": "Bara 不会溜冰，但戴南瓜帽超好看！",
+   "sign_en": [
+    "Pumpkin hat",
+    "Ice skates",
+    "Scuba tank"
+   ],
+   "sign_zh": [
+    "南瓜帽",
+    "溜冰鞋",
+    "氧气瓶"
+   ]
+  },
+  {
+   "id": "l2g6_041",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras and raccoons both come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉和浣熊老家都在哪个大洲？",
+   "choices": [
+    "Africa",
+    "Europe",
+    "Asia",
+    "The Americas"
+   ],
+   "choices_zh": [
+    "非洲",
+    "欧洲",
+    "亚洲",
+    "美洲"
+   ],
+   "answer": 3,
+   "explain_en": "Capybaras are from South America; raccoons from North America.",
+   "explain_zh": "卡皮巴拉来自南美洲，浣熊来自北美洲。"
+  }
+ ]
+}

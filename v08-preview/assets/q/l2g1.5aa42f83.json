@@ -1,0 +1,976 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 1,
+ "version": 1,
+ "fields": "same as level-1 banks; sections: seawall (stop-and-answer, up to 4 choices) and forest_fork (≤3 choices → left/middle/right trail; sign_en/sign_zh for signs); {name} = player name; English on top, Chinese below",
+ "questions": [
+  {
+   "id": "l2g1_001",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 2 candies, then 6 more. How many candies?",
+   "q_zh": "{name} 拿到 2 颗糖，又拿到 6 颗，一共几颗？",
+   "choices": [
+    "8",
+    "5",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "5",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "2 + 6 = 8.",
+   "explain_zh": "2+6=8。",
+   "sign_en": [
+    "8",
+    "5",
+    "9"
+   ],
+   "sign_zh": [
+    "8",
+    "5",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g1_002",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 9 candies, then 8 more. How many candies?",
+   "q_zh": "{name} 拿到 9 颗糖，又拿到 8 颗，一共几颗？",
+   "choices": [
+    "15",
+    "19",
+    "17",
+    "18"
+   ],
+   "choices_zh": [
+    "15",
+    "19",
+    "17",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "9 + 8 = 17.",
+   "explain_zh": "9+8=17。"
+  },
+  {
+   "id": "l2g1_003",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 1 candy, then 5 more. How many candies?",
+   "q_zh": "{name} 拿到 1 颗糖，又拿到 5 颗，一共几颗？",
+   "choices": [
+    "4",
+    "6",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "1 + 5 = 6.",
+   "explain_zh": "1+5=6。",
+   "sign_en": [
+    "4",
+    "6",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "3"
+   ]
+  },
+  {
+   "id": "l2g1_004",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 10 candies, then 2 more. How many candies?",
+   "q_zh": "{name} 拿到 10 颗糖，又拿到 2 颗，一共几颗？",
+   "choices": [
+    "12",
+    "14",
+    "13"
+   ],
+   "choices_zh": [
+    "12",
+    "14",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "10 + 2 = 12.",
+   "explain_zh": "10+2=12。",
+   "sign_en": [
+    "12",
+    "14",
+    "13"
+   ],
+   "sign_zh": [
+    "12",
+    "14",
+    "13"
+   ]
+  },
+  {
+   "id": "l2g1_005",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 9 candies, then 7 more. How many candies?",
+   "q_zh": "{name} 拿到 9 颗糖，又拿到 7 颗，一共几颗？",
+   "choices": [
+    "14",
+    "13",
+    "16"
+   ],
+   "choices_zh": [
+    "14",
+    "13",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "9 + 7 = 16.",
+   "explain_zh": "9+7=16。",
+   "sign_en": [
+    "14",
+    "13",
+    "16"
+   ],
+   "sign_zh": [
+    "14",
+    "13",
+    "16"
+   ]
+  },
+  {
+   "id": "l2g1_006",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 7 candies, then 3 more. How many candies?",
+   "q_zh": "{name} 拿到 7 颗糖，又拿到 3 颗，一共几颗？",
+   "choices": [
+    "10",
+    "8",
+    "13",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "13",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "7 + 3 = 10.",
+   "explain_zh": "7+3=10。"
+  },
+  {
+   "id": "l2g1_007",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 2 candies, then 5 more. How many candies?",
+   "q_zh": "{name} 拿到 2 颗糖，又拿到 5 颗，一共几颗？",
+   "choices": [
+    "7",
+    "5",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "6",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "2 + 5 = 7.",
+   "explain_zh": "2+5=7。"
+  },
+  {
+   "id": "l2g1_008",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 10 candies, then 5 more. How many candies?",
+   "q_zh": "{name} 拿到 10 颗糖，又拿到 5 颗，一共几颗？",
+   "choices": [
+    "17",
+    "12",
+    "14",
+    "15"
+   ],
+   "choices_zh": [
+    "17",
+    "12",
+    "14",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "10 + 5 = 15.",
+   "explain_zh": "10+5=15。"
+  },
+  {
+   "id": "l2g1_009",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 9 candies, then 6 more. How many candies?",
+   "q_zh": "{name} 拿到 9 颗糖，又拿到 6 颗，一共几颗？",
+   "choices": [
+    "15",
+    "12",
+    "16"
+   ],
+   "choices_zh": [
+    "15",
+    "12",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "9 + 6 = 15.",
+   "explain_zh": "9+6=15。",
+   "sign_en": [
+    "15",
+    "12",
+    "16"
+   ],
+   "sign_zh": [
+    "15",
+    "12",
+    "16"
+   ]
+  },
+  {
+   "id": "l2g1_010",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 3 candies, then 1 more. How many candies?",
+   "q_zh": "{name} 拿到 3 颗糖，又拿到 1 颗，一共几颗？",
+   "choices": [
+    "2",
+    "4",
+    "5",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "5",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "3 + 1 = 4.",
+   "explain_zh": "3+1=4。"
+  },
+  {
+   "id": "l2g1_011",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 6 candies, then 7 more. How many candies?",
+   "q_zh": "{name} 拿到 6 颗糖，又拿到 7 颗，一共几颗？",
+   "choices": [
+    "16",
+    "13",
+    "12",
+    "10"
+   ],
+   "choices_zh": [
+    "16",
+    "13",
+    "12",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "6 + 7 = 13.",
+   "explain_zh": "6+7=13。"
+  },
+  {
+   "id": "l2g1_012",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 7 candies, then 3 more. How many candies?",
+   "q_zh": "{name} 拿到 7 颗糖，又拿到 3 颗，一共几颗？",
+   "choices": [
+    "13",
+    "11",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "10",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "7 + 3 = 10.",
+   "explain_zh": "7+3=10。"
+  },
+  {
+   "id": "l2g1_013",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 9 candies, then 9 more. How many candies?",
+   "q_zh": "{name} 拿到 9 颗糖，又拿到 9 颗，一共几颗？",
+   "choices": [
+    "18",
+    "20",
+    "15"
+   ],
+   "choices_zh": [
+    "18",
+    "20",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "9 + 9 = 18.",
+   "explain_zh": "9+9=18。",
+   "sign_en": [
+    "18",
+    "20",
+    "15"
+   ],
+   "sign_zh": [
+    "18",
+    "20",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g1_014",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 3 candies, then 1 more. How many candies?",
+   "q_zh": "{name} 拿到 3 颗糖，又拿到 1 颗，一共几颗？",
+   "choices": [
+    "4",
+    "6",
+    "7",
+    "1"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "7",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "3 + 1 = 4.",
+   "explain_zh": "3+1=4。"
+  },
+  {
+   "id": "l2g1_015",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 3 candies, then 9 more. How many candies?",
+   "q_zh": "{name} 拿到 3 颗糖，又拿到 9 颗，一共几颗？",
+   "choices": [
+    "15",
+    "14",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "14",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "3 + 9 = 12.",
+   "explain_zh": "3+9=12。",
+   "sign_en": [
+    "15",
+    "14",
+    "12"
+   ],
+   "sign_zh": [
+    "15",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g1_016",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 7 candies, then 2 more. How many candies?",
+   "q_zh": "{name} 拿到 7 颗糖，又拿到 2 颗，一共几颗？",
+   "choices": [
+    "7",
+    "11",
+    "9",
+    "12"
+   ],
+   "choices_zh": [
+    "7",
+    "11",
+    "9",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "7 + 2 = 9.",
+   "explain_zh": "7+2=9。"
+  },
+  {
+   "id": "l2g1_017",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 8 candies, then 2 more. How many candies?",
+   "q_zh": "{name} 拿到 8 颗糖，又拿到 2 颗，一共几颗？",
+   "choices": [
+    "10",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "7",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "8 + 2 = 10.",
+   "explain_zh": "8+2=10。",
+   "sign_en": [
+    "10",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g1_018",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} gets 6 candies, then 4 more. How many candies?",
+   "q_zh": "{name} 拿到 6 颗糖，又拿到 4 颗，一共几颗？",
+   "choices": [
+    "10",
+    "11",
+    "7",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "11",
+    "7",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "6 + 4 = 10.",
+   "explain_zh": "6+4=10。"
+  },
+  {
+   "id": "l2g1_019",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "How many legs does a spider have?",
+   "q_zh": "蜘蛛有几条腿？",
+   "choices": [
+    "10",
+    "8",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "6",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "Spiders have 8 legs. Insects have 6.",
+   "explain_zh": "蜘蛛有 8 条腿，昆虫有 6 条。"
+  },
+  {
+   "id": "l2g1_020",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "What do we carve for Halloween?",
+   "q_zh": "万圣节我们会雕刻什么？",
+   "choices": [
+    "A pumpkin",
+    "A shoe",
+    "A rock"
+   ],
+   "choices_zh": [
+    "南瓜",
+    "鞋子",
+    "石头"
+   ],
+   "answer": 0,
+   "explain_en": "Carved pumpkins are called jack-o'-lanterns.",
+   "explain_zh": "雕好的南瓜叫南瓜灯。",
+   "sign_en": [
+    "A pumpkin",
+    "A shoe",
+    "A rock"
+   ],
+   "sign_zh": [
+    "南瓜",
+    "鞋子",
+    "石头"
+   ]
+  },
+  {
+   "id": "l2g1_021",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal has a black mask on its face?",
+   "q_zh": "哪种动物脸上像戴着黑色面罩？",
+   "choices": [
+    "Raccoon",
+    "Duck",
+    "Canada goose",
+    "Rabbit"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "鸭子",
+    "加拿大鹅",
+    "兔子"
+   ],
+   "answer": 0,
+   "explain_en": "Raccoons live in Stanley Park and come out at night.",
+   "explain_zh": "斯坦利公园里有浣熊，晚上出来活动。"
+  },
+  {
+   "id": "l2g1_022",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal says 'hoo-hoo' at night?",
+   "q_zh": "晚上“呼呼”叫的是什么动物？",
+   "choices": [
+    "Cow",
+    "Owl",
+    "Pig"
+   ],
+   "choices_zh": [
+    "牛",
+    "猫头鹰",
+    "猪"
+   ],
+   "answer": 1,
+   "explain_en": "Owls hunt at night.",
+   "explain_zh": "猫头鹰在晚上捕猎。",
+   "sign_en": [
+    "Cow",
+    "Owl",
+    "Pig"
+   ],
+   "sign_zh": [
+    "牛",
+    "猫头鹰",
+    "猪"
+   ]
+  },
+  {
+   "id": "l2g1_023",
+   "level": 2,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "What must you wear on your head when you ride a bike?",
+   "q_zh": "骑自行车时头上一定要戴什么？",
+   "choices": [
+    "A crown",
+    "A witch hat",
+    "A helmet",
+    "Nothing"
+   ],
+   "choices_zh": [
+    "王冠",
+    "巫师帽",
+    "头盔",
+    "什么都不戴"
+   ],
+   "answer": 2,
+   "explain_en": "In B.C., wearing a bike helmet is the law.",
+   "explain_zh": "在卑诗省，骑车戴头盔是法律规定。"
+  },
+  {
+   "id": "l2g1_024",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "When riding past people walking, you should…",
+   "q_zh": "骑车经过走路的人时，应该怎么做？",
+   "choices": [
+    "Close eyes",
+    "Go faster",
+    "Slow down"
+   ],
+   "choices_zh": [
+    "闭上眼",
+    "骑更快",
+    "慢一点"
+   ],
+   "answer": 2,
+   "explain_en": "Slow down and ring your bell to say hi.",
+   "explain_zh": "放慢速度，按一下车铃打招呼。",
+   "sign_en": [
+    "Close eyes",
+    "Go faster",
+    "Slow down"
+   ],
+   "sign_zh": [
+    "闭上眼",
+    "骑更快",
+    "慢一点"
+   ]
+  },
+  {
+   "id": "l2g1_025",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "What is next to the Stanley Park seawall?",
+   "q_zh": "斯坦利公园的海堤旁边是什么？",
+   "choices": [
+    "Snowy hills",
+    "A desert",
+    "A volcano",
+    "The ocean"
+   ],
+   "choices_zh": [
+    "雪山",
+    "沙漠",
+    "火山",
+    "大海"
+   ],
+   "answer": 3,
+   "explain_en": "The seawall runs right along the ocean.",
+   "explain_zh": "海堤就沿着海边。"
+  },
+  {
+   "id": "l2g1_026",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats sleep in the daytime and fly at…",
+   "q_zh": "蝙蝠白天睡觉，什么时候飞出来？",
+   "choices": [
+    "Lunch",
+    "Night",
+    "Breakfast"
+   ],
+   "choices_zh": [
+    "午饭时间",
+    "晚上",
+    "早饭时间"
+   ],
+   "answer": 1,
+   "explain_en": "Bats are nocturnal: awake at night.",
+   "explain_zh": "蝙蝠是夜行动物，晚上醒着。",
+   "sign_en": [
+    "Lunch",
+    "Night",
+    "Breakfast"
+   ],
+   "sign_zh": [
+    "午饭时间",
+    "晚上",
+    "早饭时间"
+   ]
+  },
+  {
+   "id": "l2g1_027",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "What colour is a Halloween pumpkin?",
+   "q_zh": "万圣节的南瓜是什么颜色？",
+   "choices": [
+    "Pink",
+    "Green",
+    "Orange",
+    "Blue"
+   ],
+   "choices_zh": [
+    "粉色",
+    "绿色",
+    "橙色",
+    "蓝色"
+   ],
+   "answer": 2,
+   "explain_en": "Most Halloween pumpkins are orange.",
+   "explain_zh": "大多数万圣节南瓜是橙色的。"
+  },
+  {
+   "id": "l2g1_028",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which bird honks and flies in a V shape?",
+   "q_zh": "哪种鸟会“嘎嘎”叫、排成 V 字飞？",
+   "choices": [
+    "Chicken",
+    "Penguin",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "鸡",
+    "企鹅",
+    "加拿大鹅"
+   ],
+   "answer": 2,
+   "explain_en": "Canada geese live around Lost Lagoon.",
+   "explain_zh": "加拿大鹅住在 Lost Lagoon 湖边。",
+   "sign_en": [
+    "Chicken",
+    "Penguin",
+    "Canada goose"
+   ],
+   "sign_zh": [
+    "鸡",
+    "企鹅",
+    "加拿大鹅"
+   ]
+  },
+  {
+   "id": "l2g1_029",
+   "level": 2,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "When you trick-or-treat at night, what helps cars see you?",
+   "q_zh": "晚上讨糖时，什么能让汽车看见你？",
+   "choices": [
+    "Closed eyes",
+    "A big hat",
+    "A flashlight",
+    "A dark coat"
+   ],
+   "choices_zh": [
+    "闭上眼睛",
+    "大帽子",
+    "手电筒",
+    "深色外套"
+   ],
+   "answer": 2,
+   "explain_en": "Lights and reflective tape keep you safe.",
+   "explain_zh": "灯光和反光条能保护你的安全。"
+  },
+  {
+   "id": "l2g1_030",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Tall trees in Stanley Park grow from…",
+   "q_zh": "斯坦利公园的大树是从什么长出来的？",
+   "choices": [
+    "Seeds",
+    "Rocks",
+    "Candy"
+   ],
+   "choices_zh": [
+    "种子",
+    "石头",
+    "糖果"
+   ],
+   "answer": 0,
+   "explain_en": "Every big tree started as a tiny seed or cone.",
+   "explain_zh": "每棵大树都是从小小的种子长出来的。",
+   "sign_en": [
+    "Seeds",
+    "Rocks",
+    "Candy"
+   ],
+   "sign_zh": [
+    "种子",
+    "石头",
+    "糖果"
+   ]
+  },
+  {
+   "id": "l2g1_031",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal lives in the water by the seawall?",
+   "q_zh": "哪种动物住在海堤旁的水里？",
+   "choices": [
+    "Seal",
+    "Squirrel",
+    "Owl",
+    "Raccoon"
+   ],
+   "choices_zh": [
+    "海豹",
+    "松鼠",
+    "猫头鹰",
+    "浣熊"
+   ],
+   "answer": 0,
+   "explain_en": "Harbour seals swim near the seawall.",
+   "explain_zh": "港海豹会在海堤附近游泳。"
+  },
+  {
+   "id": "l2g1_032",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "What do children say at the door on Halloween?",
+   "q_zh": "万圣节孩子们在门口说什么？",
+   "choices": [
+    "Trick or treat!",
+    "Happy birthday!",
+    "Good night!"
+   ],
+   "choices_zh": [
+    "不给糖就捣蛋！",
+    "生日快乐！",
+    "晚安！"
+   ],
+   "answer": 0,
+   "explain_en": "Then they get a treat!",
+   "explain_zh": "然后就能拿到糖啦！",
+   "sign_en": [
+    "Trick or treat!",
+    "Happy birthday!",
+    "Good night!"
+   ],
+   "sign_zh": [
+    "不给糖就捣蛋！",
+    "生日快乐！",
+    "晚安！"
+   ]
+  },
+  {
+   "id": "l2g1_033",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara loves water. Would Bara like the seawall?",
+   "q_zh": "CAPYBARA！Bara 爱水，它会喜欢海堤吗？",
+   "choices": [
+    "Yes!",
+    "Only in snow",
+    "No way"
+   ],
+   "choices_zh": [
+    "喜欢！",
+    "只在下雪时",
+    "才不"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love water, though they prefer fresh water.",
+   "explain_zh": "卡皮巴拉爱水，不过它们更喜欢淡水。"
+  },
+  {
+   "id": "l2g1_034",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What costume suits a capybara best?",
+   "q_zh": "CAPYBARA！哪套万圣节服装最适合卡皮巴拉？",
+   "choices": [
+    "Scuba tank",
+    "Ice skates",
+    "Pumpkin hat"
+   ],
+   "choices_zh": [
+    "氧气瓶",
+    "溜冰鞋",
+    "南瓜帽"
+   ],
+   "answer": 2,
+   "explain_en": "Bara can't skate, but a pumpkin hat looks great!",
+   "explain_zh": "Bara 不会溜冰，但戴南瓜帽超好看！",
+   "sign_en": [
+    "Scuba tank",
+    "Ice skates",
+    "Pumpkin hat"
+   ],
+   "sign_zh": [
+    "氧气瓶",
+    "溜冰鞋",
+    "南瓜帽"
+   ]
+  },
+  {
+   "id": "l2g1_035",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras and raccoons both come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉和浣熊老家都在哪个大洲？",
+   "choices": [
+    "Africa",
+    "Europe",
+    "The Americas",
+    "Asia"
+   ],
+   "choices_zh": [
+    "非洲",
+    "欧洲",
+    "美洲",
+    "亚洲"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras are from South America; raccoons from North America.",
+   "explain_zh": "卡皮巴拉来自南美洲，浣熊来自北美洲。"
+  }
+ ]
+}
