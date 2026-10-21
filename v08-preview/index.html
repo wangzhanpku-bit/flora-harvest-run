@@ -413,7 +413,7 @@ function loadBara3D(){try{const bin=new Uint8Array(BIN.bara3d);new THREE.GLTFLoa
  const holder=new THREE.Group();holder.add(m);holder.rotation.y=Math.PI;m.traverse(o=>{if(o.isMesh){o.castShadow=!MOBILE;o.frustumCulled=false;if(o.material){if(MOBILE){const mat=o.material;const b=new THREE.MeshBasicMaterial({map:mat.map||null,color:mat.color||0xffffff});b.name=mat.name;if(b.map)b.map.encoding=THREE.sRGBEncoding;o.material=b;}else o.material.roughness=.85;}}});
  const bb=new THREE.Box3().setFromObject(m);const mx=new THREE.AnimationMixer(m);const A={};g.animations.forEach(a=>{A[a.name]=mx.clipAction(a);A[a.name].play();A[a.name].weight=0;});A.run&&(A.run.weight=1);
  Object.assign(B3,{m,holder,mx,A,ready:true});bara.add(holder);bara.userData.c.visible=false;
- const topY=bb.max.y,frontZ=-bb.max.z;if(bara.userData.wh)bara.userData.wh.position.set(0,topY*.92,frontZ*.62);bara.userData.hat.position.set(0,topY*.95,frontZ*.6);},e=>console.warn('bara3d',e));}catch(e){console.warn(e);}}
+ const topY=bb.max.y,frontZ=-bb.max.z;if(bara.userData.wh)bara.userData.wh.position.set(0,topY*.92,frontZ*.62);bara.userData.hat.position.set(0,topY*.95,frontZ*.6);try{if(curLevel()>=2)l2AttachBaraHelm();}catch(e){}},e=>console.warn('bara3d',e));}catch(e){console.warn(e);}}
 const F3={ready:false};
 // 3D Flora loader. To drop in a new model later: add its GLB as a data URI under TEX.flora_girl
 // (Y-up, faces +Z, feet at y=0, clips run/idle and optionally jump_inplace). It is used with its own
@@ -511,7 +511,7 @@ function sub(t,ms=2400){const e=document.getElementById('sub');t=N(t);
  e.style.display='block';clearTimeout(sub.t);sub.t=setTimeout(()=>e.style.display='none',ms);}
 function newGame(){hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],ghostLead:null,z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;
  bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}try{l2EnsureRide();}catch(e){}}}
-function updHud(){if(S.section>3&&curLevel()>=2)S.section=3;hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港'],['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
+function updHud(){if(S.section>3&&curLevel()>=2)S.section=3;hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港']/* Coal (not Cool) Harbour / 煤港 */,['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
 // ---------- intro ----------
 function intro(){S.mode='intro';S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};
  // L2: place intro only (no protect lines); High plays sfx_bara_l2_intro once with the bubble
@@ -785,8 +785,8 @@ function l2DressTrack(on){on=!!on;if(typeof FARM_WORLD==='undefined'||!FARM_WORL
  FARM_WORLD._lit=on;console.info('[L2] dressTrack',on?'seawall-drop5':'farm');}
 window.l2DressTrack=l2DressTrack;window.l2ApplyPathSeg=l2ApplyPathSeg;window.FARM_WORLD=FARM_WORLD;
 // ---- L2 bike ride (tip): real bike.glb + seated Flora/Leo; Bara runs beside (NOT in basket) ----
-const L2BIKE={ready:false,_loading:null,root:null,nodes:{},state:{spin:0,pedal:0},helm:null,baraOn:false,seatY:.72,bones:null,_rest:null,_seated:false,pose:'idle'};
-/* r9b: 美图王 README — scale 1/1.5, Flora (0,.10,.01), Leo (0,.085,.025). Replaces L1 pumpkin knit hat for all of L2. */const L2_HELM_OFF={flora:[0,.10,.01],leo:[0,.085,.025],bara:[0,.06,0]};const L2_HELM_SC={flora:1,leo:1,bara:1};
+const L2BIKE={ready:false,_loading:null,root:null,nodes:{},state:{spin:0,pedal:0},helm:null,baraHelm:null,baraOn:false,seatY:.72,bones:null,_rest:null,_seated:false,pose:'idle'};
+/* r9b: 美图王 README — scale 1/1.5, Flora (0,.10,.01), Leo (0,.085,.025). Replaces L1 pumpkin knit hat for all of L2. */const L2_HELM_OFF={flora:[0,.10,.01],leo:[0,.085,.025],bara:[0,.06,0]};const L2_HELM_SC={flora:1,leo:1,bara:3.2};/* bara: running-beside scale (basket README 1/1.5 is too small) */
 const L2_BONE_NAMES=['Hips','Spine','Spine1','Spine2','Neck','Head','LeftShoulder','LeftArm','LeftForeArm','LeftHand','RightShoulder','RightArm','RightForeArm','RightHand','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase'];
 function l2BikeNodes(root){const n={};['bike','frame','wheel_F','wheel_R','pedal_L','pedal_R','handlebar','seat','basket_anchor','basket'].forEach(nm=>{let f=null;root.traverse(o=>{if(!f&&o.name===nm)f=o;});n[nm]=f;});return n;}
 function l2CacheBones(){if(!F3.m)return;const bones={},rest={};F3.m.traverse(o=>{if(!o.isBone)return;for(const n of L2_BONE_NAMES){if(o.name===n||o.name==='mixamorig'+n||o.name==='mixamorig:'+n){bones[n]=o;rest[n]={x:o.rotation.x,y:o.rotation.y,z:o.rotation.z};}}});L2BIKE.bones=bones;L2BIKE._rest=rest;}
@@ -800,6 +800,21 @@ function l2AttachHelm(){if(!L2BIKE.ready||!F3.ready||!F3.m)return;const who=hero
  if(typeof BIN!=='undefined'&&BIN[key]){const L=new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder);if(THREE.MeshoptDecoder&&L.setMeshoptDecoder)L.setMeshoptDecoder(THREE.MeshoptDecoder);
   L.parse(BIN[key].slice(0),'',g=>put(g.scene),e=>console.warn('[L2] helm',e));return;}
  if(TEX[key]&&!L2BIKE['_h_'+key]){L2BIKE['_h_'+key]=fetch(TEX[key]).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN[key]=b;L2BIKE['_h_'+key]=null;l2AttachHelm();}).catch(e=>{console.warn('[L2] helm fetch',e);L2BIKE['_h_'+key]=null;});}}
+/* r10: 美图王 helmet_pumpkin_bara — L2 only; hide Halloween purple witch hat. Parent to Bara_Body (no Head bone). */
+function l2FindBaraBody(){let b=null;if(!B3.m)return null;B3.m.traverse(o=>{if(!b&&o.name==='Bara_Body')b=o;});return b||B3.m;}
+function l2AttachBaraHelm(){if(curLevel()<2){if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;return;}
+ if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
+ if(!B3.ready||!B3.m)return;
+ const key='helmet_pumpkin_bara';const body=l2FindBaraBody();if(!body)return;
+ const put=sc=>{if(L2BIKE.baraHelm&&L2BIKE.baraHelm.parent)L2BIKE.baraHelm.parent.remove(L2BIKE.baraHelm);const h=sc.clone(true);
+  /* SC.bara=3.2 → local ~2.13 under m.scale.82 ≈ world dome ~0.35 on capybara crown */
+  h.scale.setScalar((L2_HELM_SC.bara||3.2)/1.5);const off=L2_HELM_OFF.bara||[0,.06,0];
+  h.position.set(off[0],off[1]+.22,off[2]+.12);h.rotation.set(0,0,0);
+  h.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});body.add(h);L2BIKE.baraHelm=h;};
+ if(L2BIKE.baraHelm&&L2BIKE.baraHelm.parent===body){L2BIKE.baraHelm.visible=true;return;}
+ if(typeof BIN!=='undefined'&&BIN[key]){const L=new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder);if(THREE.MeshoptDecoder&&L.setMeshoptDecoder)L.setMeshoptDecoder(THREE.MeshoptDecoder);
+  L.parse(BIN[key].slice(0),'',g=>put(g.scene),e=>console.warn('[L2] bara helm',e));return;}
+ if(TEX[key]&&!L2BIKE['_bh_'+key]){L2BIKE['_bh_'+key]=fetch(TEX[key]).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN[key]=b;L2BIKE['_bh_'+key]=null;l2AttachBaraHelm();}).catch(e=>{console.warn('[L2] bara helm fetch',e);L2BIKE['_bh_'+key]=null;});}}
 /* r8: holder pitches about the feet; offset so the HIPS pivot on the saddle instead of sliding forward off it */
 function l2HipPivot(rx){const h=L2BIKE._hipY||0,z=L2BIKE._hipZ||0,c=Math.cos(rx),sn=Math.sin(rx);return [h*(1-c)+z*sn,z*(1-c)-h*sn];}
 function l2SeatRider(force){if(!L2BIKE.ready||!F3.ready||!F3.holder)return;
@@ -820,7 +835,7 @@ function l2BaraToBasket(on){/* disabled — keep baraOn=false; follow-Bara stays
  if(L2BIKE._baraBasket&&L2BIKE._baraBasket.parent){try{L2BIKE._baraBasket.parent.remove(L2BIKE._baraBasket);}catch(e){}L2BIKE._baraBasket=null;}
  if(bara){bara.visible=true;bara.scale.setScalar(1);if(bara.userData&&bara.userData.c)bara.userData.c.visible=!B3.ready;if(bara.userData&&bara.userData.sh)bara.userData.sh.visible=true;}}
 function l2ShowBesideBara(){L2BIKE.baraOn=false;if(bara){bara.visible=true;if(bara.userData&&bara.userData.sh)bara.userData.sh.visible=true;
-  if(B3.ready){if(bara.userData&&bara.userData.c)bara.userData.c.visible=false;}else if(bara.userData&&bara.userData.c)bara.userData.c.visible=true;}}
+  if(B3.ready){if(bara.userData&&bara.userData.c)bara.userData.c.visible=false;}else if(bara.userData&&bara.userData.c)bara.userData.c.visible=true;}try{l2AttachBaraHelm();}catch(e){}}
 /* Pedal legs (r8): world-space two-bone IK from the cached rest quaternion.
    Root cause of "no legs": Mixamo UpLeg rest has rot.z≈±PI (legs point down); the old absolute rotation.set(x,0,±.04) dropped that flip so thighs pointed UP into the torso.
    Now: restore rest quat, then aim thigh→knee, shin→ankle on a virtual crank circle (bike-local, sagittal only → no side-kick). */
@@ -866,11 +881,11 @@ function l2MountBikeFromBin(){try{if(L2BIKE.ready||L2BIKE._loading||typeof BIN==
  L.parse(BIN.bike.slice(0),'',g=>{if(L2BIKE.ready)return;const root=g.scene;root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});
   L2BIKE.nodes=l2BikeNodes(root);L2BIKE.root=root;L2BIKE.ready=true;L2BIKE._loading=null;L2BIKE._seated=false;
   if(flora){flora.add(root);root.position.set(0,0,0.05);root.rotation.set(0,Math.PI,0);}
-  l2PrepBasket();l2SeatRider(true);l2ShowBesideBara();l2AttachHelm();
+  l2PrepBasket();l2SeatRider(true);l2ShowBesideBara();l2AttachHelm();try{l2AttachBaraHelm();}catch(e){}
   console.info('[L2] bike mounted (Bara beside)',Object.keys(L2BIKE.nodes).filter(k=>L2BIKE.nodes[k]));},e=>{console.warn('[L2] bike parse',e);L2BIKE._loading=null;});}catch(e){console.warn('[L2] bike',e);L2BIKE._loading=null;}}
-function l2EnsureRide(){if(curLevel()<2){l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;if(L2BIKE.helm)L2BIKE.helm.visible=false;if(F3.hat)F3.hat.visible=true;return;}
- if(L2BIKE.helm){L2BIKE.helm.visible=true;if(F3.hat)F3.hat.visible=false;}
- if(L2BIKE.root){L2BIKE.root.visible=true;if(!L2BIKE._seated)l2SeatRider(true);l2ShowBesideBara();if(!L2BIKE.helm)l2AttachHelm();return;}
+function l2EnsureRide(){if(curLevel()<2){l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;if(L2BIKE.helm)L2BIKE.helm.visible=false;if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;if(F3.hat)F3.hat.visible=true;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;return;}
+ if(L2BIKE.helm){L2BIKE.helm.visible=true;if(F3.hat)F3.hat.visible=false;}if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
+ if(L2BIKE.root){L2BIKE.root.visible=true;if(!L2BIKE._seated)l2SeatRider(true);l2ShowBesideBara();if(!L2BIKE.helm)l2AttachHelm();if(!L2BIKE.baraHelm)l2AttachBaraHelm();return;}
  if(typeof BIN!=='undefined'&&BIN.bike){l2MountBikeFromBin();return;}
  if(L2BIKE._loading)return;const url=(typeof TEX!=='undefined'&&TEX.bike)||null;if(!url){console.warn('[L2] no bike URL');return;}
  L2BIKE._loading=fetch(url).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN.bike=b;L2BIKE._loading=null;l2MountBikeFromBin();}).catch(e=>{console.warn('[L2] bike fetch',e);L2BIKE._loading=null;});}
