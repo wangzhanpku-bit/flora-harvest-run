@@ -786,7 +786,7 @@ window.l2DressTrack=l2DressTrack;window.l2ApplyPathSeg=l2ApplyPathSeg;window.FAR
 // ---- L2 bike ride (tip): real bike.glb + seated Flora/Leo; Bara runs beside (NOT in basket) ----
 const L2BIKE={ready:false,_loading:null,root:null,nodes:{},state:{spin:0,pedal:0},helm:null,baraOn:false,seatY:.72,bones:null,_rest:null,_seated:false,pose:'idle'};
 const L2_HELM_OFF={flora:[0,.10,.01],leo:[0,.085,.025],bara:[0,.06,0]};
-const L2_BONE_NAMES=['Hips','Spine','Spine1','Spine2','LeftUpLeg','LeftLeg','LeftFoot','RightUpLeg','RightLeg','RightFoot'];
+const L2_BONE_NAMES=['Hips','Spine','Spine1','Spine2','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase'];
 function l2BikeNodes(root){const n={};['bike','frame','wheel_F','wheel_R','pedal_L','pedal_R','handlebar','seat','basket_anchor','basket'].forEach(nm=>{let f=null;root.traverse(o=>{if(!f&&o.name===nm)f=o;});n[nm]=f;});return n;}
 function l2CacheBones(){if(!F3.m)return;const bones={},rest={};F3.m.traverse(o=>{if(!o.isBone)return;for(const n of L2_BONE_NAMES){if(o.name===n||o.name==='mixamorig'+n||o.name==='mixamorig:'+n){bones[n]=o;rest[n]={x:o.rotation.x,y:o.rotation.y,z:o.rotation.z};}}});L2BIKE.bones=bones;L2BIKE._rest=rest;}
 function l2BikeStep(dt,spd){if(!L2BIKE.ready)return;const v=Math.max(0,spd==null?(S&&S.speed)||0:spd);const w=v/0.28;L2BIKE.state.spin+=w*dt;L2BIKE.state.pedal+=w*dt*1.55;
@@ -799,12 +799,14 @@ function l2AttachHelm(){if(!L2BIKE.ready||!F3.ready||!F3.m)return;const who=hero
  if(typeof BIN!=='undefined'&&BIN[key]){const L=new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder);if(THREE.MeshoptDecoder&&L.setMeshoptDecoder)L.setMeshoptDecoder(THREE.MeshoptDecoder);
   L.parse(BIN[key].slice(0),'',g=>put(g.scene),e=>console.warn('[L2] helm',e));return;}
  if(TEX[key]&&!L2BIKE['_h_'+key]){L2BIKE['_h_'+key]=fetch(TEX[key]).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN[key]=b;L2BIKE['_h_'+key]=null;l2AttachHelm();}).catch(e=>{console.warn('[L2] helm fetch',e);L2BIKE['_h_'+key]=null;});}}
+/* r8: holder pitches about the feet; offset so the HIPS pivot on the saddle instead of sliding forward off it */
+function l2HipPivot(rx){const h=L2BIKE._hipY||0,z=L2BIKE._hipZ||0,c=Math.cos(rx),sn=Math.sin(rx);return [h*(1-c)+z*sn,z*(1-c)-h*sn];}
 function l2SeatRider(force){if(!L2BIKE.ready||!F3.ready||!F3.holder)return;
  if(L2BIKE._seated&&!force)return;
  F3.holder.position.set(0,0,0);F3.holder.rotation.x=0;F3.holder.rotation.z=0;F3.holder.updateMatrixWorld(true);
- l2CacheBones();let hipY=0.83;if(L2BIKE.bones&&L2BIKE.bones.Hips){const wp=new THREE.Vector3();L2BIKE.bones.Hips.getWorldPosition(wp);hipY=F3.holder.worldToLocal(wp.clone()).y;}
+ l2CacheBones();let hipY=0.83,hipZ=0;if(L2BIKE.bones&&L2BIKE.bones.Hips){const wp=new THREE.Vector3();L2BIKE.bones.Hips.getWorldPosition(wp);const hl=F3.holder.worldToLocal(wp.clone());hipY=hl.y;hipZ=hl.z;}
  const seat=L2BIKE.nodes.seat;let sx=0,sy=L2BIKE.seatY,sz=0;if(seat){const wp=new THREE.Vector3();seat.getWorldPosition(wp);const lp=flora.worldToLocal(wp.clone());sx=lp.x;sy=lp.y;sz=lp.z;}
- F3.holder.position.set(sx,sy-hipY+0.05,sz+0.03);F3.holder.rotation.x=-0.16;F3.holder.rotation.z=0;L2BIKE._hipY=hipY;L2BIKE._sy0=F3.holder.position.y;L2BIKE._sz0=F3.holder.position.z;L2BIKE._seated=true;
+ F3.holder.position.set(sx,sy-hipY+0.05,sz-hipZ+0.03);L2BIKE._hipY=hipY;L2BIKE._hipZ=hipZ;L2BIKE._sy0=F3.holder.position.y;L2BIKE._sz0=F3.holder.position.z;{const r0=-0.16,d=l2HipPivot(r0);F3.holder.position.y+=d[0];F3.holder.position.z+=d[1];}F3.holder.rotation.x=-0.16;F3.holder.rotation.z=0;L2BIKE._seated=true;
  if(F3.run)F3.run.weight=0;if(F3.idle)F3.idle.weight=1;if(F3.jump)F3.jump.weight=0;
  if(flora.userData.sh)flora.userData.sh.scale.set(1.4,1,1.8);}
 function l2PrepBasket(){const anc=L2BIKE.nodes.basket_anchor;if(anc){anc.scale.set(1,1,1);anc.visible=true;
@@ -818,61 +820,45 @@ function l2BaraToBasket(on){/* disabled — keep baraOn=false; follow-Bara stays
  if(bara){bara.visible=true;bara.scale.setScalar(1);if(bara.userData&&bara.userData.c)bara.userData.c.visible=!B3.ready;if(bara.userData&&bara.userData.sh)bara.userData.sh.visible=true;}}
 function l2ShowBesideBara(){L2BIKE.baraOn=false;if(bara){bara.visible=true;if(bara.userData&&bara.userData.sh)bara.userData.sh.visible=true;
   if(B3.ready){if(bara.userData&&bara.userData.c)bara.userData.c.visible=false;}else if(bara.userData&&bara.userData.c)bara.userData.c.visible=true;}}
-/* Pedal legs: Mixamo sagittal (UpLeg/Leg/Foot .X). Prefer soft IK toward pedal world pos; fallback sinusoid. No side-kick Z. */
-function l2AimLegToPedal(side,ped){const B=L2BIKE.bones;if(!B||!ped)return false;
- const up=B[side+'UpLeg'],leg=B[side+'Leg'],foot=B[side+'Foot'];if(!up||!leg)return false;
- const hipW=new THREE.Vector3(),pedW=new THREE.Vector3(),kneeW=new THREE.Vector3();
- up.getWorldPosition(hipW);ped.getWorldPosition(pedW);leg.getWorldPosition(kneeW);
- /* rider faces -Z; bike yawed PI so pedals spin in world YZ. Use local hip space via UpLeg parent. */
- const parent=up.parent;if(!parent)return false;parent.updateMatrixWorld(true);
- const inv=new THREE.Matrix4().copy(parent.matrixWorld).invert();
- const hp=hipW.clone().applyMatrix4(inv),pp=pedW.clone().applyMatrix4(inv);
- const dx=pp.x-hp.x,dy=pp.y-hp.y,dz=pp.z-hp.z;
- /* sagittal plane = YZ in Mixamo (X = left/right). Reach in YZ. */
- const reach=Math.sqrt(dy*dy+dz*dz);if(reach<0.05)return false;
- const thighLen=0.38,shinLen=0.40;const L=Math.min(thighLen+shinLen-0.02,Math.max(0.12,reach));
- const cosK=(thighLen*thighLen+shinLen*shinLen-L*L)/(2*thighLen*shinLen);
- const kneeAng=Math.PI-Math.acos(THREE.MathUtils.clamp(cosK,-1,1)); /* flexion amount */
- /* hip pitch: angle of hip→pedal in YZ; Mixamo UpLeg.X positive = forward flexion when seated */
- const ang=Math.atan2(-dz, -dy); /* tweak: seated bike, pedal below-forward */
- const hipX=THREE.MathUtils.clamp(0.35+ang*0.55,0.15,1.05);
- const legX=THREE.MathUtils.clamp(kneeAng*0.95,0.35,1.55);
- const footX=THREE.MathUtils.clamp(-0.15-(hipX-0.5)*0.25,-0.45,0.05);
- const zw=side==='Left'?0.04:-0.04;
- up.rotation.set(hipX,0,zw);leg.rotation.set(legX,0,0);if(foot)foot.rotation.set(footX,0,0);
+/* Pedal legs (r8): world-space two-bone IK from the cached rest quaternion.
+   Root cause of "no legs": Mixamo UpLeg rest has rot.z≈±PI (legs point down); the old absolute rotation.set(x,0,±.04) dropped that flip so thighs pointed UP into the torso.
+   Now: restore rest quat, then aim thigh→knee, shin→ankle on a virtual crank circle (bike-local, sagittal only → no side-kick). */
+const _l2v=[0,1,2,3,4,5,6].map(()=>new THREE.Vector3()),_l2q=[0,1,2].map(()=>new THREE.Quaternion());
+function l2AimBone(bone,childW,targetW){const bw=bone.getWorldPosition(_l2v[5]);const d0=_l2v[6].copy(childW).sub(bw);const d1=targetW.clone().sub(bw);if(d0.lengthSq()<1e-8||d1.lengthSq()<1e-8)return;d0.normalize();d1.normalize();
+ const q=_l2q[0].setFromUnitVectors(d0,d1);const wq=bone.getWorldQuaternion(_l2q[1]);const nw=q.clone().multiply(wq);const pq=bone.parent.getWorldQuaternion(_l2q[2]).invert();bone.quaternion.copy(pq.multiply(nw));bone.updateMatrixWorld(true);}
+function l2LegRest(b){if(!b)return;if(!b.userData.l2q)b.userData.l2q=b.quaternion.clone();b.quaternion.copy(b.userData.l2q);}
+function l2LegIK(side,ph){const B=L2BIKE.bones;if(!B)return false;const up=B[side+'UpLeg'],leg=B[side+'Leg'],foot=B[side+'Foot'],toe=B[side+'ToeBase'];if(!up||!leg||!foot)return false;
+ [up,leg,foot,toe].forEach(l2LegRest);up.updateMatrixWorld(true);
+ const ped=L2BIKE.nodes.pedal_L||L2BIKE.nodes.pedal_R;const bk=ped&&ped.parent;if(!bk)return false;
+ /* bike-local: +Z = rider forward (bike yawed PI), +X = rider LEFT. crank centre between the two pedal pivots */
+ const pl=L2BIKE.nodes.pedal_L,pr=L2BIKE.nodes.pedal_R;const cy=(pl&&pr)?(pl.position.y+pr.position.y)/2:.22,cz=(pl&&pr)?(pl.position.z+pr.position.z)/2:0;
+ const r=.085,sx=side==='Left'?1:-1;
+ const T=bk.localToWorld(_l2v[0].set(sx*.105,cy+r*Math.cos(ph)+.055,cz+r*Math.sin(ph)));
+ const H=up.getWorldPosition(_l2v[1]),Kc=leg.getWorldPosition(_l2v[2]).clone(),Fc=foot.getWorldPosition(_l2v[3]).clone();
+ const a=H.distanceTo(Kc),b=Kc.distanceTo(Fc);if(a<1e-4||b<1e-4)return false;
+ const d=T.clone().sub(H);let dist=d.length();if(dist<1e-4)return false;const u=d.divideScalar(dist);dist=THREE.MathUtils.clamp(dist,Math.abs(a-b)+.02,(a+b)*.995);
+ const bq=bk.getWorldQuaternion(new THREE.Quaternion());const pole=new THREE.Vector3(0,.3,1).applyQuaternion(bq);
+ const v=pole.sub(u.clone().multiplyScalar(u.dot(pole)));if(v.lengthSq()<1e-8)return false;v.normalize();
+ const x=(a*a-b*b+dist*dist)/(2*dist),h=Math.sqrt(Math.max(0,a*a-x*x));
+ const K=H.clone().addScaledVector(u,x).addScaledVector(v,h),A=H.clone().addScaledVector(u,dist);
+ l2AimBone(up,Kc,K);
+ l2AimBone(leg,foot.getWorldPosition(new THREE.Vector3()),A);
+ if(toe){const fp=foot.getWorldPosition(new THREE.Vector3());const tw=toe.getWorldPosition(new THREE.Vector3());const dir=new THREE.Vector3(0,-.22,1).normalize().applyQuaternion(bq);l2AimBone(foot,tw,fp.addScaledVector(dir,fp.distanceTo(tw)));}
  return true;}
+function l2AimLegToPedal(side){return l2LegIK(side,(L2BIKE.state.pedal||0)+(side==='Left'?0:Math.PI));}
 function l2ApplyLegPose(pose){const B=L2BIKE.bones;if(!B)return;
  const set=(n,x,y,z)=>{const b=B[n];if(!b)return;b.rotation.set(x,y||0,z||0);};
- const zw=0.04;
- if(pose==='pedal'){
-  const okL=l2AimLegToPedal('Left',L2BIKE.nodes.pedal_L);
-  const okR=l2AimLegToPedal('Right',L2BIKE.nodes.pedal_R);
-  if(!(okL&&okR)){
-   /* fallback: smaller crank-plane sinusoid (was 0.48 — looked like side/wild kick) */
-   const ph=L2BIKE.state.pedal||0;const Ls=Math.sin(ph),Rr=Math.sin(ph+Math.PI);
-   set('LeftUpLeg',0.42+Ls*0.28,0,zw);set('LeftLeg',0.95-Ls*0.32,0,0);set('LeftFoot',-0.18-Ls*0.12,0,0);
-   set('RightUpLeg',0.42+Rr*0.28,0,-zw);set('RightLeg',0.95-Rr*0.32,0,0);set('RightFoot',-0.18-Rr*0.12,0,0);
-  }
-  const ph=L2BIKE.state.pedal||0;
-  set('Hips',0.05+Math.sin(ph*2)*0.015,0,0);set('Spine',0.10,0,0);set('Spine1',0.06,0,0);set('Spine2',0.03,0,0);
- }else if(pose==='hop'){
-  set('LeftUpLeg',0.70,0,zw);set('LeftLeg',1.20,0,0);set('LeftFoot',-0.30,0,0);
-  set('RightUpLeg',0.70,0,-zw);set('RightLeg',1.20,0,0);set('RightFoot',-0.30,0,0);
-  set('Hips',-0.04,0,0);set('Spine',0.18,0,0);set('Spine1',0.12,0,0);set('Spine2',0.06,0,0);
- }else if(pose==='duck'){
-  set('LeftUpLeg',0.58,0,zw);set('LeftLeg',1.05,0,0);set('LeftFoot',-0.22,0,0);
-  set('RightUpLeg',0.58,0,-zw);set('RightLeg',1.05,0,0);set('RightFoot',-0.22,0,0);
-  set('Hips',0.18,0,0);set('Spine',0.22,0,0);set('Spine1',0.16,0,0);set('Spine2',0.08,0,0);
- }else if(pose==='brake'){
-  /* legs locked on pedals; only mild torso lean-back — never fling UpLeg Z */
-  set('LeftUpLeg',0.48,0,zw);set('LeftLeg',0.95,0,0);set('LeftFoot',-0.18,0,0);
-  set('RightUpLeg',0.48,0,-zw);set('RightLeg',0.95,0,0);set('RightFoot',-0.18,0,0);
-  set('Hips',0.10,0,0);set('Spine',0.18,0,0);set('Spine1',0.12,0,0);set('Spine2',0.06,0,0);
- }else{
-  set('LeftUpLeg',0.48,0,zw);set('LeftLeg',0.95,0,0);set('LeftFoot',-0.18,0,0);
-  set('RightUpLeg',0.48,0,-zw);set('RightLeg',0.95,0,0);set('RightFoot',-0.18,0,0);
-  set('Hips',0.05,0,0);set('Spine',0.10,0,0);set('Spine1',0.06,0,0);set('Spine2',0.03,0,0);
- }}
+ const ph=L2BIKE.state.pedal||0;
+ /* torso only here (unchanged values); legs always IK'd onto the crank, so brake/hop/duck keep feet on pedals */
+ if(pose==='pedal'){set('Hips',0.05+Math.sin(ph*2)*0.015,0,0);set('Spine',0.10,0,0);set('Spine1',0.06,0,0);set('Spine2',0.03,0,0);}
+ else if(pose==='hop'){set('Hips',-0.04,0,0);set('Spine',0.18,0,0);set('Spine1',0.12,0,0);set('Spine2',0.06,0,0);}
+ else if(pose==='duck'){set('Hips',0.18,0,0);set('Spine',0.22,0,0);set('Spine1',0.16,0,0);set('Spine2',0.08,0,0);}
+ else if(pose==='brake'){set('Hips',0.10,0,0);set('Spine',0.18,0,0);set('Spine1',0.12,0,0);set('Spine2',0.06,0,0);}
+ else{set('Hips',0.05,0,0);set('Spine',0.10,0,0);set('Spine1',0.06,0,0);set('Spine2',0.03,0,0);}
+ if(flora)flora.updateMatrixWorld(true);
+ const okL=l2AimLegToPedal('Left'),okR=l2AimLegToPedal('Right');
+ if(!(okL&&okR)){['Left','Right'].forEach(sd=>['UpLeg','Leg','Foot','ToeBase'].forEach(n=>l2LegRest(B[sd+n])));}
+}
 function l2MountBikeFromBin(){try{if(L2BIKE.ready||typeof BIN==='undefined'||!BIN.bike)return;const L=new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder);if(THREE.MeshoptDecoder&&L.setMeshoptDecoder)L.setMeshoptDecoder(THREE.MeshoptDecoder);
  L.parse(BIN.bike.slice(0),'',g=>{const root=g.scene;root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});
   L2BIKE.nodes=l2BikeNodes(root);L2BIKE.root=root;L2BIKE.ready=true;L2BIKE._loading=null;L2BIKE._seated=false;
@@ -900,9 +886,10 @@ function l2RideFrame(dt){if(curLevel()<2){l2BikeSfxStop();return;}l2EnsureRide()
  l2BikeStep(dt,pose==='brake'?0:spd);l2BikeSfxSync(spd);
  if(F3.ready&&F3.holder){if(L2BIKE._sy0==null)L2BIKE._sy0=F3.holder.position.y;if(L2BIKE._sz0==null)L2BIKE._sz0=F3.holder.position.z;
   const bob=pose==='pedal'?Math.sin((L2BIKE.state.pedal||0))*0.028:0;let ty=L2BIKE._sy0+bob,rx=-0.18,tz=L2BIKE._sz0;
-  if(pose==='hop'){ty=L2BIKE._sy0+0.14;rx=-0.48;}
+  if(pose==='hop'){ty=L2BIKE._sy0+0.28;rx=-0.48;}/* r8: rise with bike (root hy .28) so saddle stays under her */
   else if(pose==='duck'){ty=L2BIKE._sy0-0.08;rx=-0.85;tz=L2BIKE._sz0+0.10;}
   else if(pose==='brake'){ty=L2BIKE._sy0+0.02;rx=0.14;}
+  {const d=l2HipPivot(rx);ty+=d[0];tz+=d[1];}
   F3.holder.position.y+=(ty-F3.holder.position.y)*Math.min(1,dt*14);
   F3.holder.position.z+=(tz-F3.holder.position.z)*Math.min(1,dt*12);
   F3.holder.rotation.x+=(rx-F3.holder.rotation.x)*Math.min(1,dt*12);
