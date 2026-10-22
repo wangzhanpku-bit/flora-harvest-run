@@ -784,7 +784,7 @@ function l2SpawnRoadside(){l2ClearProps();const L=FARM_WORLD.l2;if(!L)return;con
   if(z>=zLagoon)return;/* lagoon reeds placed by l2SpawnLagoonReeds when section>=3 */
   const r=(z*17+s*3)%10;if(s>0&&z<L2Q.SEC[1]+10){/* seawall: continuous stone railing on the sea side; lanterns sit on its top */if(r>=6)addBill('prop_pumpkin_lantern',L2_WALL.x,z,.55,.7,L2_WALL.h);return;}if(r<4)addBill('prop_rail_post',x,z,.55,1.55);else if(r<7)addBill('prop_seawall_stone',x+(s*.15),z,1.15,.85);else addBill('prop_pumpkin_lantern',x,z,.55,.7);
  });}
- for(let z=90;z<L2Q.SEC[1]-60;z+=140){if(L2Q.RINGS.some(r=>Math.abs(r[0]-z)<45))continue;const ln=z%2===0?0:2;addObj('lantern_pile',ln,z);}
+ /* r16: no roadside lantern_pile — uses obs_pumpkin_pile tex, reads as pumpkin piles on seawall/cedar */
  console.info('[L2] roadside props',L.props.length);}
 function l2SpawnLagoonReeds(){/* r13 美图王: after corn hidden, line Lost Lagoon with reed/grass props */const L=FARM_WORLD&&FARM_WORLD.l2;if(!L)return;
  /* remove prior reeds only */L.props=(L.props||[]).filter(p=>{if(p&&p.userData&&p.userData.lagoonReed){if(p.parent)p.parent.remove(p);return false;}return true;});
@@ -794,19 +794,18 @@ function l2SpawnLagoonReeds(){/* r13 美图王: after corn hidden, line Lost Lag
  const sizes={'prop_lagoon_reed_clump':[1.35,1.55],'prop_lagoon_reed_tall':[1.05,2.15],'prop_lagoon_grass_edge':[1.6,1.05]};
  for(let z=z0,i=0;z<z1;z+=7.5,i++){[-1,1].forEach((s,si)=>{const key=keys[(i+si)%3];const sz=sizes[key];const x=s*(side+(i%3)*.25+(si?0.15:0));add(key,x,z+((i*3+si)%5)*.4,sz[0],sz[1]);});}
  console.info('[L2] lagoon reeds',L.props.filter(p=>p.userData&&p.userData.lagoonReed).length);}
-/* ==== Drop8 L2 density (创意张 locked 2026-10-22) — tip only ====
- Seawall 0:00–1:30: 1 obs / 2.5s, hard/soft mix, occasional short boost
- Cedar 1:30–2:50: base ×0.75 uphill; 1 obs / 3s; bias fallen_branch/cone; duck low branches
- Lagoon 2:50–end: base ×1.25 downhill; 1 obs / 2s; denser animal waves
- Animals: seawall 2 / cedar 2 / lagoon 3 waves; 1/wave; L|R cross; 0.5s visible before collide
+/* ==== Drop8 L2 density tighten r16 / 市场赵 FAIL — tip only ====
+ 创意张 locked cadence: Seawall 1/2.5s · Cedar 1/3s · Lagoon 1/2s (every unchanged).
+ r16: no ≥5s empty gaps (l2FreeZ null → nudge/fill, never skip); kill obs_pumpkin_pile + roadside lantern_pile;
+ animal WARN 0.9s + more visible approach silhouette. Waves lagoon 3→4 for late stretch.
  Small×3→slow; Large×3→stun ~1s; stunned+hard→GAME OVER. Speed via pedal/chain rate only. */
 const L2DEN={
  BASE:13,
  /* time windows (s of ride) → section via L2Q.SEC z */
  SEAWALL:{t0:0,t1:90,every:2.5,spdMul:1,waves:2},
  CEDAR:{t0:90,t1:170,every:3,spdMul:0.75,waves:2},
- LAGOON:{t0:170,t1:1e9,every:2,spdMul:1.25,waves:3},
- WARN:0.5,/* seconds animal visible before collision */
+ LAGOON:{t0:170,t1:1e9,every:2,spdMul:1.25,waves:4},
+ WARN:0.9,/* seconds animal visible before collision (r16: was 0.5, 市场赵 not obvious) */
  STUN:1,/* large animal stun seconds */
  BURST_MUL:1.55,BURST_DUR:2.2,/* lagoon downhill accel bursts */
  SMALL:['animal_squirrel_dash','animal_bird_dash','animal_raccoon_kit_dash'],
@@ -829,7 +828,7 @@ function l2QuizBlocked(z){/* tight clearances so cedar forks don't wipe the dens
 function l2FreeZ(z,span){span=span||80;if(!l2QuizBlocked(z))return z;for(let d=6;d<=span;d+=6){if(!l2QuizBlocked(z+d))return z+d;if(!l2QuizBlocked(z-d))return z-d;}return null;}
 function l2PickObs(seg,i){/* hard/soft mix; cedar biases branch+cone; duck = fallen_branch */
  const soft=['obs_puddle','obs_leaf_pile','obs_bird_slip','obs_candy_spill'];
- const hard=['obs_lantern_cluster','obs_cone_barrier','obs_pumpkin_pile','obs_park_bench','obs_rail_gap','obs_driftwood','obs_fallen_log','obs_wet_root'];
+ const hard=['obs_lantern_cluster','obs_cone_barrier','obs_park_bench','obs_rail_gap','obs_driftwood','obs_fallen_log','obs_wet_root'];/* r16: no obs_pumpkin_pile */
  const duck=['obs_fallen_branch'];
  let pool;
  if(seg==='cedar'){/* bias fallen_branch / cone */pool=i%5===0?duck:i%5===1?['obs_cone_barrier']:i%5===2?soft:hard;}
@@ -843,16 +842,27 @@ function l2SpawnDensity(){/* called from buildLevel for L2 */if(curLevel()<2)ret
  const zSea0=40,zSea1=L2Q.SEC[1]-20,zCed0=L2Q.SEC[1]+30,zCed1=L2Q.SEC[2]-25,zLag0=L2Q.SEC[2]+25,zLag1=L2Q.FINAL-70;
  const placeSeg=(seg,z0,z1)=>{
   const cfg=l2DenCfg(seg);const spd=L2DEN.BASE*cfg.spdMul;const dz=spd*cfg.every;let i=0;
-  for(let z=z0;z<z1;z+=dz){let zz=z+(((i*17)%7)-3);zz=l2FreeZ(zz,56);if(zz==null)continue;z=Math.max(z,zz);/* keep cadence */
-   const ln=(i*2+seg.length)%3;const pick=l2PickObs(seg,i);
+  const placedZ=[];
+  const placeOne=(zz,ii)=>{const ln=(ii*2+seg.length)%3;const pick=l2PickObs(seg,ii);
    addObj('l2obs',ln,zz,{key:pick.key,kind:pick.kind,sz:pick.sz,y0:pick.kind==='soft'?0.08:undefined});
-   L2ST.den.obs++;i++;
-   /* seawall: occasional short boost pickup between obs */
-   if(seg==='seawall'&&i%5===0){const bz=l2FreeZ(zz+dz*0.45,40);if(bz!=null){addObj('item',(ln+1)%3,bz,{kind:'orange'});L2ST.den.boost++;}}
+   L2ST.den.obs++;placedZ.push(zz);};
+  /* r16: never skip on l2FreeZ null — widen span then nudge ±12/24/36; prefer place over ≥5s hole */
+  const forceFree=(zWant)=>{let zz=l2FreeZ(zWant,56);if(zz!=null)return zz;zz=l2FreeZ(zWant,120);if(zz!=null)return zz;
+   for(const d of[12,24,36,-12,-24,-36,48,-48]){if(!l2QuizBlocked(zWant+d))return zWant+d;}return zWant;};
+  for(let z=z0;z<z1;z+=dz){let zz=z+(((i*17)%7)-3);zz=forceFree(zz);z=Math.max(z,zz);
+   placeOne(zz,i);i++;
+   if(seg==='seawall'&&i%5===0){const bz=l2FreeZ(zz+dz*0.45,40);if(bz!=null){addObj('item',(i*2+seg.length)%3,bz,{kind:'orange'});L2ST.den.boost++;}}
   }
-  /* animal waves evenly in segment — always place cfg.waves (nudge off quiz) */
-  const n=cfg.waves|0;for(let w=0;w<n;w++){let z=z0+(z1-z0)*((w+0.55)/(n+0.2));z=l2FreeZ(z,90);if(z==null)continue;
-   const big=seg==='lagoon'? (w%2===0) : (w%2===1);/* lagoon denser large */
+  /* second pass: fill any ≥5s gap (r16 市场赵 empty stretches) */
+  const maxGapZ=spd*5;placedZ.sort((a,b)=>a-b);
+  const zFirst=placedZ.length?placedZ[0]:null,zLast=placedZ.length?placedZ[placedZ.length-1]:null;
+  for(let k=0;k<placedZ.length-1;k++){const gap=placedZ[k+1]-placedZ[k];if(gap<maxGapZ)continue;
+   const mid=placedZ[k]+gap*0.5;const zz=forceFree(mid);if(Math.abs(zz-placedZ[k])<dz*0.35||Math.abs(zz-placedZ[k+1])<dz*0.35)continue;
+   placeOne(zz,i);i++;}
+  if(zFirst!=null&&zFirst-z0>=maxGapZ){placeOne(forceFree(z0+dz*0.5),i);i++;}
+  if(zLast!=null&&z1-zLast>=maxGapZ){placeOne(forceFree(z1-dz*0.5),i);i++;}
+  const n=cfg.waves|0;for(let w=0;w<n;w++){let z=z0+(z1-z0)*((w+0.55)/(n+0.2));z=forceFree(z);
+   const big=seg==='lagoon'? (w%2===0) : (w%2===1);
    const pool=big?L2DEN.LARGE:L2DEN.SMALL;const key=pool[w%pool.length];
    const side=w%2===0?-1:1;const sz=big?[1.35,1.2]:[1.05,0.95];
    addObj('l2dash',1,z,{key,side,sz,big:!!big,armed:false,age:0});L2ST.den.waves++;L2ST.dashes.push(objs[objs.length-1]);}
@@ -866,13 +876,17 @@ function l2DashStep(dt,sp){/* cross path; arm after WARN visible */const lead=(s
   const rem=o.z-S.z;if(rem>lead+8)continue;/* far ahead */
   if(rem<-2){o.done=true;if(o.m.parent)o.m.parent.remove(o.m);continue;}
   o.age=(o.age||0)+dt;
-  /* slide from roadside into lane over WARN seconds */
-  const t=Math.min(1,Math.max(0,(lead+4-rem)/(lead+4)));
+  /* slide from roadside into lane over WARN seconds; r16: start farther + scale/opacity pulse so 0.9s warn is obvious */
   const targetX=(S.lane-1)*LANE;
-  const x0=o.x0!=null?o.x0:(o.side||1)*(LANE*2.6+1.2);
+  const x0=o.x0!=null?o.x0:(o.side||1)*(LANE*3.1+1.4);/* farther roadside silhouette */
+  if(o.x0==null)o.x0=x0;
   o.m.position.x=x0+(targetX-x0)*Math.min(1,Math.max(0,(lead-rem+0.15)/Math.max(0.2,lead)));
   o.m.position.z=-o.z;o.m.lookAt(cam.position.x,o.m.position.y,cam.position.z);
-  if(!o.armed&&rem<=lead+0.05){o.armed=true;/* ~0.5s visible before collision */if(!o._spawnSfx){o._spawnSfx=1;try{play(o.key?('sfx_'+o.key):'sfx_animal_squirrel_dash');}catch(e){}}}
+  /* pulse scale ~1.0→1.28 while approaching / not yet past; full opacity */
+  const warnT=Math.min(1,Math.max(0,(lead+2-rem)/(lead+2)));
+  const pulse=1+0.28*Math.sin(o.age*10)*warnT+0.12*warnT;
+  try{o.m.scale.set(pulse,pulse,1);if(o.m.material){o.m.material.transparent=true;o.m.material.opacity=1;o.m.material.depthWrite=true;}}catch(e){}
+  if(!o.armed&&rem<=lead+0.05){o.armed=true;if(!o._spawnSfx){o._spawnSfx=1;try{play(o.key?('sfx_'+o.key):'sfx_animal_squirrel_dash');}catch(e){}}}
  }}
 function hitL2Dash(o){if(S.shield){shieldPop(o);return;}
  if(o.big){/* large → stun ~1s; hard while stunned = GO */S.stunT=Math.max(S.stunT||0,L2DEN.STUN);S.dizzy=Math.max(S.dizzy||0,L2DEN.STUN+0.35);S.slowT=Math.max(S.slowT||0,0.6);play('sfx_animal_hit_stun');
