@@ -1,0 +1,4962 @@
+{
+ "grade": 8,
+ "version": 1,
+ "curriculum": "BC Grade 8 Math, Science/Geography, Reading + farm/Stanley themes + capybara",
+ "fields": "same format as questions_v6.json; {name}=player; corn_maze ≤3 choices + sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g8_001",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "Up a tree",
+    "In the desert",
+    "In the water",
+    "In the snow"
+   ],
+   "choices_zh": [
+    "树上",
+    "沙漠里",
+    "在水里",
+    "雪地里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。"
+  },
+  {
+   "id": "g8_002",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Insects",
+    "Grass and plants",
+    "Candy",
+    "Fish"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "草和植物",
+    "糖果",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。"
+  },
+  {
+   "id": "g8_003",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "sign_en": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "sign_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g8_004",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Australia",
+    "South America",
+    "The North Pole"
+   ],
+   "choices_zh": [
+    "澳大利亚",
+    "南美洲",
+    "北极"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "Australia",
+    "South America",
+    "The North Pole"
+   ],
+   "sign_zh": [
+    "澳大利亚",
+    "南美洲",
+    "北极"
+   ]
+  },
+  {
+   "id": "g8_005",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Yes",
+    "Only in winter",
+    "No"
+   ],
+   "choices_zh": [
+    "有",
+    "只在冬天有",
+    "没有"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。"
+  },
+  {
+   "id": "g8_006",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ],
+   "answer": 2,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "sign_en": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "sign_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ]
+  },
+  {
+   "id": "g8_007",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Herd",
+    "School",
+    "Flock"
+   ],
+   "choices_zh": [
+    "一群",
+    "鱼群",
+    "鸟群"
+   ],
+   "answer": 0,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "sign_en": [
+    "Herd",
+    "School",
+    "Flock"
+   ],
+   "sign_zh": [
+    "一群",
+    "鱼群",
+    "鸟群"
+   ]
+  },
+  {
+   "id": "g8_008",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Beaver",
+    "Raccoon",
+    "Goose",
+    "Capybara"
+   ],
+   "choices_zh": [
+    "河狸",
+    "浣熊",
+    "鹅",
+    "水豚"
+   ],
+   "answer": 3,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。"
+  },
+  {
+   "id": "g8_009",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Lion roars",
+    "Only hisses",
+    "Cute squeaks / clicks"
+   ],
+   "choices_zh": [
+    "狮子吼",
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声"
+   ],
+   "answer": 2,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "sign_en": [
+    "Lion roars",
+    "Only hisses",
+    "Cute squeaks / clicks"
+   ],
+   "sign_zh": [
+    "狮子吼",
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声"
+   ]
+  },
+  {
+   "id": "g8_010",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Has no flat paddle tail",
+    "Is a bird",
+    "Lives only on ice",
+    "Eats only fish"
+   ],
+   "choices_zh": [
+    "没有扁平的桨状尾巴",
+    "是鸟",
+    "只住在冰上",
+    "只吃鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。"
+  },
+  {
+   "id": "g8_011",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "All matter is made of tiny particles called…",
+   "q_zh": "所有物质都由微小粒子构成，叫做……",
+   "choices": [
+    "Only sound waves",
+    "Atoms (and molecules)",
+    "Only clouds"
+   ],
+   "choices_zh": [
+    "只有声波",
+    "原子（和分子）",
+    "只有云"
+   ],
+   "answer": 1,
+   "explain_en": "Atoms build matter.",
+   "explain_zh": "原子构成物质。",
+   "sign_en": [
+    "Only sound waves",
+    "Atoms (and molecules)",
+    "Only clouds"
+   ],
+   "sign_zh": [
+    "只有声波",
+    "原子（和分子）",
+    "只有云"
+   ]
+  },
+  {
+   "id": "g8_012",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Burning fossil fuels adds extra… to the air",
+   "q_zh": "燃烧化石燃料会向空气中额外增加……",
+   "choices": [
+    "Carbon dioxide (CO₂)",
+    "Silence",
+    "Pure oxygen only",
+    "Helium balloons only"
+   ],
+   "choices_zh": [
+    "二氧化碳（CO₂）",
+    "寂静",
+    "只有纯氧",
+    "只有氦气球"
+   ],
+   "answer": 0,
+   "explain_en": "CO₂ is a greenhouse gas.",
+   "explain_zh": "二氧化碳是温室气体。"
+  },
+  {
+   "id": "g8_013",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Climate differs from weather because climate is…",
+   "q_zh": "气候和天气不同，因为气候是……",
+   "choices": [
+    "Long-term average patterns",
+    "Only today's rain",
+    "One Halloween night",
+    "A single gust"
+   ],
+   "choices_zh": [
+    "长期平均模式",
+    "只是今天的雨",
+    "一个万圣夜",
+    "一阵风"
+   ],
+   "answer": 0,
+   "explain_en": "Weather short-term; climate long-term.",
+   "explain_zh": "天气短时，气候长期。"
+  },
+  {
+   "id": "g8_014",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Vancouver sits beside which ocean?",
+   "q_zh": "温哥华濒临哪个大洋？",
+   "choices": [
+    "Atlantic only",
+    "A desert sea",
+    "Pacific Ocean",
+    "Indian only"
+   ],
+   "choices_zh": [
+    "只有大西洋",
+    "沙漠海",
+    "太平洋",
+    "只有印度洋"
+   ],
+   "answer": 2,
+   "explain_en": "Pacific coast of Canada.",
+   "explain_zh": "加拿大太平洋海岸。"
+  },
+  {
+   "id": "g8_015",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A triangle's interior angles sum to…",
+   "q_zh": "三角形内角和是……",
+   "choices": [
+    "360°",
+    "180°",
+    "45°",
+    "90°"
+   ],
+   "choices_zh": [
+    "360°",
+    "180°",
+    "45°",
+    "90°"
+   ],
+   "answer": 1,
+   "explain_en": "Always 180° in Euclidean geometry.",
+   "explain_zh": "欧氏几何中为 180°。"
+  },
+  {
+   "id": "g8_016",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Molecules are…",
+   "q_zh": "分子是……",
+   "choices": [
+    "Groups of atoms bonded together",
+    "Only sound",
+    "Only empty space named candy"
+   ],
+   "choices_zh": [
+    "原子结合成的集体",
+    "只有声音",
+    "只是叫糖果的真空"
+   ],
+   "answer": 0,
+   "explain_en": "Atoms bond into molecules.",
+   "explain_zh": "原子结合成分子。",
+   "sign_en": [
+    "Groups of atoms bonded together",
+    "Only sound",
+    "Only empty space named candy"
+   ],
+   "sign_zh": [
+    "原子结合成的集体",
+    "只有声音",
+    "只是叫糖果的真空"
+   ]
+  },
+  {
+   "id": "g8_017",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"The paragraph argues helmets save lives and cites crash data.\" — The main idea is…",
+   "q_zh": "这段论证头盔能救命并引用数据。主旨是……",
+   "choices": [
+    "Helmets improve safety",
+    "Geese sing opera",
+    "Pumpkins are orange"
+   ],
+   "choices_zh": [
+    "头盔提高安全性",
+    "鹅唱歌剧",
+    "南瓜是橙色"
+   ],
+   "answer": 0,
+   "explain_en": "Main idea = helmets save lives.",
+   "explain_zh": "主旨是头盔救命。",
+   "sign_en": [
+    "Helmets improve safety",
+    "Geese sing opera",
+    "Pumpkins are orange"
+   ],
+   "sign_zh": [
+    "头盔提高安全性",
+    "鹅唱歌剧",
+    "南瓜是橙色"
+   ]
+  },
+  {
+   "id": "g8_018",
+   "section": "pumpkin_field",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"First the author describes the risk; then she gives the solution.\" — This structure is…",
+   "q_zh": "作者先写风险，再给方案。这种结构是……",
+   "choices": [
+    "Only a grocery list",
+    "A sports score only",
+    "Problem then solution",
+    "A silent film"
+   ],
+   "choices_zh": [
+    "只是购物清单",
+    "只有比分",
+    "先问题后解决",
+    "默片"
+   ],
+   "answer": 2,
+   "explain_en": "Problem-solution organization.",
+   "explain_zh": "问题-解决结构。"
+  },
+  {
+   "id": "g8_019",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Flamingo",
+    "Penguin",
+    "Ostrich",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "火烈鸟",
+    "企鹅",
+    "鸵鸟",
+    "加拿大鹅"
+   ],
+   "answer": 3,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。"
+  },
+  {
+   "id": "g8_020",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At noon",
+    "Only in winter",
+    "At night"
+   ],
+   "choices_zh": [
+    "中午",
+    "只在冬天",
+    "晚上"
+   ],
+   "answer": 2,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "At noon",
+    "Only in winter",
+    "At night"
+   ],
+   "sign_zh": [
+    "中午",
+    "只在冬天",
+    "晚上"
+   ]
+  },
+  {
+   "id": "g8_021",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "choices_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ],
+   "answer": 2,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "sign_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ]
+  },
+  {
+   "id": "g8_022",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Mammals",
+    "Birds",
+    "Insects",
+    "Fish"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鸟",
+    "昆虫",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。"
+  },
+  {
+   "id": "g8_023",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Penguin",
+    "Ostrich"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "鸵鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "sign_en": [
+    "Great blue heron",
+    "Penguin",
+    "Ostrich"
+   ],
+   "sign_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "鸵鸟"
+   ]
+  },
+  {
+   "id": "g8_024",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Baobab",
+    "Cactus",
+    "Western red cedar",
+    "Palm tree"
+   ],
+   "choices_zh": [
+    "猴面包树",
+    "仙人掌",
+    "西部红雪松",
+    "棕榈树"
+   ],
+   "answer": 2,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。"
+  },
+  {
+   "id": "g8_025",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Hibernate",
+    "Lay eggs / spawn",
+    "Learn to fly"
+   ],
+   "choices_zh": [
+    "冬眠",
+    "产卵",
+    "学飞"
+   ],
+   "answer": 1,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "sign_en": [
+    "Hibernate",
+    "Lay eggs / spawn",
+    "Learn to fly"
+   ],
+   "sign_zh": [
+    "冬眠",
+    "产卵",
+    "学飞"
+   ]
+  },
+  {
+   "id": "g8_026",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "45°",
+    "270°",
+    "720°",
+    "90°"
+   ],
+   "choices_zh": [
+    "45°",
+    "大约 270°",
+    "720°",
+    "90°"
+   ],
+   "answer": 1,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。"
+  },
+  {
+   "id": "g8_027",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Earthquakes only",
+    "The Moon's gravity pulls the tides",
+    "Wind turbines",
+    "Street lights"
+   ],
+   "choices_zh": [
+    "只因为地震",
+    "月亮引力拉动潮汐",
+    "风力发电机",
+    "路灯"
+   ],
+   "answer": 1,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。"
+  },
+  {
+   "id": "g8_028",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Decomposers (fungi, insects, microbes)",
+    "Sunscreen",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "分解者（真菌、昆虫、微生物）",
+    "防晒霜",
+    "磁铁"
+   ],
+   "answer": 0,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "sign_en": [
+    "Decomposers (fungi, insects, microbes)",
+    "Sunscreen",
+    "Magnets"
+   ],
+   "sign_zh": [
+    "分解者（真菌、昆虫、微生物）",
+    "防晒霜",
+    "磁铁"
+   ]
+  },
+  {
+   "id": "g8_029",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Birds",
+    "Fish",
+    "Marine mammals"
+   ],
+   "choices_zh": [
+    "鸟",
+    "鱼",
+    "海洋哺乳动物"
+   ],
+   "answer": 2,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "sign_en": [
+    "Birds",
+    "Fish",
+    "Marine mammals"
+   ],
+   "sign_zh": [
+    "鸟",
+    "鱼",
+    "海洋哺乳动物"
+   ]
+  },
+  {
+   "id": "g8_030",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Laying swan eggs",
+    "Building dams and lodges with wood",
+    "Flying south"
+   ],
+   "choices_zh": [
+    "下天鹅蛋",
+    "用木头筑坝和巢穴",
+    "飞去南方"
+   ],
+   "answer": 1,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "sign_en": [
+    "Laying swan eggs",
+    "Building dams and lodges with wood",
+    "Flying south"
+   ],
+   "sign_zh": [
+    "下天鹅蛋",
+    "用木头筑坝和巢穴",
+    "飞去南方"
+   ]
+  },
+  {
+   "id": "g8_031",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Reptile",
+    "Bird",
+    "Mammal",
+    "Fish"
+   ],
+   "choices_zh": [
+    "爬行动物",
+    "鸟类",
+    "哺乳动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。"
+  },
+  {
+   "id": "g8_032",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。"
+  },
+  {
+   "id": "g8_033",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Sense objects with sound echoes",
+    "Make candy",
+    "Stop rain",
+    "Taste colours"
+   ],
+   "choices_zh": [
+    "用回声感知物体",
+    "做糖果",
+    "让雨停下",
+    "品尝颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。"
+  },
+  {
+   "id": "g8_034",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "6",
+    "2",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "2",
+    "8",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。"
+  },
+  {
+   "id": "g8_035",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Stopping the Moon",
+    "Providing habitat and holding soil",
+    "Making plastic"
+   ],
+   "choices_zh": [
+    "挡住月亮",
+    "提供栖息地并固定土壤",
+    "制造塑料"
+   ],
+   "answer": 1,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Stopping the Moon",
+    "Providing habitat and holding soil",
+    "Making plastic"
+   ],
+   "sign_zh": [
+    "挡住月亮",
+    "提供栖息地并固定土壤",
+    "制造塑料"
+   ]
+  },
+  {
+   "id": "g8_036",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Sun only",
+    "Fungi / mushrooms"
+   ],
+   "choices_zh": [
+    "自行车",
+    "只有太阳",
+    "真菌/蘑菇"
+   ],
+   "answer": 2,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "sign_en": [
+    "Bicycle",
+    "Sun only",
+    "Fungi / mushrooms"
+   ],
+   "sign_zh": [
+    "自行车",
+    "只有太阳",
+    "真菌/蘑菇"
+   ]
+  },
+  {
+   "id": "g8_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1950",
+    "1888",
+    "1776",
+    "2001"
+   ],
+   "choices_zh": [
+    "1950",
+    "1888",
+    "1776",
+    "2001"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g8_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ],
+   "answer": 1,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "sign_en": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "sign_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ]
+  },
+  {
+   "id": "g8_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Much smaller",
+    "The same",
+    "Half the size",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "小很多",
+    "一样大",
+    "只有一半大",
+    "更大"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。"
+  },
+  {
+   "id": "g8_040",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca",
+    "Vikings",
+    "Maori only"
+   ],
+   "choices_zh": [
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加",
+    "维京人",
+    "只有毛利人"
+   ],
+   "answer": 0,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。"
+  },
+  {
+   "id": "g8_041",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Port Mann",
+    "Lions Gate Bridge",
+    "Tower Bridge"
+   ],
+   "choices_zh": [
+    "福特曼桥",
+    "狮门大桥",
+    "塔桥"
+   ],
+   "answer": 1,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Port Mann",
+    "Lions Gate Bridge",
+    "Tower Bridge"
+   ],
+   "sign_zh": [
+    "福特曼桥",
+    "狮门大桥",
+    "塔桥"
+   ]
+  },
+  {
+   "id": "g8_042",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "Midnight",
+    "Noon",
+    "9:00 pm",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "午夜",
+    "中午",
+    "晚上 9 点",
+    "晚上 6 点"
+   ],
+   "answer": 2,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。"
+  },
+  {
+   "id": "g8_043",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Volcanic / igneous rock (an old dike)",
+    "Wood",
+    "Ice"
+   ],
+   "choices_zh": [
+    "火山岩/火成岩（古老岩墙）",
+    "木头",
+    "冰"
+   ],
+   "answer": 0,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "sign_en": [
+    "Volcanic / igneous rock (an old dike)",
+    "Wood",
+    "Ice"
+   ],
+   "sign_zh": [
+    "火山岩/火成岩（古老岩墙）",
+    "木头",
+    "冰"
+   ]
+  },
+  {
+   "id": "g8_044",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "50 km",
+    "About 9 km",
+    "100 m",
+    "1 km"
+   ],
+   "choices_zh": [
+    "50 公里",
+    "大约 9 公里",
+    "100 米",
+    "1 公里"
+   ],
+   "answer": 1,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。"
+  },
+  {
+   "id": "g8_045",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Walking only on bikes",
+    "One way (counter-clockwise)",
+    "Any direction",
+    "Only at night"
+   ],
+   "choices_zh": [
+    "骑车却只能走",
+    "单向（逆时针）",
+    "任意方向",
+    "只在夜里"
+   ],
+   "answer": 1,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。"
+  },
+  {
+   "id": "g8_046",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A volcano crater",
+    "An airport runway",
+    "A desert",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "choices_zh": [
+    "火山口",
+    "机场跑道",
+    "沙漠",
+    "温哥华滨水港湾区"
+   ],
+   "answer": 3,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。"
+  },
+  {
+   "id": "g8_047",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A desert dune",
+    "A subway under the lake",
+    "Beavers",
+    "Swans as the only animals"
+   ],
+   "choices_zh": [
+    "一座沙丘",
+    "湖底地铁",
+    "河狸",
+    "只有天鹅"
+   ],
+   "answer": 2,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。"
+  },
+  {
+   "id": "g8_048",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "July 1",
+    "December 25",
+    "October 31"
+   ],
+   "choices_zh": [
+    "7 月 1 日",
+    "12 月 25 日",
+    "10 月 31 日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "sign_en": [
+    "July 1",
+    "December 25",
+    "October 31"
+   ],
+   "sign_zh": [
+    "7 月 1 日",
+    "12 月 25 日",
+    "10 月 31 日"
+   ]
+  },
+  {
+   "id": "g8_049",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "Cedar / forest trails",
+    "A desert highway",
+    "An underground mall only"
+   ],
+   "choices_zh": [
+    "雪松/林间小道",
+    "沙漠公路",
+    "只有地下商场"
+   ],
+   "answer": 0,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "sign_en": [
+    "Cedar / forest trails",
+    "A desert highway",
+    "An underground mall only"
+   ],
+   "sign_zh": [
+    "雪松/林间小道",
+    "沙漠公路",
+    "只有地下商场"
+   ]
+  },
+  {
+   "id": "g8_050",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Slow down and watch for people",
+    "Close your eyes",
+    "Sprint through"
+   ],
+   "choices_zh": [
+    "减速并注意行人",
+    "闭眼",
+    "冲过去"
+   ],
+   "answer": 0,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "sign_en": [
+    "Slow down and watch for people",
+    "Close your eyes",
+    "Sprint through"
+   ],
+   "sign_zh": [
+    "减速并注意行人",
+    "闭眼",
+    "冲过去"
+   ]
+  },
+  {
+   "id": "g8_051",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "A cape only",
+    "No lights ever",
+    "A helmet (it's the law)"
+   ],
+   "choices_zh": [
+    "只要披风",
+    "永远不用灯",
+    "戴头盔（法律规定）"
+   ],
+   "answer": 2,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "sign_en": [
+    "A cape only",
+    "No lights ever",
+    "A helmet (it's the law)"
+   ],
+   "sign_zh": [
+    "只要披风",
+    "永远不用灯",
+    "戴头盔（法律规定）"
+   ]
+  },
+  {
+   "id": "g8_052",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "No lights",
+    "Lights and bright / reflective gear",
+    "Only sunglasses"
+   ],
+   "choices_zh": [
+    "不开灯",
+    "车灯和亮色/反光装备",
+    "只戴墨镜"
+   ],
+   "answer": 1,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "sign_en": [
+    "No lights",
+    "Lights and bright / reflective gear",
+    "Only sunglasses"
+   ],
+   "sign_zh": [
+    "不开灯",
+    "车灯和亮色/反光装备",
+    "只戴墨镜"
+   ]
+  },
+  {
+   "id": "g8_053",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Scare them loudly",
+    "Slow down and give them space",
+    "Chase them"
+   ],
+   "choices_zh": [
+    "大声吓它们",
+    "减速并留出空间",
+    "去追"
+   ],
+   "answer": 1,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "sign_en": [
+    "Scare them loudly",
+    "Slow down and give them space",
+    "Chase them"
+   ],
+   "sign_zh": [
+    "大声吓它们",
+    "减速并留出空间",
+    "去追"
+   ]
+  },
+  {
+   "id": "g8_054",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "The Moon's password",
+    "Only your socks colour",
+    "Bike lights and brakes"
+   ],
+   "choices_zh": [
+    "月亮密码",
+    "只看袜子颜色",
+    "车灯和刹车"
+   ],
+   "answer": 2,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "sign_en": [
+    "The Moon's password",
+    "Only your socks colour",
+    "Bike lights and brakes"
+   ],
+   "sign_zh": [
+    "月亮密码",
+    "只看袜子颜色",
+    "车灯和刹车"
+   ]
+  },
+  {
+   "id": "g8_055",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Pumpkin",
+    "Ice block",
+    "Rock",
+    "Watermelon only"
+   ],
+   "choices_zh": [
+    "南瓜",
+    "冰块",
+    "石头",
+    "只有西瓜"
+   ],
+   "answer": 0,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。"
+  },
+  {
+   "id": "g8_056",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Sand",
+    "Metal",
+    "Water"
+   ],
+   "choices_zh": [
+    "沙子",
+    "金属",
+    "水"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "sign_en": [
+    "Sand",
+    "Metal",
+    "Water"
+   ],
+   "sign_zh": [
+    "沙子",
+    "金属",
+    "水"
+   ]
+  },
+  {
+   "id": "g8_057",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Pineapples",
+    "Coconuts",
+    "Glass",
+    "Turnips / root vegetables"
+   ],
+   "choices_zh": [
+    "菠萝",
+    "椰子",
+    "玻璃",
+    "芜菁等根菜"
+   ],
+   "answer": 3,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。"
+  },
+  {
+   "id": "g8_058",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ],
+   "answer": 2,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "sign_en": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "sign_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ]
+  },
+  {
+   "id": "g8_059",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Tax day",
+    "Halloween",
+    "Canada Day only",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "报税日",
+    "万圣节",
+    "只有加拿大日",
+    "感恩节烹饪课"
+   ],
+   "answer": 1,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。"
+  },
+  {
+   "id": "g8_060",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 9×18 m rectangle?",
+   "q_zh": "9×18 米矩形面积？",
+   "choices": [
+    "146",
+    "171",
+    "162"
+   ],
+   "choices_zh": [
+    "146",
+    "171",
+    "162"
+   ],
+   "answer": 2,
+   "explain_en": "=162.",
+   "explain_zh": "=162。",
+   "sign_en": [
+    "146",
+    "171",
+    "162"
+   ],
+   "sign_zh": [
+    "146",
+    "171",
+    "162"
+   ]
+  },
+  {
+   "id": "g8_061",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|40−34| = ?",
+   "q_zh": "|40−34| =？",
+   "choices": [
+    "6",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "9",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "9",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "9",
+    "8"
+   ]
+  },
+  {
+   "id": "g8_062",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 2x+8=30. x=?",
+   "q_zh": "解 2x+8=30，x=？",
+   "choices": [
+    "12",
+    "9",
+    "11",
+    "8"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "11",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "x=11.",
+   "explain_zh": "x=11。"
+  },
+  {
+   "id": "g8_063",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|37−6| = ?",
+   "q_zh": "|37−6| =？",
+   "choices": [
+    "26",
+    "37",
+    "31"
+   ],
+   "choices_zh": [
+    "26",
+    "37",
+    "31"
+   ],
+   "answer": 2,
+   "explain_en": "=31.",
+   "explain_zh": "=31。",
+   "sign_en": [
+    "26",
+    "37",
+    "31"
+   ],
+   "sign_zh": [
+    "26",
+    "37",
+    "31"
+   ]
+  },
+  {
+   "id": "g8_064",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|73−7| = ?",
+   "q_zh": "|73−7| =？",
+   "choices": [
+    "65",
+    "66",
+    "75"
+   ],
+   "choices_zh": [
+    "65",
+    "66",
+    "75"
+   ],
+   "answer": 1,
+   "explain_en": "=66.",
+   "explain_zh": "=66。",
+   "sign_en": [
+    "65",
+    "66",
+    "75"
+   ],
+   "sign_zh": [
+    "65",
+    "66",
+    "75"
+   ]
+  },
+  {
+   "id": "g8_065",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,4) and (7,11)?",
+   "q_zh": "(0,4) 与 (7,11) 的斜率？",
+   "choices": [
+    "0",
+    "1",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "0",
+    "1",
+    "3",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g8_066",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|25−15| = ?",
+   "q_zh": "|25−15| =？",
+   "choices": [
+    "13",
+    "7",
+    "10",
+    "11"
+   ],
+   "choices_zh": [
+    "13",
+    "7",
+    "10",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。"
+  },
+  {
+   "id": "g8_067",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|16−31| = ?",
+   "q_zh": "|16−31| =？",
+   "choices": [
+    "15",
+    "11",
+    "13"
+   ],
+   "choices_zh": [
+    "15",
+    "11",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "=15.",
+   "explain_zh": "=15。",
+   "sign_en": [
+    "15",
+    "11",
+    "13"
+   ],
+   "sign_zh": [
+    "15",
+    "11",
+    "13"
+   ]
+  },
+  {
+   "id": "g8_068",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 46° and 40°. Third?",
+   "q_zh": "三角形两角 46°、40°，第三角？",
+   "choices": [
+    "92",
+    "107",
+    "94"
+   ],
+   "choices_zh": [
+    "92",
+    "107",
+    "94"
+   ],
+   "answer": 2,
+   "explain_en": "180−46−40=94.",
+   "explain_zh": "=94。",
+   "sign_en": [
+    "92",
+    "107",
+    "94"
+   ],
+   "sign_zh": [
+    "92",
+    "107",
+    "94"
+   ]
+  },
+  {
+   "id": "g8_069",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,2) and (5,17)?",
+   "q_zh": "(0,2) 与 (5,17) 的斜率？",
+   "choices": [
+    "3",
+    "6",
+    "1"
+   ],
+   "choices_zh": [
+    "3",
+    "6",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "3",
+    "6",
+    "1"
+   ],
+   "sign_zh": [
+    "3",
+    "6",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_070",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 66° and 41°. Third?",
+   "q_zh": "三角形两角 66°、41°，第三角？",
+   "choices": [
+    "83",
+    "78",
+    "73",
+    "69"
+   ],
+   "choices_zh": [
+    "83",
+    "78",
+    "73",
+    "69"
+   ],
+   "answer": 2,
+   "explain_en": "180−66−41=73.",
+   "explain_zh": "=73。"
+  },
+  {
+   "id": "g8_071",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 8x+10=58. x=?",
+   "q_zh": "解 8x+10=58，x=？",
+   "choices": [
+    "7",
+    "5",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "6",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "x=6.",
+   "explain_zh": "x=6。"
+  },
+  {
+   "id": "g8_072",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|28−26| = ?",
+   "q_zh": "|28−26| =？",
+   "choices": [
+    "5",
+    "3",
+    "2",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "2",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=2.",
+   "explain_zh": "=2。"
+  },
+  {
+   "id": "g8_073",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,3) and (2,11)?",
+   "q_zh": "(0,3) 与 (2,11) 的斜率？",
+   "choices": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g8_074",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|63−39| = ?",
+   "q_zh": "|63−39| =？",
+   "choices": [
+    "24",
+    "21",
+    "25",
+    "27"
+   ],
+   "choices_zh": [
+    "24",
+    "21",
+    "25",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g8_075",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|53−29| = ?",
+   "q_zh": "|53−29| =？",
+   "choices": [
+    "19",
+    "24",
+    "20",
+    "28"
+   ],
+   "choices_zh": [
+    "19",
+    "24",
+    "20",
+    "28"
+   ],
+   "answer": 1,
+   "explain_en": "=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g8_076",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 6x+0=24. x=?",
+   "q_zh": "解 6x+0=24，x=？",
+   "choices": [
+    "5",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "x=4.",
+   "explain_zh": "x=4。",
+   "sign_en": [
+    "5",
+    "6",
+    "4"
+   ],
+   "sign_zh": [
+    "5",
+    "6",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_077",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|43−10| = ?",
+   "q_zh": "|43−10| =？",
+   "choices": [
+    "26",
+    "35",
+    "33"
+   ],
+   "choices_zh": [
+    "26",
+    "35",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "sign_en": [
+    "26",
+    "35",
+    "33"
+   ],
+   "sign_zh": [
+    "26",
+    "35",
+    "33"
+   ]
+  },
+  {
+   "id": "g8_078",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 31° and 54°. Third?",
+   "q_zh": "三角形两角 31°、54°，第三角？",
+   "choices": [
+    "88",
+    "95",
+    "96"
+   ],
+   "choices_zh": [
+    "88",
+    "95",
+    "96"
+   ],
+   "answer": 1,
+   "explain_en": "180−31−54=95.",
+   "explain_zh": "=95。",
+   "sign_en": [
+    "88",
+    "95",
+    "96"
+   ],
+   "sign_zh": [
+    "88",
+    "95",
+    "96"
+   ]
+  },
+  {
+   "id": "g8_079",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,0) and (5,15)?",
+   "q_zh": "(0,0) 与 (5,15) 的斜率？",
+   "choices": [
+    "4",
+    "3",
+    "0"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "4",
+    "3",
+    "0"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "0"
+   ]
+  },
+  {
+   "id": "g8_080",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|35−39| = ?",
+   "q_zh": "|35−39| =？",
+   "choices": [
+    "4",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "4",
+    "2",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "4",
+    "2",
+    "1"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_081",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (7,26)?",
+   "q_zh": "(0,5) 与 (7,26) 的斜率？",
+   "choices": [
+    "5",
+    "3",
+    "6",
+    "0"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "6",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g8_082",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 7×20 m rectangle?",
+   "q_zh": "7×20 米矩形面积？",
+   "choices": [
+    "155",
+    "158",
+    "140",
+    "117"
+   ],
+   "choices_zh": [
+    "155",
+    "158",
+    "140",
+    "117"
+   ],
+   "answer": 2,
+   "explain_en": "=140.",
+   "explain_zh": "=140。"
+  },
+  {
+   "id": "g8_083",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|47−33| = ?",
+   "q_zh": "|47−33| =？",
+   "choices": [
+    "12",
+    "16",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "16",
+    "11",
+    "14"
+   ],
+   "answer": 3,
+   "explain_en": "=14.",
+   "explain_zh": "=14。"
+  },
+  {
+   "id": "g8_084",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (4,17)?",
+   "q_zh": "(0,5) 与 (4,17) 的斜率？",
+   "choices": [
+    "6",
+    "4",
+    "3",
+    "2"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "3",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g8_085",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 17×18 m rectangle?",
+   "q_zh": "17×18 米矩形面积？",
+   "choices": [
+    "253",
+    "299",
+    "306"
+   ],
+   "choices_zh": [
+    "253",
+    "299",
+    "306"
+   ],
+   "answer": 2,
+   "explain_en": "=306.",
+   "explain_zh": "=306。",
+   "sign_en": [
+    "253",
+    "299",
+    "306"
+   ],
+   "sign_zh": [
+    "253",
+    "299",
+    "306"
+   ]
+  },
+  {
+   "id": "g8_086",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 35° and 39°. Third?",
+   "q_zh": "三角形两角 35°、39°，第三角？",
+   "choices": [
+    "106",
+    "113",
+    "112"
+   ],
+   "choices_zh": [
+    "106",
+    "113",
+    "112"
+   ],
+   "answer": 0,
+   "explain_en": "180−35−39=106.",
+   "explain_zh": "=106。",
+   "sign_en": [
+    "106",
+    "113",
+    "112"
+   ],
+   "sign_zh": [
+    "106",
+    "113",
+    "112"
+   ]
+  },
+  {
+   "id": "g8_087",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|43−7| = ?",
+   "q_zh": "|43−7| =？",
+   "choices": [
+    "28",
+    "36",
+    "44"
+   ],
+   "choices_zh": [
+    "28",
+    "36",
+    "44"
+   ],
+   "answer": 1,
+   "explain_en": "=36.",
+   "explain_zh": "=36。",
+   "sign_en": [
+    "28",
+    "36",
+    "44"
+   ],
+   "sign_zh": [
+    "28",
+    "36",
+    "44"
+   ]
+  },
+  {
+   "id": "g8_088",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,0) and (7,21)?",
+   "q_zh": "(0,0) 与 (7,21) 的斜率？",
+   "choices": [
+    "0",
+    "1",
+    "3"
+   ],
+   "choices_zh": [
+    "0",
+    "1",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "0",
+    "1",
+    "3"
+   ],
+   "sign_zh": [
+    "0",
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "g8_089",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|56−10| = ?",
+   "q_zh": "|56−10| =？",
+   "choices": [
+    "39",
+    "50",
+    "46",
+    "42"
+   ],
+   "choices_zh": [
+    "39",
+    "50",
+    "46",
+    "42"
+   ],
+   "answer": 2,
+   "explain_en": "=46.",
+   "explain_zh": "=46。"
+  },
+  {
+   "id": "g8_090",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 22×18 m rectangle?",
+   "q_zh": "22×18 米矩形面积？",
+   "choices": [
+    "396",
+    "410",
+    "380"
+   ],
+   "choices_zh": [
+    "396",
+    "410",
+    "380"
+   ],
+   "answer": 0,
+   "explain_en": "=396.",
+   "explain_zh": "=396。",
+   "sign_en": [
+    "396",
+    "410",
+    "380"
+   ],
+   "sign_zh": [
+    "396",
+    "410",
+    "380"
+   ]
+  },
+  {
+   "id": "g8_091",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|13−28| = ?",
+   "q_zh": "|13−28| =？",
+   "choices": [
+    "16",
+    "18",
+    "14",
+    "15"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "14",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "=15.",
+   "explain_zh": "=15。"
+  },
+  {
+   "id": "g8_092",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 12×5 m rectangle?",
+   "q_zh": "12×5 米矩形面积？",
+   "choices": [
+    "48",
+    "57",
+    "54",
+    "60"
+   ],
+   "choices_zh": [
+    "48",
+    "57",
+    "54",
+    "60"
+   ],
+   "answer": 3,
+   "explain_en": "=60.",
+   "explain_zh": "=60。"
+  },
+  {
+   "id": "g8_093",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 55° and 34°. Third?",
+   "q_zh": "三角形两角 55°、34°，第三角？",
+   "choices": [
+    "91",
+    "102",
+    "98",
+    "100"
+   ],
+   "choices_zh": [
+    "91",
+    "102",
+    "98",
+    "100"
+   ],
+   "answer": 0,
+   "explain_en": "180−55−34=91.",
+   "explain_zh": "=91。"
+  },
+  {
+   "id": "g8_094",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 9x+7=16. x=?",
+   "q_zh": "解 9x+7=16，x=？",
+   "choices": [
+    "3",
+    "0",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "3",
+    "0",
+    "2",
+    "1"
+   ],
+   "answer": 3,
+   "explain_en": "x=1.",
+   "explain_zh": "x=1。"
+  },
+  {
+   "id": "g8_095",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 15×16 m rectangle?",
+   "q_zh": "15×16 米矩形面积？",
+   "choices": [
+    "269",
+    "240",
+    "245",
+    "278"
+   ],
+   "choices_zh": [
+    "269",
+    "240",
+    "245",
+    "278"
+   ],
+   "answer": 1,
+   "explain_en": "=240.",
+   "explain_zh": "=240。"
+  },
+  {
+   "id": "g8_096",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 47° and 33°. Third?",
+   "q_zh": "三角形两角 47°、33°，第三角？",
+   "choices": [
+    "97",
+    "100",
+    "91"
+   ],
+   "choices_zh": [
+    "97",
+    "100",
+    "91"
+   ],
+   "answer": 1,
+   "explain_en": "180−47−33=100.",
+   "explain_zh": "=100。",
+   "sign_en": [
+    "97",
+    "100",
+    "91"
+   ],
+   "sign_zh": [
+    "97",
+    "100",
+    "91"
+   ]
+  },
+  {
+   "id": "g8_097",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,1) and (5,16)?",
+   "q_zh": "(0,1) 与 (5,16) 的斜率？",
+   "choices": [
+    "4",
+    "3",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "4",
+    "3",
+    "6"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "6"
+   ]
+  },
+  {
+   "id": "g8_098",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 62° and 32°. Third?",
+   "q_zh": "三角形两角 62°、32°，第三角？",
+   "choices": [
+    "76",
+    "86",
+    "98"
+   ],
+   "choices_zh": [
+    "76",
+    "86",
+    "98"
+   ],
+   "answer": 1,
+   "explain_en": "180−62−32=86.",
+   "explain_zh": "=86。",
+   "sign_en": [
+    "76",
+    "86",
+    "98"
+   ],
+   "sign_zh": [
+    "76",
+    "86",
+    "98"
+   ]
+  },
+  {
+   "id": "g8_099",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 4x+9=33. x=?",
+   "q_zh": "解 4x+9=33，x=？",
+   "choices": [
+    "6",
+    "4",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "x=6.",
+   "explain_zh": "x=6。",
+   "sign_en": [
+    "6",
+    "4",
+    "7"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "g8_100",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|79−11| = ?",
+   "q_zh": "|79−11| =？",
+   "choices": [
+    "61",
+    "66",
+    "68"
+   ],
+   "choices_zh": [
+    "61",
+    "66",
+    "68"
+   ],
+   "answer": 2,
+   "explain_en": "=68.",
+   "explain_zh": "=68。",
+   "sign_en": [
+    "61",
+    "66",
+    "68"
+   ],
+   "sign_zh": [
+    "61",
+    "66",
+    "68"
+   ]
+  },
+  {
+   "id": "g8_101",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|68−31| = ?",
+   "q_zh": "|68−31| =？",
+   "choices": [
+    "29",
+    "30",
+    "37"
+   ],
+   "choices_zh": [
+    "29",
+    "30",
+    "37"
+   ],
+   "answer": 2,
+   "explain_en": "=37.",
+   "explain_zh": "=37。",
+   "sign_en": [
+    "29",
+    "30",
+    "37"
+   ],
+   "sign_zh": [
+    "29",
+    "30",
+    "37"
+   ]
+  },
+  {
+   "id": "g8_102",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|43−15| = ?",
+   "q_zh": "|43−15| =？",
+   "choices": [
+    "28",
+    "29",
+    "27"
+   ],
+   "choices_zh": [
+    "28",
+    "29",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "sign_en": [
+    "28",
+    "29",
+    "27"
+   ],
+   "sign_zh": [
+    "28",
+    "29",
+    "27"
+   ]
+  },
+  {
+   "id": "g8_103",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 68° and 43°. Third?",
+   "q_zh": "三角形两角 68°、43°，第三角？",
+   "choices": [
+    "69",
+    "61",
+    "65"
+   ],
+   "choices_zh": [
+    "69",
+    "61",
+    "65"
+   ],
+   "answer": 0,
+   "explain_en": "180−68−43=69.",
+   "explain_zh": "=69。",
+   "sign_en": [
+    "69",
+    "61",
+    "65"
+   ],
+   "sign_zh": [
+    "69",
+    "61",
+    "65"
+   ]
+  },
+  {
+   "id": "g8_104",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 5x+16=91. x=?",
+   "q_zh": "解 5x+16=91，x=？",
+   "choices": [
+    "17",
+    "15",
+    "14",
+    "16"
+   ],
+   "choices_zh": [
+    "17",
+    "15",
+    "14",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "x=15.",
+   "explain_zh": "x=15。"
+  },
+  {
+   "id": "g8_105",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 8×13 m rectangle?",
+   "q_zh": "8×13 米矩形面积？",
+   "choices": [
+    "104",
+    "116",
+    "99"
+   ],
+   "choices_zh": [
+    "104",
+    "116",
+    "99"
+   ],
+   "answer": 0,
+   "explain_en": "=104.",
+   "explain_zh": "=104。",
+   "sign_en": [
+    "104",
+    "116",
+    "99"
+   ],
+   "sign_zh": [
+    "104",
+    "116",
+    "99"
+   ]
+  },
+  {
+   "id": "g8_106",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,2) and (8,10)?",
+   "q_zh": "(0,2) 与 (8,10) 的斜率？",
+   "choices": [
+    "3",
+    "2",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 3,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g8_107",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|36−13| = ?",
+   "q_zh": "|36−13| =？",
+   "choices": [
+    "26",
+    "23",
+    "27"
+   ],
+   "choices_zh": [
+    "26",
+    "23",
+    "27"
+   ],
+   "answer": 1,
+   "explain_en": "=23.",
+   "explain_zh": "=23。",
+   "sign_en": [
+    "26",
+    "23",
+    "27"
+   ],
+   "sign_zh": [
+    "26",
+    "23",
+    "27"
+   ]
+  },
+  {
+   "id": "g8_108",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|31−25| = ?",
+   "q_zh": "|31−25| =？",
+   "choices": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g8_109",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|16−13| = ?",
+   "q_zh": "|16−13| =？",
+   "choices": [
+    "3",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "3",
+    "5",
+    "4"
+   ],
+   "sign_zh": [
+    "3",
+    "5",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_110",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|51−28| = ?",
+   "q_zh": "|51−28| =？",
+   "choices": [
+    "27",
+    "23",
+    "25"
+   ],
+   "choices_zh": [
+    "27",
+    "23",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "=23.",
+   "explain_zh": "=23。",
+   "sign_en": [
+    "27",
+    "23",
+    "25"
+   ],
+   "sign_zh": [
+    "27",
+    "23",
+    "25"
+   ]
+  },
+  {
+   "id": "g8_111",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,3) and (6,9)?",
+   "q_zh": "(0,3) 与 (6,9) 的斜率？",
+   "choices": [
+    "0",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "1"
+   ],
+   "answer": 2,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "0",
+    "2",
+    "1"
+   ],
+   "sign_zh": [
+    "0",
+    "2",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_112",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 2x+14=24. x=?",
+   "q_zh": "解 2x+14=24，x=？",
+   "choices": [
+    "5",
+    "4",
+    "8"
+   ],
+   "choices_zh": [
+    "5",
+    "4",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "x=5.",
+   "explain_zh": "x=5。",
+   "sign_en": [
+    "5",
+    "4",
+    "8"
+   ],
+   "sign_zh": [
+    "5",
+    "4",
+    "8"
+   ]
+  },
+  {
+   "id": "g8_113",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|28−11| = ?",
+   "q_zh": "|28−11| =？",
+   "choices": [
+    "20",
+    "16",
+    "15",
+    "17"
+   ],
+   "choices_zh": [
+    "20",
+    "16",
+    "15",
+    "17"
+   ],
+   "answer": 3,
+   "explain_en": "=17.",
+   "explain_zh": "=17。"
+  },
+  {
+   "id": "g8_114",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,1) and (6,7)?",
+   "q_zh": "(0,1) 与 (6,7) 的斜率？",
+   "choices": [
+    "4",
+    "1",
+    "2",
+    "0"
+   ],
+   "choices_zh": [
+    "4",
+    "1",
+    "2",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g8_115",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 57° and 39°. Third?",
+   "q_zh": "三角形两角 57°、39°，第三角？",
+   "choices": [
+    "84",
+    "73",
+    "69",
+    "96"
+   ],
+   "choices_zh": [
+    "84",
+    "73",
+    "69",
+    "96"
+   ],
+   "answer": 0,
+   "explain_en": "180−57−39=84.",
+   "explain_zh": "=84。"
+  },
+  {
+   "id": "g8_116",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 40° and 51°. Third?",
+   "q_zh": "三角形两角 40°、51°，第三角？",
+   "choices": [
+    "96",
+    "89",
+    "100"
+   ],
+   "choices_zh": [
+    "96",
+    "89",
+    "100"
+   ],
+   "answer": 1,
+   "explain_en": "180−40−51=89.",
+   "explain_zh": "=89。",
+   "sign_en": [
+    "96",
+    "89",
+    "100"
+   ],
+   "sign_zh": [
+    "96",
+    "89",
+    "100"
+   ]
+  },
+  {
+   "id": "g8_117",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|74−35| = ?",
+   "q_zh": "|74−35| =？",
+   "choices": [
+    "39",
+    "44",
+    "42",
+    "40"
+   ],
+   "choices_zh": [
+    "39",
+    "44",
+    "42",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=39.",
+   "explain_zh": "=39。"
+  },
+  {
+   "id": "g8_118",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,0) and (6,24)?",
+   "q_zh": "(0,0) 与 (6,24) 的斜率？",
+   "choices": [
+    "1",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "7",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "1",
+    "7",
+    "4"
+   ],
+   "sign_zh": [
+    "1",
+    "7",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_119",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|37−36| = ?",
+   "q_zh": "|37−36| =？",
+   "choices": [
+    "1",
+    "2",
+    "0"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "0"
+   ],
+   "answer": 0,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "1",
+    "2",
+    "0"
+   ],
+   "sign_zh": [
+    "1",
+    "2",
+    "0"
+   ]
+  },
+  {
+   "id": "g8_120",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (3,17)?",
+   "q_zh": "(0,5) 与 (3,17) 的斜率？",
+   "choices": [
+    "1",
+    "2",
+    "4",
+    "3"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "4",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g8_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|80−5| = ?",
+   "q_zh": "|80−5| =？",
+   "choices": [
+    "63",
+    "75",
+    "67"
+   ],
+   "choices_zh": [
+    "63",
+    "75",
+    "67"
+   ],
+   "answer": 1,
+   "explain_en": "=75.",
+   "explain_zh": "=75。",
+   "sign_en": [
+    "63",
+    "75",
+    "67"
+   ],
+   "sign_zh": [
+    "63",
+    "75",
+    "67"
+   ]
+  },
+  {
+   "id": "g8_122",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 9x+12=48. x=?",
+   "q_zh": "解 9x+12=48，x=？",
+   "choices": [
+    "3",
+    "7",
+    "2",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "7",
+    "2",
+    "4"
+   ],
+   "answer": 3,
+   "explain_en": "x=4.",
+   "explain_zh": "x=4。"
+  },
+  {
+   "id": "g8_123",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (3,14)?",
+   "q_zh": "(0,5) 与 (3,14) 的斜率？",
+   "choices": [
+    "0",
+    "1",
+    "3"
+   ],
+   "choices_zh": [
+    "0",
+    "1",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "0",
+    "1",
+    "3"
+   ],
+   "sign_zh": [
+    "0",
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "g8_124",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 19×16 m rectangle?",
+   "q_zh": "19×16 米矩形面积？",
+   "choices": [
+    "308",
+    "340",
+    "304"
+   ],
+   "choices_zh": [
+    "308",
+    "340",
+    "304"
+   ],
+   "answer": 2,
+   "explain_en": "=304.",
+   "explain_zh": "=304。",
+   "sign_en": [
+    "308",
+    "340",
+    "304"
+   ],
+   "sign_zh": [
+    "308",
+    "340",
+    "304"
+   ]
+  },
+  {
+   "id": "g8_125",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|49−15| = ?",
+   "q_zh": "|49−15| =？",
+   "choices": [
+    "39",
+    "38",
+    "34"
+   ],
+   "choices_zh": [
+    "39",
+    "38",
+    "34"
+   ],
+   "answer": 2,
+   "explain_en": "=34.",
+   "explain_zh": "=34。",
+   "sign_en": [
+    "39",
+    "38",
+    "34"
+   ],
+   "sign_zh": [
+    "39",
+    "38",
+    "34"
+   ]
+  },
+  {
+   "id": "g8_126",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|32−33| = ?",
+   "q_zh": "|32−33| =？",
+   "choices": [
+    "0",
+    "1",
+    "2"
+   ],
+   "choices_zh": [
+    "0",
+    "1",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "0",
+    "1",
+    "2"
+   ],
+   "sign_zh": [
+    "0",
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "g8_127",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 3x+9=30. x=?",
+   "q_zh": "解 3x+9=30，x=？",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "x=7.",
+   "explain_zh": "x=7。"
+  },
+  {
+   "id": "g8_128",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 22×11 m rectangle?",
+   "q_zh": "22×11 米矩形面积？",
+   "choices": [
+    "261",
+    "224",
+    "242"
+   ],
+   "choices_zh": [
+    "261",
+    "224",
+    "242"
+   ],
+   "answer": 2,
+   "explain_en": "=242.",
+   "explain_zh": "=242。",
+   "sign_en": [
+    "261",
+    "224",
+    "242"
+   ],
+   "sign_zh": [
+    "261",
+    "224",
+    "242"
+   ]
+  },
+  {
+   "id": "g8_129",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 2x+12=26. x=?",
+   "q_zh": "解 2x+12=26，x=？",
+   "choices": [
+    "4",
+    "5",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "7",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "x=7.",
+   "explain_zh": "x=7。"
+  },
+  {
+   "id": "g8_130",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|67−34| = ?",
+   "q_zh": "|67−34| =？",
+   "choices": [
+    "33",
+    "32",
+    "39"
+   ],
+   "choices_zh": [
+    "33",
+    "32",
+    "39"
+   ],
+   "answer": 0,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "sign_en": [
+    "33",
+    "32",
+    "39"
+   ],
+   "sign_zh": [
+    "33",
+    "32",
+    "39"
+   ]
+  },
+  {
+   "id": "g8_131",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 78° and 32°. Third?",
+   "q_zh": "三角形两角 78°、32°，第三角？",
+   "choices": [
+    "81",
+    "79",
+    "70"
+   ],
+   "choices_zh": [
+    "81",
+    "79",
+    "70"
+   ],
+   "answer": 2,
+   "explain_en": "180−78−32=70.",
+   "explain_zh": "=70。",
+   "sign_en": [
+    "81",
+    "79",
+    "70"
+   ],
+   "sign_zh": [
+    "81",
+    "79",
+    "70"
+   ]
+  },
+  {
+   "id": "g8_132",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 24×9 m rectangle?",
+   "q_zh": "24×9 米矩形面积？",
+   "choices": [
+    "223",
+    "244",
+    "246",
+    "216"
+   ],
+   "choices_zh": [
+    "223",
+    "244",
+    "246",
+    "216"
+   ],
+   "answer": 3,
+   "explain_en": "=216.",
+   "explain_zh": "=216。"
+  },
+  {
+   "id": "g8_133",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|27−22| = ?",
+   "q_zh": "|27−22| =？",
+   "choices": [
+    "5",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "5",
+    "7",
+    "6"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "6"
+   ]
+  },
+  {
+   "id": "g8_134",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|64−7| = ?",
+   "q_zh": "|64−7| =？",
+   "choices": [
+    "47",
+    "57",
+    "58"
+   ],
+   "choices_zh": [
+    "47",
+    "57",
+    "58"
+   ],
+   "answer": 1,
+   "explain_en": "=57.",
+   "explain_zh": "=57。",
+   "sign_en": [
+    "47",
+    "57",
+    "58"
+   ],
+   "sign_zh": [
+    "47",
+    "57",
+    "58"
+   ]
+  },
+  {
+   "id": "g8_135",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,2) and (7,23)?",
+   "q_zh": "(0,2) 与 (7,23) 的斜率？",
+   "choices": [
+    "3",
+    "0",
+    "1",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "0",
+    "1",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g8_136",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 6x+16=58. x=?",
+   "q_zh": "解 6x+16=58，x=？",
+   "choices": [
+    "8",
+    "6",
+    "4",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "4",
+    "7"
+   ],
+   "answer": 3,
+   "explain_en": "x=7.",
+   "explain_zh": "x=7。"
+  },
+  {
+   "id": "g8_137",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 61° and 53°. Third?",
+   "q_zh": "三角形两角 61°、53°，第三角？",
+   "choices": [
+    "66",
+    "62",
+    "73"
+   ],
+   "choices_zh": [
+    "66",
+    "62",
+    "73"
+   ],
+   "answer": 0,
+   "explain_en": "180−61−53=66.",
+   "explain_zh": "=66。",
+   "sign_en": [
+    "66",
+    "62",
+    "73"
+   ],
+   "sign_zh": [
+    "66",
+    "62",
+    "73"
+   ]
+  },
+  {
+   "id": "g8_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|43−40| = ?",
+   "q_zh": "|43−40| =？",
+   "choices": [
+    "4",
+    "3",
+    "2"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "4",
+    "3",
+    "2"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "2"
+   ]
+  },
+  {
+   "id": "g8_139",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 12×9 m rectangle?",
+   "q_zh": "12×9 米矩形面积？",
+   "choices": [
+    "108",
+    "114",
+    "120"
+   ],
+   "choices_zh": [
+    "108",
+    "114",
+    "120"
+   ],
+   "answer": 0,
+   "explain_en": "=108.",
+   "explain_zh": "=108。",
+   "sign_en": [
+    "108",
+    "114",
+    "120"
+   ],
+   "sign_zh": [
+    "108",
+    "114",
+    "120"
+   ]
+  },
+  {
+   "id": "g8_140",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|38−10| = ?",
+   "q_zh": "|38−10| =？",
+   "choices": [
+    "22",
+    "26",
+    "28",
+    "29"
+   ],
+   "choices_zh": [
+    "22",
+    "26",
+    "28",
+    "29"
+   ],
+   "answer": 2,
+   "explain_en": "=28.",
+   "explain_zh": "=28。"
+  },
+  {
+   "id": "g8_141",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|19−19| = ?",
+   "q_zh": "|19−19| =？",
+   "choices": [
+    "0",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "=0.",
+   "explain_zh": "=0。",
+   "sign_en": [
+    "0",
+    "2",
+    "1"
+   ],
+   "sign_zh": [
+    "0",
+    "2",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_142",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 9x+6=51. x=?",
+   "q_zh": "解 9x+6=51，x=？",
+   "choices": [
+    "5",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "x=5.",
+   "explain_zh": "x=5。",
+   "sign_en": [
+    "5",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "5",
+    "8",
+    "6"
+   ]
+  },
+  {
+   "id": "g8_143",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 5x+4=54. x=?",
+   "q_zh": "解 5x+4=54，x=？",
+   "choices": [
+    "10",
+    "13",
+    "12",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "13",
+    "12",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "x=10.",
+   "explain_zh": "x=10。"
+  },
+  {
+   "id": "g8_144",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|34−24| = ?",
+   "q_zh": "|34−24| =？",
+   "choices": [
+    "10",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "8",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "9"
+   ]
+  },
+  {
+   "id": "g8_145",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 8x+3=35. x=?",
+   "q_zh": "解 8x+3=35，x=？",
+   "choices": [
+    "6",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "1",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "x=4.",
+   "explain_zh": "x=4。",
+   "sign_en": [
+    "6",
+    "1",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_146",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 2x+15=25. x=?",
+   "q_zh": "解 2x+15=25，x=？",
+   "choices": [
+    "5",
+    "7",
+    "3"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "x=5.",
+   "explain_zh": "x=5。",
+   "sign_en": [
+    "5",
+    "7",
+    "3"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "3"
+   ]
+  },
+  {
+   "id": "g8_147",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,3) and (2,7)?",
+   "q_zh": "(0,3) 与 (2,7) 的斜率？",
+   "choices": [
+    "3",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=2.",
+   "explain_zh": "=2。",
+   "sign_en": [
+    "3",
+    "2",
+    "1"
+   ],
+   "sign_zh": [
+    "3",
+    "2",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_148",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|54−26| = ?",
+   "q_zh": "|54−26| =？",
+   "choices": [
+    "28",
+    "23",
+    "31"
+   ],
+   "choices_zh": [
+    "28",
+    "23",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "sign_en": [
+    "28",
+    "23",
+    "31"
+   ],
+   "sign_zh": [
+    "28",
+    "23",
+    "31"
+   ]
+  },
+  {
+   "id": "g8_149",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|66−36| = ?",
+   "q_zh": "|66−36| =？",
+   "choices": [
+    "34",
+    "30",
+    "27"
+   ],
+   "choices_zh": [
+    "34",
+    "30",
+    "27"
+   ],
+   "answer": 1,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "34",
+    "30",
+    "27"
+   ],
+   "sign_zh": [
+    "34",
+    "30",
+    "27"
+   ]
+  },
+  {
+   "id": "g8_150",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|73−13| = ?",
+   "q_zh": "|73−13| =？",
+   "choices": [
+    "60",
+    "63",
+    "48"
+   ],
+   "choices_zh": [
+    "60",
+    "63",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "=60.",
+   "explain_zh": "=60。",
+   "sign_en": [
+    "60",
+    "63",
+    "48"
+   ],
+   "sign_zh": [
+    "60",
+    "63",
+    "48"
+   ]
+  },
+  {
+   "id": "g8_151",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 60° and 36°. Third?",
+   "q_zh": "三角形两角 60°、36°，第三角？",
+   "choices": [
+    "99",
+    "77",
+    "84"
+   ],
+   "choices_zh": [
+    "99",
+    "77",
+    "84"
+   ],
+   "answer": 2,
+   "explain_en": "180−60−36=84.",
+   "explain_zh": "=84。",
+   "sign_en": [
+    "99",
+    "77",
+    "84"
+   ],
+   "sign_zh": [
+    "99",
+    "77",
+    "84"
+   ]
+  },
+  {
+   "id": "g8_152",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 3x+10=55. x=?",
+   "q_zh": "解 3x+10=55，x=？",
+   "choices": [
+    "13",
+    "19",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "19",
+    "15",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "x=15.",
+   "explain_zh": "x=15。"
+  },
+  {
+   "id": "g8_153",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 2x+8=18. x=?",
+   "q_zh": "解 2x+8=18，x=？",
+   "choices": [
+    "2",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "x=5.",
+   "explain_zh": "x=5。",
+   "sign_en": [
+    "2",
+    "4",
+    "5"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "g8_154",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,0) and (7,28)?",
+   "q_zh": "(0,0) 与 (7,28) 的斜率？",
+   "choices": [
+    "1",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "1",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "1",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "1",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g8_155",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 9x+2=56. x=?",
+   "q_zh": "解 9x+2=56，x=？",
+   "choices": [
+    "6",
+    "4",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "x=6.",
+   "explain_zh": "x=6。",
+   "sign_en": [
+    "6",
+    "4",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "8"
+   ]
+  },
+  {
+   "id": "g8_156",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,3) and (2,5)?",
+   "q_zh": "(0,3) 与 (2,5) 的斜率？",
+   "choices": [
+    "4",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "4",
+    "2",
+    "1"
+   ],
+   "answer": 2,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "4",
+    "2",
+    "1"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "1"
+   ]
+  },
+  {
+   "id": "g8_157",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 49° and 35°. Third?",
+   "q_zh": "三角形两角 49°、35°，第三角？",
+   "choices": [
+    "108",
+    "96",
+    "105"
+   ],
+   "choices_zh": [
+    "108",
+    "96",
+    "105"
+   ],
+   "answer": 1,
+   "explain_en": "180−49−35=96.",
+   "explain_zh": "=96。",
+   "sign_en": [
+    "108",
+    "96",
+    "105"
+   ],
+   "sign_zh": [
+    "108",
+    "96",
+    "105"
+   ]
+  },
+  {
+   "id": "g8_158",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,1) and (4,17)?",
+   "q_zh": "(0,1) 与 (4,17) 的斜率？",
+   "choices": [
+    "6",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "6",
+    "3",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_159",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (8,37)?",
+   "q_zh": "(0,5) 与 (8,37) 的斜率？",
+   "choices": [
+    "1",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "7",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "1",
+    "7",
+    "4"
+   ],
+   "sign_zh": [
+    "1",
+    "7",
+    "4"
+   ]
+  },
+  {
+   "id": "g8_160",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|43−19| = ?",
+   "q_zh": "|43−19| =？",
+   "choices": [
+    "24",
+    "22",
+    "18",
+    "26"
+   ],
+   "choices_zh": [
+    "24",
+    "22",
+    "18",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g8_161",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (2,11)?",
+   "q_zh": "(0,5) 与 (2,11) 的斜率？",
+   "choices": [
+    "1",
+    "3",
+    "5"
+   ],
+   "choices_zh": [
+    "1",
+    "3",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "1",
+    "3",
+    "5"
+   ],
+   "sign_zh": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "g8_162",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|78−19| = ?",
+   "q_zh": "|78−19| =？",
+   "choices": [
+    "61",
+    "62",
+    "48",
+    "59"
+   ],
+   "choices_zh": [
+    "61",
+    "62",
+    "48",
+    "59"
+   ],
+   "answer": 3,
+   "explain_en": "=59.",
+   "explain_zh": "=59。"
+  },
+  {
+   "id": "g8_163",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 8x+19=107. x=?",
+   "q_zh": "解 8x+19=107，x=？",
+   "choices": [
+    "13",
+    "11",
+    "9",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "9",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "x=11.",
+   "explain_zh": "x=11。"
+  },
+  {
+   "id": "g8_164",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,4) and (3,7)?",
+   "q_zh": "(0,4) 与 (3,7) 的斜率？",
+   "choices": [
+    "0",
+    "2",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 3,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g8_165",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 7x+18=25. x=?",
+   "q_zh": "解 7x+18=25，x=？",
+   "choices": [
+    "3",
+    "0",
+    "1",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "0",
+    "1",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "x=1.",
+   "explain_zh": "x=1。"
+  },
+  {
+   "id": "g8_166",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|26−22| = ?",
+   "q_zh": "|26−22| =？",
+   "choices": [
+    "7",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "7",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "7",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g8_167",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (8,29)?",
+   "q_zh": "(0,5) 与 (8,29) 的斜率？",
+   "choices": [
+    "3",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "3",
+    "4",
+    "5"
+   ],
+   "sign_zh": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "g8_168",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|80−27| = ?",
+   "q_zh": "|80−27| =？",
+   "choices": [
+    "53",
+    "52",
+    "49",
+    "43"
+   ],
+   "choices_zh": [
+    "53",
+    "52",
+    "49",
+    "43"
+   ],
+   "answer": 0,
+   "explain_en": "=53.",
+   "explain_zh": "=53。"
+  },
+  {
+   "id": "g8_169",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 65° and 45°. Third?",
+   "q_zh": "三角形两角 65°、45°，第三角？",
+   "choices": [
+    "79",
+    "57",
+    "75",
+    "70"
+   ],
+   "choices_zh": [
+    "79",
+    "57",
+    "75",
+    "70"
+   ],
+   "answer": 3,
+   "explain_en": "180−65−45=70.",
+   "explain_zh": "=70。"
+  },
+  {
+   "id": "g8_170",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve 7x+5=40. x=?",
+   "q_zh": "解 7x+5=40，x=？",
+   "choices": [
+    "4",
+    "8",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "8",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "x=5.",
+   "explain_zh": "x=5。",
+   "sign_en": [
+    "4",
+    "8",
+    "5"
+   ],
+   "sign_zh": [
+    "4",
+    "8",
+    "5"
+   ]
+  },
+  {
+   "id": "g8_171",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Triangle angles 48° and 63°. Third?",
+   "q_zh": "三角形两角 48°、63°，第三角？",
+   "choices": [
+    "69",
+    "64",
+    "59"
+   ],
+   "choices_zh": [
+    "69",
+    "64",
+    "59"
+   ],
+   "answer": 0,
+   "explain_en": "180−48−63=69.",
+   "explain_zh": "=69。",
+   "sign_en": [
+    "69",
+    "64",
+    "59"
+   ],
+   "sign_zh": [
+    "69",
+    "64",
+    "59"
+   ]
+  },
+  {
+   "id": "g8_172",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|49−10| = ?",
+   "q_zh": "|49−10| =？",
+   "choices": [
+    "39",
+    "46",
+    "35",
+    "43"
+   ],
+   "choices_zh": [
+    "39",
+    "46",
+    "35",
+    "43"
+   ],
+   "answer": 0,
+   "explain_en": "=39.",
+   "explain_zh": "=39。"
+  },
+  {
+   "id": "g8_173",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|64−10| = ?",
+   "q_zh": "|64−10| =？",
+   "choices": [
+    "61",
+    "54",
+    "43"
+   ],
+   "choices_zh": [
+    "61",
+    "54",
+    "43"
+   ],
+   "answer": 1,
+   "explain_en": "=54.",
+   "explain_zh": "=54。",
+   "sign_en": [
+    "61",
+    "54",
+    "43"
+   ],
+   "sign_zh": [
+    "61",
+    "54",
+    "43"
+   ]
+  },
+  {
+   "id": "g8_174",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|38−25| = ?",
+   "q_zh": "|38−25| =？",
+   "choices": [
+    "9",
+    "13",
+    "11"
+   ],
+   "choices_zh": [
+    "9",
+    "13",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "sign_en": [
+    "9",
+    "13",
+    "11"
+   ],
+   "sign_zh": [
+    "9",
+    "13",
+    "11"
+   ]
+  },
+  {
+   "id": "g8_175",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|66−40| = ?",
+   "q_zh": "|66−40| =？",
+   "choices": [
+    "26",
+    "28",
+    "29",
+    "32"
+   ],
+   "choices_zh": [
+    "26",
+    "28",
+    "29",
+    "32"
+   ],
+   "answer": 0,
+   "explain_en": "=26.",
+   "explain_zh": "=26。"
+  },
+  {
+   "id": "g8_176",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|14−40| = ?",
+   "q_zh": "|14−40| =？",
+   "choices": [
+    "21",
+    "28",
+    "24",
+    "26"
+   ],
+   "choices_zh": [
+    "21",
+    "28",
+    "24",
+    "26"
+   ],
+   "answer": 3,
+   "explain_en": "=26.",
+   "explain_zh": "=26。"
+  },
+  {
+   "id": "g8_177",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (8,13)?",
+   "q_zh": "(0,5) 与 (8,13) 的斜率？",
+   "choices": [
+    "1",
+    "0",
+    "2",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "0",
+    "2",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g8_178",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|42−11| = ?",
+   "q_zh": "|42−11| =？",
+   "choices": [
+    "26",
+    "28",
+    "31"
+   ],
+   "choices_zh": [
+    "26",
+    "28",
+    "31"
+   ],
+   "answer": 2,
+   "explain_en": "=31.",
+   "explain_zh": "=31。",
+   "sign_en": [
+    "26",
+    "28",
+    "31"
+   ],
+   "sign_zh": [
+    "26",
+    "28",
+    "31"
+   ]
+  },
+  {
+   "id": "g8_179",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "|60−28| = ?",
+   "q_zh": "|60−28| =？",
+   "choices": [
+    "31",
+    "26",
+    "27",
+    "32"
+   ],
+   "choices_zh": [
+    "31",
+    "26",
+    "27",
+    "32"
+   ],
+   "answer": 3,
+   "explain_en": "=32.",
+   "explain_zh": "=32。"
+  },
+  {
+   "id": "g8_180",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Slope between (0,5) and (6,11)?",
+   "q_zh": "(0,5) 与 (6,11) 的斜率？",
+   "choices": [
+    "2",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 2,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "2",
+    "4",
+    "1"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "1"
+   ]
+  }
+ ]
+}

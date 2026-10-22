@@ -1,0 +1,4996 @@
+{
+ "grade": 11,
+ "version": 1,
+ "curriculum": "BC Grade 11 Math, Science/Geography, Reading + farm/Stanley themes + capybara",
+ "fields": "same format as questions_v6.json; {name}=player; corn_maze ≤3 choices + sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g11_001",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "In the water",
+    "Up a tree"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "在水里",
+    "树上"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "sign_en": [
+    "In the snow",
+    "In the water",
+    "Up a tree"
+   ],
+   "sign_zh": [
+    "雪地里",
+    "在水里",
+    "树上"
+   ]
+  },
+  {
+   "id": "g11_002",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Grass and plants",
+    "Insects",
+    "Candy",
+    "Fish"
+   ],
+   "choices_zh": [
+    "草和植物",
+    "昆虫",
+    "糖果",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。"
+  },
+  {
+   "id": "g11_003",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Rodent",
+    "Bird",
+    "Fish",
+    "Insect"
+   ],
+   "choices_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。"
+  },
+  {
+   "id": "g11_004",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Australia",
+    "The North Pole",
+    "South America"
+   ],
+   "choices_zh": [
+    "澳大利亚",
+    "北极",
+    "南美洲"
+   ],
+   "answer": 2,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "Australia",
+    "The North Pole",
+    "South America"
+   ],
+   "sign_zh": [
+    "澳大利亚",
+    "北极",
+    "南美洲"
+   ]
+  },
+  {
+   "id": "g11_005",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "No",
+    "Yes",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "没有",
+    "有",
+    "只在冬天有"
+   ],
+   "answer": 0,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "sign_en": [
+    "No",
+    "Yes",
+    "Only in winter"
+   ],
+   "sign_zh": [
+    "没有",
+    "有",
+    "只在冬天有"
+   ]
+  },
+  {
+   "id": "g11_006",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Tunnel diggers",
+    "Swimmers",
+    "Flyers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "挖隧道",
+    "游泳",
+    "飞翔"
+   ],
+   "answer": 2,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。"
+  },
+  {
+   "id": "g11_007",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Wolf pack",
+    "Herd",
+    "Flock",
+    "School"
+   ],
+   "choices_zh": [
+    "狼群",
+    "一群",
+    "鸟群",
+    "鱼群"
+   ],
+   "answer": 1,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。"
+  },
+  {
+   "id": "g11_008",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Goose",
+    "Capybara",
+    "Raccoon",
+    "Beaver"
+   ],
+   "choices_zh": [
+    "鹅",
+    "水豚",
+    "浣熊",
+    "河狸"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。"
+  },
+  {
+   "id": "g11_009",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Lion roars",
+    "Cute squeaks / clicks",
+    "Only hisses"
+   ],
+   "choices_zh": [
+    "狮子吼",
+    "可爱的吱吱/咔嗒声",
+    "只会嘶嘶"
+   ],
+   "answer": 1,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "sign_en": [
+    "Lion roars",
+    "Cute squeaks / clicks",
+    "Only hisses"
+   ],
+   "sign_zh": [
+    "狮子吼",
+    "可爱的吱吱/咔嗒声",
+    "只会嘶嘶"
+   ]
+  },
+  {
+   "id": "g11_010",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Eats only fish",
+    "Has no flat paddle tail",
+    "Is a bird",
+    "Lives only on ice"
+   ],
+   "choices_zh": [
+    "只吃鱼",
+    "没有扁平的桨状尾巴",
+    "是鸟",
+    "只住在冰上"
+   ],
+   "answer": 1,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。"
+  },
+  {
+   "id": "g11_011",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Newton's first law: objects keep their motion unless…",
+   "q_zh": "牛顿第一定律：物体保持运动状态，除非……",
+   "choices": [
+    "The Moon disappears",
+    "A net force acts",
+    "Someone thinks hard"
+   ],
+   "choices_zh": [
+    "月亮消失",
+    "受到合力作用",
+    "有人努力想"
+   ],
+   "answer": 1,
+   "explain_en": "Inertia until net force.",
+   "explain_zh": "惯性直到有合力。",
+   "sign_en": [
+    "The Moon disappears",
+    "A net force acts",
+    "Someone thinks hard"
+   ],
+   "sign_zh": [
+    "月亮消失",
+    "受到合力作用",
+    "有人努力想"
+   ]
+  },
+  {
+   "id": "g11_012",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a vacuum, ordinary sound waves…",
+   "q_zh": "在真空中，普通声波会……",
+   "choices": [
+    "Smell better",
+    "Get louder",
+    "Create pumpkin pies",
+    "Do not travel"
+   ],
+   "choices_zh": [
+    "更好闻",
+    "变得更大声",
+    "做出南瓜派",
+    "无法传播"
+   ],
+   "answer": 3,
+   "explain_en": "Sound needs a medium.",
+   "explain_zh": "声音需要介质。"
+  },
+  {
+   "id": "g11_013",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If force doubles and mass stays the same, acceleration…",
+   "q_zh": "若力加倍、质量不变，加速度……",
+   "choices": [
+    "Doubles",
+    "Becomes zero",
+    "Halves"
+   ],
+   "choices_zh": [
+    "加倍",
+    "变成零",
+    "减半"
+   ],
+   "answer": 0,
+   "explain_en": "a = F/m.",
+   "explain_zh": "a=F/m。",
+   "sign_en": [
+    "Doubles",
+    "Becomes zero",
+    "Halves"
+   ],
+   "sign_zh": [
+    "加倍",
+    "变成零",
+    "减半"
+   ]
+  },
+  {
+   "id": "g11_014",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Frequency of a wave is…",
+   "q_zh": "波的频率是……",
+   "choices": [
+    "Only park area",
+    "Only colour of socks",
+    "How many cycles per second"
+   ],
+   "choices_zh": [
+    "只有公园面积",
+    "只有袜子颜色",
+    "每秒多少个周期"
+   ],
+   "answer": 2,
+   "explain_en": "f = cycles/time.",
+   "explain_zh": "频率=周期/时间。",
+   "sign_en": [
+    "Only park area",
+    "Only colour of socks",
+    "How many cycles per second"
+   ],
+   "sign_zh": [
+    "只有公园面积",
+    "只有袜子颜色",
+    "每秒多少个周期"
+   ]
+  },
+  {
+   "id": "g11_015",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Probability 0 means…",
+   "q_zh": "概率为 0 表示……",
+   "choices": [
+    "Certain to happen",
+    "Always 50%",
+    "Only Halloween",
+    "The event is impossible (in that model)"
+   ],
+   "choices_zh": [
+    "一定发生",
+    "总是 50%",
+    "只有万圣节",
+    "该事件不可能（在该模型下）"
+   ],
+   "answer": 3,
+   "explain_en": "0 = impossible; 1 = certain.",
+   "explain_zh": "0 不可能；1 必然。"
+  },
+  {
+   "id": "g11_016",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"The author claims night rides need lights, then shows a visibility study.\" — A critical reader should…",
+   "q_zh": "作者称夜骑需要灯并展示能见度研究。批判性读者应……",
+   "choices": [
+    "Accept every ad",
+    "Never ask questions",
+    "Check if evidence supports the claim"
+   ],
+   "choices_zh": [
+    "接受所有广告",
+    "从不提问",
+    "检查证据是否支持论点"
+   ],
+   "answer": 2,
+   "explain_en": "Evaluate claim vs evidence.",
+   "explain_zh": "评估论点与证据。",
+   "sign_en": [
+    "Accept every ad",
+    "Never ask questions",
+    "Check if evidence supports the claim"
+   ],
+   "sign_zh": [
+    "接受所有广告",
+    "从不提问",
+    "检查证据是否支持论点"
+   ]
+  },
+  {
+   "id": "g11_017",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"Source A is a peer-reviewed study; Source B is an anonymous comment.\" — Which is stronger evidence?",
+   "q_zh": "来源 A 是同行评审研究；B 是匿名评论。哪个证据更强？",
+   "choices": [
+    "Neither ever",
+    "Source A",
+    "Source B"
+   ],
+   "choices_zh": [
+    "永远都没有",
+    "来源 A",
+    "来源 B"
+   ],
+   "answer": 1,
+   "explain_en": "Method and review matter.",
+   "explain_zh": "方法和评审很重要。",
+   "sign_en": [
+    "Neither ever",
+    "Source A",
+    "Source B"
+   ],
+   "sign_zh": [
+    "永远都没有",
+    "来源 A",
+    "来源 B"
+   ]
+  },
+  {
+   "id": "g11_018",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Canada goose",
+    "Ostrich",
+    "Flamingo",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "加拿大鹅",
+    "鸵鸟",
+    "火烈鸟",
+    "企鹅"
+   ],
+   "answer": 0,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。"
+  },
+  {
+   "id": "g11_019",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Only in winter",
+    "At night",
+    "At noon"
+   ],
+   "choices_zh": [
+    "只在冬天",
+    "晚上",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "Only in winter",
+    "At night",
+    "At noon"
+   ],
+   "sign_zh": [
+    "只在冬天",
+    "晚上",
+    "中午"
+   ]
+  },
+  {
+   "id": "g11_020",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "choices_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ],
+   "answer": 1,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "sign_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ]
+  },
+  {
+   "id": "g11_021",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Insects",
+    "Birds",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "鸟",
+    "哺乳动物"
+   ],
+   "answer": 2,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "sign_en": [
+    "Insects",
+    "Birds",
+    "Mammals"
+   ],
+   "sign_zh": [
+    "昆虫",
+    "鸟",
+    "哺乳动物"
+   ]
+  },
+  {
+   "id": "g11_022",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Penguin",
+    "Ostrich",
+    "Great blue heron"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "鸵鸟",
+    "大蓝鹭"
+   ],
+   "answer": 2,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "sign_en": [
+    "Penguin",
+    "Ostrich",
+    "Great blue heron"
+   ],
+   "sign_zh": [
+    "企鹅",
+    "鸵鸟",
+    "大蓝鹭"
+   ]
+  },
+  {
+   "id": "g11_023",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Western red cedar",
+    "Palm tree",
+    "Baobab",
+    "Cactus"
+   ],
+   "choices_zh": [
+    "西部红雪松",
+    "棕榈树",
+    "猴面包树",
+    "仙人掌"
+   ],
+   "answer": 0,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。"
+  },
+  {
+   "id": "g11_024",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Find candy",
+    "Learn to fly",
+    "Lay eggs / spawn",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "找糖",
+    "学飞",
+    "产卵",
+    "冬眠"
+   ],
+   "answer": 2,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。"
+  },
+  {
+   "id": "g11_025",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "90°",
+    "720°",
+    "45°",
+    "270°"
+   ],
+   "choices_zh": [
+    "90°",
+    "720°",
+    "45°",
+    "大约 270°"
+   ],
+   "answer": 3,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。"
+  },
+  {
+   "id": "g11_026",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Earthquakes only",
+    "Street lights",
+    "Wind turbines",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "只因为地震",
+    "路灯",
+    "风力发电机",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。"
+  },
+  {
+   "id": "g11_027",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Magnets",
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)"
+   ],
+   "choices_zh": [
+    "磁铁",
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）"
+   ],
+   "answer": 2,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "sign_en": [
+    "Magnets",
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)"
+   ],
+   "sign_zh": [
+    "磁铁",
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）"
+   ]
+  },
+  {
+   "id": "g11_028",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Fish",
+    "Marine mammals",
+    "Insects",
+    "Birds"
+   ],
+   "choices_zh": [
+    "鱼",
+    "海洋哺乳动物",
+    "昆虫",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。"
+  },
+  {
+   "id": "g11_029",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Flying south",
+    "Laying swan eggs",
+    "Building dams and lodges with wood"
+   ],
+   "choices_zh": [
+    "飞去南方",
+    "下天鹅蛋",
+    "用木头筑坝和巢穴"
+   ],
+   "answer": 2,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "sign_en": [
+    "Flying south",
+    "Laying swan eggs",
+    "Building dams and lodges with wood"
+   ],
+   "sign_zh": [
+    "飞去南方",
+    "下天鹅蛋",
+    "用木头筑坝和巢穴"
+   ]
+  },
+  {
+   "id": "g11_030",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Mammal",
+    "Bird",
+    "Fish"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鸟类",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "sign_en": [
+    "Mammal",
+    "Bird",
+    "Fish"
+   ],
+   "sign_zh": [
+    "哺乳动物",
+    "鸟类",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g11_031",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "8",
+    "4",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "10",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。"
+  },
+  {
+   "id": "g11_032",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Taste colours",
+    "Stop rain",
+    "Sense objects with sound echoes"
+   ],
+   "choices_zh": [
+    "品尝颜色",
+    "让雨停下",
+    "用回声感知物体"
+   ],
+   "answer": 2,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "sign_en": [
+    "Taste colours",
+    "Stop rain",
+    "Sense objects with sound echoes"
+   ],
+   "sign_zh": [
+    "品尝颜色",
+    "让雨停下",
+    "用回声感知物体"
+   ]
+  },
+  {
+   "id": "g11_033",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "6",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "sign_en": [
+    "6",
+    "4",
+    "2"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "2"
+   ]
+  },
+  {
+   "id": "g11_034",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Stopping the Moon",
+    "Making plastic",
+    "Providing habitat and holding soil"
+   ],
+   "choices_zh": [
+    "挡住月亮",
+    "制造塑料",
+    "提供栖息地并固定土壤"
+   ],
+   "answer": 2,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Stopping the Moon",
+    "Making plastic",
+    "Providing habitat and holding soil"
+   ],
+   "sign_zh": [
+    "挡住月亮",
+    "制造塑料",
+    "提供栖息地并固定土壤"
+   ]
+  },
+  {
+   "id": "g11_035",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "choices_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ],
+   "answer": 1,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "sign_en": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "sign_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ]
+  },
+  {
+   "id": "g11_036",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1888",
+    "1950",
+    "2001",
+    "1776"
+   ],
+   "choices_zh": [
+    "1888",
+    "1950",
+    "2001",
+    "1776"
+   ],
+   "answer": 0,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g11_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "World Cup",
+    "Grey Cup",
+    "Olympic torch",
+    "Stanley Cup"
+   ],
+   "choices_zh": [
+    "世界杯",
+    "格雷杯",
+    "奥运火炬",
+    "斯坦利杯"
+   ],
+   "answer": 3,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。"
+  },
+  {
+   "id": "g11_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "The same",
+    "Half the size",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "一样大",
+    "只有一半大",
+    "更大"
+   ],
+   "answer": 2,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "sign_en": [
+    "The same",
+    "Half the size",
+    "Bigger"
+   ],
+   "sign_zh": [
+    "一样大",
+    "只有一半大",
+    "更大"
+   ]
+  },
+  {
+   "id": "g11_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Vikings",
+    "Maori only"
+   ],
+   "choices_zh": [
+    "印加",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "维京人",
+    "只有毛利人"
+   ],
+   "answer": 1,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。"
+  },
+  {
+   "id": "g11_040",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Tower Bridge",
+    "Golden Gate",
+    "Port Mann",
+    "Lions Gate Bridge"
+   ],
+   "choices_zh": [
+    "塔桥",
+    "金门大桥",
+    "福特曼桥",
+    "狮门大桥"
+   ],
+   "answer": 3,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。"
+  },
+  {
+   "id": "g11_041",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "9:00 pm",
+    "Midnight",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 9 点",
+    "午夜",
+    "晚上 6 点"
+   ],
+   "answer": 0,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "sign_en": [
+    "9:00 pm",
+    "Midnight",
+    "6:00 pm"
+   ],
+   "sign_zh": [
+    "晚上 9 点",
+    "午夜",
+    "晚上 6 点"
+   ]
+  },
+  {
+   "id": "g11_042",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Volcanic / igneous rock (an old dike)",
+    "Ice",
+    "Wood"
+   ],
+   "choices_zh": [
+    "火山岩/火成岩（古老岩墙）",
+    "冰",
+    "木头"
+   ],
+   "answer": 0,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "sign_en": [
+    "Volcanic / igneous rock (an old dike)",
+    "Ice",
+    "Wood"
+   ],
+   "sign_zh": [
+    "火山岩/火成岩（古老岩墙）",
+    "冰",
+    "木头"
+   ]
+  },
+  {
+   "id": "g11_043",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "1 km",
+    "About 9 km",
+    "50 km"
+   ],
+   "choices_zh": [
+    "1 公里",
+    "大约 9 公里",
+    "50 公里"
+   ],
+   "answer": 1,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "sign_en": [
+    "1 km",
+    "About 9 km",
+    "50 km"
+   ],
+   "sign_zh": [
+    "1 公里",
+    "大约 9 公里",
+    "50 公里"
+   ]
+  },
+  {
+   "id": "g11_044",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "One way (counter-clockwise)",
+    "Any direction",
+    "Only at night"
+   ],
+   "choices_zh": [
+    "单向（逆时针）",
+    "任意方向",
+    "只在夜里"
+   ],
+   "answer": 0,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "sign_en": [
+    "One way (counter-clockwise)",
+    "Any direction",
+    "Only at night"
+   ],
+   "sign_zh": [
+    "单向（逆时针）",
+    "任意方向",
+    "只在夜里"
+   ]
+  },
+  {
+   "id": "g11_045",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A desert",
+    "An airport runway",
+    "A volcano crater",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "choices_zh": [
+    "沙漠",
+    "机场跑道",
+    "火山口",
+    "温哥华滨水港湾区"
+   ],
+   "answer": 3,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。"
+  },
+  {
+   "id": "g11_046",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "Beavers",
+    "A desert dune",
+    "Swans as the only animals",
+    "A subway under the lake"
+   ],
+   "choices_zh": [
+    "河狸",
+    "一座沙丘",
+    "只有天鹅",
+    "湖底地铁"
+   ],
+   "answer": 0,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。"
+  },
+  {
+   "id": "g11_047",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "December 25",
+    "July 1",
+    "October 31"
+   ],
+   "choices_zh": [
+    "12 月 25 日",
+    "7 月 1 日",
+    "10 月 31 日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "sign_en": [
+    "December 25",
+    "July 1",
+    "October 31"
+   ],
+   "sign_zh": [
+    "12 月 25 日",
+    "7 月 1 日",
+    "10 月 31 日"
+   ]
+  },
+  {
+   "id": "g11_048",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "Cedar / forest trails",
+    "An underground mall only",
+    "A desert highway"
+   ],
+   "choices_zh": [
+    "雪松/林间小道",
+    "只有地下商场",
+    "沙漠公路"
+   ],
+   "answer": 0,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "sign_en": [
+    "Cedar / forest trails",
+    "An underground mall only",
+    "A desert highway"
+   ],
+   "sign_zh": [
+    "雪松/林间小道",
+    "只有地下商场",
+    "沙漠公路"
+   ]
+  },
+  {
+   "id": "g11_049",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Slow down and watch for people",
+    "Close your eyes",
+    "Sprint through"
+   ],
+   "choices_zh": [
+    "减速并注意行人",
+    "闭眼",
+    "冲过去"
+   ],
+   "answer": 0,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "sign_en": [
+    "Slow down and watch for people",
+    "Close your eyes",
+    "Sprint through"
+   ],
+   "sign_zh": [
+    "减速并注意行人",
+    "闭眼",
+    "冲过去"
+   ]
+  },
+  {
+   "id": "g11_050",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "No lights ever",
+    "A helmet (it's the law)",
+    "A cape only"
+   ],
+   "choices_zh": [
+    "永远不用灯",
+    "戴头盔（法律规定）",
+    "只要披风"
+   ],
+   "answer": 1,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "sign_en": [
+    "No lights ever",
+    "A helmet (it's the law)",
+    "A cape only"
+   ],
+   "sign_zh": [
+    "永远不用灯",
+    "戴头盔（法律规定）",
+    "只要披风"
+   ]
+  },
+  {
+   "id": "g11_051",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "Only sunglasses",
+    "No lights",
+    "A blindfold",
+    "Lights and bright / reflective gear"
+   ],
+   "choices_zh": [
+    "只戴墨镜",
+    "不开灯",
+    "蒙眼布",
+    "车灯和亮色/反光装备"
+   ],
+   "answer": 3,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。"
+  },
+  {
+   "id": "g11_052",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Scare them loudly",
+    "Chase them",
+    "Slow down and give them space"
+   ],
+   "choices_zh": [
+    "大声吓它们",
+    "去追",
+    "减速并留出空间"
+   ],
+   "answer": 2,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "sign_en": [
+    "Scare them loudly",
+    "Chase them",
+    "Slow down and give them space"
+   ],
+   "sign_zh": [
+    "大声吓它们",
+    "去追",
+    "减速并留出空间"
+   ]
+  },
+  {
+   "id": "g11_053",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "The Moon's password",
+    "Only your socks colour",
+    "Bike lights and brakes",
+    "Invisible ink"
+   ],
+   "choices_zh": [
+    "月亮密码",
+    "只看袜子颜色",
+    "车灯和刹车",
+    "隐形墨水"
+   ],
+   "answer": 2,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。"
+  },
+  {
+   "id": "g11_054",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Rock",
+    "Pumpkin",
+    "Watermelon only"
+   ],
+   "choices_zh": [
+    "石头",
+    "南瓜",
+    "只有西瓜"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。",
+   "sign_en": [
+    "Rock",
+    "Pumpkin",
+    "Watermelon only"
+   ],
+   "sign_zh": [
+    "石头",
+    "南瓜",
+    "只有西瓜"
+   ]
+  },
+  {
+   "id": "g11_055",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Air only",
+    "Metal",
+    "Sand",
+    "Water"
+   ],
+   "choices_zh": [
+    "只有空气",
+    "金属",
+    "沙子",
+    "水"
+   ],
+   "answer": 3,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。"
+  },
+  {
+   "id": "g11_056",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Coconuts",
+    "Turnips / root vegetables",
+    "Pineapples"
+   ],
+   "choices_zh": [
+    "椰子",
+    "芜菁等根菜",
+    "菠萝"
+   ],
+   "answer": 1,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "sign_en": [
+    "Coconuts",
+    "Turnips / root vegetables",
+    "Pineapples"
+   ],
+   "sign_zh": [
+    "椰子",
+    "芜菁等根菜",
+    "菠萝"
+   ]
+  },
+  {
+   "id": "g11_057",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "29.5 days",
+    "365 days",
+    "7 days",
+    "1 hour"
+   ],
+   "choices_zh": [
+    "约 29.5 天",
+    "365 天",
+    "7 天",
+    "1 小时"
+   ],
+   "answer": 0,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。"
+  },
+  {
+   "id": "g11_058",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Thanksgiving cooking class",
+    "Halloween",
+    "Canada Day only",
+    "Tax day"
+   ],
+   "choices_zh": [
+    "感恩节烹饪课",
+    "万圣节",
+    "只有加拿大日",
+    "报税日"
+   ],
+   "answer": 1,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。"
+  },
+  {
+   "id": "g11_059",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 2. Term 9?",
+   "q_zh": "等差：首项 3、公差 2，第 9 项？",
+   "choices": [
+    "19",
+    "16",
+    "24"
+   ],
+   "choices_zh": [
+    "19",
+    "16",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "sign_en": [
+    "19",
+    "16",
+    "24"
+   ],
+   "sign_zh": [
+    "19",
+    "16",
+    "24"
+   ]
+  },
+  {
+   "id": "g11_060",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 10 lanterns, 4 lit. How many lit?",
+   "q_zh": "袋中 10 盏灯，4 盏亮，亮着几盏？",
+   "choices": [
+    "1",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "1",
+    "4",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "1",
+    "4",
+    "2"
+   ],
+   "sign_zh": [
+    "1",
+    "4",
+    "2"
+   ]
+  },
+  {
+   "id": "g11_061",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 2. Term 7?",
+   "q_zh": "等差：首项 5、公差 2，第 7 项？",
+   "choices": [
+    "20",
+    "15",
+    "17",
+    "16"
+   ],
+   "choices_zh": [
+    "20",
+    "15",
+    "17",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "=17.",
+   "explain_zh": "=17。"
+  },
+  {
+   "id": "g11_062",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 3. Term 5?",
+   "q_zh": "等差：首项 4、公差 3，第 5 项？",
+   "choices": [
+    "15",
+    "16",
+    "18"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "=16.",
+   "explain_zh": "=16。",
+   "sign_en": [
+    "15",
+    "16",
+    "18"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "18"
+   ]
+  },
+  {
+   "id": "g11_063",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 4. Term 9?",
+   "q_zh": "等差：首项 10、公差 4，第 9 项？",
+   "choices": [
+    "42",
+    "36",
+    "37"
+   ],
+   "choices_zh": [
+    "42",
+    "36",
+    "37"
+   ],
+   "answer": 0,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "42",
+    "36",
+    "37"
+   ],
+   "sign_zh": [
+    "42",
+    "36",
+    "37"
+   ]
+  },
+  {
+   "id": "g11_064",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 5. Term 3?",
+   "q_zh": "等差：首项 3、公差 5，第 3 项？",
+   "choices": [
+    "13",
+    "9",
+    "17",
+    "10"
+   ],
+   "choices_zh": [
+    "13",
+    "9",
+    "17",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "=13.",
+   "explain_zh": "=13。"
+  },
+  {
+   "id": "g11_065",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 5. Term 3?",
+   "q_zh": "等差：首项 8、公差 5，第 3 项？",
+   "choices": [
+    "21",
+    "18",
+    "13"
+   ],
+   "choices_zh": [
+    "21",
+    "18",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "21",
+    "18",
+    "13"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "13"
+   ]
+  },
+  {
+   "id": "g11_066",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10^2 = ?",
+   "q_zh": "10^2 =？",
+   "choices": [
+    "100",
+    "95",
+    "111"
+   ],
+   "choices_zh": [
+    "100",
+    "95",
+    "111"
+   ],
+   "answer": 0,
+   "explain_en": "=100.",
+   "explain_zh": "=100。",
+   "sign_en": [
+    "100",
+    "95",
+    "111"
+   ],
+   "sign_zh": [
+    "100",
+    "95",
+    "111"
+   ]
+  },
+  {
+   "id": "g11_067",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 12 lanterns, 2 lit. How many lit?",
+   "q_zh": "袋中 12 盏灯，2 盏亮，亮着几盏？",
+   "choices": [
+    "5",
+    "3",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "4",
+    "2"
+   ],
+   "answer": 3,
+   "explain_en": "=2.",
+   "explain_zh": "=2。"
+  },
+  {
+   "id": "g11_068",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "4^3 = ?",
+   "q_zh": "4^3 =？",
+   "choices": [
+    "73",
+    "59",
+    "62",
+    "64"
+   ],
+   "choices_zh": [
+    "73",
+    "59",
+    "62",
+    "64"
+   ],
+   "answer": 3,
+   "explain_en": "=64.",
+   "explain_zh": "=64。"
+  },
+  {
+   "id": "g11_069",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=6.",
+   "q_zh": "x=6 时 x²−5x+6=？",
+   "choices": [
+    "14",
+    "16",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "14",
+    "16",
+    "10",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g11_070",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "2^4 = ?",
+   "q_zh": "2^4 =？",
+   "choices": [
+    "16",
+    "18",
+    "13",
+    "20"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "13",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "=16.",
+   "explain_zh": "=16。"
+  },
+  {
+   "id": "g11_071",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=-1.",
+   "q_zh": "x=-1 时 x²−5x+6=？",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "12"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "8",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g11_072",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=-3.",
+   "q_zh": "x=-3 时 x²−5x+6=？",
+   "choices": [
+    "30",
+    "28",
+    "31"
+   ],
+   "choices_zh": [
+    "30",
+    "28",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "30",
+    "28",
+    "31"
+   ],
+   "sign_zh": [
+    "30",
+    "28",
+    "31"
+   ]
+  },
+  {
+   "id": "g11_073",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 4. Term 3?",
+   "q_zh": "等差：首项 3、公差 4，第 3 项？",
+   "choices": [
+    "14",
+    "11",
+    "12"
+   ],
+   "choices_zh": [
+    "14",
+    "11",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "14",
+    "11",
+    "12"
+   ],
+   "sign_zh": [
+    "14",
+    "11",
+    "12"
+   ]
+  },
+  {
+   "id": "g11_074",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10^1 = ?",
+   "q_zh": "10^1 =？",
+   "choices": [
+    "10",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "8",
+    "7"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "7"
+   ]
+  },
+  {
+   "id": "g11_075",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 10 lanterns, 3 lit. How many lit?",
+   "q_zh": "袋中 10 盏灯，3 盏亮，亮着几盏？",
+   "choices": [
+    "0",
+    "2",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g11_076",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 3. Term 6?",
+   "q_zh": "等差：首项 7、公差 3，第 6 项？",
+   "choices": [
+    "22",
+    "18",
+    "17"
+   ],
+   "choices_zh": [
+    "22",
+    "18",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "sign_en": [
+    "22",
+    "18",
+    "17"
+   ],
+   "sign_zh": [
+    "22",
+    "18",
+    "17"
+   ]
+  },
+  {
+   "id": "g11_077",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 3 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，3 盏亮，亮着几盏？",
+   "choices": [
+    "2",
+    "0",
+    "4",
+    "3"
+   ],
+   "choices_zh": [
+    "2",
+    "0",
+    "4",
+    "3"
+   ],
+   "answer": 3,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g11_078",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10^4 = ?",
+   "q_zh": "10^4 =？",
+   "choices": [
+    "11467",
+    "10000",
+    "11102"
+   ],
+   "choices_zh": [
+    "11467",
+    "10000",
+    "11102"
+   ],
+   "answer": 1,
+   "explain_en": "=10000.",
+   "explain_zh": "=10000。",
+   "sign_en": [
+    "11467",
+    "10000",
+    "11102"
+   ],
+   "sign_zh": [
+    "11467",
+    "10000",
+    "11102"
+   ]
+  },
+  {
+   "id": "g11_079",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 5. Term 6?",
+   "q_zh": "等差：首项 7、公差 5，第 6 项？",
+   "choices": [
+    "32",
+    "27",
+    "25"
+   ],
+   "choices_zh": [
+    "32",
+    "27",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "sign_en": [
+    "32",
+    "27",
+    "25"
+   ],
+   "sign_zh": [
+    "32",
+    "27",
+    "25"
+   ]
+  },
+  {
+   "id": "g11_080",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 2. Term 3?",
+   "q_zh": "等差：首项 10、公差 2，第 3 项？",
+   "choices": [
+    "12",
+    "14",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "14",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "sign_en": [
+    "12",
+    "14",
+    "11"
+   ],
+   "sign_zh": [
+    "12",
+    "14",
+    "11"
+   ]
+  },
+  {
+   "id": "g11_081",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 3. Term 5?",
+   "q_zh": "等差：首项 2、公差 3，第 5 项？",
+   "choices": [
+    "11",
+    "14",
+    "17"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "sign_en": [
+    "11",
+    "14",
+    "17"
+   ],
+   "sign_zh": [
+    "11",
+    "14",
+    "17"
+   ]
+  },
+  {
+   "id": "g11_082",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 3. Term 6?",
+   "q_zh": "等差：首项 9、公差 3，第 6 项？",
+   "choices": [
+    "21",
+    "24",
+    "28"
+   ],
+   "choices_zh": [
+    "21",
+    "24",
+    "28"
+   ],
+   "answer": 1,
+   "explain_en": "=24.",
+   "explain_zh": "=24。",
+   "sign_en": [
+    "21",
+    "24",
+    "28"
+   ],
+   "sign_zh": [
+    "21",
+    "24",
+    "28"
+   ]
+  },
+  {
+   "id": "g11_083",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 4. Term 10?",
+   "q_zh": "等差：首项 10、公差 4，第 10 项？",
+   "choices": [
+    "42",
+    "46",
+    "49"
+   ],
+   "choices_zh": [
+    "42",
+    "46",
+    "49"
+   ],
+   "answer": 1,
+   "explain_en": "=46.",
+   "explain_zh": "=46。",
+   "sign_en": [
+    "42",
+    "46",
+    "49"
+   ],
+   "sign_zh": [
+    "42",
+    "46",
+    "49"
+   ]
+  },
+  {
+   "id": "g11_084",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 2. Term 9?",
+   "q_zh": "等差：首项 4、公差 2，第 9 项？",
+   "choices": [
+    "21",
+    "18",
+    "20"
+   ],
+   "choices_zh": [
+    "21",
+    "18",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "21",
+    "18",
+    "20"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "20"
+   ]
+  },
+  {
+   "id": "g11_085",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "4^2 = ?",
+   "q_zh": "4^2 =？",
+   "choices": [
+    "19",
+    "20",
+    "16"
+   ],
+   "choices_zh": [
+    "19",
+    "20",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "=16.",
+   "explain_zh": "=16。",
+   "sign_en": [
+    "19",
+    "20",
+    "16"
+   ],
+   "sign_zh": [
+    "19",
+    "20",
+    "16"
+   ]
+  },
+  {
+   "id": "g11_086",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10^5 = ?",
+   "q_zh": "10^5 =？",
+   "choices": [
+    "100000",
+    "113980",
+    "96954"
+   ],
+   "choices_zh": [
+    "100000",
+    "113980",
+    "96954"
+   ],
+   "answer": 0,
+   "explain_en": "=100000.",
+   "explain_zh": "=100000。",
+   "sign_en": [
+    "100000",
+    "113980",
+    "96954"
+   ],
+   "sign_zh": [
+    "100000",
+    "113980",
+    "96954"
+   ]
+  },
+  {
+   "id": "g11_087",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 4. Term 10?",
+   "q_zh": "等差：首项 6、公差 4，第 10 项？",
+   "choices": [
+    "48",
+    "47",
+    "42",
+    "38"
+   ],
+   "choices_zh": [
+    "48",
+    "47",
+    "42",
+    "38"
+   ],
+   "answer": 2,
+   "explain_en": "=42.",
+   "explain_zh": "=42。"
+  },
+  {
+   "id": "g11_088",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=3.",
+   "q_zh": "x=3 时 x²−5x+6=？",
+   "choices": [
+    "0",
+    "-2",
+    "2"
+   ],
+   "choices_zh": [
+    "0",
+    "-2",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "=0.",
+   "explain_zh": "=0。",
+   "sign_en": [
+    "0",
+    "-2",
+    "2"
+   ],
+   "sign_zh": [
+    "0",
+    "-2",
+    "2"
+   ]
+  },
+  {
+   "id": "g11_089",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 10 lanterns, 2 lit. How many lit?",
+   "q_zh": "袋中 10 盏灯，2 盏亮，亮着几盏？",
+   "choices": [
+    "4",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "2",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "=2.",
+   "explain_zh": "=2。",
+   "sign_en": [
+    "4",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "g11_090",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "3^2 = ?",
+   "q_zh": "3^2 =？",
+   "choices": [
+    "11",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "11",
+    "7",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "11",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "11",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "g11_091",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 5. Term 7?",
+   "q_zh": "等差：首项 10、公差 5，第 7 项？",
+   "choices": [
+    "43",
+    "40",
+    "35",
+    "34"
+   ],
+   "choices_zh": [
+    "43",
+    "40",
+    "35",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "=40.",
+   "explain_zh": "=40。"
+  },
+  {
+   "id": "g11_092",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=5.",
+   "q_zh": "x=5 时 x²−5x+6=？",
+   "choices": [
+    "3",
+    "6",
+    "8"
+   ],
+   "choices_zh": [
+    "3",
+    "6",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "3",
+    "6",
+    "8"
+   ],
+   "sign_zh": [
+    "3",
+    "6",
+    "8"
+   ]
+  },
+  {
+   "id": "g11_093",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 5. Term 10?",
+   "q_zh": "等差：首项 2、公差 5，第 10 项？",
+   "choices": [
+    "47",
+    "41",
+    "53"
+   ],
+   "choices_zh": [
+    "47",
+    "41",
+    "53"
+   ],
+   "answer": 0,
+   "explain_en": "=47.",
+   "explain_zh": "=47。",
+   "sign_en": [
+    "47",
+    "41",
+    "53"
+   ],
+   "sign_zh": [
+    "47",
+    "41",
+    "53"
+   ]
+  },
+  {
+   "id": "g11_094",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 5. Term 8?",
+   "q_zh": "等差：首项 7、公差 5，第 8 项？",
+   "choices": [
+    "42",
+    "49",
+    "40"
+   ],
+   "choices_zh": [
+    "42",
+    "49",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "42",
+    "49",
+    "40"
+   ],
+   "sign_zh": [
+    "42",
+    "49",
+    "40"
+   ]
+  },
+  {
+   "id": "g11_095",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "3^5 = ?",
+   "q_zh": "3^5 =？",
+   "choices": [
+    "270",
+    "261",
+    "273",
+    "243"
+   ],
+   "choices_zh": [
+    "270",
+    "261",
+    "273",
+    "243"
+   ],
+   "answer": 3,
+   "explain_en": "=243.",
+   "explain_zh": "=243。"
+  },
+  {
+   "id": "g11_096",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 5. Term 6?",
+   "q_zh": "等差：首项 2、公差 5，第 6 项？",
+   "choices": [
+    "32",
+    "27",
+    "23",
+    "28"
+   ],
+   "choices_zh": [
+    "32",
+    "27",
+    "23",
+    "28"
+   ],
+   "answer": 1,
+   "explain_en": "=27.",
+   "explain_zh": "=27。"
+  },
+  {
+   "id": "g11_097",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 2. Term 10?",
+   "q_zh": "等差：首项 5、公差 2，第 10 项？",
+   "choices": [
+    "23",
+    "18",
+    "27"
+   ],
+   "choices_zh": [
+    "23",
+    "18",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "=23.",
+   "explain_zh": "=23。",
+   "sign_en": [
+    "23",
+    "18",
+    "27"
+   ],
+   "sign_zh": [
+    "23",
+    "18",
+    "27"
+   ]
+  },
+  {
+   "id": "g11_098",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 5. Term 5?",
+   "q_zh": "等差：首项 10、公差 5，第 5 项？",
+   "choices": [
+    "32",
+    "26",
+    "30"
+   ],
+   "choices_zh": [
+    "32",
+    "26",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "32",
+    "26",
+    "30"
+   ],
+   "sign_zh": [
+    "32",
+    "26",
+    "30"
+   ]
+  },
+  {
+   "id": "g11_099",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=0.",
+   "q_zh": "x=0 时 x²−5x+6=？",
+   "choices": [
+    "6",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "8",
+    "7"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "7"
+   ]
+  },
+  {
+   "id": "g11_100",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=-4.",
+   "q_zh": "x=-4 时 x²−5x+6=？",
+   "choices": [
+    "42",
+    "44",
+    "46"
+   ],
+   "choices_zh": [
+    "42",
+    "44",
+    "46"
+   ],
+   "answer": 0,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "42",
+    "44",
+    "46"
+   ],
+   "sign_zh": [
+    "42",
+    "44",
+    "46"
+   ]
+  },
+  {
+   "id": "g11_101",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 10 lanterns, 5 lit. How many lit?",
+   "q_zh": "袋中 10 盏灯，5 盏亮，亮着几盏？",
+   "choices": [
+    "6",
+    "5",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "8",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g11_102",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 3. Term 6?",
+   "q_zh": "等差：首项 8、公差 3，第 6 项？",
+   "choices": [
+    "18",
+    "22",
+    "23"
+   ],
+   "choices_zh": [
+    "18",
+    "22",
+    "23"
+   ],
+   "answer": 2,
+   "explain_en": "=23.",
+   "explain_zh": "=23。",
+   "sign_en": [
+    "18",
+    "22",
+    "23"
+   ],
+   "sign_zh": [
+    "18",
+    "22",
+    "23"
+   ]
+  },
+  {
+   "id": "g11_103",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 10 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，10 盏亮，亮着几盏？",
+   "choices": [
+    "13",
+    "7",
+    "10",
+    "11"
+   ],
+   "choices_zh": [
+    "13",
+    "7",
+    "10",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。"
+  },
+  {
+   "id": "g11_104",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 10 lanterns, 1 lit. How many lit?",
+   "q_zh": "袋中 10 盏灯，1 盏亮，亮着几盏？",
+   "choices": [
+    "3",
+    "1",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "1",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "=1.",
+   "explain_zh": "=1。",
+   "sign_en": [
+    "3",
+    "1",
+    "2"
+   ],
+   "sign_zh": [
+    "3",
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "g11_105",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "3^3 = ?",
+   "q_zh": "3^3 =？",
+   "choices": [
+    "27",
+    "22",
+    "24"
+   ],
+   "choices_zh": [
+    "27",
+    "22",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=27.",
+   "explain_zh": "=27。",
+   "sign_en": [
+    "27",
+    "22",
+    "24"
+   ],
+   "sign_zh": [
+    "27",
+    "22",
+    "24"
+   ]
+  },
+  {
+   "id": "g11_106",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 3. Term 9?",
+   "q_zh": "等差：首项 10、公差 3，第 9 项？",
+   "choices": [
+    "33",
+    "40",
+    "34"
+   ],
+   "choices_zh": [
+    "33",
+    "40",
+    "34"
+   ],
+   "answer": 2,
+   "explain_en": "=34.",
+   "explain_zh": "=34。",
+   "sign_en": [
+    "33",
+    "40",
+    "34"
+   ],
+   "sign_zh": [
+    "33",
+    "40",
+    "34"
+   ]
+  },
+  {
+   "id": "g11_107",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 12 lanterns, 4 lit. How many lit?",
+   "q_zh": "袋中 12 盏灯，4 盏亮，亮着几盏？",
+   "choices": [
+    "4",
+    "7",
+    "5",
+    "1"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "5",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g11_108",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 3. Term 10?",
+   "q_zh": "等差：首项 4、公差 3，第 10 项？",
+   "choices": [
+    "34",
+    "38",
+    "31"
+   ],
+   "choices_zh": [
+    "34",
+    "38",
+    "31"
+   ],
+   "answer": 2,
+   "explain_en": "=31.",
+   "explain_zh": "=31。",
+   "sign_en": [
+    "34",
+    "38",
+    "31"
+   ],
+   "sign_zh": [
+    "34",
+    "38",
+    "31"
+   ]
+  },
+  {
+   "id": "g11_109",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 2. Term 9?",
+   "q_zh": "等差：首项 9、公差 2，第 9 项？",
+   "choices": [
+    "29",
+    "28",
+    "25",
+    "20"
+   ],
+   "choices_zh": [
+    "29",
+    "28",
+    "25",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "=25.",
+   "explain_zh": "=25。"
+  },
+  {
+   "id": "g11_110",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 3. Term 7?",
+   "q_zh": "等差：首项 2、公差 3，第 7 项？",
+   "choices": [
+    "19",
+    "24",
+    "20",
+    "17"
+   ],
+   "choices_zh": [
+    "19",
+    "24",
+    "20",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "=20.",
+   "explain_zh": "=20。"
+  },
+  {
+   "id": "g11_111",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 2. Term 5?",
+   "q_zh": "等差：首项 7、公差 2，第 5 项？",
+   "choices": [
+    "16",
+    "15",
+    "14"
+   ],
+   "choices_zh": [
+    "16",
+    "15",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "=15.",
+   "explain_zh": "=15。",
+   "sign_en": [
+    "16",
+    "15",
+    "14"
+   ],
+   "sign_zh": [
+    "16",
+    "15",
+    "14"
+   ]
+  },
+  {
+   "id": "g11_112",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 20 lanterns, 5 lit. How many lit?",
+   "q_zh": "袋中 20 盏灯，5 盏亮，亮着几盏？",
+   "choices": [
+    "8",
+    "5",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "8",
+    "5",
+    "3",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g11_113",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 6 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，6 盏亮，亮着几盏？",
+   "choices": [
+    "4",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "4",
+    "6",
+    "7"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "7"
+   ]
+  },
+  {
+   "id": "g11_114",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "2^5 = ?",
+   "q_zh": "2^5 =？",
+   "choices": [
+    "32",
+    "30",
+    "31"
+   ],
+   "choices_zh": [
+    "32",
+    "30",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "sign_en": [
+    "32",
+    "30",
+    "31"
+   ],
+   "sign_zh": [
+    "32",
+    "30",
+    "31"
+   ]
+  },
+  {
+   "id": "g11_115",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 4. Term 6?",
+   "q_zh": "等差：首项 3、公差 4，第 6 项？",
+   "choices": [
+    "23",
+    "24",
+    "27",
+    "20"
+   ],
+   "choices_zh": [
+    "23",
+    "24",
+    "27",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "=23.",
+   "explain_zh": "=23。"
+  },
+  {
+   "id": "g11_116",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 4. Term 9?",
+   "q_zh": "等差：首项 6、公差 4，第 9 项？",
+   "choices": [
+    "38",
+    "35",
+    "36"
+   ],
+   "choices_zh": [
+    "38",
+    "35",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "=38.",
+   "explain_zh": "=38。",
+   "sign_en": [
+    "38",
+    "35",
+    "36"
+   ],
+   "sign_zh": [
+    "38",
+    "35",
+    "36"
+   ]
+  },
+  {
+   "id": "g11_117",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 20 lanterns, 8 lit. How many lit?",
+   "q_zh": "袋中 20 盏灯，8 盏亮，亮着几盏？",
+   "choices": [
+    "11",
+    "6",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "6",
+    "10",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g11_118",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 2. Term 7?",
+   "q_zh": "等差：首项 10、公差 2，第 7 项？",
+   "choices": [
+    "26",
+    "21",
+    "27",
+    "22"
+   ],
+   "choices_zh": [
+    "26",
+    "21",
+    "27",
+    "22"
+   ],
+   "answer": 3,
+   "explain_en": "=22.",
+   "explain_zh": "=22。"
+  },
+  {
+   "id": "g11_119",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 3. Term 10?",
+   "q_zh": "等差：首项 5、公差 3，第 10 项？",
+   "choices": [
+    "32",
+    "37",
+    "28",
+    "33"
+   ],
+   "choices_zh": [
+    "32",
+    "37",
+    "28",
+    "33"
+   ],
+   "answer": 0,
+   "explain_en": "=32.",
+   "explain_zh": "=32。"
+  },
+  {
+   "id": "g11_120",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=4.",
+   "q_zh": "x=4 时 x²−5x+6=？",
+   "choices": [
+    "2",
+    "-1",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "-1",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "=2.",
+   "explain_zh": "=2。",
+   "sign_en": [
+    "2",
+    "-1",
+    "1"
+   ],
+   "sign_zh": [
+    "2",
+    "-1",
+    "1"
+   ]
+  },
+  {
+   "id": "g11_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 5. Term 7?",
+   "q_zh": "等差：首项 3、公差 5，第 7 项？",
+   "choices": [
+    "34",
+    "33",
+    "26"
+   ],
+   "choices_zh": [
+    "34",
+    "33",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "sign_en": [
+    "34",
+    "33",
+    "26"
+   ],
+   "sign_zh": [
+    "34",
+    "33",
+    "26"
+   ]
+  },
+  {
+   "id": "g11_122",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 4. Term 3?",
+   "q_zh": "等差：首项 5、公差 4，第 3 项？",
+   "choices": [
+    "16",
+    "12",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "16",
+    "12",
+    "10",
+    "13"
+   ],
+   "answer": 3,
+   "explain_en": "=13.",
+   "explain_zh": "=13。"
+  },
+  {
+   "id": "g11_123",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 4. Term 10?",
+   "q_zh": "等差：首项 9、公差 4，第 10 项？",
+   "choices": [
+    "45",
+    "50",
+    "42",
+    "36"
+   ],
+   "choices_zh": [
+    "45",
+    "50",
+    "42",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "=45.",
+   "explain_zh": "=45。"
+  },
+  {
+   "id": "g11_124",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 2. Term 5?",
+   "q_zh": "等差：首项 3、公差 2，第 5 项？",
+   "choices": [
+    "14",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "14",
+    "11",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "14",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "14",
+    "11",
+    "10"
+   ]
+  },
+  {
+   "id": "g11_125",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 4. Term 4?",
+   "q_zh": "等差：首项 9、公差 4，第 4 项？",
+   "choices": [
+    "16",
+    "21",
+    "18"
+   ],
+   "choices_zh": [
+    "16",
+    "21",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "=21.",
+   "explain_zh": "=21。",
+   "sign_en": [
+    "16",
+    "21",
+    "18"
+   ],
+   "sign_zh": [
+    "16",
+    "21",
+    "18"
+   ]
+  },
+  {
+   "id": "g11_126",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 5. Term 6?",
+   "q_zh": "等差：首项 4、公差 5，第 6 项？",
+   "choices": [
+    "29",
+    "26",
+    "28",
+    "34"
+   ],
+   "choices_zh": [
+    "29",
+    "26",
+    "28",
+    "34"
+   ],
+   "answer": 0,
+   "explain_en": "=29.",
+   "explain_zh": "=29。"
+  },
+  {
+   "id": "g11_127",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=2.",
+   "q_zh": "x=2 时 x²−5x+6=？",
+   "choices": [
+    "2",
+    "0",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "0",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=0.",
+   "explain_zh": "=0。",
+   "sign_en": [
+    "2",
+    "0",
+    "1"
+   ],
+   "sign_zh": [
+    "2",
+    "0",
+    "1"
+   ]
+  },
+  {
+   "id": "g11_128",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10^3 = ?",
+   "q_zh": "10^3 =？",
+   "choices": [
+    "1000",
+    "1036",
+    "959"
+   ],
+   "choices_zh": [
+    "1000",
+    "1036",
+    "959"
+   ],
+   "answer": 0,
+   "explain_en": "=1000.",
+   "explain_zh": "=1000。",
+   "sign_en": [
+    "1000",
+    "1036",
+    "959"
+   ],
+   "sign_zh": [
+    "1000",
+    "1036",
+    "959"
+   ]
+  },
+  {
+   "id": "g11_129",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 3. Term 10?",
+   "q_zh": "等差：首项 8、公差 3，第 10 项？",
+   "choices": [
+    "33",
+    "35",
+    "34"
+   ],
+   "choices_zh": [
+    "33",
+    "35",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "=35.",
+   "explain_zh": "=35。",
+   "sign_en": [
+    "33",
+    "35",
+    "34"
+   ],
+   "sign_zh": [
+    "33",
+    "35",
+    "34"
+   ]
+  },
+  {
+   "id": "g11_130",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 5. Term 9?",
+   "q_zh": "等差：首项 7、公差 5，第 9 项？",
+   "choices": [
+    "53",
+    "47",
+    "54",
+    "45"
+   ],
+   "choices_zh": [
+    "53",
+    "47",
+    "54",
+    "45"
+   ],
+   "answer": 1,
+   "explain_en": "=47.",
+   "explain_zh": "=47。"
+  },
+  {
+   "id": "g11_131",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 4. Term 5?",
+   "q_zh": "等差：首项 10、公差 4，第 5 项？",
+   "choices": [
+    "26",
+    "25",
+    "22"
+   ],
+   "choices_zh": [
+    "26",
+    "25",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "sign_en": [
+    "26",
+    "25",
+    "22"
+   ],
+   "sign_zh": [
+    "26",
+    "25",
+    "22"
+   ]
+  },
+  {
+   "id": "g11_132",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 12 lanterns, 1 lit. How many lit?",
+   "q_zh": "袋中 12 盏灯，1 盏亮，亮着几盏？",
+   "choices": [
+    "1",
+    "0",
+    "3",
+    "-2"
+   ],
+   "choices_zh": [
+    "1",
+    "0",
+    "3",
+    "-2"
+   ],
+   "answer": 0,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g11_133",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Evaluate x²−5x+6 at x=-2.",
+   "q_zh": "x=-2 时 x²−5x+6=？",
+   "choices": [
+    "16",
+    "20",
+    "23"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "23"
+   ],
+   "answer": 1,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "16",
+    "20",
+    "23"
+   ],
+   "sign_zh": [
+    "16",
+    "20",
+    "23"
+   ]
+  },
+  {
+   "id": "g11_134",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 2. Term 8?",
+   "q_zh": "等差：首项 8、公差 2，第 8 项？",
+   "choices": [
+    "20",
+    "22",
+    "24"
+   ],
+   "choices_zh": [
+    "20",
+    "22",
+    "24"
+   ],
+   "answer": 1,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "sign_en": [
+    "20",
+    "22",
+    "24"
+   ],
+   "sign_zh": [
+    "20",
+    "22",
+    "24"
+   ]
+  },
+  {
+   "id": "g11_135",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 5. Term 8?",
+   "q_zh": "等差：首项 9、公差 5，第 8 项？",
+   "choices": [
+    "53",
+    "35",
+    "40",
+    "44"
+   ],
+   "choices_zh": [
+    "53",
+    "35",
+    "40",
+    "44"
+   ],
+   "answer": 3,
+   "explain_en": "=44.",
+   "explain_zh": "=44。"
+  },
+  {
+   "id": "g11_136",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "2^2 = ?",
+   "q_zh": "2^2 =？",
+   "choices": [
+    "1",
+    "5",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "1",
+    "5",
+    "4",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g11_137",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 2. Term 3?",
+   "q_zh": "等差：首项 7、公差 2，第 3 项？",
+   "choices": [
+    "13",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "13",
+    "11",
+    "14"
+   ],
+   "sign_zh": [
+    "13",
+    "11",
+    "14"
+   ]
+  },
+  {
+   "id": "g11_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 3. Term 8?",
+   "q_zh": "等差：首项 5、公差 3，第 8 项？",
+   "choices": [
+    "26",
+    "28",
+    "30"
+   ],
+   "choices_zh": [
+    "26",
+    "28",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "sign_en": [
+    "26",
+    "28",
+    "30"
+   ],
+   "sign_zh": [
+    "26",
+    "28",
+    "30"
+   ]
+  },
+  {
+   "id": "g11_139",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 3. Term 5?",
+   "q_zh": "等差：首项 10、公差 3，第 5 项？",
+   "choices": [
+    "26",
+    "22",
+    "25",
+    "20"
+   ],
+   "choices_zh": [
+    "26",
+    "22",
+    "25",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "=22.",
+   "explain_zh": "=22。"
+  },
+  {
+   "id": "g11_140",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 5. Term 3?",
+   "q_zh": "等差：首项 4、公差 5，第 3 项？",
+   "choices": [
+    "13",
+    "11",
+    "14",
+    "10"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "14",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "=14.",
+   "explain_zh": "=14。"
+  },
+  {
+   "id": "g11_141",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 4. Term 7?",
+   "q_zh": "等差：首项 7、公差 4，第 7 项？",
+   "choices": [
+    "37",
+    "31",
+    "26",
+    "29"
+   ],
+   "choices_zh": [
+    "37",
+    "31",
+    "26",
+    "29"
+   ],
+   "answer": 1,
+   "explain_en": "=31.",
+   "explain_zh": "=31。"
+  },
+  {
+   "id": "g11_142",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 4. Term 10?",
+   "q_zh": "等差：首项 7、公差 4，第 10 项？",
+   "choices": [
+    "43",
+    "36",
+    "47",
+    "39"
+   ],
+   "choices_zh": [
+    "43",
+    "36",
+    "47",
+    "39"
+   ],
+   "answer": 0,
+   "explain_en": "=43.",
+   "explain_zh": "=43。"
+  },
+  {
+   "id": "g11_143",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 5. Term 6?",
+   "q_zh": "等差：首项 5、公差 5，第 6 项？",
+   "choices": [
+    "23",
+    "30",
+    "26"
+   ],
+   "choices_zh": [
+    "23",
+    "30",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "23",
+    "30",
+    "26"
+   ],
+   "sign_zh": [
+    "23",
+    "30",
+    "26"
+   ]
+  },
+  {
+   "id": "g11_144",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 4, diff 5. Term 8?",
+   "q_zh": "等差：首项 4、公差 5，第 8 项？",
+   "choices": [
+    "47",
+    "32",
+    "33",
+    "39"
+   ],
+   "choices_zh": [
+    "47",
+    "32",
+    "33",
+    "39"
+   ],
+   "answer": 3,
+   "explain_en": "=39.",
+   "explain_zh": "=39。"
+  },
+  {
+   "id": "g11_145",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 4. Term 4?",
+   "q_zh": "等差：首项 2、公差 4，第 4 项？",
+   "choices": [
+    "11",
+    "14",
+    "16"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "sign_en": [
+    "11",
+    "14",
+    "16"
+   ],
+   "sign_zh": [
+    "11",
+    "14",
+    "16"
+   ]
+  },
+  {
+   "id": "g11_146",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 4. Term 5?",
+   "q_zh": "等差：首项 2、公差 4，第 5 项？",
+   "choices": [
+    "14",
+    "18",
+    "16"
+   ],
+   "choices_zh": [
+    "14",
+    "18",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "14",
+    "18",
+    "16"
+   ],
+   "sign_zh": [
+    "14",
+    "18",
+    "16"
+   ]
+  },
+  {
+   "id": "g11_147",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 2. Term 4?",
+   "q_zh": "等差：首项 2、公差 2，第 4 项？",
+   "choices": [
+    "8",
+    "11",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "11",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "8",
+    "11",
+    "9"
+   ],
+   "sign_zh": [
+    "8",
+    "11",
+    "9"
+   ]
+  },
+  {
+   "id": "g11_148",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 4. Term 4?",
+   "q_zh": "等差：首项 5、公差 4，第 4 项？",
+   "choices": [
+    "17",
+    "14",
+    "18"
+   ],
+   "choices_zh": [
+    "17",
+    "14",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "=17.",
+   "explain_zh": "=17。",
+   "sign_en": [
+    "17",
+    "14",
+    "18"
+   ],
+   "sign_zh": [
+    "17",
+    "14",
+    "18"
+   ]
+  },
+  {
+   "id": "g11_149",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 1 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，1 盏亮，亮着几盏？",
+   "choices": [
+    "1",
+    "2",
+    "-2",
+    "0"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "-2",
+    "0"
+   ],
+   "answer": 0,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g11_150",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 20 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，20 盏亮，亮着几盏？",
+   "choices": [
+    "18",
+    "20",
+    "25"
+   ],
+   "choices_zh": [
+    "18",
+    "20",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "18",
+    "20",
+    "25"
+   ],
+   "sign_zh": [
+    "18",
+    "20",
+    "25"
+   ]
+  },
+  {
+   "id": "g11_151",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "4^4 = ?",
+   "q_zh": "4^4 =？",
+   "choices": [
+    "217",
+    "275",
+    "212",
+    "256"
+   ],
+   "choices_zh": [
+    "217",
+    "275",
+    "212",
+    "256"
+   ],
+   "answer": 3,
+   "explain_en": "=256.",
+   "explain_zh": "=256。"
+  },
+  {
+   "id": "g11_152",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 3. Term 10?",
+   "q_zh": "等差：首项 9、公差 3，第 10 项？",
+   "choices": [
+    "43",
+    "36",
+    "28",
+    "44"
+   ],
+   "choices_zh": [
+    "43",
+    "36",
+    "28",
+    "44"
+   ],
+   "answer": 1,
+   "explain_en": "=36.",
+   "explain_zh": "=36。"
+  },
+  {
+   "id": "g11_153",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 5. Term 9?",
+   "q_zh": "等差：首项 5、公差 5，第 9 项？",
+   "choices": [
+    "46",
+    "50",
+    "45"
+   ],
+   "choices_zh": [
+    "46",
+    "50",
+    "45"
+   ],
+   "answer": 2,
+   "explain_en": "=45.",
+   "explain_zh": "=45。",
+   "sign_en": [
+    "46",
+    "50",
+    "45"
+   ],
+   "sign_zh": [
+    "46",
+    "50",
+    "45"
+   ]
+  },
+  {
+   "id": "g11_154",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 4. Term 7?",
+   "q_zh": "等差：首项 8、公差 4，第 7 项？",
+   "choices": [
+    "28",
+    "32",
+    "37"
+   ],
+   "choices_zh": [
+    "28",
+    "32",
+    "37"
+   ],
+   "answer": 1,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "sign_en": [
+    "28",
+    "32",
+    "37"
+   ],
+   "sign_zh": [
+    "28",
+    "32",
+    "37"
+   ]
+  },
+  {
+   "id": "g11_155",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 2. Term 7?",
+   "q_zh": "等差：首项 7、公差 2，第 7 项？",
+   "choices": [
+    "19",
+    "18",
+    "21"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "sign_en": [
+    "19",
+    "18",
+    "21"
+   ],
+   "sign_zh": [
+    "19",
+    "18",
+    "21"
+   ]
+  },
+  {
+   "id": "g11_156",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 4. Term 9?",
+   "q_zh": "等差：首项 2、公差 4，第 9 项？",
+   "choices": [
+    "39",
+    "29",
+    "37",
+    "34"
+   ],
+   "choices_zh": [
+    "39",
+    "29",
+    "37",
+    "34"
+   ],
+   "answer": 3,
+   "explain_en": "=34.",
+   "explain_zh": "=34。"
+  },
+  {
+   "id": "g11_157",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 3, diff 4. Term 10?",
+   "q_zh": "等差：首项 3、公差 4，第 10 项？",
+   "choices": [
+    "33",
+    "37",
+    "39"
+   ],
+   "choices_zh": [
+    "33",
+    "37",
+    "39"
+   ],
+   "answer": 2,
+   "explain_en": "=39.",
+   "explain_zh": "=39。",
+   "sign_en": [
+    "33",
+    "37",
+    "39"
+   ],
+   "sign_zh": [
+    "33",
+    "37",
+    "39"
+   ]
+  },
+  {
+   "id": "g11_158",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 5. Term 6?",
+   "q_zh": "等差：首项 8、公差 5，第 6 项？",
+   "choices": [
+    "27",
+    "30",
+    "33"
+   ],
+   "choices_zh": [
+    "27",
+    "30",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "sign_en": [
+    "27",
+    "30",
+    "33"
+   ],
+   "sign_zh": [
+    "27",
+    "30",
+    "33"
+   ]
+  },
+  {
+   "id": "g11_159",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 2. Term 9?",
+   "q_zh": "等差：首项 8、公差 2，第 9 项？",
+   "choices": [
+    "22",
+    "27",
+    "24",
+    "28"
+   ],
+   "choices_zh": [
+    "22",
+    "27",
+    "24",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g11_160",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 5. Term 10?",
+   "q_zh": "等差：首项 7、公差 5，第 10 项？",
+   "choices": [
+    "52",
+    "45",
+    "43",
+    "61"
+   ],
+   "choices_zh": [
+    "52",
+    "45",
+    "43",
+    "61"
+   ],
+   "answer": 0,
+   "explain_en": "=52.",
+   "explain_zh": "=52。"
+  },
+  {
+   "id": "g11_161",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 4. Term 9?",
+   "q_zh": "等差：首项 5、公差 4，第 9 项？",
+   "choices": [
+    "34",
+    "30",
+    "37"
+   ],
+   "choices_zh": [
+    "34",
+    "30",
+    "37"
+   ],
+   "answer": 2,
+   "explain_en": "=37.",
+   "explain_zh": "=37。",
+   "sign_en": [
+    "34",
+    "30",
+    "37"
+   ],
+   "sign_zh": [
+    "34",
+    "30",
+    "37"
+   ]
+  },
+  {
+   "id": "g11_162",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 3. Term 5?",
+   "q_zh": "等差：首项 6、公差 3，第 5 项？",
+   "choices": [
+    "15",
+    "18",
+    "21"
+   ],
+   "choices_zh": [
+    "15",
+    "18",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "15",
+    "18",
+    "21"
+   ],
+   "sign_zh": [
+    "15",
+    "18",
+    "21"
+   ]
+  },
+  {
+   "id": "g11_163",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 3. Term 6?",
+   "q_zh": "等差：首项 2、公差 3，第 6 项？",
+   "choices": [
+    "17",
+    "13",
+    "16"
+   ],
+   "choices_zh": [
+    "17",
+    "13",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "=17.",
+   "explain_zh": "=17。",
+   "sign_en": [
+    "17",
+    "13",
+    "16"
+   ],
+   "sign_zh": [
+    "17",
+    "13",
+    "16"
+   ]
+  },
+  {
+   "id": "g11_164",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 2. Term 9?",
+   "q_zh": "等差：首项 6、公差 2，第 9 项？",
+   "choices": [
+    "22",
+    "26",
+    "17"
+   ],
+   "choices_zh": [
+    "22",
+    "26",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "sign_en": [
+    "22",
+    "26",
+    "17"
+   ],
+   "sign_zh": [
+    "22",
+    "26",
+    "17"
+   ]
+  },
+  {
+   "id": "g11_165",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 3. Term 3?",
+   "q_zh": "等差：首项 10、公差 3，第 3 项？",
+   "choices": [
+    "20",
+    "17",
+    "13",
+    "16"
+   ],
+   "choices_zh": [
+    "20",
+    "17",
+    "13",
+    "16"
+   ],
+   "answer": 3,
+   "explain_en": "=16.",
+   "explain_zh": "=16。"
+  },
+  {
+   "id": "g11_166",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 2, diff 2. Term 9?",
+   "q_zh": "等差：首项 2、公差 2，第 9 项？",
+   "choices": [
+    "18",
+    "13",
+    "22"
+   ],
+   "choices_zh": [
+    "18",
+    "13",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "18",
+    "13",
+    "22"
+   ],
+   "sign_zh": [
+    "18",
+    "13",
+    "22"
+   ]
+  },
+  {
+   "id": "g11_167",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 5. Term 6?",
+   "q_zh": "等差：首项 6、公差 5，第 6 项？",
+   "choices": [
+    "38",
+    "31",
+    "24",
+    "34"
+   ],
+   "choices_zh": [
+    "38",
+    "31",
+    "24",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "=31.",
+   "explain_zh": "=31。"
+  },
+  {
+   "id": "g11_168",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 12 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，12 盏亮，亮着几盏？",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "11",
+    "12",
+    "10",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g11_169",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 20 lanterns, 7 lit. How many lit?",
+   "q_zh": "袋中 20 盏灯，7 盏亮，亮着几盏？",
+   "choices": [
+    "10",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "10",
+    "7",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "10",
+    "7",
+    "5"
+   ],
+   "sign_zh": [
+    "10",
+    "7",
+    "5"
+   ]
+  },
+  {
+   "id": "g11_170",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 6, diff 3. Term 9?",
+   "q_zh": "等差：首项 6、公差 3，第 9 项？",
+   "choices": [
+    "34",
+    "35",
+    "30"
+   ],
+   "choices_zh": [
+    "34",
+    "35",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "34",
+    "35",
+    "30"
+   ],
+   "sign_zh": [
+    "34",
+    "35",
+    "30"
+   ]
+  },
+  {
+   "id": "g11_171",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 5. Term 4?",
+   "q_zh": "等差：首项 5、公差 5，第 4 项？",
+   "choices": [
+    "16",
+    "20",
+    "17",
+    "23"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "17",
+    "23"
+   ],
+   "answer": 1,
+   "explain_en": "=20.",
+   "explain_zh": "=20。"
+  },
+  {
+   "id": "g11_172",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 8, diff 3. Term 9?",
+   "q_zh": "等差：首项 8、公差 3，第 9 项？",
+   "choices": [
+    "25",
+    "32",
+    "29"
+   ],
+   "choices_zh": [
+    "25",
+    "32",
+    "29"
+   ],
+   "answer": 1,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "sign_en": [
+    "25",
+    "32",
+    "29"
+   ],
+   "sign_zh": [
+    "25",
+    "32",
+    "29"
+   ]
+  },
+  {
+   "id": "g11_173",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 2. Term 3?",
+   "q_zh": "等差：首项 5、公差 2，第 3 项？",
+   "choices": [
+    "11",
+    "6",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "11",
+    "6",
+    "9",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g11_174",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 9, diff 4. Term 5?",
+   "q_zh": "等差：首项 9、公差 4，第 5 项？",
+   "choices": [
+    "25",
+    "22",
+    "30"
+   ],
+   "choices_zh": [
+    "25",
+    "22",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "sign_en": [
+    "25",
+    "22",
+    "30"
+   ],
+   "sign_zh": [
+    "25",
+    "22",
+    "30"
+   ]
+  },
+  {
+   "id": "g11_175",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 5 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，5 盏亮，亮着几盏？",
+   "choices": [
+    "5",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "5",
+    "7",
+    "4"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "4"
+   ]
+  },
+  {
+   "id": "g11_176",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 7, diff 3. Term 5?",
+   "q_zh": "等差：首项 7、公差 3，第 5 项？",
+   "choices": [
+    "19",
+    "20",
+    "24"
+   ],
+   "choices_zh": [
+    "19",
+    "20",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "sign_en": [
+    "19",
+    "20",
+    "24"
+   ],
+   "sign_zh": [
+    "19",
+    "20",
+    "24"
+   ]
+  },
+  {
+   "id": "g11_177",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Bag has 50 lanterns, 14 lit. How many lit?",
+   "q_zh": "袋中 50 盏灯，14 盏亮，亮着几盏？",
+   "choices": [
+    "11",
+    "14",
+    "17",
+    "18"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "17",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "=14.",
+   "explain_zh": "=14。"
+  },
+  {
+   "id": "g11_178",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "4^5 = ?",
+   "q_zh": "4^5 =？",
+   "choices": [
+    "1024",
+    "942",
+    "1184"
+   ],
+   "choices_zh": [
+    "1024",
+    "942",
+    "1184"
+   ],
+   "answer": 0,
+   "explain_en": "=1024.",
+   "explain_zh": "=1024。",
+   "sign_en": [
+    "1024",
+    "942",
+    "1184"
+   ],
+   "sign_zh": [
+    "1024",
+    "942",
+    "1184"
+   ]
+  },
+  {
+   "id": "g11_179",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 5, diff 3. Term 6?",
+   "q_zh": "等差：首项 5、公差 3，第 6 项？",
+   "choices": [
+    "15",
+    "17",
+    "19",
+    "20"
+   ],
+   "choices_zh": [
+    "15",
+    "17",
+    "19",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "=20.",
+   "explain_zh": "=20。"
+  },
+  {
+   "id": "g11_180",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Arithmetic: first 10, diff 4. Term 8?",
+   "q_zh": "等差：首项 10、公差 4，第 8 项？",
+   "choices": [
+    "38",
+    "33",
+    "43"
+   ],
+   "choices_zh": [
+    "38",
+    "33",
+    "43"
+   ],
+   "answer": 0,
+   "explain_en": "=38.",
+   "explain_zh": "=38。",
+   "sign_en": [
+    "38",
+    "33",
+    "43"
+   ],
+   "sign_zh": [
+    "38",
+    "33",
+    "43"
+   ]
+  }
+ ]
+}

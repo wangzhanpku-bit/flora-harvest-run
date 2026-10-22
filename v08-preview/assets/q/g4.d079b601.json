@@ -1,0 +1,4910 @@
+{
+ "grade": 4,
+ "version": 1,
+ "curriculum": "BC Grade 4 Math, Science, Social Studies + farm + capybara facts",
+ "fields": "same format as questions_v6.json; {name} = player name; display English on top, Chinese below; corn_maze has ≤3 choices for left/middle/right forks; maze signs use sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g4_001",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "14 rows with 5 pumpkins in each row. How many pumpkins?",
+   "q_zh": "14 行，每行 5 个南瓜，一共几个？",
+   "choices": [
+    "71",
+    "60",
+    "70",
+    "73"
+   ],
+   "choices_zh": [
+    "71",
+    "60",
+    "70",
+    "73"
+   ],
+   "answer": 2,
+   "explain_en": "14 × 5 = 70.",
+   "explain_zh": "14×5=70。"
+  },
+  {
+   "id": "g4_002",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "25 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "101",
+    "92",
+    "102",
+    "100"
+   ],
+   "choices_zh": [
+    "101",
+    "92",
+    "102",
+    "100"
+   ],
+   "answer": 3,
+   "explain_en": "25 × 4 = 100.",
+   "explain_zh": "25×4=100。"
+  },
+  {
+   "id": "g4_003",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "62 rows with 7 pumpkins in each row. How many pumpkins?",
+   "q_zh": "62 行，每行 7 个南瓜，一共几个？",
+   "choices": [
+    "425",
+    "434",
+    "433",
+    "438"
+   ],
+   "choices_zh": [
+    "425",
+    "434",
+    "433",
+    "438"
+   ],
+   "answer": 1,
+   "explain_en": "62 × 7 = 434.",
+   "explain_zh": "62×7=434。"
+  },
+  {
+   "id": "g4_004",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "45 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "45 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "173",
+    "171",
+    "190",
+    "180"
+   ],
+   "choices_zh": [
+    "173",
+    "171",
+    "190",
+    "180"
+   ],
+   "answer": 3,
+   "explain_en": "45 × 4 = 180.",
+   "explain_zh": "45×4=180。"
+  },
+  {
+   "id": "g4_005",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "83 rows with 8 pumpkins in each row. How many pumpkins?",
+   "q_zh": "83 行，每行 8 个南瓜，一共几个？",
+   "choices": [
+    "664",
+    "666",
+    "674"
+   ],
+   "choices_zh": [
+    "664",
+    "666",
+    "674"
+   ],
+   "answer": 0,
+   "explain_en": "83 × 8 = 664.",
+   "explain_zh": "83×8=664。",
+   "sign_en": [
+    "664",
+    "666",
+    "674"
+   ],
+   "sign_zh": [
+    "664",
+    "666",
+    "674"
+   ]
+  },
+  {
+   "id": "g4_006",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "82 rows with 9 pumpkins in each row. How many pumpkins?",
+   "q_zh": "82 行，每行 9 个南瓜，一共几个？",
+   "choices": [
+    "733",
+    "735",
+    "738",
+    "732"
+   ],
+   "choices_zh": [
+    "733",
+    "735",
+    "738",
+    "732"
+   ],
+   "answer": 2,
+   "explain_en": "82 × 9 = 738.",
+   "explain_zh": "82×9=738。"
+  },
+  {
+   "id": "g4_007",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "16 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "16 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "74",
+    "59",
+    "64"
+   ],
+   "choices_zh": [
+    "74",
+    "59",
+    "64"
+   ],
+   "answer": 2,
+   "explain_en": "16 × 4 = 64.",
+   "explain_zh": "16×4=64。",
+   "sign_en": [
+    "74",
+    "59",
+    "64"
+   ],
+   "sign_zh": [
+    "74",
+    "59",
+    "64"
+   ]
+  },
+  {
+   "id": "g4_008",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "13 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "13 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "52",
+    "58",
+    "44",
+    "45"
+   ],
+   "choices_zh": [
+    "52",
+    "58",
+    "44",
+    "45"
+   ],
+   "answer": 0,
+   "explain_en": "13 × 4 = 52.",
+   "explain_zh": "13×4=52。"
+  },
+  {
+   "id": "g4_009",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "80 rows with 5 pumpkins in each row. How many pumpkins?",
+   "q_zh": "80 行，每行 5 个南瓜，一共几个？",
+   "choices": [
+    "399",
+    "400",
+    "406"
+   ],
+   "choices_zh": [
+    "399",
+    "400",
+    "406"
+   ],
+   "answer": 1,
+   "explain_en": "80 × 5 = 400.",
+   "explain_zh": "80×5=400。",
+   "sign_en": [
+    "399",
+    "400",
+    "406"
+   ],
+   "sign_zh": [
+    "399",
+    "400",
+    "406"
+   ]
+  },
+  {
+   "id": "g4_010",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "37 rows with 9 pumpkins in each row. How many pumpkins?",
+   "q_zh": "37 行，每行 9 个南瓜，一共几个？",
+   "choices": [
+    "333",
+    "326",
+    "325"
+   ],
+   "choices_zh": [
+    "333",
+    "326",
+    "325"
+   ],
+   "answer": 0,
+   "explain_en": "37 × 9 = 333.",
+   "explain_zh": "37×9=333。",
+   "sign_en": [
+    "333",
+    "326",
+    "325"
+   ],
+   "sign_zh": [
+    "333",
+    "326",
+    "325"
+   ]
+  },
+  {
+   "id": "g4_011",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "25 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "100",
+    "90",
+    "96",
+    "104"
+   ],
+   "choices_zh": [
+    "100",
+    "90",
+    "96",
+    "104"
+   ],
+   "answer": 0,
+   "explain_en": "25 × 4 = 100.",
+   "explain_zh": "25×4=100。"
+  },
+  {
+   "id": "g4_012",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "81 rows with 4 pumpkins in each row. How many pumpkins?",
+   "q_zh": "81 行，每行 4 个南瓜，一共几个？",
+   "choices": [
+    "319",
+    "316",
+    "324",
+    "320"
+   ],
+   "choices_zh": [
+    "319",
+    "316",
+    "324",
+    "320"
+   ],
+   "answer": 2,
+   "explain_en": "81 × 4 = 324.",
+   "explain_zh": "81×4=324。"
+  },
+  {
+   "id": "g4_013",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "62 apples go into bags of 8. How many full bags?",
+   "q_zh": "62 个苹果，每袋装 8 个，能装满几袋？",
+   "choices": [
+    "5",
+    "6",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "9",
+    "7"
+   ],
+   "answer": 3,
+   "explain_en": "62 ÷ 8 = 7 remainder 6.",
+   "explain_zh": "62÷8=7 余 6。"
+  },
+  {
+   "id": "g4_014",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "47 apples go into bags of 6. How many full bags?",
+   "q_zh": "47 个苹果，每袋装 6 个，能装满几袋？",
+   "choices": [
+    "7",
+    "9",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "9",
+    "5",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "47 ÷ 6 = 7 remainder 5.",
+   "explain_zh": "47÷6=7 余 5。"
+  },
+  {
+   "id": "g4_015",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "27 apples go into bags of 5. How many full bags?",
+   "q_zh": "27 个苹果，每袋装 5 个，能装满几袋？",
+   "choices": [
+    "3",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "27 ÷ 5 = 5 remainder 2.",
+   "explain_zh": "27÷5=5 余 2。",
+   "sign_en": [
+    "3",
+    "5",
+    "4"
+   ],
+   "sign_zh": [
+    "3",
+    "5",
+    "4"
+   ]
+  },
+  {
+   "id": "g4_016",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "49 apples go into bags of 5. How many full bags?",
+   "q_zh": "49 个苹果，每袋装 5 个，能装满几袋？",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "11"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "7",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "49 ÷ 5 = 9 remainder 4.",
+   "explain_zh": "49÷5=9 余 4。"
+  },
+  {
+   "id": "g4_017",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "65 apples go into bags of 8. How many full bags?",
+   "q_zh": "65 个苹果，每袋装 8 个，能装满几袋？",
+   "choices": [
+    "8",
+    "6",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "10",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "65 ÷ 8 = 8 remainder 1.",
+   "explain_zh": "65÷8=8 余 1。"
+  },
+  {
+   "id": "g4_018",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "28 apples go into bags of 3. How many full bags?",
+   "q_zh": "28 个苹果，每袋装 3 个，能装满几袋？",
+   "choices": [
+    "11",
+    "9",
+    "10",
+    "7"
+   ],
+   "choices_zh": [
+    "11",
+    "9",
+    "10",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "28 ÷ 3 = 9 remainder 1.",
+   "explain_zh": "28÷3=9 余 1。"
+  },
+  {
+   "id": "g4_019",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "51 apples go into bags of 7. How many full bags?",
+   "q_zh": "51 个苹果，每袋装 7 个，能装满几袋？",
+   "choices": [
+    "5",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "51 ÷ 7 = 7 remainder 2.",
+   "explain_zh": "51÷7=7 余 2。",
+   "sign_en": [
+    "5",
+    "7",
+    "6"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "6"
+   ]
+  },
+  {
+   "id": "g4_020",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "67 apples go into bags of 9. How many full bags?",
+   "q_zh": "67 个苹果，每袋装 9 个，能装满几袋？",
+   "choices": [
+    "8",
+    "6",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "7",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "67 ÷ 9 = 7 remainder 4.",
+   "explain_zh": "67÷9=7 余 4。"
+  },
+  {
+   "id": "g4_021",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.1 or 0.5?",
+   "q_zh": "0.1 和 0.5 哪个大？",
+   "choices": [
+    "0.1",
+    "0.5"
+   ],
+   "choices_zh": [
+    "0.1",
+    "0.5"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.1",
+    "0.5"
+   ],
+   "sign_zh": [
+    "0.1",
+    "0.5"
+   ]
+  },
+  {
+   "id": "g4_022",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.2 or 0.4?",
+   "q_zh": "0.2 和 0.4 哪个大？",
+   "choices": [
+    "0.2",
+    "0.4"
+   ],
+   "choices_zh": [
+    "0.2",
+    "0.4"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.2",
+    "0.4"
+   ],
+   "sign_zh": [
+    "0.2",
+    "0.4"
+   ]
+  },
+  {
+   "id": "g4_023",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.1 or 0.5?",
+   "q_zh": "0.1 和 0.5 哪个大？",
+   "choices": [
+    "0.1",
+    "0.5"
+   ],
+   "choices_zh": [
+    "0.1",
+    "0.5"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.1",
+    "0.5"
+   ],
+   "sign_zh": [
+    "0.1",
+    "0.5"
+   ]
+  },
+  {
+   "id": "g4_024",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.2 or 0.7?",
+   "q_zh": "0.2 和 0.7 哪个大？",
+   "choices": [
+    "0.2",
+    "0.7"
+   ],
+   "choices_zh": [
+    "0.2",
+    "0.7"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.2",
+    "0.7"
+   ],
+   "sign_zh": [
+    "0.2",
+    "0.7"
+   ]
+  },
+  {
+   "id": "g4_025",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.6 or 0.7?",
+   "q_zh": "0.6 和 0.7 哪个大？",
+   "choices": [
+    "0.6",
+    "0.7"
+   ],
+   "choices_zh": [
+    "0.6",
+    "0.7"
+   ],
+   "answer": 1,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.6",
+    "0.7"
+   ],
+   "sign_zh": [
+    "0.6",
+    "0.7"
+   ]
+  },
+  {
+   "id": "g4_026",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which is bigger: 0.4 or 0.9?",
+   "q_zh": "0.4 和 0.9 哪个大？",
+   "choices": [
+    "0.9",
+    "0.4"
+   ],
+   "choices_zh": [
+    "0.9",
+    "0.4"
+   ],
+   "answer": 0,
+   "explain_en": "Compare the tenths.",
+   "explain_zh": "比较十分位。",
+   "sign_en": [
+    "0.9",
+    "0.4"
+   ],
+   "sign_zh": [
+    "0.9",
+    "0.4"
+   ]
+  },
+  {
+   "id": "g4_027",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/5?",
+   "q_zh": "哪个分数等于 1/5？",
+   "choices": [
+    "3/15",
+    "1/15",
+    "3/8"
+   ],
+   "choices_zh": [
+    "3/15",
+    "1/15",
+    "3/8"
+   ],
+   "answer": 0,
+   "explain_en": "Multiply top and bottom by 3.",
+   "explain_zh": "分子分母同乘 3。",
+   "sign_en": [
+    "3/15",
+    "1/15",
+    "3/8"
+   ],
+   "sign_zh": [
+    "3/15",
+    "1/15",
+    "3/8"
+   ]
+  },
+  {
+   "id": "g4_028",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/4?",
+   "q_zh": "哪个分数等于 1/4？",
+   "choices": [
+    "4/17",
+    "4/16",
+    "4/8",
+    "1/16"
+   ],
+   "choices_zh": [
+    "4/17",
+    "4/16",
+    "4/8",
+    "1/16"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply top and bottom by 4.",
+   "explain_zh": "分子分母同乘 4。"
+  },
+  {
+   "id": "g4_029",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/5?",
+   "q_zh": "哪个分数等于 1/5？",
+   "choices": [
+    "2/7",
+    "2/10",
+    "1/10"
+   ],
+   "choices_zh": [
+    "2/7",
+    "2/10",
+    "1/10"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply top and bottom by 2.",
+   "explain_zh": "分子分母同乘 2。",
+   "sign_en": [
+    "2/7",
+    "2/10",
+    "1/10"
+   ],
+   "sign_zh": [
+    "2/7",
+    "2/10",
+    "1/10"
+   ]
+  },
+  {
+   "id": "g4_030",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/4?",
+   "q_zh": "哪个分数等于 1/4？",
+   "choices": [
+    "1/8",
+    "2/8",
+    "2/6"
+   ],
+   "choices_zh": [
+    "1/8",
+    "2/8",
+    "2/6"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply top and bottom by 2.",
+   "explain_zh": "分子分母同乘 2。",
+   "sign_en": [
+    "1/8",
+    "2/8",
+    "2/6"
+   ],
+   "sign_zh": [
+    "1/8",
+    "2/8",
+    "2/6"
+   ]
+  },
+  {
+   "id": "g4_031",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/2?",
+   "q_zh": "哪个分数等于 1/2？",
+   "choices": [
+    "3/5",
+    "2/7",
+    "3/6",
+    "1/6"
+   ],
+   "choices_zh": [
+    "3/5",
+    "2/7",
+    "3/6",
+    "1/6"
+   ],
+   "answer": 2,
+   "explain_en": "Multiply top and bottom by 3.",
+   "explain_zh": "分子分母同乘 3。"
+  },
+  {
+   "id": "g4_032",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Which fraction equals 1/4?",
+   "q_zh": "哪个分数等于 1/4？",
+   "choices": [
+    "1/16",
+    "4/16",
+    "4/17"
+   ],
+   "choices_zh": [
+    "1/16",
+    "4/16",
+    "4/17"
+   ],
+   "answer": 1,
+   "explain_en": "Multiply top and bottom by 4.",
+   "explain_zh": "分子分母同乘 4。",
+   "sign_en": [
+    "1/16",
+    "4/16",
+    "4/17"
+   ],
+   "sign_zh": [
+    "1/16",
+    "4/16",
+    "4/17"
+   ]
+  },
+  {
+   "id": "g4_033",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 8 m long and 7 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 8 米、宽 7 米，周长是多少？",
+   "choices": [
+    "15 m",
+    "30 m",
+    "32 m",
+    "56 m"
+   ],
+   "choices_zh": [
+    "15 米",
+    "30 米",
+    "32 米",
+    "56 米"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (8 + 7) = 30 m.",
+   "explain_zh": "2×(8+7)=30 米。"
+  },
+  {
+   "id": "g4_034",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 4 m long and 3 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 4 米、宽 3 米，周长是多少？",
+   "choices": [
+    "7 m",
+    "14 m",
+    "16 m"
+   ],
+   "choices_zh": [
+    "7 米",
+    "14 米",
+    "16 米"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (4 + 3) = 14 m.",
+   "explain_zh": "2×(4+3)=14 米。",
+   "sign_en": [
+    "7 m",
+    "14 m",
+    "16 m"
+   ],
+   "sign_zh": [
+    "7 米",
+    "14 米",
+    "16 米"
+   ]
+  },
+  {
+   "id": "g4_035",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 4 m long and 6 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 4 米、宽 6 米，周长是多少？",
+   "choices": [
+    "10 m",
+    "24 m",
+    "22 m",
+    "20 m"
+   ],
+   "choices_zh": [
+    "10 米",
+    "24 米",
+    "22 米",
+    "20 米"
+   ],
+   "answer": 3,
+   "explain_en": "2 × (4 + 6) = 20 m.",
+   "explain_zh": "2×(4+6)=20 米。"
+  },
+  {
+   "id": "g4_036",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 14 m long and 3 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 14 米、宽 3 米，周长是多少？",
+   "choices": [
+    "36 m",
+    "34 m",
+    "17 m",
+    "42 m"
+   ],
+   "choices_zh": [
+    "36 米",
+    "34 米",
+    "17 米",
+    "42 米"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (14 + 3) = 34 m.",
+   "explain_zh": "2×(14+3)=34 米。"
+  },
+  {
+   "id": "g4_037",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 6 m long and 2 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 6 米、宽 2 米，周长是多少？",
+   "choices": [
+    "16 m",
+    "12 m",
+    "8 m",
+    "18 m"
+   ],
+   "choices_zh": [
+    "16 米",
+    "12 米",
+    "8 米",
+    "18 米"
+   ],
+   "answer": 0,
+   "explain_en": "2 × (6 + 2) = 16 m.",
+   "explain_zh": "2×(6+2)=16 米。"
+  },
+  {
+   "id": "g4_038",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A pen is 14 m long and 5 m wide. What is its perimeter?",
+   "q_zh": "一个围栏长 14 米、宽 5 米，周长是多少？",
+   "choices": [
+    "70 m",
+    "40 m",
+    "38 m",
+    "19 m"
+   ],
+   "choices_zh": [
+    "70 米",
+    "40 米",
+    "38 米",
+    "19 米"
+   ],
+   "answer": 2,
+   "explain_en": "2 × (14 + 5) = 38 m.",
+   "explain_zh": "2×(14+5)=38 米。"
+  },
+  {
+   "id": "g4_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which is a solid?",
+   "q_zh": "下面哪个是固体？",
+   "choices": [
+    "Air",
+    "Ice",
+    "Steam",
+    "Water"
+   ],
+   "choices_zh": [
+    "空气",
+    "冰",
+    "水蒸气",
+    "水"
+   ],
+   "answer": 1,
+   "explain_en": "Ice is frozen water, a solid.",
+   "explain_zh": "冰是冻住的水，是固体。"
+  },
+  {
+   "id": "g4_040",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water vapour turning into drops is called…",
+   "q_zh": "水蒸气变成水滴叫什么？",
+   "choices": [
+    "Freezing",
+    "Melting",
+    "Condensation"
+   ],
+   "choices_zh": [
+    "结冰",
+    "融化",
+    "凝结"
+   ],
+   "answer": 2,
+   "explain_en": "Cool air turns vapour into drops.",
+   "explain_zh": "冷空气让水蒸气变成水滴。",
+   "sign_en": [
+    "Freezing",
+    "Melting",
+    "Condensation"
+   ],
+   "sign_zh": [
+    "结冰",
+    "融化",
+    "凝结"
+   ]
+  },
+  {
+   "id": "g4_041",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What do bees do for pumpkin flowers?",
+   "q_zh": "蜜蜂帮南瓜花做什么？",
+   "choices": [
+    "Pollinate them",
+    "Water them",
+    "Paint them",
+    "Eat them"
+   ],
+   "choices_zh": [
+    "传粉",
+    "浇水",
+    "上色",
+    "吃掉"
+   ],
+   "answer": 0,
+   "explain_en": "Bees carry pollen from flower to flower.",
+   "explain_zh": "蜜蜂把花粉从一朵花带到另一朵花。"
+  },
+  {
+   "id": "g4_042",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "An animal that eats only plants is a…",
+   "q_zh": "只吃植物的动物叫什么？",
+   "choices": [
+    "Predator",
+    "Herbivore",
+    "Carnivore"
+   ],
+   "choices_zh": [
+    "捕食者",
+    "食草动物",
+    "食肉动物"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras are herbivores.",
+   "explain_zh": "卡皮巴拉就是食草动物。",
+   "sign_en": [
+    "Predator",
+    "Herbivore",
+    "Carnivore"
+   ],
+   "sign_zh": [
+    "捕食者",
+    "食草动物",
+    "食肉动物"
+   ]
+  },
+  {
+   "id": "g4_043",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What causes day and night?",
+   "q_zh": "白天和黑夜是怎么来的？",
+   "choices": [
+    "Clouds moving",
+    "Earth spinning",
+    "The Moon"
+   ],
+   "choices_zh": [
+    "云在动",
+    "地球自转",
+    "月亮"
+   ],
+   "answer": 1,
+   "explain_en": "Earth spins once a day.",
+   "explain_zh": "地球每天自转一圈。"
+  },
+  {
+   "id": "g4_044",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Which sense do we use most to find a ripe melon by tapping it?",
+   "q_zh": "敲一敲判断西瓜熟没熟，主要用哪种感觉？",
+   "choices": [
+    "Taste",
+    "Smell",
+    "Hearing"
+   ],
+   "choices_zh": [
+    "味觉",
+    "嗅觉",
+    "听觉"
+   ],
+   "answer": 2,
+   "explain_en": "A ripe melon sounds hollow.",
+   "explain_zh": "熟西瓜敲起来声音空空的。",
+   "sign_en": [
+    "Taste",
+    "Smell",
+    "Hearing"
+   ],
+   "sign_zh": [
+    "味觉",
+    "嗅觉",
+    "听觉"
+   ]
+  },
+  {
+   "id": "g4_045",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Which province is Vancouver in?",
+   "q_zh": "温哥华在哪个省？",
+   "choices": [
+    "Alberta",
+    "Ontario",
+    "Quebec",
+    "B.C."
+   ],
+   "choices_zh": [
+    "阿尔伯塔省",
+    "安大略省",
+    "魁北克省",
+    "卑诗省"
+   ],
+   "answer": 3,
+   "explain_en": "Vancouver is in British Columbia.",
+   "explain_zh": "温哥华在卑诗省（不列颠哥伦比亚省）。"
+  },
+  {
+   "id": "g4_046",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "What is Canada's capital city?",
+   "q_zh": "加拿大的首都是哪里？",
+   "choices": [
+    "Vancouver",
+    "Toronto",
+    "Ottawa"
+   ],
+   "choices_zh": [
+    "温哥华",
+    "多伦多",
+    "渥太华"
+   ],
+   "answer": 2,
+   "explain_en": "Ottawa is in Ontario.",
+   "explain_zh": "渥太华在安大略省。",
+   "sign_en": [
+    "Vancouver",
+    "Toronto",
+    "Ottawa"
+   ],
+   "sign_zh": [
+    "温哥华",
+    "多伦多",
+    "渥太华"
+   ]
+  },
+  {
+   "id": "g4_047",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Pumpkins are usually harvested in…",
+   "q_zh": "南瓜通常在什么时候收获？",
+   "choices": [
+    "Summer",
+    "Fall",
+    "Winter",
+    "Spring"
+   ],
+   "choices_zh": [
+    "夏天",
+    "秋天",
+    "冬天",
+    "春天"
+   ],
+   "answer": 1,
+   "explain_en": "That's why we have fall pumpkin patches.",
+   "explain_zh": "所以秋天才有南瓜田活动。"
+  },
+  {
+   "id": "g4_048",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Which crop is used to make popcorn?",
+   "q_zh": "爆米花是用什么做的？",
+   "choices": [
+    "Corn",
+    "Wheat",
+    "Rice"
+   ],
+   "choices_zh": [
+    "玉米",
+    "小麦",
+    "大米"
+   ],
+   "answer": 0,
+   "explain_en": "Popcorn is a special kind of corn.",
+   "explain_zh": "爆米花是一种特别的玉米做的。",
+   "sign_en": [
+    "Corn",
+    "Wheat",
+    "Rice"
+   ],
+   "sign_zh": [
+    "玉米",
+    "小麦",
+    "大米"
+   ]
+  },
+  {
+   "id": "g4_049",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！卡皮巴拉最喜欢待在哪里？",
+   "choices": [
+    "In the water",
+    "Up a tree",
+    "In the snow"
+   ],
+   "choices_zh": [
+    "在水里",
+    "树上",
+    "雪地里"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "卡皮巴拉超爱游泳和泡水。"
+  },
+  {
+   "id": "g4_050",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！卡皮巴拉吃什么？",
+   "choices": [
+    "Grass",
+    "Fish",
+    "Candy"
+   ],
+   "choices_zh": [
+    "草",
+    "鱼",
+    "糖果"
+   ],
+   "answer": 0,
+   "explain_en": "They are plant eaters.",
+   "explain_zh": "它们只吃植物。",
+   "sign_en": [
+    "Grass",
+    "Fish",
+    "Candy"
+   ],
+   "sign_zh": [
+    "草",
+    "鱼",
+    "糖果"
+   ]
+  },
+  {
+   "id": "g4_051",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！卡皮巴拉是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Insect",
+    "Fish",
+    "Rodent"
+   ],
+   "choices_zh": [
+    "鸟",
+    "昆虫",
+    "鱼",
+    "啮齿动物"
+   ],
+   "answer": 3,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。"
+  },
+  {
+   "id": "g4_052",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉来自哪里？",
+   "choices": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "choices_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "sign_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ]
+  },
+  {
+   "id": "g4_053",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Quick: Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "Up a tree",
+    "In the desert",
+    "In the snow",
+    "In the water"
+   ],
+   "choices_zh": [
+    "树上",
+    "沙漠里",
+    "雪地里",
+    "在水里"
+   ],
+   "answer": 3,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。"
+  },
+  {
+   "id": "g4_054",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Quick: What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Candy",
+    "Grass and plants",
+    "Fish"
+   ],
+   "choices_zh": [
+    "糖果",
+    "草和植物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "sign_en": [
+    "Candy",
+    "Grass and plants",
+    "Fish"
+   ],
+   "sign_zh": [
+    "糖果",
+    "草和植物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g4_055",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Quick: A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Rodent",
+    "Bird",
+    "Fish"
+   ],
+   "choices_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "sign_en": [
+    "Rodent",
+    "Bird",
+    "Fish"
+   ],
+   "sign_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g4_056",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Quick: Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Africa",
+    "South America",
+    "Australia",
+    "The North Pole"
+   ],
+   "choices_zh": [
+    "非洲",
+    "南美洲",
+    "澳大利亚",
+    "北极"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。"
+  },
+  {
+   "id": "g4_057",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Yes",
+    "No",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "有",
+    "没有",
+    "只在冬天有"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "sign_en": [
+    "Yes",
+    "No",
+    "Only in winter"
+   ],
+   "sign_zh": [
+    "有",
+    "没有",
+    "只在冬天有"
+   ]
+  },
+  {
+   "id": "g4_058",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ],
+   "answer": 2,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "sign_en": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "sign_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ]
+  },
+  {
+   "id": "g4_059",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Herd",
+    "School",
+    "Flock"
+   ],
+   "choices_zh": [
+    "一群",
+    "鱼群",
+    "鸟群"
+   ],
+   "answer": 0,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "sign_en": [
+    "Herd",
+    "School",
+    "Flock"
+   ],
+   "sign_zh": [
+    "一群",
+    "鱼群",
+    "鸟群"
+   ]
+  },
+  {
+   "id": "g4_060",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Raccoon",
+    "Goose",
+    "Beaver",
+    "Capybara"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "鹅",
+    "河狸",
+    "水豚"
+   ],
+   "answer": 3,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。"
+  },
+  {
+   "id": "g4_061",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Only hisses",
+    "Total silence",
+    "Lion roars",
+    "Cute squeaks / clicks"
+   ],
+   "choices_zh": [
+    "只会嘶嘶",
+    "完全不叫",
+    "狮子吼",
+    "可爱的吱吱/咔嗒声"
+   ],
+   "answer": 3,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。"
+  },
+  {
+   "id": "g4_062",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Lives only on ice",
+    "Is a bird",
+    "Has no flat paddle tail"
+   ],
+   "choices_zh": [
+    "只住在冰上",
+    "是鸟",
+    "没有扁平的桨状尾巴"
+   ],
+   "answer": 2,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "sign_en": [
+    "Lives only on ice",
+    "Is a bird",
+    "Has no flat paddle tail"
+   ],
+   "sign_zh": [
+    "只住在冰上",
+    "是鸟",
+    "没有扁平的桨状尾巴"
+   ]
+  },
+  {
+   "id": "g4_063",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What colour is a ripe pumpkin?",
+   "q_zh": "熟了的南瓜是什么颜色？",
+   "choices": [
+    "Purple",
+    "Orange",
+    "Blue"
+   ],
+   "choices_zh": [
+    "紫色",
+    "橙色",
+    "蓝色"
+   ],
+   "answer": 1,
+   "explain_en": "Most ripe pumpkins are orange.",
+   "explain_zh": "大多数熟南瓜是橙色。",
+   "sign_en": [
+    "Purple",
+    "Orange",
+    "Blue"
+   ],
+   "sign_zh": [
+    "紫色",
+    "橙色",
+    "蓝色"
+   ]
+  },
+  {
+   "id": "g4_064",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What do plants need to grow?",
+   "q_zh": "植物生长需要什么？",
+   "choices": [
+    "Water and sunlight",
+    "Toys",
+    "Candy"
+   ],
+   "choices_zh": [
+    "水和阳光",
+    "玩具",
+    "糖果"
+   ],
+   "answer": 0,
+   "explain_en": "Plants need water, light, and air.",
+   "explain_zh": "植物需要水、光和空气。",
+   "sign_en": [
+    "Water and sunlight",
+    "Toys",
+    "Candy"
+   ],
+   "sign_zh": [
+    "水和阳光",
+    "玩具",
+    "糖果"
+   ]
+  },
+  {
+   "id": "g4_065",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which season comes after summer?",
+   "q_zh": "夏天过后是什么季节？",
+   "choices": [
+    "Fall / autumn",
+    "Only winter",
+    "Spring"
+   ],
+   "choices_zh": [
+    "秋天",
+    "只有冬天",
+    "春天"
+   ],
+   "answer": 0,
+   "explain_en": "Spring, summer, fall, winter.",
+   "explain_zh": "春夏秋冬。"
+  },
+  {
+   "id": "g4_066",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Roots of a plant mostly…",
+   "q_zh": "植物的根主要……",
+   "choices": [
+    "Fly",
+    "Make thunder",
+    "Take in water",
+    "Sing"
+   ],
+   "choices_zh": [
+    "飞翔",
+    "打雷",
+    "吸水",
+    "唱歌"
+   ],
+   "answer": 2,
+   "explain_en": "Roots absorb water.",
+   "explain_zh": "根吸水。"
+  },
+  {
+   "id": "g4_067",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Bees help pumpkin flowers by…",
+   "q_zh": "蜜蜂帮南瓜花……",
+   "choices": [
+    "Eating metal",
+    "Painting them",
+    "Pollinating them"
+   ],
+   "choices_zh": [
+    "只吃金属",
+    "给它们上色",
+    "传粉"
+   ],
+   "answer": 2,
+   "explain_en": "Bees carry pollen.",
+   "explain_zh": "蜜蜂传粉。",
+   "sign_en": [
+    "Eating metal",
+    "Painting them",
+    "Pollinating them"
+   ],
+   "sign_zh": [
+    "只吃金属",
+    "给它们上色",
+    "传粉"
+   ]
+  },
+  {
+   "id": "g4_068",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Photosynthesis happens mainly in…",
+   "q_zh": "光合作用主要发生在……",
+   "choices": [
+    "Bones",
+    "Leaves",
+    "Shoelaces"
+   ],
+   "choices_zh": [
+    "骨头",
+    "叶子",
+    "鞋带"
+   ],
+   "answer": 1,
+   "explain_en": "Leaves use light to make food.",
+   "explain_zh": "叶子用光制造养分。",
+   "sign_en": [
+    "Bones",
+    "Leaves",
+    "Shoelaces"
+   ],
+   "sign_zh": [
+    "骨头",
+    "叶子",
+    "鞋带"
+   ]
+  },
+  {
+   "id": "g4_069",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "What colour is Canada's flag?",
+   "q_zh": "加拿大国旗是什么颜色？",
+   "choices": [
+    "Black and gold",
+    "Blue and green",
+    "Red and white",
+    "Only purple"
+   ],
+   "choices_zh": [
+    "黑金",
+    "蓝绿",
+    "红色和白色",
+    "只有紫"
+   ],
+   "answer": 2,
+   "explain_en": "Red maple leaf flag.",
+   "explain_zh": "红白枫叶旗。"
+  },
+  {
+   "id": "g4_070",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Which province is Vancouver in? ✓",
+   "q_zh": "温哥华在哪个省？",
+   "choices": [
+    "Texas",
+    "Ontario",
+    "British Columbia (B.C.)",
+    "Quebec"
+   ],
+   "choices_zh": [
+    "得克萨斯",
+    "安大略",
+    "卑诗省",
+    "魁北克"
+   ],
+   "answer": 2,
+   "explain_en": "Vancouver is in B.C.",
+   "explain_zh": "温哥华在卑诗省。"
+  },
+  {
+   "id": "g4_071",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "What do bees make?",
+   "q_zh": "蜜蜂会做什么？",
+   "choices": [
+    "Honey",
+    "Milk",
+    "Wool",
+    "Bricks"
+   ],
+   "choices_zh": [
+    "蜂蜜",
+    "牛奶",
+    "羊毛",
+    "砖"
+   ],
+   "answer": 0,
+   "explain_en": "Bees make honey.",
+   "explain_zh": "蜜蜂酿蜜。"
+  },
+  {
+   "id": "g4_072",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Popcorn comes from…",
+   "q_zh": "爆米花来自……",
+   "choices": [
+    "Corn",
+    "Clouds",
+    "Rocks",
+    "Rice only"
+   ],
+   "choices_zh": [
+    "玉米",
+    "云",
+    "石头",
+    "只有大米"
+   ],
+   "answer": 0,
+   "explain_en": "Popcorn is a kind of corn.",
+   "explain_zh": "爆米花是一种玉米。"
+  },
+  {
+   "id": "g4_073",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "An animal that eats only plants is a… ✓",
+   "q_zh": "只吃植物的动物叫……",
+   "choices": [
+    "Satellite",
+    "Printer",
+    "Carnivore",
+    "Herbivore"
+   ],
+   "choices_zh": [
+    "卫星",
+    "打印机",
+    "食肉动物",
+    "食草动物"
+   ],
+   "answer": 3,
+   "explain_en": "Capybaras are herbivores.",
+   "explain_zh": "水豚是食草动物。"
+  },
+  {
+   "id": "g4_074",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Day and night are caused by…",
+   "q_zh": "白天黑夜是因为……",
+   "choices": [
+    "Pumpkins",
+    "Earth spinning",
+    "Only wind",
+    "Clouds eating the Sun"
+   ],
+   "choices_zh": [
+    "南瓜",
+    "地球自转",
+    "只有风",
+    "云吃掉太阳"
+   ],
+   "answer": 1,
+   "explain_en": "Earth rotates once a day.",
+   "explain_zh": "地球每天自转一圈。"
+  },
+  {
+   "id": "g4_075",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which gas do plants release that we breathe?",
+   "q_zh": "植物放出的、我们呼吸的气体是？",
+   "choices": [
+    "Oxygen",
+    "Helium",
+    "Smoke"
+   ],
+   "choices_zh": [
+    "氧气",
+    "氦气",
+    "烟"
+   ],
+   "answer": 0,
+   "explain_en": "Plants release oxygen.",
+   "explain_zh": "植物释放氧气。",
+   "sign_en": [
+    "Oxygen",
+    "Helium",
+    "Smoke"
+   ],
+   "sign_zh": [
+    "氧气",
+    "氦气",
+    "烟"
+   ]
+  },
+  {
+   "id": "g4_076",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Canada's capital city is…",
+   "q_zh": "加拿大的首都是……",
+   "choices": [
+    "Toronto",
+    "Vancouver",
+    "Calgary",
+    "Ottawa"
+   ],
+   "choices_zh": [
+    "多伦多",
+    "温哥华",
+    "卡尔加里",
+    "渥太华"
+   ],
+   "answer": 3,
+   "explain_en": "Ottawa is the capital.",
+   "explain_zh": "首都是渥太华。"
+  },
+  {
+   "id": "g4_077",
+   "section": "corn_maze",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Pumpkins are usually harvested in… ✓",
+   "q_zh": "南瓜通常在什么时候收获？",
+   "choices": [
+    "Spring",
+    "Deep winter only",
+    "Fall"
+   ],
+   "choices_zh": [
+    "春天",
+    "只有深冬",
+    "秋天"
+   ],
+   "answer": 2,
+   "explain_en": "Fall pumpkin harvest.",
+   "explain_zh": "秋天收南瓜。",
+   "sign_en": [
+    "Spring",
+    "Deep winter only",
+    "Fall"
+   ],
+   "sign_zh": [
+    "春天",
+    "只有深冬",
+    "秋天"
+   ]
+  },
+  {
+   "id": "g4_078",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Canada goose",
+    "Penguin",
+    "Ostrich",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "加拿大鹅",
+    "企鹅",
+    "鸵鸟",
+    "火烈鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。"
+  },
+  {
+   "id": "g4_079",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At night",
+    "At noon",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "晚上",
+    "中午",
+    "只在冬天"
+   ],
+   "answer": 0,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "At night",
+    "At noon",
+    "Only in winter"
+   ],
+   "sign_zh": [
+    "晚上",
+    "中午",
+    "只在冬天"
+   ]
+  },
+  {
+   "id": "g4_080",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "choices_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ],
+   "answer": 1,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "sign_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ]
+  },
+  {
+   "id": "g4_081",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Birds",
+    "Mammals",
+    "Fish",
+    "Insects"
+   ],
+   "choices_zh": [
+    "鸟",
+    "哺乳动物",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 1,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。"
+  },
+  {
+   "id": "g4_082",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Penguin",
+    "Great blue heron",
+    "Ostrich"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "大蓝鹭",
+    "鸵鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "sign_en": [
+    "Penguin",
+    "Great blue heron",
+    "Ostrich"
+   ],
+   "sign_zh": [
+    "企鹅",
+    "大蓝鹭",
+    "鸵鸟"
+   ]
+  },
+  {
+   "id": "g4_083",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Western red cedar",
+    "Palm tree",
+    "Baobab"
+   ],
+   "choices_zh": [
+    "西部红雪松",
+    "棕榈树",
+    "猴面包树"
+   ],
+   "answer": 0,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "sign_en": [
+    "Western red cedar",
+    "Palm tree",
+    "Baobab"
+   ],
+   "sign_zh": [
+    "西部红雪松",
+    "棕榈树",
+    "猴面包树"
+   ]
+  },
+  {
+   "id": "g4_084",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Hibernate",
+    "Learn to fly",
+    "Find candy",
+    "Lay eggs / spawn"
+   ],
+   "choices_zh": [
+    "冬眠",
+    "学飞",
+    "找糖",
+    "产卵"
+   ],
+   "answer": 3,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。"
+  },
+  {
+   "id": "g4_085",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "270°",
+    "45°",
+    "90°"
+   ],
+   "choices_zh": [
+    "大约 270°",
+    "45°",
+    "90°"
+   ],
+   "answer": 0,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "sign_en": [
+    "270°",
+    "45°",
+    "90°"
+   ],
+   "sign_zh": [
+    "大约 270°",
+    "45°",
+    "90°"
+   ]
+  },
+  {
+   "id": "g4_086",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Earthquakes only",
+    "Street lights",
+    "Wind turbines",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "只因为地震",
+    "路灯",
+    "风力发电机",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。"
+  },
+  {
+   "id": "g4_087",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Traffic",
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "车流",
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）",
+    "磁铁"
+   ],
+   "answer": 2,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。"
+  },
+  {
+   "id": "g4_088",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Marine mammals",
+    "Fish",
+    "Birds"
+   ],
+   "choices_zh": [
+    "海洋哺乳动物",
+    "鱼",
+    "鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "sign_en": [
+    "Marine mammals",
+    "Fish",
+    "Birds"
+   ],
+   "sign_zh": [
+    "海洋哺乳动物",
+    "鱼",
+    "鸟"
+   ]
+  },
+  {
+   "id": "g4_089",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Building dams and lodges with wood",
+    "Flying south",
+    "Growing antlers",
+    "Laying swan eggs"
+   ],
+   "choices_zh": [
+    "用木头筑坝和巢穴",
+    "飞去南方",
+    "长鹿角",
+    "下天鹅蛋"
+   ],
+   "answer": 0,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。"
+  },
+  {
+   "id": "g4_090",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Mammal",
+    "Fish",
+    "Bird"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鱼",
+    "鸟类"
+   ],
+   "answer": 2,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "sign_en": [
+    "Mammal",
+    "Fish",
+    "Bird"
+   ],
+   "sign_zh": [
+    "哺乳动物",
+    "鱼",
+    "鸟类"
+   ]
+  },
+  {
+   "id": "g4_091",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "4",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "8",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "sign_en": [
+    "4",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "4",
+    "8",
+    "6"
+   ]
+  },
+  {
+   "id": "g4_092",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Stop rain",
+    "Make candy",
+    "Taste colours",
+    "Sense objects with sound echoes"
+   ],
+   "choices_zh": [
+    "让雨停下",
+    "做糖果",
+    "品尝颜色",
+    "用回声感知物体"
+   ],
+   "answer": 3,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。"
+  },
+  {
+   "id": "g4_093",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "8",
+    "2",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "2",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。"
+  },
+  {
+   "id": "g4_094",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Making plastic",
+    "Providing habitat and holding soil",
+    "Stopping the Moon"
+   ],
+   "choices_zh": [
+    "制造塑料",
+    "提供栖息地并固定土壤",
+    "挡住月亮"
+   ],
+   "answer": 1,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Making plastic",
+    "Providing habitat and holding soil",
+    "Stopping the Moon"
+   ],
+   "sign_zh": [
+    "制造塑料",
+    "提供栖息地并固定土壤",
+    "挡住月亮"
+   ]
+  },
+  {
+   "id": "g4_095",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Sun only",
+    "Fungi / mushrooms"
+   ],
+   "choices_zh": [
+    "自行车",
+    "只有太阳",
+    "真菌/蘑菇"
+   ],
+   "answer": 2,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "sign_en": [
+    "Bicycle",
+    "Sun only",
+    "Fungi / mushrooms"
+   ],
+   "sign_zh": [
+    "自行车",
+    "只有太阳",
+    "真菌/蘑菇"
+   ]
+  },
+  {
+   "id": "g4_096",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "2001",
+    "1776",
+    "1950",
+    "1888"
+   ],
+   "choices_zh": [
+    "2001",
+    "1776",
+    "1950",
+    "1888"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g4_097",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ],
+   "answer": 1,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "sign_en": [
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "sign_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ]
+  },
+  {
+   "id": "g4_098",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Much smaller",
+    "Half the size",
+    "The same",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "小很多",
+    "只有一半大",
+    "一样大",
+    "更大"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。"
+  },
+  {
+   "id": "g4_099",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Vikings"
+   ],
+   "choices_zh": [
+    "印加",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "维京人"
+   ],
+   "answer": 1,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "sign_en": [
+    "Inca",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Vikings"
+   ],
+   "sign_zh": [
+    "印加",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "维京人"
+   ]
+  },
+  {
+   "id": "g4_100",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Port Mann",
+    "Lions Gate Bridge",
+    "Tower Bridge"
+   ],
+   "choices_zh": [
+    "福特曼桥",
+    "狮门大桥",
+    "塔桥"
+   ],
+   "answer": 1,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Port Mann",
+    "Lions Gate Bridge",
+    "Tower Bridge"
+   ],
+   "sign_zh": [
+    "福特曼桥",
+    "狮门大桥",
+    "塔桥"
+   ]
+  },
+  {
+   "id": "g4_101",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "Midnight",
+    "6:00 pm",
+    "9:00 pm"
+   ],
+   "choices_zh": [
+    "午夜",
+    "晚上 6 点",
+    "晚上 9 点"
+   ],
+   "answer": 2,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "sign_en": [
+    "Midnight",
+    "6:00 pm",
+    "9:00 pm"
+   ],
+   "sign_zh": [
+    "午夜",
+    "晚上 6 点",
+    "晚上 9 点"
+   ]
+  },
+  {
+   "id": "g4_102",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 3 by 11 m patch?",
+   "q_zh": "长 3 宽 11 米菜地的周长？",
+   "choices": [
+    "29",
+    "31",
+    "28"
+   ],
+   "choices_zh": [
+    "29",
+    "31",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "2×(3+11)=28.",
+   "explain_zh": "=28。",
+   "sign_en": [
+    "29",
+    "31",
+    "28"
+   ],
+   "sign_zh": [
+    "29",
+    "31",
+    "28"
+   ]
+  },
+  {
+   "id": "g4_103",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 20?",
+   "q_zh": "20 的 1/4 是多少？",
+   "choices": [
+    "2",
+    "6",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "2",
+    "6",
+    "4",
+    "5"
+   ],
+   "answer": 3,
+   "explain_en": "1/4×20=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g4_104",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/5 of 50?",
+   "q_zh": "50 的 2/5 是多少？",
+   "choices": [
+    "22",
+    "20",
+    "17"
+   ],
+   "choices_zh": [
+    "22",
+    "20",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "2/5×50=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "22",
+    "20",
+    "17"
+   ],
+   "sign_zh": [
+    "22",
+    "20",
+    "17"
+   ]
+  },
+  {
+   "id": "g4_105",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 6 rows of 8 lanterns. How many?",
+   "q_zh": "迷宫 6 行，每行 8 盏灯，一共？",
+   "choices": [
+    "39",
+    "48",
+    "54",
+    "45"
+   ],
+   "choices_zh": [
+    "39",
+    "48",
+    "54",
+    "45"
+   ],
+   "answer": 1,
+   "explain_en": "6×8=48.",
+   "explain_zh": "6×8=48。"
+  },
+  {
+   "id": "g4_106",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 7 rows of 9 lanterns. How many?",
+   "q_zh": "迷宫 7 行，每行 9 盏灯，一共？",
+   "choices": [
+    "70",
+    "69",
+    "63"
+   ],
+   "choices_zh": [
+    "70",
+    "69",
+    "63"
+   ],
+   "answer": 2,
+   "explain_en": "7×9=63.",
+   "explain_zh": "7×9=63。",
+   "sign_en": [
+    "70",
+    "69",
+    "63"
+   ],
+   "sign_zh": [
+    "70",
+    "69",
+    "63"
+   ]
+  },
+  {
+   "id": "g4_107",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 16 apples into groups of 4. How many groups?",
+   "q_zh": "16 个苹果每 4 个一组，几组？",
+   "choices": [
+    "3",
+    "2",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "1",
+    "4"
+   ],
+   "answer": 3,
+   "explain_en": "16÷4=4.",
+   "explain_zh": "16÷4=4。"
+  },
+  {
+   "id": "g4_108",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/2 of 8?",
+   "q_zh": "8 的 1/2 是多少？",
+   "choices": [
+    "4",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "1/2×8=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "4",
+    "6",
+    "5"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "5"
+   ]
+  },
+  {
+   "id": "g4_109",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 11 rows of 10 lanterns. How many?",
+   "q_zh": "迷宫 11 行，每行 10 盏灯，一共？",
+   "choices": [
+    "90",
+    "92",
+    "110"
+   ],
+   "choices_zh": [
+    "90",
+    "92",
+    "110"
+   ],
+   "answer": 2,
+   "explain_en": "11×10=110.",
+   "explain_zh": "11×10=110。",
+   "sign_en": [
+    "90",
+    "92",
+    "110"
+   ],
+   "sign_zh": [
+    "90",
+    "92",
+    "110"
+   ]
+  },
+  {
+   "id": "g4_110",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 4/5 of 40?",
+   "q_zh": "40 的 4/5 是多少？",
+   "choices": [
+    "27",
+    "37",
+    "32",
+    "25"
+   ],
+   "choices_zh": [
+    "27",
+    "37",
+    "32",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "4/5×40=32.",
+   "explain_zh": "=32。"
+  },
+  {
+   "id": "g4_111",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3/4 of 20?",
+   "q_zh": "20 的 3/4 是多少？",
+   "choices": [
+    "14",
+    "15",
+    "17"
+   ],
+   "choices_zh": [
+    "14",
+    "15",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "3/4×20=15.",
+   "explain_zh": "=15。",
+   "sign_en": [
+    "14",
+    "15",
+    "17"
+   ],
+   "sign_zh": [
+    "14",
+    "15",
+    "17"
+   ]
+  },
+  {
+   "id": "g4_112",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 12?",
+   "q_zh": "12 的 2/3 是多少？",
+   "choices": [
+    "11",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "2/3×12=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "11",
+    "10",
+    "8"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "8"
+   ]
+  },
+  {
+   "id": "g4_113",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 332 then 157 more pumpkins. Total?",
+   "q_zh": "农场运出 332 个南瓜，又运 157 个，一共？",
+   "choices": [
+    "489",
+    "533",
+    "459",
+    "531"
+   ],
+   "choices_zh": [
+    "489",
+    "533",
+    "459",
+    "531"
+   ],
+   "answer": 0,
+   "explain_en": "332+157=489.",
+   "explain_zh": "332+157=489。"
+  },
+  {
+   "id": "g4_114",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 227 then 162 more pumpkins. Total?",
+   "q_zh": "农场运出 227 个南瓜，又运 162 个，一共？",
+   "choices": [
+    "414",
+    "393",
+    "332",
+    "389"
+   ],
+   "choices_zh": [
+    "414",
+    "393",
+    "332",
+    "389"
+   ],
+   "answer": 3,
+   "explain_en": "227+162=389.",
+   "explain_zh": "227+162=389。"
+  },
+  {
+   "id": "g4_115",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/5 of 45?",
+   "q_zh": "45 的 2/5 是多少？",
+   "choices": [
+    "16",
+    "14",
+    "23",
+    "18"
+   ],
+   "choices_zh": [
+    "16",
+    "14",
+    "23",
+    "18"
+   ],
+   "answer": 3,
+   "explain_en": "2/5×45=18.",
+   "explain_zh": "=18。"
+  },
+  {
+   "id": "g4_116",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 6 rows of 9 lanterns. How many?",
+   "q_zh": "迷宫 6 行，每行 9 盏灯，一共？",
+   "choices": [
+    "43",
+    "54",
+    "53"
+   ],
+   "choices_zh": [
+    "43",
+    "54",
+    "53"
+   ],
+   "answer": 1,
+   "explain_en": "6×9=54.",
+   "explain_zh": "6×9=54。",
+   "sign_en": [
+    "43",
+    "54",
+    "53"
+   ],
+   "sign_zh": [
+    "43",
+    "54",
+    "53"
+   ]
+  },
+  {
+   "id": "g4_117",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 483 then 80 more pumpkins. Total?",
+   "q_zh": "农场运出 483 个南瓜，又运 80 个，一共？",
+   "choices": [
+    "502",
+    "563",
+    "580",
+    "482"
+   ],
+   "choices_zh": [
+    "502",
+    "563",
+    "580",
+    "482"
+   ],
+   "answer": 1,
+   "explain_en": "483+80=563.",
+   "explain_zh": "483+80=563。"
+  },
+  {
+   "id": "g4_118",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 496 then 190 more pumpkins. Total?",
+   "q_zh": "农场运出 496 个南瓜，又运 190 个，一共？",
+   "choices": [
+    "752",
+    "783",
+    "686"
+   ],
+   "choices_zh": [
+    "752",
+    "783",
+    "686"
+   ],
+   "answer": 2,
+   "explain_en": "496+190=686.",
+   "explain_zh": "496+190=686。",
+   "sign_en": [
+    "752",
+    "783",
+    "686"
+   ],
+   "sign_zh": [
+    "752",
+    "783",
+    "686"
+   ]
+  },
+  {
+   "id": "g4_119",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 55 apples into groups of 5. How many groups?",
+   "q_zh": "55 个苹果每 5 个一组，几组？",
+   "choices": [
+    "11",
+    "12",
+    "13",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "12",
+    "13",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "55÷5=11.",
+   "explain_zh": "55÷5=11。"
+  },
+  {
+   "id": "g4_120",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 9?",
+   "q_zh": "9 的 2/3 是多少？",
+   "choices": [
+    "7",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "2/3×9=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "7",
+    "6",
+    "4"
+   ],
+   "sign_zh": [
+    "7",
+    "6",
+    "4"
+   ]
+  },
+  {
+   "id": "g4_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 4/5 of 25?",
+   "q_zh": "25 的 4/5 是多少？",
+   "choices": [
+    "20",
+    "19",
+    "24"
+   ],
+   "choices_zh": [
+    "20",
+    "19",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "4/5×25=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "20",
+    "19",
+    "24"
+   ],
+   "sign_zh": [
+    "20",
+    "19",
+    "24"
+   ]
+  },
+  {
+   "id": "g4_122",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 14 apples into groups of 2. How many groups?",
+   "q_zh": "14 个苹果每 2 个一组，几组？",
+   "choices": [
+    "7",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "14÷2=7.",
+   "explain_zh": "14÷2=7。",
+   "sign_en": [
+    "7",
+    "4",
+    "5"
+   ],
+   "sign_zh": [
+    "7",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "g4_123",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 141 then 158 more pumpkins. Total?",
+   "q_zh": "农场运出 141 个南瓜，又运 158 个，一共？",
+   "choices": [
+    "299",
+    "279",
+    "286"
+   ],
+   "choices_zh": [
+    "299",
+    "279",
+    "286"
+   ],
+   "answer": 0,
+   "explain_en": "141+158=299.",
+   "explain_zh": "141+158=299。",
+   "sign_en": [
+    "299",
+    "279",
+    "286"
+   ],
+   "sign_zh": [
+    "299",
+    "279",
+    "286"
+   ]
+  },
+  {
+   "id": "g4_124",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 24?",
+   "q_zh": "24 的 1/4 是多少？",
+   "choices": [
+    "3",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "6",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "1/4×24=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "3",
+    "6",
+    "4"
+   ],
+   "sign_zh": [
+    "3",
+    "6",
+    "4"
+   ]
+  },
+  {
+   "id": "g4_125",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/5 of 40?",
+   "q_zh": "40 的 1/5 是多少？",
+   "choices": [
+    "10",
+    "6",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "6",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "1/5×40=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "10",
+    "6",
+    "8"
+   ],
+   "sign_zh": [
+    "10",
+    "6",
+    "8"
+   ]
+  },
+  {
+   "id": "g4_126",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/4 of 20?",
+   "q_zh": "20 的 2/4 是多少？",
+   "choices": [
+    "12",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "2/4×20=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "12",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "12",
+    "10",
+    "9"
+   ]
+  },
+  {
+   "id": "g4_127",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 94 then 185 more pumpkins. Total?",
+   "q_zh": "农场运出 94 个南瓜，又运 185 个，一共？",
+   "choices": [
+    "250",
+    "303",
+    "288",
+    "279"
+   ],
+   "choices_zh": [
+    "250",
+    "303",
+    "288",
+    "279"
+   ],
+   "answer": 3,
+   "explain_en": "94+185=279.",
+   "explain_zh": "94+185=279。"
+  },
+  {
+   "id": "g4_128",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 10 apples into groups of 2. How many groups?",
+   "q_zh": "10 个苹果每 2 个一组，几组？",
+   "choices": [
+    "8",
+    "2",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "8",
+    "2",
+    "5",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "10÷2=5.",
+   "explain_zh": "10÷2=5。"
+  },
+  {
+   "id": "g4_129",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 21?",
+   "q_zh": "21 的 2/3 是多少？",
+   "choices": [
+    "14",
+    "16",
+    "13",
+    "15"
+   ],
+   "choices_zh": [
+    "14",
+    "16",
+    "13",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "2/3×21=14.",
+   "explain_zh": "=14。"
+  },
+  {
+   "id": "g4_130",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 11 rows of 11 lanterns. How many?",
+   "q_zh": "迷宫 11 行，每行 11 盏灯，一共？",
+   "choices": [
+    "133",
+    "132",
+    "121"
+   ],
+   "choices_zh": [
+    "133",
+    "132",
+    "121"
+   ],
+   "answer": 2,
+   "explain_en": "11×11=121.",
+   "explain_zh": "11×11=121。",
+   "sign_en": [
+    "133",
+    "132",
+    "121"
+   ],
+   "sign_zh": [
+    "133",
+    "132",
+    "121"
+   ]
+  },
+  {
+   "id": "g4_131",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 18?",
+   "q_zh": "18 的 2/3 是多少？",
+   "choices": [
+    "10",
+    "12",
+    "14"
+   ],
+   "choices_zh": [
+    "10",
+    "12",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "2/3×18=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "10",
+    "12",
+    "14"
+   ],
+   "sign_zh": [
+    "10",
+    "12",
+    "14"
+   ]
+  },
+  {
+   "id": "g4_132",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3/5 of 25?",
+   "q_zh": "25 的 3/5 是多少？",
+   "choices": [
+    "12",
+    "15",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "15",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "3/5×25=15.",
+   "explain_zh": "=15。",
+   "sign_en": [
+    "12",
+    "15",
+    "11"
+   ],
+   "sign_zh": [
+    "12",
+    "15",
+    "11"
+   ]
+  },
+  {
+   "id": "g4_133",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 14 by 14 m patch?",
+   "q_zh": "长 14 宽 14 米菜地的周长？",
+   "choices": [
+    "45",
+    "46",
+    "56"
+   ],
+   "choices_zh": [
+    "45",
+    "46",
+    "56"
+   ],
+   "answer": 2,
+   "explain_en": "2×(14+14)=56.",
+   "explain_zh": "=56。",
+   "sign_en": [
+    "45",
+    "46",
+    "56"
+   ],
+   "sign_zh": [
+    "45",
+    "46",
+    "56"
+   ]
+  },
+  {
+   "id": "g4_134",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/4 of 16?",
+   "q_zh": "16 的 2/4 是多少？",
+   "choices": [
+    "8",
+    "10",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "2/4×16=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "8",
+    "10",
+    "7"
+   ],
+   "sign_zh": [
+    "8",
+    "10",
+    "7"
+   ]
+  },
+  {
+   "id": "g4_135",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 12 apples into groups of 3. How many groups?",
+   "q_zh": "12 个苹果每 3 个一组，几组？",
+   "choices": [
+    "2",
+    "4",
+    "7"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "12÷3=4.",
+   "explain_zh": "12÷3=4。",
+   "sign_en": [
+    "2",
+    "4",
+    "7"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "g4_136",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 18 apples into groups of 2. How many groups?",
+   "q_zh": "18 个苹果每 2 个一组，几组？",
+   "choices": [
+    "8",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "18÷2=9.",
+   "explain_zh": "18÷2=9。",
+   "sign_en": [
+    "8",
+    "9",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "9",
+    "6"
+   ]
+  },
+  {
+   "id": "g4_137",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 215 then 84 more pumpkins. Total?",
+   "q_zh": "农场运出 215 个南瓜，又运 84 个，一共？",
+   "choices": [
+    "301",
+    "317",
+    "334",
+    "299"
+   ],
+   "choices_zh": [
+    "301",
+    "317",
+    "334",
+    "299"
+   ],
+   "answer": 3,
+   "explain_en": "215+84=299.",
+   "explain_zh": "215+84=299。"
+  },
+  {
+   "id": "g4_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 12 by 12 m patch?",
+   "q_zh": "长 12 宽 12 米菜地的周长？",
+   "choices": [
+    "48",
+    "54",
+    "44"
+   ],
+   "choices_zh": [
+    "48",
+    "54",
+    "44"
+   ],
+   "answer": 0,
+   "explain_en": "2×(12+12)=48.",
+   "explain_zh": "=48。",
+   "sign_en": [
+    "48",
+    "54",
+    "44"
+   ],
+   "sign_zh": [
+    "48",
+    "54",
+    "44"
+   ]
+  },
+  {
+   "id": "g4_139",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3/4 of 16?",
+   "q_zh": "16 的 3/4 是多少？",
+   "choices": [
+    "13",
+    "12",
+    "16",
+    "10"
+   ],
+   "choices_zh": [
+    "13",
+    "12",
+    "16",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "3/4×16=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g4_140",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 9 by 11 m patch?",
+   "q_zh": "长 9 宽 11 米菜地的周长？",
+   "choices": [
+    "40",
+    "43",
+    "36"
+   ],
+   "choices_zh": [
+    "40",
+    "43",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "2×(9+11)=40.",
+   "explain_zh": "=40。",
+   "sign_en": [
+    "40",
+    "43",
+    "36"
+   ],
+   "sign_zh": [
+    "40",
+    "43",
+    "36"
+   ]
+  },
+  {
+   "id": "g4_141",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 12 by 9 m patch?",
+   "q_zh": "长 12 宽 9 米菜地的周长？",
+   "choices": [
+    "48",
+    "47",
+    "42"
+   ],
+   "choices_zh": [
+    "48",
+    "47",
+    "42"
+   ],
+   "answer": 2,
+   "explain_en": "2×(12+9)=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "48",
+    "47",
+    "42"
+   ],
+   "sign_zh": [
+    "48",
+    "47",
+    "42"
+   ]
+  },
+  {
+   "id": "g4_142",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/3 of 9?",
+   "q_zh": "9 的 1/3 是多少？",
+   "choices": [
+    "2",
+    "6",
+    "3",
+    "5"
+   ],
+   "choices_zh": [
+    "2",
+    "6",
+    "3",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "1/3×9=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g4_143",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 10 by 7 m patch?",
+   "q_zh": "长 10 宽 7 米菜地的周长？",
+   "choices": [
+    "31",
+    "29",
+    "34"
+   ],
+   "choices_zh": [
+    "31",
+    "29",
+    "34"
+   ],
+   "answer": 2,
+   "explain_en": "2×(10+7)=34.",
+   "explain_zh": "=34。",
+   "sign_en": [
+    "31",
+    "29",
+    "34"
+   ],
+   "sign_zh": [
+    "31",
+    "29",
+    "34"
+   ]
+  },
+  {
+   "id": "g4_144",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 30?",
+   "q_zh": "30 的 2/3 是多少？",
+   "choices": [
+    "24",
+    "22",
+    "20"
+   ],
+   "choices_zh": [
+    "24",
+    "22",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "2/3×30=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "24",
+    "22",
+    "20"
+   ],
+   "sign_zh": [
+    "24",
+    "22",
+    "20"
+   ]
+  },
+  {
+   "id": "g4_145",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 14 by 15 m patch?",
+   "q_zh": "长 14 宽 15 米菜地的周长？",
+   "choices": [
+    "56",
+    "58",
+    "57"
+   ],
+   "choices_zh": [
+    "56",
+    "58",
+    "57"
+   ],
+   "answer": 1,
+   "explain_en": "2×(14+15)=58.",
+   "explain_zh": "=58。",
+   "sign_en": [
+    "56",
+    "58",
+    "57"
+   ],
+   "sign_zh": [
+    "56",
+    "58",
+    "57"
+   ]
+  },
+  {
+   "id": "g4_146",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 6 rows of 11 lanterns. How many?",
+   "q_zh": "迷宫 6 行，每行 11 盏灯，一共？",
+   "choices": [
+    "66",
+    "67",
+    "64"
+   ],
+   "choices_zh": [
+    "66",
+    "67",
+    "64"
+   ],
+   "answer": 0,
+   "explain_en": "6×11=66.",
+   "explain_zh": "6×11=66。",
+   "sign_en": [
+    "66",
+    "67",
+    "64"
+   ],
+   "sign_zh": [
+    "66",
+    "67",
+    "64"
+   ]
+  },
+  {
+   "id": "g4_147",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 4 by 14 m patch?",
+   "q_zh": "长 4 宽 14 米菜地的周长？",
+   "choices": [
+    "34",
+    "36",
+    "44"
+   ],
+   "choices_zh": [
+    "34",
+    "36",
+    "44"
+   ],
+   "answer": 1,
+   "explain_en": "2×(4+14)=36.",
+   "explain_zh": "=36。",
+   "sign_en": [
+    "34",
+    "36",
+    "44"
+   ],
+   "sign_zh": [
+    "34",
+    "36",
+    "44"
+   ]
+  },
+  {
+   "id": "g4_148",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/3 of 15?",
+   "q_zh": "15 的 1/3 是多少？",
+   "choices": [
+    "6",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "1/3×15=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "6",
+    "5",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "5",
+    "4"
+   ]
+  },
+  {
+   "id": "g4_149",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Perimeter of a 15 by 12 m patch?",
+   "q_zh": "长 15 宽 12 米菜地的周长？",
+   "choices": [
+    "60",
+    "64",
+    "54"
+   ],
+   "choices_zh": [
+    "60",
+    "64",
+    "54"
+   ],
+   "answer": 2,
+   "explain_en": "2×(15+12)=54.",
+   "explain_zh": "=54。",
+   "sign_en": [
+    "60",
+    "64",
+    "54"
+   ],
+   "sign_zh": [
+    "60",
+    "64",
+    "54"
+   ]
+  },
+  {
+   "id": "g4_150",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 32?",
+   "q_zh": "32 的 1/4 是多少？",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "1/4×32=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g4_151",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3/4 of 40?",
+   "q_zh": "40 的 3/4 是多少？",
+   "choices": [
+    "33",
+    "30",
+    "34",
+    "23"
+   ],
+   "choices_zh": [
+    "33",
+    "30",
+    "34",
+    "23"
+   ],
+   "answer": 1,
+   "explain_en": "3/4×40=30.",
+   "explain_zh": "=30。"
+  },
+  {
+   "id": "g4_152",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 60 apples into groups of 5. How many groups?",
+   "q_zh": "60 个苹果每 5 个一组，几组？",
+   "choices": [
+    "9",
+    "10",
+    "12",
+    "16"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "12",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "60÷5=12.",
+   "explain_zh": "60÷5=12。"
+  },
+  {
+   "id": "g4_153",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/2 of 10?",
+   "q_zh": "10 的 1/2 是多少？",
+   "choices": [
+    "6",
+    "5",
+    "8",
+    "3"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "8",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "1/2×10=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g4_154",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 39 apples into groups of 3. How many groups?",
+   "q_zh": "39 个苹果每 3 个一组，几组？",
+   "choices": [
+    "11",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "39÷3=13.",
+   "explain_zh": "39÷3=13。",
+   "sign_en": [
+    "11",
+    "10",
+    "13"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "13"
+   ]
+  },
+  {
+   "id": "g4_155",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Divide 24 apples into groups of 2. How many groups?",
+   "q_zh": "24 个苹果每 2 个一组，几组？",
+   "choices": [
+    "15",
+    "12",
+    "16",
+    "11"
+   ],
+   "choices_zh": [
+    "15",
+    "12",
+    "16",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "24÷2=12.",
+   "explain_zh": "24÷2=12。"
+  },
+  {
+   "id": "g4_156",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 5 rows of 6 lanterns. How many?",
+   "q_zh": "迷宫 5 行，每行 6 盏灯，一共？",
+   "choices": [
+    "30",
+    "27",
+    "24",
+    "23"
+   ],
+   "choices_zh": [
+    "30",
+    "27",
+    "24",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "5×6=30.",
+   "explain_zh": "5×6=30。"
+  },
+  {
+   "id": "g4_157",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/4 of 24?",
+   "q_zh": "24 的 2/4 是多少？",
+   "choices": [
+    "13",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "10",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "2/4×24=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "13",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "13",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "g4_158",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 182 then 96 more pumpkins. Total?",
+   "q_zh": "农场运出 182 个南瓜，又运 96 个，一共？",
+   "choices": [
+    "280",
+    "278",
+    "296"
+   ],
+   "choices_zh": [
+    "280",
+    "278",
+    "296"
+   ],
+   "answer": 1,
+   "explain_en": "182+96=278.",
+   "explain_zh": "182+96=278。",
+   "sign_en": [
+    "280",
+    "278",
+    "296"
+   ],
+   "sign_zh": [
+    "280",
+    "278",
+    "296"
+   ]
+  },
+  {
+   "id": "g4_159",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 328 then 193 more pumpkins. Total?",
+   "q_zh": "农场运出 328 个南瓜，又运 193 个，一共？",
+   "choices": [
+    "545",
+    "521",
+    "572"
+   ],
+   "choices_zh": [
+    "545",
+    "521",
+    "572"
+   ],
+   "answer": 1,
+   "explain_en": "328+193=521.",
+   "explain_zh": "328+193=521。",
+   "sign_en": [
+    "545",
+    "521",
+    "572"
+   ],
+   "sign_zh": [
+    "545",
+    "521",
+    "572"
+   ]
+  },
+  {
+   "id": "g4_160",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 393 then 109 more pumpkins. Total?",
+   "q_zh": "农场运出 393 个南瓜，又运 109 个，一共？",
+   "choices": [
+    "502",
+    "496",
+    "495"
+   ],
+   "choices_zh": [
+    "502",
+    "496",
+    "495"
+   ],
+   "answer": 0,
+   "explain_en": "393+109=502.",
+   "explain_zh": "393+109=502。",
+   "sign_en": [
+    "502",
+    "496",
+    "495"
+   ],
+   "sign_zh": [
+    "502",
+    "496",
+    "495"
+   ]
+  },
+  {
+   "id": "g4_161",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/4 of 40?",
+   "q_zh": "40 的 1/4 是多少？",
+   "choices": [
+    "10",
+    "12",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "12",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "1/4×40=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "12",
+    "7"
+   ],
+   "sign_zh": [
+    "10",
+    "12",
+    "7"
+   ]
+  },
+  {
+   "id": "g4_162",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 4/5 of 35?",
+   "q_zh": "35 的 4/5 是多少？",
+   "choices": [
+    "22",
+    "28",
+    "34",
+    "25"
+   ],
+   "choices_zh": [
+    "22",
+    "28",
+    "34",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "4/5×35=28.",
+   "explain_zh": "=28。"
+  },
+  {
+   "id": "g4_163",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 57 then 82 more pumpkins. Total?",
+   "q_zh": "农场运出 57 个南瓜，又运 82 个，一共？",
+   "choices": [
+    "157",
+    "127",
+    "139",
+    "116"
+   ],
+   "choices_zh": [
+    "157",
+    "127",
+    "139",
+    "116"
+   ],
+   "answer": 2,
+   "explain_en": "57+82=139.",
+   "explain_zh": "57+82=139。"
+  },
+  {
+   "id": "g4_164",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 12 rows of 11 lanterns. How many?",
+   "q_zh": "迷宫 12 行，每行 11 盏灯，一共？",
+   "choices": [
+    "124",
+    "137",
+    "132"
+   ],
+   "choices_zh": [
+    "124",
+    "137",
+    "132"
+   ],
+   "answer": 2,
+   "explain_en": "12×11=132.",
+   "explain_zh": "12×11=132。",
+   "sign_en": [
+    "124",
+    "137",
+    "132"
+   ],
+   "sign_zh": [
+    "124",
+    "137",
+    "132"
+   ]
+  },
+  {
+   "id": "g4_165",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 11 rows of 12 lanterns. How many?",
+   "q_zh": "迷宫 11 行，每行 12 盏灯，一共？",
+   "choices": [
+    "132",
+    "142",
+    "110"
+   ],
+   "choices_zh": [
+    "132",
+    "142",
+    "110"
+   ],
+   "answer": 0,
+   "explain_en": "11×12=132.",
+   "explain_zh": "11×12=132。",
+   "sign_en": [
+    "132",
+    "142",
+    "110"
+   ],
+   "sign_zh": [
+    "132",
+    "142",
+    "110"
+   ]
+  },
+  {
+   "id": "g4_166",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 126 then 178 more pumpkins. Total?",
+   "q_zh": "农场运出 126 个南瓜，又运 178 个，一共？",
+   "choices": [
+    "347",
+    "283",
+    "301",
+    "304"
+   ],
+   "choices_zh": [
+    "347",
+    "283",
+    "301",
+    "304"
+   ],
+   "answer": 3,
+   "explain_en": "126+178=304.",
+   "explain_zh": "126+178=304。"
+  },
+  {
+   "id": "g4_167",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 370 then 149 more pumpkins. Total?",
+   "q_zh": "农场运出 370 个南瓜，又运 149 个，一共？",
+   "choices": [
+    "539",
+    "519",
+    "506"
+   ],
+   "choices_zh": [
+    "539",
+    "519",
+    "506"
+   ],
+   "answer": 1,
+   "explain_en": "370+149=519.",
+   "explain_zh": "370+149=519。",
+   "sign_en": [
+    "539",
+    "519",
+    "506"
+   ],
+   "sign_zh": [
+    "539",
+    "519",
+    "506"
+   ]
+  },
+  {
+   "id": "g4_168",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 2/3 of 15?",
+   "q_zh": "15 的 2/3 是多少？",
+   "choices": [
+    "10",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "2/3×15=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "9",
+    "11"
+   ],
+   "sign_zh": [
+    "10",
+    "9",
+    "11"
+   ]
+  },
+  {
+   "id": "g4_169",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 492 then 100 more pumpkins. Total?",
+   "q_zh": "农场运出 492 个南瓜，又运 100 个，一共？",
+   "choices": [
+    "681",
+    "511",
+    "592"
+   ],
+   "choices_zh": [
+    "681",
+    "511",
+    "592"
+   ],
+   "answer": 2,
+   "explain_en": "492+100=592.",
+   "explain_zh": "492+100=592。",
+   "sign_en": [
+    "681",
+    "511",
+    "592"
+   ],
+   "sign_zh": [
+    "681",
+    "511",
+    "592"
+   ]
+  },
+  {
+   "id": "g4_170",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 397 then 101 more pumpkins. Total?",
+   "q_zh": "农场运出 397 个南瓜，又运 101 个，一共？",
+   "choices": [
+    "493",
+    "498",
+    "528",
+    "525"
+   ],
+   "choices_zh": [
+    "493",
+    "498",
+    "528",
+    "525"
+   ],
+   "answer": 1,
+   "explain_en": "397+101=498.",
+   "explain_zh": "397+101=498。"
+  },
+  {
+   "id": "g4_171",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 84 then 174 more pumpkins. Total?",
+   "q_zh": "农场运出 84 个南瓜，又运 174 个，一共？",
+   "choices": [
+    "258",
+    "213",
+    "239",
+    "296"
+   ],
+   "choices_zh": [
+    "258",
+    "213",
+    "239",
+    "296"
+   ],
+   "answer": 0,
+   "explain_en": "84+174=258.",
+   "explain_zh": "84+174=258。"
+  },
+  {
+   "id": "g4_172",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 4/5 of 20?",
+   "q_zh": "20 的 4/5 是多少？",
+   "choices": [
+    "18",
+    "12",
+    "15",
+    "16"
+   ],
+   "choices_zh": [
+    "18",
+    "12",
+    "15",
+    "16"
+   ],
+   "answer": 3,
+   "explain_en": "4/5×20=16.",
+   "explain_zh": "=16。"
+  },
+  {
+   "id": "g4_173",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/2 of 18?",
+   "q_zh": "18 的 1/2 是多少？",
+   "choices": [
+    "9",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "1/2×18=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "9",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "9",
+    "8",
+    "6"
+   ]
+  },
+  {
+   "id": "g4_174",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 425 then 50 more pumpkins. Total?",
+   "q_zh": "农场运出 425 个南瓜，又运 50 个，一共？",
+   "choices": [
+    "475",
+    "507",
+    "421",
+    "468"
+   ],
+   "choices_zh": [
+    "475",
+    "507",
+    "421",
+    "468"
+   ],
+   "answer": 0,
+   "explain_en": "425+50=475.",
+   "explain_zh": "425+50=475。"
+  },
+  {
+   "id": "g4_175",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 1/2 of 16?",
+   "q_zh": "16 的 1/2 是多少？",
+   "choices": [
+    "5",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "1/2×16=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "5",
+    "8",
+    "10"
+   ],
+   "sign_zh": [
+    "5",
+    "8",
+    "10"
+   ]
+  },
+  {
+   "id": "g4_176",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 470 then 186 more pumpkins. Total?",
+   "q_zh": "农场运出 470 个南瓜，又运 186 个，一共？",
+   "choices": [
+    "576",
+    "654",
+    "656"
+   ],
+   "choices_zh": [
+    "576",
+    "654",
+    "656"
+   ],
+   "answer": 2,
+   "explain_en": "470+186=656.",
+   "explain_zh": "470+186=656。",
+   "sign_en": [
+    "576",
+    "654",
+    "656"
+   ],
+   "sign_zh": [
+    "576",
+    "654",
+    "656"
+   ]
+  },
+  {
+   "id": "g4_177",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 236 then 72 more pumpkins. Total?",
+   "q_zh": "农场运出 236 个南瓜，又运 72 个，一共？",
+   "choices": [
+    "303",
+    "296",
+    "308",
+    "271"
+   ],
+   "choices_zh": [
+    "303",
+    "296",
+    "308",
+    "271"
+   ],
+   "answer": 2,
+   "explain_en": "236+72=308.",
+   "explain_zh": "236+72=308。"
+  },
+  {
+   "id": "g4_178",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3/5 of 20?",
+   "q_zh": "20 的 3/5 是多少？",
+   "choices": [
+    "15",
+    "14",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "14",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "3/5×20=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "15",
+    "14",
+    "12"
+   ],
+   "sign_zh": [
+    "15",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "g4_179",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Maze has 4 rows of 12 lanterns. How many?",
+   "q_zh": "迷宫 4 行，每行 12 盏灯，一共？",
+   "choices": [
+    "39",
+    "48",
+    "46"
+   ],
+   "choices_zh": [
+    "39",
+    "48",
+    "46"
+   ],
+   "answer": 1,
+   "explain_en": "4×12=48.",
+   "explain_zh": "4×12=48。",
+   "sign_en": [
+    "39",
+    "48",
+    "46"
+   ],
+   "sign_zh": [
+    "39",
+    "48",
+    "46"
+   ]
+  },
+  {
+   "id": "g4_180",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Farm ships 146 then 114 more pumpkins. Total?",
+   "q_zh": "农场运出 146 个南瓜，又运 114 个，一共？",
+   "choices": [
+    "261",
+    "246",
+    "250",
+    "260"
+   ],
+   "choices_zh": [
+    "261",
+    "246",
+    "250",
+    "260"
+   ],
+   "answer": 3,
+   "explain_en": "146+114=260.",
+   "explain_zh": "146+114=260。"
+  }
+ ]
+}

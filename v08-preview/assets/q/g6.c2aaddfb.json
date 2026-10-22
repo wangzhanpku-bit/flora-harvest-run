@@ -239,9 +239,9 @@
     "10.3 kg"
    ],
    "sign_zh": [
-    "11.3kg",
-    "11.2kg",
-    "10.3kg"
+    "11.3 公斤",
+    "11.2 公斤",
+    "10.3 公斤"
    ]
   },
   {
@@ -293,9 +293,9 @@
     "11.03 kg"
    ],
    "sign_zh": [
-    "10.14kg",
-    "10.13kg",
-    "11.03kg"
+    "10.14 公斤",
+    "10.13 公斤",
+    "11.03 公斤"
    ]
   },
   {
@@ -324,9 +324,9 @@
     "2.93 kg"
    ],
    "sign_zh": [
-    "3.04kg",
-    "2.94kg",
-    "2.93kg"
+    "3.04 公斤",
+    "2.94 公斤",
+    "2.93 公斤"
    ]
   },
   {
@@ -378,9 +378,9 @@
     "1.03 kg"
    ],
    "sign_zh": [
-    "1.02kg",
-    "1.93kg",
-    "1.03kg"
+    "1.02 公斤",
+    "1.93 公斤",
+    "1.03 公斤"
    ]
   },
   {
@@ -802,9 +802,9 @@
     "8 cm²"
    ],
    "sign_zh": [
-    "6 cm²",
-    "7 cm²",
-    "8 cm²"
+    "6 平方厘米",
+    "7 平方厘米",
+    "8 平方厘米"
    ]
   },
   {
@@ -833,9 +833,9 @@
     "70 cm²"
    ],
    "sign_zh": [
-    "37 cm²",
-    "35 cm²",
-    "70 cm²"
+    "37 平方厘米",
+    "35 平方厘米",
+    "70 平方厘米"
    ]
   },
   {
@@ -864,9 +864,9 @@
     "30 cm²"
    ],
    "sign_zh": [
-    "11 cm²",
-    "15 cm²",
-    "30 cm²"
+    "11 平方厘米",
+    "15 平方厘米",
+    "30 平方厘米"
    ]
   },
   {
@@ -2203,14 +2203,14 @@
     "快速冷冻"
    ],
    "sign_en": [
-    "Evaporate",
+    "Let the water evaporate",
     "Use a sieve",
-    "Freeze it"
+    "Freeze it quickly"
    ],
    "sign_zh": [
-    "蒸发",
+    "让水蒸发掉",
     "用筛子",
-    "冷冻"
+    "快速冷冻"
    ]
   },
   {
@@ -2389,14 +2389,14 @@
     "太阳关灯了"
    ],
    "sign_en": [
-    "Earth spins",
-    "Orbits Moon",
-    "Sun turns off"
+    "Earth spins on its axis",
+    "Earth goes around the Moon",
+    "The Sun turns off"
    ],
    "sign_zh": [
-    "地球自转",
-    "绕月亮转",
-    "太阳关灯"
+    "地球绕着地轴自转",
+    "地球绕着月亮转",
+    "太阳关灯了"
    ]
   },
   {
@@ -2421,12 +2421,12 @@
    ],
    "sign_en": [
     "100 days",
-    "~365 days",
+    "About 365 days",
     "30 days"
    ],
    "sign_zh": [
     "100 天",
-    "约365天",
+    "大约 365 天",
     "30 天"
    ]
   },
@@ -2453,7 +2453,7 @@
    "sign_en": [
     "Nervous system",
     "Skeletal system",
-    "Circulatory"
+    "Circulatory system"
    ],
    "sign_zh": [
     "神经系统",
@@ -2514,7 +2514,7 @@
    ],
    "sign_en": [
     "Immune system",
-    "Respiratory",
+    "Respiratory system",
     "Muscular system"
    ],
    "sign_zh": [
@@ -2544,7 +2544,7 @@
     "神经系统"
    ],
    "sign_en": [
-    "Digestive",
+    "Digestive system",
     "Skeletal system",
     "Nervous system"
    ],
@@ -2606,14 +2606,14 @@
     "只在温暖的池塘"
    ],
    "sign_en": [
-    "Cold & dry",
-    "Inside fruit",
-    "Warm ponds"
+    "Extreme cold and dryness",
+    "Only inside fruit",
+    "Only warm ponds"
    ],
    "sign_zh": [
-    "极冷极干",
+    "极冷和极干的环境",
     "只在水果里",
-    "温暖池塘"
+    "只在温暖的池塘"
    ]
   },
   {
@@ -2854,12 +2854,12 @@
    ],
    "sign_en": [
     "Quebec",
-    "B.C.",
+    "British Columbia",
     "Ontario"
    ],
    "sign_zh": [
     "魁北克省",
-    "卑诗省",
+    "不列颠哥伦比亚省",
     "安大略省"
    ]
   },
@@ -3008,14 +3008,14 @@
     "让食物运得更远"
    ],
    "sign_en": [
-    "Less pollution",
+    "Cut transport pollution and support farmers",
     "Nothing",
-    "Travel farther"
+    "Make food travel farther"
    ],
    "sign_zh": [
-    "减污染助农",
+    "减少运输污染、支持农民",
     "没好处",
-    "运得更远"
+    "让食物运得更远"
    ]
   },
   {
@@ -3041,12 +3041,12 @@
    "sign_en": [
     "Toronto",
     "Winnipeg",
-    "Vancouver area"
+    "Vancouver area (Richmond/Delta)"
    ],
    "sign_zh": [
     "多伦多",
     "温尼伯",
-    "温哥华一带"
+    "温哥华一带（列治文、三角洲）"
    ]
   },
   {
@@ -3224,12 +3224,12 @@
     "5 秒"
    ],
    "sign_en": [
-    "~5 minutes",
+    "About 5 minutes",
     "A whole day",
     "5 seconds"
    ],
    "sign_zh": [
-    "约5分钟",
+    "大约 5 分钟",
     "一整天",
     "5 秒"
    ]
@@ -3309,12 +3309,12 @@
     "背上"
    ],
    "sign_en": [
-    "Top of head",
+    "High on top of its head",
     "On its tail",
     "On its back"
    ],
    "sign_zh": [
-    "头顶",
+    "在头顶比较高的位置",
     "尾巴上",
     "背上"
    ]
@@ -3479,6 +3479,1398 @@
     "抓鱼的",
     "会爬树的",
     "吃草的"
+   ]
+  },
+  {
+   "id": "g6_001",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "Up a tree",
+    "In the snow",
+    "In the water"
+   ],
+   "choices_zh": [
+    "树上",
+    "雪地里",
+    "在水里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "sign_en": [
+    "Up a tree",
+    "In the snow",
+    "In the water"
+   ],
+   "sign_zh": [
+    "树上",
+    "雪地里",
+    "在水里"
+   ]
+  },
+  {
+   "id": "g6_002",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Candy",
+    "Fish",
+    "Insects",
+    "Grass and plants"
+   ],
+   "choices_zh": [
+    "糖果",
+    "鱼",
+    "昆虫",
+    "草和植物"
+   ],
+   "answer": 3,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。"
+  },
+  {
+   "id": "g6_003",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Rodent",
+    "Insect",
+    "Fish",
+    "Bird"
+   ],
+   "choices_zh": [
+    "啮齿动物",
+    "昆虫",
+    "鱼",
+    "鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。"
+  },
+  {
+   "id": "g6_004",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "choices_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "sign_en": [
+    "The North Pole",
+    "South America",
+    "Australia"
+   ],
+   "sign_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚"
+   ]
+  },
+  {
+   "id": "g6_005",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Only in winter",
+    "Yes",
+    "No"
+   ],
+   "choices_zh": [
+    "只在冬天有",
+    "有",
+    "没有"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。"
+  },
+  {
+   "id": "g6_006",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Tunnel diggers",
+    "Climbers",
+    "Swimmers",
+    "Flyers"
+   ],
+   "choices_zh": [
+    "挖隧道",
+    "爬树",
+    "游泳",
+    "飞翔"
+   ],
+   "answer": 2,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。"
+  },
+  {
+   "id": "g6_007",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Wolf pack",
+    "School",
+    "Flock",
+    "Herd"
+   ],
+   "choices_zh": [
+    "狼群",
+    "鱼群",
+    "鸟群",
+    "一群"
+   ],
+   "answer": 3,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。"
+  },
+  {
+   "id": "g6_008",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Goose",
+    "Beaver",
+    "Raccoon",
+    "Capybara"
+   ],
+   "choices_zh": [
+    "鹅",
+    "河狸",
+    "浣熊",
+    "水豚"
+   ],
+   "answer": 3,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。"
+  },
+  {
+   "id": "g6_009",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Cute squeaks / clicks",
+    "Only hisses",
+    "Lion roars",
+    "Total silence"
+   ],
+   "choices_zh": [
+    "可爱的吱吱/咔嗒声",
+    "只会嘶嘶",
+    "狮子吼",
+    "完全不叫"
+   ],
+   "answer": 0,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。"
+  },
+  {
+   "id": "g6_010",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Has no flat paddle tail",
+    "Lives only on ice",
+    "Is a bird"
+   ],
+   "choices_zh": [
+    "没有扁平的桨状尾巴",
+    "只住在冰上",
+    "是鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "sign_en": [
+    "Has no flat paddle tail",
+    "Lives only on ice",
+    "Is a bird"
+   ],
+   "sign_zh": [
+    "没有扁平的桨状尾巴",
+    "只住在冰上",
+    "是鸟"
+   ]
+  },
+  {
+   "id": "g6_011",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What colour is a ripe pumpkin?",
+   "q_zh": "熟了的南瓜是什么颜色？",
+   "choices": [
+    "Blue",
+    "Orange",
+    "Purple",
+    "Pink"
+   ],
+   "choices_zh": [
+    "蓝色",
+    "橙色",
+    "紫色",
+    "粉色"
+   ],
+   "answer": 1,
+   "explain_en": "Most ripe pumpkins are orange.",
+   "explain_zh": "大多数熟南瓜是橙色。"
+  },
+  {
+   "id": "g6_012",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "What do plants need to grow?",
+   "q_zh": "植物生长需要什么？",
+   "choices": [
+    "Water and sunlight",
+    "Toys",
+    "Video games",
+    "Candy"
+   ],
+   "choices_zh": [
+    "水和阳光",
+    "玩具",
+    "电子游戏",
+    "糖果"
+   ],
+   "answer": 0,
+   "explain_en": "Plants need water, light, and air.",
+   "explain_zh": "植物需要水、光和空气。"
+  },
+  {
+   "id": "g6_013",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which season comes after summer?",
+   "q_zh": "夏天过后是什么季节？",
+   "choices": [
+    "Spring",
+    "Only winter",
+    "Fall / autumn"
+   ],
+   "choices_zh": [
+    "春天",
+    "只有冬天",
+    "秋天"
+   ],
+   "answer": 2,
+   "explain_en": "Spring, summer, fall, winter.",
+   "explain_zh": "春夏秋冬。"
+  },
+  {
+   "id": "g6_014",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Roots of a plant mostly…",
+   "q_zh": "植物的根主要……",
+   "choices": [
+    "Make thunder",
+    "Fly",
+    "Take in water",
+    "Sing"
+   ],
+   "choices_zh": [
+    "打雷",
+    "飞翔",
+    "吸水",
+    "唱歌"
+   ],
+   "answer": 2,
+   "explain_en": "Roots absorb water.",
+   "explain_zh": "根吸水。"
+  },
+  {
+   "id": "g6_015",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Bees help pumpkin flowers by…",
+   "q_zh": "蜜蜂帮南瓜花……",
+   "choices": [
+    "Painting them",
+    "Eating metal",
+    "Pollinating them"
+   ],
+   "choices_zh": [
+    "给它们上色",
+    "只吃金属",
+    "传粉"
+   ],
+   "answer": 2,
+   "explain_en": "Bees carry pollen.",
+   "explain_zh": "蜜蜂传粉。",
+   "sign_en": [
+    "Painting them",
+    "Eating metal",
+    "Pollinating them"
+   ],
+   "sign_zh": [
+    "给它们上色",
+    "只吃金属",
+    "传粉"
+   ]
+  },
+  {
+   "id": "g6_016",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Photosynthesis happens mainly in…",
+   "q_zh": "光合作用主要发生在……",
+   "choices": [
+    "Headphones",
+    "Bones",
+    "Shoelaces",
+    "Leaves"
+   ],
+   "choices_zh": [
+    "耳机",
+    "骨头",
+    "鞋带",
+    "叶子"
+   ],
+   "answer": 3,
+   "explain_en": "Leaves use light to make food.",
+   "explain_zh": "叶子用光制造养分。"
+  },
+  {
+   "id": "g6_017",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "What colour is Canada's flag?",
+   "q_zh": "加拿大国旗是什么颜色？",
+   "choices": [
+    "Red and white",
+    "Blue and green",
+    "Black and gold"
+   ],
+   "choices_zh": [
+    "红色和白色",
+    "蓝绿",
+    "黑金"
+   ],
+   "answer": 0,
+   "explain_en": "Red maple leaf flag.",
+   "explain_zh": "红白枫叶旗。",
+   "sign_en": [
+    "Red and white",
+    "Blue and green",
+    "Black and gold"
+   ],
+   "sign_zh": [
+    "红色和白色",
+    "蓝绿",
+    "黑金"
+   ]
+  },
+  {
+   "id": "g6_018",
+   "section": "corn_maze",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Which province is Vancouver in? ✓",
+   "q_zh": "温哥华在哪个省？",
+   "choices": [
+    "Ontario",
+    "Quebec",
+    "British Columbia (B.C.)"
+   ],
+   "choices_zh": [
+    "安大略",
+    "魁北克",
+    "卑诗省"
+   ],
+   "answer": 2,
+   "explain_en": "Vancouver is in B.C.",
+   "explain_zh": "温哥华在卑诗省。",
+   "sign_en": [
+    "Ontario",
+    "Quebec",
+    "British Columbia (B.C.)"
+   ],
+   "sign_zh": [
+    "安大略",
+    "魁北克",
+    "卑诗省"
+   ]
+  },
+  {
+   "id": "g6_019",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "What do bees make?",
+   "q_zh": "蜜蜂会做什么？",
+   "choices": [
+    "Wool",
+    "Milk",
+    "Bricks",
+    "Honey"
+   ],
+   "choices_zh": [
+    "羊毛",
+    "牛奶",
+    "砖",
+    "蜂蜜"
+   ],
+   "answer": 3,
+   "explain_en": "Bees make honey.",
+   "explain_zh": "蜜蜂酿蜜。"
+  },
+  {
+   "id": "g6_020",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Popcorn comes from…",
+   "q_zh": "爆米花来自……",
+   "choices": [
+    "Rocks",
+    "Rice only",
+    "Corn",
+    "Clouds"
+   ],
+   "choices_zh": [
+    "石头",
+    "只有大米",
+    "玉米",
+    "云"
+   ],
+   "answer": 2,
+   "explain_en": "Popcorn is a kind of corn.",
+   "explain_zh": "爆米花是一种玉米。"
+  },
+  {
+   "id": "g6_021",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "An animal that eats only plants is a…",
+   "q_zh": "只吃植物的动物叫……",
+   "choices": [
+    "Printer",
+    "Carnivore",
+    "Satellite",
+    "Herbivore"
+   ],
+   "choices_zh": [
+    "打印机",
+    "食肉动物",
+    "卫星",
+    "食草动物"
+   ],
+   "answer": 3,
+   "explain_en": "Capybaras are herbivores.",
+   "explain_zh": "水豚是食草动物。"
+  },
+  {
+   "id": "g6_022",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Day and night are caused by…",
+   "q_zh": "白天黑夜是因为……",
+   "choices": [
+    "Clouds eating the Sun",
+    "Pumpkins",
+    "Earth spinning",
+    "Only wind"
+   ],
+   "choices_zh": [
+    "云吃掉太阳",
+    "南瓜",
+    "地球自转",
+    "只有风"
+   ],
+   "answer": 2,
+   "explain_en": "Earth rotates once a day.",
+   "explain_zh": "地球每天自转一圈。"
+  },
+  {
+   "id": "g6_023",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which gas do plants release that we breathe?",
+   "q_zh": "植物放出的、我们呼吸的气体是？",
+   "choices": [
+    "Smoke",
+    "Oxygen",
+    "Helium",
+    "Only nitrogen candy"
+   ],
+   "choices_zh": [
+    "烟",
+    "氧气",
+    "氦气",
+    "氮糖果"
+   ],
+   "answer": 1,
+   "explain_en": "Plants release oxygen.",
+   "explain_zh": "植物释放氧气。"
+  },
+  {
+   "id": "g6_024",
+   "section": "pumpkin_field",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Canada's capital city is…",
+   "q_zh": "加拿大的首都是……",
+   "choices": [
+    "Vancouver",
+    "Toronto",
+    "Ottawa",
+    "Calgary"
+   ],
+   "choices_zh": [
+    "温哥华",
+    "多伦多",
+    "渥太华",
+    "卡尔加里"
+   ],
+   "answer": 2,
+   "explain_en": "Ottawa is the capital.",
+   "explain_zh": "首都是渥太华。"
+  },
+  {
+   "id": "g6_025",
+   "section": "pumpkin_field",
+   "subject": "farm",
+   "difficulty": "medium",
+   "q_en": "Pumpkins are usually harvested in…",
+   "q_zh": "南瓜通常在什么时候收获？",
+   "choices": [
+    "Deep winter only",
+    "Spring",
+    "Never",
+    "Fall"
+   ],
+   "choices_zh": [
+    "只有深冬",
+    "春天",
+    "永不",
+    "秋天"
+   ],
+   "answer": 3,
+   "explain_en": "Fall pumpkin harvest.",
+   "explain_zh": "秋天收南瓜。"
+  },
+  {
+   "id": "g6_026",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Canada goose",
+    "Ostrich",
+    "Flamingo",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "加拿大鹅",
+    "鸵鸟",
+    "火烈鸟",
+    "企鹅"
+   ],
+   "answer": 0,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。"
+  },
+  {
+   "id": "g6_027",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At noon",
+    "Only in winter",
+    "At night"
+   ],
+   "choices_zh": [
+    "中午",
+    "只在冬天",
+    "晚上"
+   ],
+   "answer": 2,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "At noon",
+    "Only in winter",
+    "At night"
+   ],
+   "sign_zh": [
+    "中午",
+    "只在冬天",
+    "晚上"
+   ]
+  },
+  {
+   "id": "g6_028",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "choices_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ],
+   "answer": 1,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights"
+   ],
+   "sign_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒"
+   ]
+  },
+  {
+   "id": "g6_029",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Birds",
+    "Insects",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "鸟",
+    "昆虫",
+    "哺乳动物"
+   ],
+   "answer": 2,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "sign_en": [
+    "Birds",
+    "Insects",
+    "Mammals"
+   ],
+   "sign_zh": [
+    "鸟",
+    "昆虫",
+    "哺乳动物"
+   ]
+  },
+  {
+   "id": "g6_030",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Ostrich",
+    "Flamingo",
+    "Great blue heron",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "鸵鸟",
+    "火烈鸟",
+    "大蓝鹭",
+    "企鹅"
+   ],
+   "answer": 2,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。"
+  },
+  {
+   "id": "g6_031",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Palm tree",
+    "Baobab",
+    "Western red cedar"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "猴面包树",
+    "西部红雪松"
+   ],
+   "answer": 2,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "sign_en": [
+    "Palm tree",
+    "Baobab",
+    "Western red cedar"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "猴面包树",
+    "西部红雪松"
+   ]
+  },
+  {
+   "id": "g6_032",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Learn to fly",
+    "Find candy",
+    "Lay eggs / spawn",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "学飞",
+    "找糖",
+    "产卵",
+    "冬眠"
+   ],
+   "answer": 2,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。"
+  },
+  {
+   "id": "g6_033",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "90°",
+    "270°",
+    "45°"
+   ],
+   "choices_zh": [
+    "90°",
+    "大约 270°",
+    "45°"
+   ],
+   "answer": 1,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "sign_en": [
+    "90°",
+    "270°",
+    "45°"
+   ],
+   "sign_zh": [
+    "90°",
+    "大约 270°",
+    "45°"
+   ]
+  },
+  {
+   "id": "g6_034",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "The Moon's gravity pulls the tides",
+    "Wind turbines",
+    "Earthquakes only"
+   ],
+   "choices_zh": [
+    "月亮引力拉动潮汐",
+    "风力发电机",
+    "只因为地震"
+   ],
+   "answer": 0,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "sign_en": [
+    "The Moon's gravity pulls the tides",
+    "Wind turbines",
+    "Earthquakes only"
+   ],
+   "sign_zh": [
+    "月亮引力拉动潮汐",
+    "风力发电机",
+    "只因为地震"
+   ]
+  },
+  {
+   "id": "g6_035",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）",
+    "磁铁"
+   ],
+   "answer": 1,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "sign_en": [
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)",
+    "Magnets"
+   ],
+   "sign_zh": [
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）",
+    "磁铁"
+   ]
+  },
+  {
+   "id": "g6_036",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Fish",
+    "Marine mammals",
+    "Birds"
+   ],
+   "choices_zh": [
+    "鱼",
+    "海洋哺乳动物",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "sign_en": [
+    "Fish",
+    "Marine mammals",
+    "Birds"
+   ],
+   "sign_zh": [
+    "鱼",
+    "海洋哺乳动物",
+    "鸟"
+   ]
+  },
+  {
+   "id": "g6_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Growing antlers",
+    "Laying swan eggs",
+    "Flying south",
+    "Building dams and lodges with wood"
+   ],
+   "choices_zh": [
+    "长鹿角",
+    "下天鹅蛋",
+    "飞去南方",
+    "用木头筑坝和巢穴"
+   ],
+   "answer": 3,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。"
+  },
+  {
+   "id": "g6_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Mammal",
+    "Fish",
+    "Bird"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鱼",
+    "鸟类"
+   ],
+   "answer": 2,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "sign_en": [
+    "Mammal",
+    "Fish",
+    "Bird"
+   ],
+   "sign_zh": [
+    "哺乳动物",
+    "鱼",
+    "鸟类"
+   ]
+  },
+  {
+   "id": "g6_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。"
+  },
+  {
+   "id": "g6_040",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Sense objects with sound echoes",
+    "Stop rain",
+    "Taste colours"
+   ],
+   "choices_zh": [
+    "用回声感知物体",
+    "让雨停下",
+    "品尝颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "sign_en": [
+    "Sense objects with sound echoes",
+    "Stop rain",
+    "Taste colours"
+   ],
+   "sign_zh": [
+    "用回声感知物体",
+    "让雨停下",
+    "品尝颜色"
+   ]
+  },
+  {
+   "id": "g6_041",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "4",
+    "6",
+    "2",
+    "8"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "2",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。"
+  },
+  {
+   "id": "g6_042",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Stopping the Moon",
+    "Providing habitat and holding soil",
+    "Making plastic"
+   ],
+   "choices_zh": [
+    "挡住月亮",
+    "提供栖息地并固定土壤",
+    "制造塑料"
+   ],
+   "answer": 1,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Stopping the Moon",
+    "Providing habitat and holding soil",
+    "Making plastic"
+   ],
+   "sign_zh": [
+    "挡住月亮",
+    "提供栖息地并固定土壤",
+    "制造塑料"
+   ]
+  },
+  {
+   "id": "g6_043",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "choices_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ],
+   "answer": 1,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "sign_en": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "sign_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ]
+  },
+  {
+   "id": "g6_044",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "2001",
+    "1888",
+    "1950",
+    "1776"
+   ],
+   "choices_zh": [
+    "2001",
+    "1888",
+    "1950",
+    "1776"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g6_045",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Stanley Cup",
+    "World Cup",
+    "Grey Cup"
+   ],
+   "choices_zh": [
+    "斯坦利杯",
+    "世界杯",
+    "格雷杯"
+   ],
+   "answer": 0,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "sign_en": [
+    "Stanley Cup",
+    "World Cup",
+    "Grey Cup"
+   ],
+   "sign_zh": [
+    "斯坦利杯",
+    "世界杯",
+    "格雷杯"
+   ]
+  },
+  {
+   "id": "g6_046",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Half the size",
+    "Bigger",
+    "The same"
+   ],
+   "choices_zh": [
+    "只有一半大",
+    "更大",
+    "一样大"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "sign_en": [
+    "Half the size",
+    "Bigger",
+    "The same"
+   ],
+   "sign_zh": [
+    "只有一半大",
+    "更大",
+    "一样大"
+   ]
+  },
+  {
+   "id": "g6_047",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca",
+    "Vikings"
+   ],
+   "choices_zh": [
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加",
+    "维京人"
+   ],
+   "answer": 0,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "sign_en": [
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca",
+    "Vikings"
+   ],
+   "sign_zh": [
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加",
+    "维京人"
+   ]
+  },
+  {
+   "id": "g6_048",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Lions Gate Bridge",
+    "Port Mann",
+    "Tower Bridge"
+   ],
+   "choices_zh": [
+    "狮门大桥",
+    "福特曼桥",
+    "塔桥"
+   ],
+   "answer": 0,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Lions Gate Bridge",
+    "Port Mann",
+    "Tower Bridge"
+   ],
+   "sign_zh": [
+    "狮门大桥",
+    "福特曼桥",
+    "塔桥"
+   ]
+  },
+  {
+   "id": "g6_049",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "9:00 pm",
+    "Midnight",
+    "Noon",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 9 点",
+    "午夜",
+    "中午",
+    "晚上 6 点"
+   ],
+   "answer": 0,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。"
+  },
+  {
+   "id": "g6_050",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 12²?",
+   "q_zh": "12² =？",
+   "choices": [
+    "152",
+    "144",
+    "153"
+   ],
+   "choices_zh": [
+    "152",
+    "144",
+    "153"
+   ],
+   "answer": 1,
+   "explain_en": "12×12=144.",
+   "explain_zh": "=144。",
+   "sign_en": [
+    "152",
+    "144",
+    "153"
+   ],
+   "sign_zh": [
+    "152",
+    "144",
+    "153"
+   ]
+  },
+  {
+   "id": "g6_051",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Area of 9×19 m garden?",
+   "q_zh": "9×19 米菜地面积？",
+   "choices": [
+    "196",
+    "171",
+    "173"
+   ],
+   "choices_zh": [
+    "196",
+    "171",
+    "173"
+   ],
+   "answer": 1,
+   "explain_en": "9×19=171.",
+   "explain_zh": "=171。",
+   "sign_en": [
+    "196",
+    "171",
+    "173"
+   ],
+   "sign_zh": [
+    "196",
+    "171",
+    "173"
+   ]
+  },
+  {
+   "id": "g6_052",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "What is 3²?",
+   "q_zh": "3² =？",
+   "choices": [
+    "12",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "3×3=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "12",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "12",
+    "10",
+    "9"
    ]
   }
  ],
