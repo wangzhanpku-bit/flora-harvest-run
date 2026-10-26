@@ -514,6 +514,22 @@ function sub(t,ms=2400){const e=document.getElementById('sub');t=N(t);
  else{e.textContent=t;}
  e.style.display='block';clearTimeout(sub.t);sub.t=setTimeout(()=>e.style.display='none',ms);}
 
+// ---------- URL-only QA switch (?qa=1) for 市场赵 E/F screenshots; absent = no behavior change ----------
+const QA=(()=>{try{return new URLSearchParams(location.search).get('qa')==='1';}catch(e){return false;}})();window.__QA=QA;
+function qaTag(){if(!QA)return;try{if(document.getElementById('qaTag'))return;const d=document.createElement('div');d.id='qaTag';d.textContent='QA';d.style.cssText='position:fixed;left:6px;bottom:6px;z-index:99;font:800 12px/1 Fredoka,sans-serif;color:#fff;background:#c0392bcc;padding:3px 6px;border-radius:6px;pointer-events:none';document.body.appendChild(d);}catch(e){}}
+function qaSeq(){/* forced sequence, runT from 2s, ~2s spacing */const L2=curLevel()>=2;const has=k=>{try{return !!TEX[k];}catch(e){return false;}};
+ const seq=L2?[['duck','obs_bridge_arch'],['duck','obs_low_branch_arch'],['tree'],['crack']]
+  :[['beam'],...(has('obs_low_branch_arch')?[['duck','obs_low_branch_arch']]:[]),['tree'],['crack']];
+ return seq.map((e,i)=>({t:2+2*i,e}));}
+function qaStep(){if(!QA||!S||S.mode!=='run'||S.over)return;if(!S._qaQ){S._qaQ=qaSeq();S._qaLog=[];S._qaT0=S.runT||0;}
+ while(S._qaQ.length&&((S.runT||0)-S._qaT0)>=S._qaQ[0].t){const it=S._qaQ.shift();const e=it.e;const zz=Math.round(S.z+Math.max(32,(S.speed||13)*2.6));
+  try{objs.forEach(o=>{if(!o.done&&Math.abs(o.z-zz)<6&&o.type!=='scare'&&o.type!=='gold'&&o.type!=='sign'){o.done=true;try{scene.remove(o.m);}catch(_){}}});}catch(_){}
+  try{if(e[0]==='duck'){for(let ln=0;ln<3;ln++)addObj('l2obs',ln,zz,{key:e[1],kind:'duck',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ[e[1]])||[2.6,2.2]});}
+   else if(e[0]==='beam'){for(let ln=0;ln<3;ln++)addObj('beam',ln,zz);}
+   else if(e[0]==='tree'){addObj('l2obs',1,zz,{key:'obs_tree_fall_warn',kind:'warn',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ.obs_tree_fall_warn)||[1.8,2.4],fallKey:'obs_tree_fall_down'});}
+   else if(e[0]==='crack'){addObj('l2obs',1,zz,{key:'obs_ground_crack',kind:'jump',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ.obs_ground_crack)||[2.5,2.1],y0:0.08,flat:1});}
+   S._qaLog.push([e.join(':'),+(S.runT||0).toFixed(1),zz]);}catch(err){S._qaLog.push(['ERR '+e.join(':'),String(err)]);}}}
+
 // ---------- rear pursuer (L1 farmer / L2 tramp) — replaces best-run ghost ----------
 let _chaseLoop=null,_chaseLoopGen=0;
 function chaseFootStop(){_chaseLoopGen++;try{if(_chaseLoop){_chaseLoop._alive=0;_chaseLoop.loop=false;_chaseLoop.pause();try{_chaseLoop.removeAttribute('src');_chaseLoop.load();}catch(e){}_chaseLoop=null;}}catch(e){_chaseLoop=null;}}
@@ -528,13 +544,14 @@ function chaseFootSync(dist,freeze){if(window.__SMOOTH){chaseFootStop();return;}
   else _chaseLoop.volume=vol;}catch(e){}}
 function chaseApplyTex(){if(typeof pursuer==='undefined'||!pursuer||!S)return;const k=S.chaseKey||((S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run');S.chaseKey=k;try{if(SPR[k]&&!SPR[k].map&&TEX[k])delete SPR[k];/* bust empty opacity0 cache if TEX arrived late */const mat=SP(k);pursuer.material=mat;pursuer.material.transparent=true;pursuer.material.opacity=1;pursuer.material.depthWrite=false;pursuer.material.side=THREE.DoubleSide;if(mat.map)mat.map.needsUpdate=true;pursuer.visible=true;}catch(e){}}
 const CHASE={START:7,CAP:12,CATCH:2.0,OPEN:.25,BRAKE:.5,SLOWHIT:.6,LOWSPD:.5,HIT_FLOOR:3.0,HIT_WIN:4.0};/* r2 pacing (创意张/研究钱): idle-brake 7→2 = 10s; one hit never catches; 2–3 quick hits can */
-function chaseClose(amt,isHit){if(!S||S.over||(S.clearT|0)>0||S.mode==='quiz'||S.mode==='mwait')return;
+function chaseFrozen(){/* 创意张: pursuer fully frozen during quiz/maze-fork choice AND the auto-brake approach into it; resumes from the same gap */if(!S)return true;if(S.mode==='quiz'||S.mode==='mwait'||S.mode==='rest'||S.mode==='count'||S.mode==='l2hold'||(S.clearT|0)>0||S.l2Brk)return true;try{if(typeof forks!=='undefined'&&forks.some(f=>f.shown&&!f.go&&!f.judged&&!f.done))return true;}catch(e){}return false;}
+function chaseClose(amt,isHit){if(!S||S.over||chaseFrozen())return;
  if(isHit){const tNow=S.t||0;const combo=(S._chHitT!=null)&&(tNow-S._chHitT)<=CHASE.HIT_WIN;S._chHitT=tNow;S._chHitN=combo?(S._chHitN||1)+1:1;S._chFloorT=(S._chHitN<2)?tNow+CHASE.HIT_WIN:0;}
  S.chaseDist=Math.max(0,(S.chaseDist||CHASE.START)-(amt||0));
  if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
  if(S.chaseDist<=CHASE.CATCH)chaseCatch();}
 function chaseOpen(amt){if(!S||S.over)return;S.chaseDist=Math.min(12,(S.chaseDist||7)+(amt||0));}
-function chaseCatch(){if(!S||S.over)return;chaseFootStop();try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}gameOver('chase');}
+function chaseCatch(){if(!S||S.over)return;if(QA){S.chaseDist=Math.max(S.chaseDist||0,3);S._qaCatch=(S._qaCatch||0)+1;return;}chaseFootStop();try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}gameOver('chase');}
 function chaseRate(){/* <0 closes, >0 opens. System ramps (post-ring/fork mzRamp, ring/fork auto-brake l2Brk, fork approach) never count as player slowness. */
  if(S.brakeT>0)return -CHASE.BRAKE;
  if(S.slowT>0||S.stunT>0)return -CHASE.SLOWHIT;
@@ -553,8 +570,9 @@ function chaseHeroNdc(){/* projected rider/runner box (NDC), cached 0.25s */
   if(h>.02&&h<2)r={t:S.t,h,x0:Math.min(a,b),x1:Math.max(a,b)};}}catch(e){}
  S._chHero=r;return r;}
 function chaseStep(dt){if(!S||typeof pursuer==='undefined'||!pursuer)return;if(['over','end','title','intro'].includes(S.mode)){pursuer.visible=false;chaseFootStop();return;}
- const freeze=S.mode==='quiz'||S.mode==='mwait'||S.mode==='rest'||S.mode==='count'||S.mode==='l2hold'||(S.clearT|0)>0;
- if(S.mode==='run'&&!freeze){const rt=chaseRate();S.chaseDist=Math.max(0,Math.min(CHASE.CAP,(S.chaseDist||CHASE.START)+dt*rt));
+ const freeze=chaseFrozen();
+ try{qaStep();}catch(e){}
+ if(S.mode==='run'&&!freeze){const rt=chaseRate();S.chaseDist=Math.max(QA?3:0,Math.min(CHASE.CAP,(S.chaseDist||CHASE.START)+dt*rt));
   if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
   if(S.chaseDist<=CHASE.CATCH){chaseCatch();return;}}
  else S._chPrevV=S.speed||0;
@@ -580,19 +598,19 @@ function chaseStep(dt){if(!S||typeof pursuer==='undefined'||!pursuer)return;if([
  try{pursuer.quaternion.copy(cam.quaternion);}catch(e){try{pursuer.lookAt(cam.position.x,0.95,cam.position.z);}catch(e2){}}
  try{chaseFootSync(cd,freeze);}catch(e){}
 }
-function newGame(){try{chaseFootStop();}catch(e){}hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,clearT:0,chaseDist:7,chaseKey:null,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;S.chaseKey=(S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run';S.chaseDist=7;S.clearT=0;try{chaseApplyTex();}catch(e){}if(isAdventure()&&window.__CAMP&&(S.level|0)>=2)campApplyToS();
+function newGame(){try{chaseFootStop();}catch(e){}try{qaTag();}catch(e){}hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,clearT:0,chaseDist:7,chaseKey:null,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;S.chaseKey=(S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run';S.chaseDist=7;S.clearT=0;try{chaseApplyTex();}catch(e){}if(isAdventure()&&window.__CAMP&&(S.level|0)>=2)campApplyToS();
  bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}try{l2EnsureRide();}catch(e){}}}
 function l2SecFromZ(z){z=+z||0;return z<L2Q.SEC[0]?0:z<L2Q.SEC[1]?1:z<L2Q.SEC[2]?2:z<L2Q.SEC[3]?3:4;}
 function updHud(){/* r14: L2 label always follows S.z so lagoon/final never stick on 煤港 after teleport/quiz */if(curLevel()>=2&&S){const sec=l2SecFromZ(S.z);S.section=sec>3?3:sec;}else if(S&&S.section>3)S.section=3;hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港']/* Coal (not Cool) Harbour / 煤港 */,['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
 // ---------- intro ----------
-function intro(){S.mode='intro';S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};
+function intro(){S.mode='intro';try{chaseFootStop();}catch(e){}S.t=0;S.introT=[];const _st=window.setTimeout.bind(window);const setTimeout=(f,ms)=>{const id=_st(f,ms);S.introT.push(id);return id;};
  // L2: place intro only (no protect lines); High plays sfx_bara_l2_intro once with the bubble
  if(curLevel()>=2){sub(bi(L2_INTRO.en,L2_INTRO.zh),4200);if(!window.__SMOOTH)play('sfx_bara_l2_intro');setTimeout(()=>countdown(),4500);return;}
  if(store.get('runs',[]).length){const mob=('ontouchstart' in window)||(navigator.maxTouchPoints>0);_st(()=>sub(bi(mob?'Tap to skip':'Press Space to skip',mob?'点一下跳过开场':'按空格可以跳过开场'),2500),300);}
  sub(bi('Scarecrow: "Oh no! Last night\'s wind scattered the pumpkins everywhere, and my hat blew into the maze! The Harvest Festival starts tomorrow..."','稻草人老伯："糟啦！昨晚一阵大风，南瓜滚了一地，我的帽子也飞进迷宫了！丰收节明天就要开场……"'),4200);
  setTimeout(()=>sub(bi('{name}: "Leave it to me! Bara, let\'s go!"','{name}："交给我！Bara，走！"'),2200),4300);setTimeout(()=>{sub(bi('Bara: "Gurr gurr!"','Bara："咕咕！"'),1300);play('sfx_correct');},6600);
  setTimeout(()=>countdown(),8000);}
-function countdown(){S.mode='count';const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
+function countdown(){S.mode='count';try{chaseFootStop();}catch(e){}const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
  const iv=setInterval(()=>{n--;if(n>0){e.textContent=n;play('sfx_countdown_beep');}else{clearInterval(iv);e.textContent='GO!';play('sfx_countdown_go');setTimeout(()=>e.style.display='none',600);S.mode='run';S.speed=S.base;if(curLevel()>=2){bgm('bgm_stanley_halloween');sub(bi('← → lane · ↑ hop · ↓ duck · Shift brake','← → 换道 · ↑ 跳 · ↓ 压低 · Shift 刹车'),3200);}else{bgm('bgm_pumpkin_field');sub(bi('← → lane, ↑ jump, ↓ slide — collect 5 pumpkins!','← → 换道，↑ 跳，↓ 滑铲，先捡 5 个南瓜！'),3000);}}},800);}
 // ---------- input ----------
 function input(k){if(S.mode==='mwait'){mzInput(k);return;}if(S.mode!=='run')return;
@@ -683,7 +701,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
     if(window.__BOTLANE)S.lane=f.lanes[Math.random()<(window.__BOTP??1)?f.q.answer:(f.q.answer+1)%f.lanes.length];const ci=f.lanes.indexOf(S.lane);f.ok=ci===f.q.answer&&!f.tout;hideStrip();
     if(f.ok){S.correct++;play('sfx_correct');setTimeout(()=>play('sfx_bara_happy'),400);sub(baraSay('ok'),1800);setTimeout(()=>sub(bi(N(f.q.explain_en||''),N(f.q.explain_zh||'')),2800),1600);}else{play('sfx_wrong_baa');teach(f.q);if(CH())setTimeout(()=>hurt(CFG.MAZE_WRONG_COST,{kind:'maze'}),300);if(f.l2){S.slowT=Math.max(S.slowT||0,2.6);setTimeout(()=>sub(bi('Oops, the long way round!','哎呀，绕了一段远路！'),2000),900);}}answered(f.ok);
     try{markUsedQ(curLevel(),f.q&&f.q.id);}catch(e){}S.answered.push({q:f.q,ok:f.ok});{const W=store.get('wrong',{});if(f.ok){if(W[f.q.id]>0)W[f.q.id]--;}else W[f.q.id]=2;store.set('wrong',W);}updHud();}
-   if(!f.l2&&f.judged&&!f.ok&&!f.tout&&S.z>f.zf+f.D-2.6&&S.mode==='run'){S.mode='dead';play('sfx_bara_purr');sub(baraSay('bad'),2600);
+   if(!f.l2&&f.judged&&!f.ok&&!f.tout&&S.z>f.zf+f.D-2.6&&S.mode==='run'){S.mode='dead';try{chaseFootStop();}catch(e){}play('sfx_bara_purr');sub(baraSay('bad'),2600);
     setTimeout(()=>{S.lane=f.lanes[f.q.answer];S.x=(S.lane-1)*LANE;S.z=f.zf+f.D+.5;S.mode='run';},2200);f.done=true;}
    if(f.judged&&((f.ok||f.tout)&&S.z>f.zf+f.D))f.done=true;}
   if(S.mzRamp&&!forks.some(f=>f.shown&&!f.go&&!f.done)){const _vt=curLevel()>=2?S.base:10;S.speed=Math.min(_vt,S.speed+dt*MZ.RAMP);if(S.speed>=_vt)S.mzRamp=0;}
@@ -709,7 +727,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
    else if(o.type==='scare'){const q=S.set.field[o.qi];if(!q)continue;ask(q,'field',ok=>{if(ok){sub(baraSay('ok'));for(let k=0;k<4;k++)addObj('pumpkin',S.lane,S.z+6+k*1.8);S.z+=8;}
      else{S.slowT=3;sub(baraSay('bad'),3000);}});}
    else if(o.type==='sign'){const q=S.set.maze[o.qi];ask(q,'maze',ok=>{if(ok){sub(o.qi===3?bi('Maze center ahead!','看见迷宫中心了！'):bi('Right direction — deeper in!','方向对啦，继续往里走！'));}
-     else{S.mode='dead';sub(baraSay('bad'),2200);setTimeout(()=>{S.z-=12;S.mode='run';},1600);}});}
+     else{S.mode='dead';try{chaseFootStop();}catch(e){}sub(baraSay('bad'),2200);setTimeout(()=>{S.z-=12;S.mode='run';},1600);}});}
    else if(o.type==='l2obs'){if(o.kind==='soft')hitWet(o);else hitHard(o);}
    else if(o.type==='l2dash')hitL2Dash(o);
    else if(HARD.has(o.type))hitHard(o);else if(WET.has(o.type))hitWet(o);else if(ANIMAL.has(o.type))hitDuck(o);}
@@ -1350,7 +1368,7 @@ function hpBreak(b,a){const el=hpEl();if(!el)return;for(let i=0;i<el.children.le
   im._anim=1;im.classList.remove('pop');im.classList.add('shake');seq.forEach((k,j)=>setTimeout(()=>{im.src=TEX[k]||'';},j*95));setTimeout(()=>{im._anim=0;im._k=null;im.classList.remove('shake');hpDraw();},seq.length*95+140);}}
 function heartUpd(){if(window.__SMOOTH)return;const a=snd.sfx_heartbeat_low;if(!a)return;const on=CH()&&S&&!S.over&&S.hp>0&&S.hp<=2&&['run','quiz','rest','dead','count'].includes(S.mode);
  if(on&&a.paused){a.loop=true;a.volume=.55;a.play().catch(()=>{});}else if(!on&&!a.paused){a.pause();}}
-function hurt(h,o){o=o||{};if(!CH()||!S||S.over||S.mode==='end'||h<=0)return false;if(S.runT<safeStartSecs()){S.slowT=Math.max(S.slowT||0,1.2);return 'safe';}const b=S.hp;S.lost=(S.lost||0)+1;S.hp=Math.max(0,S.hp-h);hpBreak(b,S.hp);if(!o.silent)play(h>=2?'sfx_hp_loss':'sfx_pumpkin_crack');
+function hurt(h,o){o=o||{};if(!CH()||!S||S.over||S.mode==='end'||h<=0)return false;if(S.runT<safeStartSecs()){S.slowT=Math.max(S.slowT||0,1.2);return 'safe';}if(QA){/* QA: register + flash + SFX, no life loss */S.hurtLog=(S.hurtLog||[]);S.hurtLog.push([(o.kind||'?')+':qa',h,+S.runT.toFixed(1)]);S.qaHits=(S.qaHits||0)+1;S.invT=Math.max(S.invT||0,.6);if(!o.silent)play(h>=2?'sfx_hp_loss':'sfx_pumpkin_crack');try{const el=hpEl();if(el){for(const im of el.children){im.classList.remove('pop');void im.offsetWidth;im.classList.add('pop');}}}catch(e){}return true;}const b=S.hp;S.lost=(S.lost||0)+1;S.hp=Math.max(0,S.hp-h);hpBreak(b,S.hp);if(!o.silent)play(h>=2?'sfx_hp_loss':'sfx_pumpkin_crack');
  S.hurtLog=(S.hurtLog||[]);S.hurtLog.push([o.kind||'?',h,+S.runT.toFixed(1)]);heartUpd();if(S.hp<=0){if(S.mode==='quiz'){S.pendingOver=true;return 'over';}gameOver();return 'over';}return true;}
 function heal(){S.hp=Math.min(CFG.HP_MAX,S.hp+2);hpDraw();const el=hpEl();if(el){const i=Math.ceil(S.hp/2)-1;const im=el.children[i];if(im){im.classList.remove('pop');void im.offsetWidth;im.classList.add('pop');}}
  play('sfx_hp_heal');S.healT=2.2;S.heals=(S.heals||0)+1;heartUpd();sub(bi('3 in a row! You got a pumpkin back!','连对 3 题！拿回一个南瓜！'),2200);setTimeout(()=>{if(S&&!S.over)sub(bi('Bara: "CAPYBARA!"','Bara："CAPYBARA！"'),1500);},2300);}
@@ -1378,7 +1396,7 @@ function hitDuck(o){duckFly(o);S.slowT=Math.max(S.slowT,.8);play('sfx_duck_quack
 function flock(d){return objs.filter(o=>o.type==='duck'&&!o.done&&Math.abs(o.z-d.z)<7);}
 // ---------- game over / rescue / checkpoint ----------
 const CP_Z=()=>curLevel()>=2?L2Q.SEC[1]-30:L_FIELD-30;
-function gameOver(why){if(!S||S.over)return;if(CFG.RESCUE&&!S.rescued&&why!=='chase'){rescue();return;}
+function gameOver(why){if(!S||S.over)return;if(QA){S._qaGO=(S._qaGO||0)+1;S.pendingOver=false;S.hp=Math.max(S.hp||0,1);return;}if(CFG.RESCUE&&!S.rescued&&why!=='chase'){rescue();return;}
  S.over=true;S.mode='over';S.speed=0;S.stunT=0;try{chaseFootStop();}catch(e){}try{pursuer.visible=false;}catch(e){}S.overMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;boostEnd(true);thinkStop();bgm(null);const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();if(why!=='chase')play('jingle_game_over_funny');hideStrip();
  document.getElementById('prog').style.display='none';
  setTimeout(()=>{const ov=document.getElementById('over');const L2=(curLevel()|0)>=2;const chase=why==='chase';
@@ -1392,7 +1410,7 @@ function restartCP(){document.getElementById('over').style.display='none';bara.r
  const cp=S.cp,st=S.cpState;newGame();
  if(cp&&st){Object.assign(S,{rt:st.rt,runT:st.runT,pumpkins:st.pumpkins,correct:st.correct,answered:st.answered.slice(),cp,cpState:st,z:cp,section:1,attempt:(st.attempt||1)+1});st.attempt=S.attempt;
   objs.forEach(o=>{if(o.z<cp+6&&!o.done){o.done=true;scene.remove(o.m);}});if(curLevel()>=2)L2ST.stops.forEach(o=>{if(o.z<cp+6){o.done=true;[o.ring,o.rac].forEach(m=>{if(m)m.visible=false;});}});S.preBanked=st.pumpkins;if(st.yuzuUsed){S.yuzuUsed=true;objs.forEach(o=>{if(o.type==='item'&&o.kind==='yuzu'&&!o.done){o.done=true;scene.remove(o.m);}});}flora.position.set(S.x,0,-S.z);bara.position.set(S.x+1.2,0,-S.z+1.6);}
- S.invT=3;updHud();hpDraw();S.mode='count';countdown();}
+ S.invT=3;updHud();hpDraw();S.mode='count';try{chaseFootStop();}catch(e){}countdown();}
 // ---------- maze strip ----------
 function placeTop(){const hb=document.getElementById('hud').getBoundingClientRect().bottom;const pr=document.getElementById('prog');pr.style.top=Math.round(hb+6)+'px';document.getElementById('mq').style.top=Math.round(hb+22)+'px';}
 function showStrip(q){placeTop();const se=q.sign_en||q.choices,sz=q.sign_zh||q.choices_zh||q.choices,ce=q.choices,cz=q.choices_zh||q.choices;
@@ -1403,7 +1421,7 @@ function showStrip(q){placeTop();const se=q.sign_en||q.choices,sz=q.sign_zh||q.c
 function hideStrip(){const m=document.getElementById('mq');m.classList.remove('on','wait');const p=document.getElementById('mqpick');if(p)p.innerHTML='';const t=document.getElementById('mqt');if(t)t.style.display='none';}
 // ---------- v0.8.1 maze approach: ease down, stop, 2s to read, then a 30s countdown (stopped time is NOT running time) ----------
 const MZ={SHOW:52,STOP:4.5,FLOOR:.45,VMIN:.7,READ:2,SECS:30,RAMP:6};
-function mzWait(f){if(S.mode!=='run')return;S.mode='mwait';S.mw={f,read:MZ.READ,T:MZ.SECS,last:performance.now(),warn:false};const m=document.getElementById('mq');m.classList.add('on','wait');
+function mzWait(f){if(S.mode!=='run')return;S.mode='mwait';try{chaseFootStop();}catch(e){}S.mw={f,read:MZ.READ,T:MZ.SECS,last:performance.now(),warn:false};const m=document.getElementById('mq');m.classList.add('on','wait');
  const ce=f.q.choices,cz=f.q.choices_zh||f.q.choices,ar=f.lanes.length>=3?['◀','▲','▶']:['◀','▶'];
  document.getElementById('mqpick').innerHTML=f.lanes.map((ln,i)=>'<button data-i="'+i+'"'+(ln===S.lane?' class="sel"':'')+'><b><span class="mb">'+'ABC'[i]+'</span>'+ar[i]+'</b><span class="en">'+esc(N(ce[i]))+'</span>'+(String(cz[i])!==String(ce[i])?'<span class="zh">'+esc(N(cz[i]))+'</span>':'')+'</button>').join('');
  document.querySelectorAll('#mqpick button').forEach(b=>b.onclick=e=>{e.stopPropagation();mzGo(+b.dataset.i);});
@@ -2501,7 +2519,7 @@ const V4CSS="\n/* ===== Class 1 SHARED A: main-menu big buttons — all 7 identi
   if(_cdIv){clearInterval(_cdIv);_cdIv=null;}
   const go=()=>{
    const my=++_cdGen;
-   S.mode='count';const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
+   S.mode='count';try{chaseFootStop();}catch(e){}const e=document.getElementById('cd');e.style.display='flex';let n=3;e.textContent=n;play('sfx_countdown_beep');
    _cdIv=setInterval(()=>{
     if(my!==_cdGen){clearInterval(_cdIv);return;}
     n--;
