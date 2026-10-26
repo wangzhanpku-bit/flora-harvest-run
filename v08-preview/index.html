@@ -544,7 +544,7 @@ function qaAuto(){if(!QA_AUTO||!S||S.mode!=='run'||window.__PAUSE)return;
  const rt=S.runT||0;if(S._qaVz==null||rt<(S._qaVt||0)){S._qaVz=S.z;S._qaVt=rt;S._qaV=S.speed||13;}
  else if(rt-S._qaVt>=.08){const iv=(S.z-S._qaVz)/(rt-S._qaVt);S._qaV=S._qaV*.5+iv*.5;S._qaVz=S.z;S._qaVt=rt;}
  const v=Math.max(1.5,S._qaV||13);const W=.8;/* hitTest window: |dz|<=.8 */
- for(const o of objs){if(!o._qa||o._qaAuto===3)continue;const az=-o.m.position.z-S.z;
+ for(const o of objs){if(!o._qa||o._qaAuto===3||(o.done&&!o._qaAuto))continue;const az=-o.m.position.z-S.z;
   const act=(o.type==='beam'||(o.type==='l2obs'&&o.kind==='duck'))?'D':(o.type==='l2obs'&&o.kind==='jump')?'U':null;/* tree: waits for fall (warn→jump) */
   const sib=n=>{for(const x of objs)if(x._qa&&x.z===o.z)x._qaAuto=n;};
   if(!o._qaAuto&&az<26&&az>0&&(o.type==='l2obs'&&o.kind!=='duck')&&S.lane!==o.lane){input(o.lane<S.lane?'L':'R');}
@@ -559,15 +559,22 @@ function qaTag(){if(!QA)return;try{if(document.getElementById('qaTag'))return;co
 function qaSeq(){/* forced sequence, runT from 2s, ~2s spacing */const L2=curLevel()>=2;const has=k=>{try{return !!TEX[k];}catch(e){return false;}};
  const seq=L2?[['duck','obs_bridge_arch'],['duck','obs_low_branch_arch'],['tree'],['crack']]
   :[['beam'],...(has('obs_low_branch_arch')?[['duck','obs_low_branch_arch']]:[])];/* L1: no tree/crack this tip */
- return seq.map((e,i)=>({t:2+2*i,e}));}
-function qaStep(){if(!QA||!S||S.mode!=='run'||S.over)return;if(!S._qaQ){S._qaQ=qaSeq();S._qaLog=[];S._qaT0=S.runT||0;}
- while(S._qaQ.length&&((S.runT||0)-S._qaT0)>=S._qaQ[0].t){const it=S._qaQ.shift();const e=it.e;const zz=Math.round(S.z+Math.max(32,(S.speed||13)*2.6));
+ return seq.map(e=>({e,n:0}));}
+/* r6 (市场赵): forced sequence is a QUEUE on a QA clock that only ticks in mode==='run' outside the post-quiz clear window (clearT) and
+   ring/fork auto-brake (l2Brk). First item at qa-clock 2s, then ≥2s spacing. Quiz/rest/l2hold/mwait/count never tick it (qaStep only runs in 'run').
+   A forced item that vanishes before reaching Bara (quiz-entry / post-quiz clear sweep) is re-queued at the front (max 3 retries). */
+function qaStep(dt){if(!QA||!S||S.mode!=='run'||S.over)return;if(!S._qaQ){S._qaQ=qaSeq();S._qaLog=[];S._qaClk=0;S._qaDue=2;S._qaLive=[];}
+ const open=!((S.clearT||0)>0)&&!S.l2Brk;if(open)S._qaClk+=Math.min(dt||0,.1);
+ for(let i=S._qaLive.length-1;i>=0;i--){const g=S._qaLive[i];const alive=g.os.filter(o=>!o.done);const az=g.os.length?(-g.os[0].m.position.z-S.z):-9;
+  if(az<-2){S._qaLive.splice(i,1);continue;}
+  if(!alive.length&&az>1.5&&!g.os.some(o=>o._qaAuto>=2)){S._qaLive.splice(i,1);if(g.it.n<3){g.it.n++;S._qaQ.unshift(g.it);S._qaDue=Math.min(S._qaDue,S._qaClk+.5);S._qaLog.push(['REQUEUE '+g.it.e.join(':'),+(S.runT||0).toFixed(1)]);}}}
+ while(open&&S._qaQ.length&&S._qaClk>=S._qaDue){const it=S._qaQ.shift();S._qaDue=S._qaClk+2;const e=it.e;const zz=Math.round(S.z+Math.max(32,(S.speed||13)*2.6));
   try{objs.forEach(o=>{if(!o.done&&Math.abs(o.z-zz)<6&&o.type!=='scare'&&o.type!=='gold'&&o.type!=='sign'){o.done=true;try{scene.remove(o.m);}catch(_){}}});}catch(_){}
   try{if(e[0]==='duck'){for(let ln=0;ln<3;ln++)addObj('l2obs',ln,zz,{key:e[1],kind:'duck',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ[e[1]])||[2.6,2.2]});}
    else if(e[0]==='beam'){for(let ln=0;ln<3;ln++)addObj('beam',ln,zz);}
    else if(e[0]==='tree'){addObj('l2obs',1,zz,{key:'obs_tree_fall_warn',kind:'warn',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ.obs_tree_fall_warn)||[1.8,2.4],fallKey:'obs_tree_fall_down'});}
    else if(e[0]==='crack'){addObj('l2obs',1,zz,{key:'obs_ground_crack',kind:'jump',sz:(typeof L2DEN!=='undefined'&&L2DEN.SZ&&L2DEN.SZ.obs_ground_crack)||[2.5,2.1],y0:0.08,flat:1});}
-   for(const o of objs)if(o.z===zz&&!o.done&&!o._qa&&o.type!=='pumpkin')o._qa=e[0];S._qaLog.push([e.join(':'),+(S.runT||0).toFixed(1),zz]);}catch(err){S._qaLog.push(['ERR '+e.join(':'),String(err)]);}}}
+   const os=[];for(const o of objs)if(o.z===zz&&!o.done&&!o._qa&&o.type!=='pumpkin'){o._qa=e[0];os.push(o);}S._qaLive.push({it,os});S._qaLog.push([e.join(':'),+(S.runT||0).toFixed(1),zz,+S._qaClk.toFixed(1)]);}catch(err){S._qaLog.push(['ERR '+e.join(':'),String(err)]);}}}
 
 // ---------- rear pursuer (L1 farmer / L2 tramp) — replaces best-run ghost ----------
 let _chaseLoop=null,_chaseLoopGen=0;
@@ -610,7 +617,7 @@ function chaseHeroNdc(){/* projected rider/runner box (NDC), cached 0.25s */
  S._chHero=r;return r;}
 function chaseStep(dt){if(!S||typeof pursuer==='undefined'||!pursuer)return;if(['over','end','title','intro'].includes(S.mode)){pursuer.visible=false;chaseFootStop();return;}
  const freeze=chaseFrozen();
- try{qaStep();qaAuto();}catch(e){}
+ try{qaStep(dt);qaAuto();}catch(e){}
  if(S.mode==='run'&&!freeze){const rt=chaseRate();S.chaseDist=Math.max(QA?3:0,Math.min(CHASE.CAP,(S.chaseDist||CHASE.START)+dt*rt));
   if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
   if(S.chaseDist<=CHASE.CATCH){chaseCatch();return;}}
