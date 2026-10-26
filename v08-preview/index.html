@@ -590,7 +590,7 @@ function chaseClose(amt,isHit){if(!S||S.over||chaseFrozen())return;
  if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
  if(S.chaseDist<=CHASE.CATCH)chaseCatch();}
 function chaseOpen(amt){if(!S||S.over)return;S.chaseDist=Math.min(12,(S.chaseDist||7)+(amt||0));}
-function chaseCatch(){if(!S||S.over)return;if(QA){S.chaseDist=Math.max(S.chaseDist||0,3);S._qaCatch=(S._qaCatch||0)+1;return;}chaseFootStop();try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}gameOver('chase');}
+function chaseCatch(){if(!S||S.over)return;if(QA){S.chaseDist=Math.max(S.chaseDist||0,3);S._qaCatch=(S._qaCatch||0)+1;return;}chaseFootStop();gameOver('chase');/* jingle + pursuer hide live in gameOver's chase branch (fires once, also for same-frame ties) */}
 function chaseRate(){/* <0 closes, >0 opens. System ramps (post-ring/fork mzRamp, ring/fork auto-brake l2Brk, fork approach) never count as player slowness. */
  if(S.brakeT>0)return -CHASE.BRAKE;
  if(S.slowT>0||S.stunT>0)return -CHASE.SLOWHIT;
@@ -1440,7 +1440,7 @@ function flock(d){return objs.filter(o=>o.type==='duck'&&!o.done&&Math.abs(o.z-d
 const CP_Z=()=>curLevel()>=2?L2Q.SEC[1]-30:L_FIELD-30;
 function gameOver(why){if(!S||S.over)return;/* r3 创意张: first event that ends the run decides the copy (S.over guard); same-frame tie (pursuer already at catch range) → caught */
  try{if(why!=='chase'&&!QA&&S.mode==='run'&&(S.chaseDist||99)<=CHASE.CATCH)why='chase';}catch(e){}if(QA){S._qaGO=(S._qaGO||0)+1;S.pendingOver=false;S.hp=Math.max(S.hp||0,1);return;}if(CFG.RESCUE&&!S.rescued&&why!=='chase'){rescue();return;}
- S.over=true;S.overWhy=why;S.mode='over';S.speed=0;S.stunT=0;try{chaseFootStop();}catch(e){}try{pursuer.visible=false;}catch(e){}S.overMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;boostEnd(true);thinkStop();bgm(null);const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();if(why!=='chase')play('jingle_game_over_funny');hideStrip();
+ S.over=true;S.overWhy=why;if(why==='chase'){try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}}S.mode='over';S.speed=0;S.stunT=0;try{chaseFootStop();}catch(e){}try{pursuer.visible=false;}catch(e){}S.overMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;boostEnd(true);thinkStop();bgm(null);const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();if(why!=='chase')play('jingle_game_over_funny');hideStrip();
  document.getElementById('prog').style.display='none';
  setTimeout(()=>{const ov=document.getElementById('over');const L2=(curLevel()|0)>=2;const chase=why==='chase';
   const t1=chase?(L2?biBlock('The tramp caught up!','流浪汉追上你了！','ovt'):biBlock('The farmer caught up!','农夫追上你了！','ovt')):biBlock('Oh no! Bara is playing dead…','糟糕！Bara 在装死……','ovt');
@@ -2254,7 +2254,7 @@ document.getElementById('start').addEventListener('click',()=>{audUnlock();if(AC
 // ---------------- in-game Back to home (pause + confirm) ----------------
 document.body.insertAdjacentHTML('beforeend','<button id="gHome" aria-label="Back to home"><img class="gi" alt=""><span class="gh">🏠</span><span>'+BI('Back to home','回主界面')+'</span></button>');
 const gHome=document.getElementById('gHome');window.__PAUSE=false;let _pauseBgm=null;
-gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;try{chaseFootStop();}catch(e){}play('sfx_pause');
+gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;try{chaseFootStop();}catch(e){}try{l2BikeSfxStop();}catch(e){}try{l2SlopeWindStop();}catch(e){}/* 音乐刘: L2 pedal/chain + slope wind loops; their Sync (in step) restarts them after lvKeep */play('sfx_pause');
  const cur=window.__bgmCur&&snd[window.__bgmCur];_pauseBgm=cur&&!cur.paused?cur:null;if(_pauseBgm)_pauseBgm.pause();const th=snd.bgm_question_think;if(th&&!th.paused){th.pause();th._pz=1;}
  gHome.style.display='none';document.getElementById('leaveOv').style.display='flex';};
 document.getElementById('lvKeep').onclick=()=>{document.getElementById('leaveOv').style.display='none';play('sfx_resume');if(_pauseBgm)_pauseBgm.play().catch(()=>{});const th=snd.bgm_question_think;if(th&&th._pz){th._pz=0;th.play().catch(()=>{});}_pauseBgm=null;clock.getDelta();window.__PAUSE=false;};
