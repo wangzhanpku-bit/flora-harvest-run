@@ -145,6 +145,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000;font-family:"Fred
 #overCard #overHome.btn2:active{background-image:var(--p)!important;padding-top:3.125%!important}
 #overCard #overHome .en{font:800 24px/1.05 Fredoka,sans-serif!important;color:#fff!important;margin:0!important;text-shadow:0 1px 0 #0005}
 #overCard #overHome .zh{font:700 19px/1.1 "Noto Sans SC",sans-serif!important;color:#effaf8!important;margin-top:2px!important}
+/* r2 市场赵 H: Retry Level = same box as Back to home (same-class buttons equal size) */#overCard #overGo{box-sizing:border-box!important;width:var(--btn2-w,min(348px,86vw))!important;max-width:348px!important;aspect-ratio:348/128!important;height:auto!important;min-height:0!important;flex:none!important;margin:0 auto!important;padding:0 6% 0 6%!important;justify-content:center!important;gap:4%!important;border-width:4px!important}#overCard #overGo img{width:auto!important;height:58%!important;aspect-ratio:1;margin:0!important}#overCard #overGo .en{font:800 24px/1.05 Fredoka,sans-serif!important}#overCard #overGo .zh{font:700 19px/1.1 "Noto Sans SC",sans-serif!important;margin-top:2px}
 #stars{display:flex;justify-content:center;gap:10px;min-height:64px}#stars .star{width:58px;height:auto;transition:filter .3s,transform .3s}#stars .star.off{filter:grayscale(1) brightness(1.4) opacity(.45)}#stars .star.lit{animation:starpop .5s ease-out}@keyframes starpop{40%{transform:scale(1.4) rotate(12deg)}}
 #recBadge{display:none;position:relative;width:220px;margin:0 auto}#recBadge img{width:100%}#recBadge div{position:absolute;inset:18% 0 0;text-align:center;color:#fff;text-shadow:0 1px 2px #0008;line-height:1.05}#recBadge .en{font:800 17px Fredoka}#recBadge .zh{font:700 12px "Noto Sans SC"}
 .targets{font-size:14px;text-align:left;background:#fff3d6;border-radius:10px;padding:6px 10px;margin:6px 0}.targets .row{margin:3px 0}.targets .en{display:block;font-weight:700;color:#5a3a1a}.targets .zh{display:block;font-size:12px;color:#8a6a4a}
@@ -518,7 +519,7 @@ let _chaseLoop=null,_chaseLoopGen=0;
 function chaseFootStop(){_chaseLoopGen++;try{if(_chaseLoop){_chaseLoop._alive=0;_chaseLoop.loop=false;_chaseLoop.pause();try{_chaseLoop.removeAttribute('src');_chaseLoop.load();}catch(e){}_chaseLoop=null;}}catch(e){_chaseLoop=null;}}
 function chaseFootSync(dist,freeze){if(window.__SMOOTH){chaseFootStop();return;}
  if(freeze||!S||S.over||S.mode!=='run'){chaseFootStop();return;}
- const close=Math.max(0,Math.min(1,(18-(dist||18))/15.5));/* 0 far → 1 near */
+ const close=Math.max(0,Math.min(1,(CHASE.CAP-(dist==null?CHASE.CAP:dist))/(CHASE.CAP-CHASE.CATCH)));/* chaseDist cap 12 → 0 (quiet), catch 2 → 1 (loud) */
  const vol=.12+.55*close;
  try{const src=snd.sfx_pursuer_footsteps_loop;if(!src)return;if(!src.getAttribute('src')&&AUDIO.sfx_pursuer_footsteps_loop)src.src=AUDIO.sfx_pursuer_footsteps_loop;
   if(!_chaseLoop||_chaseLoop.paused||!_chaseLoop._alive){try{if(_chaseLoop){_chaseLoop._alive=0;_chaseLoop.pause();}}catch(e){}
@@ -526,25 +527,60 @@ function chaseFootSync(dist,freeze){if(window.__SMOOTH){chaseFootStop();return;}
    const p=_chaseLoop.play();if(p&&p.then)p.then(()=>{if(!_chaseLoop||!_chaseLoop._alive||gen!==_chaseLoopGen){try{_chaseLoop&&(_chaseLoop.pause(),_chaseLoop.loop=false);}catch(e){}}}).catch(()=>{});}
   else _chaseLoop.volume=vol;}catch(e){}}
 function chaseApplyTex(){if(typeof pursuer==='undefined'||!pursuer||!S)return;const k=S.chaseKey||((S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run');S.chaseKey=k;try{if(SPR[k]&&!SPR[k].map&&TEX[k])delete SPR[k];/* bust empty opacity0 cache if TEX arrived late */const mat=SP(k);pursuer.material=mat;pursuer.material.transparent=true;pursuer.material.opacity=1;pursuer.material.depthWrite=false;pursuer.material.side=THREE.DoubleSide;if(mat.map)mat.map.needsUpdate=true;pursuer.visible=true;}catch(e){}}
-function chaseClose(amt){if(!S||S.over||(S.clearT|0)>0||S.mode==='quiz'||S.mode==='mwait')return;S.chaseDist=Math.max(0,(S.chaseDist||7)-(amt||0));if(S.chaseDist<=2.0)chaseCatch();}
+const CHASE={START:7,CAP:12,CATCH:2.0,OPEN:.25,BRAKE:.5,SLOWHIT:.6,LOWSPD:.5,HIT_FLOOR:3.0,HIT_WIN:4.0};/* r2 pacing (创意张/研究钱): idle-brake 7→2 = 10s; one hit never catches; 2–3 quick hits can */
+function chaseClose(amt,isHit){if(!S||S.over||(S.clearT|0)>0||S.mode==='quiz'||S.mode==='mwait')return;
+ if(isHit){const tNow=S.t||0;const combo=(S._chHitT!=null)&&(tNow-S._chHitT)<=CHASE.HIT_WIN;S._chHitT=tNow;S._chHitN=combo?(S._chHitN||1)+1:1;S._chFloorT=(S._chHitN<2)?tNow+CHASE.HIT_WIN:0;}
+ S.chaseDist=Math.max(0,(S.chaseDist||CHASE.START)-(amt||0));
+ if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
+ if(S.chaseDist<=CHASE.CATCH)chaseCatch();}
 function chaseOpen(amt){if(!S||S.over)return;S.chaseDist=Math.min(12,(S.chaseDist||7)+(amt||0));}
 function chaseCatch(){if(!S||S.over)return;chaseFootStop();try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}gameOver('chase');}
+function chaseRate(){/* <0 closes, >0 opens. System ramps (post-ring/fork mzRamp, ring/fork auto-brake l2Brk, fork approach) never count as player slowness. */
+ if(S.brakeT>0)return -CHASE.BRAKE;
+ if(S.slowT>0||S.stunT>0)return -CHASE.SLOWHIT;
+ const sysRamp=!!S.mzRamp||!!S.l2Brk||(typeof forks!=='undefined'&&forks.some(f=>f.shown&&!f.go&&!f.done&&f.brk));
+ const v=S.speed||0,pv=(S._chPrevV==null?v:S._chPrevV);S._chPrevV=v;
+ if(!sysRamp&&v<(S.base||13)*.72&&v<=pv+1e-4)return -CHASE.LOWSPD;/* low AND not re-accelerating */
+ return CHASE.OPEN;}
+const _chV=new THREE.Vector3(),_chV2=new THREE.Vector3(),_chBox=new THREE.Box3(),_chBox2=new THREE.Box3();
+function chaseHeroNdc(){/* projected rider/runner box (NDC), cached 0.25s */
+ if(S._chHero&&(S.t-S._chHero.t)<.25)return S._chHero;
+ let o=null;try{o=(curLevel()>=2&&typeof L2BIKE!=='undefined'&&L2BIKE.ready&&L2BIKE.root)?L2BIKE.root:((typeof F3!=='undefined'&&F3.ready&&F3.holder)?F3.holder:flora);}catch(e){o=flora;}/* hero model only — not shield bubble/safe ring/fx */
+ let r={t:S.t,h:.26,x0:-.15,x1:.15};
+ try{_chBox.makeEmpty();o.updateWorldMatrix(true,true);o.traverseVisible(m=>{if(!m.isMesh||!m.geometry)return;if(m.material&&m.material.transparent&&m.material.opacity<.5)return;if(!m.geometry.boundingBox)m.geometry.computeBoundingBox();_chBox2.copy(m.geometry.boundingBox).applyMatrix4(m.matrixWorld);_chBox.union(_chBox2);});if(isFinite(_chBox.min.y)&&_chBox.max.y>_chBox.min.y){const zc=(_chBox.min.z+_chBox.max.z)/2;
+  _chV.set((_chBox.min.x+_chBox.max.x)/2,_chBox.min.y,zc).project(cam);_chV2.set((_chBox.min.x+_chBox.max.x)/2,_chBox.max.y,zc).project(cam);const h=Math.abs(_chV2.y-_chV.y);
+  const a=_chV.set(_chBox.min.x,_chBox.min.y,zc).project(cam).x,b=_chV2.set(_chBox.max.x,_chBox.min.y,zc).project(cam).x;
+  if(h>.02&&h<2)r={t:S.t,h,x0:Math.min(a,b),x1:Math.max(a,b)};}}catch(e){}
+ S._chHero=r;return r;}
 function chaseStep(dt){if(!S||typeof pursuer==='undefined'||!pursuer)return;if(['over','end','title','intro'].includes(S.mode)){pursuer.visible=false;chaseFootStop();return;}
  const freeze=S.mode==='quiz'||S.mode==='mwait'||S.mode==='rest'||S.mode==='count'||S.mode==='l2hold'||(S.clearT|0)>0;
- if(S.mode==='run'&&!freeze){const slow=(S.slowT>0)||(S.stunT>0)||((S.speed||0)<(S.base||13)*.72)||(S.brakeT>0);/* brake closes gap */if(slow)S.chaseDist=Math.max(0,(S.chaseDist||7)-dt*1.55);else S.chaseDist=Math.min(12,(S.chaseDist||7)+dt*.08);if(S.chaseDist<=2.0){chaseCatch();return;}}
- /* ROOT FIX: logical chaseDist used to place mesh BEHIND the camera (camBack~5.4, dist 18). Remap into frustum between cam and player so tramp/farmer is always visible early. */
+ if(S.mode==='run'&&!freeze){const rt=chaseRate();S.chaseDist=Math.max(0,Math.min(CHASE.CAP,(S.chaseDist||CHASE.START)+dt*rt));
+  if((S._chFloorT||0)>(S.t||0))S.chaseDist=Math.max(S.chaseDist,CHASE.HIT_FLOOR);
+  if(S.chaseDist<=CHASE.CATCH){chaseCatch();return;}}
+ else S._chPrevV=S.speed||0;
  try{if(!pursuer.material||!pursuer.material.map||(pursuer.material.opacity|0)<1)chaseApplyTex();}catch(e){}
- const camBack=(curLevel()>=2&&typeof L2BIKE!=='undefined'&&L2BIKE.ready)?5.4:6.5;
- const nearG=1.55,farG=Math.max(2.6,camBack-0.9);
- const cd=Math.max(2.0,S.chaseDist||7);
- const t=Math.max(0,Math.min(1,(cd-2.0)/(12-2.0)));
- const visD=nearG+(farG-nearG)*t;
- pursuer.visible=true;const sc=1.05+0.22*t;pursuer.scale.set(sc,sc,1);
- pursuer.position.set(S.x*.9,0.95,-(S.z-visD));
+ /* r2 layout (创意张 spec): side lane behind the bike, opposite Bara; on-screen height <= hero; near = slightly bigger + slightly toward center, never over the bike. */
+ const l2=curLevel()>=2;const cd=Math.max(CHASE.CATCH,S.chaseDist||CHASE.START);
+ const t=Math.max(0,Math.min(1,(cd-CHASE.CATCH)/(CHASE.CAP-CHASE.CATCH)));/* 0 near … 1 far */
+ const gap=l2?(0.5+1.1*t):(0.5+1.5*t);const zP=-(S.z-gap);
+ const side=l2?1:-1;/* L2 Bara rides left → pursuer right; L1 Bara runs right → pursuer left */
+ const H=chaseHeroNdc();const frac=(0.85-0.17*t)*(l2?0.82:1);/* L2 bike-root box overshoots the visible rider ~20% → trim *//* 0.68 far → 0.85 near of hero on-screen height (never exceeds hero) */
+ /* height in NDC at scale 1, at this depth */
+ const cx=cam.position.x,cz=cam.position.z;
+ _chV.set(cx,0,zP).project(cam);_chV2.set(cx,2.05,zP).project(cam);const h1=Math.max(.01,Math.abs(_chV2.y-_chV.y));
+ const sc=Math.max(.2,Math.min(1.2,frac*H.h/h1));const hN=h1*sc;
+ const asp=(cam.aspect||1);const wN=hN*(1.35/2.05)/asp;/* NDC width */
+ const margin=0.04+0.16*t;/* drift toward center as he closes, never overlapping */
+ let nx=side>0?(H.x1+margin+wN/2):(H.x0-margin-wN/2);
+ nx=side>0?Math.min(nx,0.98-wN/2):Math.max(nx,-0.98+wN/2);
+ if(side>0)nx=Math.max(nx,H.x1+0.01+wN/2);else nx=Math.min(nx,H.x0-0.01-wN/2);/* bike first: allow edge clip rather than cover */
+ _chV.set(nx,0,.5).unproject(cam);const dx=_chV.x-cx,dz=_chV.z-cz;const wx=Math.abs(dz)>1e-4?cx+dx*((zP-cz)/dz):S.x+side*1.6;
+ pursuer.visible=true;pursuer.scale.set(sc,sc,1);
+ pursuer.position.set(wx,1.025*sc,zP);
  try{pursuer.quaternion.copy(cam.quaternion);}catch(e){try{pursuer.lookAt(cam.position.x,0.95,cam.position.z);}catch(e2){}}
  try{chaseFootSync(cd,freeze);}catch(e){}
 }
-function newGame(){hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,clearT:0,chaseDist:7,chaseKey:null,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;S.chaseKey=(S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run';S.chaseDist=7;S.clearT=0;try{chaseApplyTex();}catch(e){}if(isAdventure()&&window.__CAMP&&(S.level|0)>=2)campApplyToS();
+function newGame(){try{chaseFootStop();}catch(e){}hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,clearT:0,chaseDist:7,chaseKey:null,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;S.chaseKey=(S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run';S.chaseDist=7;S.clearT=0;try{chaseApplyTex();}catch(e){}if(isAdventure()&&window.__CAMP&&(S.level|0)>=2)campApplyToS();
  bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}try{l2EnsureRide();}catch(e){}}}
 function l2SecFromZ(z){z=+z||0;return z<L2Q.SEC[0]?0:z<L2Q.SEC[1]?1:z<L2Q.SEC[2]?2:z<L2Q.SEC[3]?3:4;}
 function updHud(){/* r14: L2 label always follows S.z so lagoon/final never stick on 煤港 after teleport/quiz */if(curLevel()>=2&&S){const sec=l2SecFromZ(S.z);S.section=sec>3?3:sec;}else if(S&&S.section>3)S.section=3;hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港']/* Coal (not Cool) Harbour / 煤港 */,['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
@@ -657,7 +693,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
   if(sec!==S.section){S.section=sec;updHud();
    if(curLevel()>=2){if(sec>=4){const fin=(L2ST.stops||[]).find(o=>o.kind==='final');if(fin&&!fin.asked&&!fin.done){S.z=Math.min(S.z,L2Q.FINAL);S.speed=Math.min(S.speed||0,4);if(!fin.lit){fin.lit=true;fin.v0=Math.max(S.speed,6);fin.d0=12;}/* hold at lake until raccoon final fires */}else finish();}else l2OnSection(sec);}
    else{if(sec===1)sub(bi('Pumpkin field! Dodge hay, fences and barrels. Ducks are friends!','南瓜田到啦！躲开干草垛、栅栏和木桶，小鸭子是朋友哦！'));
-   if(sec===2){S.mode='rest';S.restT=5;S.speed=10;bgm(null);play('jingle_interlude_rest');sub(bi('{name}: "The maze is just ahead!"','{name}："迷宫就在前面了！"'),4600);setTimeout(()=>{if(S.mode==='rest')sub(bi('(Bara stops to chew a corn cob 🌽)','（Bara 停下来啃了一根玉米 🌽）'),2000);},2600);}
+   if(sec===2){S.mode='rest';try{chaseFootStop();}catch(e){}S.restT=5;S.speed=10;bgm(null);play('jingle_interlude_rest');sub(bi('{name}: "The maze is just ahead!"','{name}："迷宫就在前面了！"'),4600);setTimeout(()=>{if(S.mode==='rest')sub(bi('(Bara stops to chew a corn cob 🌽)','（Bara 停下来啃了一根玉米 🌽）'),2000);},2600);}
    if(sec===3){finish();}}}
   for(const o of objs){if(o.type==='chick'&&!o.done){o.m.position.x+=o.vx*dt;if(Math.abs(o.m.position.x)>LANE*1.3)o.vx*=-1;o.m.rotation.y=o.vx>0?-Math.PI/2:Math.PI/2;}
    if(o.type==='pumpkin'||o.type==='gold')o.m.rotation.y+=dt*2;if(o.type==='lantern'||o.type==='lantern_pile'){try{o.m.lookAt(cam.position.x,o.m.position.y,cam.position.z);}catch(e){}}
@@ -731,7 +767,7 @@ function closeLetter(){lTimers.forEach(clearTimeout);const a=snd.bgm_dad_letter;
 function skill(k){if(k==='smash'){const o=objs.filter(o=>!o.done&&(HARD.has(o.type)||WET.has(o.type))&&-o.m.position.z-S.z>12&&-o.m.position.z-S.z<45).sort((a,b)=>b.m.position.z-a.m.position.z)[0];if(!o)k='boost';else{S.smash={o,t:0};sub(baraSay('smash'),1600);play('sfx_bara_boost');return;}}
  if(k==='boost'){S.boostT=3;play('sfx_bara_boost');sub(baraSay('boost'),2200);}
  if(k==='brake'){S.brakeT=3;play(curLevel()>=2?'sfx_bike_brake':'sfx_bara_brake');sub(baraSay('brake'),2400);if(curLevel()<2){const z0=S.z+34;const open=Math.floor(Math.random()*3);[0,1,2].forEach(l=>{if(l!==open)addObj('hay',l,z0);});const open2=(open+1+Math.floor(Math.random()*2))%3;[0,1,2].forEach(l=>{if(l!==open2)addObj(Math.random()<.5?'hay':'puddle',l,z0+9);});}}}
-function finish(){S.mode='end';try{pursuer.visible=false;}catch(e){}document.getElementById('hb').textContent='';hideStrip();thinkStop();{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}
+function finish(){try{chaseFootStop();}catch(e){}S.mode='end';try{pursuer.visible=false;}catch(e){}document.getElementById('hb').textContent='';hideStrip();thinkStop();{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}
  const runs=store.get('runs',[]);const prevBest=runs.length?Math.min(...runs.map(r=>r.t)):Infinity;const T=+S.runT.toFixed(1);runs.push({g:GRADE,m:GAME_MODE,t:T,d:new Date().toISOString().slice(0,16),p:S.pumpkins,c:S.correct});store.set('runs',runs.slice(-100));
  const gotMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;S.result_mp=gotMP;const isRec=T<prevBest;
  const SOK=secretOK(T);const stars08=1+(T<=T_FAST()?1:0)+(SOK?1:0);S.result={T,stars:stars08,cards:awardCards(T),isRec,prevBest};try{if(isAdventure()&&(S.level|0)===1)campSaveFromS();else if((S.level|0)>=2)campClear();}catch(e){}
@@ -1166,14 +1202,14 @@ R.domElement.addEventListener('pointerdown',e=>{if(!S||S.mode!=='mwait'||!S.mw||
  const hit=rc.intersectObjects(S.mw.f.signs,false)[0];if(hit){window.__l2tap=performance.now();play('sfx_menu_confirm');mzGo(hit.object.userData.ci);}});
 function l2QuizStep(dt){if(S.mode!=='run')return;
  for(const o of L2ST.stops){if(o.done||o.asked)continue;const rem=o.z-S.z;
-  if(rem<-1.5){/* r13/研究钱: fast speed can overshoot z=2620 final (and lit rings). If already lit, brake+open — never silently mark done. */if(o.lit&&!o.asked){S.z=o.z;S.speed=0;o.asked=true;S.l2Brk=1;S.mode='l2hold';S.l2hold={o,t:.35};break;}o.done=true;continue;}
+  if(rem<-1.5){/* r13/研究钱: fast speed can overshoot z=2620 final (and lit rings). If already lit, brake+open — never silently mark done. */if(o.lit&&!o.asked){S.z=o.z;S.speed=0;o.asked=true;S.l2Brk=1;S.mode='l2hold';try{chaseFootStop();}catch(e){}S.l2hold={o,t:.35};break;}o.done=true;continue;}
   if(rem<75){if(o.ring)o.ring.visible=true;if(o.rac)o.rac.visible=true;}
   if(!o.lit&&rem<44){o.lit=true;if(S.boostT>0){S.boostT=0;boostEnd(true);}o.v0=Math.max(S.speed,6);o.d0=Math.max(4,Math.min(30,rem));
    if(o.kind==='ring'){o.ring.material=SP('quiz_lantern_ring_active');l2Snd('sfx_lantern_ring_on');setTimeout(()=>l2Snd('sfx_raccoon_hehe'),450);
     if(!S.l2RingTip){S.l2RingTip=1;sub(bi('The raccoon looks back! Ride into the glowing ring!','浣熊停下来回头看！骑进发光的南瓜圈！'),2600);}}
    else{l2Snd('sfx_raccoon_hehe');sub(bi('The masked raccoon! Catch up with it!','戴面具的浣熊！快追上它！'),2400);}}
   if(o.lit){S.lane=1;/* drift into the ring */
-   if(rem<=0.03){S.z=o.z;S.speed=0;o.asked=true;S.mode='l2hold';S.l2hold={o,t:.75};/* bike visibly stops in the ring, then the quiz opens */break;}
+   if(rem<=0.03){S.z=o.z;S.speed=0;o.asked=true;S.mode='l2hold';try{chaseFootStop();}catch(e){}S.l2hold={o,t:.75};/* bike visibly stops in the ring, then the quiz opens */break;}
    if(rem<o.d0){const k=Math.min(1,rem/o.d0),e=k*k*(3-2*k);S.speed=Math.max(MZ.VMIN,o.v0*(MZ.FLOOR+(1-MZ.FLOOR)*e)*Math.min(1,Math.sqrt(rem/1.2)));}
    if(rem<5&&!o.brk){o.brk=1;S.l2Brk=1;l2Snd('sfx_bike_brake');}}
   break;/* one stop at a time */}}
@@ -1326,14 +1362,14 @@ function thinkStop(){const a=snd.bgm_question_think;if(a&&!a.paused)a.pause();}
 function lowpass(sec){/* v0.8.3: BGM muffle removed for good (caused iPhone stutter after first hard hit). No-op. */}
 // ---------- obstacle hits ----------
 function tip(k,en,zh,delay){const T=store.get('tips',{});if(T[k])return false;T[k]=1;store.set('tips',T);setTimeout(()=>sub(bi(en,zh),3200),delay||0);return true;}
-function hitHard(o){if(S.shield){shieldPop(o);return;}try{chaseClose(4);}catch(e){}S.hardHits=(S.hardHits||0)+1;S.slowT=Math.max(S.slowT,2);S.bounce=.4;play(o&&o.type==='lantern_pile'?'sfx_obs_pumpkin_pile':(o&&o.type==='l2obs'&&o.key?('sfx_'+o.key):'sfx_stun_bonk'));
+function hitHard(o){if(S.shield){shieldPop(o);return;}try{chaseClose(1.8,true);}catch(e){}S.hardHits=(S.hardHits||0)+1;S.slowT=Math.max(S.slowT,2);S.bounce=.4;play(o&&o.type==='lantern_pile'?'sfx_obs_pumpkin_pile':(o&&o.type==='l2obs'&&o.key?('sfx_'+o.key):'sfx_stun_bonk'));
  const safe=!CH()||S.runT<safeStartSecs()||S.invT>0;S.stunT=CFG.STUN?(safe?1:2):0;
  if(safe){sub(bi('Bonk! Watch out!','咚！小心哦！'),1200);return;}
  if(CFG.STUN&&(S.dizzy>0||S.stunT>0)){S.hurtLog=(S.hurtLog||[]);S.hurtLog.push(['double',0,+S.runT.toFixed(1)]);sub(bi('Bonk again! Too dizzy…','又撞了！晕乎乎的……'),1500);gameOver('double');return;}
  if(hurt(CFG.HARD_COST,{kind:'hard'})==='over')return;tip('wall','Bara: "Walls, hay bales, fences and barrels cost a pumpkin. Dodge them!"','Bara："玉米墙、干草垛、栅栏和木桶会让你掉一个南瓜，快躲开！"',2500);
  if(CFG.STUN){S.dizzy=CFG.DIZZY_CLEAR;sub(bi('Bonk! Seeing stars. One more bump is game over!','咚！眼冒金星，再撞一次就失败啦！'),2400);}
  else sub(bi('Bonk! You lost a pumpkin.','咚！掉了一个南瓜。'),1600);S.lastHit=S.runT;}
-function hitWet(o){try{chaseClose(1.6);}catch(e){}S.slowT=Math.max(S.slowT,2);const p=o.m.position.clone();p.y=.75;fx('fx_splash',1.8,1.8,p,{life:.7,grow:.8});play(o&&o.type==='l2obs'&&o.key?('sfx_'+o.key):'sfx_pond_splash');
+function hitWet(o){try{chaseClose(1.0,true);}catch(e){}S.slowT=Math.max(S.slowT,2);const p=o.m.position.clone();p.y=.75;fx('fx_splash',1.8,1.8,p,{life:.7,grow:.8});play(o&&o.type==='l2obs'&&o.key?('sfx_'+o.key):'sfx_pond_splash');
  if(o.type==='mud')S.mudT=2.6;else S.wetT=2.6;setTimeout(()=>play('sfx_wet_steps'),650);
  if(!tip('pond','Bara: "Ponds just slow you down. No pumpkins lost!"','Bara："水坑只会让你慢一点，不会掉南瓜！"'))sub(o.type==='mud'?bi('Squelch! Muddy shoes!','噗叽！鞋子沾满泥巴！'):bi('Splash! Wet shoes!','扑通！鞋子湿啦！'),1400);}
 function duckFly(o){o.done=true;const side=o.m.position.x>=S.x?1:-1;o.flap={t:0,vx:side*(2.2+Math.random()*1.5),vy:2.6+Math.random()};
@@ -1348,7 +1384,7 @@ function gameOver(why){if(!S||S.over)return;if(CFG.RESCUE&&!S.rescued&&why!=='ch
  setTimeout(()=>{const ov=document.getElementById('over');const L2=(curLevel()|0)>=2;const chase=why==='chase';
   const t1=chase?(L2?biBlock('The tramp caught up!','流浪汉追上你了！','ovt'):biBlock('The farmer caught up!','农夫追上你了！','ovt')):biBlock('Oh no! Bara is playing dead…','糟糕！Bara 在装死……','ovt');
   const t2=chase?biBlock('Bara is safe — try again, {name}!','Bara 没事——{name}，再试一次！','ovs'):biBlock('Don\'t worry, {name}, the pumpkins are safe!','别担心，{name}，南瓜都没事！','ovs');
-  document.getElementById('overTxt').innerHTML=t1+t2+biBlock(S.cp?'You\'ll restart before the maze entrance.':'You\'ll restart from the start.',S.cp?'将从迷宫入口前重新开始。':'将从起点重新开始。','ovc')+(S.overMP?biBlock('+'+S.overMP+' Mini Pumpkins saved to your Pumpkin Basket!','+'+S.overMP+' 个小南瓜已放进南瓜篮！','ovm'):'');ov.style.display='flex';},1300);}
+  document.getElementById('overTxt').innerHTML=t1+t2+biBlock(S.cp?'You\'ll restart before the maze entrance.':'You\'ll restart from the start.',S.cp?'将从迷宫入口前重新开始。':'将从起点重新开始。','ovc')+(S.overMP?biBlock('+'+S.overMP+' Mini Pumpkins saved to your Pumpkin Basket!','+'+S.overMP+' 个小南瓜已放进南瓜篮！','ovm'):'');try{hideAllOv('over');}catch(e){}/* r2: hide any older layer (settings/end/leave) under the GO card */ov.style.display='flex';},1300);}
 function rescue(){S.rescued=true;S.hp=2;S.dizzy=0;S.stunT=0;S.invT=3;S.slowT=0;S.pendingOver=false;hpDraw();heartUpd();play('sfx_bara_rescue');S.rescueT=1.5;
  objs.forEach(o=>{if(!o.done&&(HARD.has(o.type)||WET.has(o.type))){const d=-o.m.position.z-S.z;if(d>-1&&d<12){o.done=true;scene.remove(o.m);}}});
  sub(bi('Bara: "Phew! Keep going, {name}!"','Bara："呼！{name}，继续冲！"'),2000);}
@@ -2157,7 +2193,7 @@ document.getElementById('start').addEventListener('click',()=>{audUnlock();if(AC
 // ---------------- in-game Back to home (pause + confirm) ----------------
 document.body.insertAdjacentHTML('beforeend','<button id="gHome" aria-label="Back to home"><img class="gi" alt=""><span class="gh">🏠</span><span>'+BI('Back to home','回主界面')+'</span></button>');
 const gHome=document.getElementById('gHome');window.__PAUSE=false;let _pauseBgm=null;
-gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;play('sfx_pause');
+gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;try{chaseFootStop();}catch(e){}play('sfx_pause');
  const cur=window.__bgmCur&&snd[window.__bgmCur];_pauseBgm=cur&&!cur.paused?cur:null;if(_pauseBgm)_pauseBgm.pause();const th=snd.bgm_question_think;if(th&&!th.paused){th.pause();th._pz=1;}
  gHome.style.display='none';document.getElementById('leaveOv').style.display='flex';};
 document.getElementById('lvKeep').onclick=()=>{document.getElementById('leaveOv').style.display='none';play('sfx_resume');if(_pauseBgm)_pauseBgm.play().catch(()=>{});const th=snd.bgm_question_think;if(th&&th._pz){th._pz=0;th.play().catch(()=>{});}_pauseBgm=null;clock.getDelta();window.__PAUSE=false;};
