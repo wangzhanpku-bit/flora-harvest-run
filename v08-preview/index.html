@@ -758,19 +758,19 @@ const clock=new THREE.Clock();
 function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root'||k==='obs_wagon_plank'||k==='obs_hay_bale'||k==='obs_fence_low'||k==='obs_pumpkin_crate'||k==='sheep_flock'||k==='obs_duck'||k==='obs_peacock'||k==='obs_cat';}
 function l2TreeJumpKey(k){return k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_tree_fall_warn';}
 function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0)||((S.t-(S._jumpAt|| -99))<2.6)));}/* James: 靠近按↑即过 — long window, no frame/height gate */
-function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);
- /* tree_exit_r2b: low ↑-ables get tighter z (0.42) — fat 0.8 let landing/late-hop still overlap after peak */
- const _lowJ=o.type==='l2obs'&&o.kind==='jump'&&l2JumpLowKey(o.key);
- const zLim=_lowJ?0.32:((o.type==='puddle'||o.type==='mud')?1.0:.8);/* tree intent tip: tighter z; no-jump only */
+function hitTest(o){if(o.done)return false;
+ /* 创意张 2026-10-27: 可跳/三并排 — ↑意图先过；z窗≥1.2；未按才 Bonk；0.32 作废 */
+ if(o.type==='l2obs'&&(o._jumped||o._clrSfx))return false;
+ if(o.type==='l2obs'&&o.kind==='warn')return false;
+ if(o.type==='l2obs'&&(o.kind==='jump'||o.kind==='soft'||o.kind==='duck')&&(l2JumpIntent()||(o.kind==='duck'&&S.slide>0)))return false;
+ if((o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile'||o.type==='fence')&&l2JumpIntent())return false;
+ const dz=Math.abs(-o.m.position.z-S.z);
+ const _jumpable=o.type==='l2obs'&&(o.kind==='jump'||o.kind==='soft'||o.kind==='duck');
+ const zLim=_jumpable?1.2:((o.type==='puddle'||o.type==='mud')?1.0:.8);
  if(dz>zLim)return false;
  if(o.type==='scare'||o.type==='sign')return true;const ox=o.m.position.x;if(Math.abs(ox-S.x)>1.0)return false;
- if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile'){if(l2JumpIntent()||S.y>=1.15)return false;return true;}if(o.type==='fence'){if(l2JumpIntent()||S.y>=.95)return false;return true;}if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
- if(o.type==='l2obs'){/* James: 靠近按↑即过 — jump/soft/duck all clear on jump intent; warn not solid */
-  if(o._jumped||o._clrSfx)return false;
-  if(o.kind==='warn')return false;
-  if(o.kind==='duck'){if(S.slide>0||l2JumpIntent())return false;return true;}
-  if(o.kind==='jump'||o.kind==='soft'){if(l2JumpIntent()||S.y>=0.01)return false;return true;}
-  return true;/* hard: lane block, not ↑ */}
+ if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile')return true;if(o.type==='fence')return true;if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
+ if(o.type==='l2obs'){if(o.kind==='duck'||o.kind==='jump'||o.kind==='soft')return true;return true;/* hard */}
  if(o.type==='l2dash'){if(!o.armed)return false;return S.y<.95&&Math.abs(o.m.position.x-S.x)<1.05;}
  if(o.type==='beam')return S.slide<=0;return false;}
 function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElementById('prog');const on=['run','quiz','dead','count','rest','l2hold'].includes(S.mode);pr.style.display=on?'block':'none';if(on){const p=Math.min(100,S.z/L_END*100);document.getElementById('progf').style.width=p+'%';document.getElementById('progd').style.left=p+'%';}}if(['run','quiz','dead'].includes(S.mode)){S.rt+=dt;document.getElementById('ht').textContent='⏱ '+fmt(S.runT);
@@ -1011,17 +1011,16 @@ const L2DEN={
 };
 /* parallel gates: two adjacent lanes blocked, one open; or must ↑/↓ (创意张 + 美图王) */
 function placeParallelGate(z,lvl){lvl=lvl||(curLevel()>=2?2:1);const open=Math.floor(Math.random()*3);const roll=Math.random();
- if(lvl>=2){if(roll<.22){/* must jump */const key=(TEX.obs_pumpkin_crate?'obs_pumpkin_crate':'obs_sandbag_low');const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
-  if(roll<.40){/* must duck — all lanes */const key=(TEX.obs_hanging_bats?'obs_hanging_bats':(z%2?'obs_low_branch_arch':'obs_bridge_arch'));const sz=L2DEN.SZ[key]||[2.1,1.45];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'duck',sz});return;}
-  if(roll<.52&&TEX.obs_tomb_pair){const key='obs_tomb_pair';const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
-  /* tree_exit_r2 创意张 + 美图王 art: hard rock parallel (block 2 leave 1). Pair tex preferred; never pumpkin/lantern stacks. */
-  const key=(typeof TEX!=='undefined'&&TEX.obs_rock_block_pair)?'obs_rock_block_pair'
-   :(typeof TEX!=='undefined'&&TEX.obs_rock_block)?'obs_rock_block':'obs_rail_gap';
+ /* 创意张: 三并排整组同 jump 键；禁混 duck/硬撞。单道↑ / 双道硬挡(留1) 仍可 */
+ if(lvl>=2){if(roll<.45){/* 三并排全 jump */const keys=['obs_fallen_log','obs_fallen_branch','obs_pumpkin_crate','obs_sandbag_low'].filter(k=>typeof TEX!=='undefined'&&TEX[k]);if(!keys.length)keys.push('obs_sandbag_low');const key=keys[Math.abs(z|0)%keys.length];const sz=L2DEN.SZ[key]||[1.9,1.1];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'jump',sz});return;}
+  if(roll<.62){const key=(TEX.obs_pumpkin_crate?'obs_pumpkin_crate':'obs_sandbag_low');const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
+  if(roll<.75&&TEX.obs_tomb_pair){const key='obs_tomb_pair';const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
+  const key=(typeof TEX!=='undefined'&&TEX.obs_rock_block_pair)?'obs_rock_block_pair':(typeof TEX!=='undefined'&&TEX.obs_rock_block)?'obs_rock_block':'obs_rail_gap';
   const sz=L2DEN.SZ[key]||[1.6,1.35];
   for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
- /* L1 */if(roll<.22){const key=(TEX.obs_wagon_plank?'obs_wagon_plank':'obs_fence_low');const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
- if(roll<.40){const key=(TEX.obs_clothesline?'obs_clothesline':'obs_barn_beam');const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'duck',sz});return;}
- if(roll<.55&&TEX.obs_barrel_pair){const key='obs_barrel_pair';const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
+ /* L1 */if(roll<.48){const keys=['obs_wagon_plank','obs_hay_bale','obs_fence_low'].filter(k=>typeof TEX!=='undefined'&&TEX[k]);if(!keys.length)keys.push('obs_fence_low');const key=keys[Math.abs(z|0)%keys.length];const sz=L2DEN.SZ[key]||[1.9,1.1];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'jump',sz});return;}
+ if(roll<.65){const key=(TEX.obs_wagon_plank?'obs_wagon_plank':'obs_fence_low');const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
+ if(roll<.80&&TEX.obs_barrel_pair){const key='obs_barrel_pair';const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
  const keys=['obs_hay_bale','obs_wood_crate'];const key=keys[Math.floor(Math.random()*keys.length)];const sz=L2DEN.SZ[key]||[1.4,1.2];
  for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}
 }
