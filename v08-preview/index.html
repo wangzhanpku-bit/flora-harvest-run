@@ -833,7 +833,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
  fc.rotation.z=0;if(F3.ready){fc.visible=false;const onBike=curLevel()>=2&&typeof L2BIKE!=='undefined'&&L2BIKE.ready;
   if(!onBike){const running=run;const air=S.y>0.05&&!!F3.jump;F3.run.weight+=((running?1:0)-F3.run.weight)*Math.min(1,dt*8);if(F3.jump)F3.jump.weight+=((air?1:0)-F3.jump.weight)*Math.min(1,dt*12);F3.idle.weight=Math.max(0,1-F3.run.weight-(F3.jump?F3.jump.weight:0));F3.run.timeScale=Math.max(.6,S.speed*(S.boostT>0?BOOSTX:1)/13);if(MOBILE){F3._adt=(F3._adt||0)+dt;if(F3._adt>=1/28){const d=F3._adt;F3._adt=0;F3.mx.update(S.y>0.05&&!F3.jump?d*.25:d);}}else F3.mx.update(S.y>0.05&&!F3.jump?dt*.25:dt);
   const ph2=(F3.run.time/F3.run.getClip().duration)%1;const st=ph2<.5?0:1;if(running&&st!==S.lastSt){S.lastSt=st;if(!window.__SMOOTH)play('sfx_footstep_single');}
-  F3.holder.rotation.x=S.slide>0?.95:(S.y>0.05&&!F3.jump?-.15:0);F3.holder.position.y=S.slide>0?.35:0;F3.holder.position.z=S.slide>0?.3:0;if(F3.tail)F3.tail.rotation.x=-.35-Math.sin(S.t*9)*.18-(S.y>0.05?.4:0);if(F3.tail)F3.tail.rotation.z=Math.sin(S.t*4.5)*.15;}}
+  const _lx=S.slide>0?.95:(S.y>0.05&&!F3.jump?-.15:0);F3.holder.rotation.set(_lx,Math.PI,0);/* James/创意: L1 只许背影 — lock yaw every frame */F3.holder.position.y=S.slide>0?.35:0;F3.holder.position.z=S.slide>0?.3:0;if(F3.tail)F3.tail.rotation.x=-.35-Math.sin(S.t*9)*.18-(S.y>0.05?.4:0);if(F3.tail)F3.tail.rotation.z=Math.sin(S.t*4.5)*.15;}}
  flora.position.set(S.x,S.y+(run&&!F3.ready?(rf%2?.09:0):0),-S.z);flora.userData.sh.position.y=.03-flora.position.y;
  if(S.mode!=='intro')flora.rotation.y=0;fc.lookAt(cam.position.x,fc.getWorldPosition(new THREE.Vector3()).y,cam.position.z);
  // bara follows
@@ -1087,8 +1087,8 @@ function l1SpawnExtra(){/* James L1 difficulty: cross dogs/pigs, small animals, 
  const half=[[L_ENT+40,L_FIELD-30],[L_FIELD+50,L_MAZE-50]];
  half.forEach((rg,hi)=>{
   const z0=rg[0],z1=rg[1],span=z1-z0;if(span<40)return;
-  /* must-↑: one 3-lane row per half, halves spaced by span */
-  placeL1JumpChain(z0+span*(hi?0.58:0.28));
+  /* must-↑: one 3-lane row per half; first half early (~15–25s @base13) so QA sees it */
+  placeL1JumpChain(hi?(z0+span*0.55):(z0+13*6));/* ~6s into field after gate; 2nd half mid */
   /* sheep_flock ×1 per half */
   if(TEX.sheep_flock){const zz=z0+span*(hi?0.72:0.22);const ln=1;addObj('l2obs',ln,zz,{key:'sheep_flock',kind:'jump',sz:L2DEN.SZ.sheep_flock||[2.4,1.35]});}
   /* vendor cart hard */
@@ -1299,8 +1299,8 @@ function l2EnsureRide(){if(curLevel()<2){/* James: L1 always farm walk — tear 
  l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;L2BIKE.pose='idle';
  if(L2BIKE.helm)L2BIKE.helm.visible=false;if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;
  if(F3.hat)F3.hat.visible=true;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;
- try{if(F3.holder){F3.holder.position.set(0,0,0);F3.holder.rotation.set(0,Math.PI,0);}}catch(e){} /* James: keep walk facing — set(0,0,0) made hero 倒着 on L1+L2 */
- try{const B=L2BIKE.bones;if(B){['Hips','Spine','Spine1','Spine2','Neck','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase','LeftArm','LeftForeArm','LeftHand','RightArm','RightForeArm','RightHand'].forEach(n=>{const b=B[n];if(b&&b.userData&&b.userData.l2q)b.quaternion.copy(b.userData.l2q);});}}catch(e){}
+ try{if(F3.holder){F3.holder.position.set(0,0,0);F3.holder.rotation.set(0,Math.PI,0);}if(F3.m)F3.m.rotation.set(0,0,0);}catch(e){} /* L1 back-facing lock */
+ try{const B=L2BIKE.bones,R=L2BIKE._rest;if(B&&R){Object.keys(R).forEach(n=>{const b=B[n];if(b){b.rotation.set(R[n].x,R[n].y,R[n].z);delete b.userData.l2q;}});}else if(B){['Hips','Spine','Spine1','Spine2','Neck','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase','LeftArm','LeftForeArm','LeftHand','RightArm','RightForeArm','RightHand'].forEach(n=>{const b=B[n];if(b&&b.userData&&b.userData.l2q){b.quaternion.copy(b.userData.l2q);delete b.userData.l2q;}});}}catch(e){}
  try{l2BikeSfxStop();}catch(e){}return;}
  if(L2BIKE.helm){L2BIKE.helm.visible=true;if(F3.hat)F3.hat.visible=false;}if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
  if(L2BIKE.root){L2BIKE.root.visible=true;if(!L2BIKE._seated||L2BIKE._boneKey!==F3.key||!L2BIKE.bones){L2BIKE._seated=false;l2SeatRider(true);if(L2BIKE.helm&&L2BIKE.helm.parent){try{L2BIKE.helm.parent.remove(L2BIKE.helm);}catch(e){}}L2BIKE.helm=null;l2AttachHelm();}l2ShowBesideBara();if(!L2BIKE.helm)l2AttachHelm();if(!L2BIKE.baraHelm)l2AttachBaraHelm();return;}
