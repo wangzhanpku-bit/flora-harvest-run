@@ -1,0 +1,4986 @@
+{
+ "grade": 10,
+ "version": 1,
+ "curriculum": "BC Grade 10 Math, Science/Geography, Reading + farm/Stanley themes + capybara",
+ "fields": "same format as questions_v6.json; {name}=player; corn_maze ≤3 choices + sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g10_001",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "Up a tree",
+    "In the water",
+    "In the snow"
+   ],
+   "choices_zh": [
+    "树上",
+    "在水里",
+    "雪地里"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "sign_en": [
+    "Up a tree",
+    "In the water",
+    "In the snow"
+   ],
+   "sign_zh": [
+    "树上",
+    "在水里",
+    "雪地里"
+   ]
+  },
+  {
+   "id": "g10_002",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Candy",
+    "Grass and plants",
+    "Fish",
+    "Insects"
+   ],
+   "choices_zh": [
+    "糖果",
+    "草和植物",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 1,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。"
+  },
+  {
+   "id": "g10_003",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Fish",
+    "Rodent",
+    "Bird"
+   ],
+   "choices_zh": [
+    "鱼",
+    "啮齿动物",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "sign_en": [
+    "Fish",
+    "Rodent",
+    "Bird"
+   ],
+   "sign_zh": [
+    "鱼",
+    "啮齿动物",
+    "鸟"
+   ]
+  },
+  {
+   "id": "g10_004",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Africa",
+    "South America",
+    "The North Pole",
+    "Australia"
+   ],
+   "choices_zh": [
+    "非洲",
+    "南美洲",
+    "北极",
+    "澳大利亚"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。"
+  },
+  {
+   "id": "g10_005",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "No",
+    "Only in winter",
+    "Yes"
+   ],
+   "choices_zh": [
+    "没有",
+    "只在冬天有",
+    "有"
+   ],
+   "answer": 0,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。"
+  },
+  {
+   "id": "g10_006",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Tunnel diggers",
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "choices_zh": [
+    "挖隧道",
+    "爬树",
+    "飞翔",
+    "游泳"
+   ],
+   "answer": 3,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。"
+  },
+  {
+   "id": "g10_007",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Flock",
+    "School",
+    "Herd"
+   ],
+   "choices_zh": [
+    "鸟群",
+    "鱼群",
+    "一群"
+   ],
+   "answer": 2,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "sign_en": [
+    "Flock",
+    "School",
+    "Herd"
+   ],
+   "sign_zh": [
+    "鸟群",
+    "鱼群",
+    "一群"
+   ]
+  },
+  {
+   "id": "g10_008",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Raccoon",
+    "Capybara",
+    "Goose",
+    "Beaver"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "水豚",
+    "鹅",
+    "河狸"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。"
+  },
+  {
+   "id": "g10_009",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Lion roars",
+    "Only hisses",
+    "Total silence",
+    "Cute squeaks / clicks"
+   ],
+   "choices_zh": [
+    "狮子吼",
+    "只会嘶嘶",
+    "完全不叫",
+    "可爱的吱吱/咔嗒声"
+   ],
+   "answer": 3,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。"
+  },
+  {
+   "id": "g10_010",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Is a bird",
+    "Eats only fish",
+    "Has no flat paddle tail",
+    "Lives only on ice"
+   ],
+   "choices_zh": [
+    "是鸟",
+    "只吃鱼",
+    "没有扁平的桨状尾巴",
+    "只住在冰上"
+   ],
+   "answer": 2,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。"
+  },
+  {
+   "id": "g10_011",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a chemical reaction, atoms are…",
+   "q_zh": "化学反应中，原子会……",
+   "choices": [
+    "Rearranged into new substances",
+    "Only painted",
+    "Turned into emotions",
+    "Deleted from the universe"
+   ],
+   "choices_zh": [
+    "重新排列成新物质",
+    "只是被上色",
+    "变成情绪",
+    "从宇宙删除"
+   ],
+   "answer": 0,
+   "explain_en": "Reactions rearrange atoms.",
+   "explain_zh": "反应重排原子。"
+  },
+  {
+   "id": "g10_012",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Mendel studied inheritance using…",
+   "q_zh": "孟德尔用什么研究遗传？",
+   "choices": [
+    "Only computers",
+    "Only rocks",
+    "Pea plants"
+   ],
+   "choices_zh": [
+    "只有电脑",
+    "只有石头",
+    "豌豆"
+   ],
+   "answer": 2,
+   "explain_en": "Pea experiments founded classical genetics.",
+   "explain_zh": "豌豆实验奠定经典遗传学。",
+   "sign_en": [
+    "Only computers",
+    "Only rocks",
+    "Pea plants"
+   ],
+   "sign_zh": [
+    "只有电脑",
+    "只有石头",
+    "豌豆"
+   ]
+  },
+  {
+   "id": "g10_013",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water's chemical formula is…",
+   "q_zh": "水的化学式是……",
+   "choices": [
+    "NaCl",
+    "CO₂",
+    "H₂O"
+   ],
+   "choices_zh": [
+    "NaCl",
+    "CO₂",
+    "H₂O"
+   ],
+   "answer": 2,
+   "explain_en": "Two hydrogen, one oxygen.",
+   "explain_zh": "两个氢一个氧。",
+   "sign_en": [
+    "NaCl",
+    "CO₂",
+    "H₂O"
+   ],
+   "sign_zh": [
+    "NaCl",
+    "CO₂",
+    "H₂O"
+   ]
+  },
+  {
+   "id": "g10_014",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A line graph is best for showing…",
+   "q_zh": "折线图最适合展示……",
+   "choices": [
+    "Change over time",
+    "Shoe colours only",
+    "Only random names",
+    "Unrelated emojis"
+   ],
+   "choices_zh": [
+    "随时间的变化",
+    "只有鞋色",
+    "只有随机名字",
+    "无关表情"
+   ],
+   "answer": 0,
+   "explain_en": "Line graphs track trends.",
+   "explain_zh": "折线图看趋势。"
+  },
+  {
+   "id": "g10_015",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a right triangle, sin θ equals…",
+   "q_zh": "直角三角形中 sin θ 等于……",
+   "choices": [
+    "Adjacent only",
+    "Area of Canada",
+    "Opposite / hypotenuse",
+    "Hypotenuse / opposite always wrong forever"
+   ],
+   "choices_zh": [
+    "只有邻边",
+    "加拿大面积",
+    "对边/斜边",
+    "斜边/对边永远错"
+   ],
+   "answer": 2,
+   "explain_en": "SOH: sin=opp/hyp.",
+   "explain_zh": "sin=对边/斜边。"
+  },
+  {
+   "id": "g10_016",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Offspring get genes from…",
+   "q_zh": "后代的基因来自……",
+   "choices": [
+    "Their parents",
+    "Only the Moon",
+    "Only street lamps"
+   ],
+   "choices_zh": [
+    "父母",
+    "只有月亮",
+    "只有路灯"
+   ],
+   "answer": 0,
+   "explain_en": "Inheritance from parents.",
+   "explain_zh": "遗传自父母。",
+   "sign_en": [
+    "Their parents",
+    "Only the Moon",
+    "Only street lamps"
+   ],
+   "sign_zh": [
+    "父母",
+    "只有月亮",
+    "只有路灯"
+   ]
+  },
+  {
+   "id": "g10_017",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"According to the map, Coal Harbour is east of Lost Lagoon near the start.\" — Skill used?",
+   "q_zh": "按地图，煤港在迷失湖以东、靠近起点。用到的技能？",
+   "choices": [
+    "Ignoring facts",
+    "Inventing a lighthouse",
+    "Extracting info from text/map"
+   ],
+   "choices_zh": [
+    "忽略事实",
+    "编造灯塔",
+    "从文本/地图提取信息"
+   ],
+   "answer": 2,
+   "explain_en": "Info extraction.",
+   "explain_zh": "信息提取。",
+   "sign_en": [
+    "Ignoring facts",
+    "Inventing a lighthouse",
+    "Extracting info from text/map"
+   ],
+   "sign_zh": [
+    "忽略事实",
+    "编造灯塔",
+    "从文本/地图提取信息"
+   ]
+  },
+  {
+   "id": "g10_018",
+   "section": "pumpkin_field",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"The flyer lists ride times: 6 pm, 7 pm, and 8 pm.\" — How many evening starts?",
+   "q_zh": "传单列出 6/7/8 点出发。晚上有几场？",
+   "choices": [
+    "0",
+    "3",
+    "12",
+    "100"
+   ],
+   "choices_zh": [
+    "0",
+    "3",
+    "12",
+    "100"
+   ],
+   "answer": 1,
+   "explain_en": "Count the listed times.",
+   "explain_zh": "数列出的时间。"
+  },
+  {
+   "id": "g10_019",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Penguin",
+    "Ostrich",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "鸵鸟",
+    "加拿大鹅"
+   ],
+   "answer": 2,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "sign_en": [
+    "Penguin",
+    "Ostrich",
+    "Canada goose"
+   ],
+   "sign_zh": [
+    "企鹅",
+    "鸵鸟",
+    "加拿大鹅"
+   ]
+  },
+  {
+   "id": "g10_020",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Never",
+    "Only in winter",
+    "At noon",
+    "At night"
+   ],
+   "choices_zh": [
+    "从来不",
+    "只在冬天",
+    "中午",
+    "晚上"
+   ],
+   "answer": 3,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。"
+  },
+  {
+   "id": "g10_021",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Smell only",
+    "Flashlights",
+    "Echolocation"
+   ],
+   "choices_zh": [
+    "只靠嗅觉",
+    "手电筒",
+    "回声定位"
+   ],
+   "answer": 2,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Smell only",
+    "Flashlights",
+    "Echolocation"
+   ],
+   "sign_zh": [
+    "只靠嗅觉",
+    "手电筒",
+    "回声定位"
+   ]
+  },
+  {
+   "id": "g10_022",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Birds",
+    "Insects",
+    "Fish",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "鸟",
+    "昆虫",
+    "鱼",
+    "哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。"
+  },
+  {
+   "id": "g10_023",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Penguin",
+    "Ostrich",
+    "Great blue heron",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "鸵鸟",
+    "大蓝鹭",
+    "火烈鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。"
+  },
+  {
+   "id": "g10_024",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Baobab",
+    "Cactus",
+    "Western red cedar",
+    "Palm tree"
+   ],
+   "choices_zh": [
+    "猴面包树",
+    "仙人掌",
+    "西部红雪松",
+    "棕榈树"
+   ],
+   "answer": 2,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。"
+  },
+  {
+   "id": "g10_025",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Learn to fly",
+    "Lay eggs / spawn",
+    "Find candy",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "学飞",
+    "产卵",
+    "找糖",
+    "冬眠"
+   ],
+   "answer": 1,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。"
+  },
+  {
+   "id": "g10_026",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "270°",
+    "90°",
+    "45°"
+   ],
+   "choices_zh": [
+    "大约 270°",
+    "90°",
+    "45°"
+   ],
+   "answer": 0,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "sign_en": [
+    "270°",
+    "90°",
+    "45°"
+   ],
+   "sign_zh": [
+    "大约 270°",
+    "90°",
+    "45°"
+   ]
+  },
+  {
+   "id": "g10_027",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Earthquakes only",
+    "Wind turbines",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "只因为地震",
+    "风力发电机",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 2,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "sign_en": [
+    "Earthquakes only",
+    "Wind turbines",
+    "The Moon's gravity pulls the tides"
+   ],
+   "sign_zh": [
+    "只因为地震",
+    "风力发电机",
+    "月亮引力拉动潮汐"
+   ]
+  },
+  {
+   "id": "g10_028",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Traffic",
+    "Magnets",
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)"
+   ],
+   "choices_zh": [
+    "车流",
+    "磁铁",
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）"
+   ],
+   "answer": 3,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。"
+  },
+  {
+   "id": "g10_029",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Birds",
+    "Marine mammals",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "海洋哺乳动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "sign_en": [
+    "Birds",
+    "Marine mammals",
+    "Fish"
+   ],
+   "sign_zh": [
+    "鸟",
+    "海洋哺乳动物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g10_030",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Building dams and lodges with wood",
+    "Growing antlers",
+    "Flying south",
+    "Laying swan eggs"
+   ],
+   "choices_zh": [
+    "用木头筑坝和巢穴",
+    "长鹿角",
+    "飞去南方",
+    "下天鹅蛋"
+   ],
+   "answer": 0,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。"
+  },
+  {
+   "id": "g10_031",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Fish",
+    "Bird",
+    "Mammal"
+   ],
+   "choices_zh": [
+    "鱼",
+    "鸟类",
+    "哺乳动物"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "sign_en": [
+    "Fish",
+    "Bird",
+    "Mammal"
+   ],
+   "sign_zh": [
+    "鱼",
+    "鸟类",
+    "哺乳动物"
+   ]
+  },
+  {
+   "id": "g10_032",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "6",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "sign_en": [
+    "6",
+    "8",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "4"
+   ]
+  },
+  {
+   "id": "g10_033",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Sense objects with sound echoes",
+    "Make candy",
+    "Stop rain",
+    "Taste colours"
+   ],
+   "choices_zh": [
+    "用回声感知物体",
+    "做糖果",
+    "让雨停下",
+    "品尝颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。"
+  },
+  {
+   "id": "g10_034",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "2",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "sign_en": [
+    "2",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g10_035",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Stopping the Moon",
+    "Making plastic",
+    "Providing habitat and holding soil",
+    "Erasing tides"
+   ],
+   "choices_zh": [
+    "挡住月亮",
+    "制造塑料",
+    "提供栖息地并固定土壤",
+    "消除潮汐"
+   ],
+   "answer": 2,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。"
+  },
+  {
+   "id": "g10_036",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Sun only",
+    "Fungi / mushrooms",
+    "Asphalt"
+   ],
+   "choices_zh": [
+    "自行车",
+    "只有太阳",
+    "真菌/蘑菇",
+    "沥青"
+   ],
+   "answer": 2,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。"
+  },
+  {
+   "id": "g10_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "2001",
+    "1950",
+    "1888",
+    "1776"
+   ],
+   "choices_zh": [
+    "2001",
+    "1950",
+    "1888",
+    "1776"
+   ],
+   "answer": 2,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g10_038",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Olympic torch",
+    "Grey Cup",
+    "Stanley Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "奥运火炬",
+    "格雷杯",
+    "斯坦利杯",
+    "世界杯"
+   ],
+   "answer": 2,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。"
+  },
+  {
+   "id": "g10_039",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "The same",
+    "Half the size",
+    "Much smaller",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "一样大",
+    "只有一半大",
+    "小很多",
+    "更大"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。"
+  },
+  {
+   "id": "g10_040",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Maori only",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Vikings"
+   ],
+   "choices_zh": [
+    "印加",
+    "只有毛利人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "维京人"
+   ],
+   "answer": 2,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。"
+  },
+  {
+   "id": "g10_041",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Lions Gate Bridge",
+    "Port Mann",
+    "Tower Bridge"
+   ],
+   "choices_zh": [
+    "狮门大桥",
+    "福特曼桥",
+    "塔桥"
+   ],
+   "answer": 0,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Lions Gate Bridge",
+    "Port Mann",
+    "Tower Bridge"
+   ],
+   "sign_zh": [
+    "狮门大桥",
+    "福特曼桥",
+    "塔桥"
+   ]
+  },
+  {
+   "id": "g10_042",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "Midnight",
+    "9:00 pm",
+    "6:00 pm",
+    "Noon"
+   ],
+   "choices_zh": [
+    "午夜",
+    "晚上 9 点",
+    "晚上 6 点",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。"
+  },
+  {
+   "id": "g10_043",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)"
+   ],
+   "choices_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）"
+   ],
+   "answer": 2,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "sign_en": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)"
+   ],
+   "sign_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）"
+   ]
+  },
+  {
+   "id": "g10_044",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "1 km",
+    "About 9 km",
+    "50 km"
+   ],
+   "choices_zh": [
+    "1 公里",
+    "大约 9 公里",
+    "50 公里"
+   ],
+   "answer": 1,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "sign_en": [
+    "1 km",
+    "About 9 km",
+    "50 km"
+   ],
+   "sign_zh": [
+    "1 公里",
+    "大约 9 公里",
+    "50 公里"
+   ]
+  },
+  {
+   "id": "g10_045",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Walking only on bikes",
+    "Only at night",
+    "Any direction",
+    "One way (counter-clockwise)"
+   ],
+   "choices_zh": [
+    "骑车却只能走",
+    "只在夜里",
+    "任意方向",
+    "单向（逆时针）"
+   ],
+   "answer": 3,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。"
+  },
+  {
+   "id": "g10_046",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A Vancouver waterfront / harbour area",
+    "A volcano crater",
+    "A desert"
+   ],
+   "choices_zh": [
+    "温哥华滨水港湾区",
+    "火山口",
+    "沙漠"
+   ],
+   "answer": 0,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。",
+   "sign_en": [
+    "A Vancouver waterfront / harbour area",
+    "A volcano crater",
+    "A desert"
+   ],
+   "sign_zh": [
+    "温哥华滨水港湾区",
+    "火山口",
+    "沙漠"
+   ]
+  },
+  {
+   "id": "g10_047",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A subway under the lake",
+    "Beavers",
+    "A desert dune",
+    "Swans as the only animals"
+   ],
+   "choices_zh": [
+    "湖底地铁",
+    "河狸",
+    "一座沙丘",
+    "只有天鹅"
+   ],
+   "answer": 1,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。"
+  },
+  {
+   "id": "g10_048",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "December 25",
+    "October 31",
+    "July 1"
+   ],
+   "choices_zh": [
+    "12 月 25 日",
+    "10 月 31 日",
+    "7 月 1 日"
+   ],
+   "answer": 1,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "sign_en": [
+    "December 25",
+    "October 31",
+    "July 1"
+   ],
+   "sign_zh": [
+    "12 月 25 日",
+    "10 月 31 日",
+    "7 月 1 日"
+   ]
+  },
+  {
+   "id": "g10_049",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "An airport",
+    "Cedar / forest trails",
+    "A desert highway",
+    "An underground mall only"
+   ],
+   "choices_zh": [
+    "机场",
+    "雪松/林间小道",
+    "沙漠公路",
+    "只有地下商场"
+   ],
+   "answer": 1,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。"
+  },
+  {
+   "id": "g10_050",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Slow down and watch for people",
+    "Sprint through",
+    "Close your eyes"
+   ],
+   "choices_zh": [
+    "减速并注意行人",
+    "冲过去",
+    "闭眼"
+   ],
+   "answer": 0,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "sign_en": [
+    "Slow down and watch for people",
+    "Sprint through",
+    "Close your eyes"
+   ],
+   "sign_zh": [
+    "减速并注意行人",
+    "冲过去",
+    "闭眼"
+   ]
+  },
+  {
+   "id": "g10_051",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "Skating shoes",
+    "A cape only",
+    "A helmet (it's the law)",
+    "No lights ever"
+   ],
+   "choices_zh": [
+    "溜冰鞋",
+    "只要披风",
+    "戴头盔（法律规定）",
+    "永远不用灯"
+   ],
+   "answer": 2,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。"
+  },
+  {
+   "id": "g10_052",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "choices_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ],
+   "answer": 2,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "sign_en": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "sign_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ]
+  },
+  {
+   "id": "g10_053",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Slow down and give them space",
+    "Scare them loudly",
+    "Chase them"
+   ],
+   "choices_zh": [
+    "减速并留出空间",
+    "大声吓它们",
+    "去追"
+   ],
+   "answer": 0,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "sign_en": [
+    "Slow down and give them space",
+    "Scare them loudly",
+    "Chase them"
+   ],
+   "sign_zh": [
+    "减速并留出空间",
+    "大声吓它们",
+    "去追"
+   ]
+  },
+  {
+   "id": "g10_054",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "Bike lights and brakes",
+    "Only your socks colour",
+    "The Moon's password"
+   ],
+   "choices_zh": [
+    "车灯和刹车",
+    "只看袜子颜色",
+    "月亮密码"
+   ],
+   "answer": 0,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "sign_en": [
+    "Bike lights and brakes",
+    "Only your socks colour",
+    "The Moon's password"
+   ],
+   "sign_zh": [
+    "车灯和刹车",
+    "只看袜子颜色",
+    "月亮密码"
+   ]
+  },
+  {
+   "id": "g10_055",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Ice block",
+    "Pumpkin",
+    "Rock",
+    "Watermelon only"
+   ],
+   "choices_zh": [
+    "冰块",
+    "南瓜",
+    "石头",
+    "只有西瓜"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。"
+  },
+  {
+   "id": "g10_056",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Water",
+    "Sand",
+    "Metal"
+   ],
+   "choices_zh": [
+    "水",
+    "沙子",
+    "金属"
+   ],
+   "answer": 0,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "sign_en": [
+    "Water",
+    "Sand",
+    "Metal"
+   ],
+   "sign_zh": [
+    "水",
+    "沙子",
+    "金属"
+   ]
+  },
+  {
+   "id": "g10_057",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Coconuts",
+    "Pineapples",
+    "Turnips / root vegetables"
+   ],
+   "choices_zh": [
+    "椰子",
+    "菠萝",
+    "芜菁等根菜"
+   ],
+   "answer": 2,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "sign_en": [
+    "Coconuts",
+    "Pineapples",
+    "Turnips / root vegetables"
+   ],
+   "sign_zh": [
+    "椰子",
+    "菠萝",
+    "芜菁等根菜"
+   ]
+  },
+  {
+   "id": "g10_058",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "29.5 days",
+    "1 hour",
+    "365 days",
+    "7 days"
+   ],
+   "choices_zh": [
+    "约 29.5 天",
+    "1 小时",
+    "365 天",
+    "7 天"
+   ],
+   "answer": 0,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。"
+  },
+  {
+   "id": "g10_059",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Canada Day only",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "只有加拿大日",
+    "万圣节",
+    "感恩节烹饪课"
+   ],
+   "answer": 1,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "sign_en": [
+    "Canada Day only",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "sign_zh": [
+    "只有加拿大日",
+    "万圣节",
+    "感恩节烹饪课"
+   ]
+  },
+  {
+   "id": "g10_060",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In 3-4-5 triangle, cos of angle adjacent to 4 (opp 3)?",
+   "q_zh": "3-4-5 中，邻边 4（对边 3）角的 cos？",
+   "choices": [
+    "4/5",
+    "3/5",
+    "3/4"
+   ],
+   "choices_zh": [
+    "4/5",
+    "3/5",
+    "3/4"
+   ],
+   "answer": 0,
+   "explain_en": "cos=adj/hyp=4/5.",
+   "explain_zh": "cos=4/5。",
+   "sign_en": [
+    "4/5",
+    "3/5",
+    "3/4"
+   ],
+   "sign_zh": [
+    "4/5",
+    "3/5",
+    "3/4"
+   ]
+  },
+  {
+   "id": "g10_061",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 14. Total?",
+   "q_zh": "19 个分数平均 14，总分？",
+   "choices": [
+    "244",
+    "266",
+    "232"
+   ],
+   "choices_zh": [
+    "244",
+    "266",
+    "232"
+   ],
+   "answer": 1,
+   "explain_en": "=266.",
+   "explain_zh": "=266。",
+   "sign_en": [
+    "244",
+    "266",
+    "232"
+   ],
+   "sign_zh": [
+    "244",
+    "266",
+    "232"
+   ]
+  },
+  {
+   "id": "g10_062",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 13. Total?",
+   "q_zh": "12 个分数平均 13，总分？",
+   "choices": [
+    "156",
+    "163",
+    "166",
+    "168"
+   ],
+   "choices_zh": [
+    "156",
+    "163",
+    "166",
+    "168"
+   ],
+   "answer": 0,
+   "explain_en": "=156.",
+   "explain_zh": "=156。"
+  },
+  {
+   "id": "g10_063",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 11 scores is 8. Total?",
+   "q_zh": "11 个分数平均 8，总分？",
+   "choices": [
+    "88",
+    "84",
+    "89"
+   ],
+   "choices_zh": [
+    "88",
+    "84",
+    "89"
+   ],
+   "answer": 0,
+   "explain_en": "=88.",
+   "explain_zh": "=88。",
+   "sign_en": [
+    "88",
+    "84",
+    "89"
+   ],
+   "sign_zh": [
+    "88",
+    "84",
+    "89"
+   ]
+  },
+  {
+   "id": "g10_064",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In 3-4-5 triangle, sin of angle opposite 3?",
+   "q_zh": "3-4-5 中，对边为 3 的角的 sin？",
+   "choices": [
+    "5/3",
+    "4/5",
+    "3/5",
+    "3/4"
+   ],
+   "choices_zh": [
+    "5/3",
+    "4/5",
+    "3/5",
+    "3/4"
+   ],
+   "answer": 2,
+   "explain_en": "sin=opp/hyp=3/5.",
+   "explain_zh": "sin=3/5。"
+  },
+  {
+   "id": "g10_065",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 12. Total?",
+   "q_zh": "18 个分数平均 12，总分？",
+   "choices": [
+    "216",
+    "221",
+    "179"
+   ],
+   "choices_zh": [
+    "216",
+    "221",
+    "179"
+   ],
+   "answer": 0,
+   "explain_en": "=216.",
+   "explain_zh": "=216。",
+   "sign_en": [
+    "216",
+    "221",
+    "179"
+   ],
+   "sign_zh": [
+    "216",
+    "221",
+    "179"
+   ]
+  },
+  {
+   "id": "g10_066",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 7 scores is 4. Total?",
+   "q_zh": "7 个分数平均 4，总分？",
+   "choices": [
+    "28",
+    "30",
+    "34"
+   ],
+   "choices_zh": [
+    "28",
+    "30",
+    "34"
+   ],
+   "answer": 0,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "sign_en": [
+    "28",
+    "30",
+    "34"
+   ],
+   "sign_zh": [
+    "28",
+    "30",
+    "34"
+   ]
+  },
+  {
+   "id": "g10_067",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 13. Total?",
+   "q_zh": "6 个分数平均 13，总分？",
+   "choices": [
+    "88",
+    "89",
+    "66",
+    "78"
+   ],
+   "choices_zh": [
+    "88",
+    "89",
+    "66",
+    "78"
+   ],
+   "answer": 3,
+   "explain_en": "=78.",
+   "explain_zh": "=78。"
+  },
+  {
+   "id": "g10_068",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=6x+(4). f(8)=?",
+   "q_zh": "f(x)=6x+(4)，f(8)=？",
+   "choices": [
+    "43",
+    "59",
+    "52"
+   ],
+   "choices_zh": [
+    "43",
+    "59",
+    "52"
+   ],
+   "answer": 2,
+   "explain_en": "=52.",
+   "explain_zh": "=52。",
+   "sign_en": [
+    "43",
+    "59",
+    "52"
+   ],
+   "sign_zh": [
+    "43",
+    "59",
+    "52"
+   ]
+  },
+  {
+   "id": "g10_069",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 17 scores is 10. Total?",
+   "q_zh": "17 个分数平均 10，总分？",
+   "choices": [
+    "152",
+    "170",
+    "144"
+   ],
+   "choices_zh": [
+    "152",
+    "170",
+    "144"
+   ],
+   "answer": 1,
+   "explain_en": "=170.",
+   "explain_zh": "=170。",
+   "sign_en": [
+    "152",
+    "170",
+    "144"
+   ],
+   "sign_zh": [
+    "152",
+    "170",
+    "144"
+   ]
+  },
+  {
+   "id": "g10_070",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 9. Total?",
+   "q_zh": "18 个分数平均 9，总分？",
+   "choices": [
+    "137",
+    "134",
+    "162",
+    "149"
+   ],
+   "choices_zh": [
+    "137",
+    "134",
+    "162",
+    "149"
+   ],
+   "answer": 2,
+   "explain_en": "=162.",
+   "explain_zh": "=162。"
+  },
+  {
+   "id": "g10_071",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 11. Total?",
+   "q_zh": "6 个分数平均 11，总分？",
+   "choices": [
+    "66",
+    "55",
+    "70",
+    "53"
+   ],
+   "choices_zh": [
+    "66",
+    "55",
+    "70",
+    "53"
+   ],
+   "answer": 0,
+   "explain_en": "=66.",
+   "explain_zh": "=66。"
+  },
+  {
+   "id": "g10_072",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 20 scores is 6. Total?",
+   "q_zh": "20 个分数平均 6，总分？",
+   "choices": [
+    "130",
+    "122",
+    "120"
+   ],
+   "choices_zh": [
+    "130",
+    "122",
+    "120"
+   ],
+   "answer": 2,
+   "explain_en": "=120.",
+   "explain_zh": "=120。",
+   "sign_en": [
+    "130",
+    "122",
+    "120"
+   ],
+   "sign_zh": [
+    "130",
+    "122",
+    "120"
+   ]
+  },
+  {
+   "id": "g10_073",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 4. Total?",
+   "q_zh": "6 个分数平均 4，总分？",
+   "choices": [
+    "28",
+    "24",
+    "18"
+   ],
+   "choices_zh": [
+    "28",
+    "24",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "=24.",
+   "explain_zh": "=24。",
+   "sign_en": [
+    "28",
+    "24",
+    "18"
+   ],
+   "sign_zh": [
+    "28",
+    "24",
+    "18"
+   ]
+  },
+  {
+   "id": "g10_074",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 7. Total?",
+   "q_zh": "12 个分数平均 7，总分？",
+   "choices": [
+    "91",
+    "84",
+    "85"
+   ],
+   "choices_zh": [
+    "91",
+    "84",
+    "85"
+   ],
+   "answer": 1,
+   "explain_en": "=84.",
+   "explain_zh": "=84。",
+   "sign_en": [
+    "91",
+    "84",
+    "85"
+   ],
+   "sign_zh": [
+    "91",
+    "84",
+    "85"
+   ]
+  },
+  {
+   "id": "g10_075",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(-6). f(12)=?",
+   "q_zh": "f(x)=5x+(-6)，f(12)=？",
+   "choices": [
+    "60",
+    "63",
+    "54",
+    "53"
+   ],
+   "choices_zh": [
+    "60",
+    "63",
+    "54",
+    "53"
+   ],
+   "answer": 2,
+   "explain_en": "=54.",
+   "explain_zh": "=54。"
+  },
+  {
+   "id": "g10_076",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 10 scores is 9. Total?",
+   "q_zh": "10 个分数平均 9，总分？",
+   "choices": [
+    "80",
+    "90",
+    "95",
+    "88"
+   ],
+   "choices_zh": [
+    "80",
+    "90",
+    "95",
+    "88"
+   ],
+   "answer": 1,
+   "explain_en": "=90.",
+   "explain_zh": "=90。"
+  },
+  {
+   "id": "g10_077",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [5, 10, 22, 23, 27]?",
+   "q_zh": "[5, 10, 22, 23, 27] 的中位数？",
+   "choices": [
+    "27",
+    "24",
+    "22"
+   ],
+   "choices_zh": [
+    "27",
+    "24",
+    "22"
+   ],
+   "answer": 2,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "sign_en": [
+    "27",
+    "24",
+    "22"
+   ],
+   "sign_zh": [
+    "27",
+    "24",
+    "22"
+   ]
+  },
+  {
+   "id": "g10_078",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 15. Total?",
+   "q_zh": "12 个分数平均 15，总分？",
+   "choices": [
+    "208",
+    "187",
+    "180"
+   ],
+   "choices_zh": [
+    "208",
+    "187",
+    "180"
+   ],
+   "answer": 2,
+   "explain_en": "=180.",
+   "explain_zh": "=180。",
+   "sign_en": [
+    "208",
+    "187",
+    "180"
+   ],
+   "sign_zh": [
+    "208",
+    "187",
+    "180"
+   ]
+  },
+  {
+   "id": "g10_079",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 7 scores is 12. Total?",
+   "q_zh": "7 个分数平均 12，总分？",
+   "choices": [
+    "70",
+    "84",
+    "81"
+   ],
+   "choices_zh": [
+    "70",
+    "84",
+    "81"
+   ],
+   "answer": 1,
+   "explain_en": "=84.",
+   "explain_zh": "=84。",
+   "sign_en": [
+    "70",
+    "84",
+    "81"
+   ],
+   "sign_zh": [
+    "70",
+    "84",
+    "81"
+   ]
+  },
+  {
+   "id": "g10_080",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(10). f(5)=?",
+   "q_zh": "f(x)=3x+(10)，f(5)=？",
+   "choices": [
+    "29",
+    "25",
+    "22"
+   ],
+   "choices_zh": [
+    "29",
+    "25",
+    "22"
+   ],
+   "answer": 1,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "sign_en": [
+    "29",
+    "25",
+    "22"
+   ],
+   "sign_zh": [
+    "29",
+    "25",
+    "22"
+   ]
+  },
+  {
+   "id": "g10_081",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 16 scores is 11. Total?",
+   "q_zh": "16 个分数平均 11，总分？",
+   "choices": [
+    "176",
+    "162",
+    "193"
+   ],
+   "choices_zh": [
+    "176",
+    "162",
+    "193"
+   ],
+   "answer": 0,
+   "explain_en": "=176.",
+   "explain_zh": "=176。",
+   "sign_en": [
+    "176",
+    "162",
+    "193"
+   ],
+   "sign_zh": [
+    "176",
+    "162",
+    "193"
+   ]
+  },
+  {
+   "id": "g10_082",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [7, 8, 9, 10, 26]?",
+   "q_zh": "[7, 8, 9, 10, 26] 的中位数？",
+   "choices": [
+    "6",
+    "12",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "12",
+    "8",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g10_083",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 13. Total?",
+   "q_zh": "18 个分数平均 13，总分？",
+   "choices": [
+    "217",
+    "234",
+    "249"
+   ],
+   "choices_zh": [
+    "217",
+    "234",
+    "249"
+   ],
+   "answer": 1,
+   "explain_en": "=234.",
+   "explain_zh": "=234。",
+   "sign_en": [
+    "217",
+    "234",
+    "249"
+   ],
+   "sign_zh": [
+    "217",
+    "234",
+    "249"
+   ]
+  },
+  {
+   "id": "g10_084",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 4. Total?",
+   "q_zh": "12 个分数平均 4，总分？",
+   "choices": [
+    "45",
+    "58",
+    "49",
+    "48"
+   ],
+   "choices_zh": [
+    "45",
+    "58",
+    "49",
+    "48"
+   ],
+   "answer": 3,
+   "explain_en": "=48.",
+   "explain_zh": "=48。"
+  },
+  {
+   "id": "g10_085",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=2x+(1). f(2)=?",
+   "q_zh": "f(x)=2x+(1)，f(2)=？",
+   "choices": [
+    "7",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "7",
+    "4",
+    "5"
+   ],
+   "sign_zh": [
+    "7",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "g10_086",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 15 scores is 10. Total?",
+   "q_zh": "15 个分数平均 10，总分？",
+   "choices": [
+    "150",
+    "149",
+    "160",
+    "159"
+   ],
+   "choices_zh": [
+    "150",
+    "149",
+    "160",
+    "159"
+   ],
+   "answer": 0,
+   "explain_en": "=150.",
+   "explain_zh": "=150。"
+  },
+  {
+   "id": "g10_087",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(5). f(2)=?",
+   "q_zh": "f(x)=4x+(5)，f(2)=？",
+   "choices": [
+    "9",
+    "13",
+    "17"
+   ],
+   "choices_zh": [
+    "9",
+    "13",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "sign_en": [
+    "9",
+    "13",
+    "17"
+   ],
+   "sign_zh": [
+    "9",
+    "13",
+    "17"
+   ]
+  },
+  {
+   "id": "g10_088",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 11 scores is 9. Total?",
+   "q_zh": "11 个分数平均 9，总分？",
+   "choices": [
+    "99",
+    "101",
+    "90"
+   ],
+   "choices_zh": [
+    "99",
+    "101",
+    "90"
+   ],
+   "answer": 0,
+   "explain_en": "=99.",
+   "explain_zh": "=99。",
+   "sign_en": [
+    "99",
+    "101",
+    "90"
+   ],
+   "sign_zh": [
+    "99",
+    "101",
+    "90"
+   ]
+  },
+  {
+   "id": "g10_089",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(4). f(4)=?",
+   "q_zh": "f(x)=4x+(4)，f(4)=？",
+   "choices": [
+    "16",
+    "18",
+    "20"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "16",
+    "18",
+    "20"
+   ],
+   "sign_zh": [
+    "16",
+    "18",
+    "20"
+   ]
+  },
+  {
+   "id": "g10_090",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(6). f(9)=?",
+   "q_zh": "f(x)=3x+(6)，f(9)=？",
+   "choices": [
+    "33",
+    "27",
+    "34"
+   ],
+   "choices_zh": [
+    "33",
+    "27",
+    "34"
+   ],
+   "answer": 0,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "sign_en": [
+    "33",
+    "27",
+    "34"
+   ],
+   "sign_zh": [
+    "33",
+    "27",
+    "34"
+   ]
+  },
+  {
+   "id": "g10_091",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [3, 11, 14, 24, 30]?",
+   "q_zh": "[3, 11, 14, 24, 30] 的中位数？",
+   "choices": [
+    "13",
+    "14",
+    "17"
+   ],
+   "choices_zh": [
+    "13",
+    "14",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "sign_en": [
+    "13",
+    "14",
+    "17"
+   ],
+   "sign_zh": [
+    "13",
+    "14",
+    "17"
+   ]
+  },
+  {
+   "id": "g10_092",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 10. Total?",
+   "q_zh": "19 个分数平均 10，总分？",
+   "choices": [
+    "157",
+    "190",
+    "172",
+    "203"
+   ],
+   "choices_zh": [
+    "157",
+    "190",
+    "172",
+    "203"
+   ],
+   "answer": 1,
+   "explain_en": "=190.",
+   "explain_zh": "=190。"
+  },
+  {
+   "id": "g10_093",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 20 scores is 15. Total?",
+   "q_zh": "20 个分数平均 15，总分？",
+   "choices": [
+    "300",
+    "298",
+    "262",
+    "335"
+   ],
+   "choices_zh": [
+    "300",
+    "298",
+    "262",
+    "335"
+   ],
+   "answer": 0,
+   "explain_en": "=300.",
+   "explain_zh": "=300。"
+  },
+  {
+   "id": "g10_094",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 6. Total?",
+   "q_zh": "6 个分数平均 6，总分？",
+   "choices": [
+    "42",
+    "36",
+    "44"
+   ],
+   "choices_zh": [
+    "42",
+    "36",
+    "44"
+   ],
+   "answer": 1,
+   "explain_en": "=36.",
+   "explain_zh": "=36。",
+   "sign_en": [
+    "42",
+    "36",
+    "44"
+   ],
+   "sign_zh": [
+    "42",
+    "36",
+    "44"
+   ]
+  },
+  {
+   "id": "g10_095",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 5. Total?",
+   "q_zh": "12 个分数平均 5，总分？",
+   "choices": [
+    "60",
+    "67",
+    "61",
+    "49"
+   ],
+   "choices_zh": [
+    "60",
+    "67",
+    "61",
+    "49"
+   ],
+   "answer": 0,
+   "explain_en": "=60.",
+   "explain_zh": "=60。"
+  },
+  {
+   "id": "g10_096",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [2, 11, 11, 21, 22]?",
+   "q_zh": "[2, 11, 11, 21, 22] 的中位数？",
+   "choices": [
+    "10",
+    "8",
+    "11"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "10",
+    "8",
+    "11"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "11"
+   ]
+  },
+  {
+   "id": "g10_097",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(5). f(5)=?",
+   "q_zh": "f(x)=4x+(5)，f(5)=？",
+   "choices": [
+    "25",
+    "26",
+    "20",
+    "21"
+   ],
+   "choices_zh": [
+    "25",
+    "26",
+    "20",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "=25.",
+   "explain_zh": "=25。"
+  },
+  {
+   "id": "g10_098",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(0). f(3)=?",
+   "q_zh": "f(x)=5x+(0)，f(3)=？",
+   "choices": [
+    "12",
+    "13",
+    "15",
+    "16"
+   ],
+   "choices_zh": [
+    "12",
+    "13",
+    "15",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "=15.",
+   "explain_zh": "=15。"
+  },
+  {
+   "id": "g10_099",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(1). f(0)=?",
+   "q_zh": "f(x)=5x+(1)，f(0)=？",
+   "choices": [
+    "1",
+    "0",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "0",
+    "3",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g10_100",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 16 scores is 9. Total?",
+   "q_zh": "16 个分数平均 9，总分？",
+   "choices": [
+    "131",
+    "144",
+    "168"
+   ],
+   "choices_zh": [
+    "131",
+    "144",
+    "168"
+   ],
+   "answer": 1,
+   "explain_en": "=144.",
+   "explain_zh": "=144。",
+   "sign_en": [
+    "131",
+    "144",
+    "168"
+   ],
+   "sign_zh": [
+    "131",
+    "144",
+    "168"
+   ]
+  },
+  {
+   "id": "g10_101",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [7, 9, 12, 19, 20]?",
+   "q_zh": "[7, 9, 12, 19, 20] 的中位数？",
+   "choices": [
+    "10",
+    "14",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "14",
+    "15",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g10_102",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 14 scores is 9. Total?",
+   "q_zh": "14 个分数平均 9，总分？",
+   "choices": [
+    "126",
+    "147",
+    "132"
+   ],
+   "choices_zh": [
+    "126",
+    "147",
+    "132"
+   ],
+   "answer": 0,
+   "explain_en": "=126.",
+   "explain_zh": "=126。",
+   "sign_en": [
+    "126",
+    "147",
+    "132"
+   ],
+   "sign_zh": [
+    "126",
+    "147",
+    "132"
+   ]
+  },
+  {
+   "id": "g10_103",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [8, 9, 14, 15, 24]?",
+   "q_zh": "[8, 9, 14, 15, 24] 的中位数？",
+   "choices": [
+    "14",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "14",
+    "15",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "sign_en": [
+    "14",
+    "15",
+    "12"
+   ],
+   "sign_zh": [
+    "14",
+    "15",
+    "12"
+   ]
+  },
+  {
+   "id": "g10_104",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [3, 4, 7, 15, 26]?",
+   "q_zh": "[3, 4, 7, 15, 26] 的中位数？",
+   "choices": [
+    "6",
+    "5",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "6",
+    "5",
+    "7"
+   ],
+   "sign_zh": [
+    "6",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "g10_105",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 7. Total?",
+   "q_zh": "19 个分数平均 7，总分？",
+   "choices": [
+    "122",
+    "133",
+    "117"
+   ],
+   "choices_zh": [
+    "122",
+    "133",
+    "117"
+   ],
+   "answer": 1,
+   "explain_en": "=133.",
+   "explain_zh": "=133。",
+   "sign_en": [
+    "122",
+    "133",
+    "117"
+   ],
+   "sign_zh": [
+    "122",
+    "133",
+    "117"
+   ]
+  },
+  {
+   "id": "g10_106",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 15. Total?",
+   "q_zh": "19 个分数平均 15，总分？",
+   "choices": [
+    "324",
+    "291",
+    "327",
+    "285"
+   ],
+   "choices_zh": [
+    "324",
+    "291",
+    "327",
+    "285"
+   ],
+   "answer": 3,
+   "explain_en": "=285.",
+   "explain_zh": "=285。"
+  },
+  {
+   "id": "g10_107",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=2x+(-4). f(5)=?",
+   "q_zh": "f(x)=2x+(-4)，f(5)=？",
+   "choices": [
+    "5",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "5",
+    "7",
+    "6"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "6"
+   ]
+  },
+  {
+   "id": "g10_108",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 9 scores is 12. Total?",
+   "q_zh": "9 个分数平均 12，总分？",
+   "choices": [
+    "95",
+    "108",
+    "97"
+   ],
+   "choices_zh": [
+    "95",
+    "108",
+    "97"
+   ],
+   "answer": 1,
+   "explain_en": "=108.",
+   "explain_zh": "=108。",
+   "sign_en": [
+    "95",
+    "108",
+    "97"
+   ],
+   "sign_zh": [
+    "95",
+    "108",
+    "97"
+   ]
+  },
+  {
+   "id": "g10_109",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(2). f(11)=?",
+   "q_zh": "f(x)=4x+(2)，f(11)=？",
+   "choices": [
+    "54",
+    "42",
+    "46"
+   ],
+   "choices_zh": [
+    "54",
+    "42",
+    "46"
+   ],
+   "answer": 2,
+   "explain_en": "=46.",
+   "explain_zh": "=46。",
+   "sign_en": [
+    "54",
+    "42",
+    "46"
+   ],
+   "sign_zh": [
+    "54",
+    "42",
+    "46"
+   ]
+  },
+  {
+   "id": "g10_110",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 10. Total?",
+   "q_zh": "18 个分数平均 10，总分？",
+   "choices": [
+    "180",
+    "150",
+    "183"
+   ],
+   "choices_zh": [
+    "180",
+    "150",
+    "183"
+   ],
+   "answer": 0,
+   "explain_en": "=180.",
+   "explain_zh": "=180。",
+   "sign_en": [
+    "180",
+    "150",
+    "183"
+   ],
+   "sign_zh": [
+    "180",
+    "150",
+    "183"
+   ]
+  },
+  {
+   "id": "g10_111",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [4, 7, 8, 8, 14]?",
+   "q_zh": "[4, 7, 8, 8, 14] 的中位数？",
+   "choices": [
+    "11",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "11",
+    "10",
+    "8"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "8"
+   ]
+  },
+  {
+   "id": "g10_112",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(-5). f(2)=?",
+   "q_zh": "f(x)=4x+(-5)，f(2)=？",
+   "choices": [
+    "5",
+    "6",
+    "3"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "5",
+    "6",
+    "3"
+   ],
+   "sign_zh": [
+    "5",
+    "6",
+    "3"
+   ]
+  },
+  {
+   "id": "g10_113",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(-4). f(11)=?",
+   "q_zh": "f(x)=5x+(-4)，f(11)=？",
+   "choices": [
+    "51",
+    "52",
+    "47"
+   ],
+   "choices_zh": [
+    "51",
+    "52",
+    "47"
+   ],
+   "answer": 0,
+   "explain_en": "=51.",
+   "explain_zh": "=51。",
+   "sign_en": [
+    "51",
+    "52",
+    "47"
+   ],
+   "sign_zh": [
+    "51",
+    "52",
+    "47"
+   ]
+  },
+  {
+   "id": "g10_114",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [18, 20, 22, 24, 30]?",
+   "q_zh": "[18, 20, 22, 24, 30] 的中位数？",
+   "choices": [
+    "22",
+    "21",
+    "17",
+    "23"
+   ],
+   "choices_zh": [
+    "22",
+    "21",
+    "17",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "=22.",
+   "explain_zh": "=22。"
+  },
+  {
+   "id": "g10_115",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(-5). f(10)=?",
+   "q_zh": "f(x)=3x+(-5)，f(10)=？",
+   "choices": [
+    "20",
+    "26",
+    "25"
+   ],
+   "choices_zh": [
+    "20",
+    "26",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "sign_en": [
+    "20",
+    "26",
+    "25"
+   ],
+   "sign_zh": [
+    "20",
+    "26",
+    "25"
+   ]
+  },
+  {
+   "id": "g10_116",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(2). f(4)=?",
+   "q_zh": "f(x)=5x+(2)，f(4)=？",
+   "choices": [
+    "22",
+    "21",
+    "25",
+    "27"
+   ],
+   "choices_zh": [
+    "22",
+    "21",
+    "25",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "=22.",
+   "explain_zh": "=22。"
+  },
+  {
+   "id": "g10_117",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=6x+(9). f(2)=?",
+   "q_zh": "f(x)=6x+(9)，f(2)=？",
+   "choices": [
+    "24",
+    "21",
+    "19",
+    "20"
+   ],
+   "choices_zh": [
+    "24",
+    "21",
+    "19",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "=21.",
+   "explain_zh": "=21。"
+  },
+  {
+   "id": "g10_118",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 20 scores is 9. Total?",
+   "q_zh": "20 个分数平均 9，总分？",
+   "choices": [
+    "209",
+    "210",
+    "180"
+   ],
+   "choices_zh": [
+    "209",
+    "210",
+    "180"
+   ],
+   "answer": 2,
+   "explain_en": "=180.",
+   "explain_zh": "=180。",
+   "sign_en": [
+    "209",
+    "210",
+    "180"
+   ],
+   "sign_zh": [
+    "209",
+    "210",
+    "180"
+   ]
+  },
+  {
+   "id": "g10_119",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=1x+(10). f(7)=?",
+   "q_zh": "f(x)=1x+(10)，f(7)=？",
+   "choices": [
+    "17",
+    "18",
+    "14"
+   ],
+   "choices_zh": [
+    "17",
+    "18",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "=17.",
+   "explain_zh": "=17。",
+   "sign_en": [
+    "17",
+    "18",
+    "14"
+   ],
+   "sign_zh": [
+    "17",
+    "18",
+    "14"
+   ]
+  },
+  {
+   "id": "g10_120",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(-5). f(5)=?",
+   "q_zh": "f(x)=5x+(-5)，f(5)=？",
+   "choices": [
+    "25",
+    "19",
+    "20"
+   ],
+   "choices_zh": [
+    "25",
+    "19",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "sign_en": [
+    "25",
+    "19",
+    "20"
+   ],
+   "sign_zh": [
+    "25",
+    "19",
+    "20"
+   ]
+  },
+  {
+   "id": "g10_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 5 scores is 5. Total?",
+   "q_zh": "5 个分数平均 5，总分？",
+   "choices": [
+    "26",
+    "25",
+    "30"
+   ],
+   "choices_zh": [
+    "26",
+    "25",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "sign_en": [
+    "26",
+    "25",
+    "30"
+   ],
+   "sign_zh": [
+    "26",
+    "25",
+    "30"
+   ]
+  },
+  {
+   "id": "g10_122",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 8 scores is 11. Total?",
+   "q_zh": "8 个分数平均 11，总分？",
+   "choices": [
+    "94",
+    "100",
+    "88",
+    "92"
+   ],
+   "choices_zh": [
+    "94",
+    "100",
+    "88",
+    "92"
+   ],
+   "answer": 2,
+   "explain_en": "=88.",
+   "explain_zh": "=88。"
+  },
+  {
+   "id": "g10_123",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 10 scores is 7. Total?",
+   "q_zh": "10 个分数平均 7，总分？",
+   "choices": [
+    "70",
+    "80",
+    "68"
+   ],
+   "choices_zh": [
+    "70",
+    "80",
+    "68"
+   ],
+   "answer": 0,
+   "explain_en": "=70.",
+   "explain_zh": "=70。",
+   "sign_en": [
+    "70",
+    "80",
+    "68"
+   ],
+   "sign_zh": [
+    "70",
+    "80",
+    "68"
+   ]
+  },
+  {
+   "id": "g10_124",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=6x+(1). f(2)=?",
+   "q_zh": "f(x)=6x+(1)，f(2)=？",
+   "choices": [
+    "13",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "13",
+    "10",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "sign_en": [
+    "13",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "13",
+    "10",
+    "9"
+   ]
+  },
+  {
+   "id": "g10_125",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 9 scores is 6. Total?",
+   "q_zh": "9 个分数平均 6，总分？",
+   "choices": [
+    "47",
+    "61",
+    "56",
+    "54"
+   ],
+   "choices_zh": [
+    "47",
+    "61",
+    "56",
+    "54"
+   ],
+   "answer": 3,
+   "explain_en": "=54.",
+   "explain_zh": "=54。"
+  },
+  {
+   "id": "g10_126",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(-2). f(7)=?",
+   "q_zh": "f(x)=3x+(-2)，f(7)=？",
+   "choices": [
+    "14",
+    "18",
+    "19"
+   ],
+   "choices_zh": [
+    "14",
+    "18",
+    "19"
+   ],
+   "answer": 2,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "sign_en": [
+    "14",
+    "18",
+    "19"
+   ],
+   "sign_zh": [
+    "14",
+    "18",
+    "19"
+   ]
+  },
+  {
+   "id": "g10_127",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(-6). f(8)=?",
+   "q_zh": "f(x)=3x+(-6)，f(8)=？",
+   "choices": [
+    "14",
+    "18",
+    "16"
+   ],
+   "choices_zh": [
+    "14",
+    "18",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "14",
+    "18",
+    "16"
+   ],
+   "sign_zh": [
+    "14",
+    "18",
+    "16"
+   ]
+  },
+  {
+   "id": "g10_128",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 16 scores is 10. Total?",
+   "q_zh": "16 个分数平均 10，总分？",
+   "choices": [
+    "160",
+    "168",
+    "170"
+   ],
+   "choices_zh": [
+    "160",
+    "168",
+    "170"
+   ],
+   "answer": 0,
+   "explain_en": "=160.",
+   "explain_zh": "=160。",
+   "sign_en": [
+    "160",
+    "168",
+    "170"
+   ],
+   "sign_zh": [
+    "160",
+    "168",
+    "170"
+   ]
+  },
+  {
+   "id": "g10_129",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(0). f(1)=?",
+   "q_zh": "f(x)=4x+(0)，f(1)=？",
+   "choices": [
+    "6",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "1",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "6",
+    "1",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "g10_130",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [3, 5, 7, 20, 28]?",
+   "q_zh": "[3, 5, 7, 20, 28] 的中位数？",
+   "choices": [
+    "4",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "4",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "4",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "g10_131",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 11. Total?",
+   "q_zh": "12 个分数平均 11，总分？",
+   "choices": [
+    "132",
+    "146",
+    "120",
+    "133"
+   ],
+   "choices_zh": [
+    "132",
+    "146",
+    "120",
+    "133"
+   ],
+   "answer": 0,
+   "explain_en": "=132.",
+   "explain_zh": "=132。"
+  },
+  {
+   "id": "g10_132",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [9, 10, 15, 17, 19]?",
+   "q_zh": "[9, 10, 15, 17, 19] 的中位数？",
+   "choices": [
+    "13",
+    "19",
+    "15",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "19",
+    "15",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "=15.",
+   "explain_zh": "=15。"
+  },
+  {
+   "id": "g10_133",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 4. Total?",
+   "q_zh": "18 个分数平均 4，总分？",
+   "choices": [
+    "85",
+    "64",
+    "72",
+    "65"
+   ],
+   "choices_zh": [
+    "85",
+    "64",
+    "72",
+    "65"
+   ],
+   "answer": 2,
+   "explain_en": "=72.",
+   "explain_zh": "=72。"
+  },
+  {
+   "id": "g10_134",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(-5). f(8)=?",
+   "q_zh": "f(x)=5x+(-5)，f(8)=？",
+   "choices": [
+    "30",
+    "34",
+    "35",
+    "33"
+   ],
+   "choices_zh": [
+    "30",
+    "34",
+    "35",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "=35.",
+   "explain_zh": "=35。"
+  },
+  {
+   "id": "g10_135",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 15 scores is 12. Total?",
+   "q_zh": "15 个分数平均 12，总分？",
+   "choices": [
+    "155",
+    "152",
+    "191",
+    "180"
+   ],
+   "choices_zh": [
+    "155",
+    "152",
+    "191",
+    "180"
+   ],
+   "answer": 3,
+   "explain_en": "=180.",
+   "explain_zh": "=180。"
+  },
+  {
+   "id": "g10_136",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(-2). f(4)=?",
+   "q_zh": "f(x)=5x+(-2)，f(4)=？",
+   "choices": [
+    "17",
+    "20",
+    "18"
+   ],
+   "choices_zh": [
+    "17",
+    "20",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "17",
+    "20",
+    "18"
+   ],
+   "sign_zh": [
+    "17",
+    "20",
+    "18"
+   ]
+  },
+  {
+   "id": "g10_137",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(3). f(4)=?",
+   "q_zh": "f(x)=4x+(3)，f(4)=？",
+   "choices": [
+    "19",
+    "18",
+    "21",
+    "17"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "21",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。"
+  },
+  {
+   "id": "g10_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(6). f(4)=?",
+   "q_zh": "f(x)=5x+(6)，f(4)=？",
+   "choices": [
+    "29",
+    "26",
+    "22"
+   ],
+   "choices_zh": [
+    "29",
+    "26",
+    "22"
+   ],
+   "answer": 1,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "sign_en": [
+    "29",
+    "26",
+    "22"
+   ],
+   "sign_zh": [
+    "29",
+    "26",
+    "22"
+   ]
+  },
+  {
+   "id": "g10_139",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 8 scores is 13. Total?",
+   "q_zh": "8 个分数平均 13，总分？",
+   "choices": [
+    "104",
+    "87",
+    "94"
+   ],
+   "choices_zh": [
+    "104",
+    "87",
+    "94"
+   ],
+   "answer": 0,
+   "explain_en": "=104.",
+   "explain_zh": "=104。",
+   "sign_en": [
+    "104",
+    "87",
+    "94"
+   ],
+   "sign_zh": [
+    "104",
+    "87",
+    "94"
+   ]
+  },
+  {
+   "id": "g10_140",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 10 scores is 5. Total?",
+   "q_zh": "10 个分数平均 5，总分？",
+   "choices": [
+    "46",
+    "50",
+    "41",
+    "49"
+   ],
+   "choices_zh": [
+    "46",
+    "50",
+    "41",
+    "49"
+   ],
+   "answer": 1,
+   "explain_en": "=50.",
+   "explain_zh": "=50。"
+  },
+  {
+   "id": "g10_141",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [4, 9, 11, 25, 26]?",
+   "q_zh": "[4, 9, 11, 25, 26] 的中位数？",
+   "choices": [
+    "11",
+    "9",
+    "14"
+   ],
+   "choices_zh": [
+    "11",
+    "9",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "11",
+    "9",
+    "14"
+   ],
+   "sign_zh": [
+    "11",
+    "9",
+    "14"
+   ]
+  },
+  {
+   "id": "g10_142",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [7, 13, 21, 25, 26]?",
+   "q_zh": "[7, 13, 21, 25, 26] 的中位数？",
+   "choices": [
+    "24",
+    "21",
+    "22"
+   ],
+   "choices_zh": [
+    "24",
+    "21",
+    "22"
+   ],
+   "answer": 1,
+   "explain_en": "=21.",
+   "explain_zh": "=21。",
+   "sign_en": [
+    "24",
+    "21",
+    "22"
+   ],
+   "sign_zh": [
+    "24",
+    "21",
+    "22"
+   ]
+  },
+  {
+   "id": "g10_143",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 13 scores is 8. Total?",
+   "q_zh": "13 个分数平均 8，总分？",
+   "choices": [
+    "115",
+    "123",
+    "104"
+   ],
+   "choices_zh": [
+    "115",
+    "123",
+    "104"
+   ],
+   "answer": 2,
+   "explain_en": "=104.",
+   "explain_zh": "=104。",
+   "sign_en": [
+    "115",
+    "123",
+    "104"
+   ],
+   "sign_zh": [
+    "115",
+    "123",
+    "104"
+   ]
+  },
+  {
+   "id": "g10_144",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(-3). f(1)=?",
+   "q_zh": "f(x)=4x+(-3)，f(1)=？",
+   "choices": [
+    "3",
+    "4",
+    "1",
+    "0"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "1",
+    "0"
+   ],
+   "answer": 2,
+   "explain_en": "=1.",
+   "explain_zh": "=1。"
+  },
+  {
+   "id": "g10_145",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 6. Total?",
+   "q_zh": "12 个分数平均 6，总分？",
+   "choices": [
+    "76",
+    "80",
+    "72"
+   ],
+   "choices_zh": [
+    "76",
+    "80",
+    "72"
+   ],
+   "answer": 2,
+   "explain_en": "=72.",
+   "explain_zh": "=72。",
+   "sign_en": [
+    "76",
+    "80",
+    "72"
+   ],
+   "sign_zh": [
+    "76",
+    "80",
+    "72"
+   ]
+  },
+  {
+   "id": "g10_146",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 7 scores is 13. Total?",
+   "q_zh": "7 个分数平均 13，总分？",
+   "choices": [
+    "80",
+    "92",
+    "91",
+    "106"
+   ],
+   "choices_zh": [
+    "80",
+    "92",
+    "91",
+    "106"
+   ],
+   "answer": 2,
+   "explain_en": "=91.",
+   "explain_zh": "=91。"
+  },
+  {
+   "id": "g10_147",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=6x+(4). f(2)=?",
+   "q_zh": "f(x)=6x+(4)，f(2)=？",
+   "choices": [
+    "17",
+    "20",
+    "16"
+   ],
+   "choices_zh": [
+    "17",
+    "20",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "=16.",
+   "explain_zh": "=16。",
+   "sign_en": [
+    "17",
+    "20",
+    "16"
+   ],
+   "sign_zh": [
+    "17",
+    "20",
+    "16"
+   ]
+  },
+  {
+   "id": "g10_148",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 10 scores is 10. Total?",
+   "q_zh": "10 个分数平均 10，总分？",
+   "choices": [
+    "100",
+    "95",
+    "109"
+   ],
+   "choices_zh": [
+    "100",
+    "95",
+    "109"
+   ],
+   "answer": 0,
+   "explain_en": "=100.",
+   "explain_zh": "=100。",
+   "sign_en": [
+    "100",
+    "95",
+    "109"
+   ],
+   "sign_zh": [
+    "100",
+    "95",
+    "109"
+   ]
+  },
+  {
+   "id": "g10_149",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [3, 3, 4, 6, 27]?",
+   "q_zh": "[3, 3, 4, 6, 27] 的中位数？",
+   "choices": [
+    "4",
+    "1",
+    "7"
+   ],
+   "choices_zh": [
+    "4",
+    "1",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "4",
+    "1",
+    "7"
+   ],
+   "sign_zh": [
+    "4",
+    "1",
+    "7"
+   ]
+  },
+  {
+   "id": "g10_150",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(9). f(0)=?",
+   "q_zh": "f(x)=5x+(9)，f(0)=？",
+   "choices": [
+    "6",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "6",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "g10_151",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 7. Total?",
+   "q_zh": "6 个分数平均 7，总分？",
+   "choices": [
+    "39",
+    "48",
+    "42"
+   ],
+   "choices_zh": [
+    "39",
+    "48",
+    "42"
+   ],
+   "answer": 2,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "39",
+    "48",
+    "42"
+   ],
+   "sign_zh": [
+    "39",
+    "48",
+    "42"
+   ]
+  },
+  {
+   "id": "g10_152",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 5 scores is 15. Total?",
+   "q_zh": "5 个分数平均 15，总分？",
+   "choices": [
+    "62",
+    "75",
+    "74"
+   ],
+   "choices_zh": [
+    "62",
+    "75",
+    "74"
+   ],
+   "answer": 1,
+   "explain_en": "=75.",
+   "explain_zh": "=75。",
+   "sign_en": [
+    "62",
+    "75",
+    "74"
+   ],
+   "sign_zh": [
+    "62",
+    "75",
+    "74"
+   ]
+  },
+  {
+   "id": "g10_153",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 8. Total?",
+   "q_zh": "19 个分数平均 8，总分？",
+   "choices": [
+    "152",
+    "161",
+    "173"
+   ],
+   "choices_zh": [
+    "152",
+    "161",
+    "173"
+   ],
+   "answer": 0,
+   "explain_en": "=152.",
+   "explain_zh": "=152。",
+   "sign_en": [
+    "152",
+    "161",
+    "173"
+   ],
+   "sign_zh": [
+    "152",
+    "161",
+    "173"
+   ]
+  },
+  {
+   "id": "g10_154",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 7 scores is 8. Total?",
+   "q_zh": "7 个分数平均 8，总分？",
+   "choices": [
+    "56",
+    "59",
+    "65"
+   ],
+   "choices_zh": [
+    "56",
+    "59",
+    "65"
+   ],
+   "answer": 0,
+   "explain_en": "=56.",
+   "explain_zh": "=56。",
+   "sign_en": [
+    "56",
+    "59",
+    "65"
+   ],
+   "sign_zh": [
+    "56",
+    "59",
+    "65"
+   ]
+  },
+  {
+   "id": "g10_155",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [4, 8, 10, 19, 20]?",
+   "q_zh": "[4, 8, 10, 19, 20] 的中位数？",
+   "choices": [
+    "8",
+    "7",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "8",
+    "7",
+    "10"
+   ],
+   "sign_zh": [
+    "8",
+    "7",
+    "10"
+   ]
+  },
+  {
+   "id": "g10_156",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 7 scores is 6. Total?",
+   "q_zh": "7 个分数平均 6，总分？",
+   "choices": [
+    "48",
+    "34",
+    "38",
+    "42"
+   ],
+   "choices_zh": [
+    "48",
+    "34",
+    "38",
+    "42"
+   ],
+   "answer": 3,
+   "explain_en": "=42.",
+   "explain_zh": "=42。"
+  },
+  {
+   "id": "g10_157",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=4x+(10). f(8)=?",
+   "q_zh": "f(x)=4x+(10)，f(8)=？",
+   "choices": [
+    "38",
+    "42",
+    "47"
+   ],
+   "choices_zh": [
+    "38",
+    "42",
+    "47"
+   ],
+   "answer": 1,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "sign_en": [
+    "38",
+    "42",
+    "47"
+   ],
+   "sign_zh": [
+    "38",
+    "42",
+    "47"
+   ]
+  },
+  {
+   "id": "g10_158",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=2x+(1). f(10)=?",
+   "q_zh": "f(x)=2x+(1)，f(10)=？",
+   "choices": [
+    "16",
+    "19",
+    "21"
+   ],
+   "choices_zh": [
+    "16",
+    "19",
+    "21"
+   ],
+   "answer": 2,
+   "explain_en": "=21.",
+   "explain_zh": "=21。",
+   "sign_en": [
+    "16",
+    "19",
+    "21"
+   ],
+   "sign_zh": [
+    "16",
+    "19",
+    "21"
+   ]
+  },
+  {
+   "id": "g10_159",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(0). f(10)=?",
+   "q_zh": "f(x)=3x+(0)，f(10)=？",
+   "choices": [
+    "30",
+    "33",
+    "36"
+   ],
+   "choices_zh": [
+    "30",
+    "33",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "30",
+    "33",
+    "36"
+   ],
+   "sign_zh": [
+    "30",
+    "33",
+    "36"
+   ]
+  },
+  {
+   "id": "g10_160",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=6x+(8). f(0)=?",
+   "q_zh": "f(x)=6x+(8)，f(0)=？",
+   "choices": [
+    "11",
+    "5",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "5",
+    "10",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g10_161",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 5 scores is 9. Total?",
+   "q_zh": "5 个分数平均 9，总分？",
+   "choices": [
+    "39",
+    "45",
+    "52"
+   ],
+   "choices_zh": [
+    "39",
+    "45",
+    "52"
+   ],
+   "answer": 1,
+   "explain_en": "=45.",
+   "explain_zh": "=45。",
+   "sign_en": [
+    "39",
+    "45",
+    "52"
+   ],
+   "sign_zh": [
+    "39",
+    "45",
+    "52"
+   ]
+  },
+  {
+   "id": "g10_162",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 11 scores is 14. Total?",
+   "q_zh": "11 个分数平均 14，总分？",
+   "choices": [
+    "154",
+    "131",
+    "136",
+    "169"
+   ],
+   "choices_zh": [
+    "154",
+    "131",
+    "136",
+    "169"
+   ],
+   "answer": 0,
+   "explain_en": "=154.",
+   "explain_zh": "=154。"
+  },
+  {
+   "id": "g10_163",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(8). f(1)=?",
+   "q_zh": "f(x)=5x+(8)，f(1)=？",
+   "choices": [
+    "13",
+    "15",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "15",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "sign_en": [
+    "13",
+    "15",
+    "14"
+   ],
+   "sign_zh": [
+    "13",
+    "15",
+    "14"
+   ]
+  },
+  {
+   "id": "g10_164",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 12 scores is 12. Total?",
+   "q_zh": "12 个分数平均 12，总分？",
+   "choices": [
+    "144",
+    "120",
+    "133",
+    "161"
+   ],
+   "choices_zh": [
+    "144",
+    "120",
+    "133",
+    "161"
+   ],
+   "answer": 0,
+   "explain_en": "=144.",
+   "explain_zh": "=144。"
+  },
+  {
+   "id": "g10_165",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=2x+(9). f(10)=?",
+   "q_zh": "f(x)=2x+(9)，f(10)=？",
+   "choices": [
+    "25",
+    "29",
+    "28",
+    "23"
+   ],
+   "choices_zh": [
+    "25",
+    "29",
+    "28",
+    "23"
+   ],
+   "answer": 1,
+   "explain_en": "=29.",
+   "explain_zh": "=29。"
+  },
+  {
+   "id": "g10_166",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 19 scores is 13. Total?",
+   "q_zh": "19 个分数平均 13，总分？",
+   "choices": [
+    "242",
+    "214",
+    "247"
+   ],
+   "choices_zh": [
+    "242",
+    "214",
+    "247"
+   ],
+   "answer": 2,
+   "explain_en": "=247.",
+   "explain_zh": "=247。",
+   "sign_en": [
+    "242",
+    "214",
+    "247"
+   ],
+   "sign_zh": [
+    "242",
+    "214",
+    "247"
+   ]
+  },
+  {
+   "id": "g10_167",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=2x+(-3). f(0)=?",
+   "q_zh": "f(x)=2x+(-3)，f(0)=？",
+   "choices": [
+    "2",
+    "-3",
+    "0",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "-3",
+    "0",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=-3.",
+   "explain_zh": "=-3。"
+  },
+  {
+   "id": "g10_168",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 16 scores is 12. Total?",
+   "q_zh": "16 个分数平均 12，总分？",
+   "choices": [
+    "210",
+    "214",
+    "192",
+    "180"
+   ],
+   "choices_zh": [
+    "210",
+    "214",
+    "192",
+    "180"
+   ],
+   "answer": 2,
+   "explain_en": "=192.",
+   "explain_zh": "=192。"
+  },
+  {
+   "id": "g10_169",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 6 scores is 10. Total?",
+   "q_zh": "6 个分数平均 10，总分？",
+   "choices": [
+    "50",
+    "52",
+    "60",
+    "59"
+   ],
+   "choices_zh": [
+    "50",
+    "52",
+    "60",
+    "59"
+   ],
+   "answer": 2,
+   "explain_en": "=60.",
+   "explain_zh": "=60。"
+  },
+  {
+   "id": "g10_170",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=1x+(7). f(5)=?",
+   "q_zh": "f(x)=1x+(7)，f(5)=？",
+   "choices": [
+    "15",
+    "12",
+    "9"
+   ],
+   "choices_zh": [
+    "15",
+    "12",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "15",
+    "12",
+    "9"
+   ],
+   "sign_zh": [
+    "15",
+    "12",
+    "9"
+   ]
+  },
+  {
+   "id": "g10_171",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [2, 8, 9, 19, 22]?",
+   "q_zh": "[2, 8, 9, 19, 22] 的中位数？",
+   "choices": [
+    "12",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "12",
+    "9",
+    "6"
+   ],
+   "sign_zh": [
+    "12",
+    "9",
+    "6"
+   ]
+  },
+  {
+   "id": "g10_172",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [5, 8, 9, 11, 27]?",
+   "q_zh": "[5, 8, 9, 11, 27] 的中位数？",
+   "choices": [
+    "6",
+    "11",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "11",
+    "8",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g10_173",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 18 scores is 11. Total?",
+   "q_zh": "18 个分数平均 11，总分？",
+   "choices": [
+    "176",
+    "193",
+    "198",
+    "181"
+   ],
+   "choices_zh": [
+    "176",
+    "193",
+    "198",
+    "181"
+   ],
+   "answer": 2,
+   "explain_en": "=198.",
+   "explain_zh": "=198。"
+  },
+  {
+   "id": "g10_174",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [2, 16, 27, 27, 28]?",
+   "q_zh": "[2, 16, 27, 27, 28] 的中位数？",
+   "choices": [
+    "33",
+    "27",
+    "31"
+   ],
+   "choices_zh": [
+    "33",
+    "27",
+    "31"
+   ],
+   "answer": 1,
+   "explain_en": "=27.",
+   "explain_zh": "=27。",
+   "sign_en": [
+    "33",
+    "27",
+    "31"
+   ],
+   "sign_zh": [
+    "33",
+    "27",
+    "31"
+   ]
+  },
+  {
+   "id": "g10_175",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=5x+(5). f(12)=?",
+   "q_zh": "f(x)=5x+(5)，f(12)=？",
+   "choices": [
+    "61",
+    "76",
+    "65"
+   ],
+   "choices_zh": [
+    "61",
+    "76",
+    "65"
+   ],
+   "answer": 2,
+   "explain_en": "=65.",
+   "explain_zh": "=65。",
+   "sign_en": [
+    "61",
+    "76",
+    "65"
+   ],
+   "sign_zh": [
+    "61",
+    "76",
+    "65"
+   ]
+  },
+  {
+   "id": "g10_176",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=1x+(5). f(3)=?",
+   "q_zh": "f(x)=1x+(5)，f(3)=？",
+   "choices": [
+    "5",
+    "9",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "9",
+    "8",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g10_177",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Median of [8, 11, 12, 16, 20]?",
+   "q_zh": "[8, 11, 12, 16, 20] 的中位数？",
+   "choices": [
+    "13",
+    "12",
+    "11"
+   ],
+   "choices_zh": [
+    "13",
+    "12",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "13",
+    "12",
+    "11"
+   ],
+   "sign_zh": [
+    "13",
+    "12",
+    "11"
+   ]
+  },
+  {
+   "id": "g10_178",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 16 scores is 14. Total?",
+   "q_zh": "16 个分数平均 14，总分？",
+   "choices": [
+    "225",
+    "243",
+    "224"
+   ],
+   "choices_zh": [
+    "225",
+    "243",
+    "224"
+   ],
+   "answer": 2,
+   "explain_en": "=224.",
+   "explain_zh": "=224。",
+   "sign_en": [
+    "225",
+    "243",
+    "224"
+   ],
+   "sign_zh": [
+    "225",
+    "243",
+    "224"
+   ]
+  },
+  {
+   "id": "g10_179",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mean of 14 scores is 14. Total?",
+   "q_zh": "14 个分数平均 14，总分？",
+   "choices": [
+    "165",
+    "196",
+    "173"
+   ],
+   "choices_zh": [
+    "165",
+    "196",
+    "173"
+   ],
+   "answer": 1,
+   "explain_en": "=196.",
+   "explain_zh": "=196。",
+   "sign_en": [
+    "165",
+    "196",
+    "173"
+   ],
+   "sign_zh": [
+    "165",
+    "196",
+    "173"
+   ]
+  },
+  {
+   "id": "g10_180",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x)=3x+(4). f(9)=?",
+   "q_zh": "f(x)=3x+(4)，f(9)=？",
+   "choices": [
+    "24",
+    "31",
+    "36"
+   ],
+   "choices_zh": [
+    "24",
+    "31",
+    "36"
+   ],
+   "answer": 1,
+   "explain_en": "=31.",
+   "explain_zh": "=31。",
+   "sign_en": [
+    "24",
+    "31",
+    "36"
+   ],
+   "sign_zh": [
+    "24",
+    "31",
+    "36"
+   ]
+  }
+ ]
+}

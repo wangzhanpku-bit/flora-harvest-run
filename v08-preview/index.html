@@ -255,7 +255,7 @@ html body #over #overCard #overGo>span,html body #over #overCard #overGo .bi_{wh
 <!-- #qual removed: Graphics lives in #settings #setGfx -->
 </div>
 <div id="hist" style="font-size:15px;color:#5a3a1a;margin:6px 0"></div>
-<button class="big" id="start">Start Adventure<br><span style="font-size:16px;font-weight:600">开始冒险</span></button><button id="dailyBtn"><img id="dailyIco" alt="" style="width:34px;height:34px;vertical-align:middle;margin-right:6px"><span style="display:inline-block;vertical-align:middle;text-align:left"><span class="en" style="display:block;color:#5a2a00;font-weight:700;margin:0">Daily Challenge</span><span class="zh" style="display:block;font-size:14px">每日挑战</span><span id="dailyBest" style="display:block;font-size:12px;color:#8a6a4a"></span></span></button><button id="shopBtn" class="shopBtn"></button><button id="bookBtn"><span class="en" style="display:block;color:#5a2a00;font-weight:700;margin:0">📖 Collection</span><span class="zh" style="display:block;font-size:14px">收集册</span></button><div id="ver">v0.8.4</div></div></div>
+<button class="big" id="start">Start Adventure<br><span style="font-size:16px;font-weight:600">开始冒险</span></button><button id="dailyBtn"><img id="dailyIco" alt="" style="width:34px;height:34px;vertical-align:middle;margin-right:6px"><span style="display:inline-block;vertical-align:middle;text-align:left"><span class="en" style="display:block;color:#5a2a00;font-weight:700;margin:0">Daily Challenge</span><span class="zh" style="display:block;font-size:14px">每日挑战</span><span id="dailyBest" style="display:block;font-size:12px;color:#8a6a4a"></span></span></button><button id="shopBtn" class="shopBtn"></button><button id="bookBtn"><span class="en" style="display:block;color:#5a2a00;font-weight:700;margin:0">📖 Collection</span><span class="zh" style="display:block;font-size:14px">收集册</span></button><div id="ver">v0.8.5</div></div></div>
 <div class="ov" id="quiz"><div class="card"><img id="qthink" src="" alt=""><div id="qtimer"><img id="ringTrack" alt=""><img id="ringFill" alt=""><img id="ringWarn" alt=""><svg viewBox="0 0 100 100"><path id="ringBg" d="M50 22 C63 15 79 16 87 31 C96 47 94 70 82 82 C72 92 60 92 50 88 C40 92 28 92 18 82 C6 70 4 47 13 31 C21 16 37 15 50 22 Z"/><path id="ringFg" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0" d="M50 22 C63 15 79 16 87 31 C96 47 94 70 82 82 C72 92 60 92 50 88 C40 92 28 92 18 82 C6 70 4 47 13 31 C21 16 37 15 50 22 Z"/><path d="M50 22 C50 13 53 8 59 5" stroke="#5a8a2a" stroke-width="6" fill="none" stroke-linecap="round"/></svg><div id="qsec">30</div></div><div class="tag" id="qtag"></div><div id="qimg"></div><h2 id="qen" style="margin-bottom:4px"></h2><div class="en" id="qzh" style="font-size:15px;color:#8a6a4a"></div><div id="qch"></div><div class="ex" id="qex"></div><div id="qwarn"></div><div style="font-size:13px;color:#9a7a5a" class="bi-inline"><span class="en">Keys: arrows + Enter or Space, or 1–4 / A–D</span><span class="zh">键盘：方向键 + 回车或空格，或 1–4 / A–D</span></div><button id="qgo" style="display:none" class="big"><span class="en">Continue</span><span class="zh" style="display:block;font-size:.75em;font-weight:600">继续跑！</span></button></div></div>
 <div class="ov" id="end"><div class="card"><div id="stars"></div><div id="recBadge"><img id="recImg" src="" alt=""><div><span class="en" style="display:block">New Record!</span><span class="zh" style="display:block">新纪录！</span></div></div>
 <h2 class="bi"><span class="en" id="endTitleEn">The Harvest Festival begins! CAPYBARA!</span><span class="zh" id="endTitleZh">丰收节，开场！CAPYBARA！</span></h2>
@@ -850,24 +850,11 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
 function letterPairs(){
  const flora=/^flora$/i.test(String(HERO).trim())&&heroG()==='girl';
  const l2=(typeof curLevel==='function'?curLevel():(S&&S.level)||0)>=2;
- if(l2){
-  if(flora)return [
-   ['Dear Flora,','亲爱的 Flora：'],
-   ['Happy Halloween! You rode through Stanley Park night and brought Bara home safe.','万圣节快乐！你骑过斯坦利公园的夜晚，还把 Bara 平安带回了家。'],
-   ['I watched you pedal the seawall, choose at the cedar fork, and never leave Bara behind — even when the path felt spooky.','爸爸看着你沿着海堤往前蹬，在雪松岔路口做选择，一路都没丢下 Bara——哪怕夜路有点吓人。'],
-   ['Halloween nights can feel dark. There will be tricks, wrong turns, long ways around. Don\'t be afraid. Stay brave, and you\'ll always find the light home.','万圣夜有时会很暗。会有惊吓，会走错，会绕远。可是别怕。勇敢一点，你总能找到回家的光。'],
-   ['<b>No matter how dark the path, whenever you look back, Dad will always be right here.</b>','<b>不管夜路有多黑，回头的时候，爸爸一直都在这里。</b>'],
-   ['Love, Dad','爱你的爸爸'],
-   ['P.S. CAPYBARA! Happy Halloween!','P.S. CAPYBARA！万圣节快乐！']
-  ];
+ if(l2){/* 创意张锁: 短万圣信；爪印在 dad_bg；L1 丰收不动 */
   return [
-   ['Dear {name},','亲爱的 {name}：'],
-   ['Happy Halloween! You made it through Stanley Park night, and Bara is safe with you.','万圣节快乐！你闯过了斯坦利公园这一夜，Bara 也跟你平安到家。'],
-   ['Tonight you rode the seawall, solved every fork, and never gave up — even when the long way round felt scary.','今晚你骑过海堤，解开每一道岔路，就算绕了远、有点怕，也一次都没有放弃。'],
-   ['Halloween has mazes too. Some turns feel spooky, some roads feel long. But every pedal teaches you something, and you always find your way home.','万圣夜里也有迷宫：有时会转错弯，有时路会很长。可是每一脚踏板都会让你学到点什么，你总能骑回家。'],
-   ['<b>However far you go, we\'re proud of you, and we\'ll always be cheering you on.</b>','<b>不管你走多远，我们都为你骄傲，也会一直为你加油。</b>'],
-   ['Love, Mom & Dad','爱你的爸爸妈妈'],
-   ['P.S. CAPYBARA! Happy Halloween!','P.S. CAPYBARA！万圣节快乐！']
+   ['Dear {name},','亲爱的{name}:'],
+   ['You did it! You rode through Halloween night and kept Bara safe all the way home.','你做到了！你骑过整个万圣夜，一路护着巴拉平安到家。'],
+   ['Tonight you faced the dark paths, solved every puzzle, and never gave up—even when the chase got close.','今晚你闯过漆黑小路，解开每一道难题，就算追兵逼近，也一次都没有放弃。']
   ];
  }
  if(flora)return [
@@ -893,7 +880,8 @@ const LT=[4,7,11,17,28,38,44];let lTimers=[],lLang='bi';
 function renderLetter(all){const el=document.getElementById('ltext');el.innerHTML=letterPairs().map(([en,zh],i)=>`<div class="lp${i===4?' emo':''}" style="opacity:${all?1:0};transition:opacity 2.5s"><div class="en">${N(en)}</div><div class="zh">${NZ(zh)}</div></div>`).join('');}
 function showLetter(){bgm(null);const ov=document.getElementById('letter');document.getElementById('lpaper').style.backgroundImage='url('+TEX.dad_bg+')';renderLetter(false);document.getElementById('lskip').innerHTML='<span class="en">Skip →</span><span class="zh">跳过 →</span>';ov.style.display='flex';
  if(!window.__SMOOTH){const a=snd.bgm_dad_letter;if(a){if(!a.getAttribute('src')&&AUDIO.bgm_dad_letter)a.src=AUDIO.bgm_dad_letter;a.loop=false;a.volume=.8;a.currentTime=0;a.play().catch(()=>{});}}
- lTimers=LT.map((s,i)=>setTimeout(()=>{const ps=document.querySelectorAll('#ltext .lp');if(ps[i]){ps[i].style.opacity=1;const el=document.getElementById('ltext');el.scrollTop=ps[i].offsetTop+ps[i].offsetHeight-el.clientHeight;}if(i===LT.length-1){play('jingle_capybara');document.getElementById('lskip').innerHTML='<span class="en">Continue →</span><span class="zh">继续 →</span>';}},s*1000));}
+ const _n=document.querySelectorAll('#ltext .lp').length;const _LT=_n<=3?[2,5,9]:LT;
+ lTimers=_LT.map((s,i)=>setTimeout(()=>{const ps=document.querySelectorAll('#ltext .lp');if(ps[i]){ps[i].style.opacity=1;const el=document.getElementById('ltext');el.scrollTop=ps[i].offsetTop+ps[i].offsetHeight-el.clientHeight;}if(i===_LT.length-1){play('jingle_capybara');document.getElementById('lskip').innerHTML='<span class="en">Continue →</span><span class="zh">继续 →</span>';}},s*1000));}
 function closeLetter(){lTimers.forEach(clearTimeout);const a=snd.bgm_dad_letter;if(a)a.pause();document.getElementById('letter').style.display='none';document.getElementById('end').style.display='flex';revealEnd();}
 function skill(k){if(k==='smash'){const o=objs.filter(o=>!o.done&&(HARD.has(o.type)||WET.has(o.type))&&-o.m.position.z-S.z>12&&-o.m.position.z-S.z<45).sort((a,b)=>b.m.position.z-a.m.position.z)[0];if(!o)k='boost';else{S.smash={o,t:0};sub(baraSay('smash'),1600);play('sfx_bara_boost');return;}}
  if(k==='boost'){S.boostT=3;play('sfx_bara_boost');sub(baraSay('boost'),2200);}
@@ -1396,7 +1384,7 @@ function l2RideFrame(dt){if(curLevel()<2){l2BikeSfxStop();return;}
  /* James: never remount basket Bara; keep companion visible */
  l2ShowBesideBara();}
 window.L2BIKE=L2BIKE;window.l2EnsureRide=l2EnsureRide;window.l2RideFrame=l2RideFrame;window.l2BikeSfxStop=l2BikeSfxStop;
-/* ==== v0.8.4 L2 quiz flow module (l2_quiz_module.js, spliced by patch_l2quiz.py) ==== */
+/* ==== v0.8.5 L2 quiz flow module (l2_quiz_module.js, spliced by patch_l2quiz.py) ==== */
 /* Design doc 第二关设计文档_v2 §6. Stops are configurable (count = 5 rings + 4 forks + 1 final = 10 by default). */
 const L2Q={RINGS:[[150,'coal_harbour'],[520,'lions_gate'],[900,'lions_gate'],[2260,'lost_lagoon'],[2440,'lost_lagoon']],FORKS:[1380,1580,1780,1980],FINAL:2620,
  SEC:[220,1250,2150,2700],/* Coal Harbour | seawall under Lions Gate | cedar forks | Lost Lagoon | finish */
@@ -2192,7 +2180,7 @@ body.quizOn #gHome{z-index:7}
 @media (orientation:landscape) and (max-height:500px){#qtimer{width:56px!important;height:56px!important;right:6px!important;top:4px!important}#qtop{padding:0 64px 0 44px!important;min-height:56px}}
 `;document.head.appendChild(st);})();
 
-const V083={ver:'v0.8.4'};
+const V083={ver:'v0.8.5'};
 // ---------------- audio: one AudioContext, unlocked on first gesture; all SFX pre-decoded during loading ----------------
 const AB={};let ACTX=null;window.__audLog=[];
 function actx(){if(window.__SMOOTH)return null;if(!ACTX){const C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ACTX=new C();window.__actx=ACTX;}return ACTX;}
@@ -2316,8 +2304,8 @@ const LEVELS=(function(){
  // L2 built only on tip (/v08-preview) or ?level=2 — root stays Coming soon
  const _l2=isL2PreviewHost();
  return [
-  {n:1,built:true,en:'Maple Ridge Farm',en1:'Maple Ridge Farm',enWrap:['Maple Ridge Farm']},
-  {n:2,built:_l2,en:'Stanley Park',en1:'Stanley Park',enWrap:['Stanley Park']},
+  {n:1,built:true,en:'L1',en1:'L1',enWrap:['L1']},
+  {n:2,built:true,en:'L2',en1:'L2',enWrap:['L2']},/* James 正式: L2 live on root */
   {n:3,built:false,en:'',en1:''},
   {n:4,built:false,en:'',en1:''},
   {n:5,built:false,en:'',en1:''},
@@ -2354,7 +2342,7 @@ function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',nu
     body='<span class="lname"><span class="len">'+wrap.map(t=>'<span class="en">'+t+'</span>').join('')+'</span></span>';}
    else{body='<span class="lname" aria-hidden="true"></span>';}
   }else if(cst==='locked'){body='<span class="lname"><span class="len"><span class="en">L'+(L.n-1)+'→</span></span></span>';}
-  else{/* James: L1 Maple Ridge Farm / L2 Stanley Park under chip */const wrap=(L.enWrap&&L.enWrap.length)?L.enWrap:(L.en?[L.en]:[]);body=wrap.length?('<span class="lname"><span class="len">'+wrap.map(function(x){return '<span class="en">'+x+'</span>';}).join('')+'</span></span>'):'<span class="lname" aria-hidden="true"></span>';}
+  else{body='<span class="lname" aria-hidden="true"></span>';}/* 创意张: 选关只留 L1/L2，无副标 */
   // Coming soon: purple ribbon; name only when LEVELS[n].en is set (L2)
   if(art)return '<button class="lt art enonly '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+rib+hdr+body+'</button>';
   return '<button class="lt enonly '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+hdr+body+'</button>';
