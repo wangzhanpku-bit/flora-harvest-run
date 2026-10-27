@@ -983,15 +983,15 @@ function l2SpawnLagoonReeds(){/* r13 美图王: after corn hidden, line Lost Lag
 /* ==== Drop8 L2 density tighten r16 / 市场赵 FAIL — tip only ====
  创意张 locked cadence: Seawall 1/2.5s · Cedar 1/3s · Lagoon 1/2s (every unchanged).
  r16: no ≥5s empty gaps (l2FreeZ null → nudge/fill, never skip); kill obs_pumpkin_pile + roadside lantern_pile;
- tree_exit_r2: no stacked-pumpkin/lantern_pair obstacles; obs_rock_block(+pair) hard (美图王 art); fallen_log ↑-clear;
+ tree_exit_r2: no stacked-pumpkin/lantern_pair; rock hard; James denser: keep fallen trees/logs + shorter every;
  animal WARN 0.9s + more visible approach silhouette. Waves lagoon 3→4 for late stretch.
  Small×3→slow; Large×3→stun ~1s; stunned+hard→GAME OVER. Speed via pedal/chain rate only. */
 const L2DEN={
  BASE:13,
  /* time windows (s of ride) → section via L2Q.SEC z */
- SEAWALL:{t0:0,t1:90,every:2.5,spdMul:1,waves:2},
- CEDAR:{t0:90,t1:170,every:3,spdMul:0.75,waves:2},
- LAGOON:{t0:170,t1:1e9,every:2,spdMul:1.25,waves:4},
+ SEAWALL:{t0:0,t1:90,every:2.0,spdMul:1,waves:2},/* James denser */
+ CEDAR:{t0:90,t1:170,every:2.4,spdMul:0.75,waves:3},
+ LAGOON:{t0:170,t1:1e9,every:1.7,spdMul:1.25,waves:4},
  WARN:0.9,/* seconds animal visible before collision (r16: was 0.5, 市场赵 not obvious) */
  STUN:1,/* large animal stun seconds */
  BURST_MUL:1.55,BURST_DUR:2.2,/* lagoon downhill accel bursts */
@@ -1041,13 +1041,15 @@ function l2FreeZ(z,span){span=span||80;if(!l2QuizBlocked(z))return z;for(let d=6
 function l2PickObs(seg,i){/* hard/soft + Drop10 duck arches / crack / tree-fall (no pumpkin/chicken/corn) */
  /* tree_exit_r2 创意张: fallen tree/log MUST ↑ clear; stacked-pumpkin OUT → obs_rock_block hard (美图王 art wired). */
  const soft=['obs_puddle','obs_leaf_pile','obs_bird_slip','obs_candy_spill'];/* ↑ hop clears */
- const jumpShort=['obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low','obs_fallen_log','obs_tree_fall_down','obs_fallen_branch'];/* ↑ clears logs/tree; fallen_branch art is ground log */
+ const jumpShort=['obs_fallen_log','obs_fallen_branch','obs_tree_fall_down','obs_fallen_log','obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low','obs_fallen_branch'];/* bias tree/log denser */
  const hardRock=(typeof TEX!=='undefined'&&TEX.obs_rock_block)?'obs_rock_block':'obs_rail_gap';
  const hard=[hardRock,'obs_park_bench','obs_rail_gap'];/* tall/hard lane-swap only — rock single; pair is parallel-gate; NO lantern/pumpkin stacks, NO fallen_log */
  const duckSea=['obs_bridge_arch'];/* seawall: bridge arch ↓ only */
  const duckCed=['obs_low_branch_arch'];/* cedar: low thick branch ↓ only */
  const duck=seg==='cedar'?duckCed:duckSea;
- if(i%13===7)return {key:'obs_tree_fall_warn',kind:'warn',sz:L2DEN.SZ.obs_tree_fall_warn||[1.8,2.4],fallKey:'obs_tree_fall_down'};
+ if(i%7===3)return {key:'obs_tree_fall_warn',kind:'warn',sz:L2DEN.SZ.obs_tree_fall_warn||[1.8,2.4],fallKey:'obs_tree_fall_down'};/* denser falling trees — keep, don't remove */
+ if(seg==='cedar'&&i%4===1)return {key:'obs_fallen_log',kind:'jump',sz:L2DEN.SZ.obs_fallen_log||[1.9,1.1]};/* James: keep mossy logs, more in cedar */
+ if(seg==='cedar'&&i%5===2)return {key:'obs_fallen_branch',kind:'jump',sz:L2DEN.SZ.obs_fallen_branch||[2.1,1.35]};
  /* guarantee ground crack often (was buried at jumpShort[i%4] ≈ rare / upright-invisible) */
  if(i%6===2)return {key:'obs_ground_crack',kind:'jump',sz:L2DEN.SZ.obs_ground_crack||[2.5,2.1],flat:1};
  let pool;
