@@ -2254,12 +2254,12 @@ function showMenu(){hideAllOv('menu');document.getElementById('menu').style.disp
 window.showMenu=showMenu;
 // ---- levels ----
 const LEVELS=(function(){
- // James + 创意张: level cards ENGLISH ONLY (clearer, larger)
+ // James: level cards short letters only (L1/L2); grades G1…G12
  // L2 built only on tip (/v08-preview) or ?level=2 — root stays Coming soon
  const _l2=isL2PreviewHost();
  return [
-  {n:1,built:true,en:'Harvest Run',en1:'Harvest Run',enWrap:['Harvest Run']},
-  {n:2,built:_l2,en:'Stanley Park Halloween Ride',en1:'Stanley Park Halloween Ride',enWrap:['Stanley Park','Halloween Ride']},
+  {n:1,built:true,en:'L1',en1:'L1',enWrap:['L1']},
+  {n:2,built:_l2,en:'L2',en1:'L2',enWrap:['L2']},
   {n:3,built:false,en:'',en1:''},
   {n:4,built:false,en:'',en1:''},
   {n:5,built:false,en:'',en1:''},
@@ -2288,17 +2288,15 @@ function lvUnlocked(){const u=store.get('levels',{1:1});u[1]=1;return u;}
 function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',null);const g=document.getElementById('lgrid');
  g.innerHTML=LEVELS.map(L=>{const open=L.built&&(u[L.n]||(L.n===2&&isL2PreviewHost()));
   const cst=open?'unlocked':(L.built?'locked':'coming_soon');const art=TEX['ui83_card_l'+L.n+'_'+cst];
-  const hdr='<span class="lhdr"><span class="en">Level '+L.n+'</span></span>';
+  const hdr='<span class="lhdr"><span class="en">L'+L.n+'</span></span>';
   let body='';const rib=(cst==='coming_soon')?'<span class="rib4">Coming soon</span>':'';
   if(cst==='coming_soon'){
    // L3–6: empty name (ribbon only). L2 has a title — show "Stanley Park Halloween Ride"
    if(L.en){const wrap=(L.enWrap&&L.enWrap.length)?L.enWrap:[L.en];
     body='<span class="lname"><span class="len">'+wrap.map(t=>'<span class="en">'+t+'</span>').join('')+'</span></span>';}
    else{body='<span class="lname" aria-hidden="true"></span>';}
-  }else if(cst==='locked'){body='<span class="lname"><span class="len"><span class="en">Locked</span></span><span class="lsub"><span class="en">Finish Level '+(L.n-1)+' to unlock</span></span></span>';}
-  else{const en=L.en1||L.en||('Level '+L.n);
-   const wrap=(L.enWrap&&L.enWrap.length)?L.enWrap:[en];
-   body='<span class="lname"><span class="len">'+wrap.map(t=>'<span class="en">'+t+'</span>').join('')+'</span></span>';}
+  }else if(cst==='locked'){body='<span class="lname"><span class="len"><span class="en">L'+(L.n-1)+'→</span></span></span>';}
+  else{body='<span class="lname" aria-hidden="true"></span>';}/* James: short letters only in hdr (L1/L2) */
   // Coming soon: purple ribbon; name only when LEVELS[n].en is set (L2)
   if(art)return '<button class="lt art enonly '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+rib+hdr+body+'</button>';
   return '<button class="lt enonly '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+hdr+body+'</button>';
@@ -2371,7 +2369,7 @@ function showSettings(){hideAllOv('settings');const ov=document.getElementById('
  const name=store.get('hero',null)||HERO||'Flora';document.getElementById('setName').value=name;
  const g=heroG();document.querySelectorAll('#setGender button').forEach(b=>b.classList.toggle('sel',b.dataset.g===g));
  const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];const gp=document.getElementById('setGrade');
- gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">'+(document.querySelector('#settings .setCard.v4')?n:'Grade '+n)+'</span><span class="zh">'+ZH[n-1]+'年级</span></button>').join('');
+ gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">G'+n+'</span></button>').join('');
  gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);gp.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));});
  document.querySelectorAll('#setMode button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);document.querySelectorAll('#setMode button').forEach(x=>x.classList.toggle('sel',x===b));};});
  document.querySelectorAll('#setPlay button').forEach(b=>{b.classList.toggle('sel',b.dataset.p===PLAY_MODE);b.onclick=()=>{PLAY_MODE=b.dataset.p==='practice'?'practice':'adventure';store.set('play_mode',PLAY_MODE);document.querySelectorAll('#setPlay button').forEach(x=>x.classList.toggle('sel',x===b));if(PLAY_MODE==='practice')campClear();};});
@@ -2810,7 +2808,7 @@ document.getElementById('shareName').onchange=drawShare;document.getElementById(
 {const oc=document.getElementById('overCard');oc.style.setProperty('--ovbg',TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none');oc.style.setProperty('--ovbgm',TEX.gameover_bg_mobile?'url('+TEX.gameover_bg_mobile+')':(TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none'));
  document.getElementById('overBara').src=TEX.gameover_bara||'';document.getElementById('overIcon').src=TEX.icon_retry||'';document.getElementById('hstun').src=TEX.fx_stun_icon||'';}
 function drawPickers(){const gp=document.getElementById('gradePick');document.getElementById('gradeBox').style.display=CFG.GRADE_PICKER?'block':'none';
- const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>'<button data-g="'+g+'" class="'+(g===GRADE?'sel':'')+'">'+(TEX['grade_'+g]?'<span class="gb"><img src="'+TEX['grade_'+g]+'" alt="">'+(g===GRADE&&TEX.grade_badge_selected?'<img src="'+TEX.grade_badge_selected+'" alt="">':'')+'</span>':'<span style="font-size:22px;display:block">'+['🌱','🌿','🍃','🟡','🎃','🏅'][g-1]+'</span>')+'<span class="en">Grade '+g+'</span><span class="zh">'+ZH[g-1]+'年级</span></button>').join('');
+ const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>'<button data-g="'+g+'" class="'+(g===GRADE?'sel':'')+'">'+(TEX['grade_'+g]?'<span class="gb"><img src="'+TEX['grade_'+g]+'" alt="">'+(g===GRADE&&TEX.grade_badge_selected?'<img src="'+TEX.grade_badge_selected+'" alt="">':'')+'</span>':'')+'<span class="en">G'+g+'</span></button>').join('');
  gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);drawPickers();loadBank(GRADE).catch(()=>{});});
  document.getElementById('modeBox').style.display=CFG.MODE_PICKER?'block':'none';
  document.querySelectorAll('#modePick button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);drawPickers();};});
