@@ -1520,7 +1520,7 @@ function flock(d){return objs.filter(o=>o.type==='duck'&&!o.done&&Math.abs(o.z-d
 const CP_Z=()=>curLevel()>=2?L2Q.SEC[1]-30:L_FIELD-30;
 function gameOver(why){if(!S||S.over)return;/* r3 创意张: first event that ends the run decides the copy (S.over guard); same-frame tie (pursuer already at catch range) → caught */
  try{if(why!=='chase'&&!QA&&S.mode==='run'&&(S.chaseDist||99)<=CHASE.CATCH)why='chase';}catch(e){}if(QA){S._qaGO=(S._qaGO||0)+1;S.pendingOver=false;S.hp=Math.max(S.hp||0,1);return;}if(CFG.RESCUE&&!S.rescued&&why!=='chase'){rescue();return;}
- S.over=true;S.overWhy=why;if(why==='chase'){try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}}S.mode='over';S.speed=0;S.stunT=0;try{chaseFootStop();}catch(e){}try{pursuer.visible=false;}catch(e){}S.overMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;boostEnd(true);thinkStop();bgm(null);const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();if(why!=='chase')play('jingle_game_over_funny');hideStrip();
+ S.over=true;S.overWhy=why;if(why==='chase'){try{play('jingle_pursuer_caught');}catch(e){}try{pursuer.visible=false;}catch(e){}}S.mode='over';S.speed=0;S.stunT=0;try{chaseFootStop();}catch(e){}try{pursuer.visible=false;}catch(e){}S.overMP=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;boostEnd(true);thinkStop();bgm(null);try{typeof l2BikeSfxStop==='function'&&l2BikeSfxStop();}catch(e){}try{typeof l2SlopeWindStop==='function'&&l2SlopeWindStop();}catch(e){}try{const cw=snd.amb_cedar_wind_loop;if(cw){cw.pause();cw.loop=false;}}catch(e){}try{if(typeof _osA!=='undefined'&&_osA){try{_osA.pause();}catch(e2){}_osA=null;}}catch(e){}const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();if(why!=='chase')play('jingle_game_over_funny');hideStrip();
  document.getElementById('prog').style.display='none';
  setTimeout(()=>{const ov=document.getElementById('over');const L2=(curLevel()|0)>=2;const chase=why==='chase';
   const t1=chase?(L2?biBlock('The tramp caught up!','流浪汉追上你了！','ovt'):biBlock('The farmer caught up!','农夫追上你了！','ovt')):biBlock('Oh no! Bara is playing dead…','糟糕！Bara 在装死……','ovt');
@@ -2086,7 +2086,8 @@ async function audPrep(){if(window.__SMOOTH){markAudioReady();return;}const C=ac
  let i=0;await Promise.all(Array.from({length:4},async()=>{while(i<keys.length){const k=keys[i++];try{const ab=await (await fetch(AUDIO[k])).arrayBuffer();AB[k]=await new Promise((res,rej)=>{const p=C.decodeAudioData(ab,res,rej);if(p&&p.then)p.then(res,rej);});}catch(e){}done++;show();}}));
  // BGM elements: point at the already-downloaded blobs and preload them so the first second plays
  ['bgm_pumpkin_field','bgm_main_menu','bgm_question_think'].forEach(k=>{const a=snd[k];if(a&&AUDIO[k]){a.preload='auto';if(!a.getAttribute('src'))a.src=AUDIO[k];try{a.load();}catch(e){}}});markAudioReady();}
-window.__abPlay=function(k,vol){if(window.__SMOOTH)return true;const C=ACTX,b=AB[k];if(!C||!b)return false;try{if(C.state!=='running')C.resume();const s=C.createBufferSource();s.buffer=b;const g=C.createGain();g.gain.value=vol==null?.7:vol;s.connect(g);g.connect(C.destination);s.start();window.__audLog.push({k,t:performance.now(),runT:S?+(S.runT||0).toFixed(2):null,mode:S&&S.mode,ctx:C.state});return true;}catch(e){return false;}};
+let _abLive=[];/* exit_home_sfx: track fire-and-forget BufferSources so stopAllAudio can kill them */
+window.__abPlay=function(k,vol){if(window.__SMOOTH)return true;const C=ACTX,b=AB[k];if(!C||!b)return false;try{if(C.state!=='running')C.resume();const s=C.createBufferSource();s.buffer=b;const g=C.createGain();g.gain.value=vol==null?.7:vol;s.connect(g);g.connect(C.destination);s.start();_abLive.push(s);try{s.onended=()=>{const i=_abLive.indexOf(s);if(i>=0)_abLive.splice(i,1);};}catch(e){}window.__audLog.push({k,t:performance.now(),runT:S?+(S.runT||0).toFixed(2):null,mode:S&&S.mode,ctx:C.state});return true;}catch(e){return false;}};
 let _audUnlocked=false;
 function audUnlock(){if(window.__SMOOTH||_audUnlocked)return;const C=actx();if(!C)return;_audUnlocked=true;
  try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch(e){}
@@ -2102,7 +2103,44 @@ function menuBgm(on){if(window.__SMOOTH)return;const a=snd.bgm_main_menu;if(!a)r
  if(on){if(window.__bgmCur==='bgm_main_menu'&&!a.paused){a.volume=.4;return;}bgm('bgm_main_menu');a.volume=.4;return;}
  if(a.paused)return;_mbFade=setInterval(()=>{a.volume=Math.max(0,a.volume-.05);if(a.volume<=0.01){clearInterval(_mbFade);a.pause();if(window.__bgmCur==='bgm_main_menu')window.__bgmCur=null;}},40);}
 function tap(k){play(k||'sfx_menu_tap');}
-function stopAllAudio(){try{bgm(null);thinkStop();}catch(e){}try{boostEnd(true);}catch(e){}try{_protLoopStop();}catch(e){}try{typeof l2BikeSfxStop==='function'&&l2BikeSfxStop();}catch(e){}try{typeof l2SlopeWindStop==='function'&&l2SlopeWindStop();}catch(e){}try{typeof chaseFootStop==='function'&&chaseFootStop();}catch(e){}try{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}catch(e){}for(const k in snd){try{if(!snd[k].paused)snd[k].pause();}catch(e){}}}
+function stopAllAudio(){/* 创意张 lock: Home/exit → hard-stop ALL game audio (BGM+ride loops+oneshots+threat/VO) so nothing leaks onto menu/level-select */
+ try{bgm(null);thinkStop();}catch(e){}
+ try{boostEnd(true);}catch(e){}
+ try{_protLoopStop();}catch(e){}
+ try{typeof l2BikeSfxStop==='function'&&l2BikeSfxStop();}catch(e){}
+ try{typeof l2SlopeWindStop==='function'&&l2SlopeWindStop();}catch(e){}
+ try{typeof chaseFootStop==='function'&&chaseFootStop();}catch(e){}
+ try{if(S&&S._closeA){S._closeA.pause();S._closeA=null;}}catch(e){}
+ try{if(typeof _osA!=='undefined'&&_osA){try{_osA.pause();}catch(e2){}_osA=null;}}catch(e){}
+ try{for(const s of _abLive){try{s.stop();}catch(e2){}}_abLive.length=0;}catch(e){}
+ try{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}catch(e){}
+ try{const cw=snd.amb_cedar_wind_loop;if(cw){cw.pause();cw.loop=false;}}catch(e){}
+ for(const k in snd){try{if(!snd[k].paused)snd[k].pause();}catch(e){}}
+}
+
+// exit_home_sfx: stop audio FIRST, paint menu, defer buildLevel (newGame) so Home→main isn't one-frame hitch
+let _exitHomeTok=0;
+function exitToHome(opts){opts=opts||{};
+ stopAllAudio();/* 创意张: immediate — before any UI/rebuild */
+ try{if(S){S.speed=0;S.over=true;S.mode='title';}}catch(e){}/* halt Sync so ride loops cannot resurrect while rebuild deferred */
+ try{window.__PAUSE=false;}catch(e){}
+ try{if(S&&S.qTimer)qTimerStop();}catch(e){}
+ try{hideStrip();}catch(e){}
+ try{const q=document.getElementById('quiz');if(q)q.style.display='none';}catch(e){}
+ document.body.classList.remove('quizOn');
+ try{['cd','sub','over','end','leaveOv'].forEach(id=>{const x=document.getElementById(id);if(x)x.style.display='none';});}catch(e){}
+ try{hideAllOv();}catch(e){}
+ if(opts.campClear){try{campClear();}catch(e){}}
+ if(opts.sfx!==false){try{play(opts.sfx||'sfx_menu_back');}catch(e){}}
+ try{hpDraw();}catch(e){}
+ showMenu();
+ const tok=++_exitHomeTok;
+ const rebuild=()=>{if(tok!==_exitHomeTok)return;try{newGame();S.mode='title';hpDraw();}catch(e){console.warn('[exitToHome]',e);}};
+ /* double-rAF: let menu paint one frame before L1/L2 buildLevel + l2EnsureRide */
+ try{requestAnimationFrame(()=>{requestAnimationFrame(rebuild);});}catch(e){setTimeout(rebuild,0);}
+ if(opts.after){try{opts.after();}catch(e){}}
+}
+window.exitToHome=exitToHome;window.stopAllAudio=stopAllAudio;
 
 // ---------------- screens ----------------
 const OVS=['menu','levels','daily','bye','settings','namegate','title','end','over','book','shop','cardView','leaveOv','share'];
@@ -2324,7 +2362,7 @@ document.getElementById('byeBack').onclick=()=>{play('sfx_menu_back');showMenu()
   ov.insertBefore(top,ov.firstChild);
  }const c=document.getElementById('shopClose');if(c){c.style.display='none';}menuBgm(true);};}
 // end screen "Back to home" → main menu
-document.getElementById('endHome').onclick=()=>{play('sfx_menu_back');hideAllOv();newGame();S.mode='title';showMenu();};
+document.getElementById('endHome').onclick=()=>{exitToHome({sfx:'sfx_menu_back'});};
 // run start: fade the menu music
 function primeBgm(k){if(window.__SMOOTH)return;const a=snd[k];if(!a||!AUDIO[k])return;try{if(!a.getAttribute('src'))a.src=AUDIO[k];a.preload='auto';a.muted=true;const p=a.play();if(p&&p.then)p.then(()=>{if(window.__bgmCur!==k){a.pause();try{a.currentTime=0;}catch(e){}}a.muted=false;}).catch(e=>{a.muted=false;console.warn('[audio] prime failed',k,e&&e.name);});else a.muted=false;}catch(e){a.muted=false;}}
 document.getElementById('start').addEventListener('click',()=>{audUnlock();if(ACTX&&ACTX.state!=='running')ACTX.resume();primeBgm('bgm_pumpkin_field');menuBgm(false);},true);
@@ -2342,11 +2380,9 @@ document.getElementById('lvLeave').onclick=()=>{
  // bank this run's mini pumpkins exactly like game over (same formula, same basket)
  const got=basketAdd(Math.max(0,S.pumpkins-(S.preBanked||0)));S.preBanked=S.pumpkins;S.leftMP=got;
  window.__lastLeave={banked:got,basket:basketGet()};
- document.getElementById('leaveOv').style.display='none';stopAllAudio();
- try{if(S.qTimer)qTimerStop();}catch(e){}try{hideStrip();}catch(e){}document.getElementById('quiz').style.display='none';document.body.classList.remove('quizOn');
- ['cd','sub'].forEach(id=>{const x=document.getElementById(id);if(x)x.style.display='none';});
- window.__PAUSE=false;newGame();S.mode='title';hpDraw();showMenu();
- if(got)setTimeout(()=>sub(bi('+'+got+' Mini Pumpkins saved to your Pumpkin Basket!','+'+got+' 个小南瓜已放进南瓜篮！'),2600),200);};
+ document.getElementById('leaveOv').style.display='none';
+ exitToHome({sfx:false,after:()=>{if(got)setTimeout(()=>sub(bi('+'+got+' Mini Pumpkins saved to your Pumpkin Basket!','+'+got+' 个小南瓜已放进南瓜篮！'),2600),200);}});
+};
 function homeStep(){if(S&&S.mode==='quiz')qPickMark();const on=!!S&&!S.over&&['run','quiz','mwait','rest'].includes(S.mode);const leaveOn=(document.getElementById('leaveOv')||{}).style&&document.getElementById('leaveOv').style.display==='flex';gHome.style.display=(on&&!window.__PAUSE&&!leaveOn)?'flex':'none';}
 
 // ---------------- quiz: select, then Submit at the top ----------------
@@ -2699,9 +2735,9 @@ document.getElementById('hist').innerHTML=histHtml();const _start=document.getEl
 {const fb=document.getElementById('fb');if(FEEDBACK_URL){fb.style.display='block';fb.onclick=()=>window.open(FEEDBACK_URL,'_blank','noopener');}}
 document.getElementById('again').onclick=()=>{play('sfx_retry_whoosh');document.getElementById('end').style.display='none';startRun();};
 document.getElementById('endNext').onclick=()=>{play('jingle_adventure_next');document.getElementById('end').style.display='none';campSaveFromS();beginAdventure({level:2,campaign:true});};
-document.getElementById('endHome').onclick=()=>{play('sfx_menu_back');campClear();hideAllOv();newGame();S.mode='title';hpDraw();showMenu();};
+document.getElementById('endHome').onclick=()=>{exitToHome({sfx:'sfx_menu_back',campClear:true});};
 document.getElementById('overGo').onclick=()=>{play('sfx_retry_whoosh');restartCP();};
-document.getElementById('overHome').onclick=()=>{play('sfx_menu_back');campClear();document.getElementById('over').style.display='none';hideAllOv();newGame();S.mode='title';hpDraw();showMenu();};
+document.getElementById('overHome').onclick=()=>{exitToHome({sfx:'sfx_menu_back',campClear:true});};
 document.getElementById('bookBtn').onclick=showBook;['shopBtn','shopBtn2','shopBtn3'].forEach(id=>{const b=document.getElementById(id);if(b)b.onclick=()=>{if(id==='shopBtn3')document.getElementById('book').style.display='none';openShop();};});shopBtns();document.getElementById('bookBtn2').onclick=showBook;document.getElementById('bookClose').onclick=()=>document.getElementById('book').style.display='none';
 document.getElementById('shareName').onchange=drawShare;document.getElementById('shareSave').onclick=saveShare;document.getElementById('shareClose').onclick=()=>document.getElementById('share').style.display='none';
 {const oc=document.getElementById('overCard');oc.style.setProperty('--ovbg',TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none');oc.style.setProperty('--ovbgm',TEX.gameover_bg_mobile?'url('+TEX.gameover_bg_mobile+')':(TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none'));
