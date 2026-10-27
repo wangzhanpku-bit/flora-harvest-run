@@ -849,6 +849,27 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
 }
 function letterPairs(){
  const flora=/^flora$/i.test(String(HERO).trim())&&heroG()==='girl';
+ const l2=(typeof curLevel==='function'?curLevel():(S&&S.level)||0)>=2;
+ if(l2){
+  if(flora)return [
+   ['Dear Flora,','亲爱的 Flora：'],
+   ['Happy Halloween! You rode through Stanley Park night and brought Bara home safe.','万圣节快乐！你骑过斯坦利公园的夜晚，还把 Bara 平安带回了家。'],
+   ['I watched you pedal the seawall, choose at the cedar fork, and never leave Bara behind — even when the path felt spooky.','爸爸看着你沿着海堤往前蹬，在雪松岔路口做选择，一路都没丢下 Bara——哪怕夜路有点吓人。'],
+   ['Halloween nights can feel dark. There will be tricks, wrong turns, long ways around. Don\'t be afraid. Stay brave, and you\'ll always find the light home.','万圣夜有时会很暗。会有惊吓，会走错，会绕远。可是别怕。勇敢一点，你总能找到回家的光。'],
+   ['<b>No matter how dark the path, whenever you look back, Dad will always be right here.</b>','<b>不管夜路有多黑，回头的时候，爸爸一直都在这里。</b>'],
+   ['Love, Dad','爱你的爸爸'],
+   ['P.S. CAPYBARA! Happy Halloween!','P.S. CAPYBARA！万圣节快乐！']
+  ];
+  return [
+   ['Dear {name},','亲爱的 {name}：'],
+   ['Happy Halloween! You made it through Stanley Park night, and Bara is safe with you.','万圣节快乐！你闯过了斯坦利公园这一夜，Bara 也跟你平安到家。'],
+   ['Tonight you rode the seawall, solved every fork, and never gave up — even when the long way round felt scary.','今晚你骑过海堤，解开每一道岔路，就算绕了远、有点怕，也一次都没有放弃。'],
+   ['Halloween has mazes too. Some turns feel spooky, some roads feel long. But every pedal teaches you something, and you always find your way home.','万圣夜里也有迷宫：有时会转错弯，有时路会很长。可是每一脚踏板都会让你学到点什么，你总能骑回家。'],
+   ['<b>However far you go, we\'re proud of you, and we\'ll always be cheering you on.</b>','<b>不管你走多远，我们都为你骄傲，也会一直为你加油。</b>'],
+   ['Love, Mom & Dad','爱你的爸爸妈妈'],
+   ['P.S. CAPYBARA! Happy Halloween!','P.S. CAPYBARA！万圣节快乐！']
+  ];
+ }
  if(flora)return [
   ['Dear Flora,','亲爱的 Flora：'],
   ['Congratulations, the Harvest Festival can begin!','恭喜你，丰收节可以开场啦！'],
@@ -1517,8 +1538,8 @@ const ICON_EMOJI={apple:'🍎',duck:'🦆',corn_cob:'🌽',pumpkin:'🎃',triang
 let GAME_MODE=CFG.MODE_PICKER?(store.get('mode',CFG.DEFAULT_MODE)==='easy'?'easy':'challenge'):'challenge';
 let GRADE=CFG.GRADE_PICKER?(+store.get('grade',CFG.DEFAULT_GRADE)||CFG.DEFAULT_GRADE):CFG.DEFAULT_GRADE;if(!GRADES[GRADE])GRADE=CFG.DEFAULT_GRADE||6; /* James: G1–G12 */
 const CH=()=>GAME_MODE==='challenge';
-let PLAY_MODE=(store.get('play_mode','adventure')==='practice')?'practice':'adventure';
-const isAdventure=()=>PLAY_MODE==='adventure';
+let PLAY_MODE='adventure';/* James: remove 闯关/单关 switch — always adventure */
+const isAdventure=()=>true;
 window.__CAMP=window.__CAMP||null;
 function usedQKey(lv){return 'usedQ_g'+GRADE+'_L'+(lv||1);}
 function getUsedQ(lv){const a=store.get(usedQKey(lv),[]);return Array.isArray(a)?a:[];}
@@ -2269,8 +2290,6 @@ mk('settings','<div class="card setCard"><h2 class="bi">'+BI('Settings','设置'
  '<div class="pick setPick grades" id="setGrade"></div>'+
  '<label class="bi sLab"><span class="en">Mode</span><span class="zh">模式</span></label>'+
  '<div class="pick setPick" id="setMode"><button type="button" data-m="challenge"><span class="en">Challenge</span><span class="zh">挑战</span></button><button type="button" data-m="easy"><span class="en">Easy</span><span class="zh">轻松</span></button></div>'+
- '<div class="sLab">'+BI('Play','玩法')+'</div>'+
- '<div class="pick setPick" id="setPlay"><button type="button" data-p="adventure"><span class="en">Adventure</span><span class="zh">闯关</span></button><button type="button" data-p="practice"><span class="en">Practice</span><span class="zh">单关</span></button></div>'+
  '<label class="bi sLab"><span class="en">Graphics</span><span class="zh">画质</span></label>'+
  '<div class="pick setPick" id="setGfx"><button type="button" data-q="smooth"><span class="en">Smooth</span><span class="zh">流畅</span></button><button type="button" data-q="high"><span class="en">High quality</span><span class="zh">高画质</span></button></div>'+
  '<p class="bi sHint"><span class="en">Smooth ≈ High graphics, sound off. High keeps full sound.</span><span class="zh">流畅：画面接近高画质，声音关闭。高画质保留全部声音。</span></p>'+
@@ -2297,8 +2316,8 @@ const LEVELS=(function(){
  // L2 built only on tip (/v08-preview) or ?level=2 — root stays Coming soon
  const _l2=isL2PreviewHost();
  return [
-  {n:1,built:true,en:'L1',en1:'L1',enWrap:['L1']},
-  {n:2,built:_l2,en:'L2',en1:'L2',enWrap:['L2']},
+  {n:1,built:true,en:'Maple Ridge Farm',en1:'Maple Ridge Farm',enWrap:['Maple Ridge Farm']},
+  {n:2,built:_l2,en:'Stanley Park',en1:'Stanley Park',enWrap:['Stanley Park']},
   {n:3,built:false,en:'',en1:''},
   {n:4,built:false,en:'',en1:''},
   {n:5,built:false,en:'',en1:''},
@@ -2335,7 +2354,7 @@ function drawLevels(){const u=lvUnlocked();const fresh=store.get('levels_new',nu
     body='<span class="lname"><span class="len">'+wrap.map(t=>'<span class="en">'+t+'</span>').join('')+'</span></span>';}
    else{body='<span class="lname" aria-hidden="true"></span>';}
   }else if(cst==='locked'){body='<span class="lname"><span class="len"><span class="en">L'+(L.n-1)+'→</span></span></span>';}
-  else{body='<span class="lname" aria-hidden="true"></span>';}/* James: short letters only in hdr (L1/L2) */
+  else{/* James: L1 Maple Ridge Farm / L2 Stanley Park under chip */const wrap=(L.enWrap&&L.enWrap.length)?L.enWrap:(L.en?[L.en]:[]);body=wrap.length?('<span class="lname"><span class="len">'+wrap.map(function(x){return '<span class="en">'+x+'</span>';}).join('')+'</span></span>'):'<span class="lname" aria-hidden="true"></span>';}
   // Coming soon: purple ribbon; name only when LEVELS[n].en is set (L2)
   if(art)return '<button class="lt art enonly '+(open?'on':'lock')+' '+cst+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'" style="--c:url('+art+')" aria-label="Level '+L.n+'"><span class="lnum">'+L.n+'</span>'+rib+hdr+body+'</button>';
   return '<button class="lt enonly '+(open?'on':'lock')+(fresh&&+fresh===L.n?' newu':'')+'" data-n="'+L.n+'">'+(open?'':'<div class="pad">🔒</div>')+hdr+body+'</button>';
@@ -2411,7 +2430,6 @@ function showSettings(){hideAllOv('settings');const ov=document.getElementById('
  gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">G'+n+'</span></button>').join('');
  gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);gp.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));});
  document.querySelectorAll('#setMode button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);document.querySelectorAll('#setMode button').forEach(x=>x.classList.toggle('sel',x===b));};});
- document.querySelectorAll('#setPlay button').forEach(b=>{b.classList.toggle('sel',b.dataset.p===PLAY_MODE);b.onclick=()=>{PLAY_MODE=b.dataset.p==='practice'?'practice':'adventure';store.set('play_mode',PLAY_MODE);document.querySelectorAll('#setPlay button').forEach(x=>x.classList.toggle('sel',x===b));if(PLAY_MODE==='practice')campClear();};});
  const curQ=(localStorage.flora_tier||window.__TIER||'high');document.querySelectorAll('#setGfx button').forEach(b=>{b.classList.toggle('sel',b.dataset.q===curQ);b.onclick=()=>{document.querySelectorAll('#setGfx button').forEach(x=>x.classList.toggle('sel',x===b));b.dataset._pick='1';};});
  menuBgm(true);}
 window.showSettings=showSettings;
