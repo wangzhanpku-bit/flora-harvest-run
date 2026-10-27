@@ -377,6 +377,9 @@ function pickSet(){const Q=QDATA.questions;const lv=1;
  const eggs=by('pumpkin_field',true).concat(by('corn_maze',true));return{field:by('pumpkin_field',false).slice(0,6),maze:by('corn_maze',false).slice(0,8),egg:[eggs[0],eggs[1]]};}
 // ---------- three setup ----------
 if(localStorage.q==null)QUAL=2;const PR=Math.min(devicePixelRatio,+(QP.get('pr')||(QUAL===2?2:QUAL===1?1.25:1)));const R=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});R.setPixelRatio(PR);R.shadowMap.enabled=QUAL>0;R.shadowMap.type=THREE.PCFSoftShadowMap;R.outputEncoding=THREE.sRGBEncoding;if(!MOBILE){R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.05;}
+/* l2_lag_r1: L2 High soft-cap — pixelRatio≤1.5, BasicShadowMap, shadow update every 2 frames; L1 High stays pixelRatio≤2 + PCF soft */let _l2RendBak=null,_l2ShTick=0;
+function l2RenderSoftCap(on){if(QUAL!==2)return;on=!!on;if(on){if(!_l2RendBak)_l2RendBak={pr:R.getPixelRatio(),type:R.shadowMap.type,auto:R.shadowMap.autoUpdate};R.setPixelRatio(Math.min(devicePixelRatio,1.5));R.shadowMap.type=THREE.BasicShadowMap;R.shadowMap.autoUpdate=false;R.shadowMap.needsUpdate=true;_l2ShTick=0;}else if(_l2RendBak){R.setPixelRatio(_l2RendBak.pr);R.shadowMap.type=_l2RendBak.type;R.shadowMap.autoUpdate=_l2RendBak.auto;R.shadowMap.needsUpdate=true;_l2RendBak=null;}}
+window.l2RenderSoftCap=l2RenderSoftCap;
 const TL=new THREE.TextureLoader();function tex(k,rep){if(k.endsWith('_ar'))return null;const t=TL.load(TEX[k]);if(k.endsWith('diff')||!k.includes('_'))t.encoding=THREE.sRGBEncoding;if(rep){t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(rep[0],rep[1]);t.anisotropy=4;}return t;}
 function pbr(k,rep){if(MOBILE)return new THREE.MeshBasicMaterial({map:tex(k+'_diff',rep)});return new THREE.MeshStandardMaterial({map:tex(k+'_diff',rep),normalMap:tex(k+'_nor_gl',rep),roughness:.95,metalness:0});}
 const SPR={};['corn','flora','bara','pumpkin','flora_jump','flora_slide','jack','bara_witch','gold','flora_run_0','flora_run_1','flora_run_2','flora_run_3','bara_run_0','bara_run_1'].forEach(k=>{SPR[k]=new THREE.MeshBasicMaterial({map:tex(k),transparent:true,alphaTest:.45,side:THREE.DoubleSide,fog:true});SPR[k].map.encoding=THREE.sRGBEncoding;});if(MOBILE)['corn','pumpkin','jack'].forEach(k=>{SPR[k].transparent=false;SPR[k].alphaTest=.5;});
@@ -425,7 +428,7 @@ const B3={ready:false};
 function loadBara3D(){try{const bin=new Uint8Array(BIN.bara3d);new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder).parse(bin.buffer,'',g=>{const m=g.scene;const sc=.82;m.scale.setScalar(sc);
  const holder=new THREE.Group();holder.add(m);holder.rotation.y=Math.PI;m.traverse(o=>{if(o.isMesh){o.castShadow=!MOBILE;o.frustumCulled=false;if(o.material){if(MOBILE){const mat=o.material;const b=new THREE.MeshBasicMaterial({map:mat.map||null,color:mat.color||0xffffff});b.name=mat.name;if(b.map)b.map.encoding=THREE.sRGBEncoding;o.material=b;}else o.material.roughness=.85;}}});
  const bb=new THREE.Box3().setFromObject(m);const mx=new THREE.AnimationMixer(m);const A={};g.animations.forEach(a=>{A[a.name]=mx.clipAction(a);A[a.name].play();A[a.name].weight=0;});A.run&&(A.run.weight=1);
- Object.assign(B3,{m,holder,mx,A,ready:true});bara.add(holder);bara.userData.c.visible=false;
+ Object.assign(B3,{m,holder,mx,A,ready:true});try{L2BIKE._baraBody=null;}catch(e){}bara.add(holder);bara.userData.c.visible=false;
  const topY=bb.max.y,frontZ=-bb.max.z;if(bara.userData.wh)bara.userData.wh.position.set(0,topY*.92,frontZ*.62);bara.userData.hat.position.set(0,topY*.95,frontZ*.6);try{if(curLevel()>=2)l2AttachBaraHelm();}catch(e){}},e=>console.warn('bara3d',e));}catch(e){console.warn(e);}}
 const F3={ready:false};
 // 3D Flora loader. To drop in a new model later: add its GLB as a data URI under TEX.flora_girl
@@ -813,7 +816,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
  let cp,ct;if(S.mode==='intro'){const a=Math.min(1,S.t/7);cp=new THREE.Vector3(Math.sin(a*Math.PI)*5,2.2+a*1.5,-S.z+5-a*1);ct=new THREE.Vector3(S.x,1.5,-S.z-6);}
  else if(curLevel()>=2&&L2BIKE.ready){cp=new THREE.Vector3(S.x*.45,2.85,-S.z+5.4);ct=new THREE.Vector3(S.x*.35,1.05,-S.z-7);}else{cp=new THREE.Vector3(S.x*.6,3.6,-S.z+6.5);ct=new THREE.Vector3(S.x*.4,1.4,-S.z-8);}
  if(S.mode==='intro')cam.position.copy(cp);else cam.position.lerp(cp,Math.min(1,dt*5));cam.lookAt(ct);
- sky.position.set(0,60*SKS,-S.z-190*SKS);sky.scale.set(SKS*Math.max(1,cam.aspect/1.7),SKS,1);sky.lookAt(cam.position.x,60,cam.position.z);sun.position.set(-20,30,-S.z+10);sun.target.position.set(0,0,-S.z-10);try{l2RideFrame(dt);}catch(e){}v082Frame(dt);v083Frame(dt);
+ sky.position.set(0,60*SKS,-S.z-190*SKS);sky.scale.set(SKS*Math.max(1,cam.aspect/1.7),SKS,1);sky.lookAt(cam.position.x,60,cam.position.z);sun.position.set(-20,30,-S.z+10);sun.target.position.set(0,0,-S.z-10);if(_l2RendBak){_l2ShTick++;if(_l2ShTick%2===0)R.shadowMap.needsUpdate=true;}try{l2RideFrame(dt);}catch(e){}v082Frame(dt);v083Frame(dt);
 }
 function letterPairs(){
  const flora=/^flora$/i.test(String(HERO).trim())&&heroG()==='girl';
@@ -1060,7 +1063,7 @@ function hitL2Dash(o){if(S.shield){shieldPop(o);return;}
  try{o.m.visible=false;}catch(e){}}
 window.l2SpawnDensity=l2SpawnDensity;window.l2SpeedMul=l2SpeedMul;window.L2DEN=L2DEN;
 
-function l2DressTrack(on){on=!!on;if(typeof FARM_WORLD==='undefined'||!FARM_WORLD)return;
+function l2DressTrack(on){on=!!on;try{l2RenderSoftCap(on);}catch(e){}if(typeof FARM_WORLD==='undefined'||!FARM_WORLD)return;
  const hide=(arr,v)=>{(arr||[]).forEach(o=>{if(o)o.visible=v;});};
  /* farm clutter off on L2 */
  hide(FARM_WORLD.fencePosts,!on);hide(FARM_WORLD.hayRolls,!on);hide(FARM_WORLD.corn,!on);hide(FARM_WORLD.ropes,!on);
@@ -1098,10 +1101,11 @@ function l2AttachHelm(){if(!L2BIKE.ready||!F3.ready||!F3.m)return;const who=hero
   L.parse(BIN[key].slice(0),'',g=>put(g.scene),e=>console.warn('[L2] helm',e));return;}
  if(TEX[key]&&!L2BIKE['_h_'+key]){L2BIKE['_h_'+key]=fetch(TEX[key]).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN[key]=b;L2BIKE['_h_'+key]=null;l2AttachHelm();}).catch(e=>{console.warn('[L2] helm fetch',e);L2BIKE['_h_'+key]=null;});}}
 /* r10: 美图王 helmet_pumpkin_bara — L2 only; hide Halloween purple witch hat. Parent to Bara_Body (no Head bone). */
-function l2FindBaraBody(){let b=null;if(!B3.m)return null;B3.m.traverse(o=>{if(!b&&o.name==='Bara_Body')b=o;});return b||B3.m;}
+function l2FindBaraBody(){/* l2_lag_r1: cache — do not traverse Bara mesh every frame */if(L2BIKE._baraBody&&L2BIKE._baraBody.parent)return L2BIKE._baraBody;let b=null;if(!B3.m)return null;B3.m.traverse(o=>{if(!b&&o.name==='Bara_Body')b=o;});L2BIKE._baraBody=b||B3.m;return L2BIKE._baraBody;}
 function l2AttachBaraHelm(){if(curLevel()<2){if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;return;}
  if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
  if(!B3.ready||!B3.m)return;
+ /* already seated on body — skip find/traverse */if(L2BIKE.baraHelm&&L2BIKE.baraHelm.parent){L2BIKE.baraHelm.visible=true;return;}
  const key='helmet_pumpkin_bara';const body=l2FindBaraBody();if(!body)return;
  const put=sc=>{if(L2BIKE.baraHelm&&L2BIKE.baraHelm.parent)L2BIKE.baraHelm.parent.remove(L2BIKE.baraHelm);const h=sc.clone(true);
   /* SC.bara=3.2 → local ~2.13 under m.scale.82 ≈ world dome ~0.35 on capybara crown */
@@ -1136,27 +1140,27 @@ function l2ShowBesideBara(){L2BIKE.baraOn=false;if(bara){bara.visible=true;if(ba
 /* Pedal legs (r8): world-space two-bone IK from the cached rest quaternion.
    Root cause of "no legs": Mixamo UpLeg rest has rot.z≈±PI (legs point down); the old absolute rotation.set(x,0,±.04) dropped that flip so thighs pointed UP into the torso.
    Now: restore rest quat, then aim thigh→knee, shin→ankle on a virtual crank circle (bike-local, sagittal only → no side-kick). */
-const _l2v=[0,1,2,3,4,5,6].map(()=>new THREE.Vector3()),_l2q=[0,1,2].map(()=>new THREE.Quaternion());
-function l2AimBone(bone,childW,targetW){const bw=bone.getWorldPosition(_l2v[5]);const d0=_l2v[6].copy(childW).sub(bw);const d1=targetW.clone().sub(bw);if(d0.lengthSq()<1e-8||d1.lengthSq()<1e-8)return;d0.normalize();d1.normalize();
- const q=_l2q[0].setFromUnitVectors(d0,d1);const wq=bone.getWorldQuaternion(_l2q[1]);const nw=q.clone().multiply(wq);const pq=bone.parent.getWorldQuaternion(_l2q[2]).invert();bone.quaternion.copy(pq.multiply(nw));bone.updateMatrixWorld(true);}
+/* l2_lag_r1: scratch pools — no per-frame new Vector3/Quaternion/clone in IK */const _l2v=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].map(()=>new THREE.Vector3()),_l2q=[0,1,2,3,4,5,6,7].map(()=>new THREE.Quaternion()),_l2m=[0,1].map(()=>new THREE.Matrix4());
+function l2AimBone(bone,childW,targetW){const bw=bone.getWorldPosition(_l2v[5]);const d0=_l2v[6].copy(childW).sub(bw);const d1=_l2v[7].copy(targetW).sub(bw);if(d0.lengthSq()<1e-8||d1.lengthSq()<1e-8)return;d0.normalize();d1.normalize();
+ const q=_l2q[0].setFromUnitVectors(d0,d1);const wq=bone.getWorldQuaternion(_l2q[1]);const nw=_l2q[3].copy(q).multiply(wq);const pq=bone.parent.getWorldQuaternion(_l2q[2]).invert();bone.quaternion.copy(pq.multiply(nw));bone.updateMatrixWorld(false);}
 function l2LegRest(b){if(!b)return;if(!b.userData.l2q)b.userData.l2q=b.quaternion.clone();b.quaternion.copy(b.userData.l2q);}
 function l2LegIK(side,ph){const B=L2BIKE.bones;if(!B)return false;const up=B[side+'UpLeg'],leg=B[side+'Leg'],foot=B[side+'Foot'],toe=B[side+'ToeBase'];if(!up||!leg||!foot)return false;
- [up,leg,foot,toe].forEach(l2LegRest);up.updateMatrixWorld(true);
+ [up,leg,foot,toe].forEach(l2LegRest);up.updateMatrixWorld(false);
  const ped=L2BIKE.nodes.pedal_L||L2BIKE.nodes.pedal_R;const bk=ped&&ped.parent;if(!bk)return false;
  /* bike-local: +Z = rider forward (bike yawed PI), +X = rider LEFT. crank centre between the two pedal pivots */
  const pl=L2BIKE.nodes.pedal_L,pr=L2BIKE.nodes.pedal_R;const cy=(pl&&pr)?(pl.position.y+pr.position.y)/2:.22,cz=(pl&&pr)?(pl.position.z+pr.position.z)/2:0;
  const r=.20,sx=side==='Left'?1:-1;/* James/r13: bigger pedal stroke — Leo+Flora legs clearly up/down from rear cam */
  const T=bk.localToWorld(_l2v[0].set(sx*.105,cy+r*Math.cos(ph)+.02,cz+r*Math.sin(ph)));
- const H=up.getWorldPosition(_l2v[1]),Kc=leg.getWorldPosition(_l2v[2]).clone(),Fc=foot.getWorldPosition(_l2v[3]).clone();
+ const H=up.getWorldPosition(_l2v[1]),Kc=leg.getWorldPosition(_l2v[2]),Fc=foot.getWorldPosition(_l2v[3]);
  const a=H.distanceTo(Kc),b=Kc.distanceTo(Fc);if(a<1e-4||b<1e-4)return false;
- const d=T.clone().sub(H);let dist=d.length();if(dist<1e-4)return false;const u=d.divideScalar(dist);dist=THREE.MathUtils.clamp(dist,Math.abs(a-b)+.02,(a+b)*.995);
- const bq=bk.getWorldQuaternion(new THREE.Quaternion());const pole=new THREE.Vector3(0,.3,1).applyQuaternion(bq);
- const v=pole.sub(u.clone().multiplyScalar(u.dot(pole)));if(v.lengthSq()<1e-8)return false;v.normalize();
+ const d=_l2v[8].copy(T).sub(H);let dist=d.length();if(dist<1e-4)return false;const u=_l2v[9].copy(d).multiplyScalar(1/dist);dist=THREE.MathUtils.clamp(dist,Math.abs(a-b)+.02,(a+b)*.995);
+ const bq=bk.getWorldQuaternion(_l2q[4]);const pole=_l2v[10].set(0,.3,1).applyQuaternion(bq);
+ const v=_l2v[11].copy(pole).addScaledVector(u,-u.dot(pole));if(v.lengthSq()<1e-8)return false;v.normalize();
  const x=(a*a-b*b+dist*dist)/(2*dist),h=Math.sqrt(Math.max(0,a*a-x*x));
- const K=H.clone().addScaledVector(u,x).addScaledVector(v,h),A=H.clone().addScaledVector(u,dist);
+ const K=_l2v[12].copy(H).addScaledVector(u,x).addScaledVector(v,h),A=_l2v[13].copy(H).addScaledVector(u,dist);
  l2AimBone(up,Kc,K);
- l2AimBone(leg,foot.getWorldPosition(new THREE.Vector3()),A);
- if(toe){const fp=foot.getWorldPosition(new THREE.Vector3());const tw=toe.getWorldPosition(new THREE.Vector3());const dir=new THREE.Vector3(0,-.22,1).normalize().applyQuaternion(bq);l2AimBone(foot,tw,fp.addScaledVector(dir,fp.distanceTo(tw)));}
+ l2AimBone(leg,foot.getWorldPosition(_l2v[14]),A);
+ if(toe){const fp=foot.getWorldPosition(_l2v[15]);const tw=toe.getWorldPosition(_l2v[16]);const dir=_l2v[17].set(0,-.22,1).normalize().applyQuaternion(bq);const tgt=_l2v[18].copy(fp).addScaledVector(dir,fp.distanceTo(tw));l2AimBone(foot,tw,tgt);}
  return true;}
 function l2AimLegToPedal(side){return l2LegIK(side,(L2BIKE.state.pedal||0)+(side==='Left'?0:Math.PI));}
 function l2ApplyLegPose(pose){const B=L2BIKE.bones;if(!B)return;
@@ -1169,7 +1173,7 @@ function l2ApplyLegPose(pose){const B=L2BIKE.bones;if(!B)return;
  else if(pose==='brake'){set('Hips',0.10,0,0);set('Spine',0.20,0,0);set('Spine1',0.14,0,0);set('Spine2',0.10,0,0);}
  else{set('Hips',0.05,0,0);set('Spine',0.18,0,0);set('Spine1',0.14,0,0);set('Spine2',0.11,0,0);}
  if(B.Neck){l2LegRest(B.Neck);B.Neck.rotateX(pose==='duck'?-0.5:-0.3);}/* r9: torso leans to the bar, head stays up looking down the path */
- if(flora)flora.updateMatrixWorld(true);
+ if(flora)flora.updateMatrixWorld(true);/* once before both legs; IK bones use updateMatrixWorld(false) */
  const okL=l2AimLegToPedal('Left'),okR=l2AimLegToPedal('Right');
  if(!(okL&&okR)){['Left','Right'].forEach(sd=>['UpLeg','Leg','Foot','ToeBase'].forEach(n=>l2LegRest(B[sd+n])));}
  const aL=l2ArmIK('Left'),aR=l2ArmIK('Right');L2BIKE._armOK=!!(aL&&aR);
@@ -1199,7 +1203,7 @@ function l2BikeSfxSync(spd){if(window.__SMOOTH||curLevel()<2){l2BikeSfxStop();re
   if(!_bikePedal||_bikePedal.paused||!_bikePedal._alive){try{if(_bikePedal){_bikePedal._alive=0;_bikePedal.pause();}}catch(e){}_bikePedal=l2BikeSfxEnsure('sfx_bike_pedal_loop',pv);}else try{_bikePedal.volume=pv;}catch(e){}
   if(!_bikeChain||_bikeChain.paused||!_bikeChain._alive){try{if(_bikeChain){_bikeChain._alive=0;_bikeChain.pause();}}catch(e){}_bikeChain=l2BikeSfxEnsure('sfx_bike_chain_loop',cv);}else try{_bikeChain.volume=cv;}catch(e){}
  }else l2BikeSfxStop();}
-function l2RideFrame(dt){if(curLevel()<2){l2BikeSfxStop();return;}l2EnsureRide();try{l2QuizFrame(dt);}catch(e){}if(FARM_WORLD&&FARM_WORLD.l2&&FARM_WORLD.l2.props){const ps=FARM_WORLD.l2.props;for(let i=0;i<ps.length;i++){const p=ps[i];if(!p||!p.visible)continue;const dz=Math.abs(-p.position.z-S.z);if(dz<80)try{p.lookAt(cam.position.x,p.position.y,cam.position.z);}catch(e){}if(!window.__SMOOTH&&p.userData&&p.userData.l2Key==='prop_pumpkin_lantern'&&!p.userData._lanSfx&&dz<3.2){p.userData._lanSfx=1;try{play('sfx_pumpkin_lantern');}catch(e){}}}}if(!L2BIKE.ready){l2BikeSfxSync(0);return;}
+function l2RideFrame(dt){if(curLevel()<2){l2BikeSfxStop();return;}l2EnsureRide();try{l2QuizFrame(dt);}catch(e){}if(FARM_WORLD&&FARM_WORLD.l2&&FARM_WORLD.l2.props){const ps=FARM_WORLD.l2.props;L2BIKE._propTick=(L2BIKE._propTick||0)+1;const tick=L2BIKE._propTick;for(let i=0;i<ps.length;i++){const p=ps[i];if(!p||!p.visible)continue;const dz=Math.abs(-p.position.z-S.z);/* l2_lag_r1: throttle billboard lookAt — near every frame, mid every 3rd (staggered), far skip */if(dz<38){try{p.lookAt(cam.position.x,p.position.y,cam.position.z);}catch(e){}}else if(dz<70&&((tick+i)%3===0)){try{p.lookAt(cam.position.x,p.position.y,cam.position.z);}catch(e){}}if(!window.__SMOOTH&&p.userData&&p.userData.l2Key==='prop_pumpkin_lantern'&&!p.userData._lanSfx&&dz<3.2){p.userData._lanSfx=1;try{play('sfx_pumpkin_lantern');}catch(e){}}}}if(!L2BIKE.ready){l2BikeSfxSync(0);return;}
  const spd=(S&&(S.mode==='run'||S.mode==='end')?(S.speed*(curLevel()>=2?l2SpeedMul():1)*(S.boostT>0?(typeof BOOSTX!=='undefined'?BOOSTX:1.5):1)*(S.brakeT>0?.38:1)*(S.stunT>0?.6:1)*(S.slowT>0&&!(S.boostT>0)?.55:1)):0)||0;
  const air=!!(S&&S.y>0.05),ducking=!!(S&&S.slide>0&&!air),braking=!!(S&&(S.brakeT>0||S.l2Brk));
  let pose='idle';if(air)pose='hop';else if(ducking)pose='duck';else if(braking)pose='brake';else if(spd>0.5)pose='pedal';L2BIKE.pose=pose;
@@ -1328,25 +1332,25 @@ function l2SeawallMarkings(pathW){const g=new THREE.Group();g.visible=false;scen
  wall.position.set(L2_WALL.x,L2_WALL.h/2,zc);wall.castShadow=false;wall.receiveShadow=true;g.add(wall);g.userData.wall=wall;return g;}
 /* hands on the handlebar grips (two-bone IK, same scheme as the legs) */
 function l2Grip(side){const hb=L2BIKE.nodes.handlebar;if(!hb)return null;
- if(!L2BIKE._grip){hb.updateMatrixWorld(true);const inv=new THREE.Matrix4().copy(hb.matrixWorld).invert();const bb=new THREE.Box3(),t=new THREE.Box3();
-  hb.traverse(o=>{if(!o.isMesh||!o.geometry)return;if(!o.geometry.boundingBox)o.geometry.computeBoundingBox();t.copy(o.geometry.boundingBox).applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv,o.matrixWorld));bb.union(t);});
+ if(!L2BIKE._grip){hb.updateMatrixWorld(true);const inv=_l2m[0].copy(hb.matrixWorld).invert();const bb=new THREE.Box3(),t=new THREE.Box3();
+  hb.traverse(o=>{if(!o.isMesh||!o.geometry)return;if(!o.geometry.boundingBox)o.geometry.computeBoundingBox();t.copy(o.geometry.boundingBox).applyMatrix4(_l2m[1].multiplyMatrices(inv,o.matrixWorld));bb.union(t);});
   if(bb.isEmpty())return null;L2BIKE._grip=bb;}
- const bb=L2BIKE._grip,c=bb.getCenter(new THREE.Vector3()),hx=(bb.max.x-bb.min.x)/2,G=L2BIKE.GRIP||{x:.84,y:0,z:0};
- return hb.localToWorld(new THREE.Vector3(c.x+(side==='Left'?1:-1)*hx*G.x,c.y+G.y,c.z+G.z));}
+ const bb=L2BIKE._grip,c=bb.getCenter(_l2v[0]),hx=(bb.max.x-bb.min.x)/2,G=L2BIKE.GRIP||{x:.84,y:0,z:0};
+ return hb.localToWorld(_l2v[1].set(c.x+(side==='Left'?1:-1)*hx*G.x,c.y+G.y,c.z+G.z));}
 function l2ArmIK(side){const B=L2BIKE.bones;if(!B)return false;const up=B[side+'Arm'],fa=B[side+'ForeArm'],hd=B[side+'Hand'];if(!up||!fa||!hd)return false;
- [B[side+'Shoulder'],up,fa,hd].forEach(l2LegRest);if(B[side+'Shoulder'])B[side+'Shoulder'].updateMatrixWorld(true);up.updateMatrixWorld(true);
- const G=l2Grip(side);if(!G)return false;const bk=L2BIKE.nodes.handlebar.parent;const bq=bk.getWorldQuaternion(new THREE.Quaternion());
+ [B[side+'Shoulder'],up,fa,hd].forEach(l2LegRest);if(B[side+'Shoulder'])B[side+'Shoulder'].updateMatrixWorld(false);up.updateMatrixWorld(false);
+ const G=l2Grip(side);if(!G)return false;const bk=L2BIKE.nodes.handlebar.parent;const bq=bk.getWorldQuaternion(_l2q[5]);
  /* clavicle protraction: swing the shoulder joint ~6 cm toward the grip */
- const sh=B[side+'Shoulder'];if(sh){const A0=up.getWorldPosition(new THREE.Vector3());const dir=G.clone().sub(A0).normalize();l2AimBone(sh,A0,A0.clone().addScaledVector(dir,.06));up.updateMatrixWorld(true);}
- const H=up.getWorldPosition(new THREE.Vector3());const T=G.clone().addScaledVector(G.clone().sub(H).normalize(),-.055);/* wrist just short of the grip, fingers wrap it */
- const H_=H;const Ec=fa.getWorldPosition(new THREE.Vector3()),Wc=hd.getWorldPosition(new THREE.Vector3());
+ const sh=B[side+'Shoulder'];if(sh){const A0=up.getWorldPosition(_l2v[2]);const dir=_l2v[3].copy(G).sub(A0).normalize();const tgt=_l2v[4].copy(A0).addScaledVector(dir,.06);l2AimBone(sh,A0,tgt);up.updateMatrixWorld(false);}
+ const H=up.getWorldPosition(_l2v[5]);const dirW=_l2v[6].copy(G).sub(H).normalize();const T=_l2v[7].copy(G).addScaledVector(dirW,-.055);/* wrist just short of the grip */
+ const Ec=fa.getWorldPosition(_l2v[8]),Wc=hd.getWorldPosition(_l2v[9]);
  const a=H.distanceTo(Ec),b=Ec.distanceTo(Wc);if(a<1e-4||b<1e-4)return false;
- const d=T.clone().sub(H);let dist=d.length();if(dist<1e-4)return false;const u=d.divideScalar(dist);L2BIKE._reach=[+dist.toFixed(3),+(a+b).toFixed(3)];dist=THREE.MathUtils.clamp(dist,Math.abs(a-b)+.02,(a+b)*.998);
- const sx=side==='Left'?1:-1;const pole=new THREE.Vector3(sx*.7,-.55,-.45).applyQuaternion(bq);/* elbows out, down, back */
- const v=pole.sub(u.clone().multiplyScalar(u.dot(pole)));if(v.lengthSq()<1e-8)return false;v.normalize();
+ const d=_l2v[10].copy(T).sub(H);let dist=d.length();if(dist<1e-4)return false;const u=_l2v[11].copy(d).multiplyScalar(1/dist);L2BIKE._reach=[+dist.toFixed(3),+(a+b).toFixed(3)];dist=THREE.MathUtils.clamp(dist,Math.abs(a-b)+.02,(a+b)*.998);
+ const sx=side==='Left'?1:-1;const pole=_l2v[12].set(sx*.7,-.55,-.45).applyQuaternion(bq);/* elbows out, down, back */
+ const v=_l2v[13].copy(pole).addScaledVector(u,-u.dot(pole));if(v.lengthSq()<1e-8)return false;v.normalize();
  const x=(a*a-b*b+dist*dist)/(2*dist),h=Math.sqrt(Math.max(0,a*a-x*x));
- const E=H.clone().addScaledVector(u,x).addScaledVector(v,h),W=H.clone().addScaledVector(u,dist);
- l2AimBone(up,Ec,E);l2AimBone(fa,hd.getWorldPosition(new THREE.Vector3()),W);return true;}
+ const E=_l2v[14].copy(H).addScaledVector(u,x).addScaledVector(v,h),W=_l2v[15].copy(H).addScaledVector(u,dist);
+ l2AimBone(up,Ec,E);l2AimBone(fa,hd.getWorldPosition(_l2v[16]),W);return true;}
 
 window.L2_RIDE_REFS={pedal:'ride_pedal',baraSide:'bara_side_run',sheet:'ride_poses_sheet'};/* 美图王 Drop4 targets — tip tex */
 // Per-grade bank + quiz countdown seconds (lazy-loaded: only the chosen grade's bank is fetched)
