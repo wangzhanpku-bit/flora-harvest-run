@@ -757,7 +757,14 @@ const clock=new THREE.Clock();
 function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);if(dz>((o.type==='puddle'||o.type==='mud')?1.0:.8))return false;
  if(o.type==='scare'||o.type==='sign')return true;const ox=o.m.position.x;if(Math.abs(ox-S.x)>1.0)return false;
  if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile')return S.y<1.15;if(o.type==='fence')return S.y<.95;if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
- if(o.type==='l2obs'){/* ↑ clears jump/soft; ↓ duck arches; warn = not yet fallen */if(o.kind==='warn')return false;if(o.kind==='duck')return S.slide<=0;if(o.kind==='jump'){const low=o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down';return S.y<(low?0.55:1.05);}if(o.kind==='soft')return S.y<.5;return true;/* hard: never jumpable */}
+ if(o.type==='l2obs'){/* ↑ clears jump/soft; ↓ duck arches; warn = not yet fallen */
+  /* tree_exit_r2: once ↑-cleared, stay clear (no landing re-hit while still overlapping z) */
+  if(o._jumped||o._clrSfx)return false;
+  if(o.kind==='warn')return false;if(o.kind==='duck')return S.slide<=0;
+  if(o.kind==='jump'){/* short fallen tree/log/crack/sandbag — peak ~1.6m; clear ≤0.40 so intentional hop wins */
+   const low=o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_log'||o.key==='obs_sandbag_low'||o.key==='obs_driftwood'||o.key==='obs_cone_barrier'||o.key==='obs_wet_root';
+   return S.y<(low?0.40:1.05);}
+  if(o.kind==='soft')return S.y<.5;return true;/* hard: never jumpable */}
  if(o.type==='l2dash'){if(!o.armed)return false;return S.y<.95&&Math.abs(o.m.position.x-S.x)<1.05;}
  if(o.type==='beam')return S.slide<=0;return false;}
 function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElementById('prog');const on=['run','quiz','dead','count','rest','l2hold'].includes(S.mode);pr.style.display=on?'block':'none';if(on){const p=Math.min(100,S.z/L_END*100);document.getElementById('progf').style.width=p+'%';document.getElementById('progd').style.left=p+'%';}}if(['run','quiz','dead'].includes(S.mode)){S.rt+=dt;document.getElementById('ht').textContent='⏱ '+fmt(S.runT);
@@ -797,7 +804,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
    if(!o.done&&!o._clrSfx&&(o.type==='hay'||o.type==='barrel'||o.type==='fence'||o.type==='lantern_pile')){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0&&S.y>=1.05){o._clrSfx=1;try{play('sfx_bike_jump_clear');chaseOpen(1.2);}catch(e){}}}
    if(!o.done&&!o._clrSfx&&o.type==='beam'&&S.slide>0){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0){o._clrSfx=1;try{play('sfx_bike_duck_tunnel');chaseOpen(1.2);}catch(e){}}}
    if(o.type==='l2obs'&&o.kind==='warn'&&!o.done&&!o._fell){const az=-o.m.position.z-S.z;if(az<18&&az>-1&&!o._warnSfx){o._warnSfx=1;try{play('sfx_obs_tree_fall_warn');}catch(e){}}if(az<11&&az>-1){o._fell=1;o.kind='jump';o.key=o.fallKey||'obs_tree_fall_down';try{o.m.material=SP(o.key);const sz=(L2DEN.SZ[o.key]||[2.2,1.2]);o.m.geometry.dispose();o.m.geometry=new THREE.PlaneGeometry(sz[0],sz[1]);o.m.position.y=sz[1]*.42;play('sfx_obs_tree_fall_down');}catch(e){}}}
-   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jNeed=(o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down')?0.55:1.05;if(dz<=.9&&Math.abs(o.m.position.x-S.x)<=1.15){if((o.kind==='jump'&&S.y>=jNeed)||(o.kind==='soft'&&S.y>=.5)){o._clrSfx=1;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
+   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_log'||o.key==='obs_sandbag_low'||o.key==='obs_driftwood'||o.key==='obs_cone_barrier'||o.key==='obs_wet_root';const jNeed=jLow?0.40:1.05;if(dz<=1.05&&Math.abs(o.m.position.x-S.x)<=1.05){if((o.kind==='jump'&&S.y>=jNeed)||(o.kind==='soft'&&S.y>=.5)){o._clrSfx=1;o._jumped=1;o.done=true;/* tree_exit_r2: consume on clear — no landing re-bonk */try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
    if(S.clearT>0&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')continue;
    if(!hitTest(o))continue;if(S.boostT>0&&ANIMAL.has(o.type)){duckFly(o);continue;}o.done=true;
    if(o.type==='pumpkin'||o.type==='lantern'){S.pumpkins++;scene.remove(o.m);play(o.type==='lantern'?'sfx_pumpkin_lantern_pickup':'sfx_pickup_pumpkin');updHud();}
@@ -970,6 +977,7 @@ function l2SpawnLagoonReeds(){/* r13 美图王: after corn hidden, line Lost Lag
 /* ==== Drop8 L2 density tighten r16 / 市场赵 FAIL — tip only ====
  创意张 locked cadence: Seawall 1/2.5s · Cedar 1/3s · Lagoon 1/2s (every unchanged).
  r16: no ≥5s empty gaps (l2FreeZ null → nudge/fill, never skip); kill obs_pumpkin_pile + roadside lantern_pile;
+ tree_exit_r2: no stacked-pumpkin/lantern_pair obstacles; wire obs_rock_block hard; fallen_log ↑-clear;
  animal WARN 0.9s + more visible approach silhouette. Waves lagoon 3→4 for late stretch.
  Small×3→slow; Large×3→stun ~1s; stunned+hard→GAME OVER. Speed via pedal/chain rate only. */
 const L2DEN={
@@ -984,14 +992,18 @@ const L2DEN={
  SMALL:['animal_squirrel_dash','animal_bird_dash','animal_raccoon_kit_dash'],
  LARGE:['animal_goose_dash','animal_beaver_dash','animal_dog_dash'],
  SZ:{obs_lantern_cluster:[1.55,1.4],obs_rail_gap:[1.7,1.45],obs_puddle:[1.8,.55],obs_leaf_pile:[1.55,1.05],obs_bird_slip:[1.7,.5],obs_fallen_branch:[2.1,1.35],obs_cone_barrier:[1.45,1.35],obs_driftwood:[1.75,1.15],obs_pumpkin_pile:[1.6,1.25],obs_fallen_log:[1.9,1.1],obs_park_bench:[1.7,1.2],obs_candy_spill:[1.5,.7],obs_wet_root:[1.4,1.0],obs_bridge_arch:[2.2,1.55],obs_low_branch_arch:[2.0,1.45],obs_ground_crack:[2.5,2.1],obs_tree_fall_warn:[1.8,2.4],obs_tree_fall_down:[2.2,1.2],
-  obs_lantern_pair_block:[1.35,1.25],obs_driftwood_stack:[1.55,1.2],obs_cone_pair:[1.35,1.25],obs_sandbag_low:[1.55,.85],
+  /* TODO(美图王): obs_rock_block — big rock hard block; plug when art lands under l2_prod/obstacles/ */
+  obs_rock_block:[1.6,1.35],obs_lantern_pair_block:[1.35,1.25],obs_driftwood_stack:[1.55,1.2],obs_cone_pair:[1.35,1.25],obs_sandbag_low:[1.55,.85],
   obs_hay_bale:[1.45,1.25],obs_wood_crate:[1.35,1.2],obs_fence_low:[1.7,.85],obs_barn_beam:[2.1,1.35]}
 };
 /* parallel gates: two adjacent lanes blocked, one open; or must ↑/↓ (创意张 + 美图王) */
 function placeParallelGate(z,lvl){lvl=lvl||(curLevel()>=2?2:1);const open=Math.floor(Math.random()*3);const roll=Math.random();
  if(lvl>=2){if(roll<.22){/* must jump */const key='obs_sandbag_low';const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
   if(roll<.40){/* must duck — all lanes */const key=(z%2?'obs_low_branch_arch':'obs_bridge_arch');const sz=L2DEN.SZ[key]||[2.1,1.45];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'duck',sz});return;}
-  const keys=['obs_lantern_pair_block','obs_driftwood_stack','obs_cone_pair'];const key=keys[Math.floor(Math.random()*keys.length)];const sz=L2DEN.SZ[key]||[1.4,1.25];
+  /* tree_exit_r2 创意张: stacked-pumpkin/lantern pair OUT; wire obs_rock_block hard (parallel OK).
+     Until 美图王 art: fall back to driftwood_stack/cone_pair — never obs_pumpkin_pile / lantern_pile. */
+  const keys=(typeof TEX!=='undefined'&&TEX.obs_rock_block)?['obs_rock_block','obs_driftwood_stack','obs_cone_pair']:['obs_driftwood_stack','obs_cone_pair'];
+  const key=keys[Math.floor(Math.random()*keys.length)];const sz=L2DEN.SZ[key]||[1.4,1.25];
   for(let ln=0;ln<3;ln++){if(ln===open)continue;addObj('l2obs',ln,z,{key,kind:'hard',sz});}return;}
  /* L1 */if(roll<.22){const key='obs_fence_low';const sz=L2DEN.SZ[key];addObj('l2obs',open,z,{key,kind:'jump',sz});return;}
  if(roll<.40){const key='obs_barn_beam';const sz=L2DEN.SZ[key];for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z,{key,kind:'duck',sz});return;}
@@ -1004,11 +1016,12 @@ function l2SpeedMul(){if(curLevel()<2||!S)return 1;const seg=l2SegByZ(S.z);let m
  if(seg==='lagoon'&&L2ST&&L2ST.bursts){for(const b of L2ST.bursts){if(S.z>=b.z0&&S.z<=b.z1){m=L2DEN.BURST_MUL;break;}}}
  return m;}
 let _slopeWind=null,_slopeWindGen=0,_slopeStarting=0;
-function l2SlopeWindStop(){_slopeWindGen++;_slopeStarting=0;try{if(_slopeWind){_slopeWind._alive=0;try{_slopeWind.loop=false;}catch(e){}_slopeWind.pause();try{_slopeWind.removeAttribute&&_slopeWind.removeAttribute('src');_slopeWind.load&&_slopeWind.load();}catch(e){}_slopeWind=null;}}catch(e){_slopeWind=null;}}
+function l2SlopeWindStop(){_slopeWindGen++;_slopeStarting=0;try{if(_slopeWind){try{_slopeWind.loop=false;}catch(e){}_slopeWind.pause();try{_slopeWind.removeAttribute&&_slopeWind.removeAttribute('src');_slopeWind.load&&_slopeWind.load();}catch(e){}_slopeWind=null;}}catch(e){_slopeWind=null;}}
 function l2SlopeWindSync(){/* Drop8: loop sfx_bike_slope_wind while in lagoon downhill burst — owns the single ride-loop slot */if(window.__SMOOTH||curLevel()<2){l2SlopeWindStop();return;}
+ if(!S||S.over||S.mode==='title'||window.__PAUSE){l2SlopeWindStop();return;}
  const on=!!(S&&S.mode==='run'&&L2ST&&L2ST.bursts&&L2ST.bursts.some(b=>S.z>=b.z0&&S.z<=b.z1));
  if(on){const dead=(!_slopeWind||!_slopeWind._alive||(_slopeWind.paused&&!_slopeStarting));
-  if(dead){try{if(_slopeWind){_slopeWind._alive=0;_slopeWind.pause();}}catch(e){}
+  if(dead){try{if(_slopeWind)_slopeWind.pause();}catch(e){}
    _slopeWindGen++;const gen=_slopeWindGen;/* bump on rebuild */
    const ab=_abLoopWrap('sfx_bike_slope_wind',.42,gen);if(ab){_slopeWind=ab;return;}
    try{const src=snd.sfx_bike_slope_wind;if(!src)return;if(!src.getAttribute('src')&&AUDIO.sfx_bike_slope_wind)src.src=AUDIO.sfx_bike_slope_wind;
@@ -1020,9 +1033,12 @@ window.l2SlopeWindSync=l2SlopeWindSync;window.l2SlopeWindStop=l2SlopeWindStop;
 function l2QuizBlocked(z){/* tight clearances so cedar forks don't wipe the density table */const near=(a,d)=>Math.abs(a-z)<d;if(L2Q.RINGS.some(r=>near(r[0],34)))return true;if(L2Q.FORKS.some(f=>near(f,20)))return true;if(near(L2Q.FINAL,48))return true;return false;}
 function l2FreeZ(z,span){span=span||80;if(!l2QuizBlocked(z))return z;for(let d=6;d<=span;d+=6){if(!l2QuizBlocked(z+d))return z+d;if(!l2QuizBlocked(z-d))return z-d;}return null;}
 function l2PickObs(seg,i){/* hard/soft + Drop10 duck arches / crack / tree-fall (no pumpkin/chicken/corn) */
+ /* tree_exit_r2 创意张: fallen tree/log MUST ↑ clear; stacked-pumpkin obs OUT → obs_rock_block hard.
+    TODO(美图王): drop obs_rock_block art under l2_prod/obstacles/ (or tex pack); until TEX exists we fall back below. */
  const soft=['obs_puddle','obs_leaf_pile','obs_bird_slip','obs_candy_spill'];/* ↑ hop clears */
- const jumpShort=['obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low'];/* ↑ jump clears SHORT + crack + sandbag */
- const hard=['obs_lantern_cluster','obs_park_bench','obs_rail_gap','obs_fallen_log'];/* tall/hard: lane-swap only */
+ const jumpShort=['obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low','obs_fallen_log','obs_tree_fall_down'];/* ↑ clears short logs + fallen tree */
+ const hardRock=(typeof TEX!=='undefined'&&TEX.obs_rock_block)?'obs_rock_block':'obs_rail_gap';
+ const hard=[hardRock,'obs_park_bench','obs_rail_gap'];/* tall/hard lane-swap only — NO lantern/pumpkin stacks, NO fallen_log */
  const duckSea=['obs_bridge_arch','obs_fallen_branch'];/* seawall: bridge arch ↓ */
  const duckCed=['obs_low_branch_arch','obs_fallen_branch'];/* cedar: low branch ↓ */
  const duck=seg==='cedar'?duckCed:duckSea;
@@ -1227,17 +1243,23 @@ function l2EnsureRide(){if(curLevel()<2){l2ShowBesideBara();if(L2BIKE.root)L2BIK
  if(L2BIKE._loading)return;const url=(typeof TEX!=='undefined'&&TEX.bike)||null;if(!url){console.warn('[L2] no bike URL');return;}
  L2BIKE._loading=fetch(url).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer();}).then(b=>{BIN.bike=b;L2BIKE._loading=null;l2MountBikeFromBin();}).catch(e=>{console.warn('[L2] bike fetch',e);L2BIKE._loading=null;});}
 let _bikePedal=null,_bikeChain=null,_bikeSfxGen=0,_bikeStarting=0;
+window.__abLoops=window.__abLoops||[];/* tree_exit_r2: ride AB BufferSources tracked for exit stop */
 function _abLoopWrap(key,vol,gen){/* AudioBuffer loop — no cloneNode; volume via GainNode */
+ /* tree_exit_r2: ALWAYS track BufferSource; pause() must .stop() even if _alive already cleared
+    (l2BikeSfxStop used to zero _alive then pause → pedal kept ringing under menuBgm). */
  const C=typeof ACTX!=='undefined'?ACTX:null,b=typeof AB!=='undefined'?AB[key]:null;if(!C||!b)return null;
  try{if(C.state!=='running')C.resume();const s=C.createBufferSource();s.buffer=b;s.loop=true;const g=C.createGain();g.gain.value=vol;s.connect(g);g.connect(C.destination);s.start();
-  const w={_alive:1,_gen:gen,paused:false,_s:s,_g:g,loop:true,
+  try{if(typeof _abLive!=='undefined'&&_abLive){_abLive.push(s);s.onended=()=>{const i=_abLive.indexOf(s);if(i>=0)_abLive.splice(i,1);};}}catch(e){}
+  try{window.__abLoops=window.__abLoops||[];window.__abLoops.push(s);}catch(e){}
+  const w={_alive:1,_gen:gen,paused:false,_s:s,_g:g,loop:true,_key:key,
    set volume(v){try{this._g.gain.value=v;}catch(e){}},get volume(){try{return this._g.gain.value;}catch(e){return vol;}},
-   pause(){try{if(this._alive){this._alive=0;this.paused=true;this._s.stop();}}catch(e){}this._alive=0;this.paused=true;},
+   pause(){/* always stop underlying BufferSource — order-independent vs _alive clear */try{if(this._s){try{this._s.stop();}catch(e2){}this._s=null;}}catch(e){}this._alive=0;this.paused=true;try{this._g&&(this._g.gain.value=0);}catch(e){}},
    removeAttribute(){},load(){}};
   return w;}catch(e){return null;}}
 function l2BikeSfxStop(){/* bump gen so in-flight play() promises / AB sources cannot resurrect */_bikeSfxGen++;_bikeStarting=0;
- try{if(_bikePedal){_bikePedal._alive=0;try{_bikePedal.loop=false;}catch(e){}_bikePedal.pause();try{_bikePedal.removeAttribute&&_bikePedal.removeAttribute('src');_bikePedal.load&&_bikePedal.load();}catch(e){}_bikePedal=null;}}catch(e){_bikePedal=null;}
- try{if(_bikeChain){_bikeChain._alive=0;try{_bikeChain.loop=false;}catch(e){}_bikeChain.pause();try{_bikeChain.removeAttribute&&_bikeChain.removeAttribute('src');_bikeChain.load&&_bikeChain.load();}catch(e){}_bikeChain=null;}}catch(e){_bikeChain=null;}}
+ try{if(_bikePedal){try{_bikePedal.loop=false;}catch(e){}_bikePedal.pause();/* pause() stops BufferSource */try{_bikePedal.removeAttribute&&_bikePedal.removeAttribute('src');_bikePedal.load&&_bikePedal.load();}catch(e){}_bikePedal=null;}}catch(e){_bikePedal=null;}
+ try{if(_bikeChain){try{_bikeChain.loop=false;}catch(e){}_bikeChain.pause();try{_bikeChain.removeAttribute&&_bikeChain.removeAttribute('src');_bikeChain.load&&_bikeChain.load();}catch(e){}_bikeChain=null;}}catch(e){_bikeChain=null;}
+ /* scrub any orphan pedal/chain BufferSources left by Ensure-replace races */try{const L=window.__abLoops;if(L&&L.length){for(const s of L){try{s.stop();}catch(e2){}}L.length=0;}}catch(e){}}
 function l2BikeSfxEnsure(key,vol){if(window.__SMOOTH)return null;
  /* 音乐刘: bump gen on EVERY rebuild so prior clones/AB die; prefer AB BufferSource loop */
  _bikeSfxGen++;const gen=_bikeSfxGen;
@@ -1247,16 +1269,17 @@ function l2BikeSfxEnsure(key,vol){if(window.__SMOOTH)return null;
   const p=a.play();if(p&&p.then)p.then(()=>{_bikeStarting=0;if(!a._alive||a._gen!==_bikeSfxGen){try{a.pause();a.loop=false;}catch(e){}}}).catch(()=>{_bikeStarting=0;});
   else _bikeStarting=0;return a;}catch(e){_bikeStarting=0;return null;}}
 function l2BikeSfxSync(spd){if(window.__SMOOTH||curLevel()<2){l2BikeSfxStop();return;}
+ /* tree_exit_r2: never resurrect pedal under menu/title after exitToHome */
+ if(!S||S.over||S.mode==='title'||window.__PAUSE){l2BikeSfxStop();return;}
  /* 创意张: ≤1 ride loop — pedal only; chain never; slope_wind owns ride slot when active */
- try{if(_bikeChain){_bikeChain._alive=0;_bikeChain.pause();_bikeChain=null;}}catch(e){_bikeChain=null;}
+ try{if(_bikeChain){_bikeChain.pause();_bikeChain=null;}}catch(e){_bikeChain=null;}
  const slopeOn=!!(_slopeWind&&_slopeWind._alive&&!_slopeWind.paused);
  const moving=!!(S&&(S.mode==='run'||S.mode==='end')&&spd>0.45&&!(S.brakeT>0)&&!S.l2Brk);
  if(moving&&!slopeOn){const pv=Math.min(.42,.22+spd*.02);
-  /* only rebuild when truly dead — not while _bikeStarting (paused race) */
   const dead=(!_bikePedal||!_bikePedal._alive||(_bikePedal.paused&&!_bikeStarting));
-  if(dead){try{if(_bikePedal){_bikePedal._alive=0;_bikePedal.pause();}}catch(e){}_bikePedal=l2BikeSfxEnsure('sfx_bike_pedal_loop',pv);}
+  if(dead){try{if(_bikePedal)_bikePedal.pause();}catch(e){}_bikePedal=l2BikeSfxEnsure('sfx_bike_pedal_loop',pv);}
   else try{_bikePedal.volume=pv;}catch(e){}
- }else{try{if(_bikePedal){_bikePedal._alive=0;_bikePedal.pause();_bikePedal=null;}}catch(e){_bikePedal=null;}_bikeStarting=0;}
+ }else{try{if(_bikePedal){_bikePedal.pause();_bikePedal=null;}}catch(e){_bikePedal=null;}_bikeStarting=0;}
 }
 function l2RideFrame(dt){if(curLevel()<2){l2BikeSfxStop();return;}l2EnsureRide();try{l2QuizFrame(dt);}catch(e){}if(FARM_WORLD&&FARM_WORLD.l2&&FARM_WORLD.l2.props){const ps=FARM_WORLD.l2.props;L2BIKE._propTick=(L2BIKE._propTick||0)+1;const tick=L2BIKE._propTick;for(let i=0;i<ps.length;i++){const p=ps[i];if(!p||!p.visible)continue;const dz=Math.abs(-p.position.z-S.z);/* l2_lag_r1: throttle billboard lookAt — near every frame, mid every 3rd (staggered), far skip */if(dz<38){try{p.lookAt(cam.position.x,p.position.y,cam.position.z);}catch(e){}}else if(dz<70&&((tick+i)%3===0)){try{p.lookAt(cam.position.x,p.position.y,cam.position.z);}catch(e){}}if(!window.__SMOOTH&&p.userData&&p.userData.l2Key==='prop_pumpkin_lantern'&&!p.userData._lanSfx&&dz<3.2){p.userData._lanSfx=1;/* cooldown so dense seawall lanterns don't pile oneshots same stretch */const _lt=S&&S.t||0;if((_lt-(L2BIKE._lanSfxT||0))>=0.8){L2BIKE._lanSfxT=_lt;try{play('sfx_pumpkin_lantern');}catch(e){}}}}}if(!L2BIKE.ready){l2BikeSfxSync(0);return;}
  const spd=(S&&(S.mode==='run'||S.mode==='end')?(S.speed*(curLevel()>=2?l2SpeedMul():1)*(S.boostT>0?(typeof BOOSTX!=='undefined'?BOOSTX:1.5):1)*(S.brakeT>0?.38:1)*(S.stunT>0?.6:1)*(S.slowT>0&&!(S.boostT>0)?.55:1)):0)||0;
@@ -2113,9 +2136,12 @@ function stopAllAudio(){/* 创意张 lock: Home/exit → hard-stop ALL game audi
  try{if(S&&S._closeA){S._closeA.pause();S._closeA=null;}}catch(e){}
  try{if(typeof _osA!=='undefined'&&_osA){try{_osA.pause();}catch(e2){}_osA=null;}}catch(e){}
  try{for(const s of _abLive){try{s.stop();}catch(e2){}}_abLive.length=0;}catch(e){}
+ try{const L=window.__abLoops;if(L){for(const s of L){try{s.stop();}catch(e2){}}L.length=0;}}catch(e){}
+ try{_bikePedal=null;_bikeChain=null;_slopeWind=null;}catch(e){}
  try{const hb=snd.sfx_heartbeat_low;if(hb)hb.pause();}catch(e){}
  try{const cw=snd.amb_cedar_wind_loop;if(cw){cw.pause();cw.loop=false;}}catch(e){}
  for(const k in snd){try{if(!snd[k].paused)snd[k].pause();}catch(e){}}
+ /* tree_exit_r2: do NOT leave stanley/pedal under menu — menuBgm starts after this */
 }
 
 // exit_home_sfx: stop audio FIRST, paint menu, defer buildLevel (newGame) so Home→main isn't one-frame hitch
@@ -2373,7 +2399,10 @@ document.getElementById('start').addEventListener('click',()=>{audUnlock();if(AC
 document.body.insertAdjacentHTML('beforeend','<button id="gHome" aria-label="Back to home"><img class="gi" alt=""><span class="gh">🏠</span><span>'+BI('Back to home','回主界面')+'</span></button>');
 const gHome=document.getElementById('gHome');window.__PAUSE=false;let _pauseBgm=null;
 gHome.onclick=e=>{e.stopPropagation();if(window.__PAUSE)return;window.__PAUSE=true;try{chaseFootStop();}catch(e){}try{l2BikeSfxStop();}catch(e){}try{l2SlopeWindStop();}catch(e){}/* 音乐刘: L2 pedal/chain + slope wind loops; their Sync (in step) restarts them after lvKeep */play('sfx_pause');
- const cur=window.__bgmCur&&snd[window.__bgmCur];_pauseBgm=cur&&!cur.paused?cur:null;if(_pauseBgm)_pauseBgm.pause();const th=snd.bgm_question_think;if(th&&!th.paused){th.pause();th._pz=1;}
+ /* tree_exit_r2: pause BGM on Home open (keep pause UX); ride AB already hard-stopped above */
+ const cur=window.__bgmCur&&snd[window.__bgmCur];_pauseBgm=cur&&!cur.paused?cur:null;if(_pauseBgm)_pauseBgm.pause();
+ try{['bgm_stanley_halloween','bgm_pumpkin_field','bgm_l2_forest','bgm_l2_lagoon','bgm_corn_maze'].forEach(k=>{const a=snd[k];if(a&&!a.paused&&a!==_pauseBgm)a.pause();});}catch(e){}
+ const th=snd.bgm_question_think;if(th&&!th.paused){th.pause();th._pz=1;}
  gHome.style.display='none';document.getElementById('leaveOv').style.display='flex';};
 document.getElementById('lvKeep').onclick=()=>{document.getElementById('leaveOv').style.display='none';play('sfx_resume');if(_pauseBgm)_pauseBgm.play().catch(()=>{});const th=snd.bgm_question_think;if(th&&th._pz){th._pz=0;th.play().catch(()=>{});}_pauseBgm=null;clock.getDelta();window.__PAUSE=false;};
 document.getElementById('lvLeave').onclick=()=>{
