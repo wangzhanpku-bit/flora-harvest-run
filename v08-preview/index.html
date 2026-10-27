@@ -755,9 +755,9 @@ function qTimeout(){const q=S.qq;qTimerStop();S.qTimer=false;const ch=document.g
  document.getElementById('qex').innerHTML=qExplain(q,false,true);const go=document.getElementById('qgo');if(window.qBtnVis)qBtnVis('qgo',true);else go.style.display='block';go.onclick=()=>qResume(false);}
 // ---------- loop ----------
 const clock=new THREE.Clock();
-function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root';}
+function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root'||k==='obs_wagon_plank'||k==='obs_hay_bale'||k==='obs_fence_low'||k==='obs_pumpkin_crate'||k==='sheep_flock'||k==='obs_duck'||k==='obs_peacock'||k==='obs_cat';}
 function l2TreeJumpKey(k){return k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_tree_fall_warn';}
-function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0)||((S.t-(S._jumpAt|| -99))<0.85)));}/* 创意张: whole airborne after ↑ clears tree jumpables */
+function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0)||((S.t-(S._jumpAt|| -99))<1.35)));}/* James: one ↑ clears; don't gate on short frame window */
 function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);
  /* tree_exit_r2b: low ↑-ables get tighter z (0.42) — fat 0.8 let landing/late-hop still overlap after peak */
  const _lowJ=o.type==='l2obs'&&o.kind==='jump'&&l2JumpLowKey(o.key);
@@ -1070,27 +1070,25 @@ function l2PickObs(seg,i){/* hard/soft + Drop10 duck arches / crack / tree-fall 
  const kind=duck.includes(key)?'duck':soft.includes(key)?'soft':jumpShort.includes(key)?'jump':'hard';
  const flat=key==='obs_ground_crack'?1:undefined;
  return {key,kind,sz:L2DEN.SZ[key]||[1.5,1.3],fallKey:undefined,flat};}
-function placeFallenLogChain(z0){/* James: consecutive fallen logs — all 3 lanes must ↑; 2–3 rows */
+function placeFallenLogChain(z0){/* James: 3-lane one row — one ↑ clears; no back-to-back triples */
  const keys=["obs_fallen_log","obs_fallen_branch","obs_tree_fall_down"];
- const rows=2+(Math.abs(z0|0)%2);const gap=2.4;
- for(let r=0;r<rows;r++){const zz=z0+r*gap;const key=keys[r%keys.length];const sz=(L2DEN.SZ&&L2DEN.SZ[key])||[1.9,1.1];
-  for(let ln=0;ln<3;ln++)addObj("l2obs",ln,zz,{key,kind:"jump",sz});if(L2ST&&L2ST.den)L2ST.den.obs+=3;}
+ const key=keys[Math.abs(z0|0)%keys.length];const sz=(L2DEN.SZ&&L2DEN.SZ[key])||[1.9,1.1];
+ for(let ln=0;ln<3;ln++)addObj("l2obs",ln,z0,{key,kind:"jump",sz});if(L2ST&&L2ST.den)L2ST.den.obs+=3;
 }
 
-function placeL1JumpChain(z0){/* 创意张: L1 must-↑ 2–3 rows × 3 lanes */
+function placeL1JumpChain(z0){/* James: L1 三道并排一排 — 一跳过；禁止紧挨再来一串 */
  const keys=['obs_wagon_plank','obs_hay_bale','obs_fence_low'].filter(k=>typeof TEX!=='undefined'&&TEX[k]);
  if(!keys.length)keys.push('obs_fence_low');
- const rows=2+(Math.abs(z0|0)%2);const gap=2.4;
- for(let r=0;r<rows;r++){const zz=z0+r*gap;const key=keys[r%keys.length];const sz=(L2DEN.SZ&&L2DEN.SZ[key])||[1.9,1.1];
-  for(let ln=0;ln<3;ln++)addObj('l2obs',ln,zz,{key,kind:'jump',sz});}
+ const key=keys[Math.abs(z0|0)%keys.length];const sz=(L2DEN.SZ&&L2DEN.SZ[key])||[1.9,1.1];
+ for(let ln=0;ln<3;ln++)addObj('l2obs',ln,z0,{key,kind:'jump',sz});
 }
 function l1SpawnExtra(){/* James L1 difficulty: cross dogs/pigs, small animals, sheep, vendor, mole/turtle, must-↑ chains */
  if(curLevel()>=2)return;
  const half=[[L_ENT+40,L_FIELD-30],[L_FIELD+50,L_MAZE-50]];
  half.forEach((rg,hi)=>{
   const z0=rg[0],z1=rg[1],span=z1-z0;if(span<40)return;
-  /* must-↑ chain ≥1 per half */
-  placeL1JumpChain(z0+span*(hi?0.55:0.35));
+  /* must-↑: one 3-lane row per half, halves spaced by span */
+  placeL1JumpChain(z0+span*(hi?0.58:0.28));
   /* sheep_flock ×1 per half */
   if(TEX.sheep_flock){const zz=z0+span*(hi?0.72:0.22);const ln=1;addObj('l2obs',ln,zz,{key:'sheep_flock',kind:'jump',sz:L2DEN.SZ.sheep_flock||[2.4,1.35]});}
   /* vendor cart hard */
@@ -1113,7 +1111,7 @@ function l2SpawnDensity(){/* called from buildLevel for L2 */if(curLevel()<2)ret
   const placedZ=[];
   const placeOne=(zz,ii)=>{/* every ~4th slot ≈ 8–12s at seawall/cedar cadence → parallel gate / jump / duck */
    if(ii%3===0){placeParallelGate(zz,2);L2ST.den.obs+=2;placedZ.push(zz);return;}/* +1 parallel per half-seg vs %4 */
-   if(ii%11===5){placeFallenLogChain(zz);placedZ.push(zz);return;}/* James: must-↑ consecutive log chain */
+   if(ii%14===5){const near=placedZ.some(p=>Math.abs(p-zz)<28);if(!near){placeFallenLogChain(zz);placedZ.push(zz);}return;}/* James: single 3-lane ↑; ≥28 clear before next */
    const pick=l2PickObs(seg,ii);
    const extra={key:pick.key,kind:pick.kind,sz:pick.sz,y0:(pick.kind==='soft'||pick.key==='obs_ground_crack')?0.08:undefined,fallKey:pick.fallKey,flat:pick.flat||(pick.key==='obs_ground_crack'?1:undefined)};
    if(pick.kind==='duck'){/* bridge/low-branch: all 3 lanes so center-lane ↓ works (was left-biased) */for(let ln=0;ln<3;ln++)addObj('l2obs',ln,zz,Object.assign({},extra));}
@@ -1233,7 +1231,7 @@ function l2AttachBaraHelm(){if(curLevel()<2){if(L2BIKE.baraHelm)L2BIKE.baraHelm.
 function l2HipPivot(rx){const h=L2BIKE._hipY||0,z=L2BIKE._hipZ||0,c=Math.cos(rx),sn=Math.sin(rx);return [h*(1-c)+z*sn,z*(1-c)-h*sn];}
 function l2SeatRider(force){if(!L2BIKE.ready||!F3.ready||!F3.holder)return;
  if(L2BIKE._seated&&!force)return;
- F3.holder.position.set(0,0,0);F3.holder.rotation.x=0;F3.holder.rotation.z=0;F3.holder.updateMatrixWorld(true);
+ F3.holder.position.set(0,0,0);F3.holder.rotation.x=0;F3.holder.rotation.y=Math.PI;F3.holder.rotation.z=0;F3.holder.updateMatrixWorld(true);
  l2CacheBones();let hipY=0.83,hipZ=0;if(L2BIKE.bones&&L2BIKE.bones.Hips){const wp=new THREE.Vector3();L2BIKE.bones.Hips.getWorldPosition(wp);const hl=F3.holder.worldToLocal(wp.clone());hipY=hl.y;hipZ=hl.z;}
  const seat=L2BIKE.nodes.seat;let sx=0,sy=L2BIKE.seatY,sz=0;if(seat){const wp=new THREE.Vector3();seat.getWorldPosition(wp);const lp=flora.worldToLocal(wp.clone());sx=lp.x;sy=lp.y;sz=lp.z;}
  F3.holder.position.set(sx,sy-hipY+0.05,sz-hipZ+0.03);L2BIKE._hipY=hipY;L2BIKE._hipZ=hipZ;L2BIKE._sy0=F3.holder.position.y;L2BIKE._sz0=F3.holder.position.z;{const r0=-0.16,d=l2HipPivot(r0);F3.holder.position.y+=d[0];F3.holder.position.z+=d[1];}F3.holder.rotation.x=-0.16;F3.holder.rotation.z=0;L2BIKE._seated=true;
@@ -1301,7 +1299,7 @@ function l2EnsureRide(){if(curLevel()<2){/* James: L1 always farm walk — tear 
  l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;L2BIKE.pose='idle';
  if(L2BIKE.helm)L2BIKE.helm.visible=false;if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;
  if(F3.hat)F3.hat.visible=true;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;
- try{if(F3.holder){F3.holder.position.set(0,0,0);F3.holder.rotation.set(0,0,0);}}catch(e){}
+ try{if(F3.holder){F3.holder.position.set(0,0,0);F3.holder.rotation.set(0,Math.PI,0);}}catch(e){} /* James: keep walk facing — set(0,0,0) made hero 倒着 on L1+L2 */
  try{const B=L2BIKE.bones;if(B){['Hips','Spine','Spine1','Spine2','Neck','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase','LeftArm','LeftForeArm','LeftHand','RightArm','RightForeArm','RightHand'].forEach(n=>{const b=B[n];if(b&&b.userData&&b.userData.l2q)b.quaternion.copy(b.userData.l2q);});}}catch(e){}
  try{l2BikeSfxStop();}catch(e){}return;}
  if(L2BIKE.helm){L2BIKE.helm.visible=true;if(F3.hat)F3.hat.visible=false;}if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
