@@ -678,7 +678,7 @@ function chaseStep(dt){if(!S||typeof pursuer==='undefined'||!pursuer)return;if([
  try{chaseCloseThreatSync(cd,freeze);}catch(e){}
 }
 function newGame(){try{chaseFootStop();}catch(e){}try{qaTag();}catch(e){}hideStrip();document.body.classList.remove('quizOn');FX.splice(0).forEach(f=>scene.remove(f.m));bara.rotation.set(0,0,0);thinkStop();S={boostT:0,brakeT:0,smash:null,skillT:null,braked:0,rt:0,rec:[],z:0,lane:1,x:0,y:0,vy:0,slide:0,speed:0,base:13,pumpkins:0,correct:0,mode:'intro',t:0,slowT:0,set:pickSet(),answered:[],section:0,hat:false,bounce:0,hp:CFG.HP_START,runT:0,streak:0,dizzy:0,stunT:0,invT:0,wetT:0,mudT:0,healT:0,rescueT:0,rescued:false,over:false,cp:0,cpState:null,attempt:1,hurtLog:[],mzRamp:0,mw:null,hardHits:0,wrongs:0,clearT:0,chaseDist:7,chaseKey:null,level:(+window.__LEVEL)||(window.__L2?2:1)};if(S.level>=2)S.set=pickSetL2();S.l2Brk=0;S.chaseKey=(S.level|0)>=2?'pursuer_tramp_run':'pursuer_farmer_run';S.chaseDist=7;S.clearT=0;S._baraChaseAlert=0;S._chOff=0;S._chOffT=0;try{chaseApplyTex();}catch(e){}try{pursuer.visible=false;}catch(e){}if(isAdventure()&&window.__CAMP&&(S.level|0)>=2)campApplyToS();
- bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}try{l2EnsureRide();}catch(e){}}}
+ bara.userData.hat.visible=false;buildLevel();flora.position.set(0,0,0);flora.rotation.y=0;bara.position.set(1.2,0,1.6);bara.rotation.y=0;updHud();hpDraw();if(curLevel()>=2){try{l2ApplyPlate(0);}catch(e){}}else{try{l2RestoreFarmSky();}catch(e){}}try{l2EnsureRide();}catch(e){}}
 function l2SecFromZ(z){z=+z||0;return z<L2Q.SEC[0]?0:z<L2Q.SEC[1]?1:z<L2Q.SEC[2]?2:z<L2Q.SEC[3]?3:4;}
 function updHud(){/* r14: L2 label always follows S.z so lagoon/final never stick on 煤港 after teleport/quiz */if(curLevel()>=2&&S){const sec=l2SecFromZ(S.z);S.section=sec>3?3:sec;}else if(S&&S.section>3)S.section=3;hud.p.textContent=(curLevel()>=2?'🏮 ':'🎃 ')+S.pumpkins;hud.q.textContent='✅ '+S.correct;const labs=curLevel()>=2?[['Coal Harbour','煤港']/* Coal (not Cool) Harbour / 煤港 */,['Seawall','海堤'],['Cedar Fork','雪松岔路'],['Lost Lagoon','迷失湖']]:[['Farm Gate','农场入口'],['Pumpkin Field','南瓜田'],['Corn Maze','玉米迷宫'],['Barn','终点谷仓']];hud.s.innerHTML=labs.map(([e,z])=>biHTML(e,z))[S.section];}
 // ---------- intro ----------
@@ -1136,6 +1136,14 @@ function hitL2Dash(o){if(S.shield){shieldPop(o);return;}
  try{o.m.visible=false;}catch(e){}}
 window.l2SpawnDensity=l2SpawnDensity;window.l2SpeedMul=l2SpeedMul;window.L2DEN=L2DEN;
 
+function l2RestoreFarmSky(){/* L2→L1: undo l2ApplyPlate night sky + dark bg */
+ try{if(typeof sky==='undefined'||!sky)return;
+  sky.userData.plate=null;
+  if(typeof TEX!=='undefined'&&TEX.sky){const t=TL.load(TEX.sky);t.encoding=THREE.sRGBEncoding;sky.material.map=t;sky.material.needsUpdate=true;}
+  if(typeof scene!=='undefined'&&scene)scene.background=new THREE.Color(0xe8b27a);
+  if(typeof sky!=='undefined'&&sky){sky.scale.set(1,1,1);}
+ }catch(e){console.warn('[L1] restore farm sky',e);}}
+window.l2RestoreFarmSky=l2RestoreFarmSky;
 function l2DressTrack(on){on=!!on;try{l2RenderSoftCap(on);}catch(e){}if(typeof FARM_WORLD==='undefined'||!FARM_WORLD)return;
  const hide=(arr,v)=>{(arr||[]).forEach(o=>{if(o)o.visible=v;});};
  /* farm clutter off on L2 */
@@ -1151,7 +1159,7 @@ function l2DressTrack(on){on=!!on;try{l2RenderSoftCap(on);}catch(e){}if(typeof F
   if(scene.fog){scene.fog.color.setHex(0x1a1830);scene.fog.near=28;scene.fog.far=160;}
   if(typeof sky!=='undefined'&&sky){sky.position.y=Math.max(sky.position.y||0,18);sky.scale.set(1.05,1.02,1);}
   l2ApplyPathSeg(S&&S.section!=null?S.section:0);l2HideFarmDecor();
- }else{L.asphalt.visible=false;if(L.lane)L.lane.visible=false;if(L.gravelL)L.gravelL.visible=false;if(L.gravelR)L.gravelR.visible=false;if(L.strip)L.strip.visible=false;l2ClearProps();try{l2RestoreFarmCorn();}catch(e){}
+ }else{L.asphalt.visible=false;if(L.lane)L.lane.visible=false;if(L.gravelL)L.gravelL.visible=false;if(L.gravelR)L.gravelR.visible=false;if(L.strip)L.strip.visible=false;l2ClearProps();try{l2RestoreFarmSky();}catch(e){}try{l2RestoreFarmCorn();}catch(e){}
   const B=FARM_WORLD._bak;if(B){hemi.color.copy(B.hemi);hemi.groundColor.copy(B.hemiG);hemi.intensity=B.hemiI;sun.color.copy(B.sun);sun.intensity=B.sunI;if(scene.fog&&B.fog){scene.fog.color.copy(B.fog);scene.fog.near=B.fogN;scene.fog.far=B.fogF;}}
   if(typeof sky!=='undefined'&&sky){sky.scale.set(1,1,1);}
  }
@@ -1257,7 +1265,13 @@ function l2MountBikeFromBin(){try{if(L2BIKE.ready||L2BIKE._loading||typeof BIN==
   if(flora){flora.add(root);root.position.set(0,0,0.05);root.rotation.set(0,Math.PI,0);}
   l2PrepBasket();l2SeatRider(true);l2ShowBesideBara();l2AttachHelm();try{l2AttachBaraHelm();}catch(e){}
   console.info('[L2] bike mounted (Bara beside)',Object.keys(L2BIKE.nodes).filter(k=>L2BIKE.nodes[k]));},e=>{console.warn('[L2] bike parse',e);L2BIKE._loading=null;});}catch(e){console.warn('[L2] bike',e);L2BIKE._loading=null;}}
-function l2EnsureRide(){if(curLevel()<2){l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;if(L2BIKE.helm)L2BIKE.helm.visible=false;if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;if(F3.hat)F3.hat.visible=true;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;return;}
+function l2EnsureRide(){if(curLevel()<2){/* James: L1 always farm walk — tear down bike/helms left from L2 */
+ l2ShowBesideBara();if(L2BIKE.root)L2BIKE.root.visible=false;L2BIKE._seated=false;L2BIKE.pose='idle';
+ if(L2BIKE.helm)L2BIKE.helm.visible=false;if(L2BIKE.baraHelm)L2BIKE.baraHelm.visible=false;
+ if(F3.hat)F3.hat.visible=true;if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=true;
+ try{if(F3.holder){F3.holder.position.set(0,0,0);F3.holder.rotation.set(0,0,0);}}catch(e){}
+ try{const B=L2BIKE.bones;if(B){['Hips','Spine','Spine1','Spine2','Neck','LeftUpLeg','LeftLeg','LeftFoot','LeftToeBase','RightUpLeg','RightLeg','RightFoot','RightToeBase','LeftArm','LeftForeArm','LeftHand','RightArm','RightForeArm','RightHand'].forEach(n=>{const b=B[n];if(b&&b.userData&&b.userData.l2q)b.quaternion.copy(b.userData.l2q);});}}catch(e){}
+ try{l2BikeSfxStop();}catch(e){}return;}
  if(L2BIKE.helm){L2BIKE.helm.visible=true;if(F3.hat)F3.hat.visible=false;}if(bara&&bara.userData&&bara.userData.wh)bara.userData.wh.visible=false;
  if(L2BIKE.root){L2BIKE.root.visible=true;if(!L2BIKE._seated||L2BIKE._boneKey!==F3.key||!L2BIKE.bones){L2BIKE._seated=false;l2SeatRider(true);if(L2BIKE.helm&&L2BIKE.helm.parent){try{L2BIKE.helm.parent.remove(L2BIKE.helm);}catch(e){}}L2BIKE.helm=null;l2AttachHelm();}l2ShowBesideBara();if(!L2BIKE.helm)l2AttachHelm();if(!L2BIKE.baraHelm)l2AttachBaraHelm();return;}
  if(typeof BIN!=='undefined'&&BIN.bike){l2MountBikeFromBin();return;}
@@ -2325,7 +2339,7 @@ function beginAdventure(opts){opts=opts||{};
  if(!opts.campaign&&!(opts.level!=null&&window.__CAMP&&opts.level>=2)){if(!opts.campaign){/* keep camp only for explicit campaign continue */}}
  if(opts.campaign){/* retain __CAMP */}else if(opts.level==null){campClear();}
  else if(!opts.campaign&&!window.__CAMP){/* single-level pick */}
- window.__LEVEL=_lv;window.__L2=_lv>=2;
+ window.__LEVEL=_lv;window.__L2=_lv>=2;if(_lv<2){try{delete window.__L2;}catch(e){window.__L2=false;}window.__LEVEL=1;}
  primeBgm(_lv>=2?'bgm_stanley_halloween':'bgm_pumpkin_field');menuBgm(false);
  const go=()=>{hideAllOv();document.getElementById('title').style.display='none';document.getElementById('end').style.display='none';
   try{(S&&S.introT||[]).forEach(clearTimeout);}catch(e){}
