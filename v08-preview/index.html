@@ -754,16 +754,20 @@ function qTimeout(){const q=S.qq;qTimerStop();S.qTimer=false;const ch=document.g
  document.getElementById('qex').innerHTML=qExplain(q,false,true);const go=document.getElementById('qgo');if(window.qBtnVis)qBtnVis('qgo',true);else go.style.display='block';go.onclick=()=>qResume(false);}
 // ---------- loop ----------
 const clock=new THREE.Clock();
-function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);if(dz>((o.type==='puddle'||o.type==='mud')?1.0:.8))return false;
+function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root';}
+function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);
+ /* tree_exit_r2b: low ↑-ables get tighter z (0.42) — fat 0.8 let landing/late-hop still overlap after peak */
+ const _lowJ=o.type==='l2obs'&&o.kind==='jump'&&l2JumpLowKey(o.key);
+ const zLim=_lowJ?0.42:((o.type==='puddle'||o.type==='mud')?1.0:.8);
+ if(dz>zLim)return false;
  if(o.type==='scare'||o.type==='sign')return true;const ox=o.m.position.x;if(Math.abs(ox-S.x)>1.0)return false;
  if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile')return S.y<1.15;if(o.type==='fence')return S.y<.95;if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
  if(o.type==='l2obs'){/* ↑ clears jump/soft; ↓ duck arches; warn = not yet fallen */
-  /* tree_exit_r2: once ↑-cleared, stay clear (no landing re-hit while still overlapping z) */
   if(o._jumped||o._clrSfx)return false;
   if(o.kind==='warn')return false;if(o.kind==='duck')return S.slide<=0;
-  if(o.kind==='jump'){/* short fallen tree/log/crack/sandbag — peak ~1.6m; clear ≤0.40 so intentional hop wins */
-   const low=o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_log'||o.key==='obs_sandbag_low'||o.key==='obs_driftwood'||o.key==='obs_cone_barrier'||o.key==='obs_wet_root';
-   return S.y<(low?0.40:1.05);}
+  if(o.kind==='jump'){/* peak ~1.6m (vy=9.5 g=28). Low keys: only bonk if grounded/falling — ascending hop or y≥0.18 clears (0.40 was too high for first frames in z-window). */
+   if(_lowJ){if(S.y>=0.18||S.vy>0.5)return false;return true;}
+   return S.y<1.05;}
   if(o.kind==='soft')return S.y<.5;return true;/* hard: never jumpable */}
  if(o.type==='l2dash'){if(!o.armed)return false;return S.y<.95&&Math.abs(o.m.position.x-S.x)<1.05;}
  if(o.type==='beam')return S.slide<=0;return false;}
@@ -804,7 +808,7 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
    if(!o.done&&!o._clrSfx&&(o.type==='hay'||o.type==='barrel'||o.type==='fence'||o.type==='lantern_pile')){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0&&S.y>=1.05){o._clrSfx=1;try{play('sfx_bike_jump_clear');chaseOpen(1.2);}catch(e){}}}
    if(!o.done&&!o._clrSfx&&o.type==='beam'&&S.slide>0){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0){o._clrSfx=1;try{play('sfx_bike_duck_tunnel');chaseOpen(1.2);}catch(e){}}}
    if(o.type==='l2obs'&&o.kind==='warn'&&!o.done&&!o._fell){const az=-o.m.position.z-S.z;if(az<18&&az>-1&&!o._warnSfx){o._warnSfx=1;try{play('sfx_obs_tree_fall_warn');}catch(e){}}if(az<11&&az>-1){o._fell=1;o.kind='jump';o.key=o.fallKey||'obs_tree_fall_down';try{o.m.material=SP(o.key);const sz=(L2DEN.SZ[o.key]||[2.2,1.2]);o.m.geometry.dispose();o.m.geometry=new THREE.PlaneGeometry(sz[0],sz[1]);o.m.position.y=sz[1]*.42;play('sfx_obs_tree_fall_down');}catch(e){}}}
-   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=o.key==='obs_ground_crack'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_log'||o.key==='obs_sandbag_low'||o.key==='obs_driftwood'||o.key==='obs_cone_barrier'||o.key==='obs_wet_root';const jNeed=jLow?0.40:1.05;if(dz<=1.05&&Math.abs(o.m.position.x-S.x)<=1.05){if((o.kind==='jump'&&S.y>=jNeed)||(o.kind==='soft'&&S.y>=.5)){o._clrSfx=1;o._jumped=1;o.done=true;/* tree_exit_r2: consume on clear — no landing re-bonk */try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
+   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=typeof l2JumpLowKey==='function'?l2JumpLowKey(o.key):(o.key==='obs_fallen_log'||o.key==='obs_tree_fall_down');const jNeed=jLow?0.18:1.05;/* tree_exit_r2b: lower judgment + longer approach window so hop consumes before fat z-hit */if(dz<=1.85&&Math.abs(o.m.position.x-S.x)<=1.15){if((o.kind==='jump'&&(S.y>=jNeed||S.vy>0.5))||(o.kind==='soft'&&S.y>=.5)){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
    if(S.clearT>0&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')continue;
    if(!hitTest(o))continue;if(S.boostT>0&&ANIMAL.has(o.type)){duckFly(o);continue;}o.done=true;
    if(o.type==='pumpkin'||o.type==='lantern'){S.pumpkins++;scene.remove(o.m);play(o.type==='lantern'?'sfx_pumpkin_lantern_pickup':'sfx_pickup_pumpkin');updHud();}
