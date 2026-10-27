@@ -694,7 +694,7 @@ function countdown(){S.mode='count';try{chaseFootStop();}catch(e){}const e=docum
 // ---------- input ----------
 function input(k){if(S.mode==='mwait'){mzInput(k);return;}if(S.mode!=='run')return;
  const lk=forks.find(f=>S.z>f.zf-.5&&S.z<f.zf+f.D)||(curLevel()>=2&&L2ST.stops.some(o=>o.lit&&!o.asked));if(!lk){const prev=S.lane;if(k==='L'&&S.lane>0)S.lane--;if(k==='R'&&S.lane<2)S.lane++;if(curLevel()>=2&&S.lane!==prev)play('sfx_bike_bell');}
- if(k==='U'&&S.y<=0.01){S.vy=9.5;S.slide=0;play(curLevel()>=2?'sfx_bike_hop':'sfx_jump');}
+ if(k==='U'&&S.y<=0.01){S.vy=9.5;S.slide=0;S._jumpAt=S.t;play(curLevel()>=2?'sfx_bike_hop':'sfx_jump');}
  if(k==='D'){if(S.y>0.01)S.vy=-14;S.slide=.75;play('sfx_slide');}
  // L2 rider brake (lean-back): Shift → input('B'); two-finger swipe down on touch
  if(k==='B'&&curLevel()>=2){S.brakeT=Math.max(S.brakeT||0,.85);S.slide=0;play('sfx_bike_brake');}}
@@ -754,7 +754,9 @@ function qTimeout(){const q=S.qq;qTimerStop();S.qTimer=false;const ch=document.g
  document.getElementById('qex').innerHTML=qExplain(q,false,true);const go=document.getElementById('qgo');if(window.qBtnVis)qBtnVis('qgo',true);else go.style.display='block';go.onclick=()=>qResume(false);}
 // ---------- loop ----------
 const clock=new THREE.Clock();
-function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root';}
+function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root';}
+function l2TreeJumpKey(k){return k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_tree_fall_warn';}
+function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0.5)||((S.t-(S._jumpAt|| -99))<0.7)));}
 function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);
  /* tree_exit_r2b: low ↑-ables get tighter z (0.42) — fat 0.8 let landing/late-hop still overlap after peak */
  const _lowJ=o.type==='l2obs'&&o.kind==='jump'&&l2JumpLowKey(o.key);
@@ -765,8 +767,8 @@ function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z
  if(o.type==='l2obs'){/* ↑ clears jump/soft; ↓ duck arches; warn = not yet fallen */
   if(o._jumped||o._clrSfx)return false;
   if(o.kind==='warn')return false;if(o.kind==='duck')return S.slide<=0;
-  if(o.kind==='jump'){/* peak ~1.6m (vy=9.5 g=28). Low keys: only bonk if grounded/falling — ascending hop or y≥0.18 clears (0.40 was too high for first frames in z-window). */
-   if(_lowJ){if(S.y>=0.18||S.vy>0.5)return false;return true;}
+  if(o.kind==='jump'){/* James 2026-10-27: tree/log — press ↑ clears (intent), not height gate */
+   if(_lowJ){if(l2JumpIntent()||S.y>=0.12||S.vy>0.3)return false;return true;}
    return S.y<1.05;}
   if(o.kind==='soft')return S.y<.5;return true;/* hard: never jumpable */}
  if(o.type==='l2dash'){if(!o.armed)return false;return S.y<.95&&Math.abs(o.m.position.x-S.x)<1.05;}
@@ -807,8 +809,8 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
    if(o.type==='pumpkin'||o.type==='gold')o.m.rotation.y+=dt*2;if(o.type==='lantern'||o.type==='lantern_pile'){try{o.m.lookAt(cam.position.x,o.m.position.y,cam.position.z);}catch(e){}}
    if(!o.done&&!o._clrSfx&&(o.type==='hay'||o.type==='barrel'||o.type==='fence'||o.type==='lantern_pile')){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0&&S.y>=1.05){o._clrSfx=1;try{play('sfx_bike_jump_clear');chaseOpen(1.2);}catch(e){}}}
    if(!o.done&&!o._clrSfx&&o.type==='beam'&&S.slide>0){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0){o._clrSfx=1;try{play('sfx_bike_duck_tunnel');chaseOpen(1.2);}catch(e){}}}
-   if(o.type==='l2obs'&&o.kind==='warn'&&!o.done&&!o._fell){const az=-o.m.position.z-S.z;if(az<18&&az>-1&&!o._warnSfx){o._warnSfx=1;try{play('sfx_obs_tree_fall_warn');}catch(e){}}if(az<11&&az>-1){o._fell=1;o.kind='jump';o.key=o.fallKey||'obs_tree_fall_down';try{o.m.material=SP(o.key);const sz=(L2DEN.SZ[o.key]||[2.2,1.2]);o.m.geometry.dispose();o.m.geometry=new THREE.PlaneGeometry(sz[0],sz[1]);o.m.position.y=sz[1]*.42;play('sfx_obs_tree_fall_down');}catch(e){}}}
-   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=typeof l2JumpLowKey==='function'?l2JumpLowKey(o.key):(o.key==='obs_fallen_log'||o.key==='obs_tree_fall_down');const jNeed=jLow?0.18:1.05;/* tree_exit_r2b: lower judgment + longer approach window so hop consumes before fat z-hit */if(dz<=1.85&&Math.abs(o.m.position.x-S.x)<=1.15){if((o.kind==='jump'&&(S.y>=jNeed||S.vy>0.5))||(o.kind==='soft'&&S.y>=.5)){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
+   if(o.type==='l2obs'&&o.kind==='warn'&&!o.done&&!o._fell){const az=-o.m.position.z-S.z;if(az<18&&az>-1&&!o._warnSfx){o._warnSfx=1;try{play('sfx_obs_tree_fall_warn');}catch(e){}}if(az<22&&az>-1&&l2JumpIntent()&&Math.abs(o.m.position.x-S.x)<=1.2){o._jumpPend=1;}if(az<11&&az>-1){o._fell=1;o.kind='jump';o.key=o.fallKey||'obs_tree_fall_down';try{o.m.material=SP(o.key);const sz=(L2DEN.SZ[o.key]||[2.2,1.2]);o.m.geometry.dispose();o.m.geometry=new THREE.PlaneGeometry(sz[0],sz[1]);o.m.position.y=sz[1]*.42;play('sfx_obs_tree_fall_down');}catch(e){}if(o._jumpPend){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}}}
+   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=typeof l2JumpLowKey==='function'?l2JumpLowKey(o.key):(o.key==='obs_fallen_log'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_branch');const tree=typeof l2TreeJumpKey==='function'?l2TreeJumpKey(o.key):jLow;const jNeed=jLow?0.12:1.05;/* James: press ↑ clears tree/log */if(dz<=2.4&&Math.abs(o.m.position.x-S.x)<=1.2){if((o.kind==='jump'&&(l2JumpIntent()||S.y>=jNeed||S.vy>0.3))||(o.kind==='soft'&&(l2JumpIntent()||S.y>=.5))||(tree&&o.kind==='jump'&&l2JumpIntent())){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
    if(S.clearT>0&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')continue;
    if(!hitTest(o))continue;if(S.boostT>0&&ANIMAL.has(o.type)){duckFly(o);continue;}o.done=true;
    if(o.type==='pumpkin'||o.type==='lantern'){S.pumpkins++;scene.remove(o.m);play(o.type==='lantern'?'sfx_pumpkin_lantern_pickup':'sfx_pickup_pumpkin');updHud();}
@@ -1039,11 +1041,11 @@ function l2FreeZ(z,span){span=span||80;if(!l2QuizBlocked(z))return z;for(let d=6
 function l2PickObs(seg,i){/* hard/soft + Drop10 duck arches / crack / tree-fall (no pumpkin/chicken/corn) */
  /* tree_exit_r2 创意张: fallen tree/log MUST ↑ clear; stacked-pumpkin OUT → obs_rock_block hard (美图王 art wired). */
  const soft=['obs_puddle','obs_leaf_pile','obs_bird_slip','obs_candy_spill'];/* ↑ hop clears */
- const jumpShort=['obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low','obs_fallen_log','obs_tree_fall_down'];/* ↑ clears short logs + fallen tree */
+ const jumpShort=['obs_cone_barrier','obs_driftwood','obs_wet_root','obs_ground_crack','obs_sandbag_low','obs_fallen_log','obs_tree_fall_down','obs_fallen_branch'];/* ↑ clears logs/tree; fallen_branch art is ground log */
  const hardRock=(typeof TEX!=='undefined'&&TEX.obs_rock_block)?'obs_rock_block':'obs_rail_gap';
  const hard=[hardRock,'obs_park_bench','obs_rail_gap'];/* tall/hard lane-swap only — rock single; pair is parallel-gate; NO lantern/pumpkin stacks, NO fallen_log */
- const duckSea=['obs_bridge_arch','obs_fallen_branch'];/* seawall: bridge arch ↓ */
- const duckCed=['obs_low_branch_arch','obs_fallen_branch'];/* cedar: low branch ↓ */
+ const duckSea=['obs_bridge_arch'];/* seawall: bridge arch ↓ only */
+ const duckCed=['obs_low_branch_arch'];/* cedar: low thick branch ↓ only */
  const duck=seg==='cedar'?duckCed:duckSea;
  if(i%13===7)return {key:'obs_tree_fall_warn',kind:'warn',sz:L2DEN.SZ.obs_tree_fall_warn||[1.8,2.4],fallKey:'obs_tree_fall_down'};
  /* guarantee ground crack often (was buried at jumpShort[i%4] ≈ rare / upright-invisible) */
