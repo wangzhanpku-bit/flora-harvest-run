@@ -885,8 +885,11 @@ function finish(){try{chaseFootStop();}catch(e){}S.mode='end';try{pursuer.visibl
   document.getElementById('recBadge').style.display=isRec?'block':'none';document.getElementById('recImg').src=TEX.badge_record||'';
   const tf=T_FAST(),ts=T_SECRET();const row=(lim,en,zh)=>'<div class="row">'+(T<=lim?biHTML('✅ '+en+' — got it!','✅ '+zh+'——拿到啦！'):biHTML('Finish under '+fmt(lim)+' for a '+en+'! ('+(T-lim).toFixed(1)+'s to go)','在 '+fmt(lim)+' 内跑完，拿'+zh+'！（还差 '+(T-lim).toFixed(1)+' 秒）'))+'</div>';
   document.getElementById('targets').innerHTML='<div class="row">'+biHTML('✅ Finished — Bara card','✅ 跑完全程——Bara 卡片')+'</div>'+row(tf,'Fast card','快速卡')+'<div class="row">'+(SOK?biHTML('✅ Secret card — got it!','✅ 隐藏款——拿到啦！'):secretMiss(T))+'</div>'+'<div class="row small">'+(stars08===3?biHTML('3 stars! Amazing, {name}!','三颗星！{name} 太厉害了！'):stars08===2?biHTML('Just 1 more star!','再拿 1 颗星就满啦！'):biHTML('⭐ Time · ✅ Correct answers '+S.correct+'/'+S.answered.length,'⭐ 用时 · ✅ 答对题数 '+S.correct+'/'+S.answered.length))+'</div>';document.getElementById('hist2').innerHTML=histHtml();document.getElementById('hist').innerHTML=histHtml();},4100);
- if(isRec&&prevBest<Infinity)setTimeout(()=>{sub(bi('New record! CAPYBARA!','破纪录啦！CAPYBARA！'),2500);play('jingle_new_record');},1200);S.speed=0;bgm(null);play('jingle_level_complete');sub(bi('{name}: "Found it! The Harvest Festival begins! CAPYBARA!"','{name}："找到啦！丰收节，开场！CAPYBARA！"'),3000);setTimeout(()=>play('jingle_capybara'),2200);
- setTimeout(()=>{document.getElementById('stars').innerHTML='';document.getElementById('cardsGot').innerHTML='';document.getElementById('cardsHead').innerHTML='';document.getElementById('shareBtn').style.display='none';document.getElementById('endTitleEn').textContent=N('{name}: "The Harvest Festival begins! CAPYBARA!"');document.getElementById('endTitleZh').textContent=NZ('{name}："丰收节，开场！CAPYBARA！"');
+ if(isRec&&prevBest<Infinity)setTimeout(()=>{sub(bi('New record! CAPYBARA!','破纪录啦！CAPYBARA！'),2500);play('jingle_new_record');},1200);S.speed=0;bgm(null);play('jingle_level_complete');
+ const _l2end=curLevel()>=2;const _endSubEn=_l2end?'You made it through the night! Happy Halloween!':'Found it! The Harvest Festival begins! CAPYBARA!';const _endSubZh=_l2end?'你闯过了这一夜！万圣节快乐！':'找到啦！丰收节，开场！CAPYBARA！';
+ const _endTitleEn=_l2end?'You made it through the night! Happy Halloween!':'{name}: "The Harvest Festival begins! CAPYBARA!"';const _endTitleZh=_l2end?'你闯过了这一夜！万圣节快乐！':'{name}："丰收节，开场！CAPYBARA！"';
+ sub(bi(_l2end?_endSubEn:('{name}: "'+_endSubEn+'"'),_l2end?_endSubZh:('{name}："'+_endSubZh+'"')),3000);setTimeout(()=>play('jingle_capybara'),2200);
+ setTimeout(()=>{document.getElementById('stars').innerHTML='';document.getElementById('cardsGot').innerHTML='';document.getElementById('cardsHead').innerHTML='';document.getElementById('shareBtn').style.display='none';document.getElementById('endTitleEn').textContent=N(_endTitleEn);document.getElementById('endTitleZh').textContent=NZ(_endTitleZh);
   document.getElementById('sum').innerHTML=biHTML(`Pumpkins ${S.pumpkins} · Correct ${S.correct}/${S.answered.length}`,`南瓜 ${S.pumpkins} · 答对 ${S.correct}/${S.answered.length}`)+mpEndHTML(S.result_mp||0);mpCountUp();
   document.getElementById('review').innerHTML='<p style="font-size:15px;color:#7a5a3a;text-align:left" class="bi-inline"><span class="en">Parent review</span><span class="zh">家长回顾</span></p>'+S.answered.map(a=>`<div class="res">${a.ok?'✅':'❌'} <b>${N(a.q.q_en)}</b><br>${N(a.q.q_zh)}<br><span class="bi-inline"><span class="en"><b>Answer:</b> ${N(a.q.choices[a.q.answer])}</span><span class="zh"><b>答案：</b> ${(a.q.choices_zh||a.q.choices)[a.q.answer]}</span></span><div class="zh">${N(a.q.explain_zh||'')}</div></div>`).join('');
   showLetter();},4200);}
@@ -989,9 +992,9 @@ function l2SpawnLagoonReeds(){/* r13 美图王: after corn hidden, line Lost Lag
 const L2DEN={
  BASE:13,
  /* time windows (s of ride) → section via L2Q.SEC z */
- SEAWALL:{t0:0,t1:90,every:2.0,spdMul:1,waves:2},/* James denser */
- CEDAR:{t0:90,t1:170,every:2.4,spdMul:0.75,waves:3},
- LAGOON:{t0:170,t1:1e9,every:1.7,spdMul:1.25,waves:4},
+ SEAWALL:{t0:0,t1:90,every:1.8,spdMul:1,waves:2},/* 创意张 denser table */
+ CEDAR:{t0:90,t1:170,every:2.1,spdMul:0.75,waves:3},
+ LAGOON:{t0:170,t1:1e9,every:1.5,spdMul:1.25,waves:4},
  WARN:0.9,/* seconds animal visible before collision (r16: was 0.5, 市场赵 not obvious) */
  STUN:1,/* large animal stun seconds */
  BURST_MUL:1.55,BURST_DUR:2.2,/* lagoon downhill accel bursts */
@@ -1048,14 +1051,14 @@ function l2PickObs(seg,i){/* hard/soft + Drop10 duck arches / crack / tree-fall 
  const duckCed=['obs_low_branch_arch'];/* cedar: low thick branch ↓ only */
  const duck=seg==='cedar'?duckCed:duckSea;
  if(i%7===3)return {key:'obs_tree_fall_warn',kind:'warn',sz:L2DEN.SZ.obs_tree_fall_warn||[1.8,2.4],fallKey:'obs_tree_fall_down'};/* denser falling trees — keep, don't remove */
- if(seg==='cedar'&&i%4===1)return {key:'obs_fallen_log',kind:'jump',sz:L2DEN.SZ.obs_fallen_log||[1.9,1.1]};/* James: keep mossy logs, more in cedar */
- if(seg==='cedar'&&i%5===2)return {key:'obs_fallen_branch',kind:'jump',sz:L2DEN.SZ.obs_fallen_branch||[2.1,1.35]};
+ if((seg==='cedar'||seg==='seawall')&&i%4===1)return {key:'obs_fallen_log',kind:'jump',sz:L2DEN.SZ.obs_fallen_log||[1.9,1.1]};/* keep mossy logs denser */
+ if((seg==='cedar'||seg==='lagoon')&&i%5===2)return {key:'obs_fallen_branch',kind:'jump',sz:L2DEN.SZ.obs_fallen_branch||[2.1,1.35]};
  /* guarantee ground crack often (was buried at jumpShort[i%4] ≈ rare / upright-invisible) */
  if(i%6===2)return {key:'obs_ground_crack',kind:'jump',sz:L2DEN.SZ.obs_ground_crack||[2.5,2.1],flat:1};
  let pool;
- if(seg==='cedar'){pool=i%5===0?duck:i%5===1?jumpShort:i%5===2?soft:hard;}
- else if(seg==='lagoon'){pool=i%4===0?soft:i%4===1?jumpShort:hard;if(i%7===3)pool=duck;}
- else{pool=i%3===0?soft:i%3===1?jumpShort:hard;if(i%8===4)pool=duck;}/* duck more often than %11 */
+ if(seg==='cedar'){pool=i%5===0?duck:i%5===1?jumpShort:i%5===2?jumpShort:i%5===3?duck:hard;}/* +30% jump/duck */
+ else if(seg==='lagoon'){pool=i%4===0?soft:i%4===1?jumpShort:hard;if(i%5===2)pool=duck;if(i%5===3)pool=jumpShort;}
+ else{pool=i%3===0?soft:i%3===1?jumpShort:hard;if(i%5===1)pool=jumpShort;if(i%6===2)pool=duck;}/* +30% jump/duck */
  const key=pool[i%pool.length];
  const kind=duck.includes(key)?'duck':soft.includes(key)?'soft':jumpShort.includes(key)?'jump':'hard';
  const flat=key==='obs_ground_crack'?1:undefined;
@@ -1067,7 +1070,7 @@ function l2SpawnDensity(){/* called from buildLevel for L2 */if(curLevel()<2)ret
   const cfg=l2DenCfg(seg);const spd=L2DEN.BASE*cfg.spdMul;const dz=spd*cfg.every;let i=0;
   const placedZ=[];
   const placeOne=(zz,ii)=>{/* every ~4th slot ≈ 8–12s at seawall/cedar cadence → parallel gate / jump / duck */
-   if(ii%4===0){placeParallelGate(zz,2);L2ST.den.obs+=2;placedZ.push(zz);return;}
+   if(ii%3===0){placeParallelGate(zz,2);L2ST.den.obs+=2;placedZ.push(zz);return;}/* +1 parallel per half-seg vs %4 */
    const pick=l2PickObs(seg,ii);
    const extra={key:pick.key,kind:pick.kind,sz:pick.sz,y0:(pick.kind==='soft'||pick.key==='obs_ground_crack')?0.08:undefined,fallKey:pick.fallKey,flat:pick.flat||(pick.key==='obs_ground_crack'?1:undefined)};
    if(pick.kind==='duck'){/* bridge/low-branch: all 3 lanes so center-lane ↓ works (was left-biased) */for(let ln=0;ln<3;ln++)addObj('l2obs',ln,zz,Object.assign({},extra));}
