@@ -695,7 +695,7 @@ function countdown(){S.mode='count';try{chaseFootStop();}catch(e){}const e=docum
 // ---------- input ----------
 function input(k){if(S.mode==='mwait'){mzInput(k);return;}if(S.mode!=='run')return;
  const lk=forks.find(f=>S.z>f.zf-.5&&S.z<f.zf+f.D)||(curLevel()>=2&&L2ST.stops.some(o=>o.lit&&!o.asked));if(!lk){const prev=S.lane;if(k==='L'&&S.lane>0)S.lane--;if(k==='R'&&S.lane<2)S.lane++;if(curLevel()>=2&&S.lane!==prev)play('sfx_bike_bell');}
- if(k==='U'&&S.y<=0.01){S.vy=9.5;S.slide=0;S._jumpAt=S.t;play(curLevel()>=2?'sfx_bike_hop':'sfx_jump');}
+ if(k==='U'&&S.y<=0.55){if(S.y<=0.01)S.vy=9.5;S.slide=0;S._jumpAt=S.t;if(S.y<=0.01)play(curLevel()>=2?'sfx_bike_hop':'sfx_jump');}/* James: near press still counts intent even mid-hop */
  if(k==='D'){if(S.y>0.01)S.vy=-14;S.slide=.75;play('sfx_slide');}
  // L2 rider brake (lean-back): Shift → input('B'); two-finger swipe down on touch
  if(k==='B'&&curLevel()>=2){S.brakeT=Math.max(S.brakeT||0,.85);S.slide=0;play('sfx_bike_brake');}}
@@ -757,21 +757,20 @@ function qTimeout(){const q=S.qq;qTimerStop();S.qTimer=false;const ch=document.g
 const clock=new THREE.Clock();
 function l2JumpLowKey(k){return k==='obs_ground_crack'||k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_sandbag_low'||k==='obs_driftwood'||k==='obs_cone_barrier'||k==='obs_wet_root'||k==='obs_wagon_plank'||k==='obs_hay_bale'||k==='obs_fence_low'||k==='obs_pumpkin_crate'||k==='sheep_flock'||k==='obs_duck'||k==='obs_peacock'||k==='obs_cat';}
 function l2TreeJumpKey(k){return k==='obs_tree_fall_down'||k==='obs_fallen_log'||k==='obs_fallen_branch'||k==='obs_tree_fall_warn';}
-function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0)||((S.t-(S._jumpAt|| -99))<1.35)));}/* James: one ↑ clears; don't gate on short frame window */
+function l2JumpIntent(){return !!(S&&((S.y>0.01)||(S.vy>0)||((S.t-(S._jumpAt|| -99))<2.6)));}/* James: 靠近按↑即过 — long window, no frame/height gate */
 function hitTest(o){if(o.done)return false;const dz=Math.abs(-o.m.position.z-S.z);
  /* tree_exit_r2b: low ↑-ables get tighter z (0.42) — fat 0.8 let landing/late-hop still overlap after peak */
  const _lowJ=o.type==='l2obs'&&o.kind==='jump'&&l2JumpLowKey(o.key);
  const zLim=_lowJ?0.32:((o.type==='puddle'||o.type==='mud')?1.0:.8);/* tree intent tip: tighter z; no-jump only */
  if(dz>zLim)return false;
  if(o.type==='scare'||o.type==='sign')return true;const ox=o.m.position.x;if(Math.abs(ox-S.x)>1.0)return false;
- if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile')return S.y<1.15;if(o.type==='fence')return S.y<.95;if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
- if(o.type==='l2obs'){/* ↑ clears jump/soft; ↓ duck arches; warn = not yet fallen */
+ if(window.__BOTSAFE&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')return false;if(o.type==='pumpkin'||o.type==='lantern'||o.type==='gold'||o.type==='item')return S.y<2.2;if(o.type==='hay'||o.type==='barrel'||o.type==='lantern_pile'){if(l2JumpIntent()||S.y>=1.15)return false;return true;}if(o.type==='fence'){if(l2JumpIntent()||S.y>=.95)return false;return true;}if(o.type==='cornwall')return S.y<3.2;if(o.type==='puddle'||o.type==='mud'||o.type==='chick'||o.type==='duck')return S.y<.45;
+ if(o.type==='l2obs'){/* James: 靠近按↑即过 — jump/soft/duck all clear on jump intent; warn not solid */
   if(o._jumped||o._clrSfx)return false;
-  if(o.kind==='warn')return false;if(o.kind==='duck')return S.slide<=0;
-  if(o.kind==='jump'){/* James 2026-10-27: tree/log — press ↑ clears (intent), not height gate */
-   if(_lowJ){if(l2JumpIntent()||S.y>=0.01)return false;return true;}/* 清高几乎贴地；没按跳才撞 */
-   return S.y<1.05;}
-  if(o.kind==='soft')return S.y<.5;return true;/* hard: never jumpable */}
+  if(o.kind==='warn')return false;
+  if(o.kind==='duck'){if(S.slide>0||l2JumpIntent())return false;return true;}
+  if(o.kind==='jump'||o.kind==='soft'){if(l2JumpIntent()||S.y>=0.01)return false;return true;}
+  return true;/* hard: lane block, not ↑ */}
  if(o.type==='l2dash'){if(!o.armed)return false;return S.y<.95&&Math.abs(o.m.position.x-S.x)<1.05;}
  if(o.type==='beam')return S.slide<=0;return false;}
 function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElementById('prog');const on=['run','quiz','dead','count','rest','l2hold'].includes(S.mode);pr.style.display=on?'block':'none';if(on){const p=Math.min(100,S.z/L_END*100);document.getElementById('progf').style.width=p+'%';document.getElementById('progd').style.left=p+'%';}}if(['run','quiz','dead'].includes(S.mode)){S.rt+=dt;document.getElementById('ht').textContent='⏱ '+fmt(S.runT);
@@ -808,10 +807,10 @@ function step(dt){if(window.__PAUSE)return;S.t+=dt;{const pr=document.getElement
    if(sec===3){finish();}}}
   for(const o of objs){if(o.type==='chick'&&!o.done){o.m.position.x+=o.vx*dt;if(Math.abs(o.m.position.x)>LANE*1.3)o.vx*=-1;o.m.rotation.y=o.vx>0?-Math.PI/2:Math.PI/2;}
    if(o.type==='pumpkin'||o.type==='gold')o.m.rotation.y+=dt*2;if(o.type==='lantern'||o.type==='lantern_pile'){try{o.m.lookAt(cam.position.x,o.m.position.y,cam.position.z);}catch(e){}}
-   if(!o.done&&!o._clrSfx&&(o.type==='hay'||o.type==='barrel'||o.type==='fence'||o.type==='lantern_pile')){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0&&S.y>=1.05){o._clrSfx=1;try{play('sfx_bike_jump_clear');chaseOpen(1.2);}catch(e){}}}
+   if(!o.done&&!o._clrSfx&&(o.type==='hay'||o.type==='barrel'||o.type==='fence'||o.type==='lantern_pile')){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=4.8&&Math.abs(o.m.position.x-S.x)<=1.35&&(l2JumpIntent()||S.y>=1.05)){o._clrSfx=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.2);}catch(e){}}}
    if(!o.done&&!o._clrSfx&&o.type==='beam'&&S.slide>0){const dz=Math.abs(-o.m.position.z-S.z);if(dz<=.8&&Math.abs(o.m.position.x-S.x)<=1.0){o._clrSfx=1;try{play('sfx_bike_duck_tunnel');chaseOpen(1.2);}catch(e){}}}
    if(o.type==='l2obs'&&o.kind==='warn'&&!o.done&&!o._fell){const az=-o.m.position.z-S.z;if(az<18&&az>-1&&!o._warnSfx){o._warnSfx=1;try{play('sfx_obs_tree_fall_warn');}catch(e){}}if(az<22&&az>-1&&l2JumpIntent()&&Math.abs(o.m.position.x-S.x)<=1.2){o._jumpPend=1;}if(az<11&&az>-1){o._fell=1;o.kind='jump';o.key=o.fallKey||'obs_tree_fall_down';try{o.m.material=SP(o.key);const sz=(L2DEN.SZ[o.key]||[2.2,1.2]);o.m.geometry.dispose();o.m.geometry=new THREE.PlaneGeometry(sz[0],sz[1]);o.m.position.y=sz[1]*.42;play('sfx_obs_tree_fall_down');}catch(e){}if(o._jumpPend){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}}}
-   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);const jLow=typeof l2JumpLowKey==='function'?l2JumpLowKey(o.key):(o.key==='obs_fallen_log'||o.key==='obs_tree_fall_down'||o.key==='obs_fallen_branch');const tree=typeof l2TreeJumpKey==='function'?l2TreeJumpKey(o.key):jLow;const jNeed=jLow?0.01:1.05;/* 创意张/James: ↑ intent clears; jNeed几乎贴地 */if(dz<=2.6&&Math.abs(o.m.position.x-S.x)<=1.2){if((o.kind==='jump'&&(l2JumpIntent()||S.y>=jNeed))||(o.kind==='soft'&&(l2JumpIntent()||S.y>=.5))||(tree&&o.kind==='jump'&&l2JumpIntent())){o._clrSfx=1;o._jumped=1;o.done=true;try{play('sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}else if(o.kind==='duck'&&S.slide>0){o._clrSfx=1;o.done=true;try{play('sfx_bike_duck_tunnel');chaseOpen(1.4);}catch(e){}}}}
+   if(o.type==='l2obs'&&!o.done&&!o._clrSfx){const dz=Math.abs(-o.m.position.z-S.z);/* James: 靠近+↑清整排三并排 */if(dz<=4.8){const nearX=Math.abs(o.m.position.x-S.x)<=2.8;const wantJump=l2JumpIntent()&&(o.kind==='jump'||o.kind==='soft'||o.kind==='duck');const wantDuck=o.kind==='duck'&&S.slide>0;if(nearX&&(wantJump||wantDuck)){const zR=Math.round(o.m.position.z*10)/10;for(const p of objs){if(p.type!=='l2obs'||p.done||p._clrSfx)continue;if(Math.abs(Math.round(p.m.position.z*10)/10-zR)>0.05)continue;if(!(p.kind==='jump'||p.kind==='soft'||p.kind==='duck'))continue;p._clrSfx=1;p._jumped=1;p.done=true;}try{play(wantDuck&&!l2JumpIntent()?'sfx_bike_duck_tunnel':'sfx_bike_jump_clear');chaseOpen(1.4);}catch(e){}}}}
    if(S.clearT>0&&o.type!=='pumpkin'&&o.type!=='lantern'&&o.type!=='gold'&&o.type!=='item')continue;
    if(!hitTest(o))continue;if(S.boostT>0&&ANIMAL.has(o.type)){duckFly(o);continue;}o.done=true;
    if(o.type==='pumpkin'||o.type==='lantern'){S.pumpkins++;scene.remove(o.m);play(o.type==='lantern'?'sfx_pumpkin_lantern_pickup':'sfx_pickup_pumpkin');updHud();}
