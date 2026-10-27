@@ -250,7 +250,7 @@ html body #over #overCard #overGo>span,html body #over #overCard #overGo .bi_{wh
 <div id="settingsBox">
 <div class="heroPick"><div class="bi"><div class="en">Choose your hero</div><div class="zh">选择你的主角</div></div><div class="pick heroG"><button data-g="girl"><span class="hc"><img class="hcard" alt=""><img class="hglow" alt=""></span><span class="en">Girl</span><span class="zh">女孩</span></button><button data-g="boy"><span class="hc"><img class="hcard" alt=""><img class="hglow" alt=""></span><span class="en">Boy</span><span class="zh">男孩</span></button></div></div><label class="bi"><span class="en">Settings · Hero name</span><span class="zh">设置 · 小英雄名字</span></label>
 <input id="heroEdit" maxlength="24" value="Flora">
-<div id="gradeBox"><label class="bi"><span class="en">What grade are you in?</span><span class="zh">你上几年级？</span></label><div class="pick grades" id="gradePick"></div></div>
+<div id="gradeBox"><label class="bi" aria-hidden="true"></label><div class="pick grades" id="gradePick"></div></div>
 <div id="modeBox"><label class="bi"><span class="en">Mode</span><span class="zh">模式</span></label><div class="pick" id="modePick"><button data-m="challenge"><span class="en">Challenge</span><span class="zh">挑战</span></button><button data-m="easy"><span class="en">Easy</span><span class="zh">轻松</span></button></div><div id="modeHint"></div></div>
 <!-- #qual removed: Graphics lives in #settings #setGfx -->
 </div>
@@ -1536,11 +1536,22 @@ const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 function biBlock(en,zh,cls){return '<div class="bi '+(cls||'')+'"><div class="en">'+esc(N(en))+'</div><div class="zh">'+esc(NZ(zh))+'</div></div>';}
 // ---------- question banks (lazy) ----------
 const BANKS={};
-async function loadBank(g){return loadBankKey((GRADES[g]||GRADES[CFG.DEFAULT_GRADE]).bank);}
+async function loadBank(g){
+ /* 创意张: missing bank → nearest grade */
+ const want=+g||CFG.DEFAULT_GRADE||6;
+ const order=[want];
+ for(let d=1;d<=12;d++){if(want-d>=1)order.push(want-d);if(want+d<=12)order.push(want+d);}
+ let last;
+ for(const n of order){
+  const meta=GRADES[n]||GRADES[CFG.DEFAULT_GRADE];
+  try{return await loadBankKey(meta.bank);}catch(e){last=e;}
+ }
+ throw last||new Error('no bank');
+}
 async function loadBankKey(key){if(BANKS[key])return BANKS[key];
  const url=(window.__QB||{})[key];if(!url)throw new Error('no bank '+key);
  for(let i=0;;i++){try{const r=await fetch(url);if(!r.ok)throw new Error(r.status);BANKS[key]=await r.json();return BANKS[key];}catch(e){if(i>=2)throw e;await new Promise(r=>setTimeout(r,600*(i+1)));}}}
-async function startRun(fromTitle){try{QDATA=await loadBank(GRADE);if(((+window.__LEVEL)||(window.__L2?2:1))>=2)L2QDATA=await loadBankKey('l2g'+GRADE);}catch(e){console.warn('bank load failed',e);sub(bi('Could not load questions. Check the network and try again.','题库加载失败，请检查网络后重试。'),3000);return;}
+async function startRun(fromTitle){try{QDATA=await loadBank(GRADE);if(((+window.__LEVEL)||(window.__L2?2:1))>=2){const want=GRADE;const order=[want];for(let d=1;d<=12;d++){if(want-d>=1)order.push(want-d);if(want+d<=12)order.push(want+d);}let ok=null,last;for(const n of order){try{ok=await loadBankKey('l2g'+n);break;}catch(e){last=e;}}if(!ok)throw last||new Error('no l2 bank');L2QDATA=ok;}}catch(e){console.warn('bank load failed',e);sub(bi('Could not load questions. Check the network and try again.','题库加载失败，请检查网络后重试。'),3000);return;}
  document.getElementById('title').style.display='none';document.getElementById('end').style.display='none';newGame();intro();}
 function choiceImgsOK(q){const ci=q&&q.choice_imgs,QI=window.__QI||{};return Array.isArray(ci)&&ci.length===q.choices.length&&ci.every(n=>n&&QI[n]);}
 function cimg(name){return '<img class="cimg" src="'+window.__QI[name]+'" alt="" onerror="cimgFail(this)">';}
