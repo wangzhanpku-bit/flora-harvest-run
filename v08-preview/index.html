@@ -1519,7 +1519,7 @@ function secretMiss(T){const L=[],ts=T_SECRET();
 const HARD=new Set(['hay','beam','fence','barrel','cornwall','lantern_pile']),WET=new Set(['puddle','mud']),ANIMAL=new Set(['duck','chick']);
 const ICON_EMOJI={apple:'🍎',duck:'🦆',corn_cob:'🌽',pumpkin:'🎃',triangle:'🔺',square:'🟧',rectangle:'▬',cow:'🐄',egg_hatching_chick:'🐣',carrot:'🥕',bee_and_honey:'🐝🍯',sheep:'🐑',pony:'🐴',lamb:'🐑',canada_flag:'🇨🇦',coin_25c:'25¢',coin_10c:'10¢',coin_5c:'5¢'};
 let GAME_MODE=CFG.MODE_PICKER?(store.get('mode',CFG.DEFAULT_MODE)==='easy'?'easy':'challenge'):'challenge';
-let GRADE=CFG.GRADE_PICKER?(+store.get('grade',CFG.DEFAULT_GRADE)||CFG.DEFAULT_GRADE):CFG.DEFAULT_GRADE;if(!GRADES[GRADE]||GRADE>6)GRADE=Math.min(6,CFG.DEFAULT_GRADE||6);
+let GRADE=CFG.GRADE_PICKER?(+store.get('grade',CFG.DEFAULT_GRADE)||CFG.DEFAULT_GRADE):CFG.DEFAULT_GRADE;if(!GRADES[GRADE])GRADE=CFG.DEFAULT_GRADE||6; /* James: G1–G12 */
 const CH=()=>GAME_MODE==='challenge';
 let PLAY_MODE=(store.get('play_mode','adventure')==='practice')?'practice':'adventure';
 const isAdventure=()=>PLAY_MODE==='adventure';
@@ -2286,7 +2286,7 @@ function showMenu(){hideAllOv('menu');document.getElementById('menu').style.disp
 window.showMenu=showMenu;
 // ---- levels ----
 const LEVELS=(function(){
- // James: level cards L1/L2; grades G1…G6 (题库仅6)
+ // James: level cards L1/L2; grades G1…G12 short chips
  // L2 built only on tip (/v08-preview) or ?level=2 — root stays Coming soon
  const _l2=isL2PreviewHost();
  return [
@@ -2401,7 +2401,7 @@ function showSettings(){hideAllOv('settings');const ov=document.getElementById('
  const name=store.get('hero',null)||HERO||'Flora';document.getElementById('setName').value=name;
  const g=heroG();document.querySelectorAll('#setGender button').forEach(b=>b.classList.toggle('sel',b.dataset.g===g));
  const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];const gp=document.getElementById('setGrade');
- gp.innerHTML=[1,2,3,4,5,6].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">G'+n+'</span></button>').join('');
+ gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>'<button type="button" data-g="'+n+'" class="'+(n===GRADE?'sel':'')+'"><span class="en">G'+n+'</span></button>').join('');
  gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);gp.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));});
  document.querySelectorAll('#setMode button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);document.querySelectorAll('#setMode button').forEach(x=>x.classList.toggle('sel',x===b));};});
  document.querySelectorAll('#setPlay button').forEach(b=>{b.classList.toggle('sel',b.dataset.p===PLAY_MODE);b.onclick=()=>{PLAY_MODE=b.dataset.p==='practice'?'practice':'adventure';store.set('play_mode',PLAY_MODE);document.querySelectorAll('#setPlay button').forEach(x=>x.classList.toggle('sel',x===b));if(PLAY_MODE==='practice')campClear();};});
@@ -2606,7 +2606,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
 #settings .setCard.art .sLab:nth-of-type(2){left:8.8%;top:28.7%;width:21.4%;height:13.4%}
 #settings .setCard.art #setGender{left:31.4%;top:28.7%;width:59.8%;height:13.4%;display:flex;gap:1.6%;padding:0}
 #settings .setCard.art .sLab:nth-of-type(3){left:8.8%;top:42.9%;width:21.4%;height:13.4%}
-#settings .setCard.art #setGrade{left:31.4%;top:42.9%;width:59.8%;height:13.4%;display:grid!important;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2% 1.5%;overflow:hidden;padding:0;align-content:stretch}
+#settings .setCard.art #setGrade{left:31.4%;top:42.9%;width:59.8%;height:13.4%;display:grid!important;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:2% 1.5%;overflow:hidden;padding:0;align-content:stretch}
 #settings .setCard.art .sLab:nth-of-type(4){left:8.8%;top:57.1%;width:21.4%;height:10%}
 #settings .setCard.art #setMode{left:31.4%;top:57.1%;width:59.8%;height:10%;display:flex;gap:1.6%;padding:0;overflow:hidden}
 #settings .setCard.art .sLab:nth-of-type(5){left:8.8%;top:68%;width:21.4%;height:9%}
@@ -2676,7 +2676,7 @@ document.getElementById('qsub').onclick=e=>{e.stopPropagation();qSubmitBtn();};
  #settings .setCard.art .sLab:nth-of-type(2){left:6.7%;top:27%;width:22.4%;height:10%}
  #settings .setCard.art #setGender{left:30.1%;top:27%;width:63.2%;height:10%}
  #settings .setCard.art .sLab:nth-of-type(3){left:6.7%;top:38%;width:22.4%;height:10%}
- #settings .setCard.art #setGrade{left:30.1%;top:38%;width:63.2%;height:12%;display:grid!important;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2% 1.5%;overflow:hidden}
+ #settings .setCard.art #setGrade{left:30.1%;top:38%;width:63.2%;height:12%;display:grid!important;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:2% 1.5%;overflow:hidden}
  #settings .setCard.art .sLab:nth-of-type(4){left:6.7%;top:51%;width:22.4%;height:10%}
  #settings .setCard.art #setMode{left:30.1%;top:51%;width:63.2%;height:10%}
  #settings .setCard.art .sLab:nth-of-type(5){left:6.7%;top:56%;width:22.4%;height:8%}
@@ -2840,7 +2840,7 @@ document.getElementById('shareName').onchange=drawShare;document.getElementById(
 {const oc=document.getElementById('overCard');oc.style.setProperty('--ovbg',TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none');oc.style.setProperty('--ovbgm',TEX.gameover_bg_mobile?'url('+TEX.gameover_bg_mobile+')':(TEX.gameover_bg?'url('+TEX.gameover_bg+')':'none'));
  document.getElementById('overBara').src=TEX.gameover_bara||'';document.getElementById('overIcon').src=TEX.icon_retry||'';document.getElementById('hstun').src=TEX.fx_stun_icon||'';}
 function drawPickers(){const gp=document.getElementById('gradePick');document.getElementById('gradeBox').style.display=CFG.GRADE_PICKER?'block':'none';
- const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];gp.innerHTML=[1,2,3,4,5,6].map(g=>'<button data-g="'+g+'" class="'+(g===GRADE?'sel':'')+'">'+(TEX['grade_'+g]?'<span class="gb"><img src="'+TEX['grade_'+g]+'" alt="">'+(g===GRADE&&TEX.grade_badge_selected?'<img src="'+TEX.grade_badge_selected+'" alt="">':'')+'</span>':'')+'<span class="en">G'+g+'</span></button>').join('');
+ const ZH=['一','二','三','四','五','六','七','八','九','十','十一','十二'];gp.innerHTML=[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>'<button data-g="'+g+'" class="'+(g===GRADE?'sel':'')+'">'+(TEX['grade_'+g]?'<span class="gb"><img src="'+TEX['grade_'+g]+'" alt="">'+(g===GRADE&&TEX.grade_badge_selected?'<img src="'+TEX.grade_badge_selected+'" alt="">':'')+'</span>':'')+'<span class="en">G'+g+'</span></button>').join('');
  gp.querySelectorAll('button').forEach(b=>b.onclick=()=>{GRADE=+b.dataset.g;store.set('grade',GRADE);drawPickers();loadBank(GRADE).catch(()=>{});});
  document.getElementById('modeBox').style.display=CFG.MODE_PICKER?'block':'none';
  document.querySelectorAll('#modePick button').forEach(b=>{b.classList.toggle('sel',b.dataset.m===GAME_MODE);b.onclick=()=>{GAME_MODE=b.dataset.m;store.set('mode',GAME_MODE);drawPickers();};});
