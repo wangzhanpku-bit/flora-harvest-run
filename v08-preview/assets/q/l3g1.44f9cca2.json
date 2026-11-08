@@ -1,0 +1,1994 @@
+{
+ "level": 3,
+ "level_name_en": "Whistler Christmas Snow Ride",
+ "level_name_zh": "惠斯勒·圣诞雪山骑行",
+ "grade": 1,
+ "version": 1,
+ "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them)",
+ "questions": [
+  {
+   "id": "l3g1_001",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 6 skiers. 2 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 6 个滑雪的人，到山顶下去了 2 个，还剩几个？",
+   "choices": [
+    "14",
+    "4",
+    "1",
+    "7"
+   ],
+   "choices_zh": [
+    "14",
+    "4",
+    "1",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "6 - 2 = 4.",
+   "explain_zh": "6-2=4。"
+  },
+  {
+   "id": "l3g1_002",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 18 gifts under the tree. 2 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 18 个礼物，拆开了 2 个，还有几个没拆？",
+   "choices": [
+    "14",
+    "19",
+    "16",
+    "26"
+   ],
+   "choices_zh": [
+    "14",
+    "19",
+    "16",
+    "26"
+   ],
+   "answer": 2,
+   "explain_en": "18 - 2 = 16.",
+   "explain_zh": "18-2=16。"
+  },
+  {
+   "id": "l3g1_003",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 15 skiers. 5 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 15 个滑雪的人，到山顶下去了 5 个，还剩几个？",
+   "choices": [
+    "20",
+    "8",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "20",
+    "8",
+    "10",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "15 - 5 = 10.",
+   "explain_zh": "15-5=10。"
+  },
+  {
+   "id": "l3g1_004",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 11, 13, 15. What number comes next?",
+   "q_zh": "吊椅的编号是 11、13、15，下一个是几？",
+   "choices": [
+    "15",
+    "16",
+    "17"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "15 + 2 = 17.",
+   "explain_zh": "15+2=17。",
+   "sign_en": [
+    "15",
+    "16",
+    "17"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "17"
+   ]
+  },
+  {
+   "id": "l3g1_005",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 11, 12, 13. What number comes next?",
+   "q_zh": "吊椅的编号是 11、12、13，下一个是几？",
+   "choices": [
+    "14",
+    "24",
+    "4",
+    "13"
+   ],
+   "choices_zh": [
+    "14",
+    "24",
+    "4",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "13 + 1 = 14.",
+   "explain_zh": "13+1=14。"
+  },
+  {
+   "id": "l3g1_006",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 6 gifts under the tree. 4 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 6 个礼物，拆开了 4 个，还有几个没拆？",
+   "choices": [
+    "1",
+    "2",
+    "4",
+    "3"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "4",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "6 - 4 = 2.",
+   "explain_zh": "6-4=2。"
+  },
+  {
+   "id": "l3g1_007",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 7 snowballs, then 6 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 7 个雪球，又做了 6 个，现在一共几个？",
+   "choices": [
+    "15",
+    "16",
+    "13"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "7 + 6 = 13.",
+   "explain_zh": "7+6=13。",
+   "sign_en": [
+    "15",
+    "16",
+    "13"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "13"
+   ]
+  },
+  {
+   "id": "l3g1_008",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Which word rhymes with 'snow'?",
+   "q_zh": "哪个英文单词和 'snow' 押韵？",
+   "choices": [
+    "sun",
+    "tree",
+    "glow",
+    "cat"
+   ],
+   "choices_zh": [
+    "sun",
+    "tree",
+    "glow",
+    "cat"
+   ],
+   "answer": 2,
+   "explain_en": "Snow and glow both end with the 'ow' sound.",
+   "explain_zh": "snow 和 glow 都以 ow 的音结尾。"
+  },
+  {
+   "id": "l3g1_009",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "What colour is a snowshoe hare's fur in winter?",
+   "q_zh": "冬天雪鞋兔的毛是什么颜色？",
+   "choices": [
+    "White",
+    "Red",
+    "Green"
+   ],
+   "choices_zh": [
+    "白色",
+    "红色",
+    "绿色"
+   ],
+   "answer": 0,
+   "explain_en": "It turns white to hide in the snow.",
+   "explain_zh": "它冬天变白，好藏在雪里。",
+   "sign_en": [
+    "White",
+    "Red",
+    "Green"
+   ],
+   "sign_zh": [
+    "白色",
+    "红色",
+    "绿色"
+   ]
+  },
+  {
+   "id": "l3g1_010",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 9 snowballs, then 7 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 9 个雪球，又做了 7 个，现在一共几个？",
+   "choices": [
+    "19",
+    "18",
+    "16"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "9 + 7 = 16.",
+   "explain_zh": "9+7=16。",
+   "sign_en": [
+    "19",
+    "18",
+    "16"
+   ],
+   "sign_zh": [
+    "19",
+    "18",
+    "16"
+   ]
+  },
+  {
+   "id": "l3g1_011",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 8 snowballs, then 2 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 8 个雪球，又做了 2 个，现在一共几个？",
+   "choices": [
+    "0",
+    "13",
+    "15",
+    "10"
+   ],
+   "choices_zh": [
+    "0",
+    "13",
+    "15",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "8 + 2 = 10.",
+   "explain_zh": "8+2=10。"
+  },
+  {
+   "id": "l3g1_012",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 6 skiers. 4 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 6 个滑雪的人，到山顶下去了 4 个，还剩几个？",
+   "choices": [
+    "2",
+    "1",
+    "3",
+    "7"
+   ],
+   "choices_zh": [
+    "2",
+    "1",
+    "3",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "6 - 4 = 2.",
+   "explain_zh": "6-4=2。"
+  },
+  {
+   "id": "l3g1_013",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 7 snowballs, then 1 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 7 个雪球，又做了 1 个，现在一共几个？",
+   "choices": [
+    "18",
+    "8",
+    "13"
+   ],
+   "choices_zh": [
+    "18",
+    "8",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "7 + 1 = 8.",
+   "explain_zh": "7+1=8。",
+   "sign_en": [
+    "18",
+    "8",
+    "13"
+   ],
+   "sign_zh": [
+    "18",
+    "8",
+    "13"
+   ]
+  },
+  {
+   "id": "l3g1_014",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 7 gifts under the tree. 3 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 7 个礼物，拆开了 3 个，还有几个没拆？",
+   "choices": [
+    "3",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "7 - 3 = 4.",
+   "explain_zh": "7-3=4。",
+   "sign_en": [
+    "3",
+    "4",
+    "2"
+   ],
+   "sign_zh": [
+    "3",
+    "4",
+    "2"
+   ]
+  },
+  {
+   "id": "l3g1_015",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Badgers are very good at…",
+   "q_zh": "獾非常擅长……",
+   "choices": [
+    "Digging holes",
+    "Spinning webs",
+    "Flying",
+    "Breathing underwater"
+   ],
+   "choices_zh": [
+    "挖洞",
+    "织网",
+    "飞",
+    "在水下呼吸"
+   ],
+   "answer": 0,
+   "explain_en": "Badgers have strong claws for digging.",
+   "explain_zh": "獾有强壮的爪子，很会挖洞。"
+  },
+  {
+   "id": "l3g1_016",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "What is the opposite of 'cold'?",
+   "q_zh": "选出英文 'cold'（冷）的反义词：",
+   "choices": [
+    "frozen",
+    "hot",
+    "chilly",
+    "icy"
+   ],
+   "choices_zh": [
+    "frozen",
+    "hot",
+    "chilly",
+    "icy"
+   ],
+   "answer": 1,
+   "explain_en": "Hot is the opposite of cold.",
+   "explain_zh": "hot（热）是 cold（冷）的反义词。"
+  },
+  {
+   "id": "l3g1_017",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 2 snowballs, then 5 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 2 个雪球，又做了 5 个，现在一共几个？",
+   "choices": [
+    "7",
+    "17",
+    "10",
+    "5"
+   ],
+   "choices_zh": [
+    "7",
+    "17",
+    "10",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "2 + 5 = 7.",
+   "explain_zh": "2+5=7。"
+  },
+  {
+   "id": "l3g1_018",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "easy",
+   "q_en": "What do people often use for a snowman's nose?",
+   "q_zh": "人们常用什么给雪人做鼻子？",
+   "choices": [
+    "A shoe",
+    "A spoon",
+    "A carrot",
+    "A book"
+   ],
+   "choices_zh": [
+    "鞋子",
+    "勺子",
+    "胡萝卜",
+    "书"
+   ],
+   "answer": 2,
+   "explain_en": "A carrot is the classic snowman nose.",
+   "explain_zh": "胡萝卜是雪人最常见的鼻子。"
+  },
+  {
+   "id": "l3g1_019",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 10 snowballs, then 8 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 10 个雪球，又做了 8 个，现在一共几个？",
+   "choices": [
+    "20",
+    "21",
+    "18"
+   ],
+   "choices_zh": [
+    "20",
+    "21",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "10 + 8 = 18.",
+   "explain_zh": "10+8=18。",
+   "sign_en": [
+    "20",
+    "21",
+    "18"
+   ],
+   "sign_zh": [
+    "20",
+    "21",
+    "18"
+   ]
+  },
+  {
+   "id": "l3g1_020",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Where does a marmot sleep in winter?",
+   "q_zh": "旱獭冬天在哪里睡觉？",
+   "choices": [
+    "In a burrow underground",
+    "In the lake",
+    "Inside the gondola",
+    "In a nest at the top of a tree"
+   ],
+   "choices_zh": [
+    "地下的洞里",
+    "湖里",
+    "缆车里",
+    "树顶的鸟窝里"
+   ],
+   "answer": 0,
+   "explain_en": "Marmots hibernate in underground burrows.",
+   "explain_zh": "旱獭在地下洞穴里冬眠。"
+  },
+  {
+   "id": "l3g1_021",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which keeps your hands warm in the snow?",
+   "q_zh": "在雪地里，什么能让手保暖？",
+   "choices": [
+    "Mittens",
+    "A fan",
+    "Ice cubes",
+    "Wet socks"
+   ],
+   "choices_zh": [
+    "连指手套",
+    "电扇",
+    "冰块",
+    "湿袜子"
+   ],
+   "answer": 0,
+   "explain_en": "Mittens trap warm air around your hands.",
+   "explain_zh": "连指手套把暖空气留在手边。"
+  },
+  {
+   "id": "l3g1_022",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "What should you wear on your head when you ski?",
+   "q_zh": "滑雪时头上应该戴什么？",
+   "choices": [
+    "A helmet",
+    "Nothing",
+    "A paper hat",
+    "A crown"
+   ],
+   "choices_zh": [
+    "头盔",
+    "什么都不戴",
+    "纸帽子",
+    "皇冠"
+   ],
+   "answer": 0,
+   "explain_en": "A helmet protects your head if you fall.",
+   "explain_zh": "摔倒时头盔能保护头部。"
+  },
+  {
+   "id": "l3g1_023",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 8, 9, 10. What number comes next?",
+   "q_zh": "吊椅的编号是 8、9、10，下一个是几？",
+   "choices": [
+    "1",
+    "11",
+    "9",
+    "21"
+   ],
+   "choices_zh": [
+    "1",
+    "11",
+    "9",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "10 + 1 = 11.",
+   "explain_zh": "10+1=11。"
+  },
+  {
+   "id": "l3g1_024",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Whistler is named after an animal's whistle. Which animal?",
+   "q_zh": "惠斯勒这个名字来自一种动物的口哨声，是哪种动物？",
+   "choices": [
+    "Shark",
+    "Hoary marmot",
+    "Camel",
+    "Elephant"
+   ],
+   "choices_zh": [
+    "鲨鱼",
+    "灰旱獭",
+    "骆驼",
+    "大象"
+   ],
+   "answer": 1,
+   "explain_en": "Hoary marmots make a loud whistle.",
+   "explain_zh": "灰旱獭会发出响亮的口哨声。"
+  },
+  {
+   "id": "l3g1_025",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 9 gifts under the tree. 3 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 9 个礼物，拆开了 3 个，还有几个没拆？",
+   "choices": [
+    "6",
+    "1",
+    "16"
+   ],
+   "choices_zh": [
+    "6",
+    "1",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "9 - 3 = 6.",
+   "explain_zh": "9-3=6。",
+   "sign_en": [
+    "6",
+    "1",
+    "16"
+   ],
+   "sign_zh": [
+    "6",
+    "1",
+    "16"
+   ]
+  },
+  {
+   "id": "l3g1_026",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "easy",
+   "q_en": "What do people put under a Christmas tree?",
+   "q_zh": "人们在圣诞树下放什么？",
+   "choices": [
+    "Rocks",
+    "Gifts",
+    "Old shoes",
+    "Fish"
+   ],
+   "choices_zh": [
+    "石头",
+    "礼物",
+    "旧鞋子",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Gifts go under the Christmas tree.",
+   "explain_zh": "礼物放在圣诞树下。"
+  },
+  {
+   "id": "l3g1_027",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "whistler",
+   "difficulty": "easy",
+   "q_en": "Whistler is in which Canadian province?",
+   "q_zh": "惠斯勒在加拿大哪个省？",
+   "choices": [
+    "Ontario",
+    "British Columbia",
+    "Quebec"
+   ],
+   "choices_zh": [
+    "安大略省",
+    "不列颠哥伦比亚省（BC）",
+    "魁北克省"
+   ],
+   "answer": 1,
+   "explain_en": "Whistler is in British Columbia.",
+   "explain_zh": "惠斯勒在不列颠哥伦比亚省（BC）。",
+   "sign_en": [
+    "Ontario",
+    "British Columbia",
+    "Quebec"
+   ],
+   "sign_zh": [
+    "安大略省",
+    "不列颠哥伦比亚省（BC）",
+    "魁北克省"
+   ]
+  },
+  {
+   "id": "l3g1_028",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Which word is a colour?",
+   "q_zh": "哪个英文单词是颜色？",
+   "choices": [
+    "white",
+    "jump",
+    "hill",
+    "ski"
+   ],
+   "choices_zh": [
+    "white",
+    "jump",
+    "hill",
+    "ski"
+   ],
+   "answer": 0,
+   "explain_en": "White is a colour.",
+   "explain_zh": "white（白色）是颜色。"
+  },
+  {
+   "id": "l3g1_029",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 7 snowballs, then 8 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 7 个雪球，又做了 8 个，现在一共几个？",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "7 + 8 = 15.",
+   "explain_zh": "7+8=15。"
+  },
+  {
+   "id": "l3g1_030",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 3, 5, 7. What number comes next?",
+   "q_zh": "吊椅的编号是 3、5、7，下一个是几？",
+   "choices": [
+    "6",
+    "8",
+    "9",
+    "10"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "7 + 2 = 9.",
+   "explain_zh": "7+2=9。"
+  },
+  {
+   "id": "l3g1_031",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 13 gifts under the tree. 10 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 13 个礼物，拆开了 10 个，还有几个没拆？",
+   "choices": [
+    "0",
+    "8",
+    "4",
+    "3"
+   ],
+   "choices_zh": [
+    "0",
+    "8",
+    "4",
+    "3"
+   ],
+   "answer": 3,
+   "explain_en": "13 - 10 = 3.",
+   "explain_zh": "13-10=3。"
+  },
+  {
+   "id": "l3g1_032",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "8 marmots sit on a rock. 6 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 8 只旱獭，雪里又钻出 6 只，一共几只？",
+   "choices": [
+    "13",
+    "9",
+    "14",
+    "17"
+   ],
+   "choices_zh": [
+    "13",
+    "9",
+    "14",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "8 + 6 = 14.",
+   "explain_zh": "8+6=14。"
+  },
+  {
+   "id": "l3g1_033",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "4 marmots sit on a rock. 6 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 4 只旱獭，雪里又钻出 6 只，一共几只？",
+   "choices": [
+    "7",
+    "10",
+    "0",
+    "11"
+   ],
+   "choices_zh": [
+    "7",
+    "10",
+    "0",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "4 + 6 = 10.",
+   "explain_zh": "4+6=10。"
+  },
+  {
+   "id": "l3g1_034",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 9 skiers. 8 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 9 个滑雪的人，到山顶下去了 8 个，还剩几个？",
+   "choices": [
+    "6",
+    "0",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "0",
+    "1",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "9 - 8 = 1.",
+   "explain_zh": "9-8=1。"
+  },
+  {
+   "id": "l3g1_035",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "A coyote looks most like a…",
+   "q_zh": "郊狼长得最像……",
+   "choices": [
+    "Dog",
+    "Fish",
+    "Bird"
+   ],
+   "choices_zh": [
+    "狗",
+    "鱼",
+    "鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Coyotes are in the dog family.",
+   "explain_zh": "郊狼属于犬科，和狗是亲戚。",
+   "sign_en": [
+    "Dog",
+    "Fish",
+    "Bird"
+   ],
+   "sign_zh": [
+    "狗",
+    "鱼",
+    "鸟"
+   ]
+  },
+  {
+   "id": "l3g1_036",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 20 skiers. 2 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 20 个滑雪的人，到山顶下去了 2 个，还剩几个？",
+   "choices": [
+    "13",
+    "18",
+    "20",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "18",
+    "20",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "20 - 2 = 18.",
+   "explain_zh": "20-2=18。"
+  },
+  {
+   "id": "l3g1_037",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 8 snowballs, then 9 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 8 个雪球，又做了 9 个，现在一共几个？",
+   "choices": [
+    "14",
+    "20",
+    "17"
+   ],
+   "choices_zh": [
+    "14",
+    "20",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "8 + 9 = 17.",
+   "explain_zh": "8+9=17。",
+   "sign_en": [
+    "14",
+    "20",
+    "17"
+   ],
+   "sign_zh": [
+    "14",
+    "20",
+    "17"
+   ]
+  },
+  {
+   "id": "l3g1_038",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 16 gifts under the tree. 11 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 16 个礼物，拆开了 11 个，还有几个没拆？",
+   "choices": [
+    "7",
+    "2",
+    "5",
+    "15"
+   ],
+   "choices_zh": [
+    "7",
+    "2",
+    "5",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "16 - 11 = 5.",
+   "explain_zh": "16-11=5。"
+  },
+  {
+   "id": "l3g1_039",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 4, 5, 6. What number comes next?",
+   "q_zh": "吊椅的编号是 4、5、6，下一个是几？",
+   "choices": [
+    "7",
+    "4",
+    "5",
+    "9"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "5",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "6 + 1 = 7.",
+   "explain_zh": "6+1=7。"
+  },
+  {
+   "id": "l3g1_040",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "On a chairlift, you should…",
+   "q_zh": "坐吊椅缆车时应该……",
+   "choices": [
+    "Jump off halfway",
+    "Sit back and hold on",
+    "Stand on the seat",
+    "Swing your skis hard"
+   ],
+   "choices_zh": [
+    "半路跳下去",
+    "坐稳并抓好",
+    "站在座位上",
+    "使劲甩滑雪板"
+   ],
+   "answer": 1,
+   "explain_en": "Sit back, hold on and keep still.",
+   "explain_zh": "坐稳、抓好、别乱动。"
+  },
+  {
+   "id": "l3g1_041",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 8 skiers. 1 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 8 个滑雪的人，到山顶下去了 1 个，还剩几个？",
+   "choices": [
+    "6",
+    "7",
+    "2"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "8 - 1 = 7.",
+   "explain_zh": "8-1=7。",
+   "sign_en": [
+    "6",
+    "7",
+    "2"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "2"
+   ]
+  },
+  {
+   "id": "l3g1_042",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 3 snowballs, then 3 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 3 个雪球，又做了 3 个，现在一共几个？",
+   "choices": [
+    "6",
+    "1",
+    "11",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "1",
+    "11",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "3 + 3 = 6.",
+   "explain_zh": "3+3=6。"
+  },
+  {
+   "id": "l3g1_043",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "2 marmots sit on a rock. 3 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 2 只旱獭，雪里又钻出 3 只，一共几只？",
+   "choices": [
+    "5",
+    "0",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "0",
+    "8",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "2 + 3 = 5.",
+   "explain_zh": "2+3=5。"
+  },
+  {
+   "id": "l3g1_044",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which season is the coldest in Whistler?",
+   "q_zh": "惠斯勒哪个季节最冷？",
+   "choices": [
+    "Summer",
+    "Winter",
+    "Spring"
+   ],
+   "choices_zh": [
+    "夏天",
+    "冬天",
+    "春天"
+   ],
+   "answer": 1,
+   "explain_en": "Winter is the coldest season.",
+   "explain_zh": "冬天是最冷的季节。",
+   "sign_en": [
+    "Summer",
+    "Winter",
+    "Spring"
+   ],
+   "sign_zh": [
+    "夏天",
+    "冬天",
+    "春天"
+   ]
+  },
+  {
+   "id": "l3g1_045",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 15 skiers. 3 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 15 个滑雪的人，到山顶下去了 3 个，还剩几个？",
+   "choices": [
+    "10",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "10",
+    "12",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "15 - 3 = 12.",
+   "explain_zh": "15-3=12。",
+   "sign_en": [
+    "10",
+    "12",
+    "13"
+   ],
+   "sign_zh": [
+    "10",
+    "12",
+    "13"
+   ]
+  },
+  {
+   "id": "l3g1_046",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 3 snowballs, then 2 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 3 个雪球，又做了 2 个，现在一共几个？",
+   "choices": [
+    "0",
+    "2",
+    "3",
+    "5"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "3",
+    "5"
+   ],
+   "answer": 3,
+   "explain_en": "3 + 2 = 5.",
+   "explain_zh": "3+2=5。"
+  },
+  {
+   "id": "l3g1_047",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 6, 8, 10. What number comes next?",
+   "q_zh": "吊椅的编号是 6、8、10，下一个是几？",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "15"
+   ],
+   "choices_zh": [
+    "12",
+    "13",
+    "11",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "10 + 2 = 12.",
+   "explain_zh": "10+2=12。"
+  },
+  {
+   "id": "l3g1_048",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 1 snowballs, then 1 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 1 个雪球，又做了 1 个，现在一共几个？",
+   "choices": [
+    "5",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "5",
+    "2",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "1 + 1 = 2.",
+   "explain_zh": "1+1=2。",
+   "sign_en": [
+    "5",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "5",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "l3g1_049",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "3 marmots sit on a rock. 3 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 3 只旱獭，雪里又钻出 3 只，一共几只？",
+   "choices": [
+    "4",
+    "6",
+    "7",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "7",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "3 + 3 = 6.",
+   "explain_zh": "3+3=6。"
+  },
+  {
+   "id": "l3g1_050",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "easy",
+   "q_en": "What do people say on December 25?",
+   "q_zh": "12 月 25 日人们会说什么？",
+   "choices": [
+    "See you yesterday!",
+    "Happy spring!",
+    "Good luck on your test!",
+    "Merry Christmas!"
+   ],
+   "choices_zh": [
+    "昨天见！",
+    "春天快乐！",
+    "考试顺利！",
+    "圣诞快乐！"
+   ],
+   "answer": 3,
+   "explain_en": "December 25 is Christmas Day.",
+   "explain_zh": "12 月 25 日是圣诞节。"
+  },
+  {
+   "id": "l3g1_051",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "easy",
+   "q_en": "Christmas Day is in which month?",
+   "q_zh": "圣诞节在几月？",
+   "choices": [
+    "March",
+    "July",
+    "December",
+    "April"
+   ],
+   "choices_zh": [
+    "三月",
+    "七月",
+    "十二月",
+    "四月"
+   ],
+   "answer": 2,
+   "explain_en": "Christmas Day is December 25.",
+   "explain_zh": "圣诞节是 12 月 25 日。"
+  },
+  {
+   "id": "l3g1_052",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 9, 11, 13. What number comes next?",
+   "q_zh": "吊椅的编号是 9、11、13，下一个是几？",
+   "choices": [
+    "13",
+    "14",
+    "25",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "14",
+    "25",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "13 + 2 = 15.",
+   "explain_zh": "13+2=15。"
+  },
+  {
+   "id": "l3g1_053",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "8 marmots sit on a rock. 8 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 8 只旱獭，雪里又钻出 8 只，一共几只？",
+   "choices": [
+    "16",
+    "19",
+    "11"
+   ],
+   "choices_zh": [
+    "16",
+    "19",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "8 + 8 = 16.",
+   "explain_zh": "8+8=16。",
+   "sign_en": [
+    "16",
+    "19",
+    "11"
+   ],
+   "sign_zh": [
+    "16",
+    "19",
+    "11"
+   ]
+  },
+  {
+   "id": "l3g1_054",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 18 gifts under the tree. 5 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 18 个礼物，拆开了 5 个，还有几个没拆？",
+   "choices": [
+    "13",
+    "3",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "3",
+    "11",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "18 - 5 = 13.",
+   "explain_zh": "18-5=13。"
+  },
+  {
+   "id": "l3g1_055",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 20 skiers. 12 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 20 个滑雪的人，到山顶下去了 12 个，还剩几个？",
+   "choices": [
+    "8",
+    "6",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "20 - 12 = 8.",
+   "explain_zh": "20-12=8。",
+   "sign_en": [
+    "8",
+    "6",
+    "10"
+   ],
+   "sign_zh": [
+    "8",
+    "6",
+    "10"
+   ]
+  },
+  {
+   "id": "l3g1_056",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Many owls hunt mostly at…",
+   "q_zh": "很多猫头鹰主要在什么时候捕猎？",
+   "choices": [
+    "Noon",
+    "Only on Mondays",
+    "Night"
+   ],
+   "choices_zh": [
+    "中午",
+    "只在星期一",
+    "夜里"
+   ],
+   "answer": 2,
+   "explain_en": "Most owls are night hunters.",
+   "explain_zh": "大多数猫头鹰在夜里捕猎。",
+   "sign_en": [
+    "Noon",
+    "Only on Mondays",
+    "Night"
+   ],
+   "sign_zh": [
+    "中午",
+    "只在星期一",
+    "夜里"
+   ]
+  },
+  {
+   "id": "l3g1_057",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Why do skiers wear goggles?",
+   "q_zh": "滑雪的人为什么要戴护目镜？",
+   "choices": [
+    "To see underwater",
+    "To look taller",
+    "To protect eyes from wind, snow and bright sun"
+   ],
+   "choices_zh": [
+    "为了在水下看东西",
+    "为了显得更高",
+    "保护眼睛不被风、雪和强光伤到"
+   ],
+   "answer": 2,
+   "explain_en": "Goggles protect your eyes on the snow.",
+   "explain_zh": "护目镜在雪地上保护眼睛。",
+   "sign_en": [
+    "To see underwater",
+    "To look taller",
+    "To protect eyes from wind, snow and bright sun"
+   ],
+   "sign_zh": [
+    "为了在水下看东西",
+    "为了显得更高",
+    "保护眼睛不被风、雪和强光伤到"
+   ]
+  },
+  {
+   "id": "l3g1_058",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "If you leave ice in a warm room, it turns into…",
+   "q_zh": "把冰放在暖和的屋里，它会变成……",
+   "choices": [
+    "Paper",
+    "Sand",
+    "Gold",
+    "Water"
+   ],
+   "choices_zh": [
+    "纸",
+    "沙子",
+    "金子",
+    "水"
+   ],
+   "answer": 3,
+   "explain_en": "Warm air melts ice into water.",
+   "explain_zh": "暖空气让冰化成水。"
+  },
+  {
+   "id": "l3g1_059",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 18 gifts under the tree. 8 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 18 个礼物，拆开了 8 个，还有几个没拆？",
+   "choices": [
+    "12",
+    "10",
+    "7"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "18 - 8 = 10.",
+   "explain_zh": "18-8=10。",
+   "sign_en": [
+    "12",
+    "10",
+    "7"
+   ],
+   "sign_zh": [
+    "12",
+    "10",
+    "7"
+   ]
+  },
+  {
+   "id": "l3g1_060",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 17 skiers. 1 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 17 个滑雪的人，到山顶下去了 1 个，还剩几个？",
+   "choices": [
+    "14",
+    "26",
+    "16"
+   ],
+   "choices_zh": [
+    "14",
+    "26",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "17 - 1 = 16.",
+   "explain_zh": "17-1=16。",
+   "sign_en": [
+    "14",
+    "26",
+    "16"
+   ],
+   "sign_zh": [
+    "14",
+    "26",
+    "16"
+   ]
+  },
+  {
+   "id": "l3g1_061",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal sleeps in a den for much of the winter?",
+   "q_zh": "哪种动物冬天大部分时间在洞穴里睡觉？",
+   "choices": [
+    "Robin",
+    "Goldfish",
+    "Butterfly",
+    "Black bear"
+   ],
+   "choices_zh": [
+    "知更鸟",
+    "金鱼",
+    "蝴蝶",
+    "黑熊"
+   ],
+   "answer": 3,
+   "explain_en": "Black bears rest in dens through most of the winter.",
+   "explain_zh": "黑熊冬天大部分时间在洞穴里休息。"
+  },
+  {
+   "id": "l3g1_062",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "whistler",
+   "difficulty": "easy",
+   "q_en": "A gondola carries people…",
+   "q_zh": "缆车把人们带到……",
+   "choices": [
+    "Under the sea",
+    "Into space",
+    "Up the mountain"
+   ],
+   "choices_zh": [
+    "海底",
+    "太空",
+    "山上"
+   ],
+   "answer": 2,
+   "explain_en": "A gondola lifts skiers up the mountain.",
+   "explain_zh": "缆车把滑雪的人送上山。",
+   "sign_en": [
+    "Under the sea",
+    "Into space",
+    "Up the mountain"
+   ],
+   "sign_zh": [
+    "海底",
+    "太空",
+    "山上"
+   ]
+  },
+  {
+   "id": "l3g1_063",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "A cougar is a big wild…",
+   "q_zh": "美洲狮是一种大型野生的……",
+   "choices": [
+    "Bird",
+    "Bug",
+    "Cat",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "虫子",
+    "猫科动物",
+    "鱼"
+   ],
+   "answer": 2,
+   "explain_en": "Cougars are big wild cats.",
+   "explain_zh": "美洲狮是大型野生猫科动物。"
+  },
+  {
+   "id": "l3g1_064",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "'Snow' + 'man' makes which word?",
+   "q_zh": "英文里 'snow' 加 'man' 组成哪个英文单词？",
+   "choices": [
+    "mansnow",
+    "snowfall",
+    "snowman"
+   ],
+   "choices_zh": [
+    "mansnow",
+    "snowfall",
+    "snowman"
+   ],
+   "answer": 2,
+   "explain_en": "snow + man = snowman.",
+   "explain_zh": "snow + man = snowman（雪人）。",
+   "sign_en": [
+    "mansnow",
+    "snowfall",
+    "snowman"
+   ],
+   "sign_zh": [
+    "mansnow",
+    "snowfall",
+    "snowman"
+   ]
+  },
+  {
+   "id": "l3g1_065",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What is snow made of?",
+   "q_zh": "雪是用什么做成的？",
+   "choices": [
+    "Frozen water",
+    "Sand",
+    "Flour"
+   ],
+   "choices_zh": [
+    "冻住的水",
+    "沙子",
+    "面粉"
+   ],
+   "answer": 0,
+   "explain_en": "Snow is tiny pieces of frozen water (ice crystals).",
+   "explain_zh": "雪是冻住的水变成的小冰晶。",
+   "sign_en": [
+    "Frozen water",
+    "Sand",
+    "Flour"
+   ],
+   "sign_zh": [
+    "冻住的水",
+    "沙子",
+    "面粉"
+   ]
+  },
+  {
+   "id": "l3g1_066",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 4 snowballs, then 5 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 4 个雪球，又做了 5 个，现在一共几个？",
+   "choices": [
+    "10",
+    "19",
+    "11",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "19",
+    "11",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "4 + 5 = 9.",
+   "explain_zh": "4+5=9。"
+  },
+  {
+   "id": "l3g1_067",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "8 marmots sit on a rock. 3 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 8 只旱獭，雪里又钻出 3 只，一共几只？",
+   "choices": [
+    "13",
+    "8",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "8",
+    "11",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "8 + 3 = 11.",
+   "explain_zh": "8+3=11。"
+  },
+  {
+   "id": "l3g1_068",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Chairlift chairs are numbered 2, 4, 6. What number comes next?",
+   "q_zh": "吊椅的编号是 2、4、6，下一个是几？",
+   "choices": [
+    "6",
+    "13",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "13",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "6 + 2 = 8.",
+   "explain_zh": "6+2=8。",
+   "sign_en": [
+    "6",
+    "13",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "13",
+    "8"
+   ]
+  },
+  {
+   "id": "l3g1_069",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "4 marmots sit on a rock. 3 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 4 只旱獭，雪里又钻出 3 只，一共几只？",
+   "choices": [
+    "2",
+    "7",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "7",
+    "5",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "4 + 3 = 7.",
+   "explain_zh": "4+3=7。"
+  },
+  {
+   "id": "l3g1_070",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What happens to a snowman on a hot, sunny day?",
+   "q_zh": "天气又热又晴的时候，雪人会怎样？",
+   "choices": [
+    "It grows bigger",
+    "It melts",
+    "It sings"
+   ],
+   "choices_zh": [
+    "变得更大",
+    "融化",
+    "唱歌"
+   ],
+   "answer": 1,
+   "explain_en": "Heat from the sun melts snow into water.",
+   "explain_zh": "太阳的热量会把雪化成水。",
+   "sign_en": [
+    "It grows bigger",
+    "It melts",
+    "It sings"
+   ],
+   "sign_zh": [
+    "变得更大",
+    "融化",
+    "唱歌"
+   ]
+  },
+  {
+   "id": "l3g1_071",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The gondola has 13 skiers. 8 get off at the top. How many are still on?",
+   "q_zh": "缆车里有 13 个滑雪的人，到山顶下去了 8 个，还剩几个？",
+   "choices": [
+    "5",
+    "0",
+    "4",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "0",
+    "4",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "13 - 8 = 5.",
+   "explain_zh": "13-8=5。"
+  },
+  {
+   "id": "l3g1_072",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 15 gifts under the tree. 14 are opened. How many are still wrapped?",
+   "q_zh": "圣诞树下有 15 个礼物，拆开了 14 个，还有几个没拆？",
+   "choices": [
+    "6",
+    "3",
+    "0",
+    "1"
+   ],
+   "choices_zh": [
+    "6",
+    "3",
+    "0",
+    "1"
+   ],
+   "answer": 3,
+   "explain_en": "15 - 14 = 1.",
+   "explain_zh": "15-14=1。"
+  },
+  {
+   "id": "l3g1_073",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "9 marmots sit on a rock. 3 more pop out of the snow. How many marmots?",
+   "q_zh": "石头上坐着 9 只旱獭，雪里又钻出 3 只，一共几只？",
+   "choices": [
+    "11",
+    "17",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "11",
+    "17",
+    "12",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "9 + 3 = 12.",
+   "explain_zh": "9+3=12。"
+  },
+  {
+   "id": "l3g1_074",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} makes 7 snowballs, then 4 more. How many snowballs now?",
+   "q_zh": "{name} 先做了 7 个雪球，又做了 4 个，现在一共几个？",
+   "choices": [
+    "11",
+    "13",
+    "21",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "13",
+    "21",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "7 + 4 = 11.",
+   "explain_zh": "7+4=11。"
+  }
+ ]
+}
