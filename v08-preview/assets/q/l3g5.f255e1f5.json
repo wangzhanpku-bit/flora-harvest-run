@@ -1,0 +1,2186 @@
+{
+  "level": 3,
+  "level_name_en": "Whistler Christmas Snow Ride",
+  "level_name_zh": "惠斯勒·圣诞雪山骑行",
+  "grade": 5,
+  "version": 2,
+  "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall)",
+  "questions": [
+    {
+      "id": "l3g5_001",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 36 cm × 27 cm × 20 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 36 厘米、宽 27 厘米、高 20 厘米，体积是多少立方厘米？",
+      "choices": [
+        "992",
+        "19438",
+        "4464",
+        "19440"
+      ],
+      "choices_zh": [
+        "992",
+        "19438",
+        "4464",
+        "19440"
+      ],
+      "answer": 3,
+      "explain_en": "36 × 27 × 20 = 19440.",
+      "explain_zh": "36×27×20=19440。"
+    },
+    {
+      "id": "l3g5_002",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A kids' rental costs $22.50. How many dollars for 3 kids?",
+      "q_zh": "孩子的租板费每人 22.50 加元，3 个孩子一共多少加元？",
+      "choices": [
+        "90.00",
+        "67.50",
+        "66.50"
+      ],
+      "choices_zh": [
+        "90.00",
+        "67.50",
+        "66.50"
+      ],
+      "answer": 1,
+      "explain_en": "22.50 × 3 = 67.50.",
+      "explain_zh": "22.50×3=67.50。",
+      "sign_en": [
+        "90.00",
+        "67.50",
+        "66.50"
+      ],
+      "sign_zh": [
+        "90.00",
+        "67.50",
+        "66.50"
+      ]
+    },
+    {
+      "id": "l3g5_003",
+      "level": 3,
+      "section": "seawall",
+      "subject": "social",
+      "difficulty": "medium",
+      "q_en": "Whistler is on the shared traditional territory of which First Nations?",
+      "q_zh": "惠斯勒位于哪些原住民族共同的传统领地上？",
+      "choices": [
+        "Squamish and Lil'wat Nations",
+        "Mi'kmaq only",
+        "Cree only",
+        "Haida only"
+      ],
+      "choices_zh": [
+        "斯阔米什族和利尔瓦特族",
+        "只有米克马克族",
+        "只有克里族",
+        "只有海达族"
+      ],
+      "answer": 0,
+      "explain_en": "Whistler is on Squamish and Lil'wat territory.",
+      "explain_zh": "惠斯勒在斯阔米什族和利尔瓦特族的领地上。"
+    },
+    {
+      "id": "l3g5_004",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "In BC, the American badger is…",
+      "q_zh": "在 BC 省，美洲獾是……",
+      "choices": [
+        "An endangered species",
+        "Extinct",
+        "Common in every city"
+      ],
+      "choices_zh": [
+        "濒危物种",
+        "已经灭绝",
+        "每个城市都很常见"
+      ],
+      "answer": 0,
+      "explain_en": "BC's badgers are listed as endangered.",
+      "explain_zh": "BC 省的美洲獾被列为濒危物种。",
+      "sign_en": [
+        "An endangered species",
+        "Extinct",
+        "Common in every city"
+      ],
+      "sign_zh": [
+        "濒危物种",
+        "已经灭绝",
+        "每个城市都很常见"
+      ]
+    },
+    {
+      "id": "l3g5_005",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 1/9 of a run, then 2/9 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 1/9，又滑了 2/9，一共滑了几分之几？",
+      "choices": [
+        "2/9",
+        "1/9",
+        "3/18",
+        "3/9"
+      ],
+      "choices_zh": [
+        "2/9",
+        "1/9",
+        "3/18",
+        "3/9"
+      ],
+      "answer": 3,
+      "explain_en": "1/9 + 2/9 = 3/9.",
+      "explain_zh": "1/9+2/9=3/9。"
+    },
+    {
+      "id": "l3g5_006",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 3.5 m deep. Overnight it settled by 0.2 m. How deep is it now?",
+      "q_zh": "积雪原来 3.5 米深，一夜压实了 0.2 米，现在多深？",
+      "choices": [
+        "5.3",
+        "3.4",
+        "2.3",
+        "3.3"
+      ],
+      "choices_zh": [
+        "5.3",
+        "3.4",
+        "2.3",
+        "3.3"
+      ],
+      "answer": 3,
+      "explain_en": "3.5 - 0.2 = 3.3.",
+      "explain_zh": "3.5-0.2=3.3。"
+    },
+    {
+      "id": "l3g5_007",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 6/10 of a run, then 1/10 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 6/10，又滑了 1/10，一共滑了几分之几？",
+      "choices": [
+        "7/20",
+        "7/10",
+        "5/10",
+        "6/10"
+      ],
+      "choices_zh": [
+        "7/20",
+        "7/10",
+        "5/10",
+        "6/10"
+      ],
+      "answer": 1,
+      "explain_en": "6/10 + 1/10 = 7/10.",
+      "explain_zh": "6/10+1/10=7/10。"
+    },
+    {
+      "id": "l3g5_008",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "609 gifts are packed 21 to a box. How many boxes?",
+      "q_zh": "609 个礼物，每箱装 21 个，要几箱？",
+      "choices": [
+        "29",
+        "34",
+        "28",
+        "32"
+      ],
+      "choices_zh": [
+        "29",
+        "34",
+        "28",
+        "32"
+      ],
+      "answer": 0,
+      "explain_en": "609 ÷ 21 = 29.",
+      "explain_zh": "609÷21=29。"
+    },
+    {
+      "id": "l3g5_009",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 1.7 m deep. Overnight it settled by 0.7 m. How deep is it now?",
+      "q_zh": "积雪原来 1.7 米深，一夜压实了 0.7 米，现在多深？",
+      "choices": [
+        "1",
+        "6",
+        "4"
+      ],
+      "choices_zh": [
+        "1",
+        "6",
+        "4"
+      ],
+      "answer": 0,
+      "explain_en": "1.7 - 0.7 = 1.",
+      "explain_zh": "1.7-0.7=1。",
+      "sign_en": [
+        "1",
+        "6",
+        "4"
+      ],
+      "sign_zh": [
+        "1",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "id": "l3g5_010",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "In a food chain, a cougar that eats deer is a…",
+      "q_zh": "在食物链中，吃鹿的美洲狮是……",
+      "choices": [
+        "Decomposer",
+        "Predator",
+        "Producer",
+        "Plant"
+      ],
+      "choices_zh": [
+        "分解者",
+        "捕食者",
+        "生产者",
+        "植物"
+      ],
+      "answer": 1,
+      "explain_en": "Animals that hunt other animals are predators.",
+      "explain_zh": "捕食其他动物的是捕食者。"
+    },
+    {
+      "id": "l3g5_011",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 24 groups with 20 kids each. How many kids?",
+      "q_zh": "滑雪学校有 24 个小组，每组 20 个孩子，一共多少个？",
+      "choices": [
+        "480",
+        "490",
+        "470"
+      ],
+      "choices_zh": [
+        "480",
+        "490",
+        "470"
+      ],
+      "answer": 0,
+      "explain_en": "24 × 20 = 480.",
+      "explain_zh": "24×20=480。",
+      "sign_en": [
+        "480",
+        "490",
+        "470"
+      ],
+      "sign_zh": [
+        "480",
+        "490",
+        "470"
+      ]
+    },
+    {
+      "id": "l3g5_012",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 34 cm × 24 cm × 6 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 34 厘米、宽 24 厘米、高 6 厘米，体积是多少立方厘米？",
+      "choices": [
+        "822",
+        "4896",
+        "4898",
+        "2328"
+      ],
+      "choices_zh": [
+        "822",
+        "4896",
+        "4898",
+        "2328"
+      ],
+      "answer": 1,
+      "explain_en": "34 × 24 × 6 = 4896.",
+      "explain_zh": "34×24×6=4896。"
+    },
+    {
+      "id": "l3g5_013",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Which word is a verb?",
+      "q_zh": "选出英文里的动词：",
+      "choices": [
+        "quickly",
+        "glide",
+        "mountain",
+        "frosty"
+      ],
+      "choices_zh": [
+        "quickly",
+        "glide",
+        "mountain",
+        "frosty"
+      ],
+      "answer": 1,
+      "explain_en": "Glide is an action word.",
+      "explain_zh": "glide（滑行）是动作词。"
+    },
+    {
+      "id": "l3g5_014",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 2/12 of a run, then 7/12 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 2/12，又滑了 7/12，一共滑了几分之几？",
+      "choices": [
+        "5/12",
+        "9/12",
+        "14/12",
+        "9/24"
+      ],
+      "choices_zh": [
+        "5/12",
+        "9/12",
+        "14/12",
+        "9/24"
+      ],
+      "answer": 1,
+      "explain_en": "2/12 + 7/12 = 9/12.",
+      "explain_zh": "2/12+7/12=9/12。"
+    },
+    {
+      "id": "l3g5_015",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "At the top of a tall mountain, the air is usually…",
+      "q_zh": "高山顶上的空气通常……",
+      "choices": [
+        "Hotter and thicker",
+        "Exactly like at sea level",
+        "Made of snow",
+        "Colder and thinner"
+      ],
+      "choices_zh": [
+        "更热、更稠密",
+        "和海边完全一样",
+        "是雪做的",
+        "更冷、更稀薄"
+      ],
+      "answer": 3,
+      "explain_en": "Air gets colder and thinner as you go higher.",
+      "explain_zh": "越往高处，空气越冷越稀薄。"
+    },
+    {
+      "id": "l3g5_016",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 25 groups with 20 kids each. How many kids?",
+      "q_zh": "滑雪学校有 25 个小组，每组 20 个孩子，一共多少个？",
+      "choices": [
+        "490",
+        "510",
+        "500"
+      ],
+      "choices_zh": [
+        "490",
+        "510",
+        "500"
+      ],
+      "answer": 2,
+      "explain_en": "25 × 20 = 500.",
+      "explain_zh": "25×20=500。",
+      "sign_en": [
+        "490",
+        "510",
+        "500"
+      ],
+      "sign_zh": [
+        "490",
+        "510",
+        "500"
+      ]
+    },
+    {
+      "id": "l3g5_017",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Salt is spread on icy roads because salt…",
+      "q_zh": "在结冰的路上撒盐，是因为盐……",
+      "choices": [
+        "Makes ice harder",
+        "Lowers the freezing point of water",
+        "Is warm",
+        "Attracts sunlight"
+      ],
+      "choices_zh": [
+        "让冰更硬",
+        "降低水的冰点",
+        "是热的",
+        "吸引阳光"
+      ],
+      "answer": 1,
+      "explain_en": "Salt water freezes below 0 °C, so ice melts.",
+      "explain_zh": "盐水在低于 0 °C 才结冰，所以冰会化。"
+    },
+    {
+      "id": "l3g5_018",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 9/11 of a run, then 1/11 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 9/11，又滑了 1/11，一共滑了几分之几？",
+      "choices": [
+        "10/11",
+        "9/11",
+        "10/22"
+      ],
+      "choices_zh": [
+        "10/11",
+        "9/11",
+        "10/22"
+      ],
+      "answer": 0,
+      "explain_en": "9/11 + 1/11 = 10/11.",
+      "explain_zh": "9/11+1/11=10/11。",
+      "sign_en": [
+        "10/11",
+        "9/11",
+        "10/22"
+      ],
+      "sign_zh": [
+        "10/11",
+        "9/11",
+        "10/22"
+      ]
+    },
+    {
+      "id": "l3g5_019",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 3 m deep. Overnight it settled by 0.9 m. How deep is it now?",
+      "q_zh": "积雪原来 3 米深，一夜压实了 0.9 米，现在多深？",
+      "choices": [
+        "2.1",
+        "2",
+        "1.9",
+        "4.1"
+      ],
+      "choices_zh": [
+        "2.1",
+        "2",
+        "1.9",
+        "4.1"
+      ],
+      "answer": 0,
+      "explain_en": "3 - 0.9 = 2.1.",
+      "explain_zh": "3-0.9=2.1。"
+    },
+    {
+      "id": "l3g5_020",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A kids' rental costs $9.75. How many dollars for 3 kids?",
+      "q_zh": "孩子的租板费每人 9.75 加元，3 个孩子一共多少加元？",
+      "choices": [
+        "28.25",
+        "39.00",
+        "29.25"
+      ],
+      "choices_zh": [
+        "28.25",
+        "39.00",
+        "29.25"
+      ],
+      "answer": 2,
+      "explain_en": "9.75 × 3 = 29.25.",
+      "explain_zh": "9.75×3=29.25。",
+      "sign_en": [
+        "28.25",
+        "39.00",
+        "29.25"
+      ],
+      "sign_zh": [
+        "28.25",
+        "39.00",
+        "29.25"
+      ]
+    },
+    {
+      "id": "l3g5_021",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 2.4 m deep. Overnight it settled by 0.6 m. How deep is it now?",
+      "q_zh": "积雪原来 2.4 米深，一夜压实了 0.6 米，现在多深？",
+      "choices": [
+        "1.7",
+        "2.3",
+        "1.8",
+        "1.6"
+      ],
+      "choices_zh": [
+        "1.7",
+        "2.3",
+        "1.8",
+        "1.6"
+      ],
+      "answer": 2,
+      "explain_en": "2.4 - 0.6 = 1.8.",
+      "explain_zh": "2.4-0.6=1.8。"
+    },
+    {
+      "id": "l3g5_022",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 35 cm × 12 cm × 10 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 35 厘米、宽 12 厘米、高 10 厘米，体积是多少立方厘米？",
+      "choices": [
+        "430",
+        "1780",
+        "4200"
+      ],
+      "choices_zh": [
+        "430",
+        "1780",
+        "4200"
+      ],
+      "answer": 2,
+      "explain_en": "35 × 12 × 10 = 4200.",
+      "explain_zh": "35×12×10=4200。",
+      "sign_en": [
+        "430",
+        "1780",
+        "4200"
+      ],
+      "sign_zh": [
+        "430",
+        "1780",
+        "4200"
+      ]
+    },
+    {
+      "id": "l3g5_023",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "A skier speeding up downhill changes which energy into which?",
+      "q_zh": "滑雪者下坡加速时，能量怎样转化？",
+      "choices": [
+        "Kinetic to nuclear",
+        "Gravitational potential to kinetic",
+        "Chemical to magnetic"
+      ],
+      "choices_zh": [
+        "动能变成核能",
+        "重力势能变成动能",
+        "化学能变成磁能"
+      ],
+      "answer": 1,
+      "explain_en": "Height (potential energy) becomes speed (kinetic energy).",
+      "explain_zh": "高度（势能）变成速度（动能）。",
+      "sign_en": [
+        "Kinetic to nuclear",
+        "Gravitational potential to kinetic",
+        "Chemical to magnetic"
+      ],
+      "sign_zh": [
+        "动能变成核能",
+        "重力势能变成动能",
+        "化学能变成磁能"
+      ]
+    },
+    {
+      "id": "l3g5_024",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 17 groups with 11 kids each. How many kids?",
+      "q_zh": "滑雪学校有 17 个小组，每组 11 个孩子，一共多少个？",
+      "choices": [
+        "177",
+        "187",
+        "197"
+      ],
+      "choices_zh": [
+        "177",
+        "187",
+        "197"
+      ],
+      "answer": 1,
+      "explain_en": "17 × 11 = 187.",
+      "explain_zh": "17×11=187。",
+      "sign_en": [
+        "177",
+        "187",
+        "197"
+      ],
+      "sign_zh": [
+        "177",
+        "187",
+        "197"
+      ]
+    },
+    {
+      "id": "l3g5_025",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 31 groups with 21 kids each. How many kids?",
+      "q_zh": "滑雪学校有 31 个小组，每组 21 个孩子，一共多少个？",
+      "choices": [
+        "661",
+        "651",
+        "641",
+        "646"
+      ],
+      "choices_zh": [
+        "661",
+        "651",
+        "641",
+        "646"
+      ],
+      "answer": 1,
+      "explain_en": "31 × 21 = 651.",
+      "explain_zh": "31×21=651。"
+    },
+    {
+      "id": "l3g5_026",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 1.6 m deep. Overnight it settled by 0.4 m. How deep is it now?",
+      "q_zh": "积雪原来 1.6 米深，一夜压实了 0.4 米，现在多深？",
+      "choices": [
+        "1.1",
+        "1.2",
+        "1.7"
+      ],
+      "choices_zh": [
+        "1.1",
+        "1.2",
+        "1.7"
+      ],
+      "answer": 1,
+      "explain_en": "1.6 - 0.4 = 1.2.",
+      "explain_zh": "1.6-0.4=1.2。",
+      "sign_en": [
+        "1.1",
+        "1.2",
+        "1.7"
+      ],
+      "sign_zh": [
+        "1.1",
+        "1.2",
+        "1.7"
+      ]
+    },
+    {
+      "id": "l3g5_027",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "medium",
+      "q_en": "The Peak 2 Peak Gondola travels over…",
+      "q_zh": "Peak 2 Peak 缆车从什么上方经过？",
+      "choices": [
+        "The Pacific Ocean",
+        "A valley between two mountains",
+        "A desert",
+        "A volcano crater"
+      ],
+      "choices_zh": [
+        "太平洋",
+        "两座山之间的山谷",
+        "沙漠",
+        "火山口"
+      ],
+      "answer": 1,
+      "explain_en": "It crosses the valley between Whistler and Blackcomb.",
+      "explain_zh": "它横跨惠斯勒山和黑梳山之间的山谷。"
+    },
+    {
+      "id": "l3g5_028",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Why can you get a sunburn on snow even when it is cold?",
+      "q_zh": "为什么天冷时在雪地上也会晒伤？",
+      "choices": [
+        "Snow reflects sunlight back up at you",
+        "Cold air makes extra sunlight",
+        "Snow is hot",
+        "Snow pulls in the Moon's light"
+      ],
+      "choices_zh": [
+        "雪把阳光反射到你身上",
+        "冷空气会制造更多阳光",
+        "雪是热的",
+        "雪会吸来月光"
+      ],
+      "answer": 0,
+      "explain_en": "Snow reflects a lot of the sun's UV light.",
+      "explain_zh": "雪会反射大量紫外线。"
+    },
+    {
+      "id": "l3g5_029",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 23 groups with 13 kids each. How many kids?",
+      "q_zh": "滑雪学校有 23 个小组，每组 13 个孩子，一共多少个？",
+      "choices": [
+        "309",
+        "299",
+        "289",
+        "296"
+      ],
+      "choices_zh": [
+        "309",
+        "299",
+        "289",
+        "296"
+      ],
+      "answer": 1,
+      "explain_en": "23 × 13 = 299.",
+      "explain_zh": "23×13=299。"
+    },
+    {
+      "id": "l3g5_030",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 19 cm × 25 cm × 15 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 19 厘米、宽 25 厘米、高 15 厘米，体积是多少立方厘米？",
+      "choices": [
+        "490",
+        "7125",
+        "2270"
+      ],
+      "choices_zh": [
+        "490",
+        "7125",
+        "2270"
+      ],
+      "answer": 1,
+      "explain_en": "19 × 25 × 15 = 7125.",
+      "explain_zh": "19×25×15=7125。",
+      "sign_en": [
+        "490",
+        "7125",
+        "2270"
+      ],
+      "sign_zh": [
+        "490",
+        "7125",
+        "2270"
+      ]
+    },
+    {
+      "id": "l3g5_031",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 23 cm × 19 cm × 10 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 23 厘米、宽 19 厘米、高 10 厘米，体积是多少立方厘米？",
+      "choices": [
+        "4370",
+        "447",
+        "1714",
+        "4367"
+      ],
+      "choices_zh": [
+        "4370",
+        "447",
+        "1714",
+        "4367"
+      ],
+      "answer": 0,
+      "explain_en": "23 × 19 × 10 = 4370.",
+      "explain_zh": "23×19×10=4370。"
+    },
+    {
+      "id": "l3g5_032",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "What does 'descend' mean?",
+      "q_zh": "'descend' 是什么意思？",
+      "choices": [
+        "Go up",
+        "Stay still",
+        "Go down"
+      ],
+      "choices_zh": [
+        "往上走",
+        "不动",
+        "往下走"
+      ],
+      "answer": 2,
+      "explain_en": "To descend is to go down.",
+      "explain_zh": "descend 就是往下。",
+      "sign_en": [
+        "Go up",
+        "Stay still",
+        "Go down"
+      ],
+      "sign_zh": [
+        "往上走",
+        "不动",
+        "往下走"
+      ]
+    },
+    {
+      "id": "l3g5_033",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "240 gifts are packed 15 to a box. How many boxes?",
+      "q_zh": "240 个礼物，每箱装 15 个，要几箱？",
+      "choices": [
+        "26",
+        "21",
+        "16",
+        "17"
+      ],
+      "choices_zh": [
+        "26",
+        "21",
+        "16",
+        "17"
+      ],
+      "answer": 2,
+      "explain_en": "240 ÷ 15 = 16.",
+      "explain_zh": "240÷15=16。"
+    },
+    {
+      "id": "l3g5_034",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 3/6 of a run, then 2/6 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 3/6，又滑了 2/6，一共滑了几分之几？",
+      "choices": [
+        "5/6",
+        "6/6",
+        "5/12"
+      ],
+      "choices_zh": [
+        "5/6",
+        "6/6",
+        "5/12"
+      ],
+      "answer": 0,
+      "explain_en": "3/6 + 2/6 = 5/6.",
+      "explain_zh": "3/6+2/6=5/6。",
+      "sign_en": [
+        "5/6",
+        "6/6",
+        "5/12"
+      ],
+      "sign_zh": [
+        "5/6",
+        "6/6",
+        "5/12"
+      ]
+    },
+    {
+      "id": "l3g5_035",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "The shortest day of the year in Canada is around…",
+      "q_zh": "加拿大一年中白天最短的一天大约是……",
+      "choices": [
+        "March 1",
+        "June 21",
+        "September 30",
+        "December 21"
+      ],
+      "choices_zh": [
+        "3 月 1 日",
+        "6 月 21 日",
+        "9 月 30 日",
+        "12 月 21 日"
+      ],
+      "answer": 3,
+      "explain_en": "The winter solstice is around December 21.",
+      "explain_zh": "冬至大约在 12 月 21 日。"
+    },
+    {
+      "id": "l3g5_036",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 4/10 of a run, then 2/10 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 4/10，又滑了 2/10，一共滑了几分之几？",
+      "choices": [
+        "2/10",
+        "8/10",
+        "6/10",
+        "6/20"
+      ],
+      "choices_zh": [
+        "2/10",
+        "8/10",
+        "6/10",
+        "6/20"
+      ],
+      "answer": 2,
+      "explain_en": "4/10 + 2/10 = 6/10.",
+      "explain_zh": "4/10+2/10=6/10。"
+    },
+    {
+      "id": "l3g5_037",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Which is a simile?",
+      "q_zh": "选出英文里的比喻句（明喻）：",
+      "choices": [
+        "The snow was as soft as a pillow.",
+        "Snow fell.",
+        "The snow is white."
+      ],
+      "choices_zh": [
+        "The snow was as soft as a pillow.",
+        "Snow fell.",
+        "The snow is white."
+      ],
+      "answer": 0,
+      "explain_en": "A simile compares using 'like' or 'as'.",
+      "explain_zh": "明喻用 like 或 as 来比较。",
+      "sign_en": [
+        "The snow was as soft as a pillow.",
+        "Snow fell.",
+        "The snow is white."
+      ],
+      "sign_zh": [
+        "The snow was as soft as a pillow.",
+        "Snow fell.",
+        "The snow is white."
+      ]
+    },
+    {
+      "id": "l3g5_038",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "Plants are called producers because they…",
+      "q_zh": "植物被称为生产者，是因为它们……",
+      "choices": [
+        "Make their own food from sunlight",
+        "Produce snow",
+        "Eat animals"
+      ],
+      "choices_zh": [
+        "用阳光自己制造食物",
+        "制造雪",
+        "吃动物"
+      ],
+      "answer": 0,
+      "explain_en": "Plants make food by photosynthesis.",
+      "explain_zh": "植物通过光合作用制造食物。",
+      "sign_en": [
+        "Make their own food from sunlight",
+        "Produce snow",
+        "Eat animals"
+      ],
+      "sign_zh": [
+        "用阳光自己制造食物",
+        "制造雪",
+        "吃动物"
+      ]
+    },
+    {
+      "id": "l3g5_039",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "Owls can find mice under the snow mainly by…",
+      "q_zh": "猫头鹰主要靠什么找到雪下的老鼠？",
+      "choices": [
+        "Excellent hearing",
+        "Smelling flowers",
+        "X-ray vision"
+      ],
+      "choices_zh": [
+        "极好的听力",
+        "闻花香",
+        "X 光眼"
+      ],
+      "answer": 0,
+      "explain_en": "Owls such as the great grey owl hunt by sound.",
+      "explain_zh": "乌林鸮等猫头鹰靠听声音捕猎。",
+      "sign_en": [
+        "Excellent hearing",
+        "Smelling flowers",
+        "X-ray vision"
+      ],
+      "sign_zh": [
+        "极好的听力",
+        "闻花香",
+        "X 光眼"
+      ]
+    },
+    {
+      "id": "l3g5_040",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 13 cm × 12 cm × 8 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 13 厘米、宽 12 厘米、高 8 厘米，体积是多少立方厘米？",
+      "choices": [
+        "164",
+        "712",
+        "1251",
+        "1248"
+      ],
+      "choices_zh": [
+        "164",
+        "712",
+        "1251",
+        "1248"
+      ],
+      "answer": 3,
+      "explain_en": "13 × 12 × 8 = 1248.",
+      "explain_zh": "13×12×8=1248。"
+    },
+    {
+      "id": "l3g5_041",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 3/10 of a run, then 5/10 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 3/10，又滑了 5/10，一共滑了几分之几？",
+      "choices": [
+        "8/10",
+        "8/20",
+        "15/10"
+      ],
+      "choices_zh": [
+        "8/10",
+        "8/20",
+        "15/10"
+      ],
+      "answer": 0,
+      "explain_en": "3/10 + 5/10 = 8/10.",
+      "explain_zh": "3/10+5/10=8/10。",
+      "sign_en": [
+        "8/10",
+        "8/20",
+        "15/10"
+      ],
+      "sign_zh": [
+        "8/10",
+        "8/20",
+        "15/10"
+      ]
+    },
+    {
+      "id": "l3g5_042",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "whistler",
+      "difficulty": "medium",
+      "q_en": "Whistler Blackcomb is in which mountain range?",
+      "q_zh": "惠斯勒黑梳山属于哪条山脉？",
+      "choices": [
+        "Rocky Mountains",
+        "Coast Mountains",
+        "Himalayas"
+      ],
+      "choices_zh": [
+        "落基山脉",
+        "海岸山脉",
+        "喜马拉雅山脉"
+      ],
+      "answer": 1,
+      "explain_en": "Whistler is in BC's Coast Mountains.",
+      "explain_zh": "惠斯勒位于 BC 省的海岸山脉。",
+      "sign_en": [
+        "Rocky Mountains",
+        "Coast Mountains",
+        "Himalayas"
+      ],
+      "sign_zh": [
+        "落基山脉",
+        "海岸山脉",
+        "喜马拉雅山脉"
+      ]
+    },
+    {
+      "id": "l3g5_043",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "651 gifts are packed 21 to a box. How many boxes?",
+      "q_zh": "651 个礼物，每箱装 21 个，要几箱？",
+      "choices": [
+        "31",
+        "36",
+        "29",
+        "30"
+      ],
+      "choices_zh": [
+        "31",
+        "36",
+        "29",
+        "30"
+      ],
+      "answer": 0,
+      "explain_en": "651 ÷ 21 = 31.",
+      "explain_zh": "651÷21=31。"
+    },
+    {
+      "id": "l3g5_044",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 1/5 of a run, then 1/5 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 1/5，又滑了 1/5，一共滑了几分之几？",
+      "choices": [
+        "2/5",
+        "2/10",
+        "4/5",
+        "1/5"
+      ],
+      "choices_zh": [
+        "2/5",
+        "2/10",
+        "4/5",
+        "1/5"
+      ],
+      "answer": 0,
+      "explain_en": "1/5 + 1/5 = 2/5.",
+      "explain_zh": "1/5+1/5=2/5。"
+    },
+    {
+      "id": "l3g5_045",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 2.8 m deep. Overnight it settled by 0.9 m. How deep is it now?",
+      "q_zh": "积雪原来 2.8 米深，一夜压实了 0.9 米，现在多深？",
+      "choices": [
+        "1.9",
+        "2.9",
+        "1.8",
+        "2"
+      ],
+      "choices_zh": [
+        "1.9",
+        "2.9",
+        "1.8",
+        "2"
+      ],
+      "answer": 0,
+      "explain_en": "2.8 - 0.9 = 1.9.",
+      "explain_zh": "2.8-0.9=1.9。"
+    },
+    {
+      "id": "l3g5_046",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Earth's seasons are caused mainly by…",
+      "q_zh": "地球四季的主要原因是……",
+      "choices": [
+        "Earth's distance from the Moon",
+        "Wind",
+        "The tilt of Earth's axis",
+        "Ocean waves"
+      ],
+      "choices_zh": [
+        "地球和月亮的距离",
+        "风",
+        "地轴倾斜",
+        "海浪"
+      ],
+      "answer": 2,
+      "explain_en": "The tilted axis changes how directly sunlight hits us.",
+      "explain_zh": "地轴倾斜改变了阳光照射的角度。"
+    },
+    {
+      "id": "l3g5_047",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Which sentence is punctuated correctly?",
+      "q_zh": "选出英文里标点用得对的句子：",
+      "choices": [
+        "We rode the gondola and then we skied,",
+        "We rode the gondola, and then we skied.",
+        "we rode the gondola and then, we skied",
+        "We rode, the gondola and then we skied."
+      ],
+      "choices_zh": [
+        "We rode the gondola and then we skied,",
+        "We rode the gondola, and then we skied.",
+        "we rode the gondola and then, we skied",
+        "We rode, the gondola and then we skied."
+      ],
+      "answer": 1,
+      "explain_en": "Capital letter, comma before 'and', period at the end.",
+      "explain_zh": "首字母大写，and 前加逗号，句末用句号。"
+    },
+    {
+      "id": "l3g5_048",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 15 groups with 13 kids each. How many kids?",
+      "q_zh": "滑雪学校有 15 个小组，每组 13 个孩子，一共多少个？",
+      "choices": [
+        "198",
+        "205",
+        "195",
+        "185"
+      ],
+      "choices_zh": [
+        "198",
+        "205",
+        "195",
+        "185"
+      ],
+      "answer": 2,
+      "explain_en": "15 × 13 = 195.",
+      "explain_zh": "15×13=195。"
+    },
+    {
+      "id": "l3g5_049",
+      "level": 3,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "medium",
+      "q_en": "Before going into the backcountry, skiers check the…",
+      "q_zh": "去野外滑雪前要先查看……",
+      "choices": [
+        "Bus timetable",
+        "Lunch menu",
+        "TV guide",
+        "Avalanche forecast"
+      ],
+      "choices_zh": [
+        "公交时刻表",
+        "午餐菜单",
+        "电视节目单",
+        "雪崩预报"
+      ],
+      "answer": 3,
+      "explain_en": "Avalanche forecasts show the danger level.",
+      "explain_zh": "雪崩预报会告诉你危险等级。"
+    },
+    {
+      "id": "l3g5_050",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 15 groups with 16 kids each. How many kids?",
+      "q_zh": "滑雪学校有 15 个小组，每组 16 个孩子，一共多少个？",
+      "choices": [
+        "238",
+        "240",
+        "230",
+        "250"
+      ],
+      "choices_zh": [
+        "238",
+        "240",
+        "230",
+        "250"
+      ],
+      "answer": 1,
+      "explain_en": "15 × 16 = 240.",
+      "explain_zh": "15×16=240。"
+    },
+    {
+      "id": "l3g5_051",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "396 gifts are packed 22 to a box. How many boxes?",
+      "q_zh": "396 个礼物，每箱装 22 个，要几箱？",
+      "choices": [
+        "18",
+        "13",
+        "19"
+      ],
+      "choices_zh": [
+        "18",
+        "13",
+        "19"
+      ],
+      "answer": 0,
+      "explain_en": "396 ÷ 22 = 18.",
+      "explain_zh": "396÷22=18。",
+      "sign_en": [
+        "18",
+        "13",
+        "19"
+      ],
+      "sign_zh": [
+        "18",
+        "13",
+        "19"
+      ]
+    },
+    {
+      "id": "l3g5_052",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} skis 4/12 of a run, then 7/12 more. What fraction of the run is done?",
+      "q_zh": "{name} 先滑了雪道的 4/12，又滑了 7/12，一共滑了几分之几？",
+      "choices": [
+        "11/24",
+        "11/12",
+        "3/12",
+        "28/12"
+      ],
+      "choices_zh": [
+        "11/24",
+        "11/12",
+        "3/12",
+        "28/12"
+      ],
+      "answer": 1,
+      "explain_en": "4/12 + 7/12 = 11/12.",
+      "explain_zh": "4/12+7/12=11/12。"
+    },
+    {
+      "id": "l3g5_053",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "medium",
+      "q_en": "Why do evergreen trees keep their needles in winter?",
+      "q_zh": "常绿树为什么冬天也不掉针叶？",
+      "choices": [
+        "They are made of plastic",
+        "They have no roots",
+        "Waxy needles lose very little water",
+        "Snow glues them on"
+      ],
+      "choices_zh": [
+        "它们是塑料做的",
+        "它们没有根",
+        "针叶有蜡质，很少失水",
+        "雪把针叶粘住了"
+      ],
+      "answer": 2,
+      "explain_en": "A waxy coat helps needles save water.",
+      "explain_zh": "蜡质外层帮针叶保住水分。"
+    },
+    {
+      "id": "l3g5_054",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "792 gifts are packed 22 to a box. How many boxes?",
+      "q_zh": "792 个礼物，每箱装 22 个，要几箱？",
+      "choices": [
+        "36",
+        "41",
+        "38"
+      ],
+      "choices_zh": [
+        "36",
+        "41",
+        "38"
+      ],
+      "answer": 0,
+      "explain_en": "792 ÷ 22 = 36.",
+      "explain_zh": "792÷22=36。",
+      "sign_en": [
+        "36",
+        "41",
+        "38"
+      ],
+      "sign_zh": [
+        "36",
+        "41",
+        "38"
+      ]
+    },
+    {
+      "id": "l3g5_055",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "When water freezes into ice, its volume…",
+      "q_zh": "水结成冰时，体积会……",
+      "choices": [
+        "Gets bigger",
+        "Gets smaller",
+        "Stays exactly the same"
+      ],
+      "choices_zh": [
+        "变大",
+        "变小",
+        "完全不变"
+      ],
+      "answer": 0,
+      "explain_en": "Water expands about 9% when it freezes.",
+      "explain_zh": "水结冰时体积大约膨胀 9%。",
+      "sign_en": [
+        "Gets bigger",
+        "Gets smaller",
+        "Stays exactly the same"
+      ],
+      "sign_zh": [
+        "变大",
+        "变小",
+        "完全不变"
+      ]
+    },
+    {
+      "id": "l3g5_056",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 4 m deep. Overnight it settled by 0.4 m. How deep is it now?",
+      "q_zh": "积雪原来 4 米深，一夜压实了 0.4 米，现在多深？",
+      "choices": [
+        "3.6",
+        "3.4",
+        "1.6"
+      ],
+      "choices_zh": [
+        "3.6",
+        "3.4",
+        "1.6"
+      ],
+      "answer": 0,
+      "explain_en": "4 - 0.4 = 3.6.",
+      "explain_zh": "4-0.4=3.6。",
+      "sign_en": [
+        "3.6",
+        "3.4",
+        "1.6"
+      ],
+      "sign_zh": [
+        "3.6",
+        "3.4",
+        "1.6"
+      ]
+    },
+    {
+      "id": "l3g5_057",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 25 groups with 23 kids each. How many kids?",
+      "q_zh": "滑雪学校有 25 个小组，每组 23 个孩子，一共多少个？",
+      "choices": [
+        "565",
+        "580",
+        "585",
+        "575"
+      ],
+      "choices_zh": [
+        "565",
+        "580",
+        "585",
+        "575"
+      ],
+      "answer": 3,
+      "explain_en": "25 × 23 = 575.",
+      "explain_zh": "25×23=575。"
+    },
+    {
+      "id": "l3g5_058",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Which force slows a sled on flat snow?",
+      "q_zh": "在平地雪上，什么力让雪橇慢下来？",
+      "choices": [
+        "Friction",
+        "Buoyancy",
+        "Electric force",
+        "Magnetism"
+      ],
+      "choices_zh": [
+        "摩擦力",
+        "浮力",
+        "电力",
+        "磁力"
+      ],
+      "answer": 0,
+      "explain_en": "Friction between sled and snow slows it.",
+      "explain_zh": "雪橇和雪之间的摩擦力让它变慢。"
+    },
+    {
+      "id": "l3g5_059",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "441 gifts are packed 21 to a box. How many boxes?",
+      "q_zh": "441 个礼物，每箱装 21 个，要几箱？",
+      "choices": [
+        "31",
+        "22",
+        "21"
+      ],
+      "choices_zh": [
+        "31",
+        "22",
+        "21"
+      ],
+      "answer": 2,
+      "explain_en": "441 ÷ 21 = 21.",
+      "explain_zh": "441÷21=21。",
+      "sign_en": [
+        "31",
+        "22",
+        "21"
+      ],
+      "sign_zh": [
+        "31",
+        "22",
+        "21"
+      ]
+    },
+    {
+      "id": "l3g5_060",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "660 gifts are packed 22 to a box. How many boxes?",
+      "q_zh": "660 个礼物，每箱装 22 个，要几箱？",
+      "choices": [
+        "32",
+        "30",
+        "20",
+        "35"
+      ],
+      "choices_zh": [
+        "32",
+        "30",
+        "20",
+        "35"
+      ],
+      "answer": 1,
+      "explain_en": "660 ÷ 22 = 30.",
+      "explain_zh": "660÷22=30。"
+    },
+    {
+      "id": "l3g5_061",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 1.7 m deep. Overnight it settled by 1.2 m. How deep is it now?",
+      "q_zh": "积雪原来 1.7 米深，一夜压实了 1.2 米，现在多深？",
+      "choices": [
+        "0.4",
+        "2.5",
+        "0.7",
+        "0.5"
+      ],
+      "choices_zh": [
+        "0.4",
+        "2.5",
+        "0.7",
+        "0.5"
+      ],
+      "answer": 3,
+      "explain_en": "1.7 - 1.2 = 0.5.",
+      "explain_zh": "1.7-1.2=0.5。"
+    },
+    {
+      "id": "l3g5_062",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Ski school has 34 groups with 24 kids each. How many kids?",
+      "q_zh": "滑雪学校有 34 个小组，每组 24 个孩子，一共多少个？",
+      "choices": [
+        "814",
+        "806",
+        "816",
+        "826"
+      ],
+      "choices_zh": [
+        "814",
+        "806",
+        "816",
+        "826"
+      ],
+      "answer": 2,
+      "explain_en": "34 × 24 = 816.",
+      "explain_zh": "34×24=816。"
+    },
+    {
+      "id": "l3g5_063",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 3.8 m deep. Overnight it settled by 1.2 m. How deep is it now?",
+      "q_zh": "积雪原来 3.8 米深，一夜压实了 1.2 米，现在多深？",
+      "choices": [
+        "2.4",
+        "4.6",
+        "0.6",
+        "2.6"
+      ],
+      "choices_zh": [
+        "2.4",
+        "4.6",
+        "0.6",
+        "2.6"
+      ],
+      "answer": 3,
+      "explain_en": "3.8 - 1.2 = 2.6.",
+      "explain_zh": "3.8-1.2=2.6。"
+    },
+    {
+      "id": "l3g5_064",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "Black bears resting in winter dens…",
+      "q_zh": "在冬季洞穴里休息的黑熊……",
+      "choices": [
+        "Eat every hour",
+        "Slow their heart rate and live on stored fat",
+        "Run all night",
+        "Grow gills"
+      ],
+      "choices_zh": [
+        "每小时吃一次",
+        "心跳变慢，靠储存的脂肪生活",
+        "整夜奔跑",
+        "长出鳃"
+      ],
+      "answer": 1,
+      "explain_en": "Bears slow down and use their fat stores.",
+      "explain_zh": "黑熊身体变慢，靠脂肪过冬。"
+    },
+    {
+      "id": "l3g5_065",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "195 gifts are packed 13 to a box. How many boxes?",
+      "q_zh": "195 个礼物，每箱装 13 个，要几箱？",
+      "choices": [
+        "15",
+        "5",
+        "10",
+        "17"
+      ],
+      "choices_zh": [
+        "15",
+        "5",
+        "10",
+        "17"
+      ],
+      "answer": 0,
+      "explain_en": "195 ÷ 13 = 15.",
+      "explain_zh": "195÷13=15。"
+    },
+    {
+      "id": "l3g5_066",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Why can snow over a pika's rocky shelter reduce heat loss?",
+      "q_zh": "为什么鼠兔岩石藏身处上方的积雪能减少热量散失？",
+      "choices": [
+        "Snow traps air and insulates",
+        "Snow is hot",
+        "Snow makes light",
+        "Snow is a metal"
+      ],
+      "choices_zh": [
+        "雪里藏着空气，能隔热保温",
+        "雪是热的",
+        "雪会发光",
+        "雪是金属"
+      ],
+      "answer": 0,
+      "explain_en": "Air trapped in snow slows heat loss.",
+      "explain_zh": "雪里的空气减慢热量散失。"
+    },
+    {
+      "id": "l3g5_067",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "safety",
+      "difficulty": "medium",
+      "q_en": "What is frostbite?",
+      "q_zh": "什么是冻伤？",
+      "choices": [
+        "A bear bite",
+        "Skin and tissue freezing in the cold",
+        "A snowball fight"
+      ],
+      "choices_zh": [
+        "被熊咬",
+        "皮肤和组织在严寒中被冻坏",
+        "打雪仗"
+      ],
+      "answer": 1,
+      "explain_en": "Frostbite is freezing of skin and tissue.",
+      "explain_zh": "冻伤是皮肤和组织被冻坏。",
+      "sign_en": [
+        "A bear bite",
+        "Skin and tissue freezing in the cold",
+        "A snowball fight"
+      ],
+      "sign_zh": [
+        "被熊咬",
+        "皮肤和组织在严寒中被冻坏",
+        "打雪仗"
+      ]
+    },
+    {
+      "id": "l3g5_068",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "748 gifts are packed 22 to a box. How many boxes?",
+      "q_zh": "748 个礼物，每箱装 22 个，要几箱？",
+      "choices": [
+        "34",
+        "35",
+        "39",
+        "32"
+      ],
+      "choices_zh": [
+        "34",
+        "35",
+        "39",
+        "32"
+      ],
+      "answer": 0,
+      "explain_en": "748 ÷ 22 = 34.",
+      "explain_zh": "748÷22=34。"
+    },
+    {
+      "id": "l3g5_069",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The snow was 1.6 m deep. Overnight it settled by 0.8 m. How deep is it now?",
+      "q_zh": "积雪原来 1.6 米深，一夜压实了 0.8 米，现在多深？",
+      "choices": [
+        "2.8",
+        "1.8",
+        "0.8",
+        "1"
+      ],
+      "choices_zh": [
+        "2.8",
+        "1.8",
+        "0.8",
+        "1"
+      ],
+      "answer": 2,
+      "explain_en": "1.6 - 0.8 = 0.8.",
+      "explain_zh": "1.6-0.8=0.8。"
+    },
+    {
+      "id": "l3g5_070",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "christmas",
+      "difficulty": "medium",
+      "q_en": "In Canada, Boxing Day is on…",
+      "q_zh": "在加拿大，节礼日（Boxing Day）是哪天？",
+      "choices": [
+        "December 24",
+        "December 26",
+        "January 1"
+      ],
+      "choices_zh": [
+        "12 月 24 日",
+        "12 月 26 日",
+        "1 月 1 日"
+      ],
+      "answer": 1,
+      "explain_en": "Boxing Day is the day after Christmas.",
+      "explain_zh": "节礼日是圣诞节后一天。",
+      "sign_en": [
+        "December 24",
+        "December 26",
+        "January 1"
+      ],
+      "sign_zh": [
+        "12 月 24 日",
+        "12 月 26 日",
+        "1 月 1 日"
+      ]
+    },
+    {
+      "id": "l3g5_071",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow block is 32 cm × 24 cm × 20 cm. What is its volume in cm³?",
+      "q_zh": "一块雪砖长 32 厘米、宽 24 厘米、高 20 厘米，体积是多少立方厘米？",
+      "choices": [
+        "15361",
+        "788",
+        "3776",
+        "15360"
+      ],
+      "choices_zh": [
+        "15361",
+        "788",
+        "3776",
+        "15360"
+      ],
+      "answer": 3,
+      "explain_en": "32 × 24 × 20 = 15360.",
+      "explain_zh": "32×24×20=15360。"
+    },
+    {
+      "id": "l3g5_072",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "312 gifts are packed 13 to a box. How many boxes?",
+      "q_zh": "312 个礼物，每箱装 13 个，要几箱？",
+      "choices": [
+        "14",
+        "19",
+        "27",
+        "24"
+      ],
+      "choices_zh": [
+        "14",
+        "19",
+        "27",
+        "24"
+      ],
+      "answer": 3,
+      "explain_en": "312 ÷ 13 = 24.",
+      "explain_zh": "312÷13=24。"
+    },
+    {
+      "id": "l3g5_073",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "Which is a winter adaptation of the snowshoe hare?",
+      "q_zh": "下面哪个是雪鞋兔适应冬天的特征？",
+      "choices": [
+        "Big furry feet that spread its weight",
+        "Gills",
+        "A hard shell",
+        "Wings"
+      ],
+      "choices_zh": [
+        "毛茸茸的大脚，分散体重",
+        "鳃",
+        "硬壳",
+        "翅膀"
+      ],
+      "answer": 0,
+      "explain_en": "Big feet act like snowshoes.",
+      "explain_zh": "大脚就像雪鞋，不容易陷进雪里。"
+    },
+    {
+      "id": "l3g5_074",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "800 gifts are packed 20 to a box. How many boxes?",
+      "q_zh": "800 个礼物，每箱装 20 个，要几箱？",
+      "choices": [
+        "41",
+        "30",
+        "40",
+        "42"
+      ],
+      "choices_zh": [
+        "41",
+        "30",
+        "40",
+        "42"
+      ],
+      "answer": 2,
+      "explain_en": "800 ÷ 20 = 40.",
+      "explain_zh": "800÷20=40。"
+    },
+    {
+      "subject": "math",
+      "q_en": "Using approximate elevations of 2440 m for Blackcomb Peak and 2284 m for Horstman Hut, how many metres higher is the peak?",
+      "q_zh": "黑梳峰海拔约 2440 米，霍斯特曼小屋约 2284 米，山峰约高出几米？",
+      "choices": [
+        "146",
+        "256",
+        "166",
+        "156"
+      ],
+      "choices_zh": [
+        "146",
+        "256",
+        "166",
+        "156"
+      ],
+      "answer": 3,
+      "explain_en": "2440 - 2284 = 156.",
+      "explain_zh": "根据题意计算：2440 - 2284 = 156。",
+      "id": "l3g5_f01",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Of 80 summit postcards at the hut, 25% show the inukshuk. How many show it?",
+      "q_zh": "小屋里的 80 张山顶明信片中，25% 画着石头人，共几张？",
+      "choices": [
+        "20",
+        "16",
+        "60",
+        "25"
+      ],
+      "choices_zh": [
+        "20",
+        "16",
+        "60",
+        "25"
+      ],
+      "answer": 0,
+      "explain_en": "80 ÷ 4 = 20.",
+      "explain_zh": "根据题意计算：80 ÷ 4 = 20。",
+      "id": "l3g5_f02",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Flora walks 3/4 km along a marked snowy path and then 1/8 km more. How many kilometres does she walk?",
+      "q_zh": "Flora 沿有标记的雪路走了 3/4 千米，又走了 1/8 千米，一共几千米？",
+      "choices": [
+        "5/8",
+        "1",
+        "7/8",
+        "1/2"
+      ],
+      "choices_zh": [
+        "5/8",
+        "1",
+        "7/8",
+        "1/2"
+      ],
+      "answer": 2,
+      "explain_en": "3/4 + 1/8 = 7/8.",
+      "explain_zh": "根据题意计算：3/4 + 1/8 = 7/8。",
+      "id": "l3g5_f03",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "A rectangular snow-sampling box near the summit is 6 cm by 5 cm by 4 cm. What is its volume in cm³?",
+      "q_zh": "山顶附近一个长方体积雪取样盒长 6 厘米、宽 5 厘米、高 4 厘米，体积几立方厘米？",
+      "choices": [
+        "30",
+        "150",
+        "120",
+        "60"
+      ],
+      "choices_zh": [
+        "30",
+        "150",
+        "120",
+        "60"
+      ],
+      "answer": 2,
+      "explain_en": "6 × 5 × 4 = 120.",
+      "explain_zh": "根据题意计算：6 × 5 × 4 = 120。",
+      "id": "l3g5_f04",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "At Horstman Hut, 4 soups cost $3.25 each. How many dollars do they cost altogether?",
+      "q_zh": "霍斯特曼小屋里每份汤 3.25 元，4 份汤一共几元？",
+      "choices": [
+        "16",
+        "12",
+        "14",
+        "13"
+      ],
+      "choices_zh": [
+        "16",
+        "12",
+        "14",
+        "13"
+      ],
+      "answer": 3,
+      "explain_en": "4 × 3.25 = 13.",
+      "explain_zh": "根据题意计算：4 × 3.25 = 13。",
+      "id": "l3g5_f05",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "A glacier photo is 15 cm long and 10 cm wide. What is its perimeter in centimetres?",
+      "q_zh": "一张冰川照片长 15 厘米、宽 10 厘米，周长几厘米？",
+      "choices": [
+        "25",
+        "50",
+        "40",
+        "150"
+      ],
+      "choices_zh": [
+        "25",
+        "50",
+        "40",
+        "150"
+      ],
+      "answer": 1,
+      "explain_en": "2 × (15 + 10) = 50.",
+      "explain_zh": "根据题意计算：2 × (15 + 10) = 50。",
+      "id": "l3g5_f06",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "science",
+      "q_en": "Flora studies snow near the hut. Why can a layer of snow reduce heat loss from the ground?",
+      "q_zh": "Flora 在小屋附近研究积雪，雪层为什么能减少地面的热量散失？",
+      "choices": [
+        "It traps air that slows heat transfer",
+        "It blocks gravity",
+        "It is always hotter than soil",
+        "It makes heat from nothing"
+      ],
+      "choices_zh": [
+        "它含有能减慢传热的空气",
+        "它阻挡重力",
+        "它总比土壤热",
+        "它凭空产生热量"
+      ],
+      "answer": 0,
+      "explain_en": "Air trapped between snow crystals provides insulation.",
+      "explain_zh": "雪晶之间的空气有隔热作用。",
+      "id": "l3g5_f07",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "science",
+      "q_en": "Viewing Horstman Glacier from a safe marked area, Flora asks how a glacier can move. Which explanation is correct?",
+      "q_zh": "Flora 在安全的标记区域观看霍斯特曼冰川，冰川怎样移动？",
+      "choices": [
+        "It moves only when all its ice melts",
+        "Its ice deforms and flows under gravity",
+        "It always floats uphill",
+        "It walks on hidden legs"
+      ],
+      "choices_zh": [
+        "必须全部融化后才移动",
+        "冰在重力作用下变形并流动",
+        "总是向山上漂",
+        "靠隐藏的腿走动"
+      ],
+      "answer": 1,
+      "explain_en": "Glacier ice can deform and flow slowly under gravity.",
+      "explain_zh": "冰川的冰能在重力作用下变形，缓慢流动。",
+      "id": "l3g5_f08",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    }
+  ]
+}

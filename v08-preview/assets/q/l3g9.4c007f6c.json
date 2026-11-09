@@ -1,0 +1,2350 @@
+{
+ "level": 3,
+ "level_name_en": "Whistler Christmas Snow Ride",
+ "level_name_zh": "惠斯勒·圣诞雪山骑行",
+ "grade": 9,
+ "version": 3,
+ "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall); v3: every item has qtype (snake_case pattern id) + qtype_zh — within one run each qtype at most once (创意张 rule); fork sign options shortened to fit 2 lines; extra items have ids l3g{g}_nNN",
+ "questions": [
+  {
+   "id": "l3g9_001",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 2x^2 + (-6)x + 3. Find y when x = -2.",
+   "q_zh": "跳台曲线是 y = 2x^2 + (-6)x + 3，x = -2 时 y 是多少？",
+   "choices": [
+    "13",
+    "23",
+    "-1",
+    "7"
+   ],
+   "choices_zh": [
+    "13",
+    "23",
+    "-1",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (-2)^2 + (-6) × (-2) + 3 = 23.",
+   "explain_zh": "2×(-2)²+(-6)×(-2)+3=23。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_002",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 5x + 5 = 3x + 1.",
+   "q_zh": "解方程：5x + 5 = 3x + 1。",
+   "choices": [
+    "-1",
+    "0",
+    "2",
+    "-2"
+   ],
+   "choices_zh": [
+    "-1",
+    "0",
+    "2",
+    "-2"
+   ],
+   "answer": 3,
+   "explain_en": "x = (1 - 5) ÷ (5 - 3) = -2.",
+   "explain_zh": "x=(1-5)÷(5-3)=-2。",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_003",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 2^9 × 2^2 = 2^n. What is n?",
+   "q_zh": "雪花谜题化简：2^9 × 2^2 = 2^n，n 是多少？",
+   "choices": [
+    "1",
+    "13",
+    "18",
+    "11"
+   ],
+   "choices_zh": [
+    "1",
+    "13",
+    "18",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "n = 9 + 2 = 11.",
+   "explain_zh": "n=9+2=11。",
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_004",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 754 m and climbs 100 m per minute. How high is it after 3 minutes?",
+   "q_zh": "缆车从海拔 754 米出发，每分钟升高 100 米，3 分钟后在多高？",
+   "choices": [
+    "300",
+    "1052",
+    "2562",
+    "1054"
+   ],
+   "choices_zh": [
+    "300",
+    "1052",
+    "2562",
+    "1054"
+   ],
+   "answer": 3,
+   "explain_en": "754 + 100 × 3 = 1054.",
+   "explain_zh": "754+100×3=1054。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_005",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 601 m and climbs 226 m per minute. How high is it after 5 minutes?",
+   "q_zh": "缆车从海拔 601 米出发，每分钟升高 226 米，5 分钟后在多高？",
+   "choices": [
+    "4135",
+    "1731",
+    "1728",
+    "1130"
+   ],
+   "choices_zh": [
+    "4135",
+    "1731",
+    "1728",
+    "1130"
+   ],
+   "answer": 1,
+   "explain_en": "601 + 226 × 5 = 1731.",
+   "explain_zh": "601+226×5=1731。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_006",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 4x + (-6) = 2x + (-4).",
+   "q_zh": "解方程：4x + (-6) = 2x + (-4)。",
+   "choices": [
+    "1",
+    "2",
+    "-1"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "-1"
+   ],
+   "answer": 0,
+   "explain_en": "x = (-4 - (-6)) ÷ (4 - 2) = 1.",
+   "explain_zh": "x=(-4-(-6))÷(4-2)=1。",
+   "sign_en": [
+    "1",
+    "2",
+    "-1"
+   ],
+   "sign_zh": [
+    "1",
+    "2",
+    "-1"
+   ],
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_007",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 615 m and climbs 127 m per minute. How high is it after 5 minutes?",
+   "q_zh": "缆车从海拔 615 米出发，每分钟升高 127 米，5 分钟后在多高？",
+   "choices": [
+    "1250",
+    "635",
+    "3710"
+   ],
+   "choices_zh": [
+    "1250",
+    "635",
+    "3710"
+   ],
+   "answer": 0,
+   "explain_en": "615 + 127 × 5 = 1250.",
+   "explain_zh": "615+127×5=1250。",
+   "sign_en": [
+    "1250",
+    "635",
+    "3710"
+   ],
+   "sign_zh": [
+    "1250",
+    "635",
+    "3710"
+   ],
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_008",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "On a high mountain, water boils at a ___ temperature than at sea level.",
+   "q_zh": "在高山上，水的沸点比海平面……",
+   "choices": [
+    "higher",
+    "negative",
+    "lower",
+    "the same"
+   ],
+   "choices_zh": [
+    "高",
+    "是负数",
+    "低",
+    "一样"
+   ],
+   "answer": 2,
+   "explain_en": "Lower air pressure lowers the boiling point.",
+   "explain_zh": "气压低，沸点就低。",
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g9_009",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 2^9 × 2^9 = 2^n. What is n?",
+   "q_zh": "雪花谜题化简：2^9 × 2^9 = 2^n，n 是多少？",
+   "choices": [
+    "81",
+    "18",
+    "19"
+   ],
+   "choices_zh": [
+    "81",
+    "18",
+    "19"
+   ],
+   "answer": 1,
+   "explain_en": "n = 9 + 9 = 18.",
+   "explain_zh": "n=9+9=18。",
+   "sign_en": [
+    "81",
+    "18",
+    "19"
+   ],
+   "sign_zh": [
+    "81",
+    "18",
+    "19"
+   ],
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_010",
+   "level": 3,
+   "section": "seawall",
+   "subject": "social",
+   "difficulty": "hard",
+   "q_en": "Whistler co-hosted the 2010 Winter Olympics with which city?",
+   "q_zh": "2010 年冬奥会，惠斯勒和哪座城市共同举办？",
+   "choices": [
+    "Calgary",
+    "Toronto",
+    "Vancouver",
+    "Montreal"
+   ],
+   "choices_zh": [
+    "卡尔加里",
+    "多伦多",
+    "温哥华",
+    "蒙特利尔"
+   ],
+   "answer": 2,
+   "explain_en": "Vancouver and Whistler hosted in 2010.",
+   "explain_zh": "2010 年由温哥华和惠斯勒举办。",
+   "qtype": "whistler_history_culture",
+   "qtype_zh": "惠斯勒历史与原住民文化"
+  },
+  {
+   "id": "l3g9_011",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 8x + (-6) = 2x + 12.",
+   "q_zh": "解方程：8x + (-6) = 2x + 12。",
+   "choices": [
+    "1",
+    "3",
+    "-3",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "3",
+    "-3",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "x = (12 - (-6)) ÷ (8 - 2) = 3.",
+   "explain_zh": "x=(12-(-6))÷(8-2)=3。",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_012",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 1/2 km, then 2/5 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 1/2 千米，又滑了 2/5 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "1",
+    "9/10",
+    "1/10",
+    "3/7"
+   ],
+   "choices_zh": [
+    "1",
+    "9/10",
+    "1/10",
+    "3/7"
+   ],
+   "answer": 1,
+   "explain_en": "1/2 + 2/5 = 9/10.",
+   "explain_zh": "1/2+2/5=9/10。",
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_013",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "An adaptation is…",
+   "q_zh": "适应特征是指……",
+   "choices": [
+    "A kind of snow",
+    "A ski trick",
+    "A helpful survival trait"
+   ],
+   "choices_zh": [
+    "一种雪",
+    "一种滑雪动作",
+    "帮助生存的特征"
+   ],
+   "answer": 2,
+   "explain_en": "Adaptations help organisms survive.",
+   "explain_zh": "适应特征帮助生物生存。",
+   "sign_en": [
+    "A kind of snow",
+    "A ski trick",
+    "A helpful survival trait"
+   ],
+   "sign_zh": [
+    "一种雪",
+    "一种滑雪动作",
+    "帮助生存的特征"
+   ],
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g9_014",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 823 m and climbs 176 m per minute. How high is it after 6 minutes?",
+   "q_zh": "缆车从海拔 823 米出发，每分钟升高 176 米，6 分钟后在多高？",
+   "choices": [
+    "1877",
+    "5994",
+    "1879",
+    "1056"
+   ],
+   "choices_zh": [
+    "1877",
+    "5994",
+    "1879",
+    "1056"
+   ],
+   "answer": 2,
+   "explain_en": "823 + 176 × 6 = 1879.",
+   "explain_zh": "823+176×6=1879。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_015",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 3/5 km, then 2/6 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 3/5 千米，又滑了 2/6 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "29/30",
+    "14/15",
+    "5/11"
+   ],
+   "choices_zh": [
+    "29/30",
+    "14/15",
+    "5/11"
+   ],
+   "answer": 1,
+   "explain_en": "3/5 + 2/6 = 14/15.",
+   "explain_zh": "3/5+2/6=14/15。",
+   "sign_en": [
+    "29/30",
+    "14/15",
+    "5/11"
+   ],
+   "sign_zh": [
+    "29/30",
+    "14/15",
+    "5/11"
+   ],
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_016",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 676 m and climbs 274 m per minute. How high is it after 11 minutes?",
+   "q_zh": "缆车从海拔 676 米出发，每分钟升高 274 米，11 分钟后在多高？",
+   "choices": [
+    "3014",
+    "10450",
+    "3690",
+    "3688"
+   ],
+   "choices_zh": [
+    "3014",
+    "10450",
+    "3690",
+    "3688"
+   ],
+   "answer": 2,
+   "explain_en": "676 + 274 × 11 = 3690.",
+   "explain_zh": "676+274×11=3690。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_017",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 3x^2 + (-3)x + 0. Find y when x = -4.",
+   "q_zh": "跳台曲线是 y = 3x^2 + (-3)x + 0，x = -4 时 y 是多少？",
+   "choices": [
+    "60",
+    "36",
+    "70",
+    "-36"
+   ],
+   "choices_zh": [
+    "60",
+    "36",
+    "70",
+    "-36"
+   ],
+   "answer": 0,
+   "explain_en": "3 × (-4)^2 + (-3) × (-4) + 0 = 60.",
+   "explain_zh": "3×(-4)²+(-3)×(-4)+0=60。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_018",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 10^7 × 10^3 = 10^n. What is n?",
+   "q_zh": "雪花谜题化简：10^7 × 10^3 = 10^n，n 是多少？",
+   "choices": [
+    "10",
+    "21",
+    "12",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "21",
+    "12",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "n = 7 + 3 = 10.",
+   "explain_zh": "n=7+3=10。",
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_019",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski run goes from (2, 112) down to (10, 48). What is its slope?",
+   "q_zh": "一条雪道从 (2, 112) 下到 (10, 48)，斜率是多少？",
+   "choices": [
+    "-8",
+    "-1/8",
+    "8",
+    "-3"
+   ],
+   "choices_zh": [
+    "-8",
+    "-1/8",
+    "8",
+    "-3"
+   ],
+   "answer": 0,
+   "explain_en": "(48 - 112) ÷ (10 - 2) = -8.",
+   "explain_zh": "(48-112)÷(10-2)=-8。",
+   "qtype": "slope_two_points",
+   "qtype_zh": "两点求斜率"
+  },
+  {
+   "id": "l3g9_020",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 4/6 km, then 1/4 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 4/6 千米，又滑了 1/4 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "23/24",
+    "5/12",
+    "5/10",
+    "11/12"
+   ],
+   "choices_zh": [
+    "23/24",
+    "5/12",
+    "5/10",
+    "11/12"
+   ],
+   "answer": 3,
+   "explain_en": "4/6 + 1/4 = 11/12.",
+   "explain_zh": "4/6+1/4=11/12。",
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_021",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 2x^2 + (-5)x + (-2). Find y when x = -2.",
+   "q_zh": "跳台曲线是 y = 2x^2 + (-5)x + (-2)，x = -2 时 y 是多少？",
+   "choices": [
+    "0",
+    "16",
+    "-4"
+   ],
+   "choices_zh": [
+    "0",
+    "16",
+    "-4"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (-2)^2 + (-5) × (-2) + (-2) = 16.",
+   "explain_zh": "2×(-2)²+(-5)×(-2)+(-2)=16。",
+   "sign_en": [
+    "0",
+    "16",
+    "-4"
+   ],
+   "sign_zh": [
+    "0",
+    "16",
+    "-4"
+   ],
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_022",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "In winter, a pika stays active. How does stored plant food help it?",
+   "q_zh": "鼠兔冬季仍会活动，储存的植物食物有什么帮助？",
+   "choices": [
+    "Turns it into a plant",
+    "Stops it breathing",
+    "Energy in lean times"
+   ],
+   "choices_zh": [
+    "把它变成植物",
+    "让它停止呼吸",
+    "缺食时提供能量"
+   ],
+   "answer": 2,
+   "explain_en": "Pikas store plant food and can eat these stores during winter.",
+   "explain_zh": "鼠兔储存植物食物，冬天可以取食储粮。",
+   "sign_en": [
+    "Turns it into a plant",
+    "Stops it breathing",
+    "Energy in lean times"
+   ],
+   "sign_zh": [
+    "把它变成植物",
+    "让它停止呼吸",
+    "缺食时提供能量"
+   ],
+   "qtype": "animal_body_adaptation",
+   "qtype_zh": "动物身体适应（脚/储粮）"
+  },
+  {
+   "id": "l3g9_023",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski run goes from (1, 50) down to (5, 38). What is its slope?",
+   "q_zh": "一条雪道从 (1, 50) 下到 (5, 38)，斜率是多少？",
+   "choices": [
+    "-8",
+    "3",
+    "-1/3",
+    "-3"
+   ],
+   "choices_zh": [
+    "-8",
+    "3",
+    "-1/3",
+    "-3"
+   ],
+   "answer": 3,
+   "explain_en": "(38 - 50) ÷ (5 - 1) = -3.",
+   "explain_zh": "(38-50)÷(5-1)=-3。",
+   "qtype": "slope_two_points",
+   "qtype_zh": "两点求斜率"
+  },
+  {
+   "id": "l3g9_024",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 8x + (-7) = 4x + 13.",
+   "q_zh": "解方程：8x + (-7) = 4x + 13。",
+   "choices": [
+    "-5",
+    "5",
+    "6",
+    "3"
+   ],
+   "choices_zh": [
+    "-5",
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "x = (13 - (-7)) ÷ (8 - 4) = 5.",
+   "explain_zh": "x=(13-(-7))÷(8-4)=5。",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_025",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 3^3 × 3^4 = 3^n. What is n?",
+   "q_zh": "雪花谜题化简：3^3 × 3^4 = 3^n，n 是多少？",
+   "choices": [
+    "12",
+    "-7",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "12",
+    "-7",
+    "7",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "n = 3 + 4 = 7.",
+   "explain_zh": "n=3+4=7。",
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_026",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 1/2 km, then 1/3 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 1/2 千米，又滑了 1/3 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "5/6",
+    "2/5",
+    "1"
+   ],
+   "choices_zh": [
+    "5/6",
+    "2/5",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "1/2 + 1/3 = 5/6.",
+   "explain_zh": "1/2+1/3=5/6。",
+   "sign_en": [
+    "5/6",
+    "2/5",
+    "1"
+   ],
+   "sign_zh": [
+    "5/6",
+    "2/5",
+    "1"
+   ],
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_027",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 2/4 km, then 4/5 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 2/4 千米，又滑了 4/5 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "6/9",
+    "27/20",
+    "13/10"
+   ],
+   "choices_zh": [
+    "6/9",
+    "27/20",
+    "13/10"
+   ],
+   "answer": 2,
+   "explain_en": "2/4 + 4/5 = 13/10.",
+   "explain_zh": "2/4+4/5=13/10。",
+   "sign_en": [
+    "6/9",
+    "27/20",
+    "13/10"
+   ],
+   "sign_zh": [
+    "6/9",
+    "27/20",
+    "13/10"
+   ],
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_028",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "The energy needed to melt ice without changing its temperature is called…",
+   "q_zh": "冰融化时吸收、但不改变温度的能量叫……",
+   "choices": [
+    "Sound energy",
+    "Nuclear energy",
+    "Latent heat",
+    "Elastic energy"
+   ],
+   "choices_zh": [
+    "声能",
+    "核能",
+    "潜热",
+    "弹性势能"
+   ],
+   "answer": 2,
+   "explain_en": "Latent heat changes state, not temperature.",
+   "explain_zh": "潜热用于改变状态，不改变温度。",
+   "qtype": "phase_change_energy",
+   "qtype_zh": "相变与热量（升华/潜热/吸热）"
+  },
+  {
+   "id": "l3g9_029",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "whistler",
+   "difficulty": "hard",
+   "q_en": "Whistler Mountain's peak is about how high?",
+   "q_zh": "惠斯勒山的山顶大约有多高？",
+   "choices": [
+    "About 8,800 m",
+    "About 2,200 m",
+    "About 220 m"
+   ],
+   "choices_zh": [
+    "约 8800 米",
+    "约 2200 米",
+    "约 220 米"
+   ],
+   "answer": 1,
+   "explain_en": "Whistler Peak is about 2,182 m above sea level.",
+   "explain_zh": "惠斯勒山顶海拔约 2182 米。",
+   "sign_en": [
+    "About 8,800 m",
+    "About 2,200 m",
+    "About 220 m"
+   ],
+   "sign_zh": [
+    "约 8800 米",
+    "约 2200 米",
+    "约 220 米"
+   ],
+   "qtype": "whistler_geography",
+   "qtype_zh": "惠斯勒地理"
+  },
+  {
+   "id": "l3g9_030",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 718 m and climbs 153 m per minute. How high is it after 12 minutes?",
+   "q_zh": "缆车从海拔 718 米出发，每分钟升高 153 米，12 分钟后在多高？",
+   "choices": [
+    "10452",
+    "2556",
+    "2554",
+    "1836"
+   ],
+   "choices_zh": [
+    "10452",
+    "2556",
+    "2554",
+    "1836"
+   ],
+   "answer": 2,
+   "explain_en": "718 + 153 × 12 = 2554.",
+   "explain_zh": "718+153×12=2554。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_031",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Newton's first law says a moving object keeps moving unless…",
+   "q_zh": "牛顿第一定律说，运动的物体会一直运动，除非……",
+   "choices": [
+    "An unbalanced force acts on it",
+    "It gets cold",
+    "It is Christmas",
+    "It goes downhill"
+   ],
+   "choices_zh": [
+    "受到不平衡的力",
+    "变冷了",
+    "到了圣诞节",
+    "在下坡"
+   ],
+   "answer": 0,
+   "explain_en": "Objects keep their motion unless a net force acts (inertia).",
+   "explain_zh": "没有合力时物体保持原来的运动（惯性）。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l3g9_032",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski run goes from (2, 98) down to (5, 80). What is its slope?",
+   "q_zh": "一条雪道从 (2, 98) 下到 (5, 80)，斜率是多少？",
+   "choices": [
+    "-9",
+    "-1/6",
+    "-6",
+    "6"
+   ],
+   "choices_zh": [
+    "-9",
+    "-1/6",
+    "-6",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "(80 - 98) ÷ (5 - 2) = -6.",
+   "explain_zh": "(80-98)÷(5-2)=-6。",
+   "qtype": "slope_two_points",
+   "qtype_zh": "两点求斜率"
+  },
+  {
+   "id": "l3g9_033",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 3x^2 + (-6)x + (-3). Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 3x^2 + (-6)x + (-3)，x = -1 时 y 是多少？",
+   "choices": [
+    "6",
+    "5",
+    "-6",
+    "0"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "-6",
+    "0"
+   ],
+   "answer": 0,
+   "explain_en": "3 × (-1)^2 + (-6) × (-1) + (-3) = 6.",
+   "explain_zh": "3×(-1)²+(-6)×(-1)+(-3)=6。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_034",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 7x + 2 = 4x + (-7).",
+   "q_zh": "解方程：7x + 2 = 4x + (-7)。",
+   "choices": [
+    "-3",
+    "3",
+    "-2"
+   ],
+   "choices_zh": [
+    "-3",
+    "3",
+    "-2"
+   ],
+   "answer": 0,
+   "explain_en": "x = (-7 - 2) ÷ (7 - 4) = -3.",
+   "explain_zh": "x=(-7-2)÷(7-4)=-3。",
+   "sign_en": [
+    "-3",
+    "3",
+    "-2"
+   ],
+   "sign_zh": [
+    "-3",
+    "3",
+    "-2"
+   ],
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_035",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Which sentence is a metaphor?",
+   "q_zh": "选出英文里的暗喻句：",
+   "choices": [
+    "The snow was deep.",
+    "Snow was a blanket.",
+    "Snow was like a blanket."
+   ],
+   "choices_zh": [
+    "The snow was deep.",
+    "Snow was a blanket.",
+    "Snow was like a blanket."
+   ],
+   "answer": 1,
+   "explain_en": "A metaphor says one thing IS another.",
+   "explain_zh": "暗喻直接说一样东西就是另一样。",
+   "sign_en": [
+    "The snow was deep.",
+    "Snow was a blanket.",
+    "Snow was like a blanket."
+   ],
+   "sign_zh": [
+    "The snow was deep.",
+    "Snow was a blanket.",
+    "Snow was like a blanket."
+   ],
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l3g9_036",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 2^4 × 2^9 = 2^n. What is n?",
+   "q_zh": "雪花谜题化简：2^4 × 2^9 = 2^n，n 是多少？",
+   "choices": [
+    "13",
+    "36",
+    "16"
+   ],
+   "choices_zh": [
+    "13",
+    "36",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "n = 4 + 9 = 13.",
+   "explain_zh": "n=4+9=13。",
+   "sign_en": [
+    "13",
+    "36",
+    "16"
+   ],
+   "sign_zh": [
+    "13",
+    "36",
+    "16"
+   ],
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_037",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A cougar and a coyote both hunting snowshoe hares is an example of…",
+   "q_zh": "美洲狮和郊狼都捕食雪鞋兔，这是……",
+   "choices": [
+    "Photosynthesis",
+    "Pollination",
+    "Competition",
+    "Mutualism"
+   ],
+   "choices_zh": [
+    "光合作用",
+    "传粉",
+    "竞争",
+    "互利共生"
+   ],
+   "answer": 2,
+   "explain_en": "Two species using the same food compete.",
+   "explain_zh": "两个物种争同一种食物就是竞争。",
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g9_038",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "hard",
+   "q_en": "Signs of hypothermia include…",
+   "q_zh": "失温的症状包括……",
+   "choices": [
+    "Faster ski times",
+    "Sneezing from pollen",
+    "Sunburned lips only",
+    "Shivering, confusion and slurred speech"
+   ],
+   "choices_zh": [
+    "滑得更快",
+    "花粉过敏打喷嚏",
+    "只有嘴唇晒伤",
+    "发抖、意识混乱、说话含糊"
+   ],
+   "answer": 3,
+   "explain_en": "Hypothermia means the body is losing heat dangerously.",
+   "explain_zh": "失温是身体危险地流失热量。",
+   "qtype": "cold_protection",
+   "qtype_zh": "防寒与冻伤"
+  },
+  {
+   "id": "l3g9_039",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Snow on a sunny slope can turn straight into water vapour. This is called…",
+   "q_zh": "向阳坡上的雪可以直接变成水蒸气，这叫……",
+   "choices": [
+    "Sublimation",
+    "Freezing",
+    "Melting",
+    "Condensation"
+   ],
+   "choices_zh": [
+    "升华",
+    "凝固",
+    "融化",
+    "凝结"
+   ],
+   "answer": 0,
+   "explain_en": "Solid to gas directly is sublimation.",
+   "explain_zh": "固体直接变成气体叫升华。",
+   "qtype": "phase_change_energy",
+   "qtype_zh": "相变与热量（升华/潜热/吸热）"
+  },
+  {
+   "id": "l3g9_040",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "In 'The icy path was treacherous', 'treacherous' means…",
+   "q_zh": "'The icy path was treacherous' 里 treacherous 的意思是……",
+   "choices": [
+    "Dangerous",
+    "Colourful",
+    "Delicious"
+   ],
+   "choices_zh": [
+    "危险的",
+    "多彩的",
+    "美味的"
+   ],
+   "answer": 0,
+   "explain_en": "Treacherous means full of hidden danger.",
+   "explain_zh": "treacherous 指暗藏危险。",
+   "sign_en": [
+    "Dangerous",
+    "Colourful",
+    "Delicious"
+   ],
+   "sign_zh": [
+    "危险的",
+    "多彩的",
+    "美味的"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l3g9_041",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 9x + 4 = 6x + (-11).",
+   "q_zh": "解方程：9x + 4 = 6x + (-11)。",
+   "choices": [
+    "-4",
+    "-8",
+    "-5",
+    "5"
+   ],
+   "choices_zh": [
+    "-4",
+    "-8",
+    "-5",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "x = (-11 - 4) ÷ (9 - 6) = -5.",
+   "explain_zh": "x=(-11-4)÷(9-6)=-5。",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_042",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 2x^2 + 2x + 7. Find y when x = -4.",
+   "q_zh": "跳台曲线是 y = 2x^2 + 2x + 7，x = -4 时 y 是多少？",
+   "choices": [
+    "47",
+    "-31",
+    "-33",
+    "31"
+   ],
+   "choices_zh": [
+    "47",
+    "-31",
+    "-33",
+    "31"
+   ],
+   "answer": 3,
+   "explain_en": "2 × (-4)^2 + 2 × (-4) + 7 = 31.",
+   "explain_zh": "2×(-4)²+2×(-4)+7=31。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_043",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Which is a physical change?",
+   "q_zh": "下面哪个是物理变化？",
+   "choices": [
+    "Iron rusting",
+    "Wood burning",
+    "Snow melting into water",
+    "Baking bread"
+   ],
+   "choices_zh": [
+    "铁生锈",
+    "木头燃烧",
+    "雪化成水",
+    "烤面包"
+   ],
+   "answer": 2,
+   "explain_en": "Melting changes state, not the substance.",
+   "explain_zh": "融化只改变状态，不产生新物质。",
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l3g9_044",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 3^7 × 3^9 = 3^n. What is n?",
+   "q_zh": "雪花谜题化简：3^7 × 3^9 = 3^n，n 是多少？",
+   "choices": [
+    "16",
+    "14",
+    "63",
+    "21"
+   ],
+   "choices_zh": [
+    "16",
+    "14",
+    "63",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "n = 7 + 9 = 16.",
+   "explain_zh": "n=7+9=16。",
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_045",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 4x^2 + 4x + (-9). Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 4x^2 + 4x + (-9)，x = -1 时 y 是多少？",
+   "choices": [
+    "-1",
+    "-17",
+    "-9"
+   ],
+   "choices_zh": [
+    "-1",
+    "-17",
+    "-9"
+   ],
+   "answer": 2,
+   "explain_en": "4 × (-1)^2 + 4 × (-1) + (-9) = -9.",
+   "explain_zh": "4×(-1)²+4×(-1)+(-9)=-9。",
+   "sign_en": [
+    "-1",
+    "-17",
+    "-9"
+   ],
+   "sign_zh": [
+    "-1",
+    "-17",
+    "-9"
+   ],
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_046",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 5^7 × 5^8 = 5^n. What is n?",
+   "q_zh": "雪花谜题化简：5^7 × 5^8 = 5^n，n 是多少？",
+   "choices": [
+    "15",
+    "17",
+    "25",
+    "56"
+   ],
+   "choices_zh": [
+    "15",
+    "17",
+    "25",
+    "56"
+   ],
+   "answer": 0,
+   "explain_en": "n = 7 + 8 = 15.",
+   "explain_zh": "n=7+8=15。",
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_047",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski run goes from (0, 61) down to (2, 53). What is its slope?",
+   "q_zh": "一条雪道从 (0, 61) 下到 (2, 53)，斜率是多少？",
+   "choices": [
+    "-1/4",
+    "-4",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "-1/4",
+    "-4",
+    "4",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "(53 - 61) ÷ (2 - 0) = -4.",
+   "explain_zh": "(53-61)÷(2-0)=-4。",
+   "qtype": "slope_two_points",
+   "qtype_zh": "两点求斜率"
+  },
+  {
+   "id": "l3g9_048",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski run goes from (4, 97) down to (9, 52). What is its slope?",
+   "q_zh": "一条雪道从 (4, 97) 下到 (9, 52)，斜率是多少？",
+   "choices": [
+    "-1/9",
+    "9",
+    "-4",
+    "-9"
+   ],
+   "choices_zh": [
+    "-1/9",
+    "9",
+    "-4",
+    "-9"
+   ],
+   "answer": 3,
+   "explain_en": "(52 - 97) ÷ (9 - 4) = -9.",
+   "explain_zh": "(52-97)÷(9-4)=-9。",
+   "qtype": "slope_two_points",
+   "qtype_zh": "两点求斜率"
+  },
+  {
+   "id": "l3g9_049",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "We ski in which layer of Earth's atmosphere?",
+   "q_zh": "我们滑雪时在大气层的哪一层？",
+   "choices": [
+    "Mesosphere",
+    "Troposphere",
+    "Stratosphere"
+   ],
+   "choices_zh": [
+    "中间层",
+    "对流层",
+    "平流层"
+   ],
+   "answer": 1,
+   "explain_en": "The troposphere is the lowest layer.",
+   "explain_zh": "对流层是最低的一层。",
+   "sign_en": [
+    "Mesosphere",
+    "Troposphere",
+    "Stratosphere"
+   ],
+   "sign_zh": [
+    "中间层",
+    "对流层",
+    "平流层"
+   ],
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g9_050",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 7x + 10 = 5x + 2.",
+   "q_zh": "解方程：7x + 10 = 5x + 2。",
+   "choices": [
+    "-4",
+    "-3",
+    "4"
+   ],
+   "choices_zh": [
+    "-4",
+    "-3",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "x = (2 - 10) ÷ (7 - 5) = -4.",
+   "explain_zh": "x=(2-10)÷(7-5)=-4。",
+   "sign_en": [
+    "-4",
+    "-3",
+    "4"
+   ],
+   "sign_zh": [
+    "-4",
+    "-3",
+    "4"
+   ],
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_051",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Which sentence uses personification?",
+   "q_zh": "选出英文里用了拟人的句子：",
+   "choices": [
+    "The wind was strong.",
+    "It was windy today.",
+    "We felt the wind.",
+    "The wind whispered through the pines."
+   ],
+   "choices_zh": [
+    "The wind was strong.",
+    "It was windy today.",
+    "We felt the wind.",
+    "The wind whispered through the pines."
+   ],
+   "answer": 3,
+   "explain_en": "Wind cannot really whisper; that is personification.",
+   "explain_zh": "风不会真的低语，这是拟人。",
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l3g9_052",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gondola starts at 726 m and climbs 136 m per minute. How high is it after 12 minutes?",
+   "q_zh": "缆车从海拔 726 米出发，每分钟升高 136 米，12 分钟后在多高？",
+   "choices": [
+    "1632",
+    "10344",
+    "2357",
+    "2358"
+   ],
+   "choices_zh": [
+    "1632",
+    "10344",
+    "2357",
+    "2358"
+   ],
+   "answer": 3,
+   "explain_en": "726 + 136 × 12 = 2358.",
+   "explain_zh": "726+136×12=2358。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l3g9_053",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 3x^2 + (-4)x + (-8). Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 3x^2 + (-4)x + (-8)，x = -1 时 y 是多少？",
+   "choices": [
+    "-9",
+    "-1",
+    "1",
+    "-7"
+   ],
+   "choices_zh": [
+    "-9",
+    "-1",
+    "1",
+    "-7"
+   ],
+   "answer": 1,
+   "explain_en": "3 × (-1)^2 + (-4) × (-1) + (-8) = -1.",
+   "explain_zh": "3×(-1)²+(-4)×(-1)+(-8)=-1。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_054",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Choose the correct word: The skiers lost ___ poles.",
+   "q_zh": "选出正确的英文单词填空：The skiers lost ___ poles.",
+   "choices": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "choices_zh": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "answer": 2,
+   "explain_en": "'Their' shows belonging.",
+   "explain_zh": "their 表示“他们的”。",
+   "sign_en": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "sign_zh": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "qtype": "lang_grammar",
+   "qtype_zh": "标点与易混词"
+  },
+  {
+   "id": "l3g9_055",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 2x^2 + (-6)x + 8. Find y when x = -4.",
+   "q_zh": "跳台曲线是 y = 2x^2 + (-6)x + 8，x = -4 时 y 是多少？",
+   "choices": [
+    "64",
+    "0",
+    "16"
+   ],
+   "choices_zh": [
+    "64",
+    "0",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "2 × (-4)^2 + (-6) × (-4) + 8 = 64.",
+   "explain_zh": "2×(-4)²+(-6)×(-4)+8=64。",
+   "sign_en": [
+    "64",
+    "0",
+    "16"
+   ],
+   "sign_zh": [
+    "64",
+    "0",
+    "16"
+   ],
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_056",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Simplify for the snowflake puzzle: 2^2 × 2^2 = 2^n. What is n?",
+   "q_zh": "雪花谜题化简：2^2 × 2^2 = 2^n，n 是多少？",
+   "choices": [
+    "6",
+    "4",
+    "14"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "n = 2 + 2 = 4.",
+   "explain_zh": "n=2+2=4。",
+   "sign_en": [
+    "6",
+    "4",
+    "14"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "14"
+   ],
+   "qtype": "exponent_laws",
+   "qtype_zh": "同底数幂相乘"
+  },
+  {
+   "id": "l3g9_057",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 4x + 4 = 2x + 22.",
+   "q_zh": "解方程：4x + 4 = 2x + 22。",
+   "choices": [
+    "9",
+    "-9",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "-9",
+    "8",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "x = (22 - 4) ÷ (4 - 2) = 9.",
+   "explain_zh": "x=(22-4)÷(4-2)=9。",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_058",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 2/4 km, then 2/3 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 2/4 千米，又滑了 2/3 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "1/6",
+    "7/6",
+    "5/4",
+    "4/7"
+   ],
+   "choices_zh": [
+    "1/6",
+    "7/6",
+    "5/4",
+    "4/7"
+   ],
+   "answer": 1,
+   "explain_en": "2/4 + 2/3 = 7/6.",
+   "explain_zh": "2/4+2/3=7/6。",
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_059",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Snow has a high albedo. This means it…",
+   "q_zh": "雪的反照率很高，意思是它……",
+   "choices": [
+    "Produces heat",
+    "Reflects most sunlight",
+    "Absorbs most sunlight",
+    "Glows in the dark"
+   ],
+   "choices_zh": [
+    "会产生热",
+    "反射大部分阳光",
+    "吸收大部分阳光",
+    "在黑暗中发光"
+   ],
+   "answer": 1,
+   "explain_en": "Albedo measures how much light is reflected.",
+   "explain_zh": "反照率表示反射了多少光。",
+   "qtype": "light_albedo",
+   "qtype_zh": "光的反射与吸收（反照率/眩光）"
+  },
+  {
+   "id": "l3g9_060",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 1/3 km, then 4/5 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 1/3 千米，又滑了 4/5 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "17/15",
+    "5/8",
+    "6/5"
+   ],
+   "choices_zh": [
+    "17/15",
+    "5/8",
+    "6/5"
+   ],
+   "answer": 0,
+   "explain_en": "1/3 + 4/5 = 17/15.",
+   "explain_zh": "1/3+4/5=17/15。",
+   "sign_en": [
+    "17/15",
+    "5/8",
+    "6/5"
+   ],
+   "sign_zh": [
+    "17/15",
+    "5/8",
+    "6/5"
+   ],
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_061",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Which gas do trees take in to make food?",
+   "q_zh": "树木吸收哪种气体来制造养分？",
+   "choices": [
+    "Helium",
+    "Neon",
+    "Oxygen",
+    "Carbon dioxide"
+   ],
+   "choices_zh": [
+    "氦气",
+    "氖气",
+    "氧气",
+    "二氧化碳"
+   ],
+   "answer": 3,
+   "explain_en": "Photosynthesis uses carbon dioxide.",
+   "explain_zh": "光合作用要用二氧化碳。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l3g9_062",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Heat moving from your warm hand into cold snow by touch is…",
+   "q_zh": "手直接碰雪时，热量从手传到雪里，这叫……",
+   "choices": [
+    "Radiation",
+    "Evaporation",
+    "Conduction",
+    "Convection"
+   ],
+   "choices_zh": [
+    "辐射",
+    "蒸发",
+    "传导",
+    "对流"
+   ],
+   "answer": 2,
+   "explain_en": "Heat transfer by direct contact is conduction.",
+   "explain_zh": "直接接触传热叫传导。",
+   "qtype": "heat_transfer",
+   "qtype_zh": "热传递（传导/保温）"
+  },
+  {
+   "id": "l3g9_063",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "As you ride the gondola higher, air pressure…",
+   "q_zh": "乘缆车越升越高，气压会……",
+   "choices": [
+    "Increases",
+    "Turns into snow",
+    "Stays the same",
+    "Decreases"
+   ],
+   "choices_zh": [
+    "升高",
+    "变成雪",
+    "不变",
+    "降低"
+   ],
+   "answer": 3,
+   "explain_en": "There is less air above you, so pressure drops.",
+   "explain_zh": "头顶空气变少，气压就降低。",
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g9_064",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} skis 3/4 km, then 1/3 km. How many km in total? (simplest form)",
+   "q_zh": "{name} 先滑了 3/4 千米，又滑了 1/3 千米，一共多少千米？（最简形式）",
+   "choices": [
+    "7/6",
+    "13/12",
+    "4/7"
+   ],
+   "choices_zh": [
+    "7/6",
+    "13/12",
+    "4/7"
+   ],
+   "answer": 1,
+   "explain_en": "3/4 + 1/3 = 13/12.",
+   "explain_zh": "3/4+1/3=13/12。",
+   "sign_en": [
+    "7/6",
+    "13/12",
+    "4/7"
+   ],
+   "sign_zh": [
+    "7/6",
+    "13/12",
+    "4/7"
+   ],
+   "qtype": "fraction_add",
+   "qtype_zh": "分数加法"
+  },
+  {
+   "id": "l3g9_065",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "hard",
+   "q_en": "Many Christmas lights now use LEDs because LEDs…",
+   "q_zh": "现在很多圣诞灯用 LED，是因为 LED……",
+   "choices": [
+    "Need more power",
+    "Get much hotter",
+    "Only work in snow",
+    "Use less electricity"
+   ],
+   "choices_zh": [
+    "更费电",
+    "发热多得多",
+    "只能在雪里用",
+    "更省电"
+   ],
+   "answer": 3,
+   "explain_en": "LEDs turn more electricity into light, not heat.",
+   "explain_zh": "LED 把更多电能变成光而不是热。",
+   "qtype": "energy_forms",
+   "qtype_zh": "能量转化与守恒"
+  },
+  {
+   "id": "l3g9_066",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Fungi that break down dead logs on the mountain are…",
+   "q_zh": "山上分解枯木的真菌属于……",
+   "choices": [
+    "Producers",
+    "Decomposers",
+    "Predators"
+   ],
+   "choices_zh": [
+    "生产者",
+    "分解者",
+    "捕食者"
+   ],
+   "answer": 1,
+   "explain_en": "Decomposers recycle dead material.",
+   "explain_zh": "分解者把死去的东西分解回收。",
+   "sign_en": [
+    "Producers",
+    "Decomposers",
+    "Predators"
+   ],
+   "sign_zh": [
+    "生产者",
+    "分解者",
+    "捕食者"
+   ],
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g9_067",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why does a ski racer crouch low to go faster?",
+   "q_zh": "滑雪选手为什么蹲低身体来加速？",
+   "choices": [
+    "To increase friction",
+    "To reduce air drag",
+    "To increase gravity"
+   ],
+   "choices_zh": [
+    "增加摩擦",
+    "减少空气阻力",
+    "增加重力"
+   ],
+   "answer": 1,
+   "explain_en": "A smaller shape meets less drag.",
+   "explain_zh": "身体缩小，空气阻力就小。",
+   "sign_en": [
+    "To increase friction",
+    "To reduce air drag",
+    "To increase gravity"
+   ],
+   "sign_zh": [
+    "增加摩擦",
+    "减少空气阻力",
+    "增加重力"
+   ],
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l3g9_068",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Which organelle makes most of the energy (ATP) for a bear's muscles?",
+   "q_zh": "哪个细胞器为熊的肌肉产生大部分能量（ATP）？",
+   "choices": [
+    "Mitochondria",
+    "Chloroplast",
+    "Cell wall",
+    "Vacuole"
+   ],
+   "choices_zh": [
+    "线粒体",
+    "叶绿体",
+    "细胞壁",
+    "液泡"
+   ],
+   "answer": 0,
+   "explain_en": "Mitochondria carry out cellular respiration.",
+   "explain_zh": "线粒体进行细胞呼吸。",
+   "qtype": "cell_biology",
+   "qtype_zh": "细胞结构"
+  },
+  {
+   "id": "l3g9_069",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "hard",
+   "q_en": "In avalanche terrain, a transceiver is used to…",
+   "q_zh": "在雪崩地形中，雪崩信标的用途是……",
+   "choices": [
+    "Find buried people by radio signal",
+    "Melt snow",
+    "Play music",
+    "Measure ski speed"
+   ],
+   "choices_zh": [
+    "用无线电信号找到被埋的人",
+    "融雪",
+    "放音乐",
+    "测滑雪速度"
+   ],
+   "answer": 0,
+   "explain_en": "Transceivers send and receive a locating signal.",
+   "explain_zh": "信标收发定位信号。",
+   "qtype": "avalanche_safety",
+   "qtype_zh": "雪崩安全"
+  },
+  {
+   "id": "l3g9_070",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 3x^2 + 3x + 8. Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 3x^2 + 3x + 8，x = -1 时 y 是多少？",
+   "choices": [
+    "8",
+    "14",
+    "-2",
+    "2"
+   ],
+   "choices_zh": [
+    "8",
+    "14",
+    "-2",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "3 × (-1)^2 + 3 × (-1) + 8 = 8.",
+   "explain_zh": "3×(-1)²+3×(-1)+8=8。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_071",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: 4x + 8 = 2x + 6.",
+   "q_zh": "解方程：4x + 8 = 2x + 6。",
+   "choices": [
+    "-1",
+    "0",
+    "1"
+   ],
+   "choices_zh": [
+    "-1",
+    "0",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "x = (6 - 8) ÷ (4 - 2) = -1.",
+   "explain_zh": "x=(6-8)÷(4-2)=-1。",
+   "sign_en": [
+    "-1",
+    "0",
+    "1"
+   ],
+   "sign_zh": [
+    "-1",
+    "0",
+    "1"
+   ],
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "id": "l3g9_072",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 2x^2 + (-3)x + (-3). Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 2x^2 + (-3)x + (-3)，x = -1 时 y 是多少？",
+   "choices": [
+    "2",
+    "-4",
+    "-2",
+    "-8"
+   ],
+   "choices_zh": [
+    "2",
+    "-4",
+    "-2",
+    "-8"
+   ],
+   "answer": 0,
+   "explain_en": "2 × (-1)^2 + (-3) × (-1) + (-3) = 2.",
+   "explain_zh": "2×(-1)²+(-3)×(-1)+(-3)=2。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l3g9_073",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A water molecule is made of…",
+   "q_zh": "一个水分子由什么组成？",
+   "choices": [
+    "1 hydrogen + 2 oxygen",
+    "2 hydrogen + 1 oxygen",
+    "Carbon and oxygen"
+   ],
+   "choices_zh": [
+    "1 个氢 + 2 个氧",
+    "2 个氢 + 1 个氧",
+    "碳和氧"
+   ],
+   "answer": 1,
+   "explain_en": "H2O: two H and one O.",
+   "explain_zh": "H2O：两个氢、一个氧。",
+   "sign_en": [
+    "1 hydrogen + 2 oxygen",
+    "2 hydrogen + 1 oxygen",
+    "Carbon and oxygen"
+   ],
+   "sign_zh": [
+    "1 个氢 + 2 个氧",
+    "2 个氢 + 1 个氧",
+    "碳和氧"
+   ],
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l3g9_074",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ski-jump curve is y = 3x^2 + 3x + 7. Find y when x = -1.",
+   "q_zh": "跳台曲线是 y = 3x^2 + 3x + 7，x = -1 时 y 是多少？",
+   "choices": [
+    "1",
+    "7",
+    "13",
+    "9"
+   ],
+   "choices_zh": [
+    "1",
+    "7",
+    "13",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "3 × (-1)^2 + 3 × (-1) + 7 = 7.",
+   "explain_zh": "3×(-1)²+3×(-1)+7=7。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "subject": "math",
+   "q_en": "A model for a snow arch near the summit is y = -x^2 + 6x, with distances in metres. What is y at x = 2?",
+   "q_zh": "山顶附近一座雪拱的模型为 y=-x^2+6x，单位为米，x=2 时 y 是多少？",
+   "choices": [
+    "8",
+    "12",
+    "4",
+    "16"
+   ],
+   "choices_zh": [
+    "8",
+    "12",
+    "4",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "-2^2 + 6 × 2 = 8.",
+   "explain_zh": "根据题意计算：-2^2 + 6 × 2 = 8。",
+   "id": "l3g9_f01",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "subject": "math",
+   "q_en": "A summit photographer charges $8 plus $3 per print. Another charges $2 plus $5 per print. For how many prints are their prices equal?",
+   "q_zh": "一位山顶摄影师收费 8 元加每张 3 元，另一位收费 2 元加每张 5 元，印几张时总价相同？",
+   "choices": [
+    "3",
+    "4",
+    "6",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "6",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "(8 - 2) ÷ (5 - 3) = 3.",
+   "explain_zh": "根据题意计算：(8 - 2) ÷ (5 - 3) = 3。",
+   "id": "l3g9_f02",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "eq_both_sides",
+   "qtype_zh": "两边都有未知数的方程"
+  },
+  {
+   "subject": "math",
+   "q_en": "A snow survey begins with 200 tagged ice grains. A model doubles the count in each round. How many grains does it predict after 4 rounds?",
+   "q_zh": "积雪调查从 200 粒标记冰粒开始，模型中每轮数量加倍，4 轮后预测有几粒？",
+   "choices": [
+    "1600",
+    "6400",
+    "800",
+    "3200"
+   ],
+   "choices_zh": [
+    "1600",
+    "6400",
+    "800",
+    "3200"
+   ],
+   "answer": 3,
+   "explain_en": "200 × 2^4 = 3200.",
+   "explain_zh": "根据题意计算：200 × 2^4 = 3200。",
+   "id": "l3g9_f03",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "subject": "math",
+   "q_en": "A model puts a snow marker at coordinates (2, 3) and the hut at (8, 11), in metres. What is the straight-line distance in metres?",
+   "q_zh": "模型中雪地标记坐标为 (2,3)，小屋为 (8,11)，单位米，两点直线距离几米？",
+   "choices": [
+    "14",
+    "10",
+    "12",
+    "8"
+   ],
+   "choices_zh": [
+    "14",
+    "10",
+    "12",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "√((8 - 2)^2 + (11 - 3)^2) = 10.",
+   "explain_zh": "根据题意计算：√((8 - 2)^2 + (11 - 3)^2) = 10。",
+   "id": "l3g9_f04",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "distance_formula",
+   "qtype_zh": "两点间距离"
+  },
+  {
+   "subject": "math",
+   "q_en": "A summit snow patch has area x² square metres and side x metres. If x = 13, what is the area?",
+   "q_zh": "山顶一块正方形雪地边长 x 米、面积 x² 平方米，x=13 时面积是多少？",
+   "choices": [
+    "156",
+    "169",
+    "196",
+    "26"
+   ],
+   "choices_zh": [
+    "156",
+    "169",
+    "196",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "13^2 = 169.",
+   "explain_zh": "根据题意计算：13^2 = 169。",
+   "id": "l3g9_f05",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "expr_substitution",
+   "qtype_zh": "代数式代入求值"
+  },
+  {
+   "subject": "math",
+   "q_en": "Snow depth in a hut survey model follows d = 120 - 7t cm. After how many days t is the depth 64 cm?",
+   "q_zh": "小屋积雪调查模型为 d=120-7t 厘米，几天后雪深为 64 厘米？",
+   "choices": [
+    "9",
+    "7",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "7",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "(120 - 64) ÷ 7 = 8.",
+   "explain_zh": "根据题意计算：(120 - 64) ÷ 7 = 8。",
+   "id": "l3g9_f06",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "subject": "science",
+   "q_en": "In a summit snow study, both air temperature and melting increase. Why is that observation alone not proof that temperature caused all the melting?",
+   "q_zh": "山顶积雪研究中，气温和融雪量同时增加，为什么仅此不能证明气温造成了全部融雪？",
+   "choices": [
+    "Melting never involves energy",
+    "Correlation always proves complete causation",
+    "Other factors, such as sunlight, may also affect melting",
+    "Snow cannot change mass"
+   ],
+   "choices_zh": [
+    "融雪从不涉及能量",
+    "相关性总能证明全部因果关系",
+    "日照等其他因素也可能影响融雪",
+    "雪的质量不能改变"
+   ],
+   "answer": 2,
+   "explain_en": "An observed correlation does not isolate other possible causes.",
+   "explain_zh": "观察到相关性并不能排除其他可能原因。",
+   "id": "l3g9_f07",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "stats_reasoning",
+   "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+  },
+  {
+   "subject": "science",
+   "q_en": "At the summit, a snow surface reflects 80% of incoming sunlight. Which statement describes its albedo?",
+   "q_zh": "山顶雪面反射 80% 的入射阳光，哪项描述了它的反照率？",
+   "choices": [
+    "Its albedo is always zero",
+    "Its albedo is 8",
+    "Its albedo is 80 metres",
+    "Its albedo is 0.8"
+   ],
+   "choices_zh": [
+    "反照率总为零",
+    "反照率为 8",
+    "反照率为 80 米",
+    "反照率为 0.8"
+   ],
+   "answer": 3,
+   "explain_en": "Albedo is reflected radiation divided by incoming radiation.",
+   "explain_zh": "反照率是反射辐射与入射辐射的比值。",
+   "id": "l3g9_f08",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "light_albedo",
+   "qtype_zh": "光的反射与吸收（反照率/眩光）"
+  }
+ ]
+}

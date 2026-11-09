@@ -1,0 +1,2350 @@
+{
+ "level": 3,
+ "level_name_en": "Whistler Christmas Snow Ride",
+ "level_name_zh": "惠斯勒·圣诞雪山骑行",
+ "grade": 6,
+ "version": 3,
+ "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall); v3: every item has qtype (snake_case pattern id) + qtype_zh — within one run each qtype at most once (创意张 rule); fork sign options shortened to fit 2 lines; extra items have ids l3g{g}_nNN",
+ "questions": [
+  {
+   "id": "l3g6_001",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "160 riders are on the slope. 10% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 160 人，其中 10% 玩单板，玩单板的有几人？",
+   "choices": [
+    "144",
+    "19",
+    "16"
+   ],
+   "choices_zh": [
+    "144",
+    "19",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "160 × 10 ÷ 100 = 16.",
+   "explain_zh": "160×10÷100=16。",
+   "sign_en": [
+    "144",
+    "19",
+    "16"
+   ],
+   "sign_zh": [
+    "144",
+    "19",
+    "16"
+   ],
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_002",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "200 riders are on the slope. 10% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 200 人，其中 10% 玩单板，玩单板的有几人？",
+   "choices": [
+    "20",
+    "180",
+    "22",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "180",
+    "22",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "200 × 10 ÷ 100 = 20.",
+   "explain_zh": "200×10÷100=20。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_003",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 10 cm and a height of 15 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 10 厘米、高 15 厘米，面积是多少平方厘米？",
+   "choices": [
+    "150",
+    "76",
+    "73",
+    "75"
+   ],
+   "choices_zh": [
+    "150",
+    "76",
+    "73",
+    "75"
+   ],
+   "answer": 3,
+   "explain_en": "10 × 15 ÷ 2 = 75.",
+   "explain_zh": "10×15÷2=75。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_004",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 10 cm and a height of 7 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 10 厘米、高 7 厘米，面积是多少平方厘米？",
+   "choices": [
+    "35",
+    "33",
+    "70"
+   ],
+   "choices_zh": [
+    "35",
+    "33",
+    "70"
+   ],
+   "answer": 0,
+   "explain_en": "10 × 7 ÷ 2 = 35.",
+   "explain_zh": "10×7÷2=35。",
+   "sign_en": [
+    "35",
+    "33",
+    "70"
+   ],
+   "sign_zh": [
+    "35",
+    "33",
+    "70"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_005",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Plants are called producers because they…",
+   "q_zh": "植物被称为生产者，是因为它们……",
+   "choices": [
+    "Hunt at night",
+    "Make their own food from sunlight",
+    "Eat animals",
+    "Produce snow"
+   ],
+   "choices_zh": [
+    "夜里捕猎",
+    "用阳光自己制造食物",
+    "吃动物",
+    "制造雪"
+   ],
+   "answer": 1,
+   "explain_en": "Plants make food by photosynthesis.",
+   "explain_zh": "植物通过光合作用制造食物。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l3g6_006",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "When water freezes into ice, its volume…",
+   "q_zh": "水结成冰时，体积会……",
+   "choices": [
+    "Stays exactly the same",
+    "Gets smaller",
+    "Gets bigger"
+   ],
+   "choices_zh": [
+    "完全不变",
+    "变小",
+    "变大"
+   ],
+   "answer": 2,
+   "explain_en": "Water expands about 9% when it freezes.",
+   "explain_zh": "水结冰时体积大约膨胀 9%。",
+   "sign_en": [
+    "Stays exactly the same",
+    "Gets smaller",
+    "Gets bigger"
+   ],
+   "sign_zh": [
+    "完全不变",
+    "变小",
+    "变大"
+   ],
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l3g6_007",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 15 cm and a height of 20 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 15 厘米、高 20 厘米，面积是多少平方厘米？",
+   "choices": [
+    "150",
+    "147",
+    "300",
+    "155"
+   ],
+   "choices_zh": [
+    "150",
+    "147",
+    "300",
+    "155"
+   ],
+   "answer": 0,
+   "explain_en": "15 × 20 ÷ 2 = 150.",
+   "explain_zh": "15×20÷2=150。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_008",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 6, 5 and 4. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 6、5、4 只，平均数是多少？",
+   "choices": [
+    "8",
+    "5",
+    "15",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "5",
+    "15",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "(6 + 5 + 4) ÷ 3 = 5.",
+   "explain_zh": "(6+5+4)÷3=5。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_009",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 0.8 cm per hour for 6 hours. How many cm fall?",
+   "q_zh": "每小时下雪 0.8 厘米，下了 6 小时，一共下了多少厘米？",
+   "choices": [
+    "4.8",
+    "4.6",
+    "4.9",
+    "5.8"
+   ],
+   "choices_zh": [
+    "4.8",
+    "4.6",
+    "4.9",
+    "5.8"
+   ],
+   "answer": 0,
+   "explain_en": "0.8 × 6 = 4.8.",
+   "explain_zh": "0.8×6=4.8。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_010",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 2, 9 and 7. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 2、9、7 只，平均数是多少？",
+   "choices": [
+    "3",
+    "18",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "3",
+    "18",
+    "9",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "(2 + 9 + 7) ÷ 3 = 6.",
+   "explain_zh": "(2+9+7)÷3=6。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_011",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "160 riders are on the slope. 60% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 160 人，其中 60% 玩单板，玩单板的有几人？",
+   "choices": [
+    "98",
+    "96",
+    "99",
+    "64"
+   ],
+   "choices_zh": [
+    "98",
+    "96",
+    "99",
+    "64"
+   ],
+   "answer": 1,
+   "explain_en": "160 × 60 ÷ 100 = 96.",
+   "explain_zh": "160×60÷100=96。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_012",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "At the top of a tall mountain, the air is usually…",
+   "q_zh": "高山顶上的空气通常……",
+   "choices": [
+    "Hotter and thicker",
+    "Made of snow",
+    "Exactly like at sea level",
+    "Colder and thinner"
+   ],
+   "choices_zh": [
+    "更热、更稠密",
+    "是雪做的",
+    "和海边完全一样",
+    "更冷、更稀薄"
+   ],
+   "answer": 3,
+   "explain_en": "Air gets colder and thinner as you go higher.",
+   "explain_zh": "越往高处，空气越冷越稀薄。",
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g6_013",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Whistler is on the shared traditional territory of which First Nations?",
+   "q_zh": "惠斯勒位于哪些原住民族共同的传统领地上？",
+   "choices": [
+    "Haida only",
+    "Squamish and Lil'wat",
+    "Cree only"
+   ],
+   "choices_zh": [
+    "只有海达族",
+    "斯阔米什族和利尔瓦特族",
+    "只有克里族"
+   ],
+   "answer": 1,
+   "explain_en": "Whistler is on Squamish and Lil'wat territory.",
+   "explain_zh": "惠斯勒在斯阔米什族和利尔瓦特族的领地上。",
+   "sign_en": [
+    "Haida only",
+    "Squamish and Lil'wat",
+    "Cree only"
+   ],
+   "sign_zh": [
+    "只有海达族",
+    "斯阔米什族和利尔瓦特族",
+    "只有克里族"
+   ],
+   "qtype": "whistler_history_culture",
+   "qtype_zh": "惠斯勒历史与原住民文化"
+  },
+  {
+   "id": "l3g6_014",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 6, 12 and 9. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 6、12、9 只，平均数是多少？",
+   "choices": [
+    "11",
+    "9",
+    "27",
+    "19"
+   ],
+   "choices_zh": [
+    "11",
+    "9",
+    "27",
+    "19"
+   ],
+   "answer": 1,
+   "explain_en": "(6 + 12 + 9) ÷ 3 = 9.",
+   "explain_zh": "(6+12+9)÷3=9。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_015",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A skier speeding up downhill changes which energy into which?",
+   "q_zh": "滑雪者下坡加速时，能量怎样转化？",
+   "choices": [
+    "Kinetic to nuclear",
+    "Gravitational potential to kinetic",
+    "Chemical to magnetic",
+    "Light to sound only"
+   ],
+   "choices_zh": [
+    "动能变成核能",
+    "重力势能变成动能",
+    "化学能变成磁能",
+    "光能只变成声能"
+   ],
+   "answer": 1,
+   "explain_en": "Height (potential energy) becomes speed (kinetic energy).",
+   "explain_zh": "高度（势能）变成速度（动能）。",
+   "qtype": "energy_forms",
+   "qtype_zh": "能量转化与守恒"
+  },
+  {
+   "id": "l3g6_016",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Which word is a verb?",
+   "q_zh": "选出英文里的动词：",
+   "choices": [
+    "quickly",
+    "glide",
+    "frosty",
+    "mountain"
+   ],
+   "choices_zh": [
+    "quickly",
+    "glide",
+    "frosty",
+    "mountain"
+   ],
+   "answer": 1,
+   "explain_en": "Glide is an action word.",
+   "explain_zh": "glide（滑行）是动作词。",
+   "qtype": "lang_word_class",
+   "qtype_zh": "词类（颜色词/形容词/动词）"
+  },
+  {
+   "id": "l3g6_017",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which is a winter adaptation of the snowshoe hare?",
+   "q_zh": "下面哪个是雪鞋兔适应冬天的特征？",
+   "choices": [
+    "Wings",
+    "A hard shell",
+    "Big furry feet that spread its weight",
+    "Gills"
+   ],
+   "choices_zh": [
+    "翅膀",
+    "硬壳",
+    "毛茸茸的大脚，分散体重",
+    "鳃"
+   ],
+   "answer": 2,
+   "explain_en": "Big feet act like snowshoes.",
+   "explain_zh": "大脚就像雪鞋，不容易陷进雪里。",
+   "qtype": "animal_body_adaptation",
+   "qtype_zh": "动物身体适应（脚/储粮）"
+  },
+  {
+   "id": "l3g6_018",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 16, 5 and 9. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 16、5、9 只，平均数是多少？",
+   "choices": [
+    "15",
+    "0",
+    "10",
+    "30"
+   ],
+   "choices_zh": [
+    "15",
+    "0",
+    "10",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "(16 + 5 + 9) ÷ 3 = 10.",
+   "explain_zh": "(16+5+9)÷3=10。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_019",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 6 cm and a height of 16 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 6 厘米、高 16 厘米，面积是多少平方厘米？",
+   "choices": [
+    "38",
+    "48",
+    "96"
+   ],
+   "choices_zh": [
+    "38",
+    "48",
+    "96"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 16 ÷ 2 = 48.",
+   "explain_zh": "6×16÷2=48。",
+   "sign_en": [
+    "38",
+    "48",
+    "96"
+   ],
+   "sign_zh": [
+    "38",
+    "48",
+    "96"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_020",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 3:2. There are 6 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 3:2，滑雪的有 6 人，玩单板的有几人？",
+   "choices": [
+    "4",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "6 ÷ 3 × 2 = 4.",
+   "explain_zh": "6÷3×2=4。",
+   "sign_en": [
+    "4",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "4",
+    "7",
+    "8"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_021",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 2.4 cm per hour for 3 hours. How many cm fall?",
+   "q_zh": "每小时下雪 2.4 厘米，下了 3 小时，一共下了多少厘米？",
+   "choices": [
+    "9.2",
+    "7",
+    "8.2",
+    "7.2"
+   ],
+   "choices_zh": [
+    "9.2",
+    "7",
+    "8.2",
+    "7.2"
+   ],
+   "answer": 3,
+   "explain_en": "2.4 × 3 = 7.2.",
+   "explain_zh": "2.4×3=7.2。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_022",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 1.5 cm per hour for 5 hours. How many cm fall?",
+   "q_zh": "每小时下雪 1.5 厘米，下了 5 小时，一共下了多少厘米？",
+   "choices": [
+    "5.5",
+    "7",
+    "7.5",
+    "6.5"
+   ],
+   "choices_zh": [
+    "5.5",
+    "7",
+    "7.5",
+    "6.5"
+   ],
+   "answer": 2,
+   "explain_en": "1.5 × 5 = 7.5.",
+   "explain_zh": "1.5×5=7.5。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_023",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40 riders are on the slope. 20% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 40 人，其中 20% 玩单板，玩单板的有几人？",
+   "choices": [
+    "3",
+    "9",
+    "32",
+    "8"
+   ],
+   "choices_zh": [
+    "3",
+    "9",
+    "32",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "40 × 20 ÷ 100 = 8.",
+   "explain_zh": "40×20÷100=8。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_024",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Which sentence is punctuated correctly?",
+   "q_zh": "选出英文里标点用得对的句子：",
+   "choices": [
+    "We skied, and we ate.",
+    "we skied, and we ate",
+    "We skied and, we ate."
+   ],
+   "choices_zh": [
+    "We skied, and we ate.",
+    "we skied, and we ate",
+    "We skied and, we ate."
+   ],
+   "answer": 0,
+   "explain_en": "Capital letter, comma before 'and', period at the end.",
+   "explain_zh": "首字母大写，and 前加逗号，句末用句号。",
+   "sign_en": [
+    "We skied, and we ate.",
+    "we skied, and we ate",
+    "We skied and, we ate."
+   ],
+   "sign_zh": [
+    "We skied, and we ate.",
+    "we skied, and we ate",
+    "We skied and, we ate."
+   ],
+   "qtype": "lang_grammar",
+   "qtype_zh": "标点与易混词"
+  },
+  {
+   "id": "l3g6_025",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "In a food chain, a cougar that eats deer is a…",
+   "q_zh": "在食物链中，吃鹿的美洲狮是……",
+   "choices": [
+    "Predator",
+    "Producer",
+    "Decomposer"
+   ],
+   "choices_zh": [
+    "捕食者",
+    "生产者",
+    "分解者"
+   ],
+   "answer": 0,
+   "explain_en": "Animals that hunt other animals are predators.",
+   "explain_zh": "捕食其他动物的是捕食者。",
+   "sign_en": [
+    "Predator",
+    "Producer",
+    "Decomposer"
+   ],
+   "sign_zh": [
+    "捕食者",
+    "生产者",
+    "分解者"
+   ],
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g6_026",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 3:4. There are 12 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 3:4，滑雪的有 12 人，玩单板的有几人？",
+   "choices": [
+    "16",
+    "6",
+    "18",
+    "19"
+   ],
+   "choices_zh": [
+    "16",
+    "6",
+    "18",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "12 ÷ 3 × 4 = 16.",
+   "explain_zh": "12÷3×4=16。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_027",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can find mice under the snow mainly by…",
+   "q_zh": "猫头鹰主要靠什么找到雪下的老鼠？",
+   "choices": [
+    "Excellent hearing",
+    "X-ray vision",
+    "Smelling flowers"
+   ],
+   "choices_zh": [
+    "极好的听力",
+    "X 光眼",
+    "闻花香"
+   ],
+   "answer": 0,
+   "explain_en": "Owls such as the great grey owl hunt by sound.",
+   "explain_zh": "乌林鸮等猫头鹰靠听声音捕猎。",
+   "sign_en": [
+    "Excellent hearing",
+    "X-ray vision",
+    "Smelling flowers"
+   ],
+   "sign_zh": [
+    "极好的听力",
+    "X 光眼",
+    "闻花香"
+   ],
+   "qtype": "animal_facts",
+   "qtype_zh": "动物常识（种类/习性）"
+  },
+  {
+   "id": "l3g6_028",
+   "level": 3,
+   "section": "seawall",
+   "subject": "whistler",
+   "difficulty": "medium",
+   "q_en": "Whistler Blackcomb is in which mountain range?",
+   "q_zh": "惠斯勒黑梳山属于哪条山脉？",
+   "choices": [
+    "Rocky Mountains",
+    "Coast Mountains",
+    "Andes",
+    "Himalayas"
+   ],
+   "choices_zh": [
+    "落基山脉",
+    "海岸山脉",
+    "安第斯山脉",
+    "喜马拉雅山脉"
+   ],
+   "answer": 1,
+   "explain_en": "Whistler is in BC's Coast Mountains.",
+   "explain_zh": "惠斯勒位于 BC 省的海岸山脉。",
+   "qtype": "whistler_geography",
+   "qtype_zh": "惠斯勒地理"
+  },
+  {
+   "id": "l3g6_029",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20 riders are on the slope. 10% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 20 人，其中 10% 玩单板，玩单板的有几人？",
+   "choices": [
+    "18",
+    "4",
+    "5",
+    "2"
+   ],
+   "choices_zh": [
+    "18",
+    "4",
+    "5",
+    "2"
+   ],
+   "answer": 3,
+   "explain_en": "20 × 10 ÷ 100 = 2.",
+   "explain_zh": "20×10÷100=2。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_030",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 7, 18 and 8. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 7、18、8 只，平均数是多少？",
+   "choices": [
+    "13",
+    "33",
+    "21",
+    "11"
+   ],
+   "choices_zh": [
+    "13",
+    "33",
+    "21",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "(7 + 18 + 8) ÷ 3 = 11.",
+   "explain_zh": "(7+18+8)÷3=11。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_031",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 9 loose snow markers and 4 boxes with 8 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 9 个散装雪地标记，另有 4 盒，每盒 8 个，一共几个标记？",
+   "choices": [
+    "40",
+    "104",
+    "42",
+    "41"
+   ],
+   "choices_zh": [
+    "40",
+    "104",
+    "42",
+    "41"
+   ],
+   "answer": 3,
+   "explain_en": "9 + 4 × 8 = 41.",
+   "explain_zh": "9+4×8=41。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_032",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "medium",
+   "q_en": "Why do evergreen trees keep their needles in winter?",
+   "q_zh": "常绿树为什么冬天也不掉针叶？",
+   "choices": [
+    "Snow glues them on",
+    "Waxy needles lose very little water",
+    "They have no roots",
+    "They are made of plastic"
+   ],
+   "choices_zh": [
+    "雪把针叶粘住了",
+    "针叶有蜡质，很少失水",
+    "它们没有根",
+    "它们是塑料做的"
+   ],
+   "answer": 1,
+   "explain_en": "A waxy coat helps needles save water.",
+   "explain_zh": "蜡质外层帮针叶保住水分。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l3g6_033",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which force slows a sled on flat snow?",
+   "q_zh": "在平地雪上，什么力让雪橇慢下来？",
+   "choices": [
+    "Magnetism",
+    "Friction",
+    "Buoyancy"
+   ],
+   "choices_zh": [
+    "磁力",
+    "摩擦力",
+    "浮力"
+   ],
+   "answer": 1,
+   "explain_en": "Friction between sled and snow slows it.",
+   "explain_zh": "雪橇和雪之间的摩擦力让它变慢。",
+   "sign_en": [
+    "Magnetism",
+    "Friction",
+    "Buoyancy"
+   ],
+   "sign_zh": [
+    "磁力",
+    "摩擦力",
+    "浮力"
+   ],
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l3g6_034",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 2:3. There are 6 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 2:3，滑雪的有 6 人，玩单板的有几人？",
+   "choices": [
+    "9",
+    "7",
+    "11"
+   ],
+   "choices_zh": [
+    "9",
+    "7",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "6 ÷ 2 × 3 = 9.",
+   "explain_zh": "6÷2×3=9。",
+   "sign_en": [
+    "9",
+    "7",
+    "11"
+   ],
+   "sign_zh": [
+    "9",
+    "7",
+    "11"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_035",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "60 riders are on the slope. 30% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 60 人，其中 30% 玩单板，玩单板的有几人？",
+   "choices": [
+    "21",
+    "42",
+    "18",
+    "20"
+   ],
+   "choices_zh": [
+    "21",
+    "42",
+    "18",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "60 × 30 ÷ 100 = 18.",
+   "explain_zh": "60×30÷100=18。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_036",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "80 riders are on the slope. 40% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 80 人，其中 40% 玩单板，玩单板的有几人？",
+   "choices": [
+    "22",
+    "48",
+    "32"
+   ],
+   "choices_zh": [
+    "22",
+    "48",
+    "32"
+   ],
+   "answer": 2,
+   "explain_en": "80 × 40 ÷ 100 = 32.",
+   "explain_zh": "80×40÷100=32。",
+   "sign_en": [
+    "22",
+    "48",
+    "32"
+   ],
+   "sign_zh": [
+    "22",
+    "48",
+    "32"
+   ],
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_037",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Which is a simile?",
+   "q_zh": "选出英文里的比喻句（明喻）：",
+   "choices": [
+    "The snow was as soft as a pillow.",
+    "The snow is white.",
+    "Snow fell.",
+    "I like snow."
+   ],
+   "choices_zh": [
+    "The snow was as soft as a pillow.",
+    "The snow is white.",
+    "Snow fell.",
+    "I like snow."
+   ],
+   "answer": 0,
+   "explain_en": "A simile compares using 'like' or 'as'.",
+   "explain_zh": "明喻用 like 或 as 来比较。",
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l3g6_038",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 2:3. There are 10 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 2:3，滑雪的有 10 人，玩单板的有几人？",
+   "choices": [
+    "17",
+    "13",
+    "15"
+   ],
+   "choices_zh": [
+    "17",
+    "13",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "10 ÷ 2 × 3 = 15.",
+   "explain_zh": "10÷2×3=15。",
+   "sign_en": [
+    "17",
+    "13",
+    "15"
+   ],
+   "sign_zh": [
+    "17",
+    "13",
+    "15"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_039",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 4, 16 and 4. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 4、16、4 只，平均数是多少？",
+   "choices": [
+    "8",
+    "24",
+    "3",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "24",
+    "3",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "(4 + 16 + 4) ÷ 3 = 8.",
+   "explain_zh": "(4+16+4)÷3=8。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_040",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can snow over a pika's rocky shelter reduce heat loss?",
+   "q_zh": "为什么鼠兔岩石藏身处上方的积雪能减少热量散失？",
+   "choices": [
+    "Snow is hot",
+    "Snow makes light",
+    "Trapped air insulates"
+   ],
+   "choices_zh": [
+    "雪是热的",
+    "雪会发光",
+    "雪中空气能保温"
+   ],
+   "answer": 2,
+   "explain_en": "Air trapped in snow slows heat loss.",
+   "explain_zh": "雪里的空气减慢热量散失。",
+   "sign_en": [
+    "Snow is hot",
+    "Snow makes light",
+    "Trapped air insulates"
+   ],
+   "sign_zh": [
+    "雪是热的",
+    "雪会发光",
+    "雪中空气能保温"
+   ],
+   "qtype": "heat_transfer",
+   "qtype_zh": "热传递（传导/保温）"
+  },
+  {
+   "id": "l3g6_041",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 4:3. There are 32 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 4:3，滑雪的有 32 人，玩单板的有几人？",
+   "choices": [
+    "22",
+    "35",
+    "24",
+    "28"
+   ],
+   "choices_zh": [
+    "22",
+    "35",
+    "24",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "32 ÷ 4 × 3 = 24.",
+   "explain_zh": "32÷4×3=24。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_042",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 6 loose snow markers and 9 boxes with 6 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 6 个散装雪地标记，另有 9 盒，每盒 6 个，一共几个标记？",
+   "choices": [
+    "62",
+    "60",
+    "58",
+    "90"
+   ],
+   "choices_zh": [
+    "62",
+    "60",
+    "58",
+    "90"
+   ],
+   "answer": 1,
+   "explain_en": "6 + 9 × 6 = 60.",
+   "explain_zh": "6+9×6=60。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_043",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 7 loose snow markers and 5 boxes with 6 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 7 个散装雪地标记，另有 5 盒，每盒 6 个，一共几个标记？",
+   "choices": [
+    "37",
+    "47",
+    "35",
+    "72"
+   ],
+   "choices_zh": [
+    "37",
+    "47",
+    "35",
+    "72"
+   ],
+   "answer": 0,
+   "explain_en": "7 + 5 × 6 = 37.",
+   "explain_zh": "7+5×6=37。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_044",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "160 riders are on the slope. 75% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 160 人，其中 75% 玩单板，玩单板的有几人？",
+   "choices": [
+    "120",
+    "40",
+    "118",
+    "121"
+   ],
+   "choices_zh": [
+    "120",
+    "40",
+    "118",
+    "121"
+   ],
+   "answer": 0,
+   "explain_en": "160 × 75 ÷ 100 = 120.",
+   "explain_zh": "160×75÷100=120。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_045",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 11 cm and a height of 8 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 11 厘米、高 8 厘米，面积是多少平方厘米？",
+   "choices": [
+    "44",
+    "54",
+    "88"
+   ],
+   "choices_zh": [
+    "44",
+    "54",
+    "88"
+   ],
+   "answer": 0,
+   "explain_en": "11 × 8 ÷ 2 = 44.",
+   "explain_zh": "11×8÷2=44。",
+   "sign_en": [
+    "44",
+    "54",
+    "88"
+   ],
+   "sign_zh": [
+    "44",
+    "54",
+    "88"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_046",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "200 riders are on the slope. 40% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 200 人，其中 40% 玩单板，玩单板的有几人？",
+   "choices": [
+    "80",
+    "90",
+    "120"
+   ],
+   "choices_zh": [
+    "80",
+    "90",
+    "120"
+   ],
+   "answer": 0,
+   "explain_en": "200 × 40 ÷ 100 = 80.",
+   "explain_zh": "200×40÷100=80。",
+   "sign_en": [
+    "80",
+    "90",
+    "120"
+   ],
+   "sign_zh": [
+    "80",
+    "90",
+    "120"
+   ],
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_047",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 1.2 cm per hour for 2 hours. How many cm fall?",
+   "q_zh": "每小时下雪 1.2 厘米，下了 2 小时，一共下了多少厘米？",
+   "choices": [
+    "2.4",
+    "2.6",
+    "2.5"
+   ],
+   "choices_zh": [
+    "2.4",
+    "2.6",
+    "2.5"
+   ],
+   "answer": 0,
+   "explain_en": "1.2 × 2 = 2.4.",
+   "explain_zh": "1.2×2=2.4。",
+   "sign_en": [
+    "2.4",
+    "2.6",
+    "2.5"
+   ],
+   "sign_zh": [
+    "2.4",
+    "2.6",
+    "2.5"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_048",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 7 loose snow markers and 3 boxes with 8 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 7 个散装雪地标记，另有 3 盒，每盒 8 个，一共几个标记？",
+   "choices": [
+    "28",
+    "31",
+    "80",
+    "30"
+   ],
+   "choices_zh": [
+    "28",
+    "31",
+    "80",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "7 + 3 × 8 = 31.",
+   "explain_zh": "7+3×8=31。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_049",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 3.5 cm per hour for 8 hours. How many cm fall?",
+   "q_zh": "每小时下雪 3.5 厘米，下了 8 小时，一共下了多少厘米？",
+   "choices": [
+    "28",
+    "23",
+    "27"
+   ],
+   "choices_zh": [
+    "28",
+    "23",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "3.5 × 8 = 28.",
+   "explain_zh": "3.5×8=28。",
+   "sign_en": [
+    "28",
+    "23",
+    "27"
+   ],
+   "sign_zh": [
+    "28",
+    "23",
+    "27"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_050",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "In BC, the American badger is…",
+   "q_zh": "在 BC 省，美洲獾是……",
+   "choices": [
+    "Extinct",
+    "An endangered species",
+    "A kind of bird",
+    "Common in every city"
+   ],
+   "choices_zh": [
+    "已经灭绝",
+    "濒危物种",
+    "一种鸟",
+    "每个城市都很常见"
+   ],
+   "answer": 1,
+   "explain_en": "BC's badgers are listed as endangered.",
+   "explain_zh": "BC 省的美洲獾被列为濒危物种。",
+   "qtype": "animal_facts",
+   "qtype_zh": "动物常识（种类/习性）"
+  },
+  {
+   "id": "l3g6_051",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The shortest day of the year in Canada is around…",
+   "q_zh": "加拿大一年中白天最短的一天大约是……",
+   "choices": [
+    "September 30",
+    "December 21",
+    "June 21",
+    "March 1"
+   ],
+   "choices_zh": [
+    "9 月 30 日",
+    "12 月 21 日",
+    "6 月 21 日",
+    "3 月 1 日"
+   ],
+   "answer": 1,
+   "explain_en": "The winter solstice is around December 21.",
+   "explain_zh": "冬至大约在 12 月 21 日。",
+   "qtype": "earth_sun_seasons",
+   "qtype_zh": "太阳与四季"
+  },
+  {
+   "id": "l3g6_052",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 3:4. There are 15 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 3:4，滑雪的有 15 人，玩单板的有几人？",
+   "choices": [
+    "20",
+    "23",
+    "17",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "23",
+    "17",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "15 ÷ 3 × 4 = 20.",
+   "explain_zh": "15÷3×4=20。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_053",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 3.5 cm per hour for 7 hours. How many cm fall?",
+   "q_zh": "每小时下雪 3.5 厘米，下了 7 小时，一共下了多少厘米？",
+   "choices": [
+    "24.4",
+    "23.5",
+    "24.7",
+    "24.5"
+   ],
+   "choices_zh": [
+    "24.4",
+    "23.5",
+    "24.7",
+    "24.5"
+   ],
+   "answer": 3,
+   "explain_en": "3.5 × 7 = 24.5.",
+   "explain_zh": "3.5×7=24.5。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_054",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 12, 7 and 20. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 12、7、20 只，平均数是多少？",
+   "choices": [
+    "39",
+    "13",
+    "15"
+   ],
+   "choices_zh": [
+    "39",
+    "13",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "(12 + 7 + 20) ÷ 3 = 13.",
+   "explain_zh": "(12+7+20)÷3=13。",
+   "sign_en": [
+    "39",
+    "13",
+    "15"
+   ],
+   "sign_zh": [
+    "39",
+    "13",
+    "15"
+   ],
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l3g6_055",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 19 loose snow markers and 9 boxes with 6 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 19 个散装雪地标记，另有 9 盒，每盒 6 个，一共几个标记？",
+   "choices": [
+    "71",
+    "83",
+    "73",
+    "168"
+   ],
+   "choices_zh": [
+    "71",
+    "83",
+    "73",
+    "168"
+   ],
+   "answer": 2,
+   "explain_en": "19 + 9 × 6 = 73.",
+   "explain_zh": "19+9×6=73。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_056",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salt is spread on icy roads because salt…",
+   "q_zh": "在结冰的路上撒盐，是因为盐……",
+   "choices": [
+    "Makes ice harder",
+    "Is warm",
+    "Lowers freezing point"
+   ],
+   "choices_zh": [
+    "让冰更硬",
+    "是热的",
+    "降低水的冰点"
+   ],
+   "answer": 2,
+   "explain_en": "Salt water freezes below 0 °C, so ice melts.",
+   "explain_zh": "盐水在低于 0 °C 才结冰，所以冰会化。",
+   "sign_en": [
+    "Makes ice harder",
+    "Is warm",
+    "Lowers freezing point"
+   ],
+   "sign_zh": [
+    "让冰更硬",
+    "是热的",
+    "降低水的冰点"
+   ],
+   "qtype": "salt_chemistry",
+   "qtype_zh": "盐与化学（降冰点/化学式）"
+  },
+  {
+   "id": "l3g6_057",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 5 cm and a height of 6 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 5 厘米、高 6 厘米，面积是多少平方厘米？",
+   "choices": [
+    "14",
+    "30",
+    "15"
+   ],
+   "choices_zh": [
+    "14",
+    "30",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "5 × 6 ÷ 2 = 15.",
+   "explain_zh": "5×6÷2=15。",
+   "sign_en": [
+    "14",
+    "30",
+    "15"
+   ],
+   "sign_zh": [
+    "14",
+    "30",
+    "15"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_058",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "whistler",
+   "difficulty": "medium",
+   "q_en": "The Peak 2 Peak Gondola travels over…",
+   "q_zh": "Peak 2 Peak 缆车从什么上方经过？",
+   "choices": [
+    "The Pacific Ocean",
+    "A desert",
+    "A valley between peaks"
+   ],
+   "choices_zh": [
+    "太平洋",
+    "沙漠",
+    "两座山之间的山谷"
+   ],
+   "answer": 2,
+   "explain_en": "It crosses the valley between Whistler and Blackcomb.",
+   "explain_zh": "它横跨惠斯勒山和黑梳山之间的山谷。",
+   "sign_en": [
+    "The Pacific Ocean",
+    "A desert",
+    "A valley between peaks"
+   ],
+   "sign_zh": [
+    "太平洋",
+    "沙漠",
+    "两座山之间的山谷"
+   ],
+   "qtype": "whistler_geography",
+   "qtype_zh": "惠斯勒地理"
+  },
+  {
+   "id": "l3g6_059",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "medium",
+   "q_en": "In Canada, Boxing Day is on…",
+   "q_zh": "在加拿大，节礼日（Boxing Day）是哪天？",
+   "choices": [
+    "January 1",
+    "December 24",
+    "December 26",
+    "November 11"
+   ],
+   "choices_zh": [
+    "1 月 1 日",
+    "12 月 24 日",
+    "12 月 26 日",
+    "11 月 11 日"
+   ],
+   "answer": 2,
+   "explain_en": "Boxing Day is the day after Christmas.",
+   "explain_zh": "节礼日是圣诞节后一天。",
+   "qtype": "christmas_custom",
+   "qtype_zh": "圣诞习俗"
+  },
+  {
+   "id": "l3g6_060",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At a snow-study table, {name} has 19 loose snow markers and 3 boxes with 2 markers each. How many markers are there altogether?",
+   "q_zh": "在积雪观察桌旁，{name} 有 19 个散装雪地标记，另有 3 盒，每盒 2 个，一共几个标记？",
+   "choices": [
+    "25",
+    "22",
+    "44",
+    "28"
+   ],
+   "choices_zh": [
+    "25",
+    "22",
+    "44",
+    "28"
+   ],
+   "answer": 0,
+   "explain_en": "19 + 3 × 2 = 25.",
+   "explain_zh": "19+3×2=25。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l3g6_061",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 2.4 cm per hour for 7 hours. How many cm fall?",
+   "q_zh": "每小时下雪 2.4 厘米，下了 7 小时，一共下了多少厘米？",
+   "choices": [
+    "16.8",
+    "16.6",
+    "16.3",
+    "16.9"
+   ],
+   "choices_zh": [
+    "16.8",
+    "16.6",
+    "16.3",
+    "16.9"
+   ],
+   "answer": 0,
+   "explain_en": "2.4 × 7 = 16.8.",
+   "explain_zh": "2.4×7=16.8。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_062",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "80 riders are on the slope. 60% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 80 人，其中 60% 玩单板，玩单板的有几人？",
+   "choices": [
+    "43",
+    "32",
+    "48",
+    "51"
+   ],
+   "choices_zh": [
+    "43",
+    "32",
+    "48",
+    "51"
+   ],
+   "answer": 2,
+   "explain_en": "80 × 60 ÷ 100 = 48.",
+   "explain_zh": "80×60÷100=48。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_063",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "120 riders are on the slope. 20% of them are snowboarders. How many snowboarders?",
+   "q_zh": "雪道上有 120 人，其中 20% 玩单板，玩单板的有几人？",
+   "choices": [
+    "24",
+    "96",
+    "19",
+    "25"
+   ],
+   "choices_zh": [
+    "24",
+    "96",
+    "19",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "120 × 20 ÷ 100 = 24.",
+   "explain_zh": "120×20÷100=24。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l3g6_064",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "What does 'descend' mean?",
+   "q_zh": "'descend' 是什么意思？",
+   "choices": [
+    "Stay still",
+    "Spin around",
+    "Go up",
+    "Go down"
+   ],
+   "choices_zh": [
+    "不动",
+    "转圈",
+    "往上走",
+    "往下走"
+   ],
+   "answer": 3,
+   "explain_en": "To descend is to go down.",
+   "explain_zh": "descend 就是往下。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l3g6_065",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 4:5. There are 28 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 4:5，滑雪的有 28 人，玩单板的有几人？",
+   "choices": [
+    "33",
+    "35",
+    "39"
+   ],
+   "choices_zh": [
+    "33",
+    "35",
+    "39"
+   ],
+   "answer": 1,
+   "explain_en": "28 ÷ 4 × 5 = 35.",
+   "explain_zh": "28÷4×5=35。",
+   "sign_en": [
+    "33",
+    "35",
+    "39"
+   ],
+   "sign_zh": [
+    "33",
+    "35",
+    "39"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_066",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Snow falls at 2.4 cm per hour for 5 hours. How many cm fall?",
+   "q_zh": "每小时下雪 2.4 厘米，下了 5 小时，一共下了多少厘米？",
+   "choices": [
+    "12",
+    "10",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "9",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "2.4 × 5 = 12.",
+   "explain_zh": "2.4×5=12。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g6_067",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "Before going into the backcountry, skiers check the…",
+   "q_zh": "去野外滑雪前要先查看……",
+   "choices": [
+    "Avalanche forecast",
+    "Lunch menu",
+    "Bus timetable",
+    "TV guide"
+   ],
+   "choices_zh": [
+    "雪崩预报",
+    "午餐菜单",
+    "公交时刻表",
+    "电视节目单"
+   ],
+   "answer": 0,
+   "explain_en": "Avalanche forecasts show the danger level.",
+   "explain_zh": "雪崩预报会告诉你危险等级。",
+   "qtype": "avalanche_safety",
+   "qtype_zh": "雪崩安全"
+  },
+  {
+   "id": "l3g6_068",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The ratio of skiers to snowboarders is 3:5. There are 18 skiers. How many snowboarders?",
+   "q_zh": "滑雪的人和玩单板的人之比是 3:5，滑雪的有 18 人，玩单板的有几人？",
+   "choices": [
+    "30",
+    "32",
+    "33",
+    "23"
+   ],
+   "choices_zh": [
+    "30",
+    "32",
+    "33",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "18 ÷ 3 × 5 = 30.",
+   "explain_zh": "18÷3×5=30。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l3g6_069",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Earth's seasons are caused mainly by…",
+   "q_zh": "地球四季的主要原因是……",
+   "choices": [
+    "Ocean waves",
+    "The tilt of Earth's axis",
+    "Earth's distance from the Moon",
+    "Wind"
+   ],
+   "choices_zh": [
+    "海浪",
+    "地轴倾斜",
+    "地球和月亮的距离",
+    "风"
+   ],
+   "answer": 1,
+   "explain_en": "The tilted axis changes how directly sunlight hits us.",
+   "explain_zh": "地轴倾斜改变了阳光照射的角度。",
+   "qtype": "earth_sun_seasons",
+   "qtype_zh": "太阳与四季"
+  },
+  {
+   "id": "l3g6_070",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "What is frostbite?",
+   "q_zh": "什么是冻伤？",
+   "choices": [
+    "Skin and tissue freezing in the cold",
+    "A bear bite",
+    "A kind of ice cream",
+    "A snowball fight"
+   ],
+   "choices_zh": [
+    "皮肤和组织在严寒中被冻坏",
+    "被熊咬",
+    "一种冰淇淋",
+    "打雪仗"
+   ],
+   "answer": 0,
+   "explain_en": "Frostbite is freezing of skin and tissue.",
+   "explain_zh": "冻伤是皮肤和组织被冻坏。",
+   "qtype": "cold_protection",
+   "qtype_zh": "防寒与冻伤"
+  },
+  {
+   "id": "l3g6_071",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Black bears resting in winter dens…",
+   "q_zh": "在冬季洞穴里休息的黑熊……",
+   "choices": [
+    "Slow their heart rate and live on stored fat",
+    "Eat every hour",
+    "Grow gills",
+    "Run all night"
+   ],
+   "choices_zh": [
+    "心跳变慢，靠储存的脂肪生活",
+    "每小时吃一次",
+    "长出鳃",
+    "整夜奔跑"
+   ],
+   "answer": 0,
+   "explain_en": "Bears slow down and use their fat stores.",
+   "explain_zh": "黑熊身体变慢，靠脂肪过冬。",
+   "qtype": "animal_hibernation",
+   "qtype_zh": "动物冬眠/冬季休眠"
+  },
+  {
+   "id": "l3g6_072",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular trail sign has a base of 4 cm and a height of 15 cm. What is its area in cm²?",
+   "q_zh": "一块三角形路牌底 4 厘米、高 15 厘米，面积是多少平方厘米？",
+   "choices": [
+    "60",
+    "30",
+    "29"
+   ],
+   "choices_zh": [
+    "60",
+    "30",
+    "29"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 15 ÷ 2 = 30.",
+   "explain_zh": "4×15÷2=30。",
+   "sign_en": [
+    "60",
+    "30",
+    "29"
+   ],
+   "sign_zh": [
+    "60",
+    "30",
+    "29"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l3g6_073",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can you get a sunburn on snow even when it is cold?",
+   "q_zh": "为什么天冷时在雪地上也会晒伤？",
+   "choices": [
+    "Snow reflects sunlight",
+    "Snow is hot",
+    "Snow pulls in moonlight"
+   ],
+   "choices_zh": [
+    "雪把阳光反射到你身上",
+    "雪是热的",
+    "雪会吸来月光"
+   ],
+   "answer": 0,
+   "explain_en": "Snow reflects a lot of the sun's UV light.",
+   "explain_zh": "雪会反射大量紫外线。",
+   "sign_en": [
+    "Snow reflects sunlight",
+    "Snow is hot",
+    "Snow pulls in moonlight"
+   ],
+   "sign_zh": [
+    "雪把阳光反射到你身上",
+    "雪是热的",
+    "雪会吸来月光"
+   ],
+   "qtype": "light_albedo",
+   "qtype_zh": "光的反射与吸收（反照率/眩光）"
+  },
+  {
+   "id": "l3g6_074",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} counted snowshoe hares on three days: 7, 19 and 10. What is the mean?",
+   "q_zh": "{name} 三天数到的雪鞋兔分别是 7、19、10 只，平均数是多少？",
+   "choices": [
+    "15",
+    "12",
+    "36"
+   ],
+   "choices_zh": [
+    "15",
+    "12",
+    "36"
+   ],
+   "answer": 1,
+   "explain_en": "(7 + 19 + 10) ÷ 3 = 12.",
+   "explain_zh": "(7+19+10)÷3=12。",
+   "sign_en": [
+    "15",
+    "12",
+    "36"
+   ],
+   "sign_zh": [
+    "15",
+    "12",
+    "36"
+   ],
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "subject": "math",
+   "q_en": "Near Horstman Hut, 24 winter visitors gather. Three eighths sketch the inukshuk. How many visitors sketch it?",
+   "q_zh": "霍斯特曼小屋附近有 24 位冬季游客，其中八分之三画石头人，有几位？",
+   "choices": [
+    "15",
+    "9",
+    "12",
+    "8"
+   ],
+   "choices_zh": [
+    "15",
+    "9",
+    "12",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "24 ÷ 8 × 3 = 9.",
+   "explain_zh": "根据题意计算：24 ÷ 8 × 3 = 9。",
+   "id": "l3g6_f01",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "subject": "math",
+   "q_en": "At a summit snow station, depths on three days are 18, 27 and 30 cm. What is the mean depth in cm?",
+   "q_zh": "山顶积雪观测点三天的雪深分别为 18、27、30 厘米，平均雪深几厘米？",
+   "choices": [
+    "25",
+    "24",
+    "75",
+    "26"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "75",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "(18 + 27 + 30) ÷ 3 = 25.",
+   "explain_zh": "根据题意计算：(18 + 27 + 30) ÷ 3 = 25。",
+   "id": "l3g6_f02",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "subject": "math",
+   "q_en": "A triangular glacier-view sign has base 14 cm and perpendicular height 9 cm. What is its area in cm²?",
+   "q_zh": "一块三角形冰川观景牌底边 14 厘米，对应高 9 厘米，面积几平方厘米？",
+   "choices": [
+    "46",
+    "63",
+    "126",
+    "72"
+   ],
+   "choices_zh": [
+    "46",
+    "63",
+    "126",
+    "72"
+   ],
+   "answer": 1,
+   "explain_en": "14 × 9 ÷ 2 = 63.",
+   "explain_zh": "根据题意计算：14 × 9 ÷ 2 = 63。",
+   "id": "l3g6_f03",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "subject": "math",
+   "q_en": "Of 150 summit photos, 18% show the Spearhead Range. How many photos show it?",
+   "q_zh": "150 张山顶照片中有 18% 拍到矛头山脉，共几张？",
+   "choices": [
+    "123",
+    "30",
+    "18",
+    "27"
+   ],
+   "choices_zh": [
+    "123",
+    "30",
+    "18",
+    "27"
+   ],
+   "answer": 3,
+   "explain_en": "150 × 18 ÷ 100 = 27.",
+   "explain_zh": "根据题意计算：150 × 18 ÷ 100 = 27。",
+   "id": "l3g6_f04",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "subject": "math",
+   "q_en": "At the hut, blue and red mugs are in the ratio 3:2. There are 35 mugs altogether. How many are blue?",
+   "q_zh": "小屋里蓝杯与红杯的数量比为 3:2，共有 35 个杯子，蓝杯几个？",
+   "choices": [
+    "15",
+    "20",
+    "21",
+    "14"
+   ],
+   "choices_zh": [
+    "15",
+    "20",
+    "21",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "35 ÷ (3 + 2) × 3 = 21.",
+   "explain_zh": "根据题意计算：35 ÷ (3 + 2) × 3 = 21。",
+   "id": "l3g6_f05",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "subject": "math",
+   "q_en": "For a summit snow survey, Flora packs 4 bags of 2.5 kg each and one 1.8 kg kit. What is the total mass in kg?",
+   "q_zh": "去山顶做积雪调查，Flora 装了 4 袋每袋 2.5 千克的用品，另有一套 1.8 千克的工具，总质量几千克？",
+   "choices": [
+    "12.8",
+    "17.2",
+    "10.8",
+    "11.8"
+   ],
+   "choices_zh": [
+    "12.8",
+    "17.2",
+    "10.8",
+    "11.8"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 2.5 + 1.8 = 11.8.",
+   "explain_zh": "根据题意计算：4 × 2.5 + 1.8 = 11.8。",
+   "id": "l3g6_f06",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "subject": "science",
+   "q_en": "In the cold summit air, snow changes directly into water vapour without becoming liquid. What is this process?",
+   "q_zh": "山顶寒冷的空气中，雪不经过液态直接变成水蒸气，这是什么过程？",
+   "choices": [
+    "Sublimation",
+    "Freezing",
+    "Melting",
+    "Condensation"
+   ],
+   "choices_zh": [
+    "升华",
+    "凝固",
+    "熔化",
+    "凝结"
+   ],
+   "answer": 0,
+   "explain_en": "Sublimation changes a solid directly into a gas.",
+   "explain_zh": "升华是固体直接变成气体的过程。",
+   "id": "l3g6_f07",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "phase_change_energy",
+   "qtype_zh": "相变与热量（升华/潜热/吸热）"
+  },
+  {
+   "subject": "culture",
+   "q_en": "Beside the 7th Heaven inukshuk, Flora reads about Inuit landmarks. Which description is accurate?",
+   "q_zh": "在第七天堂的石头人旁，Flora 阅读因纽特地标介绍，哪项正确？",
+   "choices": [
+    "An inukshuk must be made of metal",
+    "An inukshuk is a living animal",
+    "An inukshuk can guide travellers as a stone landmark",
+    "Every inukshuk is a weather machine"
+   ],
+   "choices_zh": [
+    "石头人必须由金属制成",
+    "石头人是活的动物",
+    "石头人可作为石头地标为旅行者指路",
+    "每座石头人都是天气机器"
+   ],
+   "answer": 2,
+   "explain_en": "Inuksuit are Inuit stone landmarks with uses including guidance.",
+   "explain_zh": "因纽特石头人是石头地标，用途包括指路。",
+   "id": "l3g6_f08",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "inukshuk_landmark",
+   "qtype_zh": "石头人地标"
+  }
+ ]
+}

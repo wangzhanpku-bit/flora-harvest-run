@@ -1,0 +1,2186 @@
+{
+  "level": 3,
+  "level_name_en": "Whistler Christmas Snow Ride",
+  "level_name_zh": "惠斯勒·圣诞雪山骑行",
+  "grade": 3,
+  "version": 2,
+  "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall)",
+  "questions": [
+    {
+      "id": "l3g3_001",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 27 skiers in a class. 1/3 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 27 个学员，其中 1/3 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "19",
+        "18",
+        "9",
+        "8"
+      ],
+      "choices_zh": [
+        "19",
+        "18",
+        "9",
+        "8"
+      ],
+      "answer": 2,
+      "explain_en": "27 ÷ 3 = 9.",
+      "explain_zh": "27÷3=9。"
+    },
+    {
+      "id": "l3g3_002",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 485 people in the morning and 225 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 485 人，下午运了 225 人，一共多少人？",
+      "choices": [
+        "715",
+        "710",
+        "708",
+        "711"
+      ],
+      "choices_zh": [
+        "715",
+        "710",
+        "708",
+        "711"
+      ],
+      "answer": 1,
+      "explain_en": "485 + 225 = 710.",
+      "explain_zh": "485+225=710。"
+    },
+    {
+      "id": "l3g3_003",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 4 coal buttons. {name} builds 5 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 4 颗煤球纽扣，{name} 堆了 5 个雪人，一共要几颗？",
+      "choices": [
+        "20",
+        "9",
+        "18"
+      ],
+      "choices_zh": [
+        "20",
+        "9",
+        "18"
+      ],
+      "answer": 0,
+      "explain_en": "4 × 5 = 20.",
+      "explain_zh": "4×5=20。",
+      "sign_en": [
+        "20",
+        "9",
+        "18"
+      ],
+      "sign_zh": [
+        "20",
+        "9",
+        "18"
+      ]
+    },
+    {
+      "id": "l3g3_004",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 493 people in the morning and 209 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 493 人，下午运了 209 人，一共多少人？",
+      "choices": [
+        "704",
+        "703",
+        "701",
+        "702"
+      ],
+      "choices_zh": [
+        "704",
+        "703",
+        "701",
+        "702"
+      ],
+      "answer": 3,
+      "explain_en": "493 + 209 = 702.",
+      "explain_zh": "493+209=702。"
+    },
+    {
+      "id": "l3g3_005",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "A snowflake usually has how many arms?",
+      "q_zh": "雪花通常有几个角（分支）？",
+      "choices": [
+        "6",
+        "3",
+        "4"
+      ],
+      "choices_zh": [
+        "6",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "explain_en": "Snow crystals grow in six-sided shapes.",
+      "explain_zh": "雪晶是六边形的，所以通常有 6 个分支。",
+      "sign_en": [
+        "6",
+        "3",
+        "4"
+      ],
+      "sign_zh": [
+        "6",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "l3g3_006",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 3 coal buttons. {name} builds 7 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 3 颗煤球纽扣，{name} 堆了 7 个雪人，一共要几颗？",
+      "choices": [
+        "21",
+        "11",
+        "22",
+        "10"
+      ],
+      "choices_zh": [
+        "21",
+        "11",
+        "22",
+        "10"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 7 = 21.",
+      "explain_zh": "3×7=21。"
+    },
+    {
+      "id": "l3g3_007",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 24 skiers in a class. 1/4 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 24 个学员，其中 1/4 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "1",
+        "18",
+        "6",
+        "16"
+      ],
+      "choices_zh": [
+        "1",
+        "18",
+        "6",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "24 ÷ 4 = 6.",
+      "explain_zh": "24÷4=6。"
+    },
+    {
+      "id": "l3g3_008",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 25 skiers in a class. 1/5 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 25 个学员，其中 1/5 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "4",
+        "20",
+        "5"
+      ],
+      "choices_zh": [
+        "4",
+        "20",
+        "5"
+      ],
+      "answer": 2,
+      "explain_en": "25 ÷ 5 = 5.",
+      "explain_zh": "25÷5=5。",
+      "sign_en": [
+        "4",
+        "20",
+        "5"
+      ],
+      "sign_zh": [
+        "4",
+        "20",
+        "5"
+      ]
+    },
+    {
+      "id": "l3g3_009",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Why do skiers wax their skis?",
+      "q_zh": "滑雪的人为什么给雪板打蜡？",
+      "choices": [
+        "To make skis heavier",
+        "To change their colour",
+        "To reduce friction and glide faster"
+      ],
+      "choices_zh": [
+        "让雪板更重",
+        "换颜色",
+        "减少摩擦，滑得更快"
+      ],
+      "answer": 2,
+      "explain_en": "Wax lowers friction between ski and snow.",
+      "explain_zh": "打蜡能减少雪板和雪之间的摩擦。",
+      "sign_en": [
+        "To make skis heavier",
+        "To change their colour",
+        "To reduce friction and glide faster"
+      ],
+      "sign_zh": [
+        "让雪板更重",
+        "换颜色",
+        "减少摩擦，滑得更快"
+      ]
+    },
+    {
+      "id": "l3g3_010",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 143 people in the morning and 320 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 143 人，下午运了 320 人，一共多少人？",
+      "choices": [
+        "461",
+        "463",
+        "466"
+      ],
+      "choices_zh": [
+        "461",
+        "463",
+        "466"
+      ],
+      "answer": 1,
+      "explain_en": "143 + 320 = 463.",
+      "explain_zh": "143+320=463。",
+      "sign_en": [
+        "461",
+        "463",
+        "466"
+      ],
+      "sign_zh": [
+        "461",
+        "463",
+        "466"
+      ]
+    },
+    {
+      "id": "l3g3_011",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 338 people in the morning and 227 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 338 人，下午运了 227 人，一共多少人？",
+      "choices": [
+        "564",
+        "555",
+        "563",
+        "565"
+      ],
+      "choices_zh": [
+        "564",
+        "555",
+        "563",
+        "565"
+      ],
+      "answer": 3,
+      "explain_en": "338 + 227 = 565.",
+      "explain_zh": "338+227=565。"
+    },
+    {
+      "id": "l3g3_012",
+      "level": 3,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "Who has the right of way on a ski run?",
+      "q_zh": "在雪道上谁有优先通行权？",
+      "choices": [
+        "The loudest skier",
+        "Whoever is behind",
+        "The fastest skier",
+        "The skier ahead of (below) you"
+      ],
+      "choices_zh": [
+        "声音最大的人",
+        "后面的人",
+        "滑得最快的人",
+        "你前面（下方）的人"
+      ],
+      "answer": 3,
+      "explain_en": "People ahead of you have the right of way.",
+      "explain_zh": "前面（下方）的人优先，你要避让。"
+    },
+    {
+      "id": "l3g3_013",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "45 gifts are shared equally among 5 friends. How many does each friend get?",
+      "q_zh": "45 个礼物平均分给 5 个朋友，每人几个？",
+      "choices": [
+        "9",
+        "4",
+        "14",
+        "40"
+      ],
+      "choices_zh": [
+        "9",
+        "4",
+        "14",
+        "40"
+      ],
+      "answer": 0,
+      "explain_en": "45 ÷ 5 = 9.",
+      "explain_zh": "45÷5=9。"
+    },
+    {
+      "id": "l3g3_014",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Coyotes belong to which animal family?",
+      "q_zh": "郊狼属于哪个动物科？",
+      "choices": [
+        "Dog family",
+        "Cat family",
+        "Horse family"
+      ],
+      "choices_zh": [
+        "犬科",
+        "猫科",
+        "马科"
+      ],
+      "answer": 0,
+      "explain_en": "Coyotes are canines, like wolves and dogs.",
+      "explain_zh": "郊狼和狼、狗一样属于犬科。",
+      "sign_en": [
+        "Dog family",
+        "Cat family",
+        "Horse family"
+      ],
+      "sign_zh": [
+        "犬科",
+        "猫科",
+        "马科"
+      ]
+    },
+    {
+      "id": "l3g3_015",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "What is the past tense of 'ski'?",
+      "q_zh": "英文单词 'ski'（滑雪）的过去式是？",
+      "choices": [
+        "skied",
+        "skiied",
+        "skis",
+        "skate"
+      ],
+      "choices_zh": [
+        "skied",
+        "skiied",
+        "skis",
+        "skate"
+      ],
+      "answer": 0,
+      "explain_en": "Today I ski; yesterday I skied.",
+      "explain_zh": "今天 ski，昨天 skied。"
+    },
+    {
+      "id": "l3g3_016",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "In the story, which animals pull Santa's sleigh?",
+      "q_zh": "故事里，拉圣诞老人雪橇的是什么动物？",
+      "choices": [
+        "Penguins",
+        "Cows",
+        "Reindeer"
+      ],
+      "choices_zh": [
+        "企鹅",
+        "奶牛",
+        "驯鹿"
+      ],
+      "answer": 2,
+      "explain_en": "Santa's sleigh is pulled by reindeer.",
+      "explain_zh": "圣诞老人的雪橇由驯鹿拉。",
+      "sign_en": [
+        "Penguins",
+        "Cows",
+        "Reindeer"
+      ],
+      "sign_zh": [
+        "企鹅",
+        "奶牛",
+        "驯鹿"
+      ]
+    },
+    {
+      "id": "l3g3_017",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "How can a pika warn others of danger?",
+      "q_zh": "鼠兔可以怎样向同伴示警？",
+      "choices": [
+        "By singing human songs",
+        "By flashing lights",
+        "With sharp calls"
+      ],
+      "choices_zh": [
+        "唱人类的歌曲",
+        "闪光",
+        "发出尖锐叫声"
+      ],
+      "answer": 2,
+      "explain_en": "Pikas use sharp alarm calls to warn of danger.",
+      "explain_zh": "鼠兔用尖锐的警报叫声示警。",
+      "sign_en": [
+        "By singing human songs",
+        "By flashing lights",
+        "With sharp calls"
+      ],
+      "sign_zh": [
+        "唱人类的歌曲",
+        "闪光",
+        "发出尖锐叫声"
+      ]
+    },
+    {
+      "id": "l3g3_018",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "30 gifts are shared equally among 5 friends. How many does each friend get?",
+      "q_zh": "30 个礼物平均分给 5 个朋友，每人几个？",
+      "choices": [
+        "8",
+        "25",
+        "6"
+      ],
+      "choices_zh": [
+        "8",
+        "25",
+        "6"
+      ],
+      "answer": 2,
+      "explain_en": "30 ÷ 5 = 6.",
+      "explain_zh": "30÷5=6。",
+      "sign_en": [
+        "8",
+        "25",
+        "6"
+      ],
+      "sign_zh": [
+        "8",
+        "25",
+        "6"
+      ]
+    },
+    {
+      "id": "l3g3_019",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "72 gifts are shared equally among 9 friends. How many does each friend get?",
+      "q_zh": "72 个礼物平均分给 9 个朋友，每人几个？",
+      "choices": [
+        "63",
+        "11",
+        "8"
+      ],
+      "choices_zh": [
+        "63",
+        "11",
+        "8"
+      ],
+      "answer": 2,
+      "explain_en": "72 ÷ 9 = 8.",
+      "explain_zh": "72÷9=8。",
+      "sign_en": [
+        "63",
+        "11",
+        "8"
+      ],
+      "sign_zh": [
+        "63",
+        "11",
+        "8"
+      ]
+    },
+    {
+      "id": "l3g3_020",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 2 coal buttons. {name} builds 5 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 2 颗煤球纽扣，{name} 堆了 5 个雪人，一共要几颗？",
+      "choices": [
+        "9",
+        "7",
+        "10"
+      ],
+      "choices_zh": [
+        "9",
+        "7",
+        "10"
+      ],
+      "answer": 2,
+      "explain_en": "2 × 5 = 10.",
+      "explain_zh": "2×5=10。",
+      "sign_en": [
+        "9",
+        "7",
+        "10"
+      ],
+      "sign_zh": [
+        "9",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "id": "l3g3_021",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 9 m long and 6 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 9 米、宽 6 米，周长是多少米？",
+      "choices": [
+        "15",
+        "30",
+        "28",
+        "54"
+      ],
+      "choices_zh": [
+        "15",
+        "30",
+        "28",
+        "54"
+      ],
+      "answer": 1,
+      "explain_en": "2 × (9 + 6) = 30.",
+      "explain_zh": "2×(9+6)=30。"
+    },
+    {
+      "id": "l3g3_022",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 4 m long and 9 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 4 米、宽 9 米，周长是多少米？",
+      "choices": [
+        "13",
+        "26",
+        "36"
+      ],
+      "choices_zh": [
+        "13",
+        "26",
+        "36"
+      ],
+      "answer": 1,
+      "explain_en": "2 × (4 + 9) = 26.",
+      "explain_zh": "2×(4+9)=26。",
+      "sign_en": [
+        "13",
+        "26",
+        "36"
+      ],
+      "sign_zh": [
+        "13",
+        "26",
+        "36"
+      ]
+    },
+    {
+      "id": "l3g3_023",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 4 m long and 6 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 4 米、宽 6 米，周长是多少米？",
+      "choices": [
+        "10",
+        "20",
+        "17",
+        "24"
+      ],
+      "choices_zh": [
+        "10",
+        "20",
+        "17",
+        "24"
+      ],
+      "answer": 1,
+      "explain_en": "2 × (4 + 6) = 20.",
+      "explain_zh": "2×(4+6)=20。"
+    },
+    {
+      "id": "l3g3_024",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 3 coal buttons. {name} builds 3 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 3 颗煤球纽扣，{name} 堆了 3 个雪人，一共要几颗？",
+      "choices": [
+        "9",
+        "6",
+        "11"
+      ],
+      "choices_zh": [
+        "9",
+        "6",
+        "11"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 3 = 9.",
+      "explain_zh": "3×3=9。",
+      "sign_en": [
+        "9",
+        "6",
+        "11"
+      ],
+      "sign_zh": [
+        "9",
+        "6",
+        "11"
+      ]
+    },
+    {
+      "id": "l3g3_025",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "At what temperature does water freeze?",
+      "q_zh": "水在多少度结冰？",
+      "choices": [
+        "10 °C",
+        "0 °C",
+        "50 °C"
+      ],
+      "choices_zh": [
+        "10 °C",
+        "0 °C",
+        "50 °C"
+      ],
+      "answer": 1,
+      "explain_en": "Water freezes at 0 °C.",
+      "explain_zh": "水在 0 °C 结冰。",
+      "sign_en": [
+        "10 °C",
+        "0 °C",
+        "50 °C"
+      ],
+      "sign_zh": [
+        "10 °C",
+        "0 °C",
+        "50 °C"
+      ]
+    },
+    {
+      "id": "l3g3_026",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 487 people in the morning and 402 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 487 人，下午运了 402 人，一共多少人？",
+      "choices": [
+        "894",
+        "889",
+        "890",
+        "892"
+      ],
+      "choices_zh": [
+        "894",
+        "889",
+        "890",
+        "892"
+      ],
+      "answer": 1,
+      "explain_en": "487 + 402 = 889.",
+      "explain_zh": "487+402=889。"
+    },
+    {
+      "id": "l3g3_027",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "How many days are in December?",
+      "q_zh": "十二月有多少天？",
+      "choices": [
+        "28",
+        "30",
+        "31",
+        "32"
+      ],
+      "choices_zh": [
+        "28",
+        "30",
+        "31",
+        "32"
+      ],
+      "answer": 2,
+      "explain_en": "December has 31 days.",
+      "explain_zh": "十二月有 31 天。"
+    },
+    {
+      "id": "l3g3_028",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 6 skiers in a class. 1/3 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 6 个学员，其中 1/3 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "3",
+        "4",
+        "0",
+        "2"
+      ],
+      "choices_zh": [
+        "3",
+        "4",
+        "0",
+        "2"
+      ],
+      "answer": 3,
+      "explain_en": "6 ÷ 3 = 2.",
+      "explain_zh": "6÷3=2。"
+    },
+    {
+      "id": "l3g3_029",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Which word means almost the same as 'chilly'?",
+      "q_zh": "哪个英文单词和 'chilly'（冷飕飕）意思差不多？",
+      "choices": [
+        "warm",
+        "cold",
+        "loud",
+        "sunny"
+      ],
+      "choices_zh": [
+        "warm",
+        "cold",
+        "loud",
+        "sunny"
+      ],
+      "answer": 1,
+      "explain_en": "Chilly means cold.",
+      "explain_zh": "chilly 就是 cold（冷）的意思。"
+    },
+    {
+      "id": "l3g3_030",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 4 m long and 5 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 4 米、宽 5 米，周长是多少米？",
+      "choices": [
+        "9",
+        "20",
+        "18",
+        "17"
+      ],
+      "choices_zh": [
+        "9",
+        "20",
+        "18",
+        "17"
+      ],
+      "answer": 2,
+      "explain_en": "2 × (4 + 5) = 18.",
+      "explain_zh": "2×(4+5)=18。"
+    },
+    {
+      "id": "l3g3_031",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "What is the plural of 'mouse'?",
+      "q_zh": "英文单词 'mouse'（老鼠）的复数是？",
+      "choices": [
+        "mouses",
+        "meese",
+        "mice"
+      ],
+      "choices_zh": [
+        "mouses",
+        "meese",
+        "mice"
+      ],
+      "answer": 2,
+      "explain_en": "One mouse, two mice.",
+      "explain_zh": "一只 mouse，两只 mice。",
+      "sign_en": [
+        "mouses",
+        "meese",
+        "mice"
+      ],
+      "sign_zh": [
+        "mouses",
+        "meese",
+        "mice"
+      ]
+    },
+    {
+      "id": "l3g3_032",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 425 people in the morning and 315 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 425 人，下午运了 315 人，一共多少人？",
+      "choices": [
+        "745",
+        "737",
+        "740",
+        "742"
+      ],
+      "choices_zh": [
+        "745",
+        "737",
+        "740",
+        "742"
+      ],
+      "answer": 2,
+      "explain_en": "425 + 315 = 740.",
+      "explain_zh": "425+315=740。"
+    },
+    {
+      "id": "l3g3_033",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Cougars usually live and hunt…",
+      "q_zh": "美洲狮通常怎样生活和捕猎？",
+      "choices": [
+        "In the ocean",
+        "Alone",
+        "In packs of 20",
+        "Only in caves under ice"
+      ],
+      "choices_zh": [
+        "在海里",
+        "独来独往",
+        "20 只一群",
+        "只在冰下的洞里"
+      ],
+      "answer": 1,
+      "explain_en": "Adult cougars are solitary.",
+      "explain_zh": "成年美洲狮独自生活。"
+    },
+    {
+      "id": "l3g3_034",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 6 coal buttons. {name} builds 3 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 6 颗煤球纽扣，{name} 堆了 3 个雪人，一共要几颗？",
+      "choices": [
+        "18",
+        "28",
+        "9",
+        "23"
+      ],
+      "choices_zh": [
+        "18",
+        "28",
+        "9",
+        "23"
+      ],
+      "answer": 0,
+      "explain_en": "6 × 3 = 18.",
+      "explain_zh": "6×3=18。"
+    },
+    {
+      "id": "l3g3_035",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 3 m long and 9 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 3 米、宽 9 米，周长是多少米？",
+      "choices": [
+        "12",
+        "27",
+        "24",
+        "14"
+      ],
+      "choices_zh": [
+        "12",
+        "27",
+        "24",
+        "14"
+      ],
+      "answer": 2,
+      "explain_en": "2 × (3 + 9) = 24.",
+      "explain_zh": "2×(3+9)=24。"
+    },
+    {
+      "id": "l3g3_036",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 40 skiers in a class. 1/5 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 40 个学员，其中 1/5 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "10",
+        "32",
+        "6",
+        "8"
+      ],
+      "choices_zh": [
+        "10",
+        "32",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "explain_en": "40 ÷ 5 = 8.",
+      "explain_zh": "40÷5=8。"
+    },
+    {
+      "id": "l3g3_037",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Which word is an adjective in 'The fluffy snow fell'?",
+      "q_zh": "英文句子 'The fluffy snow fell' 里哪个词是形容词？",
+      "choices": [
+        "snow",
+        "fluffy",
+        "fell"
+      ],
+      "choices_zh": [
+        "snow",
+        "fluffy",
+        "fell"
+      ],
+      "answer": 1,
+      "explain_en": "Fluffy describes the snow.",
+      "explain_zh": "fluffy（蓬松的）用来形容雪。",
+      "sign_en": [
+        "snow",
+        "fluffy",
+        "fell"
+      ],
+      "sign_zh": [
+        "snow",
+        "fluffy",
+        "fell"
+      ]
+    },
+    {
+      "id": "l3g3_038",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 257 people in the morning and 365 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 257 人，下午运了 365 人，一共多少人？",
+      "choices": [
+        "617",
+        "622",
+        "620",
+        "621"
+      ],
+      "choices_zh": [
+        "617",
+        "622",
+        "620",
+        "621"
+      ],
+      "answer": 1,
+      "explain_en": "257 + 365 = 622.",
+      "explain_zh": "257+365=622。"
+    },
+    {
+      "id": "l3g3_039",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "easy",
+      "q_en": "Which highway goes from Vancouver to Whistler?",
+      "q_zh": "从温哥华到惠斯勒走哪条公路？",
+      "choices": [
+        "Route 66",
+        "Pacific Coast Highway (USA)",
+        "Sea-to-Sky Highway (Hwy 99)",
+        "The Silk Road"
+      ],
+      "choices_zh": [
+        "66 号公路",
+        "美国太平洋海岸公路",
+        "海天公路（99 号公路）",
+        "丝绸之路"
+      ],
+      "answer": 2,
+      "explain_en": "The Sea-to-Sky Highway links Vancouver and Whistler.",
+      "explain_zh": "海天公路连接温哥华和惠斯勒。"
+    },
+    {
+      "id": "l3g3_040",
+      "level": 3,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "If you get lost on the ski hill, you should…",
+      "q_zh": "在滑雪场迷路了应该……",
+      "choices": [
+        "Walk into the forest alone",
+        "Stay put and ask ski patrol or an adult for help",
+        "Ski off a cliff",
+        "Hide where no one can see you"
+      ],
+      "choices_zh": [
+        "一个人走进树林",
+        "待在原地，找滑雪巡逻员或大人帮忙",
+        "从悬崖上滑下去",
+        "躲到没人看见的地方"
+      ],
+      "answer": 1,
+      "explain_en": "Stay where you are and get help.",
+      "explain_zh": "待在原地并求助。"
+    },
+    {
+      "id": "l3g3_041",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "On a sunny day, a dark jacket usually feels ___ than a white one.",
+      "q_zh": "晴天里，深色外套通常比白色外套感觉更……",
+      "choices": [
+        "warmer",
+        "colder",
+        "wetter",
+        "lighter"
+      ],
+      "choices_zh": [
+        "暖",
+        "冷",
+        "湿",
+        "轻"
+      ],
+      "answer": 0,
+      "explain_en": "Dark colours absorb more sunlight.",
+      "explain_zh": "深色吸收更多阳光，所以更暖。"
+    },
+    {
+      "id": "l3g3_042",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "What do black bears eat a lot of in fall, before winter?",
+      "q_zh": "黑熊在入冬前的秋天会大量吃什么？",
+      "choices": [
+        "Nothing at all",
+        "Only snow",
+        "Berries and other food to build fat",
+        "Rocks"
+      ],
+      "choices_zh": [
+        "什么都不吃",
+        "只吃雪",
+        "浆果等食物，好长脂肪",
+        "石头"
+      ],
+      "answer": 2,
+      "explain_en": "Bears fatten up on berries before denning.",
+      "explain_zh": "黑熊入洞前大吃浆果来囤脂肪。"
+    },
+    {
+      "id": "l3g3_043",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "easy",
+      "q_en": "In 2010, Whistler helped host which event?",
+      "q_zh": "2010 年惠斯勒参与举办了什么活动？",
+      "choices": [
+        "A Moon landing",
+        "The Summer Olympics",
+        "The soccer World Cup final",
+        "The Winter Olympics"
+      ],
+      "choices_zh": [
+        "登月",
+        "夏季奥运会",
+        "足球世界杯决赛",
+        "冬季奥运会"
+      ],
+      "answer": 3,
+      "explain_en": "Vancouver and Whistler hosted the 2010 Winter Olympics.",
+      "explain_zh": "温哥华和惠斯勒举办了 2010 年冬奥会。"
+    },
+    {
+      "id": "l3g3_044",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 2 coal buttons. {name} builds 3 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 2 颗煤球纽扣，{name} 堆了 3 个雪人，一共要几颗？",
+      "choices": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "choices_zh": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "answer": 2,
+      "explain_en": "2 × 3 = 6.",
+      "explain_zh": "2×3=6。"
+    },
+    {
+      "id": "l3g3_045",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 354 people in the morning and 355 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 354 人，下午运了 355 人，一共多少人？",
+      "choices": [
+        "699",
+        "709",
+        "704"
+      ],
+      "choices_zh": [
+        "699",
+        "709",
+        "704"
+      ],
+      "answer": 1,
+      "explain_en": "354 + 355 = 709.",
+      "explain_zh": "354+355=709。",
+      "sign_en": [
+        "699",
+        "709",
+        "704"
+      ],
+      "sign_zh": [
+        "699",
+        "709",
+        "704"
+      ]
+    },
+    {
+      "id": "l3g3_046",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 347 people in the morning and 138 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 347 人，下午运了 138 人，一共多少人？",
+      "choices": [
+        "488",
+        "483",
+        "486",
+        "485"
+      ],
+      "choices_zh": [
+        "488",
+        "483",
+        "486",
+        "485"
+      ],
+      "answer": 3,
+      "explain_en": "347 + 138 = 485.",
+      "explain_zh": "347+138=485。"
+    },
+    {
+      "id": "l3g3_047",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "42 gifts are shared equally among 6 friends. How many does each friend get?",
+      "q_zh": "42 个礼物平均分给 6 个朋友，每人几个？",
+      "choices": [
+        "9",
+        "12",
+        "36",
+        "7"
+      ],
+      "choices_zh": [
+        "9",
+        "12",
+        "36",
+        "7"
+      ],
+      "answer": 3,
+      "explain_en": "42 ÷ 6 = 7.",
+      "explain_zh": "42÷6=7。"
+    },
+    {
+      "id": "l3g3_048",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Ice floats on a lake because ice is…",
+      "q_zh": "冰能浮在湖面上，是因为冰……",
+      "choices": [
+        "Heavier than water",
+        "Less dense than liquid water",
+        "Magnetic",
+        "Made only of air"
+      ],
+      "choices_zh": [
+        "比水重",
+        "密度比液态水小",
+        "有磁性",
+        "全是空气做的"
+      ],
+      "answer": 1,
+      "explain_en": "Ice is less dense than water, so it floats.",
+      "explain_zh": "冰的密度比水小，所以会浮起来。"
+    },
+    {
+      "id": "l3g3_049",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each chairlift chair holds 3 skiers. 4 chairs are full. How many skiers?",
+      "q_zh": "每把吊椅坐 3 人，4 把坐满了，一共几人？",
+      "choices": [
+        "11",
+        "12",
+        "22",
+        "7"
+      ],
+      "choices_zh": [
+        "11",
+        "12",
+        "22",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "3 × 4 = 12.",
+      "explain_zh": "3×4=12。"
+    },
+    {
+      "id": "l3g3_050",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "easy",
+      "q_en": "The Peak 2 Peak Gondola links which two mountains?",
+      "q_zh": "Peak 2 Peak 缆车连接哪两座山？",
+      "choices": [
+        "Whistler and Blackcomb",
+        "Everest and K2",
+        "Grouse and Seymour",
+        "Fuji and Tai"
+      ],
+      "choices_zh": [
+        "惠斯勒山和黑梳山",
+        "珠峰和乔戈里峰",
+        "格劳斯山和西摩山",
+        "富士山和泰山"
+      ],
+      "answer": 0,
+      "explain_en": "Peak 2 Peak joins Whistler and Blackcomb.",
+      "explain_zh": "Peak 2 Peak 连接惠斯勒山和黑梳山。"
+    },
+    {
+      "id": "l3g3_051",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 7 m long and 7 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 7 米、宽 7 米，周长是多少米？",
+      "choices": [
+        "28",
+        "18",
+        "14",
+        "49"
+      ],
+      "choices_zh": [
+        "28",
+        "18",
+        "14",
+        "49"
+      ],
+      "answer": 0,
+      "explain_en": "2 × (7 + 7) = 28.",
+      "explain_zh": "2×(7+7)=28。"
+    },
+    {
+      "id": "l3g3_052",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 8 skiers in a class. 1/2 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 8 个学员，其中 1/2 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "5",
+        "1",
+        "4",
+        "14"
+      ],
+      "choices_zh": [
+        "5",
+        "1",
+        "4",
+        "14"
+      ],
+      "answer": 2,
+      "explain_en": "8 ÷ 2 = 4.",
+      "explain_zh": "8÷2=4。"
+    },
+    {
+      "id": "l3g3_053",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A snow fort is 9 m long and 8 m wide. What is its perimeter in metres?",
+      "q_zh": "一座雪堡长 9 米、宽 8 米，周长是多少米？",
+      "choices": [
+        "39",
+        "34",
+        "17",
+        "72"
+      ],
+      "choices_zh": [
+        "39",
+        "34",
+        "17",
+        "72"
+      ],
+      "answer": 1,
+      "explain_en": "2 × (9 + 8) = 34.",
+      "explain_zh": "2×(9+8)=34。"
+    },
+    {
+      "id": "l3g3_054",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 239 people in the morning and 287 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 239 人，下午运了 287 人，一共多少人？",
+      "choices": [
+        "528",
+        "523",
+        "526",
+        "531"
+      ],
+      "choices_zh": [
+        "528",
+        "523",
+        "526",
+        "531"
+      ],
+      "answer": 2,
+      "explain_en": "239 + 287 = 526.",
+      "explain_zh": "239+287=526。"
+    },
+    {
+      "id": "l3g3_055",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 6 coal buttons. {name} builds 9 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 6 颗煤球纽扣，{name} 堆了 9 个雪人，一共要几颗？",
+      "choices": [
+        "59",
+        "15",
+        "51",
+        "54"
+      ],
+      "choices_zh": [
+        "59",
+        "15",
+        "51",
+        "54"
+      ],
+      "answer": 3,
+      "explain_en": "6 × 9 = 54.",
+      "explain_zh": "6×9=54。"
+    },
+    {
+      "id": "l3g3_056",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each chairlift chair holds 2 skiers. 3 chairs are full. How many skiers?",
+      "q_zh": "每把吊椅坐 2 人，3 把坐满了，一共几人？",
+      "choices": [
+        "16",
+        "6",
+        "9",
+        "5"
+      ],
+      "choices_zh": [
+        "16",
+        "6",
+        "9",
+        "5"
+      ],
+      "answer": 1,
+      "explain_en": "2 × 3 = 6.",
+      "explain_zh": "2×3=6。"
+    },
+    {
+      "id": "l3g3_057",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "What gives Earth heat and light?",
+      "q_zh": "什么给地球带来热和光？",
+      "choices": [
+        "Clouds",
+        "The Moon",
+        "Snow",
+        "The Sun"
+      ],
+      "choices_zh": [
+        "云",
+        "月亮",
+        "雪",
+        "太阳"
+      ],
+      "answer": 3,
+      "explain_en": "The Sun is Earth's source of heat and light.",
+      "explain_zh": "太阳是地球热和光的来源。"
+    },
+    {
+      "id": "l3g3_058",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 35 skiers in a class. 1/5 of them wear red jackets. How many wear red?",
+      "q_zh": "滑雪班有 35 个学员，其中 1/5 穿红外套，穿红外套的有几人？",
+      "choices": [
+        "17",
+        "7",
+        "28"
+      ],
+      "choices_zh": [
+        "17",
+        "7",
+        "28"
+      ],
+      "answer": 1,
+      "explain_en": "35 ÷ 5 = 7.",
+      "explain_zh": "35÷5=7。",
+      "sign_en": [
+        "17",
+        "7",
+        "28"
+      ],
+      "sign_zh": [
+        "17",
+        "7",
+        "28"
+      ]
+    },
+    {
+      "id": "l3g3_059",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 148 people in the morning and 339 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 148 人，下午运了 339 人，一共多少人？",
+      "choices": [
+        "487",
+        "489",
+        "486"
+      ],
+      "choices_zh": [
+        "487",
+        "489",
+        "486"
+      ],
+      "answer": 0,
+      "explain_en": "148 + 339 = 487.",
+      "explain_zh": "148+339=487。",
+      "sign_en": [
+        "487",
+        "489",
+        "486"
+      ],
+      "sign_zh": [
+        "487",
+        "489",
+        "486"
+      ]
+    },
+    {
+      "id": "l3g3_060",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 436 people in the morning and 355 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 436 人，下午运了 355 人，一共多少人？",
+      "choices": [
+        "789",
+        "781",
+        "791",
+        "794"
+      ],
+      "choices_zh": [
+        "789",
+        "781",
+        "791",
+        "794"
+      ],
+      "answer": 2,
+      "explain_en": "436 + 355 = 791.",
+      "explain_zh": "436+355=791。"
+    },
+    {
+      "id": "l3g3_061",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 4 coal buttons. {name} builds 2 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 4 颗煤球纽扣，{name} 堆了 2 个雪人，一共要几颗？",
+      "choices": [
+        "18",
+        "6",
+        "8"
+      ],
+      "choices_zh": [
+        "18",
+        "6",
+        "8"
+      ],
+      "answer": 2,
+      "explain_en": "4 × 2 = 8.",
+      "explain_zh": "4×2=8。",
+      "sign_en": [
+        "18",
+        "6",
+        "8"
+      ],
+      "sign_zh": [
+        "18",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "id": "l3g3_062",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "45 gifts are shared equally among 9 friends. How many does each friend get?",
+      "q_zh": "45 个礼物平均分给 9 个朋友，每人几个？",
+      "choices": [
+        "5",
+        "4",
+        "36",
+        "3"
+      ],
+      "choices_zh": [
+        "5",
+        "4",
+        "36",
+        "3"
+      ],
+      "answer": 0,
+      "explain_en": "45 ÷ 9 = 5.",
+      "explain_zh": "45÷9=5。"
+    },
+    {
+      "id": "l3g3_063",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each snowman gets 4 coal buttons. {name} builds 9 snowmen. How many buttons are needed?",
+      "q_zh": "每个雪人要 4 颗煤球纽扣，{name} 堆了 9 个雪人，一共要几颗？",
+      "choices": [
+        "13",
+        "36",
+        "37",
+        "31"
+      ],
+      "choices_zh": [
+        "13",
+        "36",
+        "37",
+        "31"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 9 = 36.",
+      "explain_zh": "4×9=36。"
+    },
+    {
+      "id": "l3g3_064",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 436 people in the morning and 354 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 436 人，下午运了 354 人，一共多少人？",
+      "choices": [
+        "790",
+        "792",
+        "788"
+      ],
+      "choices_zh": [
+        "790",
+        "792",
+        "788"
+      ],
+      "answer": 0,
+      "explain_en": "436 + 354 = 790.",
+      "explain_zh": "436+354=790。",
+      "sign_en": [
+        "790",
+        "792",
+        "788"
+      ],
+      "sign_zh": [
+        "790",
+        "792",
+        "788"
+      ]
+    },
+    {
+      "id": "l3g3_065",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Which state of matter is snow?",
+      "q_zh": "雪是物质的哪种状态？",
+      "choices": [
+        "Gas",
+        "Liquid",
+        "Solid"
+      ],
+      "choices_zh": [
+        "气体",
+        "液体",
+        "固体"
+      ],
+      "answer": 2,
+      "explain_en": "Snow is ice, a solid.",
+      "explain_zh": "雪是冰，属于固体。",
+      "sign_en": [
+        "Gas",
+        "Liquid",
+        "Solid"
+      ],
+      "sign_zh": [
+        "气体",
+        "液体",
+        "固体"
+      ]
+    },
+    {
+      "id": "l3g3_066",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each chairlift chair holds 2 skiers. 2 chairs are full. How many skiers?",
+      "q_zh": "每把吊椅坐 2 人，2 把坐满了，一共几人？",
+      "choices": [
+        "6",
+        "2",
+        "4",
+        "3"
+      ],
+      "choices_zh": [
+        "6",
+        "2",
+        "4",
+        "3"
+      ],
+      "answer": 2,
+      "explain_en": "2 × 2 = 4.",
+      "explain_zh": "2×2=4。"
+    },
+    {
+      "id": "l3g3_067",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "Christmas trees are usually which kind of tree?",
+      "q_zh": "圣诞树通常是哪种树？",
+      "choices": [
+        "Banana",
+        "Evergreen (fir, spruce or pine)",
+        "Cactus",
+        "Palm"
+      ],
+      "choices_zh": [
+        "香蕉树",
+        "常绿树（冷杉、云杉或松树）",
+        "仙人掌",
+        "棕榈树"
+      ],
+      "answer": 1,
+      "explain_en": "Fir, spruce and pine stay green all winter.",
+      "explain_zh": "冷杉、云杉和松树冬天也是绿的。"
+    },
+    {
+      "id": "l3g3_068",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Hibernation means an animal…",
+      "q_zh": "冬眠是指动物……",
+      "choices": [
+        "Eats only snow",
+        "Sleeps deeply through winter to save energy",
+        "Flies south",
+        "Turns into another animal"
+      ],
+      "choices_zh": [
+        "只吃雪",
+        "整个冬天深睡来节省能量",
+        "飞到南方",
+        "变成别的动物"
+      ],
+      "answer": 1,
+      "explain_en": "Hibernating animals slow down and save energy.",
+      "explain_zh": "冬眠的动物身体变慢，节省能量。"
+    },
+    {
+      "id": "l3g3_069",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each chairlift chair holds 6 skiers. 5 chairs are full. How many skiers?",
+      "q_zh": "每把吊椅坐 6 人，5 把坐满了，一共几人？",
+      "choices": [
+        "29",
+        "30",
+        "11"
+      ],
+      "choices_zh": [
+        "29",
+        "30",
+        "11"
+      ],
+      "answer": 1,
+      "explain_en": "6 × 5 = 30.",
+      "explain_zh": "6×5=30。",
+      "sign_en": [
+        "29",
+        "30",
+        "11"
+      ],
+      "sign_zh": [
+        "29",
+        "30",
+        "11"
+      ]
+    },
+    {
+      "id": "l3g3_070",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 376 people in the morning and 435 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 376 人，下午运了 435 人，一共多少人？",
+      "choices": [
+        "811",
+        "809",
+        "801"
+      ],
+      "choices_zh": [
+        "811",
+        "809",
+        "801"
+      ],
+      "answer": 0,
+      "explain_en": "376 + 435 = 811.",
+      "explain_zh": "376+435=811。",
+      "sign_en": [
+        "811",
+        "809",
+        "801"
+      ],
+      "sign_zh": [
+        "811",
+        "809",
+        "801"
+      ]
+    },
+    {
+      "id": "l3g3_071",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Which bird turns white in winter to hide in the snow?",
+      "q_zh": "哪种鸟冬天变成白色，好藏在雪里？",
+      "choices": [
+        "Robin",
+        "Ptarmigan",
+        "Crow"
+      ],
+      "choices_zh": [
+        "知更鸟",
+        "雷鸟",
+        "乌鸦"
+      ],
+      "answer": 1,
+      "explain_en": "The white-tailed ptarmigan turns white in winter.",
+      "explain_zh": "白尾雷鸟冬天会换成白色羽毛。",
+      "sign_en": [
+        "Robin",
+        "Ptarmigan",
+        "Crow"
+      ],
+      "sign_zh": [
+        "知更鸟",
+        "雷鸟",
+        "乌鸦"
+      ]
+    },
+    {
+      "id": "l3g3_072",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "A badger belongs to which family?",
+      "q_zh": "獾属于哪个科？",
+      "choices": [
+        "Cat family",
+        "Dog family",
+        "Weasel family",
+        "Bear family"
+      ],
+      "choices_zh": [
+        "猫科",
+        "犬科",
+        "鼬科",
+        "熊科"
+      ],
+      "answer": 2,
+      "explain_en": "Badgers are mustelids, the weasel family.",
+      "explain_zh": "獾属于鼬科。"
+    },
+    {
+      "id": "l3g3_073",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Each chairlift chair holds 2 skiers. 4 chairs are full. How many skiers?",
+      "q_zh": "每把吊椅坐 2 人，4 把坐满了，一共几人？",
+      "choices": [
+        "6",
+        "8",
+        "18",
+        "3"
+      ],
+      "choices_zh": [
+        "6",
+        "8",
+        "18",
+        "3"
+      ],
+      "answer": 1,
+      "explain_en": "2 × 4 = 8.",
+      "explain_zh": "2×4=8。"
+    },
+    {
+      "id": "l3g3_074",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "The gondola carried 461 people in the morning and 397 in the afternoon. How many in total?",
+      "q_zh": "缆车上午运了 461 人，下午运了 397 人，一共多少人？",
+      "choices": [
+        "861",
+        "857",
+        "858"
+      ],
+      "choices_zh": [
+        "861",
+        "857",
+        "858"
+      ],
+      "answer": 2,
+      "explain_en": "461 + 397 = 858.",
+      "explain_zh": "461+397=858。",
+      "sign_en": [
+        "861",
+        "857",
+        "858"
+      ],
+      "sign_zh": [
+        "861",
+        "857",
+        "858"
+      ]
+    },
+    {
+      "subject": "math",
+      "q_en": "Horstman Hut receives 248 summit-view cards in one box and 176 in another. How many cards arrive?",
+      "q_zh": "霍斯特曼小屋收到两箱山顶风景卡，一箱 248 张，另一箱 176 张，共几张？",
+      "choices": [
+        "524",
+        "424",
+        "434",
+        "414"
+      ],
+      "choices_zh": [
+        "524",
+        "424",
+        "434",
+        "414"
+      ],
+      "answer": 1,
+      "explain_en": "248 + 176 = 424.",
+      "explain_zh": "根据题意计算：248 + 176 = 424。",
+      "id": "l3g3_f01",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Flora has 600 snowflake stickers at the summit table and uses 235. How many remain?",
+      "q_zh": "Flora 在山顶的桌旁有 600 张雪花贴纸，用掉 235 张，还剩几张？",
+      "choices": [
+        "465",
+        "365",
+        "355",
+        "375"
+      ],
+      "choices_zh": [
+        "465",
+        "365",
+        "355",
+        "375"
+      ],
+      "answer": 1,
+      "explain_en": "600 - 235 = 365.",
+      "explain_zh": "根据题意计算：600 - 235 = 365。",
+      "id": "l3g3_f02",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "At the hut, 7 groups each need 8 mugs. How many mugs are needed?",
+      "q_zh": "小屋里有 7 组人，每组需要 8 个杯子，一共要几个？",
+      "choices": [
+        "56",
+        "54",
+        "64",
+        "48"
+      ],
+      "choices_zh": [
+        "56",
+        "54",
+        "64",
+        "48"
+      ],
+      "answer": 0,
+      "explain_en": "7 × 8 = 56.",
+      "explain_zh": "根据题意计算：7 × 8 = 56。",
+      "id": "l3g3_f03",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Flora shares 72 summit photos equally among 9 albums. How many photos go in each album?",
+      "q_zh": "Flora 把 72 张山顶照片平均放进 9 本相册，每本几张？",
+      "choices": [
+        "9",
+        "7",
+        "6",
+        "8"
+      ],
+      "choices_zh": [
+        "9",
+        "7",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "explain_en": "72 ÷ 9 = 8.",
+      "explain_zh": "根据题意计算：72 ÷ 9 = 8。",
+      "id": "l3g3_f04",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Of 36 visitors sketching the Spearhead Range, one third use blue pencils. How many use blue pencils?",
+      "q_zh": "36 位游客在画矛头山脉，其中三分之一用蓝色铅笔，有几位用蓝色铅笔？",
+      "choices": [
+        "18",
+        "9",
+        "24",
+        "12"
+      ],
+      "choices_zh": [
+        "18",
+        "9",
+        "24",
+        "12"
+      ],
+      "answer": 3,
+      "explain_en": "36 ÷ 3 = 12.",
+      "explain_zh": "根据题意计算：36 ÷ 3 = 12。",
+      "id": "l3g3_f05",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "A rectangular snow-play space near the hut is 9 m long and 6 m wide. What is its perimeter in metres?",
+      "q_zh": "小屋附近的长方形雪地活动区长 9 米、宽 6 米，周长几米？",
+      "choices": [
+        "30",
+        "15",
+        "24",
+        "54"
+      ],
+      "choices_zh": [
+        "30",
+        "15",
+        "24",
+        "54"
+      ],
+      "answer": 0,
+      "explain_en": "2 × (9 + 6) = 30.",
+      "explain_zh": "根据题意计算：2 × (9 + 6) = 30。",
+      "id": "l3g3_f06",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "science",
+      "q_en": "Flora sees a glacier below the summit. What is a glacier mainly made of?",
+      "q_zh": "Flora 看见山顶下方的冰川，冰川主要由什么组成？",
+      "choices": [
+        "Loose sand",
+        "Liquid lava",
+        "Ice formed from compacted snow",
+        "Dry leaves"
+      ],
+      "choices_zh": [
+        "松散的沙子",
+        "液态熔岩",
+        "积雪压实形成的冰",
+        "干树叶"
+      ],
+      "answer": 2,
+      "explain_en": "A glacier is a mass of ice formed as accumulated snow compacts.",
+      "explain_zh": "冰川是积雪不断堆积、压实形成的冰体。",
+      "id": "l3g3_f07",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "culture",
+      "q_en": "Near the Blackcomb summit, what is the purpose of an Inuit inukshuk?",
+      "q_zh": "在黑梳山山顶附近，因纽特石头人有什么用途？",
+      "choices": [
+        "To make daylight longer",
+        "To forecast exact temperatures",
+        "To serve as a landmark that can guide people",
+        "To stop all snow from falling"
+      ],
+      "choices_zh": [
+        "延长白昼",
+        "预报精确温度",
+        "作为地标为人指路",
+        "阻止所有降雪"
+      ],
+      "answer": 2,
+      "explain_en": "Inuksuit can serve as landmarks and guides.",
+      "explain_zh": "因纽特石头人可以作为地标，为人指路。",
+      "id": "l3g3_f08",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    }
+  ]
+}

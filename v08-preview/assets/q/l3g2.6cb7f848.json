@@ -1,0 +1,2186 @@
+{
+  "level": 3,
+  "level_name_en": "Whistler Christmas Snow Ride",
+  "level_name_zh": "惠斯勒·圣诞雪山骑行",
+  "grade": 2,
+  "version": 2,
+  "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall)",
+  "questions": [
+    {
+      "id": "l3g2_001",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Which word is a colour?",
+      "q_zh": "哪个英文单词是颜色？",
+      "choices": [
+        "ski",
+        "jump",
+        "white"
+      ],
+      "choices_zh": [
+        "ski",
+        "jump",
+        "white"
+      ],
+      "answer": 2,
+      "explain_en": "White is a colour.",
+      "explain_zh": "white（白色）是颜色。",
+      "sign_en": [
+        "ski",
+        "jump",
+        "white"
+      ],
+      "sign_zh": [
+        "ski",
+        "jump",
+        "white"
+      ]
+    },
+    {
+      "id": "l3g2_002",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 5s: 55, 60, 65, … What comes next?",
+      "q_zh": "5 个 5 个地数礼物：55、60、65……下一个是几？",
+      "choices": [
+        "75",
+        "80",
+        "69",
+        "70"
+      ],
+      "choices_zh": [
+        "75",
+        "80",
+        "69",
+        "70"
+      ],
+      "answer": 3,
+      "explain_en": "65 + 5 = 70.",
+      "explain_zh": "65+5=70。"
+    },
+    {
+      "id": "l3g2_003",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 2s: 14, 16, 18, … What comes next?",
+      "q_zh": "2 个 2 个地数礼物：14、16、18……下一个是几？",
+      "choices": [
+        "10",
+        "20",
+        "22",
+        "23"
+      ],
+      "choices_zh": [
+        "10",
+        "20",
+        "22",
+        "23"
+      ],
+      "answer": 1,
+      "explain_en": "18 + 2 = 20.",
+      "explain_zh": "18+2=20。"
+    },
+    {
+      "id": "l3g2_004",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 2 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 2 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "3",
+        "4",
+        "9",
+        "2"
+      ],
+      "choices_zh": [
+        "3",
+        "4",
+        "9",
+        "2"
+      ],
+      "answer": 1,
+      "explain_en": "2 × 2 = 4.",
+      "explain_zh": "2×2=4。"
+    },
+    {
+      "id": "l3g2_005",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "A coyote looks most like a…",
+      "q_zh": "郊狼长得最像……",
+      "choices": [
+        "Bird",
+        "Frog",
+        "Dog",
+        "Fish"
+      ],
+      "choices_zh": [
+        "鸟",
+        "青蛙",
+        "狗",
+        "鱼"
+      ],
+      "answer": 2,
+      "explain_en": "Coyotes are in the dog family.",
+      "explain_zh": "郊狼属于犬科，和狗是亲戚。"
+    },
+    {
+      "id": "l3g2_006",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 35 skiers rode the gondola. On Tuesday 16 rode. How many in all?",
+      "q_zh": "星期一有 35 人坐缆车，星期二有 16 人，一共多少人？",
+      "choices": [
+        "46",
+        "54",
+        "51"
+      ],
+      "choices_zh": [
+        "46",
+        "54",
+        "51"
+      ],
+      "answer": 2,
+      "explain_en": "35 + 16 = 51.",
+      "explain_zh": "35+16=51。",
+      "sign_en": [
+        "46",
+        "54",
+        "51"
+      ],
+      "sign_zh": [
+        "46",
+        "54",
+        "51"
+      ]
+    },
+    {
+      "id": "l3g2_007",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 80 toques. It sold 53. How many are left?",
+      "q_zh": "滑雪店有 80 顶毛线帽，卖掉了 53 顶，还剩几顶？",
+      "choices": [
+        "27",
+        "22",
+        "29"
+      ],
+      "choices_zh": [
+        "27",
+        "22",
+        "29"
+      ],
+      "answer": 0,
+      "explain_en": "80 - 53 = 27.",
+      "explain_zh": "80-53=27。",
+      "sign_en": [
+        "27",
+        "22",
+        "29"
+      ],
+      "sign_zh": [
+        "27",
+        "22",
+        "29"
+      ]
+    },
+    {
+      "id": "l3g2_008",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "'Snow' + 'man' makes which word?",
+      "q_zh": "英文里 'snow' 加 'man' 组成哪个英文单词？",
+      "choices": [
+        "sandman",
+        "snowman",
+        "snowfall",
+        "mansnow"
+      ],
+      "choices_zh": [
+        "sandman",
+        "snowman",
+        "snowfall",
+        "mansnow"
+      ],
+      "answer": 1,
+      "explain_en": "snow + man = snowman.",
+      "explain_zh": "snow + man = snowman（雪人）。"
+    },
+    {
+      "id": "l3g2_009",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Badgers are very good at…",
+      "q_zh": "獾非常擅长……",
+      "choices": [
+        "Breathing underwater",
+        "Digging holes",
+        "Flying"
+      ],
+      "choices_zh": [
+        "在水下呼吸",
+        "挖洞",
+        "飞"
+      ],
+      "answer": 1,
+      "explain_en": "Badgers have strong claws for digging.",
+      "explain_zh": "獾有强壮的爪子，很会挖洞。",
+      "sign_en": [
+        "Breathing underwater",
+        "Digging holes",
+        "Flying"
+      ],
+      "sign_zh": [
+        "在水下呼吸",
+        "挖洞",
+        "飞"
+      ]
+    },
+    {
+      "id": "l3g2_010",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 51 cm tall. {name} adds a head 30 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 51 厘米，{name} 又加了一个 30 厘米高的头，现在雪人多高？",
+      "choices": [
+        "91",
+        "86",
+        "81"
+      ],
+      "choices_zh": [
+        "91",
+        "86",
+        "81"
+      ],
+      "answer": 2,
+      "explain_en": "51 + 30 = 81.",
+      "explain_zh": "51+30=81。",
+      "sign_en": [
+        "91",
+        "86",
+        "81"
+      ],
+      "sign_zh": [
+        "91",
+        "86",
+        "81"
+      ]
+    },
+    {
+      "id": "l3g2_011",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 32 toques. It sold 20. How many are left?",
+      "q_zh": "滑雪店有 32 顶毛线帽，卖掉了 20 顶，还剩几顶？",
+      "choices": [
+        "15",
+        "12",
+        "14",
+        "7"
+      ],
+      "choices_zh": [
+        "15",
+        "12",
+        "14",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "32 - 20 = 12.",
+      "explain_zh": "32-20=12。"
+    },
+    {
+      "id": "l3g2_012",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 8 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 8 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "13",
+        "19",
+        "16",
+        "8"
+      ],
+      "choices_zh": [
+        "13",
+        "19",
+        "16",
+        "8"
+      ],
+      "answer": 2,
+      "explain_en": "8 × 2 = 16.",
+      "explain_zh": "8×2=16。"
+    },
+    {
+      "id": "l3g2_013",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "What colour is a snowshoe hare's fur in winter?",
+      "q_zh": "冬天雪鞋兔的毛是什么颜色？",
+      "choices": [
+        "Red",
+        "Green",
+        "White",
+        "Purple"
+      ],
+      "choices_zh": [
+        "红色",
+        "绿色",
+        "白色",
+        "紫色"
+      ],
+      "answer": 2,
+      "explain_en": "It turns white to hide in the snow.",
+      "explain_zh": "它冬天变白，好藏在雪里。"
+    },
+    {
+      "id": "l3g2_014",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 39 skiers rode the gondola. On Tuesday 23 rode. How many in all?",
+      "q_zh": "星期一有 39 人坐缆车，星期二有 23 人，一共多少人？",
+      "choices": [
+        "60",
+        "52",
+        "62",
+        "64"
+      ],
+      "choices_zh": [
+        "60",
+        "52",
+        "62",
+        "64"
+      ],
+      "answer": 2,
+      "explain_en": "39 + 23 = 62.",
+      "explain_zh": "39+23=62。"
+    },
+    {
+      "id": "l3g2_015",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Which animal grows a white coat in winter to blend into the snow?",
+      "q_zh": "哪种动物冬天长出白色毛皮，与雪地融为一体？",
+      "choices": [
+        "Camel",
+        "Shark",
+        "Snowshoe hare"
+      ],
+      "choices_zh": [
+        "骆驼",
+        "鲨鱼",
+        "雪鞋兔"
+      ],
+      "answer": 2,
+      "explain_en": "Snowshoe hares in snowy habitats grow a white winter coat.",
+      "explain_zh": "雪地环境中的雪鞋兔冬天会长出白色毛皮。",
+      "sign_en": [
+        "Camel",
+        "Shark",
+        "Snowshoe hare"
+      ],
+      "sign_zh": [
+        "骆驼",
+        "鲨鱼",
+        "雪鞋兔"
+      ]
+    },
+    {
+      "id": "l3g2_016",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 69 cm tall. {name} adds a head 11 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 69 厘米，{name} 又加了一个 11 厘米高的头，现在雪人多高？",
+      "choices": [
+        "90",
+        "85",
+        "77",
+        "80"
+      ],
+      "choices_zh": [
+        "90",
+        "85",
+        "77",
+        "80"
+      ],
+      "answer": 3,
+      "explain_en": "69 + 11 = 80.",
+      "explain_zh": "69+11=80。"
+    },
+    {
+      "id": "l3g2_017",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 78 people. The Whistler line has 73. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 78 人，惠斯勒山排队 73 人，黑梳山多几人？",
+      "choices": [
+        "10",
+        "3",
+        "151",
+        "5"
+      ],
+      "choices_zh": [
+        "10",
+        "3",
+        "151",
+        "5"
+      ],
+      "answer": 3,
+      "explain_en": "78 - 73 = 5.",
+      "explain_zh": "78-73=5。"
+    },
+    {
+      "id": "l3g2_018",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 78 toques. It sold 71. How many are left?",
+      "q_zh": "滑雪店有 78 顶毛线帽，卖掉了 71 顶，还剩几顶？",
+      "choices": [
+        "8",
+        "12",
+        "7",
+        "2"
+      ],
+      "choices_zh": [
+        "8",
+        "12",
+        "7",
+        "2"
+      ],
+      "answer": 2,
+      "explain_en": "78 - 71 = 7.",
+      "explain_zh": "78-71=7。"
+    },
+    {
+      "id": "l3g2_019",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "What do people say on December 25?",
+      "q_zh": "12 月 25 日人们会说什么？",
+      "choices": [
+        "Happy spring!",
+        "Merry Christmas!",
+        "Good luck on your test!",
+        "See you yesterday!"
+      ],
+      "choices_zh": [
+        "春天快乐！",
+        "圣诞快乐！",
+        "考试顺利！",
+        "昨天见！"
+      ],
+      "answer": 1,
+      "explain_en": "December 25 is Christmas Day.",
+      "explain_zh": "12 月 25 日是圣诞节。"
+    },
+    {
+      "id": "l3g2_020",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 84 toques. It sold 37. How many are left?",
+      "q_zh": "滑雪店有 84 顶毛线帽，卖掉了 37 顶，还剩几顶？",
+      "choices": [
+        "47",
+        "46",
+        "44",
+        "37"
+      ],
+      "choices_zh": [
+        "47",
+        "46",
+        "44",
+        "37"
+      ],
+      "answer": 0,
+      "explain_en": "84 - 37 = 47.",
+      "explain_zh": "84-37=47。"
+    },
+    {
+      "id": "l3g2_021",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "What is snow made of?",
+      "q_zh": "雪是用什么做成的？",
+      "choices": [
+        "Sand",
+        "Frozen water",
+        "Flour"
+      ],
+      "choices_zh": [
+        "沙子",
+        "冻住的水",
+        "面粉"
+      ],
+      "answer": 1,
+      "explain_en": "Snow is tiny pieces of frozen water (ice crystals).",
+      "explain_zh": "雪是冻住的水变成的小冰晶。",
+      "sign_en": [
+        "Sand",
+        "Frozen water",
+        "Flour"
+      ],
+      "sign_zh": [
+        "沙子",
+        "冻住的水",
+        "面粉"
+      ]
+    },
+    {
+      "id": "l3g2_022",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 52 people. The Whistler line has 19. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 52 人，惠斯勒山排队 19 人，黑梳山多几人？",
+      "choices": [
+        "33",
+        "71",
+        "30"
+      ],
+      "choices_zh": [
+        "33",
+        "71",
+        "30"
+      ],
+      "answer": 0,
+      "explain_en": "52 - 19 = 33.",
+      "explain_zh": "52-19=33。",
+      "sign_en": [
+        "33",
+        "71",
+        "30"
+      ],
+      "sign_zh": [
+        "33",
+        "71",
+        "30"
+      ]
+    },
+    {
+      "id": "l3g2_023",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "On a chairlift, you should…",
+      "q_zh": "坐吊椅缆车时应该……",
+      "choices": [
+        "Sit back and hold on",
+        "Swing your skis hard",
+        "Stand on the seat"
+      ],
+      "choices_zh": [
+        "坐稳并抓好",
+        "使劲甩滑雪板",
+        "站在座位上"
+      ],
+      "answer": 0,
+      "explain_en": "Sit back, hold on and keep still.",
+      "explain_zh": "坐稳、抓好、别乱动。",
+      "sign_en": [
+        "Sit back and hold on",
+        "Swing your skis hard",
+        "Stand on the seat"
+      ],
+      "sign_zh": [
+        "坐稳并抓好",
+        "使劲甩滑雪板",
+        "站在座位上"
+      ]
+    },
+    {
+      "id": "l3g2_024",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 85 toques. It sold 31. How many are left?",
+      "q_zh": "滑雪店有 85 顶毛线帽，卖掉了 31 顶，还剩几顶？",
+      "choices": [
+        "64",
+        "54",
+        "56"
+      ],
+      "choices_zh": [
+        "64",
+        "54",
+        "56"
+      ],
+      "answer": 1,
+      "explain_en": "85 - 31 = 54.",
+      "explain_zh": "85-31=54。",
+      "sign_en": [
+        "64",
+        "54",
+        "56"
+      ],
+      "sign_zh": [
+        "64",
+        "54",
+        "56"
+      ]
+    },
+    {
+      "id": "l3g2_025",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 66 cm tall. {name} adds a head 25 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 66 厘米，{name} 又加了一个 25 厘米高的头，现在雪人多高？",
+      "choices": [
+        "90",
+        "91",
+        "101"
+      ],
+      "choices_zh": [
+        "90",
+        "91",
+        "101"
+      ],
+      "answer": 1,
+      "explain_en": "66 + 25 = 91.",
+      "explain_zh": "66+25=91。",
+      "sign_en": [
+        "90",
+        "91",
+        "101"
+      ],
+      "sign_zh": [
+        "90",
+        "91",
+        "101"
+      ]
+    },
+    {
+      "id": "l3g2_026",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 63 cm tall. {name} adds a head 16 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 63 厘米，{name} 又加了一个 16 厘米高的头，现在雪人多高？",
+      "choices": [
+        "77",
+        "80",
+        "79",
+        "89"
+      ],
+      "choices_zh": [
+        "77",
+        "80",
+        "79",
+        "89"
+      ],
+      "answer": 2,
+      "explain_en": "63 + 16 = 79.",
+      "explain_zh": "63+16=79。"
+    },
+    {
+      "id": "l3g2_027",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 10s: 70, 80, 90, … What comes next?",
+      "q_zh": "10 个 10 个地数礼物：70、80、90……下一个是几？",
+      "choices": [
+        "99",
+        "100",
+        "101"
+      ],
+      "choices_zh": [
+        "99",
+        "100",
+        "101"
+      ],
+      "answer": 1,
+      "explain_en": "90 + 10 = 100.",
+      "explain_zh": "90+10=100。",
+      "sign_en": [
+        "99",
+        "100",
+        "101"
+      ],
+      "sign_zh": [
+        "99",
+        "100",
+        "101"
+      ]
+    },
+    {
+      "id": "l3g2_028",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Many owls hunt mostly at…",
+      "q_zh": "很多猫头鹰主要在什么时候捕猎？",
+      "choices": [
+        "Only on Mondays",
+        "Night",
+        "Noon"
+      ],
+      "choices_zh": [
+        "只在星期一",
+        "夜里",
+        "中午"
+      ],
+      "answer": 1,
+      "explain_en": "Most owls are night hunters.",
+      "explain_zh": "大多数猫头鹰在夜里捕猎。",
+      "sign_en": [
+        "Only on Mondays",
+        "Night",
+        "Noon"
+      ],
+      "sign_zh": [
+        "只在星期一",
+        "夜里",
+        "中午"
+      ]
+    },
+    {
+      "id": "l3g2_029",
+      "level": 3,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "What should you wear on your head when you ski?",
+      "q_zh": "滑雪时头上应该戴什么？",
+      "choices": [
+        "A paper hat",
+        "Nothing",
+        "A crown",
+        "A helmet"
+      ],
+      "choices_zh": [
+        "纸帽子",
+        "什么都不戴",
+        "皇冠",
+        "头盔"
+      ],
+      "answer": 3,
+      "explain_en": "A helmet protects your head if you fall.",
+      "explain_zh": "摔倒时头盔能保护头部。"
+    },
+    {
+      "id": "l3g2_030",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 45 toques. It sold 35. How many are left?",
+      "q_zh": "滑雪店有 45 顶毛线帽，卖掉了 35 顶，还剩几顶？",
+      "choices": [
+        "5",
+        "10",
+        "8",
+        "11"
+      ],
+      "choices_zh": [
+        "5",
+        "10",
+        "8",
+        "11"
+      ],
+      "answer": 1,
+      "explain_en": "45 - 35 = 10.",
+      "explain_zh": "45-35=10。"
+    },
+    {
+      "id": "l3g2_031",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "easy",
+      "q_en": "A gondola carries people…",
+      "q_zh": "缆车把人们带到……",
+      "choices": [
+        "Into space",
+        "Up the mountain",
+        "Under the sea",
+        "Across a desert"
+      ],
+      "choices_zh": [
+        "太空",
+        "山上",
+        "海底",
+        "沙漠对面"
+      ],
+      "answer": 1,
+      "explain_en": "A gondola lifts skiers up the mountain.",
+      "explain_zh": "缆车把滑雪的人送上山。"
+    },
+    {
+      "id": "l3g2_032",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 10s: 90, 100, 110, … What comes next?",
+      "q_zh": "10 个 10 个地数礼物：90、100、110……下一个是几？",
+      "choices": [
+        "130",
+        "120",
+        "121"
+      ],
+      "choices_zh": [
+        "130",
+        "120",
+        "121"
+      ],
+      "answer": 1,
+      "explain_en": "110 + 10 = 120.",
+      "explain_zh": "110+10=120。",
+      "sign_en": [
+        "130",
+        "120",
+        "121"
+      ],
+      "sign_zh": [
+        "130",
+        "120",
+        "121"
+      ]
+    },
+    {
+      "id": "l3g2_033",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Where does a black bear shelter during winter dormancy?",
+      "q_zh": "黑熊冬季休眠时在哪里躲避风雪？",
+      "choices": [
+        "In an exposed nest on a treetop",
+        "In the lake",
+        "Inside a moving vehicle",
+        "In a sheltered den"
+      ],
+      "choices_zh": [
+        "树顶无遮蔽的鸟窝里",
+        "湖里",
+        "行驶的交通工具里",
+        "隐蔽的窝穴里"
+      ],
+      "answer": 3,
+      "explain_en": "Black bears spend winter dormancy in sheltered dens.",
+      "explain_zh": "黑熊在隐蔽的窝穴中度过冬季休眠期。"
+    },
+    {
+      "id": "l3g2_034",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 69 cm tall. {name} adds a head 30 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 69 厘米，{name} 又加了一个 30 厘米高的头，现在雪人多高？",
+      "choices": [
+        "98",
+        "99",
+        "101",
+        "100"
+      ],
+      "choices_zh": [
+        "98",
+        "99",
+        "101",
+        "100"
+      ],
+      "answer": 1,
+      "explain_en": "69 + 30 = 99.",
+      "explain_zh": "69+30=99。"
+    },
+    {
+      "id": "l3g2_035",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 63 toques. It sold 44. How many are left?",
+      "q_zh": "滑雪店有 63 顶毛线帽，卖掉了 44 顶，还剩几顶？",
+      "choices": [
+        "19",
+        "29",
+        "24"
+      ],
+      "choices_zh": [
+        "19",
+        "29",
+        "24"
+      ],
+      "answer": 0,
+      "explain_en": "63 - 44 = 19.",
+      "explain_zh": "63-44=19。",
+      "sign_en": [
+        "19",
+        "29",
+        "24"
+      ],
+      "sign_zh": [
+        "19",
+        "29",
+        "24"
+      ]
+    },
+    {
+      "id": "l3g2_036",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "What do people often use for a snowman's nose?",
+      "q_zh": "人们常用什么给雪人做鼻子？",
+      "choices": [
+        "A shoe",
+        "A book",
+        "A carrot",
+        "A spoon"
+      ],
+      "choices_zh": [
+        "鞋子",
+        "书",
+        "胡萝卜",
+        "勺子"
+      ],
+      "answer": 2,
+      "explain_en": "A carrot is the classic snowman nose.",
+      "explain_zh": "胡萝卜是雪人最常见的鼻子。"
+    },
+    {
+      "id": "l3g2_037",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "What is the opposite of 'cold'?",
+      "q_zh": "选出英文 'cold'（冷）的反义词：",
+      "choices": [
+        "icy",
+        "hot",
+        "chilly"
+      ],
+      "choices_zh": [
+        "icy",
+        "hot",
+        "chilly"
+      ],
+      "answer": 1,
+      "explain_en": "Hot is the opposite of cold.",
+      "explain_zh": "hot（热）是 cold（冷）的反义词。",
+      "sign_en": [
+        "icy",
+        "hot",
+        "chilly"
+      ],
+      "sign_zh": [
+        "icy",
+        "hot",
+        "chilly"
+      ]
+    },
+    {
+      "id": "l3g2_038",
+      "level": 3,
+      "section": "seawall",
+      "subject": "whistler",
+      "difficulty": "easy",
+      "q_en": "Whistler is in which Canadian province?",
+      "q_zh": "惠斯勒在加拿大哪个省？",
+      "choices": [
+        "Quebec",
+        "British Columbia",
+        "Ontario",
+        "Nova Scotia"
+      ],
+      "choices_zh": [
+        "魁北克省",
+        "不列颠哥伦比亚省（BC）",
+        "安大略省",
+        "新斯科舍省"
+      ],
+      "answer": 1,
+      "explain_en": "Whistler is in British Columbia.",
+      "explain_zh": "惠斯勒在不列颠哥伦比亚省（BC）。"
+    },
+    {
+      "id": "l3g2_039",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "What do people put under a Christmas tree?",
+      "q_zh": "人们在圣诞树下放什么？",
+      "choices": [
+        "Old shoes",
+        "Fish",
+        "Rocks",
+        "Gifts"
+      ],
+      "choices_zh": [
+        "旧鞋子",
+        "鱼",
+        "石头",
+        "礼物"
+      ],
+      "answer": 3,
+      "explain_en": "Gifts go under the Christmas tree.",
+      "explain_zh": "礼物放在圣诞树下。"
+    },
+    {
+      "id": "l3g2_040",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 58 cm tall. {name} adds a head 18 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 58 厘米，{name} 又加了一个 18 厘米高的头，现在雪人多高？",
+      "choices": [
+        "79",
+        "73",
+        "76",
+        "74"
+      ],
+      "choices_zh": [
+        "79",
+        "73",
+        "76",
+        "74"
+      ],
+      "answer": 2,
+      "explain_en": "58 + 18 = 76.",
+      "explain_zh": "58+18=76。"
+    },
+    {
+      "id": "l3g2_041",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 73 people. The Whistler line has 67. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 73 人，惠斯勒山排队 67 人，黑梳山多几人？",
+      "choices": [
+        "16",
+        "140",
+        "6"
+      ],
+      "choices_zh": [
+        "16",
+        "140",
+        "6"
+      ],
+      "answer": 2,
+      "explain_en": "73 - 67 = 6.",
+      "explain_zh": "73-67=6。",
+      "sign_en": [
+        "16",
+        "140",
+        "6"
+      ],
+      "sign_zh": [
+        "16",
+        "140",
+        "6"
+      ]
+    },
+    {
+      "id": "l3g2_042",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 57 skiers rode the gondola. On Tuesday 24 rode. How many in all?",
+      "q_zh": "星期一有 57 人坐缆车，星期二有 24 人，一共多少人？",
+      "choices": [
+        "79",
+        "76",
+        "81",
+        "91"
+      ],
+      "choices_zh": [
+        "79",
+        "76",
+        "81",
+        "91"
+      ],
+      "answer": 2,
+      "explain_en": "57 + 24 = 81.",
+      "explain_zh": "57+24=81。"
+    },
+    {
+      "id": "l3g2_043",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "If you leave ice in a warm room, it turns into…",
+      "q_zh": "把冰放在暖和的屋里，它会变成……",
+      "choices": [
+        "Water",
+        "Gold",
+        "Sand",
+        "Paper"
+      ],
+      "choices_zh": [
+        "水",
+        "金子",
+        "沙子",
+        "纸"
+      ],
+      "answer": 0,
+      "explain_en": "Warm air melts ice into water.",
+      "explain_zh": "暖空气让冰化成水。"
+    },
+    {
+      "id": "l3g2_044",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 46 skiers rode the gondola. On Tuesday 21 rode. How many in all?",
+      "q_zh": "星期一有 46 人坐缆车，星期二有 21 人，一共多少人？",
+      "choices": [
+        "77",
+        "57",
+        "67",
+        "64"
+      ],
+      "choices_zh": [
+        "77",
+        "57",
+        "67",
+        "64"
+      ],
+      "answer": 2,
+      "explain_en": "46 + 21 = 67.",
+      "explain_zh": "46+21=67。"
+    },
+    {
+      "id": "l3g2_045",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "Why do skiers wear goggles?",
+      "q_zh": "滑雪的人为什么要戴护目镜？",
+      "choices": [
+        "To see underwater",
+        "To look taller",
+        "To protect eyes from wind, snow and bright sun"
+      ],
+      "choices_zh": [
+        "为了在水下看东西",
+        "为了显得更高",
+        "保护眼睛不被风、雪和强光伤到"
+      ],
+      "answer": 2,
+      "explain_en": "Goggles protect your eyes on the snow.",
+      "explain_zh": "护目镜在雪地上保护眼睛。",
+      "sign_en": [
+        "To see underwater",
+        "To look taller",
+        "To protect eyes from wind, snow and bright sun"
+      ],
+      "sign_zh": [
+        "为了在水下看东西",
+        "为了显得更高",
+        "保护眼睛不被风、雪和强光伤到"
+      ]
+    },
+    {
+      "id": "l3g2_046",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 3 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 3 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "3",
+        "6",
+        "1",
+        "16"
+      ],
+      "choices_zh": [
+        "3",
+        "6",
+        "1",
+        "16"
+      ],
+      "answer": 1,
+      "explain_en": "3 × 2 = 6.",
+      "explain_zh": "3×2=6。"
+    },
+    {
+      "id": "l3g2_047",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 2s: 10, 12, 14, … What comes next?",
+      "q_zh": "2 个 2 个地数礼物：10、12、14……下一个是几？",
+      "choices": [
+        "13",
+        "16",
+        "15",
+        "18"
+      ],
+      "choices_zh": [
+        "13",
+        "16",
+        "15",
+        "18"
+      ],
+      "answer": 1,
+      "explain_en": "14 + 2 = 16.",
+      "explain_zh": "14+2=16。"
+    },
+    {
+      "id": "l3g2_048",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 42 cm tall. {name} adds a head 17 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 42 厘米，{name} 又加了一个 17 厘米高的头，现在雪人多高？",
+      "choices": [
+        "59",
+        "54",
+        "69"
+      ],
+      "choices_zh": [
+        "59",
+        "54",
+        "69"
+      ],
+      "answer": 0,
+      "explain_en": "42 + 17 = 59.",
+      "explain_zh": "42+17=59。",
+      "sign_en": [
+        "59",
+        "54",
+        "69"
+      ],
+      "sign_zh": [
+        "59",
+        "54",
+        "69"
+      ]
+    },
+    {
+      "id": "l3g2_049",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 39 skiers rode the gondola. On Tuesday 30 rode. How many in all?",
+      "q_zh": "星期一有 39 人坐缆车，星期二有 30 人，一共多少人？",
+      "choices": [
+        "79",
+        "69",
+        "67"
+      ],
+      "choices_zh": [
+        "79",
+        "69",
+        "67"
+      ],
+      "answer": 1,
+      "explain_en": "39 + 30 = 69.",
+      "explain_zh": "39+30=69。",
+      "sign_en": [
+        "79",
+        "69",
+        "67"
+      ],
+      "sign_zh": [
+        "79",
+        "69",
+        "67"
+      ]
+    },
+    {
+      "id": "l3g2_050",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 75 cm tall. {name} adds a head 17 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 75 厘米，{name} 又加了一个 17 厘米高的头，现在雪人多高？",
+      "choices": [
+        "92",
+        "97",
+        "89",
+        "102"
+      ],
+      "choices_zh": [
+        "92",
+        "97",
+        "89",
+        "102"
+      ],
+      "answer": 0,
+      "explain_en": "75 + 17 = 92.",
+      "explain_zh": "75+17=92。"
+    },
+    {
+      "id": "l3g2_051",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 68 toques. It sold 11. How many are left?",
+      "q_zh": "滑雪店有 68 顶毛线帽，卖掉了 11 顶，还剩几顶？",
+      "choices": [
+        "57",
+        "62",
+        "47"
+      ],
+      "choices_zh": [
+        "57",
+        "62",
+        "47"
+      ],
+      "answer": 0,
+      "explain_en": "68 - 11 = 57.",
+      "explain_zh": "68-11=57。",
+      "sign_en": [
+        "57",
+        "62",
+        "47"
+      ],
+      "sign_zh": [
+        "57",
+        "62",
+        "47"
+      ]
+    },
+    {
+      "id": "l3g2_052",
+      "level": 3,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "A cougar is a big wild…",
+      "q_zh": "美洲狮是一种大型野生的……",
+      "choices": [
+        "Bug",
+        "Cat",
+        "Fish",
+        "Bird"
+      ],
+      "choices_zh": [
+        "虫子",
+        "猫科动物",
+        "鱼",
+        "鸟"
+      ],
+      "answer": 1,
+      "explain_en": "Cougars are big wild cats.",
+      "explain_zh": "美洲狮是大型野生猫科动物。"
+    },
+    {
+      "id": "l3g2_053",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 55 skiers rode the gondola. On Tuesday 35 rode. How many in all?",
+      "q_zh": "星期一有 55 人坐缆车，星期二有 35 人，一共多少人？",
+      "choices": [
+        "92",
+        "91",
+        "90"
+      ],
+      "choices_zh": [
+        "92",
+        "91",
+        "90"
+      ],
+      "answer": 2,
+      "explain_en": "55 + 35 = 90.",
+      "explain_zh": "55+35=90。",
+      "sign_en": [
+        "92",
+        "91",
+        "90"
+      ],
+      "sign_zh": [
+        "92",
+        "91",
+        "90"
+      ]
+    },
+    {
+      "id": "l3g2_054",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 49 skiers rode the gondola. On Tuesday 27 rode. How many in all?",
+      "q_zh": "星期一有 49 人坐缆车，星期二有 27 人，一共多少人？",
+      "choices": [
+        "86",
+        "79",
+        "76",
+        "74"
+      ],
+      "choices_zh": [
+        "86",
+        "79",
+        "76",
+        "74"
+      ],
+      "answer": 2,
+      "explain_en": "49 + 27 = 76.",
+      "explain_zh": "49+27=76。"
+    },
+    {
+      "id": "l3g2_055",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 74 toques. It sold 49. How many are left?",
+      "q_zh": "滑雪店有 74 顶毛线帽，卖掉了 49 顶，还剩几顶？",
+      "choices": [
+        "25",
+        "24",
+        "15",
+        "22"
+      ],
+      "choices_zh": [
+        "25",
+        "24",
+        "15",
+        "22"
+      ],
+      "answer": 0,
+      "explain_en": "74 - 49 = 25.",
+      "explain_zh": "74-49=25。"
+    },
+    {
+      "id": "l3g2_056",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Which animal sleeps in a den for much of the winter?",
+      "q_zh": "哪种动物冬天大部分时间在洞穴里睡觉？",
+      "choices": [
+        "Black bear",
+        "Robin",
+        "Butterfly"
+      ],
+      "choices_zh": [
+        "黑熊",
+        "知更鸟",
+        "蝴蝶"
+      ],
+      "answer": 0,
+      "explain_en": "Black bears rest in dens through most of the winter.",
+      "explain_zh": "黑熊冬天大部分时间在洞穴里休息。",
+      "sign_en": [
+        "Black bear",
+        "Robin",
+        "Butterfly"
+      ],
+      "sign_zh": [
+        "黑熊",
+        "知更鸟",
+        "蝴蝶"
+      ]
+    },
+    {
+      "id": "l3g2_057",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 90 people. The Whistler line has 64. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 90 人，惠斯勒山排队 64 人，黑梳山多几人？",
+      "choices": [
+        "26",
+        "154",
+        "16",
+        "25"
+      ],
+      "choices_zh": [
+        "26",
+        "154",
+        "16",
+        "25"
+      ],
+      "answer": 0,
+      "explain_en": "90 - 64 = 26.",
+      "explain_zh": "90-64=26。"
+    },
+    {
+      "id": "l3g2_058",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 2s: 8, 10, 12, … What comes next?",
+      "q_zh": "2 个 2 个地数礼物：8、10、12……下一个是几？",
+      "choices": [
+        "19",
+        "16",
+        "14",
+        "17"
+      ],
+      "choices_zh": [
+        "19",
+        "16",
+        "14",
+        "17"
+      ],
+      "answer": 2,
+      "explain_en": "12 + 2 = 14.",
+      "explain_zh": "12+2=14。"
+    },
+    {
+      "id": "l3g2_059",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 57 people. The Whistler line has 44. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 57 人，惠斯勒山排队 44 人，黑梳山多几人？",
+      "choices": [
+        "23",
+        "13",
+        "101",
+        "18"
+      ],
+      "choices_zh": [
+        "23",
+        "13",
+        "101",
+        "18"
+      ],
+      "answer": 1,
+      "explain_en": "57 - 44 = 13.",
+      "explain_zh": "57-44=13。"
+    },
+    {
+      "id": "l3g2_060",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 5 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 5 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "11",
+        "0",
+        "5",
+        "10"
+      ],
+      "choices_zh": [
+        "11",
+        "0",
+        "5",
+        "10"
+      ],
+      "answer": 3,
+      "explain_en": "5 × 2 = 10.",
+      "explain_zh": "5×2=10。"
+    },
+    {
+      "id": "l3g2_061",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 81 toques. It sold 10. How many are left?",
+      "q_zh": "滑雪店有 81 顶毛线帽，卖掉了 10 顶，还剩几顶？",
+      "choices": [
+        "81",
+        "69",
+        "71",
+        "61"
+      ],
+      "choices_zh": [
+        "81",
+        "69",
+        "71",
+        "61"
+      ],
+      "answer": 2,
+      "explain_en": "81 - 10 = 71.",
+      "explain_zh": "81-10=71。"
+    },
+    {
+      "id": "l3g2_062",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Count the gifts by 5s: 20, 25, 30, … What comes next?",
+      "q_zh": "5 个 5 个地数礼物：20、25、30……下一个是几？",
+      "choices": [
+        "45",
+        "35",
+        "33",
+        "37"
+      ],
+      "choices_zh": [
+        "45",
+        "35",
+        "33",
+        "37"
+      ],
+      "answer": 1,
+      "explain_en": "30 + 5 = 35.",
+      "explain_zh": "30+5=35。"
+    },
+    {
+      "id": "l3g2_063",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The ski shop had 99 toques. It sold 44. How many are left?",
+      "q_zh": "滑雪店有 99 顶毛线帽，卖掉了 44 顶，还剩几顶？",
+      "choices": [
+        "65",
+        "60",
+        "55"
+      ],
+      "choices_zh": [
+        "65",
+        "60",
+        "55"
+      ],
+      "answer": 2,
+      "explain_en": "99 - 44 = 55.",
+      "explain_zh": "99-44=55。",
+      "sign_en": [
+        "65",
+        "60",
+        "55"
+      ],
+      "sign_zh": [
+        "65",
+        "60",
+        "55"
+      ]
+    },
+    {
+      "id": "l3g2_064",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Which season is the coldest in Whistler?",
+      "q_zh": "惠斯勒哪个季节最冷？",
+      "choices": [
+        "Fall",
+        "Spring",
+        "Winter",
+        "Summer"
+      ],
+      "choices_zh": [
+        "秋天",
+        "春天",
+        "冬天",
+        "夏天"
+      ],
+      "answer": 2,
+      "explain_en": "Winter is the coldest season.",
+      "explain_zh": "冬天是最冷的季节。"
+    },
+    {
+      "id": "l3g2_065",
+      "level": 3,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Which keeps your hands warm in the snow?",
+      "q_zh": "在雪地里，什么能让手保暖？",
+      "choices": [
+        "Ice cubes",
+        "Mittens",
+        "A fan",
+        "Wet socks"
+      ],
+      "choices_zh": [
+        "冰块",
+        "连指手套",
+        "电扇",
+        "湿袜子"
+      ],
+      "answer": 1,
+      "explain_en": "Mittens trap warm air around your hands.",
+      "explain_zh": "连指手套把暖空气留在手边。"
+    },
+    {
+      "id": "l3g2_066",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "What happens to a snowman on a hot, sunny day?",
+      "q_zh": "天气又热又晴的时候，雪人会怎样？",
+      "choices": [
+        "It melts",
+        "It grows bigger",
+        "It sings"
+      ],
+      "choices_zh": [
+        "融化",
+        "变得更大",
+        "唱歌"
+      ],
+      "answer": 0,
+      "explain_en": "Heat from the sun melts snow into water.",
+      "explain_zh": "太阳的热量会把雪化成水。",
+      "sign_en": [
+        "It melts",
+        "It grows bigger",
+        "It sings"
+      ],
+      "sign_zh": [
+        "融化",
+        "变得更大",
+        "唱歌"
+      ]
+    },
+    {
+      "id": "l3g2_067",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 4 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 4 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "9",
+        "8",
+        "6",
+        "4"
+      ],
+      "choices_zh": [
+        "9",
+        "8",
+        "6",
+        "4"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 2 = 8.",
+      "explain_zh": "4×2=8。"
+    },
+    {
+      "id": "l3g2_068",
+      "level": 3,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Which word rhymes with 'snow'?",
+      "q_zh": "哪个英文单词和 'snow' 押韵？",
+      "choices": [
+        "sun",
+        "cat",
+        "glow",
+        "tree"
+      ],
+      "choices_zh": [
+        "sun",
+        "cat",
+        "glow",
+        "tree"
+      ],
+      "answer": 2,
+      "explain_en": "Snow and glow both end with the 'ow' sound.",
+      "explain_zh": "snow 和 glow 都以 ow 的音结尾。"
+    },
+    {
+      "id": "l3g2_069",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 6 toonies ($2 coins). How many dollars is that?",
+      "q_zh": "{name} 有 6 枚两加元硬币（toonie），一共多少加元？",
+      "choices": [
+        "13",
+        "6",
+        "9",
+        "12"
+      ],
+      "choices_zh": [
+        "13",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": 3,
+      "explain_en": "6 × 2 = 12.",
+      "explain_zh": "6×2=12。"
+    },
+    {
+      "id": "l3g2_070",
+      "level": 3,
+      "section": "seawall",
+      "subject": "christmas",
+      "difficulty": "easy",
+      "q_en": "Christmas Day is in which month?",
+      "q_zh": "圣诞节在几月？",
+      "choices": [
+        "March",
+        "December",
+        "July",
+        "April"
+      ],
+      "choices_zh": [
+        "三月",
+        "十二月",
+        "七月",
+        "四月"
+      ],
+      "answer": 1,
+      "explain_en": "Christmas Day is December 25.",
+      "explain_zh": "圣诞节是 12 月 25 日。"
+    },
+    {
+      "id": "l3g2_071",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 23 skiers rode the gondola. On Tuesday 13 rode. How many in all?",
+      "q_zh": "星期一有 23 人坐缆车，星期二有 13 人，一共多少人？",
+      "choices": [
+        "26",
+        "36",
+        "31",
+        "39"
+      ],
+      "choices_zh": [
+        "26",
+        "36",
+        "31",
+        "39"
+      ],
+      "answer": 1,
+      "explain_en": "23 + 13 = 36.",
+      "explain_zh": "23+13=36。"
+    },
+    {
+      "id": "l3g2_072",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The Blackcomb lift line has 41 people. The Whistler line has 22. How many more are on Blackcomb?",
+      "q_zh": "黑梳山缆车排队 41 人，惠斯勒山排队 22 人，黑梳山多几人？",
+      "choices": [
+        "29",
+        "19",
+        "63",
+        "18"
+      ],
+      "choices_zh": [
+        "29",
+        "19",
+        "63",
+        "18"
+      ],
+      "answer": 1,
+      "explain_en": "41 - 22 = 19.",
+      "explain_zh": "41-22=19。"
+    },
+    {
+      "id": "l3g2_073",
+      "level": 3,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "On Monday 57 skiers rode the gondola. On Tuesday 29 rode. How many in all?",
+      "q_zh": "星期一有 57 人坐缆车，星期二有 29 人，一共多少人？",
+      "choices": [
+        "86",
+        "84",
+        "89",
+        "83"
+      ],
+      "choices_zh": [
+        "86",
+        "84",
+        "89",
+        "83"
+      ],
+      "answer": 0,
+      "explain_en": "57 + 29 = 86.",
+      "explain_zh": "57+29=86。"
+    },
+    {
+      "id": "l3g2_074",
+      "level": 3,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A snowman body is 72 cm tall. {name} adds a head 17 cm tall. How tall is the snowman now?",
+      "q_zh": "雪人的身子高 72 厘米，{name} 又加了一个 17 厘米高的头，现在雪人多高？",
+      "choices": [
+        "94",
+        "92",
+        "89"
+      ],
+      "choices_zh": [
+        "94",
+        "92",
+        "89"
+      ],
+      "answer": 2,
+      "explain_en": "72 + 17 = 89.",
+      "explain_zh": "72+17=89。",
+      "sign_en": [
+        "94",
+        "92",
+        "89"
+      ],
+      "sign_zh": [
+        "94",
+        "92",
+        "89"
+      ]
+    },
+    {
+      "subject": "math",
+      "q_en": "At Horstman Hut, 4 trays each hold 5 cups of cocoa. How many cups are ready?",
+      "q_zh": "霍斯特曼小屋里有 4 个托盘，每盘 5 杯可可，一共几杯？",
+      "choices": [
+        "9",
+        "20",
+        "15",
+        "25"
+      ],
+      "choices_zh": [
+        "9",
+        "20",
+        "15",
+        "25"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 5 = 20.",
+      "explain_zh": "根据题意计算：4 × 5 = 20。",
+      "id": "l3g2_f01",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Flora has 32 summit postcards and shares them equally among 4 friends. How many does each friend get?",
+      "q_zh": "Flora 把 32 张山顶明信片平均分给 4 位朋友，每人几张？",
+      "choices": [
+        "9",
+        "7",
+        "8",
+        "6"
+      ],
+      "choices_zh": [
+        "9",
+        "7",
+        "8",
+        "6"
+      ],
+      "answer": 2,
+      "explain_en": "32 ÷ 4 = 8.",
+      "explain_zh": "根据题意计算：32 ÷ 4 = 8。",
+      "id": "l3g2_f02",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "Near the summit, Flora counts 27 footprints before lunch and 36 after lunch. How many footprints does she count?",
+      "q_zh": "在山顶附近，Flora 午饭前数了 27 个脚印，午饭后数了 36 个，一共数了几个？",
+      "choices": [
+        "62",
+        "73",
+        "63",
+        "53"
+      ],
+      "choices_zh": [
+        "62",
+        "73",
+        "63",
+        "53"
+      ],
+      "answer": 2,
+      "explain_en": "27 + 36 = 63.",
+      "explain_zh": "根据题意计算：27 + 36 = 63。",
+      "id": "l3g2_f03",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "A group has 70 snow-view cards at the hut and gives away 28. How many remain?",
+      "q_zh": "小屋里的一组人有 70 张雪景卡，送出 28 张，还剩几张？",
+      "choices": [
+        "38",
+        "52",
+        "48",
+        "42"
+      ],
+      "choices_zh": [
+        "38",
+        "52",
+        "48",
+        "42"
+      ],
+      "answer": 3,
+      "explain_en": "70 - 28 = 42.",
+      "explain_zh": "根据题意计算：70 - 28 = 42。",
+      "id": "l3g2_f04",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "At a summit craft table, Flora makes 3 rows of 6 paper snowflakes and 4 extra snowflakes. How many does she make?",
+      "q_zh": "山顶的手工桌旁，Flora 做了 3 排纸雪花，每排 6 片，另外又做了 4 片，一共几片？",
+      "choices": [
+        "22",
+        "24",
+        "18",
+        "28"
+      ],
+      "choices_zh": [
+        "22",
+        "24",
+        "18",
+        "28"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 6 + 4 = 22.",
+      "explain_zh": "根据题意计算：3 × 6 + 4 = 22。",
+      "id": "l3g2_f05",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "math",
+      "q_en": "At the hut, a warm drink costs 3 dollars. Flora buys 2 and pays 10 dollars. How many dollars change should she get?",
+      "q_zh": "小屋里一杯热饮 3 元，Flora 买了 2 杯，付了 10 元，应找回几元？",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "choices_zh": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "10 - 3 × 2 = 4.",
+      "explain_zh": "根据题意计算：10 - 3 × 2 = 4。",
+      "id": "l3g2_f06",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "culture",
+      "q_en": "Flora sketches the inukshuk near 7th Heaven. What material forms this landmark?",
+      "q_zh": "Flora 画第七天堂附近的石头人，这个地标是用什么搭成的？",
+      "choices": [
+        "Stone",
+        "Wool",
+        "Ice cream",
+        "Paper"
+      ],
+      "choices_zh": [
+        "石头",
+        "羊毛",
+        "冰淇淋",
+        "纸"
+      ],
+      "answer": 0,
+      "explain_en": "An inukshuk is built from stones.",
+      "explain_zh": "石头人由石头搭成。",
+      "id": "l3g2_f07",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    },
+    {
+      "subject": "science",
+      "q_en": "Beside the summit snow, a ptarmigan has feathered feet. How do these help it?",
+      "q_zh": "山顶雪地旁，一只雷鸟的脚上长着羽毛，这有什么帮助？",
+      "choices": [
+        "Make electricity",
+        "Turn snow into flowers",
+        "Breathe underwater",
+        "Keep its feet warm"
+      ],
+      "choices_zh": [
+        "发电",
+        "把雪变成花",
+        "在水下呼吸",
+        "帮助脚保暖"
+      ],
+      "answer": 3,
+      "explain_en": "Feathers help insulate the feet in cold weather.",
+      "explain_zh": "羽毛帮助脚在寒冷天气中保暖。",
+      "id": "l3g2_f08",
+      "level": 3,
+      "section": "peak_final",
+      "difficulty": "hard"
+    }
+  ]
+}

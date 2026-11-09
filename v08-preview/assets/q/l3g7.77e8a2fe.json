@@ -1,0 +1,2350 @@
+{
+ "level": 3,
+ "level_name_en": "Whistler Christmas Snow Ride",
+ "level_name_zh": "惠斯勒·圣诞雪山骑行",
+ "grade": 7,
+ "version": 3,
+ "fields": "same as level-2 banks; sections: seawall (= L3 gondola must-answer stop + retries pool; key name kept because pickSetL2 filters section==='seawall'; up to 4 choices) and forest_fork (≤3 choices; sign_en/sign_zh for signs); health is gifts; {name} = player name; English on top, Chinese below; no subject 'capybara'/'beaver' (pickSetL2 filters them); peak_final (8 summit-themed final questions; 4 choices; same item fields as seawall); v3: every item has qtype (snake_case pattern id) + qtype_zh — within one run each qtype at most once (创意张 rule); fork sign options shortened to fit 2 lines; extra items have ids l3g{g}_nNN",
+ "questions": [
+  {
+   "id": "l3g7_001",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "As you ride the gondola higher, air pressure…",
+   "q_zh": "乘缆车越升越高，气压会……",
+   "choices": [
+    "Increases",
+    "Stays the same",
+    "Decreases"
+   ],
+   "choices_zh": [
+    "升高",
+    "不变",
+    "降低"
+   ],
+   "answer": 2,
+   "explain_en": "There is less air above you, so pressure drops.",
+   "explain_zh": "头顶空气变少，气压就降低。",
+   "sign_en": [
+    "Increases",
+    "Stays the same",
+    "Decreases"
+   ],
+   "sign_zh": [
+    "升高",
+    "不变",
+    "降低"
+   ],
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g7_002",
+   "level": 3,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "In avalanche terrain, a transceiver is used to…",
+   "q_zh": "在雪崩地形中，雪崩信标的用途是……",
+   "choices": [
+    "Melt snow",
+    "Measure ski speed",
+    "Find buried people by radio signal",
+    "Play music"
+   ],
+   "choices_zh": [
+    "融雪",
+    "测滑雪速度",
+    "用无线电信号找到被埋的人",
+    "放音乐"
+   ],
+   "answer": 2,
+   "explain_en": "Transceivers send and receive a locating signal.",
+   "explain_zh": "信标收发定位信号。",
+   "qtype": "avalanche_safety",
+   "qtype_zh": "雪崩安全"
+  },
+  {
+   "id": "l3g7_003",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -3 °C. By noon it warms up by 20 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -3 °C，到中午升高了 20 °C，现在是多少 °C？",
+   "choices": [
+    "17",
+    "22",
+    "-17",
+    "-23"
+   ],
+   "choices_zh": [
+    "17",
+    "22",
+    "-17",
+    "-23"
+   ],
+   "answer": 0,
+   "explain_en": "-3 + 20 = 17.",
+   "explain_zh": "-3+20=17。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_004",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Which sentence is a metaphor?",
+   "q_zh": "选出英文里的暗喻句：",
+   "choices": [
+    "Snow was a blanket.",
+    "Snow was like a blanket.",
+    "The snow was deep."
+   ],
+   "choices_zh": [
+    "Snow was a blanket.",
+    "Snow was like a blanket.",
+    "The snow was deep."
+   ],
+   "answer": 0,
+   "explain_en": "A metaphor says one thing IS another.",
+   "explain_zh": "暗喻直接说一样东西就是另一样。",
+   "sign_en": [
+    "Snow was a blanket.",
+    "Snow was like a blanket.",
+    "The snow was deep."
+   ],
+   "sign_zh": [
+    "Snow was a blanket.",
+    "Snow was like a blanket.",
+    "The snow was deep."
+   ],
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l3g7_005",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Snow on a sunny slope can turn straight into water vapour. This is called…",
+   "q_zh": "向阳坡上的雪可以直接变成水蒸气，这叫……",
+   "choices": [
+    "Sublimation",
+    "Condensation",
+    "Melting",
+    "Freezing"
+   ],
+   "choices_zh": [
+    "升华",
+    "凝结",
+    "融化",
+    "凝固"
+   ],
+   "answer": 0,
+   "explain_en": "Solid to gas directly is sublimation.",
+   "explain_zh": "固体直接变成气体叫升华。",
+   "qtype": "phase_change_energy",
+   "qtype_zh": "相变与热量（升华/潜热/吸热）"
+  },
+  {
+   "id": "l3g7_006",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 3 °C each hour for 3 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 3 °C，连降 3 小时，总变化是多少 °C？",
+   "choices": [
+    "9",
+    "-4",
+    "-6",
+    "-9"
+   ],
+   "choices_zh": [
+    "9",
+    "-4",
+    "-6",
+    "-9"
+   ],
+   "answer": 3,
+   "explain_en": "3 × (-3) = -9.",
+   "explain_zh": "3×(-3)=-9。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_007",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A water molecule is made of…",
+   "q_zh": "一个水分子由什么组成？",
+   "choices": [
+    "Carbon and oxygen",
+    "One hydrogen atom and two oxygen atoms",
+    "Only hydrogen",
+    "Two hydrogen atoms and one oxygen atom"
+   ],
+   "choices_zh": [
+    "碳和氧",
+    "一个氢原子和两个氧原子",
+    "只有氢",
+    "两个氢原子和一个氧原子"
+   ],
+   "answer": 3,
+   "explain_en": "H2O: two H and one O.",
+   "explain_zh": "H2O：两个氢、一个氧。",
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l3g7_008",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which organelle makes most of the energy (ATP) for a bear's muscles?",
+   "q_zh": "哪个细胞器为熊的肌肉产生大部分能量（ATP）？",
+   "choices": [
+    "Cell wall",
+    "Vacuole",
+    "Chloroplast",
+    "Mitochondria"
+   ],
+   "choices_zh": [
+    "细胞壁",
+    "液泡",
+    "叶绿体",
+    "线粒体"
+   ],
+   "answer": 3,
+   "explain_en": "Mitochondria carry out cellular respiration.",
+   "explain_zh": "线粒体进行细胞呼吸。",
+   "qtype": "cell_biology",
+   "qtype_zh": "细胞结构"
+  },
+  {
+   "id": "l3g7_009",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "social",
+   "difficulty": "medium",
+   "q_en": "Whistler co-hosted the 2010 Winter Olympics with which city?",
+   "q_zh": "2010 年冬奥会，惠斯勒和哪座城市共同举办？",
+   "choices": [
+    "Vancouver",
+    "Calgary",
+    "Toronto"
+   ],
+   "choices_zh": [
+    "温哥华",
+    "卡尔加里",
+    "多伦多"
+   ],
+   "answer": 0,
+   "explain_en": "Vancouver and Whistler hosted in 2010.",
+   "explain_zh": "2010 年由温哥华和惠斯勒举办。",
+   "sign_en": [
+    "Vancouver",
+    "Calgary",
+    "Toronto"
+   ],
+   "sign_zh": [
+    "温哥华",
+    "卡尔加里",
+    "多伦多"
+   ],
+   "qtype": "whistler_history_culture",
+   "qtype_zh": "惠斯勒历史与原住民文化"
+  },
+  {
+   "id": "l3g7_010",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Choose the correct word: The skiers lost ___ poles.",
+   "q_zh": "选出正确的英文单词填空：The skiers lost ___ poles.",
+   "choices": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "choices_zh": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "answer": 2,
+   "explain_en": "'Their' shows belonging.",
+   "explain_zh": "their 表示“他们的”。",
+   "sign_en": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "sign_zh": [
+    "there",
+    "they're",
+    "their"
+   ],
+   "qtype": "lang_grammar",
+   "qtype_zh": "标点与易混词"
+  },
+  {
+   "id": "l3g7_011",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is 7 °C. The peak is 16 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 7 °C，山顶比村子低 16 °C，山顶多少 °C？",
+   "choices": [
+    "9",
+    "23",
+    "-9",
+    "-14"
+   ],
+   "choices_zh": [
+    "9",
+    "23",
+    "-9",
+    "-14"
+   ],
+   "answer": 2,
+   "explain_en": "7 - 16 = -9.",
+   "explain_zh": "7-16=-9。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_012",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 2 °C each hour for 5 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 2 °C，连降 5 小时，总变化是多少 °C？",
+   "choices": [
+    "-10",
+    "-7",
+    "-12",
+    "10"
+   ],
+   "choices_zh": [
+    "-10",
+    "-7",
+    "-12",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "5 × (-2) = -10.",
+   "explain_zh": "5×(-2)=-10。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_013",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "In winter, a pika stays active. How does stored plant food help it?",
+   "q_zh": "鼠兔冬季仍会活动，储存的植物食物有什么帮助？",
+   "choices": [
+    "It supplies energy when fresh plants are scarce",
+    "It makes the pika stop breathing",
+    "It makes the pika a plant",
+    "It removes the need for energy"
+   ],
+   "choices_zh": [
+    "新鲜植物少时提供能量",
+    "使鼠兔停止呼吸",
+    "使鼠兔变成植物",
+    "使鼠兔不再需要能量"
+   ],
+   "answer": 0,
+   "explain_en": "Pikas store plant food and can eat these stores during winter.",
+   "explain_zh": "鼠兔储存植物食物，冬天可以取食储粮。",
+   "qtype": "animal_body_adaptation",
+   "qtype_zh": "动物身体适应（脚/储粮）"
+  },
+  {
+   "id": "l3g7_014",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "An adaptation is…",
+   "q_zh": "适应特征是指……",
+   "choices": [
+    "A ski trick",
+    "A part of a gondola",
+    "A trait that helps a living thing survive in its environment",
+    "A kind of snow"
+   ],
+   "choices_zh": [
+    "一种滑雪动作",
+    "缆车的一个零件",
+    "帮助生物在环境中生存的特征",
+    "一种雪"
+   ],
+   "answer": 2,
+   "explain_en": "Adaptations help organisms survive.",
+   "explain_zh": "适应特征帮助生物生存。",
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g7_015",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is -1 °C. The peak is 6 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 -1 °C，山顶比村子低 6 °C，山顶多少 °C？",
+   "choices": [
+    "7",
+    "5",
+    "-6",
+    "-7"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "-6",
+    "-7"
+   ],
+   "answer": 3,
+   "explain_en": "-1 - 6 = -7.",
+   "explain_zh": "-1-6=-7。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_016",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 2 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 2 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "12.46",
+    "12.56",
+    "6.28",
+    "10.56"
+   ],
+   "choices_zh": [
+    "12.46",
+    "12.56",
+    "6.28",
+    "10.56"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 3.14 × 2 = 12.56.",
+   "explain_zh": "2×3.14×2=12.56。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_017",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is 7 °C. The peak is 9 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 7 °C，山顶比村子低 9 °C，山顶多少 °C？",
+   "choices": [
+    "16",
+    "2",
+    "0",
+    "-2"
+   ],
+   "choices_zh": [
+    "16",
+    "2",
+    "0",
+    "-2"
+   ],
+   "answer": 3,
+   "explain_en": "7 - 9 = -2.",
+   "explain_zh": "7-9=-2。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_018",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $800 snowboard is 40% off. What is the sale price in dollars?",
+   "q_zh": "一块 800 加元的单板打 60 折（便宜 40%），现价多少加元？",
+   "choices": [
+    "320",
+    "480",
+    "760",
+    "477"
+   ],
+   "choices_zh": [
+    "320",
+    "480",
+    "760",
+    "477"
+   ],
+   "answer": 1,
+   "explain_en": "800 - 800 × 40 ÷ 100 = 480.",
+   "explain_zh": "800-800×40÷100=480。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_019",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 6 °C each hour for 5 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 6 °C，连降 5 小时，总变化是多少 °C？",
+   "choices": [
+    "-11",
+    "30",
+    "-30"
+   ],
+   "choices_zh": [
+    "-11",
+    "30",
+    "-30"
+   ],
+   "answer": 2,
+   "explain_en": "5 × (-6) = -30.",
+   "explain_zh": "5×(-6)=-30。",
+   "sign_en": [
+    "-11",
+    "30",
+    "-30"
+   ],
+   "sign_zh": [
+    "-11",
+    "30",
+    "-30"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_020",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 16 = 26. (x = gifts {name} had before getting 16 more.)",
+   "q_zh": "解方程：x + 16 = 26（x 是 {name} 再收到 16 个礼物之前的数量）。",
+   "choices": [
+    "0",
+    "10",
+    "5",
+    "42"
+   ],
+   "choices_zh": [
+    "0",
+    "10",
+    "5",
+    "42"
+   ],
+   "answer": 1,
+   "explain_en": "x = 26 - 16 = 10.",
+   "explain_zh": "x=26-16=10。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_021",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $450 snowboard is 20% off. What is the sale price in dollars?",
+   "q_zh": "一块 450 加元的单板打 80 折（便宜 20%），现价多少加元？",
+   "choices": [
+    "355",
+    "360",
+    "430",
+    "90"
+   ],
+   "choices_zh": [
+    "355",
+    "360",
+    "430",
+    "90"
+   ],
+   "answer": 1,
+   "explain_en": "450 - 450 × 20 ÷ 100 = 360.",
+   "explain_zh": "450-450×20÷100=360。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_022",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fungi that break down dead logs on the mountain are…",
+   "q_zh": "山上分解枯木的真菌属于……",
+   "choices": [
+    "Producers",
+    "Predators",
+    "Decomposers"
+   ],
+   "choices_zh": [
+    "生产者",
+    "捕食者",
+    "分解者"
+   ],
+   "answer": 2,
+   "explain_en": "Decomposers recycle dead material.",
+   "explain_zh": "分解者把死去的东西分解回收。",
+   "sign_en": [
+    "Producers",
+    "Predators",
+    "Decomposers"
+   ],
+   "sign_zh": [
+    "生产者",
+    "捕食者",
+    "分解者"
+   ],
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g7_023",
+   "level": 3,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "A cougar and a coyote both hunting snowshoe hares is an example of…",
+   "q_zh": "美洲狮和郊狼都捕食雪鞋兔，这是……",
+   "choices": [
+    "Photosynthesis",
+    "Mutualism",
+    "Pollination",
+    "Competition"
+   ],
+   "choices_zh": [
+    "光合作用",
+    "互利共生",
+    "传粉",
+    "竞争"
+   ],
+   "answer": 3,
+   "explain_en": "Two species using the same food compete.",
+   "explain_zh": "两个物种争同一种食物就是竞争。",
+   "qtype": "ecology_relations",
+   "qtype_zh": "生态关系（食物链/分解者/竞争/适应）"
+  },
+  {
+   "id": "l3g7_024",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Snow has a high albedo. This means it…",
+   "q_zh": "雪的反照率很高，意思是它……",
+   "choices": [
+    "Produces heat",
+    "Reflects most sunlight",
+    "Glows in the dark",
+    "Absorbs most sunlight"
+   ],
+   "choices_zh": [
+    "会产生热",
+    "反射大部分阳光",
+    "在黑暗中发光",
+    "吸收大部分阳光"
+   ],
+   "answer": 1,
+   "explain_en": "Albedo measures how much light is reflected.",
+   "explain_zh": "反照率表示反射了多少光。",
+   "qtype": "light_albedo",
+   "qtype_zh": "光的反射与吸收（反照率/眩光）"
+  },
+  {
+   "id": "l3g7_025",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -6 °C. By noon it warms up by 10 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -6 °C，到中午升高了 10 °C，现在是多少 °C？",
+   "choices": [
+    "9",
+    "-16",
+    "-4",
+    "4"
+   ],
+   "choices_zh": [
+    "9",
+    "-16",
+    "-4",
+    "4"
+   ],
+   "answer": 3,
+   "explain_en": "-6 + 10 = 4.",
+   "explain_zh": "-6+10=4。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_026",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 12 = 40. (x = gifts {name} had before getting 12 more.)",
+   "q_zh": "解方程：x + 12 = 40（x 是 {name} 再收到 12 个礼物之前的数量）。",
+   "choices": [
+    "52",
+    "28",
+    "27",
+    "26"
+   ],
+   "choices_zh": [
+    "52",
+    "28",
+    "27",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "x = 40 - 12 = 28.",
+   "explain_zh": "x=40-12=28。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_027",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why does a ski racer crouch low to go faster?",
+   "q_zh": "滑雪选手为什么蹲低身体来加速？",
+   "choices": [
+    "To increase gravity",
+    "To increase friction",
+    "To reduce air drag"
+   ],
+   "choices_zh": [
+    "增加重力",
+    "增加摩擦",
+    "减少空气阻力"
+   ],
+   "answer": 2,
+   "explain_en": "A smaller shape meets less drag.",
+   "explain_zh": "身体缩小，空气阻力就小。",
+   "sign_en": [
+    "To increase gravity",
+    "To increase friction",
+    "To reduce air drag"
+   ],
+   "sign_zh": [
+    "增加重力",
+    "增加摩擦",
+    "减少空气阻力"
+   ],
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l3g7_028",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is -1 °C. The peak is 18 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 -1 °C，山顶比村子低 18 °C，山顶多少 °C？",
+   "choices": [
+    "19",
+    "17",
+    "-19"
+   ],
+   "choices_zh": [
+    "19",
+    "17",
+    "-19"
+   ],
+   "answer": 2,
+   "explain_en": "-1 - 18 = -19.",
+   "explain_zh": "-1-18=-19。",
+   "sign_en": [
+    "19",
+    "17",
+    "-19"
+   ],
+   "sign_zh": [
+    "19",
+    "17",
+    "-19"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_029",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 6 °C each hour for 4 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 6 °C，连降 4 小时，总变化是多少 °C？",
+   "choices": [
+    "24",
+    "-24",
+    "-10"
+   ],
+   "choices_zh": [
+    "24",
+    "-24",
+    "-10"
+   ],
+   "answer": 1,
+   "explain_en": "4 × (-6) = -24.",
+   "explain_zh": "4×(-6)=-24。",
+   "sign_en": [
+    "24",
+    "-24",
+    "-10"
+   ],
+   "sign_zh": [
+    "24",
+    "-24",
+    "-10"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_030",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which is a physical change?",
+   "q_zh": "下面哪个是物理变化？",
+   "choices": [
+    "Snow melting into water",
+    "Iron rusting",
+    "Baking bread",
+    "Wood burning"
+   ],
+   "choices_zh": [
+    "雪化成水",
+    "铁生锈",
+    "烤面包",
+    "木头燃烧"
+   ],
+   "answer": 0,
+   "explain_en": "Melting changes state, not the substance.",
+   "explain_zh": "融化只改变状态，不产生新物质。",
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l3g7_031",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "On a high mountain, water boils at a ___ temperature than at sea level.",
+   "q_zh": "在高山上，水的沸点比海平面……",
+   "choices": [
+    "higher",
+    "the same",
+    "lower"
+   ],
+   "choices_zh": [
+    "高",
+    "一样",
+    "低"
+   ],
+   "answer": 2,
+   "explain_en": "Lower air pressure lowers the boiling point.",
+   "explain_zh": "气压低，沸点就低。",
+   "sign_en": [
+    "higher",
+    "the same",
+    "lower"
+   ],
+   "sign_zh": [
+    "高",
+    "一样",
+    "低"
+   ],
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g7_032",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "In 'The icy path was treacherous', 'treacherous' means…",
+   "q_zh": "'The icy path was treacherous' 里 treacherous 的意思是……",
+   "choices": [
+    "Quiet",
+    "Delicious",
+    "Dangerous",
+    "Colourful"
+   ],
+   "choices_zh": [
+    "安静的",
+    "美味的",
+    "危险的",
+    "多彩的"
+   ],
+   "answer": 2,
+   "explain_en": "Treacherous means full of hidden danger.",
+   "explain_zh": "treacherous 指暗藏危险。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l3g7_033",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 10 = 21. (x = gifts {name} had before getting 10 more.)",
+   "q_zh": "解方程：x + 10 = 21（x 是 {name} 再收到 10 个礼物之前的数量）。",
+   "choices": [
+    "13",
+    "11",
+    "31"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "31"
+   ],
+   "answer": 1,
+   "explain_en": "x = 21 - 10 = 11.",
+   "explain_zh": "x=21-10=11。",
+   "sign_en": [
+    "13",
+    "11",
+    "31"
+   ],
+   "sign_zh": [
+    "13",
+    "11",
+    "31"
+   ],
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_034",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Newton's first law says a moving object keeps moving unless…",
+   "q_zh": "牛顿第一定律说，运动的物体会一直运动，除非……",
+   "choices": [
+    "It is Christmas",
+    "An unbalanced force acts on it",
+    "It goes downhill",
+    "It gets cold"
+   ],
+   "choices_zh": [
+    "到了圣诞节",
+    "受到不平衡的力",
+    "在下坡",
+    "变冷了"
+   ],
+   "answer": 1,
+   "explain_en": "Objects keep their motion unless a net force acts (inertia).",
+   "explain_zh": "没有合力时物体保持原来的运动（惯性）。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l3g7_035",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 8 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 8 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "200.96",
+    "25.12",
+    "50.74",
+    "50.24"
+   ],
+   "choices_zh": [
+    "200.96",
+    "25.12",
+    "50.74",
+    "50.24"
+   ],
+   "answer": 3,
+   "explain_en": "2 × 3.14 × 8 = 50.24.",
+   "explain_zh": "2×3.14×8=50.24。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_036",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $300 snowboard is 10% off. What is the sale price in dollars?",
+   "q_zh": "一块 300 加元的单板打 90 折（便宜 10%），现价多少加元？",
+   "choices": [
+    "30",
+    "290",
+    "270"
+   ],
+   "choices_zh": [
+    "30",
+    "290",
+    "270"
+   ],
+   "answer": 2,
+   "explain_en": "300 - 300 × 10 ÷ 100 = 270.",
+   "explain_zh": "300-300×10÷100=270。",
+   "sign_en": [
+    "30",
+    "290",
+    "270"
+   ],
+   "sign_zh": [
+    "30",
+    "290",
+    "270"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_037",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -2 °C. By noon it warms up by 14 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -2 °C，到中午升高了 14 °C，现在是多少 °C？",
+   "choices": [
+    "-16",
+    "-12",
+    "12"
+   ],
+   "choices_zh": [
+    "-16",
+    "-12",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "-2 + 14 = 12.",
+   "explain_zh": "-2+14=12。",
+   "sign_en": [
+    "-16",
+    "-12",
+    "12"
+   ],
+   "sign_zh": [
+    "-16",
+    "-12",
+    "12"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_038",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 4 °C each hour for 4 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 4 °C，连降 4 小时，总变化是多少 °C？",
+   "choices": [
+    "-8",
+    "-14",
+    "16",
+    "-16"
+   ],
+   "choices_zh": [
+    "-8",
+    "-14",
+    "16",
+    "-16"
+   ],
+   "answer": 3,
+   "explain_en": "4 × (-4) = -16.",
+   "explain_zh": "4×(-4)=-16。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_039",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 5 °C each hour for 5 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 5 °C，连降 5 小时，总变化是多少 °C？",
+   "choices": [
+    "-35",
+    "-10",
+    "25",
+    "-25"
+   ],
+   "choices_zh": [
+    "-35",
+    "-10",
+    "25",
+    "-25"
+   ],
+   "answer": 3,
+   "explain_en": "5 × (-5) = -25.",
+   "explain_zh": "5×(-5)=-25。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_040",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which gas do trees take in to make food?",
+   "q_zh": "树木吸收哪种气体来制造养分？",
+   "choices": [
+    "Helium",
+    "Oxygen",
+    "Carbon dioxide"
+   ],
+   "choices_zh": [
+    "氦气",
+    "氧气",
+    "二氧化碳"
+   ],
+   "answer": 2,
+   "explain_en": "Photosynthesis uses carbon dioxide.",
+   "explain_zh": "光合作用要用二氧化碳。",
+   "sign_en": [
+    "Helium",
+    "Oxygen",
+    "Carbon dioxide"
+   ],
+   "sign_zh": [
+    "氦气",
+    "氧气",
+    "二氧化碳"
+   ],
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l3g7_041",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $200 snowboard is 10% off. What is the sale price in dollars?",
+   "q_zh": "一块 200 加元的单板打 90 折（便宜 10%），现价多少加元？",
+   "choices": [
+    "20",
+    "190",
+    "180"
+   ],
+   "choices_zh": [
+    "20",
+    "190",
+    "180"
+   ],
+   "answer": 2,
+   "explain_en": "200 - 200 × 10 ÷ 100 = 180.",
+   "explain_zh": "200-200×10÷100=180。",
+   "sign_en": [
+    "20",
+    "190",
+    "180"
+   ],
+   "sign_zh": [
+    "20",
+    "190",
+    "180"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_042",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -8 °C. By noon it warms up by 16 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -8 °C，到中午升高了 16 °C，现在是多少 °C？",
+   "choices": [
+    "-24",
+    "-8",
+    "8"
+   ],
+   "choices_zh": [
+    "-24",
+    "-8",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "-8 + 16 = 8.",
+   "explain_zh": "-8+16=8。",
+   "sign_en": [
+    "-24",
+    "-8",
+    "8"
+   ],
+   "sign_zh": [
+    "-24",
+    "-8",
+    "8"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_043",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 4 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 4 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "24.92",
+    "50.24",
+    "25.12",
+    "12.56"
+   ],
+   "choices_zh": [
+    "24.92",
+    "50.24",
+    "25.12",
+    "12.56"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 3.14 × 4 = 25.12.",
+   "explain_zh": "2×3.14×4=25.12。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_044",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 8 = 17. (x = gifts {name} had before getting 8 more.)",
+   "q_zh": "解方程：x + 8 = 17（x 是 {name} 再收到 8 个礼物之前的数量）。",
+   "choices": [
+    "19",
+    "9",
+    "25",
+    "7"
+   ],
+   "choices_zh": [
+    "19",
+    "9",
+    "25",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "x = 17 - 8 = 9.",
+   "explain_zh": "x=17-8=9。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_045",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -1 °C. By noon it warms up by 14 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -1 °C，到中午升高了 14 °C，现在是多少 °C？",
+   "choices": [
+    "10",
+    "13",
+    "-13",
+    "-15"
+   ],
+   "choices_zh": [
+    "10",
+    "13",
+    "-13",
+    "-15"
+   ],
+   "answer": 1,
+   "explain_en": "-1 + 14 = 13.",
+   "explain_zh": "-1+14=13。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_046",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 14 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 14 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "615.44",
+    "87.72",
+    "87.92",
+    "43.96"
+   ],
+   "choices_zh": [
+    "615.44",
+    "87.72",
+    "87.92",
+    "43.96"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 3.14 × 14 = 87.92.",
+   "explain_zh": "2×3.14×14=87.92。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_047",
+   "level": 3,
+   "section": "seawall",
+   "subject": "whistler",
+   "difficulty": "medium",
+   "q_en": "Whistler Mountain's peak is about how high?",
+   "q_zh": "惠斯勒山的山顶大约有多高？",
+   "choices": [
+    "About 220 m",
+    "About 22,000 m",
+    "About 2,200 m",
+    "About 8,800 m"
+   ],
+   "choices_zh": [
+    "约 220 米",
+    "约 22000 米",
+    "约 2200 米",
+    "约 8800 米"
+   ],
+   "answer": 2,
+   "explain_en": "Whistler Peak is about 2,182 m above sea level.",
+   "explain_zh": "惠斯勒山顶海拔约 2182 米。",
+   "qtype": "whistler_geography",
+   "qtype_zh": "惠斯勒地理"
+  },
+  {
+   "id": "l3g7_048",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is 4 °C. The peak is 12 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 4 °C，山顶比村子低 12 °C，山顶多少 °C？",
+   "choices": [
+    "8",
+    "-9",
+    "-8",
+    "16"
+   ],
+   "choices_zh": [
+    "8",
+    "-9",
+    "-8",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "4 - 12 = -8.",
+   "explain_zh": "4-12=-8。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_049",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 13 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 13 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "40.82",
+    "81.64",
+    "530.66"
+   ],
+   "choices_zh": [
+    "40.82",
+    "81.64",
+    "530.66"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 3.14 × 13 = 81.64.",
+   "explain_zh": "2×3.14×13=81.64。",
+   "sign_en": [
+    "40.82",
+    "81.64",
+    "530.66"
+   ],
+   "sign_zh": [
+    "40.82",
+    "81.64",
+    "530.66"
+   ],
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_050",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -18 °C. By noon it warms up by 15 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -18 °C，到中午升高了 15 °C，现在是多少 °C？",
+   "choices": [
+    "-6",
+    "-33",
+    "-3",
+    "3"
+   ],
+   "choices_zh": [
+    "-6",
+    "-33",
+    "-3",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "-18 + 15 = -3.",
+   "explain_zh": "-18+15=-3。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_051",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is 5 °C. The peak is 15 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 5 °C，山顶比村子低 15 °C，山顶多少 °C？",
+   "choices": [
+    "20",
+    "10",
+    "-10"
+   ],
+   "choices_zh": [
+    "20",
+    "10",
+    "-10"
+   ],
+   "answer": 2,
+   "explain_en": "5 - 15 = -10.",
+   "explain_zh": "5-15=-10。",
+   "sign_en": [
+    "20",
+    "10",
+    "-10"
+   ],
+   "sign_zh": [
+    "20",
+    "10",
+    "-10"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_052",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "Signs of hypothermia include…",
+   "q_zh": "失温的症状包括……",
+   "choices": [
+    "Sunburned lips only",
+    "Sneezing from pollen",
+    "Shivering and confusion"
+   ],
+   "choices_zh": [
+    "只有嘴唇晒伤",
+    "花粉过敏打喷嚏",
+    "发抖和意识混乱"
+   ],
+   "answer": 2,
+   "explain_en": "Hypothermia means the body is losing heat dangerously.",
+   "explain_zh": "失温是身体危险地流失热量。",
+   "sign_en": [
+    "Sunburned lips only",
+    "Sneezing from pollen",
+    "Shivering and confusion"
+   ],
+   "sign_zh": [
+    "只有嘴唇晒伤",
+    "花粉过敏打喷嚏",
+    "发抖和意识混乱"
+   ],
+   "qtype": "cold_protection",
+   "qtype_zh": "防寒与冻伤"
+  },
+  {
+   "id": "l3g7_053",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 11 = 17. (x = gifts {name} had before getting 11 more.)",
+   "q_zh": "解方程：x + 11 = 17（x 是 {name} 再收到 11 个礼物之前的数量）。",
+   "choices": [
+    "6",
+    "28",
+    "1",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "28",
+    "1",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "x = 17 - 11 = 6.",
+   "explain_zh": "x=17-11=6。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_054",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "We ski in which layer of Earth's atmosphere?",
+   "q_zh": "我们滑雪时在大气层的哪一层？",
+   "choices": [
+    "Mesosphere",
+    "Troposphere",
+    "Stratosphere",
+    "Thermosphere"
+   ],
+   "choices_zh": [
+    "中间层",
+    "对流层",
+    "平流层",
+    "热层"
+   ],
+   "answer": 1,
+   "explain_en": "The troposphere is the lowest layer.",
+   "explain_zh": "对流层是最低的一层。",
+   "qtype": "altitude_atmosphere",
+   "qtype_zh": "高山大气（气压/沸点/气温）"
+  },
+  {
+   "id": "l3g7_055",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Heat moving from your warm hand into cold snow by touch is…",
+   "q_zh": "手直接碰雪时，热量从手传到雪里，这叫……",
+   "choices": [
+    "Convection",
+    "Conduction",
+    "Radiation"
+   ],
+   "choices_zh": [
+    "对流",
+    "传导",
+    "辐射"
+   ],
+   "answer": 1,
+   "explain_en": "Heat transfer by direct contact is conduction.",
+   "explain_zh": "直接接触传热叫传导。",
+   "sign_en": [
+    "Convection",
+    "Conduction",
+    "Radiation"
+   ],
+   "sign_zh": [
+    "对流",
+    "传导",
+    "辐射"
+   ],
+   "qtype": "heat_transfer",
+   "qtype_zh": "热传递（传导/保温）"
+  },
+  {
+   "id": "l3g7_056",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -14 °C. By noon it warms up by 9 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -14 °C，到中午升高了 9 °C，现在是多少 °C？",
+   "choices": [
+    "-5",
+    "5",
+    "-23"
+   ],
+   "choices_zh": [
+    "-5",
+    "5",
+    "-23"
+   ],
+   "answer": 0,
+   "explain_en": "-14 + 9 = -5.",
+   "explain_zh": "-14+9=-5。",
+   "sign_en": [
+    "-5",
+    "5",
+    "-23"
+   ],
+   "sign_zh": [
+    "-5",
+    "5",
+    "-23"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_057",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 17 = 22. (x = gifts {name} had before getting 17 more.)",
+   "q_zh": "解方程：x + 17 = 22（x 是 {name} 再收到 17 个礼物之前的数量）。",
+   "choices": [
+    "39",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "39",
+    "5",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "x = 22 - 17 = 5.",
+   "explain_zh": "x=22-17=5。",
+   "sign_en": [
+    "39",
+    "5",
+    "3"
+   ],
+   "sign_zh": [
+    "39",
+    "5",
+    "3"
+   ],
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_058",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -13 °C. By noon it warms up by 19 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -13 °C，到中午升高了 19 °C，现在是多少 °C？",
+   "choices": [
+    "5",
+    "-32",
+    "6",
+    "-6"
+   ],
+   "choices_zh": [
+    "5",
+    "-32",
+    "6",
+    "-6"
+   ],
+   "answer": 2,
+   "explain_en": "-13 + 19 = 6.",
+   "explain_zh": "-13+19=6。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_059",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $500 snowboard is 20% off. What is the sale price in dollars?",
+   "q_zh": "一块 500 加元的单板打 80 折（便宜 20%），现价多少加元？",
+   "choices": [
+    "400",
+    "480",
+    "100"
+   ],
+   "choices_zh": [
+    "400",
+    "480",
+    "100"
+   ],
+   "answer": 0,
+   "explain_en": "500 - 500 × 20 ÷ 100 = 400.",
+   "explain_zh": "500-500×20÷100=400。",
+   "sign_en": [
+    "400",
+    "480",
+    "100"
+   ],
+   "sign_zh": [
+    "400",
+    "480",
+    "100"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_060",
+   "level": 3,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The energy needed to melt ice without changing its temperature is called…",
+   "q_zh": "冰融化时吸收、但不改变温度的能量叫……",
+   "choices": [
+    "Nuclear energy",
+    "Latent heat",
+    "Sound energy",
+    "Elastic energy"
+   ],
+   "choices_zh": [
+    "核能",
+    "潜热",
+    "声能",
+    "弹性势能"
+   ],
+   "answer": 1,
+   "explain_en": "Latent heat changes state, not temperature.",
+   "explain_zh": "潜热用于改变状态，不改变温度。",
+   "qtype": "phase_change_energy",
+   "qtype_zh": "相变与热量（升华/潜热/吸热）"
+  },
+  {
+   "id": "l3g7_061",
+   "level": 3,
+   "section": "seawall",
+   "subject": "christmas",
+   "difficulty": "medium",
+   "q_en": "Many Christmas lights now use LEDs because LEDs…",
+   "q_zh": "现在很多圣诞灯用 LED，是因为 LED……",
+   "choices": [
+    "Only work in snow",
+    "Get much hotter",
+    "Use less electricity",
+    "Need more power"
+   ],
+   "choices_zh": [
+    "只能在雪里用",
+    "发热多得多",
+    "更省电",
+    "更费电"
+   ],
+   "answer": 2,
+   "explain_en": "LEDs turn more electricity into light, not heat.",
+   "explain_zh": "LED 把更多电能变成光而不是热。",
+   "qtype": "energy_forms",
+   "qtype_zh": "能量转化与守恒"
+  },
+  {
+   "id": "l3g7_062",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 21 = 45. (x = gifts {name} had before getting 21 more.)",
+   "q_zh": "解方程：x + 21 = 45（x 是 {name} 再收到 21 个礼物之前的数量）。",
+   "choices": [
+    "66",
+    "25",
+    "24",
+    "22"
+   ],
+   "choices_zh": [
+    "66",
+    "25",
+    "24",
+    "22"
+   ],
+   "answer": 2,
+   "explain_en": "x = 45 - 21 = 24.",
+   "explain_zh": "x=45-21=24。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_063",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 3 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 3 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "9.42",
+    "28.26",
+    "18.84"
+   ],
+   "choices_zh": [
+    "9.42",
+    "28.26",
+    "18.84"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 3.14 × 3 = 18.84.",
+   "explain_zh": "2×3.14×3=18.84。",
+   "sign_en": [
+    "9.42",
+    "28.26",
+    "18.84"
+   ],
+   "sign_zh": [
+    "9.42",
+    "28.26",
+    "18.84"
+   ],
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_064",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 3 °C each hour for 5 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 3 °C，连降 5 小时，总变化是多少 °C？",
+   "choices": [
+    "-8",
+    "-15",
+    "15",
+    "-14"
+   ],
+   "choices_zh": [
+    "-8",
+    "-15",
+    "15",
+    "-14"
+   ],
+   "answer": 1,
+   "explain_en": "5 × (-3) = -15.",
+   "explain_zh": "5×(-3)=-15。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_065",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A $400 snowboard is 30% off. What is the sale price in dollars?",
+   "q_zh": "一块 400 加元的单板打 70 折（便宜 30%），现价多少加元？",
+   "choices": [
+    "280",
+    "270",
+    "120",
+    "370"
+   ],
+   "choices_zh": [
+    "280",
+    "270",
+    "120",
+    "370"
+   ],
+   "answer": 0,
+   "explain_en": "400 - 400 × 30 ÷ 100 = 280.",
+   "explain_zh": "400-400×30÷100=280。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l3g7_066",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 4 °C each hour for 5 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 4 °C，连降 5 小时，总变化是多少 °C？",
+   "choices": [
+    "-30",
+    "-9",
+    "20",
+    "-20"
+   ],
+   "choices_zh": [
+    "-30",
+    "-9",
+    "20",
+    "-20"
+   ],
+   "answer": 3,
+   "explain_en": "5 × (-4) = -20.",
+   "explain_zh": "5×(-4)=-20。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_067",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is -3 °C. The peak is 12 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 -3 °C，山顶比村子低 12 °C，山顶多少 °C？",
+   "choices": [
+    "-15",
+    "9",
+    "-10",
+    "15"
+   ],
+   "choices_zh": [
+    "-15",
+    "9",
+    "-10",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "-3 - 12 = -15.",
+   "explain_zh": "-3-12=-15。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_068",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 4 °C each hour for 3 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 4 °C，连降 3 小时，总变化是多少 °C？",
+   "choices": [
+    "-7",
+    "12",
+    "-11",
+    "-12"
+   ],
+   "choices_zh": [
+    "-7",
+    "12",
+    "-11",
+    "-12"
+   ],
+   "answer": 3,
+   "explain_en": "3 × (-4) = -12.",
+   "explain_zh": "3×(-4)=-12。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_069",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The village is -5 °C. The peak is 6 °C colder. What is the temperature at the peak in °C?",
+   "q_zh": "山下村子 -5 °C，山顶比村子低 6 °C，山顶多少 °C？",
+   "choices": [
+    "-12",
+    "-11",
+    "11",
+    "1"
+   ],
+   "choices_zh": [
+    "-12",
+    "-11",
+    "11",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "-5 - 6 = -11.",
+   "explain_zh": "-5-6=-11。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l3g7_070",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "After sunset the temperature drops 4 °C each hour for 2 hours. What is the total change in °C?",
+   "q_zh": "日落后气温每小时下降 4 °C，连降 2 小时，总变化是多少 °C？",
+   "choices": [
+    "8",
+    "-6",
+    "-9",
+    "-8"
+   ],
+   "choices_zh": [
+    "8",
+    "-6",
+    "-9",
+    "-8"
+   ],
+   "answer": 3,
+   "explain_en": "2 × (-4) = -8.",
+   "explain_zh": "2×(-4)=-8。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l3g7_071",
+   "level": 3,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Which sentence uses personification?",
+   "q_zh": "选出英文里用了拟人的句子：",
+   "choices": [
+    "It was windy today.",
+    "We felt the wind.",
+    "The wind whispered through the pines.",
+    "The wind was strong."
+   ],
+   "choices_zh": [
+    "It was windy today.",
+    "We felt the wind.",
+    "The wind whispered through the pines.",
+    "The wind was strong."
+   ],
+   "answer": 2,
+   "explain_en": "Wind cannot really whisper; that is personification.",
+   "explain_zh": "风不会真的低语，这是拟人。",
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l3g7_072",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Solve for x: x + 9 = 39. (x = gifts {name} had before getting 9 more.)",
+   "q_zh": "解方程：x + 9 = 39（x 是 {name} 再收到 9 个礼物之前的数量）。",
+   "choices": [
+    "48",
+    "29",
+    "30"
+   ],
+   "choices_zh": [
+    "48",
+    "29",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "x = 39 - 9 = 30.",
+   "explain_zh": "x=39-9=30。",
+   "sign_en": [
+    "48",
+    "29",
+    "30"
+   ],
+   "sign_zh": [
+    "48",
+    "29",
+    "30"
+   ],
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l3g7_073",
+   "level": 3,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round snow-globe base has a radius of 7 cm. What is its circumference in cm? (Use π ≈ 3.14)",
+   "q_zh": "一个圆形雪球摆件的底座半径 7 厘米，周长是多少厘米？（π 取 3.14）",
+   "choices": [
+    "21.98",
+    "43.96",
+    "153.86"
+   ],
+   "choices_zh": [
+    "21.98",
+    "43.96",
+    "153.86"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 3.14 × 7 = 43.96.",
+   "explain_zh": "2×3.14×7=43.96。",
+   "sign_en": [
+    "21.98",
+    "43.96",
+    "153.86"
+   ],
+   "sign_zh": [
+    "21.98",
+    "43.96",
+    "153.86"
+   ],
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l3g7_074",
+   "level": 3,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the peak it is -12 °C. By noon it warms up by 5 °C. What is the new temperature in °C?",
+   "q_zh": "山顶气温 -12 °C，到中午升高了 5 °C，现在是多少 °C？",
+   "choices": [
+    "7",
+    "-17",
+    "-7",
+    "3"
+   ],
+   "choices_zh": [
+    "7",
+    "-17",
+    "-7",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "-12 + 5 = -7.",
+   "explain_zh": "-12+5=-7。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "subject": "math",
+   "q_en": "At Blackcomb summit it is -11 °C. The temperature rises by 8 °C. What is the new temperature in °C?",
+   "q_zh": "黑梳山山顶气温为 -11°C，升高 8°C 后是多少摄氏度？",
+   "choices": [
+    "-3",
+    "3",
+    "19",
+    "-19"
+   ],
+   "choices_zh": [
+    "-3",
+    "3",
+    "19",
+    "-19"
+   ],
+   "answer": 0,
+   "explain_en": "-11 + 8 = -3.",
+   "explain_zh": "根据题意计算：-11 + 8 = -3。",
+   "id": "l3g7_f01",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "subject": "math",
+   "q_en": "A map of the Spearhead Range uses 1 cm for 250 m. Two points are 6.4 cm apart on the map. What is their represented distance in metres?",
+   "q_zh": "矛头山脉地图上 1 厘米代表 250 米，两点相距 6.4 厘米，实际代表几米？",
+   "choices": [
+    "1560",
+    "2500",
+    "640",
+    "1600"
+   ],
+   "choices_zh": [
+    "1560",
+    "2500",
+    "640",
+    "1600"
+   ],
+   "answer": 3,
+   "explain_en": "6.4 × 250 = 1600.",
+   "explain_zh": "根据题意计算：6.4 × 250 = 1600。",
+   "id": "l3g7_f02",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "subject": "math",
+   "q_en": "A hut snow gauge reads 80 cm. New snow increases this by 15%. What is the new reading in cm?",
+   "q_zh": "小屋的积雪尺读数为 80 厘米，新雪使它增加了 15%，现在几厘米？",
+   "choices": [
+    "68",
+    "92",
+    "95",
+    "12"
+   ],
+   "choices_zh": [
+    "68",
+    "92",
+    "95",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "80 × 1.15 = 92.",
+   "explain_zh": "根据题意计算：80 × 1.15 = 92。",
+   "id": "l3g7_f03",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "subject": "math",
+   "q_en": "A summit photo booklet costs $5 plus $3 per photo. Flora pays $26. How many photos are included?",
+   "q_zh": "一本山顶照片册收 5 元基本费，每张照片再收 3 元，Flora 共付 26 元，含几张照片？",
+   "choices": [
+    "8",
+    "7",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "6",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "(26 - 5) ÷ 3 = 7.",
+   "explain_zh": "根据题意计算：(26 - 5) ÷ 3 = 7。",
+   "id": "l3g7_f04",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "subject": "math",
+   "q_en": "Four equally likely summit-view cards show the hut, glacier, inukshuk and range. Flora draws one card. What is the probability it shows the hut or glacier?",
+   "q_zh": "四张等可能抽到的山顶景观卡分别是小屋、冰川、石头人、山脉，抽一张是小屋或冰川的概率是多少？",
+   "choices": [
+    "1/2",
+    "3/4",
+    "1",
+    "1/4"
+   ],
+   "choices_zh": [
+    "1/2",
+    "3/4",
+    "1",
+    "1/4"
+   ],
+   "answer": 0,
+   "explain_en": "2 ÷ 4 = 1/2.",
+   "explain_zh": "根据题意计算：2 ÷ 4 = 1/2。",
+   "id": "l3g7_f05",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "subject": "math",
+   "q_en": "A snow-study circle near the summit has radius 7 m. Using π = 22/7, what is its circumference in metres?",
+   "q_zh": "山顶一个圆形积雪观察区半径 7 米，取 π=22/7，周长几米？",
+   "choices": [
+    "22",
+    "154",
+    "44",
+    "49"
+   ],
+   "choices_zh": [
+    "22",
+    "154",
+    "44",
+    "49"
+   ],
+   "answer": 2,
+   "explain_en": "2 × (22/7) × 7 = 44.",
+   "explain_zh": "根据题意计算：2 × (22/7) × 7 = 44。",
+   "id": "l3g7_f06",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "subject": "science",
+   "q_en": "Flora notices darker rocks exposed beside summit snow. Under the same sunlight, why do darker rocks often warm faster?",
+   "q_zh": "Flora 看到山顶积雪旁露出的深色岩石，同样日照下它们为什么常升温更快？",
+   "choices": [
+    "They stop all heat transfer",
+    "They create extra sunlight",
+    "They absorb more incoming sunlight",
+    "They have no mass"
+   ],
+   "choices_zh": [
+    "它们阻止所有热传递",
+    "它们产生额外阳光",
+    "它们吸收更多入射阳光",
+    "它们没有质量"
+   ],
+   "answer": 2,
+   "explain_en": "Dark surfaces usually reflect less sunlight and absorb more than bright snow.",
+   "explain_zh": "深色表面通常比明亮的雪反射少、吸收多。",
+   "id": "l3g7_f07",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "light_albedo",
+   "qtype_zh": "光的反射与吸收（反照率/眩光）"
+  },
+  {
+   "subject": "science",
+   "q_en": "Flora studies Horstman Glacier. Which force drives a glacier downhill?",
+   "q_zh": "Flora 研究霍斯特曼冰川，是什么力驱使冰川向下运动？",
+   "choices": [
+    "Moonlight pressure alone",
+    "Sound from birds",
+    "Magnetism from the hut",
+    "Gravity"
+   ],
+   "choices_zh": [
+    "只有月光的压力",
+    "鸟叫声",
+    "小屋的磁力",
+    "重力"
+   ],
+   "answer": 3,
+   "explain_en": "Gravity drives glacier flow downslope.",
+   "explain_zh": "重力驱使冰川向下坡流动。",
+   "id": "l3g7_f08",
+   "level": 3,
+   "section": "peak_final",
+   "difficulty": "hard",
+   "qtype": "glacier_science",
+   "qtype_zh": "冰川"
+  }
+ ]
+}
