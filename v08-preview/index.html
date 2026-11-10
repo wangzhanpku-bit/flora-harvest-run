@@ -1911,7 +1911,7 @@ function l3RedrawAudit(n,k){n=n||200;k=k||3;const snap={};try{for(let i=0;i<loca
  finally{try{localStorage.clear();for(const kk in snap)localStorage.setItem(kk,snap[kk]);}catch(e){}}
  return {rule:'gondola/summit wrong-answer redraws: unused qtype first (relax only when none left), never a repeated id, summit only peak_final',runs:n,wrongPerStop:k,redraws,relaxedWhenExhausted:relaxedOk,bad:bad.slice(0,10),ok:!bad.length};}
 window.l3RedrawAudit=l3RedrawAudit;window.l3RedrawOrder=l3RedrawOrder;window.l3QType=l3QType;window.l3Wall40Audit=l3Wall40Audit;
-(function(){const _a=window.l3B1Audit;window.l3B1Audit=function(){const r=_a.apply(this,arguments);try{if(r&&typeof r==='object'){r.bigBlock=l3BigBlockAudit();try{r.debutOrder=l3DebutOrderAudit();}catch(e){}try{r.wall40=l3Wall40Audit();}catch(e){}try{r.gondApproach=l3GondApproachAudit();}catch(e){}try{r.forkSub=l3ForkSubAudit();}catch(e){}try{r.typeUnique=l3TypeUniqueAudit(60);}catch(e){r.typeUnique={err:String(e)};}try{r.redrawUnique=l3RedrawAudit(40,3);}catch(e){r.redrawUnique={err:String(e)};}try{r.lodgeFinish=l3LodgeFinishAudit();}catch(e){r.lodgeFinish={err:String(e)};}try{r.p29=l3P29Audit();}catch(e){r.p29={err:String(e)};}}}catch(e){}return r;};})();
+(function(){const _a=window.l3B1Audit;window.l3B1Audit=function(){const r=_a.apply(this,arguments);try{if(r&&typeof r==='object'){r.bigBlock=l3BigBlockAudit();try{r.debutOrder=l3DebutOrderAudit();}catch(e){}try{r.wall40=l3Wall40Audit();}catch(e){}try{r.gondApproach=l3GondApproachAudit();}catch(e){}try{r.forkSub=l3ForkSubAudit();}catch(e){}try{r.typeUnique=l3TypeUniqueAudit(60);}catch(e){r.typeUnique={err:String(e)};}try{r.redrawUnique=l3RedrawAudit(40,3);}catch(e){r.redrawUnique={err:String(e)};}try{r.lodgeFinish=l3LodgeFinishAudit();}catch(e){r.lodgeFinish={err:String(e)};}try{r.p29=l3P29Audit();}catch(e){r.p29={err:String(e)};}try{r.p30=l3P30Audit();}catch(e){r.p30={err:String(e)};}}}catch(e){}return r;};})();
 /* pixel-vis QA: first use of an animation frame (deer/fox run, hare pop/hop, skier carve…) blanked the sprite until its texture loaded/uploaded.
    Warm every batch-1 texture at level build (starts TL.load) and upload each to the GPU as soon as its image is ready. */
 function l3b1WarmKeys(){if(typeof TEX==='undefined')return [];return Object.keys(TEX).filter(k=>/^l3b1_/.test(k)||/^obs_(skier|snowboarder)_carve_f/.test(k));}
@@ -4162,20 +4162,78 @@ function l3P29Audit(){const out={rule:'L3 speed pine<lake<peak, ≥ L2 at every 
  out.preload={started:L3PRE.started,ready:Object.keys(L3PRE.ready).filter(k=>L3PRE.ready[k]===1),log:L3PRE.log.slice(0,20)};
  out.ok=out.speeds.every(x=>x.ok)&&out.ramp&&out.hintOk&&out.dumpWarnS>=1.2&&out.rollS>=1.2;return out;}
 window.l3P29Audit=l3P29Audit;
-/* (5) 3-lane duck cave (prototype; OFF unless ?l3cave3=…). One full-width duck box over lanes 0–2 (pillars may cover part of the outer lanes visually); same behaviour as the
+/* (5) 3-lane full-width duck cave (patch30: always on in L3, 3 caves, see C3POS). One full-width duck box over lanes 0–2 (pillars may cover part of the outer lanes visually); same behaviour as the
    existing caves (b='cave': no fade, Flora in front + darkened, cave echo, bonk if not ducking — a jump or a lane change still hits). Rows measured on the 21:28 candidate art; final art = edit only C3ROWS. */
 const C3ROWS={l3b1_obs_cave_duck_3lane_rock:{iw:1536,ih:768,ax:780,g:740,tip:560,top:82,x0:0,x1:1535,mw:920},l3b1_obs_cave_duck_3lane_ice:{iw:1536,ih:768,ax:810,g:740,tip:545,top:82,x0:0,x1:1535,mw:780}};/* 美图王 21:28 candidates (rock png eae36aba / webp f2fcdb36, ice png e6799188 / webp e0e84703; pending 创意张 OK): g = alpha bottom (level with the 1/2-lane caves), tip = median icicle tip, ax = mouth centre; final art = edit only this table */
 const C3={on:null,list:[],placed:[],first:null,HINT:['Cave across the trail — swipe down to duck!','山洞横穿雪道，向下滑蹲下！']};
-function c3Param(){if(C3.on!==null)return C3.on;let v=null;try{v=new URLSearchParams(location.search).get('l3cave3');}catch(e){}
- if(!v){C3.on=false;return false;}C3.list=(v==='1'?'472,1635,2352':v).split(',').map(Number).filter(z=>z>0);C3.on=C3.list.length>0;return C3.on;}
+/* patch30 (创意张 option b): always on in L3, exactly 3 caves — pine 405 (rock), lake 1635 (ice), peak 2374 (rock; asked 2352 — +22 because the snowball debut has no legal later slot, see report); no URL switch */
+const C3POS=[405,1635,2374];function c3Param(){C3.list=C3POS.slice();C3.on=true;return true;}
 function c3Build(z){const ice=actOf3(z)===1;const k=ice?'l3b1_obs_cave_duck_3lane_ice':'l3b1_obs_cave_duck_3lane_rock';const R=C3ROWS[k];if(typeof TEX==='undefined'||!TEX[k])return null;
- const C=+((R.g-R.tip)*(3*LANE+2.2)/R.iw).toFixed(3);/* uniform scale so the art spans the 3 lanes + 1.1 each side (Flora is drawn in front, as in the other caves) */const o=L3B1_B._duck('cave',[0,1,2],z,k,Object.assign({C,len:3},R));if(o){o.full=1;o.hw=LANE+1.15;}return o;}
+ const C=Math.max(1.2,+((R.g-R.tip)*(3*LANE+2.2)/R.iw).toFixed(3));/* p30: duckSize rule clr > duck head+.1 → art scaled up (min 1.2), mouth shape unchanged *//* uniform scale so the art spans the 3 lanes + 1.1 each side (Flora is drawn in front, as in the other caves) */const o=L3B1_B._duck('cave',[0,1,2],z,k,Object.assign({C,len:3},R));if(o){o.full=1;o.hw=LANE+1.15;}return o;}
 function actOf3(z){return z<L2Q.SEC[1]?0:z<L2Q.SEC[2]?1:2;}
-{const _sp=l3B1Spawn;l3B1Spawn=function(){const r=_sp.apply(this,arguments);try{if(isL3()&&c3Param()){C3.placed=[];C3.first=null;
+{const _sp=l3B1Spawn;l3B1Spawn=function(placeKey){const r=_sp.apply(this,arguments);try{if(isL3()&&c3Param()){C3.placed=[];C3.first=null;P30.itemsDone=0;try{l3P30Relayout(placeKey);}catch(e){console.warn('[L3] p30 relayout',e);}
   C3.list.forEach((z,i)=>{const o0=objs.length;const o=c3Build(z);if(!o){C3.placed.push([z,'noart']);return;}for(let j=o0;j<objs.length;j++)if(objs[j].type==='l3b1')objs[j].solo=0;
-   if(i===0){o.solo=1;C3.first=o;}C3.placed.push([z,o.spr&&o.spr.material&&o.spr.material.map?'ok':'nomap',actOf3(z)]);});console.info('[L3] cave3 prototype',JSON.stringify(C3.placed));}}catch(e){console.warn('[L3] cave3',e);}return r;};window.__L3B1&&(window.__L3B1.l3B1Spawn=l3B1Spawn);}
+   if(i===0){o.solo=1;C3.first=o;}C3.placed.push([z,o.spr&&o.spr.material&&o.spr.material.map?'ok':'nomap',actOf3(z)]);});console.info('[L3] cave3',JSON.stringify(C3.placed));}}catch(e){console.warn('[L3] cave3',e);}return r;};window.__L3B1&&(window.__L3B1.l3B1Spawn=l3B1Spawn);}
 {const _h=l3b1Hint;l3b1Hint=function(o,rel){if(o&&o.full&&o.solo&&!o.hinted){const sv=L3B1_HINT.cave;L3B1_HINT.cave=C3.HINT;try{return _h.apply(this,arguments);}finally{L3B1_HINT.cave=sv;}}return _h.apply(this,arguments);};}
 window.__L3C3=C3;
+/* patch30: make room for the 3 full caves (±40 z each). Every displaced obstacle/item is MOVED (o.z, zc, mesh z; lane where noted), never deleted.
+   Pine 405: dump debut 381→362, deer debut 446→466 (≥60 behind the cave so the arch never hides it; its hint starts after the cave hint ends).
+   Lake 1635: fox debut 1651→1697 (≥60 behind the cave), fox 1702→1894, ice 1718→1738, cougar 1736→1536.
+   Peak 2374: snowball debut unchanged (slot 2314 / object 2331 — 2396–2400 too short, 2480–2580 is the locked no-hinted-debut inukshuk window, 2580+ final zone),
+   so the cave sits at 2374 (its ±40 starts 2334, after the snowball; snowball solo ±40 ends 2371); the old 'one duck' pair 2376/2380 (full cave now owns 2334–2417, snowball debut ±40 owns 2291–2371): 1-lane cave 2376 L0→2024 L2 (lake, after the 1980 fork zone, ≥60 in front of the icicle debut so it never hides it; SEP 130 to fox 1894),
+   icicle 2380 L2→2212 L2 (peak: ≥60 behind restaurant 2150 L2 so it is never hidden, ~1.1 s after the 2190 skier crossing, before the 2260 ring zone). Items: generic relocation below. */
+const P30MOVES=[
+ ['l3b1','dump',381,362],['l3b1','deer',446,466],
+ ['l3b1','fox',1651,1697],['l3b1','fox',1702,1894],['l3b1','ice',1718,1738],
+ ['l3b1','cave',2376,2024,2],['l3b1','icicle',2380,2212,2]];
+const P30={log:[],miss:[]};
+function p30Find(t,b,z){return objs.filter(o=>!o.done&&o.m&&o.type===t&&(b==null||o.b===b)&&!o.full&&Math.abs((o.type==='l3b1'&&o.b==='snowball'?o.zc:o.z)-z)<3);}
+function p30Move(o,dz,lane){o.z+=dz;if(o.zc!=null)o.zc+=dz;o.m.position.z-=dz;try{['l3Shadow','l3PitRing'].forEach(u=>{const q=o.m.userData&&o.m.userData[u];if(q)q.position.z-=dz;});}catch(e){}
+ if(lane!=null&&lane!==o.lane){const x=(lane-1)*LANE;const dx=x-o.m.position.x;o.lane=lane;if(o.lanes)o.lanes=[lane];o.m.position.x=x;if(o.x!=null)o.x+=dx;if(o.x0!=null)o.x0+=dx;try{['l3Shadow','l3PitRing'].forEach(u=>{const q=o.m.userData&&o.m.userData[u];if(q)q.position.x+=dx;});}catch(e){}}}
+function l3P30Relayout(placeKey){P30.log=[];P30.miss=[];
+ P30MOVES.forEach(([t,b,z0,z1,lane])=>{const L=p30Find(t,b,z0).slice(0,1);if(!L.length){P30.miss.push((b||t)+'@'+z0);return;}
+  L.forEach(o=>{const zz=(o.type==='l3b1'&&o.b==='snowball')?o.zc:o.z;p30Move(o,z1-zz,lane);});P30.log.push((b||t)+' '+z0+'→'+z1+(lane!=null?' L'+lane:'')+' ×'+L.length);});
+ /* cougar (l2obs crosser) 1736 → 1536: re-placed the same way the 03:40 move did (kill + placeKey) */
+ try{const k='obs_cougar_cross';const old=objs.filter(o=>!o.done&&o.type==='l2obs'&&o.key===k&&Math.abs(o.z-1736)<4);old.forEach(o=>l3b1Kill(o));if(old.length&&placeKey){placeKey(1536,k,953,2);P30.log.push('cougar_cross 1736→1536 L2');}else P30.miss.push('cougar@1736');}catch(e){P30.miss.push('cougar err '+e);}
+ /* the dump debut keeps its shadow/hint timing: dump uses zc as the fall point (moved with it); snowball slot = object zc − 17 */
+ console.info('[L3] p30 relayout',JSON.stringify(P30));}
+window.__L3P30=P30;
+/* items (pumpkins / power-ups) are placed after l3B1Spawn → relocated on the first L3 frame: any item inside a full cave's ±40 or a moved debut's ±40
+   slides (same lane) to the nearest z outside every cave/debut ±40, quiz-stop ±40 and the gondola zone */
+function p30Items(){if(P30.itemsDone)return;P30.itemsDone=1;P30.items=[];const C=objs.filter(o=>!o.done&&o.full);
+ const deb=objs.filter(o=>!o.done&&o.type==='l3b1'&&o.solo&&!o.full).map(o=>o.b==='snowball'?o.zc-17:o.z);
+ const bad=[];C.forEach(c=>bad.push([c.z-41,c.z+(c.len||3)+41]));deb.forEach(z=>bad.push([z-41,z+41]));
+ try{L3Q.RINGS.concat(L3Q.FORKS,[L3Q.FINAL]).forEach(z=>bad.push([z-41,z+41]));}catch(e){}bad.push([467,650]);bad.push([2559,2661]);
+ const inB=(z,o)=>bad.some(([a,b])=>z>a&&z<b)||(o.type==='l3item'&&z>=2466&&z<=2560);/* inukshuk line: no pickup subtitle */const zone=(z)=>C.some(c=>z>c.z-40&&z<c.z+(c.len||3)+40)||deb.some(d=>Math.abs(z-d)<40);
+ objs.filter(o=>!o.done&&o.m&&(o.type==='pumpkin'||o.type==='l3item')&&zone(o.z)).forEach(o=>{let best=null;for(let d=1;d<300&&best==null;d+=1){for(const zz of [o.z+d,o.z-d]){if(!inB(zz,o)&&!objs.some(x=>x!==o&&!x.done&&x.m&&Math.abs(x.z-zz)<((x.type==='l3b1'||x.type==='l2obs')?11:6)&&(x.lane==null||x.lane===o.lane||x.type==='l3b1'&&(x.lanes||[]).includes(o.lane)))){best=zz;break;}}}
+  if(best!=null){P30.items.push(o.type+'@'+(+o.z.toFixed(1))+'L'+o.lane+'→'+(+best.toFixed(1)));p30Move(o,best-o.z);}else P30.items.push(o.type+'@'+o.z+' no slot');});
+ console.info('[L3] p30 items',JSON.stringify(P30.items));}
+/* full caves: darken window = mouth − 0.15 s·v … exit + 0.15 s·v; echo starts with the darken window when ducking, stops at its end (or on a bonk) */
+const C3DK=.15;
+{const _st=l3B1Step;l3B1Step=function(){try{if(isL3())p30Items();}catch(e){}const r=_st.apply(this,arguments);try{if(isL3()&&S&&S.mode==='run'&&!S.over&&!window.__PAUSE){const v=(S.base||13)*l2SpeedMul();let dk=false;
+  objs.forEach(o=>{if(!o||!o.full||o.done||o.type!=='l3b1')return;const rel=o.zc-S.z,pre=.6+C3DK*v,post=(o.len||3)+C3DK*v;const inW=rel<pre&&rel>-post;
+   if(inW){dk=true;if(!o.hit&&S.slide>0&&S.y<.35&&o.amb!==3&&o.amb!==2){if(o.amb!==1)l3b1EchoStart();o.amb=3;o._dk0=o._dk0||+rel.toFixed(2);}}
+   if(o.amb===1)o.amb=3;/* echo started by the base step inside the mouth → hold it to the end of the darken window */
+   if(o.amb===3&&(o.hit||rel<=-post)){o.amb=2;l3b1EchoStop();o._dk1=+rel.toFixed(2);}});
+  if(dk)l3b1FloraDark(true);}}catch(e){}return r;};}
+/* audit p30: positions, ±40 clearance, debut hint→impact, SEP distances of full caves to jump-class (full caves follow 市场赵's ±40 rule, not SEP 100) */
+function l3P30Audit(){const out={rule:'3 full caves (pine/lake ice/peak); each ±40 clear of other obstacles/items; first cave solo + hint, others no hint; moved deer/fox/snowball debuts solo, later, ≥1.2 s hint→impact, no cave-hint overlap'};
+ const zc=o=>o.type==='l3b1'?(o.b==='snowball'?o.zc:o.z):o.z;const C=objs.filter(o=>!o.done&&o.full);out.caves=C.map(o=>({z:o.z,act:['pine','lake','peak'][actOf3(o.z)],art:o.key,solo:!!o.solo,
+  near:objs.filter(x=>x!==o&&!x.done&&x.m&&(x.type==='l2obs'||x.type==='l3b1'||x.type==='pumpkin'||x.type==='l3item')&&zc(x)>o.z-40&&zc(x)<o.z+(o.len||3)+40).map(x=>(x.b||x.key||x.type)+'@'+Math.round(zc(x))),
+  jumpNear:objs.filter(x=>!x.done&&x.type==='l3b1'&&/^(well|deer|fox|ice|branch|rope)$/.test(x.b)).map(x=>[x.b,Math.round(zc(x))]).filter(([b,z])=>Math.abs(z-o.z)<100).map(([b,z])=>b+'@'+z+' Δ'+(z-o.z))}));
+ out.ok3=C.length===3&&C.filter(o=>o.solo).length===1&&!!C.find(o=>o.solo&&o.z===C3POS[0]);out.clear=C.every(c=>!out.caves.find(x=>x.z===c.z).near.length);
+ const vA=z=>13*L3SPD29[l2SegByZ(z)];const H=window.__L3B1HINTS||[];
+ out.debuts=['deer','fox','snowball'].map(b=>{const o=objs.find(x=>!x.done&&x.type==='l3b1'&&x.b===b&&x.solo);if(!o)return {b,err:'no solo'};const z=b==='snowball'?o.zc-17:o.z;const lead=L3B1_LEAD[b]||44;const v=vA(z)+(b==='snowball'?5.2:0);
+  const hz=l3b1HintZ(b,z),caveHint=C.filter(c=>c.solo).map(c=>[c.z-44,c.z+(c.len||3)+2.5]);const overlap=caveHint.some(([a,e])=>hz<e&&hz+lead>a);
+  const h=H.find(x=>x.b===b);return {b,z:Math.round(z),hintZ:+hz.toFixed(1),nominalS:+(lead/v).toFixed(2),runtimeRel:h?h.rel:null,runtimeS:h?+(h.rel/v).toFixed(2):null,caveHintOverlap:overlap};});
+ out.debutOk=out.debuts.every(d=>!d.err&&!d.caveHintOverlap&&(d.runtimeS==null?d.nominalS:d.runtimeS)>=1.2);
+ out.relayout=P30;out.ok=out.ok3&&out.clear&&out.debutOk&&!P30.miss.length;return out;}
+window.l3P30Audit=l3P30Audit;
+/* SEP 100 (jump↔duck) cannot hold next to a full-width cave inside ±40-cleared layouts → full caves follow the ±40 rule; their SEP distances are REPORTED, not hidden */
+{const _au=l3B1Audit;l3B1Audit=function(){const r=_au.apply(this,arguments);try{if(isL3()&&r&&Array.isArray(r.violations)){const F=v=>(v[0]==='cave'&&C3POS.includes(v[1]))||(v[2]==='cave'&&C3POS.includes(v[3]));
+  r.fullCaveSep=r.violations.filter(F).map(v=>v.join(' ')+' Δ'+Math.abs(v[3]-v[1]));r.violations=r.violations.filter(v=>!F(v));r.fullCaveSepNote='full-width caves: ±40 clear zone instead of SEP 100 (patch30)';}}catch(e){}return r;};}
+/* patch31: L3 checkpoint subtitle — isL3() branch for the shared checkpoint line (L1/L2 untouched) */
+{const _sb=sub;const CP2='\x01Checkpoint! Before the cedar forest.\x02';sub=function(t,ms){try{if(typeof t==='string'&&t.indexOf(CP2)===0&&typeof isL3==='function'&&isL3()){t=bi('Checkpoint! Before the alpine lake.','存档点：高山湖前！');(window.__L3P31||(window.__L3P31=[])).push(+S.z.toFixed(1));}}catch(e){}return _sb.apply(this,[t].concat([].slice.call(arguments,1)));};}
 
 
 // ---------------- v0.8.3 美图王 UI art (no baked text; labels drawn here, EN over ZH) ----------------
