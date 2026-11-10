@@ -1,0 +1,5050 @@
+{
+ "grade": 9,
+ "version": 1,
+ "curriculum": "BC Grade 9 Math, Science/Geography, Reading + farm/Stanley themes + capybara",
+ "fields": "same format as questions_v6.json; {name}=player; corn_maze ≤3 choices + sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g9_001",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "Up a tree",
+    "In the water"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "树上",
+    "在水里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "sign_en": [
+    "In the snow",
+    "Up a tree",
+    "In the water"
+   ],
+   "sign_zh": [
+    "雪地里",
+    "树上",
+    "在水里"
+   ]
+  },
+  {
+   "id": "g9_002",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Fish",
+    "Candy",
+    "Grass and plants",
+    "Insects"
+   ],
+   "choices_zh": [
+    "鱼",
+    "糖果",
+    "草和植物",
+    "昆虫"
+   ],
+   "answer": 2,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。"
+  },
+  {
+   "id": "g9_003",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Fish",
+    "Rodent",
+    "Bird"
+   ],
+   "choices_zh": [
+    "鱼",
+    "啮齿动物",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "sign_en": [
+    "Fish",
+    "Rodent",
+    "Bird"
+   ],
+   "sign_zh": [
+    "鱼",
+    "啮齿动物",
+    "鸟"
+   ]
+  },
+  {
+   "id": "g9_004",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Africa",
+    "Australia",
+    "South America",
+    "The North Pole"
+   ],
+   "choices_zh": [
+    "非洲",
+    "澳大利亚",
+    "南美洲",
+    "北极"
+   ],
+   "answer": 2,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。"
+  },
+  {
+   "id": "g9_005",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Yes",
+    "Only in winter",
+    "No"
+   ],
+   "choices_zh": [
+    "有",
+    "只在冬天有",
+    "没有"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。"
+  },
+  {
+   "id": "g9_006",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Flyers",
+    "Swimmers",
+    "Climbers"
+   ],
+   "choices_zh": [
+    "飞翔",
+    "游泳",
+    "爬树"
+   ],
+   "answer": 1,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "sign_en": [
+    "Flyers",
+    "Swimmers",
+    "Climbers"
+   ],
+   "sign_zh": [
+    "飞翔",
+    "游泳",
+    "爬树"
+   ]
+  },
+  {
+   "id": "g9_007",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Herd",
+    "Flock",
+    "School"
+   ],
+   "choices_zh": [
+    "一群",
+    "鸟群",
+    "鱼群"
+   ],
+   "answer": 0,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "sign_en": [
+    "Herd",
+    "Flock",
+    "School"
+   ],
+   "sign_zh": [
+    "一群",
+    "鸟群",
+    "鱼群"
+   ]
+  },
+  {
+   "id": "g9_008",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Raccoon",
+    "Beaver",
+    "Capybara"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "河狸",
+    "水豚"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "sign_en": [
+    "Raccoon",
+    "Beaver",
+    "Capybara"
+   ],
+   "sign_zh": [
+    "浣熊",
+    "河狸",
+    "水豚"
+   ]
+  },
+  {
+   "id": "g9_009",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Only hisses",
+    "Cute squeaks / clicks",
+    "Lion roars"
+   ],
+   "choices_zh": [
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声",
+    "狮子吼"
+   ],
+   "answer": 1,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "sign_en": [
+    "Only hisses",
+    "Cute squeaks / clicks",
+    "Lion roars"
+   ],
+   "sign_zh": [
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声",
+    "狮子吼"
+   ]
+  },
+  {
+   "id": "g9_010",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Has no flat paddle tail",
+    "Lives only on ice",
+    "Is a bird"
+   ],
+   "choices_zh": [
+    "没有扁平的桨状尾巴",
+    "只住在冰上",
+    "是鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "sign_en": [
+    "Has no flat paddle tail",
+    "Lives only on ice",
+    "Is a bird"
+   ],
+   "sign_zh": [
+    "没有扁平的桨状尾巴",
+    "只住在冰上",
+    "是鸟"
+   ]
+  },
+  {
+   "id": "g9_011",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The basic unit of living things is the…",
+   "q_zh": "生物的基本单位是……",
+   "choices": [
+    "Cell",
+    "Galaxy",
+    "Continent"
+   ],
+   "choices_zh": [
+    "细胞",
+    "星系",
+    "大陆"
+   ],
+   "answer": 0,
+   "explain_en": "Cells make tissues and organs.",
+   "explain_zh": "细胞构成组织和器官。",
+   "sign_en": [
+    "Cell",
+    "Galaxy",
+    "Continent"
+   ],
+   "sign_zh": [
+    "细胞",
+    "星系",
+    "大陆"
+   ]
+  },
+  {
+   "id": "g9_012",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Energy stored in food is a form of…",
+   "q_zh": "食物里储存的能量属于……",
+   "choices": [
+    "Chemical energy",
+    "Only moonlight",
+    "Only sound"
+   ],
+   "choices_zh": [
+    "化学能",
+    "只有月光",
+    "只有声音"
+   ],
+   "answer": 0,
+   "explain_en": "Food stores chemical energy.",
+   "explain_zh": "食物储存化学能。",
+   "sign_en": [
+    "Chemical energy",
+    "Only moonlight",
+    "Only sound"
+   ],
+   "sign_zh": [
+    "化学能",
+    "只有月光",
+    "只有声音"
+   ]
+  },
+  {
+   "id": "g9_013",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Canada's capital city is…",
+   "q_zh": "加拿大的首都是……",
+   "choices": [
+    "Vancouver",
+    "Ottawa",
+    "Toronto"
+   ],
+   "choices_zh": [
+    "温哥华",
+    "渥太华",
+    "多伦多"
+   ],
+   "answer": 1,
+   "explain_en": "Ottawa is the capital.",
+   "explain_zh": "首都是渥太华。",
+   "sign_en": [
+    "Vancouver",
+    "Ottawa",
+    "Toronto"
+   ],
+   "sign_zh": [
+    "温哥华",
+    "渥太华",
+    "多伦多"
+   ]
+  },
+  {
+   "id": "g9_014",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "British Columbia is a…",
+   "q_zh": "不列颠哥伦比亚（卑诗）是……",
+   "choices": [
+    "Moon base",
+    "Province of Canada",
+    "U.S. state",
+    "Country of its own"
+   ],
+   "choices_zh": [
+    "月球基地",
+    "加拿大的一个省",
+    "美国的州",
+    "独立国家"
+   ],
+   "answer": 1,
+   "explain_en": "B.C. is a Canadian province.",
+   "explain_zh": "卑诗是加拿大的省。"
+  },
+  {
+   "id": "g9_015",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which organelle is often called the powerhouse of the cell?",
+   "q_zh": "常被称为细胞动力工厂的细胞器是？",
+   "choices": [
+    "Traffic light",
+    "Bicycle pump",
+    "Mitochondrion"
+   ],
+   "choices_zh": [
+    "红绿灯",
+    "打气筒",
+    "线粒体"
+   ],
+   "answer": 2,
+   "explain_en": "Mitochondria release usable energy.",
+   "explain_zh": "线粒体释放可用能量。",
+   "sign_en": [
+    "Traffic light",
+    "Bicycle pump",
+    "Mitochondrion"
+   ],
+   "sign_zh": [
+    "红绿灯",
+    "打气筒",
+    "线粒体"
+   ]
+  },
+  {
+   "id": "g9_016",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a right triangle, a²+b² equals…",
+   "q_zh": "直角三角形中 a²+b² 等于……",
+   "choices": [
+    "Only a",
+    "c² (hypotenuse squared)",
+    "Only 0"
+   ],
+   "choices_zh": [
+    "只有 a",
+    "c²（斜边的平方）",
+    "只有 0"
+   ],
+   "answer": 1,
+   "explain_en": "Pythagorean theorem.",
+   "explain_zh": "勾股定理。",
+   "sign_en": [
+    "Only a",
+    "c² (hypotenuse squared)",
+    "Only 0"
+   ],
+   "sign_zh": [
+    "只有 a",
+    "c²（斜边的平方）",
+    "只有 0"
+   ]
+  },
+  {
+   "id": "g9_017",
+   "section": "pumpkin_field",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"Some say the seawall is only for tourists; however, locals ride it daily.\" — However signals…",
+   "q_zh": "有人说海堤只给游客；然而本地人每天骑。however 表示……",
+   "choices": [
+    "Contrast",
+    "A date only",
+    "Silence",
+    "A recipe"
+   ],
+   "choices_zh": [
+    "转折",
+    "只是日期",
+    "沉默",
+    "菜谱"
+   ],
+   "answer": 0,
+   "explain_en": "However introduces contrast.",
+   "explain_zh": "however 表转折。"
+  },
+  {
+   "id": "g9_018",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"The essay claims more bike lanes reduce accidents.\" — A supporting detail would be…",
+   "q_zh": "文章声称更多自行车道减少事故。支持细节会是……",
+   "choices": [
+    "A random joke only",
+    "A unrelated soup recipe",
+    "Crash statistics before/after lanes"
+   ],
+   "choices_zh": [
+    "只是随机笑话",
+    "无关汤谱",
+    "车道前后的事故统计"
+   ],
+   "answer": 2,
+   "explain_en": "Evidence should support the claim.",
+   "explain_zh": "证据应支持论点。",
+   "sign_en": [
+    "A random joke only",
+    "A unrelated soup recipe",
+    "Crash statistics before/after lanes"
+   ],
+   "sign_zh": [
+    "只是随机笑话",
+    "无关汤谱",
+    "车道前后的事故统计"
+   ]
+  },
+  {
+   "id": "g9_019",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Ostrich",
+    "Penguin",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "鸵鸟",
+    "企鹅",
+    "加拿大鹅"
+   ],
+   "answer": 2,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "sign_en": [
+    "Ostrich",
+    "Penguin",
+    "Canada goose"
+   ],
+   "sign_zh": [
+    "鸵鸟",
+    "企鹅",
+    "加拿大鹅"
+   ]
+  },
+  {
+   "id": "g9_020",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Only in winter",
+    "At noon",
+    "At night"
+   ],
+   "choices_zh": [
+    "只在冬天",
+    "中午",
+    "晚上"
+   ],
+   "answer": 2,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "Only in winter",
+    "At noon",
+    "At night"
+   ],
+   "sign_zh": [
+    "只在冬天",
+    "中午",
+    "晚上"
+   ]
+  },
+  {
+   "id": "g9_021",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Echolocation",
+    "Smell only",
+    "Flashlights",
+    "Paper maps"
+   ],
+   "choices_zh": [
+    "回声定位",
+    "只靠嗅觉",
+    "手电筒",
+    "纸质地图"
+   ],
+   "answer": 0,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。"
+  },
+  {
+   "id": "g9_022",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Fish",
+    "Insects",
+    "Mammals",
+    "Birds"
+   ],
+   "choices_zh": [
+    "鱼",
+    "昆虫",
+    "哺乳动物",
+    "鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。"
+  },
+  {
+   "id": "g9_023",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Penguin",
+    "Flamingo",
+    "Ostrich"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "火烈鸟",
+    "鸵鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。"
+  },
+  {
+   "id": "g9_024",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Baobab",
+    "Palm tree",
+    "Western red cedar"
+   ],
+   "choices_zh": [
+    "猴面包树",
+    "棕榈树",
+    "西部红雪松"
+   ],
+   "answer": 2,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "sign_en": [
+    "Baobab",
+    "Palm tree",
+    "Western red cedar"
+   ],
+   "sign_zh": [
+    "猴面包树",
+    "棕榈树",
+    "西部红雪松"
+   ]
+  },
+  {
+   "id": "g9_025",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Hibernate",
+    "Lay eggs / spawn",
+    "Learn to fly"
+   ],
+   "choices_zh": [
+    "冬眠",
+    "产卵",
+    "学飞"
+   ],
+   "answer": 1,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "sign_en": [
+    "Hibernate",
+    "Lay eggs / spawn",
+    "Learn to fly"
+   ],
+   "sign_zh": [
+    "冬眠",
+    "产卵",
+    "学飞"
+   ]
+  },
+  {
+   "id": "g9_026",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "45°",
+    "270°",
+    "90°"
+   ],
+   "choices_zh": [
+    "45°",
+    "大约 270°",
+    "90°"
+   ],
+   "answer": 1,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "sign_en": [
+    "45°",
+    "270°",
+    "90°"
+   ],
+   "sign_zh": [
+    "45°",
+    "大约 270°",
+    "90°"
+   ]
+  },
+  {
+   "id": "g9_027",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Wind turbines",
+    "Earthquakes only",
+    "Street lights",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "风力发电机",
+    "只因为地震",
+    "路灯",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。"
+  },
+  {
+   "id": "g9_028",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Magnets",
+    "Decomposers (fungi, insects, microbes)",
+    "Sunscreen",
+    "Traffic"
+   ],
+   "choices_zh": [
+    "磁铁",
+    "分解者（真菌、昆虫、微生物）",
+    "防晒霜",
+    "车流"
+   ],
+   "answer": 1,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。"
+  },
+  {
+   "id": "g9_029",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Marine mammals",
+    "Fish",
+    "Birds",
+    "Insects"
+   ],
+   "choices_zh": [
+    "海洋哺乳动物",
+    "鱼",
+    "鸟",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。"
+  },
+  {
+   "id": "g9_030",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Laying swan eggs",
+    "Building dams and lodges with wood",
+    "Growing antlers",
+    "Flying south"
+   ],
+   "choices_zh": [
+    "下天鹅蛋",
+    "用木头筑坝和巢穴",
+    "长鹿角",
+    "飞去南方"
+   ],
+   "answer": 1,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。"
+  },
+  {
+   "id": "g9_031",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Reptile",
+    "Bird",
+    "Mammal",
+    "Fish"
+   ],
+   "choices_zh": [
+    "爬行动物",
+    "鸟类",
+    "哺乳动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。"
+  },
+  {
+   "id": "g9_032",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "8",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "sign_en": [
+    "8",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_033",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Make candy",
+    "Stop rain",
+    "Sense objects with sound echoes",
+    "Taste colours"
+   ],
+   "choices_zh": [
+    "做糖果",
+    "让雨停下",
+    "用回声感知物体",
+    "品尝颜色"
+   ],
+   "answer": 2,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。"
+  },
+  {
+   "id": "g9_034",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "4",
+    "6",
+    "2"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "sign_en": [
+    "4",
+    "6",
+    "2"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "2"
+   ]
+  },
+  {
+   "id": "g9_035",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Making plastic",
+    "Stopping the Moon",
+    "Providing habitat and holding soil"
+   ],
+   "choices_zh": [
+    "制造塑料",
+    "挡住月亮",
+    "提供栖息地并固定土壤"
+   ],
+   "answer": 2,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Making plastic",
+    "Stopping the Moon",
+    "Providing habitat and holding soil"
+   ],
+   "sign_zh": [
+    "制造塑料",
+    "挡住月亮",
+    "提供栖息地并固定土壤"
+   ]
+  },
+  {
+   "id": "g9_036",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only",
+    "Asphalt"
+   ],
+   "choices_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳",
+    "沥青"
+   ],
+   "answer": 1,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。"
+  },
+  {
+   "id": "g9_037",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "2001",
+    "1950",
+    "1776",
+    "1888"
+   ],
+   "choices_zh": [
+    "2001",
+    "1950",
+    "1776",
+    "1888"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。"
+  },
+  {
+   "id": "g9_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "World Cup",
+    "Grey Cup",
+    "Stanley Cup"
+   ],
+   "choices_zh": [
+    "世界杯",
+    "格雷杯",
+    "斯坦利杯"
+   ],
+   "answer": 2,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "sign_en": [
+    "World Cup",
+    "Grey Cup",
+    "Stanley Cup"
+   ],
+   "sign_zh": [
+    "世界杯",
+    "格雷杯",
+    "斯坦利杯"
+   ]
+  },
+  {
+   "id": "g9_039",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Half the size",
+    "The same",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "只有一半大",
+    "一样大",
+    "更大"
+   ],
+   "answer": 2,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "sign_en": [
+    "Half the size",
+    "The same",
+    "Bigger"
+   ],
+   "sign_zh": [
+    "只有一半大",
+    "一样大",
+    "更大"
+   ]
+  },
+  {
+   "id": "g9_040",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Vikings",
+    "Maori only",
+    "Inca",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "choices_zh": [
+    "维京人",
+    "只有毛利人",
+    "印加",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ],
+   "answer": 3,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。"
+  },
+  {
+   "id": "g9_041",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Tower Bridge",
+    "Port Mann",
+    "Lions Gate Bridge"
+   ],
+   "choices_zh": [
+    "塔桥",
+    "福特曼桥",
+    "狮门大桥"
+   ],
+   "answer": 2,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Tower Bridge",
+    "Port Mann",
+    "Lions Gate Bridge"
+   ],
+   "sign_zh": [
+    "塔桥",
+    "福特曼桥",
+    "狮门大桥"
+   ]
+  },
+  {
+   "id": "g9_042",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "9:00 pm",
+    "Midnight",
+    "Noon",
+    "6:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 9 点",
+    "午夜",
+    "中午",
+    "晚上 6 点"
+   ],
+   "answer": 0,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。"
+  },
+  {
+   "id": "g9_043",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Wood",
+    "Ice",
+    "Plastic",
+    "Volcanic / igneous rock (an old dike)"
+   ],
+   "choices_zh": [
+    "木头",
+    "冰",
+    "塑料",
+    "火山岩/火成岩（古老岩墙）"
+   ],
+   "answer": 3,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。"
+  },
+  {
+   "id": "g9_044",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "About 9 km",
+    "100 m",
+    "1 km",
+    "50 km"
+   ],
+   "choices_zh": [
+    "大约 9 公里",
+    "100 米",
+    "1 公里",
+    "50 公里"
+   ],
+   "answer": 0,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。"
+  },
+  {
+   "id": "g9_045",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Any direction",
+    "Only at night",
+    "One way (counter-clockwise)"
+   ],
+   "choices_zh": [
+    "任意方向",
+    "只在夜里",
+    "单向（逆时针）"
+   ],
+   "answer": 2,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "sign_en": [
+    "Any direction",
+    "Only at night",
+    "One way (counter-clockwise)"
+   ],
+   "sign_zh": [
+    "任意方向",
+    "只在夜里",
+    "单向（逆时针）"
+   ]
+  },
+  {
+   "id": "g9_046",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "An airport runway",
+    "A desert",
+    "A volcano crater",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "choices_zh": [
+    "机场跑道",
+    "沙漠",
+    "火山口",
+    "温哥华滨水港湾区"
+   ],
+   "answer": 3,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。"
+  },
+  {
+   "id": "g9_047",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "Swans as the only animals",
+    "A desert dune",
+    "Beavers"
+   ],
+   "choices_zh": [
+    "只有天鹅",
+    "一座沙丘",
+    "河狸"
+   ],
+   "answer": 2,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。",
+   "sign_en": [
+    "Swans as the only animals",
+    "A desert dune",
+    "Beavers"
+   ],
+   "sign_zh": [
+    "只有天鹅",
+    "一座沙丘",
+    "河狸"
+   ]
+  },
+  {
+   "id": "g9_048",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "July 1",
+    "December 25",
+    "October 31",
+    "February 14"
+   ],
+   "choices_zh": [
+    "7 月 1 日",
+    "12 月 25 日",
+    "10 月 31 日",
+    "2 月 14 日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。"
+  },
+  {
+   "id": "g9_049",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "Cedar / forest trails",
+    "An airport",
+    "An underground mall only",
+    "A desert highway"
+   ],
+   "choices_zh": [
+    "雪松/林间小道",
+    "机场",
+    "只有地下商场",
+    "沙漠公路"
+   ],
+   "answer": 0,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。"
+  },
+  {
+   "id": "g9_050",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Sprint through",
+    "Slow down and watch for people",
+    "Close your eyes"
+   ],
+   "choices_zh": [
+    "冲过去",
+    "减速并注意行人",
+    "闭眼"
+   ],
+   "answer": 1,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "sign_en": [
+    "Sprint through",
+    "Slow down and watch for people",
+    "Close your eyes"
+   ],
+   "sign_zh": [
+    "冲过去",
+    "减速并注意行人",
+    "闭眼"
+   ]
+  },
+  {
+   "id": "g9_051",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "A helmet (it's the law)",
+    "No lights ever",
+    "A cape only"
+   ],
+   "choices_zh": [
+    "戴头盔（法律规定）",
+    "永远不用灯",
+    "只要披风"
+   ],
+   "answer": 0,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "sign_en": [
+    "A helmet (it's the law)",
+    "No lights ever",
+    "A cape only"
+   ],
+   "sign_zh": [
+    "戴头盔（法律规定）",
+    "永远不用灯",
+    "只要披风"
+   ]
+  },
+  {
+   "id": "g9_052",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "Only sunglasses",
+    "Lights and bright / reflective gear",
+    "No lights"
+   ],
+   "choices_zh": [
+    "只戴墨镜",
+    "车灯和亮色/反光装备",
+    "不开灯"
+   ],
+   "answer": 1,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "sign_en": [
+    "Only sunglasses",
+    "Lights and bright / reflective gear",
+    "No lights"
+   ],
+   "sign_zh": [
+    "只戴墨镜",
+    "车灯和亮色/反光装备",
+    "不开灯"
+   ]
+  },
+  {
+   "id": "g9_053",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Chase them",
+    "Scare them loudly",
+    "Slow down and give them space",
+    "Feed them candy"
+   ],
+   "choices_zh": [
+    "去追",
+    "大声吓它们",
+    "减速并留出空间",
+    "喂糖"
+   ],
+   "answer": 2,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。"
+  },
+  {
+   "id": "g9_054",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "Bike lights and brakes",
+    "The Moon's password",
+    "Only your socks colour"
+   ],
+   "choices_zh": [
+    "车灯和刹车",
+    "月亮密码",
+    "只看袜子颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "sign_en": [
+    "Bike lights and brakes",
+    "The Moon's password",
+    "Only your socks colour"
+   ],
+   "sign_zh": [
+    "车灯和刹车",
+    "月亮密码",
+    "只看袜子颜色"
+   ]
+  },
+  {
+   "id": "g9_055",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Ice block",
+    "Watermelon only",
+    "Pumpkin",
+    "Rock"
+   ],
+   "choices_zh": [
+    "冰块",
+    "只有西瓜",
+    "南瓜",
+    "石头"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。"
+  },
+  {
+   "id": "g9_056",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Air only",
+    "Metal",
+    "Water",
+    "Sand"
+   ],
+   "choices_zh": [
+    "只有空气",
+    "金属",
+    "水",
+    "沙子"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。"
+  },
+  {
+   "id": "g9_057",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Turnips / root vegetables",
+    "Coconuts",
+    "Pineapples"
+   ],
+   "choices_zh": [
+    "芜菁等根菜",
+    "椰子",
+    "菠萝"
+   ],
+   "answer": 0,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "sign_en": [
+    "Turnips / root vegetables",
+    "Coconuts",
+    "Pineapples"
+   ],
+   "sign_zh": [
+    "芜菁等根菜",
+    "椰子",
+    "菠萝"
+   ]
+  },
+  {
+   "id": "g9_058",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "29.5 days",
+    "365 days",
+    "1 hour",
+    "7 days"
+   ],
+   "choices_zh": [
+    "约 29.5 天",
+    "365 天",
+    "1 小时",
+    "7 天"
+   ],
+   "answer": 0,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。"
+  },
+  {
+   "id": "g9_059",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Halloween",
+    "Canada Day only",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "万圣节",
+    "只有加拿大日",
+    "感恩节烹饪课"
+   ],
+   "answer": 0,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "sign_en": [
+    "Halloween",
+    "Canada Day only",
+    "Thanksgiving cooking class"
+   ],
+   "sign_zh": [
+    "万圣节",
+    "只有加拿大日",
+    "感恩节烹饪课"
+   ]
+  },
+  {
+   "id": "g9_060",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 9?",
+   "q_zh": "数轴上 6 到 9 的距离？",
+   "choices": [
+    "3",
+    "2",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "6",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g9_061",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 10?",
+   "q_zh": "数轴上 5 到 10 的距离？",
+   "choices": [
+    "7",
+    "5",
+    "8",
+    "3"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "8",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g9_062",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 17?",
+   "q_zh": "数轴上 5 到 17 的距离？",
+   "choices": [
+    "8",
+    "14",
+    "12",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "14",
+    "12",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g9_063",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "If x=2, value of x²+3x+2?",
+   "q_zh": "x=2 时，x²+3x+2=？",
+   "choices": [
+    "12",
+    "14",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "14",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "12",
+    "14",
+    "9"
+   ],
+   "sign_zh": [
+    "12",
+    "14",
+    "9"
+   ]
+  },
+  {
+   "id": "g9_064",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 7?",
+   "q_zh": "数轴上 3 到 7 的距离？",
+   "choices": [
+    "7",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "7",
+    "4",
+    "1"
+   ],
+   "sign_zh": [
+    "7",
+    "4",
+    "1"
+   ]
+  },
+  {
+   "id": "g9_065",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 8,15. Hypotenuse?",
+   "q_zh": "直角边 8、15，斜边？",
+   "choices": [
+    "17",
+    "14",
+    "16"
+   ],
+   "choices_zh": [
+    "17",
+    "14",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "√(8²+15²)=17.",
+   "explain_zh": "=17。",
+   "sign_en": [
+    "17",
+    "14",
+    "16"
+   ],
+   "sign_zh": [
+    "17",
+    "14",
+    "16"
+   ]
+  },
+  {
+   "id": "g9_066",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 12?",
+   "q_zh": "数轴上 0 到 12 的距离？",
+   "choices": [
+    "15",
+    "13",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "13",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "15",
+    "13",
+    "12"
+   ],
+   "sign_zh": [
+    "15",
+    "13",
+    "12"
+   ]
+  },
+  {
+   "id": "g9_067",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 7?",
+   "q_zh": "数轴上 4 到 7 的距离？",
+   "choices": [
+    "2",
+    "3",
+    "4",
+    "0"
+   ],
+   "choices_zh": [
+    "2",
+    "3",
+    "4",
+    "0"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g9_068",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 12?",
+   "q_zh": "数轴上 3 到 12 的距离？",
+   "choices": [
+    "9",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "9",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "9",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "9",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_069",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 50 + 40 metres. Total?",
+   "q_zh": "码表：50+40 米，一共？",
+   "choices": [
+    "73",
+    "90",
+    "107",
+    "104"
+   ],
+   "choices_zh": [
+    "73",
+    "90",
+    "107",
+    "104"
+   ],
+   "answer": 1,
+   "explain_en": "=90.",
+   "explain_zh": "=90。"
+  },
+  {
+   "id": "g9_070",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 11?",
+   "q_zh": "数轴上 1 到 11 的距离？",
+   "choices": [
+    "10",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "9",
+    "11"
+   ],
+   "sign_zh": [
+    "10",
+    "9",
+    "11"
+   ]
+  },
+  {
+   "id": "g9_071",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 6?",
+   "q_zh": "数轴上 2 到 6 的距离？",
+   "choices": [
+    "4",
+    "7",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "4",
+    "7",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "7",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_072",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 14?",
+   "q_zh": "数轴上 6 到 14 的距离？",
+   "choices": [
+    "8",
+    "9",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "10",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g9_073",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "If x=3, value of x²+3x+2?",
+   "q_zh": "x=3 时，x²+3x+2=？",
+   "choices": [
+    "25",
+    "24",
+    "21",
+    "20"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "21",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "=20.",
+   "explain_zh": "=20。"
+  },
+  {
+   "id": "g9_074",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 16?",
+   "q_zh": "数轴上 8 到 16 的距离？",
+   "choices": [
+    "8",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "8",
+    "9",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "9",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_075",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 10?",
+   "q_zh": "数轴上 1 到 10 的距离？",
+   "choices": [
+    "9",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "9",
+    "8",
+    "10"
+   ],
+   "sign_zh": [
+    "9",
+    "8",
+    "10"
+   ]
+  },
+  {
+   "id": "g9_076",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 46 + 17 metres. Total?",
+   "q_zh": "码表：46+17 米，一共？",
+   "choices": [
+    "63",
+    "60",
+    "66"
+   ],
+   "choices_zh": [
+    "63",
+    "60",
+    "66"
+   ],
+   "answer": 0,
+   "explain_en": "=63.",
+   "explain_zh": "=63。",
+   "sign_en": [
+    "63",
+    "60",
+    "66"
+   ],
+   "sign_zh": [
+    "63",
+    "60",
+    "66"
+   ]
+  },
+  {
+   "id": "g9_077",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 18?",
+   "q_zh": "数轴上 6 到 18 的距离？",
+   "choices": [
+    "16",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "16",
+    "10",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "16",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "16",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "g9_078",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 5, leg 3. Other leg?",
+   "q_zh": "斜边 5，直角边 3，另一边？",
+   "choices": [
+    "6",
+    "4",
+    "3"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "√(5²−3²)=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "6",
+    "4",
+    "3"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_079",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 9?",
+   "q_zh": "数轴上 3 到 9 的距离？",
+   "choices": [
+    "6",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "5",
+    "3"
+   ],
+   "sign_zh": [
+    "6",
+    "5",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_080",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 8?",
+   "q_zh": "数轴上 0 到 8 的距离？",
+   "choices": [
+    "10",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "10",
+    "9",
+    "8"
+   ],
+   "sign_zh": [
+    "10",
+    "9",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_081",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 15?",
+   "q_zh": "数轴上 3 到 15 的距离？",
+   "choices": [
+    "12",
+    "10",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "13",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "=12.",
+   "explain_zh": "=12。"
+  },
+  {
+   "id": "g9_082",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 11?",
+   "q_zh": "数轴上 2 到 11 的距离？",
+   "choices": [
+    "9",
+    "12",
+    "6"
+   ],
+   "choices_zh": [
+    "9",
+    "12",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "9",
+    "12",
+    "6"
+   ],
+   "sign_zh": [
+    "9",
+    "12",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_083",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 5,12. Hypotenuse?",
+   "q_zh": "直角边 5、12，斜边？",
+   "choices": [
+    "13",
+    "11",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "√(5²+12²)=13.",
+   "explain_zh": "=13。",
+   "sign_en": [
+    "13",
+    "11",
+    "15"
+   ],
+   "sign_zh": [
+    "13",
+    "11",
+    "15"
+   ]
+  },
+  {
+   "id": "g9_084",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 8?",
+   "q_zh": "数轴上 2 到 8 的距离？",
+   "choices": [
+    "6",
+    "4",
+    "5"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "4",
+    "5"
+   ],
+   "sign_zh": [
+    "6",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "g9_085",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 15?",
+   "q_zh": "数轴上 8 到 15 的距离？",
+   "choices": [
+    "4",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "4",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "4",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "id": "g9_086",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 8?",
+   "q_zh": "数轴上 4 到 8 的距离？",
+   "choices": [
+    "2",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "2",
+    "6",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "sign_en": [
+    "2",
+    "6",
+    "4"
+   ],
+   "sign_zh": [
+    "2",
+    "6",
+    "4"
+   ]
+  },
+  {
+   "id": "g9_087",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 11?",
+   "q_zh": "数轴上 5 到 11 的距离？",
+   "choices": [
+    "3",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "3",
+    "8",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "3",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "3",
+    "8",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_088",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 13, leg 5. Other leg?",
+   "q_zh": "斜边 13，直角边 5，另一边？",
+   "choices": [
+    "9",
+    "12",
+    "15"
+   ],
+   "choices_zh": [
+    "9",
+    "12",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "√(13²−5²)=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "9",
+    "12",
+    "15"
+   ],
+   "sign_zh": [
+    "9",
+    "12",
+    "15"
+   ]
+  },
+  {
+   "id": "g9_089",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 4?",
+   "q_zh": "数轴上 1 到 4 的距离？",
+   "choices": [
+    "5",
+    "3",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "4",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g9_090",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 10, leg 6. Other leg?",
+   "q_zh": "斜边 10，直角边 6，另一边？",
+   "choices": [
+    "8",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "5",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "√(10²−6²)=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "8",
+    "5",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_091",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 9,12. Hypotenuse?",
+   "q_zh": "直角边 9、12，斜边？",
+   "choices": [
+    "19",
+    "15",
+    "14",
+    "13"
+   ],
+   "choices_zh": [
+    "19",
+    "15",
+    "14",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "√(9²+12²)=15.",
+   "explain_zh": "=15。"
+  },
+  {
+   "id": "g9_092",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 6?",
+   "q_zh": "数轴上 3 到 6 的距离？",
+   "choices": [
+    "1",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "1",
+    "3",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "1",
+    "3",
+    "4"
+   ],
+   "sign_zh": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "g9_093",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 15?",
+   "q_zh": "数轴上 6 到 15 的距离？",
+   "choices": [
+    "10",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "10",
+    "8",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "9"
+   ]
+  },
+  {
+   "id": "g9_094",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 7,24. Hypotenuse?",
+   "q_zh": "直角边 7、24，斜边？",
+   "choices": [
+    "25",
+    "24",
+    "30"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "√(7²+24²)=25.",
+   "explain_zh": "=25。",
+   "sign_en": [
+    "25",
+    "24",
+    "30"
+   ],
+   "sign_zh": [
+    "25",
+    "24",
+    "30"
+   ]
+  },
+  {
+   "id": "g9_095",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 13?",
+   "q_zh": "数轴上 8 到 13 的距离？",
+   "choices": [
+    "4",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "4",
+    "5",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "5",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_096",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "If x=1, value of x²+3x+2?",
+   "q_zh": "x=1 时，x²+3x+2=？",
+   "choices": [
+    "7",
+    "8",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "8",
+    "9",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g9_097",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "If x=6, value of x²+3x+2?",
+   "q_zh": "x=6 时，x²+3x+2=？",
+   "choices": [
+    "63",
+    "56",
+    "53",
+    "59"
+   ],
+   "choices_zh": [
+    "63",
+    "56",
+    "53",
+    "59"
+   ],
+   "answer": 1,
+   "explain_en": "=56.",
+   "explain_zh": "=56。"
+  },
+  {
+   "id": "g9_098",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 9?",
+   "q_zh": "数轴上 2 到 9 的距离？",
+   "choices": [
+    "4",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "4",
+    "6",
+    "7"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "7"
+   ]
+  },
+  {
+   "id": "g9_099",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 3,4. Hypotenuse?",
+   "q_zh": "直角边 3、4，斜边？",
+   "choices": [
+    "8",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "8",
+    "5",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "√(3²+4²)=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "8",
+    "5",
+    "4"
+   ],
+   "sign_zh": [
+    "8",
+    "5",
+    "4"
+   ]
+  },
+  {
+   "id": "g9_100",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 66 + 35 metres. Total?",
+   "q_zh": "码表：66+35 米，一共？",
+   "choices": [
+    "85",
+    "84",
+    "91",
+    "101"
+   ],
+   "choices_zh": [
+    "85",
+    "84",
+    "91",
+    "101"
+   ],
+   "answer": 3,
+   "explain_en": "=101.",
+   "explain_zh": "=101。"
+  },
+  {
+   "id": "g9_101",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 63 + 24 metres. Total?",
+   "q_zh": "码表：63+24 米，一共？",
+   "choices": [
+    "76",
+    "71",
+    "87"
+   ],
+   "choices_zh": [
+    "76",
+    "71",
+    "87"
+   ],
+   "answer": 2,
+   "explain_en": "=87.",
+   "explain_zh": "=87。",
+   "sign_en": [
+    "76",
+    "71",
+    "87"
+   ],
+   "sign_zh": [
+    "76",
+    "71",
+    "87"
+   ]
+  },
+  {
+   "id": "g9_102",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 4?",
+   "q_zh": "数轴上 0 到 4 的距离？",
+   "choices": [
+    "7",
+    "2",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "7",
+    "2",
+    "1",
+    "4"
+   ],
+   "answer": 3,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g9_103",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 8?",
+   "q_zh": "数轴上 1 到 8 的距离？",
+   "choices": [
+    "7",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "10",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "7",
+    "10",
+    "6"
+   ],
+   "sign_zh": [
+    "7",
+    "10",
+    "6"
+   ]
+  },
+  {
+   "id": "g9_104",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 17, leg 8. Other leg?",
+   "q_zh": "斜边 17，直角边 8，另一边？",
+   "choices": [
+    "18",
+    "14",
+    "15"
+   ],
+   "choices_zh": [
+    "18",
+    "14",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "√(17²−8²)=15.",
+   "explain_zh": "=15。",
+   "sign_en": [
+    "18",
+    "14",
+    "15"
+   ],
+   "sign_zh": [
+    "18",
+    "14",
+    "15"
+   ]
+  },
+  {
+   "id": "g9_105",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 10?",
+   "q_zh": "数轴上 0 到 10 的距离？",
+   "choices": [
+    "10",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "8",
+    "7"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "7"
+   ]
+  },
+  {
+   "id": "g9_106",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 15?",
+   "q_zh": "数轴上 7 到 15 的距离？",
+   "choices": [
+    "6",
+    "11",
+    "8",
+    "5"
+   ],
+   "choices_zh": [
+    "6",
+    "11",
+    "8",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g9_107",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 14?",
+   "q_zh": "数轴上 2 到 14 的距离？",
+   "choices": [
+    "11",
+    "14",
+    "12"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "11",
+    "14",
+    "12"
+   ],
+   "sign_zh": [
+    "11",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "g9_108",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 56 + 24 metres. Total?",
+   "q_zh": "码表：56+24 米，一共？",
+   "choices": [
+    "85",
+    "74",
+    "80"
+   ],
+   "choices_zh": [
+    "85",
+    "74",
+    "80"
+   ],
+   "answer": 2,
+   "explain_en": "=80.",
+   "explain_zh": "=80。",
+   "sign_en": [
+    "85",
+    "74",
+    "80"
+   ],
+   "sign_zh": [
+    "85",
+    "74",
+    "80"
+   ]
+  },
+  {
+   "id": "g9_109",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 11?",
+   "q_zh": "数轴上 8 到 11 的距离？",
+   "choices": [
+    "3",
+    "0",
+    "5"
+   ],
+   "choices_zh": [
+    "3",
+    "0",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "3",
+    "0",
+    "5"
+   ],
+   "sign_zh": [
+    "3",
+    "0",
+    "5"
+   ]
+  },
+  {
+   "id": "g9_110",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 20?",
+   "q_zh": "数轴上 8 到 20 的距离？",
+   "choices": [
+    "10",
+    "14",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "14",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "10",
+    "14",
+    "12"
+   ],
+   "sign_zh": [
+    "10",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "g9_111",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 17?",
+   "q_zh": "数轴上 8 到 17 的距离？",
+   "choices": [
+    "6",
+    "10",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "10",
+    "9",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g9_112",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 27 + 10 metres. Total?",
+   "q_zh": "码表：27+10 米，一共？",
+   "choices": [
+    "38",
+    "37",
+    "39"
+   ],
+   "choices_zh": [
+    "38",
+    "37",
+    "39"
+   ],
+   "answer": 1,
+   "explain_en": "=37.",
+   "explain_zh": "=37。",
+   "sign_en": [
+    "38",
+    "37",
+    "39"
+   ],
+   "sign_zh": [
+    "38",
+    "37",
+    "39"
+   ]
+  },
+  {
+   "id": "g9_113",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 14?",
+   "q_zh": "数轴上 5 到 14 的距离？",
+   "choices": [
+    "9",
+    "10",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "7",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g9_114",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 9?",
+   "q_zh": "数轴上 1 到 9 的距离？",
+   "choices": [
+    "9",
+    "8",
+    "5"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "9",
+    "8",
+    "5"
+   ],
+   "sign_zh": [
+    "9",
+    "8",
+    "5"
+   ]
+  },
+  {
+   "id": "g9_115",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 14?",
+   "q_zh": "数轴上 3 到 14 的距离？",
+   "choices": [
+    "11",
+    "12",
+    "14"
+   ],
+   "choices_zh": [
+    "11",
+    "12",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "11",
+    "12",
+    "14"
+   ],
+   "sign_zh": [
+    "11",
+    "12",
+    "14"
+   ]
+  },
+  {
+   "id": "g9_116",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 52 + 24 metres. Total?",
+   "q_zh": "码表：52+24 米，一共？",
+   "choices": [
+    "82",
+    "86",
+    "76"
+   ],
+   "choices_zh": [
+    "82",
+    "86",
+    "76"
+   ],
+   "answer": 2,
+   "explain_en": "=76.",
+   "explain_zh": "=76。",
+   "sign_en": [
+    "82",
+    "86",
+    "76"
+   ],
+   "sign_zh": [
+    "82",
+    "86",
+    "76"
+   ]
+  },
+  {
+   "id": "g9_117",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 15?",
+   "q_zh": "数轴上 4 到 15 的距离？",
+   "choices": [
+    "12",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "12",
+    "11",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "12",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "12",
+    "11",
+    "10"
+   ]
+  },
+  {
+   "id": "g9_118",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 70 + 30 metres. Total?",
+   "q_zh": "码表：70+30 米，一共？",
+   "choices": [
+    "100",
+    "87",
+    "111"
+   ],
+   "choices_zh": [
+    "100",
+    "87",
+    "111"
+   ],
+   "answer": 0,
+   "explain_en": "=100.",
+   "explain_zh": "=100。",
+   "sign_en": [
+    "100",
+    "87",
+    "111"
+   ],
+   "sign_zh": [
+    "100",
+    "87",
+    "111"
+   ]
+  },
+  {
+   "id": "g9_119",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 7?",
+   "q_zh": "数轴上 0 到 7 的距离？",
+   "choices": [
+    "6",
+    "5",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "8",
+    "7"
+   ],
+   "answer": 3,
+   "explain_en": "=7.",
+   "explain_zh": "=7。"
+  },
+  {
+   "id": "g9_120",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 11?",
+   "q_zh": "数轴上 6 到 11 的距离？",
+   "choices": [
+    "5",
+    "7",
+    "3"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "5",
+    "7",
+    "3"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 14?",
+   "q_zh": "数轴上 8 到 14 的距离？",
+   "choices": [
+    "6",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "7",
+    "5"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "5"
+   ]
+  },
+  {
+   "id": "g9_122",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 58 + 13 metres. Total?",
+   "q_zh": "码表：58+13 米，一共？",
+   "choices": [
+    "71",
+    "82",
+    "61"
+   ],
+   "choices_zh": [
+    "71",
+    "82",
+    "61"
+   ],
+   "answer": 0,
+   "explain_en": "=71.",
+   "explain_zh": "=71。",
+   "sign_en": [
+    "71",
+    "82",
+    "61"
+   ],
+   "sign_zh": [
+    "71",
+    "82",
+    "61"
+   ]
+  },
+  {
+   "id": "g9_123",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 31 + 5 metres. Total?",
+   "q_zh": "码表：31+5 米，一共？",
+   "choices": [
+    "41",
+    "36",
+    "34"
+   ],
+   "choices_zh": [
+    "41",
+    "36",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "=36.",
+   "explain_zh": "=36。",
+   "sign_en": [
+    "41",
+    "36",
+    "34"
+   ],
+   "sign_zh": [
+    "41",
+    "36",
+    "34"
+   ]
+  },
+  {
+   "id": "g9_124",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 10?",
+   "q_zh": "数轴上 7 到 10 的距离？",
+   "choices": [
+    "0",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "0",
+    "2",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "sign_en": [
+    "0",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "0",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "g9_125",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 18?",
+   "q_zh": "数轴上 7 到 18 的距离？",
+   "choices": [
+    "8",
+    "14",
+    "11"
+   ],
+   "choices_zh": [
+    "8",
+    "14",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "8",
+    "14",
+    "11"
+   ],
+   "sign_zh": [
+    "8",
+    "14",
+    "11"
+   ]
+  },
+  {
+   "id": "g9_126",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 7?",
+   "q_zh": "数轴上 2 到 7 的距离？",
+   "choices": [
+    "8",
+    "4",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "5",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g9_127",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 9?",
+   "q_zh": "数轴上 0 到 9 的距离？",
+   "choices": [
+    "12",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "12",
+    "9",
+    "7"
+   ],
+   "sign_zh": [
+    "12",
+    "9",
+    "7"
+   ]
+  },
+  {
+   "id": "g9_128",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 12?",
+   "q_zh": "数轴上 2 到 12 的距离？",
+   "choices": [
+    "9",
+    "10",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "12",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。"
+  },
+  {
+   "id": "g9_129",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 17?",
+   "q_zh": "数轴上 6 到 17 的距离？",
+   "choices": [
+    "9",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "9",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "9",
+    "11",
+    "10"
+   ]
+  },
+  {
+   "id": "g9_130",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 10?",
+   "q_zh": "数轴上 3 到 10 的距离？",
+   "choices": [
+    "5",
+    "8",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "7",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=7.",
+   "explain_zh": "=7。"
+  },
+  {
+   "id": "g9_131",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 6?",
+   "q_zh": "数轴上 1 到 6 的距离？",
+   "choices": [
+    "7",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "7",
+    "6",
+    "5"
+   ],
+   "sign_zh": [
+    "7",
+    "6",
+    "5"
+   ]
+  },
+  {
+   "id": "g9_132",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 15?",
+   "q_zh": "数轴上 5 到 15 的距离？",
+   "choices": [
+    "10",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "10",
+    "12",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "10",
+    "12",
+    "13"
+   ],
+   "sign_zh": [
+    "10",
+    "12",
+    "13"
+   ]
+  },
+  {
+   "id": "g9_133",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 5?",
+   "q_zh": "数轴上 2 到 5 的距离？",
+   "choices": [
+    "2",
+    "5",
+    "3",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "5",
+    "3",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g9_134",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 13?",
+   "q_zh": "数轴上 3 到 13 的距离？",
+   "choices": [
+    "12",
+    "10",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "12",
+    "10",
+    "11"
+   ],
+   "sign_zh": [
+    "12",
+    "10",
+    "11"
+   ]
+  },
+  {
+   "id": "g9_135",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 10?",
+   "q_zh": "数轴上 6 到 10 的距离？",
+   "choices": [
+    "4",
+    "1",
+    "3",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "1",
+    "3",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g9_136",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 76 + 12 metres. Total?",
+   "q_zh": "码表：76+12 米，一共？",
+   "choices": [
+    "88",
+    "81",
+    "89",
+    "99"
+   ],
+   "choices_zh": [
+    "88",
+    "81",
+    "89",
+    "99"
+   ],
+   "answer": 0,
+   "explain_en": "=88.",
+   "explain_zh": "=88。"
+  },
+  {
+   "id": "g9_137",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 13?",
+   "q_zh": "数轴上 7 到 13 的距离？",
+   "choices": [
+    "6",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "sign_en": [
+    "6",
+    "8",
+    "4"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "4"
+   ]
+  },
+  {
+   "id": "g9_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 8 to 19?",
+   "q_zh": "数轴上 8 到 19 的距离？",
+   "choices": [
+    "13",
+    "8",
+    "11"
+   ],
+   "choices_zh": [
+    "13",
+    "8",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "13",
+    "8",
+    "11"
+   ],
+   "sign_zh": [
+    "13",
+    "8",
+    "11"
+   ]
+  },
+  {
+   "id": "g9_139",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 78 + 11 metres. Total?",
+   "q_zh": "码表：78+11 米，一共？",
+   "choices": [
+    "77",
+    "89",
+    "90"
+   ],
+   "choices_zh": [
+    "77",
+    "89",
+    "90"
+   ],
+   "answer": 1,
+   "explain_en": "=89.",
+   "explain_zh": "=89。",
+   "sign_en": [
+    "77",
+    "89",
+    "90"
+   ],
+   "sign_zh": [
+    "77",
+    "89",
+    "90"
+   ]
+  },
+  {
+   "id": "g9_140",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 17?",
+   "q_zh": "数轴上 7 到 17 的距离？",
+   "choices": [
+    "9",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "9",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "9",
+    "11",
+    "10"
+   ]
+  },
+  {
+   "id": "g9_141",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 31 + 9 metres. Total?",
+   "q_zh": "码表：31+9 米，一共？",
+   "choices": [
+    "40",
+    "43",
+    "38"
+   ],
+   "choices_zh": [
+    "40",
+    "43",
+    "38"
+   ],
+   "answer": 0,
+   "explain_en": "=40.",
+   "explain_zh": "=40。",
+   "sign_en": [
+    "40",
+    "43",
+    "38"
+   ],
+   "sign_zh": [
+    "40",
+    "43",
+    "38"
+   ]
+  },
+  {
+   "id": "g9_142",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 3?",
+   "q_zh": "数轴上 0 到 3 的距离？",
+   "choices": [
+    "1",
+    "2",
+    "3",
+    "0"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "3",
+    "0"
+   ],
+   "answer": 2,
+   "explain_en": "=3.",
+   "explain_zh": "=3。"
+  },
+  {
+   "id": "g9_143",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 46 + 5 metres. Total?",
+   "q_zh": "码表：46+5 米，一共？",
+   "choices": [
+    "48",
+    "55",
+    "51"
+   ],
+   "choices_zh": [
+    "48",
+    "55",
+    "51"
+   ],
+   "answer": 2,
+   "explain_en": "=51.",
+   "explain_zh": "=51。",
+   "sign_en": [
+    "48",
+    "55",
+    "51"
+   ],
+   "sign_zh": [
+    "48",
+    "55",
+    "51"
+   ]
+  },
+  {
+   "id": "g9_144",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 25, leg 7. Other leg?",
+   "q_zh": "斜边 25，直角边 7，另一边？",
+   "choices": [
+    "18",
+    "28",
+    "24",
+    "26"
+   ],
+   "choices_zh": [
+    "18",
+    "28",
+    "24",
+    "26"
+   ],
+   "answer": 2,
+   "explain_en": "√(25²−7²)=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g9_145",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "If x=4, value of x²+3x+2?",
+   "q_zh": "x=4 时，x²+3x+2=？",
+   "choices": [
+    "25",
+    "36",
+    "33",
+    "30"
+   ],
+   "choices_zh": [
+    "25",
+    "36",
+    "33",
+    "30"
+   ],
+   "answer": 3,
+   "explain_en": "=30.",
+   "explain_zh": "=30。"
+  },
+  {
+   "id": "g9_146",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Hypotenuse 15, leg 9. Other leg?",
+   "q_zh": "斜边 15，直角边 9，另一边？",
+   "choices": [
+    "9",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "9",
+    "15",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "√(15²−9²)=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "9",
+    "15",
+    "12"
+   ],
+   "sign_zh": [
+    "9",
+    "15",
+    "12"
+   ]
+  },
+  {
+   "id": "g9_147",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 12?",
+   "q_zh": "数轴上 6 到 12 的距离？",
+   "choices": [
+    "7",
+    "4",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "6",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g9_148",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 61 + 12 metres. Total?",
+   "q_zh": "码表：61+12 米，一共？",
+   "choices": [
+    "73",
+    "62",
+    "74"
+   ],
+   "choices_zh": [
+    "73",
+    "62",
+    "74"
+   ],
+   "answer": 0,
+   "explain_en": "=73.",
+   "explain_zh": "=73。",
+   "sign_en": [
+    "73",
+    "62",
+    "74"
+   ],
+   "sign_zh": [
+    "73",
+    "62",
+    "74"
+   ]
+  },
+  {
+   "id": "g9_149",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 34 + 40 metres. Total?",
+   "q_zh": "码表：34+40 米，一共？",
+   "choices": [
+    "74",
+    "61",
+    "70"
+   ],
+   "choices_zh": [
+    "74",
+    "61",
+    "70"
+   ],
+   "answer": 0,
+   "explain_en": "=74.",
+   "explain_zh": "=74。",
+   "sign_en": [
+    "74",
+    "61",
+    "70"
+   ],
+   "sign_zh": [
+    "74",
+    "61",
+    "70"
+   ]
+  },
+  {
+   "id": "g9_150",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 9?",
+   "q_zh": "数轴上 4 到 9 的距离？",
+   "choices": [
+    "6",
+    "5",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "sign_en": [
+    "6",
+    "5",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "5",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_151",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 1 to 7?",
+   "q_zh": "数轴上 1 到 7 的距离？",
+   "choices": [
+    "6",
+    "3",
+    "5",
+    "7"
+   ],
+   "choices_zh": [
+    "6",
+    "3",
+    "5",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g9_152",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 14 + 26 metres. Total?",
+   "q_zh": "码表：14+26 米，一共？",
+   "choices": [
+    "38",
+    "40",
+    "32"
+   ],
+   "choices_zh": [
+    "38",
+    "40",
+    "32"
+   ],
+   "answer": 1,
+   "explain_en": "=40.",
+   "explain_zh": "=40。",
+   "sign_en": [
+    "38",
+    "40",
+    "32"
+   ],
+   "sign_zh": [
+    "38",
+    "40",
+    "32"
+   ]
+  },
+  {
+   "id": "g9_153",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 25 + 5 metres. Total?",
+   "q_zh": "码表：25+5 米，一共？",
+   "choices": [
+    "28",
+    "36",
+    "30"
+   ],
+   "choices_zh": [
+    "28",
+    "36",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "28",
+    "36",
+    "30"
+   ],
+   "sign_zh": [
+    "28",
+    "36",
+    "30"
+   ]
+  },
+  {
+   "id": "g9_154",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 5?",
+   "q_zh": "数轴上 0 到 5 的距离？",
+   "choices": [
+    "5",
+    "3",
+    "2",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "2",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=5.",
+   "explain_zh": "=5。"
+  },
+  {
+   "id": "g9_155",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 68 + 35 metres. Total?",
+   "q_zh": "码表：68+35 米，一共？",
+   "choices": [
+    "85",
+    "103",
+    "97"
+   ],
+   "choices_zh": [
+    "85",
+    "103",
+    "97"
+   ],
+   "answer": 1,
+   "explain_en": "=103.",
+   "explain_zh": "=103。",
+   "sign_en": [
+    "85",
+    "103",
+    "97"
+   ],
+   "sign_zh": [
+    "85",
+    "103",
+    "97"
+   ]
+  },
+  {
+   "id": "g9_156",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 3 to 11?",
+   "q_zh": "数轴上 3 到 11 的距离？",
+   "choices": [
+    "7",
+    "8",
+    "11"
+   ],
+   "choices_zh": [
+    "7",
+    "8",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "7",
+    "8",
+    "11"
+   ],
+   "sign_zh": [
+    "7",
+    "8",
+    "11"
+   ]
+  },
+  {
+   "id": "g9_157",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 40 + 8 metres. Total?",
+   "q_zh": "码表：40+8 米，一共？",
+   "choices": [
+    "40",
+    "48",
+    "58",
+    "43"
+   ],
+   "choices_zh": [
+    "40",
+    "48",
+    "58",
+    "43"
+   ],
+   "answer": 1,
+   "explain_en": "=48.",
+   "explain_zh": "=48。"
+  },
+  {
+   "id": "g9_158",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 66 + 21 metres. Total?",
+   "q_zh": "码表：66+21 米，一共？",
+   "choices": [
+    "83",
+    "74",
+    "87",
+    "98"
+   ],
+   "choices_zh": [
+    "83",
+    "74",
+    "87",
+    "98"
+   ],
+   "answer": 2,
+   "explain_en": "=87.",
+   "explain_zh": "=87。"
+  },
+  {
+   "id": "g9_159",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 11?",
+   "q_zh": "数轴上 7 到 11 的距离？",
+   "choices": [
+    "7",
+    "4",
+    "3",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "3",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "=4.",
+   "explain_zh": "=4。"
+  },
+  {
+   "id": "g9_160",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 76 + 17 metres. Total?",
+   "q_zh": "码表：76+17 米，一共？",
+   "choices": [
+    "93",
+    "83",
+    "109"
+   ],
+   "choices_zh": [
+    "93",
+    "83",
+    "109"
+   ],
+   "answer": 0,
+   "explain_en": "=93.",
+   "explain_zh": "=93。",
+   "sign_en": [
+    "93",
+    "83",
+    "109"
+   ],
+   "sign_zh": [
+    "93",
+    "83",
+    "109"
+   ]
+  },
+  {
+   "id": "g9_161",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 14?",
+   "q_zh": "数轴上 4 到 14 的距离？",
+   "choices": [
+    "11",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "11",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "11",
+    "10",
+    "9"
+   ]
+  },
+  {
+   "id": "g9_162",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 75 + 16 metres. Total?",
+   "q_zh": "码表：75+16 米，一共？",
+   "choices": [
+    "91",
+    "86",
+    "108"
+   ],
+   "choices_zh": [
+    "91",
+    "86",
+    "108"
+   ],
+   "answer": 0,
+   "explain_en": "=91.",
+   "explain_zh": "=91。",
+   "sign_en": [
+    "91",
+    "86",
+    "108"
+   ],
+   "sign_zh": [
+    "91",
+    "86",
+    "108"
+   ]
+  },
+  {
+   "id": "g9_163",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Right triangle legs 6,8. Hypotenuse?",
+   "q_zh": "直角边 6、8，斜边？",
+   "choices": [
+    "11",
+    "9",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "9",
+    "8",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "√(6²+8²)=10.",
+   "explain_zh": "=10。"
+  },
+  {
+   "id": "g9_164",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 70 + 8 metres. Total?",
+   "q_zh": "码表：70+8 米，一共？",
+   "choices": [
+    "84",
+    "78",
+    "63"
+   ],
+   "choices_zh": [
+    "84",
+    "78",
+    "63"
+   ],
+   "answer": 1,
+   "explain_en": "=78.",
+   "explain_zh": "=78。",
+   "sign_en": [
+    "84",
+    "78",
+    "63"
+   ],
+   "sign_zh": [
+    "84",
+    "78",
+    "63"
+   ]
+  },
+  {
+   "id": "g9_165",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 33 + 28 metres. Total?",
+   "q_zh": "码表：33+28 米，一共？",
+   "choices": [
+    "61",
+    "51",
+    "71"
+   ],
+   "choices_zh": [
+    "61",
+    "51",
+    "71"
+   ],
+   "answer": 0,
+   "explain_en": "=61.",
+   "explain_zh": "=61。",
+   "sign_en": [
+    "61",
+    "51",
+    "71"
+   ],
+   "sign_zh": [
+    "61",
+    "51",
+    "71"
+   ]
+  },
+  {
+   "id": "g9_166",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 6?",
+   "q_zh": "数轴上 0 到 6 的距离？",
+   "choices": [
+    "5",
+    "6",
+    "3",
+    "8"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "3",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g9_167",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 27 + 33 metres. Total?",
+   "q_zh": "码表：27+33 米，一共？",
+   "choices": [
+    "60",
+    "62",
+    "50",
+    "48"
+   ],
+   "choices_zh": [
+    "60",
+    "62",
+    "50",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "=60.",
+   "explain_zh": "=60。"
+  },
+  {
+   "id": "g9_168",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 75 + 30 metres. Total?",
+   "q_zh": "码表：75+30 米，一共？",
+   "choices": [
+    "105",
+    "96",
+    "110",
+    "114"
+   ],
+   "choices_zh": [
+    "105",
+    "96",
+    "110",
+    "114"
+   ],
+   "answer": 0,
+   "explain_en": "=105.",
+   "explain_zh": "=105。"
+  },
+  {
+   "id": "g9_169",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 5 to 16?",
+   "q_zh": "数轴上 5 到 16 的距离？",
+   "choices": [
+    "12",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "11",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "12",
+    "11",
+    "14"
+   ],
+   "sign_zh": [
+    "12",
+    "11",
+    "14"
+   ]
+  },
+  {
+   "id": "g9_170",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 0 to 11?",
+   "q_zh": "数轴上 0 到 11 的距离？",
+   "choices": [
+    "12",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "11",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "sign_en": [
+    "12",
+    "11",
+    "14"
+   ],
+   "sign_zh": [
+    "12",
+    "11",
+    "14"
+   ]
+  },
+  {
+   "id": "g9_171",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 48 + 18 metres. Total?",
+   "q_zh": "码表：48+18 米，一共？",
+   "choices": [
+    "73",
+    "70",
+    "66"
+   ],
+   "choices_zh": [
+    "73",
+    "70",
+    "66"
+   ],
+   "answer": 2,
+   "explain_en": "=66.",
+   "explain_zh": "=66。",
+   "sign_en": [
+    "73",
+    "70",
+    "66"
+   ],
+   "sign_zh": [
+    "73",
+    "70",
+    "66"
+   ]
+  },
+  {
+   "id": "g9_172",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 50 + 22 metres. Total?",
+   "q_zh": "码表：50+22 米，一共？",
+   "choices": [
+    "72",
+    "71",
+    "63"
+   ],
+   "choices_zh": [
+    "72",
+    "71",
+    "63"
+   ],
+   "answer": 0,
+   "explain_en": "=72.",
+   "explain_zh": "=72。",
+   "sign_en": [
+    "72",
+    "71",
+    "63"
+   ],
+   "sign_zh": [
+    "72",
+    "71",
+    "63"
+   ]
+  },
+  {
+   "id": "g9_173",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 7 to 19?",
+   "q_zh": "数轴上 7 到 19 的距离？",
+   "choices": [
+    "9",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "9",
+    "12",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "9",
+    "12",
+    "13"
+   ],
+   "sign_zh": [
+    "9",
+    "12",
+    "13"
+   ]
+  },
+  {
+   "id": "g9_174",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 2 to 10?",
+   "q_zh": "数轴上 2 到 10 的距离？",
+   "choices": [
+    "10",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "7",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "10",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "10",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_175",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 24 + 6 metres. Total?",
+   "q_zh": "码表：24+6 米，一共？",
+   "choices": [
+    "33",
+    "30",
+    "36"
+   ],
+   "choices_zh": [
+    "33",
+    "30",
+    "36"
+   ],
+   "answer": 1,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "sign_en": [
+    "33",
+    "30",
+    "36"
+   ],
+   "sign_zh": [
+    "33",
+    "30",
+    "36"
+   ]
+  },
+  {
+   "id": "g9_176",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 80 + 16 metres. Total?",
+   "q_zh": "码表：80+16 米，一共？",
+   "choices": [
+    "80",
+    "105",
+    "96",
+    "92"
+   ],
+   "choices_zh": [
+    "80",
+    "105",
+    "96",
+    "92"
+   ],
+   "answer": 2,
+   "explain_en": "=96.",
+   "explain_zh": "=96。"
+  },
+  {
+   "id": "g9_177",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 4 to 13?",
+   "q_zh": "数轴上 4 到 13 的距离？",
+   "choices": [
+    "9",
+    "12",
+    "8"
+   ],
+   "choices_zh": [
+    "9",
+    "12",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "sign_en": [
+    "9",
+    "12",
+    "8"
+   ],
+   "sign_zh": [
+    "9",
+    "12",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_178",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bike computer: 13 + 6 metres. Total?",
+   "q_zh": "码表：13+6 米，一共？",
+   "choices": [
+    "19",
+    "22",
+    "23",
+    "24"
+   ],
+   "choices_zh": [
+    "19",
+    "22",
+    "23",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。"
+  },
+  {
+   "id": "g9_179",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 13?",
+   "q_zh": "数轴上 6 到 13 的距离？",
+   "choices": [
+    "7",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "7",
+    "10",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "7",
+    "10",
+    "8"
+   ],
+   "sign_zh": [
+    "7",
+    "10",
+    "8"
+   ]
+  },
+  {
+   "id": "g9_180",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Distance on number line from 6 to 16?",
+   "q_zh": "数轴上 6 到 16 的距离？",
+   "choices": [
+    "10",
+    "12",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "12",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=10.",
+   "explain_zh": "=10。"
+  }
+ ]
+}

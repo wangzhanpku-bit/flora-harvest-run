@@ -1,0 +1,3290 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 12,
+ "version": 1,
+ "fields": "seawall ≤4 choices; forest_fork ≤3 + sign_en/sign_zh; {name}=player",
+ "questions": [
+  {
+   "id": "l2g12_001",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Flamingo",
+    "Ostrich",
+    "Penguin",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "火烈鸟",
+    "鸵鸟",
+    "企鹅",
+    "加拿大鹅"
+   ],
+   "answer": 3,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_002",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Only in winter",
+    "At night",
+    "Never",
+    "At noon"
+   ],
+   "choices_zh": [
+    "只在冬天",
+    "晚上",
+    "从来不",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_003",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Echolocation",
+    "Paper maps",
+    "Flashlights",
+    "Smell only"
+   ],
+   "choices_zh": [
+    "回声定位",
+    "纸质地图",
+    "手电筒",
+    "只靠嗅觉"
+   ],
+   "answer": 0,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_004",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Fish",
+    "Insects",
+    "Birds",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "鱼",
+    "昆虫",
+    "鸟",
+    "哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_005",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Ostrich",
+    "Flamingo",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "鸵鸟",
+    "火烈鸟",
+    "企鹅"
+   ],
+   "answer": 0,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_006",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Western red cedar",
+    "Baobab",
+    "Cactus",
+    "Palm tree"
+   ],
+   "choices_zh": [
+    "西部红雪松",
+    "猴面包树",
+    "仙人掌",
+    "棕榈树"
+   ],
+   "answer": 0,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_007",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Lay eggs / spawn",
+    "Learn to fly",
+    "Find candy",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "产卵",
+    "学飞",
+    "找糖",
+    "冬眠"
+   ],
+   "answer": 0,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_008",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "90°",
+    "45°",
+    "720°",
+    "270°"
+   ],
+   "choices_zh": [
+    "90°",
+    "45°",
+    "720°",
+    "大约 270°"
+   ],
+   "answer": 3,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_009",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Wind turbines",
+    "Earthquakes only",
+    "Street lights",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "风力发电机",
+    "只因为地震",
+    "路灯",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_010",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Decomposers (fungi, insects, microbes)",
+    "Sunscreen",
+    "Traffic",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "分解者（真菌、昆虫、微生物）",
+    "防晒霜",
+    "车流",
+    "磁铁"
+   ],
+   "answer": 0,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_011",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Birds",
+    "Marine mammals",
+    "Insects",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "海洋哺乳动物",
+    "昆虫",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_012",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Flying south",
+    "Building dams and lodges with wood",
+    "Laying swan eggs",
+    "Growing antlers"
+   ],
+   "choices_zh": [
+    "飞去南方",
+    "用木头筑坝和巢穴",
+    "下天鹅蛋",
+    "长鹿角"
+   ],
+   "answer": 1,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_013",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Fish",
+    "Bird",
+    "Reptile",
+    "Mammal"
+   ],
+   "choices_zh": [
+    "鱼",
+    "鸟类",
+    "爬行动物",
+    "哺乳动物"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_014",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "8",
+    "6",
+    "4",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "4",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_015",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Stop rain",
+    "Taste colours",
+    "Sense objects with sound echoes",
+    "Make candy"
+   ],
+   "choices_zh": [
+    "让雨停下",
+    "品尝颜色",
+    "用回声感知物体",
+    "做糖果"
+   ],
+   "answer": 2,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_016",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "8",
+    "4",
+    "2",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "2",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_017",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Providing habitat and holding soil",
+    "Making plastic",
+    "Stopping the Moon",
+    "Erasing tides"
+   ],
+   "choices_zh": [
+    "提供栖息地并固定土壤",
+    "制造塑料",
+    "挡住月亮",
+    "消除潮汐"
+   ],
+   "answer": 0,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_018",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Asphalt",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "choices_zh": [
+    "自行车",
+    "沥青",
+    "真菌/蘑菇",
+    "只有太阳"
+   ],
+   "answer": 2,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_019",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "2001",
+    "1950",
+    "1776",
+    "1888"
+   ],
+   "choices_zh": [
+    "2001",
+    "1950",
+    "1776",
+    "1888"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_020",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Grey Cup",
+    "World Cup",
+    "Stanley Cup",
+    "Olympic torch"
+   ],
+   "choices_zh": [
+    "格雷杯",
+    "世界杯",
+    "斯坦利杯",
+    "奥运火炬"
+   ],
+   "answer": 2,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_021",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "The same",
+    "Half the size",
+    "Much smaller",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "一样大",
+    "只有一半大",
+    "小很多",
+    "更大"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_022",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "choices_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ],
+   "answer": 2,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "level": 2,
+   "sign_en": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "sign_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ]
+  },
+  {
+   "id": "l2g12_023",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Tower Bridge",
+    "Golden Gate",
+    "Port Mann",
+    "Lions Gate Bridge"
+   ],
+   "choices_zh": [
+    "塔桥",
+    "金门大桥",
+    "福特曼桥",
+    "狮门大桥"
+   ],
+   "answer": 3,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_024",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "9:00 pm",
+    "Midnight"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "晚上 9 点",
+    "午夜"
+   ],
+   "answer": 1,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "level": 2,
+   "sign_en": [
+    "6:00 pm",
+    "9:00 pm",
+    "Midnight"
+   ],
+   "sign_zh": [
+    "晚上 6 点",
+    "晚上 9 点",
+    "午夜"
+   ]
+  },
+  {
+   "id": "l2g12_025",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Ice",
+    "Wood",
+    "Volcanic / igneous rock (an old dike)",
+    "Plastic"
+   ],
+   "choices_zh": [
+    "冰",
+    "木头",
+    "火山岩/火成岩（古老岩墙）",
+    "塑料"
+   ],
+   "answer": 2,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_026",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "50 km",
+    "1 km",
+    "About 9 km"
+   ],
+   "choices_zh": [
+    "50 公里",
+    "1 公里",
+    "大约 9 公里"
+   ],
+   "answer": 2,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "level": 2,
+   "sign_en": [
+    "50 km",
+    "1 km",
+    "About 9 km"
+   ],
+   "sign_zh": [
+    "50 公里",
+    "1 公里",
+    "大约 9 公里"
+   ]
+  },
+  {
+   "id": "l2g12_027",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Only at night",
+    "One way (counter-clockwise)",
+    "Walking only on bikes",
+    "Any direction"
+   ],
+   "choices_zh": [
+    "只在夜里",
+    "单向（逆时针）",
+    "骑车却只能走",
+    "任意方向"
+   ],
+   "answer": 1,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_028",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A Vancouver waterfront / harbour area",
+    "A volcano crater",
+    "A desert"
+   ],
+   "choices_zh": [
+    "温哥华滨水港湾区",
+    "火山口",
+    "沙漠"
+   ],
+   "answer": 0,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。",
+   "level": 2,
+   "sign_en": [
+    "A Vancouver waterfront / harbour area",
+    "A volcano crater",
+    "A desert"
+   ],
+   "sign_zh": [
+    "温哥华滨水港湾区",
+    "火山口",
+    "沙漠"
+   ]
+  },
+  {
+   "id": "l2g12_029",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A subway under the lake",
+    "Beavers",
+    "A desert dune",
+    "Swans as the only animals"
+   ],
+   "choices_zh": [
+    "湖底地铁",
+    "河狸",
+    "一座沙丘",
+    "只有天鹅"
+   ],
+   "answer": 1,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_030",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "October 31",
+    "July 1",
+    "December 25"
+   ],
+   "choices_zh": [
+    "10 月 31 日",
+    "7 月 1 日",
+    "12 月 25 日"
+   ],
+   "answer": 0,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "level": 2,
+   "sign_en": [
+    "October 31",
+    "July 1",
+    "December 25"
+   ],
+   "sign_zh": [
+    "10 月 31 日",
+    "7 月 1 日",
+    "12 月 25 日"
+   ]
+  },
+  {
+   "id": "l2g12_031",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "An underground mall only",
+    "An airport",
+    "A desert highway",
+    "Cedar / forest trails"
+   ],
+   "choices_zh": [
+    "只有地下商场",
+    "机场",
+    "沙漠公路",
+    "雪松/林间小道"
+   ],
+   "answer": 3,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_032",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Sprint through",
+    "Slow down and watch for people",
+    "Close your eyes"
+   ],
+   "choices_zh": [
+    "冲过去",
+    "减速并注意行人",
+    "闭眼"
+   ],
+   "answer": 1,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "level": 2,
+   "sign_en": [
+    "Sprint through",
+    "Slow down and watch for people",
+    "Close your eyes"
+   ],
+   "sign_zh": [
+    "冲过去",
+    "减速并注意行人",
+    "闭眼"
+   ]
+  },
+  {
+   "id": "l2g12_033",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "A cape only",
+    "A helmet (it's the law)",
+    "Skating shoes",
+    "No lights ever"
+   ],
+   "choices_zh": [
+    "只要披风",
+    "戴头盔（法律规定）",
+    "溜冰鞋",
+    "永远不用灯"
+   ],
+   "answer": 1,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_034",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "choices_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ],
+   "answer": 2,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "level": 2,
+   "sign_en": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "sign_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ]
+  },
+  {
+   "id": "l2g12_035",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Slow down and give them space",
+    "Chase them",
+    "Feed them candy",
+    "Scare them loudly"
+   ],
+   "choices_zh": [
+    "减速并留出空间",
+    "去追",
+    "喂糖",
+    "大声吓它们"
+   ],
+   "answer": 0,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_036",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "Only your socks colour",
+    "Bike lights and brakes",
+    "The Moon's password"
+   ],
+   "choices_zh": [
+    "只看袜子颜色",
+    "车灯和刹车",
+    "月亮密码"
+   ],
+   "answer": 1,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "level": 2,
+   "sign_en": [
+    "Only your socks colour",
+    "Bike lights and brakes",
+    "The Moon's password"
+   ],
+   "sign_zh": [
+    "只看袜子颜色",
+    "车灯和刹车",
+    "月亮密码"
+   ]
+  },
+  {
+   "id": "l2g12_037",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Ice block",
+    "Rock",
+    "Watermelon only",
+    "Pumpkin"
+   ],
+   "choices_zh": [
+    "冰块",
+    "石头",
+    "只有西瓜",
+    "南瓜"
+   ],
+   "answer": 3,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_038",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Metal",
+    "Water",
+    "Sand"
+   ],
+   "choices_zh": [
+    "金属",
+    "水",
+    "沙子"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "level": 2,
+   "sign_en": [
+    "Metal",
+    "Water",
+    "Sand"
+   ],
+   "sign_zh": [
+    "金属",
+    "水",
+    "沙子"
+   ]
+  },
+  {
+   "id": "l2g12_039",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Coconuts",
+    "Glass",
+    "Turnips / root vegetables",
+    "Pineapples"
+   ],
+   "choices_zh": [
+    "椰子",
+    "玻璃",
+    "芜菁等根菜",
+    "菠萝"
+   ],
+   "answer": 2,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_040",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "7 days",
+    "29.5 days",
+    "365 days"
+   ],
+   "choices_zh": [
+    "7 天",
+    "约 29.5 天",
+    "365 天"
+   ],
+   "answer": 1,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "level": 2,
+   "sign_en": [
+    "7 days",
+    "29.5 days",
+    "365 days"
+   ],
+   "sign_zh": [
+    "7 天",
+    "约 29.5 天",
+    "365 天"
+   ]
+  },
+  {
+   "id": "l2g12_041",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Canada Day only",
+    "Thanksgiving cooking class",
+    "Halloween",
+    "Tax day"
+   ],
+   "choices_zh": [
+    "只有加拿大日",
+    "感恩节烹饪课",
+    "万圣节",
+    "报税日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_042",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the water",
+    "Up a tree",
+    "In the snow"
+   ],
+   "choices_zh": [
+    "在水里",
+    "树上",
+    "雪地里"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "level": 2,
+   "sign_en": [
+    "In the water",
+    "Up a tree",
+    "In the snow"
+   ],
+   "sign_zh": [
+    "在水里",
+    "树上",
+    "雪地里"
+   ]
+  },
+  {
+   "id": "l2g12_043",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Fish",
+    "Grass and plants",
+    "Candy",
+    "Insects"
+   ],
+   "choices_zh": [
+    "鱼",
+    "草和植物",
+    "糖果",
+    "昆虫"
+   ],
+   "answer": 1,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_044",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "level": 2,
+   "sign_en": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "sign_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "l2g12_045",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "The North Pole",
+    "South America",
+    "Australia",
+    "Africa"
+   ],
+   "choices_zh": [
+    "北极",
+    "南美洲",
+    "澳大利亚",
+    "非洲"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_046",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Only in winter",
+    "No",
+    "Yes"
+   ],
+   "choices_zh": [
+    "只在冬天有",
+    "没有",
+    "有"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "level": 2,
+   "sign_en": [
+    "Only in winter",
+    "No",
+    "Yes"
+   ],
+   "sign_zh": [
+    "只在冬天有",
+    "没有",
+    "有"
+   ]
+  },
+  {
+   "id": "l2g12_047",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Swimmers",
+    "Flyers",
+    "Tunnel diggers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "游泳",
+    "飞翔",
+    "挖隧道"
+   ],
+   "answer": 1,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_048",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "School",
+    "Herd",
+    "Flock"
+   ],
+   "choices_zh": [
+    "鱼群",
+    "一群",
+    "鸟群"
+   ],
+   "answer": 1,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "level": 2,
+   "sign_en": [
+    "School",
+    "Herd",
+    "Flock"
+   ],
+   "sign_zh": [
+    "鱼群",
+    "一群",
+    "鸟群"
+   ]
+  },
+  {
+   "id": "l2g12_049",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Goose",
+    "Beaver",
+    "Capybara",
+    "Raccoon"
+   ],
+   "choices_zh": [
+    "鹅",
+    "河狸",
+    "水豚",
+    "浣熊"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_050",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Only hisses",
+    "Cute squeaks / clicks",
+    "Lion roars"
+   ],
+   "choices_zh": [
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声",
+    "狮子吼"
+   ],
+   "answer": 1,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "level": 2,
+   "sign_en": [
+    "Only hisses",
+    "Cute squeaks / clicks",
+    "Lion roars"
+   ],
+   "sign_zh": [
+    "只会嘶嘶",
+    "可爱的吱吱/咔嗒声",
+    "狮子吼"
+   ]
+  },
+  {
+   "id": "l2g12_051",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Has no flat paddle tail",
+    "Is a bird",
+    "Eats only fish",
+    "Lives only on ice"
+   ],
+   "choices_zh": [
+    "没有扁平的桨状尾巴",
+    "是鸟",
+    "只吃鱼",
+    "只住在冰上"
+   ],
+   "answer": 0,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_052",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A renewable energy example is…",
+   "q_zh": "可再生能源的例子是……",
+   "choices": [
+    "Wind or solar",
+    "Oil only",
+    "Coal only"
+   ],
+   "choices_zh": [
+    "风能或太阳能",
+    "只有石油",
+    "只有煤"
+   ],
+   "answer": 0,
+   "explain_en": "Wind/solar renew on human timescales.",
+   "explain_zh": "风能太阳能可更新。",
+   "level": 2,
+   "sign_en": [
+    "Wind or solar",
+    "Oil only",
+    "Coal only"
+   ],
+   "sign_zh": [
+    "风能或太阳能",
+    "只有石油",
+    "只有煤"
+   ]
+  },
+  {
+   "id": "l2g12_053",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If cases double every week, that growth is…",
+   "q_zh": "若病例每周翻倍，这种增长是……",
+   "choices": [
+    "Always slope-0 linear",
+    "Impossible",
+    "Only circular",
+    "Exponential growth"
+   ],
+   "choices_zh": [
+    "斜率总是 0 的线性",
+    "不可能",
+    "只有圆形",
+    "指数增长"
+   ],
+   "answer": 3,
+   "explain_en": "Constant relative growth → exponential.",
+   "explain_zh": "相对增长恒定→指数。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_054",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Conserving energy on a bike ride includes…",
+   "q_zh": "骑行节能包括……",
+   "choices": [
+    "Blocking the chain",
+    "Carrying rocks for fun",
+    "Steady pace and proper tire pressure"
+   ],
+   "choices_zh": [
+    "卡住链条",
+    "为好玩带石头",
+    "匀速和合适胎压"
+   ],
+   "answer": 2,
+   "explain_en": "Efficiency reduces waste.",
+   "explain_zh": "提高效率减少浪费。",
+   "level": 2,
+   "sign_en": [
+    "Blocking the chain",
+    "Carrying rocks for fun",
+    "Steady pace and proper tire pressure"
+   ],
+   "sign_zh": [
+    "卡住链条",
+    "为好玩带石头",
+    "匀速和合适胎压"
+   ]
+  },
+  {
+   "id": "l2g12_055",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The slope of a distance-time graph represents…",
+   "q_zh": "路程-时间图的斜率表示……",
+   "choices": [
+    "Speed / velocity",
+    "Candy flavour",
+    "Only mass of Earth",
+    "Only colour"
+   ],
+   "choices_zh": [
+    "速度",
+    "糖的味道",
+    "只有地球质量",
+    "只有颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Slope = rise/run = rate.",
+   "explain_zh": "斜率=变化率=速度。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_056",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Order does not matter in a…",
+   "q_zh": "顺序无关的是……",
+   "choices": [
+    "Only a password list that must be ordered",
+    "A race finish ranking always",
+    "Combination"
+   ],
+   "choices_zh": [
+    "必须排序的密码表",
+    "比赛名次",
+    "组合"
+   ],
+   "answer": 2,
+   "explain_en": "Combinations ignore order.",
+   "explain_zh": "组合不考虑顺序。",
+   "level": 2,
+   "sign_en": [
+    "Only a password list that must be ordered",
+    "A race finish ranking always",
+    "Combination"
+   ],
+   "sign_zh": [
+    "必须排序的密码表",
+    "比赛名次",
+    "组合"
+   ]
+  },
+  {
+   "id": "l2g12_057",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Flattening a curve in epidemiology aims to…",
+   "q_zh": "流行病学里“压平曲线”是为了……",
+   "choices": [
+    "Delete math",
+    "Hide the Moon",
+    "Ban bicycles",
+    "Slow spread and protect capacity"
+   ],
+   "choices_zh": [
+    "删除数学",
+    "藏起月亮",
+    "禁止自行车",
+    "减缓传播并保护医疗容量"
+   ],
+   "answer": 3,
+   "explain_en": "Slow transmission, ease systems.",
+   "explain_zh": "减缓传播，减轻系统压力。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_058",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(8,2) ways to pick 2 trail markers?",
+   "q_zh": "从 8 个路标选 2 个，C(8,2)=？",
+   "choices": [
+    "32",
+    "27",
+    "28",
+    "33"
+   ],
+   "choices_zh": [
+    "32",
+    "27",
+    "28",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_059",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(6,2) ways to pick 2 trail markers?",
+   "q_zh": "从 6 个路标选 2 个，C(6,2)=？",
+   "choices": [
+    "10",
+    "19",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "19",
+    "15",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "=15.",
+   "explain_zh": "=15。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_060",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(5,2) ways to pick 2 trail markers?",
+   "q_zh": "从 5 个路标选 2 个，C(5,2)=？",
+   "choices": [
+    "6",
+    "9",
+    "10",
+    "11"
+   ],
+   "choices_zh": [
+    "6",
+    "9",
+    "10",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_061",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(9,2) ways to pick 2 trail markers?",
+   "q_zh": "从 9 个路标选 2 个，C(9,2)=？",
+   "choices": [
+    "36",
+    "43",
+    "42",
+    "31"
+   ],
+   "choices_zh": [
+    "36",
+    "43",
+    "42",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "=36.",
+   "explain_zh": "=36。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_062",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(12,2) ways to pick 2 trail markers?",
+   "q_zh": "从 12 个路标选 2 个，C(12,2)=？",
+   "choices": [
+    "63",
+    "68",
+    "61",
+    "66"
+   ],
+   "choices_zh": [
+    "63",
+    "68",
+    "61",
+    "66"
+   ],
+   "answer": 3,
+   "explain_en": "=66.",
+   "explain_zh": "=66。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_063",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(7,2) ways to pick 2 trail markers?",
+   "q_zh": "从 7 个路标选 2 个，C(7,2)=？",
+   "choices": [
+    "20",
+    "21",
+    "22",
+    "27"
+   ],
+   "choices_zh": [
+    "20",
+    "21",
+    "22",
+    "27"
+   ],
+   "answer": 1,
+   "explain_en": "=21.",
+   "explain_zh": "=21。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_064",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(10,2) ways to pick 2 trail markers?",
+   "q_zh": "从 10 个路标选 2 个，C(10,2)=？",
+   "choices": [
+    "43",
+    "37",
+    "47",
+    "45"
+   ],
+   "choices_zh": [
+    "43",
+    "37",
+    "47",
+    "45"
+   ],
+   "answer": 3,
+   "explain_en": "=45.",
+   "explain_zh": "=45。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_065",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "C(11,2) ways to pick 2 trail markers?",
+   "q_zh": "从 11 个路标选 2 个，C(11,2)=？",
+   "choices": [
+    "55",
+    "63",
+    "56",
+    "61"
+   ],
+   "choices_zh": [
+    "55",
+    "63",
+    "56",
+    "61"
+   ],
+   "answer": 0,
+   "explain_en": "=55.",
+   "explain_zh": "=55。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_066",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-0: 3210 - 13 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-0：3210 − 13（海堤）？",
+   "choices": [
+    "3181",
+    "3210",
+    "3197",
+    "3200"
+   ],
+   "choices_zh": [
+    "3181",
+    "3210",
+    "3197",
+    "3200"
+   ],
+   "answer": 2,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_067",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-1: 3211 + 14 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-1：3211 + 14（海堤）？",
+   "choices": [
+    "3222",
+    "3255",
+    "3251",
+    "3225"
+   ],
+   "choices_zh": [
+    "3222",
+    "3255",
+    "3251",
+    "3225"
+   ],
+   "answer": 3,
+   "explain_en": "=3225.",
+   "explain_zh": "=3225。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_068",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-2: 3212 + 15 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-2：3212 + 15（海堤）？",
+   "choices": [
+    "3212",
+    "3237",
+    "3227",
+    "3208"
+   ],
+   "choices_zh": [
+    "3212",
+    "3237",
+    "3227",
+    "3208"
+   ],
+   "answer": 2,
+   "explain_en": "=3227.",
+   "explain_zh": "=3227。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_069",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-3: 3213 - 16 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-3：3213 − 16（海堤）？",
+   "choices": [
+    "3220",
+    "3180",
+    "3184",
+    "3197"
+   ],
+   "choices_zh": [
+    "3220",
+    "3180",
+    "3184",
+    "3197"
+   ],
+   "answer": 3,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_070",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-4: 3214 + 17 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-4：3214 + 17（海堤）？",
+   "choices": [
+    "3231",
+    "3215",
+    "3227",
+    "3247"
+   ],
+   "choices_zh": [
+    "3231",
+    "3215",
+    "3227",
+    "3247"
+   ],
+   "answer": 0,
+   "explain_en": "=3231.",
+   "explain_zh": "=3231。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_071",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-5: 3215 + 18 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-5：3215 + 18（海堤）？",
+   "choices": [
+    "3214",
+    "3253",
+    "3233",
+    "3221"
+   ],
+   "choices_zh": [
+    "3214",
+    "3253",
+    "3233",
+    "3221"
+   ],
+   "answer": 2,
+   "explain_en": "=3233.",
+   "explain_zh": "=3233。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_072",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-6: 3216 - 19 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-6：3216 − 19（海堤）？",
+   "choices": [
+    "3167",
+    "3197",
+    "3180",
+    "3170"
+   ],
+   "choices_zh": [
+    "3167",
+    "3197",
+    "3180",
+    "3170"
+   ],
+   "answer": 1,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_073",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-7: 3217 + 20 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-7：3217 + 20（海堤）？",
+   "choices": [
+    "3234",
+    "3241",
+    "3256",
+    "3237"
+   ],
+   "choices_zh": [
+    "3234",
+    "3241",
+    "3256",
+    "3237"
+   ],
+   "answer": 3,
+   "explain_en": "=3237.",
+   "explain_zh": "=3237。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_074",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-8: 3218 + 21 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-8：3218 + 21（海堤）？",
+   "choices": [
+    "3228",
+    "3264",
+    "3258",
+    "3239"
+   ],
+   "choices_zh": [
+    "3228",
+    "3264",
+    "3258",
+    "3239"
+   ],
+   "answer": 3,
+   "explain_en": "=3239.",
+   "explain_zh": "=3239。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_075",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-9: 3219 - 22 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-9：3219 − 22（海堤）？",
+   "choices": [
+    "3208",
+    "3200",
+    "3197",
+    "3183"
+   ],
+   "choices_zh": [
+    "3208",
+    "3200",
+    "3197",
+    "3183"
+   ],
+   "answer": 2,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_076",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-10: 3220 + 23 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-10：3220 + 23（海堤）？",
+   "choices": [
+    "3214",
+    "3243",
+    "3222",
+    "3236"
+   ],
+   "choices_zh": [
+    "3214",
+    "3243",
+    "3222",
+    "3236"
+   ],
+   "answer": 1,
+   "explain_en": "=3243.",
+   "explain_zh": "=3243。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_077",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-11: 3221 + 24 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-11：3221 + 24（海堤）？",
+   "choices": [
+    "3262",
+    "3215",
+    "3245",
+    "3257"
+   ],
+   "choices_zh": [
+    "3262",
+    "3215",
+    "3245",
+    "3257"
+   ],
+   "answer": 2,
+   "explain_en": "=3245.",
+   "explain_zh": "=3245。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_078",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-12: 3222 - 25 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-12：3222 − 25（海堤）？",
+   "choices": [
+    "3173",
+    "3200",
+    "3193",
+    "3197"
+   ],
+   "choices_zh": [
+    "3173",
+    "3200",
+    "3193",
+    "3197"
+   ],
+   "answer": 3,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_079",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-13: 3223 + 26 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-13：3223 + 26（海堤）？",
+   "choices": [
+    "3249",
+    "3248",
+    "3272",
+    "3276"
+   ],
+   "choices_zh": [
+    "3249",
+    "3248",
+    "3272",
+    "3276"
+   ],
+   "answer": 0,
+   "explain_en": "=3249.",
+   "explain_zh": "=3249。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_080",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-14: 3224 + 27 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-14：3224 + 27（海堤）？",
+   "choices": [
+    "3251",
+    "3270",
+    "3264",
+    "3232"
+   ],
+   "choices_zh": [
+    "3251",
+    "3270",
+    "3264",
+    "3232"
+   ],
+   "answer": 0,
+   "explain_en": "=3251.",
+   "explain_zh": "=3251。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_081",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-15: 3225 - 28 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-15：3225 − 28（海堤）？",
+   "choices": [
+    "3220",
+    "3198",
+    "3202",
+    "3197"
+   ],
+   "choices_zh": [
+    "3220",
+    "3198",
+    "3202",
+    "3197"
+   ],
+   "answer": 3,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_082",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-16: 3226 + 29 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-16：3226 + 29（海堤）？",
+   "choices": [
+    "3225",
+    "3255",
+    "3235",
+    "3268"
+   ],
+   "choices_zh": [
+    "3225",
+    "3255",
+    "3235",
+    "3268"
+   ],
+   "answer": 1,
+   "explain_en": "=3255.",
+   "explain_zh": "=3255。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_083",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-17: 3227 + 30 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-17：3227 + 30（海堤）？",
+   "choices": [
+    "3236",
+    "3257",
+    "3241",
+    "3258"
+   ],
+   "choices_zh": [
+    "3236",
+    "3257",
+    "3241",
+    "3258"
+   ],
+   "answer": 1,
+   "explain_en": "=3257.",
+   "explain_zh": "=3257。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_084",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-18: 3228 - 31 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-18：3228 − 31（海堤）？",
+   "choices": [
+    "3197",
+    "3211",
+    "3172",
+    "3201"
+   ],
+   "choices_zh": [
+    "3197",
+    "3211",
+    "3172",
+    "3201"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_085",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-19: 3229 + 32 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-19：3229 + 32（海堤）？",
+   "choices": [
+    "3280",
+    "3235",
+    "3261",
+    "3282"
+   ],
+   "choices_zh": [
+    "3280",
+    "3235",
+    "3261",
+    "3282"
+   ],
+   "answer": 2,
+   "explain_en": "=3261.",
+   "explain_zh": "=3261。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_086",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-20: 3230 + 33 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-20：3230 + 33（海堤）？",
+   "choices": [
+    "3260",
+    "3264",
+    "3263",
+    "3241"
+   ],
+   "choices_zh": [
+    "3260",
+    "3264",
+    "3263",
+    "3241"
+   ],
+   "answer": 2,
+   "explain_en": "=3263.",
+   "explain_zh": "=3263。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_087",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-21: 3231 - 34 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-21：3231 − 34（海堤）？",
+   "choices": [
+    "3192",
+    "3176",
+    "3185",
+    "3197"
+   ],
+   "choices_zh": [
+    "3192",
+    "3176",
+    "3185",
+    "3197"
+   ],
+   "answer": 3,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_088",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-seawall-22: 3232 + 35 (seawall)?",
+   "q_zh": "夜骑计算 #12-1-seawall-22：3232 + 35（海堤）？",
+   "choices": [
+    "3267",
+    "3243",
+    "3252",
+    "3288"
+   ],
+   "choices_zh": [
+    "3267",
+    "3243",
+    "3252",
+    "3288"
+   ],
+   "answer": 0,
+   "explain_en": "=3267.",
+   "explain_zh": "=3267。",
+   "level": 2
+  },
+  {
+   "id": "l2g12_089",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-0: 3210 - 13 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-0：3210 − 13（林间）？",
+   "choices": [
+    "3181",
+    "3220",
+    "3197"
+   ],
+   "choices_zh": [
+    "3181",
+    "3220",
+    "3197"
+   ],
+   "answer": 2,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3181",
+    "3220",
+    "3197"
+   ],
+   "sign_zh": [
+    "3181",
+    "3220",
+    "3197"
+   ]
+  },
+  {
+   "id": "l2g12_090",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-1: 3211 + 14 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-1：3211 + 14（林间）？",
+   "choices": [
+    "3225",
+    "3209",
+    "3244"
+   ],
+   "choices_zh": [
+    "3225",
+    "3209",
+    "3244"
+   ],
+   "answer": 0,
+   "explain_en": "=3225.",
+   "explain_zh": "=3225。",
+   "level": 2,
+   "sign_en": [
+    "3225",
+    "3209",
+    "3244"
+   ],
+   "sign_zh": [
+    "3225",
+    "3209",
+    "3244"
+   ]
+  },
+  {
+   "id": "l2g12_091",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-2: 3212 + 15 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-2：3212 + 15（林间）？",
+   "choices": [
+    "3227",
+    "3207",
+    "3200"
+   ],
+   "choices_zh": [
+    "3227",
+    "3207",
+    "3200"
+   ],
+   "answer": 0,
+   "explain_en": "=3227.",
+   "explain_zh": "=3227。",
+   "level": 2,
+   "sign_en": [
+    "3227",
+    "3207",
+    "3200"
+   ],
+   "sign_zh": [
+    "3227",
+    "3207",
+    "3200"
+   ]
+  },
+  {
+   "id": "l2g12_092",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-3: 3213 - 16 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-3：3213 − 16（林间）？",
+   "choices": [
+    "3209",
+    "3197",
+    "3219"
+   ],
+   "choices_zh": [
+    "3209",
+    "3197",
+    "3219"
+   ],
+   "answer": 1,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3209",
+    "3197",
+    "3219"
+   ],
+   "sign_zh": [
+    "3209",
+    "3197",
+    "3219"
+   ]
+  },
+  {
+   "id": "l2g12_093",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-4: 3214 + 17 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-4：3214 + 17（林间）？",
+   "choices": [
+    "3247",
+    "3246",
+    "3231"
+   ],
+   "choices_zh": [
+    "3247",
+    "3246",
+    "3231"
+   ],
+   "answer": 2,
+   "explain_en": "=3231.",
+   "explain_zh": "=3231。",
+   "level": 2,
+   "sign_en": [
+    "3247",
+    "3246",
+    "3231"
+   ],
+   "sign_zh": [
+    "3247",
+    "3246",
+    "3231"
+   ]
+  },
+  {
+   "id": "l2g12_094",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-5: 3215 + 18 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-5：3215 + 18（林间）？",
+   "choices": [
+    "3229",
+    "3244",
+    "3233"
+   ],
+   "choices_zh": [
+    "3229",
+    "3244",
+    "3233"
+   ],
+   "answer": 2,
+   "explain_en": "=3233.",
+   "explain_zh": "=3233。",
+   "level": 2,
+   "sign_en": [
+    "3229",
+    "3244",
+    "3233"
+   ],
+   "sign_zh": [
+    "3229",
+    "3244",
+    "3233"
+   ]
+  },
+  {
+   "id": "l2g12_095",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-6: 3216 - 19 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-6：3216 − 19（林间）？",
+   "choices": [
+    "3197",
+    "3183",
+    "3169"
+   ],
+   "choices_zh": [
+    "3197",
+    "3183",
+    "3169"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3197",
+    "3183",
+    "3169"
+   ],
+   "sign_zh": [
+    "3197",
+    "3183",
+    "3169"
+   ]
+  },
+  {
+   "id": "l2g12_096",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-7: 3217 + 20 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-7：3217 + 20（林间）？",
+   "choices": [
+    "3219",
+    "3258",
+    "3237"
+   ],
+   "choices_zh": [
+    "3219",
+    "3258",
+    "3237"
+   ],
+   "answer": 2,
+   "explain_en": "=3237.",
+   "explain_zh": "=3237。",
+   "level": 2,
+   "sign_en": [
+    "3219",
+    "3258",
+    "3237"
+   ],
+   "sign_zh": [
+    "3219",
+    "3258",
+    "3237"
+   ]
+  },
+  {
+   "id": "l2g12_097",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-8: 3218 + 21 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-8：3218 + 21（林间）？",
+   "choices": [
+    "3209",
+    "3239",
+    "3238"
+   ],
+   "choices_zh": [
+    "3209",
+    "3239",
+    "3238"
+   ],
+   "answer": 1,
+   "explain_en": "=3239.",
+   "explain_zh": "=3239。",
+   "level": 2,
+   "sign_en": [
+    "3209",
+    "3239",
+    "3238"
+   ],
+   "sign_zh": [
+    "3209",
+    "3239",
+    "3238"
+   ]
+  },
+  {
+   "id": "l2g12_098",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-9: 3219 - 22 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-9：3219 − 22（林间）？",
+   "choices": [
+    "3197",
+    "3216",
+    "3210"
+   ],
+   "choices_zh": [
+    "3197",
+    "3216",
+    "3210"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3197",
+    "3216",
+    "3210"
+   ],
+   "sign_zh": [
+    "3197",
+    "3216",
+    "3210"
+   ]
+  },
+  {
+   "id": "l2g12_099",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-10: 3220 + 23 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-10：3220 + 23（林间）？",
+   "choices": [
+    "3236",
+    "3243",
+    "3221"
+   ],
+   "choices_zh": [
+    "3236",
+    "3243",
+    "3221"
+   ],
+   "answer": 1,
+   "explain_en": "=3243.",
+   "explain_zh": "=3243。",
+   "level": 2,
+   "sign_en": [
+    "3236",
+    "3243",
+    "3221"
+   ],
+   "sign_zh": [
+    "3236",
+    "3243",
+    "3221"
+   ]
+  },
+  {
+   "id": "l2g12_100",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-11: 3221 + 24 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-11：3221 + 24（林间）？",
+   "choices": [
+    "3215",
+    "3245",
+    "3232"
+   ],
+   "choices_zh": [
+    "3215",
+    "3245",
+    "3232"
+   ],
+   "answer": 1,
+   "explain_en": "=3245.",
+   "explain_zh": "=3245。",
+   "level": 2,
+   "sign_en": [
+    "3215",
+    "3245",
+    "3232"
+   ],
+   "sign_zh": [
+    "3215",
+    "3245",
+    "3232"
+   ]
+  },
+  {
+   "id": "l2g12_101",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-12: 3222 - 25 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-12：3222 − 25（林间）？",
+   "choices": [
+    "3167",
+    "3197",
+    "3170"
+   ],
+   "choices_zh": [
+    "3167",
+    "3197",
+    "3170"
+   ],
+   "answer": 1,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3167",
+    "3197",
+    "3170"
+   ],
+   "sign_zh": [
+    "3167",
+    "3197",
+    "3170"
+   ]
+  },
+  {
+   "id": "l2g12_102",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-13: 3223 + 26 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-13：3223 + 26（林间）？",
+   "choices": [
+    "3249",
+    "3241",
+    "3258"
+   ],
+   "choices_zh": [
+    "3249",
+    "3241",
+    "3258"
+   ],
+   "answer": 0,
+   "explain_en": "=3249.",
+   "explain_zh": "=3249。",
+   "level": 2,
+   "sign_en": [
+    "3249",
+    "3241",
+    "3258"
+   ],
+   "sign_zh": [
+    "3249",
+    "3241",
+    "3258"
+   ]
+  },
+  {
+   "id": "l2g12_103",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-14: 3224 + 27 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-14：3224 + 27（林间）？",
+   "choices": [
+    "3253",
+    "3272",
+    "3251"
+   ],
+   "choices_zh": [
+    "3253",
+    "3272",
+    "3251"
+   ],
+   "answer": 2,
+   "explain_en": "=3251.",
+   "explain_zh": "=3251。",
+   "level": 2,
+   "sign_en": [
+    "3253",
+    "3272",
+    "3251"
+   ],
+   "sign_zh": [
+    "3253",
+    "3272",
+    "3251"
+   ]
+  },
+  {
+   "id": "l2g12_104",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-15: 3225 - 28 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-15：3225 − 28（林间）？",
+   "choices": [
+    "3197",
+    "3173",
+    "3169"
+   ],
+   "choices_zh": [
+    "3197",
+    "3173",
+    "3169"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3197",
+    "3173",
+    "3169"
+   ],
+   "sign_zh": [
+    "3197",
+    "3173",
+    "3169"
+   ]
+  },
+  {
+   "id": "l2g12_105",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-16: 3226 + 29 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-16：3226 + 29（林间）？",
+   "choices": [
+    "3259",
+    "3255",
+    "3279"
+   ],
+   "choices_zh": [
+    "3259",
+    "3255",
+    "3279"
+   ],
+   "answer": 1,
+   "explain_en": "=3255.",
+   "explain_zh": "=3255。",
+   "level": 2,
+   "sign_en": [
+    "3259",
+    "3255",
+    "3279"
+   ],
+   "sign_zh": [
+    "3259",
+    "3255",
+    "3279"
+   ]
+  },
+  {
+   "id": "l2g12_106",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-17: 3227 + 30 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-17：3227 + 30（林间）？",
+   "choices": [
+    "3257",
+    "3254",
+    "3283"
+   ],
+   "choices_zh": [
+    "3257",
+    "3254",
+    "3283"
+   ],
+   "answer": 0,
+   "explain_en": "=3257.",
+   "explain_zh": "=3257。",
+   "level": 2,
+   "sign_en": [
+    "3257",
+    "3254",
+    "3283"
+   ],
+   "sign_zh": [
+    "3257",
+    "3254",
+    "3283"
+   ]
+  },
+  {
+   "id": "l2g12_107",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-18: 3228 - 31 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-18：3228 − 31（林间）？",
+   "choices": [
+    "3214",
+    "3197",
+    "3213"
+   ],
+   "choices_zh": [
+    "3214",
+    "3197",
+    "3213"
+   ],
+   "answer": 1,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3214",
+    "3197",
+    "3213"
+   ],
+   "sign_zh": [
+    "3214",
+    "3197",
+    "3213"
+   ]
+  },
+  {
+   "id": "l2g12_108",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-19: 3229 + 32 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-19：3229 + 32（林间）？",
+   "choices": [
+    "3268",
+    "3254",
+    "3261"
+   ],
+   "choices_zh": [
+    "3268",
+    "3254",
+    "3261"
+   ],
+   "answer": 2,
+   "explain_en": "=3261.",
+   "explain_zh": "=3261。",
+   "level": 2,
+   "sign_en": [
+    "3268",
+    "3254",
+    "3261"
+   ],
+   "sign_zh": [
+    "3268",
+    "3254",
+    "3261"
+   ]
+  },
+  {
+   "id": "l2g12_109",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-20: 3230 + 33 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-20：3230 + 33（林间）？",
+   "choices": [
+    "3263",
+    "3240",
+    "3252"
+   ],
+   "choices_zh": [
+    "3263",
+    "3240",
+    "3252"
+   ],
+   "answer": 0,
+   "explain_en": "=3263.",
+   "explain_zh": "=3263。",
+   "level": 2,
+   "sign_en": [
+    "3263",
+    "3240",
+    "3252"
+   ],
+   "sign_zh": [
+    "3263",
+    "3240",
+    "3252"
+   ]
+  },
+  {
+   "id": "l2g12_110",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-21: 3231 - 34 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-21：3231 − 34（林间）？",
+   "choices": [
+    "3197",
+    "3200",
+    "3193"
+   ],
+   "choices_zh": [
+    "3197",
+    "3200",
+    "3193"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3197",
+    "3200",
+    "3193"
+   ],
+   "sign_zh": [
+    "3197",
+    "3200",
+    "3193"
+   ]
+  },
+  {
+   "id": "l2g12_111",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-22: 3232 + 35 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-22：3232 + 35（林间）？",
+   "choices": [
+    "3238",
+    "3280",
+    "3267"
+   ],
+   "choices_zh": [
+    "3238",
+    "3280",
+    "3267"
+   ],
+   "answer": 2,
+   "explain_en": "=3267.",
+   "explain_zh": "=3267。",
+   "level": 2,
+   "sign_en": [
+    "3238",
+    "3280",
+    "3267"
+   ],
+   "sign_zh": [
+    "3238",
+    "3280",
+    "3267"
+   ]
+  },
+  {
+   "id": "l2g12_112",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-23: 3233 + 36 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-23：3233 + 36（林间）？",
+   "choices": [
+    "3239",
+    "3269",
+    "3251"
+   ],
+   "choices_zh": [
+    "3239",
+    "3269",
+    "3251"
+   ],
+   "answer": 1,
+   "explain_en": "=3269.",
+   "explain_zh": "=3269。",
+   "level": 2,
+   "sign_en": [
+    "3239",
+    "3269",
+    "3251"
+   ],
+   "sign_zh": [
+    "3239",
+    "3269",
+    "3251"
+   ]
+  },
+  {
+   "id": "l2g12_113",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-24: 3234 - 37 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-24：3234 − 37（林间）？",
+   "choices": [
+    "3207",
+    "3219",
+    "3197"
+   ],
+   "choices_zh": [
+    "3207",
+    "3219",
+    "3197"
+   ],
+   "answer": 2,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3207",
+    "3219",
+    "3197"
+   ],
+   "sign_zh": [
+    "3207",
+    "3219",
+    "3197"
+   ]
+  },
+  {
+   "id": "l2g12_114",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-25: 3235 + 38 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-25：3235 + 38（林间）？",
+   "choices": [
+    "3273",
+    "3290",
+    "3291"
+   ],
+   "choices_zh": [
+    "3273",
+    "3290",
+    "3291"
+   ],
+   "answer": 0,
+   "explain_en": "=3273.",
+   "explain_zh": "=3273。",
+   "level": 2,
+   "sign_en": [
+    "3273",
+    "3290",
+    "3291"
+   ],
+   "sign_zh": [
+    "3273",
+    "3290",
+    "3291"
+   ]
+  },
+  {
+   "id": "l2g12_115",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-26: 3236 + 39 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-26：3236 + 39（林间）？",
+   "choices": [
+    "3249",
+    "3289",
+    "3275"
+   ],
+   "choices_zh": [
+    "3249",
+    "3289",
+    "3275"
+   ],
+   "answer": 2,
+   "explain_en": "=3275.",
+   "explain_zh": "=3275。",
+   "level": 2,
+   "sign_en": [
+    "3249",
+    "3289",
+    "3275"
+   ],
+   "sign_zh": [
+    "3249",
+    "3289",
+    "3275"
+   ]
+  },
+  {
+   "id": "l2g12_116",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-27: 3237 - 40 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-27：3237 − 40（林间）？",
+   "choices": [
+    "3175",
+    "3197",
+    "3218"
+   ],
+   "choices_zh": [
+    "3175",
+    "3197",
+    "3218"
+   ],
+   "answer": 1,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3175",
+    "3197",
+    "3218"
+   ],
+   "sign_zh": [
+    "3175",
+    "3197",
+    "3218"
+   ]
+  },
+  {
+   "id": "l2g12_117",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-28: 3238 + 41 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-28：3238 + 41（林间）？",
+   "choices": [
+    "3279",
+    "3258",
+    "3259"
+   ],
+   "choices_zh": [
+    "3279",
+    "3258",
+    "3259"
+   ],
+   "answer": 0,
+   "explain_en": "=3279.",
+   "explain_zh": "=3279。",
+   "level": 2,
+   "sign_en": [
+    "3279",
+    "3258",
+    "3259"
+   ],
+   "sign_zh": [
+    "3279",
+    "3258",
+    "3259"
+   ]
+  },
+  {
+   "id": "l2g12_118",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-29: 3239 + 42 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-29：3239 + 42（林间）？",
+   "choices": [
+    "3266",
+    "3281",
+    "3300"
+   ],
+   "choices_zh": [
+    "3266",
+    "3281",
+    "3300"
+   ],
+   "answer": 1,
+   "explain_en": "=3281.",
+   "explain_zh": "=3281。",
+   "level": 2,
+   "sign_en": [
+    "3266",
+    "3281",
+    "3300"
+   ],
+   "sign_zh": [
+    "3266",
+    "3281",
+    "3300"
+   ]
+  },
+  {
+   "id": "l2g12_119",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-30: 3240 - 43 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-30：3240 − 43（林间）？",
+   "choices": [
+    "3197",
+    "3219",
+    "3215"
+   ],
+   "choices_zh": [
+    "3197",
+    "3219",
+    "3215"
+   ],
+   "answer": 0,
+   "explain_en": "=3197.",
+   "explain_zh": "=3197。",
+   "level": 2,
+   "sign_en": [
+    "3197",
+    "3219",
+    "3215"
+   ],
+   "sign_zh": [
+    "3197",
+    "3219",
+    "3215"
+   ]
+  },
+  {
+   "id": "l2g12_120",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Night ride calc #12-1-forest_fork-31: 3241 + 44 (forest trail)?",
+   "q_zh": "夜骑计算 #12-1-forest_fork-31：3241 + 44（林间）？",
+   "choices": [
+    "3275",
+    "3293",
+    "3285"
+   ],
+   "choices_zh": [
+    "3275",
+    "3293",
+    "3285"
+   ],
+   "answer": 2,
+   "explain_en": "=3285.",
+   "explain_zh": "=3285。",
+   "level": 2,
+   "sign_en": [
+    "3275",
+    "3293",
+    "3285"
+   ],
+   "sign_zh": [
+    "3275",
+    "3293",
+    "3285"
+   ]
+  }
+ ]
+}

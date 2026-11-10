@@ -1,0 +1,3290 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 7,
+ "version": 1,
+ "fields": "seawall ≤4 choices; forest_fork ≤3 + sign_en/sign_zh; {name}=player",
+ "questions": [
+  {
+   "id": "l2g7_001",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Flamingo",
+    "Canada goose",
+    "Ostrich",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "火烈鸟",
+    "加拿大鹅",
+    "鸵鸟",
+    "企鹅"
+   ],
+   "answer": 1,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_002",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At night",
+    "At noon",
+    "Only in winter",
+    "Never"
+   ],
+   "choices_zh": [
+    "晚上",
+    "中午",
+    "只在冬天",
+    "从来不"
+   ],
+   "answer": 0,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_003",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Paper maps",
+    "Echolocation",
+    "Smell only",
+    "Flashlights"
+   ],
+   "choices_zh": [
+    "纸质地图",
+    "回声定位",
+    "只靠嗅觉",
+    "手电筒"
+   ],
+   "answer": 1,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_004",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Insects",
+    "Birds",
+    "Fish",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "鸟",
+    "鱼",
+    "哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_005",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Ostrich",
+    "Penguin",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "鸵鸟",
+    "企鹅",
+    "火烈鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_006",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Baobab",
+    "Palm tree",
+    "Cactus",
+    "Western red cedar"
+   ],
+   "choices_zh": [
+    "猴面包树",
+    "棕榈树",
+    "仙人掌",
+    "西部红雪松"
+   ],
+   "answer": 3,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_007",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Lay eggs / spawn",
+    "Find candy",
+    "Learn to fly",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "产卵",
+    "找糖",
+    "学飞",
+    "冬眠"
+   ],
+   "answer": 0,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_008",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "45°",
+    "90°",
+    "270°",
+    "720°"
+   ],
+   "choices_zh": [
+    "45°",
+    "90°",
+    "大约 270°",
+    "720°"
+   ],
+   "answer": 2,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_009",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Wind turbines",
+    "Earthquakes only",
+    "Street lights",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "风力发电机",
+    "只因为地震",
+    "路灯",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_010",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Decomposers (fungi, insects, microbes)",
+    "Sunscreen",
+    "Traffic",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "分解者（真菌、昆虫、微生物）",
+    "防晒霜",
+    "车流",
+    "磁铁"
+   ],
+   "answer": 0,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_011",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Fish",
+    "Birds",
+    "Insects",
+    "Marine mammals"
+   ],
+   "choices_zh": [
+    "鱼",
+    "鸟",
+    "昆虫",
+    "海洋哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_012",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Growing antlers",
+    "Flying south",
+    "Building dams and lodges with wood",
+    "Laying swan eggs"
+   ],
+   "choices_zh": [
+    "长鹿角",
+    "飞去南方",
+    "用木头筑坝和巢穴",
+    "下天鹅蛋"
+   ],
+   "answer": 2,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_013",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Fish",
+    "Bird",
+    "Mammal",
+    "Reptile"
+   ],
+   "choices_zh": [
+    "鱼",
+    "鸟类",
+    "哺乳动物",
+    "爬行动物"
+   ],
+   "answer": 1,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_014",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "4",
+    "10",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "10",
+    "8",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_015",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Taste colours",
+    "Sense objects with sound echoes",
+    "Stop rain",
+    "Make candy"
+   ],
+   "choices_zh": [
+    "品尝颜色",
+    "用回声感知物体",
+    "让雨停下",
+    "做糖果"
+   ],
+   "answer": 1,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_016",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "6",
+    "8",
+    "2",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "2",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_017",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Making plastic",
+    "Providing habitat and holding soil",
+    "Erasing tides",
+    "Stopping the Moon"
+   ],
+   "choices_zh": [
+    "制造塑料",
+    "提供栖息地并固定土壤",
+    "消除潮汐",
+    "挡住月亮"
+   ],
+   "answer": 1,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_018",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Fungi / mushrooms",
+    "Sun only",
+    "Bicycle",
+    "Asphalt"
+   ],
+   "choices_zh": [
+    "真菌/蘑菇",
+    "只有太阳",
+    "自行车",
+    "沥青"
+   ],
+   "answer": 0,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_019",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1950",
+    "1888",
+    "1776",
+    "2001"
+   ],
+   "choices_zh": [
+    "1950",
+    "1888",
+    "1776",
+    "2001"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_020",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Olympic torch",
+    "World Cup",
+    "Stanley Cup",
+    "Grey Cup"
+   ],
+   "choices_zh": [
+    "奥运火炬",
+    "世界杯",
+    "斯坦利杯",
+    "格雷杯"
+   ],
+   "answer": 2,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_021",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Bigger",
+    "The same",
+    "Much smaller",
+    "Half the size"
+   ],
+   "choices_zh": [
+    "更大",
+    "一样大",
+    "小很多",
+    "只有一半大"
+   ],
+   "answer": 0,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_022",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "choices_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ],
+   "answer": 2,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "level": 2,
+   "sign_en": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "sign_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ]
+  },
+  {
+   "id": "l2g7_023",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Golden Gate",
+    "Tower Bridge",
+    "Port Mann",
+    "Lions Gate Bridge"
+   ],
+   "choices_zh": [
+    "金门大桥",
+    "塔桥",
+    "福特曼桥",
+    "狮门大桥"
+   ],
+   "answer": 3,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_024",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "午夜",
+    "晚上 9 点"
+   ],
+   "answer": 2,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "level": 2,
+   "sign_en": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "sign_zh": [
+    "晚上 6 点",
+    "午夜",
+    "晚上 9 点"
+   ]
+  },
+  {
+   "id": "l2g7_025",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)",
+    "Plastic"
+   ],
+   "choices_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）",
+    "塑料"
+   ],
+   "answer": 2,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_026",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "50 km",
+    "About 9 km",
+    "1 km"
+   ],
+   "choices_zh": [
+    "50 公里",
+    "大约 9 公里",
+    "1 公里"
+   ],
+   "answer": 1,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "level": 2,
+   "sign_en": [
+    "50 km",
+    "About 9 km",
+    "1 km"
+   ],
+   "sign_zh": [
+    "50 公里",
+    "大约 9 公里",
+    "1 公里"
+   ]
+  },
+  {
+   "id": "l2g7_027",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "One way (counter-clockwise)",
+    "Only at night",
+    "Any direction",
+    "Walking only on bikes"
+   ],
+   "choices_zh": [
+    "单向（逆时针）",
+    "只在夜里",
+    "任意方向",
+    "骑车却只能走"
+   ],
+   "answer": 0,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_028",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A Vancouver waterfront / harbour area",
+    "A desert",
+    "A volcano crater"
+   ],
+   "choices_zh": [
+    "温哥华滨水港湾区",
+    "沙漠",
+    "火山口"
+   ],
+   "answer": 0,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。",
+   "level": 2,
+   "sign_en": [
+    "A Vancouver waterfront / harbour area",
+    "A desert",
+    "A volcano crater"
+   ],
+   "sign_zh": [
+    "温哥华滨水港湾区",
+    "沙漠",
+    "火山口"
+   ]
+  },
+  {
+   "id": "l2g7_029",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "Beavers",
+    "A desert dune",
+    "Swans as the only animals",
+    "A subway under the lake"
+   ],
+   "choices_zh": [
+    "河狸",
+    "一座沙丘",
+    "只有天鹅",
+    "湖底地铁"
+   ],
+   "answer": 0,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_030",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "July 1",
+    "December 25",
+    "October 31"
+   ],
+   "choices_zh": [
+    "7 月 1 日",
+    "12 月 25 日",
+    "10 月 31 日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "level": 2,
+   "sign_en": [
+    "July 1",
+    "December 25",
+    "October 31"
+   ],
+   "sign_zh": [
+    "7 月 1 日",
+    "12 月 25 日",
+    "10 月 31 日"
+   ]
+  },
+  {
+   "id": "l2g7_031",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "An underground mall only",
+    "An airport",
+    "A desert highway",
+    "Cedar / forest trails"
+   ],
+   "choices_zh": [
+    "只有地下商场",
+    "机场",
+    "沙漠公路",
+    "雪松/林间小道"
+   ],
+   "answer": 3,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_032",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Close your eyes",
+    "Sprint through",
+    "Slow down and watch for people"
+   ],
+   "choices_zh": [
+    "闭眼",
+    "冲过去",
+    "减速并注意行人"
+   ],
+   "answer": 2,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "level": 2,
+   "sign_en": [
+    "Close your eyes",
+    "Sprint through",
+    "Slow down and watch for people"
+   ],
+   "sign_zh": [
+    "闭眼",
+    "冲过去",
+    "减速并注意行人"
+   ]
+  },
+  {
+   "id": "l2g7_033",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "No lights ever",
+    "Skating shoes",
+    "A helmet (it's the law)",
+    "A cape only"
+   ],
+   "choices_zh": [
+    "永远不用灯",
+    "溜冰鞋",
+    "戴头盔（法律规定）",
+    "只要披风"
+   ],
+   "answer": 2,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_034",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "choices_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ],
+   "answer": 2,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "level": 2,
+   "sign_en": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "sign_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ]
+  },
+  {
+   "id": "l2g7_035",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Feed them candy",
+    "Scare them loudly",
+    "Chase them",
+    "Slow down and give them space"
+   ],
+   "choices_zh": [
+    "喂糖",
+    "大声吓它们",
+    "去追",
+    "减速并留出空间"
+   ],
+   "answer": 3,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_036",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "Bike lights and brakes",
+    "The Moon's password",
+    "Only your socks colour"
+   ],
+   "choices_zh": [
+    "车灯和刹车",
+    "月亮密码",
+    "只看袜子颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "level": 2,
+   "sign_en": [
+    "Bike lights and brakes",
+    "The Moon's password",
+    "Only your socks colour"
+   ],
+   "sign_zh": [
+    "车灯和刹车",
+    "月亮密码",
+    "只看袜子颜色"
+   ]
+  },
+  {
+   "id": "l2g7_037",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Rock",
+    "Watermelon only",
+    "Pumpkin",
+    "Ice block"
+   ],
+   "choices_zh": [
+    "石头",
+    "只有西瓜",
+    "南瓜",
+    "冰块"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_038",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Sand",
+    "Water",
+    "Metal"
+   ],
+   "choices_zh": [
+    "沙子",
+    "水",
+    "金属"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "level": 2,
+   "sign_en": [
+    "Sand",
+    "Water",
+    "Metal"
+   ],
+   "sign_zh": [
+    "沙子",
+    "水",
+    "金属"
+   ]
+  },
+  {
+   "id": "l2g7_039",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Turnips / root vegetables",
+    "Pineapples",
+    "Glass",
+    "Coconuts"
+   ],
+   "choices_zh": [
+    "芜菁等根菜",
+    "菠萝",
+    "玻璃",
+    "椰子"
+   ],
+   "answer": 0,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_040",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "7 days",
+    "365 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "7 天",
+    "365 天",
+    "约 29.5 天"
+   ],
+   "answer": 2,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "level": 2,
+   "sign_en": [
+    "7 days",
+    "365 days",
+    "29.5 days"
+   ],
+   "sign_zh": [
+    "7 天",
+    "365 天",
+    "约 29.5 天"
+   ]
+  },
+  {
+   "id": "l2g7_041",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Canada Day only",
+    "Tax day",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "只有加拿大日",
+    "报税日",
+    "万圣节",
+    "感恩节烹饪课"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_042",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "Up a tree",
+    "In the water"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "树上",
+    "在水里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "level": 2,
+   "sign_en": [
+    "In the snow",
+    "Up a tree",
+    "In the water"
+   ],
+   "sign_zh": [
+    "雪地里",
+    "树上",
+    "在水里"
+   ]
+  },
+  {
+   "id": "l2g7_043",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Candy",
+    "Insects",
+    "Grass and plants",
+    "Fish"
+   ],
+   "choices_zh": [
+    "糖果",
+    "昆虫",
+    "草和植物",
+    "鱼"
+   ],
+   "answer": 2,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_044",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "level": 2,
+   "sign_en": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "sign_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "l2g7_045",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "South America",
+    "The North Pole",
+    "Africa",
+    "Australia"
+   ],
+   "choices_zh": [
+    "南美洲",
+    "北极",
+    "非洲",
+    "澳大利亚"
+   ],
+   "answer": 0,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_046",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Yes",
+    "No",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "有",
+    "没有",
+    "只在冬天有"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "level": 2,
+   "sign_en": [
+    "Yes",
+    "No",
+    "Only in winter"
+   ],
+   "sign_zh": [
+    "有",
+    "没有",
+    "只在冬天有"
+   ]
+  },
+  {
+   "id": "l2g7_047",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Flyers",
+    "Swimmers",
+    "Tunnel diggers",
+    "Climbers"
+   ],
+   "choices_zh": [
+    "飞翔",
+    "游泳",
+    "挖隧道",
+    "爬树"
+   ],
+   "answer": 1,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_048",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Flock",
+    "Herd",
+    "School"
+   ],
+   "choices_zh": [
+    "鸟群",
+    "一群",
+    "鱼群"
+   ],
+   "answer": 1,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "level": 2,
+   "sign_en": [
+    "Flock",
+    "Herd",
+    "School"
+   ],
+   "sign_zh": [
+    "鸟群",
+    "一群",
+    "鱼群"
+   ]
+  },
+  {
+   "id": "l2g7_049",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Goose",
+    "Beaver",
+    "Capybara",
+    "Raccoon"
+   ],
+   "choices_zh": [
+    "鹅",
+    "河狸",
+    "水豚",
+    "浣熊"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_050",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Lion roars",
+    "Cute squeaks / clicks",
+    "Only hisses"
+   ],
+   "choices_zh": [
+    "狮子吼",
+    "可爱的吱吱/咔嗒声",
+    "只会嘶嘶"
+   ],
+   "answer": 1,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "level": 2,
+   "sign_en": [
+    "Lion roars",
+    "Cute squeaks / clicks",
+    "Only hisses"
+   ],
+   "sign_zh": [
+    "狮子吼",
+    "可爱的吱吱/咔嗒声",
+    "只会嘶嘶"
+   ]
+  },
+  {
+   "id": "l2g7_051",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Lives only on ice",
+    "Eats only fish",
+    "Is a bird",
+    "Has no flat paddle tail"
+   ],
+   "choices_zh": [
+    "只住在冰上",
+    "只吃鱼",
+    "是鸟",
+    "没有扁平的桨状尾巴"
+   ],
+   "answer": 3,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_052",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a food chain, plants are usually…",
+   "q_zh": "食物链里植物通常是……",
+   "choices": [
+    "Decomposers only",
+    "Producers",
+    "Top predators only"
+   ],
+   "choices_zh": [
+    "只是分解者",
+    "生产者",
+    "只是顶级捕食者"
+   ],
+   "answer": 1,
+   "explain_en": "Plants produce energy from sunlight.",
+   "explain_zh": "植物通过阳光制造能量。",
+   "level": 2,
+   "sign_en": [
+    "Decomposers only",
+    "Producers",
+    "Top predators only"
+   ],
+   "sign_zh": [
+    "只是分解者",
+    "生产者",
+    "只是顶级捕食者"
+   ]
+  },
+  {
+   "id": "l2g7_053",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you push a bike harder, its acceleration usually…",
+   "q_zh": "如果你更用力推自行车，它的加速度通常会……",
+   "choices": [
+    "Always become zero",
+    "Stop friction forever",
+    "Reverse gravity",
+    "Increase"
+   ],
+   "choices_zh": [
+    "总是变成零",
+    "永远消除摩擦",
+    "反转重力",
+    "增大"
+   ],
+   "answer": 3,
+   "explain_en": "Larger net force → larger acceleration.",
+   "explain_zh": "合力越大，加速度越大。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_054",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose eating grass is acting as a…",
+   "q_zh": "加拿大鹅吃草时扮演……",
+   "choices": [
+    "Consumer (herbivore)",
+    "Rock",
+    "Producer"
+   ],
+   "choices_zh": [
+    "消费者（食草）",
+    "石头",
+    "生产者"
+   ],
+   "answer": 0,
+   "explain_en": "Animals that eat plants are consumers.",
+   "explain_zh": "吃植物的动物是消费者。",
+   "level": 2,
+   "sign_en": [
+    "Consumer (herbivore)",
+    "Rock",
+    "Producer"
+   ],
+   "sign_zh": [
+    "消费者（食草）",
+    "石头",
+    "生产者"
+   ]
+  },
+  {
+   "id": "l2g7_055",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water changing from liquid to gas is…",
+   "q_zh": "水从液体变成气体叫……",
+   "choices": [
+    "Melting rock",
+    "Freezing",
+    "Evaporation",
+    "Only condensation"
+   ],
+   "choices_zh": [
+    "融化石头",
+    "结冰",
+    "蒸发",
+    "只是凝结"
+   ],
+   "answer": 2,
+   "explain_en": "Evaporation turns liquid into vapour.",
+   "explain_zh": "蒸发把液态变成气态。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_056",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is a habitat for beavers because it has…",
+   "q_zh": "迷失湖适合河狸，因为有……",
+   "choices": [
+    "A desert dune",
+    "Only dry sand",
+    "Fresh water and woody plants"
+   ],
+   "choices_zh": [
+    "一座沙丘",
+    "只有干沙",
+    "淡水和木质植物"
+   ],
+   "answer": 2,
+   "explain_en": "Beavers need water and trees.",
+   "explain_zh": "河狸需要水和树。",
+   "level": 2,
+   "sign_en": [
+    "A desert dune",
+    "Only dry sand",
+    "Fresh water and woody plants"
+   ],
+   "sign_zh": [
+    "一座沙丘",
+    "只有干沙",
+    "淡水和木质植物"
+   ]
+  },
+  {
+   "id": "l2g7_057",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A percent is a ratio out of…",
+   "q_zh": "百分数是多少做分母的比？",
+   "choices": [
+    "2",
+    "100",
+    "10",
+    "1000"
+   ],
+   "choices_zh": [
+    "2",
+    "100",
+    "10",
+    "1000"
+   ],
+   "answer": 1,
+   "explain_en": "Percent means per hundred.",
+   "explain_zh": "百分即每百。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_058",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Friction on a wet seawall path usually…",
+   "q_zh": "潮湿海堤上的摩擦力通常会……",
+   "choices": [
+    "Decrease (more slip)",
+    "Create gold",
+    "Summon lightning"
+   ],
+   "choices_zh": [
+    "减小（更滑）",
+    "制造金子",
+    "召唤闪电"
+   ],
+   "answer": 0,
+   "explain_en": "Wet surfaces often reduce grip.",
+   "explain_zh": "潮湿常让抓地变差。",
+   "level": 2,
+   "sign_en": [
+    "Decrease (more slip)",
+    "Create gold",
+    "Summon lightning"
+   ],
+   "sign_zh": [
+    "减小（更滑）",
+    "制造金子",
+    "召唤闪电"
+   ]
+  },
+  {
+   "id": "l2g7_059",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 4:8. If 12 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=4:8。有 12 只加拿大鹅，鸭子？",
+   "choices": [
+    "26",
+    "24",
+    "21",
+    "22"
+   ],
+   "choices_zh": [
+    "26",
+    "24",
+    "21",
+    "22"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=24.",
+   "explain_zh": "鸭子=24。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_060",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 64 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 64 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "29",
+    "22",
+    "25",
+    "28"
+   ],
+   "choices_zh": [
+    "29",
+    "22",
+    "25",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_061",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 7:8. If 21 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=7:8。有 21 只加拿大鹅，鸭子？",
+   "choices": [
+    "21",
+    "27",
+    "25",
+    "24"
+   ],
+   "choices_zh": [
+    "21",
+    "27",
+    "25",
+    "24"
+   ],
+   "answer": 3,
+   "explain_en": "ducks=24.",
+   "explain_zh": "鸭子=24。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_062",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:2. If 18 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:2。有 18 只加拿大鹅，鸭子？",
+   "choices": [
+    "2",
+    "4",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "6",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=4.",
+   "explain_zh": "鸭子=4。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_063",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 140 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 140 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "64",
+    "49",
+    "48",
+    "56"
+   ],
+   "choices_zh": [
+    "64",
+    "49",
+    "48",
+    "56"
+   ],
+   "answer": 3,
+   "explain_en": "=56.",
+   "explain_zh": "=56。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_064",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10% of 186 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 186 名骑行者中 10% 戴头盔，几人？",
+   "choices": [
+    "19",
+    "15",
+    "17",
+    "18"
+   ],
+   "choices_zh": [
+    "19",
+    "15",
+    "17",
+    "18"
+   ],
+   "answer": 3,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_065",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 8:9. If 40 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=8:9。有 40 只加拿大鹅，鸭子？",
+   "choices": [
+    "55",
+    "45",
+    "56",
+    "53"
+   ],
+   "choices_zh": [
+    "55",
+    "45",
+    "56",
+    "53"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=45.",
+   "explain_zh": "鸭子=45。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_066",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 7:7. If 28 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=7:7。有 28 只加拿大鹅，鸭子？",
+   "choices": [
+    "28",
+    "35",
+    "30",
+    "34"
+   ],
+   "choices_zh": [
+    "28",
+    "35",
+    "30",
+    "34"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=28.",
+   "explain_zh": "鸭子=28。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_067",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 159 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 159 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "33",
+    "39",
+    "37",
+    "46"
+   ],
+   "choices_zh": [
+    "33",
+    "39",
+    "37",
+    "46"
+   ],
+   "answer": 1,
+   "explain_en": "=39.",
+   "explain_zh": "=39。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_068",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 3:9. If 12 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=3:9。有 12 只加拿大鹅，鸭子？",
+   "choices": [
+    "32",
+    "28",
+    "33",
+    "36"
+   ],
+   "choices_zh": [
+    "32",
+    "28",
+    "33",
+    "36"
+   ],
+   "answer": 3,
+   "explain_en": "ducks=36.",
+   "explain_zh": "鸭子=36。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_069",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 6:2. If 12 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=6:2。有 12 只加拿大鹅，鸭子？",
+   "choices": [
+    "7",
+    "4",
+    "2",
+    "1"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "2",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=4.",
+   "explain_zh": "鸭子=4。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_070",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:8. If 10 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:8。有 10 只加拿大鹅，鸭子？",
+   "choices": [
+    "40",
+    "30",
+    "31",
+    "35"
+   ],
+   "choices_zh": [
+    "40",
+    "30",
+    "31",
+    "35"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=40.",
+   "explain_zh": "鸭子=40。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_071",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 113 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 113 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "19",
+    "14",
+    "16",
+    "11"
+   ],
+   "choices_zh": [
+    "19",
+    "14",
+    "16",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=16.",
+   "explain_zh": "=16。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_072",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 189 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 189 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "37",
+    "48",
+    "44",
+    "47"
+   ],
+   "choices_zh": [
+    "37",
+    "48",
+    "44",
+    "47"
+   ],
+   "answer": 3,
+   "explain_en": "=47.",
+   "explain_zh": "=47。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_073",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 4:9. If 20 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=4:9。有 20 只加拿大鹅，鸭子？",
+   "choices": [
+    "34",
+    "45",
+    "37",
+    "52"
+   ],
+   "choices_zh": [
+    "34",
+    "45",
+    "37",
+    "52"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=45.",
+   "explain_zh": "鸭子=45。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_074",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 74 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 74 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "29",
+    "25",
+    "27",
+    "33"
+   ],
+   "choices_zh": [
+    "29",
+    "25",
+    "27",
+    "33"
+   ],
+   "answer": 0,
+   "explain_en": "=29.",
+   "explain_zh": "=29。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_075",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 5:5. If 10 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=5:5。有 10 只加拿大鹅，鸭子？",
+   "choices": [
+    "13",
+    "9",
+    "7",
+    "10"
+   ],
+   "choices_zh": [
+    "13",
+    "9",
+    "7",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "ducks=10.",
+   "explain_zh": "鸭子=10。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_076",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 94 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 94 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "18",
+    "12",
+    "10",
+    "14"
+   ],
+   "choices_zh": [
+    "18",
+    "12",
+    "10",
+    "14"
+   ],
+   "answer": 3,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_077",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:9. If 27 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:9。有 27 只加拿大鹅，鸭子？",
+   "choices": [
+    "28",
+    "30",
+    "27",
+    "29"
+   ],
+   "choices_zh": [
+    "28",
+    "30",
+    "27",
+    "29"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=27.",
+   "explain_zh": "鸭子=27。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_078",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 136 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 136 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "40",
+    "42",
+    "26",
+    "34"
+   ],
+   "choices_zh": [
+    "40",
+    "42",
+    "26",
+    "34"
+   ],
+   "answer": 3,
+   "explain_en": "=34.",
+   "explain_zh": "=34。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_079",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 4:3. If 12 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=4:3。有 12 只加拿大鹅，鸭子？",
+   "choices": [
+    "12",
+    "10",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "9",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=9.",
+   "explain_zh": "鸭子=9。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_080",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 8:6. If 16 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=8:6。有 16 只加拿大鹅，鸭子？",
+   "choices": [
+    "13",
+    "11",
+    "12",
+    "9"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "12",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=12.",
+   "explain_zh": "鸭子=12。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_081",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:6. If 45 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:6。有 45 只加拿大鹅，鸭子？",
+   "choices": [
+    "30",
+    "27",
+    "26",
+    "25"
+   ],
+   "choices_zh": [
+    "30",
+    "27",
+    "26",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=30.",
+   "explain_zh": "鸭子=30。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_082",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:7. If 10 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:7。有 10 只加拿大鹅，鸭子？",
+   "choices": [
+    "27",
+    "34",
+    "35",
+    "30"
+   ],
+   "choices_zh": [
+    "27",
+    "34",
+    "35",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=35.",
+   "explain_zh": "鸭子=35。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_083",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 177 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 177 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "26",
+    "30",
+    "23",
+    "33"
+   ],
+   "choices_zh": [
+    "26",
+    "30",
+    "23",
+    "33"
+   ],
+   "answer": 0,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_084",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:8. If 45 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:8。有 45 只加拿大鹅，鸭子？",
+   "choices": [
+    "34",
+    "49",
+    "40",
+    "31"
+   ],
+   "choices_zh": [
+    "34",
+    "49",
+    "40",
+    "31"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=40.",
+   "explain_zh": "鸭子=40。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_085",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10% of 103 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 103 名骑行者中 10% 戴头盔，几人？",
+   "choices": [
+    "11",
+    "10",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "6",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_086",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:3. If 4 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:3。有 4 只加拿大鹅，鸭子？",
+   "choices": [
+    "3",
+    "4",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "9",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "ducks=6.",
+   "explain_zh": "鸭子=6。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_087",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20% of 59 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 59 名骑行者中 20% 戴头盔，几人？",
+   "choices": [
+    "9",
+    "11",
+    "14",
+    "13"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "14",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_088",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 174 riders on the seawall wear helmets. How many?",
+   "q_zh": "在海堤上 174 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "46",
+    "51",
+    "43",
+    "33"
+   ],
+   "choices_zh": [
+    "46",
+    "51",
+    "43",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "=43.",
+   "explain_zh": "=43。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_089",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:4. If 8 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:4。有 8 只加拿大鹅，鸭子？",
+   "choices": [
+    "20",
+    "16",
+    "19",
+    "13"
+   ],
+   "choices_zh": [
+    "20",
+    "16",
+    "19",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=16.",
+   "explain_zh": "鸭子=16。",
+   "level": 2
+  },
+  {
+   "id": "l2g7_090",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10% of 49 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 49 名骑行者中 10% 戴头盔，几人？",
+   "choices": [
+    "4",
+    "3",
+    "7"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "level": 2,
+   "sign_en": [
+    "4",
+    "3",
+    "7"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "l2g7_091",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "10% of 54 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 54 名骑行者中 10% 戴头盔，几人？",
+   "choices": [
+    "5",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "level": 2,
+   "sign_en": [
+    "5",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "5",
+    "8",
+    "6"
+   ]
+  },
+  {
+   "id": "l2g7_092",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 148 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 148 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "26",
+    "22",
+    "17"
+   ],
+   "choices_zh": [
+    "26",
+    "22",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "level": 2,
+   "sign_en": [
+    "26",
+    "22",
+    "17"
+   ],
+   "sign_zh": [
+    "26",
+    "22",
+    "17"
+   ]
+  },
+  {
+   "id": "l2g7_093",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 128 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 128 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "23",
+    "16",
+    "19"
+   ],
+   "choices_zh": [
+    "23",
+    "16",
+    "19"
+   ],
+   "answer": 2,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "level": 2,
+   "sign_en": [
+    "23",
+    "16",
+    "19"
+   ],
+   "sign_zh": [
+    "23",
+    "16",
+    "19"
+   ]
+  },
+  {
+   "id": "l2g7_094",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:8. If 18 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:8。有 18 只加拿大鹅，鸭子？",
+   "choices": [
+    "13",
+    "16",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "16",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=16.",
+   "explain_zh": "鸭子=16。",
+   "level": 2,
+   "sign_en": [
+    "13",
+    "16",
+    "15"
+   ],
+   "sign_zh": [
+    "13",
+    "16",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g7_095",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 3:4. If 6 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=3:4。有 6 只加拿大鹅，鸭子？",
+   "choices": [
+    "8",
+    "11",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "11",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=8.",
+   "explain_zh": "鸭子=8。",
+   "level": 2,
+   "sign_en": [
+    "8",
+    "11",
+    "7"
+   ],
+   "sign_zh": [
+    "8",
+    "11",
+    "7"
+   ]
+  },
+  {
+   "id": "l2g7_096",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 45 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 45 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "11",
+    "14",
+    "15"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2,
+   "sign_en": [
+    "11",
+    "14",
+    "15"
+   ],
+   "sign_zh": [
+    "11",
+    "14",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g7_097",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 59 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 59 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "12",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "13",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "level": 2,
+   "sign_en": [
+    "12",
+    "13",
+    "14"
+   ],
+   "sign_zh": [
+    "12",
+    "13",
+    "14"
+   ]
+  },
+  {
+   "id": "l2g7_098",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 44 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 44 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "4",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "level": 2,
+   "sign_en": [
+    "4",
+    "6",
+    "9"
+   ],
+   "sign_zh": [
+    "4",
+    "6",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g7_099",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:3. If 10 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:3。有 10 只加拿大鹅，鸭子？",
+   "choices": [
+    "15",
+    "16",
+    "10"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=15.",
+   "explain_zh": "鸭子=15。",
+   "level": 2,
+   "sign_en": [
+    "15",
+    "16",
+    "10"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g7_100",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20% of 131 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 131 名骑行者中 20% 戴头盔，几人？",
+   "choices": [
+    "28",
+    "26",
+    "19"
+   ],
+   "choices_zh": [
+    "28",
+    "26",
+    "19"
+   ],
+   "answer": 1,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "level": 2,
+   "sign_en": [
+    "28",
+    "26",
+    "19"
+   ],
+   "sign_zh": [
+    "28",
+    "26",
+    "19"
+   ]
+  },
+  {
+   "id": "l2g7_101",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 95 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 95 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "41",
+    "38",
+    "31"
+   ],
+   "choices_zh": [
+    "41",
+    "38",
+    "31"
+   ],
+   "answer": 1,
+   "explain_en": "=38.",
+   "explain_zh": "=38。",
+   "level": 2,
+   "sign_en": [
+    "41",
+    "38",
+    "31"
+   ],
+   "sign_zh": [
+    "41",
+    "38",
+    "31"
+   ]
+  },
+  {
+   "id": "l2g7_102",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 8:6. If 24 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=8:6。有 24 只加拿大鹅，鸭子？",
+   "choices": [
+    "18",
+    "22",
+    "20"
+   ],
+   "choices_zh": [
+    "18",
+    "22",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=18.",
+   "explain_zh": "鸭子=18。",
+   "level": 2,
+   "sign_en": [
+    "18",
+    "22",
+    "20"
+   ],
+   "sign_zh": [
+    "18",
+    "22",
+    "20"
+   ]
+  },
+  {
+   "id": "l2g7_103",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:3. If 36 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:3。有 36 只加拿大鹅，鸭子？",
+   "choices": [
+    "14",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "14",
+    "15",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=12.",
+   "explain_zh": "鸭子=12。",
+   "level": 2,
+   "sign_en": [
+    "14",
+    "15",
+    "12"
+   ],
+   "sign_zh": [
+    "14",
+    "15",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g7_104",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 3:8. If 6 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=3:8。有 6 只加拿大鹅，鸭子？",
+   "choices": [
+    "16",
+    "11",
+    "19"
+   ],
+   "choices_zh": [
+    "16",
+    "11",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=16.",
+   "explain_zh": "鸭子=16。",
+   "level": 2,
+   "sign_en": [
+    "16",
+    "11",
+    "19"
+   ],
+   "sign_zh": [
+    "16",
+    "11",
+    "19"
+   ]
+  },
+  {
+   "id": "l2g7_105",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:9. If 10 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:9。有 10 只加拿大鹅，鸭子？",
+   "choices": [
+    "49",
+    "45",
+    "38"
+   ],
+   "choices_zh": [
+    "49",
+    "45",
+    "38"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=45.",
+   "explain_zh": "鸭子=45。",
+   "level": 2,
+   "sign_en": [
+    "49",
+    "45",
+    "38"
+   ],
+   "sign_zh": [
+    "49",
+    "45",
+    "38"
+   ]
+  },
+  {
+   "id": "l2g7_106",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 8:5. If 16 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=8:5。有 16 只加拿大鹅，鸭子？",
+   "choices": [
+    "11",
+    "14",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=10.",
+   "explain_zh": "鸭子=10。",
+   "level": 2,
+   "sign_en": [
+    "11",
+    "14",
+    "10"
+   ],
+   "sign_zh": [
+    "11",
+    "14",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g7_107",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20% of 133 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 133 名骑行者中 20% 戴头盔，几人？",
+   "choices": [
+    "25",
+    "28",
+    "26"
+   ],
+   "choices_zh": [
+    "25",
+    "28",
+    "26"
+   ],
+   "answer": 2,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "level": 2,
+   "sign_en": [
+    "25",
+    "28",
+    "26"
+   ],
+   "sign_zh": [
+    "25",
+    "28",
+    "26"
+   ]
+  },
+  {
+   "id": "l2g7_108",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 8:2. If 32 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=8:2。有 32 只加拿大鹅，鸭子？",
+   "choices": [
+    "5",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=8.",
+   "explain_zh": "鸭子=8。",
+   "level": 2,
+   "sign_en": [
+    "5",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "5",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "l2g7_109",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 64 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 64 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "6",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "level": 2,
+   "sign_en": [
+    "6",
+    "8",
+    "9"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g7_110",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 2:2. If 4 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=2:2。有 4 只加拿大鹅，鸭子？",
+   "choices": [
+    "4",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "2",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "ducks=4.",
+   "explain_zh": "鸭子=4。",
+   "level": 2,
+   "sign_en": [
+    "4",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "4",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "l2g7_111",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 65 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 65 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "9",
+    "8",
+    "12"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "level": 2,
+   "sign_en": [
+    "9",
+    "8",
+    "12"
+   ],
+   "sign_zh": [
+    "9",
+    "8",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g7_112",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20% of 165 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 165 名骑行者中 20% 戴头盔，几人？",
+   "choices": [
+    "27",
+    "33",
+    "41"
+   ],
+   "choices_zh": [
+    "27",
+    "33",
+    "41"
+   ],
+   "answer": 1,
+   "explain_en": "=33.",
+   "explain_zh": "=33。",
+   "level": 2,
+   "sign_en": [
+    "27",
+    "33",
+    "41"
+   ],
+   "sign_zh": [
+    "27",
+    "33",
+    "41"
+   ]
+  },
+  {
+   "id": "l2g7_113",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "15% of 149 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 149 名骑行者中 15% 戴头盔，几人？",
+   "choices": [
+    "22",
+    "26",
+    "24"
+   ],
+   "choices_zh": [
+    "22",
+    "26",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "level": 2,
+   "sign_en": [
+    "22",
+    "26",
+    "24"
+   ],
+   "sign_zh": [
+    "22",
+    "26",
+    "24"
+   ]
+  },
+  {
+   "id": "l2g7_114",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 9:2. If 45 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=9:2。有 45 只加拿大鹅，鸭子？",
+   "choices": [
+    "13",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "10",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=10.",
+   "explain_zh": "鸭子=10。",
+   "level": 2,
+   "sign_en": [
+    "13",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "13",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g7_115",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 149 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 149 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "54",
+    "52",
+    "59"
+   ],
+   "choices_zh": [
+    "54",
+    "52",
+    "59"
+   ],
+   "answer": 2,
+   "explain_en": "=59.",
+   "explain_zh": "=59。",
+   "level": 2,
+   "sign_en": [
+    "54",
+    "52",
+    "59"
+   ],
+   "sign_zh": [
+    "54",
+    "52",
+    "59"
+   ]
+  },
+  {
+   "id": "l2g7_116",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 7:5. If 35 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=7:5。有 35 只加拿大鹅，鸭子？",
+   "choices": [
+    "19",
+    "23",
+    "25"
+   ],
+   "choices_zh": [
+    "19",
+    "23",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "ducks=25.",
+   "explain_zh": "鸭子=25。",
+   "level": 2,
+   "sign_en": [
+    "19",
+    "23",
+    "25"
+   ],
+   "sign_zh": [
+    "19",
+    "23",
+    "25"
+   ]
+  },
+  {
+   "id": "l2g7_117",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Canada geese:ducks = 4:3. If 20 Canada geese, ducks?",
+   "q_zh": "加拿大鹅:鸭=4:3。有 20 只加拿大鹅，鸭子？",
+   "choices": [
+    "10",
+    "15",
+    "14"
+   ],
+   "choices_zh": [
+    "10",
+    "15",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "ducks=15.",
+   "explain_zh": "鸭子=15。",
+   "level": 2,
+   "sign_en": [
+    "10",
+    "15",
+    "14"
+   ],
+   "sign_zh": [
+    "10",
+    "15",
+    "14"
+   ]
+  },
+  {
+   "id": "l2g7_118",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "20% of 95 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 95 名骑行者中 20% 戴头盔，几人？",
+   "choices": [
+    "19",
+    "16",
+    "20"
+   ],
+   "choices_zh": [
+    "19",
+    "16",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "=19.",
+   "explain_zh": "=19。",
+   "level": 2,
+   "sign_en": [
+    "19",
+    "16",
+    "20"
+   ],
+   "sign_zh": [
+    "19",
+    "16",
+    "20"
+   ]
+  },
+  {
+   "id": "l2g7_119",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "25% of 114 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 114 名骑行者中 25% 戴头盔，几人？",
+   "choices": [
+    "28",
+    "25",
+    "21"
+   ],
+   "choices_zh": [
+    "28",
+    "25",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "level": 2,
+   "sign_en": [
+    "28",
+    "25",
+    "21"
+   ],
+   "sign_zh": [
+    "28",
+    "25",
+    "21"
+   ]
+  },
+  {
+   "id": "l2g7_120",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "40% of 82 riders on the forest trail wear helmets. How many?",
+   "q_zh": "在林间小路上 82 名骑行者中 40% 戴头盔，几人？",
+   "choices": [
+    "35",
+    "32",
+    "30"
+   ],
+   "choices_zh": [
+    "35",
+    "32",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "level": 2,
+   "sign_en": [
+    "35",
+    "32",
+    "30"
+   ],
+   "sign_zh": [
+    "35",
+    "32",
+    "30"
+   ]
+  }
+ ]
+}
