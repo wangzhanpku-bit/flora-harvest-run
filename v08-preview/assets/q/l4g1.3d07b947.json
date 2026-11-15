@@ -1,0 +1,2746 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 1,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g1_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I have a beard but I am not a grandpa. I say \"baa\" and I love to eat grass. What am I?",
+   "q_zh": "灯谜：有胡子，不是爷爷，“咩咩”叫，爱吃青草。打一动物，是什么？",
+   "choices": [
+    "A goat",
+    "A cat",
+    "A duck",
+    "A pig"
+   ],
+   "choices_zh": [
+    "羊",
+    "猫",
+    "鸭子",
+    "猪"
+   ],
+   "answer": 0,
+   "explain_en": "A goat has a beard, says \"baa\" and eats grass.",
+   "explain_zh": "羊有胡子，咩咩叫，爱吃草。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g1_002",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "5 pigeons sit on a hutong roof and 3 more land. How many pigeons now?",
+   "q_zh": "胡同屋顶上有 5 只鸽子，又飞来 3 只，现在有几只？",
+   "choices": [
+    "8",
+    "9",
+    "10",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "10",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "5 + 3 = 8.",
+   "explain_zh": "5 + 3 = 8。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 10 red envelopes and Bara has 6. How many more does Flora have?",
+   "q_zh": "Flora 有 10 个红包，Bara 有 6 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "16",
+    "4",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "16",
+    "4",
+    "5",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "10 - 6 = 4.",
+   "explain_zh": "10 - 6 = 4。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_004",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "18 pigeons are on the roof. 9 fly away. How many stay?",
+   "q_zh": "屋顶上有 18 只鸽子，飞走了 9 只，还剩几只？",
+   "choices": [
+    "10",
+    "8",
+    "27",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "27",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "18 - 9 = 9.",
+   "explain_zh": "18 - 9 = 9。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_005",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "At Spring Festival, children often get money in a ____ envelope.",
+   "q_zh": "过年时，孩子们常收到装着压岁钱的____信封。",
+   "choices": [
+    "white",
+    "black",
+    "grey",
+    "red"
+   ],
+   "choices_zh": [
+    "白色",
+    "黑色",
+    "灰色",
+    "红色"
+   ],
+   "answer": 3,
+   "explain_en": "Red stands for luck, so New Year money goes in red envelopes.",
+   "explain_zh": "红色代表吉利，压岁钱装在红包里。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g1_006",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "One lantern, two ____.",
+   "q_zh": "英文填空：one lantern，two ____。",
+   "choices": [
+    "lanternes",
+    "lanternies",
+    "lantern",
+    "lanterns"
+   ],
+   "choices_zh": [
+    "lanternes",
+    "lanternies",
+    "lantern",
+    "lanterns"
+   ],
+   "answer": 3,
+   "explain_en": "Add -s to make the plural: lanterns.",
+   "explain_zh": "复数加 -s：lanterns。",
+   "qtype": "lang_word_form",
+   "qtype_zh": "词形（过去式/复数/合成词）"
+  },
+  {
+   "id": "l4g1_007",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A tricycle has ____ wheels.",
+   "q_zh": "三轮车有几个轮子？",
+   "choices": [
+    "5",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "5 个",
+    "2 个",
+    "3 个"
+   ],
+   "answer": 2,
+   "explain_en": "Tri- means three.",
+   "explain_zh": "三轮车有三个轮子。",
+   "sign_en": [
+    "5",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "5 个",
+    "2 个",
+    "3 个"
+   ],
+   "qtype": "simple_machines",
+   "qtype_zh": "简单机械（轮子/链条/齿轮）"
+  },
+  {
+   "id": "l4g1_008",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "How many animals are in the Chinese zodiac?",
+   "q_zh": "中国的十二生肖一共有几种动物？",
+   "choices": [
+    "10",
+    "24",
+    "12",
+    "7"
+   ],
+   "choices_zh": [
+    "10",
+    "24",
+    "12",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "There are 12 zodiac animals.",
+   "explain_zh": "生肖一共有 12 种动物。",
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g1_009",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tanghulu stall sells 6 sticks in the morning and 3 in the afternoon. How many sticks in all?",
+   "q_zh": "糖葫芦摊上午卖了 6 串，下午卖了 3 串，一共卖了几串？",
+   "choices": [
+    "8",
+    "9",
+    "11",
+    "3"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "11",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "6 + 3 = 9.",
+   "explain_zh": "6 + 3 = 9。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_010",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "20 pigeons are on the roof. 9 fly away. How many stay?",
+   "q_zh": "屋顶上有 20 只鸽子，飞走了 9 只，还剩几只？",
+   "choices": [
+    "11",
+    "29",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "11",
+    "29",
+    "10",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "20 - 9 = 11.",
+   "explain_zh": "20 - 9 = 11。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_011",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "The Rat, the Ox, then the ____.",
+   "q_zh": "生肖顺序：鼠、牛，然后是____。",
+   "choices": [
+    "Cat",
+    "Tiger",
+    "Duck"
+   ],
+   "choices_zh": [
+    "猫",
+    "虎",
+    "鸭"
+   ],
+   "answer": 1,
+   "explain_en": "The order begins Rat, Ox, Tiger, Rabbit.",
+   "explain_zh": "顺序开头是鼠、牛、虎、兔。",
+   "sign_en": [
+    "Cat",
+    "Tiger",
+    "Duck"
+   ],
+   "sign_zh": [
+    "猫",
+    "虎",
+    "鸭"
+   ],
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g1_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 3 bundles of 10 red envelopes and 9 single ones. How many red envelopes is that?",
+   "q_zh": "{name} 有 3 捆红包（每捆 10 个）和 9 个散的，一共多少个？",
+   "choices": [
+    "93",
+    "49",
+    "39",
+    "40"
+   ],
+   "choices_zh": [
+    "93",
+    "49",
+    "39",
+    "40"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 10 + 9 = 39.",
+   "explain_zh": "3 × 10 + 9 = 39。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_013",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 1 bundles of 10 red envelopes and 1 single ones. How many red envelopes is that?",
+   "q_zh": "Flora 有 1 捆红包（每捆 10 个）和 1 个散的，一共多少个？",
+   "choices": [
+    "21",
+    "11",
+    "12",
+    "2"
+   ],
+   "choices_zh": [
+    "21",
+    "11",
+    "12",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "1 × 10 + 1 = 11.",
+   "explain_zh": "1 × 10 + 1 = 11。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 10 red lanterns, then 7 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 10 个红灯笼，又挂了 7 个，现在一共几个？",
+   "choices": [
+    "17",
+    "16",
+    "18",
+    "3"
+   ],
+   "choices_zh": [
+    "17",
+    "16",
+    "18",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "10 + 7 = 17.",
+   "explain_zh": "10 + 7 = 17。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_015",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 9 red envelopes from Grandma and 4 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 9 个红包，从爷爷那儿收到 4 个，一共几个？",
+   "choices": [
+    "13",
+    "15",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "15",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "9 + 4 = 13.",
+   "explain_zh": "9 + 4 = 13。",
+   "sign_en": [
+    "13",
+    "15",
+    "12"
+   ],
+   "sign_zh": [
+    "13",
+    "15",
+    "12"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_016",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 14 red envelopes and Bara has 9. How many more does Flora have?",
+   "q_zh": "Flora 有 14 个红包，Bara 有 9 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "4",
+    "23",
+    "8",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "23",
+    "8",
+    "5"
+   ],
+   "answer": 3,
+   "explain_en": "14 - 9 = 5.",
+   "explain_zh": "14 - 9 = 5。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_017",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 1 bundles of 10 red envelopes and 8 single ones. How many red envelopes is that?",
+   "q_zh": "Flora 有 1 捆红包（每捆 10 个）和 8 个散的，一共多少个？",
+   "choices": [
+    "9",
+    "19",
+    "81",
+    "18"
+   ],
+   "choices_zh": [
+    "9",
+    "19",
+    "81",
+    "18"
+   ],
+   "answer": 3,
+   "explain_en": "1 × 10 + 8 = 18.",
+   "explain_zh": "1 × 10 + 8 = 18。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_018",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tricycle carries 18 bags of New Year goods. A bike carries 15. How many more bags on the tricycle?",
+   "q_zh": "三轮车装了 18 袋年货，自行车装了 15 袋，三轮车多装几袋？",
+   "choices": [
+    "6",
+    "2",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "18 - 15 = 3.",
+   "explain_zh": "18 - 15 = 3。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_019",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: Two brothers, the same height, always go into the bowl together. What are they?",
+   "q_zh": "灯谜：兄弟两个一样高，吃饭总是一起到碗里。打一物，是什么？",
+   "choices": [
+    "Chopsticks",
+    "Shoes",
+    "Mittens",
+    "Socks"
+   ],
+   "choices_zh": [
+    "筷子",
+    "鞋子",
+    "手套",
+    "袜子"
+   ],
+   "answer": 0,
+   "explain_en": "Chopsticks come in pairs and go into the bowl together.",
+   "explain_zh": "筷子两根一样长，一起伸进碗里。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g1_020",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 6, 10, 14. What number comes next?",
+   "q_zh": "胡同门牌号是 6、10、14，下一个是几？",
+   "choices": [
+    "22",
+    "18",
+    "17"
+   ],
+   "choices_zh": [
+    "22",
+    "18",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "14 + 4 = 18.",
+   "explain_zh": "14 + 4 = 18。",
+   "sign_en": [
+    "22",
+    "18",
+    "17"
+   ],
+   "sign_zh": [
+    "22",
+    "18",
+    "17"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_021",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "16 pigeons are on the roof. 4 fly away. How many stay?",
+   "q_zh": "屋顶上有 16 只鸽子，飞走了 4 只，还剩几只？",
+   "choices": [
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "16 - 4 = 12.",
+   "explain_zh": "16 - 4 = 12。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_022",
+   "level": 4,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Who should light firecrackers?",
+   "q_zh": "谁应该点鞭炮？",
+   "choices": [
+    "Anyone, indoors",
+    "A grown-up, far from people",
+    "Nobody watching",
+    "A small child alone"
+   ],
+   "choices_zh": [
+    "随便谁，在屋里",
+    "大人，在远离人群的地方",
+    "没人看着的时候",
+    "小朋友自己"
+   ],
+   "answer": 1,
+   "explain_en": "Firecrackers are dangerous; adults light them in a safe open place.",
+   "explain_zh": "鞭炮危险，要由大人在空旷安全的地方点。",
+   "qtype": "fire_safety",
+   "qtype_zh": "烟花爆竹安全"
+  },
+  {
+   "id": "l4g1_023",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Measure word: 一____灯笼 (one lantern)?",
+   "q_zh": "量词：一____灯笼？",
+   "choices": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "choices_zh": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "answer": 0,
+   "explain_en": "Lamps and lanterns use 盏.",
+   "explain_zh": "灯和灯笼可以用“盏”。",
+   "sign_en": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "sign_zh": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "qtype": "zh_measure_word",
+   "qtype_zh": "中文量词"
+  },
+  {
+   "id": "l4g1_024",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "The big lake in the Summer Palace is ____.",
+   "q_zh": "颐和园里的大湖叫____。",
+   "choices": [
+    "Kunming Lake",
+    "West Lake",
+    "Lake Erie"
+   ],
+   "choices_zh": [
+    "昆明湖",
+    "西湖",
+    "伊利湖"
+   ],
+   "answer": 0,
+   "explain_en": "The Summer Palace lake is Kunming Lake.",
+   "explain_zh": "颐和园的湖是昆明湖。",
+   "sign_en": [
+    "Kunming Lake",
+    "West Lake",
+    "Lake Erie"
+   ],
+   "sign_zh": [
+    "昆明湖",
+    "西湖",
+    "伊利湖"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g1_025",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 11 dumplings on the plate. The family eats 3. How many are left?",
+   "q_zh": "盘子里有 11 个饺子，一家人吃了 3 个，还剩几个？",
+   "choices": [
+    "8",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "11 - 3 = 8.",
+   "explain_zh": "11 - 3 = 8。",
+   "sign_en": [
+    "8",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "8",
+    "7",
+    "9"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "9 pigeons are on the roof. 3 fly away. How many stay?",
+   "q_zh": "屋顶上有 9 只鸽子，飞走了 3 只，还剩几只？",
+   "choices": [
+    "8",
+    "7",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "5",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "9 - 3 = 6.",
+   "explain_zh": "9 - 3 = 6。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_027",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} hangs 7 red lanterns, then 2 more. How many lanterns now?",
+   "q_zh": "{name} 先挂了 7 个红灯笼，又挂了 2 个，现在一共几个？",
+   "choices": [
+    "8",
+    "11",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "11",
+    "10",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "7 + 2 = 9.",
+   "explain_zh": "7 + 2 = 9。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_028",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 8 red envelopes from Grandma and 3 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 8 个红包，从爷爷那儿收到 3 个，一共几个？",
+   "choices": [
+    "5",
+    "10",
+    "12",
+    "11"
+   ],
+   "choices_zh": [
+    "5",
+    "10",
+    "12",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "8 + 3 = 11.",
+   "explain_zh": "8 + 3 = 11。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_029",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 10, 14, 18. What is the next number?",
+   "q_zh": "灯谜的编号是 10、14、18，下一个编号是几？",
+   "choices": [
+    "22",
+    "19",
+    "23"
+   ],
+   "choices_zh": [
+    "22",
+    "19",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "18 + 4 = 22.",
+   "explain_zh": "18 + 4 = 22。",
+   "sign_en": [
+    "22",
+    "19",
+    "23"
+   ],
+   "sign_zh": [
+    "22",
+    "19",
+    "23"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_030",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 2 red envelopes from Grandma and 2 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 2 个红包，从爷爷那儿收到 2 个，一共几个？",
+   "choices": [
+    "6",
+    "4",
+    "3",
+    "5"
+   ],
+   "choices_zh": [
+    "6",
+    "4",
+    "3",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "2 + 2 = 4.",
+   "explain_zh": "2 + 2 = 4。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_031",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I am water, but in winter you can stand on me on Kunming Lake. What am I?",
+   "q_zh": "灯谜：我本来是水，冬天在昆明湖上却能站人。打一物，是什么？",
+   "choices": [
+    "Ice",
+    "Steam",
+    "Sand",
+    "Rain"
+   ],
+   "choices_zh": [
+    "冰",
+    "水蒸气",
+    "沙子",
+    "雨"
+   ],
+   "answer": 0,
+   "explain_en": "When water freezes it becomes ice, which can hold you up.",
+   "explain_zh": "水结冰变成冰面，就能站人。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g1_032",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "18 pigeons are on the roof. 14 fly away. How many stay?",
+   "q_zh": "屋顶上有 18 只鸽子，飞走了 14 只，还剩几只？",
+   "choices": [
+    "4",
+    "32",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "32",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "18 - 14 = 4.",
+   "explain_zh": "18 - 14 = 4。",
+   "sign_en": [
+    "4",
+    "32",
+    "5"
+   ],
+   "sign_zh": [
+    "4",
+    "32",
+    "5"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_033",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tanghulu stall sells 10 sticks in the morning and 2 in the afternoon. How many sticks in all?",
+   "q_zh": "糖葫芦摊上午卖了 10 串，下午卖了 2 串，一共卖了几串？",
+   "choices": [
+    "11",
+    "14",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "11",
+    "14",
+    "12",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "10 + 2 = 12.",
+   "explain_zh": "10 + 2 = 12。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_034",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "Beijing roast duck is a famous ____.",
+   "q_zh": "北京烤鸭是有名的____。",
+   "choices": [
+    "bridge",
+    "song",
+    "food"
+   ],
+   "choices_zh": [
+    "桥",
+    "歌",
+    "美食"
+   ],
+   "answer": 2,
+   "explain_en": "Peking roast duck is a famous dish.",
+   "explain_zh": "北京烤鸭是一道名菜。",
+   "sign_en": [
+    "bridge",
+    "song",
+    "food"
+   ],
+   "sign_zh": [
+    "桥",
+    "歌",
+    "美食"
+   ],
+   "qtype": "beijing_food_life",
+   "qtype_zh": "老北京吃食与生活（糖葫芦/鸽哨/烤鸭）"
+  },
+  {
+   "id": "l4g1_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In a very cold Beijing winter, the water of Kunming Lake turns into ____.",
+   "q_zh": "北京很冷的冬天，昆明湖的湖水会变成____。",
+   "choices": [
+    "sand",
+    "juice",
+    "ice",
+    "steam"
+   ],
+   "choices_zh": [
+    "沙子",
+    "果汁",
+    "冰",
+    "水蒸气"
+   ],
+   "answer": 2,
+   "explain_en": "Water freezes into ice when it is cold enough.",
+   "explain_zh": "天够冷时水会结成冰。",
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l4g1_036",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 13 sticks of tanghulu and sells 6. How many sticks are left?",
+   "q_zh": "小摊有 13 串糖葫芦，卖出 6 串，还剩几串？",
+   "choices": [
+    "7",
+    "19",
+    "9"
+   ],
+   "choices_zh": [
+    "7",
+    "19",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "13 - 6 = 7.",
+   "explain_zh": "13 - 6 = 7。",
+   "sign_en": [
+    "7",
+    "19",
+    "9"
+   ],
+   "sign_zh": [
+    "7",
+    "19",
+    "9"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_037",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "One hutong door has 16 lanterns, another has 6. How many more on the first door?",
+   "q_zh": "一家门口挂了 16 个灯笼，另一家挂了 6 个，第一家多几个？",
+   "choices": [
+    "10",
+    "9",
+    "11",
+    "22"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "11",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "16 - 6 = 10.",
+   "explain_zh": "16 - 6 = 10。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_038",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Ice is water that has ____.",
+   "q_zh": "冰是____的水。",
+   "choices": [
+    "boiled",
+    "dried up",
+    "frozen"
+   ],
+   "choices_zh": [
+    "烧开了",
+    "晒干了",
+    "冻住了"
+   ],
+   "answer": 2,
+   "explain_en": "Frozen water is ice.",
+   "explain_zh": "水冻住了就是冰。",
+   "sign_en": [
+    "boiled",
+    "dried up",
+    "frozen"
+   ],
+   "sign_zh": [
+    "烧开了",
+    "晒干了",
+    "冻住了"
+   ],
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l4g1_039",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 3, 5, 7. What is the next number?",
+   "q_zh": "灯谜的编号是 3、5、7，下一个编号是几？",
+   "choices": [
+    "8",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "7 + 2 = 9.",
+   "explain_zh": "7 + 2 = 9。",
+   "sign_en": [
+    "8",
+    "9",
+    "11"
+   ],
+   "sign_zh": [
+    "8",
+    "9",
+    "11"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_040",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 11, 14, 17. What number comes next?",
+   "q_zh": "胡同门牌号是 11、14、17，下一个是几？",
+   "choices": [
+    "20",
+    "23",
+    "18"
+   ],
+   "choices_zh": [
+    "20",
+    "23",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "17 + 3 = 20.",
+   "explain_zh": "17 + 3 = 20。",
+   "sign_en": [
+    "20",
+    "23",
+    "18"
+   ],
+   "sign_zh": [
+    "20",
+    "23",
+    "18"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 4 bundles of 10 red envelopes and 1 single ones. How many red envelopes is that?",
+   "q_zh": "{name} 有 4 捆红包（每捆 10 个）和 1 个散的，一共多少个？",
+   "choices": [
+    "51",
+    "42",
+    "41",
+    "14"
+   ],
+   "choices_zh": [
+    "51",
+    "42",
+    "41",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 10 + 1 = 41.",
+   "explain_zh": "4 × 10 + 1 = 41。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_042",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 6 bundles of 10 red envelopes and 6 single ones. How many red envelopes is that?",
+   "q_zh": "Flora 有 6 捆红包（每捆 10 个）和 6 个散的，一共多少个？",
+   "choices": [
+    "12",
+    "76",
+    "67",
+    "66"
+   ],
+   "choices_zh": [
+    "12",
+    "76",
+    "67",
+    "66"
+   ],
+   "answer": 3,
+   "explain_en": "6 × 10 + 6 = 66.",
+   "explain_zh": "6 × 10 + 6 = 66。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "One hutong door has 20 lanterns, another has 18. How many more on the first door?",
+   "q_zh": "一家门口挂了 20 个灯笼，另一家挂了 18 个，第一家多几个？",
+   "choices": [
+    "38",
+    "1",
+    "2",
+    "5"
+   ],
+   "choices_zh": [
+    "38",
+    "1",
+    "2",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "20 - 18 = 2.",
+   "explain_zh": "20 - 18 = 2。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_044",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 2, 4, 6. What is the next number?",
+   "q_zh": "灯谜的编号是 2、4、6，下一个编号是几？",
+   "choices": [
+    "9",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "6 + 2 = 8.",
+   "explain_zh": "6 + 2 = 8。",
+   "sign_en": [
+    "9",
+    "10",
+    "8"
+   ],
+   "sign_zh": [
+    "9",
+    "10",
+    "8"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_045",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 10 red envelopes and Bara has 8. How many more does Flora have?",
+   "q_zh": "Flora 有 10 个红包，Bara 有 8 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "1",
+    "3",
+    "5",
+    "2"
+   ],
+   "choices_zh": [
+    "1",
+    "3",
+    "5",
+    "2"
+   ],
+   "answer": 3,
+   "explain_en": "10 - 8 = 2.",
+   "explain_zh": "10 - 8 = 2。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_046",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 4, 9, 14. What is the next number?",
+   "q_zh": "灯谜的编号是 4、9、14，下一个编号是几？",
+   "choices": [
+    "15",
+    "19",
+    "20"
+   ],
+   "choices_zh": [
+    "15",
+    "19",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "14 + 5 = 19.",
+   "explain_zh": "14 + 5 = 19。",
+   "sign_en": [
+    "15",
+    "19",
+    "20"
+   ],
+   "sign_zh": [
+    "15",
+    "19",
+    "20"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "Beijing is the capital city of which country?",
+   "q_zh": "北京是哪个国家的首都？",
+   "choices": [
+    "Japan",
+    "France",
+    "China",
+    "Canada"
+   ],
+   "choices_zh": [
+    "日本",
+    "法国",
+    "中国",
+    "加拿大"
+   ],
+   "answer": 2,
+   "explain_en": "Beijing is the capital of China.",
+   "explain_zh": "北京是中国的首都。",
+   "qtype": "beijing_landmark",
+   "qtype_zh": "北京地标（天安门/金水桥/华表）"
+  },
+  {
+   "id": "l4g1_048",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Firecrackers are loud. Cover your ____.",
+   "q_zh": "鞭炮很响，要捂住____。",
+   "choices": [
+    "knees",
+    "elbows",
+    "ears"
+   ],
+   "choices_zh": [
+    "膝盖",
+    "胳膊肘",
+    "耳朵"
+   ],
+   "answer": 2,
+   "explain_en": "Covering your ears protects your hearing.",
+   "explain_zh": "捂住耳朵保护听力。",
+   "sign_en": [
+    "knees",
+    "elbows",
+    "ears"
+   ],
+   "sign_zh": [
+    "膝盖",
+    "胳膊肘",
+    "耳朵"
+   ],
+   "qtype": "fire_safety",
+   "qtype_zh": "烟花爆竹安全"
+  },
+  {
+   "id": "l4g1_049",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "One hutong door has 20 lanterns, another has 7. How many more on the first door?",
+   "q_zh": "一家门口挂了 20 个灯笼，另一家挂了 7 个，第一家多几个？",
+   "choices": [
+    "16",
+    "14",
+    "13",
+    "27"
+   ],
+   "choices_zh": [
+    "16",
+    "14",
+    "13",
+    "27"
+   ],
+   "answer": 2,
+   "explain_en": "20 - 7 = 13.",
+   "explain_zh": "20 - 7 = 13。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_050",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I wear a red crown but I am not a king. Every morning I wake everyone up. What am I?",
+   "q_zh": "灯谜：头戴红帽不是王，每天早上叫人起床。打一动物，是什么？",
+   "choices": [
+    "A pigeon",
+    "A goat",
+    "A rooster",
+    "A rabbit"
+   ],
+   "choices_zh": [
+    "鸽子",
+    "羊",
+    "公鸡",
+    "兔子"
+   ],
+   "answer": 2,
+   "explain_en": "A rooster has a red comb and crows in the morning.",
+   "explain_zh": "公鸡头上有红鸡冠，早上打鸣。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g1_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "In summer, a big pagoda tree in the hutong gives people cool ____.",
+   "q_zh": "夏天，胡同里的大槐树给人们带来凉快的____。",
+   "choices": [
+    "snow",
+    "shade",
+    "ice",
+    "rain"
+   ],
+   "choices_zh": [
+    "雪",
+    "树荫",
+    "冰",
+    "雨"
+   ],
+   "answer": 1,
+   "explain_en": "Tree leaves block sunlight and make shade.",
+   "explain_zh": "树叶挡住阳光，形成树荫。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l4g1_052",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 4 red lanterns, then 2 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 4 个红灯笼，又挂了 2 个，现在一共几个？",
+   "choices": [
+    "7",
+    "6",
+    "5",
+    "2"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "5",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "4 + 2 = 6.",
+   "explain_zh": "4 + 2 = 6。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_053",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 7 red lanterns, then 7 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 7 个红灯笼，又挂了 7 个，现在一共几个？",
+   "choices": [
+    "14",
+    "16",
+    "13"
+   ],
+   "choices_zh": [
+    "14",
+    "16",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "7 + 7 = 14.",
+   "explain_zh": "7 + 7 = 14。",
+   "sign_en": [
+    "14",
+    "16",
+    "13"
+   ],
+   "sign_zh": [
+    "14",
+    "16",
+    "13"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_054",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "What does 春 mean in English?",
+   "q_zh": "「春」的英文意思是？",
+   "choices": [
+    "snow",
+    "spring",
+    "summer"
+   ],
+   "choices_zh": [
+    "snow",
+    "spring",
+    "summer"
+   ],
+   "answer": 1,
+   "explain_en": "春 means spring, as in 春节 Spring Festival.",
+   "explain_zh": "春就是 spring，春节就是 Spring Festival。",
+   "sign_en": [
+    "snow",
+    "spring",
+    "summer"
+   ],
+   "sign_zh": [
+    "snow",
+    "spring",
+    "summer"
+   ],
+   "qtype": "zh_character",
+   "qtype_zh": "汉字字义"
+  },
+  {
+   "id": "l4g1_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} hangs 8 red lanterns, then 8 more. How many lanterns now?",
+   "q_zh": "{name} 先挂了 8 个红灯笼，又挂了 8 个，现在一共几个？",
+   "choices": [
+    "16",
+    "17",
+    "15",
+    "18"
+   ],
+   "choices_zh": [
+    "16",
+    "17",
+    "15",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "8 + 8 = 16.",
+   "explain_zh": "8 + 8 = 16。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_056",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spring Festival comes in late winter. In Beijing the weather then is usually ____.",
+   "q_zh": "春节在冬末，这时北京的天气通常____。",
+   "choices": [
+    "very hot",
+    "like summer",
+    "cold",
+    "good for swimming outdoors"
+   ],
+   "choices_zh": [
+    "很热",
+    "像夏天",
+    "很冷",
+    "适合户外游泳"
+   ],
+   "answer": 2,
+   "explain_en": "Beijing is cold in January and February.",
+   "explain_zh": "一二月的北京很冷。",
+   "qtype": "earth_sun_seasons",
+   "qtype_zh": "太阳与四季"
+  },
+  {
+   "id": "l4g1_057",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 14 sticks of tanghulu and sells 11. How many sticks are left?",
+   "q_zh": "小摊有 14 串糖葫芦，卖出 11 串，还剩几串？",
+   "choices": [
+    "25",
+    "3",
+    "2"
+   ],
+   "choices_zh": [
+    "25",
+    "3",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "14 - 11 = 3.",
+   "explain_zh": "14 - 11 = 3。",
+   "sign_en": [
+    "25",
+    "3",
+    "2"
+   ],
+   "sign_zh": [
+    "25",
+    "3",
+    "2"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_058",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: Small and red, I am given at New Year with a smile. Open me and find lucky money. What am I?",
+   "q_zh": "灯谜：小小红纸袋，过年笑着送，打开有压岁钱。打一物，是什么？",
+   "choices": [
+    "A paper cup",
+    "A kite",
+    "A red envelope",
+    "A letter"
+   ],
+   "choices_zh": [
+    "纸杯",
+    "风筝",
+    "红包",
+    "信"
+   ],
+   "answer": 2,
+   "explain_en": "A red envelope holds New Year money.",
+   "explain_zh": "红包里装着压岁钱。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g1_059",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 6 red lanterns, then 5 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 6 个红灯笼，又挂了 5 个，现在一共几个？",
+   "choices": [
+    "1",
+    "12",
+    "13",
+    "11"
+   ],
+   "choices_zh": [
+    "1",
+    "12",
+    "13",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "6 + 5 = 11.",
+   "explain_zh": "6 + 5 = 11。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 10 sticks of tanghulu and sells 4. How many sticks are left?",
+   "q_zh": "小摊有 10 串糖葫芦，卖出 4 串，还剩几串？",
+   "choices": [
+    "14",
+    "6",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "14",
+    "6",
+    "7",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "10 - 4 = 6.",
+   "explain_zh": "10 - 4 = 6。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_061",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 12 paper-cut window flowers and sticks 5 on the window. How many are still in the box?",
+   "q_zh": "Flora 有 12 张窗花，往窗上贴了 5 张，盒子里还剩几张？",
+   "choices": [
+    "17",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "17",
+    "9",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "12 - 5 = 7.",
+   "explain_zh": "12 - 5 = 7。",
+   "sign_en": [
+    "17",
+    "9",
+    "7"
+   ],
+   "sign_zh": [
+    "17",
+    "9",
+    "7"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_062",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 20 paper-cut window flowers and sticks 17 on the window. How many are still in the box?",
+   "q_zh": "Flora 有 20 张窗花，往窗上贴了 17 张，盒子里还剩几张？",
+   "choices": [
+    "3",
+    "2",
+    "4",
+    "37"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "4",
+    "37"
+   ],
+   "answer": 0,
+   "explain_en": "20 - 17 = 3.",
+   "explain_zh": "20 - 17 = 3。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: Red and round, I hang by the gate. At night I glow for the New Year. What am I?",
+   "q_zh": "灯谜：红红圆圆挂门旁，过年夜里亮堂堂。打一物，是什么？",
+   "choices": [
+    "A kite",
+    "A red lantern",
+    "A drum",
+    "An umbrella"
+   ],
+   "choices_zh": [
+    "风筝",
+    "红灯笼",
+    "鼓",
+    "雨伞"
+   ],
+   "answer": 1,
+   "explain_en": "A red lantern hangs by the gate and glows at night.",
+   "explain_zh": "红灯笼挂在门旁，晚上会发光。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g1_064",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 2 bundles of 10 red envelopes and 8 single ones. How many red envelopes is that?",
+   "q_zh": "Flora 有 2 捆红包（每捆 10 个）和 8 个散的，一共多少个？",
+   "choices": [
+    "28",
+    "10",
+    "29",
+    "38"
+   ],
+   "choices_zh": [
+    "28",
+    "10",
+    "29",
+    "38"
+   ],
+   "answer": 0,
+   "explain_en": "2 × 10 + 8 = 28.",
+   "explain_zh": "2 × 10 + 8 = 28。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_065",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which is a Beijing city tree?",
+   "q_zh": "哪种树是北京的市树？",
+   "choices": [
+    "Palm tree",
+    "Cactus",
+    "Pagoda tree"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "仙人掌",
+    "国槐"
+   ],
+   "answer": 2,
+   "explain_en": "Beijing's city trees are the pagoda tree and the arborvitae.",
+   "explain_zh": "北京的市树是国槐和侧柏。",
+   "sign_en": [
+    "Palm tree",
+    "Cactus",
+    "Pagoda tree"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "仙人掌",
+    "国槐"
+   ],
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l4g1_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Pigeons flying over the hutong are ____.",
+   "q_zh": "在胡同上空飞的鸽子属于____。",
+   "choices": [
+    "insects",
+    "frogs",
+    "fish",
+    "birds"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "蛙类",
+    "鱼类",
+    "鸟类"
+   ],
+   "answer": 3,
+   "explain_en": "Pigeons have feathers and wings: they are birds.",
+   "explain_zh": "鸽子有羽毛和翅膀，是鸟。",
+   "qtype": "animal_facts",
+   "qtype_zh": "动物常识（种类/习性）"
+  },
+  {
+   "id": "l4g1_067",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 10 red envelopes from Grandma and 9 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 10 个红包，从爷爷那儿收到 9 个，一共几个？",
+   "choices": [
+    "19",
+    "18",
+    "21",
+    "20"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "21",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "10 + 9 = 19.",
+   "explain_zh": "10 + 9 = 19。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "An old Beijing pigeon whistle makes music when ____.",
+   "q_zh": "老北京的鸽哨什么时候会响？",
+   "choices": [
+    "it is left in a box",
+    "the pigeon flies and wind blows through it",
+    "the pigeon is asleep",
+    "it is put in water"
+   ],
+   "choices_zh": [
+    "放在盒子里时",
+    "鸽子飞起来、风吹过鸽哨时",
+    "鸽子睡觉时",
+    "泡在水里时"
+   ],
+   "answer": 1,
+   "explain_en": "Moving air blowing through the whistle makes the sound.",
+   "explain_zh": "鸽子飞时风吹过鸽哨，就会响。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（鸽哨/烟花）"
+  },
+  {
+   "id": "l4g1_069",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 15 dumplings on the plate. The family eats 9. How many are left?",
+   "q_zh": "盘子里有 15 个饺子，一家人吃了 9 个，还剩几个？",
+   "choices": [
+    "8",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "15 - 9 = 6.",
+   "explain_zh": "15 - 9 = 6。",
+   "sign_en": [
+    "8",
+    "6",
+    "5"
+   ],
+   "sign_zh": [
+    "8",
+    "6",
+    "5"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_070",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 19 paper-cut window flowers and sticks 10 on the window. How many are still in the box?",
+   "q_zh": "Flora 有 19 张窗花，往窗上贴了 10 张，盒子里还剩几张？",
+   "choices": [
+    "29",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "29",
+    "10",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "19 - 10 = 9.",
+   "explain_zh": "19 - 10 = 9。",
+   "sign_en": [
+    "29",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "29",
+    "10",
+    "9"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "When you ride a tricycle on the street, you should ____.",
+   "q_zh": "在街上骑三轮车，应该____。",
+   "choices": [
+    "let go of the handlebars",
+    "ride in the middle of the cars",
+    "ride with your eyes closed",
+    "keep to the side and watch for cars"
+   ],
+   "choices_zh": [
+    "松开车把",
+    "在车流中间骑",
+    "闭着眼睛骑",
+    "靠边骑、注意车辆"
+   ],
+   "answer": 3,
+   "explain_en": "Keep to the side and watch the traffic.",
+   "explain_zh": "靠边骑，留意来往车辆。",
+   "qtype": "road_safety",
+   "qtype_zh": "骑车与交通安全"
+  },
+  {
+   "id": "l4g1_072",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "On New Year's Eve, what do many families in northern China make and eat together?",
+   "q_zh": "除夕夜，中国北方很多家庭会一起包、一起吃什么？",
+   "choices": [
+    "Popcorn",
+    "Pizza",
+    "Hot dogs",
+    "Dumplings"
+   ],
+   "choices_zh": [
+    "爆米花",
+    "比萨",
+    "热狗",
+    "饺子"
+   ],
+   "answer": 3,
+   "explain_en": "Making dumplings together is a northern New Year's Eve custom.",
+   "explain_zh": "北方除夕有一家人一起包饺子的习俗。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g1_073",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 10, 15, 20. What number comes next?",
+   "q_zh": "胡同门牌号是 10、15、20，下一个是几？",
+   "choices": [
+    "24",
+    "21",
+    "25"
+   ],
+   "choices_zh": [
+    "24",
+    "21",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "20 + 5 = 25.",
+   "explain_zh": "20 + 5 = 25。",
+   "sign_en": [
+    "24",
+    "21",
+    "25"
+   ],
+   "sign_zh": [
+    "24",
+    "21",
+    "25"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_074",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 9 dumplings on the plate. The family eats 7. How many are left?",
+   "q_zh": "盘子里有 9 个饺子，一家人吃了 7 个，还剩几个？",
+   "choices": [
+    "2",
+    "4",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "9 - 7 = 2.",
+   "explain_zh": "9 - 7 = 2。",
+   "sign_en": [
+    "2",
+    "4",
+    "1"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "1"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_075",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I have three wheels and a bell. Bara sits in my basket. What am I?",
+   "q_zh": "灯谜：三个轮子一个铃，Bara 坐在车斗里。打一交通工具，是什么？",
+   "choices": [
+    "A bus",
+    "A bicycle",
+    "A tricycle",
+    "A train"
+   ],
+   "choices_zh": [
+    "公交车",
+    "自行车",
+    "三轮车",
+    "火车"
+   ],
+   "answer": 2,
+   "explain_en": "Three wheels and a basket: a tricycle.",
+   "explain_zh": "三个轮子还带车斗，是三轮车。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g1_076",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 7 red envelopes from Grandma and 5 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 7 个红包，从爷爷那儿收到 5 个，一共几个？",
+   "choices": [
+    "14",
+    "2",
+    "13",
+    "12"
+   ],
+   "choices_zh": [
+    "14",
+    "2",
+    "13",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "7 + 5 = 12.",
+   "explain_zh": "7 + 5 = 12。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_077",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "18 pigeons are on the roof. 16 fly away. How many stay?",
+   "q_zh": "屋顶上有 18 只鸽子，飞走了 16 只，还剩几只？",
+   "choices": [
+    "1",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "3"
+   ],
+   "answer": 1,
+   "explain_en": "18 - 16 = 2.",
+   "explain_zh": "18 - 16 = 2。",
+   "sign_en": [
+    "1",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "1",
+    "2",
+    "3"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_078",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 8 bundles of 10 red envelopes and 2 single ones. How many red envelopes is that?",
+   "q_zh": "{name} 有 8 捆红包（每捆 10 个）和 2 个散的，一共多少个？",
+   "choices": [
+    "83",
+    "28",
+    "82",
+    "10"
+   ],
+   "choices_zh": [
+    "83",
+    "28",
+    "82",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "8 × 10 + 2 = 82.",
+   "explain_zh": "8 × 10 + 2 = 82。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_079",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 4, 8, 12. What number comes next?",
+   "q_zh": "胡同门牌号是 4、8、12，下一个是几？",
+   "choices": [
+    "17",
+    "16",
+    "13"
+   ],
+   "choices_zh": [
+    "17",
+    "16",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "12 + 4 = 16.",
+   "explain_zh": "12 + 4 = 16。",
+   "sign_en": [
+    "17",
+    "16",
+    "13"
+   ],
+   "sign_zh": [
+    "17",
+    "16",
+    "13"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_080",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before you cross the street, look ____.",
+   "q_zh": "过马路前，要看____。",
+   "choices": [
+    "at the sky",
+    "both ways",
+    "only at your feet"
+   ],
+   "choices_zh": [
+    "天上",
+    "左右两边",
+    "只看脚下"
+   ],
+   "answer": 1,
+   "explain_en": "Look left and right for cars.",
+   "explain_zh": "左右看看有没有车。",
+   "sign_en": [
+    "at the sky",
+    "both ways",
+    "only at your feet"
+   ],
+   "sign_zh": [
+    "天上",
+    "左右两边",
+    "只看脚下"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "骑车与交通安全"
+  },
+  {
+   "id": "l4g1_081",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 9, 13, 17. What number comes next?",
+   "q_zh": "胡同门牌号是 9、13、17，下一个是几？",
+   "choices": [
+    "25",
+    "21",
+    "18"
+   ],
+   "choices_zh": [
+    "25",
+    "21",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "17 + 4 = 21.",
+   "explain_zh": "17 + 4 = 21。",
+   "sign_en": [
+    "25",
+    "21",
+    "18"
+   ],
+   "sign_zh": [
+    "25",
+    "21",
+    "18"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_082",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 14 red envelopes and Bara has 5. How many more does Flora have?",
+   "q_zh": "Flora 有 14 个红包，Bara 有 5 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "8",
+    "9",
+    "19",
+    "12"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "19",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "14 - 5 = 9.",
+   "explain_zh": "14 - 5 = 9。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_083",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 10 red envelopes from Grandma and 4 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 10 个红包，从爷爷那儿收到 4 个，一共几个？",
+   "choices": [
+    "14",
+    "6",
+    "13",
+    "16"
+   ],
+   "choices_zh": [
+    "14",
+    "6",
+    "13",
+    "16"
+   ],
+   "answer": 0,
+   "explain_en": "10 + 4 = 14.",
+   "explain_zh": "10 + 4 = 14。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_084",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Which English word rhymes with \"red\" (like a red lantern)?",
+   "q_zh": "哪个英文单词和 red（红色）押韵？",
+   "choices": [
+    "ran",
+    "cup",
+    "sun",
+    "bed"
+   ],
+   "choices_zh": [
+    "ran",
+    "cup",
+    "sun",
+    "bed"
+   ],
+   "answer": 3,
+   "explain_en": "Red and bed both end with the sound -ed.",
+   "explain_zh": "red 和 bed 都以 -ed 的音结尾。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g1_085",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 13 paper-cut window flowers and sticks 2 on the window. How many are still in the box?",
+   "q_zh": "{name} 有 13 张窗花，往窗上贴了 2 张，盒子里还剩几张？",
+   "choices": [
+    "13",
+    "11",
+    "15",
+    "10"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "15",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "13 - 2 = 11.",
+   "explain_zh": "13 - 2 = 11。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_086",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tanghulu stall sells 6 sticks in the morning and 2 in the afternoon. How many sticks in all?",
+   "q_zh": "糖葫芦摊上午卖了 6 串，下午卖了 2 串，一共卖了几串？",
+   "choices": [
+    "7",
+    "8",
+    "9",
+    "4"
+   ],
+   "choices_zh": [
+    "7",
+    "8",
+    "9",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "6 + 2 = 8.",
+   "explain_zh": "6 + 2 = 8。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_087",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "Near the bridge, a gate has two red strips with matching lines, one on each side. What are they called?",
+   "q_zh": "桥边一座门的两边各贴一条红纸，上面的句子字字相对。它们叫什么？",
+   "choices": [
+    "Spring couplets",
+    "Kites",
+    "Menus",
+    "Maps"
+   ],
+   "choices_zh": [
+    "春联",
+    "风筝",
+    "菜单",
+    "地图"
+   ],
+   "answer": 0,
+   "explain_en": "Matching lines on red paper by the door are spring couplets.",
+   "explain_zh": "门两边字字相对的红纸是春联。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g1_088",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "A row of lanterns on the bridge shows the 12 zodiac animals in order. Which animal comes right after the Tiger?",
+   "q_zh": "桥上一排灯笼按顺序画着十二生肖。虎后面紧接着是哪种动物？",
+   "choices": [
+    "Horse",
+    "Dragon",
+    "Rabbit",
+    "Ox"
+   ],
+   "choices_zh": [
+    "马",
+    "龙",
+    "兔",
+    "牛"
+   ],
+   "answer": 2,
+   "explain_en": "The order begins Rat, Ox, Tiger, Rabbit, Dragon.",
+   "explain_zh": "顺序开头是鼠、牛、虎、兔、龙。",
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g1_089",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "At the end of the ride, Flora stops on the Seventeen-Arch Bridge and counts the arches under it. How many arches does the bridge have?",
+   "q_zh": "骑到终点，Flora 停在十七孔桥上，数桥下的桥洞。这座桥有几个桥洞？",
+   "choices": [
+    "7",
+    "12",
+    "17",
+    "27"
+   ],
+   "choices_zh": [
+    "7",
+    "12",
+    "17",
+    "27"
+   ],
+   "answer": 2,
+   "explain_en": "The bridge is named for its 17 arches.",
+   "explain_zh": "这座桥因 17 个桥洞得名。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g1_090",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the end of the ride, 9 kids are on the bridge and 4 more run up to see the lanterns. How many kids are on the bridge now?",
+   "q_zh": "骑到终点时，桥上有 9 个小朋友，又跑来 4 个看灯笼，现在桥上有几个小朋友？",
+   "choices": [
+    "13",
+    "14",
+    "5",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "14",
+    "5",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "9 + 4 = 13.",
+   "explain_zh": "9 + 4 = 13。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g1_091",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "14 lanterns hang on the Seventeen-Arch Bridge. The wind blows out 2 of them. How many lanterns still glow?",
+   "q_zh": "十七孔桥上挂着 14 个灯笼，风吹灭了 2 个，还有几个亮着？",
+   "choices": [
+    "11",
+    "16",
+    "13",
+    "12"
+   ],
+   "choices_zh": [
+    "11",
+    "16",
+    "13",
+    "12"
+   ],
+   "answer": 3,
+   "explain_en": "14 - 2 = 12.",
+   "explain_zh": "14 - 2 = 12。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g1_092",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On the bridge, 9 red lanterns and 7 gold lanterns are lit. How many more red lanterns than gold ones are there?",
+   "q_zh": "桥上亮着 9 个红灯笼和 7 个金灯笼，红灯笼比金灯笼多几个？",
+   "choices": [
+    "16",
+    "3",
+    "1",
+    "2"
+   ],
+   "choices_zh": [
+    "16",
+    "3",
+    "1",
+    "2"
+   ],
+   "answer": 3,
+   "explain_en": "9 - 7 = 2.",
+   "explain_zh": "9 - 7 = 2。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g1_093",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On the bridge, Flora counts 5 strings of 10 lanterns and 9 single lanterns. How many lanterns is that?",
+   "q_zh": "Flora 在桥上数到 5 串灯笼（每串 10 个）和 9 个单独的灯笼，一共多少个？",
+   "choices": [
+    "95",
+    "59",
+    "69",
+    "60"
+   ],
+   "choices_zh": [
+    "95",
+    "59",
+    "69",
+    "60"
+   ],
+   "answer": 1,
+   "explain_en": "5 × 10 + 9 = 59.",
+   "explain_zh": "5 × 10 + 9 = 59。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g1_094",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Lanterns under the bridge arches are numbered 5, 7, 9 in a pattern. What number is on the next lantern?",
+   "q_zh": "桥洞下的灯笼按规律编号：5、7、9，下一个灯笼是几号？",
+   "choices": [
+    "11",
+    "10",
+    "12",
+    "13"
+   ],
+   "choices_zh": [
+    "11",
+    "10",
+    "12",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "9 + 2 = 11.",
+   "explain_zh": "9 + 2 = 11。",
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g1_095",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the bridge, Flora opens her red envelope and finds 3 five-yuan notes and 4 one-yuan coins. How many yuan are inside?",
+   "q_zh": "在桥上，Flora 打开红包，看到 3 张五元和 4 个一元硬币，里面一共多少元？",
+   "choices": [
+    "19",
+    "7",
+    "18",
+    "24"
+   ],
+   "choices_zh": [
+    "19",
+    "7",
+    "18",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 5 + 4 = 19.",
+   "explain_zh": "3 × 5 + 4 = 19。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l4g1_096",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora sees 4 hexagon-shaped lantern frames on the bridge. How many sides do they have altogether?",
+   "q_zh": "Flora 在桥上看见 4 个六边形的灯笼框，它们一共有几条边？",
+   "choices": [
+    "26",
+    "18",
+    "10",
+    "24"
+   ],
+   "choices_zh": [
+    "26",
+    "18",
+    "10",
+    "24"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 6 = 24.",
+   "explain_zh": "4 × 6 = 24。",
+   "qtype": "shape_sides",
+   "qtype_zh": "图形的边和角"
+  }
+ ]
+}

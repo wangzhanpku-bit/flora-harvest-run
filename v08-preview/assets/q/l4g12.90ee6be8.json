@@ -1,0 +1,2350 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 12,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g12_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: In the zodiac I come after the Horse and before the Monkey. I have a beard and I climb rocky hills. What am I?",
+   "q_zh": "灯谜：生肖里在马后面、猴前面，有胡子，爱爬石山。打一生肖，是什么？",
+   "choices": [
+    "The rooster",
+    "The ox",
+    "The rabbit",
+    "The goat"
+   ],
+   "choices_zh": [
+    "鸡",
+    "牛",
+    "兔",
+    "羊"
+   ],
+   "answer": 3,
+   "explain_en": "Horse (7th), Goat (8th), Monkey (9th).",
+   "explain_zh": "马第七，羊第八，猴第九。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g12_002",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Visitors enter a temple fair at r(t) = 6t per minute for 0 ≤ t ≤ 4. How many enter in total?",
+   "q_zh": "游客以 r(t) = 6t 人/分钟进入庙会，0 ≤ t ≤ 4，一共进来多少人？",
+   "choices": [
+    "96",
+    "48",
+    "24"
+   ],
+   "choices_zh": [
+    "96",
+    "48",
+    "24"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 4^2 - 3 × 0^2 = 48.",
+   "explain_zh": "3 × 4^2 - 3 × 0^2 = 48。",
+   "sign_en": [
+    "96",
+    "48",
+    "24"
+   ],
+   "sign_zh": [
+    "96",
+    "48",
+    "24"
+   ],
+   "qtype": "definite_integral",
+   "qtype_zh": "定积分求总量"
+  },
+  {
+   "id": "l4g12_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string makes a 60° angle. What is the exact value of sin(60°)?",
+   "q_zh": "一串彩灯和地面成 60°，sin(60°) 的准确值是多少？",
+   "choices": [
+    "0",
+    "√2/2",
+    "√3/2",
+    "√3/3"
+   ],
+   "choices_zh": [
+    "0",
+    "√2/2",
+    "√3/2",
+    "√3/3"
+   ],
+   "answer": 2,
+   "explain_en": "sin(60°) = √3/2.",
+   "explain_zh": "sin(60°) = √3/2。",
+   "qtype": "trig_exact",
+   "qtype_zh": "特殊角三角函数值"
+  },
+  {
+   "id": "l4g12_004",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "新年纳余庆 was written by ____.",
+   "q_zh": "“新年纳余庆”是谁题的？",
+   "choices": [
+    "Li Bai",
+    "Su Shi",
+    "Meng Chang"
+   ],
+   "choices_zh": [
+    "李白",
+    "苏轼",
+    "孟昶"
+   ],
+   "answer": 2,
+   "explain_en": "Meng Chang of Later Shu, recorded in the History of Song.",
+   "explain_zh": "后蜀孟昶，见于《宋史》。",
+   "sign_en": [
+    "Li Bai",
+    "Su Shi",
+    "Meng Chang"
+   ],
+   "sign_zh": [
+    "李白",
+    "苏轼",
+    "孟昶"
+   ],
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g12_005",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} hangs 4 of 9 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "{name} 从 9 盏不同灯笼里选 4 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "6561",
+    "3033",
+    "3024"
+   ],
+   "choices_zh": [
+    "6561",
+    "3033",
+    "3024"
+   ],
+   "answer": 2,
+   "explain_en": "P(9,4) = 3024.",
+   "explain_zh": "P(9,4) = 3024。",
+   "sign_en": [
+    "6561",
+    "3033",
+    "3024"
+   ],
+   "sign_zh": [
+    "6561",
+    "3033",
+    "3024"
+   ],
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_006",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "As Flora's tricycle rounds a corner, the net force pointing toward the centre of the turn is called the ____ force.",
+   "q_zh": "Flora 的三轮车转弯时，指向弯道圆心的合力叫____力。",
+   "choices": [
+    "nuclear",
+    "magnetic",
+    "centripetal",
+    "buoyant"
+   ],
+   "choices_zh": [
+    "核",
+    "磁",
+    "向心",
+    "浮"
+   ],
+   "answer": 2,
+   "explain_en": "Circular motion needs a centripetal (centre-seeking) net force.",
+   "explain_zh": "做圆周运动需要向心力。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l4g12_007",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Correlation does not prove ____.",
+   "q_zh": "相关不能证明____。",
+   "choices": [
+    "addition",
+    "causation",
+    "gravity"
+   ],
+   "choices_zh": [
+    "加法",
+    "因果",
+    "引力"
+   ],
+   "answer": 1,
+   "explain_en": "Two things moving together need not cause each other.",
+   "explain_zh": "一起变化不代表互为因果。",
+   "sign_en": [
+    "addition",
+    "causation",
+    "gravity"
+   ],
+   "sign_zh": [
+    "加法",
+    "因果",
+    "引力"
+   ],
+   "qtype": "stats_reasoning",
+   "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+  },
+  {
+   "id": "l4g12_008",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Water is densest at about ____.",
+   "q_zh": "水在多少度时密度最大？",
+   "choices": [
+    "4 °C",
+    "0 °C",
+    "100 °C"
+   ],
+   "choices_zh": [
+    "4 °C",
+    "0 °C",
+    "100 °C"
+   ],
+   "answer": 0,
+   "explain_en": "Liquid water is densest near 4 °C.",
+   "explain_zh": "液态水约 4 °C 时密度最大。",
+   "sign_en": [
+    "4 °C",
+    "0 °C",
+    "100 °C"
+   ],
+   "sign_zh": [
+    "4 °C",
+    "0 °C",
+    "100 °C"
+   ],
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l4g12_009",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = 5x^4. What is f'(-2)?",
+   "q_zh": "f(x) = 5x^4，f'(-2) 是多少？",
+   "choices": [
+    "-160",
+    "-40",
+    "-155",
+    "160"
+   ],
+   "choices_zh": [
+    "-160",
+    "-40",
+    "-155",
+    "160"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 5 × (-2)^(4 - 1) = -160.",
+   "explain_zh": "4 × 5 × (-2)^(4 - 1) = -160。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_010",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangle with fixed perimeter 72 m is used for a courtyard. What is its maximum area in m²?",
+   "q_zh": "一个周长固定为 72 米的长方形院子，最大面积是多少平方米？",
+   "choices": [
+    "648",
+    "324",
+    "72"
+   ],
+   "choices_zh": [
+    "648",
+    "324",
+    "72"
+   ],
+   "answer": 1,
+   "explain_en": "(72 ÷ 4)^2 = 324.",
+   "explain_zh": "(72 ÷ 4)^2 = 324。",
+   "sign_en": [
+    "648",
+    "324",
+    "72"
+   ],
+   "sign_zh": [
+    "648",
+    "324",
+    "72"
+   ],
+   "qtype": "optimization",
+   "qtype_zh": "最值优化（定周长最大面积）"
+  },
+  {
+   "id": "l4g12_011",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 9 grows by a factor of 2 every year. How many pigeons after 6 years?",
+   "q_zh": "一群鸽子原有 9 只，每年变成原来的 2 倍，6 年后有多少只？",
+   "choices": [
+    "576",
+    "108",
+    "1152"
+   ],
+   "choices_zh": [
+    "576",
+    "108",
+    "1152"
+   ],
+   "answer": 0,
+   "explain_en": "9 × 2^6 = 576.",
+   "explain_zh": "9 × 2^6 = 576。",
+   "sign_en": [
+    "576",
+    "108",
+    "1152"
+   ],
+   "sign_zh": [
+    "576",
+    "108",
+    "1152"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 4 of 11 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 11 副不同的春联里选 4 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "329",
+    "44",
+    "330",
+    "341"
+   ],
+   "choices_zh": [
+    "329",
+    "44",
+    "330",
+    "341"
+   ],
+   "answer": 2,
+   "explain_en": "C(11,4) = 330.",
+   "explain_zh": "C(11,4) = 330。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_013",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The glow of a lantern is modelled by L(t) = 8e^(3t). What is L'(0)?",
+   "q_zh": "一盏灯笼的亮度模型是 L(t) = 8e^(3t)，L'(0) 是多少？",
+   "choices": [
+    "8",
+    "24",
+    "3",
+    "72"
+   ],
+   "choices_zh": [
+    "8",
+    "24",
+    "3",
+    "72"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 3 × e^(0) = 24.",
+   "explain_zh": "8 × 3 × e^(0) = 24。",
+   "qtype": "derivative_exp",
+   "qtype_zh": "指数函数求导"
+  },
+  {
+   "id": "l4g12_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = 4x^2. What is f'(-3)?",
+   "q_zh": "f(x) = 4x^2，f'(-3) 是多少？",
+   "choices": [
+    "-24",
+    "-12",
+    "24",
+    "-20"
+   ],
+   "choices_zh": [
+    "-24",
+    "-12",
+    "24",
+    "-20"
+   ],
+   "answer": 0,
+   "explain_en": "2 × 4 × (-3)^(2 - 1) = -24.",
+   "explain_zh": "2 × 4 × (-3)^(2 - 1) = -24。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_015",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "In the story, the grandpa chasing Flora turns out to be returning her lost red envelope. This twist is an example of ____.",
+   "q_zh": "故事里一路追 Flora 的大爷，原来是来还她丢的红包。这种反转属于____。",
+   "choices": [
+    "situational irony",
+    "alliteration",
+    "onomatopoeia",
+    "rhyme"
+   ],
+   "choices_zh": [
+    "情境反讽",
+    "头韵",
+    "拟声",
+    "押韵"
+   ],
+   "answer": 0,
+   "explain_en": "The outcome is the opposite of what we expect: situational irony.",
+   "explain_zh": "结果和预期相反，是情境反讽。",
+   "qtype": "lang_literary",
+   "qtype_zh": "文学概念（主题）"
+  },
+  {
+   "id": "l4g12_016",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Visitors enter a temple fair at r(t) = 4t per minute for 0 ≤ t ≤ 3. How many enter in total?",
+   "q_zh": "游客以 r(t) = 4t 人/分钟进入庙会，0 ≤ t ≤ 3，一共进来多少人？",
+   "choices": [
+    "21",
+    "18",
+    "6"
+   ],
+   "choices_zh": [
+    "21",
+    "18",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 3^2 - 2 × 0^2 = 18.",
+   "explain_zh": "2 × 3^2 - 2 × 0^2 = 18。",
+   "sign_en": [
+    "21",
+    "18",
+    "6"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "6"
+   ],
+   "qtype": "definite_integral",
+   "qtype_zh": "定积分求总量"
+  },
+  {
+   "id": "l4g12_017",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The glow of a lantern is modelled by L(t) = 5e^(3t). What is L'(0)?",
+   "q_zh": "一盏灯笼的亮度模型是 L(t) = 5e^(3t)，L'(0) 是多少？",
+   "choices": [
+    "8",
+    "45",
+    "5",
+    "15"
+   ],
+   "choices_zh": [
+    "8",
+    "45",
+    "5",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "5 × 3 × e^(0) = 15.",
+   "explain_zh": "5 × 3 × e^(0) = 15。",
+   "qtype": "derivative_exp",
+   "qtype_zh": "指数函数求导"
+  },
+  {
+   "id": "l4g12_018",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am a little round world: I shine but I make no light of my own, and on the 15th lunar night I am full. What am I?",
+   "q_zh": "灯谜：一个圆圆小世界，会亮却不自己发光，正月十五最圆。打一天体，是什么？",
+   "choices": [
+    "The moon",
+    "A comet",
+    "A star",
+    "The sun"
+   ],
+   "choices_zh": [
+    "月亮",
+    "彗星",
+    "恒星",
+    "太阳"
+   ],
+   "answer": 0,
+   "explain_en": "The moon reflects sunlight and is full mid-month.",
+   "explain_zh": "月亮反射太阳光，农历十五前后最圆。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g12_019",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "The Summer Palace was first built in 1750, badly damaged in 1860, and restored on the same site in ____.",
+   "q_zh": "颐和园始建于 1750 年，1860 年遭严重破坏，在原址修复是哪一年？",
+   "choices": [
+    "1786",
+    "1886",
+    "1986",
+    "1911"
+   ],
+   "choices_zh": [
+    "1786",
+    "1886",
+    "1986",
+    "1911"
+   ],
+   "answer": 1,
+   "explain_en": "UNESCO: built 1750, damaged 1860, restored 1886.",
+   "explain_zh": "联合国教科文组织：1750 年始建，1860 年被毁，1886 年修复。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g12_020",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string makes a 60° angle. What is the exact value of tan(60°)?",
+   "q_zh": "一串彩灯和地面成 60°，tan(60°) 的准确值是多少？",
+   "choices": [
+    "√3/3",
+    "1",
+    "√3",
+    "1/2"
+   ],
+   "choices_zh": [
+    "√3/3",
+    "1",
+    "√3",
+    "1/2"
+   ],
+   "answer": 2,
+   "explain_en": "tan(60°) = √3.",
+   "explain_zh": "tan(60°) = √3。",
+   "qtype": "trig_exact",
+   "qtype_zh": "特殊角三角函数值"
+  },
+  {
+   "id": "l4g12_021",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-code puzzle asks for log base 5 of 3125. What is it?",
+   "q_zh": "灯谜密码题：以 5 为底 3125 的对数是多少？",
+   "choices": [
+    "5",
+    "25",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "25",
+    "6",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "log₅(3125) = 5.",
+   "explain_zh": "log₅(3125) = 5。",
+   "qtype": "log_eval",
+   "qtype_zh": "对数求值"
+  },
+  {
+   "id": "l4g12_022",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "3 independent lantern riddles, each guessed right with probability 1/2. P(exactly 2 right)?",
+   "q_zh": "3 条相互独立的灯谜，每条猜对概率 1/2，恰好猜对 2 条的概率是多少？",
+   "choices": [
+    "3/8",
+    "3/16",
+    "1/8",
+    "1/2"
+   ],
+   "choices_zh": [
+    "3/8",
+    "3/16",
+    "1/8",
+    "1/2"
+   ],
+   "answer": 0,
+   "explain_en": "C(3,2) × 0.5^3 = 3/8.",
+   "explain_zh": "C(3,2) × 0.5^3 = 3/8。",
+   "qtype": "binomial_prob",
+   "qtype_zh": "二项分布概率"
+  },
+  {
+   "id": "l4g12_023",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The glow of a lantern is modelled by L(t) = 5e^(5t). What is L'(0)?",
+   "q_zh": "一盏灯笼的亮度模型是 L(t) = 5e^(5t)，L'(0) 是多少？",
+   "choices": [
+    "25",
+    "10",
+    "125",
+    "5"
+   ],
+   "choices_zh": [
+    "25",
+    "10",
+    "125",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 5 × e^(0) = 25.",
+   "explain_zh": "5 × 5 × e^(0) = 25。",
+   "qtype": "derivative_exp",
+   "qtype_zh": "指数函数求导"
+  },
+  {
+   "id": "l4g12_024",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = x^2. What is f'(3)?",
+   "q_zh": "f(x) = x^2，f'(3) 是多少？",
+   "choices": [
+    "6",
+    "7",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "2 × 1 × (3)^(2 - 1) = 6.",
+   "explain_zh": "2 × 1 × (3)^(2 - 1) = 6。",
+   "sign_en": [
+    "6",
+    "7",
+    "9"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "9"
+   ],
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_025",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I carry the turning of your feet to the wheels, link by link, but I never walk. What am I on a tricycle?",
+   "q_zh": "灯谜：一节连一节，把脚蹬的转动带到轮子上，自己却不走路。打三轮车上一部件，是什么？",
+   "choices": [
+    "The chain",
+    "The seat",
+    "The basket",
+    "The bell"
+   ],
+   "choices_zh": [
+    "链条",
+    "车座",
+    "车斗",
+    "车铃"
+   ],
+   "answer": 0,
+   "explain_en": "The chain transmits motion from the pedals to the drive wheel.",
+   "explain_zh": "链条把脚蹬的转动传到驱动轮。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g12_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = 2x^3. What is f'(-2)?",
+   "q_zh": "f(x) = 2x^3，f'(-2) 是多少？",
+   "choices": [
+    "-16",
+    "8",
+    "24",
+    "-24"
+   ],
+   "choices_zh": [
+    "-16",
+    "8",
+    "24",
+    "-24"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 2 × (-2)^(3 - 1) = 24.",
+   "explain_zh": "3 × 2 × (-2)^(3 - 1) = 24。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_027",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} hangs 3 of 9 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "{name} 从 9 盏不同灯笼里选 3 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "513",
+    "84",
+    "504"
+   ],
+   "choices_zh": [
+    "513",
+    "84",
+    "504"
+   ],
+   "answer": 2,
+   "explain_en": "P(9,3) = 504.",
+   "explain_zh": "P(9,3) = 504。",
+   "sign_en": [
+    "513",
+    "84",
+    "504"
+   ],
+   "sign_zh": [
+    "513",
+    "84",
+    "504"
+   ],
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_028",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Visitors enter a temple fair at r(t) = 6t per minute for 0 ≤ t ≤ 2. How many enter in total?",
+   "q_zh": "游客以 r(t) = 6t 人/分钟进入庙会，0 ≤ t ≤ 2，一共进来多少人？",
+   "choices": [
+    "6",
+    "12",
+    "24"
+   ],
+   "choices_zh": [
+    "6",
+    "12",
+    "24"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 2^2 - 3 × 0^2 = 12.",
+   "explain_zh": "3 × 2^2 - 3 × 0^2 = 12。",
+   "sign_en": [
+    "6",
+    "12",
+    "24"
+   ],
+   "sign_zh": [
+    "6",
+    "12",
+    "24"
+   ],
+   "qtype": "definite_integral",
+   "qtype_zh": "定积分求总量"
+  },
+  {
+   "id": "l4g12_029",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 3 of 5 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 5 副不同的春联里选 3 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "15",
+    "60",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "15",
+    "60",
+    "10",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "C(5,3) = 10.",
+   "explain_zh": "C(5,3) = 10。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_030",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 4 of 9 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 9 副不同的春联里选 4 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "126",
+    "36",
+    "125",
+    "3024"
+   ],
+   "choices_zh": [
+    "126",
+    "36",
+    "125",
+    "3024"
+   ],
+   "answer": 0,
+   "explain_en": "C(9,4) = 126.",
+   "explain_zh": "C(9,4) = 126。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_031",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangle with fixed perimeter 68 m is used for a courtyard. What is its maximum area in m²?",
+   "q_zh": "一个周长固定为 68 米的长方形院子，最大面积是多少平方米？",
+   "choices": [
+    "289",
+    "288",
+    "136"
+   ],
+   "choices_zh": [
+    "289",
+    "288",
+    "136"
+   ],
+   "answer": 0,
+   "explain_en": "(68 ÷ 4)^2 = 289.",
+   "explain_zh": "(68 ÷ 4)^2 = 289。",
+   "sign_en": [
+    "289",
+    "288",
+    "136"
+   ],
+   "sign_zh": [
+    "289",
+    "288",
+    "136"
+   ],
+   "qtype": "optimization",
+   "qtype_zh": "最值优化（定周长最大面积）"
+  },
+  {
+   "id": "l4g12_032",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Visitors enter a temple fair at r(t) = 8t per minute for 0 ≤ t ≤ 2. How many enter in total?",
+   "q_zh": "游客以 r(t) = 8t 人/分钟进入庙会，0 ≤ t ≤ 2，一共进来多少人？",
+   "choices": [
+    "16",
+    "32",
+    "18"
+   ],
+   "choices_zh": [
+    "16",
+    "32",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 2^2 - 4 × 0^2 = 16.",
+   "explain_zh": "4 × 2^2 - 4 × 0^2 = 16。",
+   "sign_en": [
+    "16",
+    "32",
+    "18"
+   ],
+   "sign_zh": [
+    "16",
+    "32",
+    "18"
+   ],
+   "qtype": "definite_integral",
+   "qtype_zh": "定积分求总量"
+  },
+  {
+   "id": "l4g12_033",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "A couplet's first line ends ____.",
+   "q_zh": "上联末字是____。",
+   "choices": [
+    "Level tone (平)",
+    "Neutral tone",
+    "Oblique tone (仄)"
+   ],
+   "choices_zh": [
+    "平声",
+    "轻声",
+    "仄声"
+   ],
+   "answer": 2,
+   "explain_en": "上仄下平.",
+   "explain_zh": "上仄下平。",
+   "sign_en": [
+    "Level tone (平)",
+    "Neutral tone",
+    "Oblique tone (仄)"
+   ],
+   "sign_zh": [
+    "平声",
+    "轻声",
+    "仄声"
+   ],
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g12_034",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora hangs 2 of 9 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "Flora 从 9 盏不同灯笼里选 2 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "72",
+    "36",
+    "81"
+   ],
+   "choices_zh": [
+    "72",
+    "36",
+    "81"
+   ],
+   "answer": 0,
+   "explain_en": "P(9,2) = 72.",
+   "explain_zh": "P(9,2) = 72。",
+   "sign_en": [
+    "72",
+    "36",
+    "81"
+   ],
+   "sign_zh": [
+    "72",
+    "36",
+    "81"
+   ],
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: Read us as a pair. The first of us ends on an oblique tone, the second on a level tone, and we hang on the door at New Year. What are we?",
+   "q_zh": "灯谜：两个一对读，前一个末字仄声，后一个末字平声，过年贴在门上。打一物，是什么？",
+   "choices": [
+    "A menu",
+    "A shopping list",
+    "A spring couplet",
+    "A tongue twister"
+   ],
+   "choices_zh": [
+    "菜单",
+    "购物单",
+    "春联",
+    "绕口令"
+   ],
+   "answer": 2,
+   "explain_en": "Couplets pair two lines: first ends oblique (仄), second ends level (平).",
+   "explain_zh": "春联上联末字仄声，下联末字平声。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g12_036",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-code puzzle asks for log base 3 of 27. What is it?",
+   "q_zh": "灯谜密码题：以 3 为底 27 的对数是多少？",
+   "choices": [
+    "4",
+    "3",
+    "9",
+    "2"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "9",
+    "2"
+   ],
+   "answer": 1,
+   "explain_en": "log₃(27) = 3.",
+   "explain_zh": "log₃(27) = 3。",
+   "qtype": "log_eval",
+   "qtype_zh": "对数求值"
+  },
+  {
+   "id": "l4g12_037",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "New moon to new moon takes ____.",
+   "q_zh": "从新月到下一次新月约____。",
+   "choices": [
+    "About 29.5 days",
+    "Exactly 7 days",
+    "About 365 days"
+   ],
+   "choices_zh": [
+    "约 29.5 天",
+    "正好 7 天",
+    "约 365 天"
+   ],
+   "answer": 0,
+   "explain_en": "A synodic month is about 29.5 days.",
+   "explain_zh": "朔望月约 29.5 天。",
+   "sign_en": [
+    "About 29.5 days",
+    "Exactly 7 days",
+    "About 365 days"
+   ],
+   "sign_zh": [
+    "约 29.5 天",
+    "正好 7 天",
+    "约 365 天"
+   ],
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g12_038",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string makes a 30° angle. What is the exact value of tan(30°)?",
+   "q_zh": "一串彩灯和地面成 30°，tan(30°) 的准确值是多少？",
+   "choices": [
+    "√2/2",
+    "√3/3",
+    "1/2"
+   ],
+   "choices_zh": [
+    "√2/2",
+    "√3/3",
+    "1/2"
+   ],
+   "answer": 1,
+   "explain_en": "tan(30°) = √3/3.",
+   "explain_zh": "tan(30°) = √3/3。",
+   "sign_en": [
+    "√2/2",
+    "√3/3",
+    "1/2"
+   ],
+   "sign_zh": [
+    "√2/2",
+    "√3/3",
+    "1/2"
+   ],
+   "qtype": "trig_exact",
+   "qtype_zh": "特殊角三角函数值"
+  },
+  {
+   "id": "l4g12_039",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "5 independent lantern riddles, each guessed right with probability 1/2. P(exactly 1 right)?",
+   "q_zh": "5 条相互独立的灯谜，每条猜对概率 1/2，恰好猜对 1 条的概率是多少？",
+   "choices": [
+    "1/5",
+    "5/64",
+    "5/32",
+    "1/2"
+   ],
+   "choices_zh": [
+    "1/5",
+    "5/64",
+    "5/32",
+    "1/2"
+   ],
+   "answer": 2,
+   "explain_en": "C(5,1) × 0.5^5 = 5/32.",
+   "explain_zh": "C(5,1) × 0.5^5 = 5/32。",
+   "qtype": "binomial_prob",
+   "qtype_zh": "二项分布概率"
+  },
+  {
+   "id": "l4g12_040",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = 2x^2. What is f'(1)?",
+   "q_zh": "f(x) = 2x^2，f'(1) 是多少？",
+   "choices": [
+    "2",
+    "-4",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "-4",
+    "4",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 2 × (1)^(2 - 1) = 4.",
+   "explain_zh": "2 × 2 × (1)^(2 - 1) = 4。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_041",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora hangs 3 of 10 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "Flora 从 10 盏不同灯笼里选 3 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "120",
+    "730",
+    "720"
+   ],
+   "choices_zh": [
+    "120",
+    "730",
+    "720"
+   ],
+   "answer": 2,
+   "explain_en": "P(10,3) = 720.",
+   "explain_zh": "P(10,3) = 720。",
+   "sign_en": [
+    "120",
+    "730",
+    "720"
+   ],
+   "sign_zh": [
+    "120",
+    "730",
+    "720"
+   ],
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_042",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-code puzzle asks for log base 5 of 15625. What is it?",
+   "q_zh": "灯谜密码题：以 5 为底 15625 的对数是多少？",
+   "choices": [
+    "30",
+    "7",
+    "3125",
+    "6"
+   ],
+   "choices_zh": [
+    "30",
+    "7",
+    "3125",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "log₅(15625) = 6.",
+   "explain_zh": "log₅(15625) = 6。",
+   "qtype": "log_eval",
+   "qtype_zh": "对数求值"
+  },
+  {
+   "id": "l4g12_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = x^3. What is f'(-3)?",
+   "q_zh": "f(x) = x^3，f'(-3) 是多少？",
+   "choices": [
+    "28",
+    "9",
+    "-27",
+    "27"
+   ],
+   "choices_zh": [
+    "28",
+    "9",
+    "-27",
+    "27"
+   ],
+   "answer": 3,
+   "explain_en": "3 × 1 × (-3)^(3 - 1) = 27.",
+   "explain_zh": "3 × 1 × (-3)^(3 - 1) = 27。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_044",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 9 grows by a factor of 3 every year. How many pigeons after 2 years?",
+   "q_zh": "一群鸽子原有 9 只，每年变成原来的 3 倍，2 年后有多少只？",
+   "choices": [
+    "90",
+    "27",
+    "81",
+    "54"
+   ],
+   "choices_zh": [
+    "90",
+    "27",
+    "81",
+    "54"
+   ],
+   "answer": 2,
+   "explain_en": "9 × 3^2 = 81.",
+   "explain_zh": "9 × 3^2 = 81。",
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_045",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am born from a bang, I bloom in colour for a second, and chemists can tell my metal from my colour. What am I?",
+   "q_zh": "灯谜：一声响后出生，彩色开一秒，化学家看颜色就知道我含什么金属。打一物，是什么？",
+   "choices": [
+    "A candle",
+    "A firework burst",
+    "A neon sign",
+    "A rainbow"
+   ],
+   "choices_zh": [
+    "蜡烛",
+    "烟花",
+    "霓虹灯",
+    "彩虹"
+   ],
+   "answer": 1,
+   "explain_en": "Firework colours come from metal salts (flame colours).",
+   "explain_zh": "烟花的颜色来自金属盐的焰色。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g12_046",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 3 of 12 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 12 副不同的春联里选 3 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "1320",
+    "220",
+    "219",
+    "232"
+   ],
+   "choices_zh": [
+    "1320",
+    "220",
+    "219",
+    "232"
+   ],
+   "answer": 1,
+   "explain_en": "C(12,3) = 220.",
+   "explain_zh": "C(12,3) = 220。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 3 of 9 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 9 副不同的春联里选 3 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "504",
+    "93",
+    "84",
+    "27"
+   ],
+   "choices_zh": [
+    "504",
+    "93",
+    "84",
+    "27"
+   ],
+   "answer": 2,
+   "explain_en": "C(9,3) = 84.",
+   "explain_zh": "C(9,3) = 84。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "Which couplet, recorded in the History of Song, is one of the earliest surviving spring couplets?",
+   "q_zh": "哪一副是《宋史》里记载的、现存较早的春联？",
+   "choices": [
+    "新年纳余庆，嘉节号长春",
+    "天增岁月人增寿，春满乾坤福满堂",
+    "向阳门第春常在，积善人家庆有余",
+    "忠厚传家久，诗书继世长"
+   ],
+   "choices_zh": [
+    "新年纳余庆，嘉节号长春",
+    "天增岁月人增寿，春满乾坤福满堂",
+    "向阳门第春常在，积善人家庆有余",
+    "忠厚传家久，诗书继世长"
+   ],
+   "answer": 0,
+   "explain_en": "Meng Chang of Later Shu wrote 新年纳余庆，嘉节号长春 on a peach-wood charm.",
+   "explain_zh": "后蜀孟昶在桃符上题“新年纳余庆，嘉节号长春”。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g12_049",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Tiananmen got that name in ____.",
+   "q_zh": "天安门这个名字始于____。",
+   "choices": [
+    "1651",
+    "1420",
+    "1911"
+   ],
+   "choices_zh": [
+    "1651 年",
+    "1420 年",
+    "1911 年"
+   ],
+   "answer": 0,
+   "explain_en": "Renamed in 1651.",
+   "explain_zh": "1651 年改称天安门。",
+   "sign_en": [
+    "1651",
+    "1420",
+    "1911"
+   ],
+   "sign_zh": [
+    "1651 年",
+    "1420 年",
+    "1911 年"
+   ],
+   "qtype": "beijing_landmark",
+   "qtype_zh": "北京地标（天安门/金水桥/华表）"
+  },
+  {
+   "id": "l4g12_050",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why does each metal give fireworks its own colour?",
+   "q_zh": "为什么每种金属让烟花呈现特定颜色？",
+   "choices": [
+    "The paper wrapping is dyed",
+    "The metal reflects the moonlight",
+    "Excited electrons drop to lower levels and emit specific wavelengths",
+    "Hotter fireworks are always blue"
+   ],
+   "choices_zh": [
+    "包装纸被染了色",
+    "金属反射月光",
+    "受激电子跃迁回低能级，放出特定波长的光",
+    "温度越高越一定是蓝色"
+   ],
+   "answer": 2,
+   "explain_en": "Each element has its own energy levels, so it emits its own wavelengths.",
+   "explain_zh": "每种元素能级不同，发出的光波长也不同。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g12_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am frozen water that grows thicker from the top of Kunming Lake downward, while fish swim safely under me. What am I?",
+   "q_zh": "灯谜：我是冻住的水，在昆明湖上从上往下越结越厚，鱼在我下面照样游。打一物，是什么？",
+   "choices": [
+    "Fog",
+    "Lake ice",
+    "Snowman",
+    "Steam"
+   ],
+   "choices_zh": [
+    "雾",
+    "湖冰",
+    "雪人",
+    "水蒸气"
+   ],
+   "answer": 1,
+   "explain_en": "Ice forms at the surface and floats, so water below stays liquid.",
+   "explain_zh": "冰在水面结成并浮着，下面的水不结冰。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g12_052",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-code puzzle asks for log base 10 of 100. What is it?",
+   "q_zh": "灯谜密码题：以 10 为底 100 的对数是多少？",
+   "choices": [
+    "2",
+    "3",
+    "10",
+    "20"
+   ],
+   "choices_zh": [
+    "2",
+    "3",
+    "10",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "log₁₀(100) = 2.",
+   "explain_zh": "log₁₀(100) = 2。",
+   "qtype": "log_eval",
+   "qtype_zh": "对数求值"
+  },
+  {
+   "id": "l4g12_053",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Summer Palace restored on site in ____.",
+   "q_zh": "颐和园在原址修复于____。",
+   "choices": [
+    "1986",
+    "1886",
+    "1786"
+   ],
+   "choices_zh": [
+    "1986 年",
+    "1886 年",
+    "1786 年"
+   ],
+   "answer": 1,
+   "explain_en": "Restored in 1886.",
+   "explain_zh": "1886 年修复。",
+   "sign_en": [
+    "1986",
+    "1886",
+    "1786"
+   ],
+   "sign_zh": [
+    "1986 年",
+    "1886 年",
+    "1786 年"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g12_054",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora hangs 2 of 8 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "Flora 从 8 盏不同灯笼里选 2 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "16",
+    "28",
+    "56",
+    "64"
+   ],
+   "choices_zh": [
+    "16",
+    "28",
+    "56",
+    "64"
+   ],
+   "answer": 2,
+   "explain_en": "P(8,2) = 56.",
+   "explain_zh": "P(8,2) = 56。",
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_055",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} hangs 3 of 8 different lanterns in a row on a gate; order matters. How many arrangements?",
+   "q_zh": "{name} 从 8 盏不同灯笼里选 3 盏挂成一排，计顺序，有多少种挂法？",
+   "choices": [
+    "56",
+    "336",
+    "24"
+   ],
+   "choices_zh": [
+    "56",
+    "336",
+    "24"
+   ],
+   "answer": 1,
+   "explain_en": "P(8,3) = 336.",
+   "explain_zh": "P(8,3) = 336。",
+   "sign_en": [
+    "56",
+    "336",
+    "24"
+   ],
+   "sign_zh": [
+    "56",
+    "336",
+    "24"
+   ],
+   "qtype": "permutations",
+   "qtype_zh": "排列数（计顺序）"
+  },
+  {
+   "id": "l4g12_056",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 5 grows by a factor of 3 every year. How many pigeons after 6 years?",
+   "q_zh": "一群鸽子原有 5 只，每年变成原来的 3 倍，6 年后有多少只？",
+   "choices": [
+    "3650",
+    "3645",
+    "10935"
+   ],
+   "choices_zh": [
+    "3650",
+    "3645",
+    "10935"
+   ],
+   "answer": 1,
+   "explain_en": "5 × 3^6 = 3645.",
+   "explain_zh": "5 × 3^6 = 3645。",
+   "sign_en": [
+    "3650",
+    "3645",
+    "10935"
+   ],
+   "sign_zh": [
+    "3650",
+    "3645",
+    "10935"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_057",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-code puzzle asks for log base 3 of 81. What is it?",
+   "q_zh": "灯谜密码题：以 3 为底 81 的对数是多少？",
+   "choices": [
+    "5",
+    "12",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "12",
+    "3",
+    "4"
+   ],
+   "answer": 3,
+   "explain_en": "log₃(81) = 4.",
+   "explain_zh": "log₃(81) = 4。",
+   "qtype": "log_eval",
+   "qtype_zh": "对数求值"
+  },
+  {
+   "id": "l4g12_058",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "4 independent lantern riddles, each guessed right with probability 1/2. P(exactly 1 right)?",
+   "q_zh": "4 条相互独立的灯谜，每条猜对概率 1/2，恰好猜对 1 条的概率是多少？",
+   "choices": [
+    "1/4",
+    "1/2",
+    "1/16",
+    "1/8"
+   ],
+   "choices_zh": [
+    "1/4",
+    "1/2",
+    "1/16",
+    "1/8"
+   ],
+   "answer": 0,
+   "explain_en": "C(4,1) × 0.5^4 = 1/4.",
+   "explain_zh": "C(4,1) × 0.5^4 = 1/4。",
+   "qtype": "binomial_prob",
+   "qtype_zh": "二项分布概率"
+  },
+  {
+   "id": "l4g12_059",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangle with fixed perimeter 44 m is used for a courtyard. What is its maximum area in m²?",
+   "q_zh": "一个周长固定为 44 米的长方形院子，最大面积是多少平方米？",
+   "choices": [
+    "44",
+    "242",
+    "121"
+   ],
+   "choices_zh": [
+    "44",
+    "242",
+    "121"
+   ],
+   "answer": 2,
+   "explain_en": "(44 ÷ 4)^2 = 121.",
+   "explain_zh": "(44 ÷ 4)^2 = 121。",
+   "sign_en": [
+    "44",
+    "242",
+    "121"
+   ],
+   "sign_zh": [
+    "44",
+    "242",
+    "121"
+   ],
+   "qtype": "optimization",
+   "qtype_zh": "最值优化（定周长最大面积）"
+  },
+  {
+   "id": "l4g12_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why does Kunming Lake freeze from the top down, leaving water below for fish?",
+   "q_zh": "为什么昆明湖从上往下结冰，下面还留着水给鱼？",
+   "choices": [
+    "Sunlight only reaches the bottom",
+    "Ice sinks to the bottom first",
+    "Water is densest near 4 °C, so colder water stays on top",
+    "Fish heat the bottom"
+   ],
+   "choices_zh": [
+    "阳光只照到湖底",
+    "冰先沉到底",
+    "水在约 4 °C 时密度最大，更冷的水留在上层",
+    "鱼把湖底焐热"
+   ],
+   "answer": 2,
+   "explain_en": "Water below 4 °C is less dense, so it stays at the surface and freezes there.",
+   "explain_zh": "低于 4 °C 的水密度变小，浮在上面先结冰。",
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l4g12_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "Which tone rule do the final characters of a traditional couplet usually follow?",
+   "q_zh": "传统对联上下联的末字通常遵守哪条平仄规则？",
+   "choices": [
+    "Both level",
+    "Both oblique",
+    "First line level, second line oblique",
+    "First line oblique, second line level"
+   ],
+   "choices_zh": [
+    "都用平声",
+    "都用仄声",
+    "上联平声，下联仄声",
+    "上联仄声，下联平声"
+   ],
+   "answer": 3,
+   "explain_en": "上仄下平: the first line ends oblique, the second level.",
+   "explain_zh": "上仄下平。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g12_062",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Choose 2 of 6 different couplets for the gates, order does not matter. How many ways?",
+   "q_zh": "从 6 副不同的春联里选 2 副贴门，不计顺序，有多少种选法？",
+   "choices": [
+    "14",
+    "12",
+    "15",
+    "30"
+   ],
+   "choices_zh": [
+    "14",
+    "12",
+    "15",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "C(6,2) = 15.",
+   "explain_zh": "C(6,2) = 15。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "5 independent lantern riddles, each guessed right with probability 1/2. P(exactly 3 right)?",
+   "q_zh": "5 条相互独立的灯谜，每条猜对概率 1/2，恰好猜对 3 条的概率是多少？",
+   "choices": [
+    "1/2",
+    "5/16",
+    "3/5",
+    "1/32"
+   ],
+   "choices_zh": [
+    "1/2",
+    "5/16",
+    "3/5",
+    "1/32"
+   ],
+   "answer": 1,
+   "explain_en": "C(5,3) × 0.5^5 = 5/16.",
+   "explain_zh": "C(5,3) × 0.5^5 = 5/16。",
+   "qtype": "binomial_prob",
+   "qtype_zh": "二项分布概率"
+  },
+  {
+   "id": "l4g12_064",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "The Seventeen-Arch Bridge was first built during the reign of which emperor?",
+   "q_zh": "十七孔桥始建于哪位皇帝在位时？",
+   "choices": [
+    "Qianlong",
+    "Yongle",
+    "Tang Taizong",
+    "Kangxi"
+   ],
+   "choices_zh": [
+    "乾隆",
+    "永乐",
+    "唐太宗",
+    "康熙"
+   ],
+   "answer": 0,
+   "explain_en": "Built in the 15th year of Qianlong (1750).",
+   "explain_zh": "乾隆十五年（1750 年）始建。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g12_065",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 9 grows by a factor of 2 every year. How many pigeons after 5 years?",
+   "q_zh": "一群鸽子原有 9 只，每年变成原来的 2 倍，5 年后有多少只？",
+   "choices": [
+    "576",
+    "144",
+    "288",
+    "297"
+   ],
+   "choices_zh": [
+    "576",
+    "144",
+    "288",
+    "297"
+   ],
+   "answer": 2,
+   "explain_en": "9 × 2^5 = 288.",
+   "explain_zh": "9 × 2^5 = 288。",
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(x) = 5x^3. What is f'(-1)?",
+   "q_zh": "f(x) = 5x^3，f'(-1) 是多少？",
+   "choices": [
+    "15",
+    "-15",
+    "5",
+    "20"
+   ],
+   "choices_zh": [
+    "15",
+    "-15",
+    "5",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 5 × (-1)^(3 - 1) = 15.",
+   "explain_zh": "3 × 5 × (-1)^(3 - 1) = 15。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_067",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string makes a 90° angle. What is the exact value of cos(90°)?",
+   "q_zh": "一串彩灯和地面成 90°，cos(90°) 的准确值是多少？",
+   "choices": [
+    "√3/2",
+    "0",
+    "1",
+    "√3/3"
+   ],
+   "choices_zh": [
+    "√3/2",
+    "0",
+    "1",
+    "√3/3"
+   ],
+   "answer": 1,
+   "explain_en": "cos(90°) = 0.",
+   "explain_zh": "cos(90°) = 0。",
+   "qtype": "trig_exact",
+   "qtype_zh": "特殊角三角函数值"
+  },
+  {
+   "id": "l4g12_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "When a firecracker explodes, its chemical energy changes mainly into ____.",
+   "q_zh": "鞭炮爆炸时，化学能主要转化成____。",
+   "choices": [
+    "more chemical energy",
+    "only electricity",
+    "sound, light, heat and motion",
+    "nuclear energy"
+   ],
+   "choices_zh": [
+    "更多化学能",
+    "只有电能",
+    "声能、光能、热能和动能",
+    "核能"
+   ],
+   "answer": 2,
+   "explain_en": "The reaction releases energy as heat, light, sound and kinetic energy.",
+   "explain_zh": "反应放出热、光、声和动能。",
+   "qtype": "energy_forms",
+   "qtype_zh": "能量转化与守恒"
+  },
+  {
+   "id": "l4g12_069",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string makes a 90° angle. What is the exact value of sin(90°)?",
+   "q_zh": "一串彩灯和地面成 90°，sin(90°) 的准确值是多少？",
+   "choices": [
+    "1",
+    "1/2",
+    "√3",
+    "0"
+   ],
+   "choices_zh": [
+    "1",
+    "1/2",
+    "√3",
+    "0"
+   ],
+   "answer": 0,
+   "explain_en": "sin(90°) = 1.",
+   "explain_zh": "sin(90°) = 1。",
+   "qtype": "trig_exact",
+   "qtype_zh": "特殊角三角函数值"
+  },
+  {
+   "id": "l4g12_070",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 7 grows by a factor of 3 every year. How many pigeons after 2 years?",
+   "q_zh": "一群鸽子原有 7 只，每年变成原来的 3 倍，2 年后有多少只？",
+   "choices": [
+    "189",
+    "42",
+    "63"
+   ],
+   "choices_zh": [
+    "189",
+    "42",
+    "63"
+   ],
+   "answer": 2,
+   "explain_en": "7 × 3^2 = 63.",
+   "explain_zh": "7 × 3^2 = 63。",
+   "sign_en": [
+    "189",
+    "42",
+    "63"
+   ],
+   "sign_zh": [
+    "189",
+    "42",
+    "63"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A synodic month (new moon to new moon) is about 29.5 days. Twelve lunar months are therefore about how many days?",
+   "q_zh": "一个朔望月约 29.5 天，十二个农历月大约是多少天？",
+   "choices": [
+    "354",
+    "384",
+    "365",
+    "300"
+   ],
+   "choices_zh": [
+    "354",
+    "384",
+    "365",
+    "300"
+   ],
+   "answer": 0,
+   "explain_en": "12 × 29.5 = 354, about 11 days shorter than a solar year.",
+   "explain_zh": "12×29.5=354，比公历年短约 11 天。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g12_072",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 8 grows by a factor of 3 every year. How many pigeons after 3 years?",
+   "q_zh": "一群鸽子原有 8 只，每年变成原来的 3 倍，3 年后有多少只？",
+   "choices": [
+    "72",
+    "216",
+    "224"
+   ],
+   "choices_zh": [
+    "72",
+    "216",
+    "224"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 3^3 = 216.",
+   "explain_zh": "8 × 3^3 = 216。",
+   "sign_en": [
+    "72",
+    "216",
+    "224"
+   ],
+   "sign_zh": [
+    "72",
+    "216",
+    "224"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g12_073",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Ice is less dense than liquid water because ____ hold the molecules in an open lattice.",
+   "q_zh": "冰比液态水密度小，因为____把分子固定成疏松的晶格。",
+   "choices": [
+    "metallic bonds",
+    "hydrogen bonds",
+    "nuclear forces",
+    "magnetic poles"
+   ],
+   "choices_zh": [
+    "金属键",
+    "氢键",
+    "核力",
+    "磁极"
+   ],
+   "answer": 1,
+   "explain_en": "Hydrogen bonding forms an open hexagonal lattice in ice.",
+   "explain_zh": "氢键让冰形成疏松的六角晶格。",
+   "qtype": "chem_bonds",
+   "qtype_zh": "化学键（氢键）"
+  },
+  {
+   "id": "l4g12_074",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Metal for red fireworks?",
+   "q_zh": "红色烟花用什么金属？",
+   "choices": [
+    "Strontium",
+    "Copper",
+    "Sodium"
+   ],
+   "choices_zh": [
+    "锶",
+    "铜",
+    "钠"
+   ],
+   "answer": 0,
+   "explain_en": "Strontium compounds give red.",
+   "explain_zh": "锶盐呈红色。",
+   "sign_en": [
+    "Strontium",
+    "Copper",
+    "Sodium"
+   ],
+   "sign_zh": [
+    "锶",
+    "铜",
+    "钠"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g12_075",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Skaters cross the frozen lake near the Seventeen-Arch Bridge while fish live below. Which fact best explains why the lake does not freeze solid?",
+   "q_zh": "十七孔桥旁的冰面上有人滑冰，冰下还有鱼。哪条事实最能解释湖水没有冻到底？",
+   "choices": [
+    "Ice is denser than water",
+    "Fish are warm-blooded",
+    "Lake water never drops below 10 °C",
+    "Ice floats and insulates; water near 4 °C sinks to the bottom"
+   ],
+   "choices_zh": [
+    "冰比水密度大",
+    "鱼是恒温动物",
+    "湖水从不低于 10 °C",
+    "冰浮在上面起保温作用；约 4 °C 的水沉在湖底"
+   ],
+   "answer": 3,
+   "explain_en": "Floating ice insulates; the densest water (≈4 °C) sits at the bottom.",
+   "explain_zh": "浮冰隔热，最重的约 4 °C 的水在湖底。",
+   "qtype": "water_properties",
+   "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+  },
+  {
+   "id": "l4g12_076",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Over Kunming Lake a deep-red firework bursts. Which explanation is correct?",
+   "q_zh": "昆明湖上空炸开一朵深红色烟花。哪种解释正确？",
+   "choices": [
+    "Sodium salts; they burn hotter",
+    "Copper salts; they reflect the lanterns",
+    "No metal; red is just smoke",
+    "Strontium salts; excited electrons emit red light as they drop"
+   ],
+   "choices_zh": [
+    "钠盐；烧得更热",
+    "铜盐；反射灯笼的光",
+    "不含金属；红色只是烟",
+    "锶盐；受激电子回落时放出红光"
+   ],
+   "answer": 3,
+   "explain_en": "Strontium's emission lines are red.",
+   "explain_zh": "锶的发射光谱在红光区。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g12_077",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern-string curve over the bridge is h(x) = 6x^4. What is its slope h'(-1)?",
+   "q_zh": "桥上一串彩灯的曲线是 h(x) = 6x^4，它在 x = -1 处的斜率 h'(-1) 是多少？",
+   "choices": [
+    "24",
+    "-6",
+    "6",
+    "-24"
+   ],
+   "choices_zh": [
+    "24",
+    "-6",
+    "6",
+    "-24"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 6 × (-1)^(4 - 1) = -24.",
+   "explain_zh": "4 × 6 × (-1)^(4 - 1) = -24。",
+   "qtype": "derivative_power",
+   "qtype_zh": "幂函数求导"
+  },
+  {
+   "id": "l4g12_078",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Lanterns on the bridge are lit at a rate of r(t) = 4t lanterns per minute for 0 ≤ t ≤ 6. How many lanterns are lit in total?",
+   "q_zh": "桥上灯笼按 r(t) = 4t 盏/分钟的速率点亮，0 ≤ t ≤ 6，一共点亮多少盏？",
+   "choices": [
+    "144",
+    "24",
+    "12",
+    "72"
+   ],
+   "choices_zh": [
+    "144",
+    "24",
+    "12",
+    "72"
+   ],
+   "answer": 3,
+   "explain_en": "2 × 6^2 - 2 × 0^2 = 72.",
+   "explain_zh": "2 × 6^2 - 2 × 0^2 = 72。",
+   "qtype": "definite_integral",
+   "qtype_zh": "定积分求总量"
+  },
+  {
+   "id": "l4g12_079",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the bridge, Flora may pick 2 of 9 different lanterns to carry home. Order does not matter. How many different sets can she pick?",
+   "q_zh": "在桥上，Flora 可以从 9 盏不同的灯笼里挑 2 盏带回家，不计顺序，有多少种挑法？",
+   "choices": [
+    "36",
+    "45",
+    "35",
+    "18"
+   ],
+   "choices_zh": [
+    "36",
+    "45",
+    "35",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "C(9,2) = 36.",
+   "explain_zh": "C(9,2) = 36。",
+   "qtype": "combinations",
+   "qtype_zh": "组合数（不计顺序）"
+  },
+  {
+   "id": "l4g12_080",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On the bridge, Flora guesses 5 lantern riddles, each with a 1/2 chance of being right, independently. What is the probability she gets exactly 3 right?",
+   "q_zh": "在桥上，Flora 猜 5 条灯谜，每条猜对的概率都是 1/2，互不影响。恰好猜对 3 条的概率是多少？",
+   "choices": [
+    "5/32",
+    "5/16",
+    "3/5",
+    "1/32"
+   ],
+   "choices_zh": [
+    "5/32",
+    "5/16",
+    "3/5",
+    "1/32"
+   ],
+   "answer": 1,
+   "explain_en": "C(5,3) × 0.5^5 = 5/16.",
+   "explain_zh": "C(5,3) × 0.5^5 = 5/16。",
+   "qtype": "binomial_prob",
+   "qtype_zh": "二项分布概率"
+  },
+  {
+   "id": "l4g12_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The bridge's lantern rows hold 7, 10, 13 lanterns and so on, 6 rows in all. How many lanterns are there in total?",
+   "q_zh": "桥上灯笼一排比一排多：7、10、13，依此类推，一共 6 排，总共多少盏？",
+   "choices": [
+    "87",
+    "174",
+    "80",
+    "132"
+   ],
+   "choices_zh": [
+    "87",
+    "174",
+    "80",
+    "132"
+   ],
+   "answer": 0,
+   "explain_en": "6 × (7 + 22) ÷ 2 = 87.",
+   "explain_zh": "6 × (7 + 22) ÷ 2 = 87。",
+   "qtype": "arith_series_sum",
+   "qtype_zh": "等差数列求和"
+  },
+  {
+   "id": "l4g12_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Lantern strings on the bridge are hung in rounds: 5 lanterns in the first round, then 3 times as many each round, for 5 rounds. How many lanterns in total?",
+   "q_zh": "桥上灯笼分轮挂：第一轮 5 盏，之后每轮是上一轮的 3 倍，共 5 轮，一共多少盏？",
+   "choices": [
+    "600",
+    "405",
+    "610",
+    "605"
+   ],
+   "choices_zh": [
+    "600",
+    "405",
+    "610",
+    "605"
+   ],
+   "answer": 3,
+   "explain_en": "5 × (3^5 - 1) ÷ (3 - 1) = 605.",
+   "explain_zh": "5 × (3^5 - 1) ÷ (3 - 1) = 605。",
+   "qtype": "geometric_series",
+   "qtype_zh": "等比数列求和"
+  }
+ ]
+}
