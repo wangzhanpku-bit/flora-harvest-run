@@ -1,0 +1,2530 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 2,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g2_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "Beijing is the capital city of which country?",
+   "q_zh": "北京是哪个国家的首都？",
+   "choices": [
+    "Canada",
+    "France",
+    "Japan",
+    "China"
+   ],
+   "choices_zh": [
+    "加拿大",
+    "法国",
+    "日本",
+    "中国"
+   ],
+   "answer": 3,
+   "explain_en": "Beijing is the capital of China.",
+   "explain_zh": "北京是中国的首都。",
+   "qtype": "beijing_landmark",
+   "qtype_zh": "北京地标（天安门/金水桥/华表）"
+  },
+  {
+   "id": "l4g2_002",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Grandma has 8 packs of 100 red paper strips, 9 packs of 10 and 7 single strips. How many strips is that?",
+   "q_zh": "奶奶有 8 包 100 张的红纸条、9 包 10 张的和 7 张散的，一共多少张？",
+   "choices": [
+    "898",
+    "907",
+    "987",
+    "897"
+   ],
+   "choices_zh": [
+    "898",
+    "907",
+    "987",
+    "897"
+   ],
+   "answer": 3,
+   "explain_en": "8 × 100 + 9 × 10 + 7 = 897.",
+   "explain_zh": "8 × 100 + 9 × 10 + 7 = 897。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g2_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 63 sticks of tanghulu and sells 46. How many sticks are left?",
+   "q_zh": "小摊有 63 串糖葫芦，卖出 46 串，还剩几串？",
+   "choices": [
+    "16",
+    "18",
+    "17",
+    "109"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "17",
+    "109"
+   ],
+   "answer": 2,
+   "explain_en": "63 - 46 = 17.",
+   "explain_zh": "63 - 46 = 17。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_004",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "28 pigeons are on the roof. 2 fly away. How many stay?",
+   "q_zh": "屋顶上有 28 只鸽子，飞走了 2 只，还剩几只？",
+   "choices": [
+    "27",
+    "26",
+    "28",
+    "25"
+   ],
+   "choices_zh": [
+    "27",
+    "26",
+    "28",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "28 - 2 = 26.",
+   "explain_zh": "28 - 2 = 26。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_005",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Each stick of tanghulu has 8 hawthorns. How many hawthorns on 5 sticks?",
+   "q_zh": "每串糖葫芦有 8 个山楂，5 串一共多少个山楂？",
+   "choices": [
+    "40",
+    "41",
+    "48"
+   ],
+   "choices_zh": [
+    "40",
+    "41",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 5 = 40.",
+   "explain_zh": "8 × 5 = 40。",
+   "sign_en": [
+    "40",
+    "41",
+    "48"
+   ],
+   "sign_zh": [
+    "40",
+    "41",
+    "48"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_006",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "14 lanterns are hung equally on 2 gates. How many lanterns per gate?",
+   "q_zh": "14 个灯笼平均挂在 2 家门口，每家几个？",
+   "choices": [
+    "12",
+    "7",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "7",
+    "6",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "14 ÷ 2 = 7.",
+   "explain_zh": "14 ÷ 2 = 7。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g2_007",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A tricycle has ____ wheels.",
+   "q_zh": "三轮车有几个轮子？",
+   "choices": [
+    "3",
+    "5",
+    "2"
+   ],
+   "choices_zh": [
+    "3 个",
+    "5 个",
+    "2 个"
+   ],
+   "answer": 0,
+   "explain_en": "Tri- means three.",
+   "explain_zh": "三轮车有三个轮子。",
+   "sign_en": [
+    "3",
+    "5",
+    "2"
+   ],
+   "sign_zh": [
+    "3 个",
+    "5 个",
+    "2 个"
+   ],
+   "qtype": "simple_machines",
+   "qtype_zh": "简单机械（轮子/链条/齿轮）"
+  },
+  {
+   "id": "l4g2_008",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tanghulu stall sells 18 sticks in the morning and 35 in the afternoon. How many sticks in all?",
+   "q_zh": "糖葫芦摊上午卖了 18 串，下午卖了 35 串，一共卖了几串？",
+   "choices": [
+    "54",
+    "52",
+    "53"
+   ],
+   "choices_zh": [
+    "54",
+    "52",
+    "53"
+   ],
+   "answer": 2,
+   "explain_en": "18 + 35 = 53.",
+   "explain_zh": "18 + 35 = 53。",
+   "sign_en": [
+    "54",
+    "52",
+    "53"
+   ],
+   "sign_zh": [
+    "54",
+    "52",
+    "53"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_009",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 8 packs of 8 paper-cuts and gets 5 free ones. How many paper-cuts?",
+   "q_zh": "Flora 买了 8 包窗花，每包 8 张，又送了 5 张，一共几张？",
+   "choices": [
+    "104",
+    "69",
+    "21"
+   ],
+   "choices_zh": [
+    "104",
+    "69",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 8 + 5 = 69.",
+   "explain_zh": "8 × 8 + 5 = 69。",
+   "sign_en": [
+    "104",
+    "69",
+    "21"
+   ],
+   "sign_zh": [
+    "104",
+    "69",
+    "21"
+   ],
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g2_010",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "37 pigeons are on the roof. 26 fly away. How many stay?",
+   "q_zh": "屋顶上有 37 只鸽子，飞走了 26 只，还剩几只？",
+   "choices": [
+    "10",
+    "63",
+    "12",
+    "11"
+   ],
+   "choices_zh": [
+    "10",
+    "63",
+    "12",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "37 - 26 = 11.",
+   "explain_zh": "37 - 26 = 11。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_011",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Chinese measure word: 一____三轮车 (one tricycle). Which word fits?",
+   "q_zh": "量词填空：一____三轮车。",
+   "choices": [
+    "本",
+    "朵",
+    "条",
+    "辆"
+   ],
+   "choices_zh": [
+    "本",
+    "朵",
+    "条",
+    "辆"
+   ],
+   "answer": 3,
+   "explain_en": "Vehicles use 辆: 一辆三轮车.",
+   "explain_zh": "车用“辆”：一辆三轮车。",
+   "qtype": "zh_measure_word",
+   "qtype_zh": "中文量词"
+  },
+  {
+   "id": "l4g2_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} buys 3 sticks of tanghulu at 8 yuan each and pays 50 yuan. How many yuan change?",
+   "q_zh": "{name} 买了 3 串糖葫芦，每串 8 元，付了 50 元，找回多少元？",
+   "choices": [
+    "34",
+    "26",
+    "24",
+    "25"
+   ],
+   "choices_zh": [
+    "34",
+    "26",
+    "24",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "50 - 3 × 8 = 26.",
+   "explain_zh": "50 - 3 × 8 = 26。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l4g2_013",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 3 five-yuan notes and 6 one-yuan coins. How many yuan in all?",
+   "q_zh": "Flora 有 3 张五元和 6 个一元硬币，一共多少元？",
+   "choices": [
+    "20",
+    "26",
+    "9",
+    "21"
+   ],
+   "choices_zh": [
+    "20",
+    "26",
+    "9",
+    "21"
+   ],
+   "answer": 3,
+   "explain_en": "3 × 5 + 6 = 21.",
+   "explain_zh": "3 × 5 + 6 = 21。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l4g2_014",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 3 five-yuan notes and 4 one-yuan coins. How many yuan in all?",
+   "q_zh": "Flora 有 3 张五元和 4 个一元硬币，一共多少元？",
+   "choices": [
+    "7",
+    "20",
+    "19"
+   ],
+   "choices_zh": [
+    "7",
+    "20",
+    "19"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 5 + 4 = 19.",
+   "explain_zh": "3 × 5 + 4 = 19。",
+   "sign_en": [
+    "7",
+    "20",
+    "19"
+   ],
+   "sign_zh": [
+    "7",
+    "20",
+    "19"
+   ],
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l4g2_015",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts riding through the hutongs at 7:20 and stops at 7:55. How many minutes did she ride?",
+   "q_zh": "Flora 7:20 开始骑车逛胡同，7:55 停下，骑了多少分钟？",
+   "choices": [
+    "75",
+    "35",
+    "30"
+   ],
+   "choices_zh": [
+    "75",
+    "35",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "55 - 20 = 35.",
+   "explain_zh": "55 - 20 = 35。",
+   "sign_en": [
+    "75",
+    "35",
+    "30"
+   ],
+   "sign_zh": [
+    "75",
+    "35",
+    "30"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g2_016",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 3 five-yuan notes and 5 one-yuan coins. How many yuan in all?",
+   "q_zh": "Flora 有 3 张五元和 5 个一元硬币，一共多少元？",
+   "choices": [
+    "20",
+    "21",
+    "25",
+    "8"
+   ],
+   "choices_zh": [
+    "20",
+    "21",
+    "25",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 5 + 5 = 20.",
+   "explain_zh": "3 × 5 + 5 = 20。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l4g2_017",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 12 dumplings on the plate. The family eats 7. How many are left?",
+   "q_zh": "盘子里有 12 个饺子，一家人吃了 7 个，还剩几个？",
+   "choices": [
+    "19",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "19",
+    "6",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "12 - 7 = 5.",
+   "explain_zh": "12 - 7 = 5。",
+   "sign_en": [
+    "19",
+    "6",
+    "5"
+   ],
+   "sign_zh": [
+    "19",
+    "6",
+    "5"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_018",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before you cross the street, look ____.",
+   "q_zh": "过马路前，要看____。",
+   "choices": [
+    "at the sky",
+    "only at your feet",
+    "both ways"
+   ],
+   "choices_zh": [
+    "天上",
+    "只看脚下",
+    "左右两边"
+   ],
+   "answer": 2,
+   "explain_en": "Look left and right for cars.",
+   "explain_zh": "左右看看有没有车。",
+   "sign_en": [
+    "at the sky",
+    "only at your feet",
+    "both ways"
+   ],
+   "sign_zh": [
+    "天上",
+    "只看脚下",
+    "左右两边"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "骑车与交通安全"
+  },
+  {
+   "id": "l4g2_019",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 52 red envelopes from Grandma and 8 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 52 个红包，从爷爷那儿收到 8 个，一共几个？",
+   "choices": [
+    "61",
+    "60",
+    "44"
+   ],
+   "choices_zh": [
+    "61",
+    "60",
+    "44"
+   ],
+   "answer": 1,
+   "explain_en": "52 + 8 = 60.",
+   "explain_zh": "52 + 8 = 60。",
+   "sign_en": [
+    "61",
+    "60",
+    "44"
+   ],
+   "sign_zh": [
+    "61",
+    "60",
+    "44"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_020",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "What do people say at Spring Festival?",
+   "q_zh": "春节见面大家说什么？",
+   "choices": [
+    "Happy New Year!",
+    "Happy birthday!",
+    "Good night!"
+   ],
+   "choices_zh": [
+    "过年好！",
+    "生日快乐！",
+    "晚安！"
+   ],
+   "answer": 0,
+   "explain_en": "People greet each other with \"Happy New Year!\"",
+   "explain_zh": "大家互相说“过年好！”",
+   "sign_en": [
+    "Happy New Year!",
+    "Happy birthday!",
+    "Good night!"
+   ],
+   "sign_zh": [
+    "过年好！",
+    "生日快乐！",
+    "晚安！"
+   ],
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g2_021",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "9 lanterns are hung equally on 3 gates. How many lanterns per gate?",
+   "q_zh": "9 个灯笼平均挂在 3 家门口，每家几个？",
+   "choices": [
+    "3",
+    "2",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "9 ÷ 3 = 3.",
+   "explain_zh": "9 ÷ 3 = 3。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g2_022",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Measure word: 一____灯笼 (one lantern)?",
+   "q_zh": "量词：一____灯笼？",
+   "choices": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "choices_zh": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "answer": 0,
+   "explain_en": "Lamps and lanterns use 盏.",
+   "explain_zh": "灯和灯笼可以用“盏”。",
+   "sign_en": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "sign_zh": [
+    "盏",
+    "匹",
+    "本"
+   ],
+   "qtype": "zh_measure_word",
+   "qtype_zh": "中文量词"
+  },
+  {
+   "id": "l4g2_023",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Grandma has 1 packs of 100 red paper strips, 7 packs of 10 and 7 single strips. How many strips is that?",
+   "q_zh": "奶奶有 1 包 100 张的红纸条、7 包 10 张的和 7 张散的，一共多少张？",
+   "choices": [
+    "167",
+    "187",
+    "717",
+    "177"
+   ],
+   "choices_zh": [
+    "167",
+    "187",
+    "717",
+    "177"
+   ],
+   "answer": 3,
+   "explain_en": "1 × 100 + 7 × 10 + 7 = 177.",
+   "explain_zh": "1 × 100 + 7 × 10 + 7 = 177。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g2_024",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Grandma makes 3 plates of 5 dumplings, then 4 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 3 盘饺子，每盘 5 个，又包了 4 个，一共多少个？",
+   "choices": [
+    "20",
+    "27",
+    "12",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "27",
+    "12",
+    "19"
+   ],
+   "answer": 3,
+   "explain_en": "3 × 5 + 4 = 19.",
+   "explain_zh": "3 × 5 + 4 = 19。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g2_025",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I wear a red crown but I am not a king. Every morning I wake everyone up. What am I?",
+   "q_zh": "灯谜：头戴红帽不是王，每天早上叫人起床。打一动物，是什么？",
+   "choices": [
+    "A goat",
+    "A rooster",
+    "A pigeon",
+    "A rabbit"
+   ],
+   "choices_zh": [
+    "羊",
+    "公鸡",
+    "鸽子",
+    "兔子"
+   ],
+   "answer": 1,
+   "explain_en": "A rooster has a red comb and crows in the morning.",
+   "explain_zh": "公鸡头上有红鸡冠，早上打鸣。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g2_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I wear a red coat. Light my tail and I shout \"Bang! Bang!\" What am I?",
+   "q_zh": "灯谜：穿红衣，拖尾巴，点着尾巴就“噼啪”。打一物，是什么？",
+   "choices": [
+    "A red lantern",
+    "A firecracker",
+    "A ribbon",
+    "A flute"
+   ],
+   "choices_zh": [
+    "红灯笼",
+    "鞭炮",
+    "彩带",
+    "笛子"
+   ],
+   "answer": 1,
+   "explain_en": "You light a firecracker's fuse (its tail) and it bangs.",
+   "explain_zh": "鞭炮点着引线（尾巴）就会噼啪响。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g2_027",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: Red and round, I hang by the gate. At night I glow for the New Year. What am I?",
+   "q_zh": "灯谜：红红圆圆挂门旁，过年夜里亮堂堂。打一物，是什么？",
+   "choices": [
+    "A kite",
+    "A drum",
+    "An umbrella",
+    "A red lantern"
+   ],
+   "choices_zh": [
+    "风筝",
+    "鼓",
+    "雨伞",
+    "红灯笼"
+   ],
+   "answer": 3,
+   "explain_en": "A red lantern hangs by the gate and glows at night.",
+   "explain_zh": "红灯笼挂在门旁，晚上会发光。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g2_028",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spring Festival comes in late winter. In Beijing the weather then is usually ____.",
+   "q_zh": "春节在冬末，这时北京的天气通常____。",
+   "choices": [
+    "cold",
+    "like summer",
+    "very hot",
+    "good for swimming outdoors"
+   ],
+   "choices_zh": [
+    "很冷",
+    "像夏天",
+    "很热",
+    "适合户外游泳"
+   ],
+   "answer": 0,
+   "explain_en": "Beijing is cold in January and February.",
+   "explain_zh": "一二月的北京很冷。",
+   "qtype": "earth_sun_seasons",
+   "qtype_zh": "太阳与四季"
+  },
+  {
+   "id": "l4g2_029",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts riding through the hutongs at 2:05 and stops at 2:20. How many minutes did she ride?",
+   "q_zh": "Flora 2:05 开始骑车逛胡同，2:20 停下，骑了多少分钟？",
+   "choices": [
+    "25",
+    "15",
+    "75"
+   ],
+   "choices_zh": [
+    "25",
+    "15",
+    "75"
+   ],
+   "answer": 1,
+   "explain_en": "20 - 5 = 15.",
+   "explain_zh": "20 - 5 = 15。",
+   "sign_en": [
+    "25",
+    "15",
+    "75"
+   ],
+   "sign_zh": [
+    "25",
+    "15",
+    "75"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g2_030",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 76 red envelopes and Bara has 73. How many more does Flora have?",
+   "q_zh": "Flora 有 76 个红包，Bara 有 73 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "3",
+    "2",
+    "4"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "76 - 73 = 3.",
+   "explain_zh": "76 - 73 = 3。",
+   "sign_en": [
+    "3",
+    "2",
+    "4"
+   ],
+   "sign_zh": [
+    "3",
+    "2",
+    "4"
+   ],
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g2_031",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Ice is water that has ____.",
+   "q_zh": "冰是____的水。",
+   "choices": [
+    "dried up",
+    "boiled",
+    "frozen"
+   ],
+   "choices_zh": [
+    "晒干了",
+    "烧开了",
+    "冻住了"
+   ],
+   "answer": 2,
+   "explain_en": "Frozen water is ice.",
+   "explain_zh": "水冻住了就是冰。",
+   "sign_en": [
+    "dried up",
+    "boiled",
+    "frozen"
+   ],
+   "sign_zh": [
+    "晒干了",
+    "烧开了",
+    "冻住了"
+   ],
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l4g2_032",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 27 sticks of tanghulu and sells 23. How many sticks are left?",
+   "q_zh": "小摊有 27 串糖葫芦，卖出 23 串，还剩几串？",
+   "choices": [
+    "4",
+    "3",
+    "50",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "50",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "27 - 23 = 4.",
+   "explain_zh": "27 - 23 = 4。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_033",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 67 paper-cut window flowers and sticks 14 on the window. How many are still in the box?",
+   "q_zh": "Flora 有 67 张窗花，往窗上贴了 14 张，盒子里还剩几张？",
+   "choices": [
+    "54",
+    "55",
+    "53"
+   ],
+   "choices_zh": [
+    "54",
+    "55",
+    "53"
+   ],
+   "answer": 2,
+   "explain_en": "67 - 14 = 53.",
+   "explain_zh": "67 - 14 = 53。",
+   "sign_en": [
+    "54",
+    "55",
+    "53"
+   ],
+   "sign_zh": [
+    "54",
+    "55",
+    "53"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_034",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Grandma has 9 packs of 100 red paper strips, 4 packs of 10 and 7 single strips. How many strips is that?",
+   "q_zh": "奶奶有 9 包 100 张的红纸条、4 包 10 张的和 7 张散的，一共多少张？",
+   "choices": [
+    "937",
+    "947",
+    "957"
+   ],
+   "choices_zh": [
+    "937",
+    "947",
+    "957"
+   ],
+   "answer": 1,
+   "explain_en": "9 × 100 + 4 × 10 + 7 = 947.",
+   "explain_zh": "9 × 100 + 4 × 10 + 7 = 947。",
+   "sign_en": [
+    "937",
+    "947",
+    "957"
+   ],
+   "sign_zh": [
+    "937",
+    "947",
+    "957"
+   ],
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l4g2_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 3 five-yuan notes and 9 one-yuan coins. How many yuan in all?",
+   "q_zh": "Flora 有 3 张五元和 9 个一元硬币，一共多少元？",
+   "choices": [
+    "24",
+    "23",
+    "12",
+    "25"
+   ],
+   "choices_zh": [
+    "24",
+    "23",
+    "12",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 5 + 9 = 24.",
+   "explain_zh": "3 × 5 + 9 = 24。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l4g2_036",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Each stick of tanghulu has 7 hawthorns. How many hawthorns on 4 sticks?",
+   "q_zh": "每串糖葫芦有 7 个山楂，4 串一共多少个山楂？",
+   "choices": [
+    "11",
+    "35",
+    "29",
+    "28"
+   ],
+   "choices_zh": [
+    "11",
+    "35",
+    "29",
+    "28"
+   ],
+   "answer": 3,
+   "explain_en": "7 × 4 = 28.",
+   "explain_zh": "7 × 4 = 28。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_037",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts riding through the hutongs at 1:35 and stops at 1:55. How many minutes did she ride?",
+   "q_zh": "Flora 1:35 开始骑车逛胡同，1:55 停下，骑了多少分钟？",
+   "choices": [
+    "80",
+    "30",
+    "15",
+    "20"
+   ],
+   "choices_zh": [
+    "80",
+    "30",
+    "15",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "55 - 35 = 20.",
+   "explain_zh": "55 - 35 = 20。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g2_038",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 3 sticks of tanghulu at 5 yuan each and pays 20 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 3 串糖葫芦，每串 5 元，付了 20 元，找回多少元？",
+   "choices": [
+    "5",
+    "6",
+    "10",
+    "15"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "10",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "20 - 3 × 5 = 5.",
+   "explain_zh": "20 - 3 × 5 = 5。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l4g2_039",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} starts riding through the hutongs at 4:45 and stops at 5:30. How many minutes did she ride?",
+   "q_zh": "{name} 4:45 开始骑车逛胡同，5:30 停下，骑了多少分钟？",
+   "choices": [
+    "45",
+    "40",
+    "105",
+    "55"
+   ],
+   "choices_zh": [
+    "45",
+    "40",
+    "105",
+    "55"
+   ],
+   "answer": 0,
+   "explain_en": "60 - 45 + 30 = 45.",
+   "explain_zh": "60 - 45 + 30 = 45。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g2_040",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 47 red lanterns, then 25 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 47 个红灯笼，又挂了 25 个，现在一共几个？",
+   "choices": [
+    "73",
+    "72",
+    "82",
+    "71"
+   ],
+   "choices_zh": [
+    "73",
+    "72",
+    "82",
+    "71"
+   ],
+   "answer": 1,
+   "explain_en": "47 + 25 = 72.",
+   "explain_zh": "47 + 25 = 72。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: Red balls on a stick, coated shiny and sweet, but a little sour inside. What am I?",
+   "q_zh": "灯谜：一串红球竹签穿，外面甜甜里面酸。打一北京小吃，是什么？",
+   "choices": [
+    "Tanghulu",
+    "A lollipop",
+    "Popcorn",
+    "Ice cream"
+   ],
+   "choices_zh": [
+    "冰糖葫芦",
+    "棒棒糖",
+    "爆米花",
+    "冰淇淋"
+   ],
+   "answer": 0,
+   "explain_en": "Tanghulu is hawthorn fruit on a stick with a sugar coating.",
+   "explain_zh": "冰糖葫芦是竹签穿山楂，外面裹糖。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g2_042",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Opposite of \"cold\"?",
+   "q_zh": "英文 cold 的反义词是？",
+   "choices": [
+    "hot",
+    "slow",
+    "wet"
+   ],
+   "choices_zh": [
+    "hot",
+    "slow",
+    "wet"
+   ],
+   "answer": 0,
+   "explain_en": "Cold and hot are opposites.",
+   "explain_zh": "cold 和 hot 意思相反。",
+   "sign_en": [
+    "hot",
+    "slow",
+    "wet"
+   ],
+   "sign_zh": [
+    "hot",
+    "slow",
+    "wet"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g2_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 29, 32, 35. What is the next number?",
+   "q_zh": "灯谜的编号是 29、32、35，下一个编号是几？",
+   "choices": [
+    "38",
+    "41",
+    "36",
+    "37"
+   ],
+   "choices_zh": [
+    "38",
+    "41",
+    "36",
+    "37"
+   ],
+   "answer": 0,
+   "explain_en": "35 + 3 = 38.",
+   "explain_zh": "35 + 3 = 38。",
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g2_044",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 16 red lanterns, then 8 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 16 个红灯笼，又挂了 8 个，现在一共几个？",
+   "choices": [
+    "24",
+    "25",
+    "8",
+    "23"
+   ],
+   "choices_zh": [
+    "24",
+    "25",
+    "8",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "16 + 8 = 24.",
+   "explain_zh": "16 + 8 = 24。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_045",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I have three wheels and a bell. Bara sits in my basket. What am I?",
+   "q_zh": "灯谜：三个轮子一个铃，Bara 坐在车斗里。打一交通工具，是什么？",
+   "choices": [
+    "A bus",
+    "A bicycle",
+    "A tricycle",
+    "A train"
+   ],
+   "choices_zh": [
+    "公交车",
+    "自行车",
+    "三轮车",
+    "火车"
+   ],
+   "answer": 2,
+   "explain_en": "Three wheels and a basket: a tricycle.",
+   "explain_zh": "三个轮子还带车斗，是三轮车。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g2_046",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "On New Year's Eve, what do many families in northern China make and eat together?",
+   "q_zh": "除夕夜，中国北方很多家庭会一起包、一起吃什么？",
+   "choices": [
+    "Pizza",
+    "Hot dogs",
+    "Popcorn",
+    "Dumplings"
+   ],
+   "choices_zh": [
+    "比萨",
+    "热狗",
+    "爆米花",
+    "饺子"
+   ],
+   "answer": 3,
+   "explain_en": "Making dumplings together is a northern New Year's Eve custom.",
+   "explain_zh": "北方除夕有一家人一起包饺子的习俗。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g2_047",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 20 red envelopes from Grandma and 23 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 20 个红包，从爷爷那儿收到 23 个，一共几个？",
+   "choices": [
+    "43",
+    "53",
+    "3"
+   ],
+   "choices_zh": [
+    "43",
+    "53",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "20 + 23 = 43.",
+   "explain_zh": "20 + 23 = 43。",
+   "sign_en": [
+    "43",
+    "53",
+    "3"
+   ],
+   "sign_zh": [
+    "43",
+    "53",
+    "3"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Each stick of tanghulu has 4 hawthorns. How many hawthorns on 9 sticks?",
+   "q_zh": "每串糖葫芦有 4 个山楂，9 串一共多少个山楂？",
+   "choices": [
+    "13",
+    "37",
+    "36",
+    "40"
+   ],
+   "choices_zh": [
+    "13",
+    "37",
+    "36",
+    "40"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 9 = 36.",
+   "explain_zh": "4 × 9 = 36。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_049",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "At Spring Festival, children often get money in a ____ envelope.",
+   "q_zh": "过年时，孩子们常收到装着压岁钱的____信封。",
+   "choices": [
+    "grey",
+    "white",
+    "black",
+    "red"
+   ],
+   "choices_zh": [
+    "灰色",
+    "白色",
+    "黑色",
+    "红色"
+   ],
+   "answer": 3,
+   "explain_en": "Red stands for luck, so New Year money goes in red envelopes.",
+   "explain_zh": "红色代表吉利，压岁钱装在红包里。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g2_050",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "23 pigeons sit on a hutong roof and 24 more land. How many pigeons now?",
+   "q_zh": "胡同屋顶上有 23 只鸽子，又飞来 24 只，现在有几只？",
+   "choices": [
+    "1",
+    "47",
+    "48"
+   ],
+   "choices_zh": [
+    "1",
+    "47",
+    "48"
+   ],
+   "answer": 1,
+   "explain_en": "23 + 24 = 47.",
+   "explain_zh": "23 + 24 = 47。",
+   "sign_en": [
+    "1",
+    "47",
+    "48"
+   ],
+   "sign_zh": [
+    "1",
+    "47",
+    "48"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "Chinese measure word: 一____春联 (one pair of spring couplets). Which word fits?",
+   "q_zh": "量词填空：一____春联。",
+   "choices": [
+    "匹",
+    "只",
+    "头",
+    "副"
+   ],
+   "choices_zh": [
+    "匹",
+    "只",
+    "头",
+    "副"
+   ],
+   "answer": 3,
+   "explain_en": "A pair of couplets is 一副春联.",
+   "explain_zh": "春联论“副”：一副春联。",
+   "qtype": "zh_measure_word",
+   "qtype_zh": "中文量词"
+  },
+  {
+   "id": "l4g2_052",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Firecrackers are loud. Cover your ____.",
+   "q_zh": "鞭炮很响，要捂住____。",
+   "choices": [
+    "elbows",
+    "ears",
+    "knees"
+   ],
+   "choices_zh": [
+    "胳膊肘",
+    "耳朵",
+    "膝盖"
+   ],
+   "answer": 1,
+   "explain_en": "Covering your ears protects your hearing.",
+   "explain_zh": "捂住耳朵保护听力。",
+   "sign_en": [
+    "elbows",
+    "ears",
+    "knees"
+   ],
+   "sign_zh": [
+    "胳膊肘",
+    "耳朵",
+    "膝盖"
+   ],
+   "qtype": "fire_safety",
+   "qtype_zh": "烟花爆竹安全"
+  },
+  {
+   "id": "l4g2_053",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 18, 25, 32. What is the next number?",
+   "q_zh": "灯谜的编号是 18、25、32，下一个编号是几？",
+   "choices": [
+    "46",
+    "40",
+    "38",
+    "39"
+   ],
+   "choices_zh": [
+    "46",
+    "40",
+    "38",
+    "39"
+   ],
+   "answer": 3,
+   "explain_en": "32 + 7 = 39.",
+   "explain_zh": "32 + 7 = 39。",
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g2_054",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "A hutong in Beijing is a ____.",
+   "q_zh": "北京的胡同是____。",
+   "choices": [
+    "tall mountain",
+    "sports field",
+    "big river",
+    "narrow old lane"
+   ],
+   "choices_zh": [
+    "高山",
+    "运动场",
+    "大河",
+    "窄窄的老巷子"
+   ],
+   "answer": 3,
+   "explain_en": "Hutongs are narrow lanes in old Beijing.",
+   "explain_zh": "胡同是老北京的窄巷子。",
+   "qtype": "beijing_hutong",
+   "qtype_zh": "胡同与四合院"
+  },
+  {
+   "id": "l4g2_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "72 red envelopes are shared equally among 8 children. How many does each child get?",
+   "q_zh": "72 个红包平均分给 8 个孩子，每人几个？",
+   "choices": [
+    "8",
+    "64",
+    "9",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "64",
+    "9",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "72 ÷ 8 = 9.",
+   "explain_zh": "72 ÷ 8 = 9。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g2_056",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 2 sticks of tanghulu at 8 yuan each and pays 20 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 2 串糖葫芦，每串 8 元，付了 20 元，找回多少元？",
+   "choices": [
+    "3",
+    "4",
+    "12"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "20 - 2 × 8 = 4.",
+   "explain_zh": "20 - 2 × 8 = 4。",
+   "sign_en": [
+    "3",
+    "4",
+    "12"
+   ],
+   "sign_zh": [
+    "3",
+    "4",
+    "12"
+   ],
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l4g2_057",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A plate holds 6 dumplings. How many dumplings on 9 plates?",
+   "q_zh": "一盘有 6 个饺子，9 盘一共多少个？",
+   "choices": [
+    "60",
+    "54",
+    "45",
+    "15"
+   ],
+   "choices_zh": [
+    "60",
+    "54",
+    "45",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 9 = 54.",
+   "explain_zh": "6 × 9 = 54。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_058",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "One hutong door has 35 lanterns, another has 31. How many more on the first door?",
+   "q_zh": "一家门口挂了 35 个灯笼，另一家挂了 31 个，第一家多几个？",
+   "choices": [
+    "5",
+    "3",
+    "4",
+    "66"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "4",
+    "66"
+   ],
+   "answer": 2,
+   "explain_en": "35 - 31 = 4.",
+   "explain_zh": "35 - 31 = 4。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g2_059",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Bara gets 35 red envelopes from Grandma and 3 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 35 个红包，从爷爷那儿收到 3 个，一共几个？",
+   "choices": [
+    "38",
+    "39",
+    "37",
+    "48"
+   ],
+   "choices_zh": [
+    "38",
+    "39",
+    "37",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "35 + 3 = 38.",
+   "explain_zh": "35 + 3 = 38。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "35 pigeons sit on a hutong roof and 10 more land. How many pigeons now?",
+   "q_zh": "胡同屋顶上有 35 只鸽子，又飞来 10 只，现在有几只？",
+   "choices": [
+    "55",
+    "46",
+    "45",
+    "25"
+   ],
+   "choices_zh": [
+    "55",
+    "46",
+    "45",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "35 + 10 = 45.",
+   "explain_zh": "35 + 10 = 45。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "A siheyuan is a house built around a ____.",
+   "q_zh": "四合院是围着什么盖的房子？",
+   "choices": [
+    "tall tower",
+    "train station",
+    "courtyard in the middle",
+    "swimming pool"
+   ],
+   "choices_zh": [
+    "高塔",
+    "火车站",
+    "中间的院子",
+    "游泳池"
+   ],
+   "answer": 2,
+   "explain_en": "Houses on four sides surround a courtyard.",
+   "explain_zh": "四面是房子，中间是院子。",
+   "qtype": "beijing_hutong",
+   "qtype_zh": "胡同与四合院"
+  },
+  {
+   "id": "l4g2_062",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 81 sticks of tanghulu and sells 51. How many sticks are left?",
+   "q_zh": "小摊有 81 串糖葫芦，卖出 51 串，还剩几串？",
+   "choices": [
+    "30",
+    "32",
+    "132"
+   ],
+   "choices_zh": [
+    "30",
+    "32",
+    "132"
+   ],
+   "answer": 0,
+   "explain_en": "81 - 51 = 30.",
+   "explain_zh": "81 - 51 = 30。",
+   "sign_en": [
+    "30",
+    "32",
+    "132"
+   ],
+   "sign_zh": [
+    "30",
+    "32",
+    "132"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "easy",
+   "q_en": "The Seventeen-Arch Bridge at the Summer Palace is named for its ____.",
+   "q_zh": "颐和园的十七孔桥是因为什么得名的？",
+   "choices": [
+    "17 arches",
+    "17 trees",
+    "17 boats",
+    "17 bells"
+   ],
+   "choices_zh": [
+    "17 个桥洞",
+    "17 棵树",
+    "17 条船",
+    "17 个铃铛"
+   ],
+   "answer": 0,
+   "explain_en": "It has 17 arches under it.",
+   "explain_zh": "桥下有 17 个桥洞。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g2_064",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "54 lanterns are hung equally on 9 gates. How many lanterns per gate?",
+   "q_zh": "54 个灯笼平均挂在 9 家门口，每家几个？",
+   "choices": [
+    "45",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "45",
+    "5",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "54 ÷ 9 = 6.",
+   "explain_zh": "54 ÷ 9 = 6。",
+   "sign_en": [
+    "45",
+    "5",
+    "6"
+   ],
+   "sign_zh": [
+    "45",
+    "5",
+    "6"
+   ],
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g2_065",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Hutong door numbers go 19, 22, 25. What number comes next?",
+   "q_zh": "胡同门牌号是 19、22、25，下一个是几？",
+   "choices": [
+    "29",
+    "27",
+    "28"
+   ],
+   "choices_zh": [
+    "29",
+    "27",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "25 + 3 = 28.",
+   "explain_zh": "25 + 3 = 28。",
+   "sign_en": [
+    "29",
+    "27",
+    "28"
+   ],
+   "sign_zh": [
+    "29",
+    "27",
+    "28"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g2_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 15 sticks of tanghulu and sells 12. How many sticks are left?",
+   "q_zh": "小摊有 15 串糖葫芦，卖出 12 串，还剩几串？",
+   "choices": [
+    "2",
+    "3",
+    "27",
+    "4"
+   ],
+   "choices_zh": [
+    "2",
+    "3",
+    "27",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "15 - 12 = 3.",
+   "explain_zh": "15 - 12 = 3。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l4g2_067",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "5 hutong gates each have 9 lanterns. How many lanterns in all?",
+   "q_zh": "5 家门口每家挂 9 个灯笼，一共多少个灯笼？",
+   "choices": [
+    "46",
+    "40",
+    "45"
+   ],
+   "choices_zh": [
+    "46",
+    "40",
+    "45"
+   ],
+   "answer": 2,
+   "explain_en": "9 × 5 = 45.",
+   "explain_zh": "9 × 5 = 45。",
+   "sign_en": [
+    "46",
+    "40",
+    "45"
+   ],
+   "sign_zh": [
+    "46",
+    "40",
+    "45"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "When you ride a tricycle on the street, you should ____.",
+   "q_zh": "在街上骑三轮车，应该____。",
+   "choices": [
+    "ride in the middle of the cars",
+    "let go of the handlebars",
+    "ride with your eyes closed",
+    "keep to the side and watch for cars"
+   ],
+   "choices_zh": [
+    "在车流中间骑",
+    "松开车把",
+    "闭着眼睛骑",
+    "靠边骑、注意车辆"
+   ],
+   "answer": 3,
+   "explain_en": "Keep to the side and watch the traffic.",
+   "explain_zh": "靠边骑，留意来往车辆。",
+   "qtype": "road_safety",
+   "qtype_zh": "骑车与交通安全"
+  },
+  {
+   "id": "l4g2_069",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora hangs 41 red lanterns, then 15 more. How many lanterns now?",
+   "q_zh": "Flora 先挂了 41 个红灯笼，又挂了 15 个，现在一共几个？",
+   "choices": [
+    "66",
+    "56",
+    "57",
+    "26"
+   ],
+   "choices_zh": [
+    "66",
+    "56",
+    "57",
+    "26"
+   ],
+   "answer": 1,
+   "explain_en": "41 + 15 = 56.",
+   "explain_zh": "41 + 15 = 56。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g2_070",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 4 packs of 3 paper-cuts and gets 5 free ones. How many paper-cuts?",
+   "q_zh": "Flora 买了 4 包窗花，每包 3 张，又送了 5 张，一共几张？",
+   "choices": [
+    "17",
+    "13",
+    "18",
+    "32"
+   ],
+   "choices_zh": [
+    "17",
+    "13",
+    "18",
+    "32"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 3 + 5 = 17.",
+   "explain_zh": "4 × 3 + 5 = 17。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g2_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In a very cold Beijing winter, the water of Kunming Lake turns into ____.",
+   "q_zh": "北京很冷的冬天，昆明湖的湖水会变成____。",
+   "choices": [
+    "sand",
+    "ice",
+    "juice",
+    "steam"
+   ],
+   "choices_zh": [
+    "沙子",
+    "冰",
+    "果汁",
+    "水蒸气"
+   ],
+   "answer": 1,
+   "explain_en": "Water freezes into ice when it is cold enough.",
+   "explain_zh": "天够冷时水会结成冰。",
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l4g2_072",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 31 red envelopes and Bara has 5. How many more does Flora have?",
+   "q_zh": "Flora 有 31 个红包，Bara 有 5 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "25",
+    "29",
+    "26",
+    "36"
+   ],
+   "choices_zh": [
+    "25",
+    "29",
+    "26",
+    "36"
+   ],
+   "answer": 2,
+   "explain_en": "31 - 5 = 26.",
+   "explain_zh": "31 - 5 = 26。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g2_073",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tricycle carries 46 bags of New Year goods. A bike carries 26. How many more bags on the tricycle?",
+   "q_zh": "三轮车装了 46 袋年货，自行车装了 26 袋，三轮车多装几袋？",
+   "choices": [
+    "21",
+    "23",
+    "19",
+    "20"
+   ],
+   "choices_zh": [
+    "21",
+    "23",
+    "19",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "46 - 26 = 20.",
+   "explain_zh": "46 - 26 = 20。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g2_074",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 3 sticks of tanghulu at 8 yuan each and pays 50 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 3 串糖葫芦，每串 8 元，付了 50 元，找回多少元？",
+   "choices": [
+    "25",
+    "26",
+    "34"
+   ],
+   "choices_zh": [
+    "25",
+    "26",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "50 - 3 × 8 = 26.",
+   "explain_zh": "50 - 3 × 8 = 26。",
+   "sign_en": [
+    "25",
+    "26",
+    "34"
+   ],
+   "sign_zh": [
+    "25",
+    "26",
+    "34"
+   ],
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l4g2_075",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which is a Beijing city tree?",
+   "q_zh": "哪种树是北京的市树？",
+   "choices": [
+    "Palm tree",
+    "Cactus",
+    "Pagoda tree"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "仙人掌",
+    "国槐"
+   ],
+   "answer": 2,
+   "explain_en": "Beijing's city trees are the pagoda tree and the arborvitae.",
+   "explain_zh": "北京的市树是国槐和侧柏。",
+   "sign_en": [
+    "Palm tree",
+    "Cactus",
+    "Pagoda tree"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "仙人掌",
+    "国槐"
+   ],
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l4g2_076",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The lantern riddles are numbered 21, 28, 35. What is the next number?",
+   "q_zh": "灯谜的编号是 21、28、35，下一个编号是几？",
+   "choices": [
+    "49",
+    "43",
+    "42"
+   ],
+   "choices_zh": [
+    "49",
+    "43",
+    "42"
+   ],
+   "answer": 2,
+   "explain_en": "35 + 7 = 42.",
+   "explain_zh": "35 + 7 = 42。",
+   "sign_en": [
+    "49",
+    "43",
+    "42"
+   ],
+   "sign_zh": [
+    "49",
+    "43",
+    "42"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l4g2_077",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "Which animal is in the Chinese zodiac?",
+   "q_zh": "哪种动物是十二生肖之一？",
+   "choices": [
+    "Panda",
+    "Dragon",
+    "Lion"
+   ],
+   "choices_zh": [
+    "熊猫",
+    "龙",
+    "狮子"
+   ],
+   "answer": 1,
+   "explain_en": "The Dragon is a zodiac animal; lions and pandas are not.",
+   "explain_zh": "龙是生肖；狮子和熊猫不是。",
+   "sign_en": [
+    "Panda",
+    "Dragon",
+    "Lion"
+   ],
+   "sign_zh": [
+    "熊猫",
+    "龙",
+    "狮子"
+   ],
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g2_078",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 41 red envelopes and Bara has 4. How many more does Flora have?",
+   "q_zh": "Flora 有 41 个红包，Bara 有 4 个，Flora 比 Bara 多几个？",
+   "choices": [
+    "45",
+    "37",
+    "38",
+    "40"
+   ],
+   "choices_zh": [
+    "45",
+    "37",
+    "38",
+    "40"
+   ],
+   "answer": 1,
+   "explain_en": "41 - 4 = 37.",
+   "explain_zh": "41 - 4 = 37。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l4g2_079",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Lantern riddle: I have a beard but I am not a grandpa. I say \"baa\" and I love to eat grass. What am I?",
+   "q_zh": "灯谜：有胡子，不是爷爷，“咩咩”叫，爱吃青草。打一动物，是什么？",
+   "choices": [
+    "A pig",
+    "A cat",
+    "A duck",
+    "A goat"
+   ],
+   "choices_zh": [
+    "猪",
+    "猫",
+    "鸭子",
+    "羊"
+   ],
+   "answer": 3,
+   "explain_en": "A goat has a beard, says \"baa\" and eats grass.",
+   "explain_zh": "羊有胡子，咩咩叫，爱吃草。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g2_080",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "easy",
+   "q_en": "Spring couplets are usually written on ____ paper.",
+   "q_zh": "春联通常写在什么颜色的纸上？",
+   "choices": [
+    "green",
+    "blue",
+    "purple",
+    "red"
+   ],
+   "choices_zh": [
+    "绿色",
+    "蓝色",
+    "紫色",
+    "红色"
+   ],
+   "answer": 3,
+   "explain_en": "Red paper is used for good luck.",
+   "explain_zh": "春联用红纸，图个吉利。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g2_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "At the end of the ride, Flora stops on the Seventeen-Arch Bridge and counts the arches under it. How many arches does the bridge have?",
+   "q_zh": "骑到终点，Flora 停在十七孔桥上，数桥下的桥洞。这座桥有几个桥洞？",
+   "choices": [
+    "12",
+    "17",
+    "27",
+    "7"
+   ],
+   "choices_zh": [
+    "12",
+    "17",
+    "27",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "The bridge is named for its 17 arches.",
+   "explain_zh": "这座桥因 17 个桥洞得名。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g2_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "On the lantern-lit bridge, the grandpa hands Flora a red envelope and says \"Happy New Year!\" What is the polite thing for Flora to say back?",
+   "q_zh": "挂满灯笼的桥上，大爷递给 Flora 一个红包，说“过年好！”Flora 最有礼貌的回答是什么？",
+   "choices": [
+    "\"Thank you! Happy New Year!\"",
+    "\"Happy birthday!\"",
+    "Nothing at all",
+    "\"Go away!\""
+   ],
+   "choices_zh": [
+    "“谢谢您！过年好！”",
+    "“生日快乐！”",
+    "什么也不说",
+    "“走开！”"
+   ],
+   "answer": 0,
+   "explain_en": "Thank the giver and return the New Year greeting.",
+   "explain_zh": "要谢谢对方，也回一句“过年好”。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g2_083",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The Seventeen-Arch Bridge has 5 lantern poles near the end, each with 2 lanterns. How many lanterns hang there?",
+   "q_zh": "十七孔桥头有 5 根灯杆，每根挂 2 个灯笼，一共挂了多少个？",
+   "choices": [
+    "11",
+    "7",
+    "10",
+    "5"
+   ],
+   "choices_zh": [
+    "11",
+    "7",
+    "10",
+    "5"
+   ],
+   "answer": 2,
+   "explain_en": "2 × 5 = 10.",
+   "explain_zh": "2 × 5 = 10。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g2_084",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the bridge, 27 glow sticks are shared equally by 3 friends. How many does each friend get?",
+   "q_zh": "在桥上，27 根荧光棒平均分给 3 个朋友，每人几根？",
+   "choices": [
+    "8",
+    "9",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "10",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "27 ÷ 3 = 9.",
+   "explain_zh": "27 ÷ 3 = 9。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g2_085",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Near the bridge, Flora buys 4 lanterns at 9 yuan each and pays with 50 yuan. How much change does she get?",
+   "q_zh": "在桥边，Flora 买了 4 个灯笼，每个 9 元，付了 50 元，应找回多少元？",
+   "choices": [
+    "23",
+    "36",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "23",
+    "36",
+    "13",
+    "14"
+   ],
+   "answer": 3,
+   "explain_en": "50 - 4 × 9 = 14.",
+   "explain_zh": "50 - 4 × 9 = 14。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l4g2_086",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The lantern show at the bridge starts at 4:05 and ends at 4:30. How many minutes does it last?",
+   "q_zh": "桥上的灯会表演 4:05 开始，4:30 结束，一共多少分钟？",
+   "choices": [
+    "35",
+    "25",
+    "85",
+    "20"
+   ],
+   "choices_zh": [
+    "35",
+    "25",
+    "85",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "30 - 5 = 25.",
+   "explain_zh": "30 - 5 = 25。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g2_087",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The Long Corridor paintings tour had 682 visitors today. Round 682 to the nearest ten.",
+   "q_zh": "今天长廊彩画参观有 682 人，把 682 四舍五入到十位。",
+   "choices": [
+    "670",
+    "690",
+    "682",
+    "680"
+   ],
+   "choices_zh": [
+    "670",
+    "690",
+    "682",
+    "680"
+   ],
+   "answer": 3,
+   "explain_en": "682 rounded to the nearest ten is 680.",
+   "explain_zh": "682 四舍五入到十位是 680。",
+   "qtype": "rounding",
+   "qtype_zh": "四舍五入/估算"
+  },
+  {
+   "id": "l4g2_088",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora sees 5 pentagon-shaped lantern frames on the bridge. How many sides do they have altogether?",
+   "q_zh": "Flora 在桥上看见 5 个五边形的灯笼框，它们一共有几条边？",
+   "choices": [
+    "25",
+    "27",
+    "20",
+    "26"
+   ],
+   "choices_zh": [
+    "25",
+    "27",
+    "20",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 5 = 25.",
+   "explain_zh": "5 × 5 = 25。",
+   "qtype": "shape_sides",
+   "qtype_zh": "图形的边和角"
+  }
+ ]
+}

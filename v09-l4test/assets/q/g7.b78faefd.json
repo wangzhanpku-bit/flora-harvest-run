@@ -1,0 +1,4866 @@
+{
+ "grade": 7,
+ "version": 1,
+ "curriculum": "BC Grade 7 Math, Science/Geography, Reading + farm/Stanley themes + capybara",
+ "fields": "same format as questions_v6.json; {name}=player; corn_maze ≤3 choices + sign_en/sign_zh",
+ "questions": [
+  {
+   "id": "g7_001",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "In the water",
+    "In the desert",
+    "Up a tree"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "在水里",
+    "沙漠里",
+    "树上"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。"
+  },
+  {
+   "id": "g7_002",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Fish",
+    "Grass and plants",
+    "Candy"
+   ],
+   "choices_zh": [
+    "鱼",
+    "草和植物",
+    "糖果"
+   ],
+   "answer": 1,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "sign_en": [
+    "Fish",
+    "Grass and plants",
+    "Candy"
+   ],
+   "sign_zh": [
+    "鱼",
+    "草和植物",
+    "糖果"
+   ]
+  },
+  {
+   "id": "g7_003",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ],
+   "answer": 1,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "sign_en": [
+    "Bird",
+    "Rodent",
+    "Fish"
+   ],
+   "sign_zh": [
+    "鸟",
+    "啮齿动物",
+    "鱼"
+   ]
+  },
+  {
+   "id": "g7_004",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "The North Pole",
+    "South America",
+    "Africa",
+    "Australia"
+   ],
+   "choices_zh": [
+    "北极",
+    "南美洲",
+    "非洲",
+    "澳大利亚"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。"
+  },
+  {
+   "id": "g7_005",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Only in winter",
+    "No",
+    "Yes"
+   ],
+   "choices_zh": [
+    "只在冬天有",
+    "没有",
+    "有"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。"
+  },
+  {
+   "id": "g7_006",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Swimmers",
+    "Flyers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "游泳",
+    "飞翔"
+   ],
+   "answer": 1,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "sign_en": [
+    "Climbers",
+    "Swimmers",
+    "Flyers"
+   ],
+   "sign_zh": [
+    "爬树",
+    "游泳",
+    "飞翔"
+   ]
+  },
+  {
+   "id": "g7_007",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Wolf pack",
+    "School",
+    "Flock",
+    "Herd"
+   ],
+   "choices_zh": [
+    "狼群",
+    "鱼群",
+    "鸟群",
+    "一群"
+   ],
+   "answer": 3,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。"
+  },
+  {
+   "id": "g7_008",
+   "section": "corn_maze",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Raccoon",
+    "Capybara",
+    "Beaver"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "水豚",
+    "河狸"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "sign_en": [
+    "Raccoon",
+    "Capybara",
+    "Beaver"
+   ],
+   "sign_zh": [
+    "浣熊",
+    "水豚",
+    "河狸"
+   ]
+  },
+  {
+   "id": "g7_009",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Cute squeaks / clicks",
+    "Lion roars",
+    "Total silence",
+    "Only hisses"
+   ],
+   "choices_zh": [
+    "可爱的吱吱/咔嗒声",
+    "狮子吼",
+    "完全不叫",
+    "只会嘶嘶"
+   ],
+   "answer": 0,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。"
+  },
+  {
+   "id": "g7_010",
+   "section": "pumpkin_field",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Eats only fish",
+    "Lives only on ice",
+    "Has no flat paddle tail",
+    "Is a bird"
+   ],
+   "choices_zh": [
+    "只吃鱼",
+    "只住在冰上",
+    "没有扁平的桨状尾巴",
+    "是鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。"
+  },
+  {
+   "id": "g7_011",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a food chain, plants are usually…",
+   "q_zh": "食物链里植物通常是……",
+   "choices": [
+    "Meat-only consumers",
+    "Decomposers only",
+    "Top predators only",
+    "Producers"
+   ],
+   "choices_zh": [
+    "只吃肉的消费者",
+    "只是分解者",
+    "只是顶级捕食者",
+    "生产者"
+   ],
+   "answer": 3,
+   "explain_en": "Plants produce energy from sunlight.",
+   "explain_zh": "植物通过阳光制造能量。"
+  },
+  {
+   "id": "g7_012",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you push a bike harder, its acceleration usually…",
+   "q_zh": "如果你更用力推自行车，它的加速度通常会……",
+   "choices": [
+    "Increase",
+    "Reverse gravity",
+    "Always become zero"
+   ],
+   "choices_zh": [
+    "增大",
+    "反转重力",
+    "总是变成零"
+   ],
+   "answer": 0,
+   "explain_en": "Larger net force → larger acceleration.",
+   "explain_zh": "合力越大，加速度越大。",
+   "sign_en": [
+    "Increase",
+    "Reverse gravity",
+    "Always become zero"
+   ],
+   "sign_zh": [
+    "增大",
+    "反转重力",
+    "总是变成零"
+   ]
+  },
+  {
+   "id": "g7_013",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose eating grass is acting as a…",
+   "q_zh": "加拿大鹅吃草时扮演……",
+   "choices": [
+    "Consumer (herbivore)",
+    "Rock",
+    "Producer",
+    "Star"
+   ],
+   "choices_zh": [
+    "消费者（食草）",
+    "石头",
+    "生产者",
+    "恒星"
+   ],
+   "answer": 0,
+   "explain_en": "Animals that eat plants are consumers.",
+   "explain_zh": "吃植物的动物是消费者。"
+  },
+  {
+   "id": "g7_014",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water changing from liquid to gas is…",
+   "q_zh": "水从液体变成气体叫……",
+   "choices": [
+    "Freezing",
+    "Only condensation",
+    "Evaporation"
+   ],
+   "choices_zh": [
+    "结冰",
+    "只是凝结",
+    "蒸发"
+   ],
+   "answer": 2,
+   "explain_en": "Evaporation turns liquid into vapour.",
+   "explain_zh": "蒸发把液态变成气态。",
+   "sign_en": [
+    "Freezing",
+    "Only condensation",
+    "Evaporation"
+   ],
+   "sign_zh": [
+    "结冰",
+    "只是凝结",
+    "蒸发"
+   ]
+  },
+  {
+   "id": "g7_015",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is a habitat for beavers because it has…",
+   "q_zh": "迷失湖适合河狸，因为有……",
+   "choices": [
+    "Only dry sand",
+    "Fresh water and woody plants",
+    "A desert dune",
+    "Lava"
+   ],
+   "choices_zh": [
+    "只有干沙",
+    "淡水和木质植物",
+    "一座沙丘",
+    "熔岩"
+   ],
+   "answer": 1,
+   "explain_en": "Beavers need water and trees.",
+   "explain_zh": "河狸需要水和树。"
+  },
+  {
+   "id": "g7_016",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A percent is a ratio out of…",
+   "q_zh": "百分数是多少做分母的比？",
+   "choices": [
+    "1000",
+    "2",
+    "100",
+    "10"
+   ],
+   "choices_zh": [
+    "1000",
+    "2",
+    "100",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "Percent means per hundred.",
+   "explain_zh": "百分即每百。"
+  },
+  {
+   "id": "g7_017",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Friction on a wet seawall path usually…",
+   "q_zh": "潮湿海堤上的摩擦力通常会……",
+   "choices": [
+    "Decrease (more slip)",
+    "Erase mass",
+    "Summon lightning",
+    "Create gold"
+   ],
+   "choices_zh": [
+    "减小（更滑）",
+    "消去质量",
+    "召唤闪电",
+    "制造金子"
+   ],
+   "answer": 0,
+   "explain_en": "Wet surfaces often reduce grip.",
+   "explain_zh": "潮湿常让抓地变差。"
+  },
+  {
+   "id": "g7_018",
+   "section": "pumpkin_field",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"The path was slick with rain, so Leo slowed down.\" — What does slick mean here?",
+   "q_zh": "小路被雨打湿很滑，所以 Leo 放慢了。这里 slick 意思是？",
+   "choices": [
+    "Sunny",
+    "Slippery",
+    "Loud",
+    "Delicious"
+   ],
+   "choices_zh": [
+    "晴朗",
+    "滑",
+    "大声",
+    "好吃"
+   ],
+   "answer": 1,
+   "explain_en": "Slick = slippery here.",
+   "explain_zh": "这里 slick 是滑。"
+  },
+  {
+   "id": "g7_019",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"Bara waited in the basket, calm as a lake.\" — This simile compares calm to…",
+   "q_zh": "Bara 在车篮里，平静得像湖。比喻把平静比作……",
+   "choices": [
+    "A lake",
+    "A siren",
+    "A volcano"
+   ],
+   "choices_zh": [
+    "湖",
+    "警报",
+    "火山"
+   ],
+   "answer": 0,
+   "explain_en": "as calm as a lake.",
+   "explain_zh": "像湖一样平静。",
+   "sign_en": [
+    "A lake",
+    "A siren",
+    "A volcano"
+   ],
+   "sign_zh": [
+    "湖",
+    "警报",
+    "火山"
+   ]
+  },
+  {
+   "id": "g7_020",
+   "section": "corn_maze",
+   "subject": "reading",
+   "difficulty": "medium",
+   "q_en": "Passage: \"Flora whispered so she would not startle the heron.\" — Whispered suggests she spoke…",
+   "q_zh": "Flora 小声说话以免惊动鹭。whispered 说明她说话……",
+   "choices": [
+    "Very softly",
+    "By shouting",
+    "By singing opera only"
+   ],
+   "choices_zh": [
+    "非常轻声",
+    "大喊",
+    "只唱歌剧"
+   ],
+   "answer": 0,
+   "explain_en": "Whisper = soft voice.",
+   "explain_zh": "whisper=轻声。",
+   "sign_en": [
+    "Very softly",
+    "By shouting",
+    "By singing opera only"
+   ],
+   "sign_zh": [
+    "非常轻声",
+    "大喊",
+    "只唱歌剧"
+   ]
+  },
+  {
+   "id": "g7_021",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Penguin",
+    "Flamingo",
+    "Canada goose",
+    "Ostrich"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "火烈鸟",
+    "加拿大鹅",
+    "鸵鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。"
+  },
+  {
+   "id": "g7_022",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "Only in winter",
+    "At night",
+    "At noon"
+   ],
+   "choices_zh": [
+    "只在冬天",
+    "晚上",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "sign_en": [
+    "Only in winter",
+    "At night",
+    "At noon"
+   ],
+   "sign_zh": [
+    "只在冬天",
+    "晚上",
+    "中午"
+   ]
+  },
+  {
+   "id": "g7_023",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "choices_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ],
+   "answer": 2,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "sign_en": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation"
+   ],
+   "sign_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位"
+   ]
+  },
+  {
+   "id": "g7_024",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Mammals",
+    "Insects",
+    "Birds",
+    "Fish"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "昆虫",
+    "鸟",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。"
+  },
+  {
+   "id": "g7_025",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Flamingo",
+    "Great blue heron",
+    "Ostrich",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "火烈鸟",
+    "大蓝鹭",
+    "鸵鸟",
+    "企鹅"
+   ],
+   "answer": 1,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。"
+  },
+  {
+   "id": "g7_026",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Palm tree",
+    "Western red cedar",
+    "Baobab"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "西部红雪松",
+    "猴面包树"
+   ],
+   "answer": 1,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "sign_en": [
+    "Palm tree",
+    "Western red cedar",
+    "Baobab"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "西部红雪松",
+    "猴面包树"
+   ]
+  },
+  {
+   "id": "g7_027",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Lay eggs / spawn",
+    "Hibernate",
+    "Learn to fly",
+    "Find candy"
+   ],
+   "choices_zh": [
+    "产卵",
+    "冬眠",
+    "学飞",
+    "找糖"
+   ],
+   "answer": 0,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。"
+  },
+  {
+   "id": "g7_028",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "270°",
+    "90°",
+    "45°"
+   ],
+   "choices_zh": [
+    "大约 270°",
+    "90°",
+    "45°"
+   ],
+   "answer": 0,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "sign_en": [
+    "270°",
+    "90°",
+    "45°"
+   ],
+   "sign_zh": [
+    "大约 270°",
+    "90°",
+    "45°"
+   ]
+  },
+  {
+   "id": "g7_029",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Wind turbines",
+    "Earthquakes only",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "风力发电机",
+    "只因为地震",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 2,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "sign_en": [
+    "Wind turbines",
+    "Earthquakes only",
+    "The Moon's gravity pulls the tides"
+   ],
+   "sign_zh": [
+    "风力发电机",
+    "只因为地震",
+    "月亮引力拉动潮汐"
+   ]
+  },
+  {
+   "id": "g7_030",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Sunscreen",
+    "Decomposers (fungi, insects, microbes)",
+    "Traffic",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "防晒霜",
+    "分解者（真菌、昆虫、微生物）",
+    "车流",
+    "磁铁"
+   ],
+   "answer": 1,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。"
+  },
+  {
+   "id": "g7_031",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Marine mammals",
+    "Birds",
+    "Fish",
+    "Insects"
+   ],
+   "choices_zh": [
+    "海洋哺乳动物",
+    "鸟",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。"
+  },
+  {
+   "id": "g7_032",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Building dams and lodges with wood",
+    "Flying south",
+    "Laying swan eggs",
+    "Growing antlers"
+   ],
+   "choices_zh": [
+    "用木头筑坝和巢穴",
+    "飞去南方",
+    "下天鹅蛋",
+    "长鹿角"
+   ],
+   "answer": 0,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。"
+  },
+  {
+   "id": "g7_033",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Reptile",
+    "Mammal",
+    "Bird",
+    "Fish"
+   ],
+   "choices_zh": [
+    "爬行动物",
+    "哺乳动物",
+    "鸟类",
+    "鱼"
+   ],
+   "answer": 2,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。"
+  },
+  {
+   "id": "g7_034",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "4",
+    "10",
+    "6",
+    "8"
+   ],
+   "choices_zh": [
+    "4",
+    "10",
+    "6",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。"
+  },
+  {
+   "id": "g7_035",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Stop rain",
+    "Taste colours",
+    "Make candy",
+    "Sense objects with sound echoes"
+   ],
+   "choices_zh": [
+    "让雨停下",
+    "品尝颜色",
+    "做糖果",
+    "用回声感知物体"
+   ],
+   "answer": 3,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。"
+  },
+  {
+   "id": "g7_036",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "2",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "sign_en": [
+    "2",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "2",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g7_037",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Providing habitat and holding soil",
+    "Stopping the Moon",
+    "Making plastic"
+   ],
+   "choices_zh": [
+    "提供栖息地并固定土壤",
+    "挡住月亮",
+    "制造塑料"
+   ],
+   "answer": 0,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "sign_en": [
+    "Providing habitat and holding soil",
+    "Stopping the Moon",
+    "Making plastic"
+   ],
+   "sign_zh": [
+    "提供栖息地并固定土壤",
+    "挡住月亮",
+    "制造塑料"
+   ]
+  },
+  {
+   "id": "g7_038",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "choices_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ],
+   "answer": 1,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "sign_en": [
+    "Bicycle",
+    "Fungi / mushrooms",
+    "Sun only"
+   ],
+   "sign_zh": [
+    "自行车",
+    "真菌/蘑菇",
+    "只有太阳"
+   ]
+  },
+  {
+   "id": "g7_039",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1950",
+    "2001",
+    "1888"
+   ],
+   "choices_zh": [
+    "1950",
+    "2001",
+    "1888"
+   ],
+   "answer": 2,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。",
+   "sign_en": [
+    "1950",
+    "2001",
+    "1888"
+   ],
+   "sign_zh": [
+    "1950",
+    "2001",
+    "1888"
+   ]
+  },
+  {
+   "id": "g7_040",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Grey Cup",
+    "Stanley Cup",
+    "Olympic torch",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "格雷杯",
+    "斯坦利杯",
+    "奥运火炬",
+    "世界杯"
+   ],
+   "answer": 1,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。"
+  },
+  {
+   "id": "g7_041",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Half the size",
+    "Bigger",
+    "The same"
+   ],
+   "choices_zh": [
+    "只有一半大",
+    "更大",
+    "一样大"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "sign_en": [
+    "Half the size",
+    "Bigger",
+    "The same"
+   ],
+   "sign_zh": [
+    "只有一半大",
+    "更大",
+    "一样大"
+   ]
+  },
+  {
+   "id": "g7_042",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca"
+   ],
+   "choices_zh": [
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加"
+   ],
+   "answer": 1,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "sign_en": [
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca"
+   ],
+   "sign_zh": [
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加"
+   ]
+  },
+  {
+   "id": "g7_043",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Lions Gate Bridge",
+    "Tower Bridge",
+    "Port Mann"
+   ],
+   "choices_zh": [
+    "狮门大桥",
+    "塔桥",
+    "福特曼桥"
+   ],
+   "answer": 0,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "sign_en": [
+    "Lions Gate Bridge",
+    "Tower Bridge",
+    "Port Mann"
+   ],
+   "sign_zh": [
+    "狮门大桥",
+    "塔桥",
+    "福特曼桥"
+   ]
+  },
+  {
+   "id": "g7_044",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "Midnight",
+    "Noon",
+    "9:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "午夜",
+    "中午",
+    "晚上 9 点"
+   ],
+   "answer": 3,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。"
+  },
+  {
+   "id": "g7_045",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Ice",
+    "Volcanic / igneous rock (an old dike)",
+    "Wood"
+   ],
+   "choices_zh": [
+    "冰",
+    "火山岩/火成岩（古老岩墙）",
+    "木头"
+   ],
+   "answer": 1,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "sign_en": [
+    "Ice",
+    "Volcanic / igneous rock (an old dike)",
+    "Wood"
+   ],
+   "sign_zh": [
+    "冰",
+    "火山岩/火成岩（古老岩墙）",
+    "木头"
+   ]
+  },
+  {
+   "id": "g7_046",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "100 m",
+    "50 km",
+    "1 km",
+    "About 9 km"
+   ],
+   "choices_zh": [
+    "100 米",
+    "50 公里",
+    "1 公里",
+    "大约 9 公里"
+   ],
+   "answer": 3,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。"
+  },
+  {
+   "id": "g7_047",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Any direction",
+    "Only at night",
+    "One way (counter-clockwise)"
+   ],
+   "choices_zh": [
+    "任意方向",
+    "只在夜里",
+    "单向（逆时针）"
+   ],
+   "answer": 2,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "sign_en": [
+    "Any direction",
+    "Only at night",
+    "One way (counter-clockwise)"
+   ],
+   "sign_zh": [
+    "任意方向",
+    "只在夜里",
+    "单向（逆时针）"
+   ]
+  },
+  {
+   "id": "g7_048",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A desert",
+    "An airport runway",
+    "A Vancouver waterfront / harbour area",
+    "A volcano crater"
+   ],
+   "choices_zh": [
+    "沙漠",
+    "机场跑道",
+    "温哥华滨水港湾区",
+    "火山口"
+   ],
+   "answer": 2,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。"
+  },
+  {
+   "id": "g7_049",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A subway under the lake",
+    "Swans as the only animals",
+    "Beavers",
+    "A desert dune"
+   ],
+   "choices_zh": [
+    "湖底地铁",
+    "只有天鹅",
+    "河狸",
+    "一座沙丘"
+   ],
+   "answer": 2,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。"
+  },
+  {
+   "id": "g7_050",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "October 31",
+    "July 1",
+    "February 14",
+    "December 25"
+   ],
+   "choices_zh": [
+    "10 月 31 日",
+    "7 月 1 日",
+    "2 月 14 日",
+    "12 月 25 日"
+   ],
+   "answer": 0,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。"
+  },
+  {
+   "id": "g7_051",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "Cedar / forest trails",
+    "An airport",
+    "A desert highway",
+    "An underground mall only"
+   ],
+   "choices_zh": [
+    "雪松/林间小道",
+    "机场",
+    "沙漠公路",
+    "只有地下商场"
+   ],
+   "answer": 0,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。"
+  },
+  {
+   "id": "g7_052",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Close your eyes",
+    "Honk forever",
+    "Slow down and watch for people",
+    "Sprint through"
+   ],
+   "choices_zh": [
+    "闭眼",
+    "一直按铃",
+    "减速并注意行人",
+    "冲过去"
+   ],
+   "answer": 2,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。"
+  },
+  {
+   "id": "g7_053",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "No lights ever",
+    "A cape only",
+    "Skating shoes",
+    "A helmet (it's the law)"
+   ],
+   "choices_zh": [
+    "永远不用灯",
+    "只要披风",
+    "溜冰鞋",
+    "戴头盔（法律规定）"
+   ],
+   "answer": 3,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。"
+  },
+  {
+   "id": "g7_054",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "A blindfold",
+    "No lights",
+    "Lights and bright / reflective gear",
+    "Only sunglasses"
+   ],
+   "choices_zh": [
+    "蒙眼布",
+    "不开灯",
+    "车灯和亮色/反光装备",
+    "只戴墨镜"
+   ],
+   "answer": 2,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。"
+  },
+  {
+   "id": "g7_055",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Scare them loudly",
+    "Slow down and give them space",
+    "Feed them candy",
+    "Chase them"
+   ],
+   "choices_zh": [
+    "大声吓它们",
+    "减速并留出空间",
+    "喂糖",
+    "去追"
+   ],
+   "answer": 1,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。"
+  },
+  {
+   "id": "g7_056",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "The Moon's password",
+    "Bike lights and brakes",
+    "Only your socks colour",
+    "Invisible ink"
+   ],
+   "choices_zh": [
+    "月亮密码",
+    "车灯和刹车",
+    "只看袜子颜色",
+    "隐形墨水"
+   ],
+   "answer": 1,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。"
+  },
+  {
+   "id": "g7_057",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Watermelon only",
+    "Pumpkin",
+    "Ice block",
+    "Rock"
+   ],
+   "choices_zh": [
+    "只有西瓜",
+    "南瓜",
+    "冰块",
+    "石头"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。"
+  },
+  {
+   "id": "g7_058",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Air only",
+    "Sand",
+    "Water",
+    "Metal"
+   ],
+   "choices_zh": [
+    "只有空气",
+    "沙子",
+    "水",
+    "金属"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。"
+  },
+  {
+   "id": "g7_059",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Turnips / root vegetables",
+    "Coconuts",
+    "Glass",
+    "Pineapples"
+   ],
+   "choices_zh": [
+    "芜菁等根菜",
+    "椰子",
+    "玻璃",
+    "菠萝"
+   ],
+   "answer": 0,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。"
+  },
+  {
+   "id": "g7_060",
+   "section": "corn_maze",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ],
+   "answer": 2,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "sign_en": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "sign_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ]
+  },
+  {
+   "id": "g7_061",
+   "section": "pumpkin_field",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Canada Day only",
+    "Tax day",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "只有加拿大日",
+    "报税日",
+    "万圣节",
+    "感恩节烹饪课"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。"
+  },
+  {
+   "id": "g7_062",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4.8 kg + 6.0 kg = ?",
+   "q_zh": "4.8 kg + 6.0 kg =？",
+   "choices": [
+    "10.8",
+    "11.3",
+    "11.8"
+   ],
+   "choices_zh": [
+    "10.8",
+    "11.3",
+    "11.8"
+   ],
+   "answer": 0,
+   "explain_en": "=10.8.",
+   "explain_zh": "=10.8。",
+   "sign_en": [
+    "10.8",
+    "11.3",
+    "11.8"
+   ],
+   "sign_zh": [
+    "10.8",
+    "11.3",
+    "11.8"
+   ]
+  },
+  {
+   "id": "g7_063",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 9:4. If 18 apples, pears?",
+   "q_zh": "苹果:梨=9:4。有 18 个苹果，梨几个？",
+   "choices": [
+    "11",
+    "5",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "5",
+    "9",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "×2 → pears=8.",
+   "explain_zh": "梨=8。"
+  },
+  {
+   "id": "g7_064",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 9 = 24. x=?",
+   "q_zh": "解 x+9=24，x=？",
+   "choices": [
+    "18",
+    "11",
+    "15"
+   ],
+   "choices_zh": [
+    "18",
+    "11",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "x=15.",
+   "explain_zh": "x=15。",
+   "sign_en": [
+    "18",
+    "11",
+    "15"
+   ],
+   "sign_zh": [
+    "18",
+    "11",
+    "15"
+   ]
+  },
+  {
+   "id": "g7_065",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 15 = 18. x=?",
+   "q_zh": "解 x+15=18，x=？",
+   "choices": [
+    "4",
+    "1",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "1",
+    "5",
+    "3"
+   ],
+   "answer": 3,
+   "explain_en": "x=3.",
+   "explain_zh": "x=3。"
+  },
+  {
+   "id": "g7_066",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6.8 kg + 7.3 kg = ?",
+   "q_zh": "6.8 kg + 7.3 kg =？",
+   "choices": [
+    "14.1",
+    "13.6",
+    "13.1",
+    "14.6"
+   ],
+   "choices_zh": [
+    "14.1",
+    "13.6",
+    "13.1",
+    "14.6"
+   ],
+   "answer": 0,
+   "explain_en": "=14.1.",
+   "explain_zh": "=14.1。"
+  },
+  {
+   "id": "g7_067",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3.3 kg + 5.5 kg = ?",
+   "q_zh": "3.3 kg + 5.5 kg =？",
+   "choices": [
+    "9.8",
+    "8.8",
+    "8.3",
+    "9.3"
+   ],
+   "choices_zh": [
+    "9.8",
+    "8.8",
+    "8.3",
+    "9.3"
+   ],
+   "answer": 1,
+   "explain_en": "=8.8.",
+   "explain_zh": "=8.8。"
+  },
+  {
+   "id": "g7_068",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1.2 kg + 6.7 kg = ?",
+   "q_zh": "1.2 kg + 6.7 kg =？",
+   "choices": [
+    "7.4",
+    "7.9",
+    "9.4",
+    "6.9"
+   ],
+   "choices_zh": [
+    "7.4",
+    "7.9",
+    "9.4",
+    "6.9"
+   ],
+   "answer": 1,
+   "explain_en": "=7.9.",
+   "explain_zh": "=7.9。"
+  },
+  {
+   "id": "g7_069",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 24 = 31. x=?",
+   "q_zh": "解 x+24=31，x=？",
+   "choices": [
+    "7",
+    "6",
+    "10"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "x=7.",
+   "explain_zh": "x=7。",
+   "sign_en": [
+    "7",
+    "6",
+    "10"
+   ],
+   "sign_zh": [
+    "7",
+    "6",
+    "10"
+   ]
+  },
+  {
+   "id": "g7_070",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.7 kg + 6.6 kg = ?",
+   "q_zh": "5.7 kg + 6.6 kg =？",
+   "choices": [
+    "13.8",
+    "12.3",
+    "11.3"
+   ],
+   "choices_zh": [
+    "13.8",
+    "12.3",
+    "11.3"
+   ],
+   "answer": 1,
+   "explain_en": "=12.3.",
+   "explain_zh": "=12.3。",
+   "sign_en": [
+    "13.8",
+    "12.3",
+    "11.3"
+   ],
+   "sign_zh": [
+    "13.8",
+    "12.3",
+    "11.3"
+   ]
+  },
+  {
+   "id": "g7_071",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 5 = 24. x=?",
+   "q_zh": "解 x+5=24，x=？",
+   "choices": [
+    "19",
+    "17",
+    "20"
+   ],
+   "choices_zh": [
+    "19",
+    "17",
+    "20"
+   ],
+   "answer": 0,
+   "explain_en": "x=19.",
+   "explain_zh": "x=19。",
+   "sign_en": [
+    "19",
+    "17",
+    "20"
+   ],
+   "sign_zh": [
+    "19",
+    "17",
+    "20"
+   ]
+  },
+  {
+   "id": "g7_072",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2/3 of 24 = ?",
+   "q_zh": "24 的 2/3 =？",
+   "choices": [
+    "16",
+    "14",
+    "19",
+    "13"
+   ],
+   "choices_zh": [
+    "16",
+    "14",
+    "19",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "=16.",
+   "explain_zh": "=16。"
+  },
+  {
+   "id": "g7_073",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.5 kg + 7.7 kg = ?",
+   "q_zh": "5.5 kg + 7.7 kg =？",
+   "choices": [
+    "13.2",
+    "14.7",
+    "12.2",
+    "14.2"
+   ],
+   "choices_zh": [
+    "13.2",
+    "14.7",
+    "12.2",
+    "14.2"
+   ],
+   "answer": 0,
+   "explain_en": "=13.2.",
+   "explain_zh": "=13.2。"
+  },
+  {
+   "id": "g7_074",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 9:8. If 54 apples, pears?",
+   "q_zh": "苹果:梨=9:8。有 54 个苹果，梨几个？",
+   "choices": [
+    "51",
+    "48",
+    "42",
+    "57"
+   ],
+   "choices_zh": [
+    "51",
+    "48",
+    "42",
+    "57"
+   ],
+   "answer": 1,
+   "explain_en": "×6 → pears=48.",
+   "explain_zh": "梨=48。"
+  },
+  {
+   "id": "g7_075",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10% of 88 crates sold. How many?",
+   "q_zh": "88 箱卖掉 10%，卖掉几箱？",
+   "choices": [
+    "6",
+    "10",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "10",
+    "8",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "10%×88=8.",
+   "explain_zh": "=8。"
+  },
+  {
+   "id": "g7_076",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.1 kg + 8.1 kg = ?",
+   "q_zh": "7.1 kg + 8.1 kg =？",
+   "choices": [
+    "15.7",
+    "14.2",
+    "15.2",
+    "16.2"
+   ],
+   "choices_zh": [
+    "15.7",
+    "14.2",
+    "15.2",
+    "16.2"
+   ],
+   "answer": 2,
+   "explain_en": "=15.2.",
+   "explain_zh": "=15.2。"
+  },
+  {
+   "id": "g7_077",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10% of 162 crates sold. How many?",
+   "q_zh": "162 箱卖掉 10%，卖掉几箱？",
+   "choices": [
+    "16",
+    "20",
+    "19"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "10%×162=16.",
+   "explain_zh": "=16。",
+   "sign_en": [
+    "16",
+    "20",
+    "19"
+   ],
+   "sign_zh": [
+    "16",
+    "20",
+    "19"
+   ]
+  },
+  {
+   "id": "g7_078",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.8 kg + 3.2 kg = ?",
+   "q_zh": "7.8 kg + 3.2 kg =？",
+   "choices": [
+    "11.0",
+    "10.0",
+    "10.5"
+   ],
+   "choices_zh": [
+    "11.0",
+    "10.0",
+    "10.5"
+   ],
+   "answer": 0,
+   "explain_en": "=11.0.",
+   "explain_zh": "=11.0。",
+   "sign_en": [
+    "11.0",
+    "10.0",
+    "10.5"
+   ],
+   "sign_zh": [
+    "11.0",
+    "10.0",
+    "10.5"
+   ]
+  },
+  {
+   "id": "g7_079",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 4:6. If 16 apples, pears?",
+   "q_zh": "苹果:梨=4:6。有 16 个苹果，梨几个？",
+   "choices": [
+    "29",
+    "24",
+    "20"
+   ],
+   "choices_zh": [
+    "29",
+    "24",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "×4 → pears=24.",
+   "explain_zh": "梨=24。",
+   "sign_en": [
+    "29",
+    "24",
+    "20"
+   ],
+   "sign_zh": [
+    "29",
+    "24",
+    "20"
+   ]
+  },
+  {
+   "id": "g7_080",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.5 kg + 5.1 kg = ?",
+   "q_zh": "5.5 kg + 5.1 kg =？",
+   "choices": [
+    "9.6",
+    "11.1",
+    "11.6",
+    "10.6"
+   ],
+   "choices_zh": [
+    "9.6",
+    "11.1",
+    "11.6",
+    "10.6"
+   ],
+   "answer": 3,
+   "explain_en": "=10.6.",
+   "explain_zh": "=10.6。"
+  },
+  {
+   "id": "g7_081",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 2:5. If 6 apples, pears?",
+   "q_zh": "苹果:梨=2:5。有 6 个苹果，梨几个？",
+   "choices": [
+    "15",
+    "16",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "×3 → pears=15.",
+   "explain_zh": "梨=15。",
+   "sign_en": [
+    "15",
+    "16",
+    "12"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "12"
+   ]
+  },
+  {
+   "id": "g7_082",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 146 crates sold. How many?",
+   "q_zh": "146 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "58",
+    "59",
+    "64"
+   ],
+   "choices_zh": [
+    "58",
+    "59",
+    "64"
+   ],
+   "answer": 0,
+   "explain_en": "40%×146=58.",
+   "explain_zh": "=58。",
+   "sign_en": [
+    "58",
+    "59",
+    "64"
+   ],
+   "sign_zh": [
+    "58",
+    "59",
+    "64"
+   ]
+  },
+  {
+   "id": "g7_083",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "50% of 169 crates sold. How many?",
+   "q_zh": "169 箱卖掉 50%，卖掉几箱？",
+   "choices": [
+    "84",
+    "73",
+    "86"
+   ],
+   "choices_zh": [
+    "84",
+    "73",
+    "86"
+   ],
+   "answer": 0,
+   "explain_en": "50%×169=84.",
+   "explain_zh": "=84。",
+   "sign_en": [
+    "84",
+    "73",
+    "86"
+   ],
+   "sign_zh": [
+    "84",
+    "73",
+    "86"
+   ]
+  },
+  {
+   "id": "g7_084",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2/3 of 12 = ?",
+   "q_zh": "12 的 2/3 =？",
+   "choices": [
+    "8",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "sign_en": [
+    "8",
+    "7",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "7",
+    "6"
+   ]
+  },
+  {
+   "id": "g7_085",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10% of 78 crates sold. How many?",
+   "q_zh": "78 箱卖掉 10%，卖掉几箱？",
+   "choices": [
+    "7",
+    "9",
+    "4"
+   ],
+   "choices_zh": [
+    "7",
+    "9",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "10%×78=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "7",
+    "9",
+    "4"
+   ],
+   "sign_zh": [
+    "7",
+    "9",
+    "4"
+   ]
+  },
+  {
+   "id": "g7_086",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.6 kg + 7.6 kg = ?",
+   "q_zh": "9.6 kg + 7.6 kg =？",
+   "choices": [
+    "15.7",
+    "17.7",
+    "17.2"
+   ],
+   "choices_zh": [
+    "15.7",
+    "17.7",
+    "17.2"
+   ],
+   "answer": 2,
+   "explain_en": "=17.2.",
+   "explain_zh": "=17.2。",
+   "sign_en": [
+    "15.7",
+    "17.7",
+    "17.2"
+   ],
+   "sign_zh": [
+    "15.7",
+    "17.7",
+    "17.2"
+   ]
+  },
+  {
+   "id": "g7_087",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 9:2. If 36 apples, pears?",
+   "q_zh": "苹果:梨=9:2。有 36 个苹果，梨几个？",
+   "choices": [
+    "10",
+    "8",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "8",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "×4 → pears=8.",
+   "explain_zh": "梨=8。",
+   "sign_en": [
+    "10",
+    "8",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "8",
+    "9"
+   ]
+  },
+  {
+   "id": "g7_088",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 17 = 32. x=?",
+   "q_zh": "解 x+17=32，x=？",
+   "choices": [
+    "18",
+    "15",
+    "17",
+    "11"
+   ],
+   "choices_zh": [
+    "18",
+    "15",
+    "17",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "x=15.",
+   "explain_zh": "x=15。"
+  },
+  {
+   "id": "g7_089",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.6 kg + 2.6 kg = ?",
+   "q_zh": "2.6 kg + 2.6 kg =？",
+   "choices": [
+    "5.2",
+    "5.7",
+    "6.2"
+   ],
+   "choices_zh": [
+    "5.2",
+    "5.7",
+    "6.2"
+   ],
+   "answer": 0,
+   "explain_en": "=5.2.",
+   "explain_zh": "=5.2。",
+   "sign_en": [
+    "5.2",
+    "5.7",
+    "6.2"
+   ],
+   "sign_zh": [
+    "5.2",
+    "5.7",
+    "6.2"
+   ]
+  },
+  {
+   "id": "g7_090",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.2 kg + 1.8 kg = ?",
+   "q_zh": "2.2 kg + 1.8 kg =？",
+   "choices": [
+    "2.5",
+    "4.0",
+    "3.5"
+   ],
+   "choices_zh": [
+    "2.5",
+    "4.0",
+    "3.5"
+   ],
+   "answer": 1,
+   "explain_en": "=4.0.",
+   "explain_zh": "=4.0。",
+   "sign_en": [
+    "2.5",
+    "4.0",
+    "3.5"
+   ],
+   "sign_zh": [
+    "2.5",
+    "4.0",
+    "3.5"
+   ]
+  },
+  {
+   "id": "g7_091",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1.8 kg + 1.1 kg = ?",
+   "q_zh": "1.8 kg + 1.1 kg =？",
+   "choices": [
+    "1.9",
+    "2.4",
+    "3.9",
+    "2.9"
+   ],
+   "choices_zh": [
+    "1.9",
+    "2.4",
+    "3.9",
+    "2.9"
+   ],
+   "answer": 3,
+   "explain_en": "=2.9.",
+   "explain_zh": "=2.9。"
+  },
+  {
+   "id": "g7_092",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3.0 kg + 3.5 kg = ?",
+   "q_zh": "3.0 kg + 3.5 kg =？",
+   "choices": [
+    "5.5",
+    "6.5",
+    "5.0"
+   ],
+   "choices_zh": [
+    "5.5",
+    "6.5",
+    "5.0"
+   ],
+   "answer": 1,
+   "explain_en": "=6.5.",
+   "explain_zh": "=6.5。",
+   "sign_en": [
+    "5.5",
+    "6.5",
+    "5.0"
+   ],
+   "sign_zh": [
+    "5.5",
+    "6.5",
+    "5.0"
+   ]
+  },
+  {
+   "id": "g7_093",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.7 kg + 3.3 kg = ?",
+   "q_zh": "8.7 kg + 3.3 kg =？",
+   "choices": [
+    "11.5",
+    "11.0",
+    "12.0",
+    "10.5"
+   ],
+   "choices_zh": [
+    "11.5",
+    "11.0",
+    "12.0",
+    "10.5"
+   ],
+   "answer": 2,
+   "explain_en": "=12.0.",
+   "explain_zh": "=12.0。"
+  },
+  {
+   "id": "g7_094",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.1 kg + 7.1 kg = ?",
+   "q_zh": "8.1 kg + 7.1 kg =？",
+   "choices": [
+    "15.2",
+    "16.2",
+    "14.7"
+   ],
+   "choices_zh": [
+    "15.2",
+    "16.2",
+    "14.7"
+   ],
+   "answer": 0,
+   "explain_en": "=15.2.",
+   "explain_zh": "=15.2。",
+   "sign_en": [
+    "15.2",
+    "16.2",
+    "14.7"
+   ],
+   "sign_zh": [
+    "15.2",
+    "16.2",
+    "14.7"
+   ]
+  },
+  {
+   "id": "g7_095",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.8 kg + 5.9 kg = ?",
+   "q_zh": "8.8 kg + 5.9 kg =？",
+   "choices": [
+    "15.2",
+    "14.7",
+    "13.7",
+    "16.2"
+   ],
+   "choices_zh": [
+    "15.2",
+    "14.7",
+    "13.7",
+    "16.2"
+   ],
+   "answer": 1,
+   "explain_en": "=14.7.",
+   "explain_zh": "=14.7。"
+  },
+  {
+   "id": "g7_096",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 3:6. If 12 apples, pears?",
+   "q_zh": "苹果:梨=3:6。有 12 个苹果，梨几个？",
+   "choices": [
+    "30",
+    "24",
+    "18"
+   ],
+   "choices_zh": [
+    "30",
+    "24",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "×4 → pears=24.",
+   "explain_zh": "梨=24。",
+   "sign_en": [
+    "30",
+    "24",
+    "18"
+   ],
+   "sign_zh": [
+    "30",
+    "24",
+    "18"
+   ]
+  },
+  {
+   "id": "g7_097",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.2 kg + 5.4 kg = ?",
+   "q_zh": "7.2 kg + 5.4 kg =？",
+   "choices": [
+    "11.1",
+    "12.6",
+    "13.1"
+   ],
+   "choices_zh": [
+    "11.1",
+    "12.6",
+    "13.1"
+   ],
+   "answer": 1,
+   "explain_en": "=12.6.",
+   "explain_zh": "=12.6。",
+   "sign_en": [
+    "11.1",
+    "12.6",
+    "13.1"
+   ],
+   "sign_zh": [
+    "11.1",
+    "12.6",
+    "13.1"
+   ]
+  },
+  {
+   "id": "g7_098",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6.0 kg + 1.9 kg = ?",
+   "q_zh": "6.0 kg + 1.9 kg =？",
+   "choices": [
+    "9.4",
+    "6.9",
+    "7.9",
+    "8.9"
+   ],
+   "choices_zh": [
+    "9.4",
+    "6.9",
+    "7.9",
+    "8.9"
+   ],
+   "answer": 2,
+   "explain_en": "=7.9.",
+   "explain_zh": "=7.9。"
+  },
+  {
+   "id": "g7_099",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6.3 kg + 9.4 kg = ?",
+   "q_zh": "6.3 kg + 9.4 kg =？",
+   "choices": [
+    "17.2",
+    "15.7",
+    "15.2",
+    "16.2"
+   ],
+   "choices_zh": [
+    "17.2",
+    "15.7",
+    "15.2",
+    "16.2"
+   ],
+   "answer": 1,
+   "explain_en": "=15.7.",
+   "explain_zh": "=15.7。"
+  },
+  {
+   "id": "g7_100",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 72 crates sold. How many?",
+   "q_zh": "72 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "22",
+    "29",
+    "28"
+   ],
+   "choices_zh": [
+    "22",
+    "29",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "40%×72=28.",
+   "explain_zh": "=28。",
+   "sign_en": [
+    "22",
+    "29",
+    "28"
+   ],
+   "sign_zh": [
+    "22",
+    "29",
+    "28"
+   ]
+  },
+  {
+   "id": "g7_101",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.5 kg + 5.1 kg = ?",
+   "q_zh": "7.5 kg + 5.1 kg =？",
+   "choices": [
+    "12.6",
+    "11.1",
+    "13.6"
+   ],
+   "choices_zh": [
+    "12.6",
+    "11.1",
+    "13.6"
+   ],
+   "answer": 0,
+   "explain_en": "=12.6.",
+   "explain_zh": "=12.6。",
+   "sign_en": [
+    "12.6",
+    "11.1",
+    "13.6"
+   ],
+   "sign_zh": [
+    "12.6",
+    "11.1",
+    "13.6"
+   ]
+  },
+  {
+   "id": "g7_102",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "50% of 151 crates sold. How many?",
+   "q_zh": "151 箱卖掉 50%，卖掉几箱？",
+   "choices": [
+    "85",
+    "75",
+    "74"
+   ],
+   "choices_zh": [
+    "85",
+    "75",
+    "74"
+   ],
+   "answer": 1,
+   "explain_en": "50%×151=75.",
+   "explain_zh": "=75。",
+   "sign_en": [
+    "85",
+    "75",
+    "74"
+   ],
+   "sign_zh": [
+    "85",
+    "75",
+    "74"
+   ]
+  },
+  {
+   "id": "g7_103",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6.8 kg + 1.1 kg = ?",
+   "q_zh": "6.8 kg + 1.1 kg =？",
+   "choices": [
+    "6.9",
+    "7.9",
+    "8.4"
+   ],
+   "choices_zh": [
+    "6.9",
+    "7.9",
+    "8.4"
+   ],
+   "answer": 1,
+   "explain_en": "=7.9.",
+   "explain_zh": "=7.9。",
+   "sign_en": [
+    "6.9",
+    "7.9",
+    "8.4"
+   ],
+   "sign_zh": [
+    "6.9",
+    "7.9",
+    "8.4"
+   ]
+  },
+  {
+   "id": "g7_104",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6/8 of 32 = ?",
+   "q_zh": "32 的 6/8 =？",
+   "choices": [
+    "22",
+    "24",
+    "29",
+    "25"
+   ],
+   "choices_zh": [
+    "22",
+    "24",
+    "29",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g7_105",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 16 = 29. x=?",
+   "q_zh": "解 x+16=29，x=？",
+   "choices": [
+    "13",
+    "17",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "17",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "x=13.",
+   "explain_zh": "x=13。",
+   "sign_en": [
+    "13",
+    "17",
+    "14"
+   ],
+   "sign_zh": [
+    "13",
+    "17",
+    "14"
+   ]
+  },
+  {
+   "id": "g7_106",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.6 kg + 7.6 kg = ?",
+   "q_zh": "2.6 kg + 7.6 kg =？",
+   "choices": [
+    "10.2",
+    "8.7",
+    "11.2"
+   ],
+   "choices_zh": [
+    "10.2",
+    "8.7",
+    "11.2"
+   ],
+   "answer": 0,
+   "explain_en": "=10.2.",
+   "explain_zh": "=10.2。",
+   "sign_en": [
+    "10.2",
+    "8.7",
+    "11.2"
+   ],
+   "sign_zh": [
+    "10.2",
+    "8.7",
+    "11.2"
+   ]
+  },
+  {
+   "id": "g7_107",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4.5 kg + 8.2 kg = ?",
+   "q_zh": "4.5 kg + 8.2 kg =？",
+   "choices": [
+    "12.7",
+    "11.7",
+    "13.7",
+    "12.2"
+   ],
+   "choices_zh": [
+    "12.7",
+    "11.7",
+    "13.7",
+    "12.2"
+   ],
+   "answer": 0,
+   "explain_en": "=12.7.",
+   "explain_zh": "=12.7。"
+  },
+  {
+   "id": "g7_108",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7/8 of 96 = ?",
+   "q_zh": "96 的 7/8 =？",
+   "choices": [
+    "97",
+    "79",
+    "84"
+   ],
+   "choices_zh": [
+    "97",
+    "79",
+    "84"
+   ],
+   "answer": 2,
+   "explain_en": "=84.",
+   "explain_zh": "=84。",
+   "sign_en": [
+    "97",
+    "79",
+    "84"
+   ],
+   "sign_zh": [
+    "97",
+    "79",
+    "84"
+   ]
+  },
+  {
+   "id": "g7_109",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 6:8. If 12 apples, pears?",
+   "q_zh": "苹果:梨=6:8。有 12 个苹果，梨几个？",
+   "choices": [
+    "16",
+    "17",
+    "12",
+    "19"
+   ],
+   "choices_zh": [
+    "16",
+    "17",
+    "12",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "×2 → pears=16.",
+   "explain_zh": "梨=16。"
+  },
+  {
+   "id": "g7_110",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.9 kg + 6.7 kg = ?",
+   "q_zh": "8.9 kg + 6.7 kg =？",
+   "choices": [
+    "16.1",
+    "15.6",
+    "17.1"
+   ],
+   "choices_zh": [
+    "16.1",
+    "15.6",
+    "17.1"
+   ],
+   "answer": 1,
+   "explain_en": "=15.6.",
+   "explain_zh": "=15.6。",
+   "sign_en": [
+    "16.1",
+    "15.6",
+    "17.1"
+   ],
+   "sign_zh": [
+    "16.1",
+    "15.6",
+    "17.1"
+   ]
+  },
+  {
+   "id": "g7_111",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1/3 of 36 = ?",
+   "q_zh": "36 的 1/3 =？",
+   "choices": [
+    "12",
+    "9",
+    "15"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "sign_en": [
+    "12",
+    "9",
+    "15"
+   ],
+   "sign_zh": [
+    "12",
+    "9",
+    "15"
+   ]
+  },
+  {
+   "id": "g7_112",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.5 kg + 6.1 kg = ?",
+   "q_zh": "7.5 kg + 6.1 kg =？",
+   "choices": [
+    "14.6",
+    "13.6",
+    "13.1",
+    "14.1"
+   ],
+   "choices_zh": [
+    "14.6",
+    "13.6",
+    "13.1",
+    "14.1"
+   ],
+   "answer": 1,
+   "explain_en": "=13.6.",
+   "explain_zh": "=13.6。"
+  },
+  {
+   "id": "g7_113",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 178 crates sold. How many?",
+   "q_zh": "178 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "71",
+    "65",
+    "68"
+   ],
+   "choices_zh": [
+    "71",
+    "65",
+    "68"
+   ],
+   "answer": 0,
+   "explain_en": "40%×178=71.",
+   "explain_zh": "=71。",
+   "sign_en": [
+    "71",
+    "65",
+    "68"
+   ],
+   "sign_zh": [
+    "71",
+    "65",
+    "68"
+   ]
+  },
+  {
+   "id": "g7_114",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25% of 137 crates sold. How many?",
+   "q_zh": "137 箱卖掉 25%，卖掉几箱？",
+   "choices": [
+    "40",
+    "35",
+    "34",
+    "30"
+   ],
+   "choices_zh": [
+    "40",
+    "35",
+    "34",
+    "30"
+   ],
+   "answer": 2,
+   "explain_en": "25%×137=34.",
+   "explain_zh": "=34。"
+  },
+  {
+   "id": "g7_115",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.8 kg + 8.3 kg = ?",
+   "q_zh": "7.8 kg + 8.3 kg =？",
+   "choices": [
+    "16.1",
+    "17.6",
+    "16.6"
+   ],
+   "choices_zh": [
+    "16.1",
+    "17.6",
+    "16.6"
+   ],
+   "answer": 0,
+   "explain_en": "=16.1.",
+   "explain_zh": "=16.1。",
+   "sign_en": [
+    "16.1",
+    "17.6",
+    "16.6"
+   ],
+   "sign_zh": [
+    "16.1",
+    "17.6",
+    "16.6"
+   ]
+  },
+  {
+   "id": "g7_116",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.0 kg + 9.8 kg = ?",
+   "q_zh": "2.0 kg + 9.8 kg =？",
+   "choices": [
+    "10.8",
+    "11.8",
+    "11.3"
+   ],
+   "choices_zh": [
+    "10.8",
+    "11.8",
+    "11.3"
+   ],
+   "answer": 1,
+   "explain_en": "=11.8.",
+   "explain_zh": "=11.8。",
+   "sign_en": [
+    "10.8",
+    "11.8",
+    "11.3"
+   ],
+   "sign_zh": [
+    "10.8",
+    "11.8",
+    "11.3"
+   ]
+  },
+  {
+   "id": "g7_117",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.4 kg + 5.2 kg = ?",
+   "q_zh": "7.4 kg + 5.2 kg =？",
+   "choices": [
+    "14.1",
+    "12.6",
+    "13.1",
+    "11.6"
+   ],
+   "choices_zh": [
+    "14.1",
+    "12.6",
+    "13.1",
+    "11.6"
+   ],
+   "answer": 1,
+   "explain_en": "=12.6.",
+   "explain_zh": "=12.6。"
+  },
+  {
+   "id": "g7_118",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 106 crates sold. How many?",
+   "q_zh": "106 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "49",
+    "33",
+    "44",
+    "42"
+   ],
+   "choices_zh": [
+    "49",
+    "33",
+    "44",
+    "42"
+   ],
+   "answer": 3,
+   "explain_en": "40%×106=42.",
+   "explain_zh": "=42。"
+  },
+  {
+   "id": "g7_119",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25% of 96 crates sold. How many?",
+   "q_zh": "96 箱卖掉 25%，卖掉几箱？",
+   "choices": [
+    "24",
+    "29",
+    "30",
+    "27"
+   ],
+   "choices_zh": [
+    "24",
+    "29",
+    "30",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "25%×96=24.",
+   "explain_zh": "=24。"
+  },
+  {
+   "id": "g7_120",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.9 kg + 3.2 kg = ?",
+   "q_zh": "9.9 kg + 3.2 kg =？",
+   "choices": [
+    "11.6",
+    "13.6",
+    "13.1"
+   ],
+   "choices_zh": [
+    "11.6",
+    "13.6",
+    "13.1"
+   ],
+   "answer": 2,
+   "explain_en": "=13.1.",
+   "explain_zh": "=13.1。",
+   "sign_en": [
+    "11.6",
+    "13.6",
+    "13.1"
+   ],
+   "sign_zh": [
+    "11.6",
+    "13.6",
+    "13.1"
+   ]
+  },
+  {
+   "id": "g7_121",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1/4 of 28 = ?",
+   "q_zh": "28 的 1/4 =？",
+   "choices": [
+    "4",
+    "7",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "sign_en": [
+    "4",
+    "7",
+    "5"
+   ],
+   "sign_zh": [
+    "4",
+    "7",
+    "5"
+   ]
+  },
+  {
+   "id": "g7_122",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 7:2. If 14 apples, pears?",
+   "q_zh": "苹果:梨=7:2。有 14 个苹果，梨几个？",
+   "choices": [
+    "7",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "×2 → pears=4.",
+   "explain_zh": "梨=4。",
+   "sign_en": [
+    "7",
+    "4",
+    "6"
+   ],
+   "sign_zh": [
+    "7",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "g7_123",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.3 kg + 4.2 kg = ?",
+   "q_zh": "5.3 kg + 4.2 kg =？",
+   "choices": [
+    "10.0",
+    "8.5",
+    "9.5",
+    "11.0"
+   ],
+   "choices_zh": [
+    "10.0",
+    "8.5",
+    "9.5",
+    "11.0"
+   ],
+   "answer": 2,
+   "explain_en": "=9.5.",
+   "explain_zh": "=9.5。"
+  },
+  {
+   "id": "g7_124",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.1 kg + 7.0 kg = ?",
+   "q_zh": "8.1 kg + 7.0 kg =？",
+   "choices": [
+    "14.6",
+    "14.1",
+    "15.1",
+    "16.6"
+   ],
+   "choices_zh": [
+    "14.6",
+    "14.1",
+    "15.1",
+    "16.6"
+   ],
+   "answer": 2,
+   "explain_en": "=15.1.",
+   "explain_zh": "=15.1。"
+  },
+  {
+   "id": "g7_125",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1/2 of 12 = ?",
+   "q_zh": "12 的 1/2 =？",
+   "choices": [
+    "5",
+    "8",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "6",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "=6.",
+   "explain_zh": "=6。"
+  },
+  {
+   "id": "g7_126",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3.1 kg + 9.0 kg = ?",
+   "q_zh": "3.1 kg + 9.0 kg =？",
+   "choices": [
+    "12.1",
+    "13.1",
+    "13.6"
+   ],
+   "choices_zh": [
+    "12.1",
+    "13.1",
+    "13.6"
+   ],
+   "answer": 0,
+   "explain_en": "=12.1.",
+   "explain_zh": "=12.1。",
+   "sign_en": [
+    "12.1",
+    "13.1",
+    "13.6"
+   ],
+   "sign_zh": [
+    "12.1",
+    "13.1",
+    "13.6"
+   ]
+  },
+  {
+   "id": "g7_127",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.0 kg + 8.9 kg = ?",
+   "q_zh": "5.0 kg + 8.9 kg =？",
+   "choices": [
+    "14.4",
+    "14.9",
+    "13.9",
+    "13.4"
+   ],
+   "choices_zh": [
+    "14.4",
+    "14.9",
+    "13.9",
+    "13.4"
+   ],
+   "answer": 2,
+   "explain_en": "=13.9.",
+   "explain_zh": "=13.9。"
+  },
+  {
+   "id": "g7_128",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1.7 kg + 4.9 kg = ?",
+   "q_zh": "1.7 kg + 4.9 kg =？",
+   "choices": [
+    "5.1",
+    "6.6",
+    "6.1"
+   ],
+   "choices_zh": [
+    "5.1",
+    "6.6",
+    "6.1"
+   ],
+   "answer": 1,
+   "explain_en": "=6.6.",
+   "explain_zh": "=6.6。",
+   "sign_en": [
+    "5.1",
+    "6.6",
+    "6.1"
+   ],
+   "sign_zh": [
+    "5.1",
+    "6.6",
+    "6.1"
+   ]
+  },
+  {
+   "id": "g7_129",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "50% of 130 crates sold. How many?",
+   "q_zh": "130 箱卖掉 50%，卖掉几箱？",
+   "choices": [
+    "55",
+    "69",
+    "53",
+    "65"
+   ],
+   "choices_zh": [
+    "55",
+    "69",
+    "53",
+    "65"
+   ],
+   "answer": 3,
+   "explain_en": "50%×130=65.",
+   "explain_zh": "=65。"
+  },
+  {
+   "id": "g7_130",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.5 kg + 2.0 kg = ?",
+   "q_zh": "8.5 kg + 2.0 kg =？",
+   "choices": [
+    "9.5",
+    "11.5",
+    "10.5"
+   ],
+   "choices_zh": [
+    "9.5",
+    "11.5",
+    "10.5"
+   ],
+   "answer": 2,
+   "explain_en": "=10.5.",
+   "explain_zh": "=10.5。",
+   "sign_en": [
+    "9.5",
+    "11.5",
+    "10.5"
+   ],
+   "sign_zh": [
+    "9.5",
+    "11.5",
+    "10.5"
+   ]
+  },
+  {
+   "id": "g7_131",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 9:9. If 54 apples, pears?",
+   "q_zh": "苹果:梨=9:9。有 54 个苹果，梨几个？",
+   "choices": [
+    "54",
+    "61",
+    "53",
+    "52"
+   ],
+   "choices_zh": [
+    "54",
+    "61",
+    "53",
+    "52"
+   ],
+   "answer": 0,
+   "explain_en": "×6 → pears=54.",
+   "explain_zh": "梨=54。"
+  },
+  {
+   "id": "g7_132",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 2:6. If 12 apples, pears?",
+   "q_zh": "苹果:梨=2:6。有 12 个苹果，梨几个？",
+   "choices": [
+    "36",
+    "30",
+    "40"
+   ],
+   "choices_zh": [
+    "36",
+    "30",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "×6 → pears=36.",
+   "explain_zh": "梨=36。",
+   "sign_en": [
+    "36",
+    "30",
+    "40"
+   ],
+   "sign_zh": [
+    "36",
+    "30",
+    "40"
+   ]
+  },
+  {
+   "id": "g7_133",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "15% of 109 crates sold. How many?",
+   "q_zh": "109 箱卖掉 15%，卖掉几箱？",
+   "choices": [
+    "13",
+    "17",
+    "16",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "17",
+    "16",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "15%×109=16.",
+   "explain_zh": "=16。"
+  },
+  {
+   "id": "g7_134",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25% of 118 crates sold. How many?",
+   "q_zh": "118 箱卖掉 25%，卖掉几箱？",
+   "choices": [
+    "29",
+    "35",
+    "32",
+    "24"
+   ],
+   "choices_zh": [
+    "29",
+    "35",
+    "32",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "25%×118=29.",
+   "explain_zh": "=29。"
+  },
+  {
+   "id": "g7_135",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.9 kg + 4.5 kg = ?",
+   "q_zh": "9.9 kg + 4.5 kg =？",
+   "choices": [
+    "14.4",
+    "13.9",
+    "12.9"
+   ],
+   "choices_zh": [
+    "14.4",
+    "13.9",
+    "12.9"
+   ],
+   "answer": 0,
+   "explain_en": "=14.4.",
+   "explain_zh": "=14.4。",
+   "sign_en": [
+    "14.4",
+    "13.9",
+    "12.9"
+   ],
+   "sign_zh": [
+    "14.4",
+    "13.9",
+    "12.9"
+   ]
+  },
+  {
+   "id": "g7_136",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1/2 of 20 = ?",
+   "q_zh": "20 的 1/2 =？",
+   "choices": [
+    "12",
+    "10",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "10",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "sign_en": [
+    "12",
+    "10",
+    "9"
+   ],
+   "sign_zh": [
+    "12",
+    "10",
+    "9"
+   ]
+  },
+  {
+   "id": "g7_137",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.9 kg + 4.1 kg = ?",
+   "q_zh": "9.9 kg + 4.1 kg =？",
+   "choices": [
+    "12.5",
+    "15.0",
+    "13.0",
+    "14.0"
+   ],
+   "choices_zh": [
+    "12.5",
+    "15.0",
+    "13.0",
+    "14.0"
+   ],
+   "answer": 3,
+   "explain_en": "=14.0.",
+   "explain_zh": "=14.0。"
+  },
+  {
+   "id": "g7_138",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.0 kg + 2.5 kg = ?",
+   "q_zh": "8.0 kg + 2.5 kg =？",
+   "choices": [
+    "10.5",
+    "11.5",
+    "12.0"
+   ],
+   "choices_zh": [
+    "10.5",
+    "11.5",
+    "12.0"
+   ],
+   "answer": 0,
+   "explain_en": "=10.5.",
+   "explain_zh": "=10.5。",
+   "sign_en": [
+    "10.5",
+    "11.5",
+    "12.0"
+   ],
+   "sign_zh": [
+    "10.5",
+    "11.5",
+    "12.0"
+   ]
+  },
+  {
+   "id": "g7_139",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.2 kg + 6.6 kg = ?",
+   "q_zh": "9.2 kg + 6.6 kg =？",
+   "choices": [
+    "14.8",
+    "15.8",
+    "16.8"
+   ],
+   "choices_zh": [
+    "14.8",
+    "15.8",
+    "16.8"
+   ],
+   "answer": 1,
+   "explain_en": "=15.8.",
+   "explain_zh": "=15.8。",
+   "sign_en": [
+    "14.8",
+    "15.8",
+    "16.8"
+   ],
+   "sign_zh": [
+    "14.8",
+    "15.8",
+    "16.8"
+   ]
+  },
+  {
+   "id": "g7_140",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "10% of 98 crates sold. How many?",
+   "q_zh": "98 箱卖掉 10%，卖掉几箱？",
+   "choices": [
+    "9",
+    "8",
+    "12",
+    "11"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "12",
+    "11"
+   ],
+   "answer": 0,
+   "explain_en": "10%×98=9.",
+   "explain_zh": "=9。"
+  },
+  {
+   "id": "g7_141",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.0 kg + 3.2 kg = ?",
+   "q_zh": "2.0 kg + 3.2 kg =？",
+   "choices": [
+    "5.7",
+    "4.2",
+    "5.2"
+   ],
+   "choices_zh": [
+    "5.7",
+    "4.2",
+    "5.2"
+   ],
+   "answer": 2,
+   "explain_en": "=5.2.",
+   "explain_zh": "=5.2。",
+   "sign_en": [
+    "5.7",
+    "4.2",
+    "5.2"
+   ],
+   "sign_zh": [
+    "5.7",
+    "4.2",
+    "5.2"
+   ]
+  },
+  {
+   "id": "g7_142",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3.3 kg + 3.2 kg = ?",
+   "q_zh": "3.3 kg + 3.2 kg =？",
+   "choices": [
+    "6.0",
+    "6.5",
+    "5.0",
+    "7.5"
+   ],
+   "choices_zh": [
+    "6.0",
+    "6.5",
+    "5.0",
+    "7.5"
+   ],
+   "answer": 1,
+   "explain_en": "=6.5.",
+   "explain_zh": "=6.5。"
+  },
+  {
+   "id": "g7_143",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.4 kg + 2.2 kg = ?",
+   "q_zh": "5.4 kg + 2.2 kg =？",
+   "choices": [
+    "7.6",
+    "9.1",
+    "8.1",
+    "6.1"
+   ],
+   "choices_zh": [
+    "7.6",
+    "9.1",
+    "8.1",
+    "6.1"
+   ],
+   "answer": 0,
+   "explain_en": "=7.6.",
+   "explain_zh": "=7.6。"
+  },
+  {
+   "id": "g7_144",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 18 = 29. x=?",
+   "q_zh": "解 x+18=29，x=？",
+   "choices": [
+    "9",
+    "11",
+    "14"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "x=11.",
+   "explain_zh": "x=11。",
+   "sign_en": [
+    "9",
+    "11",
+    "14"
+   ],
+   "sign_zh": [
+    "9",
+    "11",
+    "14"
+   ]
+  },
+  {
+   "id": "g7_145",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6.2 kg + 7.3 kg = ?",
+   "q_zh": "6.2 kg + 7.3 kg =？",
+   "choices": [
+    "13.0",
+    "14.5",
+    "13.5"
+   ],
+   "choices_zh": [
+    "13.0",
+    "14.5",
+    "13.5"
+   ],
+   "answer": 2,
+   "explain_en": "=13.5.",
+   "explain_zh": "=13.5。",
+   "sign_en": [
+    "13.0",
+    "14.5",
+    "13.5"
+   ],
+   "sign_zh": [
+    "13.0",
+    "14.5",
+    "13.5"
+   ]
+  },
+  {
+   "id": "g7_146",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 3:8. If 18 apples, pears?",
+   "q_zh": "苹果:梨=3:8。有 18 个苹果，梨几个？",
+   "choices": [
+    "48",
+    "57",
+    "50"
+   ],
+   "choices_zh": [
+    "48",
+    "57",
+    "50"
+   ],
+   "answer": 0,
+   "explain_en": "×6 → pears=48.",
+   "explain_zh": "梨=48。",
+   "sign_en": [
+    "48",
+    "57",
+    "50"
+   ],
+   "sign_zh": [
+    "48",
+    "57",
+    "50"
+   ]
+  },
+  {
+   "id": "g7_147",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7/8 of 88 = ?",
+   "q_zh": "88 的 7/8 =？",
+   "choices": [
+    "77",
+    "75",
+    "64"
+   ],
+   "choices_zh": [
+    "77",
+    "75",
+    "64"
+   ],
+   "answer": 0,
+   "explain_en": "=77.",
+   "explain_zh": "=77。",
+   "sign_en": [
+    "77",
+    "75",
+    "64"
+   ],
+   "sign_zh": [
+    "77",
+    "75",
+    "64"
+   ]
+  },
+  {
+   "id": "g7_148",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4.5 kg + 5.5 kg = ?",
+   "q_zh": "4.5 kg + 5.5 kg =？",
+   "choices": [
+    "8.5",
+    "11.0",
+    "10.0",
+    "9.0"
+   ],
+   "choices_zh": [
+    "8.5",
+    "11.0",
+    "10.0",
+    "9.0"
+   ],
+   "answer": 2,
+   "explain_en": "=10.0.",
+   "explain_zh": "=10.0。"
+  },
+  {
+   "id": "g7_149",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 5:4. If 15 apples, pears?",
+   "q_zh": "苹果:梨=5:4。有 15 个苹果，梨几个？",
+   "choices": [
+    "12",
+    "11",
+    "15"
+   ],
+   "choices_zh": [
+    "12",
+    "11",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "×3 → pears=12.",
+   "explain_zh": "梨=12。",
+   "sign_en": [
+    "12",
+    "11",
+    "15"
+   ],
+   "sign_zh": [
+    "12",
+    "11",
+    "15"
+   ]
+  },
+  {
+   "id": "g7_150",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.1 kg + 8.6 kg = ?",
+   "q_zh": "7.1 kg + 8.6 kg =？",
+   "choices": [
+    "15.2",
+    "15.7",
+    "16.7"
+   ],
+   "choices_zh": [
+    "15.2",
+    "15.7",
+    "16.7"
+   ],
+   "answer": 1,
+   "explain_en": "=15.7.",
+   "explain_zh": "=15.7。",
+   "sign_en": [
+    "15.2",
+    "15.7",
+    "16.7"
+   ],
+   "sign_zh": [
+    "15.2",
+    "15.7",
+    "16.7"
+   ]
+  },
+  {
+   "id": "g7_151",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.3 kg + 6.5 kg = ?",
+   "q_zh": "9.3 kg + 6.5 kg =？",
+   "choices": [
+    "16.8",
+    "16.3",
+    "15.8",
+    "17.3"
+   ],
+   "choices_zh": [
+    "16.8",
+    "16.3",
+    "15.8",
+    "17.3"
+   ],
+   "answer": 2,
+   "explain_en": "=15.8.",
+   "explain_zh": "=15.8。"
+  },
+  {
+   "id": "g7_152",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8.1 kg + 6.4 kg = ?",
+   "q_zh": "8.1 kg + 6.4 kg =？",
+   "choices": [
+    "14.5",
+    "13.0",
+    "16.0"
+   ],
+   "choices_zh": [
+    "14.5",
+    "13.0",
+    "16.0"
+   ],
+   "answer": 0,
+   "explain_en": "=14.5.",
+   "explain_zh": "=14.5。",
+   "sign_en": [
+    "14.5",
+    "13.0",
+    "16.0"
+   ],
+   "sign_zh": [
+    "14.5",
+    "13.0",
+    "16.0"
+   ]
+  },
+  {
+   "id": "g7_153",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.7 kg + 4.4 kg = ?",
+   "q_zh": "7.7 kg + 4.4 kg =？",
+   "choices": [
+    "11.1",
+    "12.1",
+    "13.6"
+   ],
+   "choices_zh": [
+    "11.1",
+    "12.1",
+    "13.6"
+   ],
+   "answer": 1,
+   "explain_en": "=12.1.",
+   "explain_zh": "=12.1。",
+   "sign_en": [
+    "11.1",
+    "12.1",
+    "13.6"
+   ],
+   "sign_zh": [
+    "11.1",
+    "12.1",
+    "13.6"
+   ]
+  },
+  {
+   "id": "g7_154",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1/4 of 44 = ?",
+   "q_zh": "44 的 1/4 =？",
+   "choices": [
+    "9",
+    "8",
+    "14",
+    "11"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "14",
+    "11"
+   ],
+   "answer": 3,
+   "explain_en": "=11.",
+   "explain_zh": "=11。"
+  },
+  {
+   "id": "g7_155",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4.6 kg + 2.2 kg = ?",
+   "q_zh": "4.6 kg + 2.2 kg =？",
+   "choices": [
+    "7.8",
+    "8.3",
+    "5.3",
+    "6.8"
+   ],
+   "choices_zh": [
+    "7.8",
+    "8.3",
+    "5.3",
+    "6.8"
+   ],
+   "answer": 3,
+   "explain_en": "=6.8.",
+   "explain_zh": "=6.8。"
+  },
+  {
+   "id": "g7_156",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 7:5. If 28 apples, pears?",
+   "q_zh": "苹果:梨=7:5。有 28 个苹果，梨几个？",
+   "choices": [
+    "20",
+    "21",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "21",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "×4 → pears=20.",
+   "explain_zh": "梨=20。",
+   "sign_en": [
+    "20",
+    "21",
+    "19"
+   ],
+   "sign_zh": [
+    "20",
+    "21",
+    "19"
+   ]
+  },
+  {
+   "id": "g7_157",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9.0 kg + 6.1 kg = ?",
+   "q_zh": "9.0 kg + 6.1 kg =？",
+   "choices": [
+    "14.6",
+    "15.1",
+    "16.1",
+    "16.6"
+   ],
+   "choices_zh": [
+    "14.6",
+    "15.1",
+    "16.1",
+    "16.6"
+   ],
+   "answer": 1,
+   "explain_en": "=15.1.",
+   "explain_zh": "=15.1。"
+  },
+  {
+   "id": "g7_158",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25% of 72 crates sold. How many?",
+   "q_zh": "72 箱卖掉 25%，卖掉几箱？",
+   "choices": [
+    "23",
+    "15",
+    "18"
+   ],
+   "choices_zh": [
+    "23",
+    "15",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "25%×72=18.",
+   "explain_zh": "=18。",
+   "sign_en": [
+    "23",
+    "15",
+    "18"
+   ],
+   "sign_zh": [
+    "23",
+    "15",
+    "18"
+   ]
+  },
+  {
+   "id": "g7_159",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1.1 kg + 8.2 kg = ?",
+   "q_zh": "1.1 kg + 8.2 kg =？",
+   "choices": [
+    "9.3",
+    "9.8",
+    "10.3"
+   ],
+   "choices_zh": [
+    "9.3",
+    "9.8",
+    "10.3"
+   ],
+   "answer": 0,
+   "explain_en": "=9.3.",
+   "explain_zh": "=9.3。",
+   "sign_en": [
+    "9.3",
+    "9.8",
+    "10.3"
+   ],
+   "sign_zh": [
+    "9.3",
+    "9.8",
+    "10.3"
+   ]
+  },
+  {
+   "id": "g7_160",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3.4 kg + 1.9 kg = ?",
+   "q_zh": "3.4 kg + 1.9 kg =？",
+   "choices": [
+    "3.8",
+    "4.8",
+    "5.3",
+    "4.3"
+   ],
+   "choices_zh": [
+    "3.8",
+    "4.8",
+    "5.3",
+    "4.3"
+   ],
+   "answer": 2,
+   "explain_en": "=5.3.",
+   "explain_zh": "=5.3。"
+  },
+  {
+   "id": "g7_161",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.9 kg + 5.9 kg = ?",
+   "q_zh": "7.9 kg + 5.9 kg =？",
+   "choices": [
+    "14.8",
+    "15.3",
+    "14.3",
+    "13.8"
+   ],
+   "choices_zh": [
+    "14.8",
+    "15.3",
+    "14.3",
+    "13.8"
+   ],
+   "answer": 3,
+   "explain_en": "=13.8.",
+   "explain_zh": "=13.8。"
+  },
+  {
+   "id": "g7_162",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.1 kg + 1.2 kg = ?",
+   "q_zh": "7.1 kg + 1.2 kg =？",
+   "choices": [
+    "9.8",
+    "7.8",
+    "8.3"
+   ],
+   "choices_zh": [
+    "9.8",
+    "7.8",
+    "8.3"
+   ],
+   "answer": 2,
+   "explain_en": "=8.3.",
+   "explain_zh": "=8.3。",
+   "sign_en": [
+    "9.8",
+    "7.8",
+    "8.3"
+   ],
+   "sign_zh": [
+    "9.8",
+    "7.8",
+    "8.3"
+   ]
+  },
+  {
+   "id": "g7_163",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 24 = 35. x=?",
+   "q_zh": "解 x+24=35，x=？",
+   "choices": [
+    "11",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "11",
+    "13",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "x=11.",
+   "explain_zh": "x=11。",
+   "sign_en": [
+    "11",
+    "13",
+    "14"
+   ],
+   "sign_zh": [
+    "11",
+    "13",
+    "14"
+   ]
+  },
+  {
+   "id": "g7_164",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 9:5. If 18 apples, pears?",
+   "q_zh": "苹果:梨=9:5。有 18 个苹果，梨几个？",
+   "choices": [
+    "9",
+    "10",
+    "13",
+    "7"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "13",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "×2 → pears=10.",
+   "explain_zh": "梨=10。"
+  },
+  {
+   "id": "g7_165",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "1.4 kg + 3.5 kg = ?",
+   "q_zh": "1.4 kg + 3.5 kg =？",
+   "choices": [
+    "3.9",
+    "3.4",
+    "5.9",
+    "4.9"
+   ],
+   "choices_zh": [
+    "3.9",
+    "3.4",
+    "5.9",
+    "4.9"
+   ],
+   "answer": 3,
+   "explain_en": "=4.9.",
+   "explain_zh": "=4.9。"
+  },
+  {
+   "id": "g7_166",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.3 kg + 7.7 kg = ?",
+   "q_zh": "2.3 kg + 7.7 kg =？",
+   "choices": [
+    "10.0",
+    "9.0",
+    "10.5"
+   ],
+   "choices_zh": [
+    "10.0",
+    "9.0",
+    "10.5"
+   ],
+   "answer": 0,
+   "explain_en": "=10.0.",
+   "explain_zh": "=10.0。",
+   "sign_en": [
+    "10.0",
+    "9.0",
+    "10.5"
+   ],
+   "sign_zh": [
+    "10.0",
+    "9.0",
+    "10.5"
+   ]
+  },
+  {
+   "id": "g7_167",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "50% of 199 crates sold. How many?",
+   "q_zh": "199 箱卖掉 50%，卖掉几箱？",
+   "choices": [
+    "88",
+    "94",
+    "99"
+   ],
+   "choices_zh": [
+    "88",
+    "94",
+    "99"
+   ],
+   "answer": 2,
+   "explain_en": "50%×199=99.",
+   "explain_zh": "=99。",
+   "sign_en": [
+    "88",
+    "94",
+    "99"
+   ],
+   "sign_zh": [
+    "88",
+    "94",
+    "99"
+   ]
+  },
+  {
+   "id": "g7_168",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 3 = 14. x=?",
+   "q_zh": "解 x+3=14，x=？",
+   "choices": [
+    "10",
+    "14",
+    "11"
+   ],
+   "choices_zh": [
+    "10",
+    "14",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "x=11.",
+   "explain_zh": "x=11。",
+   "sign_en": [
+    "10",
+    "14",
+    "11"
+   ],
+   "sign_zh": [
+    "10",
+    "14",
+    "11"
+   ]
+  },
+  {
+   "id": "g7_169",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.6 kg + 4.8 kg = ?",
+   "q_zh": "7.6 kg + 4.8 kg =？",
+   "choices": [
+    "13.4",
+    "11.4",
+    "12.4"
+   ],
+   "choices_zh": [
+    "13.4",
+    "11.4",
+    "12.4"
+   ],
+   "answer": 2,
+   "explain_en": "=12.4.",
+   "explain_zh": "=12.4。",
+   "sign_en": [
+    "13.4",
+    "11.4",
+    "12.4"
+   ],
+   "sign_zh": [
+    "13.4",
+    "11.4",
+    "12.4"
+   ]
+  },
+  {
+   "id": "g7_170",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5.2 kg + 5.2 kg = ?",
+   "q_zh": "5.2 kg + 5.2 kg =？",
+   "choices": [
+    "10.9",
+    "11.9",
+    "10.4"
+   ],
+   "choices_zh": [
+    "10.9",
+    "11.9",
+    "10.4"
+   ],
+   "answer": 2,
+   "explain_en": "=10.4.",
+   "explain_zh": "=10.4。",
+   "sign_en": [
+    "10.9",
+    "11.9",
+    "10.4"
+   ],
+   "sign_zh": [
+    "10.9",
+    "11.9",
+    "10.4"
+   ]
+  },
+  {
+   "id": "g7_171",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 2:4. If 8 apples, pears?",
+   "q_zh": "苹果:梨=2:4。有 8 个苹果，梨几个？",
+   "choices": [
+    "16",
+    "18",
+    "19",
+    "13"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "19",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "×4 → pears=16.",
+   "explain_zh": "梨=16。"
+  },
+  {
+   "id": "g7_172",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2.2 kg + 6.8 kg = ?",
+   "q_zh": "2.2 kg + 6.8 kg =？",
+   "choices": [
+    "7.5",
+    "10.5",
+    "8.0",
+    "9.0"
+   ],
+   "choices_zh": [
+    "7.5",
+    "10.5",
+    "8.0",
+    "9.0"
+   ],
+   "answer": 3,
+   "explain_en": "=9.0.",
+   "explain_zh": "=9.0。"
+  },
+  {
+   "id": "g7_173",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 156 crates sold. How many?",
+   "q_zh": "156 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "72",
+    "65",
+    "62",
+    "60"
+   ],
+   "choices_zh": [
+    "72",
+    "65",
+    "62",
+    "60"
+   ],
+   "answer": 2,
+   "explain_en": "40%×156=62.",
+   "explain_zh": "=62。"
+  },
+  {
+   "id": "g7_174",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Ratio apples:pears = 4:5. If 24 apples, pears?",
+   "q_zh": "苹果:梨=4:5。有 24 个苹果，梨几个？",
+   "choices": [
+    "24",
+    "30",
+    "31",
+    "37"
+   ],
+   "choices_zh": [
+    "24",
+    "30",
+    "31",
+    "37"
+   ],
+   "answer": 1,
+   "explain_en": "×6 → pears=30.",
+   "explain_zh": "梨=30。"
+  },
+  {
+   "id": "g7_175",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "25% of 61 crates sold. How many?",
+   "q_zh": "61 箱卖掉 25%，卖掉几箱？",
+   "choices": [
+    "13",
+    "15",
+    "19",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "15",
+    "19",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "25%×61=15.",
+   "explain_zh": "=15。"
+  },
+  {
+   "id": "g7_176",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 18 = 22. x=?",
+   "q_zh": "解 x+18=22，x=？",
+   "choices": [
+    "7",
+    "1",
+    "4"
+   ],
+   "choices_zh": [
+    "7",
+    "1",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "x=4.",
+   "explain_zh": "x=4。",
+   "sign_en": [
+    "7",
+    "1",
+    "4"
+   ],
+   "sign_zh": [
+    "7",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "g7_177",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "20% of 131 crates sold. How many?",
+   "q_zh": "131 箱卖掉 20%，卖掉几箱？",
+   "choices": [
+    "26",
+    "29",
+    "21"
+   ],
+   "choices_zh": [
+    "26",
+    "29",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "20%×131=26.",
+   "explain_zh": "=26。",
+   "sign_en": [
+    "26",
+    "29",
+    "21"
+   ],
+   "sign_zh": [
+    "26",
+    "29",
+    "21"
+   ]
+  },
+  {
+   "id": "g7_178",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Solve x + 8 = 22. x=?",
+   "q_zh": "解 x+8=22，x=？",
+   "choices": [
+    "13",
+    "18",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "18",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "x=14.",
+   "explain_zh": "x=14。",
+   "sign_en": [
+    "13",
+    "18",
+    "14"
+   ],
+   "sign_zh": [
+    "13",
+    "18",
+    "14"
+   ]
+  },
+  {
+   "id": "g7_179",
+   "section": "pumpkin_field",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7.5 kg + 3.8 kg = ?",
+   "q_zh": "7.5 kg + 3.8 kg =？",
+   "choices": [
+    "11.8",
+    "11.3",
+    "12.8",
+    "10.3"
+   ],
+   "choices_zh": [
+    "11.8",
+    "11.3",
+    "12.8",
+    "10.3"
+   ],
+   "answer": 1,
+   "explain_en": "=11.3.",
+   "explain_zh": "=11.3。"
+  },
+  {
+   "id": "g7_180",
+   "section": "corn_maze",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40% of 143 crates sold. How many?",
+   "q_zh": "143 箱卖掉 40%，卖掉几箱？",
+   "choices": [
+    "50",
+    "64",
+    "57"
+   ],
+   "choices_zh": [
+    "50",
+    "64",
+    "57"
+   ],
+   "answer": 2,
+   "explain_en": "40%×143=57.",
+   "explain_zh": "=57。",
+   "sign_en": [
+    "50",
+    "64",
+    "57"
+   ],
+   "sign_zh": [
+    "50",
+    "64",
+    "57"
+   ]
+  }
+ ]
+}
