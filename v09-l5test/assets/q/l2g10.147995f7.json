@@ -1,0 +1,3290 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 10,
+ "version": 1,
+ "fields": "seawall ≤4 choices; forest_fork ≤3 + sign_en/sign_zh; {name}=player",
+ "questions": [
+  {
+   "id": "l2g10_001",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Canada goose",
+    "Ostrich",
+    "Flamingo",
+    "Penguin"
+   ],
+   "choices_zh": [
+    "加拿大鹅",
+    "鸵鸟",
+    "火烈鸟",
+    "企鹅"
+   ],
+   "answer": 0,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_002",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At night",
+    "Never",
+    "Only in winter",
+    "At noon"
+   ],
+   "choices_zh": [
+    "晚上",
+    "从来不",
+    "只在冬天",
+    "中午"
+   ],
+   "answer": 0,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_003",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Smell only",
+    "Echolocation",
+    "Flashlights",
+    "Paper maps"
+   ],
+   "choices_zh": [
+    "只靠嗅觉",
+    "回声定位",
+    "手电筒",
+    "纸质地图"
+   ],
+   "answer": 1,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_004",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Fish",
+    "Mammals",
+    "Insects",
+    "Birds"
+   ],
+   "choices_zh": [
+    "鱼",
+    "哺乳动物",
+    "昆虫",
+    "鸟"
+   ],
+   "answer": 1,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_005",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Penguin",
+    "Flamingo",
+    "Ostrich"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "火烈鸟",
+    "鸵鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_006",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Baobab",
+    "Palm tree",
+    "Western red cedar",
+    "Cactus"
+   ],
+   "choices_zh": [
+    "猴面包树",
+    "棕榈树",
+    "西部红雪松",
+    "仙人掌"
+   ],
+   "answer": 2,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_007",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Learn to fly",
+    "Find candy",
+    "Lay eggs / spawn",
+    "Hibernate"
+   ],
+   "choices_zh": [
+    "学飞",
+    "找糖",
+    "产卵",
+    "冬眠"
+   ],
+   "answer": 2,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_008",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "720°",
+    "90°",
+    "45°",
+    "270°"
+   ],
+   "choices_zh": [
+    "720°",
+    "90°",
+    "45°",
+    "大约 270°"
+   ],
+   "answer": 3,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_009",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Street lights",
+    "The Moon's gravity pulls the tides",
+    "Wind turbines",
+    "Earthquakes only"
+   ],
+   "choices_zh": [
+    "路灯",
+    "月亮引力拉动潮汐",
+    "风力发电机",
+    "只因为地震"
+   ],
+   "answer": 1,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_010",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Decomposers (fungi, insects, microbes)",
+    "Traffic",
+    "Sunscreen",
+    "Magnets"
+   ],
+   "choices_zh": [
+    "分解者（真菌、昆虫、微生物）",
+    "车流",
+    "防晒霜",
+    "磁铁"
+   ],
+   "answer": 0,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_011",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Birds",
+    "Marine mammals",
+    "Fish",
+    "Insects"
+   ],
+   "choices_zh": [
+    "鸟",
+    "海洋哺乳动物",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 1,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_012",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Growing antlers",
+    "Flying south",
+    "Building dams and lodges with wood",
+    "Laying swan eggs"
+   ],
+   "choices_zh": [
+    "长鹿角",
+    "飞去南方",
+    "用木头筑坝和巢穴",
+    "下天鹅蛋"
+   ],
+   "answer": 2,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_013",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Fish",
+    "Mammal",
+    "Bird",
+    "Reptile"
+   ],
+   "choices_zh": [
+    "鱼",
+    "哺乳动物",
+    "鸟类",
+    "爬行动物"
+   ],
+   "answer": 2,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_014",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "8",
+    "10",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_015",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Sense objects with sound echoes",
+    "Stop rain",
+    "Make candy",
+    "Taste colours"
+   ],
+   "choices_zh": [
+    "用回声感知物体",
+    "让雨停下",
+    "做糖果",
+    "品尝颜色"
+   ],
+   "answer": 0,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_016",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "2",
+    "8",
+    "4",
+    "6"
+   ],
+   "choices_zh": [
+    "2",
+    "8",
+    "4",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_017",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Making plastic",
+    "Erasing tides",
+    "Stopping the Moon",
+    "Providing habitat and holding soil"
+   ],
+   "choices_zh": [
+    "制造塑料",
+    "消除潮汐",
+    "挡住月亮",
+    "提供栖息地并固定土壤"
+   ],
+   "answer": 3,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_018",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Sun only",
+    "Asphalt",
+    "Bicycle",
+    "Fungi / mushrooms"
+   ],
+   "choices_zh": [
+    "只有太阳",
+    "沥青",
+    "自行车",
+    "真菌/蘑菇"
+   ],
+   "answer": 3,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_019",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1950",
+    "2001",
+    "1776",
+    "1888"
+   ],
+   "choices_zh": [
+    "1950",
+    "2001",
+    "1776",
+    "1888"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_020",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Stanley Cup",
+    "Olympic torch",
+    "Grey Cup",
+    "World Cup"
+   ],
+   "choices_zh": [
+    "斯坦利杯",
+    "奥运火炬",
+    "格雷杯",
+    "世界杯"
+   ],
+   "answer": 0,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_021",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "The same",
+    "Much smaller",
+    "Half the size",
+    "Bigger"
+   ],
+   "choices_zh": [
+    "一样大",
+    "小很多",
+    "只有一半大",
+    "更大"
+   ],
+   "answer": 3,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_022",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "choices_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ],
+   "answer": 2,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "level": 2,
+   "sign_en": [
+    "Inca",
+    "Vikings",
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)"
+   ],
+   "sign_zh": [
+    "印加",
+    "维京人",
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）"
+   ]
+  },
+  {
+   "id": "l2g10_023",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Golden Gate",
+    "Lions Gate Bridge",
+    "Tower Bridge",
+    "Port Mann"
+   ],
+   "choices_zh": [
+    "金门大桥",
+    "狮门大桥",
+    "塔桥",
+    "福特曼桥"
+   ],
+   "answer": 1,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_024",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "午夜",
+    "晚上 9 点"
+   ],
+   "answer": 2,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "level": 2,
+   "sign_en": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "sign_zh": [
+    "晚上 6 点",
+    "午夜",
+    "晚上 9 点"
+   ]
+  },
+  {
+   "id": "l2g10_025",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)",
+    "Plastic"
+   ],
+   "choices_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）",
+    "塑料"
+   ],
+   "answer": 2,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_026",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "50 km",
+    "About 9 km",
+    "1 km"
+   ],
+   "choices_zh": [
+    "50 公里",
+    "大约 9 公里",
+    "1 公里"
+   ],
+   "answer": 1,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "level": 2,
+   "sign_en": [
+    "50 km",
+    "About 9 km",
+    "1 km"
+   ],
+   "sign_zh": [
+    "50 公里",
+    "大约 9 公里",
+    "1 公里"
+   ]
+  },
+  {
+   "id": "l2g10_027",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Walking only on bikes",
+    "One way (counter-clockwise)",
+    "Any direction",
+    "Only at night"
+   ],
+   "choices_zh": [
+    "骑车却只能走",
+    "单向（逆时针）",
+    "任意方向",
+    "只在夜里"
+   ],
+   "answer": 1,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_028",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A desert",
+    "A volcano crater",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "choices_zh": [
+    "沙漠",
+    "火山口",
+    "温哥华滨水港湾区"
+   ],
+   "answer": 2,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。",
+   "level": 2,
+   "sign_en": [
+    "A desert",
+    "A volcano crater",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "sign_zh": [
+    "沙漠",
+    "火山口",
+    "温哥华滨水港湾区"
+   ]
+  },
+  {
+   "id": "l2g10_029",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A subway under the lake",
+    "Beavers",
+    "Swans as the only animals",
+    "A desert dune"
+   ],
+   "choices_zh": [
+    "湖底地铁",
+    "河狸",
+    "只有天鹅",
+    "一座沙丘"
+   ],
+   "answer": 1,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_030",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "October 31",
+    "December 25",
+    "July 1"
+   ],
+   "choices_zh": [
+    "10 月 31 日",
+    "12 月 25 日",
+    "7 月 1 日"
+   ],
+   "answer": 0,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "level": 2,
+   "sign_en": [
+    "October 31",
+    "December 25",
+    "July 1"
+   ],
+   "sign_zh": [
+    "10 月 31 日",
+    "12 月 25 日",
+    "7 月 1 日"
+   ]
+  },
+  {
+   "id": "l2g10_031",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "An airport",
+    "Cedar / forest trails",
+    "An underground mall only",
+    "A desert highway"
+   ],
+   "choices_zh": [
+    "机场",
+    "雪松/林间小道",
+    "只有地下商场",
+    "沙漠公路"
+   ],
+   "answer": 1,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_032",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Sprint through",
+    "Close your eyes",
+    "Slow down and watch for people"
+   ],
+   "choices_zh": [
+    "冲过去",
+    "闭眼",
+    "减速并注意行人"
+   ],
+   "answer": 2,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "level": 2,
+   "sign_en": [
+    "Sprint through",
+    "Close your eyes",
+    "Slow down and watch for people"
+   ],
+   "sign_zh": [
+    "冲过去",
+    "闭眼",
+    "减速并注意行人"
+   ]
+  },
+  {
+   "id": "l2g10_033",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "Skating shoes",
+    "A helmet (it's the law)",
+    "No lights ever",
+    "A cape only"
+   ],
+   "choices_zh": [
+    "溜冰鞋",
+    "戴头盔（法律规定）",
+    "永远不用灯",
+    "只要披风"
+   ],
+   "answer": 1,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_034",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "choices_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ],
+   "answer": 2,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "level": 2,
+   "sign_en": [
+    "No lights",
+    "Only sunglasses",
+    "Lights and bright / reflective gear"
+   ],
+   "sign_zh": [
+    "不开灯",
+    "只戴墨镜",
+    "车灯和亮色/反光装备"
+   ]
+  },
+  {
+   "id": "l2g10_035",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Slow down and give them space",
+    "Feed them candy",
+    "Chase them",
+    "Scare them loudly"
+   ],
+   "choices_zh": [
+    "减速并留出空间",
+    "喂糖",
+    "去追",
+    "大声吓它们"
+   ],
+   "answer": 0,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_036",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "The Moon's password",
+    "Only your socks colour",
+    "Bike lights and brakes"
+   ],
+   "choices_zh": [
+    "月亮密码",
+    "只看袜子颜色",
+    "车灯和刹车"
+   ],
+   "answer": 2,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "level": 2,
+   "sign_en": [
+    "The Moon's password",
+    "Only your socks colour",
+    "Bike lights and brakes"
+   ],
+   "sign_zh": [
+    "月亮密码",
+    "只看袜子颜色",
+    "车灯和刹车"
+   ]
+  },
+  {
+   "id": "l2g10_037",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Ice block",
+    "Watermelon only",
+    "Pumpkin",
+    "Rock"
+   ],
+   "choices_zh": [
+    "冰块",
+    "只有西瓜",
+    "南瓜",
+    "石头"
+   ],
+   "answer": 2,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_038",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Water",
+    "Sand",
+    "Metal"
+   ],
+   "choices_zh": [
+    "水",
+    "沙子",
+    "金属"
+   ],
+   "answer": 0,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "level": 2,
+   "sign_en": [
+    "Water",
+    "Sand",
+    "Metal"
+   ],
+   "sign_zh": [
+    "水",
+    "沙子",
+    "金属"
+   ]
+  },
+  {
+   "id": "l2g10_039",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Pineapples",
+    "Coconuts",
+    "Turnips / root vegetables",
+    "Glass"
+   ],
+   "choices_zh": [
+    "菠萝",
+    "椰子",
+    "芜菁等根菜",
+    "玻璃"
+   ],
+   "answer": 2,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_040",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ],
+   "answer": 2,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "level": 2,
+   "sign_en": [
+    "365 days",
+    "7 days",
+    "29.5 days"
+   ],
+   "sign_zh": [
+    "365 天",
+    "7 天",
+    "约 29.5 天"
+   ]
+  },
+  {
+   "id": "l2g10_041",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Tax day",
+    "Thanksgiving cooking class",
+    "Halloween",
+    "Canada Day only"
+   ],
+   "choices_zh": [
+    "报税日",
+    "感恩节烹饪课",
+    "万圣节",
+    "只有加拿大日"
+   ],
+   "answer": 2,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_042",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the water",
+    "In the snow",
+    "Up a tree"
+   ],
+   "choices_zh": [
+    "在水里",
+    "雪地里",
+    "树上"
+   ],
+   "answer": 0,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "level": 2,
+   "sign_en": [
+    "In the water",
+    "In the snow",
+    "Up a tree"
+   ],
+   "sign_zh": [
+    "在水里",
+    "雪地里",
+    "树上"
+   ]
+  },
+  {
+   "id": "l2g10_043",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Grass and plants",
+    "Fish",
+    "Candy",
+    "Insects"
+   ],
+   "choices_zh": [
+    "草和植物",
+    "鱼",
+    "糖果",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_044",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Rodent",
+    "Bird",
+    "Fish"
+   ],
+   "choices_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "level": 2,
+   "sign_en": [
+    "Rodent",
+    "Bird",
+    "Fish"
+   ],
+   "sign_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼"
+   ]
+  },
+  {
+   "id": "l2g10_045",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Australia",
+    "Africa",
+    "The North Pole",
+    "South America"
+   ],
+   "choices_zh": [
+    "澳大利亚",
+    "非洲",
+    "北极",
+    "南美洲"
+   ],
+   "answer": 3,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_046",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "Yes",
+    "Only in winter",
+    "No"
+   ],
+   "choices_zh": [
+    "有",
+    "只在冬天有",
+    "没有"
+   ],
+   "answer": 2,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "level": 2,
+   "sign_en": [
+    "Yes",
+    "Only in winter",
+    "No"
+   ],
+   "sign_zh": [
+    "有",
+    "只在冬天有",
+    "没有"
+   ]
+  },
+  {
+   "id": "l2g10_047",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Tunnel diggers",
+    "Swimmers",
+    "Flyers",
+    "Climbers"
+   ],
+   "choices_zh": [
+    "挖隧道",
+    "游泳",
+    "飞翔",
+    "爬树"
+   ],
+   "answer": 1,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_048",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "Flock",
+    "Herd",
+    "School"
+   ],
+   "choices_zh": [
+    "鸟群",
+    "一群",
+    "鱼群"
+   ],
+   "answer": 1,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "level": 2,
+   "sign_en": [
+    "Flock",
+    "Herd",
+    "School"
+   ],
+   "sign_zh": [
+    "鸟群",
+    "一群",
+    "鱼群"
+   ]
+  },
+  {
+   "id": "l2g10_049",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Raccoon",
+    "Beaver",
+    "Goose",
+    "Capybara"
+   ],
+   "choices_zh": [
+    "浣熊",
+    "河狸",
+    "鹅",
+    "水豚"
+   ],
+   "answer": 3,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_050",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Only hisses",
+    "Lion roars",
+    "Cute squeaks / clicks"
+   ],
+   "choices_zh": [
+    "只会嘶嘶",
+    "狮子吼",
+    "可爱的吱吱/咔嗒声"
+   ],
+   "answer": 2,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "level": 2,
+   "sign_en": [
+    "Only hisses",
+    "Lion roars",
+    "Cute squeaks / clicks"
+   ],
+   "sign_zh": [
+    "只会嘶嘶",
+    "狮子吼",
+    "可爱的吱吱/咔嗒声"
+   ]
+  },
+  {
+   "id": "l2g10_051",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Has no flat paddle tail",
+    "Lives only on ice",
+    "Eats only fish",
+    "Is a bird"
+   ],
+   "choices_zh": [
+    "没有扁平的桨状尾巴",
+    "只住在冰上",
+    "只吃鱼",
+    "是鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_052",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a chemical reaction, atoms are…",
+   "q_zh": "化学反应中，原子会……",
+   "choices": [
+    "Turned into emotions",
+    "Rearranged into new substances",
+    "Deleted from the universe"
+   ],
+   "choices_zh": [
+    "变成情绪",
+    "重新排列成新物质",
+    "从宇宙删除"
+   ],
+   "answer": 1,
+   "explain_en": "Reactions rearrange atoms.",
+   "explain_zh": "反应重排原子。",
+   "level": 2,
+   "sign_en": [
+    "Turned into emotions",
+    "Rearranged into new substances",
+    "Deleted from the universe"
+   ],
+   "sign_zh": [
+    "变成情绪",
+    "重新排列成新物质",
+    "从宇宙删除"
+   ]
+  },
+  {
+   "id": "l2g10_053",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Mendel studied inheritance using…",
+   "q_zh": "孟德尔用什么研究遗传？",
+   "choices": [
+    "Only computers",
+    "Only rocks",
+    "Only jack-o'-lanterns",
+    "Pea plants"
+   ],
+   "choices_zh": [
+    "只有电脑",
+    "只有石头",
+    "只有杰克灯",
+    "豌豆"
+   ],
+   "answer": 3,
+   "explain_en": "Pea experiments founded classical genetics.",
+   "explain_zh": "豌豆实验奠定经典遗传学。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_054",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Water's chemical formula is…",
+   "q_zh": "水的化学式是……",
+   "choices": [
+    "CO₂",
+    "H₂O",
+    "NaCl"
+   ],
+   "choices_zh": [
+    "CO₂",
+    "H₂O",
+    "NaCl"
+   ],
+   "answer": 1,
+   "explain_en": "Two hydrogen, one oxygen.",
+   "explain_zh": "两个氢一个氧。",
+   "level": 2,
+   "sign_en": [
+    "CO₂",
+    "H₂O",
+    "NaCl"
+   ],
+   "sign_zh": [
+    "CO₂",
+    "H₂O",
+    "NaCl"
+   ]
+  },
+  {
+   "id": "l2g10_055",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A line graph is best for showing…",
+   "q_zh": "折线图最适合展示……",
+   "choices": [
+    "Only random names",
+    "Unrelated emojis",
+    "Change over time",
+    "Shoe colours only"
+   ],
+   "choices_zh": [
+    "只有随机名字",
+    "无关表情",
+    "随时间的变化",
+    "只有鞋色"
+   ],
+   "answer": 2,
+   "explain_en": "Line graphs track trends.",
+   "explain_zh": "折线图看趋势。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_056",
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "In a right triangle, sin θ equals…",
+   "q_zh": "直角三角形中 sin θ 等于……",
+   "choices": [
+    "Opposite / hypotenuse",
+    "Hypotenuse / opposite always wrong forever",
+    "Adjacent only"
+   ],
+   "choices_zh": [
+    "对边/斜边",
+    "斜边/对边永远错",
+    "只有邻边"
+   ],
+   "answer": 0,
+   "explain_en": "SOH: sin=opp/hyp.",
+   "explain_zh": "sin=对边/斜边。",
+   "level": 2,
+   "sign_en": [
+    "Opposite / hypotenuse",
+    "Hypotenuse / opposite always wrong forever",
+    "Adjacent only"
+   ],
+   "sign_zh": [
+    "对边/斜边",
+    "斜边/对边永远错",
+    "只有邻边"
+   ]
+  },
+  {
+   "id": "l2g10_057",
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Offspring get genes from…",
+   "q_zh": "后代的基因来自……",
+   "choices": [
+    "Only street lamps",
+    "Random Wi-Fi",
+    "Their parents",
+    "Only the Moon"
+   ],
+   "choices_zh": [
+    "只有路灯",
+    "随机 Wi-Fi",
+    "父母",
+    "只有月亮"
+   ],
+   "answer": 2,
+   "explain_en": "Inheritance from parents.",
+   "explain_zh": "遗传自父母。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_058",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(-2). f(2)=?",
+   "q_zh": "f(t)=1t+(-2)，f(2)=？",
+   "choices": [
+    "3",
+    "1",
+    "2",
+    "0"
+   ],
+   "choices_zh": [
+    "3",
+    "1",
+    "2",
+    "0"
+   ],
+   "answer": 3,
+   "explain_en": "=0.",
+   "explain_zh": "=0。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_059",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(1). f(8)=?",
+   "q_zh": "f(t)=3t+(1)，f(8)=？",
+   "choices": [
+    "19",
+    "24",
+    "27",
+    "25"
+   ],
+   "choices_zh": [
+    "19",
+    "24",
+    "27",
+    "25"
+   ],
+   "answer": 3,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_060",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(9). f(12)=?",
+   "q_zh": "f(t)=3t+(9)，f(12)=？",
+   "choices": [
+    "47",
+    "36",
+    "45",
+    "43"
+   ],
+   "choices_zh": [
+    "47",
+    "36",
+    "45",
+    "43"
+   ],
+   "answer": 2,
+   "explain_en": "=45.",
+   "explain_zh": "=45。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_061",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(5). f(4)=?",
+   "q_zh": "f(t)=3t+(5)，f(4)=？",
+   "choices": [
+    "15",
+    "17",
+    "22",
+    "14"
+   ],
+   "choices_zh": [
+    "15",
+    "17",
+    "22",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "=17.",
+   "explain_zh": "=17。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_062",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(4). f(1)=?",
+   "q_zh": "f(t)=5t+(4)，f(1)=？",
+   "choices": [
+    "9",
+    "6",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "9",
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=9.",
+   "explain_zh": "=9。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_063",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(-3). f(2)=?",
+   "q_zh": "f(t)=4t+(-3)，f(2)=？",
+   "choices": [
+    "7",
+    "4",
+    "5",
+    "8"
+   ],
+   "choices_zh": [
+    "7",
+    "4",
+    "5",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_064",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(-2). f(9)=?",
+   "q_zh": "f(t)=4t+(-2)，f(9)=？",
+   "choices": [
+    "34",
+    "26",
+    "33",
+    "30"
+   ],
+   "choices_zh": [
+    "34",
+    "26",
+    "33",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "=34.",
+   "explain_zh": "=34。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_065",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(8). f(3)=?",
+   "q_zh": "f(t)=1t+(8)，f(3)=？",
+   "choices": [
+    "11",
+    "15",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "11",
+    "15",
+    "9",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_066",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(5). f(9)=?",
+   "q_zh": "f(t)=3t+(5)，f(9)=？",
+   "choices": [
+    "32",
+    "29",
+    "38",
+    "40"
+   ],
+   "choices_zh": [
+    "32",
+    "29",
+    "38",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_067",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(-2). f(8)=?",
+   "q_zh": "f(t)=4t+(-2)，f(8)=？",
+   "choices": [
+    "30",
+    "32",
+    "33",
+    "22"
+   ],
+   "choices_zh": [
+    "30",
+    "32",
+    "33",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "=30.",
+   "explain_zh": "=30。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_068",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(7). f(6)=?",
+   "q_zh": "f(t)=6t+(7)，f(6)=？",
+   "choices": [
+    "43",
+    "46",
+    "34",
+    "40"
+   ],
+   "choices_zh": [
+    "43",
+    "46",
+    "34",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=43.",
+   "explain_zh": "=43。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_069",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(-1). f(6)=?",
+   "q_zh": "f(t)=3t+(-1)，f(6)=？",
+   "choices": [
+    "12",
+    "13",
+    "19",
+    "17"
+   ],
+   "choices_zh": [
+    "12",
+    "13",
+    "19",
+    "17"
+   ],
+   "answer": 3,
+   "explain_en": "=17.",
+   "explain_zh": "=17。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_070",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(3). f(10)=?",
+   "q_zh": "f(t)=1t+(3)，f(10)=？",
+   "choices": [
+    "15",
+    "11",
+    "14",
+    "13"
+   ],
+   "choices_zh": [
+    "15",
+    "11",
+    "14",
+    "13"
+   ],
+   "answer": 3,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_071",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(2). f(9)=?",
+   "q_zh": "f(t)=5t+(2)，f(9)=？",
+   "choices": [
+    "47",
+    "50",
+    "48",
+    "58"
+   ],
+   "choices_zh": [
+    "47",
+    "50",
+    "48",
+    "58"
+   ],
+   "answer": 0,
+   "explain_en": "=47.",
+   "explain_zh": "=47。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_072",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(-3). f(7)=?",
+   "q_zh": "f(t)=2t+(-3)，f(7)=？",
+   "choices": [
+    "9",
+    "15",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "15",
+    "11",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_073",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(9). f(6)=?",
+   "q_zh": "f(t)=1t+(9)，f(6)=？",
+   "choices": [
+    "18",
+    "15",
+    "13",
+    "10"
+   ],
+   "choices_zh": [
+    "18",
+    "15",
+    "13",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "=15.",
+   "explain_zh": "=15。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_074",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(1). f(9)=?",
+   "q_zh": "f(t)=3t+(1)，f(9)=？",
+   "choices": [
+    "28",
+    "31",
+    "27",
+    "23"
+   ],
+   "choices_zh": [
+    "28",
+    "31",
+    "27",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "=28.",
+   "explain_zh": "=28。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_075",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(4). f(9)=?",
+   "q_zh": "f(t)=6t+(4)，f(9)=？",
+   "choices": [
+    "54",
+    "46",
+    "58",
+    "53"
+   ],
+   "choices_zh": [
+    "54",
+    "46",
+    "58",
+    "53"
+   ],
+   "answer": 2,
+   "explain_en": "=58.",
+   "explain_zh": "=58。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_076",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(3). f(12)=?",
+   "q_zh": "f(t)=6t+(3)，f(12)=？",
+   "choices": [
+    "69",
+    "75",
+    "87",
+    "58"
+   ],
+   "choices_zh": [
+    "69",
+    "75",
+    "87",
+    "58"
+   ],
+   "answer": 1,
+   "explain_en": "=75.",
+   "explain_zh": "=75。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_077",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(4). f(7)=?",
+   "q_zh": "f(t)=1t+(4)，f(7)=？",
+   "choices": [
+    "8",
+    "7",
+    "11",
+    "9"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "11",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_078",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(10). f(2)=?",
+   "q_zh": "f(t)=4t+(10)，f(2)=？",
+   "choices": [
+    "21",
+    "13",
+    "18",
+    "19"
+   ],
+   "choices_zh": [
+    "21",
+    "13",
+    "18",
+    "19"
+   ],
+   "answer": 2,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_079",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(6). f(1)=?",
+   "q_zh": "f(t)=2t+(6)，f(1)=？",
+   "choices": [
+    "8",
+    "10",
+    "11",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "11",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=8.",
+   "explain_zh": "=8。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_080",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(3). f(6)=?",
+   "q_zh": "f(t)=6t+(3)，f(6)=？",
+   "choices": [
+    "40",
+    "48",
+    "39",
+    "41"
+   ],
+   "choices_zh": [
+    "40",
+    "48",
+    "39",
+    "41"
+   ],
+   "answer": 2,
+   "explain_en": "=39.",
+   "explain_zh": "=39。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_081",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(5). f(9)=?",
+   "q_zh": "f(t)=6t+(5)，f(9)=？",
+   "choices": [
+    "59",
+    "71",
+    "58",
+    "65"
+   ],
+   "choices_zh": [
+    "59",
+    "71",
+    "58",
+    "65"
+   ],
+   "answer": 0,
+   "explain_en": "=59.",
+   "explain_zh": "=59。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_082",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(3). f(2)=?",
+   "q_zh": "f(t)=1t+(3)，f(2)=？",
+   "choices": [
+    "2",
+    "7",
+    "6",
+    "5"
+   ],
+   "choices_zh": [
+    "2",
+    "7",
+    "6",
+    "5"
+   ],
+   "answer": 3,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_083",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(-2). f(11)=?",
+   "q_zh": "f(t)=6t+(-2)，f(11)=？",
+   "choices": [
+    "61",
+    "64",
+    "72",
+    "71"
+   ],
+   "choices_zh": [
+    "61",
+    "64",
+    "72",
+    "71"
+   ],
+   "answer": 1,
+   "explain_en": "=64.",
+   "explain_zh": "=64。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_084",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(-1). f(7)=?",
+   "q_zh": "f(t)=1t+(-1)，f(7)=？",
+   "choices": [
+    "5",
+    "7",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "7",
+    "8",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "=6.",
+   "explain_zh": "=6。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_085",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(2). f(10)=?",
+   "q_zh": "f(t)=6t+(2)，f(10)=？",
+   "choices": [
+    "70",
+    "68",
+    "65",
+    "62"
+   ],
+   "choices_zh": [
+    "70",
+    "68",
+    "65",
+    "62"
+   ],
+   "answer": 3,
+   "explain_en": "=62.",
+   "explain_zh": "=62。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_086",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(8). f(2)=?",
+   "q_zh": "f(t)=1t+(8)，f(2)=？",
+   "choices": [
+    "12",
+    "9",
+    "10",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "10",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_087",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(2). f(1)=?",
+   "q_zh": "f(t)=3t+(2)，f(1)=？",
+   "choices": [
+    "6",
+    "8",
+    "5",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "5",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "=5.",
+   "explain_zh": "=5。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_088",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(-4). f(12)=?",
+   "q_zh": "f(t)=3t+(-4)，f(12)=？",
+   "choices": [
+    "31",
+    "29",
+    "25",
+    "32"
+   ],
+   "choices_zh": [
+    "31",
+    "29",
+    "25",
+    "32"
+   ],
+   "answer": 3,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "level": 2
+  },
+  {
+   "id": "l2g10_089",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(-3). f(1)=?",
+   "q_zh": "f(t)=6t+(-3)，f(1)=？",
+   "choices": [
+    "2",
+    "3",
+    "1"
+   ],
+   "choices_zh": [
+    "2",
+    "3",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "=3.",
+   "explain_zh": "=3。",
+   "level": 2,
+   "sign_en": [
+    "2",
+    "3",
+    "1"
+   ],
+   "sign_zh": [
+    "2",
+    "3",
+    "1"
+   ]
+  },
+  {
+   "id": "l2g10_090",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(-4). f(4)=?",
+   "q_zh": "f(t)=4t+(-4)，f(4)=？",
+   "choices": [
+    "12",
+    "8",
+    "13"
+   ],
+   "choices_zh": [
+    "12",
+    "8",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "=12.",
+   "explain_zh": "=12。",
+   "level": 2,
+   "sign_en": [
+    "12",
+    "8",
+    "13"
+   ],
+   "sign_zh": [
+    "12",
+    "8",
+    "13"
+   ]
+  },
+  {
+   "id": "l2g10_091",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(1). f(12)=?",
+   "q_zh": "f(t)=2t+(1)，f(12)=？",
+   "choices": [
+    "20",
+    "29",
+    "25"
+   ],
+   "choices_zh": [
+    "20",
+    "29",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "level": 2,
+   "sign_en": [
+    "20",
+    "29",
+    "25"
+   ],
+   "sign_zh": [
+    "20",
+    "29",
+    "25"
+   ]
+  },
+  {
+   "id": "l2g10_092",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(3). f(4)=?",
+   "q_zh": "f(t)=2t+(3)，f(4)=？",
+   "choices": [
+    "13",
+    "11",
+    "9"
+   ],
+   "choices_zh": [
+    "13",
+    "11",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2,
+   "sign_en": [
+    "13",
+    "11",
+    "9"
+   ],
+   "sign_zh": [
+    "13",
+    "11",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g10_093",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(-3). f(12)=?",
+   "q_zh": "f(t)=5t+(-3)，f(12)=？",
+   "choices": [
+    "68",
+    "45",
+    "57"
+   ],
+   "choices_zh": [
+    "68",
+    "45",
+    "57"
+   ],
+   "answer": 2,
+   "explain_en": "=57.",
+   "explain_zh": "=57。",
+   "level": 2,
+   "sign_en": [
+    "68",
+    "45",
+    "57"
+   ],
+   "sign_zh": [
+    "68",
+    "45",
+    "57"
+   ]
+  },
+  {
+   "id": "l2g10_094",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(5). f(8)=?",
+   "q_zh": "f(t)=5t+(5)，f(8)=？",
+   "choices": [
+    "45",
+    "55",
+    "38"
+   ],
+   "choices_zh": [
+    "45",
+    "55",
+    "38"
+   ],
+   "answer": 0,
+   "explain_en": "=45.",
+   "explain_zh": "=45。",
+   "level": 2,
+   "sign_en": [
+    "45",
+    "55",
+    "38"
+   ],
+   "sign_zh": [
+    "45",
+    "55",
+    "38"
+   ]
+  },
+  {
+   "id": "l2g10_095",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(9). f(1)=?",
+   "q_zh": "f(t)=4t+(9)，f(1)=？",
+   "choices": [
+    "10",
+    "13",
+    "17"
+   ],
+   "choices_zh": [
+    "10",
+    "13",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=13.",
+   "explain_zh": "=13。",
+   "level": 2,
+   "sign_en": [
+    "10",
+    "13",
+    "17"
+   ],
+   "sign_zh": [
+    "10",
+    "13",
+    "17"
+   ]
+  },
+  {
+   "id": "l2g10_096",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(4). f(11)=?",
+   "q_zh": "f(t)=5t+(4)，f(11)=？",
+   "choices": [
+    "55",
+    "64",
+    "59"
+   ],
+   "choices_zh": [
+    "55",
+    "64",
+    "59"
+   ],
+   "answer": 2,
+   "explain_en": "=59.",
+   "explain_zh": "=59。",
+   "level": 2,
+   "sign_en": [
+    "55",
+    "64",
+    "59"
+   ],
+   "sign_zh": [
+    "55",
+    "64",
+    "59"
+   ]
+  },
+  {
+   "id": "l2g10_097",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(9). f(1)=?",
+   "q_zh": "f(t)=5t+(9)，f(1)=？",
+   "choices": [
+    "14",
+    "12",
+    "17"
+   ],
+   "choices_zh": [
+    "14",
+    "12",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "=14.",
+   "explain_zh": "=14。",
+   "level": 2,
+   "sign_en": [
+    "14",
+    "12",
+    "17"
+   ],
+   "sign_zh": [
+    "14",
+    "12",
+    "17"
+   ]
+  },
+  {
+   "id": "l2g10_098",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(1). f(5)=?",
+   "q_zh": "f(t)=2t+(1)，f(5)=？",
+   "choices": [
+    "7",
+    "11",
+    "15"
+   ],
+   "choices_zh": [
+    "7",
+    "11",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2,
+   "sign_en": [
+    "7",
+    "11",
+    "15"
+   ],
+   "sign_zh": [
+    "7",
+    "11",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g10_099",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(2). f(5)=?",
+   "q_zh": "f(t)=4t+(2)，f(5)=？",
+   "choices": [
+    "18",
+    "22",
+    "25"
+   ],
+   "choices_zh": [
+    "18",
+    "22",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "=22.",
+   "explain_zh": "=22。",
+   "level": 2,
+   "sign_en": [
+    "18",
+    "22",
+    "25"
+   ],
+   "sign_zh": [
+    "18",
+    "22",
+    "25"
+   ]
+  },
+  {
+   "id": "l2g10_100",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(7). f(4)=?",
+   "q_zh": "f(t)=4t+(7)，f(4)=？",
+   "choices": [
+    "23",
+    "20",
+    "24"
+   ],
+   "choices_zh": [
+    "23",
+    "20",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "=23.",
+   "explain_zh": "=23。",
+   "level": 2,
+   "sign_en": [
+    "23",
+    "20",
+    "24"
+   ],
+   "sign_zh": [
+    "23",
+    "20",
+    "24"
+   ]
+  },
+  {
+   "id": "l2g10_101",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(3). f(7)=?",
+   "q_zh": "f(t)=4t+(3)，f(7)=？",
+   "choices": [
+    "31",
+    "32",
+    "30"
+   ],
+   "choices_zh": [
+    "31",
+    "32",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "=31.",
+   "explain_zh": "=31。",
+   "level": 2,
+   "sign_en": [
+    "31",
+    "32",
+    "30"
+   ],
+   "sign_zh": [
+    "31",
+    "32",
+    "30"
+   ]
+  },
+  {
+   "id": "l2g10_102",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(-4). f(7)=?",
+   "q_zh": "f(t)=2t+(-4)，f(7)=？",
+   "choices": [
+    "8",
+    "10",
+    "13"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "=10.",
+   "explain_zh": "=10。",
+   "level": 2,
+   "sign_en": [
+    "8",
+    "10",
+    "13"
+   ],
+   "sign_zh": [
+    "8",
+    "10",
+    "13"
+   ]
+  },
+  {
+   "id": "l2g10_103",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(5). f(10)=?",
+   "q_zh": "f(t)=3t+(5)，f(10)=？",
+   "choices": [
+    "35",
+    "34",
+    "40"
+   ],
+   "choices_zh": [
+    "35",
+    "34",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=35.",
+   "explain_zh": "=35。",
+   "level": 2,
+   "sign_en": [
+    "35",
+    "34",
+    "40"
+   ],
+   "sign_zh": [
+    "35",
+    "34",
+    "40"
+   ]
+  },
+  {
+   "id": "l2g10_104",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(6). f(12)=?",
+   "q_zh": "f(t)=3t+(6)，f(12)=？",
+   "choices": [
+    "42",
+    "32",
+    "48"
+   ],
+   "choices_zh": [
+    "42",
+    "32",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "=42.",
+   "explain_zh": "=42。",
+   "level": 2,
+   "sign_en": [
+    "42",
+    "32",
+    "48"
+   ],
+   "sign_zh": [
+    "42",
+    "32",
+    "48"
+   ]
+  },
+  {
+   "id": "l2g10_105",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(0). f(8)=?",
+   "q_zh": "f(t)=4t+(0)，f(8)=？",
+   "choices": [
+    "26",
+    "32",
+    "29"
+   ],
+   "choices_zh": [
+    "26",
+    "32",
+    "29"
+   ],
+   "answer": 1,
+   "explain_en": "=32.",
+   "explain_zh": "=32。",
+   "level": 2,
+   "sign_en": [
+    "26",
+    "32",
+    "29"
+   ],
+   "sign_zh": [
+    "26",
+    "32",
+    "29"
+   ]
+  },
+  {
+   "id": "l2g10_106",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(4). f(4)=?",
+   "q_zh": "f(t)=3t+(4)，f(4)=？",
+   "choices": [
+    "19",
+    "18",
+    "16"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "=16.",
+   "explain_zh": "=16。",
+   "level": 2,
+   "sign_en": [
+    "19",
+    "18",
+    "16"
+   ],
+   "sign_zh": [
+    "19",
+    "18",
+    "16"
+   ]
+  },
+  {
+   "id": "l2g10_107",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(0). f(9)=?",
+   "q_zh": "f(t)=2t+(0)，f(9)=？",
+   "choices": [
+    "19",
+    "18",
+    "15"
+   ],
+   "choices_zh": [
+    "19",
+    "18",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "=18.",
+   "explain_zh": "=18。",
+   "level": 2,
+   "sign_en": [
+    "19",
+    "18",
+    "15"
+   ],
+   "sign_zh": [
+    "19",
+    "18",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g10_108",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(1). f(6)=?",
+   "q_zh": "f(t)=1t+(1)，f(6)=？",
+   "choices": [
+    "7",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "9",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "=7.",
+   "explain_zh": "=7。",
+   "level": 2,
+   "sign_en": [
+    "7",
+    "9",
+    "6"
+   ],
+   "sign_zh": [
+    "7",
+    "9",
+    "6"
+   ]
+  },
+  {
+   "id": "l2g10_109",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(-1). f(12)=?",
+   "q_zh": "f(t)=6t+(-1)，f(12)=？",
+   "choices": [
+    "87",
+    "85",
+    "71"
+   ],
+   "choices_zh": [
+    "87",
+    "85",
+    "71"
+   ],
+   "answer": 2,
+   "explain_en": "=71.",
+   "explain_zh": "=71。",
+   "level": 2,
+   "sign_en": [
+    "87",
+    "85",
+    "71"
+   ],
+   "sign_zh": [
+    "87",
+    "85",
+    "71"
+   ]
+  },
+  {
+   "id": "l2g10_110",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(8). f(2)=?",
+   "q_zh": "f(t)=6t+(8)，f(2)=？",
+   "choices": [
+    "18",
+    "20",
+    "17"
+   ],
+   "choices_zh": [
+    "18",
+    "20",
+    "17"
+   ],
+   "answer": 1,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "level": 2,
+   "sign_en": [
+    "18",
+    "20",
+    "17"
+   ],
+   "sign_zh": [
+    "18",
+    "20",
+    "17"
+   ]
+  },
+  {
+   "id": "l2g10_111",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(-3). f(11)=?",
+   "q_zh": "f(t)=5t+(-3)，f(11)=？",
+   "choices": [
+    "57",
+    "52",
+    "56"
+   ],
+   "choices_zh": [
+    "57",
+    "52",
+    "56"
+   ],
+   "answer": 1,
+   "explain_en": "=52.",
+   "explain_zh": "=52。",
+   "level": 2,
+   "sign_en": [
+    "57",
+    "52",
+    "56"
+   ],
+   "sign_zh": [
+    "57",
+    "52",
+    "56"
+   ]
+  },
+  {
+   "id": "l2g10_112",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=5t+(-4). f(8)=?",
+   "q_zh": "f(t)=5t+(-4)，f(8)=？",
+   "choices": [
+    "36",
+    "34",
+    "35"
+   ],
+   "choices_zh": [
+    "36",
+    "34",
+    "35"
+   ],
+   "answer": 0,
+   "explain_en": "=36.",
+   "explain_zh": "=36。",
+   "level": 2,
+   "sign_en": [
+    "36",
+    "34",
+    "35"
+   ],
+   "sign_zh": [
+    "36",
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "l2g10_113",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(7). f(9)=?",
+   "q_zh": "f(t)=4t+(7)，f(9)=？",
+   "choices": [
+    "43",
+    "40",
+    "52"
+   ],
+   "choices_zh": [
+    "43",
+    "40",
+    "52"
+   ],
+   "answer": 0,
+   "explain_en": "=43.",
+   "explain_zh": "=43。",
+   "level": 2,
+   "sign_en": [
+    "43",
+    "40",
+    "52"
+   ],
+   "sign_zh": [
+    "43",
+    "40",
+    "52"
+   ]
+  },
+  {
+   "id": "l2g10_114",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=4t+(3). f(11)=?",
+   "q_zh": "f(t)=4t+(3)，f(11)=？",
+   "choices": [
+    "47",
+    "44",
+    "40"
+   ],
+   "choices_zh": [
+    "47",
+    "44",
+    "40"
+   ],
+   "answer": 0,
+   "explain_en": "=47.",
+   "explain_zh": "=47。",
+   "level": 2,
+   "sign_en": [
+    "47",
+    "44",
+    "40"
+   ],
+   "sign_zh": [
+    "47",
+    "44",
+    "40"
+   ]
+  },
+  {
+   "id": "l2g10_115",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(8). f(4)=?",
+   "q_zh": "f(t)=3t+(8)，f(4)=？",
+   "choices": [
+    "23",
+    "25",
+    "20"
+   ],
+   "choices_zh": [
+    "23",
+    "25",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "=20.",
+   "explain_zh": "=20。",
+   "level": 2,
+   "sign_en": [
+    "23",
+    "25",
+    "20"
+   ],
+   "sign_zh": [
+    "23",
+    "25",
+    "20"
+   ]
+  },
+  {
+   "id": "l2g10_116",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=1t+(1). f(10)=?",
+   "q_zh": "f(t)=1t+(1)，f(10)=？",
+   "choices": [
+    "9",
+    "11",
+    "12"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "=11.",
+   "explain_zh": "=11。",
+   "level": 2,
+   "sign_en": [
+    "9",
+    "11",
+    "12"
+   ],
+   "sign_zh": [
+    "9",
+    "11",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g10_117",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(7). f(9)=?",
+   "q_zh": "f(t)=2t+(7)，f(9)=？",
+   "choices": [
+    "31",
+    "29",
+    "25"
+   ],
+   "choices_zh": [
+    "31",
+    "29",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "=25.",
+   "explain_zh": "=25。",
+   "level": 2,
+   "sign_en": [
+    "31",
+    "29",
+    "25"
+   ],
+   "sign_zh": [
+    "31",
+    "29",
+    "25"
+   ]
+  },
+  {
+   "id": "l2g10_118",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=2t+(-2). f(3)=?",
+   "q_zh": "f(t)=2t+(-2)，f(3)=？",
+   "choices": [
+    "4",
+    "3",
+    "2"
+   ],
+   "choices_zh": [
+    "4",
+    "3",
+    "2"
+   ],
+   "answer": 0,
+   "explain_en": "=4.",
+   "explain_zh": "=4。",
+   "level": 2,
+   "sign_en": [
+    "4",
+    "3",
+    "2"
+   ],
+   "sign_zh": [
+    "4",
+    "3",
+    "2"
+   ]
+  },
+  {
+   "id": "l2g10_119",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=6t+(8). f(3)=?",
+   "q_zh": "f(t)=6t+(8)，f(3)=？",
+   "choices": [
+    "32",
+    "19",
+    "26"
+   ],
+   "choices_zh": [
+    "32",
+    "19",
+    "26"
+   ],
+   "answer": 2,
+   "explain_en": "=26.",
+   "explain_zh": "=26。",
+   "level": 2,
+   "sign_en": [
+    "32",
+    "19",
+    "26"
+   ],
+   "sign_zh": [
+    "32",
+    "19",
+    "26"
+   ]
+  },
+  {
+   "id": "l2g10_120",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "f(t)=3t+(2). f(0)=?",
+   "q_zh": "f(t)=3t+(2)，f(0)=？",
+   "choices": [
+    "2",
+    "0",
+    "5"
+   ],
+   "choices_zh": [
+    "2",
+    "0",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "=2.",
+   "explain_zh": "=2。",
+   "level": 2,
+   "sign_en": [
+    "2",
+    "0",
+    "5"
+   ],
+   "sign_zh": [
+    "2",
+    "0",
+    "5"
+   ]
+  }
+ ]
+}

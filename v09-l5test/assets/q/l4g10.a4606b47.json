@@ -1,0 +1,2350 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 10,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g10_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 15 + 9k yuan for k km. What is C when k = 7?",
+   "q_zh": "三轮车游胡同的价钱是 C = 15 + 9k 元（k 为千米数），k = 7 时 C 是多少？",
+   "choices": [
+    "168",
+    "142",
+    "78",
+    "87"
+   ],
+   "choices_zh": [
+    "168",
+    "142",
+    "78",
+    "87"
+   ],
+   "answer": 2,
+   "explain_en": "15 + 9 × 7 = 78.",
+   "explain_zh": "15 + 9 × 7 = 78。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_002",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Two hutong lanes of 8 m and 5 m meet at 60°. How far apart are their ends, in metres?",
+   "q_zh": "两条胡同长 8 米和 5 米，夹角 60°，两端相距多少米？",
+   "choices": [
+    "3",
+    "7",
+    "9.43",
+    "6"
+   ],
+   "choices_zh": [
+    "3",
+    "7",
+    "9.43",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7.",
+   "explain_zh": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7。",
+   "qtype": "law_of_cosines",
+   "qtype_zh": "余弦定理"
+  },
+  {
+   "id": "l4g10_003",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern display has 7^4 lanterns. How many is that?",
+   "q_zh": "一组灯笼展示有 7^4 盏，是多少盏？",
+   "choices": [
+    "2408",
+    "28",
+    "2401"
+   ],
+   "choices_zh": [
+    "2408",
+    "28",
+    "2401"
+   ],
+   "answer": 2,
+   "explain_en": "7^4 = 2401.",
+   "explain_zh": "7^4 = 2401。",
+   "sign_en": [
+    "2408",
+    "28",
+    "2401"
+   ],
+   "sign_zh": [
+    "2408",
+    "28",
+    "2401"
+   ],
+   "qtype": "power_eval",
+   "qtype_zh": "乘方求值"
+  },
+  {
+   "id": "l4g10_004",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ladder 8 m long leans at 30° to the ground to hang a lantern. How high does it reach, in metres?",
+   "q_zh": "一架长 8 米的梯子和地面成 30°，用来挂灯笼，它能够到多高（米）？",
+   "choices": [
+    "5",
+    "4",
+    "6.93",
+    "16"
+   ],
+   "choices_zh": [
+    "5",
+    "4",
+    "6.93",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "8 × sin(30°) = 4.",
+   "explain_zh": "8 × sin(30°) = 4。",
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_005",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am born from a bang, I bloom in colour for a second, and chemists can tell my metal from my colour. What am I?",
+   "q_zh": "灯谜：一声响后出生，彩色开一秒，化学家看颜色就知道我含什么金属。打一物，是什么？",
+   "choices": [
+    "A rainbow",
+    "A candle",
+    "A neon sign",
+    "A firework burst"
+   ],
+   "choices_zh": [
+    "彩虹",
+    "蜡烛",
+    "霓虹灯",
+    "烟花"
+   ],
+   "answer": 3,
+   "explain_en": "Firework colours come from metal salts (flame colours).",
+   "explain_zh": "烟花的颜色来自金属盐的焰色。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_006",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "New moon to new moon takes ____.",
+   "q_zh": "从新月到下一次新月约____。",
+   "choices": [
+    "About 365 days",
+    "About 29.5 days",
+    "Exactly 7 days"
+   ],
+   "choices_zh": [
+    "约 365 天",
+    "约 29.5 天",
+    "正好 7 天"
+   ],
+   "answer": 1,
+   "explain_en": "A synodic month is about 29.5 days.",
+   "explain_zh": "朔望月约 29.5 天。",
+   "sign_en": [
+    "About 365 days",
+    "About 29.5 days",
+    "Exactly 7 days"
+   ],
+   "sign_zh": [
+    "约 365 天",
+    "约 29.5 天",
+    "正好 7 天"
+   ],
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g10_007",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 26 and x - y = 6. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 26，x - y = 6，求 x。",
+   "choices": [
+    "16",
+    "17",
+    "10",
+    "26"
+   ],
+   "choices_zh": [
+    "16",
+    "17",
+    "10",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "(26 + 6) ÷ 2 = 16.",
+   "explain_zh": "(26 + 6) ÷ 2 = 16。",
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_008",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A shuttlecock's height is h = -t² + 10t. What is its maximum height?",
+   "q_zh": "毽子的高度 h = -t² + 10t，最大高度是多少？",
+   "choices": [
+    "5",
+    "26",
+    "10",
+    "25"
+   ],
+   "choices_zh": [
+    "5",
+    "26",
+    "10",
+    "25"
+   ],
+   "answer": 3,
+   "explain_en": "-1 × 5^2 + 10 × 5 = 25.",
+   "explain_zh": "-1 × 5^2 + 10 × 5 = 25。",
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_009",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "As Flora's tricycle rounds a corner, the net force pointing toward the centre of the turn is called the ____ force.",
+   "q_zh": "Flora 的三轮车转弯时，指向弯道圆心的合力叫____力。",
+   "choices": [
+    "centripetal",
+    "magnetic",
+    "nuclear",
+    "buoyant"
+   ],
+   "choices_zh": [
+    "向心",
+    "磁",
+    "核",
+    "浮"
+   ],
+   "answer": 0,
+   "explain_en": "Circular motion needs a centripetal (centre-seeking) net force.",
+   "explain_zh": "做圆周运动需要向心力。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l4g10_010",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "The Summer Palace was first built in 1750, badly damaged in 1860, and restored on the same site in ____.",
+   "q_zh": "颐和园始建于 1750 年，1860 年遭严重破坏，在原址修复是哪一年？",
+   "choices": [
+    "1911",
+    "1986",
+    "1886",
+    "1786"
+   ],
+   "choices_zh": [
+    "1911",
+    "1986",
+    "1886",
+    "1786"
+   ],
+   "answer": 2,
+   "explain_en": "UNESCO: built 1750, damaged 1860, restored 1886.",
+   "explain_zh": "联合国教科文组织：1750 年始建，1860 年被毁，1886 年修复。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g10_011",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A shuttlecock's height is h = -t² + 2t. What is its maximum height?",
+   "q_zh": "毽子的高度 h = -t² + 2t，最大高度是多少？",
+   "choices": [
+    "1",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "1",
+    "2",
+    "3"
+   ],
+   "answer": 0,
+   "explain_en": "-1 × 1^2 + 2 × 1 = 1.",
+   "explain_zh": "-1 × 1^2 + 2 × 1 = 1。",
+   "sign_en": [
+    "1",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "1",
+    "2",
+    "3"
+   ],
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangular courtyard has perimeter 46 m and width 4 m. What is its area in m²?",
+   "q_zh": "一个长方形院子周长 46 米、宽 4 米，面积是多少平方米？",
+   "choices": [
+    "184",
+    "80",
+    "76",
+    "168"
+   ],
+   "choices_zh": [
+    "184",
+    "80",
+    "76",
+    "168"
+   ],
+   "answer": 2,
+   "explain_en": "(46 ÷ 2 - 4) × 4 = 76.",
+   "explain_zh": "(46 ÷ 2 - 4) × 4 = 76。",
+   "qtype": "perimeter_to_area",
+   "qtype_zh": "由周长和宽求面积"
+  },
+  {
+   "id": "l4g10_013",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Ice is less dense than liquid water because ____ hold the molecules in an open lattice.",
+   "q_zh": "冰比液态水密度小，因为____把分子固定成疏松的晶格。",
+   "choices": [
+    "hydrogen bonds",
+    "nuclear forces",
+    "metallic bonds",
+    "magnetic poles"
+   ],
+   "choices_zh": [
+    "氢键",
+    "核力",
+    "金属键",
+    "磁极"
+   ],
+   "answer": 0,
+   "explain_en": "Hydrogen bonding forms an open hexagonal lattice in ice.",
+   "explain_zh": "氢键让冰形成疏松的六角晶格。",
+   "qtype": "chem_bonds",
+   "qtype_zh": "化学键（氢键）"
+  },
+  {
+   "id": "l4g10_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ladder 24 m long leans at 30° to the ground to hang a lantern. How high does it reach, in metres?",
+   "q_zh": "一架长 24 米的梯子和地面成 30°，用来挂灯笼，它能够到多高（米）？",
+   "choices": [
+    "24",
+    "12",
+    "13",
+    "20.78"
+   ],
+   "choices_zh": [
+    "24",
+    "12",
+    "13",
+    "20.78"
+   ],
+   "answer": 1,
+   "explain_en": "24 × sin(30°) = 12.",
+   "explain_zh": "24 × sin(30°) = 12。",
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_015",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "A couplet's first line ends ____.",
+   "q_zh": "上联末字是____。",
+   "choices": [
+    "Level tone (平)",
+    "Oblique tone (仄)",
+    "Neutral tone"
+   ],
+   "choices_zh": [
+    "平声",
+    "仄声",
+    "轻声"
+   ],
+   "answer": 1,
+   "explain_en": "上仄下平.",
+   "explain_zh": "上仄下平。",
+   "sign_en": [
+    "Level tone (平)",
+    "Oblique tone (仄)",
+    "Neutral tone"
+   ],
+   "sign_zh": [
+    "平声",
+    "仄声",
+    "轻声"
+   ],
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g10_016",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "Which couplet, recorded in the History of Song, is one of the earliest surviving spring couplets?",
+   "q_zh": "哪一副是《宋史》里记载的、现存较早的春联？",
+   "choices": [
+    "向阳门第春常在，积善人家庆有余",
+    "新年纳余庆，嘉节号长春",
+    "忠厚传家久，诗书继世长",
+    "天增岁月人增寿，春满乾坤福满堂"
+   ],
+   "choices_zh": [
+    "向阳门第春常在，积善人家庆有余",
+    "新年纳余庆，嘉节号长春",
+    "忠厚传家久，诗书继世长",
+    "天增岁月人增寿，春满乾坤福满堂"
+   ],
+   "answer": 1,
+   "explain_en": "Meng Chang of Later Shu wrote 新年纳余庆，嘉节号长春 on a peach-wood charm.",
+   "explain_zh": "后蜀孟昶在桃符上题“新年纳余庆，嘉节号长春”。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g10_017",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A shuttlecock's height is h = -3t² + 12t. What is its maximum height?",
+   "q_zh": "毽子的高度 h = -3t² + 12t，最大高度是多少？",
+   "choices": [
+    "15",
+    "12",
+    "2",
+    "24"
+   ],
+   "choices_zh": [
+    "15",
+    "12",
+    "2",
+    "24"
+   ],
+   "answer": 1,
+   "explain_en": "-3 × 2^2 + 12 × 2 = 12.",
+   "explain_zh": "-3 × 2^2 + 12 × 2 = 12。",
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_018",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern display has 2^5 lanterns. How many is that?",
+   "q_zh": "一组灯笼展示有 2^5 盏，是多少盏？",
+   "choices": [
+    "32",
+    "25",
+    "16",
+    "34"
+   ],
+   "choices_zh": [
+    "32",
+    "25",
+    "16",
+    "34"
+   ],
+   "answer": 0,
+   "explain_en": "2^5 = 32.",
+   "explain_zh": "2^5 = 32。",
+   "qtype": "power_eval",
+   "qtype_zh": "乘方求值"
+  },
+  {
+   "id": "l4g10_019",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 22 and x - y = 18. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 22，x - y = 18，求 x。",
+   "choices": [
+    "22",
+    "21",
+    "2",
+    "20"
+   ],
+   "choices_zh": [
+    "22",
+    "21",
+    "2",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "(22 + 18) ÷ 2 = 20.",
+   "explain_zh": "(22 + 18) ÷ 2 = 20。",
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_020",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why does Spring Festival fall on a different Gregorian date each year?",
+   "q_zh": "为什么春节每年在公历上的日期都不同？",
+   "choices": [
+    "The Earth's orbit changes yearly",
+    "It always follows the winter solstice by 30 days",
+    "The government picks a random day",
+    "It follows the lunisolar calendar based on moon phases"
+   ],
+   "choices_zh": [
+    "地球轨道每年都变",
+    "总在冬至后 30 天",
+    "每年随便定",
+    "它按照依据月相的农历（阴阳合历）"
+   ],
+   "answer": 3,
+   "explain_en": "Lunar months follow the moon (about 29.5 days), so the date shifts against the solar calendar.",
+   "explain_zh": "农历月按月相（约 29.5 天），所以和公历对不齐。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g10_021",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: We are a pair of stone drums by a courtyard gate. We never make a sound, and we hold the door frame steady. What are we?",
+   "q_zh": "灯谜：院门两旁一对石鼓，从来不响，却稳稳托着门。打一四合院构件，是什么？",
+   "choices": [
+    "Bells",
+    "Drums in a band",
+    "Stone lions on a bridge",
+    "Door piers (mendun)"
+   ],
+   "choices_zh": [
+    "铃铛",
+    "乐队的鼓",
+    "桥上石狮",
+    "门墩"
+   ],
+   "answer": 3,
+   "explain_en": "Mendun are the outer parts of the gate's stone door blocks, often drum-shaped.",
+   "explain_zh": "门墩是门枕石露在门外的部分，常做成抱鼓形。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_022",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 8 grows by a factor of 2 every year. How many pigeons after 4 years?",
+   "q_zh": "一群鸽子原有 8 只，每年变成原来的 2 倍，4 年后有多少只？",
+   "choices": [
+    "128",
+    "256",
+    "64"
+   ],
+   "choices_zh": [
+    "128",
+    "256",
+    "64"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 2^4 = 128.",
+   "explain_zh": "8 × 2^4 = 128。",
+   "sign_en": [
+    "128",
+    "256",
+    "64"
+   ],
+   "sign_zh": [
+    "128",
+    "256",
+    "64"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g10_023",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 9, run 12, slope length 15. What is cos of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 9、水平 12、斜边 15，底角的 cos 值是多少？",
+   "choices": [
+    "4/3",
+    "0.6",
+    "0.8",
+    "0.75"
+   ],
+   "choices_zh": [
+    "4/3",
+    "0.6",
+    "0.8",
+    "0.75"
+   ],
+   "answer": 2,
+   "explain_en": "12 ÷ 15 = 0.8.",
+   "explain_zh": "12 ÷ 15 = 0.8。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_024",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "The zodiac cycle repeats every ____.",
+   "q_zh": "生肖多少年轮一次？",
+   "choices": [
+    "12 years",
+    "60 days",
+    "10 years"
+   ],
+   "choices_zh": [
+    "12 年",
+    "60 天",
+    "10 年"
+   ],
+   "answer": 0,
+   "explain_en": "Twelve animals, one per year.",
+   "explain_zh": "十二种动物，一年一个。",
+   "sign_en": [
+    "12 years",
+    "60 days",
+    "10 years"
+   ],
+   "sign_zh": [
+    "12 年",
+    "60 天",
+    "10 年"
+   ],
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g10_025",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "In the week before Spring Festival, both lantern sales and dumpling sales rise. What is the best conclusion?",
+   "q_zh": "春节前一周，灯笼和饺子的销量都上涨。最合理的结论是什么？",
+   "choices": [
+    "Both are linked to the festival; one need not cause the other",
+    "Sales data can never be used",
+    "Buying lanterns makes people eat dumplings",
+    "Eating dumplings makes people buy lanterns"
+   ],
+   "choices_zh": [
+    "两者都和过节有关，不能说谁导致谁",
+    "销量数据没用",
+    "买灯笼让人吃饺子",
+    "吃饺子让人买灯笼"
+   ],
+   "answer": 0,
+   "explain_en": "Correlation does not prove causation; a third factor (the festival) drives both.",
+   "explain_zh": "相关不等于因果，背后是第三个因素——过节。",
+   "qtype": "stats_reasoning",
+   "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+  },
+  {
+   "id": "l4g10_026",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangular courtyard has perimeter 46 m and width 8 m. What is its area in m²?",
+   "q_zh": "一个长方形院子周长 46 米、宽 8 米，面积是多少平方米？",
+   "choices": [
+    "120",
+    "304",
+    "128"
+   ],
+   "choices_zh": [
+    "120",
+    "304",
+    "128"
+   ],
+   "answer": 0,
+   "explain_en": "(46 ÷ 2 - 8) × 8 = 120.",
+   "explain_zh": "(46 ÷ 2 - 8) × 8 = 120。",
+   "sign_en": [
+    "120",
+    "304",
+    "128"
+   ],
+   "sign_zh": [
+    "120",
+    "304",
+    "128"
+   ],
+   "qtype": "perimeter_to_area",
+   "qtype_zh": "由周长和宽求面积"
+  },
+  {
+   "id": "l4g10_027",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Metal for red fireworks?",
+   "q_zh": "红色烟花用什么金属？",
+   "choices": [
+    "Sodium",
+    "Strontium",
+    "Copper"
+   ],
+   "choices_zh": [
+    "钠",
+    "锶",
+    "铜"
+   ],
+   "answer": 1,
+   "explain_en": "Strontium compounds give red.",
+   "explain_zh": "锶盐呈红色。",
+   "sign_en": [
+    "Sodium",
+    "Strontium",
+    "Copper"
+   ],
+   "sign_zh": [
+    "钠",
+    "锶",
+    "铜"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g10_028",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 18 and x - y = -8. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 18，x - y = -8，求 x。",
+   "choices": [
+    "5",
+    "13",
+    "18",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "13",
+    "18",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "(18 + -8) ÷ 2 = 5.",
+   "explain_zh": "(18 + -8) ÷ 2 = 5。",
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_029",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Spring couplets carry \"auspicious\" wishes. What does \"auspicious\" mean?",
+   "q_zh": "春联写的是 auspicious 的祝福，auspicious 是什么意思？",
+   "choices": [
+    "frightening",
+    "forgotten",
+    "ordinary",
+    "promising good fortune"
+   ],
+   "choices_zh": [
+    "吓人的",
+    "被忘记的",
+    "普通的",
+    "吉祥的、预示好运的"
+   ],
+   "answer": 3,
+   "explain_en": "Auspicious means a sign of good luck.",
+   "explain_zh": "auspicious 意思是吉祥的。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g10_030",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 9, run 12, slope length 15. What is sin of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 9、水平 12、斜边 15，底角的 sin 值是多少？",
+   "choices": [
+    "0.6",
+    "0.75",
+    "5/3"
+   ],
+   "choices_zh": [
+    "0.6",
+    "0.75",
+    "5/3"
+   ],
+   "answer": 0,
+   "explain_en": "9 ÷ 15 = 0.6.",
+   "explain_zh": "9 ÷ 15 = 0.6。",
+   "sign_en": [
+    "0.6",
+    "0.75",
+    "5/3"
+   ],
+   "sign_zh": [
+    "0.6",
+    "0.75",
+    "5/3"
+   ],
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_031",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern display has 6^5 lanterns. How many is that?",
+   "q_zh": "一组灯笼展示有 6^5 盏，是多少盏？",
+   "choices": [
+    "7776",
+    "15625",
+    "1296"
+   ],
+   "choices_zh": [
+    "7776",
+    "15625",
+    "1296"
+   ],
+   "answer": 0,
+   "explain_en": "6^5 = 7776.",
+   "explain_zh": "6^5 = 7776。",
+   "sign_en": [
+    "7776",
+    "15625",
+    "1296"
+   ],
+   "sign_zh": [
+    "7776",
+    "15625",
+    "1296"
+   ],
+   "qtype": "power_eval",
+   "qtype_zh": "乘方求值"
+  },
+  {
+   "id": "l4g10_032",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 9 grows by a factor of 3 every year. How many pigeons after 6 years?",
+   "q_zh": "一群鸽子原有 9 只，每年变成原来的 3 倍，6 年后有多少只？",
+   "choices": [
+    "6570",
+    "2187",
+    "162",
+    "6561"
+   ],
+   "choices_zh": [
+    "6570",
+    "2187",
+    "162",
+    "6561"
+   ],
+   "answer": 3,
+   "explain_en": "9 × 3^6 = 6561.",
+   "explain_zh": "9 × 3^6 = 6561。",
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g10_033",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "In the story, the grandpa chasing Flora turns out to be returning her lost red envelope. This twist is an example of ____.",
+   "q_zh": "故事里一路追 Flora 的大爷，原来是来还她丢的红包。这种反转属于____。",
+   "choices": [
+    "onomatopoeia",
+    "alliteration",
+    "rhyme",
+    "situational irony"
+   ],
+   "choices_zh": [
+    "拟声",
+    "头韵",
+    "押韵",
+    "情境反讽"
+   ],
+   "answer": 3,
+   "explain_en": "The outcome is the opposite of what we expect: situational irony.",
+   "explain_zh": "结果和预期相反，是情境反讽。",
+   "qtype": "lang_literary",
+   "qtype_zh": "文学概念（主题）"
+  },
+  {
+   "id": "l4g10_034",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why does each metal give fireworks its own colour?",
+   "q_zh": "为什么每种金属让烟花呈现特定颜色？",
+   "choices": [
+    "Hotter fireworks are always blue",
+    "The paper wrapping is dyed",
+    "Excited electrons drop to lower levels and emit specific wavelengths",
+    "The metal reflects the moonlight"
+   ],
+   "choices_zh": [
+    "温度越高越一定是蓝色",
+    "包装纸被染了色",
+    "受激电子跃迁回低能级，放出特定波长的光",
+    "金属反射月光"
+   ],
+   "answer": 2,
+   "explain_en": "Each element has its own energy levels, so it emits its own wavelengths.",
+   "explain_zh": "每种元素能级不同，发出的光波长也不同。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g10_035",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Correlation does not prove ____.",
+   "q_zh": "相关不能证明____。",
+   "choices": [
+    "gravity",
+    "causation",
+    "addition"
+   ],
+   "choices_zh": [
+    "引力",
+    "因果",
+    "加法"
+   ],
+   "answer": 1,
+   "explain_en": "Two things moving together need not cause each other.",
+   "explain_zh": "一起变化不代表互为因果。",
+   "sign_en": [
+    "gravity",
+    "causation",
+    "addition"
+   ],
+   "sign_zh": [
+    "引力",
+    "因果",
+    "加法"
+   ],
+   "qtype": "stats_reasoning",
+   "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+  },
+  {
+   "id": "l4g10_036",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Two hutong lanes of 15 m and 7 m meet at 60°. How far apart are their ends, in metres?",
+   "q_zh": "两条胡同长 15 米和 7 米，夹角 60°，两端相距多少米？",
+   "choices": [
+    "8",
+    "13",
+    "14"
+   ],
+   "choices_zh": [
+    "8",
+    "13",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "√(15^2 + 7^2 - 2 × 15 × 7 × cos(60°)) = 13.",
+   "explain_zh": "√(15^2 + 7^2 - 2 × 15 × 7 × cos(60°)) = 13。",
+   "sign_en": [
+    "8",
+    "13",
+    "14"
+   ],
+   "sign_zh": [
+    "8",
+    "13",
+    "14"
+   ],
+   "qtype": "law_of_cosines",
+   "qtype_zh": "余弦定理"
+  },
+  {
+   "id": "l4g10_037",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Two hutong lanes of 21 m and 5 m meet at 60°. How far apart are their ends, in metres?",
+   "q_zh": "两条胡同长 21 米和 5 米，夹角 60°，两端相距多少米？",
+   "choices": [
+    "19",
+    "20",
+    "21.59"
+   ],
+   "choices_zh": [
+    "19",
+    "20",
+    "21.59"
+   ],
+   "answer": 0,
+   "explain_en": "√(21^2 + 5^2 - 2 × 21 × 5 × cos(60°)) = 19.",
+   "explain_zh": "√(21^2 + 5^2 - 2 × 21 × 5 × cos(60°)) = 19。",
+   "sign_en": [
+    "19",
+    "20",
+    "21.59"
+   ],
+   "sign_zh": [
+    "19",
+    "20",
+    "21.59"
+   ],
+   "qtype": "law_of_cosines",
+   "qtype_zh": "余弦定理"
+  },
+  {
+   "id": "l4g10_038",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ladder 12 m long leans at 30° to the ground to hang a lantern. How high does it reach, in metres?",
+   "q_zh": "一架长 12 米的梯子和地面成 30°，用来挂灯笼，它能够到多高（米）？",
+   "choices": [
+    "24",
+    "6",
+    "7",
+    "12"
+   ],
+   "choices_zh": [
+    "24",
+    "6",
+    "7",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "12 × sin(30°) = 6.",
+   "explain_zh": "12 × sin(30°) = 6。",
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_039",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 29 and x - y = 1. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 29，x - y = 1，求 x。",
+   "choices": [
+    "16",
+    "1",
+    "15"
+   ],
+   "choices_zh": [
+    "16",
+    "1",
+    "15"
+   ],
+   "answer": 2,
+   "explain_en": "(29 + 1) ÷ 2 = 15.",
+   "explain_zh": "(29 + 1) ÷ 2 = 15。",
+   "sign_en": [
+    "16",
+    "1",
+    "15"
+   ],
+   "sign_zh": [
+    "16",
+    "1",
+    "15"
+   ],
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_040",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 3 grows by a factor of 2 every year. How many pigeons after 5 years?",
+   "q_zh": "一群鸽子原有 3 只，每年变成原来的 2 倍，5 年后有多少只？",
+   "choices": [
+    "30",
+    "192",
+    "96",
+    "99"
+   ],
+   "choices_zh": [
+    "30",
+    "192",
+    "96",
+    "99"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 2^5 = 96.",
+   "explain_zh": "3 × 2^5 = 96。",
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g10_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangular courtyard has perimeter 40 m and width 7 m. What is its area in m²?",
+   "q_zh": "一个长方形院子周长 40 米、宽 7 米，面积是多少平方米？",
+   "choices": [
+    "280",
+    "20",
+    "91",
+    "98"
+   ],
+   "choices_zh": [
+    "280",
+    "20",
+    "91",
+    "98"
+   ],
+   "answer": 2,
+   "explain_en": "(40 ÷ 2 - 7) × 7 = 91.",
+   "explain_zh": "(40 ÷ 2 - 7) × 7 = 91。",
+   "qtype": "perimeter_to_area",
+   "qtype_zh": "由周长和宽求面积"
+  },
+  {
+   "id": "l4g10_042",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 7, run 24, slope length 25. What is cos of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 7、水平 24、斜边 25，底角的 cos 值是多少？",
+   "choices": [
+    "0.28",
+    "25/7",
+    "0.96"
+   ],
+   "choices_zh": [
+    "0.28",
+    "25/7",
+    "0.96"
+   ],
+   "answer": 2,
+   "explain_en": "24 ÷ 25 = 0.96.",
+   "explain_zh": "24 ÷ 25 = 0.96。",
+   "sign_en": [
+    "0.28",
+    "25/7",
+    "0.96"
+   ],
+   "sign_zh": [
+    "0.28",
+    "25/7",
+    "0.96"
+   ],
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 5, run 12, slope length 13. What is sin of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 5、水平 12、斜边 13，底角的 sin 值是多少？",
+   "choices": [
+    "5/13",
+    "2.4",
+    "2.6",
+    "5/12"
+   ],
+   "choices_zh": [
+    "5/13",
+    "2.4",
+    "2.6",
+    "5/12"
+   ],
+   "answer": 0,
+   "explain_en": "5 ÷ 13 = 5/13.",
+   "explain_zh": "5 ÷ 13 = 5/13。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_044",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern display has 4^2 lanterns. How many is that?",
+   "q_zh": "一组灯笼展示有 4^2 盏，是多少盏？",
+   "choices": [
+    "4",
+    "16",
+    "8",
+    "20"
+   ],
+   "choices_zh": [
+    "4",
+    "16",
+    "8",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "4^2 = 16.",
+   "explain_zh": "4^2 = 16。",
+   "qtype": "power_eval",
+   "qtype_zh": "乘方求值"
+  },
+  {
+   "id": "l4g10_045",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 5, run 12, slope length 13. What is tan of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 5、水平 12、斜边 13，底角的 tan 值是多少？",
+   "choices": [
+    "2.4",
+    "12/13",
+    "2.6",
+    "5/12"
+   ],
+   "choices_zh": [
+    "2.4",
+    "12/13",
+    "2.6",
+    "5/12"
+   ],
+   "answer": 3,
+   "explain_en": "5 ÷ 12 = 5/12.",
+   "explain_zh": "5 ÷ 12 = 5/12。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_046",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I carry the turning of your feet to the wheels, link by link, but I never walk. What am I on a tricycle?",
+   "q_zh": "灯谜：一节连一节，把脚蹬的转动带到轮子上，自己却不走路。打三轮车上一部件，是什么？",
+   "choices": [
+    "The chain",
+    "The seat",
+    "The bell",
+    "The basket"
+   ],
+   "choices_zh": [
+    "链条",
+    "车座",
+    "车铃",
+    "车斗"
+   ],
+   "answer": 0,
+   "explain_en": "The chain transmits motion from the pedals to the drive wheel.",
+   "explain_zh": "链条把脚蹬的转动传到驱动轮。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 8, run 15, slope length 17. What is tan of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 8、水平 15、斜边 17，底角的 tan 值是多少？",
+   "choices": [
+    "8/15",
+    "8/17",
+    "15/17",
+    "15/8"
+   ],
+   "choices_zh": [
+    "8/15",
+    "8/17",
+    "15/17",
+    "15/8"
+   ],
+   "answer": 0,
+   "explain_en": "8 ÷ 15 = 8/15.",
+   "explain_zh": "8 ÷ 15 = 8/15。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "When a firecracker explodes, its chemical energy changes mainly into ____.",
+   "q_zh": "鞭炮爆炸时，化学能主要转化成____。",
+   "choices": [
+    "only electricity",
+    "nuclear energy",
+    "more chemical energy",
+    "sound, light, heat and motion"
+   ],
+   "choices_zh": [
+    "只有电能",
+    "核能",
+    "更多化学能",
+    "声能、光能、热能和动能"
+   ],
+   "answer": 3,
+   "explain_en": "The reaction releases energy as heat, light, sound and kinetic energy.",
+   "explain_zh": "反应放出热、光、声和动能。",
+   "qtype": "energy_forms",
+   "qtype_zh": "能量转化与守恒"
+  },
+  {
+   "id": "l4g10_049",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 15 and x - y = 9. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 15，x - y = 9，求 x。",
+   "choices": [
+    "15",
+    "9",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "9",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "(15 + 9) ÷ 2 = 12.",
+   "explain_zh": "(15 + 9) ÷ 2 = 12。",
+   "sign_en": [
+    "15",
+    "9",
+    "12"
+   ],
+   "sign_zh": [
+    "15",
+    "9",
+    "12"
+   ],
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_050",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Copper's flame colour?",
+   "q_zh": "铜的焰色？",
+   "choices": [
+    "Yellow",
+    "Red",
+    "Blue-green"
+   ],
+   "choices_zh": [
+    "黄色",
+    "红色",
+    "蓝绿色"
+   ],
+   "answer": 2,
+   "explain_en": "Copper gives blue-green.",
+   "explain_zh": "铜呈蓝绿色。",
+   "sign_en": [
+    "Yellow",
+    "Red",
+    "Blue-green"
+   ],
+   "sign_zh": [
+    "黄色",
+    "红色",
+    "蓝绿色"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g10_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 5 + 7k yuan for k km. What is C when k = 3?",
+   "q_zh": "三轮车游胡同的价钱是 C = 5 + 7k 元（k 为千米数），k = 3 时 C 是多少？",
+   "choices": [
+    "36",
+    "33",
+    "21",
+    "26"
+   ],
+   "choices_zh": [
+    "36",
+    "33",
+    "21",
+    "26"
+   ],
+   "answer": 3,
+   "explain_en": "5 + 7 × 3 = 26.",
+   "explain_zh": "5 + 7 × 3 = 26。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_052",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 8 grows by a factor of 2 every year. How many pigeons after 2 years?",
+   "q_zh": "一群鸽子原有 8 只，每年变成原来的 2 倍，2 年后有多少只？",
+   "choices": [
+    "64",
+    "32",
+    "40"
+   ],
+   "choices_zh": [
+    "64",
+    "32",
+    "40"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 2^2 = 32.",
+   "explain_zh": "8 × 2^2 = 32。",
+   "sign_en": [
+    "64",
+    "32",
+    "40"
+   ],
+   "sign_zh": [
+    "64",
+    "32",
+    "40"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g10_053",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 3 + 4k yuan for k km. What is C when k = 3?",
+   "q_zh": "三轮车游胡同的价钱是 C = 3 + 4k 元（k 为千米数），k = 3 时 C 是多少？",
+   "choices": [
+    "12",
+    "19",
+    "21",
+    "15"
+   ],
+   "choices_zh": [
+    "12",
+    "19",
+    "21",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "3 + 4 × 3 = 15.",
+   "explain_zh": "3 + 4 × 3 = 15。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_054",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Summer Palace restored on site in ____.",
+   "q_zh": "颐和园在原址修复于____。",
+   "choices": [
+    "1986",
+    "1786",
+    "1886"
+   ],
+   "choices_zh": [
+    "1986 年",
+    "1786 年",
+    "1886 年"
+   ],
+   "answer": 2,
+   "explain_en": "Restored in 1886.",
+   "explain_zh": "1886 年修复。",
+   "sign_en": [
+    "1986",
+    "1786",
+    "1886"
+   ],
+   "sign_zh": [
+    "1986 年",
+    "1786 年",
+    "1886 年"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g10_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am frozen water that grows thicker from the top of Kunming Lake downward, while fish swim safely under me. What am I?",
+   "q_zh": "灯谜：我是冻住的水，在昆明湖上从上往下越结越厚，鱼在我下面照样游。打一物，是什么？",
+   "choices": [
+    "Lake ice",
+    "Steam",
+    "Tanghulu (candied hawthorns)",
+    "Fog"
+   ],
+   "choices_zh": [
+    "湖冰",
+    "水蒸气",
+    "冰糖葫芦",
+    "雾"
+   ],
+   "answer": 0,
+   "explain_en": "Ice forms at the surface and floats, so water below stays liquid.",
+   "explain_zh": "冰在水面结成并浮着，下面的水不结冰。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_056",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 33 and x - y = 5. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 33，x - y = 5，求 x。",
+   "choices": [
+    "33",
+    "19",
+    "5",
+    "20"
+   ],
+   "choices_zh": [
+    "33",
+    "19",
+    "5",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "(33 + 5) ÷ 2 = 19.",
+   "explain_zh": "(33 + 5) ÷ 2 = 19。",
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_057",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Chaser returns lost gift: what device?",
+   "q_zh": "追兵原来是来还东西：什么手法？",
+   "choices": [
+    "Situational irony",
+    "Simile",
+    "Rhyme"
+   ],
+   "choices_zh": [
+    "情境反讽",
+    "明喻",
+    "押韵"
+   ],
+   "answer": 0,
+   "explain_en": "The outcome reverses expectations.",
+   "explain_zh": "结果和预期相反。",
+   "sign_en": [
+    "Situational irony",
+    "Simile",
+    "Rhyme"
+   ],
+   "sign_zh": [
+    "情境反讽",
+    "明喻",
+    "押韵"
+   ],
+   "qtype": "lang_literary",
+   "qtype_zh": "文学概念（主题）"
+  },
+  {
+   "id": "l4g10_058",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangular courtyard has perimeter 76 m and width 15 m. What is its area in m²?",
+   "q_zh": "一个长方形院子周长 76 米、宽 15 米，面积是多少平方米？",
+   "choices": [
+    "915",
+    "1140",
+    "345"
+   ],
+   "choices_zh": [
+    "915",
+    "1140",
+    "345"
+   ],
+   "answer": 2,
+   "explain_en": "(76 ÷ 2 - 15) × 15 = 345.",
+   "explain_zh": "(76 ÷ 2 - 15) × 15 = 345。",
+   "sign_en": [
+    "915",
+    "1140",
+    "345"
+   ],
+   "sign_zh": [
+    "915",
+    "1140",
+    "345"
+   ],
+   "qtype": "perimeter_to_area",
+   "qtype_zh": "由周长和宽求面积"
+  },
+  {
+   "id": "l4g10_059",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am a little round world: I shine but I make no light of my own, and on the 15th lunar night I am full. What am I?",
+   "q_zh": "灯谜：一个圆圆小世界，会亮却不自己发光，正月十五最圆。打一天体，是什么？",
+   "choices": [
+    "The moon",
+    "A star",
+    "A comet",
+    "The sun"
+   ],
+   "choices_zh": [
+    "月亮",
+    "恒星",
+    "彗星",
+    "太阳"
+   ],
+   "answer": 0,
+   "explain_en": "The moon reflects sunlight and is full mid-month.",
+   "explain_zh": "月亮反射太阳光，农历十五前后最圆。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_060",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ladder 20 m long leans at 30° to the ground to hang a lantern. How high does it reach, in metres?",
+   "q_zh": "一架长 20 米的梯子和地面成 30°，用来挂灯笼，它能够到多高（米）？",
+   "choices": [
+    "11",
+    "40",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "40",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "20 × sin(30°) = 10.",
+   "explain_zh": "20 × sin(30°) = 10。",
+   "sign_en": [
+    "11",
+    "40",
+    "10"
+   ],
+   "sign_zh": [
+    "11",
+    "40",
+    "10"
+   ],
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A shuttlecock's height is h = -4t² + 8t. What is its maximum height?",
+   "q_zh": "毽子的高度 h = -4t² + 8t，最大高度是多少？",
+   "choices": [
+    "8",
+    "4",
+    "5",
+    "1"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "5",
+    "1"
+   ],
+   "answer": 1,
+   "explain_en": "-4 × 1^2 + 8 × 1 = 4.",
+   "explain_zh": "-4 × 1^2 + 8 × 1 = 4。",
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_062",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ladder 16 m long leans at 30° to the ground to hang a lantern. How high does it reach, in metres?",
+   "q_zh": "一架长 16 米的梯子和地面成 30°，用来挂灯笼，它能够到多高（米）？",
+   "choices": [
+    "8",
+    "16",
+    "9",
+    "32"
+   ],
+   "choices_zh": [
+    "8",
+    "16",
+    "9",
+    "32"
+   ],
+   "answer": 0,
+   "explain_en": "16 × sin(30°) = 8.",
+   "explain_zh": "16 × sin(30°) = 8。",
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern display has 2^2 lanterns. How many is that?",
+   "q_zh": "一组灯笼展示有 2^2 盏，是多少盏？",
+   "choices": [
+    "4",
+    "6",
+    "2",
+    "5"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "2",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "2^2 = 4.",
+   "explain_zh": "2^2 = 4。",
+   "qtype": "power_eval",
+   "qtype_zh": "乘方求值"
+  },
+  {
+   "id": "l4g10_064",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Pork dumplings x and veggie dumplings y: x + y = 28 and x - y = 18. Find x.",
+   "q_zh": "猪肉饺子 x 个、素饺子 y 个：x + y = 28，x - y = 18，求 x。",
+   "choices": [
+    "28",
+    "24",
+    "18",
+    "23"
+   ],
+   "choices_zh": [
+    "28",
+    "24",
+    "18",
+    "23"
+   ],
+   "answer": 3,
+   "explain_en": "(28 + 18) ÷ 2 = 23.",
+   "explain_zh": "(28 + 18) ÷ 2 = 23。",
+   "qtype": "system_eq",
+   "qtype_zh": "二元一次方程组"
+  },
+  {
+   "id": "l4g10_065",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A shuttlecock's height is h = -4t² + 32t. What is its maximum height?",
+   "q_zh": "毽子的高度 h = -4t² + 32t，最大高度是多少？",
+   "choices": [
+    "4",
+    "64",
+    "32"
+   ],
+   "choices_zh": [
+    "4",
+    "64",
+    "32"
+   ],
+   "answer": 1,
+   "explain_en": "-4 × 4^2 + 32 × 4 = 64.",
+   "explain_zh": "-4 × 4^2 + 32 × 4 = 64。",
+   "sign_en": [
+    "4",
+    "64",
+    "32"
+   ],
+   "sign_zh": [
+    "4",
+    "64",
+    "32"
+   ],
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am a tower with eight sides, three storeys and four layers of eaves, standing on a high stone base above Kunming Lake. What am I?",
+   "q_zh": "灯谜：八面三层四重檐，高高石台上，俯看昆明湖。打一颐和园建筑，是什么？",
+   "choices": [
+    "The Tower of Buddhist Incense",
+    "A hutong gate",
+    "The Long Corridor",
+    "The Marble Boat"
+   ],
+   "choices_zh": [
+    "佛香阁",
+    "胡同门楼",
+    "长廊",
+    "石舫"
+   ],
+   "answer": 0,
+   "explain_en": "The Tower of Buddhist Incense is octagonal, 3 storeys, 4 layers of eaves.",
+   "explain_zh": "佛香阁八面三层四重檐，立在高台上。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g10_067",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 2 + 3k yuan for k km. What is C when k = 12?",
+   "q_zh": "三轮车游胡同的价钱是 C = 2 + 3k 元（k 为千米数），k = 12 时 C 是多少？",
+   "choices": [
+    "18",
+    "36",
+    "38"
+   ],
+   "choices_zh": [
+    "18",
+    "36",
+    "38"
+   ],
+   "answer": 2,
+   "explain_en": "2 + 3 × 12 = 38.",
+   "explain_zh": "2 + 3 × 12 = 38。",
+   "sign_en": [
+    "18",
+    "36",
+    "38"
+   ],
+   "sign_zh": [
+    "18",
+    "36",
+    "38"
+   ],
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "The Seventeen-Arch Bridge was first built during the reign of which emperor?",
+   "q_zh": "十七孔桥始建于哪位皇帝在位时？",
+   "choices": [
+    "Tang Taizong",
+    "Qianlong",
+    "Yongle",
+    "Kangxi"
+   ],
+   "choices_zh": [
+    "唐太宗",
+    "乾隆",
+    "永乐",
+    "康熙"
+   ],
+   "answer": 1,
+   "explain_en": "Built in the 15th year of Qianlong (1750).",
+   "explain_zh": "乾隆十五年（1750 年）始建。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g10_069",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 18 + 3k yuan for k km. What is C when k = 8?",
+   "q_zh": "三轮车游胡同的价钱是 C = 18 + 3k 元（k 为千米数），k = 8 时 C 是多少？",
+   "choices": [
+    "24",
+    "62",
+    "45",
+    "42"
+   ],
+   "choices_zh": [
+    "24",
+    "62",
+    "45",
+    "42"
+   ],
+   "answer": 3,
+   "explain_en": "18 + 3 × 8 = 42.",
+   "explain_zh": "18 + 3 × 8 = 42。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_070",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 2 + 3k yuan for k km. What is C when k = 5?",
+   "q_zh": "三轮车游胡同的价钱是 C = 2 + 3k 元（k 为千米数），k = 5 时 C 是多少？",
+   "choices": [
+    "11",
+    "15",
+    "17"
+   ],
+   "choices_zh": [
+    "11",
+    "15",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "2 + 3 × 5 = 17.",
+   "explain_zh": "2 + 3 × 5 = 17。",
+   "sign_en": [
+    "11",
+    "15",
+    "17"
+   ],
+   "sign_zh": [
+    "11",
+    "15",
+    "17"
+   ],
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g10_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A rectangular courtyard has perimeter 14 m and width 3 m. What is its area in m²?",
+   "q_zh": "一个长方形院子周长 14 米、宽 3 米，面积是多少平方米？",
+   "choices": [
+    "42",
+    "12",
+    "33",
+    "15"
+   ],
+   "choices_zh": [
+    "42",
+    "12",
+    "33",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "(14 ÷ 2 - 3) × 3 = 12.",
+   "explain_zh": "(14 ÷ 2 - 3) × 3 = 12。",
+   "qtype": "perimeter_to_area",
+   "qtype_zh": "由周长和宽求面积"
+  },
+  {
+   "id": "l4g10_072",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A pigeon flock of 9 grows by a factor of 2 every year. How many pigeons after 3 years?",
+   "q_zh": "一群鸽子原有 9 只，每年变成原来的 2 倍，3 年后有多少只？",
+   "choices": [
+    "54",
+    "36",
+    "72"
+   ],
+   "choices_zh": [
+    "54",
+    "36",
+    "72"
+   ],
+   "answer": 2,
+   "explain_en": "9 × 2^3 = 72.",
+   "explain_zh": "9 × 2^3 = 72。",
+   "sign_en": [
+    "54",
+    "36",
+    "72"
+   ],
+   "sign_zh": [
+    "54",
+    "36",
+    "72"
+   ],
+   "qtype": "exp_growth_eval",
+   "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+  },
+  {
+   "id": "l4g10_073",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Two hutong lanes of 16 m and 6 m meet at 60°. How far apart are their ends, in metres?",
+   "q_zh": "两条胡同长 16 米和 6 米，夹角 60°，两端相距多少米？",
+   "choices": [
+    "15",
+    "14",
+    "10",
+    "8"
+   ],
+   "choices_zh": [
+    "15",
+    "14",
+    "10",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "√(16^2 + 6^2 - 2 × 16 × 6 × cos(60°)) = 14.",
+   "explain_zh": "√(16^2 + 6^2 - 2 × 16 × 6 × cos(60°)) = 14。",
+   "qtype": "law_of_cosines",
+   "qtype_zh": "余弦定理"
+  },
+  {
+   "id": "l4g10_074",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong ramp forms a right triangle: rise 6, run 8, slope length 10. What is tan of the angle at the bottom?",
+   "q_zh": "胡同里一段坡道构成直角三角形：高 6、水平 8、斜边 10，底角的 tan 值是多少？",
+   "choices": [
+    "0.75",
+    "4/3",
+    "0.6",
+    "0.8"
+   ],
+   "choices_zh": [
+    "0.75",
+    "4/3",
+    "0.6",
+    "0.8"
+   ],
+   "answer": 0,
+   "explain_en": "6 ÷ 8 = 0.75.",
+   "explain_zh": "6 ÷ 8 = 0.75。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_075",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Families on the bridge watch the full moon on the Lantern Festival. Why is the moon full on about the 15th of a lunar month?",
+   "q_zh": "元宵夜一家人在桥上赏满月。为什么农历十五前后月亮最圆？",
+   "choices": [
+    "Lanterns light up the Moon",
+    "Months start at new moon; half a synodic month later the Moon is opposite the Sun",
+    "Earth's shadow is biggest then",
+    "The Moon makes its own light on the 15th"
+   ],
+   "choices_zh": [
+    "灯笼把月亮照亮了",
+    "农历月从新月开始，约半个朔望月后月亮转到与太阳相对的位置",
+    "那时地球影子最大",
+    "十五那天月亮自己发光"
+   ],
+   "answer": 1,
+   "explain_en": "New moon starts the month; about 14–15 days later the Moon is opposite the Sun and fully lit.",
+   "explain_zh": "初一是新月，十四五天后月亮与太阳相对，被照亮的一面全朝向地球。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g10_076",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Over Kunming Lake a deep-red firework bursts. Which explanation is correct?",
+   "q_zh": "昆明湖上空炸开一朵深红色烟花。哪种解释正确？",
+   "choices": [
+    "Strontium salts; excited electrons emit red light as they drop",
+    "Copper salts; they reflect the lanterns",
+    "Sodium salts; they burn hotter",
+    "No metal; red is just smoke"
+   ],
+   "choices_zh": [
+    "锶盐；受激电子回落时放出红光",
+    "铜盐；反射灯笼的光",
+    "钠盐；烧得更热",
+    "不含金属；红色只是烟"
+   ],
+   "answer": 0,
+   "explain_en": "Strontium's emission lines are red.",
+   "explain_zh": "锶的发射光谱在红光区。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g10_077",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A ramp up to the Seventeen-Arch Bridge rises 9 m over a horizontal run of 12 m, with a sloping length of 15 m. What is sin of the ramp's angle?",
+   "q_zh": "上十七孔桥的坡道升高 9 米，水平距离 12 米，斜长 15 米。坡角的 sin 值是多少？",
+   "choices": [
+    "0.8",
+    "5/3",
+    "4/3",
+    "0.6"
+   ],
+   "choices_zh": [
+    "0.8",
+    "5/3",
+    "4/3",
+    "0.6"
+   ],
+   "answer": 3,
+   "explain_en": "9 ÷ 15 = 0.6.",
+   "explain_zh": "9 ÷ 15 = 0.6。",
+   "qtype": "trig_ratio",
+   "qtype_zh": "由三边求三角比"
+  },
+  {
+   "id": "l4g10_078",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A firework over the bridge follows h = -4t² + 32t (h in tens of metres, t in seconds). What is its maximum height h?",
+   "q_zh": "桥上空一枚烟花的高度 h = -4t² + 32t（h 单位十米，t 单位秒），最大高度 h 是多少？",
+   "choices": [
+    "64",
+    "128",
+    "4",
+    "32"
+   ],
+   "choices_zh": [
+    "64",
+    "128",
+    "4",
+    "32"
+   ],
+   "answer": 0,
+   "explain_en": "-4 × 4^2 + 32 × 4 = 64.",
+   "explain_zh": "-4 × 4^2 + 32 × 4 = 64。",
+   "qtype": "quad_max",
+   "qtype_zh": "二次函数最大值/顶点"
+  },
+  {
+   "id": "l4g10_079",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "From a boat on Kunming Lake, the two ends of the Seventeen-Arch Bridge are 21 and 5 units away, with a 60° angle between the sight lines. How long is the bridge in those units?",
+   "q_zh": "在昆明湖的船上看十七孔桥两端，距离分别是 21 和 5 个单位，两条视线夹角 60°。桥长多少个单位？",
+   "choices": [
+    "7",
+    "16",
+    "20",
+    "19"
+   ],
+   "choices_zh": [
+    "7",
+    "16",
+    "20",
+    "19"
+   ],
+   "answer": 3,
+   "explain_en": "√(21^2 + 5^2 - 2 × 21 × 5 × cos(60°)) = 19.",
+   "explain_zh": "√(21^2 + 5^2 - 2 × 21 × 5 × cos(60°)) = 19。",
+   "qtype": "law_of_cosines",
+   "qtype_zh": "余弦定理"
+  },
+  {
+   "id": "l4g10_080",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern string runs 20 m from the bridge deck up to a lamp post at 30° above horizontal. How high is the top of the string above the deck, in metres?",
+   "q_zh": "一串彩灯从桥面拉到灯杆上，长 20 米，与水平面成 30°。彩灯顶端离桥面多高（米）？",
+   "choices": [
+    "11",
+    "20",
+    "17.32",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "20",
+    "17.32",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "20 × sin(30°) = 10.",
+   "explain_zh": "20 × sin(30°) = 10。",
+   "qtype": "trig_side",
+   "qtype_zh": "用三角函数求边长"
+  },
+  {
+   "id": "l4g10_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A firework over Kunming Lake rises with height h = -2t² + 7t (in tens of metres). What is h at t = 2?",
+   "q_zh": "昆明湖上空一枚烟花的高度是 h = -2t² + 7t（单位：十米），t = 2 时 h 是多少？",
+   "choices": [
+    "4",
+    "6",
+    "14",
+    "8"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "14",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "-2 × 2^2 + 7 × 2 = 6.",
+   "explain_zh": "-2 × 2^2 + 7 × 2 = 6。",
+   "qtype": "quad_eval",
+   "qtype_zh": "二次函数代入求值"
+  },
+  {
+   "id": "l4g10_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On a park grid (units of 10 m), the Seventeen-Arch Bridge's east end is at (-3, 3) and Flora's tricycle is at (0, 7). What is the straight-line distance in grid units?",
+   "q_zh": "在公园坐标图上（单位 10 米），十七孔桥东头在 (-3, 3)，Flora 的三轮车在 (0, 7)，两点直线距离是几个单位？",
+   "choices": [
+    "4",
+    "7",
+    "5",
+    "12"
+   ],
+   "choices_zh": [
+    "4",
+    "7",
+    "5",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "√(3^2 + 4^2) = 5.",
+   "explain_zh": "√(3^2 + 4^2) = 5。",
+   "qtype": "distance_formula",
+   "qtype_zh": "两点间距离"
+  }
+ ]
+}
