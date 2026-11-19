@@ -6501,7 +6501,9 @@ function l5PreEnsure(){if(!isL5()||typeof L3PRE==='undefined'||typeof TEX==='und
 
 function l5PrepCountdownRider(){
  /* Flora on the e-bike in the player slot; grandma hidden until appearAt (3.5s) during run.
-    Retry: snap leftover L3 camera (do not edit l3CamStep body) and write HUD from S.runT. */
+    Retry: snap leftover L3 camera (do not edit l3CamStep body) and write HUD from S.runT.
+    Also hide leftover section/hint #sub so 「Lujiazui!」 cannot sit on 3-2-1. */
+ try{const e=document.getElementById('sub');if(e){e.style.display='none';e.innerHTML='';}if(typeof sub==='function')clearTimeout(sub.t);}catch(e){}
  try{if(typeof pursuer!=='undefined'&&pursuer)pursuer.visible=false;}catch(e){}
  try{if(S)S.chaseDist=7;}catch(e){}
  try{if(typeof L3CAM!=='undefined'&&L3CAM){L3CAM.p=null;L3CAM._t=null;}}catch(e){}
@@ -6823,6 +6825,7 @@ function l5GrandmaGive(done){
  const G=S&&S._l3Lodge;
  window.__L5GIVE={t0:performance.now()};
  const give=()=>{try{if(typeof pursuer!=='undefined'&&pursuer&&TEX.pursuer_l5_grandma_give_zongzi){pursuer.material=SP('pursuer_l5_grandma_give_zongzi');pursuer.visible=true;}}catch(e){}
+  try{play('sfx_l5_nainai_catch');}catch(e){}
   try{sub(bi('A warm zongzi for you!','给你一只热粽子！'),1800);}catch(e){}
   window.__L5GIVE.giveAt=performance.now();setTimeout(()=>{if(typeof done==='function')done();},1000);};
  if(!G){give();return;}
