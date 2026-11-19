@@ -1,0 +1,2350 @@
+{
+  "level": 5,
+  "level_name_en": "Shanghai",
+  "level_name_zh": "上海",
+  "grade": 12,
+  "version": "v1",
+  "fields": "L5 Shanghai / Dragon Boat Festival (e-bike; Lujiazui → the Bund → Huaihai Road → Xintiandi). Same item fields as L3 v3.1 / L4. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 端午摊 Zongzi Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Xintiandi-entrance final (exactly 4 choices, hard, situational). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Xintiandi final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 端午谜：. Stems are deduped against all L1–L4 banks (all grades).",
+  "questions": [
+    {
+      "id": "l5g12_001",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 5x^2. What is f'(3)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 5x^2，f'(3) 是多少？",
+      "choices": [
+        "30",
+        "35",
+        "45",
+        "15"
+      ],
+      "choices_zh": [
+        "30",
+        "35",
+        "45",
+        "15"
+      ],
+      "answer": 0,
+      "explain_en": "2 × 5 × (3)^(2 - 1) = 30.",
+      "explain_zh": "2 × 5 × (3)^(2 - 1) = 30。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_002",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 3 of 9 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 9 只不同的香囊里选 3 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "504",
+        "83",
+        "84",
+        "93"
+      ],
+      "choices_zh": [
+        "504",
+        "83",
+        "84",
+        "93"
+      ],
+      "answer": 2,
+      "explain_en": "C(9,3) = 84.",
+      "explain_zh": "C(9,3) = 84。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_003",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi-stall puzzle asks for log base 3 of 81. What is it?",
+      "q_zh": "粽子摊的密码题：以 3 为底 81 的对数是多少？",
+      "choices": [
+        "5",
+        "4",
+        "27",
+        "12"
+      ],
+      "choices_zh": [
+        "5",
+        "4",
+        "27",
+        "12"
+      ],
+      "answer": 1,
+      "explain_en": "log₃(81) = 4.",
+      "explain_zh": "log₃(81) = 4。",
+      "qtype": "log_eval",
+      "qtype_zh": "对数求值"
+    },
+    {
+      "id": "l5g12_004",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The aroma of a warm zongzi is modelled by L(t) = 9e^(2t). What is L'(0)?",
+      "q_zh": "一只热粽子的香气模型是 L(t) = 9e^(2t)，L'(0) 是多少？",
+      "choices": [
+        "18",
+        "2",
+        "36",
+        "11"
+      ],
+      "choices_zh": [
+        "18",
+        "2",
+        "36",
+        "11"
+      ],
+      "answer": 0,
+      "explain_en": "9 × 2 × e^(0) = 18.",
+      "explain_zh": "9 × 2 × e^(0) = 18。",
+      "qtype": "derivative_exp",
+      "qtype_zh": "指数函数求导"
+    },
+    {
+      "id": "l5g12_005",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "{name} hangs 3 of 5 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "{name} 从 5 只不同香囊里选 3 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "15",
+        "60",
+        "10"
+      ],
+      "choices_zh": [
+        "15",
+        "60",
+        "10"
+      ],
+      "answer": 1,
+      "explain_en": "P(5,3) = 60.",
+      "explain_zh": "P(5,3) = 60。",
+      "sign_en": [
+        "15",
+        "60",
+        "10"
+      ],
+      "sign_zh": [
+        "15",
+        "60",
+        "10"
+      ],
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_006",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 7 grows by a factor of 2 every year. How many sparrows after 3 years?",
+      "q_zh": "一群麻雀原有 7 只，每年变成原来的 2 倍，3 年后有多少只？",
+      "choices": [
+        "42",
+        "63",
+        "56"
+      ],
+      "choices_zh": [
+        "42",
+        "63",
+        "56"
+      ],
+      "answer": 2,
+      "explain_en": "7 × 2^3 = 56.",
+      "explain_zh": "7 × 2^3 = 56。",
+      "sign_en": [
+        "42",
+        "63",
+        "56"
+      ],
+      "sign_zh": [
+        "42",
+        "63",
+        "56"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_007",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 4 of 8 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 8 只不同香囊里选 4 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "1680",
+        "70",
+        "4096"
+      ],
+      "choices_zh": [
+        "1680",
+        "70",
+        "4096"
+      ],
+      "answer": 0,
+      "explain_en": "P(8,4) = 1680.",
+      "explain_zh": "P(8,4) = 1680。",
+      "sign_en": [
+        "1680",
+        "70",
+        "4096"
+      ],
+      "sign_zh": [
+        "1680",
+        "70",
+        "4096"
+      ],
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_008",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Hard braking turns kinetic energy mainly into ____.",
+      "q_zh": "急刹车时动能主要变成____。",
+      "choices": [
+        "Moonlight",
+        "Echoes",
+        "Heat"
+      ],
+      "choices_zh": [
+        "月光",
+        "回声",
+        "热量"
+      ],
+      "answer": 2,
+      "explain_en": "Friction in the brakes produces heat.",
+      "explain_zh": "刹车摩擦会发热。",
+      "sign_en": [
+        "Moonlight",
+        "Echoes",
+        "Heat"
+      ],
+      "sign_zh": [
+        "月光",
+        "回声",
+        "热量"
+      ],
+      "qtype": "energy_forms",
+      "qtype_zh": "能量转化与守恒"
+    },
+    {
+      "id": "l5g12_009",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 4 of 5 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 5 只不同的香囊里选 4 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "120",
+        "20",
+        "4",
+        "5"
+      ],
+      "choices_zh": [
+        "120",
+        "20",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "explain_en": "C(5,4) = 5.",
+      "explain_zh": "C(5,4) = 5。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_010",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am a stone-gated lane house whose face was kept, while new shops were built inside, in a famous Shanghai block. What am I?",
+      "q_zh": "端午谜：我是一种石头门框的里弄房子，门面被留下来，里面却做成了新店，出现在上海一个有名的街区。打一建筑，是什么？",
+      "choices": [
+        "A wooden pagoda",
+        "A farm cottage",
+        "A city wall gate",
+        "A shikumen in Xintiandi"
+      ],
+      "choices_zh": [
+        "木塔",
+        "农舍",
+        "城墙门",
+        "新天地石库门"
+      ],
+      "answer": 3,
+      "explain_en": "Xintiandi kept shikumen fronts and added modern shops inside.",
+      "explain_zh": "新天地保留了石库门的门面，里面改成了现代店铺。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g12_011",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi-stall puzzle asks for log base 5 of 3125. What is it?",
+      "q_zh": "粽子摊的密码题：以 5 为底 3125 的对数是多少？",
+      "choices": [
+        "625",
+        "5",
+        "6",
+        "4"
+      ],
+      "choices_zh": [
+        "625",
+        "5",
+        "6",
+        "4"
+      ],
+      "answer": 1,
+      "explain_en": "log₅(3125) = 5.",
+      "explain_zh": "log₅(3125) = 5。",
+      "qtype": "log_eval",
+      "qtype_zh": "对数求值"
+    },
+    {
+      "id": "l5g12_012",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another classic name for this festival, besides 端午, is ____.",
+      "q_zh": "除了「端午」，这个节还有一个常称是____。",
+      "choices": [
+        "元旦集",
+        "端阳",
+        "秋分市",
+        "深冬夜"
+      ],
+      "choices_zh": [
+        "元旦集",
+        "端阳",
+        "秋分市",
+        "深冬夜"
+      ],
+      "answer": 1,
+      "explain_en": "The festival is also called 端阳节.",
+      "explain_zh": "端午节也叫端阳节。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g12_013",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 7 grows by a factor of 2 every year. How many sparrows after 4 years?",
+      "q_zh": "一群麻雀原有 7 只，每年变成原来的 2 倍，4 年后有多少只？",
+      "choices": [
+        "119",
+        "56",
+        "224",
+        "112"
+      ],
+      "choices_zh": [
+        "119",
+        "56",
+        "224",
+        "112"
+      ],
+      "answer": 3,
+      "explain_en": "7 × 2^4 = 112.",
+      "explain_zh": "7 × 2^4 = 112。",
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_014",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi-stall puzzle asks for log base 3 of 9. What is it?",
+      "q_zh": "粽子摊的密码题：以 3 为底 9 的对数是多少？",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "6"
+      ],
+      "choices_zh": [
+        "3",
+        "1",
+        "2",
+        "6"
+      ],
+      "answer": 2,
+      "explain_en": "log₃(9) = 2.",
+      "explain_zh": "log₃(9) = 2。",
+      "qtype": "log_eval",
+      "qtype_zh": "对数求值"
+    },
+    {
+      "id": "l5g12_015",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "A tidal river's level ____.",
+      "q_zh": "感潮河段的水位会____。",
+      "choices": [
+        "Stays frozen",
+        "Never changes",
+        "Rises and falls"
+      ],
+      "choices_zh": [
+        "一直结冰",
+        "从不变化",
+        "涨落"
+      ],
+      "answer": 2,
+      "explain_en": "It follows the sea tide.",
+      "explain_zh": "它会随着海潮涨落。",
+      "sign_en": [
+        "Stays frozen",
+        "Never changes",
+        "Rises and falls"
+      ],
+      "sign_zh": [
+        "一直结冰",
+        "从不变化",
+        "涨落"
+      ],
+      "qtype": "water_properties",
+      "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+    },
+    {
+      "id": "l5g12_016",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "If new moon is lunar day 1, Dragon Boat Festival on day 5 falls in which lunar phase?",
+      "q_zh": "如果新月在农历初一，那么五月初五的端午节处于月相的哪一段？",
+      "choices": [
+        "Waxing crescent",
+        "Last quarter",
+        "Full moon",
+        "Waning gibbous"
+      ],
+      "choices_zh": [
+        "娥眉月（盈月初期）",
+        "下弦月",
+        "满月",
+        "亏凸月"
+      ],
+      "answer": 0,
+      "explain_en": "Day 5 is only a few days after new moon, so the moon is a waxing crescent.",
+      "explain_zh": "初五只比新月晚几天，月亮是逐渐变亮的娥眉月。",
+      "qtype": "moon_calendar",
+      "qtype_zh": "月相与农历（端午日期）"
+    },
+    {
+      "id": "l5g12_017",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I travel from a drum on the far bank and arrive later than the movement you already saw. What am I?",
+      "q_zh": "端午谜：对岸有人敲鼓，你先看见动作，过一会儿才等到我。打一物，是什么？",
+      "choices": [
+        "The light of day",
+        "A smell of rice",
+        "A shadow",
+        "The sound of the drum"
+      ],
+      "choices_zh": [
+        "日光",
+        "米香",
+        "影子",
+        "鼓声"
+      ],
+      "answer": 3,
+      "explain_en": "Light (or sight of the motion) reaches you before the slower sound.",
+      "explain_zh": "动作的光几乎立刻看到，鼓声传得比较慢。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g12_018",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 2 of 8 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 8 只不同的香囊里选 2 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "56",
+        "36",
+        "28",
+        "27"
+      ],
+      "choices_zh": [
+        "56",
+        "36",
+        "28",
+        "27"
+      ],
+      "answer": 2,
+      "explain_en": "C(8,2) = 28.",
+      "explain_zh": "C(8,2) = 28。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_019",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangle with fixed perimeter 44 m is used for a reed-leaf yard. What is its maximum area in m²?",
+      "q_zh": "一个周长固定为 44 米的长方形晾叶场，最大面积是多少平方米？",
+      "choices": [
+        "121",
+        "88",
+        "44"
+      ],
+      "choices_zh": [
+        "121",
+        "88",
+        "44"
+      ],
+      "answer": 0,
+      "explain_en": "(44 ÷ 4)^2 = 121.",
+      "explain_zh": "(44 ÷ 4)^2 = 121。",
+      "sign_en": [
+        "121",
+        "88",
+        "44"
+      ],
+      "sign_zh": [
+        "121",
+        "88",
+        "44"
+      ],
+      "qtype": "optimization",
+      "qtype_zh": "最值优化（定周长最大面积）"
+    },
+    {
+      "id": "l5g12_020",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In 端午节, the character 午 originally points to ____ in the traditional lunar month system.",
+      "q_zh": "「端午节」里的「午」，在传统月序里本来指向____。",
+      "choices": [
+        "the twelfth solar term's shoe",
+        "a typo for 牛",
+        "the fifth lunar month (午月)",
+        "a kind of dessert only"
+      ],
+      "choices_zh": [
+        "某个节气的鞋子",
+        "「牛」的错字",
+        "农历五月（午月）",
+        "只是一种甜品"
+      ],
+      "answer": 2,
+      "explain_en": "午月 is the fifth lunar month when the year is counted from 寅月.",
+      "explain_zh": "以寅月为正月时，午月就是五月。",
+      "qtype": "zh_character",
+      "qtype_zh": "汉字字义"
+    },
+    {
+      "id": "l5g12_021",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "On wet Bund stones, an e-bike needs a longer distance to stop mainly because ____.",
+      "q_zh": "在外滩潮湿的石板上，电动车要停稳往往要更长的距离，主要是因为____。",
+      "choices": [
+        "wet stone increases engine power",
+        "shadows pull the wheels forward",
+        "the bike becomes heavier than a bus",
+        "less friction between tyres and the wet surface"
+      ],
+      "choices_zh": [
+        "湿石头会加大电机的力",
+        "影子把轮子往前拉",
+        "车变得比公交车还重",
+        "轮胎和湿地面之间的摩擦变小了"
+      ],
+      "answer": 3,
+      "explain_en": "Water reduces friction, so braking takes a longer distance.",
+      "explain_zh": "水会减小摩擦，所以刹车距离变长。",
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g12_022",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi-stall puzzle asks for log base 3 of 27. What is it?",
+      "q_zh": "粽子摊的密码题：以 3 为底 27 的对数是多少？",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "9"
+      ],
+      "choices_zh": [
+        "3",
+        "2",
+        "4",
+        "9"
+      ],
+      "answer": 0,
+      "explain_en": "log₃(27) = 3.",
+      "explain_zh": "log₃(27) = 3。",
+      "qtype": "log_eval",
+      "qtype_zh": "对数求值"
+    },
+    {
+      "id": "l5g12_023",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Reed or bamboo leaves are good wrappers for zongzi partly because they ____.",
+      "q_zh": "箬叶或竹叶适合包粽子，部分原因是它们____。",
+      "choices": [
+        "are made of glass",
+        "dissolve into sugar at once",
+        "are flexible, hold the rice, and add aroma when heated",
+        "block all heat so rice stays raw"
+      ],
+      "choices_zh": [
+        "是玻璃做的",
+        "会马上化成糖",
+        "柔韧、能裹住米，加热时还会带出香气",
+        "挡住所有热，让米一直生着"
+      ],
+      "answer": 2,
+      "explain_en": "The leaves wrap well and give a fresh smell when steamed.",
+      "explain_zh": "这些叶子柔韧能包米，蒸的时候还有清香。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g12_024",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Visitors enter a Bund walk at r(t) = 8t per minute for 0 ≤ t ≤ 2. How many enter in total?",
+      "q_zh": "游客以 r(t) = 8t 人/分钟走上外滩，0 ≤ t ≤ 2，一共上来多少人？",
+      "choices": [
+        "18",
+        "8",
+        "16"
+      ],
+      "choices_zh": [
+        "18",
+        "8",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "4 × 2^2 - 4 × 0^2 = 16.",
+      "explain_zh": "4 × 2^2 - 4 × 0^2 = 16。",
+      "sign_en": [
+        "18",
+        "8",
+        "16"
+      ],
+      "sign_zh": [
+        "18",
+        "8",
+        "16"
+      ],
+      "qtype": "definite_integral",
+      "qtype_zh": "定积分求总量"
+    },
+    {
+      "id": "l5g12_025",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am not a fish, but I keep a wooden dragon boat sitting on the river instead of sinking. What am I?",
+      "q_zh": "端午谜：我不是鱼，却让木制龙舟浮在江上，不会沉下去。打一物理现象，是什么？",
+      "choices": [
+        "Friction",
+        "Magnetism",
+        "Echo",
+        "Buoyancy"
+      ],
+      "choices_zh": [
+        "摩擦力",
+        "磁力",
+        "回声",
+        "浮力"
+      ],
+      "answer": 3,
+      "explain_en": "A boat floats because the buoyant force (and its low average density) holds it up.",
+      "explain_zh": "船受到水的浮力，平均密度又比水小，所以能浮着。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g12_026",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In literary history, Li Sao is best described as ____.",
+      "q_zh": "在文学史上，《离骚》最合适的定位是____。",
+      "choices": [
+        "a long lyric poem by Qu Yuan",
+        "a modern e-bike manual",
+        "a bus route handbook",
+        "a tide table for the Bund"
+      ],
+      "choices_zh": [
+        "屈原的一首长篇抒情诗",
+        "现代电动车说明书",
+        "公交线路手册",
+        "外滩的潮汐表"
+      ],
+      "answer": 0,
+      "explain_en": "Li Sao is Qu Yuan's long lyric poem.",
+      "explain_zh": "《离骚》是屈原的长篇抒情诗。",
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g12_027",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "In the traditional month names, the fifth lunar month can be called 午月. Duanwu (端午) then means the ____ of that month.",
+      "q_zh": "在传统月名里，农历五月可称午月。端午的「端」在这里表示这个月的____。",
+      "choices": [
+        "name of a bus stop",
+        "beginning (the first 'noon' day, the 5th)",
+        "middle of winter only",
+        "very last hour of the year"
+      ],
+      "choices_zh": [
+        "一个公交站名",
+        "开始（这个月的第一个午日，即初五）",
+        "只表示隆冬",
+        "一年的最后一小时"
+      ],
+      "answer": 1,
+      "explain_en": "端 means the beginning; 午月 is the fifth lunar month, and 端午 marks its fifth day.",
+      "explain_zh": "「端」有开头的意思，午月是农历五月，端午就是五月初五。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g12_028",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "4 independent stall questions, each guessed right with probability 1/2. P(exactly 3 right)?",
+      "q_zh": "4 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 3 道的概率是多少？",
+      "choices": [
+        "1/4",
+        "1/16",
+        "3/4",
+        "1/2"
+      ],
+      "choices_zh": [
+        "1/4",
+        "1/16",
+        "3/4",
+        "1/2"
+      ],
+      "answer": 0,
+      "explain_en": "C(4,3) × 0.5^4 = 1/4.",
+      "explain_zh": "C(4,3) × 0.5^4 = 1/4。",
+      "qtype": "binomial_prob",
+      "qtype_zh": "二项分布概率"
+    },
+    {
+      "id": "l5g12_029",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 2 of 9 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 9 只不同的香囊里选 2 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "36",
+        "72",
+        "35",
+        "45"
+      ],
+      "choices_zh": [
+        "36",
+        "72",
+        "35",
+        "45"
+      ],
+      "answer": 0,
+      "explain_en": "C(9,2) = 36.",
+      "explain_zh": "C(9,2) = 36。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_030",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I peel my own coat in grey and cream patches, and I still stand for decades on Huaihai Road. What am I?",
+      "q_zh": "端午谜：我自己一片片脱掉外衣，灰的米色的都有，却能在淮海路站上几十年。打一物，是什么？",
+      "choices": [
+        "A painted wall",
+        "Plane-tree bark",
+        "A snake skin left on a path",
+        "A paper wrapper"
+      ],
+      "choices_zh": [
+        "粉刷墙",
+        "梧桐树皮",
+        "路上的蛇蜕",
+        "纸包"
+      ],
+      "answer": 1,
+      "explain_en": "London plane trees shed bark in mottled patches.",
+      "explain_zh": "法国梧桐的树皮会一块块脱落，留下斑驳的花纹。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g12_031",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "{name} hangs 4 of 6 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "{name} 从 6 只不同香囊里选 4 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "24",
+        "360",
+        "15"
+      ],
+      "choices_zh": [
+        "24",
+        "360",
+        "15"
+      ],
+      "answer": 1,
+      "explain_en": "P(6,4) = 360.",
+      "explain_zh": "P(6,4) = 360。",
+      "sign_en": [
+        "24",
+        "360",
+        "15"
+      ],
+      "sign_zh": [
+        "24",
+        "360",
+        "15"
+      ],
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_032",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 6x^3. What is f'(-3)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 6x^3，f'(-3) 是多少？",
+      "choices": [
+        "168",
+        "54",
+        "162",
+        "-162"
+      ],
+      "choices_zh": [
+        "168",
+        "54",
+        "162",
+        "-162"
+      ],
+      "answer": 2,
+      "explain_en": "3 × 6 × (-3)^(3 - 1) = 162.",
+      "explain_zh": "3 × 6 × (-3)^(3 - 1) = 162。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_033",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Visitors enter a Bund walk at r(t) = 6t per minute for 0 ≤ t ≤ 5. How many enter in total?",
+      "q_zh": "游客以 r(t) = 6t 人/分钟走上外滩，0 ≤ t ≤ 5，一共上来多少人？",
+      "choices": [
+        "30",
+        "75",
+        "80"
+      ],
+      "choices_zh": [
+        "30",
+        "75",
+        "80"
+      ],
+      "answer": 1,
+      "explain_en": "3 × 5^2 - 3 × 0^2 = 75.",
+      "explain_zh": "3 × 5^2 - 3 × 0^2 = 75。",
+      "sign_en": [
+        "30",
+        "75",
+        "80"
+      ],
+      "sign_zh": [
+        "30",
+        "75",
+        "80"
+      ],
+      "qtype": "definite_integral",
+      "qtype_zh": "定积分求总量"
+    },
+    {
+      "id": "l5g12_034",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another name for Duanwu is ____.",
+      "q_zh": "端午的另一个名称是____。",
+      "choices": [
+        "DuanYang",
+        "Deep winter",
+        "Mid-autumn only"
+      ],
+      "choices_zh": [
+        "端阳",
+        "深冬",
+        "只是中秋"
+      ],
+      "answer": 0,
+      "explain_en": "The festival is also called 端阳.",
+      "explain_zh": "端午也叫端阳。",
+      "sign_en": [
+        "DuanYang",
+        "Deep winter",
+        "Mid-autumn only"
+      ],
+      "sign_zh": [
+        "端阳",
+        "深冬",
+        "只是中秋"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g12_035",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "The idiom 乘风破浪, if used of a dragon boat on the Huangpu, pictures the boat ____.",
+      "q_zh": "如果用成语「乘风破浪」来说黄浦江上的龙舟，是在形容船____。",
+      "choices": [
+        "pressing ahead through wind and waves",
+        "sleeping in a shop window",
+        "turning into a plane tree",
+        "waiting forever at a red light"
+      ],
+      "choices_zh": [
+        "迎着风浪向前",
+        "在橱窗里睡觉",
+        "变成一棵梧桐",
+        "永远在红灯前等着"
+      ],
+      "answer": 0,
+      "explain_en": "乘风破浪 means pushing forward through wind and waves.",
+      "explain_zh": "乘风破浪就是迎着风浪向前。",
+      "qtype": "zh_idiom_poem",
+      "qtype_zh": "成语与古诗"
+    },
+    {
+      "id": "l5g12_036",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 3 of 5 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 5 只不同香囊里选 3 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "60",
+        "10",
+        "125",
+        "15"
+      ],
+      "choices_zh": [
+        "60",
+        "10",
+        "125",
+        "15"
+      ],
+      "answer": 0,
+      "explain_en": "P(5,3) = 60.",
+      "explain_zh": "P(5,3) = 60。",
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_037",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "Li Sao is a long poem by ____.",
+      "q_zh": "《离骚》是谁的长诗？",
+      "choices": [
+        "Qu Yuan",
+        "A vendor only",
+        "A bus driver"
+      ],
+      "choices_zh": [
+        "屈原",
+        "只是小贩",
+        "公交司机"
+      ],
+      "answer": 0,
+      "explain_en": "Li Sao is by Qu Yuan.",
+      "explain_zh": "《离骚》是屈原的作品。",
+      "sign_en": [
+        "Qu Yuan",
+        "A vendor only",
+        "A bus driver"
+      ],
+      "sign_zh": [
+        "屈原",
+        "只是小贩",
+        "公交司机"
+      ],
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g12_038",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I hunt insects at dusk above the Huangpu, I fold my wings by day, and I am not a bird. What am I?",
+      "q_zh": "端午谜：傍晚我在黄浦江上空捉虫，白天收起翅膀，可我不是鸟。打一动物，是什么？",
+      "choices": [
+        "A duck",
+        "A sparrow",
+        "A butterfly",
+        "A bat"
+      ],
+      "choices_zh": [
+        "鸭子",
+        "麻雀",
+        "蝴蝶",
+        "蝙蝠"
+      ],
+      "answer": 3,
+      "explain_en": "Bats are mammals that fly at dusk and eat insects.",
+      "explain_zh": "蝙蝠在黄昏飞出来捉虫，不是鸟。",
+      "qtype": "riddle_animal",
+      "qtype_zh": "端午谜·动物谜（猜动物）"
+    },
+    {
+      "id": "l5g12_039",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "4 independent stall questions, each guessed right with probability 1/2. P(exactly 2 right)?",
+      "q_zh": "4 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 2 道的概率是多少？",
+      "choices": [
+        "1/16",
+        "3/8",
+        "3/16",
+        "1/2"
+      ],
+      "choices_zh": [
+        "1/16",
+        "3/8",
+        "3/16",
+        "1/2"
+      ],
+      "answer": 1,
+      "explain_en": "C(4,2) × 0.5^4 = 3/8.",
+      "explain_zh": "C(4,2) × 0.5^4 = 3/8。",
+      "qtype": "binomial_prob",
+      "qtype_zh": "二项分布概率"
+    },
+    {
+      "id": "l5g12_040",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 3 of 11 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 11 只不同的香囊里选 3 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "33",
+        "165",
+        "990",
+        "176"
+      ],
+      "choices_zh": [
+        "33",
+        "165",
+        "990",
+        "176"
+      ],
+      "answer": 1,
+      "explain_en": "C(11,3) = 165.",
+      "explain_zh": "C(11,3) = 165。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_041",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 4 of 9 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 9 只不同香囊里选 4 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "3033",
+        "3024",
+        "36"
+      ],
+      "choices_zh": [
+        "3033",
+        "3024",
+        "36"
+      ],
+      "answer": 1,
+      "explain_en": "P(9,4) = 3024.",
+      "explain_zh": "P(9,4) = 3024。",
+      "sign_en": [
+        "3033",
+        "3024",
+        "36"
+      ],
+      "sign_zh": [
+        "3033",
+        "3024",
+        "36"
+      ],
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_042",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Lunar day 5 is a ____ moon.",
+      "q_zh": "农历初五是____。",
+      "choices": [
+        "Waxing crescent",
+        "Last quarter",
+        "Full moon"
+      ],
+      "choices_zh": [
+        "娥眉月",
+        "下弦",
+        "满月"
+      ],
+      "answer": 0,
+      "explain_en": "Day 5 is a waxing crescent.",
+      "explain_zh": "初五是娥眉月，不是满月。",
+      "sign_en": [
+        "Waxing crescent",
+        "Last quarter",
+        "Full moon"
+      ],
+      "sign_zh": [
+        "娥眉月",
+        "下弦",
+        "满月"
+      ],
+      "qtype": "moon_calendar",
+      "qtype_zh": "月相与农历（端午日期）"
+    },
+    {
+      "id": "l5g12_043",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope on the Bund makes a 90° angle. What is the exact value of cos(90°)?",
+      "q_zh": "外滩一根横幅绳和地面成 90°，cos(90°) 的准确值是多少？",
+      "choices": [
+        "1/2",
+        "0",
+        "√3/3",
+        "√3"
+      ],
+      "choices_zh": [
+        "1/2",
+        "0",
+        "√3/3",
+        "√3"
+      ],
+      "answer": 1,
+      "explain_en": "cos(90°) = 0.",
+      "explain_zh": "cos(90°) = 0。",
+      "qtype": "trig_exact",
+      "qtype_zh": "特殊角三角函数值"
+    },
+    {
+      "id": "l5g12_044",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Visitors enter a Bund walk at r(t) = 6t per minute for 0 ≤ t ≤ 6. How many enter in total?",
+      "q_zh": "游客以 r(t) = 6t 人/分钟走上外滩，0 ≤ t ≤ 6，一共上来多少人？",
+      "choices": [
+        "18",
+        "216",
+        "108"
+      ],
+      "choices_zh": [
+        "18",
+        "216",
+        "108"
+      ],
+      "answer": 2,
+      "explain_en": "3 × 6^2 - 3 × 0^2 = 108.",
+      "explain_zh": "3 × 6^2 - 3 × 0^2 = 108。",
+      "sign_en": [
+        "18",
+        "216",
+        "108"
+      ],
+      "sign_zh": [
+        "18",
+        "216",
+        "108"
+      ],
+      "qtype": "definite_integral",
+      "qtype_zh": "定积分求总量"
+    },
+    {
+      "id": "l5g12_045",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Xintiandi kept ____ fronts.",
+      "q_zh": "新天地保留了____门面。",
+      "choices": [
+        "Barn",
+        "Shikumen",
+        "Igloo"
+      ],
+      "choices_zh": [
+        "农仓",
+        "石库门",
+        "冰屋"
+      ],
+      "answer": 1,
+      "explain_en": "Shikumen fronts were kept.",
+      "explain_zh": "保留的是石库门门面。",
+      "sign_en": [
+        "Barn",
+        "Shikumen",
+        "Igloo"
+      ],
+      "sign_zh": [
+        "农仓",
+        "石库门",
+        "冰屋"
+      ],
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g12_046",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope on the Bund makes a 90° angle. What is the exact value of sin(90°)?",
+      "q_zh": "外滩一根横幅绳和地面成 90°，sin(90°) 的准确值是多少？",
+      "choices": [
+        "√2/2",
+        "√3",
+        "1",
+        "1/2"
+      ],
+      "choices_zh": [
+        "√2/2",
+        "√3",
+        "1",
+        "1/2"
+      ],
+      "answer": 2,
+      "explain_en": "sin(90°) = 1.",
+      "explain_zh": "sin(90°) = 1。",
+      "qtype": "trig_exact",
+      "qtype_zh": "特殊角三角函数值"
+    },
+    {
+      "id": "l5g12_047",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi-stall puzzle asks for log base 3 of 729. What is it?",
+      "q_zh": "粽子摊的密码题：以 3 为底 729 的对数是多少？",
+      "choices": [
+        "6",
+        "5",
+        "243",
+        "7"
+      ],
+      "choices_zh": [
+        "6",
+        "5",
+        "243",
+        "7"
+      ],
+      "answer": 0,
+      "explain_en": "log₃(729) = 6.",
+      "explain_zh": "log₃(729) = 6。",
+      "qtype": "log_eval",
+      "qtype_zh": "对数求值"
+    },
+    {
+      "id": "l5g12_048",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope on the Bund makes a 30° angle. What is the exact value of sin(30°)?",
+      "q_zh": "外滩一根横幅绳和地面成 30°，sin(30°) 的准确值是多少？",
+      "choices": [
+        "1",
+        "√2/2",
+        "√3/3",
+        "1/2"
+      ],
+      "choices_zh": [
+        "1",
+        "√2/2",
+        "√3/3",
+        "1/2"
+      ],
+      "answer": 3,
+      "explain_en": "sin(30°) = 1/2.",
+      "explain_zh": "sin(30°) = 1/2。",
+      "qtype": "trig_exact",
+      "qtype_zh": "特殊角三角函数值"
+    },
+    {
+      "id": "l5g12_049",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "5 independent stall questions, each guessed right with probability 1/2. P(exactly 1 right)?",
+      "q_zh": "5 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 1 道的概率是多少？",
+      "choices": [
+        "1/32",
+        "5/32",
+        "1/2",
+        "5/64"
+      ],
+      "choices_zh": [
+        "1/32",
+        "5/32",
+        "1/2",
+        "5/64"
+      ],
+      "answer": 1,
+      "explain_en": "C(5,1) × 0.5^5 = 5/32.",
+      "explain_zh": "C(5,1) × 0.5^5 = 5/32。",
+      "qtype": "binomial_prob",
+      "qtype_zh": "二项分布概率"
+    },
+    {
+      "id": "l5g12_050",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangle with fixed perimeter 60 m is used for a reed-leaf yard. What is its maximum area in m²?",
+      "q_zh": "一个周长固定为 60 米的长方形晾叶场，最大面积是多少平方米？",
+      "choices": [
+        "224",
+        "60",
+        "225"
+      ],
+      "choices_zh": [
+        "224",
+        "60",
+        "225"
+      ],
+      "answer": 2,
+      "explain_en": "(60 ÷ 4)^2 = 225.",
+      "explain_zh": "(60 ÷ 4)^2 = 225。",
+      "sign_en": [
+        "224",
+        "60",
+        "225"
+      ],
+      "sign_zh": [
+        "224",
+        "60",
+        "225"
+      ],
+      "qtype": "optimization",
+      "qtype_zh": "最值优化（定周长最大面积）"
+    },
+    {
+      "id": "l5g12_051",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Which is the most accurate description of Xintiandi?",
+      "q_zh": "下面哪一句对「新天地」说得最准确？",
+      "choices": [
+        "A Shanghai block that kept shikumen fronts and added modern shops",
+        "A desert trading post",
+        "A fishing village with no buildings",
+        "A ski resort above the treeline"
+      ],
+      "choices_zh": [
+        "一个保留石库门门面、又加入现代店铺的上海街区",
+        "一个沙漠商站",
+        "一个没有房子的渔村",
+        "一个在树线以上的滑雪场"
+      ],
+      "answer": 0,
+      "explain_en": "Xintiandi reused shikumen street faces with new interiors and shops.",
+      "explain_zh": "新天地保留了石库门的街面，里面则是新的店铺。",
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g12_052",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 4 grows by a factor of 3 every year. How many sparrows after 3 years?",
+      "q_zh": "一群麻雀原有 4 只，每年变成原来的 3 倍，3 年后有多少只？",
+      "choices": [
+        "112",
+        "108",
+        "324",
+        "36"
+      ],
+      "choices_zh": [
+        "112",
+        "108",
+        "324",
+        "36"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 3^3 = 108.",
+      "explain_zh": "4 × 3^3 = 108。",
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_053",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope on the Bund makes a 30° angle. What is the exact value of tan(30°)?",
+      "q_zh": "外滩一根横幅绳和地面成 30°，tan(30°) 的准确值是多少？",
+      "choices": [
+        "0",
+        "1/2",
+        "√3/3",
+        "√2/2"
+      ],
+      "choices_zh": [
+        "0",
+        "1/2",
+        "√3/3",
+        "√2/2"
+      ],
+      "answer": 2,
+      "explain_en": "tan(30°) = √3/3.",
+      "explain_zh": "tan(30°) = √3/3。",
+      "qtype": "trig_exact",
+      "qtype_zh": "特殊角三角函数值"
+    },
+    {
+      "id": "l5g12_054",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 4 of 12 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 12 只不同的香囊里选 4 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "507",
+        "495",
+        "11880",
+        "494"
+      ],
+      "choices_zh": [
+        "507",
+        "495",
+        "11880",
+        "494"
+      ],
+      "answer": 1,
+      "explain_en": "C(12,4) = 495.",
+      "explain_zh": "C(12,4) = 495。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_055",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangle with fixed perimeter 56 m is used for a reed-leaf yard. What is its maximum area in m²?",
+      "q_zh": "一个周长固定为 56 米的长方形晾叶场，最大面积是多少平方米？",
+      "choices": [
+        "196",
+        "56",
+        "392"
+      ],
+      "choices_zh": [
+        "196",
+        "56",
+        "392"
+      ],
+      "answer": 0,
+      "explain_en": "(56 ÷ 4)^2 = 196.",
+      "explain_zh": "(56 ÷ 4)^2 = 196。",
+      "sign_en": [
+        "196",
+        "56",
+        "392"
+      ],
+      "sign_zh": [
+        "196",
+        "56",
+        "392"
+      ],
+      "qtype": "optimization",
+      "qtype_zh": "最值优化（定周长最大面积）"
+    },
+    {
+      "id": "l5g12_056",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The aroma of a warm zongzi is modelled by L(t) = 4e^(4t). What is L'(0)?",
+      "q_zh": "一只热粽子的香气模型是 L(t) = 4e^(4t)，L'(0) 是多少？",
+      "choices": [
+        "8",
+        "4",
+        "64",
+        "16"
+      ],
+      "choices_zh": [
+        "8",
+        "4",
+        "64",
+        "16"
+      ],
+      "answer": 3,
+      "explain_en": "4 × 4 × e^(0) = 16.",
+      "explain_zh": "4 × 4 × e^(0) = 16。",
+      "qtype": "derivative_exp",
+      "qtype_zh": "指数函数求导"
+    },
+    {
+      "id": "l5g12_057",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Visitors enter a Bund walk at r(t) = 2t per minute for 0 ≤ t ≤ 6. How many enter in total?",
+      "q_zh": "游客以 r(t) = 2t 人/分钟走上外滩，0 ≤ t ≤ 6，一共上来多少人？",
+      "choices": [
+        "42",
+        "36",
+        "6"
+      ],
+      "choices_zh": [
+        "42",
+        "36",
+        "6"
+      ],
+      "answer": 1,
+      "explain_en": "1 × 6^2 - 1 × 0^2 = 36.",
+      "explain_zh": "1 × 6^2 - 1 × 0^2 = 36。",
+      "sign_en": [
+        "42",
+        "36",
+        "6"
+      ],
+      "sign_zh": [
+        "42",
+        "36",
+        "6"
+      ],
+      "qtype": "definite_integral",
+      "qtype_zh": "定积分求总量"
+    },
+    {
+      "id": "l5g12_058",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Water drops that form on a cool zongzi-pot lid are held together in part by ____ between water molecules.",
+      "q_zh": "凉锅盖上那些水珠能聚在一起，部分是因为水分子之间的____。",
+      "choices": [
+        "echoes",
+        "steel cables",
+        "plane-tree roots",
+        "hydrogen bonds"
+      ],
+      "choices_zh": [
+        "回声",
+        "钢缆",
+        "梧桐树根",
+        "氢键"
+      ],
+      "answer": 3,
+      "explain_en": "Hydrogen bonds help water molecules stick to one another.",
+      "explain_zh": "氢键让水分子彼此靠近，水珠才能聚起来。",
+      "qtype": "chem_bonds",
+      "qtype_zh": "化学键（氢键）"
+    },
+    {
+      "id": "l5g12_059",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = x^4. What is f'(2)?",
+      "q_zh": "摊位招牌曲线是 f(x) = x^4，f'(2) 是多少？",
+      "choices": [
+        "32",
+        "8",
+        "-32"
+      ],
+      "choices_zh": [
+        "32",
+        "8",
+        "-32"
+      ],
+      "answer": 0,
+      "explain_en": "4 × 1 × (2)^(4 - 1) = 32.",
+      "explain_zh": "4 × 1 × (2)^(4 - 1) = 32。",
+      "sign_en": [
+        "32",
+        "8",
+        "-32"
+      ],
+      "sign_zh": [
+        "32",
+        "8",
+        "-32"
+      ],
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_060",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 5 grows by a factor of 3 every year. How many sparrows after 3 years?",
+      "q_zh": "一群麻雀原有 5 只，每年变成原来的 3 倍，3 年后有多少只？",
+      "choices": [
+        "140",
+        "135",
+        "45"
+      ],
+      "choices_zh": [
+        "140",
+        "135",
+        "45"
+      ],
+      "answer": 1,
+      "explain_en": "5 × 3^3 = 135.",
+      "explain_zh": "5 × 3^3 = 135。",
+      "sign_en": [
+        "140",
+        "135",
+        "45"
+      ],
+      "sign_zh": [
+        "140",
+        "135",
+        "45"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_061",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 6 grows by a factor of 3 every year. How many sparrows after 2 years?",
+      "q_zh": "一群麻雀原有 6 只，每年变成原来的 3 倍，2 年后有多少只？",
+      "choices": [
+        "162",
+        "60",
+        "54"
+      ],
+      "choices_zh": [
+        "162",
+        "60",
+        "54"
+      ],
+      "answer": 2,
+      "explain_en": "6 × 3^2 = 54.",
+      "explain_zh": "6 × 3^2 = 54。",
+      "sign_en": [
+        "162",
+        "60",
+        "54"
+      ],
+      "sign_zh": [
+        "162",
+        "60",
+        "54"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_062",
+      "level": 5,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "hard",
+      "q_en": "Why is riding an e-bike while watching a phone especially risky on a busy Shanghai street?",
+      "q_zh": "在上海热闹的街上边看手机边骑电动车，特别危险，是因为____。",
+      "choices": [
+        "phones make the motor more powerful",
+        "attention and reaction time drop, so you may miss people or a light",
+        "the river will rise at once",
+        "plane trees turn off all shade"
+      ],
+      "choices_zh": [
+        "电机会因为手机变得更有力",
+        "注意力和反应变慢，可能看不见人或灯",
+        "江会立刻涨起来",
+        "梧桐会关掉所有树荫"
+      ],
+      "answer": 1,
+      "explain_en": "Looking at a phone takes your eyes and mind off the road.",
+      "explain_zh": "看手机会让眼睛和注意力离开路面。",
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g12_063",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am the first-quarter-not-yet moon of the fifth lunar day: a slim waxing curve, never a full disc. What am I?",
+      "q_zh": "端午谜：农历初五的我还没到上弦，只是一道渐渐变宽的细弯，绝不是满月。打一自然物，是什么？",
+      "choices": [
+        "A blue sun",
+        "A new moon with no light",
+        "A waxing crescent",
+        "A full moon"
+      ],
+      "choices_zh": [
+        "蓝色太阳",
+        "全暗的新月",
+        "娥眉月",
+        "满月"
+      ],
+      "answer": 2,
+      "explain_en": "The 5th lunar day comes soon after new moon, so the moon is a waxing crescent.",
+      "explain_zh": "农历初五刚过新月，月亮是逐渐变亮的弯月。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g12_064",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The aroma of a warm zongzi is modelled by L(t) = 3e^(4t). What is L'(0)?",
+      "q_zh": "一只热粽子的香气模型是 L(t) = 3e^(4t)，L'(0) 是多少？",
+      "choices": [
+        "4",
+        "48",
+        "3",
+        "12"
+      ],
+      "choices_zh": [
+        "4",
+        "48",
+        "3",
+        "12"
+      ],
+      "answer": 3,
+      "explain_en": "3 × 4 × e^(0) = 12.",
+      "explain_zh": "3 × 4 × e^(0) = 12。",
+      "qtype": "derivative_exp",
+      "qtype_zh": "指数函数求导"
+    },
+    {
+      "id": "l5g12_065",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "5 independent stall questions, each guessed right with probability 1/2. P(exactly 2 right)?",
+      "q_zh": "5 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 2 道的概率是多少？",
+      "choices": [
+        "5/16",
+        "1/2",
+        "5/32",
+        "2/5"
+      ],
+      "choices_zh": [
+        "5/16",
+        "1/2",
+        "5/32",
+        "2/5"
+      ],
+      "answer": 0,
+      "explain_en": "C(5,2) × 0.5^5 = 5/16.",
+      "explain_zh": "C(5,2) × 0.5^5 = 5/16。",
+      "qtype": "binomial_prob",
+      "qtype_zh": "二项分布概率"
+    },
+    {
+      "id": "l5g12_066",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 4x^4. What is f'(3)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 4x^4，f'(3) 是多少？",
+      "choices": [
+        "-432",
+        "432",
+        "324",
+        "108"
+      ],
+      "choices_zh": [
+        "-432",
+        "432",
+        "324",
+        "108"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 4 × (3)^(4 - 1) = 432.",
+      "explain_zh": "4 × 4 × (3)^(4 - 1) = 432。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_067",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 4x^3. What is f'(-2)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 4x^3，f'(-2) 是多少？",
+      "choices": [
+        "48",
+        "-32",
+        "16",
+        "-48"
+      ],
+      "choices_zh": [
+        "48",
+        "-32",
+        "16",
+        "-48"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 4 × (-2)^(3 - 1) = 48.",
+      "explain_zh": "3 × 4 × (-2)^(3 - 1) = 48。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_068",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope on the Bund makes a 60° angle. What is the exact value of tan(60°)?",
+      "q_zh": "外滩一根横幅绳和地面成 60°，tan(60°) 的准确值是多少？",
+      "choices": [
+        "√3/3",
+        "1/2",
+        "√3"
+      ],
+      "choices_zh": [
+        "√3/3",
+        "1/2",
+        "√3"
+      ],
+      "answer": 2,
+      "explain_en": "tan(60°) = √3.",
+      "explain_zh": "tan(60°) = √3。",
+      "sign_en": [
+        "√3/3",
+        "1/2",
+        "√3"
+      ],
+      "sign_zh": [
+        "√3/3",
+        "1/2",
+        "√3"
+      ],
+      "qtype": "trig_exact",
+      "qtype_zh": "特殊角三角函数值"
+    },
+    {
+      "id": "l5g12_069",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 3x^2. What is f'(2)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 3x^2，f'(2) 是多少？",
+      "choices": [
+        "6",
+        "15",
+        "-12",
+        "12"
+      ],
+      "choices_zh": [
+        "6",
+        "15",
+        "-12",
+        "12"
+      ],
+      "answer": 3,
+      "explain_en": "2 × 3 × (2)^(2 - 1) = 12.",
+      "explain_zh": "2 × 3 × (2)^(2 - 1) = 12。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_070",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 2 grows by a factor of 3 every year. How many sparrows after 2 years?",
+      "q_zh": "一群麻雀原有 2 只，每年变成原来的 3 倍，2 年后有多少只？",
+      "choices": [
+        "6",
+        "18",
+        "54"
+      ],
+      "choices_zh": [
+        "6",
+        "18",
+        "54"
+      ],
+      "answer": 1,
+      "explain_en": "2 × 3^2 = 18.",
+      "explain_zh": "2 × 3^2 = 18。",
+      "sign_en": [
+        "6",
+        "18",
+        "54"
+      ],
+      "sign_zh": [
+        "6",
+        "18",
+        "54"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g12_071",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Towers east of the Bund are in ____.",
+      "q_zh": "外滩东面的高楼在____。",
+      "choices": [
+        "A cave",
+        "A desert",
+        "Lujiazui"
+      ],
+      "choices_zh": [
+        "山洞",
+        "沙漠",
+        "陆家嘴"
+      ],
+      "answer": 2,
+      "explain_en": "They stand in Lujiazui, Pudong.",
+      "explain_zh": "那些高楼在浦东陆家嘴。",
+      "sign_en": [
+        "A cave",
+        "A desert",
+        "Lujiazui"
+      ],
+      "sign_zh": [
+        "山洞",
+        "沙漠",
+        "陆家嘴"
+      ],
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g12_072",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "{name} hangs 2 of 10 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "{name} 从 10 只不同香囊里选 2 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "90",
+        "20",
+        "100"
+      ],
+      "choices_zh": [
+        "90",
+        "20",
+        "100"
+      ],
+      "answer": 0,
+      "explain_en": "P(10,2) = 90.",
+      "explain_zh": "P(10,2) = 90。",
+      "sign_en": [
+        "90",
+        "20",
+        "100"
+      ],
+      "sign_zh": [
+        "90",
+        "20",
+        "100"
+      ],
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g12_073",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A stall-sign curve is f(x) = 3x^3. What is f'(3)?",
+      "q_zh": "摊位招牌曲线是 f(x) = 3x^3，f'(3) 是多少？",
+      "choices": [
+        "81",
+        "84",
+        "-81",
+        "27"
+      ],
+      "choices_zh": [
+        "81",
+        "84",
+        "-81",
+        "27"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 3 × (3)^(3 - 1) = 81.",
+      "explain_zh": "3 × 3 × (3)^(3 - 1) = 81。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_074",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "乘风破浪 pictures a boat ____.",
+      "q_zh": "「乘风破浪」形容船____。",
+      "choices": [
+        "Turning into a tree",
+        "Pressing ahead",
+        "Sleeping"
+      ],
+      "choices_zh": [
+        "变成树",
+        "迎风向前",
+        "在睡觉"
+      ],
+      "answer": 1,
+      "explain_en": "It means pushing through wind and waves.",
+      "explain_zh": "就是迎着风浪向前。",
+      "sign_en": [
+        "Turning into a tree",
+        "Pressing ahead",
+        "Sleeping"
+      ],
+      "sign_zh": [
+        "变成树",
+        "迎风向前",
+        "在睡觉"
+      ],
+      "qtype": "zh_idiom_poem",
+      "qtype_zh": "成语与古诗"
+    },
+    {
+      "id": "l5g12_075",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Flora's e-bike ride ends at Xintiandi. Which description of that place is right?",
+      "q_zh": "Flora 的电动车骑到新天地就结束了。下面哪一句说对了这个地方？",
+      "choices": [
+        "A fishing village with no streets",
+        "A desert camp with no buildings",
+        "A high mountain pass above the clouds",
+        "Old shikumen fronts with modern shops inside"
+      ],
+      "choices_zh": [
+        "一个没有街道的渔村",
+        "一个没有房子的沙漠营地",
+        "云上的高山垭口",
+        "旧石库门门面，里面是现代店铺"
+      ],
+      "answer": 3,
+      "explain_en": "Xintiandi kept shikumen street faces and filled them with modern shops.",
+      "explain_zh": "新天地保留了石库门门面，里面则是现代店铺。",
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g12_076",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "On the Bund's wet stones, Flora brakes her e-bike and notices she needs more room to stop than on dry Huaihai Road. The main reason is ____.",
+      "q_zh": "外滩石板是湿的，Flora 骑电动车刹车时发现，要比在干的淮海路上留出更长的距离才能停住。主要原因是____。",
+      "choices": [
+        "wet stone makes the motor stronger",
+        "a bus is pulling the bike forward",
+        "plane trees add extra mass to the bike",
+        "lower friction on the wet surface"
+      ],
+      "choices_zh": [
+        "湿石头会让电机更有力",
+        "公交车在把车子往前拉",
+        "梧桐会给车子加上额外的质量",
+        "潮湿地面上的摩擦更小"
+      ],
+      "answer": 3,
+      "explain_en": "Water reduces friction between the tyres and the stones.",
+      "explain_zh": "水会减小轮胎和石板之间的摩擦。",
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g12_077",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A bunting curve over the Bund is h(x) = 2x^4. What is its slope h'(-3)?",
+      "q_zh": "外滩一串彩旗的曲线是 h(x) = 2x^4，它在 x = -3 处的斜率 h'(-3) 是多少？",
+      "choices": [
+        "216",
+        "-216",
+        "-54",
+        "162"
+      ],
+      "choices_zh": [
+        "216",
+        "-216",
+        "-54",
+        "162"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 2 × (-3)^(4 - 1) = -216.",
+      "explain_zh": "4 × 2 × (-3)^(4 - 1) = -216。",
+      "qtype": "derivative_power",
+      "qtype_zh": "幂函数求导"
+    },
+    {
+      "id": "l5g12_078",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi at Xintiandi are set out at a rate of r(t) = 6t zongzi per minute for 0 ≤ t ≤ 2. How many zongzi are set out in total?",
+      "q_zh": "新天地的粽子按 r(t) = 6t 只/分钟的速率摆出，0 ≤ t ≤ 2，一共摆出多少只？",
+      "choices": [
+        "6",
+        "24",
+        "14",
+        "12"
+      ],
+      "choices_zh": [
+        "6",
+        "24",
+        "14",
+        "12"
+      ],
+      "answer": 3,
+      "explain_en": "3 × 2^2 - 3 × 0^2 = 12.",
+      "explain_zh": "3 × 2^2 - 3 × 0^2 = 12。",
+      "qtype": "definite_integral",
+      "qtype_zh": "定积分求总量"
+    },
+    {
+      "id": "l5g12_079",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "At Xintiandi, Flora may pick 4 of 11 different zongzi to share. Order does not matter. How many different sets can she pick?",
+      "q_zh": "在新天地，Flora 可以从 11 只不同的粽子里挑 4 只分享，不计顺序，有多少种挑法？",
+      "choices": [
+        "330",
+        "44",
+        "341",
+        "7920"
+      ],
+      "choices_zh": [
+        "330",
+        "44",
+        "341",
+        "7920"
+      ],
+      "answer": 0,
+      "explain_en": "C(11,4) = 330.",
+      "explain_zh": "C(11,4) = 330。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g12_080",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "At the Bund, Flora guesses 4 stall questions, each with a 1/2 chance of being right, independently. What is the probability she gets exactly 1 right?",
+      "q_zh": "在外滩，Flora 猜 4 道摊位题，每道猜对的概率都是 1/2，互不影响。恰好猜对 1 道的概率是多少？",
+      "choices": [
+        "1/16",
+        "1/8",
+        "1/2",
+        "1/4"
+      ],
+      "choices_zh": [
+        "1/16",
+        "1/8",
+        "1/2",
+        "1/4"
+      ],
+      "answer": 3,
+      "explain_en": "C(4,1) × 0.5^4 = 1/4.",
+      "explain_zh": "C(4,1) × 0.5^4 = 1/4。",
+      "qtype": "binomial_prob",
+      "qtype_zh": "二项分布概率"
+    },
+    {
+      "id": "l5g12_081",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The Bund's flag rows hold 10, 14, 18 flags and so on, 13 rows in all. How many flags are there in total?",
+      "q_zh": "外滩彩旗一排比一排多：10、14、18，依此类推，一共 13 排，总共多少面？",
+      "choices": [
+        "442",
+        "500",
+        "754",
+        "432"
+      ],
+      "choices_zh": [
+        "442",
+        "500",
+        "754",
+        "432"
+      ],
+      "answer": 0,
+      "explain_en": "13 × (10 + 58) ÷ 2 = 442.",
+      "explain_zh": "13 × (10 + 58) ÷ 2 = 442。",
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g12_082",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi at Xintiandi are set out in rounds: 4 zongzi in the first round, then 2 times as many each round, for 4 rounds. How many zongzi in total?",
+      "q_zh": "新天地的粽子分轮摆：第一轮 4 只，之后每轮是上一轮的 2 倍，共 4 轮，一共多少只？",
+      "choices": [
+        "60",
+        "64",
+        "56",
+        "32"
+      ],
+      "choices_zh": [
+        "60",
+        "64",
+        "56",
+        "32"
+      ],
+      "answer": 0,
+      "explain_en": "4 × (2^4 - 1) ÷ (2 - 1) = 60.",
+      "explain_zh": "4 × (2^4 - 1) ÷ (2 - 1) = 60。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    }
+  ]
+}

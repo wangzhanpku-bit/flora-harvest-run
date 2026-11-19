@@ -1,0 +1,2350 @@
+{
+  "level": 5,
+  "level_name_en": "Shanghai",
+  "level_name_zh": "上海",
+  "grade": 10,
+  "version": "v1",
+  "fields": "L5 Shanghai / Dragon Boat Festival (e-bike; Lujiazui → the Bund → Huaihai Road → Xintiandi). Same item fields as L3 v3.1 / L4. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 端午摊 Zongzi Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Xintiandi-entrance final (exactly 4 choices, hard, situational). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Xintiandi final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 端午谜：. Stems are deduped against all L1–L4 banks (all grades).",
+  "questions": [
+    {
+      "id": "l5g10_001",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another name for Duanwu is ____.",
+      "q_zh": "端午的另一个名称是____。",
+      "choices": [
+        "DuanYang",
+        "Mid-autumn only",
+        "Deep winter"
+      ],
+      "choices_zh": [
+        "端阳",
+        "只是中秋",
+        "深冬"
+      ],
+      "answer": 0,
+      "explain_en": "The festival is also called 端阳.",
+      "explain_zh": "端午也叫端阳。",
+      "sign_en": [
+        "DuanYang",
+        "Mid-autumn only",
+        "Deep winter"
+      ],
+      "sign_zh": [
+        "端阳",
+        "只是中秋",
+        "深冬"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g10_002",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ladder 12 m long leans at 30° to the ground to hang mugwort. How high does it reach, in metres?",
+      "q_zh": "一架长 12 米的梯子和地面成 30°，用来挂艾草，它能够到多高（米）？",
+      "choices": [
+        "6",
+        "24",
+        "10.39",
+        "7"
+      ],
+      "choices_zh": [
+        "6",
+        "24",
+        "10.39",
+        "7"
+      ],
+      "answer": 0,
+      "explain_en": "12 × sin(30°) = 6.",
+      "explain_zh": "12 × sin(30°) = 6。",
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_003",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 31 and x - y = 3. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 31，x - y = 3，求 x。",
+      "choices": [
+        "17",
+        "31",
+        "14",
+        "3"
+      ],
+      "choices_zh": [
+        "17",
+        "31",
+        "14",
+        "3"
+      ],
+      "answer": 0,
+      "explain_en": "(31 + 3) ÷ 2 = 17.",
+      "explain_zh": "(31 + 3) ÷ 2 = 17。",
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_004",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display has 7^2 zongzi. How many is that?",
+      "q_zh": "一组粽子展示有 7^2 只，是多少只？",
+      "choices": [
+        "49",
+        "128",
+        "56",
+        "14"
+      ],
+      "choices_zh": [
+        "49",
+        "128",
+        "56",
+        "14"
+      ],
+      "answer": 0,
+      "explain_en": "7^2 = 49.",
+      "explain_zh": "7^2 = 49。",
+      "qtype": "power_eval",
+      "qtype_zh": "乘方求值"
+    },
+    {
+      "id": "l5g10_005",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangular reed-leaf yard has perimeter 74 m and width 11 m. What is its area in m²?",
+      "q_zh": "一块长方形晾叶场周长 74 米、宽 11 米，面积是多少平方米？",
+      "choices": [
+        "693",
+        "814",
+        "286",
+        "297"
+      ],
+      "choices_zh": [
+        "693",
+        "814",
+        "286",
+        "297"
+      ],
+      "answer": 2,
+      "explain_en": "(74 ÷ 2 - 11) × 11 = 286.",
+      "explain_zh": "(74 ÷ 2 - 11) × 11 = 286。",
+      "qtype": "perimeter_to_area",
+      "qtype_zh": "由周长和宽求面积"
+    },
+    {
+      "id": "l5g10_006",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In literary history, Li Sao is best described as ____.",
+      "q_zh": "在文学史上，《离骚》最合适的定位是____。",
+      "choices": [
+        "a tide table for the Bund",
+        "a bus route handbook",
+        "a long lyric poem by Qu Yuan",
+        "a modern e-bike manual"
+      ],
+      "choices_zh": [
+        "外滩的潮汐表",
+        "公交线路手册",
+        "屈原的一首长篇抒情诗",
+        "现代电动车说明书"
+      ],
+      "answer": 2,
+      "explain_en": "Li Sao is Qu Yuan's long lyric poem.",
+      "explain_zh": "《离骚》是屈原的长篇抒情诗。",
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g10_007",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 23 and x - y = -1. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 23，x - y = -1，求 x。",
+      "choices": [
+        "11",
+        "10",
+        "23",
+        "12"
+      ],
+      "choices_zh": [
+        "11",
+        "10",
+        "23",
+        "12"
+      ],
+      "answer": 0,
+      "explain_en": "(23 + -1) ÷ 2 = 11.",
+      "explain_zh": "(23 + -1) ÷ 2 = 11。",
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_008",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 15 + 6k yuan for k km. What is C when k = 4?",
+      "q_zh": "租电动车的价钱是 C = 15 + 6k 元（k 为千米数），k = 4 时 C 是多少？",
+      "choices": [
+        "84",
+        "45",
+        "94",
+        "39"
+      ],
+      "choices_zh": [
+        "84",
+        "45",
+        "94",
+        "39"
+      ],
+      "answer": 3,
+      "explain_en": "15 + 6 × 4 = 39.",
+      "explain_zh": "15 + 6 × 4 = 39。",
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_009",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Two e-bike paths of 15 m and 7 m meet at 60°. How far apart are their ends, in metres?",
+      "q_zh": "两条电动车道长 15 米和 7 米，夹角 60°，两端相距多少米？",
+      "choices": [
+        "16.55",
+        "8",
+        "14",
+        "13"
+      ],
+      "choices_zh": [
+        "16.55",
+        "8",
+        "14",
+        "13"
+      ],
+      "answer": 3,
+      "explain_en": "√(15^2 + 7^2 - 2 × 15 × 7 × cos(60°)) = 13.",
+      "explain_zh": "√(15^2 + 7^2 - 2 × 15 × 7 × cos(60°)) = 13。",
+      "qtype": "law_of_cosines",
+      "qtype_zh": "余弦定理"
+    },
+    {
+      "id": "l5g10_010",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "乘风破浪 pictures a boat ____.",
+      "q_zh": "「乘风破浪」形容船____。",
+      "choices": [
+        "Sleeping",
+        "Turning into a tree",
+        "Pressing ahead"
+      ],
+      "choices_zh": [
+        "在睡觉",
+        "变成树",
+        "迎风向前"
+      ],
+      "answer": 2,
+      "explain_en": "It means pushing through wind and waves.",
+      "explain_zh": "就是迎着风浪向前。",
+      "sign_en": [
+        "Sleeping",
+        "Turning into a tree",
+        "Pressing ahead"
+      ],
+      "sign_zh": [
+        "在睡觉",
+        "变成树",
+        "迎风向前"
+      ],
+      "qtype": "zh_idiom_poem",
+      "qtype_zh": "成语与古诗"
+    },
+    {
+      "id": "l5g10_011",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 17 + 8k yuan for k km. What is C when k = 8?",
+      "q_zh": "租电动车的价钱是 C = 17 + 8k 元（k 为千米数），k = 8 时 C 是多少？",
+      "choices": [
+        "81",
+        "64",
+        "144",
+        "89"
+      ],
+      "choices_zh": [
+        "81",
+        "64",
+        "144",
+        "89"
+      ],
+      "answer": 0,
+      "explain_en": "17 + 8 × 8 = 81.",
+      "explain_zh": "17 + 8 × 8 = 81。",
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_012",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "On wet Bund stones, an e-bike needs a longer distance to stop mainly because ____.",
+      "q_zh": "在外滩潮湿的石板上，电动车要停稳往往要更长的距离，主要是因为____。",
+      "choices": [
+        "shadows pull the wheels forward",
+        "the bike becomes heavier than a bus",
+        "less friction between tyres and the wet surface",
+        "wet stone increases engine power"
+      ],
+      "choices_zh": [
+        "影子把轮子往前拉",
+        "车变得比公交车还重",
+        "轮胎和湿地面之间的摩擦变小了",
+        "湿石头会加大电机的力"
+      ],
+      "answer": 2,
+      "explain_en": "Water reduces friction, so braking takes a longer distance.",
+      "explain_zh": "水会减小摩擦，所以刹车距离变长。",
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g10_013",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under Huaihai Road plane trees has height h = -t² + 2t. What is its maximum height?",
+      "q_zh": "淮海路梧桐下踢起的毽子高度 h = -t² + 2t，最大高度是多少？",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "choices_zh": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "answer": 3,
+      "explain_en": "-1 × 1^2 + 2 × 1 = 1.",
+      "explain_zh": "-1 × 1^2 + 2 × 1 = 1。",
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_014",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Two e-bike paths of 16 m and 6 m meet at 60°. How far apart are their ends, in metres?",
+      "q_zh": "两条电动车道长 16 米和 6 米，夹角 60°，两端相距多少米？",
+      "choices": [
+        "14",
+        "8",
+        "17.09"
+      ],
+      "choices_zh": [
+        "14",
+        "8",
+        "17.09"
+      ],
+      "answer": 0,
+      "explain_en": "√(16^2 + 6^2 - 2 × 16 × 6 × cos(60°)) = 14.",
+      "explain_zh": "√(16^2 + 6^2 - 2 × 16 × 6 × cos(60°)) = 14。",
+      "sign_en": [
+        "14",
+        "8",
+        "17.09"
+      ],
+      "sign_zh": [
+        "14",
+        "8",
+        "17.09"
+      ],
+      "qtype": "law_of_cosines",
+      "qtype_zh": "余弦定理"
+    },
+    {
+      "id": "l5g10_015",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 31 and x - y = 1. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 31，x - y = 1，求 x。",
+      "choices": [
+        "16",
+        "1",
+        "17"
+      ],
+      "choices_zh": [
+        "16",
+        "1",
+        "17"
+      ],
+      "answer": 0,
+      "explain_en": "(31 + 1) ÷ 2 = 16.",
+      "explain_zh": "(31 + 1) ÷ 2 = 16。",
+      "sign_en": [
+        "16",
+        "1",
+        "17"
+      ],
+      "sign_zh": [
+        "16",
+        "1",
+        "17"
+      ],
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_016",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangular reed-leaf yard has perimeter 48 m and width 7 m. What is its area in m²?",
+      "q_zh": "一块长方形晾叶场周长 48 米、宽 7 米，面积是多少平方米？",
+      "choices": [
+        "126",
+        "119",
+        "287"
+      ],
+      "choices_zh": [
+        "126",
+        "119",
+        "287"
+      ],
+      "answer": 1,
+      "explain_en": "(48 ÷ 2 - 7) × 7 = 119.",
+      "explain_zh": "(48 ÷ 2 - 7) × 7 = 119。",
+      "sign_en": [
+        "126",
+        "119",
+        "287"
+      ],
+      "sign_zh": [
+        "126",
+        "119",
+        "287"
+      ],
+      "qtype": "perimeter_to_area",
+      "qtype_zh": "由周长和宽求面积"
+    },
+    {
+      "id": "l5g10_017",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under Huaihai Road plane trees has height h = -2t² + 12t. What is its maximum height?",
+      "q_zh": "淮海路梧桐下踢起的毽子高度 h = -2t² + 12t，最大高度是多少？",
+      "choices": [
+        "18",
+        "3",
+        "36"
+      ],
+      "choices_zh": [
+        "18",
+        "3",
+        "36"
+      ],
+      "answer": 0,
+      "explain_en": "-2 × 3^2 + 12 × 3 = 18.",
+      "explain_zh": "-2 × 3^2 + 12 × 3 = 18。",
+      "sign_en": [
+        "18",
+        "3",
+        "36"
+      ],
+      "sign_zh": [
+        "18",
+        "3",
+        "36"
+      ],
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_018",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 5 grows by a factor of 2 every year. How many sparrows after 5 years?",
+      "q_zh": "一群麻雀原有 5 只，每年变成原来的 2 倍，5 年后有多少只？",
+      "choices": [
+        "50",
+        "160",
+        "80"
+      ],
+      "choices_zh": [
+        "50",
+        "160",
+        "80"
+      ],
+      "answer": 1,
+      "explain_en": "5 × 2^5 = 160.",
+      "explain_zh": "5 × 2^5 = 160。",
+      "sign_en": [
+        "50",
+        "160",
+        "80"
+      ],
+      "sign_zh": [
+        "50",
+        "160",
+        "80"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g10_019",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "Li Sao is a long poem by ____.",
+      "q_zh": "《离骚》是谁的长诗？",
+      "choices": [
+        "A vendor only",
+        "Qu Yuan",
+        "A bus driver"
+      ],
+      "choices_zh": [
+        "只是小贩",
+        "屈原",
+        "公交司机"
+      ],
+      "answer": 1,
+      "explain_en": "Li Sao is by Qu Yuan.",
+      "explain_zh": "《离骚》是屈原的作品。",
+      "sign_en": [
+        "A vendor only",
+        "Qu Yuan",
+        "A bus driver"
+      ],
+      "sign_zh": [
+        "只是小贩",
+        "屈原",
+        "公交司机"
+      ],
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g10_020",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 2 grows by a factor of 2 every year. How many sparrows after 4 years?",
+      "q_zh": "一群麻雀原有 2 只，每年变成原来的 2 倍，4 年后有多少只？",
+      "choices": [
+        "34",
+        "64",
+        "32",
+        "16"
+      ],
+      "choices_zh": [
+        "34",
+        "64",
+        "32",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "2 × 2^4 = 32.",
+      "explain_zh": "2 × 2^4 = 32。",
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g10_021",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Lunar day 5 is a ____ moon.",
+      "q_zh": "农历初五是____。",
+      "choices": [
+        "Full moon",
+        "Waxing crescent",
+        "Last quarter"
+      ],
+      "choices_zh": [
+        "满月",
+        "娥眉月",
+        "下弦"
+      ],
+      "answer": 1,
+      "explain_en": "Day 5 is a waxing crescent.",
+      "explain_zh": "初五是娥眉月，不是满月。",
+      "sign_en": [
+        "Full moon",
+        "Waxing crescent",
+        "Last quarter"
+      ],
+      "sign_zh": [
+        "满月",
+        "娥眉月",
+        "下弦"
+      ],
+      "qtype": "moon_calendar",
+      "qtype_zh": "月相与农历（端午日期）"
+    },
+    {
+      "id": "l5g10_022",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 5, run 12, slope length 13. What is tan of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 5、水平 12、斜边 13，底角的 tan 值是多少？",
+      "choices": [
+        "12/13",
+        "2.6",
+        "5/12"
+      ],
+      "choices_zh": [
+        "12/13",
+        "2.6",
+        "5/12"
+      ],
+      "answer": 2,
+      "explain_en": "5 ÷ 12 = 5/12.",
+      "explain_zh": "5 ÷ 12 = 5/12。",
+      "sign_en": [
+        "12/13",
+        "2.6",
+        "5/12"
+      ],
+      "sign_zh": [
+        "12/13",
+        "2.6",
+        "5/12"
+      ],
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_023",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display has 5^4 zongzi. How many is that?",
+      "q_zh": "一组粽子展示有 5^4 只，是多少只？",
+      "choices": [
+        "625",
+        "630",
+        "125"
+      ],
+      "choices_zh": [
+        "625",
+        "630",
+        "125"
+      ],
+      "answer": 0,
+      "explain_en": "5^4 = 625.",
+      "explain_zh": "5^4 = 625。",
+      "sign_en": [
+        "625",
+        "630",
+        "125"
+      ],
+      "sign_zh": [
+        "625",
+        "630",
+        "125"
+      ],
+      "qtype": "power_eval",
+      "qtype_zh": "乘方求值"
+    },
+    {
+      "id": "l5g10_024",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 7, run 24, slope length 25. What is sin of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 7、水平 24、斜边 25，底角的 sin 值是多少？",
+      "choices": [
+        "24/7",
+        "25/7",
+        "0.28",
+        "7/24"
+      ],
+      "choices_zh": [
+        "24/7",
+        "25/7",
+        "0.28",
+        "7/24"
+      ],
+      "answer": 2,
+      "explain_en": "7 ÷ 25 = 0.28.",
+      "explain_zh": "7 ÷ 25 = 0.28。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_025",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "The Huangpu near the Bund is a tidal river. A tidal river is one whose level ____.",
+      "q_zh": "外滩附近的黄浦江是感潮河段。感潮河段的水位会____。",
+      "choices": [
+        "never changes for any reason",
+        "is frozen all year",
+        "rises and falls with the sea tide",
+        "depends only on street-lamp timers"
+      ],
+      "choices_zh": [
+        "无论什么原因都不变",
+        "一年到头都结冰",
+        "随着海潮涨落",
+        "只跟路灯开关时间有关"
+      ],
+      "answer": 2,
+      "explain_en": "Tidal reaches feel the sea's rise and fall, even upstream of the mouth.",
+      "explain_zh": "感潮河段会受到海潮涨落的影响。",
+      "qtype": "water_properties",
+      "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+    },
+    {
+      "id": "l5g10_026",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 6, run 8, slope length 10. What is tan of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 6、水平 8、斜边 10，底角的 tan 值是多少？",
+      "choices": [
+        "5/3",
+        "0.8",
+        "0.6",
+        "0.75"
+      ],
+      "choices_zh": [
+        "5/3",
+        "0.8",
+        "0.6",
+        "0.75"
+      ],
+      "answer": 3,
+      "explain_en": "6 ÷ 8 = 0.75.",
+      "explain_zh": "6 ÷ 8 = 0.75。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_027",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangular reed-leaf yard has perimeter 40 m and width 3 m. What is its area in m²?",
+      "q_zh": "一块长方形晾叶场周长 40 米、宽 3 米，面积是多少平方米？",
+      "choices": [
+        "111",
+        "51",
+        "54"
+      ],
+      "choices_zh": [
+        "111",
+        "51",
+        "54"
+      ],
+      "answer": 1,
+      "explain_en": "(40 ÷ 2 - 3) × 3 = 51.",
+      "explain_zh": "(40 ÷ 2 - 3) × 3 = 51。",
+      "sign_en": [
+        "111",
+        "51",
+        "54"
+      ],
+      "sign_zh": [
+        "111",
+        "51",
+        "54"
+      ],
+      "qtype": "perimeter_to_area",
+      "qtype_zh": "由周长和宽求面积"
+    },
+    {
+      "id": "l5g10_028",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 28 and x - y = -8. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 28，x - y = -8，求 x。",
+      "choices": [
+        "18",
+        "11",
+        "10"
+      ],
+      "choices_zh": [
+        "18",
+        "11",
+        "10"
+      ],
+      "answer": 2,
+      "explain_en": "(28 + -8) ÷ 2 = 10.",
+      "explain_zh": "(28 + -8) ÷ 2 = 10。",
+      "sign_en": [
+        "18",
+        "11",
+        "10"
+      ],
+      "sign_zh": [
+        "18",
+        "11",
+        "10"
+      ],
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_029",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 8, run 15, slope length 17. What is sin of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 8、水平 15、斜边 17，底角的 sin 值是多少？",
+      "choices": [
+        "8/15",
+        "8/17",
+        "15/17",
+        "17/8"
+      ],
+      "choices_zh": [
+        "8/15",
+        "8/17",
+        "15/17",
+        "17/8"
+      ],
+      "answer": 1,
+      "explain_en": "8 ÷ 17 = 8/17.",
+      "explain_zh": "8 ÷ 17 = 8/17。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_030",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ladder 16 m long leans at 30° to the ground to hang mugwort. How high does it reach, in metres?",
+      "q_zh": "一架长 16 米的梯子和地面成 30°，用来挂艾草，它能够到多高（米）？",
+      "choices": [
+        "8",
+        "32",
+        "9",
+        "16"
+      ],
+      "choices_zh": [
+        "8",
+        "32",
+        "9",
+        "16"
+      ],
+      "answer": 0,
+      "explain_en": "16 × sin(30°) = 8.",
+      "explain_zh": "16 × sin(30°) = 8。",
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_031",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am not a fish, but I keep a wooden dragon boat sitting on the river instead of sinking. What am I?",
+      "q_zh": "端午谜：我不是鱼，却让木制龙舟浮在江上，不会沉下去。打一物理现象，是什么？",
+      "choices": [
+        "Friction",
+        "Buoyancy",
+        "Magnetism",
+        "Echo"
+      ],
+      "choices_zh": [
+        "摩擦力",
+        "浮力",
+        "磁力",
+        "回声"
+      ],
+      "answer": 1,
+      "explain_en": "A boat floats because the buoyant force (and its low average density) holds it up.",
+      "explain_zh": "船受到水的浮力，平均密度又比水小，所以能浮着。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g10_032",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under Huaihai Road plane trees has height h = -t² + 4t. What is its maximum height?",
+      "q_zh": "淮海路梧桐下踢起的毽子高度 h = -t² + 4t，最大高度是多少？",
+      "choices": [
+        "5",
+        "4",
+        "8"
+      ],
+      "choices_zh": [
+        "5",
+        "4",
+        "8"
+      ],
+      "answer": 1,
+      "explain_en": "-1 × 2^2 + 4 × 2 = 4.",
+      "explain_zh": "-1 × 2^2 + 4 × 2 = 4。",
+      "sign_en": [
+        "5",
+        "4",
+        "8"
+      ],
+      "sign_zh": [
+        "5",
+        "4",
+        "8"
+      ],
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_033",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Wet Bund stones mean ____ friction.",
+      "q_zh": "外滩石板潮湿，意味着摩擦____。",
+      "choices": [
+        "Infinite",
+        "Less",
+        "Unchanged heat"
+      ],
+      "choices_zh": [
+        "无穷大",
+        "更小",
+        "热量不变"
+      ],
+      "answer": 1,
+      "explain_en": "Water reduces tyre friction.",
+      "explain_zh": "水会减小轮胎摩擦。",
+      "sign_en": [
+        "Infinite",
+        "Less",
+        "Unchanged heat"
+      ],
+      "sign_zh": [
+        "无穷大",
+        "更小",
+        "热量不变"
+      ],
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g10_034",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangular reed-leaf yard has perimeter 24 m and width 5 m. What is its area in m²?",
+      "q_zh": "一块长方形晾叶场周长 24 米、宽 5 米，面积是多少平方米？",
+      "choices": [
+        "95",
+        "12",
+        "35",
+        "40"
+      ],
+      "choices_zh": [
+        "95",
+        "12",
+        "35",
+        "40"
+      ],
+      "answer": 2,
+      "explain_en": "(24 ÷ 2 - 5) × 5 = 35.",
+      "explain_zh": "(24 ÷ 2 - 5) × 5 = 35。",
+      "qtype": "perimeter_to_area",
+      "qtype_zh": "由周长和宽求面积"
+    },
+    {
+      "id": "l5g10_035",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 31 and x - y = 25. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 31，x - y = 25，求 x。",
+      "choices": [
+        "31",
+        "28",
+        "29",
+        "3"
+      ],
+      "choices_zh": [
+        "31",
+        "28",
+        "29",
+        "3"
+      ],
+      "answer": 1,
+      "explain_en": "(31 + 25) ÷ 2 = 28.",
+      "explain_zh": "(31 + 25) ÷ 2 = 28。",
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_036",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 6 + 8k yuan for k km. What is C when k = 7?",
+      "q_zh": "租电动车的价钱是 C = 6 + 8k 元（k 为千米数），k = 7 时 C 是多少？",
+      "choices": [
+        "70",
+        "62",
+        "55"
+      ],
+      "choices_zh": [
+        "70",
+        "62",
+        "55"
+      ],
+      "answer": 1,
+      "explain_en": "6 + 8 × 7 = 62.",
+      "explain_zh": "6 + 8 × 7 = 62。",
+      "sign_en": [
+        "70",
+        "62",
+        "55"
+      ],
+      "sign_zh": [
+        "70",
+        "62",
+        "55"
+      ],
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_037",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display has 7^3 zongzi. How many is that?",
+      "q_zh": "一组粽子展示有 7^3 只，是多少只？",
+      "choices": [
+        "350",
+        "343",
+        "21"
+      ],
+      "choices_zh": [
+        "350",
+        "343",
+        "21"
+      ],
+      "answer": 1,
+      "explain_en": "7^3 = 343.",
+      "explain_zh": "7^3 = 343。",
+      "sign_en": [
+        "350",
+        "343",
+        "21"
+      ],
+      "sign_zh": [
+        "350",
+        "343",
+        "21"
+      ],
+      "qtype": "power_eval",
+      "qtype_zh": "乘方求值"
+    },
+    {
+      "id": "l5g10_038",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ladder 14 m long leans at 30° to the ground to hang mugwort. How high does it reach, in metres?",
+      "q_zh": "一架长 14 米的梯子和地面成 30°，用来挂艾草，它能够到多高（米）？",
+      "choices": [
+        "28",
+        "14",
+        "7",
+        "12.12"
+      ],
+      "choices_zh": [
+        "28",
+        "14",
+        "7",
+        "12.12"
+      ],
+      "answer": 2,
+      "explain_en": "14 × sin(30°) = 7.",
+      "explain_zh": "14 × sin(30°) = 7。",
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_039",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 2 + 2k yuan for k km. What is C when k = 4?",
+      "q_zh": "租电动车的价钱是 C = 2 + 2k 元（k 为千米数），k = 4 时 C 是多少？",
+      "choices": [
+        "16",
+        "10",
+        "12",
+        "8"
+      ],
+      "choices_zh": [
+        "16",
+        "10",
+        "12",
+        "8"
+      ],
+      "answer": 1,
+      "explain_en": "2 + 2 × 4 = 10.",
+      "explain_zh": "2 + 2 × 4 = 10。",
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_040",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another classic name for this festival, besides 端午, is ____.",
+      "q_zh": "除了「端午」，这个节还有一个常称是____。",
+      "choices": [
+        "端阳",
+        "元旦集",
+        "秋分市",
+        "深冬夜"
+      ],
+      "choices_zh": [
+        "端阳",
+        "元旦集",
+        "秋分市",
+        "深冬夜"
+      ],
+      "answer": 0,
+      "explain_en": "The festival is also called 端阳节.",
+      "explain_zh": "端午节也叫端阳节。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g10_041",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 3 grows by a factor of 3 every year. How many sparrows after 5 years?",
+      "q_zh": "一群麻雀原有 3 只，每年变成原来的 3 倍，5 年后有多少只？",
+      "choices": [
+        "729",
+        "45",
+        "2187",
+        "243"
+      ],
+      "choices_zh": [
+        "729",
+        "45",
+        "2187",
+        "243"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 3^5 = 729.",
+      "explain_zh": "3 × 3^5 = 729。",
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g10_042",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am a little cloth world of dried herbs, worn at this festival, and my smell is stronger when the air is warm. What am I?",
+      "q_zh": "端午谜：我是一只装着干香草的小布世界，过这个节时人们戴着我，天气越暖我越香。打一物，是什么？",
+      "choices": [
+        "A sachet",
+        "A glass cup",
+        "A wet sponge",
+        "A metal coin"
+      ],
+      "choices_zh": [
+        "香囊",
+        "玻璃杯",
+        "湿海绵",
+        "硬币"
+      ],
+      "answer": 0,
+      "explain_en": "Warm air carries the scent of the herbs in a sachet more easily.",
+      "explain_zh": "空气暖和时，香囊里香草的气味更容易散出来。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g10_043",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I hunt insects at dusk above the Huangpu, I fold my wings by day, and I am not a bird. What am I?",
+      "q_zh": "端午谜：傍晚我在黄浦江上空捉虫，白天收起翅膀，可我不是鸟。打一动物，是什么？",
+      "choices": [
+        "A bat",
+        "A duck",
+        "A butterfly",
+        "A sparrow"
+      ],
+      "choices_zh": [
+        "蝙蝠",
+        "鸭子",
+        "蝴蝶",
+        "麻雀"
+      ],
+      "answer": 0,
+      "explain_en": "Bats are mammals that fly at dusk and eat insects.",
+      "explain_zh": "蝙蝠在黄昏飞出来捉虫，不是鸟。",
+      "qtype": "riddle_animal",
+      "qtype_zh": "端午谜·动物谜（猜动物）"
+    },
+    {
+      "id": "l5g10_044",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 5 + 8k yuan for k km. What is C when k = 9?",
+      "q_zh": "租电动车的价钱是 C = 5 + 8k 元（k 为千米数），k = 9 时 C 是多少？",
+      "choices": [
+        "77",
+        "117",
+        "49"
+      ],
+      "choices_zh": [
+        "77",
+        "117",
+        "49"
+      ],
+      "answer": 0,
+      "explain_en": "5 + 8 × 9 = 77.",
+      "explain_zh": "5 + 8 × 9 = 77。",
+      "sign_en": [
+        "77",
+        "117",
+        "49"
+      ],
+      "sign_zh": [
+        "77",
+        "117",
+        "49"
+      ],
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_045",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ladder 8 m long leans at 30° to the ground to hang mugwort. How high does it reach, in metres?",
+      "q_zh": "一架长 8 米的梯子和地面成 30°，用来挂艾草，它能够到多高（米）？",
+      "choices": [
+        "5",
+        "4",
+        "8"
+      ],
+      "choices_zh": [
+        "5",
+        "4",
+        "8"
+      ],
+      "answer": 1,
+      "explain_en": "8 × sin(30°) = 4.",
+      "explain_zh": "8 × sin(30°) = 4。",
+      "sign_en": [
+        "5",
+        "4",
+        "8"
+      ],
+      "sign_zh": [
+        "5",
+        "4",
+        "8"
+      ],
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_046",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "In the traditional month names, the fifth lunar month can be called 午月. Duanwu (端午) then means the ____ of that month.",
+      "q_zh": "在传统月名里，农历五月可称午月。端午的「端」在这里表示这个月的____。",
+      "choices": [
+        "name of a bus stop",
+        "beginning (the first 'noon' day, the 5th)",
+        "middle of winter only",
+        "very last hour of the year"
+      ],
+      "choices_zh": [
+        "一个公交站名",
+        "开始（这个月的第一个午日，即初五）",
+        "只表示隆冬",
+        "一年的最后一小时"
+      ],
+      "answer": 1,
+      "explain_en": "端 means the beginning; 午月 is the fifth lunar month, and 端午 marks its fifth day.",
+      "explain_zh": "「端」有开头的意思，午月是农历五月，端午就是五月初五。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g10_047",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under Huaihai Road plane trees has height h = -3t² + 24t. What is its maximum height?",
+      "q_zh": "淮海路梧桐下踢起的毽子高度 h = -3t² + 24t，最大高度是多少？",
+      "choices": [
+        "48",
+        "51",
+        "4",
+        "24"
+      ],
+      "choices_zh": [
+        "48",
+        "51",
+        "4",
+        "24"
+      ],
+      "answer": 0,
+      "explain_en": "-3 × 4^2 + 24 × 4 = 48.",
+      "explain_zh": "-3 × 4^2 + 24 × 4 = 48。",
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_048",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 6 grows by a factor of 3 every year. How many sparrows after 2 years?",
+      "q_zh": "一群麻雀原有 6 只，每年变成原来的 3 倍，2 年后有多少只？",
+      "choices": [
+        "162",
+        "60",
+        "54"
+      ],
+      "choices_zh": [
+        "162",
+        "60",
+        "54"
+      ],
+      "answer": 2,
+      "explain_en": "6 × 3^2 = 54.",
+      "explain_zh": "6 × 3^2 = 54。",
+      "sign_en": [
+        "162",
+        "60",
+        "54"
+      ],
+      "sign_zh": [
+        "162",
+        "60",
+        "54"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g10_049",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Water drops hold together partly by ____.",
+      "q_zh": "水珠能聚在一起，部分是靠____。",
+      "choices": [
+        "Steel cables",
+        "Hydrogen bonds",
+        "Echoes"
+      ],
+      "choices_zh": [
+        "钢缆",
+        "氢键",
+        "回声"
+      ],
+      "answer": 1,
+      "explain_en": "Hydrogen bonds act between water molecules.",
+      "explain_zh": "水分子之间有氢键。",
+      "sign_en": [
+        "Steel cables",
+        "Hydrogen bonds",
+        "Echoes"
+      ],
+      "sign_zh": [
+        "钢缆",
+        "氢键",
+        "回声"
+      ],
+      "qtype": "chem_bonds",
+      "qtype_zh": "化学键（氢键）"
+    },
+    {
+      "id": "l5g10_050",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display has 2^2 zongzi. How many is that?",
+      "q_zh": "一组粽子展示有 2^2 只，是多少只？",
+      "choices": [
+        "5",
+        "2",
+        "4",
+        "6"
+      ],
+      "choices_zh": [
+        "5",
+        "2",
+        "4",
+        "6"
+      ],
+      "answer": 2,
+      "explain_en": "2^2 = 4.",
+      "explain_zh": "2^2 = 4。",
+      "qtype": "power_eval",
+      "qtype_zh": "乘方求值"
+    },
+    {
+      "id": "l5g10_051",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A rectangular reed-leaf yard has perimeter 38 m and width 5 m. What is its area in m²?",
+      "q_zh": "一块长方形晾叶场周长 38 米、宽 5 米，面积是多少平方米？",
+      "choices": [
+        "70",
+        "165",
+        "19",
+        "190"
+      ],
+      "choices_zh": [
+        "70",
+        "165",
+        "19",
+        "190"
+      ],
+      "answer": 0,
+      "explain_en": "(38 ÷ 2 - 5) × 5 = 70.",
+      "explain_zh": "(38 ÷ 2 - 5) × 5 = 70。",
+      "qtype": "perimeter_to_area",
+      "qtype_zh": "由周长和宽求面积"
+    },
+    {
+      "id": "l5g10_052",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 3, run 4, slope length 5. What is cos of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 3、水平 4、斜边 5，底角的 cos 值是多少？",
+      "choices": [
+        "0.8",
+        "4/3",
+        "5/3",
+        "0.6"
+      ],
+      "choices_zh": [
+        "0.8",
+        "4/3",
+        "5/3",
+        "0.6"
+      ],
+      "answer": 0,
+      "explain_en": "4 ÷ 5 = 0.8.",
+      "explain_zh": "4 ÷ 5 = 0.8。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_053",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In 端午节, the character 午 originally points to ____ in the traditional lunar month system.",
+      "q_zh": "「端午节」里的「午」，在传统月序里本来指向____。",
+      "choices": [
+        "the twelfth solar term's shoe",
+        "a kind of dessert only",
+        "the fifth lunar month (午月)",
+        "a typo for 牛"
+      ],
+      "choices_zh": [
+        "某个节气的鞋子",
+        "只是一种甜品",
+        "农历五月（午月）",
+        "「牛」的错字"
+      ],
+      "answer": 2,
+      "explain_en": "午月 is the fifth lunar month when the year is counted from 寅月.",
+      "explain_zh": "以寅月为正月时，午月就是五月。",
+      "qtype": "zh_character",
+      "qtype_zh": "汉字字义"
+    },
+    {
+      "id": "l5g10_054",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Which is the most accurate description of Xintiandi?",
+      "q_zh": "下面哪一句对「新天地」说得最准确？",
+      "choices": [
+        "A ski resort above the treeline",
+        "A desert trading post",
+        "A fishing village with no buildings",
+        "A Shanghai block that kept shikumen fronts and added modern shops"
+      ],
+      "choices_zh": [
+        "一个在树线以上的滑雪场",
+        "一个沙漠商站",
+        "一个没有房子的渔村",
+        "一个保留石库门门面、又加入现代店铺的上海街区"
+      ],
+      "answer": 3,
+      "explain_en": "Xintiandi reused shikumen street faces with new interiors and shops.",
+      "explain_zh": "新天地保留了石库门的街面，里面则是新的店铺。",
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g10_055",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am the first-quarter-not-yet moon of the fifth lunar day: a slim waxing curve, never a full disc. What am I?",
+      "q_zh": "端午谜：农历初五的我还没到上弦，只是一道渐渐变宽的细弯，绝不是满月。打一自然物，是什么？",
+      "choices": [
+        "A waxing crescent",
+        "A blue sun",
+        "A new moon with no light",
+        "A full moon"
+      ],
+      "choices_zh": [
+        "娥眉月",
+        "蓝色太阳",
+        "全暗的新月",
+        "满月"
+      ],
+      "answer": 0,
+      "explain_en": "The 5th lunar day comes soon after new moon, so the moon is a waxing crescent.",
+      "explain_zh": "农历初五刚过新月，月亮是逐渐变亮的弯月。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g10_056",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 7, run 24, slope length 25. What is tan of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 7、水平 24、斜边 25，底角的 tan 值是多少？",
+      "choices": [
+        "0.96",
+        "25/7",
+        "7/24",
+        "0.28"
+      ],
+      "choices_zh": [
+        "0.96",
+        "25/7",
+        "7/24",
+        "0.28"
+      ],
+      "answer": 2,
+      "explain_en": "7 ÷ 24 = 7/24.",
+      "explain_zh": "7 ÷ 24 = 7/24。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_057",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I travel from a drum on the far bank and arrive later than the movement you already saw. What am I?",
+      "q_zh": "端午谜：对岸有人敲鼓，你先看见动作，过一会儿才等到我。打一物，是什么？",
+      "choices": [
+        "A smell of rice",
+        "The light of day",
+        "The sound of the drum",
+        "A shadow"
+      ],
+      "choices_zh": [
+        "米香",
+        "日光",
+        "鼓声",
+        "影子"
+      ],
+      "answer": 2,
+      "explain_en": "Light (or sight of the motion) reaches you before the slower sound.",
+      "explain_zh": "动作的光几乎立刻看到，鼓声传得比较慢。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g10_058",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Two e-bike paths of 21 m and 16 m meet at 60°. How far apart are their ends, in metres?",
+      "q_zh": "两条电动车道长 21 米和 16 米，夹角 60°，两端相距多少米？",
+      "choices": [
+        "19",
+        "26.4",
+        "18"
+      ],
+      "choices_zh": [
+        "19",
+        "26.4",
+        "18"
+      ],
+      "answer": 0,
+      "explain_en": "√(21^2 + 16^2 - 2 × 21 × 16 × cos(60°)) = 19.",
+      "explain_zh": "√(21^2 + 16^2 - 2 × 21 × 16 × cos(60°)) = 19。",
+      "sign_en": [
+        "19",
+        "26.4",
+        "18"
+      ],
+      "sign_zh": [
+        "19",
+        "26.4",
+        "18"
+      ],
+      "qtype": "law_of_cosines",
+      "qtype_zh": "余弦定理"
+    },
+    {
+      "id": "l5g10_059",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display has 6^4 zongzi. How many is that?",
+      "q_zh": "一组粽子展示有 6^4 只，是多少只？",
+      "choices": [
+        "4096",
+        "216",
+        "1296",
+        "24"
+      ],
+      "choices_zh": [
+        "4096",
+        "216",
+        "1296",
+        "24"
+      ],
+      "answer": 2,
+      "explain_en": "6^4 = 1296.",
+      "explain_zh": "6^4 = 1296。",
+      "qtype": "power_eval",
+      "qtype_zh": "乘方求值"
+    },
+    {
+      "id": "l5g10_060",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "\"They are bought together, so one causes the other\" mixes up ____.",
+      "q_zh": "「一起被买，所以一个导致另一个」混淆了____。",
+      "choices": [
+        "Sun and shade",
+        "Correlation and cause",
+        "Left and right"
+      ],
+      "choices_zh": [
+        "阳光和树荫",
+        "相关和因果",
+        "左边和右边"
+      ],
+      "answer": 1,
+      "explain_en": "Together is not the same as caused by.",
+      "explain_zh": "一起出现并不等于有因果关系。",
+      "sign_en": [
+        "Sun and shade",
+        "Correlation and cause",
+        "Left and right"
+      ],
+      "sign_zh": [
+        "阳光和树荫",
+        "相关和因果",
+        "左边和右边"
+      ],
+      "qtype": "stats_reasoning",
+      "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+    },
+    {
+      "id": "l5g10_061",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Water drops that form on a cool zongzi-pot lid are held together in part by ____ between water molecules.",
+      "q_zh": "凉锅盖上那些水珠能聚在一起，部分是因为水分子之间的____。",
+      "choices": [
+        "plane-tree roots",
+        "steel cables",
+        "hydrogen bonds",
+        "echoes"
+      ],
+      "choices_zh": [
+        "梧桐树根",
+        "钢缆",
+        "氢键",
+        "回声"
+      ],
+      "answer": 2,
+      "explain_en": "Hydrogen bonds help water molecules stick to one another.",
+      "explain_zh": "氢键让水分子彼此靠近，水珠才能聚起来。",
+      "qtype": "chem_bonds",
+      "qtype_zh": "化学键（氢键）"
+    },
+    {
+      "id": "l5g10_062",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 29 and x - y = 21. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 29，x - y = 21，求 x。",
+      "choices": [
+        "21",
+        "25",
+        "4",
+        "29"
+      ],
+      "choices_zh": [
+        "21",
+        "25",
+        "4",
+        "29"
+      ],
+      "answer": 1,
+      "explain_en": "(29 + 21) ÷ 2 = 25.",
+      "explain_zh": "(29 + 21) ÷ 2 = 25。",
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_063",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Reed or bamboo leaves are good wrappers for zongzi partly because they ____.",
+      "q_zh": "箬叶或竹叶适合包粽子，部分原因是它们____。",
+      "choices": [
+        "are made of glass",
+        "dissolve into sugar at once",
+        "block all heat so rice stays raw",
+        "are flexible, hold the rice, and add aroma when heated"
+      ],
+      "choices_zh": [
+        "是玻璃做的",
+        "会马上化成糖",
+        "挡住所有热，让米一直生着",
+        "柔韧、能裹住米，加热时还会带出香气"
+      ],
+      "answer": 3,
+      "explain_en": "The leaves wrap well and give a fresh smell when steamed.",
+      "explain_zh": "这些叶子柔韧能包米，蒸的时候还有清香。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g10_064",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ladder 30 m long leans at 30° to the ground to hang mugwort. How high does it reach, in metres?",
+      "q_zh": "一架长 30 米的梯子和地面成 30°，用来挂艾草，它能够到多高（米）？",
+      "choices": [
+        "25.98",
+        "30",
+        "15",
+        "16"
+      ],
+      "choices_zh": [
+        "25.98",
+        "30",
+        "15",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "30 × sin(30°) = 15.",
+      "explain_zh": "30 × sin(30°) = 15。",
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_065",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Two e-bike paths of 8 m and 5 m meet at 60°. How far apart are their ends, in metres?",
+      "q_zh": "两条电动车道长 8 米和 5 米，夹角 60°，两端相距多少米？",
+      "choices": [
+        "6",
+        "9.43",
+        "7",
+        "8"
+      ],
+      "choices_zh": [
+        "6",
+        "9.43",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explain_en": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7.",
+      "explain_zh": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7。",
+      "qtype": "law_of_cosines",
+      "qtype_zh": "余弦定理"
+    },
+    {
+      "id": "l5g10_066",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A Lujiazui ramp forms a right triangle: rise 7, run 24, slope length 25. What is cos of the angle at the bottom?",
+      "q_zh": "陆家嘴一段坡道构成直角三角形：高 7、水平 24、斜边 25，底角的 cos 值是多少？",
+      "choices": [
+        "25/7",
+        "7/24",
+        "0.96"
+      ],
+      "choices_zh": [
+        "25/7",
+        "7/24",
+        "0.96"
+      ],
+      "answer": 2,
+      "explain_en": "24 ÷ 25 = 0.96.",
+      "explain_zh": "24 ÷ 25 = 0.96。",
+      "sign_en": [
+        "25/7",
+        "7/24",
+        "0.96"
+      ],
+      "sign_zh": [
+        "25/7",
+        "7/24",
+        "0.96"
+      ],
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_067",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "An e-bike rental costs C = 4 + 8k yuan for k km. What is C when k = 7?",
+      "q_zh": "租电动车的价钱是 C = 4 + 8k 元（k 为千米数），k = 7 时 C 是多少？",
+      "choices": [
+        "60",
+        "56",
+        "68",
+        "39"
+      ],
+      "choices_zh": [
+        "60",
+        "56",
+        "68",
+        "39"
+      ],
+      "answer": 0,
+      "explain_en": "4 + 8 × 7 = 60.",
+      "explain_zh": "4 + 8 × 7 = 60。",
+      "qtype": "linear_eval",
+      "qtype_zh": "一次函数代入求值"
+    },
+    {
+      "id": "l5g10_068",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "When Flora uses the e-bike brakes hard before a Huaihai Road fork, most of the bike's kinetic energy becomes ____.",
+      "q_zh": "Flora 在淮海路岔路口重重刹车时，车子的动能大部分变成了____。",
+      "choices": [
+        "extra river water",
+        "heat from friction",
+        "new moonlight",
+        "a stored echo"
+      ],
+      "choices_zh": [
+        "多出来的江水",
+        "摩擦产生的热",
+        "新的月光",
+        "存下来的回声"
+      ],
+      "answer": 1,
+      "explain_en": "Brakes do work against motion and warm up through friction.",
+      "explain_zh": "刹车克服运动做功，摩擦会发热。",
+      "qtype": "energy_forms",
+      "qtype_zh": "能量转化与守恒"
+    },
+    {
+      "id": "l5g10_069",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "A tidal river's level ____.",
+      "q_zh": "感潮河段的水位会____。",
+      "choices": [
+        "Rises and falls",
+        "Stays frozen",
+        "Never changes"
+      ],
+      "choices_zh": [
+        "涨落",
+        "一直结冰",
+        "从不变化"
+      ],
+      "answer": 0,
+      "explain_en": "It follows the sea tide.",
+      "explain_zh": "它会随着海潮涨落。",
+      "sign_en": [
+        "Rises and falls",
+        "Stays frozen",
+        "Never changes"
+      ],
+      "sign_zh": [
+        "涨落",
+        "一直结冰",
+        "从不变化"
+      ],
+      "qtype": "water_properties",
+      "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+    },
+    {
+      "id": "l5g10_070",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under Huaihai Road plane trees has height h = -4t² + 16t. What is its maximum height?",
+      "q_zh": "淮海路梧桐下踢起的毽子高度 h = -4t² + 16t，最大高度是多少？",
+      "choices": [
+        "32",
+        "16",
+        "2",
+        "20"
+      ],
+      "choices_zh": [
+        "32",
+        "16",
+        "2",
+        "20"
+      ],
+      "answer": 1,
+      "explain_en": "-4 × 2^2 + 16 × 2 = 16.",
+      "explain_zh": "-4 × 2^2 + 16 × 2 = 16。",
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_071",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I form above a steaming pot of zongzi, I am a gas, and I make the lid wet when I cool. What am I?",
+      "q_zh": "端午谜：我在蒸粽子的锅上出现，我是气体，冷下来还会把锅盖弄湿。打一物，是什么？",
+      "choices": [
+        "Nitrogen ice",
+        "Water vapor",
+        "Dust",
+        "Oil smoke"
+      ],
+      "choices_zh": [
+        "氮冰",
+        "水蒸气",
+        "灰尘",
+        "油烟"
+      ],
+      "answer": 1,
+      "explain_en": "Steam is water vapor; it condenses back into drops on a cool lid.",
+      "explain_zh": "蒸汽是水蒸气，碰到凉锅盖会凝结成水珠。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g10_072",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Standing on the Bund, you look east across the river toward the tall modern towers of ____.",
+      "q_zh": "站在外滩，向东隔江望去，那些高高的现代塔楼是在____。",
+      "choices": [
+        "Lujiazui in Pudong",
+        "an underground metro tunnel",
+        "the open East China Sea horizon only",
+        "a mountain valley in another province"
+      ],
+      "choices_zh": [
+        "浦东陆家嘴",
+        "地铁隧道里",
+        "只是东海的海平线",
+        "外省的山谷"
+      ],
+      "answer": 0,
+      "explain_en": "The Pudong skyline at Lujiazui faces the Bund across the Huangpu.",
+      "explain_zh": "陆家嘴的高楼在浦东，和外面的外滩隔江相望。",
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g10_073",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Green sachets x and gold sachets y: x + y = 25 and x - y = -9. Find x.",
+      "q_zh": "绿香囊 x 只、金香囊 y 只：x + y = 25，x - y = -9，求 x。",
+      "choices": [
+        "9",
+        "25",
+        "8",
+        "17"
+      ],
+      "choices_zh": [
+        "9",
+        "25",
+        "8",
+        "17"
+      ],
+      "answer": 2,
+      "explain_en": "(25 + -9) ÷ 2 = 8.",
+      "explain_zh": "(25 + -9) ÷ 2 = 8。",
+      "qtype": "system_eq",
+      "qtype_zh": "二元一次方程组"
+    },
+    {
+      "id": "l5g10_074",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 4 grows by a factor of 3 every year. How many sparrows after 2 years?",
+      "q_zh": "一群麻雀原有 4 只，每年变成原来的 3 倍，2 年后有多少只？",
+      "choices": [
+        "24",
+        "36",
+        "40"
+      ],
+      "choices_zh": [
+        "24",
+        "36",
+        "40"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 3^2 = 36.",
+      "explain_zh": "4 × 3^2 = 36。",
+      "sign_en": [
+        "24",
+        "36",
+        "40"
+      ],
+      "sign_zh": [
+        "24",
+        "36",
+        "40"
+      ],
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g10_075",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "At Xintiandi the grandma says the welcome line on the wall is from Li Sao. Li Sao is ____.",
+      "q_zh": "新天地的阿婆说，墙上那句迎客的话出自《离骚》。《离骚》是____。",
+      "choices": [
+        "an e-bike repair manual",
+        "a list of bus stops",
+        "a long lyric poem by Qu Yuan",
+        "a tide chart for the Bund"
+      ],
+      "choices_zh": [
+        "电动车修理手册",
+        "公交站名表",
+        "屈原的长篇抒情诗",
+        "外滩的潮汐表"
+      ],
+      "answer": 2,
+      "explain_en": "Li Sao is Qu Yuan's long lyric poem, often remembered around this festival.",
+      "explain_zh": "《离骚》是屈原的长篇抒情诗，过端午时常被人提起。",
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g10_076",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "On the Bund's wet stones, Flora brakes her e-bike and notices she needs more room to stop than on dry Huaihai Road. The main reason is ____.",
+      "q_zh": "外滩石板是湿的，Flora 骑电动车刹车时发现，要比在干的淮海路上留出更长的距离才能停住。主要原因是____。",
+      "choices": [
+        "plane trees add extra mass to the bike",
+        "lower friction on the wet surface",
+        "wet stone makes the motor stronger",
+        "a bus is pulling the bike forward"
+      ],
+      "choices_zh": [
+        "梧桐会给车子加上额外的质量",
+        "潮湿地面上的摩擦更小",
+        "湿石头会让电机更有力",
+        "公交车在把车子往前拉"
+      ],
+      "answer": 1,
+      "explain_en": "Water reduces friction between the tyres and the stones.",
+      "explain_zh": "水会减小轮胎和石板之间的摩擦。",
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g10_077",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A ramp up to the Bund flood wall rises 6 m over a horizontal run of 8 m, with a sloping length of 10 m. What is tan of the ramp's angle?",
+      "q_zh": "上外滩防汛墙的坡道升高 6 米，水平距离 8 米，斜长 10 米。坡角的 tan 值是多少？",
+      "choices": [
+        "0.75",
+        "0.6",
+        "0.8",
+        "4/3"
+      ],
+      "choices_zh": [
+        "0.75",
+        "0.6",
+        "0.8",
+        "4/3"
+      ],
+      "answer": 0,
+      "explain_en": "6 ÷ 8 = 0.75.",
+      "explain_zh": "6 ÷ 8 = 0.75。",
+      "qtype": "trig_ratio",
+      "qtype_zh": "由三边求三角比"
+    },
+    {
+      "id": "l5g10_078",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A bird over the Bund follows h = -4t² + 16t (h in metres, t in seconds). What is its maximum height h?",
+      "q_zh": "外滩上空一只鸟的高度 h = -4t² + 16t（h 单位米，t 单位秒），最大高度 h 是多少？",
+      "choices": [
+        "2",
+        "20",
+        "16",
+        "32"
+      ],
+      "choices_zh": [
+        "2",
+        "20",
+        "16",
+        "32"
+      ],
+      "answer": 2,
+      "explain_en": "-4 × 2^2 + 16 × 2 = 16.",
+      "explain_zh": "-4 × 2^2 + 16 × 2 = 16。",
+      "qtype": "quad_max",
+      "qtype_zh": "二次函数最大值/顶点"
+    },
+    {
+      "id": "l5g10_079",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "From a boat on the Huangpu, the two ends of a Bund viewing stretch are 8 and 5 units away, with a 60° angle between the sight lines. How long is that stretch in those units?",
+      "q_zh": "在黄浦江的船上看外滩一段观景带的两端，距离分别是 8 和 5 个单位，两条视线夹角 60°。这段有多长（同一单位）？",
+      "choices": [
+        "6",
+        "8",
+        "7",
+        "9.43"
+      ],
+      "choices_zh": [
+        "6",
+        "8",
+        "7",
+        "9.43"
+      ],
+      "answer": 2,
+      "explain_en": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7.",
+      "explain_zh": "√(8^2 + 5^2 - 2 × 8 × 5 × cos(60°)) = 7。",
+      "qtype": "law_of_cosines",
+      "qtype_zh": "余弦定理"
+    },
+    {
+      "id": "l5g10_080",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A banner rope runs 30 m from the Bund deck up to a lamp post at 30° above horizontal. How high is the top of the rope above the deck, in metres?",
+      "q_zh": "一根横幅绳从外滩地面拉到灯杆上，长 30 米，与水平面成 30°。绳的顶端离地面多高（米）？",
+      "choices": [
+        "60",
+        "25.98",
+        "15",
+        "16"
+      ],
+      "choices_zh": [
+        "60",
+        "25.98",
+        "15",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "30 × sin(30°) = 15.",
+      "explain_zh": "30 × sin(30°) = 15。",
+      "qtype": "trig_side",
+      "qtype_zh": "用三角函数求边长"
+    },
+    {
+      "id": "l5g10_081",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A bird over the Bund rises with height h = -2t² + 15t (in metres). What is h at t = 1?",
+      "q_zh": "外滩上空一只鸟的高度是 h = -2t² + 15t（单位：米），t = 1 时 h 是多少？",
+      "choices": [
+        "13",
+        "15",
+        "17",
+        "11"
+      ],
+      "choices_zh": [
+        "13",
+        "15",
+        "17",
+        "11"
+      ],
+      "answer": 0,
+      "explain_en": "-2 × 1^2 + 15 × 1 = 13.",
+      "explain_zh": "-2 × 1^2 + 15 × 1 = 13。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g10_082",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "On a city grid (units of 10 m), the Bund flood wall is at (4, -1) and Flora's e-bike is at (7, 3). What is the straight-line distance in grid units?",
+      "q_zh": "在市区坐标图上（单位 10 米），外滩防汛墙在 (4, -1)，Flora 的电动车在 (7, 3)，两点直线距离是几个单位？",
+      "choices": [
+        "4",
+        "5",
+        "12",
+        "7"
+      ],
+      "choices_zh": [
+        "4",
+        "5",
+        "12",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "√(3^2 + 4^2) = 5.",
+      "explain_zh": "√(3^2 + 4^2) = 5。",
+      "qtype": "distance_formula",
+      "qtype_zh": "两点间距离"
+    }
+  ]
+}

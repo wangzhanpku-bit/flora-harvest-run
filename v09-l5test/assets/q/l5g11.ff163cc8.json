@@ -1,0 +1,2350 @@
+{
+  "level": 5,
+  "level_name_en": "Shanghai",
+  "level_name_zh": "上海",
+  "grade": 11,
+  "version": "v1",
+  "fields": "L5 Shanghai / Dragon Boat Festival (e-bike; Lujiazui → the Bund → Huaihai Road → Xintiandi). Same item fields as L3 v3.1 / L4. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 端午摊 Zongzi Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Xintiandi-entrance final (exactly 4 choices, hard, situational). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Xintiandi final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 端午谜：. Stems are deduped against all L1–L4 banks (all grades).",
+  "questions": [
+    {
+      "id": "l5g11_001",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 4, 8, 12 and so on. What is the sum of the first 19 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 4、8、12，依此类推。前 19 排一共多少个？",
+      "choices": [
+        "760",
+        "756",
+        "836"
+      ],
+      "choices_zh": [
+        "760",
+        "756",
+        "836"
+      ],
+      "answer": 0,
+      "explain_en": "19 × (4 + 76) ÷ 2 = 760.",
+      "explain_zh": "19 × (4 + 76) ÷ 2 = 760。",
+      "sign_en": [
+        "760",
+        "756",
+        "836"
+      ],
+      "sign_zh": [
+        "760",
+        "756",
+        "836"
+      ],
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_002",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under the plane trees follows h = -3t² + 7t. What is h when t = 1?",
+      "q_zh": "梧桐树下踢起的毽子高度是 h = -3t² + 7t，t = 1 时 h 是多少？",
+      "choices": [
+        "4",
+        "2",
+        "7",
+        "10"
+      ],
+      "choices_zh": [
+        "4",
+        "2",
+        "7",
+        "10"
+      ],
+      "answer": 0,
+      "explain_en": "-3 × 1^2 + 7 × 1 = 4.",
+      "explain_zh": "-3 × 1^2 + 7 × 1 = 4。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g11_003",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 3 doubles each year. After how many years does it reach 192?",
+      "q_zh": "一群 3 只麻雀每年翻一倍，几年后达到 192 只？",
+      "choices": [
+        "64",
+        "6",
+        "12"
+      ],
+      "choices_zh": [
+        "64",
+        "6",
+        "12"
+      ],
+      "answer": 1,
+      "explain_en": "log₂(192 ÷ 3) = 6.",
+      "explain_zh": "log₂(192 ÷ 3) = 6。",
+      "sign_en": [
+        "64",
+        "6",
+        "12"
+      ],
+      "sign_zh": [
+        "64",
+        "6",
+        "12"
+      ],
+      "qtype": "exp_solve",
+      "qtype_zh": "指数方程求时间"
+    },
+    {
+      "id": "l5g11_004",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 4 of 10 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 10 只不同的香囊里选 4 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "40",
+        "210",
+        "209"
+      ],
+      "choices_zh": [
+        "40",
+        "210",
+        "209"
+      ],
+      "answer": 1,
+      "explain_en": "C(10,4) = 210.",
+      "explain_zh": "C(10,4) = 210。",
+      "sign_en": [
+        "40",
+        "210",
+        "209"
+      ],
+      "sign_zh": [
+        "40",
+        "210",
+        "209"
+      ],
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g11_005",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am the first-quarter-not-yet moon of the fifth lunar day: a slim waxing curve, never a full disc. What am I?",
+      "q_zh": "端午谜：农历初五的我还没到上弦，只是一道渐渐变宽的细弯，绝不是满月。打一自然物，是什么？",
+      "choices": [
+        "A new moon with no light",
+        "A full moon",
+        "A blue sun",
+        "A waxing crescent"
+      ],
+      "choices_zh": [
+        "全暗的新月",
+        "满月",
+        "蓝色太阳",
+        "娥眉月"
+      ],
+      "answer": 3,
+      "explain_en": "The 5th lunar day comes soon after new moon, so the moon is a waxing crescent.",
+      "explain_zh": "农历初五刚过新月，月亮是逐渐变亮的弯月。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g11_006",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display's side n satisfies n² - 15n + 54 = 0. What is the larger root?",
+      "q_zh": "粽子方阵的边长 n 满足 n² - 15n + 54 = 0，较大的根是多少？",
+      "choices": [
+        "9",
+        "15",
+        "6"
+      ],
+      "choices_zh": [
+        "9",
+        "15",
+        "6"
+      ],
+      "answer": 0,
+      "explain_en": "(15 + √(15^2 - 4 × 54)) ÷ 2 = 9.",
+      "explain_zh": "(15 + √(15^2 - 4 × 54)) ÷ 2 = 9。",
+      "sign_en": [
+        "9",
+        "15",
+        "6"
+      ],
+      "sign_zh": [
+        "9",
+        "15",
+        "6"
+      ],
+      "qtype": "quad_solve",
+      "qtype_zh": "解一元二次方程"
+    },
+    {
+      "id": "l5g11_007",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I travel from a drum on the far bank and arrive later than the movement you already saw. What am I?",
+      "q_zh": "端午谜：对岸有人敲鼓，你先看见动作，过一会儿才等到我。打一物，是什么？",
+      "choices": [
+        "A shadow",
+        "The light of day",
+        "The sound of the drum",
+        "A smell of rice"
+      ],
+      "choices_zh": [
+        "影子",
+        "日光",
+        "鼓声",
+        "米香"
+      ],
+      "answer": 2,
+      "explain_en": "Light (or sight of the motion) reaches you before the slower sound.",
+      "explain_zh": "动作的光几乎立刻看到，鼓声传得比较慢。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g11_008",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sachet pattern follows y = 3x² - 18x + 5. What is the x-coordinate of the vertex?",
+      "q_zh": "一个香囊的图案曲线是 y = 3x² - 18x + 5，顶点的横坐标是多少？",
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "18"
+      ],
+      "choices_zh": [
+        "5",
+        "4",
+        "3",
+        "18"
+      ],
+      "answer": 2,
+      "explain_en": "18 ÷ (2 × 3) = 3.",
+      "explain_zh": "18 ÷ (2 × 3) = 3。",
+      "qtype": "vertex_form",
+      "qtype_zh": "顶点式求顶点"
+    },
+    {
+      "id": "l5g11_009",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 14, 23, 32 and so on. What is term 19?",
+      "q_zh": "粽子摊的销量成等差数列：14、23、32，依此类推。第 19 项是多少？",
+      "choices": [
+        "158",
+        "177",
+        "176",
+        "266"
+      ],
+      "choices_zh": [
+        "158",
+        "177",
+        "176",
+        "266"
+      ],
+      "answer": 2,
+      "explain_en": "14 + (19 - 1) × 9 = 176.",
+      "explain_zh": "14 + (19 - 1) × 9 = 176。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_010",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I am a little cloth world of dried herbs, worn at this festival, and my smell is stronger when the air is warm. What am I?",
+      "q_zh": "端午谜：我是一只装着干香草的小布世界，过这个节时人们戴着我，天气越暖我越香。打一物，是什么？",
+      "choices": [
+        "A wet sponge",
+        "A glass cup",
+        "A metal coin",
+        "A sachet"
+      ],
+      "choices_zh": [
+        "湿海绵",
+        "玻璃杯",
+        "硬币",
+        "香囊"
+      ],
+      "answer": 3,
+      "explain_en": "Warm air carries the scent of the herbs in a sachet more easily.",
+      "explain_zh": "空气暖和时，香囊里香草的气味更容易散出来。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g11_011",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In literary history, Li Sao is best described as ____.",
+      "q_zh": "在文学史上，《离骚》最合适的定位是____。",
+      "choices": [
+        "a modern e-bike manual",
+        "a bus route handbook",
+        "a tide table for the Bund",
+        "a long lyric poem by Qu Yuan"
+      ],
+      "choices_zh": [
+        "现代电动车说明书",
+        "公交线路手册",
+        "外滩的潮汐表",
+        "屈原的一首长篇抒情诗"
+      ],
+      "answer": 3,
+      "explain_en": "Li Sao is Qu Yuan's long lyric poem.",
+      "explain_zh": "《离骚》是屈原的长篇抒情诗。",
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g11_012",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "The Huangpu near the Bund is a tidal river. A tidal river is one whose level ____.",
+      "q_zh": "外滩附近的黄浦江是感潮河段。感潮河段的水位会____。",
+      "choices": [
+        "depends only on street-lamp timers",
+        "never changes for any reason",
+        "rises and falls with the sea tide",
+        "is frozen all year"
+      ],
+      "choices_zh": [
+        "只跟路灯开关时间有关",
+        "无论什么原因都不变",
+        "随着海潮涨落",
+        "一年到头都结冰"
+      ],
+      "answer": 2,
+      "explain_en": "Tidal reaches feel the sea's rise and fall, even upstream of the mouth.",
+      "explain_zh": "感潮河段会受到海潮涨落的影响。",
+      "qtype": "water_properties",
+      "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+    },
+    {
+      "id": "l5g11_013",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under the plane trees follows h = -3t² + 16t. What is h when t = 3?",
+      "q_zh": "梧桐树下踢起的毽子高度是 h = -3t² + 16t，t = 3 时 h 是多少？",
+      "choices": [
+        "21",
+        "48",
+        "75",
+        "19"
+      ],
+      "choices_zh": [
+        "21",
+        "48",
+        "75",
+        "19"
+      ],
+      "answer": 0,
+      "explain_en": "-3 × 3^2 + 16 × 3 = 21.",
+      "explain_zh": "-3 × 3^2 + 16 × 3 = 21。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g11_014",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another classic name for this festival, besides 端午, is ____.",
+      "q_zh": "除了「端午」，这个节还有一个常称是____。",
+      "choices": [
+        "秋分市",
+        "元旦集",
+        "端阳",
+        "深冬夜"
+      ],
+      "choices_zh": [
+        "秋分市",
+        "元旦集",
+        "端阳",
+        "深冬夜"
+      ],
+      "answer": 2,
+      "explain_en": "The festival is also called 端阳节.",
+      "explain_zh": "端午节也叫端阳节。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g11_015",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 2 of 9 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 9 只不同香囊里选 2 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "18",
+        "81",
+        "72",
+        "36"
+      ],
+      "choices_zh": [
+        "18",
+        "81",
+        "72",
+        "36"
+      ],
+      "answer": 2,
+      "explain_en": "P(9,2) = 72.",
+      "explain_zh": "P(9,2) = 72。",
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g11_016",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 14, 21, 28 and so on. What is term 19?",
+      "q_zh": "粽子摊的销量成等差数列：14、21、28，依此类推。第 19 项是多少？",
+      "choices": [
+        "147",
+        "140",
+        "141",
+        "266"
+      ],
+      "choices_zh": [
+        "147",
+        "140",
+        "141",
+        "266"
+      ],
+      "answer": 1,
+      "explain_en": "14 + (19 - 1) × 7 = 140.",
+      "explain_zh": "14 + (19 - 1) × 7 = 140。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_017",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The number of zongzi in a stall puzzle solves x² + 4x - 7 = 0. What is the discriminant b² - 4ac?",
+      "q_zh": "一道摊位题里的粽子数满足 x² + 4x - 7 = 0，判别式 b² - 4ac 是多少？",
+      "choices": [
+        "45",
+        "44",
+        "40",
+        "-12"
+      ],
+      "choices_zh": [
+        "45",
+        "44",
+        "40",
+        "-12"
+      ],
+      "answer": 1,
+      "explain_en": "(4)^2 - 4 × 1 × (-7) = 44.",
+      "explain_zh": "(4)^2 - 4 × 1 × (-7) = 44。",
+      "qtype": "discriminant",
+      "qtype_zh": "判别式求值"
+    },
+    {
+      "id": "l5g11_018",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 4 of 7 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 7 只不同的香囊里选 4 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "28",
+        "42",
+        "35"
+      ],
+      "choices_zh": [
+        "28",
+        "42",
+        "35"
+      ],
+      "answer": 2,
+      "explain_en": "C(7,4) = 35.",
+      "explain_zh": "C(7,4) = 35。",
+      "sign_en": [
+        "28",
+        "42",
+        "35"
+      ],
+      "sign_zh": [
+        "28",
+        "42",
+        "35"
+      ],
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g11_019",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 4 of 8 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 8 只不同香囊里选 4 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "1688",
+        "1680",
+        "32",
+        "70"
+      ],
+      "choices_zh": [
+        "1688",
+        "1680",
+        "32",
+        "70"
+      ],
+      "answer": 1,
+      "explain_en": "P(8,4) = 1680.",
+      "explain_zh": "P(8,4) = 1680。",
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g11_020",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 1, 3, 5 and so on. What is the sum of the first 18 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 1、3、5，依此类推。前 18 排一共多少个？",
+      "choices": [
+        "324",
+        "630",
+        "323",
+        "359"
+      ],
+      "choices_zh": [
+        "324",
+        "630",
+        "323",
+        "359"
+      ],
+      "answer": 0,
+      "explain_en": "18 × (1 + 35) ÷ 2 = 324.",
+      "explain_zh": "18 × (1 + 35) ÷ 2 = 324。",
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_021",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 7, 14, 21 and so on. What is term 8?",
+      "q_zh": "粽子摊的销量成等差数列：7、14、21，依此类推。第 8 项是多少？",
+      "choices": [
+        "42",
+        "56",
+        "57",
+        "63"
+      ],
+      "choices_zh": [
+        "42",
+        "56",
+        "57",
+        "63"
+      ],
+      "answer": 1,
+      "explain_en": "7 + (8 - 1) × 7 = 56.",
+      "explain_zh": "7 + (8 - 1) × 7 = 56。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_022",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "{name} hangs 4 of 9 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "{name} 从 9 只不同香囊里选 4 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "126",
+        "3024",
+        "3033",
+        "6561"
+      ],
+      "choices_zh": [
+        "126",
+        "3024",
+        "3033",
+        "6561"
+      ],
+      "answer": 1,
+      "explain_en": "P(9,4) = 3024.",
+      "explain_zh": "P(9,4) = 3024。",
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g11_023",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Wet Bund stones mean ____ friction.",
+      "q_zh": "外滩石板潮湿，意味着摩擦____。",
+      "choices": [
+        "Unchanged heat",
+        "Less",
+        "Infinite"
+      ],
+      "choices_zh": [
+        "热量不变",
+        "更小",
+        "无穷大"
+      ],
+      "answer": 1,
+      "explain_en": "Water reduces tyre friction.",
+      "explain_zh": "水会减小轮胎摩擦。",
+      "sign_en": [
+        "Unchanged heat",
+        "Less",
+        "Infinite"
+      ],
+      "sign_zh": [
+        "热量不变",
+        "更小",
+        "无穷大"
+      ],
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g11_024",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Sachets are handed out 4, 12, 36 and so on, for 6 rounds. How many in total?",
+      "q_zh": "香囊按 4、12、36，依此类推，发了 6 轮，一共多少只？",
+      "choices": [
+        "1460",
+        "1452",
+        "972",
+        "1456"
+      ],
+      "choices_zh": [
+        "1460",
+        "1452",
+        "972",
+        "1456"
+      ],
+      "answer": 3,
+      "explain_en": "4 × (3^6 - 1) ÷ (3 - 1) = 1456.",
+      "explain_zh": "4 × (3^6 - 1) ÷ (3 - 1) = 1456。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    },
+    {
+      "id": "l5g11_025",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sachet pattern follows y = 3x² - 48x + 15. What is the x-coordinate of the vertex?",
+      "q_zh": "一个香囊的图案曲线是 y = 3x² - 48x + 15，顶点的横坐标是多少？",
+      "choices": [
+        "15",
+        "8",
+        "9",
+        "48"
+      ],
+      "choices_zh": [
+        "15",
+        "8",
+        "9",
+        "48"
+      ],
+      "answer": 1,
+      "explain_en": "48 ÷ (2 × 3) = 8.",
+      "explain_zh": "48 ÷ (2 × 3) = 8。",
+      "qtype": "vertex_form",
+      "qtype_zh": "顶点式求顶点"
+    },
+    {
+      "id": "l5g11_026",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display's side n satisfies n² - 23n + 132 = 0. What is the larger root?",
+      "q_zh": "粽子方阵的边长 n 满足 n² - 23n + 132 = 0，较大的根是多少？",
+      "choices": [
+        "12",
+        "11",
+        "23"
+      ],
+      "choices_zh": [
+        "12",
+        "11",
+        "23"
+      ],
+      "answer": 0,
+      "explain_en": "(23 + √(23^2 - 4 × 132)) ÷ 2 = 12.",
+      "explain_zh": "(23 + √(23^2 - 4 × 132)) ÷ 2 = 12。",
+      "sign_en": [
+        "12",
+        "11",
+        "23"
+      ],
+      "sign_zh": [
+        "12",
+        "11",
+        "23"
+      ],
+      "qtype": "quad_solve",
+      "qtype_zh": "解一元二次方程"
+    },
+    {
+      "id": "l5g11_027",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 9, 15, 21 and so on. What is term 16?",
+      "q_zh": "粽子摊的销量成等差数列：9、15、21，依此类推。第 16 项是多少？",
+      "choices": [
+        "105",
+        "87",
+        "99",
+        "144"
+      ],
+      "choices_zh": [
+        "105",
+        "87",
+        "99",
+        "144"
+      ],
+      "answer": 2,
+      "explain_en": "9 + (16 - 1) × 6 = 99.",
+      "explain_zh": "9 + (16 - 1) × 6 = 99。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_028",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 2 of 12 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 12 只不同的香囊里选 2 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "66",
+        "132",
+        "65"
+      ],
+      "choices_zh": [
+        "66",
+        "132",
+        "65"
+      ],
+      "answer": 0,
+      "explain_en": "C(12,2) = 66.",
+      "explain_zh": "C(12,2) = 66。",
+      "sign_en": [
+        "66",
+        "132",
+        "65"
+      ],
+      "sign_zh": [
+        "66",
+        "132",
+        "65"
+      ],
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g11_029",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 3, 5, 7 and so on. What is the sum of the first 11 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 3、5、7，依此类推。前 11 排一共多少个？",
+      "choices": [
+        "143",
+        "166",
+        "286"
+      ],
+      "choices_zh": [
+        "143",
+        "166",
+        "286"
+      ],
+      "answer": 0,
+      "explain_en": "11 × (3 + 23) ÷ 2 = 143.",
+      "explain_zh": "11 × (3 + 23) ÷ 2 = 143。",
+      "sign_en": [
+        "143",
+        "166",
+        "286"
+      ],
+      "sign_zh": [
+        "143",
+        "166",
+        "286"
+      ],
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_030",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Water drops hold together partly by ____.",
+      "q_zh": "水珠能聚在一起，部分是靠____。",
+      "choices": [
+        "Hydrogen bonds",
+        "Steel cables",
+        "Echoes"
+      ],
+      "choices_zh": [
+        "氢键",
+        "钢缆",
+        "回声"
+      ],
+      "answer": 0,
+      "explain_en": "Hydrogen bonds act between water molecules.",
+      "explain_zh": "水分子之间有氢键。",
+      "sign_en": [
+        "Hydrogen bonds",
+        "Steel cables",
+        "Echoes"
+      ],
+      "sign_zh": [
+        "氢键",
+        "钢缆",
+        "回声"
+      ],
+      "qtype": "chem_bonds",
+      "qtype_zh": "化学键（氢键）"
+    },
+    {
+      "id": "l5g11_031",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 10, 17, 24 and so on. What is term 10?",
+      "q_zh": "粽子摊的销量成等差数列：10、17、24，依此类推。第 10 项是多少？",
+      "choices": [
+        "73",
+        "80",
+        "100",
+        "74"
+      ],
+      "choices_zh": [
+        "73",
+        "80",
+        "100",
+        "74"
+      ],
+      "answer": 0,
+      "explain_en": "10 + (10 - 1) × 7 = 73.",
+      "explain_zh": "10 + (10 - 1) × 7 = 73。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_032",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 8, 9, 10 and so on. What is the sum of the first 16 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 8、9、10，依此类推。前 16 排一共多少个？",
+      "choices": [
+        "368",
+        "496",
+        "248"
+      ],
+      "choices_zh": [
+        "368",
+        "496",
+        "248"
+      ],
+      "answer": 2,
+      "explain_en": "16 × (8 + 23) ÷ 2 = 248.",
+      "explain_zh": "16 × (8 + 23) ÷ 2 = 248。",
+      "sign_en": [
+        "368",
+        "496",
+        "248"
+      ],
+      "sign_zh": [
+        "368",
+        "496",
+        "248"
+      ],
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_033",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I hunt insects at dusk above the Huangpu, I fold my wings by day, and I am not a bird. What am I?",
+      "q_zh": "端午谜：傍晚我在黄浦江上空捉虫，白天收起翅膀，可我不是鸟。打一动物，是什么？",
+      "choices": [
+        "A duck",
+        "A butterfly",
+        "A bat",
+        "A sparrow"
+      ],
+      "choices_zh": [
+        "鸭子",
+        "蝴蝶",
+        "蝙蝠",
+        "麻雀"
+      ],
+      "answer": 2,
+      "explain_en": "Bats are mammals that fly at dusk and eat insects.",
+      "explain_zh": "蝙蝠在黄昏飞出来捉虫，不是鸟。",
+      "qtype": "riddle_animal",
+      "qtype_zh": "端午谜·动物谜（猜动物）"
+    },
+    {
+      "id": "l5g11_034",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under the plane trees follows h = -2t² + 9t. What is h when t = 3?",
+      "q_zh": "梧桐树下踢起的毽子高度是 h = -2t² + 9t，t = 3 时 h 是多少？",
+      "choices": [
+        "11",
+        "9",
+        "7",
+        "45"
+      ],
+      "choices_zh": [
+        "11",
+        "9",
+        "7",
+        "45"
+      ],
+      "answer": 1,
+      "explain_en": "-2 × 3^2 + 9 × 3 = 9.",
+      "explain_zh": "-2 × 3^2 + 9 × 3 = 9。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g11_035",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 4, 10, 16 and so on. What is term 12?",
+      "q_zh": "粽子摊的销量成等差数列：4、10、16，依此类推。第 12 项是多少？",
+      "choices": [
+        "70",
+        "71",
+        "58",
+        "76"
+      ],
+      "choices_zh": [
+        "70",
+        "71",
+        "58",
+        "76"
+      ],
+      "answer": 0,
+      "explain_en": "4 + (12 - 1) × 6 = 70.",
+      "explain_zh": "4 + (12 - 1) × 6 = 70。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_036",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "A tidal river's level ____.",
+      "q_zh": "感潮河段的水位会____。",
+      "choices": [
+        "Rises and falls",
+        "Never changes",
+        "Stays frozen"
+      ],
+      "choices_zh": [
+        "涨落",
+        "从不变化",
+        "一直结冰"
+      ],
+      "answer": 0,
+      "explain_en": "It follows the sea tide.",
+      "explain_zh": "它会随着海潮涨落。",
+      "sign_en": [
+        "Rises and falls",
+        "Never changes",
+        "Stays frozen"
+      ],
+      "sign_zh": [
+        "涨落",
+        "从不变化",
+        "一直结冰"
+      ],
+      "qtype": "water_properties",
+      "qtype_zh": "水和冰的特性（膨胀/六角/分子/比热）"
+    },
+    {
+      "id": "l5g11_037",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 9 doubles each year. After how many years does it reach 72?",
+      "q_zh": "一群 9 只麻雀每年翻一倍，几年后达到 72 只？",
+      "choices": [
+        "3",
+        "4",
+        "6"
+      ],
+      "choices_zh": [
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "explain_en": "log₂(72 ÷ 9) = 3.",
+      "explain_zh": "log₂(72 ÷ 9) = 3。",
+      "sign_en": [
+        "3",
+        "4",
+        "6"
+      ],
+      "sign_zh": [
+        "3",
+        "4",
+        "6"
+      ],
+      "qtype": "exp_solve",
+      "qtype_zh": "指数方程求时间"
+    },
+    {
+      "id": "l5g11_038",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The number of zongzi in a stall puzzle solves 3x² - x - 6 = 0. What is the discriminant b² - 4ac?",
+      "q_zh": "一道摊位题里的粽子数满足 3x² - x - 6 = 0，判别式 b² - 4ac 是多少？",
+      "choices": [
+        "73",
+        "71",
+        "-71",
+        "69"
+      ],
+      "choices_zh": [
+        "73",
+        "71",
+        "-71",
+        "69"
+      ],
+      "answer": 0,
+      "explain_en": "(-1)^2 - 4 × 3 × (-6) = 73.",
+      "explain_zh": "(-1)^2 - 4 × 3 × (-6) = 73。",
+      "qtype": "discriminant",
+      "qtype_zh": "判别式求值"
+    },
+    {
+      "id": "l5g11_039",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "The idiom 乘风破浪, if used of a dragon boat on the Huangpu, pictures the boat ____.",
+      "q_zh": "如果用成语「乘风破浪」来说黄浦江上的龙舟，是在形容船____。",
+      "choices": [
+        "waiting forever at a red light",
+        "sleeping in a shop window",
+        "turning into a plane tree",
+        "pressing ahead through wind and waves"
+      ],
+      "choices_zh": [
+        "永远在红灯前等着",
+        "在橱窗里睡觉",
+        "变成一棵梧桐",
+        "迎着风浪向前"
+      ],
+      "answer": 3,
+      "explain_en": "乘风破浪 means pushing forward through wind and waves.",
+      "explain_zh": "乘风破浪就是迎着风浪向前。",
+      "qtype": "zh_idiom_poem",
+      "qtype_zh": "成语与古诗"
+    },
+    {
+      "id": "l5g11_040",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "In 端午节, the character 午 originally points to ____ in the traditional lunar month system.",
+      "q_zh": "「端午节」里的「午」，在传统月序里本来指向____。",
+      "choices": [
+        "the fifth lunar month (午月)",
+        "a kind of dessert only",
+        "the twelfth solar term's shoe",
+        "a typo for 牛"
+      ],
+      "choices_zh": [
+        "农历五月（午月）",
+        "只是一种甜品",
+        "某个节气的鞋子",
+        "「牛」的错字"
+      ],
+      "answer": 0,
+      "explain_en": "午月 is the fifth lunar month when the year is counted from 寅月.",
+      "explain_zh": "以寅月为正月时，午月就是五月。",
+      "qtype": "zh_character",
+      "qtype_zh": "汉字字义"
+    },
+    {
+      "id": "l5g11_041",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "A stall says \"most visitors who buy sweet-bean zongzi also buy a sachet, so sachets cause people to like sweet-bean filling.\" The weak point is that ____.",
+      "q_zh": "有摊位说：「买豆沙粽的客人大多也买香囊，所以是香囊让人喜欢豆沙馅。」这个说法的问题在于____。",
+      "choices": [
+        "sachets are not real objects",
+        "zongzi cannot be counted",
+        "correlation is not the same as cause",
+        "no one ever buys both"
+      ],
+      "choices_zh": [
+        "香囊不是实物",
+        "粽子无法计数",
+        "相关并不等于因果",
+        "从来没人两样都买"
+      ],
+      "answer": 2,
+      "explain_en": "Two things happening together does not prove that one causes the other.",
+      "explain_zh": "两件事一起出现，并不能证明一件导致了另一件。",
+      "qtype": "stats_reasoning",
+      "qtype_zh": "科学推理/统计（相关≠因果/抽样/置信区间）"
+    },
+    {
+      "id": "l5g11_042",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Another name for Duanwu is ____.",
+      "q_zh": "端午的另一个名称是____。",
+      "choices": [
+        "DuanYang",
+        "Mid-autumn only",
+        "Deep winter"
+      ],
+      "choices_zh": [
+        "端阳",
+        "只是中秋",
+        "深冬"
+      ],
+      "answer": 0,
+      "explain_en": "The festival is also called 端阳.",
+      "explain_zh": "端午也叫端阳。",
+      "sign_en": [
+        "DuanYang",
+        "Mid-autumn only",
+        "Deep winter"
+      ],
+      "sign_zh": [
+        "端阳",
+        "只是中秋",
+        "深冬"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g11_043",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "When Flora uses the e-bike brakes hard before a Huaihai Road fork, most of the bike's kinetic energy becomes ____.",
+      "q_zh": "Flora 在淮海路岔路口重重刹车时，车子的动能大部分变成了____。",
+      "choices": [
+        "new moonlight",
+        "a stored echo",
+        "extra river water",
+        "heat from friction"
+      ],
+      "choices_zh": [
+        "新的月光",
+        "存下来的回声",
+        "多出来的江水",
+        "摩擦产生的热"
+      ],
+      "answer": 3,
+      "explain_en": "Brakes do work against motion and warm up through friction.",
+      "explain_zh": "刹车克服运动做功，摩擦会发热。",
+      "qtype": "energy_forms",
+      "qtype_zh": "能量转化与守恒"
+    },
+    {
+      "id": "l5g11_044",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Xintiandi kept ____ fronts.",
+      "q_zh": "新天地保留了____门面。",
+      "choices": [
+        "Barn",
+        "Shikumen",
+        "Igloo"
+      ],
+      "choices_zh": [
+        "农仓",
+        "石库门",
+        "冰屋"
+      ],
+      "answer": 1,
+      "explain_en": "Shikumen fronts were kept.",
+      "explain_zh": "保留的是石库门门面。",
+      "sign_en": [
+        "Barn",
+        "Shikumen",
+        "Igloo"
+      ],
+      "sign_zh": [
+        "农仓",
+        "石库门",
+        "冰屋"
+      ],
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g11_045",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sachet pattern follows y = 3x² - 6x + 14. What is the x-coordinate of the vertex?",
+      "q_zh": "一个香囊的图案曲线是 y = 3x² - 6x + 14，顶点的横坐标是多少？",
+      "choices": [
+        "14",
+        "6",
+        "2",
+        "1"
+      ],
+      "choices_zh": [
+        "14",
+        "6",
+        "2",
+        "1"
+      ],
+      "answer": 3,
+      "explain_en": "6 ÷ (2 × 3) = 1.",
+      "explain_zh": "6 ÷ (2 × 3) = 1。",
+      "qtype": "vertex_form",
+      "qtype_zh": "顶点式求顶点"
+    },
+    {
+      "id": "l5g11_046",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 6, 11, 16 and so on. What is the sum of the first 15 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 6、11、16，依此类推。前 15 排一共多少个？",
+      "choices": [
+        "691",
+        "1140",
+        "1230",
+        "615"
+      ],
+      "choices_zh": [
+        "691",
+        "1140",
+        "1230",
+        "615"
+      ],
+      "answer": 3,
+      "explain_en": "15 × (6 + 76) ÷ 2 = 615.",
+      "explain_zh": "15 × (6 + 76) ÷ 2 = 615。",
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_047",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 6, 11, 16 and so on. What is the sum of the first 17 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 6、11、16，依此类推。前 17 排一共多少个？",
+      "choices": [
+        "1564",
+        "782",
+        "868"
+      ],
+      "choices_zh": [
+        "1564",
+        "782",
+        "868"
+      ],
+      "answer": 1,
+      "explain_en": "17 × (6 + 86) ÷ 2 = 782.",
+      "explain_zh": "17 × (6 + 86) ÷ 2 = 782。",
+      "sign_en": [
+        "1564",
+        "782",
+        "868"
+      ],
+      "sign_zh": [
+        "1564",
+        "782",
+        "868"
+      ],
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_048",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display's side n satisfies n² - 15n + 50 = 0. What is the larger root?",
+      "q_zh": "粽子方阵的边长 n 满足 n² - 15n + 50 = 0，较大的根是多少？",
+      "choices": [
+        "15",
+        "10",
+        "5"
+      ],
+      "choices_zh": [
+        "15",
+        "10",
+        "5"
+      ],
+      "answer": 1,
+      "explain_en": "(15 + √(15^2 - 4 × 50)) ÷ 2 = 10.",
+      "explain_zh": "(15 + √(15^2 - 4 × 50)) ÷ 2 = 10。",
+      "sign_en": [
+        "15",
+        "10",
+        "5"
+      ],
+      "sign_zh": [
+        "15",
+        "10",
+        "5"
+      ],
+      "qtype": "quad_solve",
+      "qtype_zh": "解一元二次方程"
+    },
+    {
+      "id": "l5g11_049",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Lunar day 5 is a ____ moon.",
+      "q_zh": "农历初五是____。",
+      "choices": [
+        "Waxing crescent",
+        "Full moon",
+        "Last quarter"
+      ],
+      "choices_zh": [
+        "娥眉月",
+        "满月",
+        "下弦"
+      ],
+      "answer": 0,
+      "explain_en": "Day 5 is a waxing crescent.",
+      "explain_zh": "初五是娥眉月，不是满月。",
+      "sign_en": [
+        "Waxing crescent",
+        "Full moon",
+        "Last quarter"
+      ],
+      "sign_zh": [
+        "娥眉月",
+        "满月",
+        "下弦"
+      ],
+      "qtype": "moon_calendar",
+      "qtype_zh": "月相与农历（端午日期）"
+    },
+    {
+      "id": "l5g11_050",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Choose 2 of 6 different sachets for the team, order does not matter. How many ways?",
+      "q_zh": "从 6 只不同的香囊里选 2 只给队友，不计顺序，有多少种选法？",
+      "choices": [
+        "12",
+        "14",
+        "15"
+      ],
+      "choices_zh": [
+        "12",
+        "14",
+        "15"
+      ],
+      "answer": 2,
+      "explain_en": "C(6,2) = 15.",
+      "explain_zh": "C(6,2) = 15。",
+      "sign_en": [
+        "12",
+        "14",
+        "15"
+      ],
+      "sign_zh": [
+        "12",
+        "14",
+        "15"
+      ],
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g11_051",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under the plane trees follows h = -t² + 11t. What is h when t = 3?",
+      "q_zh": "梧桐树下踢起的毽子高度是 h = -t² + 11t，t = 3 时 h 是多少？",
+      "choices": [
+        "33",
+        "22",
+        "24",
+        "25"
+      ],
+      "choices_zh": [
+        "33",
+        "22",
+        "24",
+        "25"
+      ],
+      "answer": 2,
+      "explain_en": "-1 × 3^2 + 11 × 3 = 24.",
+      "explain_zh": "-1 × 3^2 + 11 × 3 = 24。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g11_052",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "Which is the most accurate description of Xintiandi?",
+      "q_zh": "下面哪一句对「新天地」说得最准确？",
+      "choices": [
+        "A Shanghai block that kept shikumen fronts and added modern shops",
+        "A fishing village with no buildings",
+        "A desert trading post",
+        "A ski resort above the treeline"
+      ],
+      "choices_zh": [
+        "一个保留石库门门面、又加入现代店铺的上海街区",
+        "一个没有房子的渔村",
+        "一个沙漠商站",
+        "一个在树线以上的滑雪场"
+      ],
+      "answer": 0,
+      "explain_en": "Xintiandi reused shikumen street faces with new interiors and shops.",
+      "explain_zh": "新天地保留了石库门的街面，里面则是新的店铺。",
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g11_053",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Sachets are handed out 2, 6, 18 and so on, for 6 rounds. How many in total?",
+      "q_zh": "香囊按 2、6、18，依此类推，发了 6 轮，一共多少只？",
+      "choices": [
+        "730",
+        "726",
+        "728",
+        "486"
+      ],
+      "choices_zh": [
+        "730",
+        "726",
+        "728",
+        "486"
+      ],
+      "answer": 2,
+      "explain_en": "2 × (3^6 - 1) ÷ (3 - 1) = 728.",
+      "explain_zh": "2 × (3^6 - 1) ÷ (3 - 1) = 728。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    },
+    {
+      "id": "l5g11_054",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Sachets are handed out 3, 9, 27 and so on, for 6 rounds. How many in total?",
+      "q_zh": "香囊按 3、9、27，依此类推，发了 6 轮，一共多少只？",
+      "choices": [
+        "1089",
+        "2187",
+        "1095",
+        "1092"
+      ],
+      "choices_zh": [
+        "1089",
+        "2187",
+        "1095",
+        "1092"
+      ],
+      "answer": 3,
+      "explain_en": "3 × (3^6 - 1) ÷ (3 - 1) = 1092.",
+      "explain_zh": "3 × (3^6 - 1) ÷ (3 - 1) = 1092。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    },
+    {
+      "id": "l5g11_055",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display's side n satisfies n² - 9n + 18 = 0. What is the larger root?",
+      "q_zh": "粽子方阵的边长 n 满足 n² - 9n + 18 = 0，较大的根是多少？",
+      "choices": [
+        "6",
+        "3",
+        "18"
+      ],
+      "choices_zh": [
+        "6",
+        "3",
+        "18"
+      ],
+      "answer": 0,
+      "explain_en": "(9 + √(9^2 - 4 × 18)) ÷ 2 = 6.",
+      "explain_zh": "(9 + √(9^2 - 4 × 18)) ÷ 2 = 6。",
+      "sign_en": [
+        "6",
+        "3",
+        "18"
+      ],
+      "sign_zh": [
+        "6",
+        "3",
+        "18"
+      ],
+      "qtype": "quad_solve",
+      "qtype_zh": "解一元二次方程"
+    },
+    {
+      "id": "l5g11_056",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 2 doubles each year. After how many years does it reach 8?",
+      "q_zh": "一群 2 只麻雀每年翻一倍，几年后达到 8 只？",
+      "choices": [
+        "4",
+        "1",
+        "2"
+      ],
+      "choices_zh": [
+        "4",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explain_en": "log₂(8 ÷ 2) = 2.",
+      "explain_zh": "log₂(8 ÷ 2) = 2。",
+      "sign_en": [
+        "4",
+        "1",
+        "2"
+      ],
+      "sign_zh": [
+        "4",
+        "1",
+        "2"
+      ],
+      "qtype": "exp_solve",
+      "qtype_zh": "指数方程求时间"
+    },
+    {
+      "id": "l5g11_057",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sparrow flock of 5 doubles each year. After how many years does it reach 160?",
+      "q_zh": "一群 5 只麻雀每年翻一倍，几年后达到 160 只？",
+      "choices": [
+        "32",
+        "5",
+        "4"
+      ],
+      "choices_zh": [
+        "32",
+        "5",
+        "4"
+      ],
+      "answer": 1,
+      "explain_en": "log₂(160 ÷ 5) = 5.",
+      "explain_zh": "log₂(160 ÷ 5) = 5。",
+      "sign_en": [
+        "32",
+        "5",
+        "4"
+      ],
+      "sign_zh": [
+        "32",
+        "5",
+        "4"
+      ],
+      "qtype": "exp_solve",
+      "qtype_zh": "指数方程求时间"
+    },
+    {
+      "id": "l5g11_058",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sachet pattern follows y = x² - 12x + 4. What is the x-coordinate of the vertex?",
+      "q_zh": "一个香囊的图案曲线是 y = x² - 12x + 4，顶点的横坐标是多少？",
+      "choices": [
+        "4",
+        "6",
+        "7",
+        "12"
+      ],
+      "choices_zh": [
+        "4",
+        "6",
+        "7",
+        "12"
+      ],
+      "answer": 1,
+      "explain_en": "12 ÷ (2 × 1) = 6.",
+      "explain_zh": "12 ÷ (2 × 1) = 6。",
+      "qtype": "vertex_form",
+      "qtype_zh": "顶点式求顶点"
+    },
+    {
+      "id": "l5g11_059",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi stall sales form an arithmetic sequence: 13, 17, 21 and so on. What is term 20?",
+      "q_zh": "粽子摊的销量成等差数列：13、17、21，依此类推。第 20 项是多少？",
+      "choices": [
+        "90",
+        "81",
+        "89",
+        "93"
+      ],
+      "choices_zh": [
+        "90",
+        "81",
+        "89",
+        "93"
+      ],
+      "answer": 2,
+      "explain_en": "13 + (20 - 1) × 4 = 89.",
+      "explain_zh": "13 + (20 - 1) × 4 = 89。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_060",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora hangs 3 of 6 different sachets in a row on a stall; order matters. How many arrangements?",
+      "q_zh": "Flora 从 6 只不同香囊里选 3 只挂成一排，计顺序，有多少种挂法？",
+      "choices": [
+        "126",
+        "18",
+        "120",
+        "20"
+      ],
+      "choices_zh": [
+        "126",
+        "18",
+        "120",
+        "20"
+      ],
+      "answer": 2,
+      "explain_en": "P(6,3) = 120.",
+      "explain_zh": "P(6,3) = 120。",
+      "qtype": "permutations",
+      "qtype_zh": "排列数（计顺序）"
+    },
+    {
+      "id": "l5g11_061",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Rows of seats at a dragon-boat show hold 10, 13, 16 and so on. What is the sum of the first 7 rows?",
+      "q_zh": "龙舟表演的座位每排依次是 10、13、16，依此类推。前 7 排一共多少个？",
+      "choices": [
+        "266",
+        "133",
+        "161"
+      ],
+      "choices_zh": [
+        "266",
+        "133",
+        "161"
+      ],
+      "answer": 1,
+      "explain_en": "7 × (10 + 28) ÷ 2 = 133.",
+      "explain_zh": "7 × (10 + 28) ÷ 2 = 133。",
+      "sign_en": [
+        "266",
+        "133",
+        "161"
+      ],
+      "sign_zh": [
+        "266",
+        "133",
+        "161"
+      ],
+      "qtype": "arith_series_sum",
+      "qtype_zh": "等差数列求和"
+    },
+    {
+      "id": "l5g11_062",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A sachet pattern follows y = 2x² - 28x + 12. What is the x-coordinate of the vertex?",
+      "q_zh": "一个香囊的图案曲线是 y = 2x² - 28x + 12，顶点的横坐标是多少？",
+      "choices": [
+        "12",
+        "7",
+        "8",
+        "28"
+      ],
+      "choices_zh": [
+        "12",
+        "7",
+        "8",
+        "28"
+      ],
+      "answer": 1,
+      "explain_en": "28 ÷ (2 × 2) = 7.",
+      "explain_zh": "28 ÷ (2 × 2) = 7。",
+      "qtype": "vertex_form",
+      "qtype_zh": "顶点式求顶点"
+    },
+    {
+      "id": "l5g11_063",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Water drops that form on a cool zongzi-pot lid are held together in part by ____ between water molecules.",
+      "q_zh": "凉锅盖上那些水珠能聚在一起，部分是因为水分子之间的____。",
+      "choices": [
+        "echoes",
+        "hydrogen bonds",
+        "plane-tree roots",
+        "steel cables"
+      ],
+      "choices_zh": [
+        "回声",
+        "氢键",
+        "梧桐树根",
+        "钢缆"
+      ],
+      "answer": 1,
+      "explain_en": "Hydrogen bonds help water molecules stick to one another.",
+      "explain_zh": "氢键让水分子彼此靠近，水珠才能聚起来。",
+      "qtype": "chem_bonds",
+      "qtype_zh": "化学键（氢键）"
+    },
+    {
+      "id": "l5g11_064",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Reed or bamboo leaves are good wrappers for zongzi partly because they ____.",
+      "q_zh": "箬叶或竹叶适合包粽子，部分原因是它们____。",
+      "choices": [
+        "dissolve into sugar at once",
+        "are made of glass",
+        "are flexible, hold the rice, and add aroma when heated",
+        "block all heat so rice stays raw"
+      ],
+      "choices_zh": [
+        "会马上化成糖",
+        "是玻璃做的",
+        "柔韧、能裹住米，加热时还会带出香气",
+        "挡住所有热，让米一直生着"
+      ],
+      "answer": 2,
+      "explain_en": "The leaves wrap well and give a fresh smell when steamed.",
+      "explain_zh": "这些叶子柔韧能包米，蒸的时候还有清香。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g11_065",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "Hard braking turns kinetic energy mainly into ____.",
+      "q_zh": "急刹车时动能主要变成____。",
+      "choices": [
+        "Heat",
+        "Echoes",
+        "Moonlight"
+      ],
+      "choices_zh": [
+        "热量",
+        "回声",
+        "月光"
+      ],
+      "answer": 0,
+      "explain_en": "Friction in the brakes produces heat.",
+      "explain_zh": "刹车摩擦会发热。",
+      "sign_en": [
+        "Heat",
+        "Echoes",
+        "Moonlight"
+      ],
+      "sign_zh": [
+        "热量",
+        "回声",
+        "月光"
+      ],
+      "qtype": "energy_forms",
+      "qtype_zh": "能量转化与守恒"
+    },
+    {
+      "id": "l5g11_066",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I peel my own coat in grey and cream patches, and I still stand for decades on Huaihai Road. What am I?",
+      "q_zh": "端午谜：我自己一片片脱掉外衣，灰的米色的都有，却能在淮海路站上几十年。打一物，是什么？",
+      "choices": [
+        "A snake skin left on a path",
+        "Plane-tree bark",
+        "A paper wrapper",
+        "A painted wall"
+      ],
+      "choices_zh": [
+        "路上的蛇蜕",
+        "梧桐树皮",
+        "纸包",
+        "粉刷墙"
+      ],
+      "answer": 1,
+      "explain_en": "London plane trees shed bark in mottled patches.",
+      "explain_zh": "法国梧桐的树皮会一块块脱落，留下斑驳的花纹。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g11_067",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A shuttlecock kicked under the plane trees follows h = -t² + 13t. What is h when t = 2?",
+      "q_zh": "梧桐树下踢起的毽子高度是 h = -t² + 13t，t = 2 时 h 是多少？",
+      "choices": [
+        "23",
+        "30",
+        "20",
+        "22"
+      ],
+      "choices_zh": [
+        "23",
+        "30",
+        "20",
+        "22"
+      ],
+      "answer": 3,
+      "explain_en": "-1 × 2^2 + 13 × 2 = 22.",
+      "explain_zh": "-1 × 2^2 + 13 × 2 = 22。",
+      "qtype": "quad_eval",
+      "qtype_zh": "二次函数代入求值"
+    },
+    {
+      "id": "l5g11_068",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "hard",
+      "q_en": "Festival riddle: I form above a steaming pot of zongzi, I am a gas, and I make the lid wet when I cool. What am I?",
+      "q_zh": "端午谜：我在蒸粽子的锅上出现，我是气体，冷下来还会把锅盖弄湿。打一物，是什么？",
+      "choices": [
+        "Oil smoke",
+        "Nitrogen ice",
+        "Water vapor",
+        "Dust"
+      ],
+      "choices_zh": [
+        "油烟",
+        "氮冰",
+        "水蒸气",
+        "灰尘"
+      ],
+      "answer": 2,
+      "explain_en": "Steam is water vapor; it condenses back into drops on a cool lid.",
+      "explain_zh": "蒸汽是水蒸气，碰到凉锅盖会凝结成水珠。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g11_069",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A zongzi display's side n satisfies n² - 6n + 5 = 0. What is the larger root?",
+      "q_zh": "粽子方阵的边长 n 满足 n² - 6n + 5 = 0，较大的根是多少？",
+      "choices": [
+        "6",
+        "1",
+        "5"
+      ],
+      "choices_zh": [
+        "6",
+        "1",
+        "5"
+      ],
+      "answer": 2,
+      "explain_en": "(6 + √(6^2 - 4 × 5)) ÷ 2 = 5.",
+      "explain_zh": "(6 + √(6^2 - 4 × 5)) ÷ 2 = 5。",
+      "sign_en": [
+        "6",
+        "1",
+        "5"
+      ],
+      "sign_zh": [
+        "6",
+        "1",
+        "5"
+      ],
+      "qtype": "quad_solve",
+      "qtype_zh": "解一元二次方程"
+    },
+    {
+      "id": "l5g11_070",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Sachets are handed out 5, 10, 20 and so on, for 4 rounds. How many in total?",
+      "q_zh": "香囊按 5、10、20，依此类推，发了 4 轮，一共多少只？",
+      "choices": [
+        "75",
+        "40",
+        "80",
+        "70"
+      ],
+      "choices_zh": [
+        "75",
+        "40",
+        "80",
+        "70"
+      ],
+      "answer": 0,
+      "explain_en": "5 × (2^4 - 1) ÷ (2 - 1) = 75.",
+      "explain_zh": "5 × (2^4 - 1) ÷ (2 - 1) = 75。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    },
+    {
+      "id": "l5g11_071",
+      "level": 5,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "hard",
+      "q_en": "Why is riding an e-bike while watching a phone especially risky on a busy Shanghai street?",
+      "q_zh": "在上海热闹的街上边看手机边骑电动车，特别危险，是因为____。",
+      "choices": [
+        "plane trees turn off all shade",
+        "phones make the motor more powerful",
+        "the river will rise at once",
+        "attention and reaction time drop, so you may miss people or a light"
+      ],
+      "choices_zh": [
+        "梧桐会关掉所有树荫",
+        "电机会因为手机变得更有力",
+        "江会立刻涨起来",
+        "注意力和反应变慢，可能看不见人或灯"
+      ],
+      "answer": 3,
+      "explain_en": "Looking at a phone takes your eyes and mind off the road.",
+      "explain_zh": "看手机会让眼睛和注意力离开路面。",
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g11_072",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The number of zongzi in a stall puzzle solves 2x² - x + 8 = 0. What is the discriminant b² - 4ac?",
+      "q_zh": "一道摊位题里的粽子数满足 2x² - x + 8 = 0，判别式 b² - 4ac 是多少？",
+      "choices": [
+        "-65",
+        "65",
+        "-63",
+        "-62"
+      ],
+      "choices_zh": [
+        "-65",
+        "65",
+        "-63",
+        "-62"
+      ],
+      "answer": 2,
+      "explain_en": "(-1)^2 - 4 × 2 × (8) = -63.",
+      "explain_zh": "(-1)^2 - 4 × 2 × (8) = -63。",
+      "qtype": "discriminant",
+      "qtype_zh": "判别式求值"
+    },
+    {
+      "id": "l5g11_073",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "Li Sao is a long poem by ____.",
+      "q_zh": "《离骚》是谁的长诗？",
+      "choices": [
+        "A vendor only",
+        "Qu Yuan",
+        "A bus driver"
+      ],
+      "choices_zh": [
+        "只是小贩",
+        "屈原",
+        "公交司机"
+      ],
+      "answer": 1,
+      "explain_en": "Li Sao is by Qu Yuan.",
+      "explain_zh": "《离骚》是屈原的作品。",
+      "sign_en": [
+        "A vendor only",
+        "Qu Yuan",
+        "A bus driver"
+      ],
+      "sign_zh": [
+        "只是小贩",
+        "屈原",
+        "公交司机"
+      ],
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g11_074",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The number of zongzi in a stall puzzle solves 5x² + 9x + 2 = 0. What is the discriminant b² - 4ac?",
+      "q_zh": "一道摊位题里的粽子数满足 5x² + 9x + 2 = 0，判别式 b² - 4ac 是多少？",
+      "choices": [
+        "37",
+        "121",
+        "42",
+        "41"
+      ],
+      "choices_zh": [
+        "37",
+        "121",
+        "42",
+        "41"
+      ],
+      "answer": 3,
+      "explain_en": "(9)^2 - 4 × 5 × (2) = 41.",
+      "explain_zh": "(9)^2 - 4 × 5 × (2) = 41。",
+      "qtype": "discriminant",
+      "qtype_zh": "判别式求值"
+    },
+    {
+      "id": "l5g11_075",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "language",
+      "difficulty": "hard",
+      "q_en": "At Xintiandi the grandma says the welcome line on the wall is from Li Sao. Li Sao is ____.",
+      "q_zh": "新天地的阿婆说，墙上那句迎客的话出自《离骚》。《离骚》是____。",
+      "choices": [
+        "a list of bus stops",
+        "an e-bike repair manual",
+        "a tide chart for the Bund",
+        "a long lyric poem by Qu Yuan"
+      ],
+      "choices_zh": [
+        "公交站名表",
+        "电动车修理手册",
+        "外滩的潮汐表",
+        "屈原的长篇抒情诗"
+      ],
+      "answer": 3,
+      "explain_en": "Li Sao is Qu Yuan's long lyric poem, often remembered around this festival.",
+      "explain_zh": "《离骚》是屈原的长篇抒情诗，过端午时常被人提起。",
+      "qtype": "lang_literary",
+      "qtype_zh": "文学概念（主题）"
+    },
+    {
+      "id": "l5g11_076",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "science",
+      "difficulty": "hard",
+      "q_en": "On the Bund's wet stones, Flora brakes her e-bike and notices she needs more room to stop than on dry Huaihai Road. The main reason is ____.",
+      "q_zh": "外滩石板是湿的，Flora 骑电动车刹车时发现，要比在干的淮海路上留出更长的距离才能停住。主要原因是____。",
+      "choices": [
+        "plane trees add extra mass to the bike",
+        "lower friction on the wet surface",
+        "a bus is pulling the bike forward",
+        "wet stone makes the motor stronger"
+      ],
+      "choices_zh": [
+        "梧桐会给车子加上额外的质量",
+        "潮湿地面上的摩擦更小",
+        "公交车在把车子往前拉",
+        "湿石头会让电机更有力"
+      ],
+      "answer": 1,
+      "explain_en": "Water reduces friction between the tyres and the stones.",
+      "explain_zh": "水会减小轮胎和石板之间的摩擦。",
+      "qtype": "forces_motion",
+      "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+    },
+    {
+      "id": "l5g11_077",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Lamp posts along the Bund carry flags in an arithmetic pattern: 11 on the first, 19 on the second, and so on. How many flags are on post 11?",
+      "q_zh": "外滩灯杆挂旗成等差：第 1 根 11 面，第 2 根 19 面，依此类推。第 11 根有多少面？",
+      "choices": [
+        "99",
+        "75",
+        "91",
+        "121"
+      ],
+      "choices_zh": [
+        "99",
+        "75",
+        "91",
+        "121"
+      ],
+      "answer": 2,
+      "explain_en": "11 + (11 - 1) × 8 = 91.",
+      "explain_zh": "11 + (11 - 1) × 8 = 91。",
+      "qtype": "arith_seq_term",
+      "qtype_zh": "等差数列第 n 项"
+    },
+    {
+      "id": "l5g11_078",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "At Xintiandi, 9 zongzi are set out, and the number set out doubles every minute. After how many minutes are 36 zongzi set out?",
+      "q_zh": "新天地先摆出 9 只粽子，摆出的粽子数每分钟翻一倍。几分钟后摆出 36 只？",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "choices_zh": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 2,
+      "explain_en": "log₂(36 ÷ 9) = 2.",
+      "explain_zh": "log₂(36 ÷ 9) = 2。",
+      "qtype": "exp_solve",
+      "qtype_zh": "指数方程求时间"
+    },
+    {
+      "id": "l5g11_079",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi at Xintiandi are set out in rounds: 6 zongzi in the first round, then 3 times as many each round, for 5 rounds. How many zongzi in total?",
+      "q_zh": "新天地的粽子分轮摆：第一轮 6 只，之后每轮是上一轮的 3 倍，共 5 轮，一共多少只？",
+      "choices": [
+        "486",
+        "726",
+        "1458",
+        "720"
+      ],
+      "choices_zh": [
+        "486",
+        "726",
+        "1458",
+        "720"
+      ],
+      "answer": 1,
+      "explain_en": "6 × (3^5 - 1) ÷ (3 - 1) = 726.",
+      "explain_zh": "6 × (3^5 - 1) ÷ (3 - 1) = 726。",
+      "qtype": "geometric_series",
+      "qtype_zh": "等比数列求和"
+    },
+    {
+      "id": "l5g11_080",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "At Xintiandi, Flora may pick 3 of 6 different zongzi to share. Order does not matter. How many different sets can she pick?",
+      "q_zh": "在新天地，Flora 可以从 6 只不同的粽子里挑 3 只分享，不计顺序，有多少种挑法？",
+      "choices": [
+        "20",
+        "120",
+        "18",
+        "19"
+      ],
+      "choices_zh": [
+        "20",
+        "120",
+        "18",
+        "19"
+      ],
+      "answer": 0,
+      "explain_en": "C(6,3) = 20.",
+      "explain_zh": "C(6,3) = 20。",
+      "qtype": "combinations",
+      "qtype_zh": "组合数（不计顺序）"
+    },
+    {
+      "id": "l5g11_081",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Zongzi are set out in waves at Xintiandi: 9 at first, and the number set out multiplies by 3 each wave. How many are set out in wave 7, after 6 multiplications?",
+      "q_zh": "新天地的粽子一波波摆出：开始 9 只，每一波是上一波的 3 倍。乘了 6 次之后（第 7 波）摆出多少只？",
+      "choices": [
+        "162",
+        "19683",
+        "6561",
+        "2187"
+      ],
+      "choices_zh": [
+        "162",
+        "19683",
+        "6561",
+        "2187"
+      ],
+      "answer": 2,
+      "explain_en": "9 × 3^6 = 6561.",
+      "explain_zh": "9 × 3^6 = 6561。",
+      "qtype": "exp_growth_eval",
+      "qtype_zh": "指数增长/衰减求值（翻倍、等比）"
+    },
+    {
+      "id": "l5g11_082",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora has 48 m of five-color thread to fence a rectangular zongzi area at Xintiandi. What is the largest possible area in m²?",
+      "q_zh": "Flora 有 48 米五彩绳，要在新天地围一块长方形放粽子的区域，最大面积是多少平方米？",
+      "choices": [
+        "96",
+        "144",
+        "143",
+        "48"
+      ],
+      "choices_zh": [
+        "96",
+        "144",
+        "143",
+        "48"
+      ],
+      "answer": 1,
+      "explain_en": "(48 ÷ 4)^2 = 144.",
+      "explain_zh": "(48 ÷ 4)^2 = 144。",
+      "qtype": "optimization",
+      "qtype_zh": "最值优化（定周长最大面积）"
+    }
+  ]
+}

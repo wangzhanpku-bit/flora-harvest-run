@@ -1,0 +1,2530 @@
+{
+  "level": 5,
+  "level_name_en": "Shanghai",
+  "level_name_zh": "上海",
+  "grade": 2,
+  "version": "v1",
+  "fields": "L5 Shanghai / Dragon Boat Festival (e-bike; Lujiazui → the Bund → Huaihai Road → Xintiandi). Same item fields as L3 v3.1 / L4. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 端午摊 Zongzi Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Xintiandi-entrance final (exactly 4 choices, hard, situational). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Xintiandi final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 端午谜：. Stems are deduped against all L1–L4 banks (all grades).",
+  "questions": [
+    {
+      "id": "l5g2_001",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "72 sachets are put equally into 8 boxes. How many in each box?",
+      "q_zh": "72 只香囊平均放进 8 个盒子，每盒几只？",
+      "choices": [
+        "10",
+        "64",
+        "9"
+      ],
+      "choices_zh": [
+        "10",
+        "64",
+        "9"
+      ],
+      "answer": 2,
+      "explain_en": "72 ÷ 8 = 9.",
+      "explain_zh": "72 ÷ 8 = 9。",
+      "sign_en": [
+        "10",
+        "64",
+        "9"
+      ],
+      "sign_zh": [
+        "10",
+        "64",
+        "9"
+      ],
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g2_002",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "Dragon Boat Festival is on the ____ day of the fifth lunar month.",
+      "q_zh": "端午节在农历五月的第____天。",
+      "choices": [
+        "30th",
+        "15th",
+        "1st",
+        "5th"
+      ],
+      "choices_zh": [
+        "三十",
+        "十五",
+        "初一",
+        "初五"
+      ],
+      "answer": 3,
+      "explain_en": "It is celebrated on the fifth day of the fifth lunar month.",
+      "explain_zh": "端午节是农历五月初五。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_003",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "27 sachets are put equally into 9 boxes. How many in each box?",
+      "q_zh": "27 只香囊平均放进 9 个盒子，每盒几只？",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "12"
+      ],
+      "choices_zh": [
+        "3",
+        "2",
+        "4",
+        "12"
+      ],
+      "answer": 0,
+      "explain_en": "27 ÷ 9 = 3.",
+      "explain_zh": "27 ÷ 9 = 3。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g2_004",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Each zongzi uses 2 reed leaves. How many leaves for 4 zongzi?",
+      "q_zh": "每只粽子用 2 张箬叶，4 只要用多少张？",
+      "choices": [
+        "8",
+        "10",
+        "9",
+        "6"
+      ],
+      "choices_zh": [
+        "8",
+        "10",
+        "9",
+        "6"
+      ],
+      "answer": 0,
+      "explain_en": "2 × 4 = 8.",
+      "explain_zh": "2 × 4 = 8。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_005",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "9 stalls each hang 7 bundles of mugwort. How many bundles in all?",
+      "q_zh": "9 个摊位每家挂 7 束艾草，一共多少束？",
+      "choices": [
+        "63",
+        "16",
+        "70"
+      ],
+      "choices_zh": [
+        "63",
+        "16",
+        "70"
+      ],
+      "answer": 0,
+      "explain_en": "7 × 9 = 63.",
+      "explain_zh": "7 × 9 = 63。",
+      "sign_en": [
+        "63",
+        "16",
+        "70"
+      ],
+      "sign_zh": [
+        "63",
+        "16",
+        "70"
+      ],
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_006",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora has 45 sachets and pins 37 on jackets. How many are still in the box?",
+      "q_zh": "Flora 有 45 只香囊，往衣服上别了 37 只，盒子里还剩几只？",
+      "choices": [
+        "8",
+        "10",
+        "7"
+      ],
+      "choices_zh": [
+        "8",
+        "10",
+        "7"
+      ],
+      "answer": 0,
+      "explain_en": "45 - 37 = 8.",
+      "explain_zh": "45 - 37 = 8。",
+      "sign_en": [
+        "8",
+        "10",
+        "7"
+      ],
+      "sign_zh": [
+        "8",
+        "10",
+        "7"
+      ],
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_007",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "50 sparrows sit on a plane tree. 9 fly away. How many stay?",
+      "q_zh": "梧桐树上有 50 只麻雀，飞走了 9 只，还剩几只？",
+      "choices": [
+        "41",
+        "42",
+        "59"
+      ],
+      "choices_zh": [
+        "41",
+        "42",
+        "59"
+      ],
+      "answer": 0,
+      "explain_en": "50 - 9 = 41.",
+      "explain_zh": "50 - 9 = 41。",
+      "sign_en": [
+        "41",
+        "42",
+        "59"
+      ],
+      "sign_zh": [
+        "41",
+        "42",
+        "59"
+      ],
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_008",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "easy",
+      "q_en": "Lujiazui is a part of which city?",
+      "q_zh": "陆家嘴在哪一座城市？",
+      "choices": [
+        "Paris",
+        "Cairo",
+        "Shanghai",
+        "Nairobi"
+      ],
+      "choices_zh": [
+        "巴黎",
+        "开罗",
+        "上海",
+        "内罗毕"
+      ],
+      "answer": 2,
+      "explain_en": "Lujiazui is a riverside area in Shanghai.",
+      "explain_zh": "陆家嘴是上海的一个滨江地区。",
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g2_009",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 59 sachets and then hangs 11 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 59 只香囊，又挂了 11 只，一共几只？",
+      "choices": [
+        "70",
+        "71",
+        "69"
+      ],
+      "choices_zh": [
+        "70",
+        "71",
+        "69"
+      ],
+      "answer": 0,
+      "explain_en": "59 + 11 = 70.",
+      "explain_zh": "59 + 11 = 70。",
+      "sign_en": [
+        "70",
+        "71",
+        "69"
+      ],
+      "sign_zh": [
+        "70",
+        "71",
+        "69"
+      ],
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_010",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "Families often hang ____ by the door at Dragon Boat Festival.",
+      "q_zh": "过端午，家里常常在门口挂____。",
+      "choices": [
+        "a snow coat",
+        "a winter scarf",
+        "a beach ball",
+        "mugwort"
+      ],
+      "choices_zh": [
+        "雪衣",
+        "冬围巾",
+        "沙滩球",
+        "艾草"
+      ],
+      "answer": 3,
+      "explain_en": "Mugwort is hung by the door as a festival plant.",
+      "explain_zh": "过端午，门口常挂艾草。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_011",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Grandma has 3 packs of 100 reed leaves, 2 packs of 10 and 9 single leaves. How many leaves is that?",
+      "q_zh": "奶奶有 3 包 100 张的箬叶、2 包 10 张的和 9 张散的，一共多少张？",
+      "choices": [
+        "329",
+        "239",
+        "319"
+      ],
+      "choices_zh": [
+        "329",
+        "239",
+        "319"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 100 + 2 × 10 + 9 = 329.",
+      "explain_zh": "3 × 100 + 2 × 10 + 9 = 329。",
+      "sign_en": [
+        "329",
+        "239",
+        "319"
+      ],
+      "sign_zh": [
+        "329",
+        "239",
+        "319"
+      ],
+      "qtype": "place_value",
+      "qtype_zh": "数位（几个百/十/一）"
+    },
+    {
+      "id": "l5g2_012",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "42 zongzi are shared equally among 7 children. How many does each child get?",
+      "q_zh": "42 只粽子平均分给 7 个孩子，每人几只？",
+      "choices": [
+        "5",
+        "6",
+        "13",
+        "7"
+      ],
+      "choices_zh": [
+        "5",
+        "6",
+        "13",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "42 ÷ 7 = 6.",
+      "explain_zh": "42 ÷ 7 = 6。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g2_013",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I am sticky rice wrapped in a green leaf and tied with string. People eat me at Dragon Boat Festival. What am I?",
+      "q_zh": "端午谜：糯米包在绿叶子里，再用绳扎好，过端午时人们吃我。打一食物，是什么？",
+      "choices": [
+        "A zongzi",
+        "A cake",
+        "A bun",
+        "A cookie"
+      ],
+      "choices_zh": [
+        "粽子",
+        "蛋糕",
+        "馒头",
+        "饼干"
+      ],
+      "answer": 0,
+      "explain_en": "Zongzi is sticky rice wrapped in a leaf.",
+      "explain_zh": "粽子是用叶子包起来的糯米。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_014",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "54 plane trees stand on one block of Huaihai Road and 25 more stand on the next. How many plane trees now?",
+      "q_zh": "淮海路这一段有 54 棵梧桐，下一段又有 25 棵，现在一共有几棵？",
+      "choices": [
+        "79",
+        "29",
+        "78"
+      ],
+      "choices_zh": [
+        "79",
+        "29",
+        "78"
+      ],
+      "answer": 0,
+      "explain_en": "54 + 25 = 79.",
+      "explain_zh": "54 + 25 = 79。",
+      "sign_en": [
+        "79",
+        "29",
+        "78"
+      ],
+      "sign_zh": [
+        "79",
+        "29",
+        "78"
+      ],
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_015",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A stall has 13 zongzi and sells 3. How many zongzi are left?",
+      "q_zh": "小摊有 13 只粽子，卖出 3 只，还剩几只？",
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "choices_zh": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": 1,
+      "explain_en": "13 - 3 = 10.",
+      "explain_zh": "13 - 3 = 10。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_016",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "An e-bike basket carries 60 parcels of zongzi. A bike basket carries 7. How many more parcels on the e-bike?",
+      "q_zh": "电动车车篮装着 60 包粽子，自行车车篮装着 7 包，电动车多装几包？",
+      "choices": [
+        "56",
+        "52",
+        "53",
+        "54"
+      ],
+      "choices_zh": [
+        "56",
+        "52",
+        "53",
+        "54"
+      ],
+      "answer": 2,
+      "explain_en": "60 - 7 = 53.",
+      "explain_zh": "60 - 7 = 53。",
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    },
+    {
+      "id": "l5g2_017",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "A five-color thread is worn on the ____.",
+      "q_zh": "五彩绳戴在哪里？",
+      "choices": [
+        "nose",
+        "wrist",
+        "ear"
+      ],
+      "choices_zh": [
+        "鼻子",
+        "手腕",
+        "耳朵"
+      ],
+      "answer": 1,
+      "explain_en": "It is tied around the wrist.",
+      "explain_zh": "五彩绳系在手腕上。",
+      "sign_en": [
+        "nose",
+        "wrist",
+        "ear"
+      ],
+      "sign_zh": [
+        "鼻子",
+        "手腕",
+        "耳朵"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_018",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I am a thread of five colors, tied gently around a child's wrist in early summer. What am I?",
+      "q_zh": "端午谜：我有五种颜色，初夏时轻轻系在小朋友手腕上。打一物，是什么？",
+      "choices": [
+        "A sock",
+        "A belt",
+        "A five-color thread",
+        "A scarf"
+      ],
+      "choices_zh": [
+        "袜子",
+        "皮带",
+        "五彩绳",
+        "围巾"
+      ],
+      "answer": 2,
+      "explain_en": "A five-color thread is worn on the wrist at Dragon Boat Festival.",
+      "explain_zh": "过端午，人们常在手腕上系五彩绳。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_019",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "There are 22 zongzi on the plate. The family eats 8. How many are left?",
+      "q_zh": "盘子里有 22 只粽子，一家人吃了 8 只，还剩几只？",
+      "choices": [
+        "13",
+        "14",
+        "15",
+        "30"
+      ],
+      "choices_zh": [
+        "13",
+        "14",
+        "15",
+        "30"
+      ],
+      "answer": 1,
+      "explain_en": "22 - 8 = 14.",
+      "explain_zh": "22 - 8 = 14。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_020",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora buys 4 sachets at 6 yuan each and pays 50 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 4 只香囊，每只 6 元，付了 50 元，找回多少元？",
+      "choices": [
+        "26",
+        "24",
+        "27"
+      ],
+      "choices_zh": [
+        "26",
+        "24",
+        "27"
+      ],
+      "answer": 0,
+      "explain_en": "50 - 4 × 6 = 26.",
+      "explain_zh": "50 - 4 × 6 = 26。",
+      "sign_en": [
+        "26",
+        "24",
+        "27"
+      ],
+      "sign_zh": [
+        "26",
+        "24",
+        "27"
+      ],
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g2_021",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora starts riding her e-bike through Lujiazui at 6:20 and stops at 6:45. How many minutes did she ride?",
+      "q_zh": "Flora 6:20 开始在陆家嘴骑电动车，6:45 停下，骑了多少分钟？",
+      "choices": [
+        "35",
+        "25",
+        "20"
+      ],
+      "choices_zh": [
+        "35",
+        "25",
+        "20"
+      ],
+      "answer": 1,
+      "explain_en": "45 - 20 = 25.",
+      "explain_zh": "45 - 20 = 25。",
+      "sign_en": [
+        "35",
+        "25",
+        "20"
+      ],
+      "sign_zh": [
+        "35",
+        "25",
+        "20"
+      ],
+      "qtype": "time_elapsed",
+      "qtype_zh": "经过时间"
+    },
+    {
+      "id": "l5g2_022",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A stall has 50 zongzi and sells 4. How many zongzi are left?",
+      "q_zh": "小摊有 50 只粽子，卖出 4 只，还剩几只？",
+      "choices": [
+        "54",
+        "46",
+        "45",
+        "48"
+      ],
+      "choices_zh": [
+        "54",
+        "46",
+        "45",
+        "48"
+      ],
+      "answer": 1,
+      "explain_en": "50 - 4 = 46.",
+      "explain_zh": "50 - 4 = 46。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_023",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} counts festival change at the zongzi stall: 1 ten-yuan notes, 4 five-yuan notes and 7 one-yuan coins. How many yuan is that?",
+      "q_zh": "{name} 在粽子摊数零钱：有 1 张十元、4 张五元和 7 个一元硬币，一共多少元？",
+      "choices": [
+        "37",
+        "36",
+        "12",
+        "47"
+      ],
+      "choices_zh": [
+        "37",
+        "36",
+        "12",
+        "47"
+      ],
+      "answer": 0,
+      "explain_en": "1 × 10 + 4 × 5 + 7 = 37.",
+      "explain_zh": "1 × 10 + 4 × 5 + 7 = 37。",
+      "qtype": "money_coins",
+      "qtype_zh": "钱币换算"
+    },
+    {
+      "id": "l5g2_024",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "A city e-bike like Flora's usually has ____ wheels.",
+      "q_zh": "Flora 骑的那种城市电动车，通常有几个轮子？",
+      "choices": [
+        "8",
+        "0",
+        "2",
+        "12"
+      ],
+      "choices_zh": [
+        "8 个",
+        "0 个",
+        "2 个",
+        "12 个"
+      ],
+      "answer": 2,
+      "explain_en": "A typical e-bike has two wheels.",
+      "explain_zh": "常见的电动车有两个轮子。",
+      "qtype": "simple_machines",
+      "qtype_zh": "简单机械（轮子/车铃/刹车）"
+    },
+    {
+      "id": "l5g2_025",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Opposite of \"fast\"?",
+      "q_zh": "英文 fast 的反义词是？",
+      "choices": [
+        "tall",
+        "slow",
+        "loud"
+      ],
+      "choices_zh": [
+        "tall",
+        "slow",
+        "loud"
+      ],
+      "answer": 1,
+      "explain_en": "Fast and slow are opposites.",
+      "explain_zh": "fast 和 slow 意思相反。",
+      "sign_en": [
+        "tall",
+        "slow",
+        "loud"
+      ],
+      "sign_zh": [
+        "tall",
+        "slow",
+        "loud"
+      ],
+      "qtype": "lang_vocab",
+      "qtype_zh": "词义（同义/反义/押韵/词义）"
+    },
+    {
+      "id": "l5g2_026",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Shop numbers on Huaihai Road go 5, 11, 17. What number comes next?",
+      "q_zh": "淮海路的门牌号是 5、11、17，下一个是几？",
+      "choices": [
+        "22",
+        "18",
+        "23"
+      ],
+      "choices_zh": [
+        "22",
+        "18",
+        "23"
+      ],
+      "answer": 2,
+      "explain_en": "17 + 6 = 23.",
+      "explain_zh": "17 + 6 = 23。",
+      "sign_en": [
+        "22",
+        "18",
+        "23"
+      ],
+      "sign_zh": [
+        "22",
+        "18",
+        "23"
+      ],
+      "qtype": "number_pattern",
+      "qtype_zh": "数列找规律（下一个数）"
+    },
+    {
+      "id": "l5g2_027",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "The white puff rising from a hot zongzi is ____.",
+      "q_zh": "热粽子上冒出的白气是____。",
+      "choices": [
+        "water vapor",
+        "salt",
+        "flour dust",
+        "cotton"
+      ],
+      "choices_zh": [
+        "水蒸气",
+        "盐",
+        "面粉灰",
+        "棉花"
+      ],
+      "answer": 0,
+      "explain_en": "Hot food gives off steam, which is water as a gas.",
+      "explain_zh": "热食物冒出的白气是水蒸气。",
+      "qtype": "states_of_matter",
+      "qtype_zh": "物态（冰雪水）"
+    },
+    {
+      "id": "l5g2_028",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 33 sachets and then hangs 30 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 33 只香囊，又挂了 30 只，一共几只？",
+      "choices": [
+        "3",
+        "73",
+        "62",
+        "63"
+      ],
+      "choices_zh": [
+        "3",
+        "73",
+        "62",
+        "63"
+      ],
+      "answer": 3,
+      "explain_en": "33 + 30 = 63.",
+      "explain_zh": "33 + 30 = 63。",
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_029",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora buys 3 sachets at 9 yuan each and pays 50 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 3 只香囊，每只 9 元，付了 50 元，找回多少元？",
+      "choices": [
+        "27",
+        "22",
+        "32",
+        "23"
+      ],
+      "choices_zh": [
+        "27",
+        "22",
+        "32",
+        "23"
+      ],
+      "answer": 3,
+      "explain_en": "50 - 3 × 9 = 23.",
+      "explain_zh": "50 - 3 × 9 = 23。",
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g2_030",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "An e-bike basket carries 75 parcels of zongzi. A bike basket carries 7. How many more parcels on the e-bike?",
+      "q_zh": "电动车车篮装着 75 包粽子，自行车车篮装着 7 包，电动车多装几包？",
+      "choices": [
+        "67",
+        "71",
+        "68",
+        "82"
+      ],
+      "choices_zh": [
+        "67",
+        "71",
+        "68",
+        "82"
+      ],
+      "answer": 2,
+      "explain_en": "75 - 7 = 68.",
+      "explain_zh": "75 - 7 = 68。",
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    },
+    {
+      "id": "l5g2_031",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "An e-bike has ____ wheels.",
+      "q_zh": "电动车有几个轮子？",
+      "choices": [
+        "2",
+        "0",
+        "9"
+      ],
+      "choices_zh": [
+        "2 个",
+        "0 个",
+        "9 个"
+      ],
+      "answer": 0,
+      "explain_en": "A typical e-bike has two wheels.",
+      "explain_zh": "常见电动车有两个轮子。",
+      "sign_en": [
+        "2",
+        "0",
+        "9"
+      ],
+      "sign_zh": [
+        "2 个",
+        "0 个",
+        "9 个"
+      ],
+      "qtype": "simple_machines",
+      "qtype_zh": "简单机械（轮子/车铃/刹车）"
+    },
+    {
+      "id": "l5g2_032",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 43 sachets and then hangs 16 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 43 只香囊，又挂了 16 只，一共几只？",
+      "choices": [
+        "60",
+        "59",
+        "58",
+        "27"
+      ],
+      "choices_zh": [
+        "60",
+        "59",
+        "58",
+        "27"
+      ],
+      "answer": 1,
+      "explain_en": "43 + 16 = 59.",
+      "explain_zh": "43 + 16 = 59。",
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_033",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I am a green leaf. When I am steamed, I give sticky rice a nice smell. What am I?",
+      "q_zh": "端午谜：我是一片绿叶子，蒸的时候会让糯米变得很香。打一物，是什么？",
+      "choices": [
+        "A plate",
+        "A napkin",
+        "A zongzi leaf",
+        "A spoon"
+      ],
+      "choices_zh": [
+        "盘子",
+        "餐巾",
+        "粽叶",
+        "勺子"
+      ],
+      "answer": 2,
+      "explain_en": "Zongzi leaves wrap the rice and add aroma when steamed.",
+      "explain_zh": "粽叶包着糯米，蒸的时候会发出香味。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_034",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "easy",
+      "q_en": "Xintiandi is a place in ____.",
+      "q_zh": "新天地在____。",
+      "choices": [
+        "the deep sea",
+        "the Sahara",
+        "Shanghai",
+        "Antarctica"
+      ],
+      "choices_zh": [
+        "深海里",
+        "撒哈拉",
+        "上海",
+        "南极洲"
+      ],
+      "answer": 2,
+      "explain_en": "Xintiandi is a well-known area in Shanghai.",
+      "explain_zh": "新天地是上海一个有名的地方。",
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g2_035",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "There are 42 zongzi on the plate. The family eats 6. How many are left?",
+      "q_zh": "盘子里有 42 只粽子，一家人吃了 6 只，还剩几只？",
+      "choices": [
+        "38",
+        "36",
+        "37"
+      ],
+      "choices_zh": [
+        "38",
+        "36",
+        "37"
+      ],
+      "answer": 1,
+      "explain_en": "42 - 6 = 36.",
+      "explain_zh": "42 - 6 = 36。",
+      "sign_en": [
+        "38",
+        "36",
+        "37"
+      ],
+      "sign_zh": [
+        "38",
+        "36",
+        "37"
+      ],
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_036",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Grandma makes 8 trays of 6 zongzi, then 6 more zongzi. How many zongzi in all?",
+      "q_zh": "奶奶包了 8 盘粽子，每盘 6 只，又包了 6 只，一共多少只？",
+      "choices": [
+        "46",
+        "54",
+        "20"
+      ],
+      "choices_zh": [
+        "46",
+        "54",
+        "20"
+      ],
+      "answer": 1,
+      "explain_en": "8 × 6 + 6 = 54.",
+      "explain_zh": "8 × 6 + 6 = 54。",
+      "sign_en": [
+        "46",
+        "54",
+        "20"
+      ],
+      "sign_zh": [
+        "46",
+        "54",
+        "20"
+      ],
+      "qtype": "mult_add_multistep",
+      "qtype_zh": "两步混合运算"
+    },
+    {
+      "id": "l5g2_037",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Grandma makes 9 trays of 6 zongzi, then 6 more zongzi. How many zongzi in all?",
+      "q_zh": "奶奶包了 9 盘粽子，每盘 6 只，又包了 6 只，一共多少只？",
+      "choices": [
+        "21",
+        "60",
+        "51",
+        "61"
+      ],
+      "choices_zh": [
+        "21",
+        "60",
+        "51",
+        "61"
+      ],
+      "answer": 1,
+      "explain_en": "9 × 6 + 6 = 60.",
+      "explain_zh": "9 × 6 + 6 = 60。",
+      "qtype": "mult_add_multistep",
+      "qtype_zh": "两步混合运算"
+    },
+    {
+      "id": "l5g2_038",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I stand very tall in Lujiazui and look like pearls stacked in the sky. What am I?",
+      "q_zh": "端午谜：我在陆家嘴高高站着，看起来像一串珍珠竖在天上。打一建筑，是什么？",
+      "choices": [
+        "The Oriental Pearl",
+        "A shop door",
+        "A park bench",
+        "A stone step"
+      ],
+      "choices_zh": [
+        "东方明珠",
+        "商店门",
+        "公园椅",
+        "石阶"
+      ],
+      "answer": 0,
+      "explain_en": "The Oriental Pearl Tower in Lujiazui is known for its sphere shapes, like pearls.",
+      "explain_zh": "陆家嘴的东方明珠以圆球体出名，像珍珠。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_039",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora starts riding her e-bike through Lujiazui at 4:45 and stops at 5:15. How many minutes did she ride?",
+      "q_zh": "Flora 4:45 开始在陆家嘴骑电动车，5:15 停下，骑了多少分钟？",
+      "choices": [
+        "90",
+        "60",
+        "30",
+        "25"
+      ],
+      "choices_zh": [
+        "90",
+        "60",
+        "30",
+        "25"
+      ],
+      "answer": 2,
+      "explain_en": "60 - 45 + 15 = 30.",
+      "explain_zh": "60 - 45 + 15 = 30。",
+      "qtype": "time_elapsed",
+      "qtype_zh": "经过时间"
+    },
+    {
+      "id": "l5g2_040",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "There are 49 zongzi on the plate. The family eats 14. How many are left?",
+      "q_zh": "盘子里有 49 只粽子，一家人吃了 14 只，还剩几只？",
+      "choices": [
+        "34",
+        "36",
+        "63",
+        "35"
+      ],
+      "choices_zh": [
+        "34",
+        "36",
+        "63",
+        "35"
+      ],
+      "answer": 3,
+      "explain_en": "49 - 14 = 35.",
+      "explain_zh": "49 - 14 = 35。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_041",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "What is hung by the door?",
+      "q_zh": "门口常挂什么？",
+      "choices": [
+        "A snow shovel",
+        "Mugwort",
+        "A ski"
+      ],
+      "choices_zh": [
+        "雪铲",
+        "艾草",
+        "滑雪板"
+      ],
+      "answer": 1,
+      "explain_en": "Mugwort is hung by the door.",
+      "explain_zh": "门口常挂艾草。",
+      "sign_en": [
+        "A snow shovel",
+        "Mugwort",
+        "A ski"
+      ],
+      "sign_zh": [
+        "雪铲",
+        "艾草",
+        "滑雪板"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_042",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora starts riding her e-bike through Lujiazui at 6:45 and stops at 7:25. How many minutes did she ride?",
+      "q_zh": "Flora 6:45 开始在陆家嘴骑电动车，7:25 停下，骑了多少分钟？",
+      "choices": [
+        "35",
+        "100",
+        "50",
+        "40"
+      ],
+      "choices_zh": [
+        "35",
+        "100",
+        "50",
+        "40"
+      ],
+      "answer": 3,
+      "explain_en": "60 - 45 + 25 = 40.",
+      "explain_zh": "60 - 45 + 25 = 40。",
+      "qtype": "time_elapsed",
+      "qtype_zh": "经过时间"
+    },
+    {
+      "id": "l5g2_043",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A tray holds 5 zongzi. How many zongzi on 4 trays?",
+      "q_zh": "一盘有 5 只粽子，4 盘一共多少只？",
+      "choices": [
+        "16",
+        "20",
+        "21",
+        "9"
+      ],
+      "choices_zh": [
+        "16",
+        "20",
+        "21",
+        "9"
+      ],
+      "answer": 1,
+      "explain_en": "5 × 4 = 20.",
+      "explain_zh": "5 × 4 = 20。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_044",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} counts festival change at the zongzi stall: 3 ten-yuan notes, 4 five-yuan notes and 1 one-yuan coins. How many yuan is that?",
+      "q_zh": "{name} 在粽子摊数零钱：有 3 张十元、4 张五元和 1 个一元硬币，一共多少元？",
+      "choices": [
+        "51",
+        "50",
+        "61",
+        "8"
+      ],
+      "choices_zh": [
+        "51",
+        "50",
+        "61",
+        "8"
+      ],
+      "answer": 0,
+      "explain_en": "3 × 10 + 4 × 5 + 1 = 51.",
+      "explain_zh": "3 × 10 + 4 × 5 + 1 = 51。",
+      "qtype": "money_coins",
+      "qtype_zh": "钱币换算"
+    },
+    {
+      "id": "l5g2_045",
+      "level": 5,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "easy",
+      "q_en": "Mugwort, hung at Dragon Boat Festival, is a kind of ____.",
+      "q_zh": "过端午挂的艾草，属于____。",
+      "choices": [
+        "metal",
+        "plastic",
+        "rock",
+        "plant"
+      ],
+      "choices_zh": [
+        "金属",
+        "塑料",
+        "岩石",
+        "植物"
+      ],
+      "answer": 3,
+      "explain_en": "Mugwort is a green plant.",
+      "explain_zh": "艾草是一种绿色植物。",
+      "qtype": "plant_biology",
+      "qtype_zh": "植物（艾草/箬叶/梧桐）"
+    },
+    {
+      "id": "l5g2_046",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Shop numbers on Huaihai Road go 5, 12, 19. What number comes next?",
+      "q_zh": "淮海路的门牌号是 5、12、19，下一个是几？",
+      "choices": [
+        "26",
+        "20",
+        "25"
+      ],
+      "choices_zh": [
+        "26",
+        "20",
+        "25"
+      ],
+      "answer": 0,
+      "explain_en": "19 + 7 = 26.",
+      "explain_zh": "19 + 7 = 26。",
+      "sign_en": [
+        "26",
+        "20",
+        "25"
+      ],
+      "sign_zh": [
+        "26",
+        "20",
+        "25"
+      ],
+      "qtype": "number_pattern",
+      "qtype_zh": "数列找规律（下一个数）"
+    },
+    {
+      "id": "l5g2_047",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "What does 船 mean in English?",
+      "q_zh": "「船」的英文意思是？",
+      "choices": [
+        "cloud",
+        "boat",
+        "bread"
+      ],
+      "choices_zh": [
+        "cloud",
+        "boat",
+        "bread"
+      ],
+      "answer": 1,
+      "explain_en": "船 means boat, as in 龙舟 dragon boat.",
+      "explain_zh": "船就是 boat，龙舟就是 dragon boat。",
+      "sign_en": [
+        "cloud",
+        "boat",
+        "bread"
+      ],
+      "sign_zh": [
+        "cloud",
+        "boat",
+        "bread"
+      ],
+      "qtype": "zh_character",
+      "qtype_zh": "汉字字义"
+    },
+    {
+      "id": "l5g2_048",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Each zongzi uses 4 reed leaves. How many leaves for 3 zongzi?",
+      "q_zh": "每只粽子用 4 张箬叶，3 只要用多少张？",
+      "choices": [
+        "13",
+        "12",
+        "16"
+      ],
+      "choices_zh": [
+        "13",
+        "12",
+        "16"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 3 = 12.",
+      "explain_zh": "4 × 3 = 12。",
+      "sign_en": [
+        "13",
+        "12",
+        "16"
+      ],
+      "sign_zh": [
+        "13",
+        "12",
+        "16"
+      ],
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_049",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} wraps 17 zongzi, then 28 more. How many zongzi now?",
+      "q_zh": "{name} 先包了 17 只粽子，又包了 28 只，现在一共几只？",
+      "choices": [
+        "46",
+        "45",
+        "55",
+        "11"
+      ],
+      "choices_zh": [
+        "46",
+        "45",
+        "55",
+        "11"
+      ],
+      "answer": 1,
+      "explain_en": "17 + 28 = 45.",
+      "explain_zh": "17 + 28 = 45。",
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_050",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I have two wheels and a basket in front. Flora rides me down Shanghai streets. What am I?",
+      "q_zh": "端午谜：我有两个轮子，前面有车篮，Flora 骑着我走上海的路。打一交通工具，是什么？",
+      "choices": [
+        "A boat",
+        "A plane",
+        "A tram",
+        "An e-bike"
+      ],
+      "choices_zh": [
+        "船",
+        "飞机",
+        "有轨电车",
+        "电动车"
+      ],
+      "answer": 3,
+      "explain_en": "An e-bike has two wheels and can carry a front basket.",
+      "explain_zh": "电动车有两个轮子，前面可以放车篮。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_051",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} has 1 five-yuan notes and 3 one-yuan coins ready for zongzi. How many yuan in all?",
+      "q_zh": "{name} 准备买粽子，有 1 张五元和 3 个一元硬币，一共多少元？",
+      "choices": [
+        "8",
+        "4",
+        "9",
+        "13"
+      ],
+      "choices_zh": [
+        "8",
+        "4",
+        "9",
+        "13"
+      ],
+      "answer": 0,
+      "explain_en": "1 × 5 + 3 = 8.",
+      "explain_zh": "1 × 5 + 3 = 8。",
+      "qtype": "money_coins",
+      "qtype_zh": "钱币换算"
+    },
+    {
+      "id": "l5g2_052",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} buys 4 sachets at 5 yuan each and pays 50 yuan. How many yuan change?",
+      "q_zh": "{name} 买了 4 只香囊，每只 5 元，付了 50 元，找回多少元？",
+      "choices": [
+        "35",
+        "20",
+        "30",
+        "29"
+      ],
+      "choices_zh": [
+        "35",
+        "20",
+        "30",
+        "29"
+      ],
+      "answer": 2,
+      "explain_en": "50 - 4 × 5 = 30.",
+      "explain_zh": "50 - 4 × 5 = 30。",
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g2_053",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The zongzi stall tickets are numbered 18, 26, 34. What is the next number?",
+      "q_zh": "粽子摊的取号是 18、26、34，下一个号码是几？",
+      "choices": [
+        "50",
+        "35",
+        "43",
+        "42"
+      ],
+      "choices_zh": [
+        "50",
+        "35",
+        "43",
+        "42"
+      ],
+      "answer": 3,
+      "explain_en": "34 + 8 = 42.",
+      "explain_zh": "34 + 8 = 42。",
+      "qtype": "number_pattern",
+      "qtype_zh": "数列找规律（下一个数）"
+    },
+    {
+      "id": "l5g2_054",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Dragon Boat Festival follows the ____ calendar.",
+      "q_zh": "端午节是按____来过的。",
+      "choices": [
+        "only the school week",
+        "lunar",
+        "a random day each year",
+        "the sports season only"
+      ],
+      "choices_zh": [
+        "只按上学周",
+        "农历",
+        "每年随便一天",
+        "只按赛季"
+      ],
+      "answer": 1,
+      "explain_en": "The date is the fifth day of the fifth lunar month.",
+      "explain_zh": "端午节在农历五月初五。",
+      "qtype": "moon_calendar",
+      "qtype_zh": "月相与农历（端午日期）"
+    },
+    {
+      "id": "l5g2_055",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "easy",
+      "q_en": "Festival riddle: I have a dragon's head and a long body. Many paddles splash beside me on the river. What am I?",
+      "q_zh": "端午谜：我有龙头和长长的身子，许多船桨在我旁边拍水。打一物，是什么？",
+      "choices": [
+        "A kite",
+        "A dragon boat",
+        "A train",
+        "A bus"
+      ],
+      "choices_zh": [
+        "风筝",
+        "龙舟",
+        "火车",
+        "公交车"
+      ],
+      "answer": 1,
+      "explain_en": "A dragon boat is long, with a dragon head, and is paddled on the water.",
+      "explain_zh": "龙舟长长的，有龙头，用桨在水上划。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g2_056",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} wraps 15 zongzi, then 14 more. How many zongzi now?",
+      "q_zh": "{name} 先包了 15 只粽子，又包了 14 只，现在一共几只？",
+      "choices": [
+        "29",
+        "30",
+        "39",
+        "1"
+      ],
+      "choices_zh": [
+        "29",
+        "30",
+        "39",
+        "1"
+      ],
+      "answer": 0,
+      "explain_en": "15 + 14 = 29.",
+      "explain_zh": "15 + 14 = 29。",
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_057",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora has 99 zongzi and Bara's basket holds 79. How many more does Flora have?",
+      "q_zh": "Flora 有 99 只粽子，Bara 的车篮里有 79 只，Flora 比 Bara 多几只？",
+      "choices": [
+        "20",
+        "21",
+        "23",
+        "19"
+      ],
+      "choices_zh": [
+        "20",
+        "21",
+        "23",
+        "19"
+      ],
+      "answer": 0,
+      "explain_en": "99 - 79 = 20.",
+      "explain_zh": "99 - 79 = 20。",
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    },
+    {
+      "id": "l5g2_058",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "easy",
+      "q_en": "Trees on Huaihai Road are often ____.",
+      "q_zh": "淮海路上常见的树是____。",
+      "choices": [
+        "Plane trees",
+        "Cactus",
+        "Palms only"
+      ],
+      "choices_zh": [
+        "梧桐",
+        "仙人掌",
+        "只见棕榈"
+      ],
+      "answer": 0,
+      "explain_en": "Plane trees line Huaihai Road.",
+      "explain_zh": "淮海路常见梧桐。",
+      "sign_en": [
+        "Plane trees",
+        "Cactus",
+        "Palms only"
+      ],
+      "sign_zh": [
+        "梧桐",
+        "仙人掌",
+        "只见棕榈"
+      ],
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g2_059",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The zongzi stall tickets are numbered 7, 11, 15. What is the next number?",
+      "q_zh": "粽子摊的取号是 7、11、15，下一个号码是几？",
+      "choices": [
+        "16",
+        "20",
+        "19",
+        "23"
+      ],
+      "choices_zh": [
+        "16",
+        "20",
+        "19",
+        "23"
+      ],
+      "answer": 2,
+      "explain_en": "15 + 4 = 19.",
+      "explain_zh": "15 + 4 = 19。",
+      "qtype": "number_pattern",
+      "qtype_zh": "数列找规律（下一个数）"
+    },
+    {
+      "id": "l5g2_060",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora has 9 bundles of 10 sachets and 0 single ones. How many sachets is that?",
+      "q_zh": "Flora 有 9 捆香囊（每捆 10 只）和 0 只散的，一共多少只？",
+      "choices": [
+        "100",
+        "90",
+        "9",
+        "91"
+      ],
+      "choices_zh": [
+        "100",
+        "90",
+        "9",
+        "91"
+      ],
+      "answer": 1,
+      "explain_en": "9 × 10 + 0 = 90.",
+      "explain_zh": "9 × 10 + 0 = 90。",
+      "qtype": "place_value",
+      "qtype_zh": "数位（几个百/十/一）"
+    },
+    {
+      "id": "l5g2_061",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "easy",
+      "q_en": "The Bund is a famous waterfront in ____.",
+      "q_zh": "外滩是____一个有名的滨江地带。",
+      "choices": [
+        "Shanghai",
+        "London only",
+        "the desert",
+        "the Arctic"
+      ],
+      "choices_zh": [
+        "上海",
+        "只在伦敦",
+        "沙漠里",
+        "北极"
+      ],
+      "answer": 0,
+      "explain_en": "The Bund is Shanghai's famous waterfront along the Huangpu.",
+      "explain_zh": "外滩是上海黄浦江边很有名的滨江地带。",
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g2_062",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "A stall has 81 zongzi and sells 27. How many zongzi are left?",
+      "q_zh": "小摊有 81 只粽子，卖出 27 只，还剩几只？",
+      "choices": [
+        "54",
+        "53",
+        "55",
+        "108"
+      ],
+      "choices_zh": [
+        "54",
+        "53",
+        "55",
+        "108"
+      ],
+      "answer": 0,
+      "explain_en": "81 - 27 = 54.",
+      "explain_zh": "81 - 27 = 54。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g2_063",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora buys 3 sachets at 3 yuan each and pays 20 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 3 只香囊，每只 3 元，付了 20 元，找回多少元？",
+      "choices": [
+        "14",
+        "11",
+        "9"
+      ],
+      "choices_zh": [
+        "14",
+        "11",
+        "9"
+      ],
+      "answer": 1,
+      "explain_en": "20 - 3 × 3 = 11.",
+      "explain_zh": "20 - 3 × 3 = 11。",
+      "sign_en": [
+        "14",
+        "11",
+        "9"
+      ],
+      "sign_zh": [
+        "14",
+        "11",
+        "9"
+      ],
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g2_064",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "4 stalls each hang 2 bundles of mugwort. How many bundles in all?",
+      "q_zh": "4 个摊位每家挂 2 束艾草，一共多少束？",
+      "choices": [
+        "4",
+        "8",
+        "10",
+        "6"
+      ],
+      "choices_zh": [
+        "4",
+        "8",
+        "10",
+        "6"
+      ],
+      "answer": 1,
+      "explain_en": "2 × 4 = 8.",
+      "explain_zh": "2 × 4 = 8。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_065",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Grandma makes 8 trays of 4 zongzi, then 3 more zongzi. How many zongzi in all?",
+      "q_zh": "奶奶包了 8 盘粽子，每盘 4 只，又包了 3 只，一共多少只？",
+      "choices": [
+        "15",
+        "36",
+        "27",
+        "35"
+      ],
+      "choices_zh": [
+        "15",
+        "36",
+        "27",
+        "35"
+      ],
+      "answer": 3,
+      "explain_en": "8 × 4 + 3 = 35.",
+      "explain_zh": "8 × 4 + 3 = 35。",
+      "qtype": "mult_add_multistep",
+      "qtype_zh": "两步混合运算"
+    },
+    {
+      "id": "l5g2_066",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora has 58 zongzi and Bara's basket holds 51. How many more does Flora have?",
+      "q_zh": "Flora 有 58 只粽子，Bara 的车篮里有 51 只，Flora 比 Bara 多几只？",
+      "choices": [
+        "8",
+        "7",
+        "109",
+        "10"
+      ],
+      "choices_zh": [
+        "8",
+        "7",
+        "109",
+        "10"
+      ],
+      "answer": 1,
+      "explain_en": "58 - 51 = 7.",
+      "explain_zh": "58 - 51 = 7。",
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    },
+    {
+      "id": "l5g2_067",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "What do people often eat at this festival?",
+      "q_zh": "过这个节，人们常常吃什么？",
+      "choices": [
+        "Sand",
+        "Ski boots",
+        "Zongzi"
+      ],
+      "choices_zh": [
+        "沙子",
+        "滑雪靴",
+        "粽子"
+      ],
+      "answer": 2,
+      "explain_en": "Zongzi is the festival food.",
+      "explain_zh": "过端午，人们常吃粽子。",
+      "sign_en": [
+        "Sand",
+        "Ski boots",
+        "Zongzi"
+      ],
+      "sign_zh": [
+        "沙子",
+        "滑雪靴",
+        "粽子"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_068",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "easy",
+      "q_en": "Dragon Boat Festival comes in early ____ in Shanghai.",
+      "q_zh": "在上海，端午节通常在____初。",
+      "choices": [
+        "late autumn snow",
+        "deep winter",
+        "the dry desert season",
+        "summer"
+      ],
+      "choices_zh": [
+        "深秋大雪",
+        "深冬",
+        "沙漠旱季",
+        "夏天"
+      ],
+      "answer": 3,
+      "explain_en": "The fifth lunar month usually falls in May or June, early summer.",
+      "explain_zh": "农历五月多在公历五六月，是初夏。",
+      "qtype": "earth_sun_seasons",
+      "qtype_zh": "太阳与四季"
+    },
+    {
+      "id": "l5g2_069",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 19 sachets and then hangs 8 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 19 只香囊，又挂了 8 只，一共几只？",
+      "choices": [
+        "27",
+        "11",
+        "37"
+      ],
+      "choices_zh": [
+        "27",
+        "11",
+        "37"
+      ],
+      "answer": 0,
+      "explain_en": "19 + 8 = 27.",
+      "explain_zh": "19 + 8 = 27。",
+      "sign_en": [
+        "27",
+        "11",
+        "37"
+      ],
+      "sign_zh": [
+        "27",
+        "11",
+        "37"
+      ],
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_070",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 23 sachets and then hangs 19 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 23 只香囊，又挂了 19 只，一共几只？",
+      "choices": [
+        "52",
+        "4",
+        "42",
+        "43"
+      ],
+      "choices_zh": [
+        "52",
+        "4",
+        "42",
+        "43"
+      ],
+      "answer": 2,
+      "explain_en": "23 + 19 = 42.",
+      "explain_zh": "23 + 19 = 42。",
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_071",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Grandma has 4 packs of 100 reed leaves, 3 packs of 10 and 6 single leaves. How many leaves is that?",
+      "q_zh": "奶奶有 4 包 100 张的箬叶、3 包 10 张的和 6 张散的，一共多少张？",
+      "choices": [
+        "346",
+        "437",
+        "436",
+        "446"
+      ],
+      "choices_zh": [
+        "346",
+        "437",
+        "436",
+        "446"
+      ],
+      "answer": 2,
+      "explain_en": "4 × 100 + 3 × 10 + 6 = 436.",
+      "explain_zh": "4 × 100 + 3 × 10 + 6 = 436。",
+      "qtype": "place_value",
+      "qtype_zh": "数位（几个百/十/一）"
+    },
+    {
+      "id": "l5g2_072",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "Measure word: 一____龙舟 (one dragon boat)?",
+      "q_zh": "量词：一____龙舟？",
+      "choices": [
+        "本",
+        "朵",
+        "条"
+      ],
+      "choices_zh": [
+        "本",
+        "朵",
+        "条"
+      ],
+      "answer": 2,
+      "explain_en": "Boats use 条: 一条龙舟.",
+      "explain_zh": "船用“条”：一条龙舟。",
+      "sign_en": [
+        "本",
+        "朵",
+        "条"
+      ],
+      "sign_zh": [
+        "本",
+        "朵",
+        "条"
+      ],
+      "qtype": "zh_measure_word",
+      "qtype_zh": "中文量词"
+    },
+    {
+      "id": "l5g2_073",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "safety",
+      "difficulty": "easy",
+      "q_en": "Before you ride an e-bike across a Shanghai street, look ____.",
+      "q_zh": "骑电动车穿过上海的马路前，要看____。",
+      "choices": [
+        "at the sky only",
+        "only at your shoes",
+        "both ways"
+      ],
+      "choices_zh": [
+        "只看天上",
+        "只看鞋子",
+        "左右两边"
+      ],
+      "answer": 2,
+      "explain_en": "Look left and right for cars and bikes.",
+      "explain_zh": "左右看看有没有车。",
+      "sign_en": [
+        "at the sky only",
+        "only at your shoes",
+        "both ways"
+      ],
+      "sign_zh": [
+        "只看天上",
+        "只看鞋子",
+        "左右两边"
+      ],
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g2_074",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "easy",
+      "q_en": "English: one boat, two ____.",
+      "q_zh": "英文填空：one boat，two ____。",
+      "choices": [
+        "boats",
+        "boates",
+        "boat",
+        "boaties"
+      ],
+      "choices_zh": [
+        "boats",
+        "boates",
+        "boat",
+        "boaties"
+      ],
+      "answer": 0,
+      "explain_en": "Add -s to make the plural: boats.",
+      "explain_zh": "复数加 -s：boats。",
+      "qtype": "lang_word_form",
+      "qtype_zh": "词形（过去式/复数/合成词）"
+    },
+    {
+      "id": "l5g2_075",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "easy",
+      "q_en": "On Dragon Boat Festival, many families eat ____.",
+      "q_zh": "过端午节，很多家庭会吃____。",
+      "choices": [
+        "zongzi",
+        "hot dogs",
+        "pizza",
+        "ice cream only"
+      ],
+      "choices_zh": [
+        "粽子",
+        "热狗",
+        "比萨",
+        "只吃冰淇淋"
+      ],
+      "answer": 0,
+      "explain_en": "Eating zongzi is a main custom of this festival.",
+      "explain_zh": "过端午，人们常常吃粽子。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g2_076",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "The stall hangs 13 sachets and then hangs 31 more. How many sachets altogether?",
+      "q_zh": "摊位先挂了 13 只香囊，又挂了 31 只，一共几只？",
+      "choices": [
+        "44",
+        "45",
+        "54"
+      ],
+      "choices_zh": [
+        "44",
+        "45",
+        "54"
+      ],
+      "answer": 0,
+      "explain_en": "13 + 31 = 44.",
+      "explain_zh": "13 + 31 = 44。",
+      "sign_en": [
+        "44",
+        "45",
+        "54"
+      ],
+      "sign_zh": [
+        "44",
+        "45",
+        "54"
+      ],
+      "qtype": "addition",
+      "qtype_zh": "加法（合起来）"
+    },
+    {
+      "id": "l5g2_077",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "12 zongzi are shared equally among 6 children. How many does each child get?",
+      "q_zh": "12 只粽子平均分给 6 个孩子，每人几只？",
+      "choices": [
+        "8",
+        "6",
+        "2",
+        "3"
+      ],
+      "choices_zh": [
+        "8",
+        "6",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explain_en": "12 ÷ 6 = 2.",
+      "explain_zh": "12 ÷ 6 = 2。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g2_078",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora starts riding her e-bike through Lujiazui at 6:05 and stops at 6:20. How many minutes did she ride?",
+      "q_zh": "Flora 6:05 开始在陆家嘴骑电动车，6:20 停下，骑了多少分钟？",
+      "choices": [
+        "15",
+        "25",
+        "75"
+      ],
+      "choices_zh": [
+        "15",
+        "25",
+        "75"
+      ],
+      "answer": 0,
+      "explain_en": "20 - 5 = 15.",
+      "explain_zh": "20 - 5 = 15。",
+      "sign_en": [
+        "15",
+        "25",
+        "75"
+      ],
+      "sign_zh": [
+        "15",
+        "25",
+        "75"
+      ],
+      "qtype": "time_elapsed",
+      "qtype_zh": "经过时间"
+    },
+    {
+      "id": "l5g2_079",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "{name} counts festival change at the zongzi stall: 3 ten-yuan notes, 4 five-yuan notes and 5 one-yuan coins. How many yuan is that?",
+      "q_zh": "{name} 在粽子摊数零钱：有 3 张十元、4 张五元和 5 个一元硬币，一共多少元？",
+      "choices": [
+        "65",
+        "55",
+        "12"
+      ],
+      "choices_zh": [
+        "65",
+        "55",
+        "12"
+      ],
+      "answer": 1,
+      "explain_en": "3 × 10 + 4 × 5 + 5 = 55.",
+      "explain_zh": "3 × 10 + 4 × 5 + 5 = 55。",
+      "sign_en": [
+        "65",
+        "55",
+        "12"
+      ],
+      "sign_zh": [
+        "65",
+        "55",
+        "12"
+      ],
+      "qtype": "money_coins",
+      "qtype_zh": "钱币换算"
+    },
+    {
+      "id": "l5g2_080",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "easy",
+      "q_en": "Flora has 43 zongzi and Bara's basket holds 15. How many more does Flora have?",
+      "q_zh": "Flora 有 43 只粽子，Bara 的车篮里有 15 只，Flora 比 Bara 多几只？",
+      "choices": [
+        "27",
+        "31",
+        "28"
+      ],
+      "choices_zh": [
+        "27",
+        "31",
+        "28"
+      ],
+      "answer": 2,
+      "explain_en": "43 - 15 = 28.",
+      "explain_zh": "43 - 15 = 28。",
+      "sign_en": [
+        "27",
+        "31",
+        "28"
+      ],
+      "sign_zh": [
+        "27",
+        "31",
+        "28"
+      ],
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    },
+    {
+      "id": "l5g2_081",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "duanwu",
+      "difficulty": "hard",
+      "q_en": "Flora rides her e-bike to the Xintiandi door. The grandma hands her a warm ____.",
+      "q_zh": "Flora 骑电动车来到新天地门口，阿婆递给她一只热的____。",
+      "choices": [
+        "ski pole",
+        "zongzi",
+        "snowball",
+        "ice skate"
+      ],
+      "choices_zh": [
+        "滑雪杖",
+        "粽子",
+        "雪球",
+        "冰鞋"
+      ],
+      "answer": 1,
+      "explain_en": "The grandma welcomes her with a warm zongzi.",
+      "explain_zh": "阿婆用一只热粽子迎接她。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g2_082",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "nature",
+      "difficulty": "hard",
+      "q_en": "On Huaihai Road, Flora must duck on her e-bike because of low ____.",
+      "q_zh": "在淮海路上，Flora 骑电动车时要低头，是因为低低的____。",
+      "choices": [
+        "airport wings",
+        "hanging ice",
+        "plane-tree branches",
+        "desert dunes"
+      ],
+      "choices_zh": [
+        "机翼",
+        "挂着的冰",
+        "梧桐树枝",
+        "沙漠沙丘"
+      ],
+      "answer": 2,
+      "explain_en": "Low plane-tree branches hang over the road, so she ducks.",
+      "explain_zh": "梧桐低枝垂在路上，所以要低头。",
+      "qtype": "plant_biology",
+      "qtype_zh": "植物（艾草/箬叶/梧桐）"
+    },
+    {
+      "id": "l5g2_083",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Near Xintiandi, Flora buys 2 zongzi at 7 yuan each and pays with 20 yuan. How much change does she get?",
+      "q_zh": "在新天地附近，Flora 买了 2 只粽子，每只 7 元，付了 20 元，应找回多少元？",
+      "choices": [
+        "7",
+        "5",
+        "6",
+        "14"
+      ],
+      "choices_zh": [
+        "7",
+        "5",
+        "6",
+        "14"
+      ],
+      "answer": 2,
+      "explain_en": "20 - 2 × 7 = 6.",
+      "explain_zh": "20 - 2 × 7 = 6。",
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g2_084",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Along the Bund there are 3 dragon-boat teams, each with 5 paddlers. How many paddlers are there?",
+      "q_zh": "外滩边有 3 支龙舟队，每队有 5 名桨手，一共有多少名桨手？",
+      "choices": [
+        "15",
+        "16",
+        "20",
+        "12"
+      ],
+      "choices_zh": [
+        "15",
+        "16",
+        "20",
+        "12"
+      ],
+      "answer": 0,
+      "explain_en": "5 × 3 = 15.",
+      "explain_zh": "5 × 3 = 15。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g2_085",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "At the Bund, 54 race flags are shared equally by 9 dragon-boat teams. How many does each team get?",
+      "q_zh": "在外滩，54 面比赛旗平均分给 9 支龙舟队，每队几面？",
+      "choices": [
+        "5",
+        "6",
+        "45",
+        "7"
+      ],
+      "choices_zh": [
+        "5",
+        "6",
+        "45",
+        "7"
+      ],
+      "answer": 1,
+      "explain_en": "54 ÷ 9 = 6.",
+      "explain_zh": "54 ÷ 9 = 6。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g2_086",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The dragon-boat race by the Bund starts at 8:10 and ends at 8:30. How many minutes does it last?",
+      "q_zh": "外滩边的龙舟赛 8:10 开始，8:30 结束，一共多少分钟？",
+      "choices": [
+        "15",
+        "80",
+        "20",
+        "40"
+      ],
+      "choices_zh": [
+        "15",
+        "80",
+        "20",
+        "40"
+      ],
+      "answer": 2,
+      "explain_en": "30 - 10 = 20.",
+      "explain_zh": "30 - 10 = 20。",
+      "qtype": "time_elapsed",
+      "qtype_zh": "经过时间"
+    },
+    {
+      "id": "l5g2_087",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora sees 2 square-shaped flags on a dragon boat by the Bund. How many sides do they have altogether?",
+      "q_zh": "Flora 在外滩的龙舟上看见 2 面正方形的旗子，它们一共有几条边？",
+      "choices": [
+        "8",
+        "9",
+        "6",
+        "4"
+      ],
+      "choices_zh": [
+        "8",
+        "9",
+        "6",
+        "4"
+      ],
+      "answer": 0,
+      "explain_en": "2 × 4 = 8.",
+      "explain_zh": "2 × 4 = 8。",
+      "qtype": "shape_sides",
+      "qtype_zh": "图形的边和角"
+    },
+    {
+      "id": "l5g2_088",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "The Bund had 332 festival visitors today. Round 332 to the nearest hundred.",
+      "q_zh": "今天外滩的节日游客有 332 人，把 332 四舍五入到百位。",
+      "choices": [
+        "300",
+        "200",
+        "400",
+        "332"
+      ],
+      "choices_zh": [
+        "300",
+        "200",
+        "400",
+        "332"
+      ],
+      "answer": 0,
+      "explain_en": "332 rounded to the nearest hundred is 300.",
+      "explain_zh": "332 四舍五入到百位是 300。",
+      "qtype": "rounding",
+      "qtype_zh": "四舍五入/估算"
+    }
+  ]
+}
