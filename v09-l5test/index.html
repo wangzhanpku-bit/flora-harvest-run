@@ -6143,6 +6143,7 @@ const L5={
  PATH_EXT:180,
  CP:1220,
  INTRO_S:4.2,
+ GREET_S:2.8,
  DOORMAN_S:3.5,
  KEY:{"ebikes":"obs_l5_parked_ebikes","pajama":"obs_l5_pajama_local","snap":"obs_l5_street_snap","bus":"obs_l5_bus","candy":"obs_l5_rabbit_candy_stall","benbang":"obs_l5_benbang_queue","metro":"obs_l5_metro_crowd","step":"obs_l5_bund_step","wet":"obs_l5_wet_stone","tree":"obs_l5_plane_tree","festoon":"obs_l5_festoon"},
  KIND:{"ebikes":"hard","candy":"hard","bus":"hard","snap":"hard","metro":"hard","benbang":"hard","pajama":"cross","step":"jump","wet":"soft","tree":"duck","festoon":"duck"},
@@ -6448,28 +6449,32 @@ function l5GoBgm(){try{if(!isL5()||!S||S.mode!=='run')return;
 function l5AudStop(){try{l5BgmCancel();l5AmbStop();}catch(e){}}
 window.__L5AUD={keys:L5_AUD_KEYS,xfade:[1250,2250],letter:'bgm_dad_letter',wrong:'sfx_l5_quiz_wrong',jingle:'jingle_l5_duanwu',ride:'sfx_l5_ebike_loop',vols:{bgm:.45,amb_lujiazui:.24,amb_bund:.25,amb_huaihai:.26,ride:.3,sfx:.7,mall:.8}};
 
-/* intro finishes first; grandma greeting queues (3.5s design number kept) */
-L5._introUntil=0;L5._introUntilRunT=0;L5._doorSaid=0;
-function l5OnGo(){try{L5._introUntil=performance.now()+L5.INTRO_S*1000;L5._introUntilRunT=(S&&S.runT||0)+L5.INTRO_S;L5._doorSaid=0;L5._doorArmed=1;try{if(S)S._baraChaseAlert=1;}catch(e){}try{sub(bi(L3_INTRO.en,L3_INTRO.zh),Math.round(L5.INTRO_S*1000));}catch(e){}}catch(e){}}
+/* intro finishes first; grandma greeting follows for GREET_S of runT (3.5s appear number kept) */
+L5._introUntil=0;L5._introUntilRunT=0;L5._doorSaid=0;L5._greetUntilRunT=0;
+function l5OnGo(){try{L5._introUntil=performance.now()+L5.INTRO_S*1000;L5._introUntilRunT=(S&&S.runT||0)+L5.INTRO_S;L5._doorSaid=0;L5._greetUntilRunT=0;L5._doorArmed=1;try{if(S)S._baraChaseAlert=1;}catch(e){}try{sub(bi(L3_INTRO.en,L3_INTRO.zh),Math.round(L5.INTRO_S*1000));}catch(e){}}catch(e){}}
+function l5GreetBusy(){
+ /* true while opening or greeting should own #sub — hints must not steal it */
+ if(!S||S.mode!=='run')return false;
+ const rt=S.runT||0;
+ if(rt<(L5._introUntilRunT||L5.INTRO_S))return true;
+ if(!L5._doorSaid)return true;
+ return rt<(L5._greetUntilRunT||0);
+}
 function l5DoorStep(){try{
  if(!isL5()||!S||S.mode!=='run'||L5._doorSaid)return;
  if(!L5._doorArmed)return;
  if((S.runT||0)<L5.DOORMAN_S)return;/* 3.5s design number kept; may queue past this */
- if((S.runT||0)<(L5._introUntilRunT||L5.INTRO_S))return;/* opening is 4.2s of runT; greeting waits even if wall-clock introUntil already elapsed */
- if(performance.now()<L5._introUntil)return;
- /* queue: finish the opening line first, then Slow down, kid! / 小囡，慢点骑！ — do not overlap text */
- try{
-  const el=document.getElementById('sub');
-  if(el&&el.style.display!=='none'){
-    const t=(el.innerText||el.textContent||'');
-    if(t.trim()&&!/慢点骑|Slow down, kid/i.test(t))return;
-  }
- }catch(e){}
- L5._doorSaid=1;try{play('sfx_l5_nainai_call');}catch(e){}sub(bi('Slow down, kid!','小囡，慢点骑！'),2800);
+ if((S.runT||0)<(L5._introUntilRunT||L5.INTRO_S))return;/* opening is 4.2s of runT; greeting starts as soon as it ends */
+ /* do not wait on leftover hint text or wall-clock introUntil — hints are gated until greeting hold ends */
+ const gs=L5.GREET_S||2.8;
+ L5._doorSaid=1;L5._greetUntilRunT=(S.runT||0)+gs;
+ try{play('sfx_l5_nainai_call');}catch(e){}
+ sub(bi('Slow down, kid!','小囡，慢点骑！'),Math.round(gs*1000));
 }catch(e){}}
 
 function l5HintStep(){if(!S||S.mode!=='run')return;
- /* first hint gated until intro window (z>=73.5) */
+ /* first hint still z>=73.5, but not during opening or the 2.8s greeting hold */
+ if(typeof l5GreetBusy==='function'&&l5GreetBusy())return;
  const z=S.z||0;
  if(z<73.5)return;
  L5.HINTS.forEach(h=>{
@@ -6534,6 +6539,20 @@ function l5HoldOpening(){
   sub(bi(L3_INTRO.en,L3_INTRO.zh),ms);
  }catch(e){}
 }
+function l5HoldGreeting(){
+ /* Keep Slow down, kid! / 小囡，慢点骑！ for GREET_S of runT; restore if a hint or wall-clock timeout hid it. Do not replay the call sfx. */
+ if(!isL5()||!S||S.mode!=='run'||!L5._doorSaid)return;
+ const until=L5._greetUntilRunT||0;
+ if((S.runT||0)>=until)return;
+ try{
+  const el=document.getElementById('sub');
+  const t=(el&&(el.innerText||el.textContent)||'');
+  const on=el&&el.style.display!=='none';
+  if(on&&/慢点骑|Slow down, kid/i.test(t))return;
+  const ms=Math.max(300,Math.round((until-(S.runT||0))*1000));
+  sub(bi('Slow down, kid!','小囡，慢点骑！'),ms);
+ }catch(e){}
+}
 
 function l5Frame(dt){
  if(!S)return;
@@ -6543,13 +6562,14 @@ function l5Frame(dt){
  }
  l5ClampLane();
  try{l5HoldOpening();}catch(e){}
- try{l5HintStep();}catch(e){}
  try{l5DoorStep();}catch(e){}
+ try{l5HoldGreeting();}catch(e){}
+ try{l5HintStep();}catch(e){}
  try{l5PlateFit();}catch(e){}
  try{if(typeof l3EnsureLodge==='function'&&(TEX&&TEX.finish_l5_xintiandi_door)){const lg=l3EnsureLodge();if(lg)lg.userData.l5=1;}}catch(e){}
 }
 
-function l5LevelSwitch(on){l5ApplyData(on);l5PathExt(on);L5.HINTS.forEach(h=>h.fired=0);L5._doorSaid=0;L5._doorArmed=0;L5._introUntil=0;L5._introUntilRunT=0;}
+function l5LevelSwitch(on){l5ApplyData(on);l5PathExt(on);L5.HINTS.forEach(h=>h.fired=0);L5._doorSaid=0;L5._doorArmed=0;L5._introUntil=0;L5._introUntilRunT=0;L5._greetUntilRunT=0;}
 
 function l5Paper(){return (typeof TEX!=='undefined')&&(TEX.letter_dad_l5_duanwu_blank_tall||TEX.letter_dad_l5_placeholder)||null;}
 
