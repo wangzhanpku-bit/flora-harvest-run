@@ -1,0 +1,2530 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 4,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g4_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "In a set of spring couplets, what is the short horizontal strip above the door called?",
+   "q_zh": "一副春联里，贴在门楣上的那条横着的短红纸叫什么？",
+   "choices": [
+    "The second line",
+    "The héngpī (horizontal scroll)",
+    "A door god",
+    "The first line"
+   ],
+   "choices_zh": [
+    "下联",
+    "横批",
+    "门神",
+    "上联"
+   ],
+   "answer": 1,
+   "explain_en": "The horizontal strip is the héngpī.",
+   "explain_zh": "门楣上横着的是横批。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g4_002",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A rectangular courtyard in a siheyuan is 30 m long and 15 m wide. What is its perimeter in metres?",
+   "q_zh": "四合院里一个长方形院子长 30 米、宽 15 米，周长是多少米？",
+   "choices": [
+    "45",
+    "90",
+    "450"
+   ],
+   "choices_zh": [
+    "45",
+    "90",
+    "450"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (30 + 15) = 90.",
+   "explain_zh": "2 × (30 + 15) = 90。",
+   "sign_en": [
+    "45",
+    "90",
+    "450"
+   ],
+   "sign_zh": [
+    "45",
+    "90",
+    "450"
+   ],
+   "qtype": "perimeter_rect",
+   "qtype_zh": "长方形周长"
+  },
+  {
+   "id": "l4g4_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Lanterns along a hutong show the 12 zodiac animals in order, again and again. Which lantern from 1 to 12 shows the same animal as lantern 43?",
+   "q_zh": "胡同里的灯笼按顺序反复画着 12 个生肖。第 43 个灯笼和第 1～12 个中的第几个画的是同一个生肖？",
+   "choices": [
+    "3",
+    "9",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "3",
+    "9",
+    "6",
+    "7"
+   ],
+   "answer": 3,
+   "explain_en": "43 - 12 × 3 = 7.",
+   "explain_zh": "43 - 12 × 3 = 7。",
+   "qtype": "cycle_mod",
+   "qtype_zh": "周期问题（生肖轮回）"
+  },
+  {
+   "id": "l4g4_004",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The Long Corridor paintings tour had 8032 visitors today. Round 8032 to the nearest thousand.",
+   "q_zh": "今天长廊彩画参观有 8032 人，把 8032 四舍五入到千位。",
+   "choices": [
+    "7000",
+    "9000",
+    "8000",
+    "8032"
+   ],
+   "choices_zh": [
+    "7000",
+    "9000",
+    "8000",
+    "8032"
+   ],
+   "answer": 2,
+   "explain_en": "8032 rounded to the nearest thousand is 8000.",
+   "explain_zh": "8032 四舍五入到千位是 8000。",
+   "qtype": "rounding",
+   "qtype_zh": "四舍五入/估算"
+  },
+  {
+   "id": "l4g4_005",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 17 m by 12 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 17 米、宽 12 米，面积是多少平方米？",
+   "choices": [
+    "29",
+    "192",
+    "204",
+    "221"
+   ],
+   "choices_zh": [
+    "29",
+    "192",
+    "204",
+    "221"
+   ],
+   "answer": 2,
+   "explain_en": "17 × 12 = 204.",
+   "explain_zh": "17 × 12 = 204。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_006",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 11 m by 13 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 11 米、宽 13 米，面积是多少平方米？",
+   "choices": [
+    "154",
+    "48",
+    "130",
+    "143"
+   ],
+   "choices_zh": [
+    "154",
+    "48",
+    "130",
+    "143"
+   ],
+   "answer": 3,
+   "explain_en": "11 × 13 = 143.",
+   "explain_zh": "11 × 13 = 143。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_007",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A plate holds 4 dumplings. How many dumplings on 11 plates?",
+   "q_zh": "一盘有 4 个饺子，11 盘一共多少个？",
+   "choices": [
+    "44",
+    "33",
+    "45",
+    "48"
+   ],
+   "choices_zh": [
+    "44",
+    "33",
+    "45",
+    "48"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 11 = 44.",
+   "explain_zh": "4 × 11 = 44。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_008",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why does a pigeon whistle make a sound as the pigeon flies?",
+   "q_zh": "鸽子飞的时候，鸽哨为什么会响？",
+   "choices": [
+    "The pigeon sings into it",
+    "Moving air makes it vibrate",
+    "Sunlight heats it",
+    "It has a battery"
+   ],
+   "choices_zh": [
+    "鸽子对着它唱歌",
+    "流动的空气让它振动",
+    "阳光把它晒热",
+    "里面有电池"
+   ],
+   "answer": 1,
+   "explain_en": "Sound is vibration; air rushing through the whistle vibrates.",
+   "explain_zh": "声音来自振动，风吹过鸽哨使空气振动。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（鸽哨/烟花）"
+  },
+  {
+   "id": "l4g4_009",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Each stick of tanghulu has 6 hawthorns. How many hawthorns on 3 sticks?",
+   "q_zh": "每串糖葫芦有 6 个山楂，3 串一共多少个山楂？",
+   "choices": [
+    "24",
+    "18",
+    "9"
+   ],
+   "choices_zh": [
+    "24",
+    "18",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 3 = 18.",
+   "explain_zh": "6 × 3 = 18。",
+   "sign_en": [
+    "24",
+    "18",
+    "9"
+   ],
+   "sign_zh": [
+    "24",
+    "18",
+    "9"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_010",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "27 dumplings are put equally on 9 plates. How many on each plate?",
+   "q_zh": "27 个饺子平均放进 9 个盘子，每盘几个？",
+   "choices": [
+    "12",
+    "3",
+    "18"
+   ],
+   "choices_zh": [
+    "12",
+    "3",
+    "18"
+   ],
+   "answer": 1,
+   "explain_en": "27 ÷ 9 = 3.",
+   "explain_zh": "27 ÷ 9 = 3。",
+   "sign_en": [
+    "12",
+    "3",
+    "18"
+   ],
+   "sign_zh": [
+    "12",
+    "3",
+    "18"
+   ],
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_011",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "The Summer Palace's Long Corridor is about how long?",
+   "q_zh": "颐和园的长廊大约有多长？",
+   "choices": [
+    "728 m",
+    "28 m",
+    "72 m",
+    "7 km"
+   ],
+   "choices_zh": [
+    "728 米",
+    "28 米",
+    "72 米",
+    "7 千米"
+   ],
+   "answer": 0,
+   "explain_en": "The Long Corridor is 728 m long with 273 sections.",
+   "explain_zh": "长廊全长 728 米，共 273 间。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g4_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Grandma makes 8 plates of 13 dumplings, then 7 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 8 盘饺子，每盘 13 个，又包了 7 个，一共多少个？",
+   "choices": [
+    "103",
+    "111",
+    "112",
+    "28"
+   ],
+   "choices_zh": [
+    "103",
+    "111",
+    "112",
+    "28"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 13 + 7 = 111.",
+   "explain_zh": "8 × 13 + 7 = 111。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_013",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 8 m by 5 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 8 米、宽 5 米，面积是多少平方米？",
+   "choices": [
+    "13",
+    "26",
+    "40"
+   ],
+   "choices_zh": [
+    "13",
+    "26",
+    "40"
+   ],
+   "answer": 2,
+   "explain_en": "8 × 5 = 40.",
+   "explain_zh": "8 × 5 = 40。",
+   "sign_en": [
+    "13",
+    "26",
+    "40"
+   ],
+   "sign_zh": [
+    "13",
+    "26",
+    "40"
+   ],
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 24 m by 9 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 24 米、宽 9 米，面积是多少平方米？",
+   "choices": [
+    "33",
+    "66",
+    "240",
+    "216"
+   ],
+   "choices_zh": [
+    "33",
+    "66",
+    "240",
+    "216"
+   ],
+   "answer": 3,
+   "explain_en": "24 × 9 = 216.",
+   "explain_zh": "24 × 9 = 216。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_015",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "Riding a tricycle at night, use ____.",
+   "q_zh": "晚上骑三轮车要用____。",
+   "choices": [
+    "Sunglasses",
+    "Lights and reflectors",
+    "No lights"
+   ],
+   "choices_zh": [
+    "墨镜",
+    "车灯和反光片",
+    "不开灯"
+   ],
+   "answer": 1,
+   "explain_en": "Lights and reflectors help others see you.",
+   "explain_zh": "车灯和反光片让别人看见你。",
+   "sign_en": [
+    "Sunglasses",
+    "Lights and reflectors",
+    "No lights"
+   ],
+   "sign_zh": [
+    "墨镜",
+    "车灯和反光片",
+    "不开灯"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "骑车与交通安全"
+  },
+  {
+   "id": "l4g4_016",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A hutong is 3 km long in total. How many metres is that?",
+   "q_zh": "一条胡同全长 3 千米，是多少米？",
+   "choices": [
+    "30000",
+    "3000",
+    "300",
+    "30"
+   ],
+   "choices_zh": [
+    "30000",
+    "3000",
+    "300",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 1000 = 3000.",
+   "explain_zh": "3 × 1000 = 3000。",
+   "qtype": "measure_convert",
+   "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+  },
+  {
+   "id": "l4g4_017",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: I am flowers that bloom in the night sky. I boom, sparkle and fade in a second. What am I?",
+   "q_zh": "灯谜：夜空开花一眨眼，又响又亮就不见。打一物，是什么？",
+   "choices": [
+    "Fireworks",
+    "Stars",
+    "Lanterns",
+    "Kites"
+   ],
+   "choices_zh": [
+    "烟花",
+    "星星",
+    "灯笼",
+    "风筝"
+   ],
+   "answer": 0,
+   "explain_en": "Fireworks burst like flowers with a boom and fade quickly.",
+   "explain_zh": "烟花像花一样在夜空炸开，很快就灭了。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_018",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 6 m by 10 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 6 米、宽 10 米，面积是多少平方米？",
+   "choices": [
+    "16",
+    "50",
+    "60",
+    "32"
+   ],
+   "choices_zh": [
+    "16",
+    "50",
+    "60",
+    "32"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 10 = 60.",
+   "explain_zh": "6 × 10 = 60。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_019",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Past tense: we ____ lanterns.",
+   "q_zh": "英文过去式：we ____ lanterns（挂灯笼）。",
+   "choices": [
+    "hung",
+    "hungs",
+    "hangen"
+   ],
+   "choices_zh": [
+    "hung",
+    "hungs",
+    "hangen"
+   ],
+   "answer": 0,
+   "explain_en": "Hang (a thing), hung, hung.",
+   "explain_zh": "hang（挂东西）的过去式是 hung。",
+   "sign_en": [
+    "hung",
+    "hungs",
+    "hangen"
+   ],
+   "sign_zh": [
+    "hung",
+    "hungs",
+    "hangen"
+   ],
+   "qtype": "lang_word_form",
+   "qtype_zh": "词形（过去式/复数/合成词）"
+  },
+  {
+   "id": "l4g4_020",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "Which second line matches the couplet first line \"天增岁月人增寿\" (Heaven adds years, and people add to their life)?",
+   "q_zh": "哪一句是上联「天增岁月人增寿」的下联？",
+   "choices": [
+    "床前明月光",
+    "春风送暖入屠苏",
+    "春满乾坤福满堂",
+    "诗书继世长"
+   ],
+   "choices_zh": [
+    "床前明月光",
+    "春风送暖入屠苏",
+    "春满乾坤福满堂",
+    "诗书继世长"
+   ],
+   "answer": 2,
+   "explain_en": "The full couplet is 天增岁月人增寿 / 春满乾坤福满堂 (Spring fills the world, blessing fills the home).",
+   "explain_zh": "全联是：天增岁月人增寿，春满乾坤福满堂。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g4_021",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "81 red envelopes are shared equally among 9 children. How many does each child get?",
+   "q_zh": "81 个红包平均分给 9 个孩子，每人几个？",
+   "choices": [
+    "18",
+    "9",
+    "72"
+   ],
+   "choices_zh": [
+    "18",
+    "9",
+    "72"
+   ],
+   "answer": 1,
+   "explain_en": "81 ÷ 9 = 9.",
+   "explain_zh": "81 ÷ 9 = 9。",
+   "sign_en": [
+    "18",
+    "9",
+    "72"
+   ],
+   "sign_zh": [
+    "18",
+    "9",
+    "72"
+   ],
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_022",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A tanghulu stick is 49 cm long. How many millimetres is that?",
+   "q_zh": "一根糖葫芦竹签长 49 厘米，是多少毫米？",
+   "choices": [
+    "59",
+    "4900",
+    "49",
+    "490"
+   ],
+   "choices_zh": [
+    "59",
+    "4900",
+    "49",
+    "490"
+   ],
+   "answer": 3,
+   "explain_en": "49 × 10 = 490.",
+   "explain_zh": "49 × 10 = 490。",
+   "qtype": "measure_convert",
+   "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+  },
+  {
+   "id": "l4g4_023",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A hutong is 4 km long in total. How many metres is that?",
+   "q_zh": "一条胡同全长 4 千米，是多少米？",
+   "choices": [
+    "40000",
+    "4000",
+    "400"
+   ],
+   "choices_zh": [
+    "40000",
+    "4000",
+    "400"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 1000 = 4000.",
+   "explain_zh": "4 × 1000 = 4000。",
+   "sign_en": [
+    "40000",
+    "4000",
+    "400"
+   ],
+   "sign_zh": [
+    "40000",
+    "4000",
+    "400"
+   ],
+   "qtype": "measure_convert",
+   "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+  },
+  {
+   "id": "l4g4_024",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A rectangular courtyard in a siheyuan is 15 m long and 11 m wide. What is its perimeter in metres?",
+   "q_zh": "四合院里一个长方形院子长 15 米、宽 11 米，周长是多少米？",
+   "choices": [
+    "26",
+    "52",
+    "54"
+   ],
+   "choices_zh": [
+    "26",
+    "52",
+    "54"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (15 + 11) = 52.",
+   "explain_zh": "2 × (15 + 11) = 52。",
+   "sign_en": [
+    "26",
+    "52",
+    "54"
+   ],
+   "sign_zh": [
+    "26",
+    "52",
+    "54"
+   ],
+   "qtype": "perimeter_rect",
+   "qtype_zh": "长方形周长"
+  },
+  {
+   "id": "l4g4_025",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 12 m by 10 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 12 米、宽 10 米，面积是多少平方米？",
+   "choices": [
+    "22",
+    "132",
+    "120"
+   ],
+   "choices_zh": [
+    "22",
+    "132",
+    "120"
+   ],
+   "answer": 2,
+   "explain_en": "12 × 10 = 120.",
+   "explain_zh": "12 × 10 = 120。",
+   "sign_en": [
+    "22",
+    "132",
+    "120"
+   ],
+   "sign_zh": [
+    "22",
+    "132",
+    "120"
+   ],
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "23 pigeons sit on a hutong roof and 14 more land. How many pigeons now?",
+   "q_zh": "胡同屋顶上有 23 只鸽子，又飞来 14 只，现在有几只？",
+   "choices": [
+    "47",
+    "37",
+    "38",
+    "36"
+   ],
+   "choices_zh": [
+    "47",
+    "37",
+    "38",
+    "36"
+   ],
+   "answer": 1,
+   "explain_en": "23 + 14 = 37.",
+   "explain_zh": "23 + 14 = 37。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g4_027",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 15 hutong doors on the street, and 1/5 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 15 扇门，其中 1/5 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "12",
+    "8",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "12",
+    "8",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "15 × 1 ÷ 5 = 3.",
+   "explain_zh": "15 × 1 ÷ 5 = 3。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_028",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "35 lanterns are hung equally on 5 gates. How many lanterns per gate?",
+   "q_zh": "35 个灯笼平均挂在 5 家门口，每家几个？",
+   "choices": [
+    "7",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "8",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "35 ÷ 5 = 7.",
+   "explain_zh": "35 ÷ 5 = 7。",
+   "sign_en": [
+    "7",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "7",
+    "8",
+    "6"
+   ],
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_029",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Bara gets 53 red envelopes from Grandma and 27 from Grandpa. How many altogether?",
+   "q_zh": "Bara 从奶奶那儿收到 53 个红包，从爷爷那儿收到 27 个，一共几个？",
+   "choices": [
+    "80",
+    "79",
+    "26",
+    "90"
+   ],
+   "choices_zh": [
+    "80",
+    "79",
+    "26",
+    "90"
+   ],
+   "answer": 0,
+   "explain_en": "53 + 27 = 80.",
+   "explain_zh": "53 + 27 = 80。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g4_030",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A rectangular courtyard in a siheyuan is 12 m long and 6 m wide. What is its perimeter in metres?",
+   "q_zh": "四合院里一个长方形院子长 12 米、宽 6 米，周长是多少米？",
+   "choices": [
+    "38",
+    "18",
+    "36",
+    "72"
+   ],
+   "choices_zh": [
+    "38",
+    "18",
+    "36",
+    "72"
+   ],
+   "answer": 2,
+   "explain_en": "2 × (12 + 6) = 36.",
+   "explain_zh": "2 × (12 + 6) = 36。",
+   "qtype": "perimeter_rect",
+   "qtype_zh": "长方形周长"
+  },
+  {
+   "id": "l4g4_031",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Flora's little cousin is 2. Their uncle has the same zodiac animal as the cousin and is the youngest such age over 35. How old is the uncle?",
+   "q_zh": "Flora 的表弟 2 岁，舅舅和他属相相同，并且是大于 35 岁里最小的那个年龄。舅舅几岁？",
+   "choices": [
+    "26",
+    "50",
+    "38",
+    "37"
+   ],
+   "choices_zh": [
+    "26",
+    "50",
+    "38",
+    "37"
+   ],
+   "answer": 2,
+   "explain_en": "2 + 12 × 3 = 38.",
+   "explain_zh": "2 + 12 × 3 = 38。",
+   "qtype": "cycle_mod",
+   "qtype_zh": "周期问题（生肖轮回）"
+  },
+  {
+   "id": "l4g4_032",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: Snip, snip with scissors and red paper; I bloom on the window but never smell. What am I?",
+   "q_zh": "灯谜：剪刀红纸咔嚓嚓，窗上开花不香。打一物，是什么？",
+   "choices": [
+    "A real flower",
+    "A paper-cut window flower",
+    "A curtain",
+    "A red envelope"
+   ],
+   "choices_zh": [
+    "真花",
+    "窗花",
+    "窗帘",
+    "红包"
+   ],
+   "answer": 1,
+   "explain_en": "A paper-cut (窗花) is cut from red paper and stuck on windows.",
+   "explain_zh": "窗花用红纸剪成，贴在窗户上。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_033",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "78 lanterns are hung equally on 6 gates. How many lanterns per gate?",
+   "q_zh": "78 个灯笼平均挂在 6 家门口，每家几个？",
+   "choices": [
+    "19",
+    "72",
+    "14",
+    "13"
+   ],
+   "choices_zh": [
+    "19",
+    "72",
+    "14",
+    "13"
+   ],
+   "answer": 3,
+   "explain_en": "78 ÷ 6 = 13.",
+   "explain_zh": "78 ÷ 6 = 13。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_034",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "120 red envelopes are shared equally among 8 children. How many does each child get?",
+   "q_zh": "120 个红包平均分给 8 个孩子，每人几个？",
+   "choices": [
+    "23",
+    "14",
+    "16",
+    "15"
+   ],
+   "choices_zh": [
+    "23",
+    "14",
+    "16",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "120 ÷ 8 = 15.",
+   "explain_zh": "120 ÷ 8 = 15。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "In the Chinese zodiac, which animal is 8th?",
+   "q_zh": "十二生肖里排第 8 位的是哪种动物？",
+   "choices": [
+    "Rooster",
+    "Monkey",
+    "Goat",
+    "Horse"
+   ],
+   "choices_zh": [
+    "鸡",
+    "猴",
+    "羊",
+    "马"
+   ],
+   "answer": 2,
+   "explain_en": "Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat: the Goat is 8th.",
+   "explain_zh": "鼠牛虎兔龙蛇马羊，羊排第 8。",
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g4_036",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: I follow you in the sun but vanish in the dark. I copy every move but never speak. What am I?",
+   "q_zh": "灯谜：太阳下面跟着你，天黑就不见，学你动作不说话。打一物，是什么？",
+   "choices": [
+    "A mirror",
+    "Your shadow",
+    "A pigeon",
+    "An echo"
+   ],
+   "choices_zh": [
+    "镜子",
+    "影子",
+    "鸽子",
+    "回声"
+   ],
+   "answer": 1,
+   "explain_en": "A shadow needs light, copies you and is silent.",
+   "explain_zh": "影子要有光才有，学你动作，不出声。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_037",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Chinese measure word: 一____冰糖葫芦 (one stick of tanghulu). Which word fits?",
+   "q_zh": "量词填空：一____冰糖葫芦。",
+   "choices": [
+    "头",
+    "串",
+    "匹",
+    "张"
+   ],
+   "choices_zh": [
+    "头",
+    "串",
+    "匹",
+    "张"
+   ],
+   "answer": 1,
+   "explain_en": "Things threaded on a stick use 串.",
+   "explain_zh": "穿成一串的东西用“串”。",
+   "qtype": "zh_measure_word",
+   "qtype_zh": "中文量词"
+  },
+  {
+   "id": "l4g4_038",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A tanghulu stick is 43 cm long. How many millimetres is that?",
+   "q_zh": "一根糖葫芦竹签长 43 厘米，是多少毫米？",
+   "choices": [
+    "4300",
+    "430",
+    "53"
+   ],
+   "choices_zh": [
+    "4300",
+    "430",
+    "53"
+   ],
+   "answer": 1,
+   "explain_en": "43 × 10 = 430.",
+   "explain_zh": "43 × 10 = 430。",
+   "sign_en": [
+    "4300",
+    "430",
+    "53"
+   ],
+   "sign_zh": [
+    "4300",
+    "430",
+    "53"
+   ],
+   "qtype": "measure_convert",
+   "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+  },
+  {
+   "id": "l4g4_039",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Grandma makes 8 plates of 11 dumplings, then 4 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 8 盘饺子，每盘 11 个，又包了 4 个，一共多少个？",
+   "choices": [
+    "23",
+    "120",
+    "93",
+    "92"
+   ],
+   "choices_zh": [
+    "23",
+    "120",
+    "93",
+    "92"
+   ],
+   "answer": 3,
+   "explain_en": "8 × 11 + 4 = 92.",
+   "explain_zh": "8 × 11 + 4 = 92。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_040",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "The Lantern Festival is on which day of the first lunar month?",
+   "q_zh": "元宵节是农历正月的哪一天？",
+   "choices": [
+    "The 1st",
+    "The 30th",
+    "The 5th",
+    "The 15th"
+   ],
+   "choices_zh": [
+    "初一",
+    "三十",
+    "初五",
+    "十五"
+   ],
+   "answer": 3,
+   "explain_en": "The Lantern Festival falls on the 15th day of the first lunar month.",
+   "explain_zh": "元宵节在正月十五。",
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g4_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "One lunar month is about how many days long?",
+   "q_zh": "一个农历月大约有多少天？",
+   "choices": [
+    "15",
+    "7",
+    "365",
+    "29.5"
+   ],
+   "choices_zh": [
+    "15",
+    "7",
+    "365",
+    "29.5"
+   ],
+   "answer": 3,
+   "explain_en": "From new moon to new moon takes about 29.5 days.",
+   "explain_zh": "从新月到下一个新月约 29.5 天。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g4_042",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "The Seventeen-Arch Bridge leads to ____.",
+   "q_zh": "十七孔桥通向____。",
+   "choices": [
+    "The Great Wall",
+    "South Lake Island",
+    "Tiananmen"
+   ],
+   "choices_zh": [
+    "长城",
+    "南湖岛",
+    "天安门"
+   ],
+   "answer": 1,
+   "explain_en": "It joins the East Dike to South Lake Island.",
+   "explain_zh": "它东接东堤，西连南湖岛。",
+   "sign_en": [
+    "The Great Wall",
+    "South Lake Island",
+    "Tiananmen"
+   ],
+   "sign_zh": [
+    "长城",
+    "南湖岛",
+    "天安门"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g4_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A rectangular courtyard in a siheyuan is 10 m long and 15 m wide. What is its perimeter in metres?",
+   "q_zh": "四合院里一个长方形院子长 10 米、宽 15 米，周长是多少米？",
+   "choices": [
+    "52",
+    "50",
+    "48",
+    "150"
+   ],
+   "choices_zh": [
+    "52",
+    "50",
+    "48",
+    "150"
+   ],
+   "answer": 1,
+   "explain_en": "2 × (10 + 15) = 50.",
+   "explain_zh": "2 × (10 + 15) = 50。",
+   "qtype": "perimeter_rect",
+   "qtype_zh": "长方形周长"
+  },
+  {
+   "id": "l4g4_044",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Grandma makes 7 plates of 11 dumplings, then 6 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 7 盘饺子，每盘 11 个，又包了 6 个，一共多少个？",
+   "choices": [
+    "84",
+    "76",
+    "83",
+    "119"
+   ],
+   "choices_zh": [
+    "84",
+    "76",
+    "83",
+    "119"
+   ],
+   "answer": 2,
+   "explain_en": "7 × 11 + 6 = 83.",
+   "explain_zh": "7 × 11 + 6 = 83。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_045",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Each stick of tanghulu has 4 hawthorns. How many hawthorns on 6 sticks?",
+   "q_zh": "每串糖葫芦有 4 个山楂，6 串一共多少个山楂？",
+   "choices": [
+    "28",
+    "24",
+    "18",
+    "10"
+   ],
+   "choices_zh": [
+    "28",
+    "24",
+    "18",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 6 = 24.",
+   "explain_zh": "4 × 6 = 24。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_046",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The Long Corridor paintings tour had 4250 visitors today. Round 4250 to the nearest thousand.",
+   "q_zh": "今天长廊彩画参观有 4250 人，把 4250 四舍五入到千位。",
+   "choices": [
+    "4250",
+    "4000",
+    "3000"
+   ],
+   "choices_zh": [
+    "4250",
+    "4000",
+    "3000"
+   ],
+   "answer": 1,
+   "explain_en": "4250 rounded to the nearest thousand is 4000.",
+   "explain_zh": "4250 四舍五入到千位是 4000。",
+   "sign_en": [
+    "4250",
+    "4000",
+    "3000"
+   ],
+   "sign_zh": [
+    "4250",
+    "4000",
+    "3000"
+   ],
+   "qtype": "rounding",
+   "qtype_zh": "四舍五入/估算"
+  },
+  {
+   "id": "l4g4_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Flora starts riding through the hutongs at 2:30 and stops at 2:45. How many minutes did she ride?",
+   "q_zh": "Flora 2:30 开始骑车逛胡同，2:45 停下，骑了多少分钟？",
+   "choices": [
+    "10",
+    "75",
+    "25",
+    "15"
+   ],
+   "choices_zh": [
+    "10",
+    "75",
+    "25",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "45 - 30 = 15.",
+   "explain_zh": "45 - 30 = 15。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g4_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: I fly high in the spring sky but have no wings of my own. A long string keeps me from flying away. What am I?",
+   "q_zh": "灯谜：春天飞上天，自己没翅膀，一根长线拉着我。打一物，是什么？",
+   "choices": [
+    "A cloud",
+    "A pigeon",
+    "A kite",
+    "A butterfly"
+   ],
+   "choices_zh": [
+    "云",
+    "鸽子",
+    "风筝",
+    "蝴蝶"
+   ],
+   "answer": 2,
+   "explain_en": "A kite has no wings of its own and is held by a string.",
+   "explain_zh": "风筝没有自己的翅膀，靠线牵着。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_049",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A tricycle full of New Year goods is harder to start moving than an empty one. Why?",
+   "q_zh": "装满年货的三轮车比空车更难起步，为什么？",
+   "choices": [
+    "It is a brighter colour",
+    "It is noisier",
+    "It has more lanterns",
+    "It has more mass"
+   ],
+   "choices_zh": [
+    "颜色更亮",
+    "声音更大",
+    "灯笼更多",
+    "质量更大"
+   ],
+   "answer": 3,
+   "explain_en": "More mass means more inertia, so more force is needed.",
+   "explain_zh": "质量越大惯性越大，需要更大的力。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l4g4_050",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Synonym of \"glow\"?",
+   "q_zh": "英文 glow 的近义词？",
+   "choices": [
+    "freeze",
+    "shine",
+    "shout"
+   ],
+   "choices_zh": [
+    "freeze",
+    "shine",
+    "shout"
+   ],
+   "answer": 1,
+   "explain_en": "Glow and shine both mean give off light.",
+   "explain_zh": "glow 和 shine 都是发光。",
+   "sign_en": [
+    "freeze",
+    "shine",
+    "shout"
+   ],
+   "sign_zh": [
+    "freeze",
+    "shine",
+    "shout"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g4_051",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "Zodiac: which comes after the Dragon?",
+   "q_zh": "生肖：龙后面是谁？",
+   "choices": [
+    "Snake",
+    "Horse",
+    "Tiger"
+   ],
+   "choices_zh": [
+    "蛇",
+    "马",
+    "虎"
+   ],
+   "answer": 0,
+   "explain_en": "The order goes Dragon, Snake, Horse.",
+   "explain_zh": "顺序是龙、蛇、马。",
+   "sign_en": [
+    "Snake",
+    "Horse",
+    "Tiger"
+   ],
+   "sign_zh": [
+    "蛇",
+    "马",
+    "虎"
+   ],
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g4_052",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "A Lantern Festival food?",
+   "q_zh": "元宵节吃什么？",
+   "choices": [
+    "Sweet rice balls",
+    "Mooncakes",
+    "Zongzi"
+   ],
+   "choices_zh": [
+    "元宵（汤圆）",
+    "月饼",
+    "粽子"
+   ],
+   "answer": 0,
+   "explain_en": "Yuanxiao (sweet rice balls) are eaten at the Lantern Festival.",
+   "explain_zh": "元宵节吃元宵。",
+   "sign_en": [
+    "Sweet rice balls",
+    "Mooncakes",
+    "Zongzi"
+   ],
+   "sign_zh": [
+    "元宵（汤圆）",
+    "月饼",
+    "粽子"
+   ],
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g4_053",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 80 hutong doors on the street, and 3/8 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 80 扇门，其中 3/8 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "33",
+    "50",
+    "10",
+    "30"
+   ],
+   "choices_zh": [
+    "33",
+    "50",
+    "10",
+    "30"
+   ],
+   "answer": 3,
+   "explain_en": "80 × 3 ÷ 8 = 30.",
+   "explain_zh": "80 × 3 ÷ 8 = 30。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_054",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40 lanterns are hung equally on 5 gates. How many lanterns per gate?",
+   "q_zh": "40 个灯笼平均挂在 5 家门口，每家几个？",
+   "choices": [
+    "35",
+    "7",
+    "9",
+    "8"
+   ],
+   "choices_zh": [
+    "35",
+    "7",
+    "9",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "40 ÷ 5 = 8.",
+   "explain_zh": "40 ÷ 5 = 8。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 20 m by 14 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 20 米、宽 14 米，面积是多少平方米？",
+   "choices": [
+    "68",
+    "266",
+    "280",
+    "34"
+   ],
+   "choices_zh": [
+    "68",
+    "266",
+    "280",
+    "34"
+   ],
+   "answer": 2,
+   "explain_en": "20 × 14 = 280.",
+   "explain_zh": "20 × 14 = 280。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_056",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "9 hutong gates each have 5 lanterns. How many lanterns in all?",
+   "q_zh": "9 家门口每家挂 5 个灯笼，一共多少个灯笼？",
+   "choices": [
+    "14",
+    "46",
+    "45"
+   ],
+   "choices_zh": [
+    "14",
+    "46",
+    "45"
+   ],
+   "answer": 2,
+   "explain_en": "5 × 9 = 45.",
+   "explain_zh": "5 × 9 = 45。",
+   "sign_en": [
+    "14",
+    "46",
+    "45"
+   ],
+   "sign_zh": [
+    "14",
+    "46",
+    "45"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_057",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Many families eat fish at New Year (年年有余) because 鱼 (fish) sounds like which word?",
+   "q_zh": "过年吃鱼讲究“年年有余”，因为“鱼”和哪个字读音相同？",
+   "choices": [
+    "余 (extra, surplus)",
+    "牛 (ox)",
+    "鸟 (bird)",
+    "猫 (cat)"
+   ],
+   "choices_zh": [
+    "余（富余）",
+    "牛",
+    "鸟",
+    "猫"
+   ],
+   "answer": 0,
+   "explain_en": "鱼 yú sounds like 余 yú, meaning having extra.",
+   "explain_zh": "“鱼”和“余”都读 yú，寓意有富余。",
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l4g4_058",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A siheyuan courtyard is 17 m by 10 m. What is its area in square metres?",
+   "q_zh": "一个四合院的院子长 17 米、宽 10 米，面积是多少平方米？",
+   "choices": [
+    "27",
+    "187",
+    "170",
+    "160"
+   ],
+   "choices_zh": [
+    "27",
+    "187",
+    "170",
+    "160"
+   ],
+   "answer": 2,
+   "explain_en": "17 × 10 = 170.",
+   "explain_zh": "17 × 10 = 170。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_059",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Flora starts riding through the hutongs at 3:40 and stops at 4:30. How many minutes did she ride?",
+   "q_zh": "Flora 3:40 开始骑车逛胡同，4:30 停下，骑了多少分钟？",
+   "choices": [
+    "60",
+    "45",
+    "50"
+   ],
+   "choices_zh": [
+    "60",
+    "45",
+    "50"
+   ],
+   "answer": 2,
+   "explain_en": "60 - 40 + 30 = 50.",
+   "explain_zh": "60 - 40 + 30 = 50。",
+   "sign_en": [
+    "60",
+    "45",
+    "50"
+   ],
+   "sign_zh": [
+    "60",
+    "45",
+    "50"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g4_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "The Pig is the last zodiac animal. Which animal comes right before it?",
+   "q_zh": "猪是生肖的最后一个，它前面紧挨着的是哪种动物？",
+   "choices": [
+    "Dog",
+    "Rooster",
+    "Rat",
+    "Monkey"
+   ],
+   "choices_zh": [
+    "狗",
+    "鸡",
+    "鼠",
+    "猴"
+   ],
+   "answer": 0,
+   "explain_en": "The order ends Monkey, Rooster, Dog, Pig.",
+   "explain_zh": "顺序最后是猴、鸡、狗、猪。",
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g4_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "20 red envelopes are shared equally among 4 children. How many does each child get?",
+   "q_zh": "20 个红包平均分给 4 个孩子，每人几个？",
+   "choices": [
+    "4",
+    "6",
+    "5",
+    "9"
+   ],
+   "choices_zh": [
+    "4",
+    "6",
+    "5",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "20 ÷ 4 = 5.",
+   "explain_zh": "20 ÷ 4 = 5。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_062",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 30 hutong doors on the street, and 5/6 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 30 扇门，其中 5/6 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "25",
+    "31",
+    "30",
+    "5"
+   ],
+   "choices_zh": [
+    "25",
+    "31",
+    "30",
+    "5"
+   ],
+   "answer": 0,
+   "explain_en": "30 × 5 ÷ 6 = 25.",
+   "explain_zh": "30 × 5 ÷ 6 = 25。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Why do people in Beijing wear thick padded coats at Spring Festival?",
+   "q_zh": "春节时北京人为什么穿厚厚的棉袄？",
+   "choices": [
+    "They keep out sunlight",
+    "They trap air and slow heat loss",
+    "They make you heavier",
+    "They make heat by themselves"
+   ],
+   "choices_zh": [
+    "挡住阳光",
+    "里面存着空气，减慢热量散失",
+    "让人变重",
+    "衣服自己会发热"
+   ],
+   "answer": 1,
+   "explain_en": "Trapped air is a poor conductor, so body heat stays in.",
+   "explain_zh": "空气不容易导热，体温就散得慢。",
+   "qtype": "heat_transfer",
+   "qtype_zh": "热传递（传导/保温）"
+  },
+  {
+   "id": "l4g4_064",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: I lose one page every day. At New Year I am brand new again. What am I?",
+   "q_zh": "灯谜：每天少一页，过年又全新。打一物，是什么？",
+   "choices": [
+    "A newspaper",
+    "A notebook",
+    "A book",
+    "A calendar"
+   ],
+   "choices_zh": [
+    "报纸",
+    "笔记本",
+    "书",
+    "日历"
+   ],
+   "answer": 3,
+   "explain_en": "A tear-off calendar loses a page each day.",
+   "explain_zh": "撕页日历每天撕一页，新年换新的。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_065",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A bag of dumpling flour weighs 9 kg. How many grams is that?",
+   "q_zh": "一袋包饺子的面粉重 9 千克，是多少克？",
+   "choices": [
+    "900",
+    "90",
+    "90000",
+    "9000"
+   ],
+   "choices_zh": [
+    "900",
+    "90",
+    "90000",
+    "9000"
+   ],
+   "answer": 3,
+   "explain_en": "9 × 1000 = 9000.",
+   "explain_zh": "9 × 1000 = 9000。",
+   "qtype": "measure_convert",
+   "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+  },
+  {
+   "id": "l4g4_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "medium",
+   "q_en": "Lantern riddle: I am round on the Lantern Festival night, but some nights I am thin like a little boat. What am I?",
+   "q_zh": "灯谜：元宵夜里圆又亮，有时弯弯像小船。打一自然物，是什么？",
+   "choices": [
+    "The sun",
+    "A coin",
+    "The moon",
+    "A lantern"
+   ],
+   "choices_zh": [
+    "太阳",
+    "硬币",
+    "月亮",
+    "灯笼"
+   ],
+   "answer": 2,
+   "explain_en": "The moon is full on the 15th lunar night and a thin crescent at other times.",
+   "explain_zh": "月亮在正月十五是圆的，别的时候会变成弯月。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g4_067",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Pure water freezes at ____.",
+   "q_zh": "纯水在多少度结冰？",
+   "choices": [
+    "100 °C",
+    "10 °C",
+    "0 °C"
+   ],
+   "choices_zh": [
+    "100 °C",
+    "10 °C",
+    "0 °C"
+   ],
+   "answer": 2,
+   "explain_en": "Water freezes at 0 °C.",
+   "explain_zh": "水在 0 °C 结冰。",
+   "sign_en": [
+    "100 °C",
+    "10 °C",
+    "0 °C"
+   ],
+   "sign_zh": [
+    "100 °C",
+    "10 °C",
+    "0 °C"
+   ],
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l4g4_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Grandma makes 5 plates of 6 dumplings, then 3 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 5 盘饺子，每盘 6 个，又包了 3 个，一共多少个？",
+   "choices": [
+    "33",
+    "28",
+    "14",
+    "45"
+   ],
+   "choices_zh": [
+    "33",
+    "28",
+    "14",
+    "45"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 6 + 3 = 33.",
+   "explain_zh": "5 × 6 + 3 = 33。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_069",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "《元日》's poet is ____.",
+   "q_zh": "《元日》的作者是____。",
+   "choices": [
+    "Du Fu",
+    "Wang Anshi",
+    "Li Bai"
+   ],
+   "choices_zh": [
+    "杜甫",
+    "王安石",
+    "李白"
+   ],
+   "answer": 1,
+   "explain_en": "《元日》 was written by Wang Anshi.",
+   "explain_zh": "《元日》是王安石写的。",
+   "sign_en": [
+    "Du Fu",
+    "Wang Anshi",
+    "Li Bai"
+   ],
+   "sign_zh": [
+    "杜甫",
+    "王安石",
+    "李白"
+   ],
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l4g4_070",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Grandma makes 6 plates of 12 dumplings, then 8 more dumplings. How many dumplings in all?",
+   "q_zh": "奶奶包了 6 盘饺子，每盘 12 个，又包了 8 个，一共多少个？",
+   "choices": [
+    "74",
+    "26",
+    "80"
+   ],
+   "choices_zh": [
+    "74",
+    "26",
+    "80"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 12 + 8 = 80.",
+   "explain_zh": "6 × 12 + 8 = 80。",
+   "sign_en": [
+    "74",
+    "26",
+    "80"
+   ],
+   "sign_zh": [
+    "74",
+    "26",
+    "80"
+   ],
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_071",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The zodiac repeats every 12 years. Flora is 6. Grandma has the same zodiac animal and is between 74 and 84. How old is Grandma?",
+   "q_zh": "生肖每 12 年轮一次。Flora 6 岁，奶奶和她属相相同，年龄在 74 到 84 岁之间。奶奶几岁？",
+   "choices": [
+    "66",
+    "79",
+    "78"
+   ],
+   "choices_zh": [
+    "66",
+    "79",
+    "78"
+   ],
+   "answer": 2,
+   "explain_en": "6 + 12 × 6 = 78.",
+   "explain_zh": "6 + 12 × 6 = 78。",
+   "sign_en": [
+    "66",
+    "79",
+    "78"
+   ],
+   "sign_zh": [
+    "66",
+    "79",
+    "78"
+   ],
+   "qtype": "cycle_mod",
+   "qtype_zh": "周期问题（生肖轮回）"
+  },
+  {
+   "id": "l4g4_072",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 35 hutong doors on the street, and 4/5 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 35 扇门，其中 4/5 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "7",
+    "33",
+    "28"
+   ],
+   "choices_zh": [
+    "7",
+    "33",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "35 × 4 ÷ 5 = 28.",
+   "explain_zh": "35 × 4 ÷ 5 = 28。",
+   "sign_en": [
+    "7",
+    "33",
+    "28"
+   ],
+   "sign_zh": [
+    "7",
+    "33",
+    "28"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_073",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "The Long Corridor paintings tour had 7392 visitors today. Round 7392 to the nearest thousand.",
+   "q_zh": "今天长廊彩画参观有 7392 人，把 7392 四舍五入到千位。",
+   "choices": [
+    "7000",
+    "7392",
+    "6000",
+    "8000"
+   ],
+   "choices_zh": [
+    "7000",
+    "7392",
+    "6000",
+    "8000"
+   ],
+   "answer": 0,
+   "explain_en": "7392 rounded to the nearest thousand is 7000.",
+   "explain_zh": "7392 四舍五入到千位是 7000。",
+   "qtype": "rounding",
+   "qtype_zh": "四舍五入/估算"
+  },
+  {
+   "id": "l4g4_074",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "11 hutong gates each have 6 lanterns. How many lanterns in all?",
+   "q_zh": "11 家门口每家挂 6 个灯笼，一共多少个灯笼？",
+   "choices": [
+    "55",
+    "17",
+    "66",
+    "67"
+   ],
+   "choices_zh": [
+    "55",
+    "17",
+    "66",
+    "67"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 11 = 66.",
+   "explain_zh": "6 × 11 = 66。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_075",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "47 pigeons sit on a hutong roof and 32 more land. How many pigeons now?",
+   "q_zh": "胡同屋顶上有 47 只鸽子，又飞来 32 只，现在有几只？",
+   "choices": [
+    "80",
+    "79",
+    "89"
+   ],
+   "choices_zh": [
+    "80",
+    "79",
+    "89"
+   ],
+   "answer": 1,
+   "explain_en": "47 + 32 = 79.",
+   "explain_zh": "47 + 32 = 79。",
+   "sign_en": [
+    "80",
+    "79",
+    "89"
+   ],
+   "sign_zh": [
+    "80",
+    "79",
+    "89"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l4g4_076",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Each stick of tanghulu has 6 hawthorns. How many hawthorns on 10 sticks?",
+   "q_zh": "每串糖葫芦有 6 个山楂，10 串一共多少个山楂？",
+   "choices": [
+    "16",
+    "60",
+    "61",
+    "66"
+   ],
+   "choices_zh": [
+    "16",
+    "60",
+    "61",
+    "66"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 10 = 60.",
+   "explain_zh": "6 × 10 = 60。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_077",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "Spring Festival is day 1 of which lunar month?",
+   "q_zh": "春节是农历哪个月的第一天？",
+   "choices": [
+    "The first month",
+    "The fifth month",
+    "The twelfth month"
+   ],
+   "choices_zh": [
+    "正月",
+    "五月",
+    "腊月"
+   ],
+   "answer": 0,
+   "explain_en": "Spring Festival is 1st day of the 1st lunar month.",
+   "explain_zh": "春节是正月初一。",
+   "sign_en": [
+    "The first month",
+    "The fifth month",
+    "The twelfth month"
+   ],
+   "sign_zh": [
+    "正月",
+    "五月",
+    "腊月"
+   ],
+   "qtype": "spring_festival_custom",
+   "qtype_zh": "春节习俗"
+  },
+  {
+   "id": "l4g4_078",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 24 hutong doors on the street, and 2/3 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 24 扇门，其中 2/3 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "16",
+    "18",
+    "8"
+   ],
+   "choices_zh": [
+    "16",
+    "18",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "24 × 2 ÷ 3 = 16.",
+   "explain_zh": "24 × 2 ÷ 3 = 16。",
+   "sign_en": [
+    "16",
+    "18",
+    "8"
+   ],
+   "sign_zh": [
+    "16",
+    "18",
+    "8"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_079",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} starts riding through the hutongs at 4:10 and stops at 4:35. How many minutes did she ride?",
+   "q_zh": "{name} 4:10 开始骑车逛胡同，4:35 停下，骑了多少分钟？",
+   "choices": [
+    "35",
+    "45",
+    "25"
+   ],
+   "choices_zh": [
+    "35",
+    "45",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "35 - 10 = 25.",
+   "explain_zh": "35 - 10 = 25。",
+   "sign_en": [
+    "35",
+    "45",
+    "25"
+   ],
+   "sign_zh": [
+    "35",
+    "45",
+    "25"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l4g4_080",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5 hutong gates each have 8 lanterns. How many lanterns in all?",
+   "q_zh": "5 家门口每家挂 8 个灯笼，一共多少个灯笼？",
+   "choices": [
+    "40",
+    "13",
+    "41"
+   ],
+   "choices_zh": [
+    "40",
+    "13",
+    "41"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 5 = 40.",
+   "explain_zh": "8 × 5 = 40。",
+   "sign_en": [
+    "40",
+    "13",
+    "41"
+   ],
+   "sign_zh": [
+    "40",
+    "13",
+    "41"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l4g4_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "On the bridge Flora sees a firework flash, then hears its bang a couple of seconds later. What causes the delay?",
+   "q_zh": "Flora 在桥上先看见烟花闪光，过两秒才听到响声。造成这段延迟的原因是什么？",
+   "choices": [
+    "Sound travels much slower than light",
+    "Light needs time to warm up",
+    "The lake swallows the sound",
+    "Fireworks bang late on purpose"
+   ],
+   "choices_zh": [
+    "声音比光慢得多",
+    "光需要预热",
+    "湖水把声音吞了",
+    "烟花故意晚响"
+   ],
+   "answer": 0,
+   "explain_en": "Light arrives almost instantly; sound travels about 340 m/s.",
+   "explain_zh": "光几乎瞬间到达，声音每秒只走约 340 米。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（鸽哨/烟花）"
+  },
+  {
+   "id": "l4g4_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Fifteen days after Spring Festival, families walk on the bridge for the Lantern Festival. What does the moon usually look like that night?",
+   "q_zh": "春节过后十五天，一家人到桥上过元宵节。那晚的月亮通常是什么样？",
+   "choices": [
+    "A thin crescent",
+    "Full and round",
+    "Half",
+    "Invisible"
+   ],
+   "choices_zh": [
+    "细细的弯月",
+    "又圆又亮的满月",
+    "半个",
+    "看不见"
+   ],
+   "answer": 1,
+   "explain_en": "The 15th of a lunar month is near full moon.",
+   "explain_zh": "农历十五前后是满月。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历"
+  },
+  {
+   "id": "l4g4_083",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red carpet for the bridge's lantern show is 12 m long and 11 m wide. What area does it cover in square metres?",
+   "q_zh": "桥上灯会铺的红地毯长 12 米、宽 11 米，面积是多少平方米？",
+   "choices": [
+    "132",
+    "23",
+    "121",
+    "46"
+   ],
+   "choices_zh": [
+    "132",
+    "23",
+    "121",
+    "46"
+   ],
+   "answer": 0,
+   "explain_en": "12 × 11 = 132.",
+   "explain_zh": "12 × 11 = 132。",
+   "qtype": "area_rect",
+   "qtype_zh": "长方形面积"
+  },
+  {
+   "id": "l4g4_084",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On the bridge, 7 lantern strings each hold 13 lanterns, and 7 big lanterns hang at the end. How many lanterns are on the bridge?",
+   "q_zh": "桥上有 7 串灯笼，每串 13 个，桥头还挂着 7 个大灯笼，桥上一共多少个灯笼？",
+   "choices": [
+    "98",
+    "27",
+    "140",
+    "91"
+   ],
+   "choices_zh": [
+    "98",
+    "27",
+    "140",
+    "91"
+   ],
+   "answer": 0,
+   "explain_en": "7 × 13 + 7 = 98.",
+   "explain_zh": "7 × 13 + 7 = 98。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l4g4_085",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the bridge, 28 glow sticks are shared equally by 2 friends. How many does each friend get?",
+   "q_zh": "在桥上，28 根荧光棒平均分给 2 个朋友，每人几根？",
+   "choices": [
+    "13",
+    "26",
+    "16",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "26",
+    "16",
+    "14"
+   ],
+   "answer": 3,
+   "explain_en": "28 ÷ 2 = 14.",
+   "explain_zh": "28 ÷ 2 = 14。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l4g4_086",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "42 lanterns hang on the bridge, and 5/6 of them are gold. How many lanterns are gold?",
+   "q_zh": "桥上挂着 42 个灯笼，其中 5/6 是金色的，金灯笼有多少个？",
+   "choices": [
+    "41",
+    "7",
+    "35",
+    "40"
+   ],
+   "choices_zh": [
+    "41",
+    "7",
+    "35",
+    "40"
+   ],
+   "answer": 2,
+   "explain_en": "42 × 5 ÷ 6 = 35.",
+   "explain_zh": "42 × 5 ÷ 6 = 35。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g4_087",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gift box of New Year sweets on the bridge is 14 cm × 9 cm × 25 cm. What is its volume in cm³?",
+   "q_zh": "桥上一个年货礼盒长 14 厘米、宽 9 厘米、高 25 厘米，体积是多少立方厘米？",
+   "choices": [
+    "151",
+    "2925",
+    "3276",
+    "3150"
+   ],
+   "choices_zh": [
+    "151",
+    "2925",
+    "3276",
+    "3150"
+   ],
+   "answer": 3,
+   "explain_en": "14 × 9 × 25 = 3150.",
+   "explain_zh": "14 × 9 × 25 = 3150。",
+   "qtype": "volume_box",
+   "qtype_zh": "长方体体积"
+  },
+  {
+   "id": "l4g4_088",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Near the bridge, Flora buys 4 lanterns at 9 yuan each and pays with 50 yuan. How much change does she get?",
+   "q_zh": "在桥边，Flora 买了 4 个灯笼，每个 9 元，付了 50 元，应找回多少元？",
+   "choices": [
+    "14",
+    "23",
+    "13",
+    "36"
+   ],
+   "choices_zh": [
+    "14",
+    "23",
+    "13",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "50 - 4 × 9 = 14.",
+   "explain_zh": "50 - 4 × 9 = 14。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  }
+ ]
+}

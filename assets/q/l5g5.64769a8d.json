@@ -1,0 +1,2350 @@
+{
+  "level": 5,
+  "level_name_en": "Shanghai",
+  "level_name_zh": "上海",
+  "grade": 5,
+  "version": "v1",
+  "fields": "L5 Shanghai / Dragon Boat Festival (e-bike; Lujiazui → the Bund → Huaihai Road → Xintiandi). Same item fields as L3 v3.1 / L4. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 端午摊 Zongzi Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Xintiandi-entrance final (exactly 4 choices, hard, situational). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Xintiandi final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 端午谜：. Stems are deduped against all L1–L4 banks (all grades).",
+  "questions": [
+    {
+      "id": "l5g5_001",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A stall sells 120 zongzi, and 10% are sweet bean. How many zongzi are sweet bean?",
+      "q_zh": "小摊卖了 120 只粽子，其中 10% 是豆沙馅，豆沙粽有多少只？",
+      "choices": [
+        "12",
+        "108",
+        "24",
+        "22"
+      ],
+      "choices_zh": [
+        "12",
+        "108",
+        "24",
+        "22"
+      ],
+      "answer": 0,
+      "explain_en": "120 × 10 ÷ 100 = 12.",
+      "explain_zh": "120 × 10 ÷ 100 = 12。",
+      "qtype": "percent_of_n",
+      "qtype_zh": "求百分之几是多少"
+    },
+    {
+      "id": "l5g5_002",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I shine at night from Pudong, and people on the Bund take photos of me across the water. What am I?",
+      "q_zh": "端午谜：夜里我在浦东发光，外滩上的人隔着江给我拍照。打一景物，是什么？",
+      "choices": [
+        "A forest",
+        "A desert dune",
+        "A farm field",
+        "The Lujiazui skyline"
+      ],
+      "choices_zh": [
+        "森林",
+        "沙丘",
+        "农田",
+        "陆家嘴夜景"
+      ],
+      "answer": 3,
+      "explain_en": "Lujiazui's towers light up across the Huangpu from the Bund.",
+      "explain_zh": "陆家嘴的高楼在黄浦江对岸亮起来，外滩看得很清楚。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g5_003",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "safety",
+      "difficulty": "medium",
+      "q_en": "At a red light, an e-bike should ____.",
+      "q_zh": "红灯时，电动车应该____。",
+      "choices": [
+        "Stop",
+        "Close eyes",
+        "Speed up"
+      ],
+      "choices_zh": [
+        "停住",
+        "闭眼",
+        "加速"
+      ],
+      "answer": 0,
+      "explain_en": "Red means stop.",
+      "explain_zh": "红灯要停。",
+      "sign_en": [
+        "Stop",
+        "Close eyes",
+        "Speed up"
+      ],
+      "sign_zh": [
+        "停住",
+        "闭眼",
+        "加速"
+      ],
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g5_004",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "medium",
+      "q_en": "Xintiandi keeps ____ houses.",
+      "q_zh": "新天地保留了____。",
+      "choices": [
+        "Igloos",
+        "Barns only",
+        "Shikumen"
+      ],
+      "choices_zh": [
+        "冰屋",
+        "只有农仓",
+        "石库门"
+      ],
+      "answer": 2,
+      "explain_en": "Shikumen fronts are kept there.",
+      "explain_zh": "那里保留了石库门。",
+      "sign_en": [
+        "Igloos",
+        "Barns only",
+        "Shikumen"
+      ],
+      "sign_zh": [
+        "冰屋",
+        "只有农仓",
+        "石库门"
+      ],
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g5_005",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} eats 1/5 of a zongzi and Bara's share is 5/8 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "{name} 吃了 1/5 只粽子，Bara 吃了另一只的 5/8，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "17/20",
+        "33/40",
+        "6/13"
+      ],
+      "choices_zh": [
+        "17/20",
+        "33/40",
+        "6/13"
+      ],
+      "answer": 1,
+      "explain_en": "1/5 + 5/8 = 33/40.",
+      "explain_zh": "1/5 + 5/8 = 33/40。",
+      "sign_en": [
+        "17/20",
+        "33/40",
+        "6/13"
+      ],
+      "sign_zh": [
+        "17/20",
+        "33/40",
+        "6/13"
+      ],
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_006",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} eats 9/10 of a zongzi and Bara's share is 1/2 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "{name} 吃了 9/10 只粽子，Bara 吃了另一只的 1/2，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "5/6",
+        "9/20",
+        "7/5"
+      ],
+      "choices_zh": [
+        "5/6",
+        "9/20",
+        "7/5"
+      ],
+      "answer": 2,
+      "explain_en": "9/10 + 1/2 = 7/5.",
+      "explain_zh": "9/10 + 1/2 = 7/5。",
+      "sign_en": [
+        "5/6",
+        "9/20",
+        "7/5"
+      ],
+      "sign_zh": [
+        "5/6",
+        "9/20",
+        "7/5"
+      ],
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_007",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "57 sparrows sit on a plane tree. 4 fly away. How many stay?",
+      "q_zh": "梧桐树上有 57 只麻雀，飞走了 4 只，还剩几只？",
+      "choices": [
+        "55",
+        "54",
+        "53",
+        "61"
+      ],
+      "choices_zh": [
+        "55",
+        "54",
+        "53",
+        "61"
+      ],
+      "answer": 2,
+      "explain_en": "57 - 4 = 53.",
+      "explain_zh": "57 - 4 = 53。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g5_008",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Four stalls sell 14, 18, 23 and 17 zongzi. What is the mean number of zongzi?",
+      "q_zh": "四个摊位分别卖了 14、18、23、17 只粽子，平均每摊几只？",
+      "choices": [
+        "72",
+        "23",
+        "18"
+      ],
+      "choices_zh": [
+        "72",
+        "23",
+        "18"
+      ],
+      "answer": 2,
+      "explain_en": "(14 + 18 + 23 + 17) ÷ 4 = 18.",
+      "explain_zh": "(14 + 18 + 23 + 17) ÷ 4 = 18。",
+      "sign_en": [
+        "72",
+        "23",
+        "18"
+      ],
+      "sign_zh": [
+        "72",
+        "23",
+        "18"
+      ],
+      "qtype": "mean_average",
+      "qtype_zh": "平均数"
+    },
+    {
+      "id": "l5g5_009",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora eats 1/3 of a zongzi and Bara's share is 1/2 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "Flora 吃了 1/3 只粽子，Bara 吃了另一只的 1/2，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "5/6",
+        "1",
+        "1/6"
+      ],
+      "choices_zh": [
+        "5/6",
+        "1",
+        "1/6"
+      ],
+      "answer": 0,
+      "explain_en": "1/3 + 1/2 = 5/6.",
+      "explain_zh": "1/3 + 1/2 = 5/6。",
+      "sign_en": [
+        "5/6",
+        "1",
+        "1/6"
+      ],
+      "sign_zh": [
+        "5/6",
+        "1",
+        "1/6"
+      ],
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_010",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Dragon-boat racing bibs are numbered 1 to 12, then the numbers repeat. Which number from 1 to 12 matches bib 24?",
+      "q_zh": "龙舟比赛的号码布按 1 到 12 循环编号。第 24 块号码布和 1～12 中的第几号相同？",
+      "choices": [
+        "14",
+        "12",
+        "13",
+        "4"
+      ],
+      "choices_zh": [
+        "14",
+        "12",
+        "13",
+        "4"
+      ],
+      "answer": 1,
+      "explain_en": "24 - 12 × 1 = 12.",
+      "explain_zh": "24 - 12 × 1 = 12。",
+      "qtype": "cycle_mod",
+      "qtype_zh": "周期问题"
+    },
+    {
+      "id": "l5g5_011",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora buys 3 sachets at 8 yuan each and pays 40 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 3 只香囊，每只 8 元，付了 40 元，找回多少元？",
+      "choices": [
+        "24",
+        "17",
+        "16",
+        "15"
+      ],
+      "choices_zh": [
+        "24",
+        "17",
+        "16",
+        "15"
+      ],
+      "answer": 2,
+      "explain_en": "40 - 3 × 8 = 16.",
+      "explain_zh": "40 - 3 × 8 = 16。",
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g5_012",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Four stalls sell 28, 30, 33 and 29 zongzi. What is the mean number of zongzi?",
+      "q_zh": "四个摊位分别卖了 28、30、33、29 只粽子，平均每摊几只？",
+      "choices": [
+        "30",
+        "120",
+        "31",
+        "29"
+      ],
+      "choices_zh": [
+        "30",
+        "120",
+        "31",
+        "29"
+      ],
+      "answer": 0,
+      "explain_en": "(28 + 30 + 33 + 29) ÷ 4 = 30.",
+      "explain_zh": "(28 + 30 + 33 + 29) ÷ 4 = 30。",
+      "qtype": "mean_average",
+      "qtype_zh": "平均数"
+    },
+    {
+      "id": "l5g5_013",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 3.5 yuan. How many yuan for 4 sachets?",
+      "q_zh": "一只香囊 3.5 元，买 4 只要多少元？",
+      "choices": [
+        "7.5",
+        "15",
+        "17.5",
+        "14"
+      ],
+      "choices_zh": [
+        "7.5",
+        "15",
+        "17.5",
+        "14"
+      ],
+      "answer": 3,
+      "explain_en": "3.5 × 4 = 14.",
+      "explain_zh": "3.5 × 4 = 14。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_014",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "14 metres of five-color thread is cut into 4 equal pieces. How long is each piece in metres?",
+      "q_zh": "14 米五彩绳剪成 4 段一样长的，每段多少米？",
+      "choices": [
+        "10",
+        "4.5",
+        "7",
+        "3.5"
+      ],
+      "choices_zh": [
+        "10",
+        "4.5",
+        "7",
+        "3.5"
+      ],
+      "answer": 3,
+      "explain_en": "14 ÷ 4 = 3.5.",
+      "explain_zh": "14 ÷ 4 = 3.5。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_015",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 6.5 yuan. How many yuan for 7 sachets?",
+      "q_zh": "一只香囊 6.5 元，买 7 只要多少元？",
+      "choices": [
+        "13.5",
+        "39",
+        "45.5"
+      ],
+      "choices_zh": [
+        "13.5",
+        "39",
+        "45.5"
+      ],
+      "answer": 2,
+      "explain_en": "6.5 × 7 = 45.5.",
+      "explain_zh": "6.5 × 7 = 45.5。",
+      "sign_en": [
+        "13.5",
+        "39",
+        "45.5"
+      ],
+      "sign_zh": [
+        "13.5",
+        "39",
+        "45.5"
+      ],
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_016",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I flow between the Bund and Lujiazui, wide and busy, carrying boats. What am I?",
+      "q_zh": "端午谜：我从外滩和陆家嘴中间流过，又宽又热闹，船上船下来来去去。打一自然物，是什么？",
+      "choices": [
+        "A lake",
+        "A desert",
+        "A glacier",
+        "The Huangpu River"
+      ],
+      "choices_zh": [
+        "湖泊",
+        "沙漠",
+        "冰川",
+        "黄浦江"
+      ],
+      "answer": 3,
+      "explain_en": "The Huangpu River runs between the Bund and Lujiazui.",
+      "explain_zh": "黄浦江从外滩和陆家嘴之间流过。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g5_017",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 16 cm long, 14 cm wide and 24 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 16 厘米、宽 14 厘米、高 24 厘米，体积是多少立方厘米？",
+      "choices": [
+        "5600",
+        "248",
+        "5040",
+        "5376"
+      ],
+      "choices_zh": [
+        "5600",
+        "248",
+        "5040",
+        "5376"
+      ],
+      "answer": 3,
+      "explain_en": "16 × 14 × 24 = 5376.",
+      "explain_zh": "16 × 14 × 24 = 5376。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_018",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Four stalls sell 20, 25, 31 and 24 zongzi. What is the mean number of zongzi?",
+      "q_zh": "四个摊位分别卖了 20、25、31、24 只粽子，平均每摊几只？",
+      "choices": [
+        "26",
+        "100",
+        "25"
+      ],
+      "choices_zh": [
+        "26",
+        "100",
+        "25"
+      ],
+      "answer": 2,
+      "explain_en": "(20 + 25 + 31 + 24) ÷ 4 = 25.",
+      "explain_zh": "(20 + 25 + 31 + 24) ÷ 4 = 25。",
+      "sign_en": [
+        "26",
+        "100",
+        "25"
+      ],
+      "sign_zh": [
+        "26",
+        "100",
+        "25"
+      ],
+      "qtype": "mean_average",
+      "qtype_zh": "平均数"
+    },
+    {
+      "id": "l5g5_019",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "People remember a poet named ____ at Dragon Boat Festival.",
+      "q_zh": "过端午节，人们会纪念一位叫____的诗人。",
+      "choices": [
+        "a desert explorer",
+        "a space robot",
+        "Qu Yuan",
+        "a skate champion"
+      ],
+      "choices_zh": [
+        "沙漠探险家",
+        "太空机器人",
+        "屈原",
+        "滑冰冠军"
+      ],
+      "answer": 2,
+      "explain_en": "The festival is traditionally linked with remembering the poet Qu Yuan.",
+      "explain_zh": "过端午，传统上会纪念诗人屈原。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g5_020",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A bag of glutinous rice weighs 4 kg. How many grams is that?",
+      "q_zh": "一袋糯米重 4 千克，是多少克？",
+      "choices": [
+        "40",
+        "4000",
+        "400"
+      ],
+      "choices_zh": [
+        "40",
+        "4000",
+        "400"
+      ],
+      "answer": 1,
+      "explain_en": "4 × 1000 = 4000.",
+      "explain_zh": "4 × 1000 = 4000。",
+      "sign_en": [
+        "40",
+        "4000",
+        "400"
+      ],
+      "sign_zh": [
+        "40",
+        "4000",
+        "400"
+      ],
+      "qtype": "measure_convert",
+      "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+    },
+    {
+      "id": "l5g5_021",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora eats 2/3 of a zongzi and Bara's share is 1/4 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "Flora 吃了 2/3 只粽子，Bara 吃了另一只的 1/4，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "1/6",
+        "11/12",
+        "3/7"
+      ],
+      "choices_zh": [
+        "1/6",
+        "11/12",
+        "3/7"
+      ],
+      "answer": 1,
+      "explain_en": "2/3 + 1/4 = 11/12.",
+      "explain_zh": "2/3 + 1/4 = 11/12。",
+      "sign_en": [
+        "1/6",
+        "11/12",
+        "3/7"
+      ],
+      "sign_zh": [
+        "1/6",
+        "11/12",
+        "3/7"
+      ],
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_022",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "There are 49 zongzi on the plate. The family eats 18. How many are left?",
+      "q_zh": "盘子里有 49 只粽子，一家人吃了 18 只，还剩几只？",
+      "choices": [
+        "67",
+        "31",
+        "33"
+      ],
+      "choices_zh": [
+        "67",
+        "31",
+        "33"
+      ],
+      "answer": 1,
+      "explain_en": "49 - 18 = 31.",
+      "explain_zh": "49 - 18 = 31。",
+      "sign_en": [
+        "67",
+        "31",
+        "33"
+      ],
+      "sign_zh": [
+        "67",
+        "31",
+        "33"
+      ],
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g5_023",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A stall sells 200 zongzi, and 45% are sweet bean. How many zongzi are sweet bean?",
+      "q_zh": "小摊卖了 200 只粽子，其中 45% 是豆沙馅，豆沙粽有多少只？",
+      "choices": [
+        "110",
+        "100",
+        "4",
+        "90"
+      ],
+      "choices_zh": [
+        "110",
+        "100",
+        "4",
+        "90"
+      ],
+      "answer": 3,
+      "explain_en": "200 × 45 ÷ 100 = 90.",
+      "explain_zh": "200 × 45 ÷ 100 = 90。",
+      "qtype": "percent_of_n",
+      "qtype_zh": "求百分之几是多少"
+    },
+    {
+      "id": "l5g5_024",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 7.5 yuan. How many yuan for 5 sachets?",
+      "q_zh": "一只香囊 7.5 元，买 5 只要多少元？",
+      "choices": [
+        "45",
+        "37.5",
+        "12.5",
+        "30"
+      ],
+      "choices_zh": [
+        "45",
+        "37.5",
+        "12.5",
+        "30"
+      ],
+      "answer": 1,
+      "explain_en": "7.5 × 5 = 37.5.",
+      "explain_zh": "7.5 × 5 = 37.5。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_025",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Which English word means 江?",
+      "q_zh": "哪个英文单词是「江」的意思？",
+      "choices": [
+        "sock",
+        "river",
+        "desk"
+      ],
+      "choices_zh": [
+        "sock",
+        "river",
+        "desk"
+      ],
+      "answer": 1,
+      "explain_en": "江 means river.",
+      "explain_zh": "江的英文是 river。",
+      "sign_en": [
+        "sock",
+        "river",
+        "desk"
+      ],
+      "sign_zh": [
+        "sock",
+        "river",
+        "desk"
+      ],
+      "qtype": "lang_vocab",
+      "qtype_zh": "词义（同义/反义/押韵/词义）"
+    },
+    {
+      "id": "l5g5_026",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora's little cousin is 9. Their uncle first paddled a dragon boat at the same age, and he is the youngest such age over 30. How old is the uncle?",
+      "q_zh": "Flora 的表弟 9 岁，舅舅第一次划龙舟时也是这个年纪，并且是大于 30 岁里最小的那个年龄。舅舅几岁？",
+      "choices": [
+        "33",
+        "21",
+        "34"
+      ],
+      "choices_zh": [
+        "33",
+        "21",
+        "34"
+      ],
+      "answer": 0,
+      "explain_en": "9 + 12 × 2 = 33.",
+      "explain_zh": "9 + 12 × 2 = 33。",
+      "sign_en": [
+        "33",
+        "21",
+        "34"
+      ],
+      "sign_zh": [
+        "33",
+        "21",
+        "34"
+      ],
+      "qtype": "cycle_mod",
+      "qtype_zh": "周期问题"
+    },
+    {
+      "id": "l5g5_027",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Idiom for paddling as one?",
+      "q_zh": "形容一起划桨的成语？",
+      "choices": [
+        "半途而废",
+        "齐心协力",
+        "各走各路"
+      ],
+      "choices_zh": [
+        "半途而废",
+        "齐心协力",
+        "各走各路"
+      ],
+      "answer": 1,
+      "explain_en": "齐心协力 means pulling together.",
+      "explain_zh": "齐心协力就是一起用力。",
+      "sign_en": [
+        "半途而废",
+        "齐心协力",
+        "各走各路"
+      ],
+      "sign_zh": [
+        "半途而废",
+        "齐心协力",
+        "各走各路"
+      ],
+      "qtype": "zh_idiom_poem",
+      "qtype_zh": "成语与古诗"
+    },
+    {
+      "id": "l5g5_028",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "52 metres of five-color thread is cut into 8 equal pieces. How long is each piece in metres?",
+      "q_zh": "52 米五彩绳剪成 8 段一样长的，每段多少米？",
+      "choices": [
+        "7",
+        "13",
+        "6.5",
+        "44"
+      ],
+      "choices_zh": [
+        "7",
+        "13",
+        "6.5",
+        "44"
+      ],
+      "answer": 2,
+      "explain_en": "52 ÷ 8 = 6.5.",
+      "explain_zh": "52 ÷ 8 = 6.5。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_029",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Four stalls sell 6, 11, 17 and 10 zongzi. What is the mean number of zongzi?",
+      "q_zh": "四个摊位分别卖了 6、11、17、10 只粽子，平均每摊几只？",
+      "choices": [
+        "44",
+        "12",
+        "17",
+        "11"
+      ],
+      "choices_zh": [
+        "44",
+        "12",
+        "17",
+        "11"
+      ],
+      "answer": 3,
+      "explain_en": "(6 + 11 + 17 + 10) ÷ 4 = 11.",
+      "explain_zh": "(6 + 11 + 17 + 10) ÷ 4 = 11。",
+      "qtype": "mean_average",
+      "qtype_zh": "平均数"
+    },
+    {
+      "id": "l5g5_030",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I fold my brown wings, hop under the plane trees, and chirp on Huaihai Road. What am I?",
+      "q_zh": "端午谜：我收起棕色的翅膀，在梧桐树下跳来跳去，还会在淮海路上叫。打一动物，是什么？",
+      "choices": [
+        "A sparrow",
+        "A frog",
+        "A goat",
+        "A fish"
+      ],
+      "choices_zh": [
+        "麻雀",
+        "青蛙",
+        "羊",
+        "鱼"
+      ],
+      "answer": 0,
+      "explain_en": "Sparrows are small brown birds often seen in city streets.",
+      "explain_zh": "麻雀是街上常见的棕色小鸟。",
+      "qtype": "riddle_animal",
+      "qtype_zh": "端午谜·动物谜（猜动物）"
+    },
+    {
+      "id": "l5g5_031",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora buys 4 sachets at 8 yuan each and pays 40 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 4 只香囊，每只 8 元，付了 40 元，找回多少元？",
+      "choices": [
+        "9",
+        "8",
+        "32"
+      ],
+      "choices_zh": [
+        "9",
+        "8",
+        "32"
+      ],
+      "answer": 1,
+      "explain_en": "40 - 4 × 8 = 8.",
+      "explain_zh": "40 - 4 × 8 = 8。",
+      "sign_en": [
+        "9",
+        "8",
+        "32"
+      ],
+      "sign_zh": [
+        "9",
+        "8",
+        "32"
+      ],
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g5_032",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "{name} eats 3/4 of a zongzi and Bara's share is 1/5 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "{name} 吃了 3/4 只粽子，Bara 吃了另一只的 1/5，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "3/20",
+        "1",
+        "19/20",
+        "4/9"
+      ],
+      "choices_zh": [
+        "3/20",
+        "1",
+        "19/20",
+        "4/9"
+      ],
+      "answer": 2,
+      "explain_en": "3/4 + 1/5 = 19/20.",
+      "explain_zh": "3/4 + 1/5 = 19/20。",
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_033",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "The fifth day of the fifth lunar month is also called ____ Festival.",
+      "q_zh": "农历五月初五也叫____节。",
+      "choices": [
+        "Lantern-only",
+        "Dragon Boat",
+        "Harvest-only",
+        "Mid-Autumn"
+      ],
+      "choices_zh": [
+        "只叫灯节",
+        "端午",
+        "只叫丰收节",
+        "中秋"
+      ],
+      "answer": 1,
+      "explain_en": "The fifth day of the fifth lunar month is Dragon Boat Festival (Duanwu).",
+      "explain_zh": "农历五月初五就是端午节。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g5_034",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "Which plant part is traditionally used to wrap zongzi?",
+      "q_zh": "传统上用植物的哪一部分来包粽子？",
+      "choices": [
+        "Only flower petals",
+        "Only fruit stones",
+        "Only tree roots",
+        "Leaves (such as reed or bamboo leaves)"
+      ],
+      "choices_zh": [
+        "只用花瓣",
+        "只用果核",
+        "只用树根",
+        "叶子（如箬叶、芦叶）"
+      ],
+      "answer": 3,
+      "explain_en": "Reed, bamboo, or similar leaves wrap the rice.",
+      "explain_zh": "常用箬叶、芦叶或竹叶来包米。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g5_035",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A rectangular flower bed under plane trees on Huaihai Road is 21 m long and 2 m wide. What is its perimeter in metres?",
+      "q_zh": "淮海路梧桐下一块长方形花坛长 21 米、宽 2 米，周长是多少米？",
+      "choices": [
+        "44",
+        "48",
+        "46"
+      ],
+      "choices_zh": [
+        "44",
+        "48",
+        "46"
+      ],
+      "answer": 2,
+      "explain_en": "2 × (21 + 2) = 46.",
+      "explain_zh": "2 × (21 + 2) = 46。",
+      "sign_en": [
+        "44",
+        "48",
+        "46"
+      ],
+      "sign_zh": [
+        "44",
+        "48",
+        "46"
+      ],
+      "qtype": "perimeter_rect",
+      "qtype_zh": "长方形周长"
+    },
+    {
+      "id": "l5g5_036",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora buys 3 sachets at 13 yuan each and pays 40 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 3 只香囊，每只 13 元，付了 40 元，找回多少元？",
+      "choices": [
+        "1",
+        "3",
+        "2",
+        "14"
+      ],
+      "choices_zh": [
+        "1",
+        "3",
+        "2",
+        "14"
+      ],
+      "answer": 0,
+      "explain_en": "40 - 3 × 13 = 1.",
+      "explain_zh": "40 - 3 × 13 = 1。",
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g5_037",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 16 cm long, 8 cm wide and 24 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 16 厘米、宽 8 厘米、高 24 厘米，体积是多少立方厘米？",
+      "choices": [
+        "2880",
+        "3200",
+        "3072",
+        "1408"
+      ],
+      "choices_zh": [
+        "2880",
+        "3200",
+        "3072",
+        "1408"
+      ],
+      "answer": 2,
+      "explain_en": "16 × 8 × 24 = 3072.",
+      "explain_zh": "16 × 8 × 24 = 3072。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_038",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A stall sells 240 zongzi, and 50% are sweet bean. How many zongzi are sweet bean?",
+      "q_zh": "小摊卖了 240 只粽子，其中 50% 是豆沙馅，豆沙粽有多少只？",
+      "choices": [
+        "120",
+        "125",
+        "130"
+      ],
+      "choices_zh": [
+        "120",
+        "125",
+        "130"
+      ],
+      "answer": 0,
+      "explain_en": "240 × 50 ÷ 100 = 120.",
+      "explain_zh": "240 × 50 ÷ 100 = 120。",
+      "sign_en": [
+        "120",
+        "125",
+        "130"
+      ],
+      "sign_zh": [
+        "120",
+        "125",
+        "130"
+      ],
+      "qtype": "percent_of_n",
+      "qtype_zh": "求百分之几是多少"
+    },
+    {
+      "id": "l5g5_039",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 12.5 yuan. How many yuan for 6 sachets?",
+      "q_zh": "一只香囊 12.5 元，买 6 只要多少元？",
+      "choices": [
+        "18.5",
+        "62.5",
+        "75",
+        "76"
+      ],
+      "choices_zh": [
+        "18.5",
+        "62.5",
+        "75",
+        "76"
+      ],
+      "answer": 2,
+      "explain_en": "12.5 × 6 = 75.",
+      "explain_zh": "12.5 × 6 = 75。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_040",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 32 cm long, 17 cm wide and 21 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 32 厘米、宽 17 厘米、高 21 厘米，体积是多少立方厘米？",
+      "choices": [
+        "3146",
+        "565",
+        "11067",
+        "11424"
+      ],
+      "choices_zh": [
+        "3146",
+        "565",
+        "11067",
+        "11424"
+      ],
+      "answer": 3,
+      "explain_en": "32 × 17 × 21 = 11424.",
+      "explain_zh": "32 × 17 × 21 = 11424。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_041",
+      "level": 5,
+      "section": "seawall",
+      "subject": "safety",
+      "difficulty": "medium",
+      "q_en": "At a red traffic light, an e-bike rider should ____.",
+      "q_zh": "遇到红灯，骑电动车的人应该____。",
+      "choices": [
+        "stop and wait",
+        "close both eyes",
+        "speed up to beat it",
+        "ride on the sidewalk at full speed"
+      ],
+      "choices_zh": [
+        "停下来等",
+        "闭上双眼",
+        "加快冲过去",
+        "在人行道上全速骑"
+      ],
+      "answer": 0,
+      "explain_en": "Red means stop, for e-bikes too.",
+      "explain_zh": "红灯要停，电动车也一样。",
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g5_042",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I beat a deep \"dong-dong\" so every paddle on the boat moves together. What am I?",
+      "q_zh": "端午谜：我发出沉沉的“咚咚”声，船上每支桨都跟着一起划。打一物，是什么？",
+      "choices": [
+        "A violin",
+        "A drum",
+        "A bell",
+        "A flute"
+      ],
+      "choices_zh": [
+        "小提琴",
+        "鼓",
+        "铃",
+        "笛子"
+      ],
+      "answer": 1,
+      "explain_en": "The drummer sets the stroke for the paddlers.",
+      "explain_zh": "鼓手敲鼓，给桨手定节奏。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g5_043",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "medium",
+      "q_en": "The Oriental Pearl is in ____.",
+      "q_zh": "东方明珠在____。",
+      "choices": [
+        "a desert",
+        "a forest",
+        "Lujiazui"
+      ],
+      "choices_zh": [
+        "沙漠",
+        "森林",
+        "陆家嘴"
+      ],
+      "answer": 2,
+      "explain_en": "It stands in Lujiazui.",
+      "explain_zh": "它在陆家嘴。",
+      "sign_en": [
+        "a desert",
+        "a forest",
+        "Lujiazui"
+      ],
+      "sign_zh": [
+        "沙漠",
+        "森林",
+        "陆家嘴"
+      ],
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g5_044",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "62 metres of five-color thread is cut into 8 equal pieces. How long is each piece in metres?",
+      "q_zh": "62 米五彩绳剪成 8 段一样长的，每段多少米？",
+      "choices": [
+        "54",
+        "8.75",
+        "7.75"
+      ],
+      "choices_zh": [
+        "54",
+        "8.75",
+        "7.75"
+      ],
+      "answer": 2,
+      "explain_en": "62 ÷ 8 = 7.75.",
+      "explain_zh": "62 ÷ 8 = 7.75。",
+      "sign_en": [
+        "54",
+        "8.75",
+        "7.75"
+      ],
+      "sign_zh": [
+        "54",
+        "8.75",
+        "7.75"
+      ],
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_045",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A stretch of Huaihai Road is 2 km long in total. How many metres is that?",
+      "q_zh": "淮海路这一段全长 2 千米，是多少米？",
+      "choices": [
+        "200",
+        "20",
+        "2000",
+        "20000"
+      ],
+      "choices_zh": [
+        "200",
+        "20",
+        "2000",
+        "20000"
+      ],
+      "answer": 2,
+      "explain_en": "2 × 1000 = 2000.",
+      "explain_zh": "2 × 1000 = 2000。",
+      "qtype": "measure_convert",
+      "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+    },
+    {
+      "id": "l5g5_046",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I grow in wet places, and my long leaves are used to wrap sticky rice. What am I?",
+      "q_zh": "端午谜：我长在潮湿的地方，长长的叶子被用来包糯米。打一植物，是什么？",
+      "choices": [
+        "A mushroom",
+        "A pine",
+        "A reed",
+        "A cactus"
+      ],
+      "choices_zh": [
+        "蘑菇",
+        "松树",
+        "芦苇",
+        "仙人掌"
+      ],
+      "answer": 2,
+      "explain_en": "Reed or reed-like leaves are traditional wrappers for zongzi.",
+      "explain_zh": "芦苇或箬竹的叶子常被用来包粽子。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g5_047",
+      "level": 5,
+      "section": "seawall",
+      "subject": "nature",
+      "difficulty": "medium",
+      "q_en": "The mottled, peeling coat of a Huaihai Road plane tree is its ____.",
+      "q_zh": "淮海路梧桐那层斑驳、会脱落的外衣是它的____。",
+      "choices": [
+        "root only",
+        "seed wing",
+        "bark",
+        "flower petal"
+      ],
+      "choices_zh": [
+        "只是根",
+        "种子翅",
+        "树皮",
+        "花瓣"
+      ],
+      "answer": 2,
+      "explain_en": "Plane trees shed bark in patches, which looks mottled.",
+      "explain_zh": "梧桐树皮会一块块脱落，看起来斑驳。",
+      "qtype": "plant_biology",
+      "qtype_zh": "植物（艾草/箬叶/梧桐）"
+    },
+    {
+      "id": "l5g5_048",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 33 cm long, 10 cm wide and 19 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 33 厘米、宽 10 厘米、高 19 厘米，体积是多少立方厘米？",
+      "choices": [
+        "6270",
+        "349",
+        "6080"
+      ],
+      "choices_zh": [
+        "6270",
+        "349",
+        "6080"
+      ],
+      "answer": 0,
+      "explain_en": "33 × 10 × 19 = 6270.",
+      "explain_zh": "33 × 10 × 19 = 6270。",
+      "sign_en": [
+        "6270",
+        "349",
+        "6080"
+      ],
+      "sign_zh": [
+        "6270",
+        "349",
+        "6080"
+      ],
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_049",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora buys 3 sachets at 9 yuan each and pays 40 yuan. How many yuan change?",
+      "q_zh": "Flora 买了 3 只香囊，每只 9 元，付了 40 元，找回多少元？",
+      "choices": [
+        "22",
+        "13",
+        "14"
+      ],
+      "choices_zh": [
+        "22",
+        "13",
+        "14"
+      ],
+      "answer": 1,
+      "explain_en": "40 - 3 × 9 = 13.",
+      "explain_zh": "40 - 3 × 9 = 13。",
+      "sign_en": [
+        "22",
+        "13",
+        "14"
+      ],
+      "sign_zh": [
+        "22",
+        "13",
+        "14"
+      ],
+      "qtype": "money_change",
+      "qtype_zh": "找零"
+    },
+    {
+      "id": "l5g5_050",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 12.5 yuan. How many yuan for 5 sachets?",
+      "q_zh": "一只香囊 12.5 元，买 5 只要多少元？",
+      "choices": [
+        "75",
+        "17.5",
+        "63.5",
+        "62.5"
+      ],
+      "choices_zh": [
+        "75",
+        "17.5",
+        "63.5",
+        "62.5"
+      ],
+      "answer": 3,
+      "explain_en": "12.5 × 5 = 62.5.",
+      "explain_zh": "12.5 × 5 = 62.5。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_051",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "A sachet worn at this festival is usually filled with ____.",
+      "q_zh": "过这个节戴的香囊，里面通常装着____。",
+      "choices": [
+        "fragrant dried herbs",
+        "wet stones",
+        "sand only",
+        "machine oil"
+      ],
+      "choices_zh": [
+        "干香草",
+        "湿石头",
+        "只有沙子",
+        "机油"
+      ],
+      "answer": 0,
+      "explain_en": "Sachets hold fragrant herbs such as mugwort.",
+      "explain_zh": "香囊里装着艾草等香草。",
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g5_052",
+      "level": 5,
+      "section": "seawall",
+      "subject": "riddle",
+      "difficulty": "medium",
+      "q_en": "Festival riddle: I am stone at the gate and a shop window farther in; people stroll among me in Xintiandi. What am I?",
+      "q_zh": "端午谜：门口是石头门框，里面是店铺橱窗，人们在新天地从我旁边走过。打一建筑，是什么？",
+      "choices": [
+        "A farm barn",
+        "A tent",
+        "A lighthouse",
+        "A shikumen house"
+      ],
+      "choices_zh": [
+        "农仓",
+        "帐篷",
+        "灯塔",
+        "石库门"
+      ],
+      "answer": 3,
+      "explain_en": "Xintiandi keeps shikumen stone-gated houses among the shops.",
+      "explain_zh": "新天地保留了许多石库门，和店铺在一起。",
+      "qtype": "riddle_object",
+      "qtype_zh": "端午谜·物谜（猜东西）"
+    },
+    {
+      "id": "l5g5_053",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "The character 粽 is the one used in the word for ____.",
+      "q_zh": "汉字「粽」用在下面哪个词里？",
+      "choices": [
+        "clock",
+        "zongzi",
+        "bridge",
+        "mountain"
+      ],
+      "choices_zh": [
+        "时钟",
+        "粽子",
+        "桥梁",
+        "大山"
+      ],
+      "answer": 1,
+      "explain_en": "粽 is the character in 粽子 (zongzi).",
+      "explain_zh": "「粽」就是粽子的粽。",
+      "qtype": "zh_character",
+      "qtype_zh": "汉字字义"
+    },
+    {
+      "id": "l5g5_054",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "50 metres of five-color thread is cut into 4 equal pieces. How long is each piece in metres?",
+      "q_zh": "50 米五彩绳剪成 4 段一样长的，每段多少米？",
+      "choices": [
+        "12.5",
+        "13",
+        "46"
+      ],
+      "choices_zh": [
+        "12.5",
+        "13",
+        "46"
+      ],
+      "answer": 0,
+      "explain_en": "50 ÷ 4 = 12.5.",
+      "explain_zh": "50 ÷ 4 = 12.5。",
+      "sign_en": [
+        "12.5",
+        "13",
+        "46"
+      ],
+      "sign_zh": [
+        "12.5",
+        "13",
+        "46"
+      ],
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_055",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora eats 1/10 of a zongzi and Bara's share is 7/8 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "Flora 吃了 1/10 只粽子，Bara 吃了另一只的 7/8，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "31/40",
+        "39/40",
+        "4/9",
+        "79/80"
+      ],
+      "choices_zh": [
+        "31/40",
+        "39/40",
+        "4/9",
+        "79/80"
+      ],
+      "answer": 1,
+      "explain_en": "1/10 + 7/8 = 39/40.",
+      "explain_zh": "1/10 + 7/8 = 39/40。",
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_056",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 37 cm long, 22 cm wide and 23 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 37 厘米、宽 22 厘米、高 23 厘米，体积是多少立方厘米？",
+      "choices": [
+        "19536",
+        "18216",
+        "18722",
+        "837"
+      ],
+      "choices_zh": [
+        "19536",
+        "18216",
+        "18722",
+        "837"
+      ],
+      "answer": 2,
+      "explain_en": "37 × 22 × 23 = 18722.",
+      "explain_zh": "37 × 22 × 23 = 18722。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_057",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "Measure word: 一____梧桐?",
+      "q_zh": "量词：一____梧桐？",
+      "choices": [
+        "辆",
+        "棵",
+        "本"
+      ],
+      "choices_zh": [
+        "辆",
+        "棵",
+        "本"
+      ],
+      "answer": 1,
+      "explain_en": "Trees use 棵: 一棵梧桐.",
+      "explain_zh": "树用“棵”：一棵梧桐。",
+      "sign_en": [
+        "辆",
+        "棵",
+        "本"
+      ],
+      "sign_zh": [
+        "辆",
+        "棵",
+        "本"
+      ],
+      "qtype": "zh_measure_word",
+      "qtype_zh": "中文量词"
+    },
+    {
+      "id": "l5g5_058",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A zongzi recipe contest is held every 12 years. Flora is 10. Grandma also won at the same age and is between 74 and 84. How old is Grandma?",
+      "q_zh": "包粽子比赛每 12 年举办一次。Flora 10 岁，奶奶当年也是这个年纪获奖，年龄在 74 到 84 岁之间。奶奶几岁？",
+      "choices": [
+        "83",
+        "82",
+        "70",
+        "94"
+      ],
+      "choices_zh": [
+        "83",
+        "82",
+        "70",
+        "94"
+      ],
+      "answer": 1,
+      "explain_en": "10 + 12 × 6 = 82.",
+      "explain_zh": "10 + 12 × 6 = 82。",
+      "qtype": "cycle_mod",
+      "qtype_zh": "周期问题"
+    },
+    {
+      "id": "l5g5_059",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "shanghai",
+      "difficulty": "medium",
+      "q_en": "Lujiazui is in ____.",
+      "q_zh": "陆家嘴属于____。",
+      "choices": [
+        "a mountain",
+        "Pudong",
+        "Puxi only"
+      ],
+      "choices_zh": [
+        "山里",
+        "浦东",
+        "只在浦西"
+      ],
+      "answer": 1,
+      "explain_en": "Lujiazui is a Pudong area.",
+      "explain_zh": "陆家嘴在浦东。",
+      "sign_en": [
+        "a mountain",
+        "Pudong",
+        "Puxi only"
+      ],
+      "sign_zh": [
+        "山里",
+        "浦东",
+        "只在浦西"
+      ],
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g5_060",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A rectangular flower bed under plane trees on Huaihai Road is 22 m long and 16 m wide. What is its perimeter in metres?",
+      "q_zh": "淮海路梧桐下一块长方形花坛长 22 米、宽 16 米，周长是多少米？",
+      "choices": [
+        "38",
+        "78",
+        "352",
+        "76"
+      ],
+      "choices_zh": [
+        "38",
+        "78",
+        "352",
+        "76"
+      ],
+      "answer": 3,
+      "explain_en": "2 × (22 + 16) = 76.",
+      "explain_zh": "2 × (22 + 16) = 76。",
+      "qtype": "perimeter_rect",
+      "qtype_zh": "长方形周长"
+    },
+    {
+      "id": "l5g5_061",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora has 24 sachets and pins 13 on jackets. How many are still in the box?",
+      "q_zh": "Flora 有 24 只香囊，往衣服上别了 13 只，盒子里还剩几只？",
+      "choices": [
+        "11",
+        "13",
+        "10"
+      ],
+      "choices_zh": [
+        "11",
+        "13",
+        "10"
+      ],
+      "answer": 0,
+      "explain_en": "24 - 13 = 11.",
+      "explain_zh": "24 - 13 = 11。",
+      "sign_en": [
+        "11",
+        "13",
+        "10"
+      ],
+      "sign_zh": [
+        "11",
+        "13",
+        "10"
+      ],
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g5_062",
+      "level": 5,
+      "section": "seawall",
+      "subject": "science",
+      "difficulty": "medium",
+      "q_en": "Squeezing the e-bike brake lever is meant to ____ the wheels.",
+      "q_zh": "捏电动车的刹车闸，是为了让轮子____。",
+      "choices": [
+        "grow larger",
+        "point at the sky",
+        "slow or stop",
+        "turn into boats"
+      ],
+      "choices_zh": [
+        "变大",
+        "指向天空",
+        "慢下来或停住",
+        "变成船"
+      ],
+      "answer": 2,
+      "explain_en": "Brakes use friction to slow or stop the wheels.",
+      "explain_zh": "刹车利用摩擦让轮子慢下来或停住。",
+      "qtype": "simple_machines",
+      "qtype_zh": "简单机械（轮子/车铃/刹车）"
+    },
+    {
+      "id": "l5g5_063",
+      "level": 5,
+      "section": "forest_fork",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "Sword-shaped leaves by the door are ____.",
+      "q_zh": "门口那些像剑的叶子是____。",
+      "choices": [
+        "Cactus",
+        "Calamus",
+        "Pine needles"
+      ],
+      "choices_zh": [
+        "仙人掌",
+        "菖蒲",
+        "松针"
+      ],
+      "answer": 1,
+      "explain_en": "Calamus is hung with mugwort.",
+      "explain_zh": "菖蒲常和艾草一起挂。",
+      "sign_en": [
+        "Cactus",
+        "Calamus",
+        "Pine needles"
+      ],
+      "sign_zh": [
+        "仙人掌",
+        "菖蒲",
+        "松针"
+      ],
+      "qtype": "duanwu_custom",
+      "qtype_zh": "端午习俗（粽子/龙舟/艾草/五彩绳）"
+    },
+    {
+      "id": "l5g5_064",
+      "level": 5,
+      "section": "seawall",
+      "subject": "shanghai",
+      "difficulty": "medium",
+      "q_en": "Lujiazui is on the ____ side of the Huangpu River; the Bund is on the other side.",
+      "q_zh": "陆家嘴在黄浦江的____一侧，外滩在对岸。",
+      "choices": [
+        "desert",
+        "island far at sea",
+        "Pudong",
+        "mountain"
+      ],
+      "choices_zh": [
+        "沙漠",
+        "远海小岛",
+        "浦东",
+        "山"
+      ],
+      "answer": 2,
+      "explain_en": "Lujiazui is in Pudong; the Bund is in Puxi, across the river.",
+      "explain_zh": "陆家嘴在浦东，外滩在浦西，隔江相望。",
+      "qtype": "shanghai_life",
+      "qtype_zh": "上海生活（梧桐/黄浦江/石库门）"
+    },
+    {
+      "id": "l5g5_065",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A box of sachets is 33 cm long, 11 cm wide and 17 cm high. What is its volume in cm³?",
+      "q_zh": "一盒香囊长 33 厘米、宽 11 厘米、高 17 厘米，体积是多少立方厘米？",
+      "choices": [
+        "6171",
+        "380",
+        "2222",
+        "5984"
+      ],
+      "choices_zh": [
+        "6171",
+        "380",
+        "2222",
+        "5984"
+      ],
+      "answer": 0,
+      "explain_en": "33 × 11 × 17 = 6171.",
+      "explain_zh": "33 × 11 × 17 = 6171。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_066",
+      "level": 5,
+      "section": "seawall",
+      "subject": "language",
+      "difficulty": "medium",
+      "q_en": "English: one sachet, two ____.",
+      "q_zh": "英文填空：one sachet，two ____。",
+      "choices": [
+        "sachet",
+        "sacheties",
+        "sachets",
+        "sachetes"
+      ],
+      "choices_zh": [
+        "sachet",
+        "sacheties",
+        "sachets",
+        "sachetes"
+      ],
+      "answer": 2,
+      "explain_en": "Add -s to make the plural: sachets.",
+      "explain_zh": "复数加 -s：sachets。",
+      "qtype": "lang_word_form",
+      "qtype_zh": "词形（过去式/复数/合成词）"
+    },
+    {
+      "id": "l5g5_067",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "One sachet costs 5.6 yuan. How many yuan for 9 sachets?",
+      "q_zh": "一只香囊 5.6 元，买 9 只要多少元？",
+      "choices": [
+        "50.4",
+        "44.8",
+        "56",
+        "14.6"
+      ],
+      "choices_zh": [
+        "50.4",
+        "44.8",
+        "56",
+        "14.6"
+      ],
+      "answer": 0,
+      "explain_en": "5.6 × 9 = 50.4.",
+      "explain_zh": "5.6 × 9 = 50.4。",
+      "qtype": "mult_equal_groups",
+      "qtype_zh": "乘法（几个几/单价×数量）"
+    },
+    {
+      "id": "l5g5_068",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "Flora eats 1/3 of a zongzi and Bara's share is 3/8 of another one. How much zongzi did they eat together? (simplest form)",
+      "q_zh": "Flora 吃了 1/3 只粽子，Bara 吃了另一只的 3/8，两人一共吃了多少只？（最简分数）",
+      "choices": [
+        "17/24",
+        "3/4",
+        "1/24",
+        "1/8"
+      ],
+      "choices_zh": [
+        "17/24",
+        "3/4",
+        "1/24",
+        "1/8"
+      ],
+      "answer": 0,
+      "explain_en": "1/3 + 3/8 = 17/24.",
+      "explain_zh": "1/3 + 3/8 = 17/24。",
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_069",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A stall has 39 zongzi and sells 15. How many zongzi are left?",
+      "q_zh": "小摊有 39 只粽子，卖出 15 只，还剩几只？",
+      "choices": [
+        "54",
+        "24",
+        "23",
+        "25"
+      ],
+      "choices_zh": [
+        "54",
+        "24",
+        "23",
+        "25"
+      ],
+      "answer": 1,
+      "explain_en": "39 - 15 = 24.",
+      "explain_zh": "39 - 15 = 24。",
+      "qtype": "subtraction",
+      "qtype_zh": "减法（还剩多少）"
+    },
+    {
+      "id": "l5g5_070",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A zongzi leaf is 39 cm long. How many millimetres is that?",
+      "q_zh": "一张粽叶长 39 厘米，是多少毫米？",
+      "choices": [
+        "49",
+        "3900",
+        "39",
+        "390"
+      ],
+      "choices_zh": [
+        "49",
+        "3900",
+        "39",
+        "390"
+      ],
+      "answer": 3,
+      "explain_en": "39 × 10 = 390.",
+      "explain_zh": "39 × 10 = 390。",
+      "qtype": "measure_convert",
+      "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+    },
+    {
+      "id": "l5g5_071",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "A bag of glutinous rice weighs 3 kg. How many grams is that?",
+      "q_zh": "一袋糯米重 3 千克，是多少克？",
+      "choices": [
+        "30",
+        "3000",
+        "30000",
+        "300"
+      ],
+      "choices_zh": [
+        "30",
+        "3000",
+        "30000",
+        "300"
+      ],
+      "answer": 1,
+      "explain_en": "3 × 1000 = 3000.",
+      "explain_zh": "3 × 1000 = 3000。",
+      "qtype": "measure_convert",
+      "qtype_zh": "单位换算（米↔厘米、千克↔克）"
+    },
+    {
+      "id": "l5g5_072",
+      "level": 5,
+      "section": "seawall",
+      "subject": "duanwu",
+      "difficulty": "medium",
+      "q_en": "The sticky rice used to make zongzi is called ____ in Chinese cooking.",
+      "q_zh": "包粽子用的黏黏的米，在中国烹饪里叫____。",
+      "choices": [
+        "glutinous rice",
+        "popcorn kernels",
+        "coffee beans",
+        "dried tea only"
+      ],
+      "choices_zh": [
+        "糯米",
+        "爆米花粒",
+        "咖啡豆",
+        "只有干茶叶"
+      ],
+      "answer": 0,
+      "explain_en": "Zongzi are made with glutinous (sticky) rice.",
+      "explain_zh": "粽子是用糯米包的。",
+      "qtype": "zongzi_food",
+      "qtype_zh": "粽子与食材"
+    },
+    {
+      "id": "l5g5_073",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "20 metres of five-color thread is cut into 8 equal pieces. How long is each piece in metres?",
+      "q_zh": "20 米五彩绳剪成 8 段一样长的，每段多少米？",
+      "choices": [
+        "3",
+        "3.5",
+        "2.5",
+        "12"
+      ],
+      "choices_zh": [
+        "3",
+        "3.5",
+        "2.5",
+        "12"
+      ],
+      "answer": 2,
+      "explain_en": "20 ÷ 8 = 2.5.",
+      "explain_zh": "20 ÷ 8 = 2.5。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_074",
+      "level": 5,
+      "section": "seawall",
+      "subject": "math",
+      "difficulty": "medium",
+      "q_en": "34 metres of five-color thread is cut into 8 equal pieces. How long is each piece in metres?",
+      "q_zh": "34 米五彩绳剪成 8 段一样长的，每段多少米？",
+      "choices": [
+        "4.75",
+        "4.25",
+        "5.25",
+        "8.5"
+      ],
+      "choices_zh": [
+        "4.75",
+        "4.25",
+        "5.25",
+        "8.5"
+      ],
+      "answer": 1,
+      "explain_en": "34 ÷ 8 = 4.25.",
+      "explain_zh": "34 ÷ 8 = 4.25。",
+      "qtype": "div_equal_share",
+      "qtype_zh": "除法（平均分/每份多少）"
+    },
+    {
+      "id": "l5g5_075",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "shanghai",
+      "difficulty": "hard",
+      "q_en": "From the Bund, Flora looks across the Huangpu and sees the sphere-shaped tower in Lujiazui. What landmark is it?",
+      "q_zh": "Flora 站在外滩，隔着黄浦江看见陆家嘴那座有圆球体的高塔。那是哪座地标？",
+      "choices": [
+        "The Oriental Pearl",
+        "A desert lighthouse",
+        "A farm silo",
+        "A mountain pagoda only"
+      ],
+      "choices_zh": [
+        "东方明珠",
+        "沙漠灯塔",
+        "农仓筒仓",
+        "只是山里的塔"
+      ],
+      "answer": 0,
+      "explain_en": "The sphere-shaped tower in Lujiazui is the Oriental Pearl.",
+      "explain_zh": "陆家嘴那座有圆球体的塔是东方明珠。",
+      "qtype": "shanghai_landmark",
+      "qtype_zh": "上海地标（陆家嘴/外滩/新天地）"
+    },
+    {
+      "id": "l5g5_076",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "safety",
+      "difficulty": "hard",
+      "q_en": "On Huaihai Road under the plane trees, the light turns red as Flora rides her e-bike. What should she do?",
+      "q_zh": "淮海路梧桐树下，Flora 骑着电动车时灯变红了。她应该怎么做？",
+      "choices": [
+        "Ride on the sidewalk at full speed",
+        "Race through as fast as she can",
+        "Stop and wait for green",
+        "Close her eyes and keep going"
+      ],
+      "choices_zh": [
+        "在人行道上全速骑",
+        "尽快冲过去",
+        "停下来等绿灯",
+        "闭着眼睛继续骑"
+      ],
+      "answer": 2,
+      "explain_en": "A red light means stop, even on an e-bike.",
+      "explain_zh": "红灯要停，骑电动车也一样。",
+      "qtype": "road_safety",
+      "qtype_zh": "骑电动车与交通安全"
+    },
+    {
+      "id": "l5g5_077",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A gift box of zongzi at Xintiandi is 40 cm × 15 cm × 22 cm. What is its volume in cm³?",
+      "q_zh": "新天地一个粽子礼盒长 40 厘米、宽 15 厘米、高 22 厘米，体积是多少立方厘米？",
+      "choices": [
+        "13200",
+        "12870",
+        "13800",
+        "3620"
+      ],
+      "choices_zh": [
+        "13200",
+        "12870",
+        "13800",
+        "3620"
+      ],
+      "answer": 0,
+      "explain_en": "40 × 15 × 22 = 13200.",
+      "explain_zh": "40 × 15 × 22 = 13200。",
+      "qtype": "volume_box",
+      "qtype_zh": "长方体体积"
+    },
+    {
+      "id": "l5g5_078",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Flora rides 1/3 km along the Bund and then 9/10 km to Xintiandi. How many km does she ride? (simplest form)",
+      "q_zh": "Flora 沿外滩骑了 1/3 千米，又骑了 9/10 千米到新天地，一共骑了多少千米？（最简分数）",
+      "choices": [
+        "17/30",
+        "3/10",
+        "19/15",
+        "37/30"
+      ],
+      "choices_zh": [
+        "17/30",
+        "3/10",
+        "19/15",
+        "37/30"
+      ],
+      "answer": 3,
+      "explain_en": "1/3 + 9/10 = 37/30.",
+      "explain_zh": "1/3 + 9/10 = 37/30。",
+      "qtype": "fraction_add",
+      "qtype_zh": "分数加法"
+    },
+    {
+      "id": "l5g5_079",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "40 visitors stand by the Bund at sunset, and 45% of them watch a dragon boat. How many watch a dragon boat?",
+      "q_zh": "傍晚外滩有 40 位游客，其中 45% 在看龙舟，有多少人在看龙舟？",
+      "choices": [
+        "22",
+        "28",
+        "36",
+        "18"
+      ],
+      "choices_zh": [
+        "22",
+        "28",
+        "36",
+        "18"
+      ],
+      "answer": 3,
+      "explain_en": "40 × 45 ÷ 100 = 18.",
+      "explain_zh": "40 × 45 ÷ 100 = 18。",
+      "qtype": "percent_of_n",
+      "qtype_zh": "求百分之几是多少"
+    },
+    {
+      "id": "l5g5_080",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "Over four evenings, Flora counts 12, 15, 19 and 14 boats passing the Bund. What is the mean number per evening?",
+      "q_zh": "连续四个晚上，Flora 在外滩数到 12、15、19、14 条船，平均每晚几条？",
+      "choices": [
+        "19",
+        "60",
+        "15",
+        "16"
+      ],
+      "choices_zh": [
+        "19",
+        "60",
+        "15",
+        "16"
+      ],
+      "answer": 2,
+      "explain_en": "(12 + 15 + 19 + 14) ÷ 4 = 15.",
+      "explain_zh": "(12 + 15 + 19 + 14) ÷ 4 = 15。",
+      "qtype": "mean_average",
+      "qtype_zh": "平均数"
+    },
+    {
+      "id": "l5g5_081",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "A welcome mat at the Xintiandi door is 14 m long and 7 m wide. What area does it cover in square metres?",
+      "q_zh": "新天地门口的迎宾地毯长 14 米、宽 7 米，面积是多少平方米？",
+      "choices": [
+        "112",
+        "98",
+        "21",
+        "42"
+      ],
+      "choices_zh": [
+        "112",
+        "98",
+        "21",
+        "42"
+      ],
+      "answer": 1,
+      "explain_en": "14 × 7 = 98.",
+      "explain_zh": "14 × 7 = 98。",
+      "qtype": "area_rect",
+      "qtype_zh": "长方形面积"
+    },
+    {
+      "id": "l5g5_082",
+      "level": 5,
+      "section": "peak_final",
+      "subject": "math",
+      "difficulty": "hard",
+      "q_en": "On the Bund, 53 green flags and 38 gold flags fly for the boat race. How many more green flags than gold ones are there?",
+      "q_zh": "外滩为龙舟赛挂了 53 面绿旗和 38 面金旗，绿旗比金旗多几面？",
+      "choices": [
+        "15",
+        "18",
+        "16",
+        "91"
+      ],
+      "choices_zh": [
+        "15",
+        "18",
+        "16",
+        "91"
+      ],
+      "answer": 0,
+      "explain_en": "53 - 38 = 15.",
+      "explain_zh": "53 - 38 = 15。",
+      "qtype": "sub_compare",
+      "qtype_zh": "比较相差（多多少/高多少）"
+    }
+  ]
+}
