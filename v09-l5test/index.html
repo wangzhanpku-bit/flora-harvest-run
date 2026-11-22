@@ -6890,7 +6890,7 @@ function l5GrandmaGive(done){
  window.__L5GIVE={t0:performance.now()};
  const give=()=>{try{if(G)G._l5Give=1;l5GrandmaPose(l5GrandmaZ1(),L5.GIVE_X,TEX.pursuer_l5_grandma_give_zongzi?'pursuer_l5_grandma_give_zongzi':null);}catch(e){}
   try{play('sfx_l5_nainai_catch');}catch(e){}
-  try{sub(bi('Have a taste of my zongzi!','尝一尝阿婆的粽子！'),1800);}catch(e){}/* James 11-23: like L4 grandpa line; subtitle only, no voice */
+  try{sub(bi('Have a taste of my zongzi!','尝一尝粽子！'),1800);}catch(e){}/* James 11-23: like L4 grandpa line; subtitle only, no voice */
   window.__L5GIVE.giveAt=performance.now();setTimeout(()=>{if(typeof done==='function')done();},1000);};
  if(!G){give();return;}
  if(!G._l5Run)l5GrandmaRunIn(G);
