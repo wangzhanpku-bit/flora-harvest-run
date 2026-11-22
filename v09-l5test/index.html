@@ -6349,10 +6349,11 @@ function l5EnsureProps(){
  L.l5props=P;
 }
 /* 2026-11-22 stall fix (码农李): the stall is its OWN mesh, not stop.ring — isL4() is true in L5, so the L4 per-frame p39bKeepLamp / ask painter and the L3 lit-ring swap (l3IceRingMat) used to repaint stop.ring every frame. Bottom-anchored (l5Bill's translate puts the image ABOVE y only for small ay; .98 sank it ~0.96h under the road), left shoulder past the curb, L5.STALL_AHEAD past the quiz z so it is in frame on the approach. Scene mesh only: no objs entry, no collision. */
-L5.STALL_AHEAD=22;L5.STALL_H=3.2;
+L5.STALL_AHEAD=22;L5.STALL_H=4.8;/* 创意张 2026-11-22: 1.5× of 3.2 so the far sachet reads; stay off the road */
 function l5StallKey(){if(typeof TEX==='undefined')return null;return TEX.quiz_l5_sachet_stall?'quiz_l5_sachet_stall':(TEX.quiz_l5_zongzi_stall?'quiz_l5_zongzi_stall':null);}
-function l5StallBill(z){/* James+创意张 2026-11-22: every L5 quiz point = roadside sachet stall marker, not an obstacle */const k=l5StallKey();if(!k)return null;const ar=l5Ar(k,1024/768);const h=L5.STALL_H,w=h*ar;const x=-(LANE*1.5+.3+w*.44);
- const m=l5Bill(k,w,h,x,((typeof L3_TRAIL_Y==='number')?L3_TRAIL_Y:0.18)-.04,z,.02);if(m){m.rotation.y=.2;m.renderOrder=2;m.userData.l5stall=1;m.userData.l5stallZ=z;}return m;}
+function l5StallBill(z){/* James+创意张 2026-11-22: every L5 quiz point = roadside sachet stall marker, not an obstacle */const k=l5StallKey();if(!k)return null;const ar=l5Ar(k,1024/768);const h=L5.STALL_H,w=h*ar;const x=-(LANE*1.5+.3+w*.5);/* right edge at -3.6 unrotated; 0.2 rad rotation pulls it slightly further left */
+ const trailY=((typeof L3_TRAIL_Y==='number')?L3_TRAIL_Y:0.18);const y=trailY-.04+.02*(h-3.2);/* same ground contact as the STALL_H=3.2 build (base = trailY-0.104) */
+ const m=l5Bill(k,w,h,x,y,z,.02);if(m){m.rotation.y=.2;m.renderOrder=2;m.userData.l5stall=1;m.userData.l5stallZ=z;}return m;}
 function l5ClearForkStalls(why){(L5._forkStalls||[]).forEach(m=>{try{if(m&&m.parent)m.parent.remove(m);}catch(e){}});L5._forkStalls=[];
  const n=(L5._stalls||[]).length;(L5._stalls||[]).forEach(s=>{try{if(s&&s.m&&s.m.parent)s.m.parent.remove(s.m);}catch(e){}});L5._stalls=[];L5._stallClr=(why||'?')+':'+n;}
 function l5StallAdd(kind,qz){const s={kind,qz,z:qz+L5.STALL_AHEAD,m:null};try{s.m=l5StallBill(s.z);if(!s.m)L5._stallErr='bill null key='+l5StallKey();}catch(e){L5._stallErr='add '+kind+'@'+qz+': '+e;}(L5._stalls||(L5._stalls=[])).push(s);return s;}
@@ -6581,6 +6582,7 @@ function l5Frame(dt){
  try{l5HintStep();}catch(e){}
  try{l5PlateFit();}catch(e){}
  try{if(typeof l3EnsureLodge==='function'&&(TEX&&TEX.finish_l5_xintiandi_door)){const lg=l3EnsureLodge();if(lg)lg.userData.l5=1;}}catch(e){}
+ try{if(S.mode==='end')l5GrandmaHold();}catch(e){}
 }
 
 function l5LevelSwitch(on){try{if(!on)l5ClearForkStalls('levelSwitch(off)');}catch(e){}/* stall fix 2: on=true runs after the quiz build (newGame wrapper) — never wipe the fresh stalls; the L5 quiz build clears its own */l5ApplyData(on);l5PathExt(on);L5.HINTS.forEach(h=>h.fired=0);L5._doorSaid=0;L5._doorArmed=0;L5._introUntil=0;L5._introUntilRunT=0;L5._greetUntilRunT=0;}
@@ -6847,20 +6849,32 @@ window.__L5QA_GOD=false;/* l5test: l5qa_god disabled */
 
 {const _sa=stopAllAudio;stopAllAudio=function(){try{l5AudStop();}catch(e){}return _sa.apply(this,arguments);};window.stopAllAudio=stopAllAudio;}
 
+L5.GIVE_AHEAD=3.2;L5.GIVE_X=1.3;L5.GIVE_SC=2.15;L5.RUNIN_MS=1200;L5.RUNIN_BACK=16;
+function l5GrandmaZ1(){return ((S&&S.z)||((L5&&L5.FINISH)||2880))+L5.GIVE_AHEAD;}
+function l5GrandmaPose(zz,xOff,k){if(typeof pursuer==='undefined'||!pursuer)return;
+ const sc=L5.GIVE_SC,ar=(typeof l5Ar==='function'?l5Ar(k,650/827):650/827);
+ const flip=!!(k&&k.indexOf('give_zongzi')>=0);/* give art holds the zongzi on the right; flip so the hand points toward Flora (left), still a back view */
+ try{if(k&&typeof TEX!=='undefined'&&TEX[k])pursuer.material=SP(k);}catch(e){}
+ pursuer.visible=true;pursuer.scale.set((flip?-1:1)*sc*ar,sc,1);
+ pursuer.position.set((S&&S.x||0)+(xOff!=null?xOff:L5.GIVE_X),1.05*sc,-(zz!=null?zz:l5GrandmaZ1()));
+ try{pursuer.quaternion.copy(cam.quaternion);}catch(e){}}
+function l5GrandmaHold(){const G=S&&S._l3Lodge;if(!S||S.mode!=='end'||!G||!(G._l5Run||G._l5Give))return;
+ if(G._l5Run&&!G._l5RunDone)return;/* run-in rAF owns the pose until it finishes */
+ const k=(typeof TEX!=='undefined'&&TEX.pursuer_l5_grandma_give_zongzi)?'pursuer_l5_grandma_give_zongzi':null;
+ if(k)l5GrandmaPose(l5GrandmaZ1(),L5.GIVE_X,k);}
 function l5GrandmaRunIn(G){if(!G||G._l5Run)return;G._l5Run=1;
  try{if(typeof pursuer==='undefined'||!pursuer){G._l5RunDone=1;return;}
-  const z1=(L5&&L5.FINISH)||2880,z0=z1-16,t0=performance.now(),ms=1200;
-  const tick=()=>{if(!S||S._l3Lodge!==G)return;const u=Math.min(1,(performance.now()-t0)/ms);const e=1-Math.pow(1-u,3);const zz=z0+(z1-z0)*e;
+  const z1=l5GrandmaZ1(),z0=z1-L5.RUNIN_BACK,t0=performance.now(),ms=L5.RUNIN_MS;
+  const tick=()=>{if(!S||S._l3Lodge!==G)return;const u=Math.min(1,(performance.now()-t0)/ms);const e=1-Math.pow(1-u,3);const zEnd=l5GrandmaZ1();const zz=z0+(zEnd-z0)*e;
    try{const fi=Math.floor((performance.now()/1000)*9)%4;
     const k=u>=1&&TEX.pursuer_l5_grandma_give_zongzi?'pursuer_l5_grandma_give_zongzi':(TEX['pursuer_l5_grandma_run_f'+fi]?'pursuer_l5_grandma_run_f'+fi:'pursuer_l5_grandma_run_f0');
-    pursuer.material=SP(k);pursuer.visible=true;const sc=2.15;const ar=(typeof l5Ar==='function'?l5Ar(k,650/827):650/827);
-    pursuer.scale.set(sc*ar,sc,1);pursuer.position.set((S&&S.x||0)+1.15,1.05*sc,-zz);try{pursuer.quaternion.copy(cam.quaternion);}catch(e){}}catch(e){}
+    l5GrandmaPose(zz,L5.GIVE_X,k);}catch(e){}
    if(u<1)requestAnimationFrame(tick);else{G._l5RunDone=1;const cb=G._l5RunCb;G._l5RunCb=null;if(cb)cb();}};
   tick();}catch(e){console.warn('[L5] grandma run-in',e);G._l5RunDone=1;}}
 function l5GrandmaGive(done){
  const G=S&&S._l3Lodge;
  window.__L5GIVE={t0:performance.now()};
- const give=()=>{try{if(typeof pursuer!=='undefined'&&pursuer&&TEX.pursuer_l5_grandma_give_zongzi){pursuer.material=SP('pursuer_l5_grandma_give_zongzi');pursuer.visible=true;}}catch(e){}
+ const give=()=>{try{if(G)G._l5Give=1;l5GrandmaPose(l5GrandmaZ1(),L5.GIVE_X,TEX.pursuer_l5_grandma_give_zongzi?'pursuer_l5_grandma_give_zongzi':null);}catch(e){}
   try{play('sfx_l5_nainai_catch');}catch(e){}
   try{sub(bi('A warm zongzi for you!','给你一只热粽子！'),1800);}catch(e){}
   window.__L5GIVE.giveAt=performance.now();setTimeout(()=>{if(typeof done==='function')done();},1000);};
