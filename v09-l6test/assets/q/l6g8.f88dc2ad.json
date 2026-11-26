@@ -1,0 +1,2350 @@
+{
+ "level": 6,
+ "level_name_en": "Hong Kong",
+ "level_name_zh": "香港",
+ "grade": 8,
+ "version": "v1",
+ "fields": "L6 Hong Kong / Mid-Autumn Festival (inline roller skates; Central → Victoria Harbour → The Peak). Same item fields as L3 v3.1 / L4 / L5. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 月饼摊 Mooncake Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh must equal choices; EN ≤24 chars, ZH width ≤12 where CJK=1, ASCII=0.5), peak_final = The Peak / 太平山顶 final (exactly 4 choices, hard, situational, no bare arithmetic). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Peak final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 中秋谜：. Stems are deduped against all L1–L5 banks (all grades).",
+ "questions": [
+  {
+   "id": "l6g8_001",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 80 stall doors on the street, and 3/5 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 80 个摊位门口，其中 3/5 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "53",
+    "32",
+    "48"
+   ],
+   "choices_zh": [
+    "53",
+    "32",
+    "48"
+   ],
+   "answer": 2,
+   "explain_en": "80 × 3 ÷ 5 = 48.",
+   "explain_zh": "80 × 3 ÷ 5 = 48。",
+   "sign_en": [
+    "53",
+    "32",
+    "48"
+   ],
+   "sign_zh": [
+    "53",
+    "32",
+    "48"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g8_002",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "hard",
+   "q_en": "The metal grooves Flora jumps in Central so her skates do not catch are ____.",
+   "q_zh": "Flora 在中环跳过去、免得轮滑卡住的金属槽，是____。",
+   "choices": [
+    "painted murals",
+    "garden hoses",
+    "curtain rails",
+    "tram tracks"
+   ],
+   "choices_zh": [
+    "画在地上的壁画",
+    "花园水管",
+    "窗帘杆",
+    "电车轨道"
+   ],
+   "answer": 3,
+   "explain_en": "Tram tracks are metal grooves in the road.",
+   "explain_zh": "电车轨道是路面上的金属槽。",
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g8_003",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square table at a mooncake stall has an area of 576 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 576 平方米，边长是多少米？",
+   "choices": [
+    "48",
+    "24",
+    "25"
+   ],
+   "choices_zh": [
+    "48",
+    "24",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "√576 = 24.",
+   "explain_zh": "√576 = 24。",
+   "sign_en": [
+    "48",
+    "24",
+    "25"
+   ],
+   "sign_zh": [
+    "48",
+    "24",
+    "25"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_004",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A Central shortcut: skate 12 m east then 16 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 12 米再向北滑 16 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "28",
+    "18",
+    "20"
+   ],
+   "choices_zh": [
+    "28",
+    "18",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "√(12^2 + 16^2) = 20.",
+   "explain_zh": "√(12^2 + 16^2) = 20。",
+   "sign_en": [
+    "28",
+    "18",
+    "20"
+   ],
+   "sign_zh": [
+    "28",
+    "18",
+    "20"
+   ],
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_005",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 200 mooncakes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 200 块月饼，今年增长 15%，今年卖了多少块？",
+   "choices": [
+    "170",
+    "240",
+    "30",
+    "230"
+   ],
+   "choices_zh": [
+    "170",
+    "240",
+    "30",
+    "230"
+   ],
+   "answer": 3,
+   "explain_en": "200 × (100 + 15) ÷ 100 = 230.",
+   "explain_zh": "200 × (100 + 15) ÷ 100 = 230。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_006",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "We always see roughly the same face of the moon from the Peak because the moon ____.",
+   "q_zh": "在太平山看月亮，我们总是大致看到同一面，因为月亮____。",
+   "choices": [
+    "is a flat painted disc on a wall",
+    "hides behind the harbour every hour",
+    "does not exist in autumn",
+    "rotates in about the same time it orbits Earth"
+   ],
+   "choices_zh": [
+    "是墙上画的扁圆盘",
+    "每小时都躲到维港后面",
+    "秋天不存在",
+    "自转一圈的时间和绕地球一圈差不多"
+   ],
+   "answer": 3,
+   "explain_en": "The moon is tidally locked, so the same face points toward Earth.",
+   "explain_zh": "月亮被潮汐锁定，同一面朝向地球。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历（中秋日期）"
+  },
+  {
+   "id": "l6g8_007",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi rental costs C = 15 + 8k yuan for k km. What is C when k = 9?",
+   "q_zh": "租的士的价钱是 C = 15 + 8k 元（k 为千米数），k = 9 时 C 是多少？",
+   "choices": [
+    "72",
+    "129",
+    "207",
+    "87"
+   ],
+   "choices_zh": [
+    "72",
+    "129",
+    "207",
+    "87"
+   ],
+   "answer": 3,
+   "explain_en": "15 + 8 × 9 = 87.",
+   "explain_zh": "15 + 8 × 9 = 87。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_008",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 400 mooncakes last year, and sales grew by 5% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 400 块月饼，今年增长 5%，今年卖了多少块？",
+   "choices": [
+    "405",
+    "20",
+    "420",
+    "430"
+   ],
+   "choices_zh": [
+    "405",
+    "20",
+    "420",
+    "430"
+   ],
+   "answer": 2,
+   "explain_en": "400 × (100 + 5) ÷ 100 = 420.",
+   "explain_zh": "400 × (100 + 5) ÷ 100 = 420。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_009",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "midautumn",
+   "difficulty": "medium",
+   "q_en": "The wrap of a mooncake is a ____.",
+   "q_zh": "月饼外面那一层是____。",
+   "choices": [
+    "Pastry crust",
+    "Glass jar",
+    "Stone shell"
+   ],
+   "choices_zh": [
+    "饼皮",
+    "玻璃罐",
+    "石壳"
+   ],
+   "answer": 0,
+   "explain_en": "It is a pastry crust.",
+   "explain_zh": "那是饼皮。",
+   "sign_en": [
+    "Pastry crust",
+    "Glass jar",
+    "Stone shell"
+   ],
+   "sign_zh": [
+    "饼皮",
+    "玻璃罐",
+    "石壳"
+   ],
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g8_010",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I ring as I roll on rails past evening offices in Central, and Flora changes lanes for my long body. What am I?",
+   "q_zh": "中秋谜：黄昏时我在中环轨道上叮叮驶过写字楼，身子长长的，Flora 要换道让我。打一交通工具，是什么？",
+   "choices": [
+    "A cable of lights only",
+    "An ox cart",
+    "A tram",
+    "A skateboard"
+   ],
+   "choices_zh": [
+    "只有灯绳",
+    "牛车",
+    "叮叮车",
+    "滑板"
+   ],
+   "answer": 2,
+   "explain_en": "The ding-ding tram runs on rails in Central.",
+   "explain_zh": "叮叮车在中环的轨道上行驶。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_011",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi rental costs C = 19 + 6k yuan for k km. What is C when k = 4?",
+   "q_zh": "租的士的价钱是 C = 19 + 6k 元（k 为千米数），k = 4 时 C 是多少？",
+   "choices": [
+    "49",
+    "118",
+    "24",
+    "43"
+   ],
+   "choices_zh": [
+    "49",
+    "118",
+    "24",
+    "43"
+   ],
+   "answer": 3,
+   "explain_en": "19 + 6 × 4 = 43.",
+   "explain_zh": "19 + 6 × 4 = 43。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_012",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square table at a mooncake stall has an area of 289 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 289 平方米，边长是多少米？",
+   "choices": [
+    "18",
+    "34",
+    "17"
+   ],
+   "choices_zh": [
+    "18",
+    "34",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "√289 = 17.",
+   "explain_zh": "√289 = 17。",
+   "sign_en": [
+    "18",
+    "34",
+    "17"
+   ],
+   "sign_zh": [
+    "18",
+    "34",
+    "17"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_013",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Lotus seeds grow on the ____ plant.",
+   "q_zh": "莲子长在____上。",
+   "choices": [
+    "Lotus",
+    "Cactus",
+    "Pine"
+   ],
+   "choices_zh": [
+    "莲",
+    "仙人掌",
+    "松树"
+   ],
+   "answer": 0,
+   "explain_en": "They grow on the lotus.",
+   "explain_zh": "长在莲上。",
+   "sign_en": [
+    "Lotus",
+    "Cactus",
+    "Pine"
+   ],
+   "sign_zh": [
+    "莲",
+    "仙人掌",
+    "松树"
+   ],
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（柚子/桂花/莲蓉）"
+  },
+  {
+   "id": "l6g8_014",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square table at a mooncake stall has an area of 121 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 121 平方米，边长是多少米？",
+   "choices": [
+    "30",
+    "22",
+    "11"
+   ],
+   "choices_zh": [
+    "30",
+    "22",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "√121 = 11.",
+   "explain_zh": "√121 = 11。",
+   "sign_en": [
+    "30",
+    "22",
+    "11"
+   ],
+   "sign_zh": [
+    "30",
+    "22",
+    "11"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_015",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical rice jar has radius 6 dm and height 10 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "一个圆柱形米缸底面半径 6 分米、高 10 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "1130.4",
+    "1133.54",
+    "2260.8",
+    "376.8"
+   ],
+   "choices_zh": [
+    "1130.4",
+    "1133.54",
+    "2260.8",
+    "376.8"
+   ],
+   "answer": 0,
+   "explain_en": "3.14 × 6^2 × 10 = 1130.4.",
+   "explain_zh": "3.14 × 6^2 × 10 = 1130.4。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_016",
+   "level": 6,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "hard",
+   "q_en": "Flora should jump tram tracks rather than roll along them because the grooves can ____.",
+   "q_zh": "Flora 应该跳过电车轨道，而不是顺着槽滑，因为槽可能会____。",
+   "choices": [
+    "erase the lanterns",
+    "catch a skate wheel and throw her off balance",
+    "lift her to the moon",
+    "turn into a river"
+   ],
+   "choices_zh": [
+    "擦掉灯笼",
+    "卡住轮滑的轮子，让她失去平衡",
+    "把她抬到月亮上",
+    "变成一条河"
+   ],
+   "answer": 1,
+   "explain_en": "Wheels can stick in the grooves.",
+   "explain_zh": "轮子可能会卡在槽里。",
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g8_017",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "A thick-skinned pomelo can float in a tub of water more easily than a small dense stone because the pomelo's average density is ____.",
+   "q_zh": "厚皮柚子比一块密实的小石头更容易浮在水里，因为柚子的平均密度____。",
+   "choices": [
+    "exactly the same as gold",
+    "zero, because it has no mass",
+    "lower than water's",
+    "far higher than a stone's"
+   ],
+   "choices_zh": [
+    "和金子完全一样",
+    "是零，因为它没有质量",
+    "比水低",
+    "远高于石头"
+   ],
+   "answer": 2,
+   "explain_en": "If average density is less than water, it can float.",
+   "explain_zh": "平均密度比水小，就容易浮。",
+   "qtype": "density",
+   "qtype_zh": "密度（冰浮在水上）"
+  },
+  {
+   "id": "l6g8_018",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Central shortcut: skate 8 m east then 15 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 8 米再向北滑 15 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "23",
+    "16",
+    "18",
+    "17"
+   ],
+   "choices_zh": [
+    "23",
+    "16",
+    "18",
+    "17"
+   ],
+   "answer": 3,
+   "explain_en": "√(8^2 + 15^2) = 17.",
+   "explain_zh": "√(8^2 + 15^2) = 17。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_019",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped mooncake box has edges of 4 cm. How much wrapping paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体月饼盒棱长 4 厘米，糊满六个面要多少平方厘米包装纸？",
+   "choices": [
+    "24",
+    "100",
+    "96",
+    "64"
+   ],
+   "choices_zh": [
+    "24",
+    "100",
+    "96",
+    "64"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 4^2 = 96.",
+   "explain_zh": "6 × 4^2 = 96。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l6g8_020",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A square table at a mooncake stall has an area of 36 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 36 平方米，边长是多少米？",
+   "choices": [
+    "5",
+    "9",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "5",
+    "9",
+    "7",
+    "6"
+   ],
+   "answer": 3,
+   "explain_en": "√36 = 6.",
+   "explain_zh": "√36 = 6。",
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_021",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "medium",
+   "q_en": "Metal grooves in the road are ____.",
+   "q_zh": "路面上的金属槽是____。",
+   "choices": [
+    "Tram tracks",
+    "Curtain rails",
+    "Garden hoses"
+   ],
+   "choices_zh": [
+    "电车轨道",
+    "窗帘杆",
+    "水管"
+   ],
+   "answer": 0,
+   "explain_en": "They are tram tracks.",
+   "explain_zh": "那是电车轨道。",
+   "sign_en": [
+    "Tram tracks",
+    "Curtain rails",
+    "Garden hoses"
+   ],
+   "sign_zh": [
+    "电车轨道",
+    "窗帘杆",
+    "水管"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g8_022",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi rental costs C = 6 + 9k yuan for k km. What is C when k = 4?",
+   "q_zh": "租的士的价钱是 C = 6 + 9k 元（k 为千米数），k = 4 时 C 是多少？",
+   "choices": [
+    "51",
+    "60",
+    "42",
+    "58"
+   ],
+   "choices_zh": [
+    "51",
+    "60",
+    "42",
+    "58"
+   ],
+   "answer": 2,
+   "explain_en": "6 + 9 × 4 = 42.",
+   "explain_zh": "6 + 9 × 4 = 42。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_023",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "婵娟 in the poem means the ____.",
+   "q_zh": "诗里的“婵娟”是指____。",
+   "choices": [
+    "Moon",
+    "Tram",
+    "Minibus"
+   ],
+   "choices_zh": [
+    "月亮",
+    "叮叮车",
+    "小巴"
+   ],
+   "answer": 0,
+   "explain_en": "It means the moon.",
+   "explain_zh": "指的是月亮。",
+   "sign_en": [
+    "Moon",
+    "Tram",
+    "Minibus"
+   ],
+   "sign_zh": [
+    "月亮",
+    "叮叮车",
+    "小巴"
+   ],
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l6g8_024",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped mooncake box has edges of 9 cm. How much wrapping paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体月饼盒棱长 9 厘米，糊满六个面要多少平方厘米包装纸？",
+   "choices": [
+    "486",
+    "729",
+    "324",
+    "54"
+   ],
+   "choices_zh": [
+    "486",
+    "729",
+    "324",
+    "54"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 9^2 = 486.",
+   "explain_zh": "6 × 9^2 = 486。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l6g8_025",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Flora sees a distant tram bell move, then hears the ding. The delay happens because ____.",
+   "q_zh": "Flora 先看见远处的叮叮车铃动，然后才听见铃声。会有延迟，是因为____。",
+   "choices": [
+    "skates cancel noise",
+    "light reaches her faster than sound",
+    "sound is faster than light",
+    "the moon blocks all sound"
+   ],
+   "choices_zh": [
+    "轮滑会消掉声音",
+    "光比声音先到",
+    "声音比光快",
+    "月亮挡住了所有声音"
+   ],
+   "answer": 1,
+   "explain_en": "Light travels much faster than sound.",
+   "explain_zh": "光比声音快得多。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（海港灯火/回声）"
+  },
+  {
+   "id": "l6g8_026",
+   "level": 6,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "婵娟 in that Mid-Autumn line is a poetic name for the ____.",
+   "q_zh": "那句中秋诗里的“婵娟”，是对____的美称。",
+   "choices": [
+    "minibus",
+    "moon",
+    "tram",
+    "backpack"
+   ],
+   "choices_zh": [
+    "小巴",
+    "月亮",
+    "叮叮车",
+    "背包"
+   ],
+   "answer": 1,
+   "explain_en": "婵娟 here means the moon.",
+   "explain_zh": "这里的“婵娟”指月亮。",
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l6g8_027",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical rice jar has radius 6 dm and height 20 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "一个圆柱形米缸底面半径 6 分米、高 20 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "2260.8",
+    "2263.94",
+    "753.6",
+    "4521.6"
+   ],
+   "choices_zh": [
+    "2260.8",
+    "2263.94",
+    "753.6",
+    "4521.6"
+   ],
+   "answer": 0,
+   "explain_en": "3.14 × 6^2 × 20 = 2260.8.",
+   "explain_zh": "3.14 × 6^2 × 20 = 2260.8。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_028",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "A baked mooncake's outer layer is a ____ that holds the filling.",
+   "q_zh": "烤好的月饼，外层是包住馅的____。",
+   "choices": [
+    "stone shell",
+    "pastry crust",
+    "glass jar",
+    "metal lid"
+   ],
+   "choices_zh": [
+    "石壳",
+    "饼皮",
+    "玻璃罐",
+    "金属盖"
+   ],
+   "answer": 1,
+   "explain_en": "The outside is a pastry crust.",
+   "explain_zh": "外面是饼皮。",
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g8_029",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 800 mooncakes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 800 块月饼，今年增长 15%，今年卖了多少块？",
+   "choices": [
+    "930",
+    "680",
+    "120",
+    "920"
+   ],
+   "choices_zh": [
+    "930",
+    "680",
+    "120",
+    "920"
+   ],
+   "answer": 3,
+   "explain_en": "800 × (100 + 15) ÷ 100 = 920.",
+   "explain_zh": "800 × (100 + 15) ÷ 100 = 920。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_030",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A cylindrical rice jar has radius 2 dm and height 15 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "一个圆柱形米缸底面半径 2 分米、高 15 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "376.8",
+    "188.4",
+    "94.2"
+   ],
+   "choices_zh": [
+    "376.8",
+    "188.4",
+    "94.2"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 2^2 × 15 = 188.4.",
+   "explain_zh": "3.14 × 2^2 × 15 = 188.4。",
+   "sign_en": [
+    "376.8",
+    "188.4",
+    "94.2"
+   ],
+   "sign_zh": [
+    "376.8",
+    "188.4",
+    "94.2"
+   ],
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_031",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 mooncakes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 块月饼，今年增长 15%，今年卖了多少块？",
+   "choices": [
+    "575",
+    "515",
+    "75",
+    "425"
+   ],
+   "choices_zh": [
+    "575",
+    "515",
+    "75",
+    "425"
+   ],
+   "answer": 0,
+   "explain_en": "500 × (100 + 15) ÷ 100 = 575.",
+   "explain_zh": "500 × (100 + 15) ÷ 100 = 575。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_032",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I am a heavy metal rail by the water. On the harbour walk Flora cannot skate over me and must stay in lane. What am I?",
+   "q_zh": "中秋谜：我是水边沉重的金属栏。在维港步道上，Flora 不能从我上面滑过去，只能靠道走。打一物，是什么？",
+   "choices": [
+    "A curtain",
+    "A necktie",
+    "A blanket",
+    "A railing"
+   ],
+   "choices_zh": [
+    "窗帘",
+    "领带",
+    "毯子",
+    "栏杆"
+   ],
+   "answer": 3,
+   "explain_en": "The harbour railing keeps people on the path.",
+   "explain_zh": "维港栏杆让人走在路上。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_033",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped mooncake box has edges of 13 cm. How much wrapping paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体月饼盒棱长 13 厘米，糊满六个面要多少平方厘米包装纸？",
+   "choices": [
+    "1014",
+    "676",
+    "1027",
+    "78"
+   ],
+   "choices_zh": [
+    "1014",
+    "676",
+    "1027",
+    "78"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 13^2 = 1014.",
+   "explain_zh": "6 × 13^2 = 1014。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l6g8_034",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a red taxi costs 17 yuan plus 4 yuan per hour. A family pays 41 yuan. How many hours did they travel?",
+   "q_zh": "租的士先付 17 元，每小时再付 4 元，一家人共付 41 元，开了几小时？",
+   "choices": [
+    "14",
+    "7",
+    "6"
+   ],
+   "choices_zh": [
+    "14",
+    "7",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "(41 - 17) ÷ 4 = 6.",
+   "explain_zh": "(41 - 17) ÷ 4 = 6。",
+   "sign_en": [
+    "14",
+    "7",
+    "6"
+   ],
+   "sign_zh": [
+    "14",
+    "7",
+    "6"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l6g8_035",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I am the high lookout where Flora stops to share a mooncake and watch the round moon. What place am I?",
+   "q_zh": "中秋谜：我是高高的观景处，Flora 会在这里停下来，分月饼、看圆月。打一地点，是什么？",
+   "choices": [
+    "The Peak",
+    "A frozen lake",
+    "A desert dune",
+    "A basement car park"
+   ],
+   "choices_zh": [
+    "太平山",
+    "结冰的湖",
+    "沙漠沙丘",
+    "地下车库"
+   ],
+   "answer": 0,
+   "explain_en": "The Peak is the hilltop lookout at the end of the run.",
+   "explain_zh": "太平山是路线尽头的山顶观景处。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_036",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a lantern in Central is 4 cm wide and 5 cm tall. An enlarged similar copy is 12 cm wide. How tall is it in cm?",
+   "q_zh": "一张中环灯笼的照片宽 4 厘米、高 5 厘米，等比放大后宽 12 厘米，高多少厘米？",
+   "choices": [
+    "15",
+    "18",
+    "13"
+   ],
+   "choices_zh": [
+    "15",
+    "18",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 12 ÷ 4 = 15.",
+   "explain_zh": "5 × 12 ÷ 4 = 15。",
+   "sign_en": [
+    "15",
+    "18",
+    "13"
+   ],
+   "sign_zh": [
+    "15",
+    "18",
+    "13"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_037",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical rice jar has radius 6 dm and height 25 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "一个圆柱形米缸底面半径 6 分米、高 25 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "942",
+    "2826",
+    "2829.14",
+    "471"
+   ],
+   "choices_zh": [
+    "942",
+    "2826",
+    "2829.14",
+    "471"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 6^2 × 25 = 2826.",
+   "explain_zh": "3.14 × 6^2 × 25 = 2826。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_038",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a lantern in Central is 3 cm wide and 4 cm tall. An enlarged similar copy is 15 cm wide. How tall is it in cm?",
+   "q_zh": "一张中环灯笼的照片宽 3 厘米、高 4 厘米，等比放大后宽 15 厘米，高多少厘米？",
+   "choices": [
+    "25",
+    "20",
+    "16"
+   ],
+   "choices_zh": [
+    "25",
+    "20",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 15 ÷ 3 = 20.",
+   "explain_zh": "4 × 15 ÷ 3 = 20。",
+   "sign_en": [
+    "25",
+    "20",
+    "16"
+   ],
+   "sign_zh": [
+    "25",
+    "20",
+    "16"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_039",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 mooncakes last year, and sales grew by 30% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 块月饼，今年增长 30%，今年卖了多少块？",
+   "choices": [
+    "650",
+    "530",
+    "350",
+    "660"
+   ],
+   "choices_zh": [
+    "650",
+    "530",
+    "350",
+    "660"
+   ],
+   "answer": 0,
+   "explain_en": "500 × (100 + 30) ÷ 100 = 650.",
+   "explain_zh": "500 × (100 + 30) ÷ 100 = 650。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_040",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Renting a red taxi costs 8 yuan plus 4 yuan per hour. A family pays 36 yuan. How many hours did they travel?",
+   "q_zh": "租的士先付 8 元，每小时再付 4 元，一家人共付 36 元，开了几小时？",
+   "choices": [
+    "7",
+    "6",
+    "11",
+    "8"
+   ],
+   "choices_zh": [
+    "7",
+    "6",
+    "11",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "(36 - 8) ÷ 4 = 7.",
+   "explain_zh": "(36 - 8) ÷ 4 = 7。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l6g8_041",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a red taxi costs 18 yuan plus 11 yuan per hour. A family pays 73 yuan. How many hours did they travel?",
+   "q_zh": "租的士先付 18 元，每小时再付 11 元，一家人共付 73 元，开了几小时？",
+   "choices": [
+    "4",
+    "5",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "(73 - 18) ÷ 11 = 5.",
+   "explain_zh": "(73 - 18) ÷ 11 = 5。",
+   "sign_en": [
+    "4",
+    "5",
+    "6"
+   ],
+   "sign_zh": [
+    "4",
+    "5",
+    "6"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l6g8_042",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 30 stall doors on the street, and 1/2 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 30 个摊位门口，其中 1/2 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "15",
+    "16",
+    "17"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "17"
+   ],
+   "answer": 0,
+   "explain_en": "30 × 1 ÷ 2 = 15.",
+   "explain_zh": "30 × 1 ÷ 2 = 15。",
+   "sign_en": [
+    "15",
+    "16",
+    "17"
+   ],
+   "sign_zh": [
+    "15",
+    "16",
+    "17"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g8_043",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Central shortcut: skate 5 m east then 12 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 5 米再向北滑 12 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "12",
+    "13",
+    "17",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "13",
+    "17",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "√(5^2 + 12^2) = 13.",
+   "explain_zh": "√(5^2 + 12^2) = 13。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_044",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "medium",
+   "q_en": "The three places in order are ____.",
+   "q_zh": "三个地方的顺序是____。",
+   "choices": [
+    "Cave, glacier, Central",
+    "Peak, desert, farm",
+    "Central, harbour, Peak"
+   ],
+   "choices_zh": [
+    "山洞、冰川、中环",
+    "山顶、沙漠、农田",
+    "中环、维港、山顶"
+   ],
+   "answer": 2,
+   "explain_en": "Central, then the harbour, then the Peak.",
+   "explain_zh": "先是中环，再是维港，最后是太平山。",
+   "sign_en": [
+    "Cave, glacier, Central",
+    "Peak, desert, farm",
+    "Central, harbour, Peak"
+   ],
+   "sign_zh": [
+    "山洞、冰川、中环",
+    "山顶、沙漠、农田",
+    "中环、维港、山顶"
+   ],
+   "qtype": "hongkong_landmark",
+   "qtype_zh": "香港地标（中环/维港/太平山）"
+  },
+  {
+   "id": "l6g8_045",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: Cut me open and you may find lotus paste, red bean, or seeds, all wrapped for Mid-Autumn sharing. What am I?",
+   "q_zh": "中秋谜：切开我，里面可能是莲蓉、豆沙或籽仁，专为中秋分享而做。打一食物，是什么？",
+   "choices": [
+    "A tea kettle",
+    "A bowl of ice",
+    "A loaf of plain bread only",
+    "A mooncake"
+   ],
+   "choices_zh": [
+    "茶壶",
+    "一碗冰",
+    "只有白面包",
+    "月饼"
+   ],
+   "answer": 3,
+   "explain_en": "Mooncakes have a pastry wrap and a sweet filling.",
+   "explain_zh": "月饼外皮里包着甜馅。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_046",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square table at a mooncake stall has an area of 441 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 441 平方米，边长是多少米？",
+   "choices": [
+    "110",
+    "21",
+    "42"
+   ],
+   "choices_zh": [
+    "110",
+    "21",
+    "42"
+   ],
+   "answer": 1,
+   "explain_en": "√441 = 21.",
+   "explain_zh": "√441 = 21。",
+   "sign_en": [
+    "110",
+    "21",
+    "42"
+   ],
+   "sign_zh": [
+    "110",
+    "21",
+    "42"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_047",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a lantern in Central is 4 cm wide and 6 cm tall. An enlarged similar copy is 16 cm wide. How tall is it in cm?",
+   "q_zh": "一张中环灯笼的照片宽 4 厘米、高 6 厘米，等比放大后宽 16 厘米，高多少厘米？",
+   "choices": [
+    "24",
+    "28",
+    "18"
+   ],
+   "choices_zh": [
+    "24",
+    "28",
+    "18"
+   ],
+   "answer": 0,
+   "explain_en": "6 × 16 ÷ 4 = 24.",
+   "explain_zh": "6 × 16 ÷ 4 = 24。",
+   "sign_en": [
+    "24",
+    "28",
+    "18"
+   ],
+   "sign_zh": [
+    "24",
+    "28",
+    "18"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_048",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a lantern in Central is 4 cm wide and 6 cm tall. An enlarged similar copy is 20 cm wide. How tall is it in cm?",
+   "q_zh": "一张中环灯笼的照片宽 4 厘米、高 6 厘米，等比放大后宽 20 厘米，高多少厘米？",
+   "choices": [
+    "35",
+    "30",
+    "21"
+   ],
+   "choices_zh": [
+    "35",
+    "30",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 20 ÷ 4 = 30.",
+   "explain_zh": "6 × 20 ÷ 4 = 30。",
+   "sign_en": [
+    "35",
+    "30",
+    "21"
+   ],
+   "sign_zh": [
+    "35",
+    "30",
+    "21"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_049",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi rental costs C = 4 + 8k yuan for k km. What is C when k = 12?",
+   "q_zh": "租的士的价钱是 C = 4 + 8k 元（k 为千米数），k = 12 时 C 是多少？",
+   "choices": [
+    "144",
+    "44",
+    "100",
+    "108"
+   ],
+   "choices_zh": [
+    "144",
+    "44",
+    "100",
+    "108"
+   ],
+   "answer": 2,
+   "explain_en": "4 + 8 × 12 = 100.",
+   "explain_zh": "4 + 8 × 12 = 100。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_050",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical rice jar has radius 10 dm and height 30 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "一个圆柱形米缸底面半径 10 分米、高 30 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "942",
+    "18840",
+    "1884",
+    "9420"
+   ],
+   "choices_zh": [
+    "942",
+    "18840",
+    "1884",
+    "9420"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 10^2 × 30 = 9420.",
+   "explain_zh": "3.14 × 10^2 × 30 = 9420。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_051",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 18 stall doors on the street, and 1/2 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 18 个摊位门口，其中 1/2 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "11",
+    "9",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "9",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "18 × 1 ÷ 2 = 9.",
+   "explain_zh": "18 × 1 ÷ 2 = 9。",
+   "sign_en": [
+    "11",
+    "9",
+    "10"
+   ],
+   "sign_zh": [
+    "11",
+    "9",
+    "10"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g8_052",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I help Flora stop or slow on a downhill Peak road: I press on her skate wheels. What am I?",
+   "q_zh": "中秋谜：在太平山下坡路上，我帮 Flora 减速或停下：我会压在轮滑的轮子上。打一物，是什么？",
+   "choices": [
+    "A paintbrush",
+    "A brake",
+    "A balloon pump",
+    "A bookmark"
+   ],
+   "choices_zh": [
+    "画笔",
+    "刹车",
+    "打气筒",
+    "书签"
+   ],
+   "answer": 1,
+   "explain_en": "Skate brakes slow the wheels.",
+   "explain_zh": "轮滑的刹车能让轮子慢下来。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_053",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Central shortcut: skate 9 m east then 12 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 9 米再向北滑 12 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "14",
+    "21",
+    "16",
+    "15"
+   ],
+   "choices_zh": [
+    "14",
+    "21",
+    "16",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "√(9^2 + 12^2) = 15.",
+   "explain_zh": "√(9^2 + 12^2) = 15。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_054",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Central shortcut: skate 20 m east then 21 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 20 米再向北滑 21 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "23",
+    "28",
+    "29",
+    "41"
+   ],
+   "choices_zh": [
+    "23",
+    "28",
+    "29",
+    "41"
+   ],
+   "answer": 2,
+   "explain_en": "√(20^2 + 21^2) = 29.",
+   "explain_zh": "√(20^2 + 21^2) = 29。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_055",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 120 yuan. It is 30% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 120 元，月饼摊便宜 30%，现价多少元？",
+   "choices": [
+    "36",
+    "84",
+    "94",
+    "90"
+   ],
+   "choices_zh": [
+    "36",
+    "84",
+    "94",
+    "90"
+   ],
+   "answer": 1,
+   "explain_en": "120 × (100 - 30) ÷ 100 = 84.",
+   "explain_zh": "120 × (100 - 30) ÷ 100 = 84。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g8_056",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped mooncake box has edges of 6 cm. How much wrapping paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体月饼盒棱长 6 厘米，糊满六个面要多少平方厘米包装纸？",
+   "choices": [
+    "144",
+    "216",
+    "36",
+    "222"
+   ],
+   "choices_zh": [
+    "144",
+    "216",
+    "36",
+    "222"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 6^2 = 216.",
+   "explain_zh": "6 × 6^2 = 216。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l6g8_057",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 360 yuan. It is 25% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 360 元，月饼摊便宜 25%，现价多少元？",
+   "choices": [
+    "280",
+    "335",
+    "270",
+    "450"
+   ],
+   "choices_zh": [
+    "280",
+    "335",
+    "270",
+    "450"
+   ],
+   "answer": 2,
+   "explain_en": "360 × (100 - 25) ÷ 100 = 270.",
+   "explain_zh": "360 × (100 - 25) ÷ 100 = 270。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g8_058",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "We see the tram bell move first because ____.",
+   "q_zh": "我们先看见铃动，是因为____。",
+   "choices": [
+    "Light is faster",
+    "The moon blocks sound",
+    "Sound is faster"
+   ],
+   "choices_zh": [
+    "光更快",
+    "月挡住声",
+    "声更快"
+   ],
+   "answer": 0,
+   "explain_en": "Light is faster than sound.",
+   "explain_zh": "光比声音快。",
+   "sign_en": [
+    "Light is faster",
+    "The moon blocks sound",
+    "Sound is faster"
+   ],
+   "sign_zh": [
+    "光更快",
+    "月挡住声",
+    "声更快"
+   ],
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（海港灯火/回声）"
+  },
+  {
+   "id": "l6g8_059",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi rental costs C = 18 + 2k yuan for k km. What is C when k = 9?",
+   "q_zh": "租的士的价钱是 C = 18 + 2k 元（k 为千米数），k = 9 时 C 是多少？",
+   "choices": [
+    "18",
+    "36",
+    "45",
+    "180"
+   ],
+   "choices_zh": [
+    "18",
+    "36",
+    "45",
+    "180"
+   ],
+   "answer": 1,
+   "explain_en": "18 + 2 × 9 = 36.",
+   "explain_zh": "18 + 2 × 9 = 36。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_060",
+   "level": 6,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "hard",
+   "q_en": "On the harbour walk, when a railing blocks one side, Flora should ____.",
+   "q_zh": "在维港步道上，一边被栏杆挡住时，Flora 应该____。",
+   "choices": [
+    "stop and sit on the rail",
+    "stay in the remaining open lanes",
+    "throw the backpack over the rail",
+    "climb over the railing into the water"
+   ],
+   "choices_zh": [
+    "停下来坐在栏杆上",
+    "走剩下还能走的道",
+    "把背包扔过栏杆",
+    "翻栏杆跳进水里"
+   ],
+   "answer": 1,
+   "explain_en": "Stay on the path; do not go over the railing.",
+   "explain_zh": "要走还能走的道，不要翻栏杆。",
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g8_061",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I am sweet paste made from lotus seeds, often hidden in the middle of a Mid-Autumn pastry. What am I?",
+   "q_zh": "中秋谜：我是莲子做成的甜馅，常常藏在中秋点心的中间。打一馅料，是什么？",
+   "choices": [
+    "Plain water",
+    "Mustard",
+    "Lotus paste",
+    "Pepper dust"
+   ],
+   "choices_zh": [
+    "白水",
+    "芥末",
+    "莲蓉",
+    "胡椒粉"
+   ],
+   "answer": 2,
+   "explain_en": "Lotus paste is a classic mooncake filling.",
+   "explain_zh": "莲蓉是常见的月饼馅。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g8_062",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a red taxi costs 16 yuan plus 10 yuan per hour. A family pays 36 yuan. How many hours did they travel?",
+   "q_zh": "租的士先付 16 元，每小时再付 10 元，一家人共付 36 元，开了几小时？",
+   "choices": [
+    "3",
+    "5",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "5",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "(36 - 16) ÷ 10 = 2.",
+   "explain_zh": "(36 - 16) ÷ 10 = 2。",
+   "sign_en": [
+    "3",
+    "5",
+    "2"
+   ],
+   "sign_zh": [
+    "3",
+    "5",
+    "2"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l6g8_063",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped mooncake box has edges of 18 cm. How much wrapping paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体月饼盒棱长 18 厘米，糊满六个面要多少平方厘米包装纸？",
+   "choices": [
+    "108",
+    "1962",
+    "5832",
+    "1944"
+   ],
+   "choices_zh": [
+    "108",
+    "1962",
+    "5832",
+    "1944"
+   ],
+   "answer": 3,
+   "explain_en": "6 × 18^2 = 1944.",
+   "explain_zh": "6 × 18^2 = 1944。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l6g8_064",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a red taxi costs 19 yuan plus 7 yuan per hour. A family pays 75 yuan. How many hours did they travel?",
+   "q_zh": "租的士先付 19 元，每小时再付 7 元，一家人共付 75 元，开了几小时？",
+   "choices": [
+    "8",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "(75 - 19) ÷ 7 = 8.",
+   "explain_zh": "(75 - 19) ÷ 7 = 8。",
+   "sign_en": [
+    "8",
+    "9",
+    "7"
+   ],
+   "sign_zh": [
+    "8",
+    "9",
+    "7"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l6g8_065",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "hard",
+   "q_en": "A double-decker in Central has ____ of passenger windows, one above the other.",
+   "q_zh": "中环的双层巴士有____窗户，一层在另一层上面。",
+   "choices": [
+    "no windows at all",
+    "only a roof hatch",
+    "two levels",
+    "ten underground floors"
+   ],
+   "choices_zh": [
+    "完全没有窗户",
+    "只有一个顶窗",
+    "两层",
+    "十层地下"
+   ],
+   "answer": 2,
+   "explain_en": "A double-decker has two levels.",
+   "explain_zh": "双层巴士有上下两层。",
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g8_066",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "If a railing blocks one side, ____.",
+   "q_zh": "一边是栏杆时，要____。",
+   "choices": [
+    "Climb the rail",
+    "Sit on the rail",
+    "Stay in lane"
+   ],
+   "choices_zh": [
+    "翻栏杆",
+    "坐栏杆",
+    "靠道走"
+   ],
+   "answer": 2,
+   "explain_en": "Stay in the open lanes.",
+   "explain_zh": "走还能走的道。",
+   "sign_en": [
+    "Climb the rail",
+    "Sit on the rail",
+    "Stay in lane"
+   ],
+   "sign_zh": [
+    "翻栏杆",
+    "坐栏杆",
+    "靠道走"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g8_067",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Central shortcut: skate 15 m east then 20 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在中环，向东滑 15 米再向北滑 20 米，或者斜着直滑，直滑的路长多少米？",
+   "choices": [
+    "25",
+    "35",
+    "24",
+    "22"
+   ],
+   "choices_zh": [
+    "25",
+    "35",
+    "24",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "√(15^2 + 20^2) = 25.",
+   "explain_zh": "√(15^2 + 20^2) = 25。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_068",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Tea served with mooncakes stays hot in a thick cup longer than in a very thin metal cup mainly because the thick cup ____.",
+   "q_zh": "配月饼的茶，在厚杯子里比在很薄的金属杯里热得更久，主要是因为厚杯子____。",
+   "choices": [
+    "turns water into ice first",
+    "slows the loss of heat",
+    "creates extra moonlight",
+    "adds chilli to the tea"
+   ],
+   "choices_zh": [
+    "先把水变成冰",
+    "减慢了热量散失",
+    "制造了更多月光",
+    "给茶加了辣椒"
+   ],
+   "answer": 1,
+   "explain_en": "A thicker cup is a poorer quick path for heat.",
+   "explain_zh": "厚杯子让热散得更慢。",
+   "qtype": "heat_transfer",
+   "qtype_zh": "热传递（传导/保温）"
+  },
+  {
+   "id": "l6g8_069",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A photo of a lantern in Central is 2 cm wide and 3 cm tall. An enlarged similar copy is 6 cm wide. How tall is it in cm?",
+   "q_zh": "一张中环灯笼的照片宽 2 厘米、高 3 厘米，等比放大后宽 6 厘米，高多少厘米？",
+   "choices": [
+    "6",
+    "7",
+    "12",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "12",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "3 × 6 ÷ 2 = 9.",
+   "explain_zh": "3 × 6 ÷ 2 = 9。",
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_070",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "Mid-Autumn is also called a reunion festival because people hope to ____.",
+   "q_zh": "中秋也被称为团圆节，因为人们希望____。",
+   "choices": [
+    "eat only at sunrise",
+    "avoid looking at the moon",
+    "travel alone with no plan to return",
+    "gather with family"
+   ],
+   "choices_zh": [
+    "只在日出时吃饭",
+    "避免看月亮",
+    "独自出门、不打算回来",
+    "和家人聚在一起"
+   ],
+   "answer": 3,
+   "explain_en": "Reunion means gathering with family.",
+   "explain_zh": "团圆就是和家人聚在一起。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g8_071",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 mooncakes last year, and sales grew by 10% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 块月饼，今年增长 10%，今年卖了多少块？",
+   "choices": [
+    "450",
+    "550",
+    "50",
+    "560"
+   ],
+   "choices_zh": [
+    "450",
+    "550",
+    "50",
+    "560"
+   ],
+   "answer": 1,
+   "explain_en": "500 × (100 + 10) ÷ 100 = 550.",
+   "explain_zh": "500 × (100 + 10) ÷ 100 = 550。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l6g8_072",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square table at a mooncake stall has an area of 324 m². How long is each side in metres?",
+   "q_zh": "一块正方形月饼摊桌面的面积是 324 平方米，边长是多少米？",
+   "choices": [
+    "18",
+    "17",
+    "19"
+   ],
+   "choices_zh": [
+    "18",
+    "17",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "√324 = 18.",
+   "explain_zh": "√324 = 18。",
+   "sign_en": [
+    "18",
+    "17",
+    "19"
+   ],
+   "sign_zh": [
+    "18",
+    "17",
+    "19"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l6g8_073",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "秋 in 中秋 means ____.",
+   "q_zh": "“中秋”的“秋”是指____。",
+   "choices": [
+    "Morning",
+    "The sea floor",
+    "Autumn"
+   ],
+   "choices_zh": [
+    "早晨",
+    "海底",
+    "秋天"
+   ],
+   "answer": 2,
+   "explain_en": "It means autumn.",
+   "explain_zh": "是秋天。",
+   "sign_en": [
+    "Morning",
+    "The sea floor",
+    "Autumn"
+   ],
+   "sign_zh": [
+    "早晨",
+    "海底",
+    "秋天"
+   ],
+   "qtype": "zh_character",
+   "qtype_zh": "汉字字义"
+  },
+  {
+   "id": "l6g8_074",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 120 yuan. It is 10% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 120 元，月饼摊便宜 10%，现价多少元？",
+   "choices": [
+    "110",
+    "108",
+    "132",
+    "118"
+   ],
+   "choices_zh": [
+    "110",
+    "108",
+    "132",
+    "118"
+   ],
+   "answer": 1,
+   "explain_en": "120 × (100 - 10) ÷ 100 = 108.",
+   "explain_zh": "120 × (100 - 10) ÷ 100 = 108。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g8_075",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "On the Peak, Flora sees a far lantern-bearer's arm move, then hears a call. The delay is because ____.",
+   "q_zh": "在太平山，Flora 先看见远处提灯人的手臂动了，然后才听见叫声。有延迟，是因为____。",
+   "choices": [
+    "sound always beats light",
+    "light reaches her faster than sound",
+    "the moon swallows sound first",
+    "skates store the sound in the wheels"
+   ],
+   "choices_zh": [
+    "声音总是比光快",
+    "光比声音先到她那里",
+    "月亮先把声音吞掉",
+    "轮滑把声音存在轮子里"
+   ],
+   "answer": 1,
+   "explain_en": "Light travels much faster than sound.",
+   "explain_zh": "光比声音快得多。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（海港灯火/回声）"
+  },
+  {
+   "id": "l6g8_076",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "At the Peak, Auntie quotes 但愿人长久，千里共婵娟 while they share a mooncake. The line is mainly about ____.",
+   "q_zh": "在太平山，阿嫲一边分月饼一边念“但愿人长久，千里共婵娟”。这句主要是说____。",
+   "choices": [
+    "wishing people far apart well under the same moon",
+    "naming a kind of minibus",
+    "counting how many trams are left",
+    "asking Flora to skate faster"
+   ],
+   "choices_zh": [
+    "祝不在一起的人平安，共看同一轮明月",
+    "给一种小巴起名字",
+    "数还剩多少辆叮叮车",
+    "让 Flora 滑快一点"
+   ],
+   "answer": 0,
+   "explain_en": "The line is a Mid-Autumn wish about the shared moon.",
+   "explain_zh": "这是中秋时关于共看明月的祝福。",
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l6g8_077",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "From the foot of a lamp post at the harbour, a rope runs to a point 24 m along the deck; the pole is 10 m tall. How long is the rope from the top of the pole, in metres?",
+   "q_zh": "维港一根灯柱高 10 米，从杆顶拉一根绳子到地面离杆脚 24 米的地方，绳长多少米？",
+   "choices": [
+    "25",
+    "26",
+    "27",
+    "34"
+   ],
+   "choices_zh": [
+    "25",
+    "26",
+    "27",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "√(10^2 + 24^2) = 26.",
+   "explain_zh": "√(10^2 + 24^2) = 26。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l6g8_078",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical festival drum at the harbour has radius 5 dm and height 25 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "维港一面圆柱形节日鼓底面半径 5 分米、高 25 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "392.5",
+    "3925",
+    "1962.5",
+    "785"
+   ],
+   "choices_zh": [
+    "392.5",
+    "3925",
+    "1962.5",
+    "785"
+   ],
+   "answer": 2,
+   "explain_en": "3.14 × 5^2 × 25 = 1962.5.",
+   "explain_zh": "3.14 × 5^2 × 25 = 1962.5。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l6g8_079",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A sketch of the Peak lookoutway is 3 cm wide and 5 cm tall. A similar banner copy is 15 cm wide. How tall is the banner in cm?",
+   "q_zh": "太平山观景台的草图宽 3 厘米、高 5 厘米，放大成相似的横幅后宽 15 厘米，高是多少厘米？",
+   "choices": [
+    "15",
+    "16",
+    "25",
+    "17"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "25",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "5 × 15 ÷ 3 = 25.",
+   "explain_zh": "5 × 15 ÷ 3 = 25。",
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l6g8_080",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Mooncakes are set out at the Peak following L = 8 + 9n, where n is minutes after the doors open. How many mooncakes are out when n = 7?",
+   "q_zh": "太平山的月饼按 L = 8 + 9n 摆出，n 是开门后的分钟数。n = 7 时摆出了多少块？",
+   "choices": [
+    "71",
+    "79",
+    "80",
+    "63"
+   ],
+   "choices_zh": [
+    "71",
+    "79",
+    "80",
+    "63"
+   ],
+   "answer": 0,
+   "explain_en": "8 + 9 × 7 = 71.",
+   "explain_zh": "8 + 9 × 7 = 71。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l6g8_081",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On a Hong Kong map, 1 cm stands for 200 m. The path from the harbour to the Peak is 12 cm on the map. How many metres is it really?",
+   "q_zh": "香港地图上 1 厘米代表 200 米，从维港到太平山的路在图上长 12 厘米，实际是多少米？",
+   "choices": [
+    "2600",
+    "24000",
+    "2400",
+    "212"
+   ],
+   "choices_zh": [
+    "2600",
+    "24000",
+    "2400",
+    "212"
+   ],
+   "answer": 2,
+   "explain_en": "12 × 200 = 2400.",
+   "explain_zh": "12 × 200 = 2400。",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l6g8_082",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round festival drum at the harbour has a diameter of 80 cm. Using π ≈ 3.14, how many cm of ribbon go once around it?",
+   "q_zh": "维港一面节日圆鼓直径 80 厘米，π 取 3.14，绕它一圈的彩带要多少厘米？",
+   "choices": [
+    "5024",
+    "254.34",
+    "251.2",
+    "502.4"
+   ],
+   "choices_zh": [
+    "5024",
+    "254.34",
+    "251.2",
+    "502.4"
+   ],
+   "answer": 2,
+   "explain_en": "3.14 × 80 = 251.2.",
+   "explain_zh": "3.14 × 80 = 251.2。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  }
+ ]
+}

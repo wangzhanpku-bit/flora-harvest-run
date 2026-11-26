@@ -1,0 +1,2350 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 7,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g7_001",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Renting a tricycle costs 8 yuan plus 9 yuan per hour. A family pays 35 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 8 元，每小时再付 9 元，一家人共付 35 元，骑了几小时？",
+   "choices": [
+    "4",
+    "2",
+    "5",
+    "3"
+   ],
+   "choices_zh": [
+    "4",
+    "2",
+    "5",
+    "3"
+   ],
+   "answer": 3,
+   "explain_en": "(35 - 8) ÷ 9 = 3.",
+   "explain_zh": "(35 - 8) ÷ 9 = 3。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_002",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At noon it is -4 °C in Beijing. By midnight it is 4 °C colder. What is the midnight temperature in °C?",
+   "q_zh": "北京中午 -4 °C，到半夜降低了 4 °C，半夜多少摄氏度？",
+   "choices": [
+    "0",
+    "-10",
+    "-8",
+    "-7"
+   ],
+   "choices_zh": [
+    "0",
+    "-10",
+    "-8",
+    "-7"
+   ],
+   "answer": 2,
+   "explain_en": "-4 - 4 = -8.",
+   "explain_zh": "-4 - 4 = -8。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: You shout in an empty hutong and I shout back, but you never see me. What am I?",
+   "q_zh": "灯谜：你在空胡同里喊，我也跟着喊，可你看不见我。打一现象，是什么？",
+   "choices": [
+    "An echo",
+    "A pigeon",
+    "A radio",
+    "A shadow"
+   ],
+   "choices_zh": [
+    "回声",
+    "鸽子",
+    "收音机",
+    "影子"
+   ],
+   "answer": 0,
+   "explain_en": "An echo is sound bouncing back off walls.",
+   "explain_zh": "回声是声音碰到墙反射回来。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g7_004",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A bag has 7 red lantern cards and 3 gold ones, all equally likely to be drawn. What is the probability of drawing red?",
+   "q_zh": "袋子里有 7 张红灯笼卡和 3 张金灯笼卡，每张被抽到的机会相同，抽到红卡的概率是多少？",
+   "choices": [
+    "1/10",
+    "3/10",
+    "7/10"
+   ],
+   "choices_zh": [
+    "1/10",
+    "3/10",
+    "7/10"
+   ],
+   "answer": 2,
+   "explain_en": "7 ÷ (7 + 3) = 7/10.",
+   "explain_zh": "7 ÷ (7 + 3) = 7/10。",
+   "sign_en": [
+    "1/10",
+    "3/10",
+    "7/10"
+   ],
+   "sign_zh": [
+    "1/10",
+    "3/10",
+    "7/10"
+   ],
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l4g7_005",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A bag has 1 red lantern cards and 3 gold ones, all equally likely to be drawn. What is the probability of drawing red?",
+   "q_zh": "袋子里有 1 张红灯笼卡和 3 张金灯笼卡，每张被抽到的机会相同，抽到红卡的概率是多少？",
+   "choices": [
+    "1/4",
+    "3/4",
+    "2/5",
+    "1/3"
+   ],
+   "choices_zh": [
+    "1/4",
+    "3/4",
+    "2/5",
+    "1/3"
+   ],
+   "answer": 0,
+   "explain_en": "1 ÷ (1 + 3) = 1/4.",
+   "explain_zh": "1 ÷ (1 + 3) = 1/4。",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l4g7_006",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A stall sold 300 red envelopes last year, and sales grew by 20% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 300 个红包，今年增长 20%，今年卖了多少个？",
+   "choices": [
+    "320",
+    "360",
+    "240"
+   ],
+   "choices_zh": [
+    "320",
+    "360",
+    "240"
+   ],
+   "answer": 1,
+   "explain_en": "300 × (100 + 20) ÷ 100 = 360.",
+   "explain_zh": "300 × (100 + 20) ÷ 100 = 360。",
+   "sign_en": [
+    "320",
+    "360",
+    "240"
+   ],
+   "sign_zh": [
+    "320",
+    "360",
+    "240"
+   ],
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g7_007",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Red fireworks usually get their colour from compounds of ____.",
+   "q_zh": "红色烟花的颜色通常来自哪种元素的化合物？",
+   "choices": [
+    "carbon",
+    "sodium",
+    "strontium",
+    "copper"
+   ],
+   "choices_zh": [
+    "碳",
+    "钠",
+    "锶",
+    "铜"
+   ],
+   "answer": 2,
+   "explain_en": "Strontium salts give a red flame.",
+   "explain_zh": "锶盐燃烧呈红色。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g7_008",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why can ice form a floating layer on Kunming Lake?",
+   "q_zh": "为什么昆明湖上的冰能浮在水面？",
+   "choices": [
+    "Ice is less dense than water",
+    "Wind holds it up",
+    "Ice is heavier than water",
+    "Fish push it up"
+   ],
+   "choices_zh": [
+    "冰的密度比水小",
+    "风把它托着",
+    "冰比水重",
+    "鱼把它顶上来"
+   ],
+   "answer": 0,
+   "explain_en": "Ice is about 9% less dense than liquid water, so it floats.",
+   "explain_zh": "冰的密度比水小，所以浮在水面。",
+   "qtype": "density",
+   "qtype_zh": "密度（冰浮在水上）"
+  },
+  {
+   "id": "l4g7_009",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle goes 12 km per hour. How many km does it go in 4 hours?",
+   "q_zh": "三轮车每小时骑 12 千米，4 小时骑多少千米？",
+   "choices": [
+    "44",
+    "16",
+    "48",
+    "60"
+   ],
+   "choices_zh": [
+    "44",
+    "16",
+    "48",
+    "60"
+   ],
+   "answer": 2,
+   "explain_en": "12 × 4 = 48.",
+   "explain_zh": "12 × 4 = 48。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_010",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In the hutong it is -8 °C in the morning and the temperature rises by 14 °C. What is it now in °C?",
+   "q_zh": "早上胡同里 -8 °C，后来升高了 14 °C，现在多少摄氏度？",
+   "choices": [
+    "-6",
+    "-22",
+    "6",
+    "22"
+   ],
+   "choices_zh": [
+    "-6",
+    "-22",
+    "6",
+    "22"
+   ],
+   "answer": 2,
+   "explain_en": "-8 + 14 = 6.",
+   "explain_zh": "-8 + 14 = 6。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_011",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A stall sold 800 red envelopes last year, and sales grew by 5% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 800 个红包，今年增长 5%，今年卖了多少个？",
+   "choices": [
+    "850",
+    "840",
+    "805"
+   ],
+   "choices_zh": [
+    "850",
+    "840",
+    "805"
+   ],
+   "answer": 1,
+   "explain_en": "800 × (100 + 5) ÷ 100 = 840.",
+   "explain_zh": "800 × (100 + 5) ÷ 100 = 840。",
+   "sign_en": [
+    "850",
+    "840",
+    "805"
+   ],
+   "sign_zh": [
+    "850",
+    "840",
+    "805"
+   ],
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g7_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle goes 13 km per hour. How many km does it go in 3 hours?",
+   "q_zh": "三轮车每小时骑 13 千米，3 小时骑多少千米？",
+   "choices": [
+    "16",
+    "52",
+    "40",
+    "39"
+   ],
+   "choices_zh": [
+    "16",
+    "52",
+    "40",
+    "39"
+   ],
+   "answer": 3,
+   "explain_en": "13 × 3 = 39.",
+   "explain_zh": "13 × 3 = 39。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_013",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A firework's bang reaches Flora 3 s after the flash. Sound travels 340 m/s. How far away is it in metres?",
+   "q_zh": "烟花闪光后 3 秒 Flora 听到响声，声速 340 米/秒，烟花离她多少米？",
+   "choices": [
+    "343",
+    "1020",
+    "680"
+   ],
+   "choices_zh": [
+    "343",
+    "1020",
+    "680"
+   ],
+   "answer": 1,
+   "explain_en": "340 × 3 = 1020.",
+   "explain_zh": "340 × 3 = 1020。",
+   "sign_en": [
+    "343",
+    "1020",
+    "680"
+   ],
+   "sign_zh": [
+    "343",
+    "1020",
+    "680"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 150 yuan. It is 50% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 150 元，庙会上便宜 50%，现价多少元？",
+   "choices": [
+    "85",
+    "225",
+    "75",
+    "100"
+   ],
+   "choices_zh": [
+    "85",
+    "225",
+    "75",
+    "100"
+   ],
+   "answer": 2,
+   "explain_en": "150 × (100 - 50) ÷ 100 = 75.",
+   "explain_zh": "150 × (100 - 50) ÷ 100 = 75。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_015",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 360 yuan. It is 10% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 360 元，庙会上便宜 10%，现价多少元？",
+   "choices": [
+    "324",
+    "350",
+    "334",
+    "36"
+   ],
+   "choices_zh": [
+    "324",
+    "350",
+    "334",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "360 × (100 - 10) ÷ 100 = 324.",
+   "explain_zh": "360 × (100 - 10) ÷ 100 = 324。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_016",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "At noon it is 8 °C in Beijing. By midnight it is 10 °C colder. What is the midnight temperature in °C?",
+   "q_zh": "北京中午 8 °C，到半夜降低了 10 °C，半夜多少摄氏度？",
+   "choices": [
+    "-2",
+    "-1",
+    "-4"
+   ],
+   "choices_zh": [
+    "-2",
+    "-1",
+    "-4"
+   ],
+   "answer": 0,
+   "explain_en": "8 - 10 = -2.",
+   "explain_zh": "8 - 10 = -2。",
+   "sign_en": [
+    "-2",
+    "-1",
+    "-4"
+   ],
+   "sign_zh": [
+    "-2",
+    "-1",
+    "-4"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_017",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "A couplet's second line ends in a ____.",
+   "q_zh": "下联最后一个字是____。",
+   "choices": [
+    "Level tone (平)",
+    "Neutral tone",
+    "Oblique tone (仄)"
+   ],
+   "choices_zh": [
+    "平声",
+    "轻声",
+    "仄声"
+   ],
+   "answer": 0,
+   "explain_en": "The second line ends on a level tone.",
+   "explain_zh": "下联末字用平声。",
+   "sign_en": [
+    "Level tone (平)",
+    "Neutral tone",
+    "Oblique tone (仄)"
+   ],
+   "sign_zh": [
+    "平声",
+    "轻声",
+    "仄声"
+   ],
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g7_018",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A bag has 5 red lantern cards and 4 gold ones, all equally likely to be drawn. What is the probability of drawing red?",
+   "q_zh": "袋子里有 5 张红灯笼卡和 4 张金灯笼卡，每张被抽到的机会相同，抽到红卡的概率是多少？",
+   "choices": [
+    "4/9",
+    "5/9",
+    "3/5",
+    "5/4"
+   ],
+   "choices_zh": [
+    "4/9",
+    "5/9",
+    "3/5",
+    "5/4"
+   ],
+   "answer": 1,
+   "explain_en": "5 ÷ (5 + 4) = 5/9.",
+   "explain_zh": "5 ÷ (5 + 4) = 5/9。",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l4g7_019",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A round red lantern has a diameter of 80 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 80 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "254.34",
+    "251.2",
+    "5024"
+   ],
+   "choices_zh": [
+    "254.34",
+    "251.2",
+    "5024"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 80 = 251.2.",
+   "explain_zh": "3.14 × 80 = 251.2。",
+   "sign_en": [
+    "254.34",
+    "251.2",
+    "5024"
+   ],
+   "sign_zh": [
+    "254.34",
+    "251.2",
+    "5024"
+   ],
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_020",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} had some red envelopes. After getting 14 more she has 50. Solve x + 14 = 50: how many did she have at first?",
+   "q_zh": "{name} 原来有一些红包，又收到 14 个后有 50 个。解 x + 14 = 50，原来有几个？",
+   "choices": [
+    "64",
+    "36",
+    "35",
+    "14"
+   ],
+   "choices_zh": [
+    "64",
+    "36",
+    "35",
+    "14"
+   ],
+   "answer": 1,
+   "explain_en": "50 - 14 = 36.",
+   "explain_zh": "50 - 14 = 36。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_021",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A round red lantern has a diameter of 20 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 20 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "62.8",
+    "125.6",
+    "65.94"
+   ],
+   "choices_zh": [
+    "62.8",
+    "125.6",
+    "65.94"
+   ],
+   "answer": 0,
+   "explain_en": "3.14 × 20 = 62.8.",
+   "explain_zh": "3.14 × 20 = 62.8。",
+   "sign_en": [
+    "62.8",
+    "125.6",
+    "65.94"
+   ],
+   "sign_zh": [
+    "62.8",
+    "125.6",
+    "65.94"
+   ],
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_022",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Two pigeon whistles have tubes of different lengths. The shorter tube gives ____.",
+   "q_zh": "两个鸽哨的哨管长短不同，短的那个声音____。",
+   "choices": [
+    "no sound",
+    "the same pitch",
+    "a lower pitch",
+    "a higher pitch"
+   ],
+   "choices_zh": [
+    "不出声",
+    "音调一样",
+    "音调更低",
+    "音调更高"
+   ],
+   "answer": 3,
+   "explain_en": "A shorter air column vibrates faster, so the pitch is higher.",
+   "explain_zh": "空气柱越短振动越快，音调越高。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（鸽哨/烟花）"
+  },
+  {
+   "id": "l4g7_023",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "\"Lanterns danced in the wind\" is ____.",
+   "q_zh": "\"Lanterns danced in the wind\" 用了____。",
+   "choices": [
+    "Personification",
+    "Rhyme",
+    "Simile"
+   ],
+   "choices_zh": [
+    "拟人",
+    "押韵",
+    "明喻"
+   ],
+   "answer": 0,
+   "explain_en": "Lanterns cannot dance: personification.",
+   "explain_zh": "灯笼不会跳舞，是拟人。",
+   "sign_en": [
+    "Personification",
+    "Rhyme",
+    "Simile"
+   ],
+   "sign_zh": [
+    "拟人",
+    "押韵",
+    "明喻"
+   ],
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l4g7_024",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Beijing city map uses 1 cm for 1000 m. Two hutongs are 13 cm apart on the map. How many metres apart are they?",
+   "q_zh": "北京城区地图上 1 厘米代表 1000 米，两条胡同在图上相距 13 厘米，实际相距多少米？",
+   "choices": [
+    "14000",
+    "1013",
+    "1300",
+    "13000"
+   ],
+   "choices_zh": [
+    "14000",
+    "1013",
+    "1300",
+    "13000"
+   ],
+   "answer": 3,
+   "explain_en": "13 × 1000 = 13000.",
+   "explain_zh": "13 × 1000 = 13000。",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g7_025",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A bag has 8 red lantern cards and 10 gold ones, all equally likely to be drawn. What is the probability of drawing red?",
+   "q_zh": "袋子里有 8 张红灯笼卡和 10 张金灯笼卡，每张被抽到的机会相同，抽到红卡的概率是多少？",
+   "choices": [
+    "5/9",
+    "9/19",
+    "4/9",
+    "4/5"
+   ],
+   "choices_zh": [
+    "5/9",
+    "9/19",
+    "4/9",
+    "4/5"
+   ],
+   "answer": 2,
+   "explain_en": "8 ÷ (8 + 10) = 4/9.",
+   "explain_zh": "8 ÷ (8 + 10) = 4/9。",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l4g7_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Renting a tricycle costs 12 yuan plus 6 yuan per hour. A family pays 54 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 12 元，每小时再付 6 元，一家人共付 54 元，骑了几小时？",
+   "choices": [
+    "9",
+    "11",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "9",
+    "11",
+    "6",
+    "7"
+   ],
+   "answer": 3,
+   "explain_en": "(54 - 12) ÷ 6 = 7.",
+   "explain_zh": "(54 - 12) ÷ 6 = 7。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_027",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In the hutong it is -6 °C in the morning and the temperature rises by 9 °C. What is it now in °C?",
+   "q_zh": "早上胡同里 -6 °C，后来升高了 9 °C，现在多少摄氏度？",
+   "choices": [
+    "3",
+    "15",
+    "4",
+    "-3"
+   ],
+   "choices_zh": [
+    "3",
+    "15",
+    "4",
+    "-3"
+   ],
+   "answer": 0,
+   "explain_en": "-6 + 9 = 3.",
+   "explain_zh": "-6 + 9 = 3。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_028",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A tricycle goes 13 km per hour. How many km does it go in 5 hours?",
+   "q_zh": "三轮车每小时骑 13 千米，5 小时骑多少千米？",
+   "choices": [
+    "60",
+    "66",
+    "65"
+   ],
+   "choices_zh": [
+    "60",
+    "66",
+    "65"
+   ],
+   "answer": 2,
+   "explain_en": "13 × 5 = 65.",
+   "explain_zh": "13 × 5 = 65。",
+   "sign_en": [
+    "60",
+    "66",
+    "65"
+   ],
+   "sign_zh": [
+    "60",
+    "66",
+    "65"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_029",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "In the Qianlong era, the Summer Palace had an earlier name. What was it?",
+   "q_zh": "乾隆时期，颐和园原来叫什么？",
+   "choices": [
+    "Jingshan Park",
+    "Beihai Park",
+    "Qingyi Yuan",
+    "Yuanming Yuan"
+   ],
+   "choices_zh": [
+    "景山公园",
+    "北海公园",
+    "清漪园",
+    "圆明园"
+   ],
+   "answer": 2,
+   "explain_en": "It was Qingyi Yuan; the name Yiheyuan came later.",
+   "explain_zh": "乾隆时叫清漪园，后来才叫颐和园。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g7_030",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 360 yuan. It is 40% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 360 元，庙会上便宜 40%，现价多少元？",
+   "choices": [
+    "144",
+    "320",
+    "226",
+    "216"
+   ],
+   "choices_zh": [
+    "144",
+    "320",
+    "226",
+    "216"
+   ],
+   "answer": 3,
+   "explain_en": "360 × (100 - 40) ÷ 100 = 216.",
+   "explain_zh": "360 × (100 - 40) ÷ 100 = 216。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_031",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In the hutong it is -11 °C in the morning and the temperature rises by 9 °C. What is it now in °C?",
+   "q_zh": "早上胡同里 -11 °C，后来升高了 9 °C，现在多少摄氏度？",
+   "choices": [
+    "2",
+    "-2",
+    "-20",
+    "-1"
+   ],
+   "choices_zh": [
+    "2",
+    "-2",
+    "-20",
+    "-1"
+   ],
+   "answer": 1,
+   "explain_en": "-11 + 9 = -2.",
+   "explain_zh": "-11 + 9 = -2。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_032",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 80 yuan. It is 20% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 80 元，庙会上便宜 20%，现价多少元？",
+   "choices": [
+    "96",
+    "64",
+    "74",
+    "60"
+   ],
+   "choices_zh": [
+    "96",
+    "64",
+    "74",
+    "60"
+   ],
+   "answer": 1,
+   "explain_en": "80 × (100 - 20) ÷ 100 = 64.",
+   "explain_zh": "80 × (100 - 20) ÷ 100 = 64。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_033",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 15 yuan plus 12 yuan per hour. A family pays 39 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 15 元，每小时再付 12 元，一家人共付 39 元，骑了几小时？",
+   "choices": [
+    "3",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "3",
+    "4",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "(39 - 15) ÷ 12 = 2.",
+   "explain_zh": "(39 - 15) ÷ 12 = 2。",
+   "sign_en": [
+    "3",
+    "4",
+    "2"
+   ],
+   "sign_zh": [
+    "3",
+    "4",
+    "2"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_034",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A firework's bang reaches Flora 4 s after the flash. Sound travels 340 m/s. How far away is it in metres?",
+   "q_zh": "烟花闪光后 4 秒 Flora 听到响声，声速 340 米/秒，烟花离她多少米？",
+   "choices": [
+    "1360",
+    "1700",
+    "344"
+   ],
+   "choices_zh": [
+    "1360",
+    "1700",
+    "344"
+   ],
+   "answer": 0,
+   "explain_en": "340 × 4 = 1360.",
+   "explain_zh": "340 × 4 = 1360。",
+   "sign_en": [
+    "1360",
+    "1700",
+    "344"
+   ],
+   "sign_zh": [
+    "1360",
+    "1700",
+    "344"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: Paper outside, light inside. On the 15th night of the first lunar month, people guess the riddles written on me. What am I?",
+   "q_zh": "灯谜：外面是纸里面亮，正月十五人们猜我身上写的谜。打一物，是什么？",
+   "choices": [
+    "A book",
+    "A lantern",
+    "An umbrella",
+    "A kite"
+   ],
+   "choices_zh": [
+    "书",
+    "灯笼",
+    "雨伞",
+    "风筝"
+   ],
+   "answer": 1,
+   "explain_en": "Lantern riddles are written on lanterns at the Lantern Festival.",
+   "explain_zh": "元宵节把谜语写在灯笼上，叫猜灯谜。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g7_036",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Flora had some red envelopes. After getting 36 more she has 72. Solve x + 36 = 72: how many did she have at first?",
+   "q_zh": "Flora 原来有一些红包，又收到 36 个后有 72 个。解 x + 36 = 72，原来有几个？",
+   "choices": [
+    "37",
+    "108",
+    "36"
+   ],
+   "choices_zh": [
+    "37",
+    "108",
+    "36"
+   ],
+   "answer": 2,
+   "explain_en": "72 - 36 = 36.",
+   "explain_zh": "72 - 36 = 36。",
+   "sign_en": [
+    "37",
+    "108",
+    "36"
+   ],
+   "sign_zh": [
+    "37",
+    "108",
+    "36"
+   ],
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_037",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 red envelopes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 个红包，今年增长 15%，今年卖了多少个？",
+   "choices": [
+    "585",
+    "75",
+    "575",
+    "515"
+   ],
+   "choices_zh": [
+    "585",
+    "75",
+    "575",
+    "515"
+   ],
+   "answer": 2,
+   "explain_en": "500 × (100 + 15) ÷ 100 = 575.",
+   "explain_zh": "500 × (100 + 15) ÷ 100 = 575。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g7_038",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A Beijing city map uses 1 cm for 200 m. Two hutongs are 4 cm apart on the map. How many metres apart are they?",
+   "q_zh": "北京城区地图上 1 厘米代表 200 米，两条胡同在图上相距 4 厘米，实际相距多少米？",
+   "choices": [
+    "800",
+    "1000",
+    "8000"
+   ],
+   "choices_zh": [
+    "800",
+    "1000",
+    "8000"
+   ],
+   "answer": 0,
+   "explain_en": "4 × 200 = 800.",
+   "explain_zh": "4 × 200 = 800。",
+   "sign_en": [
+    "800",
+    "1000",
+    "8000"
+   ],
+   "sign_zh": [
+    "800",
+    "1000",
+    "8000"
+   ],
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g7_039",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "Chengtianmen became Tiananmen in ____.",
+   "q_zh": "承天门哪年改称天安门？",
+   "choices": [
+    "1651",
+    "1851",
+    "1951"
+   ],
+   "choices_zh": [
+    "1651 年",
+    "1851 年",
+    "1951 年"
+   ],
+   "answer": 0,
+   "explain_en": "Renamed in 1651 after rebuilding in the Qing dynasty.",
+   "explain_zh": "清顺治八年（1651 年）改建后改称。",
+   "sign_en": [
+    "1651",
+    "1851",
+    "1951"
+   ],
+   "sign_zh": [
+    "1651 年",
+    "1851 年",
+    "1951 年"
+   ],
+   "qtype": "beijing_landmark",
+   "qtype_zh": "北京地标（天安门/金水桥/华表）"
+  },
+  {
+   "id": "l4g7_040",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A lantern costs 240 yuan. It is 20% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 240 元，庙会上便宜 20%，现价多少元？",
+   "choices": [
+    "192",
+    "220",
+    "202"
+   ],
+   "choices_zh": [
+    "192",
+    "220",
+    "202"
+   ],
+   "answer": 0,
+   "explain_en": "240 × (100 - 20) ÷ 100 = 192.",
+   "explain_zh": "240 × (100 - 20) ÷ 100 = 192。",
+   "sign_en": [
+    "192",
+    "220",
+    "202"
+   ],
+   "sign_zh": [
+    "192",
+    "220",
+    "202"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: No one has ever seen me, yet I am in the zodiac, and at New Year many people carry my long body in a dance. What am I?",
+   "q_zh": "灯谜：谁也没见过我，可我在生肖里，过年很多人举着我长长的身子跳舞。打一生肖，是什么？",
+   "choices": [
+    "The dragon",
+    "The horse",
+    "The tiger",
+    "The snake"
+   ],
+   "choices_zh": [
+    "龙",
+    "马",
+    "虎",
+    "蛇"
+   ],
+   "answer": 0,
+   "explain_en": "The dragon is a legendary zodiac animal used in dragon dances.",
+   "explain_zh": "龙是传说中的生肖，过年有舞龙。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g7_042",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle goes 11 km per hour. How many km does it go in 4 hours?",
+   "q_zh": "三轮车每小时骑 11 千米，4 小时骑多少千米？",
+   "choices": [
+    "45",
+    "40",
+    "44",
+    "55"
+   ],
+   "choices_zh": [
+    "45",
+    "40",
+    "44",
+    "55"
+   ],
+   "answer": 2,
+   "explain_en": "11 × 4 = 44.",
+   "explain_zh": "11 × 4 = 44。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l4g7_043",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A lantern costs 120 yuan. It is 30% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 120 元，庙会上便宜 30%，现价多少元？",
+   "choices": [
+    "94",
+    "156",
+    "84"
+   ],
+   "choices_zh": [
+    "94",
+    "156",
+    "84"
+   ],
+   "answer": 2,
+   "explain_en": "120 × (100 - 30) ÷ 100 = 84.",
+   "explain_zh": "120 × (100 - 30) ÷ 100 = 84。",
+   "sign_en": [
+    "94",
+    "156",
+    "84"
+   ],
+   "sign_zh": [
+    "94",
+    "156",
+    "84"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g7_044",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In the hutong it is -2 °C in the morning and the temperature rises by 15 °C. What is it now in °C?",
+   "q_zh": "早上胡同里 -2 °C，后来升高了 15 °C，现在多少摄氏度？",
+   "choices": [
+    "-17",
+    "17",
+    "-13",
+    "13"
+   ],
+   "choices_zh": [
+    "-17",
+    "17",
+    "-13",
+    "13"
+   ],
+   "answer": 3,
+   "explain_en": "-2 + 15 = 13.",
+   "explain_zh": "-2 + 15 = 13。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_045",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Antonym of \"ancient\"?",
+   "q_zh": "英文 ancient 的反义词？",
+   "choices": [
+    "historic",
+    "modern",
+    "old"
+   ],
+   "choices_zh": [
+    "historic",
+    "modern",
+    "old"
+   ],
+   "answer": 1,
+   "explain_en": "Ancient means very old; modern is the opposite.",
+   "explain_zh": "ancient 是古老，反义词 modern。",
+   "sign_en": [
+    "historic",
+    "modern",
+    "old"
+   ],
+   "sign_zh": [
+    "historic",
+    "modern",
+    "old"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g7_046",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "{name} had some red envelopes. After getting 40 more she has 59. Solve x + 40 = 59: how many did she have at first?",
+   "q_zh": "{name} 原来有一些红包，又收到 40 个后有 59 个。解 x + 40 = 59，原来有几个？",
+   "choices": [
+    "18",
+    "99",
+    "40",
+    "19"
+   ],
+   "choices_zh": [
+    "18",
+    "99",
+    "40",
+    "19"
+   ],
+   "answer": 3,
+   "explain_en": "59 - 40 = 19.",
+   "explain_zh": "59 - 40 = 19。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Which late-Qing book about Beijing customs already describes tanghulu on bamboo sticks?",
+   "q_zh": "哪本晚清记录北京风俗的书里已经写到用竹签穿的冰糖葫芦？",
+   "choices": [
+    "Romance of the Three Kingdoms",
+    "Yanjing Suishi Ji",
+    "Journey to the West",
+    "Water Margin"
+   ],
+   "choices_zh": [
+    "《三国演义》",
+    "《燕京岁时记》",
+    "《西游记》",
+    "《水浒传》"
+   ],
+   "answer": 1,
+   "explain_en": "Yanjing Suishi Ji describes hawthorn and other fruit on sticks dipped in rock sugar.",
+   "explain_zh": "《燕京岁时记》写到竹签穿山里红等，蘸冰糖。",
+   "qtype": "beijing_food_life",
+   "qtype_zh": "老北京吃食与生活（糖葫芦/鸽哨/烤鸭）"
+  },
+  {
+   "id": "l4g7_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: My two hands meet at the top at midnight on New Year's Eve, and everyone shouts \"Happy New Year!\" What am I?",
+   "q_zh": "灯谜：除夕半夜两只手在顶上相会，大家一起喊“过年好”。打一物，是什么？",
+   "choices": [
+    "A calendar",
+    "A clock",
+    "A firecracker",
+    "A lantern"
+   ],
+   "choices_zh": [
+    "日历",
+    "钟表",
+    "鞭炮",
+    "灯笼"
+   ],
+   "answer": 1,
+   "explain_en": "At 12:00 midnight a clock's hands meet at the top.",
+   "explain_zh": "半夜 12 点，钟的时针分针在顶上重合。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g7_049",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Sodium compounds give fireworks which colour?",
+   "q_zh": "钠的化合物让烟花呈什么颜色？",
+   "choices": [
+    "Green",
+    "Purple",
+    "Yellow",
+    "Blue"
+   ],
+   "choices_zh": [
+    "绿色",
+    "紫色",
+    "黄色",
+    "蓝色"
+   ],
+   "answer": 2,
+   "explain_en": "Sodium gives a strong yellow flame.",
+   "explain_zh": "钠的焰色是黄色。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g7_050",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round red lantern has a diameter of 35 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 35 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "961.62",
+    "105",
+    "113.04",
+    "109.9"
+   ],
+   "choices_zh": [
+    "961.62",
+    "105",
+    "113.04",
+    "109.9"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 35 = 109.9.",
+   "explain_zh": "3.14 × 35 = 109.9。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am narrow and long, with grey walls on both sides. Neighbours' gates open onto me. What am I?",
+   "q_zh": "灯谜：又窄又长，两边灰墙，家家门口朝着我。打一北京地方，是什么？",
+   "choices": [
+    "A highway",
+    "A hutong",
+    "A tunnel",
+    "A river"
+   ],
+   "choices_zh": [
+    "高速路",
+    "胡同",
+    "隧道",
+    "河"
+   ],
+   "answer": 1,
+   "explain_en": "Hutongs are Beijing's narrow lanes lined with courtyard gates.",
+   "explain_zh": "胡同是北京两边是院门的窄巷。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g7_052",
+   "level": 4,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A pagoda tree's leaves make food by photosynthesis. What do they need?",
+   "q_zh": "槐树叶通过光合作用制造养分，需要什么？",
+   "choices": [
+    "Sunlight, water and carbon dioxide",
+    "Only soil",
+    "Only darkness",
+    "Sugar from people"
+   ],
+   "choices_zh": [
+    "阳光、水和二氧化碳",
+    "只要泥土",
+    "只要黑暗",
+    "人给的糖"
+   ],
+   "answer": 0,
+   "explain_en": "Photosynthesis uses light, water and CO₂ to make sugar and oxygen.",
+   "explain_zh": "光合作用用光、水和二氧化碳制造糖和氧气。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（光合作用/常绿/球果）"
+  },
+  {
+   "id": "l4g7_053",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 400 red envelopes last year, and sales grew by 40% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 400 个红包，今年增长 40%，今年卖了多少个？",
+   "choices": [
+    "240",
+    "160",
+    "560",
+    "570"
+   ],
+   "choices_zh": [
+    "240",
+    "160",
+    "560",
+    "570"
+   ],
+   "answer": 2,
+   "explain_en": "400 × (100 + 40) ÷ 100 = 560.",
+   "explain_zh": "400 × (100 + 40) ÷ 100 = 560。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g7_054",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "In the couplet line 诗书继世长 (\"Poetry and books carry the family on\"), how is 长 pronounced?",
+   "q_zh": "对联「诗书继世长」里的“长”读什么拼音？",
+   "choices": [
+    "cháng",
+    "zhāng",
+    "chàng",
+    "zhǎng"
+   ],
+   "choices_zh": [
+    "cháng",
+    "zhāng",
+    "chàng",
+    "zhǎng"
+   ],
+   "answer": 0,
+   "explain_en": "It means long-lasting, so it is cháng, a level tone.",
+   "explain_zh": "这里是长久的意思，读 cháng，是平声。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g7_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "\"Chang'an Avenue was bustling.\" What does \"bustling\" mean?",
+   "q_zh": "英文句子里说长安街 bustling，bustling 是什么意思？",
+   "choices": [
+    "very quiet",
+    "busy and full of activity",
+    "empty",
+    "frozen"
+   ],
+   "choices_zh": [
+    "很安静",
+    "热闹繁忙",
+    "空荡荡",
+    "冻住了"
+   ],
+   "answer": 1,
+   "explain_en": "Bustling means busy and lively.",
+   "explain_zh": "bustling 意思是热闹、忙碌。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g7_056",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Ice floats because it is ____.",
+   "q_zh": "冰会浮起来，因为它____。",
+   "choices": [
+    "Denser",
+    "Less dense",
+    "Hotter"
+   ],
+   "choices_zh": [
+    "密度更大",
+    "密度更小",
+    "温度更高"
+   ],
+   "answer": 1,
+   "explain_en": "Lower density than water.",
+   "explain_zh": "密度比水小。",
+   "sign_en": [
+    "Denser",
+    "Less dense",
+    "Hotter"
+   ],
+   "sign_zh": [
+    "密度更大",
+    "密度更小",
+    "温度更高"
+   ],
+   "qtype": "density",
+   "qtype_zh": "密度（冰浮在水上）"
+  },
+  {
+   "id": "l4g7_057",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "Summer Palace: UNESCO World Heritage in ____.",
+   "q_zh": "颐和园列入世界遗产是哪年？",
+   "choices": [
+    "1898",
+    "1968",
+    "1998"
+   ],
+   "choices_zh": [
+    "1898 年",
+    "1968 年",
+    "1998 年"
+   ],
+   "answer": 2,
+   "explain_en": "Inscribed in 1998.",
+   "explain_zh": "1998 年。",
+   "sign_en": [
+    "1898",
+    "1968",
+    "1998"
+   ],
+   "sign_zh": [
+    "1898 年",
+    "1968 年",
+    "1998 年"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g7_058",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A Beijing city map uses 1 cm for 500 m. Two hutongs are 14 cm apart on the map. How many metres apart are they?",
+   "q_zh": "北京城区地图上 1 厘米代表 500 米，两条胡同在图上相距 14 厘米，实际相距多少米？",
+   "choices": [
+    "7500",
+    "7000",
+    "514"
+   ],
+   "choices_zh": [
+    "7500",
+    "7000",
+    "514"
+   ],
+   "answer": 1,
+   "explain_en": "14 × 500 = 7000.",
+   "explain_zh": "14 × 500 = 7000。",
+   "sign_en": [
+    "7500",
+    "7000",
+    "514"
+   ],
+   "sign_zh": [
+    "7500",
+    "7000",
+    "514"
+   ],
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g7_059",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Kunming Lake covers about what fraction of the Summer Palace?",
+   "q_zh": "昆明湖大约占颐和园面积的几分之几？",
+   "choices": [
+    "One tenth",
+    "All of it",
+    "Three quarters",
+    "One twentieth"
+   ],
+   "choices_zh": [
+    "十分之一",
+    "全部",
+    "四分之三",
+    "二十分之一"
+   ],
+   "answer": 2,
+   "explain_en": "The lake is about three quarters of the park.",
+   "explain_zh": "昆明湖约占全园的四分之三。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g7_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round red lantern has a diameter of 25 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 25 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "81.64",
+    "157",
+    "78.5",
+    "75"
+   ],
+   "choices_zh": [
+    "81.64",
+    "157",
+    "78.5",
+    "75"
+   ],
+   "answer": 2,
+   "explain_en": "3.14 × 25 = 78.5.",
+   "explain_zh": "3.14 × 25 = 78.5。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "In a traditional couplet, the last character of the first line usually has which kind of tone?",
+   "q_zh": "传统对联中，上联最后一个字通常是什么声调？",
+   "choices": [
+    "Level tone (平)",
+    "No tone",
+    "Any tone",
+    "Oblique tone (仄)"
+   ],
+   "choices_zh": [
+    "平声",
+    "不发音",
+    "哪个声调都行",
+    "仄声"
+   ],
+   "answer": 3,
+   "explain_en": "First line ends oblique (仄), second line ends level (平).",
+   "explain_zh": "上联末字仄声，下联末字平声。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g7_062",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Red firework colour comes from ____.",
+   "q_zh": "红色烟花来自____。",
+   "choices": [
+    "Copper",
+    "Strontium",
+    "Sodium"
+   ],
+   "choices_zh": [
+    "铜",
+    "锶",
+    "钠"
+   ],
+   "answer": 1,
+   "explain_en": "Strontium gives red.",
+   "explain_zh": "锶呈红色。",
+   "sign_en": [
+    "Copper",
+    "Strontium",
+    "Sodium"
+   ],
+   "sign_zh": [
+    "铜",
+    "锶",
+    "钠"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g7_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Renting a tricycle costs 9 yuan plus 9 yuan per hour. A family pays 90 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 9 元，每小时再付 9 元，一家人共付 90 元，骑了几小时？",
+   "choices": [
+    "8",
+    "9",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "11",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "(90 - 9) ÷ 9 = 9.",
+   "explain_zh": "(90 - 9) ÷ 9 = 9。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_064",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "Best place to set off fireworks?",
+   "q_zh": "放烟花最好在哪里？",
+   "choices": [
+    "Indoors",
+    "Next to dry hay",
+    "Wide open space"
+   ],
+   "choices_zh": [
+    "屋里",
+    "干草堆旁",
+    "空旷的地方"
+   ],
+   "answer": 2,
+   "explain_en": "Open space away from homes and anything that burns.",
+   "explain_zh": "远离房屋和易燃物的空地。",
+   "sign_en": [
+    "Indoors",
+    "Next to dry hay",
+    "Wide open space"
+   ],
+   "sign_zh": [
+    "屋里",
+    "干草堆旁",
+    "空旷的地方"
+   ],
+   "qtype": "fire_safety",
+   "qtype_zh": "烟花爆竹安全"
+  },
+  {
+   "id": "l4g7_065",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 11 yuan plus 4 yuan per hour. A family pays 27 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 11 元，每小时再付 4 元，一家人共付 27 元，骑了几小时？",
+   "choices": [
+    "5",
+    "9",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "9",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "(27 - 11) ÷ 4 = 4.",
+   "explain_zh": "(27 - 11) ÷ 4 = 4。",
+   "sign_en": [
+    "5",
+    "9",
+    "4"
+   ],
+   "sign_zh": [
+    "5",
+    "9",
+    "4"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_066",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Flora had some red envelopes. After getting 6 more she has 14. Solve x + 6 = 14: how many did she have at first?",
+   "q_zh": "Flora 原来有一些红包，又收到 6 个后有 14 个。解 x + 6 = 14，原来有几个？",
+   "choices": [
+    "9",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "9",
+    "8",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "14 - 6 = 8.",
+   "explain_zh": "14 - 6 = 8。",
+   "sign_en": [
+    "9",
+    "8",
+    "6"
+   ],
+   "sign_zh": [
+    "9",
+    "8",
+    "6"
+   ],
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_067",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am a stone boat that never sails. I rest by Kunming Lake. What am I?",
+   "q_zh": "灯谜：石头做的船，永远不开走，停在昆明湖边。打一颐和园景物，是什么？",
+   "choices": [
+    "A ferry",
+    "A raft",
+    "A dragon boat",
+    "The Marble Boat"
+   ],
+   "choices_zh": [
+    "渡船",
+    "木筏",
+    "龙舟",
+    "石舫"
+   ],
+   "answer": 3,
+   "explain_en": "The Marble Boat (Qingyan Fang) is built of stone and cannot sail.",
+   "explain_zh": "石舫（清晏舫）是石头砌的，不能航行。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g7_068",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora had some red envelopes. After getting 10 more she has 55. Solve x + 10 = 55: how many did she have at first?",
+   "q_zh": "Flora 原来有一些红包，又收到 10 个后有 55 个。解 x + 10 = 55，原来有几个？",
+   "choices": [
+    "65",
+    "45",
+    "44",
+    "10"
+   ],
+   "choices_zh": [
+    "65",
+    "45",
+    "44",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "55 - 10 = 45.",
+   "explain_zh": "55 - 10 = 45。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_069",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "In the hutong it is -4 °C in the morning and the temperature rises by 3 °C. What is it now in °C?",
+   "q_zh": "早上胡同里 -4 °C，后来升高了 3 °C，现在多少摄氏度？",
+   "choices": [
+    "7",
+    "0",
+    "-1",
+    "-7"
+   ],
+   "choices_zh": [
+    "7",
+    "0",
+    "-1",
+    "-7"
+   ],
+   "answer": 2,
+   "explain_en": "-4 + 3 = -1.",
+   "explain_zh": "-4 + 3 = -1。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_070",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round red lantern has a diameter of 45 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 45 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "144.44",
+    "1589.62",
+    "135",
+    "141.3"
+   ],
+   "choices_zh": [
+    "144.44",
+    "1589.62",
+    "135",
+    "141.3"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 45 = 141.3.",
+   "explain_zh": "3.14 × 45 = 141.3。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round red lantern has a diameter of 50 cm. Using π ≈ 3.14, what is its circumference in cm?",
+   "q_zh": "一个圆红灯笼直径 50 厘米，π 取 3.14，周长是多少厘米？",
+   "choices": [
+    "1962.5",
+    "157",
+    "150",
+    "314"
+   ],
+   "choices_zh": [
+    "1962.5",
+    "157",
+    "150",
+    "314"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 50 = 157.",
+   "explain_zh": "3.14 × 50 = 157。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l4g7_072",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora had some red envelopes. After getting 11 more she has 24. Solve x + 11 = 24: how many did she have at first?",
+   "q_zh": "Flora 原来有一些红包，又收到 11 个后有 24 个。解 x + 11 = 24，原来有几个？",
+   "choices": [
+    "13",
+    "35",
+    "12",
+    "14"
+   ],
+   "choices_zh": [
+    "13",
+    "35",
+    "12",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "24 - 11 = 13.",
+   "explain_zh": "24 - 11 = 13。",
+   "qtype": "eq_one_step",
+   "qtype_zh": "一步方程"
+  },
+  {
+   "id": "l4g7_073",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A Beijing city map uses 1 cm for 500 m. Two hutongs are 5 cm apart on the map. How many metres apart are they?",
+   "q_zh": "北京城区地图上 1 厘米代表 500 米，两条胡同在图上相距 5 厘米，实际相距多少米？",
+   "choices": [
+    "25000",
+    "505",
+    "3000",
+    "2500"
+   ],
+   "choices_zh": [
+    "25000",
+    "505",
+    "3000",
+    "2500"
+   ],
+   "answer": 3,
+   "explain_en": "5 × 500 = 2500.",
+   "explain_zh": "5 × 500 = 2500。",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g7_074",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "At noon it is -3 °C in Beijing. By midnight it is 7 °C colder. What is the midnight temperature in °C?",
+   "q_zh": "北京中午 -3 °C，到半夜降低了 7 °C，半夜多少摄氏度？",
+   "choices": [
+    "-10",
+    "10",
+    "-12"
+   ],
+   "choices_zh": [
+    "-10",
+    "10",
+    "-12"
+   ],
+   "answer": 0,
+   "explain_en": "-3 - 7 = -10.",
+   "explain_zh": "-3 - 7 = -10。",
+   "sign_en": [
+    "-10",
+    "10",
+    "-12"
+   ],
+   "sign_zh": [
+    "-10",
+    "10",
+    "-12"
+   ],
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_075",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "From the bridge, Flora looks back at the Long Corridor along the shore. Which statement about it is true?",
+   "q_zh": "Flora 在桥上回望岸边的长廊。关于长廊，哪句话是对的？",
+   "choices": [
+    "It is made of ice every winter",
+    "It was built in 2008",
+    "It is about 7.28 km long with 27 sections",
+    "It is about 728 m long with 273 sections"
+   ],
+   "choices_zh": [
+    "每年冬天用冰搭成",
+    "建于 2008 年",
+    "全长约 7.28 千米，共 27 间",
+    "全长约 728 米，共 273 间"
+   ],
+   "answer": 3,
+   "explain_en": "The Long Corridor is 728 m long with 273 sections.",
+   "explain_zh": "长廊全长 728 米，共 273 间。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g7_076",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "A gate near the bridge shows the first line 向阳门第春常在. Which second line completes the couplet?",
+   "q_zh": "桥边一扇门上的上联是「向阳门第春常在」。哪一句是它的下联？",
+   "choices": [
+    "积善人家庆有余",
+    "诗书继世长",
+    "春风送暖入屠苏",
+    "春满乾坤福满堂"
+   ],
+   "choices_zh": [
+    "积善人家庆有余",
+    "诗书继世长",
+    "春风送暖入屠苏",
+    "春满乾坤福满堂"
+   ],
+   "answer": 0,
+   "explain_en": "向阳门第春常在 / 积善人家庆有余: seven characters each, ending oblique then level.",
+   "explain_zh": "向阳门第春常在，积善人家庆有余；各七字，上仄下平。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g7_077",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At dawn on New Year's Day it is -8 °C on the Seventeen-Arch Bridge. By noon it warms by 10 °C. What is the noon temperature in °C?",
+   "q_zh": "大年初一清晨十七孔桥上 -8 °C，到中午升高了 10 °C，中午多少摄氏度？",
+   "choices": [
+    "2",
+    "18",
+    "-18",
+    "-2"
+   ],
+   "choices_zh": [
+    "2",
+    "18",
+    "-18",
+    "-2"
+   ],
+   "answer": 0,
+   "explain_en": "-8 + 10 = 2.",
+   "explain_zh": "-8 + 10 = 2。",
+   "qtype": "int_add_sub",
+   "qtype_zh": "正负数加减（气温变化）"
+  },
+  {
+   "id": "l4g7_078",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On a park map, 1 cm stands for 200 m. The path from the Long Corridor to the Seventeen-Arch Bridge is 4 cm on the map. How many metres is it really?",
+   "q_zh": "公园地图上 1 厘米代表 200 米，从长廊到十七孔桥的路在图上长 4 厘米，实际是多少米？",
+   "choices": [
+    "1000",
+    "800",
+    "204",
+    "8000"
+   ],
+   "choices_zh": [
+    "1000",
+    "800",
+    "204",
+    "8000"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 200 = 800.",
+   "explain_zh": "4 × 200 = 800。",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g7_079",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Last year 800 lanterns lit the Seventeen-Arch Bridge. This year there are 10% more. How many lanterns are there this year?",
+   "q_zh": "去年十七孔桥上亮了 800 盏灯笼，今年多了 10%，今年有多少盏？",
+   "choices": [
+    "890",
+    "80",
+    "880",
+    "720"
+   ],
+   "choices_zh": [
+    "890",
+    "80",
+    "880",
+    "720"
+   ],
+   "answer": 2,
+   "explain_en": "800 × (100 + 10) ÷ 100 = 880.",
+   "explain_zh": "800 × (100 + 10) ÷ 100 = 880。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g7_080",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A boat ride to the Seventeen-Arch Bridge costs a 6-yuan fee plus 4 yuan per person. Flora's group pays 14 yuan. How many people are in the group?",
+   "q_zh": "坐船到十七孔桥要付 6 元手续费，每人再付 4 元。Flora 一行共付了 14 元，一共几个人？",
+   "choices": [
+    "3",
+    "2",
+    "1",
+    "5"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "1",
+    "5"
+   ],
+   "answer": 1,
+   "explain_en": "(14 - 6) ÷ 4 = 2.",
+   "explain_zh": "(14 - 6) ÷ 4 = 2。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g7_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A sketch of the bridge's lantern arch is 3 cm wide and 5 cm tall. A similar banner copy is 6 cm wide. How tall is the banner in cm?",
+   "q_zh": "桥上灯笼拱门的草图宽 3 厘米、高 5 厘米，放大成相似的横幅后宽 6 厘米，高是多少厘米？",
+   "choices": [
+    "8",
+    "7",
+    "12",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "12",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "5 × 6 ÷ 3 = 10.",
+   "explain_zh": "5 × 6 ÷ 3 = 10。",
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g7_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Over four evenings, Flora counts 9, 13, 18 and 12 lantern boats floating near the bridge. What is the mean number per evening?",
+   "q_zh": "连续四个晚上，Flora 在桥边数到 9、13、18、12 只灯船，平均每晚几只？",
+   "choices": [
+    "18",
+    "12",
+    "13",
+    "52"
+   ],
+   "choices_zh": [
+    "18",
+    "12",
+    "13",
+    "52"
+   ],
+   "answer": 2,
+   "explain_en": "(9 + 13 + 18 + 12) ÷ 4 = 13.",
+   "explain_zh": "(9 + 13 + 18 + 12) ÷ 4 = 13。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  }
+ ]
+}

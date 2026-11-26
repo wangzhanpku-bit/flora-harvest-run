@@ -1,0 +1,2530 @@
+{
+ "level": 6,
+ "level_name_en": "Hong Kong",
+ "level_name_zh": "香港",
+ "grade": 2,
+ "version": "v1",
+ "fields": "L6 Hong Kong / Mid-Autumn Festival (inline roller skates; Central → Victoria Harbour → The Peak). Same item fields as L3 v3.1 / L4 / L5. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 月饼摊 Mooncake Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh must equal choices; EN ≤24 chars, ZH width ≤12 where CJK=1, ASCII=0.5), peak_final = The Peak / 太平山顶 final (exactly 4 choices, hard, situational, no bare arithmetic). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Peak final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 中秋谜：. Stems are deduped against all L1–L5 banks (all grades).",
+ "questions": [
+  {
+   "id": "l6g2_001",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "72 lanterns are put equally into 8 boxes. How many in each box?",
+   "q_zh": "72 盏灯笼平均放进 8 个盒子，每盒几盏？",
+   "choices": [
+    "10",
+    "64",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "64",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "72 ÷ 8 = 9.",
+   "explain_zh": "72 ÷ 8 = 9。",
+   "sign_en": [
+    "10",
+    "64",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "64",
+    "9"
+   ],
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l6g2_002",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Flora's inline skates roll because they have ____.",
+   "q_zh": "Flora 的直排轮滑能滚，是因为上面有____。",
+   "choices": [
+    "paddles",
+    "wings",
+    "sails",
+    "wheels"
+   ],
+   "choices_zh": [
+    "桨",
+    "翅膀",
+    "帆",
+    "轮子"
+   ],
+   "answer": 3,
+   "explain_en": "Wheels let the skates roll.",
+   "explain_zh": "有轮子，轮滑才能滚。",
+   "qtype": "simple_machines",
+   "qtype_zh": "简单机械（轮滑轮子/刹车）"
+  },
+  {
+   "id": "l6g2_003",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "27 lanterns are put equally into 9 boxes. How many in each box?",
+   "q_zh": "27 盏灯笼平均放进 9 个盒子，每盒几盏？",
+   "choices": [
+    "3",
+    "2",
+    "4",
+    "12"
+   ],
+   "choices_zh": [
+    "3",
+    "2",
+    "4",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "27 ÷ 9 = 3.",
+   "explain_zh": "27 ÷ 9 = 3。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l6g2_004",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Each mooncake box holds 2 mooncakes. How many mooncakes are in 4 boxes?",
+   "q_zh": "每个盒子装 2 块月饼，4 个盒子一共多少块？",
+   "choices": [
+    "8",
+    "10",
+    "9",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "9",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "2 × 4 = 8.",
+   "explain_zh": "2 × 4 = 8。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_005",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "9 stalls each hang 7 pomelos. How many pomelos in all?",
+   "q_zh": "9 个摊位每家挂 7 个柚子，一共多少个？",
+   "choices": [
+    "63",
+    "16",
+    "70"
+   ],
+   "choices_zh": [
+    "63",
+    "16",
+    "70"
+   ],
+   "answer": 0,
+   "explain_en": "7 × 9 = 63.",
+   "explain_zh": "7 × 9 = 63。",
+   "sign_en": [
+    "63",
+    "16",
+    "70"
+   ],
+   "sign_zh": [
+    "63",
+    "16",
+    "70"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_006",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 45 lanterns and hangs 37 along the street. How many are still in the bag?",
+   "q_zh": "Flora 有 45 盏灯笼，沿街挂了 37 盏，袋子里还剩几盏？",
+   "choices": [
+    "8",
+    "10",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "10",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "45 - 37 = 8.",
+   "explain_zh": "45 - 37 = 8。",
+   "sign_en": [
+    "8",
+    "10",
+    "7"
+   ],
+   "sign_zh": [
+    "8",
+    "10",
+    "7"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_007",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "50 sparrows sit on a lamp post in Central. 9 fly away. How many stay?",
+   "q_zh": "中环灯柱上有 50 只麻雀，飞走了 9 只，还剩几只？",
+   "choices": [
+    "41",
+    "42",
+    "59"
+   ],
+   "choices_zh": [
+    "41",
+    "42",
+    "59"
+   ],
+   "answer": 0,
+   "explain_en": "50 - 9 = 41.",
+   "explain_zh": "50 - 9 = 41。",
+   "sign_en": [
+    "41",
+    "42",
+    "59"
+   ],
+   "sign_zh": [
+    "41",
+    "42",
+    "59"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_008",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "easy",
+   "q_en": "What do families in this level often share and eat at Mid-Autumn?",
+   "q_zh": "过中秋，这一关里的人家常常分着吃什么？",
+   "choices": [
+    "Ski boots",
+    "Sand",
+    "Mooncakes",
+    "Ice skates"
+   ],
+   "choices_zh": [
+    "滑雪靴",
+    "沙子",
+    "月饼",
+    "冰刀鞋"
+   ],
+   "answer": 2,
+   "explain_en": "Mooncakes are the Mid-Autumn food in this level.",
+   "explain_zh": "这一关过中秋，人们常吃月饼。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g2_009",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 59 lanterns and then hangs 11 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 59 盏灯笼，又挂了 11 盏，一共几盏？",
+   "choices": [
+    "70",
+    "71",
+    "69"
+   ],
+   "choices_zh": [
+    "70",
+    "71",
+    "69"
+   ],
+   "answer": 0,
+   "explain_en": "59 + 11 = 70.",
+   "explain_zh": "59 + 11 = 70。",
+   "sign_en": [
+    "70",
+    "71",
+    "69"
+   ],
+   "sign_zh": [
+    "70",
+    "71",
+    "69"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_010",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "easy",
+   "q_en": "The sweet paste in the middle of a mooncake is called a ____.",
+   "q_zh": "月饼中间的甜泥叫____。",
+   "choices": [
+    "tyre",
+    "brick",
+    "hinge",
+    "filling"
+   ],
+   "choices_zh": [
+    "轮胎",
+    "砖",
+    "铰链",
+    "馅"
+   ],
+   "answer": 3,
+   "explain_en": "The inside of a mooncake is the filling.",
+   "explain_zh": "月饼里面的那一层叫馅。",
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g2_011",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Auntie has 3 packs of 100 mooncake boxes, 2 packs of 10 and 9 single boxes. How many boxes is that?",
+   "q_zh": "阿嫲有 3 包 100 个的月饼盒、2 包 10 个的和 9 个散的，一共多少个？",
+   "choices": [
+    "329",
+    "239",
+    "319"
+   ],
+   "choices_zh": [
+    "329",
+    "239",
+    "319"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 100 + 2 × 10 + 9 = 329.",
+   "explain_zh": "3 × 100 + 2 × 10 + 9 = 329。",
+   "sign_en": [
+    "329",
+    "239",
+    "319"
+   ],
+   "sign_zh": [
+    "329",
+    "239",
+    "319"
+   ],
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l6g2_012",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "42 mooncakes are shared equally among 7 children. How many does each child get?",
+   "q_zh": "42 块月饼平均分给 7 个孩子，每人几块？",
+   "choices": [
+    "5",
+    "6",
+    "13",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "13",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "42 ÷ 7 = 6.",
+   "explain_zh": "42 ÷ 7 = 6。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l6g2_013",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I am a round pastry with a sweet filling. Families share me while they watch the Mid-Autumn moon. What am I?",
+   "q_zh": "中秋谜：我是圆圆的点心，里面有甜馅。家人们一边看中秋的月亮，一边分着吃我。打一食物，是什么？",
+   "choices": [
+    "A mooncake",
+    "A metal key",
+    "A raw carrot",
+    "A glass cup"
+   ],
+   "choices_zh": [
+    "月饼",
+    "金属钥匙",
+    "生胡萝卜",
+    "玻璃杯"
+   ],
+   "answer": 0,
+   "explain_en": "A mooncake is the round pastry people share at Mid-Autumn.",
+   "explain_zh": "月饼是中秋时大家分着吃的圆形点心。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_014",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "54 lanterns hang on one block in Central and 25 more hang on the next. How many lanterns now?",
+   "q_zh": "中环这一段挂了 54 盏灯笼，下一段又挂了 25 盏，现在一共有几盏？",
+   "choices": [
+    "79",
+    "29",
+    "78"
+   ],
+   "choices_zh": [
+    "79",
+    "29",
+    "78"
+   ],
+   "answer": 0,
+   "explain_en": "54 + 25 = 79.",
+   "explain_zh": "54 + 25 = 79。",
+   "sign_en": [
+    "79",
+    "29",
+    "78"
+   ],
+   "sign_zh": [
+    "79",
+    "29",
+    "78"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_015",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 13 mooncakes and sells 3. How many mooncakes are left?",
+   "q_zh": "小摊有 13 块月饼，卖出 3 块，还剩几块？",
+   "choices": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "13 - 3 = 10.",
+   "explain_zh": "13 - 3 = 10。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_016",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A backpack carries 60 boxes of mooncakes. A smaller bag carries 7. How many more boxes in the backpack?",
+   "q_zh": "大背包装着 60 盒月饼，小袋子装着 7 盒，背包多装几盒？",
+   "choices": [
+    "56",
+    "52",
+    "53",
+    "54"
+   ],
+   "choices_zh": [
+    "56",
+    "52",
+    "53",
+    "54"
+   ],
+   "answer": 2,
+   "explain_en": "60 - 7 = 53.",
+   "explain_zh": "60 - 7 = 53。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l6g2_017",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "A tram is coming. You should ____.",
+   "q_zh": "叮叮车来了，你要____。",
+   "choices": [
+    "Close your eyes",
+    "Switch lanes",
+    "Stand still"
+   ],
+   "choices_zh": [
+    "闭上眼睛",
+    "换道",
+    "站着不动"
+   ],
+   "answer": 1,
+   "explain_en": "Switch to a clear lane.",
+   "explain_zh": "换到空道上。",
+   "sign_en": [
+    "Close your eyes",
+    "Switch lanes",
+    "Stand still"
+   ],
+   "sign_zh": [
+    "闭上眼睛",
+    "换道",
+    "站着不动"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g2_018",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I have wheels in a single line under Flora's feet. She rolls through Central on me. What am I?",
+   "q_zh": "中秋谜：我的轮子在 Flora 脚下排成一行，她踩着我滑过中环。打一物，是什么？",
+   "choices": [
+    "A drum",
+    "A rowing boat",
+    "Inline skates",
+    "A scarf"
+   ],
+   "choices_zh": [
+    "鼓",
+    "小船",
+    "轮滑鞋",
+    "围巾"
+   ],
+   "answer": 2,
+   "explain_en": "Inline roller skates have wheels in a line.",
+   "explain_zh": "直排轮滑鞋的轮子排成一行。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_019",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 22 mooncakes on the plate. The family eats 8. How many are left?",
+   "q_zh": "盘子里有 22 块月饼，一家人吃了 8 块，还剩几块？",
+   "choices": [
+    "13",
+    "14",
+    "15",
+    "30"
+   ],
+   "choices_zh": [
+    "13",
+    "14",
+    "15",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "22 - 8 = 14.",
+   "explain_zh": "22 - 8 = 14。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_020",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 4 lanterns at 6 yuan each and pays 50 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 4 盏灯笼，每盏 6 元，付了 50 元，找回多少元？",
+   "choices": [
+    "26",
+    "24",
+    "27"
+   ],
+   "choices_zh": [
+    "26",
+    "24",
+    "27"
+   ],
+   "answer": 0,
+   "explain_en": "50 - 4 × 6 = 26.",
+   "explain_zh": "50 - 4 × 6 = 26。",
+   "sign_en": [
+    "26",
+    "24",
+    "27"
+   ],
+   "sign_zh": [
+    "26",
+    "24",
+    "27"
+   ],
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l6g2_021",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts roller-skating through Central at 6:20 and stops at 6:45. How many minutes did she skate?",
+   "q_zh": "Flora 6:20 开始在中环滑轮滑，6:45 停下，滑了多少分钟？",
+   "choices": [
+    "35",
+    "25",
+    "20"
+   ],
+   "choices_zh": [
+    "35",
+    "25",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "45 - 20 = 25.",
+   "explain_zh": "45 - 20 = 25。",
+   "sign_en": [
+    "35",
+    "25",
+    "20"
+   ],
+   "sign_zh": [
+    "35",
+    "25",
+    "20"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l6g2_022",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 50 mooncakes and sells 4. How many mooncakes are left?",
+   "q_zh": "小摊有 50 块月饼，卖出 4 块，还剩几块？",
+   "choices": [
+    "54",
+    "46",
+    "45",
+    "48"
+   ],
+   "choices_zh": [
+    "54",
+    "46",
+    "45",
+    "48"
+   ],
+   "answer": 1,
+   "explain_en": "50 - 4 = 46.",
+   "explain_zh": "50 - 4 = 46。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_023",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} counts festival change at the mooncake stall: 1 ten-yuan note, 4 five-yuan notes and 7 one-yuan coins. How many yuan is that?",
+   "q_zh": "{name} 在月饼摊数零钱：有 1 张十元、4 张五元和 7 个一元硬币，一共多少元？",
+   "choices": [
+    "37",
+    "36",
+    "12",
+    "47"
+   ],
+   "choices_zh": [
+    "37",
+    "36",
+    "12",
+    "47"
+   ],
+   "answer": 0,
+   "explain_en": "1 × 10 + 4 × 5 + 7 = 37.",
+   "explain_zh": "1 × 10 + 4 × 5 + 7 = 37。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l6g2_024",
+   "level": 6,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "A large yellow citrus fruit often peeled and shared at Mid-Autumn is a ____.",
+   "q_zh": "中秋时常常剥开分着吃的大黄柑果是____。",
+   "choices": [
+    "cactus fruit only",
+    "seaweed",
+    "pomelo",
+    "pine nut shell"
+   ],
+   "choices_zh": [
+    "只有仙人掌果",
+    "海带",
+    "柚子",
+    "松子壳"
+   ],
+   "answer": 2,
+   "explain_en": "Pomelo is a Mid-Autumn fruit.",
+   "explain_zh": "柚子是中秋常见的水果。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（柚子/桂花/莲蓉）"
+  },
+  {
+   "id": "l6g2_025",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "A festival paper lamp is a ____.",
+   "q_zh": "过节的纸灯叫____。",
+   "choices": [
+    "Pillow",
+    "Lantern",
+    "Hammer"
+   ],
+   "choices_zh": [
+    "枕头",
+    "灯笼",
+    "锤子"
+   ],
+   "answer": 1,
+   "explain_en": "It is called a lantern.",
+   "explain_zh": "它叫灯笼。",
+   "sign_en": [
+    "Pillow",
+    "Lantern",
+    "Hammer"
+   ],
+   "sign_zh": [
+    "枕头",
+    "灯笼",
+    "锤子"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l6g2_026",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Shop numbers in Central go 5, 11, 17. What number comes next?",
+   "q_zh": "中环的门牌号是 5、11、17，下一个是几？",
+   "choices": [
+    "22",
+    "18",
+    "23"
+   ],
+   "choices_zh": [
+    "22",
+    "18",
+    "23"
+   ],
+   "answer": 2,
+   "explain_en": "17 + 6 = 23.",
+   "explain_zh": "17 + 6 = 23。",
+   "sign_en": [
+    "22",
+    "18",
+    "23"
+   ],
+   "sign_zh": [
+    "22",
+    "18",
+    "23"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l6g2_027",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "The long rail car in Central that rings as it goes is often called a ____.",
+   "q_zh": "中环那辆走轨道、边走边响的长车厢，常常被叫做____。",
+   "choices": [
+    "ding-ding tram",
+    "helicopter",
+    "rowboat",
+    "sleigh"
+   ],
+   "choices_zh": [
+    "叮叮车",
+    "直升机",
+    "小划艇",
+    "雪橇"
+   ],
+   "answer": 0,
+   "explain_en": "Hong Kong trams are nicknamed ding-ding trams.",
+   "explain_zh": "香港的有轨电车常叫叮叮车。",
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g2_028",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 33 lanterns and then hangs 30 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 33 盏灯笼，又挂了 30 盏，一共几盏？",
+   "choices": [
+    "3",
+    "73",
+    "62",
+    "63"
+   ],
+   "choices_zh": [
+    "3",
+    "73",
+    "62",
+    "63"
+   ],
+   "answer": 3,
+   "explain_en": "33 + 30 = 63.",
+   "explain_zh": "33 + 30 = 63。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_029",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 3 lanterns at 9 yuan each and pays 50 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 3 盏灯笼，每盏 9 元，付了 50 元，找回多少元？",
+   "choices": [
+    "27",
+    "22",
+    "32",
+    "23"
+   ],
+   "choices_zh": [
+    "27",
+    "22",
+    "32",
+    "23"
+   ],
+   "answer": 3,
+   "explain_en": "50 - 3 × 9 = 23.",
+   "explain_zh": "50 - 3 × 9 = 23。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l6g2_030",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A backpack carries 75 boxes of mooncakes. A smaller bag carries 7. How many more boxes in the backpack?",
+   "q_zh": "大背包装着 75 盒月饼，小袋子装着 7 盒，背包多装几盒？",
+   "choices": [
+    "67",
+    "71",
+    "68",
+    "82"
+   ],
+   "choices_zh": [
+    "67",
+    "71",
+    "68",
+    "82"
+   ],
+   "answer": 2,
+   "explain_en": "75 - 7 = 68.",
+   "explain_zh": "75 - 7 = 68。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l6g2_031",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Low lanterns ahead — you should ____.",
+   "q_zh": "前面灯笼挂得低，你要____。",
+   "choices": [
+    "Duck down",
+    "Stop forever",
+    "Look only up"
+   ],
+   "choices_zh": [
+    "蹲下",
+    "永远停下",
+    "只抬头"
+   ],
+   "answer": 0,
+   "explain_en": "Duck under low lanterns.",
+   "explain_zh": "灯笼挂得低就要蹲下。",
+   "sign_en": [
+    "Duck down",
+    "Stop forever",
+    "Look only up"
+   ],
+   "sign_zh": [
+    "蹲下",
+    "永远停下",
+    "只抬头"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g2_032",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 43 lanterns and then hangs 16 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 43 盏灯笼，又挂了 16 盏，一共几盏？",
+   "choices": [
+    "60",
+    "59",
+    "58",
+    "27"
+   ],
+   "choices_zh": [
+    "60",
+    "59",
+    "58",
+    "27"
+   ],
+   "answer": 1,
+   "explain_en": "43 + 16 = 59.",
+   "explain_zh": "43 + 16 = 59。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_033",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I am a colourful box. The stall keeps mooncakes inside me so they stay neat. What am I?",
+   "q_zh": "中秋谜：我是一只彩色的盒子，摊上把月饼放在我里面，好让它们摆得整齐。打一物，是什么？",
+   "choices": [
+    "A fishing net",
+    "A ladder",
+    "A mooncake box",
+    "A pillow"
+   ],
+   "choices_zh": [
+    "渔网",
+    "梯子",
+    "月饼盒",
+    "枕头"
+   ],
+   "answer": 2,
+   "explain_en": "Mooncakes are kept in colourful boxes.",
+   "explain_zh": "月饼常常放在彩色的盒子里。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_034",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "The little flame inside a paper lantern is a ____, so it should be kept away from the paper sides.",
+   "q_zh": "纸灯笼里的小火苗是____，所以不要挨着纸壁。",
+   "choices": [
+    "solid stone",
+    "a block of ice",
+    "gas flame / hot gas",
+    "liquid metal"
+   ],
+   "choices_zh": [
+    "固体石头",
+    "一块冰",
+    "气体火焰",
+    "液态金属"
+   ],
+   "answer": 2,
+   "explain_en": "A candle flame is burning gas and is hot.",
+   "explain_zh": "蜡烛的火焰是燃烧的气体，是烫的。",
+   "qtype": "states_of_matter",
+   "qtype_zh": "物态（冰雪水）"
+  },
+  {
+   "id": "l6g2_035",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 42 mooncakes on the plate. The family eats 6. How many are left?",
+   "q_zh": "盘子里有 42 块月饼，一家人吃了 6 块，还剩几块？",
+   "choices": [
+    "38",
+    "36",
+    "37"
+   ],
+   "choices_zh": [
+    "38",
+    "36",
+    "37"
+   ],
+   "answer": 1,
+   "explain_en": "42 - 6 = 36.",
+   "explain_zh": "42 - 6 = 36。",
+   "sign_en": [
+    "38",
+    "36",
+    "37"
+   ],
+   "sign_zh": [
+    "38",
+    "36",
+    "37"
+   ],
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_036",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Auntie makes 8 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "阿嫲摆了 8 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "choices": [
+    "46",
+    "54",
+    "20"
+   ],
+   "choices_zh": [
+    "46",
+    "54",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "8 × 6 + 6 = 54.",
+   "explain_zh": "8 × 6 + 6 = 54。",
+   "sign_en": [
+    "46",
+    "54",
+    "20"
+   ],
+   "sign_zh": [
+    "46",
+    "54",
+    "20"
+   ],
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g2_037",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Auntie makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "阿嫲摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "choices": [
+    "21",
+    "60",
+    "51",
+    "61"
+   ],
+   "choices_zh": [
+    "21",
+    "60",
+    "51",
+    "61"
+   ],
+   "answer": 1,
+   "explain_en": "9 × 6 + 6 = 60.",
+   "explain_zh": "9 × 6 + 6 = 60。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g2_038",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I am a car people wave down on Hong Kong streets, and I am often bright red. What am I?",
+   "q_zh": "中秋谜：在香港街上，人们扬手叫我停，我常常是鲜红色的。打一交通工具，是什么？",
+   "choices": [
+    "A red taxi",
+    "A snow sledge",
+    "A picnic table",
+    "A subway tunnel"
+   ],
+   "choices_zh": [
+    "红色的士",
+    "雪橇",
+    "野餐桌",
+    "地铁隧道"
+   ],
+   "answer": 0,
+   "explain_en": "Many Hong Kong taxis are red.",
+   "explain_zh": "香港很多的士是红色的。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_039",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts roller-skating through Central at 4:45 and stops at 5:15. How many minutes did she skate?",
+   "q_zh": "Flora 4:45 开始在中环滑轮滑，5:15 停下，滑了多少分钟？",
+   "choices": [
+    "90",
+    "60",
+    "30",
+    "25"
+   ],
+   "choices_zh": [
+    "90",
+    "60",
+    "30",
+    "25"
+   ],
+   "answer": 2,
+   "explain_en": "60 - 45 + 15 = 30.",
+   "explain_zh": "60 - 45 + 15 = 30。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l6g2_040",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "There are 49 mooncakes on the plate. The family eats 14. How many are left?",
+   "q_zh": "盘子里有 49 块月饼，一家人吃了 14 块，还剩几块？",
+   "choices": [
+    "34",
+    "36",
+    "63",
+    "35"
+   ],
+   "choices_zh": [
+    "34",
+    "36",
+    "63",
+    "35"
+   ],
+   "answer": 3,
+   "explain_en": "49 - 14 = 35.",
+   "explain_zh": "49 - 14 = 35。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_041",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "Many taxis here are ____.",
+   "q_zh": "这里很多的士是____的。",
+   "choices": [
+    "Made of ice",
+    "Red",
+    "Invisible"
+   ],
+   "choices_zh": [
+    "冰做的",
+    "红色",
+    "看不见的"
+   ],
+   "answer": 1,
+   "explain_en": "Many taxis are red.",
+   "explain_zh": "很多的士是红色的。",
+   "sign_en": [
+    "Made of ice",
+    "Red",
+    "Invisible"
+   ],
+   "sign_zh": [
+    "冰做的",
+    "红色",
+    "看不见的"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g2_042",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts roller-skating through Central at 6:45 and stops at 7:25. How many minutes did she skate?",
+   "q_zh": "Flora 6:45 开始在中环滑轮滑，7:25 停下，滑了多少分钟？",
+   "choices": [
+    "35",
+    "100",
+    "50",
+    "40"
+   ],
+   "choices_zh": [
+    "35",
+    "100",
+    "50",
+    "40"
+   ],
+   "answer": 3,
+   "explain_en": "60 - 45 + 25 = 40.",
+   "explain_zh": "60 - 45 + 25 = 40。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l6g2_043",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A tray holds 5 mooncakes. How many mooncakes on 4 trays?",
+   "q_zh": "一盘有 5 块月饼，4 盘一共多少块？",
+   "choices": [
+    "16",
+    "20",
+    "21",
+    "9"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "21",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "5 × 4 = 20.",
+   "explain_zh": "5 × 4 = 20。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_044",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} counts festival change at the mooncake stall: 3 ten-yuan notes, 4 five-yuan notes and 1 one-yuan coin. How many yuan is that?",
+   "q_zh": "{name} 在月饼摊数零钱：有 3 张十元、4 张五元和 1 个一元硬币，一共多少元？",
+   "choices": [
+    "51",
+    "50",
+    "61",
+    "8"
+   ],
+   "choices_zh": [
+    "51",
+    "50",
+    "61",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 10 + 4 × 5 + 1 = 51.",
+   "explain_zh": "3 × 10 + 4 × 5 + 1 = 51。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l6g2_045",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "Flora starts this skate among evening office towers. That area is ____.",
+   "q_zh": "Flora 从傍晚的写字楼之间开始滑。那一带是____。",
+   "choices": [
+    "A wheat field",
+    "A desert oasis",
+    "A coral reef",
+    "Central"
+   ],
+   "choices_zh": [
+    "麦田",
+    "沙漠绿洲",
+    "珊瑚礁",
+    "中环"
+   ],
+   "answer": 3,
+   "explain_en": "The first section is Central.",
+   "explain_zh": "第一段在中环。",
+   "qtype": "hongkong_landmark",
+   "qtype_zh": "香港地标（中环/维港/太平山）"
+  },
+  {
+   "id": "l6g2_046",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Shop numbers in Central go 5, 12, 19. What number comes next?",
+   "q_zh": "中环的门牌号是 5、12、19，下一个是几？",
+   "choices": [
+    "26",
+    "20",
+    "25"
+   ],
+   "choices_zh": [
+    "26",
+    "20",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "19 + 7 = 26.",
+   "explain_zh": "19 + 7 = 26。",
+   "sign_en": [
+    "26",
+    "20",
+    "25"
+   ],
+   "sign_zh": [
+    "26",
+    "20",
+    "25"
+   ],
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l6g2_047",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "Bara rides in a ____.",
+   "q_zh": "Bara 坐在____里。",
+   "choices": [
+    "Basket",
+    "Backpack",
+    "Sidecar"
+   ],
+   "choices_zh": [
+    "篮子",
+    "背包",
+    "边斗"
+   ],
+   "answer": 1,
+   "explain_en": "Bara is in a backpack.",
+   "explain_zh": "Bara 在背包里。",
+   "sign_en": [
+    "Basket",
+    "Backpack",
+    "Sidecar"
+   ],
+   "sign_zh": [
+    "篮子",
+    "背包",
+    "边斗"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g2_048",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Each mooncake box holds 4 mooncakes. How many mooncakes are in 3 boxes?",
+   "q_zh": "每个盒子装 4 块月饼，3 个盒子一共多少块？",
+   "choices": [
+    "13",
+    "12",
+    "16"
+   ],
+   "choices_zh": [
+    "13",
+    "12",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "4 × 3 = 12.",
+   "explain_zh": "4 × 3 = 12。",
+   "sign_en": [
+    "13",
+    "12",
+    "16"
+   ],
+   "sign_zh": [
+    "13",
+    "12",
+    "16"
+   ],
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_049",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} packs 17 mooncakes, then 28 more. How many mooncakes now?",
+   "q_zh": "{name} 先摆了 17 块月饼，又摆了 28 块，现在一共几块？",
+   "choices": [
+    "46",
+    "45",
+    "55",
+    "11"
+   ],
+   "choices_zh": [
+    "46",
+    "45",
+    "55",
+    "11"
+   ],
+   "answer": 1,
+   "explain_en": "17 + 28 = 45.",
+   "explain_zh": "17 + 28 = 45。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_050",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I sit on Flora's back. Little Bara rides safely inside me while she skates. What am I?",
+   "q_zh": "中秋谜：我在 Flora 背上，小 Bara 安安稳稳地坐在我里面，她一边滑一边带着我。打一物，是什么？",
+   "choices": [
+    "A suitcase on wheels",
+    "A bucket",
+    "A hat",
+    "A backpack"
+   ],
+   "choices_zh": [
+    "带轮箱子",
+    "水桶",
+    "帽子",
+    "背包"
+   ],
+   "answer": 3,
+   "explain_en": "Bara rides in a small backpack.",
+   "explain_zh": "Bara 是坐在小背包里的。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_051",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} has 1 five-yuan note and 3 one-yuan coins ready for mooncakes. How many yuan in all?",
+   "q_zh": "{name} 准备买月饼，有 1 张五元和 3 个一元硬币，一共多少元？",
+   "choices": [
+    "8",
+    "4",
+    "9",
+    "13"
+   ],
+   "choices_zh": [
+    "8",
+    "4",
+    "9",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "1 × 5 + 3 = 8.",
+   "explain_zh": "1 × 5 + 3 = 8。",
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l6g2_052",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} buys 4 lanterns at 5 yuan each and pays 50 yuan. How many yuan change?",
+   "q_zh": "{name} 买了 4 盏灯笼，每盏 5 元，付了 50 元，找回多少元？",
+   "choices": [
+    "35",
+    "20",
+    "30",
+    "29"
+   ],
+   "choices_zh": [
+    "35",
+    "20",
+    "30",
+    "29"
+   ],
+   "answer": 2,
+   "explain_en": "50 - 4 × 5 = 30.",
+   "explain_zh": "50 - 4 × 5 = 30。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l6g2_053",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The mooncake stall tickets are numbered 18, 26, 34. What is the next number?",
+   "q_zh": "月饼摊的取号是 18、26、34，下一个号码是几？",
+   "choices": [
+    "50",
+    "35",
+    "43",
+    "42"
+   ],
+   "choices_zh": [
+    "50",
+    "35",
+    "43",
+    "42"
+   ],
+   "answer": 3,
+   "explain_en": "34 + 8 = 42.",
+   "explain_zh": "34 + 8 = 42。",
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l6g2_054",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "Mid-Autumn comes in which season in Hong Kong?",
+   "q_zh": "在香港，中秋是在哪个季节？",
+   "choices": [
+    "the depth of winter only",
+    "autumn",
+    "early spring planting time",
+    "the hottest midsummer week only"
+   ],
+   "choices_zh": [
+    "只有深冬",
+    "秋天",
+    "早春播种时",
+    "只有最热的盛夏那一周"
+   ],
+   "answer": 1,
+   "explain_en": "Mid-Autumn is an autumn festival.",
+   "explain_zh": "中秋是秋天的节日。",
+   "qtype": "earth_sun_seasons",
+   "qtype_zh": "太阳与四季"
+  },
+  {
+   "id": "l6g2_055",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "easy",
+   "q_en": "Festival riddle: I am made of paper or silk, hang in the street, and glow after dark on Mid-Autumn night. What am I?",
+   "q_zh": "中秋谜：我常常是纸或绸做的，挂在街上，中秋夜里会发亮。打一物，是什么？",
+   "choices": [
+    "A shoe",
+    "A lantern",
+    "A spoon",
+    "A stone"
+   ],
+   "choices_zh": [
+    "鞋子",
+    "灯笼",
+    "勺子",
+    "石头"
+   ],
+   "answer": 1,
+   "explain_en": "A lantern is hung up and glows at night.",
+   "explain_zh": "灯笼挂起来，夜里会发亮。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g2_056",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} packs 15 mooncakes, then 14 more. How many mooncakes now?",
+   "q_zh": "{name} 先摆了 15 块月饼，又摆了 14 块，现在一共几块？",
+   "choices": [
+    "29",
+    "30",
+    "39",
+    "1"
+   ],
+   "choices_zh": [
+    "29",
+    "30",
+    "39",
+    "1"
+   ],
+   "answer": 0,
+   "explain_en": "15 + 14 = 29.",
+   "explain_zh": "15 + 14 = 29。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_057",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 99 mooncakes and Bara's backpack holds 79. How many more does Flora have?",
+   "q_zh": "Flora 有 99 块月饼，Bara 的背包里有 79 块，Flora 比 Bara 多几块？",
+   "choices": [
+    "20",
+    "21",
+    "23",
+    "19"
+   ],
+   "choices_zh": [
+    "20",
+    "21",
+    "23",
+    "19"
+   ],
+   "answer": 0,
+   "explain_en": "99 - 79 = 20.",
+   "explain_zh": "99 - 79 = 20。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l6g2_058",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "midautumn",
+   "difficulty": "easy",
+   "q_en": "What do people often eat now?",
+   "q_zh": "过这个节常吃什么？",
+   "choices": [
+    "Mooncakes",
+    "Ski boots",
+    "Sand"
+   ],
+   "choices_zh": [
+    "月饼",
+    "滑雪靴",
+    "沙子"
+   ],
+   "answer": 0,
+   "explain_en": "Mooncakes are the festival food.",
+   "explain_zh": "这个节常吃月饼。",
+   "sign_en": [
+    "Mooncakes",
+    "Ski boots",
+    "Sand"
+   ],
+   "sign_zh": [
+    "月饼",
+    "滑雪靴",
+    "沙子"
+   ],
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g2_059",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The mooncake stall tickets are numbered 7, 11, 15. What is the next number?",
+   "q_zh": "月饼摊的取号是 7、11、15，下一个号码是几？",
+   "choices": [
+    "16",
+    "20",
+    "19",
+    "23"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "19",
+    "23"
+   ],
+   "answer": 2,
+   "explain_en": "15 + 4 = 19.",
+   "explain_zh": "15 + 4 = 19。",
+   "qtype": "number_pattern",
+   "qtype_zh": "数列找规律（下一个数）"
+  },
+  {
+   "id": "l6g2_060",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 9 bundles of 10 lanterns and 0 single ones. How many lanterns is that?",
+   "q_zh": "Flora 有 9 捆灯笼（每捆 10 盏）和 0 盏散的，一共多少盏？",
+   "choices": [
+    "100",
+    "90",
+    "9",
+    "91"
+   ],
+   "choices_zh": [
+    "100",
+    "90",
+    "9",
+    "91"
+   ],
+   "answer": 1,
+   "explain_en": "9 × 10 + 0 = 90.",
+   "explain_zh": "9 × 10 + 0 = 90。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l6g2_061",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "On Mid-Autumn night the moon is usually ____.",
+   "q_zh": "中秋夜里，月亮通常是____的。",
+   "choices": [
+    "full and round",
+    "a thin new sliver only",
+    "not in the sky at all",
+    "square"
+   ],
+   "choices_zh": [
+    "又满又圆",
+    "只有细细的新月牙",
+    "天上根本没有",
+    "方形的"
+   ],
+   "answer": 0,
+   "explain_en": "Mid-Autumn is set at the full moon.",
+   "explain_zh": "中秋定在圆月的那天。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历（中秋日期）"
+  },
+  {
+   "id": "l6g2_062",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "A stall has 81 mooncakes and sells 27. How many mooncakes are left?",
+   "q_zh": "小摊有 81 块月饼，卖出 27 块，还剩几块？",
+   "choices": [
+    "54",
+    "53",
+    "55",
+    "108"
+   ],
+   "choices_zh": [
+    "54",
+    "53",
+    "55",
+    "108"
+   ],
+   "answer": 0,
+   "explain_en": "81 - 27 = 54.",
+   "explain_zh": "81 - 27 = 54。",
+   "qtype": "subtraction",
+   "qtype_zh": "减法（还剩多少）"
+  },
+  {
+   "id": "l6g2_063",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora buys 3 lanterns at 3 yuan each and pays 20 yuan. How many yuan change?",
+   "q_zh": "Flora 买了 3 盏灯笼，每盏 3 元，付了 20 元，找回多少元？",
+   "choices": [
+    "14",
+    "11",
+    "9"
+   ],
+   "choices_zh": [
+    "14",
+    "11",
+    "9"
+   ],
+   "answer": 1,
+   "explain_en": "20 - 3 × 3 = 11.",
+   "explain_zh": "20 - 3 × 3 = 11。",
+   "sign_en": [
+    "14",
+    "11",
+    "9"
+   ],
+   "sign_zh": [
+    "14",
+    "11",
+    "9"
+   ],
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l6g2_064",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "4 stalls each hang 2 pomelos. How many pomelos in all?",
+   "q_zh": "4 个摊位每家挂 2 个柚子，一共多少个？",
+   "choices": [
+    "4",
+    "8",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "4",
+    "8",
+    "10",
+    "6"
+   ],
+   "answer": 1,
+   "explain_en": "2 × 4 = 8.",
+   "explain_zh": "2 × 4 = 8。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_065",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Auntie makes 8 trays of 4 mooncakes, then 3 more mooncakes. How many mooncakes in all?",
+   "q_zh": "阿嫲摆了 8 盘月饼，每盘 4 块，又摆了 3 块，一共多少块？",
+   "choices": [
+    "15",
+    "36",
+    "27",
+    "35"
+   ],
+   "choices_zh": [
+    "15",
+    "36",
+    "27",
+    "35"
+   ],
+   "answer": 3,
+   "explain_en": "8 × 4 + 3 = 35.",
+   "explain_zh": "8 × 4 + 3 = 35。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g2_066",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 58 mooncakes and Bara's backpack holds 51. How many more does Flora have?",
+   "q_zh": "Flora 有 58 块月饼，Bara 的背包里有 51 块，Flora 比 Bara 多几块？",
+   "choices": [
+    "8",
+    "7",
+    "109",
+    "10"
+   ],
+   "choices_zh": [
+    "8",
+    "7",
+    "109",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "58 - 51 = 7.",
+   "explain_zh": "58 - 51 = 7。",
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l6g2_067",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "The hill at the end is ____.",
+   "q_zh": "终点那座山是____。",
+   "choices": [
+    "A wheat field",
+    "A coral reef",
+    "The Peak"
+   ],
+   "choices_zh": [
+    "麦田",
+    "珊瑚礁",
+    "太平山"
+   ],
+   "answer": 2,
+   "explain_en": "The finish is at the Peak.",
+   "explain_zh": "终点在太平山。",
+   "sign_en": [
+    "A wheat field",
+    "A coral reef",
+    "The Peak"
+   ],
+   "sign_zh": [
+    "麦田",
+    "珊瑚礁",
+    "太平山"
+   ],
+   "qtype": "hongkong_landmark",
+   "qtype_zh": "香港地标（中环/维港/太平山）"
+  },
+  {
+   "id": "l6g2_068",
+   "level": 6,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "easy",
+   "q_en": "In the word 中秋, the character 月 is about the ____.",
+   "q_zh": "在“中秋”这个词里，字“月”说的是____。",
+   "choices": [
+    "wind",
+    "fire",
+    "salt",
+    "moon"
+   ],
+   "choices_zh": [
+    "风",
+    "火",
+    "盐",
+    "月亮"
+   ],
+   "answer": 3,
+   "explain_en": "月 means moon.",
+   "explain_zh": "“月”的意思是月亮。",
+   "qtype": "zh_character",
+   "qtype_zh": "汉字字义"
+  },
+  {
+   "id": "l6g2_069",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 19 lanterns and then hangs 8 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 19 盏灯笼，又挂了 8 盏，一共几盏？",
+   "choices": [
+    "27",
+    "11",
+    "37"
+   ],
+   "choices_zh": [
+    "27",
+    "11",
+    "37"
+   ],
+   "answer": 0,
+   "explain_en": "19 + 8 = 27.",
+   "explain_zh": "19 + 8 = 27。",
+   "sign_en": [
+    "27",
+    "11",
+    "37"
+   ],
+   "sign_zh": [
+    "27",
+    "11",
+    "37"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_070",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 23 lanterns and then hangs 19 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 23 盏灯笼，又挂了 19 盏，一共几盏？",
+   "choices": [
+    "52",
+    "4",
+    "42",
+    "43"
+   ],
+   "choices_zh": [
+    "52",
+    "4",
+    "42",
+    "43"
+   ],
+   "answer": 2,
+   "explain_en": "23 + 19 = 42.",
+   "explain_zh": "23 + 19 = 42。",
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_071",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Auntie has 4 packs of 100 mooncake boxes, 3 packs of 10 and 6 single boxes. How many boxes is that?",
+   "q_zh": "阿嫲有 4 包 100 个的月饼盒、3 包 10 个的和 6 个散的，一共多少个？",
+   "choices": [
+    "346",
+    "437",
+    "436",
+    "446"
+   ],
+   "choices_zh": [
+    "346",
+    "437",
+    "436",
+    "446"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 100 + 3 × 10 + 6 = 436.",
+   "explain_zh": "4 × 100 + 3 × 10 + 6 = 436。",
+   "qtype": "place_value",
+   "qtype_zh": "数位（几个百/十/一）"
+  },
+  {
+   "id": "l6g2_072",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "easy",
+   "q_en": "A Hong Kong tram is a ____.",
+   "q_zh": "香港有轨电车常叫____。",
+   "choices": [
+    "Sleigh",
+    "Submarine",
+    "Ding-ding"
+   ],
+   "choices_zh": [
+    "雪橇",
+    "潜水艇",
+    "叮叮车"
+   ],
+   "answer": 2,
+   "explain_en": "It is nicknamed a ding-ding tram.",
+   "explain_zh": "它的绰号是叮叮车。",
+   "sign_en": [
+    "Sleigh",
+    "Submarine",
+    "Ding-ding"
+   ],
+   "sign_zh": [
+    "雪橇",
+    "潜水艇",
+    "叮叮车"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g2_073",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "midautumn",
+   "difficulty": "easy",
+   "q_en": "At night people go out to ____.",
+   "q_zh": "夜里人们出去是为了____。",
+   "choices": [
+    "Plant rice",
+    "Build a snowman",
+    "Watch the moon"
+   ],
+   "choices_zh": [
+    "种水稻",
+    "堆雪人",
+    "赏月"
+   ],
+   "answer": 2,
+   "explain_en": "They watch the moon.",
+   "explain_zh": "他们去赏月。",
+   "sign_en": [
+    "Plant rice",
+    "Build a snowman",
+    "Watch the moon"
+   ],
+   "sign_zh": [
+    "种水稻",
+    "堆雪人",
+    "赏月"
+   ],
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g2_074",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "easy",
+   "q_en": "Mid-Autumn Festival falls on which day of the eighth lunar month?",
+   "q_zh": "中秋节在农历八月的哪一天？",
+   "choices": [
+    "The 15th",
+    "The 1st",
+    "The 30th",
+    "The 5th"
+   ],
+   "choices_zh": [
+    "十五",
+    "初一",
+    "三十",
+    "初五"
+   ],
+   "answer": 0,
+   "explain_en": "It is the 15th day of the eighth lunar month.",
+   "explain_zh": "是农历八月十五。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g2_075",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "easy",
+   "q_en": "We can see a hanging lantern at night because it ____.",
+   "q_zh": "夜里能看见挂着的灯笼，是因为它____。",
+   "choices": [
+    "gives off light",
+    "hides under the road",
+    "is completely black",
+    "makes only a smell"
+   ],
+   "choices_zh": [
+    "自己发光",
+    "藏在路下面",
+    "是全黑的",
+    "只发出气味"
+   ],
+   "answer": 0,
+   "explain_en": "A lantern is a light source.",
+   "explain_zh": "灯笼是光源，会发光。",
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（海港灯火/回声）"
+  },
+  {
+   "id": "l6g2_076",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "The stall hangs 13 lanterns and then hangs 31 more. How many lanterns altogether?",
+   "q_zh": "摊位先挂了 13 盏灯笼，又挂了 31 盏，一共几盏？",
+   "choices": [
+    "44",
+    "45",
+    "54"
+   ],
+   "choices_zh": [
+    "44",
+    "45",
+    "54"
+   ],
+   "answer": 0,
+   "explain_en": "13 + 31 = 44.",
+   "explain_zh": "13 + 31 = 44。",
+   "sign_en": [
+    "44",
+    "45",
+    "54"
+   ],
+   "sign_zh": [
+    "44",
+    "45",
+    "54"
+   ],
+   "qtype": "addition",
+   "qtype_zh": "加法（合起来）"
+  },
+  {
+   "id": "l6g2_077",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "12 mooncakes are shared equally among 6 children. How many does each child get?",
+   "q_zh": "12 块月饼平均分给 6 个孩子，每人几块？",
+   "choices": [
+    "8",
+    "6",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "8",
+    "6",
+    "2",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "12 ÷ 6 = 2.",
+   "explain_zh": "12 ÷ 6 = 2。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l6g2_078",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora starts roller-skating through Central at 6:05 and stops at 6:20. How many minutes did she skate?",
+   "q_zh": "Flora 6:05 开始在中环滑轮滑，6:20 停下，滑了多少分钟？",
+   "choices": [
+    "15",
+    "25",
+    "75"
+   ],
+   "choices_zh": [
+    "15",
+    "25",
+    "75"
+   ],
+   "answer": 0,
+   "explain_en": "20 - 5 = 15.",
+   "explain_zh": "20 - 5 = 15。",
+   "sign_en": [
+    "15",
+    "25",
+    "75"
+   ],
+   "sign_zh": [
+    "15",
+    "25",
+    "75"
+   ],
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l6g2_079",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "{name} counts festival change at the mooncake stall: 3 ten-yuan notes, 4 five-yuan notes and 5 one-yuan coins. How many yuan is that?",
+   "q_zh": "{name} 在月饼摊数零钱：有 3 张十元、4 张五元和 5 个一元硬币，一共多少元？",
+   "choices": [
+    "65",
+    "55",
+    "12"
+   ],
+   "choices_zh": [
+    "65",
+    "55",
+    "12"
+   ],
+   "answer": 1,
+   "explain_en": "3 × 10 + 4 × 5 + 5 = 55.",
+   "explain_zh": "3 × 10 + 4 × 5 + 5 = 55。",
+   "sign_en": [
+    "65",
+    "55",
+    "12"
+   ],
+   "sign_zh": [
+    "65",
+    "55",
+    "12"
+   ],
+   "qtype": "money_coins",
+   "qtype_zh": "钱币换算"
+  },
+  {
+   "id": "l6g2_080",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "easy",
+   "q_en": "Flora has 43 mooncakes and Bara's backpack holds 15. How many more does Flora have?",
+   "q_zh": "Flora 有 43 块月饼，Bara 的背包里有 15 块，Flora 比 Bara 多几块？",
+   "choices": [
+    "27",
+    "31",
+    "28"
+   ],
+   "choices_zh": [
+    "27",
+    "31",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "43 - 15 = 28.",
+   "explain_zh": "43 - 15 = 28。",
+   "sign_en": [
+    "27",
+    "31",
+    "28"
+   ],
+   "sign_zh": [
+    "27",
+    "31",
+    "28"
+   ],
+   "qtype": "sub_compare",
+   "qtype_zh": "比较相差（多多少/高多少）"
+  },
+  {
+   "id": "l6g2_081",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "At the Peak lookout, Auntie holds out a warm round pastry for Flora and Bara. What is it?",
+   "q_zh": "在太平山观景台，阿嫲向 Flora 和 Bara 递出一块热乎乎的圆形点心。那是什么？",
+   "choices": [
+    "a metal bolt",
+    "a mooncake",
+    "a ski boot",
+    "a bag of sand"
+   ],
+   "choices_zh": [
+    "金属螺栓",
+    "月饼",
+    "滑雪靴",
+    "一袋沙"
+   ],
+   "answer": 1,
+   "explain_en": "Auntie shares a mooncake at the Peak.",
+   "explain_zh": "阿嫲在山顶把月饼递给她们。",
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g2_082",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "Flora skates all the way to the Peak so that she and Auntie can ____ together.",
+   "q_zh": "Flora 一路滑到太平山，是为了和阿嫲一起____。",
+   "choices": [
+    "dig a snow cave",
+    "carve ice statues",
+    "watch the moon",
+    "plant winter wheat"
+   ],
+   "choices_zh": [
+    "挖雪洞",
+    "雕冰雕",
+    "赏月",
+    "种冬小麦"
+   ],
+   "answer": 2,
+   "explain_en": "They meet to watch the moon and share food.",
+   "explain_zh": "她们是来赏月、分享食物的。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g2_083",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Near the Peak, Flora buys 2 mooncakes at 7 yuan each and pays with 20 yuan. How much change does she get?",
+   "q_zh": "在太平山附近，Flora 买了 2 块月饼，每块 7 元，付了 20 元，应找回多少元？",
+   "choices": [
+    "7",
+    "5",
+    "6",
+    "14"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "6",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "20 - 2 × 7 = 6.",
+   "explain_zh": "20 - 2 × 7 = 6。",
+   "qtype": "money_change",
+   "qtype_zh": "找零"
+  },
+  {
+   "id": "l6g2_084",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Along the harbour there are 3 trams, each with 5 passengers. How many passengers are there?",
+   "q_zh": "维港边有 3 支叮叮车，每队有 5 名乘客，一共有多少名乘客？",
+   "choices": [
+    "15",
+    "16",
+    "20",
+    "12"
+   ],
+   "choices_zh": [
+    "15",
+    "16",
+    "20",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "5 × 3 = 15.",
+   "explain_zh": "5 × 3 = 15。",
+   "qtype": "mult_equal_groups",
+   "qtype_zh": "乘法（几个几/单价×数量）"
+  },
+  {
+   "id": "l6g2_085",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "At the harbour, 54 festival lanterns are shared equally by 9 trams. How many does each team get?",
+   "q_zh": "在维港，54 盏节日灯笼平均分给 9 支叮叮车，每队几面？",
+   "choices": [
+    "5",
+    "6",
+    "45",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "6",
+    "45",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "54 ÷ 9 = 6.",
+   "explain_zh": "54 ÷ 9 = 6。",
+   "qtype": "div_equal_share",
+   "qtype_zh": "除法（平均分/每份多少）"
+  },
+  {
+   "id": "l6g2_086",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The Mid-Autumn evening by the harbour starts at 8:10 and ends at 8:30. How many minutes does it last?",
+   "q_zh": "维港边的中秋赏月 8:10 开始，8:30 结束，一共多少分钟？",
+   "choices": [
+    "15",
+    "80",
+    "20",
+    "40"
+   ],
+   "choices_zh": [
+    "15",
+    "80",
+    "20",
+    "40"
+   ],
+   "answer": 2,
+   "explain_en": "30 - 10 = 20.",
+   "explain_zh": "30 - 10 = 20。",
+   "qtype": "time_elapsed",
+   "qtype_zh": "经过时间"
+  },
+  {
+   "id": "l6g2_087",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora sees 2 square-shaped tags on a tram by the harbour. How many sides do they have altogether?",
+   "q_zh": "Flora 在维港的叮叮车上看见 2 面正方形的旗子，它们一共有几条边？",
+   "choices": [
+    "8",
+    "9",
+    "6",
+    "4"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "6",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "2 × 4 = 8.",
+   "explain_zh": "2 × 4 = 8。",
+   "qtype": "shape_sides",
+   "qtype_zh": "图形的边和角"
+  },
+  {
+   "id": "l6g2_088",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The harbour had 332 festival visitors today. Round 332 to the nearest hundred.",
+   "q_zh": "今天维港的节日游客有 332 人，把 332 四舍五入到百位。",
+   "choices": [
+    "300",
+    "200",
+    "400",
+    "332"
+   ],
+   "choices_zh": [
+    "300",
+    "200",
+    "400",
+    "332"
+   ],
+   "answer": 0,
+   "explain_en": "332 rounded to the nearest hundred is 300.",
+   "explain_zh": "332 四舍五入到百位是 300。",
+   "qtype": "rounding",
+   "qtype_zh": "四舍五入/估算"
+  }
+ ]
+}

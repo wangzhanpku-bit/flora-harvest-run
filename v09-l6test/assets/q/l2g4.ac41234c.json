@@ -1,0 +1,3286 @@
+{
+ "level": 2,
+ "level_name_en": "Stanley Park Halloween Ride",
+ "level_name_zh": "斯坦利公园·万圣夜骑行",
+ "grade": 4,
+ "version": 1,
+ "fields": "same as level-1 banks; sections: seawall (stop-and-answer, up to 4 choices) and forest_fork (≤3 choices → left/middle/right trail; sign_en/sign_zh for signs); {name} = player name; English on top, Chinese below",
+ "questions": [
+  {
+   "id": "l2g4_001",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "36 candies are shared by 6 trick-or-treaters. How many each?",
+   "q_zh": "36 颗糖平分给 6 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "6",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain_en": "36 ÷ 6 = 6.",
+   "explain_zh": "36÷6=6。",
+   "sign_en": [
+    "6",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "l2g4_002",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "36 candies are shared by 3 trick-or-treaters. How many each?",
+   "q_zh": "36 颗糖平分给 3 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "13",
+    "12",
+    "15"
+   ],
+   "choices_zh": [
+    "13",
+    "12",
+    "15"
+   ],
+   "answer": 1,
+   "explain_en": "36 ÷ 3 = 12.",
+   "explain_zh": "36÷3=12。",
+   "sign_en": [
+    "13",
+    "12",
+    "15"
+   ],
+   "sign_zh": [
+    "13",
+    "12",
+    "15"
+   ]
+  },
+  {
+   "id": "l2g4_003",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "28 candies are shared by 4 trick-or-treaters. How many each?",
+   "q_zh": "28 颗糖平分给 4 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "6",
+    "7",
+    "8"
+   ],
+   "choices_zh": [
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "28 ÷ 4 = 7.",
+   "explain_zh": "28÷4=7。",
+   "sign_en": [
+    "6",
+    "7",
+    "8"
+   ],
+   "sign_zh": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "id": "l2g4_004",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "63 candies are shared by 9 trick-or-treaters. How many each?",
+   "q_zh": "63 颗糖平分给 9 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "7",
+    "9",
+    "8",
+    "6"
+   ],
+   "choices_zh": [
+    "7",
+    "9",
+    "8",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "63 ÷ 9 = 7.",
+   "explain_zh": "63÷9=7。"
+  },
+  {
+   "id": "l2g4_005",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "48 candies are shared by 4 trick-or-treaters. How many each?",
+   "q_zh": "48 颗糖平分给 4 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "12",
+    "9",
+    "11",
+    "13"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "11",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "48 ÷ 4 = 12.",
+   "explain_zh": "48÷4=12。"
+  },
+  {
+   "id": "l2g4_006",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "60 candies are shared by 6 trick-or-treaters. How many each?",
+   "q_zh": "60 颗糖平分给 6 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "10",
+    "7",
+    "13"
+   ],
+   "choices_zh": [
+    "10",
+    "7",
+    "13"
+   ],
+   "answer": 0,
+   "explain_en": "60 ÷ 6 = 10.",
+   "explain_zh": "60÷6=10。",
+   "sign_en": [
+    "10",
+    "7",
+    "13"
+   ],
+   "sign_zh": [
+    "10",
+    "7",
+    "13"
+   ]
+  },
+  {
+   "id": "l2g4_007",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40 candies are shared by 8 trick-or-treaters. How many each?",
+   "q_zh": "40 颗糖平分给 8 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "7",
+    "5",
+    "8"
+   ],
+   "choices_zh": [
+    "7",
+    "5",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "40 ÷ 8 = 5.",
+   "explain_zh": "40÷8=5。",
+   "sign_en": [
+    "7",
+    "5",
+    "8"
+   ],
+   "sign_zh": [
+    "7",
+    "5",
+    "8"
+   ]
+  },
+  {
+   "id": "l2g4_008",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "60 candies are shared by 6 trick-or-treaters. How many each?",
+   "q_zh": "60 颗糖平分给 6 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "11",
+    "12",
+    "10"
+   ],
+   "choices_zh": [
+    "11",
+    "12",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "60 ÷ 6 = 10.",
+   "explain_zh": "60÷6=10。",
+   "sign_en": [
+    "11",
+    "12",
+    "10"
+   ],
+   "sign_zh": [
+    "11",
+    "12",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g4_009",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "99 candies are shared by 9 trick-or-treaters. How many each?",
+   "q_zh": "99 颗糖平分给 9 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "12",
+    "9",
+    "11"
+   ],
+   "choices_zh": [
+    "12",
+    "9",
+    "11"
+   ],
+   "answer": 2,
+   "explain_en": "99 ÷ 9 = 11.",
+   "explain_zh": "99÷9=11。",
+   "sign_en": [
+    "12",
+    "9",
+    "11"
+   ],
+   "sign_zh": [
+    "12",
+    "9",
+    "11"
+   ]
+  },
+  {
+   "id": "l2g4_010",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "54 candies are shared by 6 trick-or-treaters. How many each?",
+   "q_zh": "54 颗糖平分给 6 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "9",
+    "12",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "12",
+    "10"
+   ],
+   "answer": 0,
+   "explain_en": "54 ÷ 6 = 9.",
+   "explain_zh": "54÷6=9。",
+   "sign_en": [
+    "9",
+    "12",
+    "10"
+   ],
+   "sign_zh": [
+    "9",
+    "12",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g4_011",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "81 candies are shared by 9 trick-or-treaters. How many each?",
+   "q_zh": "81 颗糖平分给 9 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "9",
+    "10",
+    "6"
+   ],
+   "choices_zh": [
+    "9",
+    "10",
+    "6"
+   ],
+   "answer": 0,
+   "explain_en": "81 ÷ 9 = 9.",
+   "explain_zh": "81÷9=9。",
+   "sign_en": [
+    "9",
+    "10",
+    "6"
+   ],
+   "sign_zh": [
+    "9",
+    "10",
+    "6"
+   ]
+  },
+  {
+   "id": "l2g4_012",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "18 candies are shared by 3 trick-or-treaters. How many each?",
+   "q_zh": "18 颗糖平分给 3 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "3",
+    "8",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "3",
+    "8",
+    "6",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "18 ÷ 3 = 6.",
+   "explain_zh": "18÷3=6。"
+  },
+  {
+   "id": "l2g4_013",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "70 candies are shared by 7 trick-or-treaters. How many each?",
+   "q_zh": "70 颗糖平分给 7 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "10",
+    "13",
+    "11",
+    "12"
+   ],
+   "choices_zh": [
+    "10",
+    "13",
+    "11",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "70 ÷ 7 = 10.",
+   "explain_zh": "70÷7=10。"
+  },
+  {
+   "id": "l2g4_014",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "56 candies are shared by 7 trick-or-treaters. How many each?",
+   "q_zh": "56 颗糖平分给 7 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "5",
+    "11",
+    "8"
+   ],
+   "choices_zh": [
+    "5",
+    "11",
+    "8"
+   ],
+   "answer": 2,
+   "explain_en": "56 ÷ 7 = 8.",
+   "explain_zh": "56÷7=8。",
+   "sign_en": [
+    "5",
+    "11",
+    "8"
+   ],
+   "sign_zh": [
+    "5",
+    "11",
+    "8"
+   ]
+  },
+  {
+   "id": "l2g4_015",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40 candies are shared by 4 trick-or-treaters. How many each?",
+   "q_zh": "40 颗糖平分给 4 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "10",
+    "13",
+    "9"
+   ],
+   "choices_zh": [
+    "10",
+    "13",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "40 ÷ 4 = 10.",
+   "explain_zh": "40÷4=10。",
+   "sign_en": [
+    "10",
+    "13",
+    "9"
+   ],
+   "sign_zh": [
+    "10",
+    "13",
+    "9"
+   ]
+  },
+  {
+   "id": "l2g4_016",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "42 candies are shared by 7 trick-or-treaters. How many each?",
+   "q_zh": "42 颗糖平分给 7 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "6",
+    "9",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "9",
+    "7",
+    "4"
+   ],
+   "answer": 0,
+   "explain_en": "42 ÷ 7 = 6.",
+   "explain_zh": "42÷7=6。"
+  },
+  {
+   "id": "l2g4_017",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "18 candies are shared by 3 trick-or-treaters. How many each?",
+   "q_zh": "18 颗糖平分给 3 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "8",
+    "3",
+    "6"
+   ],
+   "choices_zh": [
+    "8",
+    "3",
+    "6"
+   ],
+   "answer": 2,
+   "explain_en": "18 ÷ 3 = 6.",
+   "explain_zh": "18÷3=6。",
+   "sign_en": [
+    "8",
+    "3",
+    "6"
+   ],
+   "sign_zh": [
+    "8",
+    "3",
+    "6"
+   ]
+  },
+  {
+   "id": "l2g4_018",
+   "level": 2,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "56 candies are shared by 7 trick-or-treaters. How many each?",
+   "q_zh": "56 颗糖平分给 7 个讨糖的孩子，每人几颗？",
+   "choices": [
+    "5",
+    "8",
+    "9",
+    "10"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "56 ÷ 7 = 8.",
+   "explain_zh": "56÷7=8。"
+  },
+  {
+   "id": "l2g4_019",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Stanley Park is in which city?",
+   "q_zh": "斯坦利公园在哪个城市？",
+   "choices": [
+    "Calgary",
+    "Vancouver",
+    "Victoria",
+    "Toronto"
+   ],
+   "choices_zh": [
+    "卡尔加里",
+    "温哥华",
+    "维多利亚",
+    "多伦多"
+   ],
+   "answer": 1,
+   "explain_en": "It is right next to downtown Vancouver.",
+   "explain_zh": "它就在温哥华市中心旁边。"
+  },
+  {
+   "id": "l2g4_020",
+   "level": 2,
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore?",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Golden Gate",
+    "Tower Bridge",
+    "Lions Gate",
+    "Port Mann"
+   ],
+   "choices_zh": [
+    "金门大桥",
+    "伦敦塔桥",
+    "狮门大桥",
+    "曼港大桥"
+   ],
+   "answer": 2,
+   "explain_en": "Lions Gate Bridge opened in 1938. It links Stanley Park to the North Shore.",
+   "explain_zh": "狮门大桥 1938 年通车，连接斯坦利公园和北岸。"
+  },
+  {
+   "id": "l2g4_021",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Nine O'Clock Gun fires every night at…",
+   "q_zh": "Nine O'Clock Gun 每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "半夜 12 点",
+    "晚上 9 点"
+   ],
+   "answer": 2,
+   "explain_en": "It's been a Vancouver tradition for over 100 years.",
+   "explain_zh": "这是温哥华一百多年的传统。",
+   "sign_en": [
+    "6:00 pm",
+    "Midnight",
+    "9:00 pm"
+   ],
+   "sign_zh": [
+    "晚上 6 点",
+    "半夜 12 点",
+    "晚上 9 点"
+   ]
+  },
+  {
+   "id": "l2g4_022",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Raccoons are nocturnal. That means they are active…",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At noon",
+    "Never",
+    "Only in winter",
+    "At night"
+   ],
+   "choices_zh": [
+    "中午",
+    "从来不动",
+    "只在冬天",
+    "晚上"
+   ],
+   "answer": 3,
+   "explain_en": "Nocturnal animals sleep in the day.",
+   "explain_zh": "夜行动物白天睡觉。"
+  },
+  {
+   "id": "l2g4_023",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Bats are…",
+   "q_zh": "蝙蝠属于哪一类动物？",
+   "choices": [
+    "Mammals",
+    "Birds",
+    "Insects"
+   ],
+   "choices_zh": [
+    "哺乳动物",
+    "鸟类",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Bats have fur and feed milk to babies.",
+   "explain_zh": "蝙蝠有毛，用奶喂宝宝。",
+   "sign_en": [
+    "Mammals",
+    "Birds",
+    "Insects"
+   ],
+   "sign_zh": [
+    "哺乳动物",
+    "鸟类",
+    "昆虫"
+   ]
+  },
+  {
+   "id": "l2g4_024",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park?",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Great blue heron",
+    "Penguin",
+    "Ostrich",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "大蓝鹭",
+    "企鹅",
+    "鸵鸟",
+    "火烈鸟"
+   ],
+   "answer": 0,
+   "explain_en": "Herons build big nests high in the trees.",
+   "explain_zh": "大蓝鹭在高高的树上搭大窝。"
+  },
+  {
+   "id": "l2g4_025",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, found all over Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是什么树？",
+   "choices": [
+    "Palm tree",
+    "Red cedar",
+    "Maple"
+   ],
+   "choices_zh": [
+    "棕榈树",
+    "红雪松",
+    "枫树"
+   ],
+   "answer": 1,
+   "explain_en": "The western red cedar is B.C.'s tree.",
+   "explain_zh": "西部红雪松是卑诗省的省树。",
+   "sign_en": [
+    "Palm tree",
+    "Red cedar",
+    "Maple"
+   ],
+   "sign_zh": [
+    "棕榈树",
+    "红雪松",
+    "枫树"
+   ]
+  },
+  {
+   "id": "l2g4_026",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of…",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Sand",
+    "Sugar",
+    "Air",
+    "Water"
+   ],
+   "choices_zh": [
+    "沙子",
+    "糖",
+    "空气",
+    "水"
+   ],
+   "answer": 3,
+   "explain_en": "A pumpkin is about 90% water.",
+   "explain_zh": "南瓜大约 90% 是水。"
+  },
+  {
+   "id": "l2g4_027",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Long ago in Ireland, the first jack-o'-lanterns were carved from…",
+   "q_zh": "很久以前在爱尔兰，最早的南瓜灯是用什么雕的？",
+   "choices": [
+    "Rocks",
+    "Turnips",
+    "Apples"
+   ],
+   "choices_zh": [
+    "石头",
+    "芜菁",
+    "苹果"
+   ],
+   "answer": 1,
+   "explain_en": "People switched to pumpkins in North America.",
+   "explain_zh": "到了北美，人们才改用南瓜。",
+   "sign_en": [
+    "Rocks",
+    "Turnips",
+    "Apples"
+   ],
+   "sign_zh": [
+    "石头",
+    "芜菁",
+    "苹果"
+   ]
+  },
+  {
+   "id": "l2g4_028",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which star do we see that lights up the Moon?",
+   "q_zh": "月亮的光其实来自哪颗星？",
+   "choices": [
+    "Mars",
+    "The Sun",
+    "The North Star",
+    "Venus"
+   ],
+   "choices_zh": [
+    "火星",
+    "太阳",
+    "北极星",
+    "金星"
+   ],
+   "answer": 1,
+   "explain_en": "The Moon reflects sunlight.",
+   "explain_zh": "月亮反射的是太阳光。"
+  },
+  {
+   "id": "l2g4_029",
+   "level": 2,
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "On the Stanley Park seawall, bikes must ride…",
+   "q_zh": "在斯坦利公园海堤上，自行车必须朝哪个方向骑？",
+   "choices": [
+    "Backwards",
+    "Zig-zag",
+    "Any way",
+    "One way"
+   ],
+   "choices_zh": [
+    "倒着骑",
+    "绕 S 形",
+    "随便骑",
+    "单向"
+   ],
+   "answer": 3,
+   "explain_en": "Bikes go one way around the park, counter-clockwise, in their own lane.",
+   "explain_zh": "自行车在自己的车道上，绕公园逆时针单向骑行。"
+  },
+  {
+   "id": "l2g4_030",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is famous for its path along the water called the…",
+   "q_zh": "斯坦利公园沿水边的那条著名小路叫什么？",
+   "choices": [
+    "Seawall",
+    "SkyTrain",
+    "Highway"
+   ],
+   "choices_zh": [
+    "海堤",
+    "轻轨",
+    "高速公路"
+   ],
+   "answer": 0,
+   "explain_en": "People walk, run and bike on the seawall.",
+   "explain_zh": "人们在海堤上散步、跑步、骑车。",
+   "sign_en": [
+    "Seawall",
+    "SkyTrain",
+    "Highway"
+   ],
+   "sign_zh": [
+    "海堤",
+    "轻轨",
+    "高速公路"
+   ]
+  },
+  {
+   "id": "l2g4_031",
+   "level": 2,
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "How many legs does a spider have?",
+   "q_zh": "蜘蛛有几条腿？",
+   "choices": [
+    "10",
+    "6",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "10",
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "Spiders have 8 legs. Insects have 6.",
+   "explain_zh": "蜘蛛有 8 条腿，昆虫有 6 条。"
+  },
+  {
+   "id": "l2g4_032",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "What do we carve for Halloween?",
+   "q_zh": "万圣节我们会雕刻什么？",
+   "choices": [
+    "A rock",
+    "A shoe",
+    "A pumpkin"
+   ],
+   "choices_zh": [
+    "石头",
+    "鞋子",
+    "南瓜"
+   ],
+   "answer": 2,
+   "explain_en": "Carved pumpkins are called jack-o'-lanterns.",
+   "explain_zh": "雕好的南瓜叫南瓜灯。",
+   "sign_en": [
+    "A rock",
+    "A shoe",
+    "A pumpkin"
+   ],
+   "sign_zh": [
+    "石头",
+    "鞋子",
+    "南瓜"
+   ]
+  },
+  {
+   "id": "l2g4_033",
+   "level": 2,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal has a black mask on its face?",
+   "q_zh": "哪种动物脸上像戴着黑色面罩？",
+   "choices": [
+    "Rabbit",
+    "Raccoon",
+    "Canada goose",
+    "Duck"
+   ],
+   "choices_zh": [
+    "兔子",
+    "浣熊",
+    "加拿大鹅",
+    "鸭子"
+   ],
+   "answer": 1,
+   "explain_en": "Raccoons live in Stanley Park and come out at night.",
+   "explain_zh": "斯坦利公园里有浣熊，晚上出来活动。"
+  },
+  {
+   "id": "l2g4_034",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which animal says 'hoo-hoo' at night?",
+   "q_zh": "晚上“呼呼”叫的是什么动物？",
+   "choices": [
+    "Pig",
+    "Cow",
+    "Owl"
+   ],
+   "choices_zh": [
+    "猪",
+    "牛",
+    "猫头鹰"
+   ],
+   "answer": 2,
+   "explain_en": "Owls hunt at night.",
+   "explain_zh": "猫头鹰在晚上捕猎。",
+   "sign_en": [
+    "Pig",
+    "Cow",
+    "Owl"
+   ],
+   "sign_zh": [
+    "猪",
+    "牛",
+    "猫头鹰"
+   ]
+  },
+  {
+   "id": "l2g4_035",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara loves water. Would Bara like the seawall?",
+   "q_zh": "CAPYBARA！Bara 爱水，它会喜欢海堤吗？",
+   "choices": [
+    "No way",
+    "Yes!",
+    "Only in snow"
+   ],
+   "choices_zh": [
+    "才不",
+    "喜欢！",
+    "只在下雪时"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras love water, though they prefer fresh water.",
+   "explain_zh": "卡皮巴拉爱水，不过它们更喜欢淡水。"
+  },
+  {
+   "id": "l2g4_036",
+   "level": 2,
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What costume suits a capybara best?",
+   "q_zh": "CAPYBARA！哪套万圣节服装最适合卡皮巴拉？",
+   "choices": [
+    "Scuba tank",
+    "Pumpkin hat",
+    "Ice skates"
+   ],
+   "choices_zh": [
+    "氧气瓶",
+    "南瓜帽",
+    "溜冰鞋"
+   ],
+   "answer": 1,
+   "explain_en": "Bara can't skate, but a pumpkin hat looks great!",
+   "explain_zh": "Bara 不会溜冰，但戴南瓜帽超好看！",
+   "sign_en": [
+    "Scuba tank",
+    "Pumpkin hat",
+    "Ice skates"
+   ],
+   "sign_zh": [
+    "氧气瓶",
+    "南瓜帽",
+    "溜冰鞋"
+   ]
+  },
+  {
+   "id": "l2g4_037",
+   "level": 2,
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras and raccoons both come from…",
+   "q_zh": "CAPYBARA！卡皮巴拉和浣熊老家都在哪个大洲？",
+   "choices": [
+    "Asia",
+    "The Americas",
+    "Africa",
+    "Europe"
+   ],
+   "choices_zh": [
+    "亚洲",
+    "美洲",
+    "非洲",
+    "欧洲"
+   ],
+   "answer": 1,
+   "explain_en": "Capybaras are from South America; raccoons from North America.",
+   "explain_zh": "卡皮巴拉来自南美洲，浣熊来自北美洲。"
+  },
+  {
+   "id": "l2g4_038",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Which bird with a black head and white cheek is common on the seawall?",
+   "q_zh": "海堤上常见、黑脑袋白脸颊的是哪种鸟？",
+   "choices": [
+    "Penguin",
+    "Flamingo",
+    "Ostrich",
+    "Canada goose"
+   ],
+   "choices_zh": [
+    "企鹅",
+    "火烈鸟",
+    "鸵鸟",
+    "加拿大鹅"
+   ],
+   "answer": 3,
+   "explain_en": "Canada geese live around Vancouver's shore.",
+   "explain_zh": "温哥华岸边常见加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_039",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Raccoons are nocturnal. That means they are active… — recall",
+   "q_zh": "浣熊是夜行动物，意思是它们什么时候活动？",
+   "choices": [
+    "At noon",
+    "Never",
+    "At night",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "中午",
+    "从来不",
+    "晚上",
+    "只在冬天"
+   ],
+   "answer": 2,
+   "explain_en": "Nocturnal = active at night.",
+   "explain_zh": "夜行=夜里活动。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_040",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats find insects in the dark using…",
+   "q_zh": "蝙蝠在黑暗中靠什么找到虫子？",
+   "choices": [
+    "Flashlights",
+    "Smell only",
+    "Echolocation",
+    "Paper maps"
+   ],
+   "choices_zh": [
+    "手电筒",
+    "只靠嗅觉",
+    "回声定位",
+    "纸质地图"
+   ],
+   "answer": 2,
+   "explain_en": "They listen for sound echoes.",
+   "explain_zh": "听声音的回声。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_041",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Bats are… — recall",
+   "q_zh": "蝙蝠属于哪一类？",
+   "choices": [
+    "Fish",
+    "Insects",
+    "Birds",
+    "Mammals"
+   ],
+   "choices_zh": [
+    "鱼",
+    "昆虫",
+    "鸟",
+    "哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Bats are flying mammals.",
+   "explain_zh": "蝙蝠是会飞的哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_042",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Which tall bird with long legs nests in Stanley Park? — recall",
+   "q_zh": "哪种长腿高个子的鸟在斯坦利公园筑巢？",
+   "choices": [
+    "Ostrich",
+    "Penguin",
+    "Great blue heron",
+    "Flamingo"
+   ],
+   "choices_zh": [
+    "鸵鸟",
+    "企鹅",
+    "大蓝鹭",
+    "火烈鸟"
+   ],
+   "answer": 2,
+   "explain_en": "Great blue herons nest in the park.",
+   "explain_zh": "大蓝鹭在公园筑巢。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_043",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "B.C.'s official tree, common in Stanley Park, is the…",
+   "q_zh": "卑诗省的省树，斯坦利公园到处都有，是？",
+   "choices": [
+    "Cactus",
+    "Baobab",
+    "Palm tree",
+    "Western red cedar"
+   ],
+   "choices_zh": [
+    "仙人掌",
+    "猴面包树",
+    "棕榈树",
+    "西部红雪松"
+   ],
+   "answer": 3,
+   "explain_en": "Western red cedar is B.C.'s official tree.",
+   "explain_zh": "西部红雪松是卑诗省树。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_044",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Salmon swim from the ocean back up rivers to…",
+   "q_zh": "三文鱼从大海游回河里是为了？",
+   "choices": [
+    "Find candy",
+    "Hibernate",
+    "Learn to fly",
+    "Lay eggs / spawn"
+   ],
+   "choices_zh": [
+    "找糖",
+    "冬眠",
+    "学飞",
+    "产卵"
+   ],
+   "answer": 3,
+   "explain_en": "They return to freshwater to spawn.",
+   "explain_zh": "回到淡水产卵。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_045",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Owls can turn their heads about…",
+   "q_zh": "猫头鹰的头大约能转多少度？",
+   "choices": [
+    "45°",
+    "90°",
+    "720°",
+    "270°"
+   ],
+   "choices_zh": [
+    "45°",
+    "90°",
+    "720°",
+    "大约 270°"
+   ],
+   "answer": 3,
+   "explain_en": "Special neck bones allow ~270°.",
+   "explain_zh": "特别颈椎约能转 270°。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_046",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Why can the seawall path flood at a very high tide?",
+   "q_zh": "海堤小路在大潮时为什么可能被淹？",
+   "choices": [
+    "Earthquakes only",
+    "Street lights",
+    "Wind turbines",
+    "The Moon's gravity pulls the tides"
+   ],
+   "choices_zh": [
+    "只因为地震",
+    "路灯",
+    "风力发电机",
+    "月亮引力拉动潮汐"
+   ],
+   "answer": 3,
+   "explain_en": "Tides are driven mainly by the Moon.",
+   "explain_zh": "潮汐主要受月亮影响。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_047",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Fallen leaves on the forest floor break down because of…",
+   "q_zh": "森林地上的落叶为什么会慢慢分解？",
+   "choices": [
+    "Traffic",
+    "Sunscreen",
+    "Magnets",
+    "Decomposers (fungi, insects, microbes)"
+   ],
+   "choices_zh": [
+    "车流",
+    "防晒霜",
+    "磁铁",
+    "分解者（真菌、昆虫、微生物）"
+   ],
+   "answer": 3,
+   "explain_en": "Decomposers recycle nutrients.",
+   "explain_zh": "分解者循环养分。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_048",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Harbour seals in Burrard Inlet are…",
+   "q_zh": "布拉德湾里的港海豹是……",
+   "choices": [
+    "Insects",
+    "Fish",
+    "Birds",
+    "Marine mammals"
+   ],
+   "choices_zh": [
+    "昆虫",
+    "鱼",
+    "鸟",
+    "海洋哺乳动物"
+   ],
+   "answer": 3,
+   "explain_en": "Seals are sea mammals.",
+   "explain_zh": "海豹是海洋哺乳动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_049",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Beavers at Lost Lagoon are famous for…",
+   "q_zh": "迷失湖的河狸出名是因为……",
+   "choices": [
+    "Flying south",
+    "Laying swan eggs",
+    "Building dams and lodges with wood",
+    "Growing antlers"
+   ],
+   "choices_zh": [
+    "飞去南方",
+    "下天鹅蛋",
+    "用木头筑坝和巢穴",
+    "长鹿角"
+   ],
+   "answer": 2,
+   "explain_en": "Lost Lagoon has beavers — not swans as the star story.",
+   "explain_zh": "迷失湖的明星是河狸，不是天鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_050",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "A Canada goose (加拿大鹅) is a…",
+   "q_zh": "加拿大鹅属于……",
+   "choices": [
+    "Bird",
+    "Reptile",
+    "Mammal",
+    "Fish"
+   ],
+   "choices_zh": [
+    "鸟类",
+    "爬行动物",
+    "哺乳动物",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "Always 加拿大鹅, never the wrong bird name.",
+   "explain_zh": "一律写加拿大鹅。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_051",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "Spiders usually have how many legs?",
+   "q_zh": "蜘蛛一般有几条腿？",
+   "choices": [
+    "10",
+    "6",
+    "4",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "6",
+    "4",
+    "8"
+   ],
+   "answer": 3,
+   "explain_en": "Arachnids have eight legs.",
+   "explain_zh": "蛛形纲八条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_052",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Echolocation helps an animal…",
+   "q_zh": "回声定位能帮助动物……",
+   "choices": [
+    "Stop rain",
+    "Taste colours",
+    "Sense objects with sound echoes",
+    "Make candy"
+   ],
+   "choices_zh": [
+    "让雨停下",
+    "品尝颜色",
+    "用回声感知物体",
+    "做糖果"
+   ],
+   "answer": 2,
+   "explain_en": "Sound bounces back from objects.",
+   "explain_zh": "声音碰到物体再弹回。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_053",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "easy",
+   "q_en": "How many legs does a Canada goose have?",
+   "q_zh": "加拿大鹅有几条腿？",
+   "choices": [
+    "6",
+    "8",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "4",
+    "2"
+   ],
+   "answer": 3,
+   "explain_en": "Birds have two legs.",
+   "explain_zh": "鸟有两条腿。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_054",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Cedar trees in the forest help the ecosystem by…",
+   "q_zh": "雪松林里的雪松对生态的帮助是……",
+   "choices": [
+    "Providing habitat and holding soil",
+    "Making plastic",
+    "Erasing tides",
+    "Stopping the Moon"
+   ],
+   "choices_zh": [
+    "提供栖息地并固定土壤",
+    "制造塑料",
+    "消除潮汐",
+    "挡住月亮"
+   ],
+   "answer": 0,
+   "explain_en": "Trees shelter wildlife and reduce erosion.",
+   "explain_zh": "树木庇护野生动物并减少侵蚀。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_055",
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "A decomposer example in the forest is…",
+   "q_zh": "森林里分解者的例子是……",
+   "choices": [
+    "Fungi / mushrooms",
+    "Bicycle",
+    "Asphalt",
+    "Sun only"
+   ],
+   "choices_zh": [
+    "真菌/蘑菇",
+    "自行车",
+    "沥青",
+    "只有太阳"
+   ],
+   "answer": 0,
+   "explain_en": "Fungi break down dead matter.",
+   "explain_zh": "真菌分解死去的物质。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_056",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park opened in which year?",
+   "q_zh": "斯坦利公园是哪一年开放的？",
+   "choices": [
+    "1888",
+    "1776",
+    "1950",
+    "2001"
+   ],
+   "choices_zh": [
+    "1888",
+    "1776",
+    "1950",
+    "2001"
+   ],
+   "answer": 0,
+   "explain_en": "Stanley Park opened in 1888.",
+   "explain_zh": "斯坦利公园 1888 年开放。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_057",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is named after Lord Stanley. What else is named after him?",
+   "q_zh": "斯坦利公园以斯坦利勋爵命名，还有什么也以他命名？",
+   "choices": [
+    "Olympic torch",
+    "World Cup",
+    "Grey Cup",
+    "Stanley Cup"
+   ],
+   "choices_zh": [
+    "奥运火炬",
+    "世界杯",
+    "格雷杯",
+    "斯坦利杯"
+   ],
+   "answer": 3,
+   "explain_en": "The Stanley Cup shares the name.",
+   "explain_zh": "冰球斯坦利杯也是。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_058",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Stanley Park (~400 ha) compared with Central Park (~341 ha) is…",
+   "q_zh": "斯坦利公园约 400 公顷，中央公园约 341 公顷，斯坦利公园……",
+   "choices": [
+    "Half the size",
+    "Bigger",
+    "The same",
+    "Much smaller"
+   ],
+   "choices_zh": [
+    "只有一半大",
+    "更大",
+    "一样大",
+    "小很多"
+   ],
+   "answer": 1,
+   "explain_en": "Stanley Park is larger.",
+   "explain_zh": "斯坦利公园更大。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_059",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Stanley Park is on the traditional lands of which peoples?",
+   "q_zh": "斯坦利公园位于哪些原住民族的传统土地上？",
+   "choices": [
+    "Coast Salish (Musqueam, Squamish, Tsleil-Waututh)",
+    "Inca",
+    "Vikings",
+    "Maori only"
+   ],
+   "choices_zh": [
+    "海岸萨利什（Musqueam、斯阔米什、Tsleil-Waututh）",
+    "印加",
+    "维京人",
+    "只有毛利人"
+   ],
+   "answer": 0,
+   "explain_en": "Coast Salish traditional territory.",
+   "explain_zh": "海岸萨利什传统土地。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_060",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Which bridge goes from Stanley Park to the North Shore? — recall",
+   "q_zh": "哪座桥从斯坦利公园通往北岸？",
+   "choices": [
+    "Lions Gate Bridge",
+    "Tower Bridge",
+    "Port Mann",
+    "Golden Gate"
+   ],
+   "choices_zh": [
+    "狮门大桥",
+    "塔桥",
+    "福特曼桥",
+    "金门大桥"
+   ],
+   "answer": 0,
+   "explain_en": "Lions Gate links to the North Shore.",
+   "explain_zh": "狮门大桥连到北岸。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_061",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "The Nine O'Clock Gun fires every night at… — recall",
+   "q_zh": "九点炮（Nine O'Clock Gun）每天晚上几点开炮？",
+   "choices": [
+    "6:00 pm",
+    "9:00 pm",
+    "Midnight",
+    "Noon"
+   ],
+   "choices_zh": [
+    "晚上 6 点",
+    "晚上 9 点",
+    "午夜",
+    "中午"
+   ],
+   "answer": 1,
+   "explain_en": "It fires at 9 pm.",
+   "explain_zh": "每天晚上 9 点。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_062",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "hard",
+   "q_en": "Siwash Rock (Slhx̱í7lsh in Squamish) by the seawall is made of…",
+   "q_zh": "海堤边的 Siwash Rock（斯阔米什语 Slhx̱í7lsh）是什么构成的？",
+   "choices": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)"
+   ],
+   "choices_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）"
+   ],
+   "answer": 2,
+   "explain_en": "Cooled magma about 32 million years ago.",
+   "explain_zh": "约 3200 万年前岩浆冷却形成。",
+   "level": 2,
+   "sign_en": [
+    "Wood",
+    "Ice",
+    "Volcanic / igneous rock (an old dike)"
+   ],
+   "sign_zh": [
+    "木头",
+    "冰",
+    "火山岩/火成岩（古老岩墙）"
+   ]
+  },
+  {
+   "id": "l2g4_063",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The Stanley Park seawall loop is about how long?",
+   "q_zh": "斯坦利公园海堤一圈大约多长？",
+   "choices": [
+    "1 km",
+    "100 m",
+    "About 9 km",
+    "50 km"
+   ],
+   "choices_zh": [
+    "1 公里",
+    "100 米",
+    "大约 9 公里",
+    "50 公里"
+   ],
+   "answer": 2,
+   "explain_en": "About 9 kilometres.",
+   "explain_zh": "大约 9 公里。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_064",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "On the Stanley Park seawall, bikes travel…",
+   "q_zh": "在斯坦利公园海堤上，自行车应……",
+   "choices": [
+    "Only at night",
+    "One way (counter-clockwise)",
+    "Any direction"
+   ],
+   "choices_zh": [
+    "只在夜里",
+    "单向（逆时针）",
+    "任意方向"
+   ],
+   "answer": 1,
+   "explain_en": "Follow the one-way bike direction.",
+   "explain_zh": "按单向骑行。",
+   "level": 2,
+   "sign_en": [
+    "Only at night",
+    "One way (counter-clockwise)",
+    "Any direction"
+   ],
+   "sign_zh": [
+    "只在夜里",
+    "单向（逆时针）",
+    "任意方向"
+   ]
+  },
+  {
+   "id": "l2g4_065",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Coal Harbour near the ride start is…",
+   "q_zh": "靠近骑行起点的煤港是……",
+   "choices": [
+    "A desert",
+    "A volcano crater",
+    "An airport runway",
+    "A Vancouver waterfront / harbour area"
+   ],
+   "choices_zh": [
+    "沙漠",
+    "火山口",
+    "机场跑道",
+    "温哥华滨水港湾区"
+   ],
+   "answer": 3,
+   "explain_en": "Coal Harbour is a waterfront neighbourhood.",
+   "explain_zh": "煤港是滨水社区。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_066",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "Lost Lagoon is best known in this game for…",
+   "q_zh": "在本游戏里，迷失湖最出名的是……",
+   "choices": [
+    "A desert dune",
+    "Beavers",
+    "Swans as the only animals"
+   ],
+   "choices_zh": [
+    "一座沙丘",
+    "河狸",
+    "只有天鹅"
+   ],
+   "answer": 1,
+   "explain_en": "Beavers — no false park myths.",
+   "explain_zh": "河狸；不要公园误传。",
+   "level": 2,
+   "sign_en": [
+    "A desert dune",
+    "Beavers",
+    "Swans as the only animals"
+   ],
+   "sign_zh": [
+    "一座沙丘",
+    "河狸",
+    "只有天鹅"
+   ]
+  },
+  {
+   "id": "l2g4_067",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "Halloween in this game is on…",
+   "q_zh": "本游戏里的万圣节是哪一天？",
+   "choices": [
+    "December 25",
+    "July 1",
+    "February 14",
+    "October 31"
+   ],
+   "choices_zh": [
+    "12 月 25 日",
+    "7 月 1 日",
+    "2 月 14 日",
+    "10 月 31 日"
+   ],
+   "answer": 3,
+   "explain_en": "Halloween is October 31.",
+   "explain_zh": "万圣节是 10 月 31 日。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_068",
+   "section": "forest_fork",
+   "subject": "stanley_park",
+   "difficulty": "medium",
+   "q_en": "The forest section of the ride goes through…",
+   "q_zh": "骑行的森林段穿过……",
+   "choices": [
+    "A desert highway",
+    "Cedar / forest trails",
+    "An underground mall only"
+   ],
+   "choices_zh": [
+    "沙漠公路",
+    "雪松/林间小道",
+    "只有地下商场"
+   ],
+   "answer": 1,
+   "explain_en": "Forest trails with cedars.",
+   "explain_zh": "有雪松的林间路。",
+   "level": 2,
+   "sign_en": [
+    "A desert highway",
+    "Cedar / forest trails",
+    "An underground mall only"
+   ],
+   "sign_zh": [
+    "沙漠公路",
+    "雪松/林间小道",
+    "只有地下商场"
+   ]
+  },
+  {
+   "id": "l2g4_069",
+   "section": "seawall",
+   "subject": "stanley_park",
+   "difficulty": "easy",
+   "q_en": "What should you do at a busy seawall crosswalk?",
+   "q_zh": "在繁忙的海堤人行横道你应该？",
+   "choices": [
+    "Sprint through",
+    "Close your eyes",
+    "Slow down and watch for people",
+    "Honk forever"
+   ],
+   "choices_zh": [
+    "冲过去",
+    "闭眼",
+    "减速并注意行人",
+    "一直按铃"
+   ],
+   "answer": 2,
+   "explain_en": "Share the path safely.",
+   "explain_zh": "安全共享道路。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_070",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "In B.C., riding a bike on public roads requires…",
+   "q_zh": "在卑诗省，在公共道路上骑车需要……",
+   "choices": [
+    "A helmet (it's the law)",
+    "No lights ever",
+    "A cape only"
+   ],
+   "choices_zh": [
+    "戴头盔（法律规定）",
+    "永远不用灯",
+    "只要披风"
+   ],
+   "answer": 0,
+   "explain_en": "Helmets required by law.",
+   "explain_zh": "依法要戴头盔。",
+   "level": 2,
+   "sign_en": [
+    "A helmet (it's the law)",
+    "No lights ever",
+    "A cape only"
+   ],
+   "sign_zh": [
+    "戴头盔（法律规定）",
+    "永远不用灯",
+    "只要披风"
+   ]
+  },
+  {
+   "id": "l2g4_071",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "At night on the seawall you should use…",
+   "q_zh": "夜里在海堤上你应该使用……",
+   "choices": [
+    "Lights and bright / reflective gear",
+    "Only sunglasses",
+    "No lights",
+    "A blindfold"
+   ],
+   "choices_zh": [
+    "车灯和亮色/反光装备",
+    "只戴墨镜",
+    "不开灯",
+    "蒙眼布"
+   ],
+   "answer": 0,
+   "explain_en": "Be visible.",
+   "explain_zh": "让别人看得见你。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_072",
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "If you see a Canada goose with goslings on the path, you should…",
+   "q_zh": "如果路上看到带着小鹅的加拿大鹅，你应该……",
+   "choices": [
+    "Slow down and give them space",
+    "Scare them loudly",
+    "Chase them"
+   ],
+   "choices_zh": [
+    "减速并留出空间",
+    "大声吓它们",
+    "去追"
+   ],
+   "answer": 0,
+   "explain_en": "Give wildlife space.",
+   "explain_zh": "给野生动物空间。",
+   "level": 2,
+   "sign_en": [
+    "Slow down and give them space",
+    "Scare them loudly",
+    "Chase them"
+   ],
+   "sign_zh": [
+    "减速并留出空间",
+    "大声吓它们",
+    "去追"
+   ]
+  },
+  {
+   "id": "l2g4_073",
+   "section": "seawall",
+   "subject": "safety",
+   "difficulty": "easy",
+   "q_en": "Before a night ride, check your…",
+   "q_zh": "夜骑前要检查……",
+   "choices": [
+    "The Moon's password",
+    "Bike lights and brakes",
+    "Invisible ink",
+    "Only your socks colour"
+   ],
+   "choices_zh": [
+    "月亮密码",
+    "车灯和刹车",
+    "隐形墨水",
+    "只看袜子颜色"
+   ],
+   "answer": 1,
+   "explain_en": "Lights and brakes matter.",
+   "explain_zh": "灯和刹车很重要。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_074",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A jack-o'-lantern is usually carved from a…",
+   "q_zh": "杰克灯通常是用什么雕的？",
+   "choices": [
+    "Watermelon only",
+    "Pumpkin",
+    "Rock"
+   ],
+   "choices_zh": [
+    "只有西瓜",
+    "南瓜",
+    "石头"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins become jack-o'-lanterns.",
+   "explain_zh": "南瓜雕成杰克灯。",
+   "level": 2,
+   "sign_en": [
+    "Watermelon only",
+    "Pumpkin",
+    "Rock"
+   ],
+   "sign_zh": [
+    "只有西瓜",
+    "南瓜",
+    "石头"
+   ]
+  },
+  {
+   "id": "l2g4_075",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "A pumpkin is mostly made of… — recall",
+   "q_zh": "南瓜里面大部分是什么？",
+   "choices": [
+    "Air only",
+    "Water",
+    "Metal",
+    "Sand"
+   ],
+   "choices_zh": [
+    "只有空气",
+    "水",
+    "金属",
+    "沙子"
+   ],
+   "answer": 1,
+   "explain_en": "Pumpkins are mostly water.",
+   "explain_zh": "南瓜大部分是水。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_076",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "medium",
+   "q_en": "Early jack-o'-lanterns in Ireland were often carved from…",
+   "q_zh": "爱尔兰最早的杰克灯常常用什么雕？",
+   "choices": [
+    "Pineapples",
+    "Turnips / root vegetables",
+    "Coconuts"
+   ],
+   "choices_zh": [
+    "菠萝",
+    "芜菁等根菜",
+    "椰子"
+   ],
+   "answer": 1,
+   "explain_en": "Turnips came before pumpkins in that tradition.",
+   "explain_zh": "传统里先有芜菁。",
+   "level": 2,
+   "sign_en": [
+    "Pineapples",
+    "Turnips / root vegetables",
+    "Coconuts"
+   ],
+   "sign_zh": [
+    "菠萝",
+    "芜菁等根菜",
+    "椰子"
+   ]
+  },
+  {
+   "id": "l2g4_077",
+   "section": "seawall",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "A full moon happens about every…",
+   "q_zh": "满月大约多久出现一次？",
+   "choices": [
+    "365 days",
+    "1 hour",
+    "7 days",
+    "29.5 days"
+   ],
+   "choices_zh": [
+    "365 天",
+    "1 小时",
+    "7 天",
+    "约 29.5 天"
+   ],
+   "answer": 3,
+   "explain_en": "About a lunar month.",
+   "explain_zh": "大约一个朔望月。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_078",
+   "section": "forest_fork",
+   "subject": "halloween",
+   "difficulty": "easy",
+   "q_en": "Trick-or-treating is associated with…",
+   "q_zh": "不给糖就捣蛋常和什么节日有关？",
+   "choices": [
+    "Canada Day only",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "choices_zh": [
+    "只有加拿大日",
+    "万圣节",
+    "感恩节烹饪课"
+   ],
+   "answer": 1,
+   "explain_en": "Halloween tradition.",
+   "explain_zh": "万圣节传统。",
+   "level": 2,
+   "sign_en": [
+    "Canada Day only",
+    "Halloween",
+    "Thanksgiving cooking class"
+   ],
+   "sign_zh": [
+    "只有加拿大日",
+    "万圣节",
+    "感恩节烹饪课"
+   ]
+  },
+  {
+   "id": "l2g4_079",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Where do capybaras love to be?",
+   "q_zh": "CAPYBARA！水豚最喜欢待在哪里？",
+   "choices": [
+    "In the snow",
+    "Up a tree",
+    "In the water",
+    "In the desert"
+   ],
+   "choices_zh": [
+    "雪地里",
+    "树上",
+    "在水里",
+    "沙漠里"
+   ],
+   "answer": 2,
+   "explain_en": "Capybaras love swimming and soaking.",
+   "explain_zh": "水豚超爱游泳和泡水。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_080",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What do capybaras eat?",
+   "q_zh": "CAPYBARA！水豚吃什么？",
+   "choices": [
+    "Grass and plants",
+    "Candy",
+    "Fish"
+   ],
+   "choices_zh": [
+    "草和植物",
+    "糖果",
+    "鱼"
+   ],
+   "answer": 0,
+   "explain_en": "They are herbivores.",
+   "explain_zh": "它们是食草动物。",
+   "level": 2,
+   "sign_en": [
+    "Grass and plants",
+    "Candy",
+    "Fish"
+   ],
+   "sign_zh": [
+    "草和植物",
+    "糖果",
+    "鱼"
+   ]
+  },
+  {
+   "id": "l2g4_081",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! A capybara is the world's biggest…",
+   "q_zh": "CAPYBARA！水豚是世界上最大的……",
+   "choices": [
+    "Rodent",
+    "Bird",
+    "Fish",
+    "Insect"
+   ],
+   "choices_zh": [
+    "啮齿动物",
+    "鸟",
+    "鱼",
+    "昆虫"
+   ],
+   "answer": 0,
+   "explain_en": "Mice and guinea pigs are rodents too.",
+   "explain_zh": "老鼠和豚鼠也是啮齿动物。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_082",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Capybaras come from…",
+   "q_zh": "CAPYBARA！水豚来自哪里？",
+   "choices": [
+    "Australia",
+    "South America",
+    "The North Pole"
+   ],
+   "choices_zh": [
+    "澳大利亚",
+    "南美洲",
+    "北极"
+   ],
+   "answer": 1,
+   "explain_en": "They live near rivers in South America.",
+   "explain_zh": "它们住在南美洲的河边。",
+   "level": 2,
+   "sign_en": [
+    "Australia",
+    "South America",
+    "The North Pole"
+   ],
+   "sign_zh": [
+    "澳大利亚",
+    "南美洲",
+    "北极"
+   ]
+  },
+  {
+   "id": "l2g4_083",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Does a capybara have a flat beaver tail?",
+   "q_zh": "CAPYBARA！水豚有河狸那样的扁尾巴吗？",
+   "choices": [
+    "No",
+    "Yes",
+    "Only in winter"
+   ],
+   "choices_zh": [
+    "没有",
+    "有",
+    "只在冬天有"
+   ],
+   "answer": 0,
+   "explain_en": "Bara is a capybara: no flat beaver tail.",
+   "explain_zh": "Bara 是水豚：没有河狸那种扁尾巴。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_084",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Capybaras are excellent…",
+   "q_zh": "CAPYBARA！水豚特别擅长……",
+   "choices": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "choices_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ],
+   "answer": 2,
+   "explain_en": "Webbed feet help them swim.",
+   "explain_zh": "脚有蹼，很会游泳。",
+   "level": 2,
+   "sign_en": [
+    "Climbers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "sign_zh": [
+    "爬树",
+    "飞翔",
+    "游泳"
+   ]
+  },
+  {
+   "id": "l2g4_085",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! A group of capybaras is often called a…",
+   "q_zh": "CAPYBARA！一群水豚常被叫做……",
+   "choices": [
+    "School",
+    "Flock",
+    "Wolf pack",
+    "Herd"
+   ],
+   "choices_zh": [
+    "鱼群",
+    "鸟群",
+    "狼群",
+    "一群"
+   ],
+   "answer": 3,
+   "explain_en": "They live in social groups near water.",
+   "explain_zh": "它们喜欢成群住在水边。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_086",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! Bara rides in Leo's bike basket. Bara is a…",
+   "q_zh": "CAPYBARA！Bara 坐在 Leo 车篮里。Bara 是……",
+   "choices": [
+    "Capybara",
+    "Raccoon",
+    "Beaver"
+   ],
+   "choices_zh": [
+    "水豚",
+    "浣熊",
+    "河狸"
+   ],
+   "answer": 0,
+   "explain_en": "Bara is Flora's capybara friend — not a beaver.",
+   "explain_zh": "Bara 是 Flora 的水豚朋友——不是河狸。",
+   "level": 2,
+   "sign_en": [
+    "Capybara",
+    "Raccoon",
+    "Beaver"
+   ],
+   "sign_zh": [
+    "水豚",
+    "浣熊",
+    "河狸"
+   ]
+  },
+  {
+   "id": "l2g4_087",
+   "section": "seawall",
+   "subject": "capybara",
+   "difficulty": "easy",
+   "q_en": "CAPYBARA! What sound are capybaras famous for?",
+   "q_zh": "CAPYBARA！水豚出名的叫声像什么？",
+   "choices": [
+    "Only hisses",
+    "Total silence",
+    "Cute squeaks / clicks",
+    "Lion roars"
+   ],
+   "choices_zh": [
+    "只会嘶嘶",
+    "完全不叫",
+    "可爱的吱吱/咔嗒声",
+    "狮子吼"
+   ],
+   "answer": 2,
+   "explain_en": "They make soft clicks and squeaks.",
+   "explain_zh": "会发出轻柔咔嗒和吱吱声。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_088",
+   "section": "forest_fork",
+   "subject": "capybara",
+   "difficulty": "medium",
+   "q_en": "CAPYBARA! Compared with a beaver, a capybara…",
+   "q_zh": "CAPYBARA！和水豚比，河狸……不对，水豚……",
+   "choices": [
+    "Is a bird",
+    "Lives only on ice",
+    "Has no flat paddle tail"
+   ],
+   "choices_zh": [
+    "是鸟",
+    "只住在冰上",
+    "没有扁平的桨状尾巴"
+   ],
+   "answer": 2,
+   "explain_en": "Capybara ≠ beaver.",
+   "explain_zh": "水豚不是河狸。",
+   "level": 2,
+   "sign_en": [
+    "Is a bird",
+    "Lives only on ice",
+    "Has no flat paddle tail"
+   ],
+   "sign_zh": [
+    "是鸟",
+    "只住在冰上",
+    "没有扁平的桨状尾巴"
+   ]
+  },
+  {
+   "id": "l2g4_089",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5 groups of 2 bats on the seawall. How many?",
+   "q_zh": "在海堤上 5 组蝙蝠每组 2 只，一共？",
+   "choices": [
+    "14",
+    "10",
+    "8",
+    "13"
+   ],
+   "choices_zh": [
+    "14",
+    "10",
+    "8",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "5×2=10.",
+   "explain_zh": "=10。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_090",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 groups of 5 bats on the seawall. How many?",
+   "q_zh": "在海堤上 8 组蝙蝠每组 5 只，一共？",
+   "choices": [
+    "35",
+    "50",
+    "40",
+    "48"
+   ],
+   "choices_zh": [
+    "35",
+    "50",
+    "40",
+    "48"
+   ],
+   "answer": 2,
+   "explain_en": "8×5=40.",
+   "explain_zh": "=40。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_091",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 11 lanterns, then 10 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 11 盏，又看到 10 盏，一共？",
+   "choices": [
+    "20",
+    "27",
+    "17",
+    "21"
+   ],
+   "choices_zh": [
+    "20",
+    "27",
+    "17",
+    "21"
+   ],
+   "answer": 3,
+   "explain_en": "11+10=21.",
+   "explain_zh": "=21。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_092",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 groups of 7 bats on the seawall. How many?",
+   "q_zh": "在海堤上 2 组蝙蝠每组 7 只，一共？",
+   "choices": [
+    "18",
+    "13",
+    "14",
+    "17"
+   ],
+   "choices_zh": [
+    "18",
+    "13",
+    "14",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "2×7=14.",
+   "explain_zh": "=14。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_093",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 30 lanterns, then 15 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 30 盏，又看到 15 盏，一共？",
+   "choices": [
+    "45",
+    "56",
+    "49",
+    "52"
+   ],
+   "choices_zh": [
+    "45",
+    "56",
+    "49",
+    "52"
+   ],
+   "answer": 0,
+   "explain_en": "30+15=45.",
+   "explain_zh": "=45。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_094",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 27 lanterns, then 10 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 27 盏，又看到 10 盏，一共？",
+   "choices": [
+    "37",
+    "28",
+    "43",
+    "31"
+   ],
+   "choices_zh": [
+    "37",
+    "28",
+    "43",
+    "31"
+   ],
+   "answer": 0,
+   "explain_en": "27+10=37.",
+   "explain_zh": "=37。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_095",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 groups of 7 bats on the seawall. How many?",
+   "q_zh": "在海堤上 3 组蝙蝠每组 7 只，一共？",
+   "choices": [
+    "25",
+    "24",
+    "21",
+    "27"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "21",
+    "27"
+   ],
+   "answer": 2,
+   "explain_en": "3×7=21.",
+   "explain_zh": "=21。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_096",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "3 groups of 2 bats on the seawall. How many?",
+   "q_zh": "在海堤上 3 组蝙蝠每组 2 只，一共？",
+   "choices": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "3×2=6.",
+   "explain_zh": "=6。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_097",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "7 groups of 5 bats on the seawall. How many?",
+   "q_zh": "在海堤上 7 组蝙蝠每组 5 只，一共？",
+   "choices": [
+    "29",
+    "30",
+    "33",
+    "35"
+   ],
+   "choices_zh": [
+    "29",
+    "30",
+    "33",
+    "35"
+   ],
+   "answer": 3,
+   "explain_en": "7×5=35.",
+   "explain_zh": "=35。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_098",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 31 lanterns, then 15 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 31 盏，又看到 15 盏，一共？",
+   "choices": [
+    "50",
+    "46",
+    "51",
+    "43"
+   ],
+   "choices_zh": [
+    "50",
+    "46",
+    "51",
+    "43"
+   ],
+   "answer": 1,
+   "explain_en": "31+15=46.",
+   "explain_zh": "=46。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_099",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 17 lanterns, then 10 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 17 盏，又看到 10 盏，一共？",
+   "choices": [
+    "32",
+    "23",
+    "28",
+    "27"
+   ],
+   "choices_zh": [
+    "32",
+    "23",
+    "28",
+    "27"
+   ],
+   "answer": 3,
+   "explain_en": "17+10=27.",
+   "explain_zh": "=27。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_100",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6 groups of 9 bats on the seawall. How many?",
+   "q_zh": "在海堤上 6 组蝙蝠每组 9 只，一共？",
+   "choices": [
+    "54",
+    "47",
+    "43",
+    "64"
+   ],
+   "choices_zh": [
+    "54",
+    "47",
+    "43",
+    "64"
+   ],
+   "answer": 0,
+   "explain_en": "6×9=54.",
+   "explain_zh": "=54。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_101",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 19 lanterns, then 15 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 19 盏，又看到 15 盏，一共？",
+   "choices": [
+    "38",
+    "32",
+    "34",
+    "42"
+   ],
+   "choices_zh": [
+    "38",
+    "32",
+    "34",
+    "42"
+   ],
+   "answer": 2,
+   "explain_en": "19+15=34.",
+   "explain_zh": "=34。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_102",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 26 lanterns, then 6 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 26 盏，又看到 6 盏，一共？",
+   "choices": [
+    "39",
+    "32",
+    "31",
+    "25"
+   ],
+   "choices_zh": [
+    "39",
+    "32",
+    "31",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "26+6=32.",
+   "explain_zh": "=32。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_103",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 10 lanterns, then 17 more on the seawall. Total?",
+   "q_zh": "{name} 在海堤上数到 10 盏，又看到 17 盏，一共？",
+   "choices": [
+    "34",
+    "31",
+    "20",
+    "27"
+   ],
+   "choices_zh": [
+    "34",
+    "31",
+    "20",
+    "27"
+   ],
+   "answer": 3,
+   "explain_en": "10+17=27.",
+   "explain_zh": "=27。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_104",
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6 groups of 8 bats on the seawall. How many?",
+   "q_zh": "在海堤上 6 组蝙蝠每组 8 只，一共？",
+   "choices": [
+    "53",
+    "43",
+    "59",
+    "48"
+   ],
+   "choices_zh": [
+    "53",
+    "43",
+    "59",
+    "48"
+   ],
+   "answer": 3,
+   "explain_en": "6×8=48.",
+   "explain_zh": "=48。",
+   "level": 2
+  },
+  {
+   "id": "l2g4_105",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 groups of 9 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 2 组蝙蝠每组 9 只，一共？",
+   "choices": [
+    "21",
+    "18",
+    "13"
+   ],
+   "choices_zh": [
+    "21",
+    "18",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "2×9=18.",
+   "explain_zh": "=18。",
+   "level": 2,
+   "sign_en": [
+    "21",
+    "18",
+    "13"
+   ],
+   "sign_zh": [
+    "21",
+    "18",
+    "13"
+   ]
+  },
+  {
+   "id": "l2g4_106",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 34 lanterns, then 3 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 34 盏，又看到 3 盏，一共？",
+   "choices": [
+    "37",
+    "41",
+    "33"
+   ],
+   "choices_zh": [
+    "37",
+    "41",
+    "33"
+   ],
+   "answer": 0,
+   "explain_en": "34+3=37.",
+   "explain_zh": "=37。",
+   "level": 2,
+   "sign_en": [
+    "37",
+    "41",
+    "33"
+   ],
+   "sign_zh": [
+    "37",
+    "41",
+    "33"
+   ]
+  },
+  {
+   "id": "l2g4_107",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "6 groups of 3 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 6 组蝙蝠每组 3 只，一共？",
+   "choices": [
+    "23",
+    "16",
+    "18"
+   ],
+   "choices_zh": [
+    "23",
+    "16",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "6×3=18.",
+   "explain_zh": "=18。",
+   "level": 2,
+   "sign_en": [
+    "23",
+    "16",
+    "18"
+   ],
+   "sign_zh": [
+    "23",
+    "16",
+    "18"
+   ]
+  },
+  {
+   "id": "l2g4_108",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 18 lanterns, then 7 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 18 盏，又看到 7 盏，一共？",
+   "choices": [
+    "25",
+    "24",
+    "21"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "21"
+   ],
+   "answer": 0,
+   "explain_en": "18+7=25.",
+   "explain_zh": "=25。",
+   "level": 2,
+   "sign_en": [
+    "25",
+    "24",
+    "21"
+   ],
+   "sign_zh": [
+    "25",
+    "24",
+    "21"
+   ]
+  },
+  {
+   "id": "l2g4_109",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 24 lanterns, then 13 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 24 盏，又看到 13 盏，一共？",
+   "choices": [
+    "31",
+    "37",
+    "30"
+   ],
+   "choices_zh": [
+    "31",
+    "37",
+    "30"
+   ],
+   "answer": 1,
+   "explain_en": "24+13=37.",
+   "explain_zh": "=37。",
+   "level": 2,
+   "sign_en": [
+    "31",
+    "37",
+    "30"
+   ],
+   "sign_zh": [
+    "31",
+    "37",
+    "30"
+   ]
+  },
+  {
+   "id": "l2g4_110",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 12 lanterns, then 14 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 12 盏，又看到 14 盏，一共？",
+   "choices": [
+    "32",
+    "26",
+    "21"
+   ],
+   "choices_zh": [
+    "32",
+    "26",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "12+14=26.",
+   "explain_zh": "=26。",
+   "level": 2,
+   "sign_en": [
+    "32",
+    "26",
+    "21"
+   ],
+   "sign_zh": [
+    "32",
+    "26",
+    "21"
+   ]
+  },
+  {
+   "id": "l2g4_111",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "8 groups of 3 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 8 组蝙蝠每组 3 只，一共？",
+   "choices": [
+    "24",
+    "30",
+    "25"
+   ],
+   "choices_zh": [
+    "24",
+    "30",
+    "25"
+   ],
+   "answer": 0,
+   "explain_en": "8×3=24.",
+   "explain_zh": "=24。",
+   "level": 2,
+   "sign_en": [
+    "24",
+    "30",
+    "25"
+   ],
+   "sign_zh": [
+    "24",
+    "30",
+    "25"
+   ]
+  },
+  {
+   "id": "l2g4_112",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 20 lanterns, then 13 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 20 盏，又看到 13 盏，一共？",
+   "choices": [
+    "33",
+    "35",
+    "26"
+   ],
+   "choices_zh": [
+    "33",
+    "35",
+    "26"
+   ],
+   "answer": 0,
+   "explain_en": "20+13=33.",
+   "explain_zh": "=33。",
+   "level": 2,
+   "sign_en": [
+    "33",
+    "35",
+    "26"
+   ],
+   "sign_zh": [
+    "33",
+    "35",
+    "26"
+   ]
+  },
+  {
+   "id": "l2g4_113",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 groups of 7 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 2 组蝙蝠每组 7 只，一共？",
+   "choices": [
+    "12",
+    "18",
+    "14"
+   ],
+   "choices_zh": [
+    "12",
+    "18",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "2×7=14.",
+   "explain_zh": "=14。",
+   "level": 2,
+   "sign_en": [
+    "12",
+    "18",
+    "14"
+   ],
+   "sign_zh": [
+    "12",
+    "18",
+    "14"
+   ]
+  },
+  {
+   "id": "l2g4_114",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 39 lanterns, then 5 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 39 盏，又看到 5 盏，一共？",
+   "choices": [
+    "44",
+    "52",
+    "35"
+   ],
+   "choices_zh": [
+    "44",
+    "52",
+    "35"
+   ],
+   "answer": 0,
+   "explain_en": "39+5=44.",
+   "explain_zh": "=44。",
+   "level": 2,
+   "sign_en": [
+    "44",
+    "52",
+    "35"
+   ],
+   "sign_zh": [
+    "44",
+    "52",
+    "35"
+   ]
+  },
+  {
+   "id": "l2g4_115",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 21 lanterns, then 11 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 21 盏，又看到 11 盏，一共？",
+   "choices": [
+    "37",
+    "39",
+    "32"
+   ],
+   "choices_zh": [
+    "37",
+    "39",
+    "32"
+   ],
+   "answer": 2,
+   "explain_en": "21+11=32.",
+   "explain_zh": "=32。",
+   "level": 2,
+   "sign_en": [
+    "37",
+    "39",
+    "32"
+   ],
+   "sign_zh": [
+    "37",
+    "39",
+    "32"
+   ]
+  },
+  {
+   "id": "l2g4_116",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "5 groups of 9 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 5 组蝙蝠每组 9 只，一共？",
+   "choices": [
+    "45",
+    "40",
+    "42"
+   ],
+   "choices_zh": [
+    "45",
+    "40",
+    "42"
+   ],
+   "answer": 0,
+   "explain_en": "5×9=45.",
+   "explain_zh": "=45。",
+   "level": 2,
+   "sign_en": [
+    "45",
+    "40",
+    "42"
+   ],
+   "sign_zh": [
+    "45",
+    "40",
+    "42"
+   ]
+  },
+  {
+   "id": "l2g4_117",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 29 lanterns, then 14 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 29 盏，又看到 14 盏，一共？",
+   "choices": [
+    "46",
+    "43",
+    "41"
+   ],
+   "choices_zh": [
+    "46",
+    "43",
+    "41"
+   ],
+   "answer": 1,
+   "explain_en": "29+14=43.",
+   "explain_zh": "=43。",
+   "level": 2,
+   "sign_en": [
+    "46",
+    "43",
+    "41"
+   ],
+   "sign_zh": [
+    "46",
+    "43",
+    "41"
+   ]
+  },
+  {
+   "id": "l2g4_118",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "2 groups of 6 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 2 组蝙蝠每组 6 只，一共？",
+   "choices": [
+    "13",
+    "10",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "10",
+    "12"
+   ],
+   "answer": 2,
+   "explain_en": "2×6=12.",
+   "explain_zh": "=12。",
+   "level": 2,
+   "sign_en": [
+    "13",
+    "10",
+    "12"
+   ],
+   "sign_zh": [
+    "13",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "l2g4_119",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "4 groups of 2 bats on the forest trail. How many?",
+   "q_zh": "在林间小路上 4 组蝙蝠每组 2 只，一共？",
+   "choices": [
+    "6",
+    "8",
+    "10"
+   ],
+   "choices_zh": [
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "4×2=8.",
+   "explain_zh": "=8。",
+   "level": 2,
+   "sign_en": [
+    "6",
+    "8",
+    "10"
+   ],
+   "sign_zh": [
+    "6",
+    "8",
+    "10"
+   ]
+  },
+  {
+   "id": "l2g4_120",
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} counts 23 lanterns, then 8 more on the forest trail. Total?",
+   "q_zh": "{name} 在林间小路上数到 23 盏，又看到 8 盏，一共？",
+   "choices": [
+    "32",
+    "31",
+    "38"
+   ],
+   "choices_zh": [
+    "32",
+    "31",
+    "38"
+   ],
+   "answer": 1,
+   "explain_en": "23+8=31.",
+   "explain_zh": "=31。",
+   "level": 2,
+   "sign_en": [
+    "32",
+    "31",
+    "38"
+   ],
+   "sign_zh": [
+    "32",
+    "31",
+    "38"
+   ]
+  }
+ ]
+}

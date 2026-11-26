@@ -1,0 +1,2350 @@
+{
+ "level": 4,
+ "level_name_en": "Beijing",
+ "level_name_zh": "北京",
+ "grade": 8,
+ "version": "v1",
+ "fields": "L4 Beijing / Chinese New Year (tricycle; Shichahai hutong → Chang'an Avenue → Summer Palace). Same item fields as L3 v3.1. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = Lantern Riddle Stand 灯谜摊 questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = Chang'an Avenue fork signs (≤3 choices; sign_en/sign_zh; EN ≤24 chars, ZH width ≤12), peak_final = Seventeen-Arch Bridge final 十七孔桥终极题 (exactly 4 choices, hard, situational). Per run: 5 riddle-stand + 4 fork + 1 final = 10. Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Lantern riddles are object/animal riddles solvable in both languages (subject 'riddle'). Stems are deduped against all L1–L3 banks (all grades).",
+ "questions": [
+  {
+   "id": "l4g8_001",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "Summer Palace: UNESCO World Heritage in ____.",
+   "q_zh": "颐和园列入世界遗产是哪年？",
+   "choices": [
+    "1898",
+    "1968",
+    "1998"
+   ],
+   "choices_zh": [
+    "1898 年",
+    "1968 年",
+    "1998 年"
+   ],
+   "answer": 2,
+   "explain_en": "Inscribed in 1998.",
+   "explain_zh": "1998 年。",
+   "sign_en": [
+    "1898",
+    "1968",
+    "1998"
+   ],
+   "sign_zh": [
+    "1898 年",
+    "1968 年",
+    "1998 年"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g8_002",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "In the Qianlong era, the Summer Palace had an earlier name. What was it?",
+   "q_zh": "乾隆时期，颐和园原来叫什么？",
+   "choices": [
+    "Beihai Park",
+    "Qingyi Yuan",
+    "Yuanming Yuan",
+    "Jingshan Park"
+   ],
+   "choices_zh": [
+    "北海公园",
+    "清漪园",
+    "圆明园",
+    "景山公园"
+   ],
+   "answer": 1,
+   "explain_en": "It was Qingyi Yuan; the name Yiheyuan came later.",
+   "explain_zh": "乾隆时叫清漪园，后来才叫颐和园。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g8_003",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical drum for the temple fair has radius 5 dm and height 20 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "庙会上一面圆柱形大鼓底面半径 5 分米、高 20 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "1570",
+    "1573.14",
+    "628",
+    "314"
+   ],
+   "choices_zh": [
+    "1570",
+    "1573.14",
+    "628",
+    "314"
+   ],
+   "answer": 0,
+   "explain_en": "3.14 × 5^2 × 20 = 1570.",
+   "explain_zh": "3.14 × 5^2 × 20 = 1570。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_004",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square siheyuan courtyard has an area of 196 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 196 平方米，边长是多少米？",
+   "choices": [
+    "49",
+    "28",
+    "14"
+   ],
+   "choices_zh": [
+    "49",
+    "28",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "√196 = 14.",
+   "explain_zh": "√196 = 14。",
+   "sign_en": [
+    "49",
+    "28",
+    "14"
+   ],
+   "sign_zh": [
+    "49",
+    "28",
+    "14"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_005",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 200 yuan. It is 50% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 200 元，庙会上便宜 50%，现价多少元？",
+   "choices": [
+    "110",
+    "100",
+    "150",
+    "300"
+   ],
+   "choices_zh": [
+    "110",
+    "100",
+    "150",
+    "300"
+   ],
+   "answer": 1,
+   "explain_en": "200 × (100 - 50) ÷ 100 = 100.",
+   "explain_zh": "200 × (100 - 50) ÷ 100 = 100。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g8_006",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical drum for the temple fair has radius 3 dm and height 15 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "庙会上一面圆柱形大鼓底面半径 3 分米、高 15 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "141.3",
+    "847.8",
+    "282.6",
+    "423.9"
+   ],
+   "choices_zh": [
+    "141.3",
+    "847.8",
+    "282.6",
+    "423.9"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 3^2 × 15 = 423.9.",
+   "explain_zh": "3.14 × 3^2 × 15 = 423.9。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_007",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Sodium compounds give fireworks which colour?",
+   "q_zh": "钠的化合物让烟花呈什么颜色？",
+   "choices": [
+    "Blue",
+    "Green",
+    "Yellow",
+    "Purple"
+   ],
+   "choices_zh": [
+    "蓝色",
+    "绿色",
+    "黄色",
+    "紫色"
+   ],
+   "answer": 2,
+   "explain_en": "Sodium gives a strong yellow flame.",
+   "explain_zh": "钠的焰色是黄色。",
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g8_008",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Red firework colour comes from ____.",
+   "q_zh": "红色烟花来自____。",
+   "choices": [
+    "Strontium",
+    "Copper",
+    "Sodium"
+   ],
+   "choices_zh": [
+    "锶",
+    "铜",
+    "钠"
+   ],
+   "answer": 0,
+   "explain_en": "Strontium gives red.",
+   "explain_zh": "锶呈红色。",
+   "sign_en": [
+    "Strontium",
+    "Copper",
+    "Sodium"
+   ],
+   "sign_zh": [
+    "锶",
+    "铜",
+    "钠"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g8_009",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: No one has ever seen me, yet I am in the zodiac, and at New Year many people carry my long body in a dance. What am I?",
+   "q_zh": "灯谜：谁也没见过我，可我在生肖里，过年很多人举着我长长的身子跳舞。打一生肖，是什么？",
+   "choices": [
+    "The dragon",
+    "The tiger",
+    "The horse",
+    "The snake"
+   ],
+   "choices_zh": [
+    "龙",
+    "虎",
+    "马",
+    "蛇"
+   ],
+   "answer": 0,
+   "explain_en": "The dragon is a legendary zodiac animal used in dragon dances.",
+   "explain_zh": "龙是传说中的生肖，过年有舞龙。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "灯谜·动物谜（猜动物/生肖）"
+  },
+  {
+   "id": "l4g8_010",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 15 + 8k yuan for k km. What is C when k = 8?",
+   "q_zh": "三轮车游胡同的价钱是 C = 15 + 8k 元（k 为千米数），k = 8 时 C 是多少？",
+   "choices": [
+    "128",
+    "87",
+    "79",
+    "184"
+   ],
+   "choices_zh": [
+    "128",
+    "87",
+    "79",
+    "184"
+   ],
+   "answer": 2,
+   "explain_en": "15 + 8 × 8 = 79.",
+   "explain_zh": "15 + 8 × 8 = 79。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_011",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A square siheyuan courtyard has an area of 100 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 100 平方米，边长是多少米？",
+   "choices": [
+    "9",
+    "20",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "9",
+    "20",
+    "11",
+    "10"
+   ],
+   "answer": 3,
+   "explain_en": "√100 = 10.",
+   "explain_zh": "√100 = 10。",
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_012",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong corner shortcut: walk 9 m east then 12 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 9 米再向北走 12 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "16",
+    "15",
+    "14",
+    "21"
+   ],
+   "choices_zh": [
+    "16",
+    "15",
+    "14",
+    "21"
+   ],
+   "answer": 1,
+   "explain_en": "√(9^2 + 12^2) = 15.",
+   "explain_zh": "√(9^2 + 12^2) = 15。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_013",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 12 + 5k yuan for k km. What is C when k = 12?",
+   "q_zh": "三轮车游胡同的价钱是 C = 12 + 5k 元（k 为千米数），k = 12 时 C 是多少？",
+   "choices": [
+    "60",
+    "72",
+    "77",
+    "204"
+   ],
+   "choices_zh": [
+    "60",
+    "72",
+    "77",
+    "204"
+   ],
+   "answer": 1,
+   "explain_en": "12 + 5 × 12 = 72.",
+   "explain_zh": "12 + 5 × 12 = 72。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_014",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped lantern box has edges of 12 cm. How much red paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体灯笼盒棱长 12 厘米，糊满六个面要多少平方厘米红纸？",
+   "choices": [
+    "72",
+    "876",
+    "576",
+    "864"
+   ],
+   "choices_zh": [
+    "72",
+    "876",
+    "576",
+    "864"
+   ],
+   "answer": 3,
+   "explain_en": "6 × 12^2 = 864.",
+   "explain_zh": "6 × 12^2 = 864。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l4g8_015",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong corner shortcut: walk 3 m east then 4 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 3 米再向北走 4 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "6",
+    "5",
+    "7",
+    "4"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "7",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "√(3^2 + 4^2) = 5.",
+   "explain_zh": "√(3^2 + 4^2) = 5。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_016",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square siheyuan courtyard has an area of 256 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 256 平方米，边长是多少米？",
+   "choices": [
+    "17",
+    "64",
+    "16"
+   ],
+   "choices_zh": [
+    "17",
+    "64",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "√256 = 16.",
+   "explain_zh": "√256 = 16。",
+   "sign_en": [
+    "17",
+    "64",
+    "16"
+   ],
+   "sign_zh": [
+    "17",
+    "64",
+    "16"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_017",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 12 yuan plus 12 yuan per hour. A family pays 60 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 12 元，每小时再付 12 元，一家人共付 60 元，骑了几小时？",
+   "choices": [
+    "5",
+    "3",
+    "4"
+   ],
+   "choices_zh": [
+    "5",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain_en": "(60 - 12) ÷ 12 = 4.",
+   "explain_zh": "(60 - 12) ÷ 12 = 4。",
+   "sign_en": [
+    "5",
+    "3",
+    "4"
+   ],
+   "sign_zh": [
+    "5",
+    "3",
+    "4"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g8_018",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "Chengtianmen became Tiananmen in ____.",
+   "q_zh": "承天门哪年改称天安门？",
+   "choices": [
+    "1951",
+    "1651",
+    "1851"
+   ],
+   "choices_zh": [
+    "1951 年",
+    "1651 年",
+    "1851 年"
+   ],
+   "answer": 1,
+   "explain_en": "Renamed in 1651 after rebuilding in the Qing dynasty.",
+   "explain_zh": "清顺治八年（1651 年）改建后改称。",
+   "sign_en": [
+    "1951",
+    "1651",
+    "1851"
+   ],
+   "sign_zh": [
+    "1951 年",
+    "1651 年",
+    "1851 年"
+   ],
+   "qtype": "beijing_landmark",
+   "qtype_zh": "北京地标（天安门/金水桥/华表）"
+  },
+  {
+   "id": "l4g8_019",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "Antonym of \"ancient\"?",
+   "q_zh": "英文 ancient 的反义词？",
+   "choices": [
+    "old",
+    "historic",
+    "modern"
+   ],
+   "choices_zh": [
+    "old",
+    "historic",
+    "modern"
+   ],
+   "answer": 2,
+   "explain_en": "Ancient means very old; modern is the opposite.",
+   "explain_zh": "ancient 是古老，反义词 modern。",
+   "sign_en": [
+    "old",
+    "historic",
+    "modern"
+   ],
+   "sign_zh": [
+    "old",
+    "historic",
+    "modern"
+   ],
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g8_020",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 200 yuan. It is 40% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 200 元，庙会上便宜 40%，现价多少元？",
+   "choices": [
+    "130",
+    "160",
+    "120",
+    "280"
+   ],
+   "choices_zh": [
+    "130",
+    "160",
+    "120",
+    "280"
+   ],
+   "answer": 2,
+   "explain_en": "200 × (100 - 40) ÷ 100 = 120.",
+   "explain_zh": "200 × (100 - 40) ÷ 100 = 120。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g8_021",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a hutong gate is 2 cm wide and 3 cm tall. An enlarged similar copy is 8 cm wide. How tall is it in cm?",
+   "q_zh": "一张胡同门楼照片宽 2 厘米、高 3 厘米，等比放大后宽 8 厘米，高多少厘米？",
+   "choices": [
+    "12",
+    "6",
+    "9"
+   ],
+   "choices_zh": [
+    "12",
+    "6",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "3 × 8 ÷ 2 = 12.",
+   "explain_zh": "3 × 8 ÷ 2 = 12。",
+   "sign_en": [
+    "12",
+    "6",
+    "9"
+   ],
+   "sign_zh": [
+    "12",
+    "6",
+    "9"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_022",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 17 yuan plus 6 yuan per hour. A family pays 35 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 17 元，每小时再付 6 元，一家人共付 35 元，骑了几小时？",
+   "choices": [
+    "5",
+    "2",
+    "3"
+   ],
+   "choices_zh": [
+    "5",
+    "2",
+    "3"
+   ],
+   "answer": 2,
+   "explain_en": "(35 - 17) ÷ 6 = 3.",
+   "explain_zh": "(35 - 17) ÷ 6 = 3。",
+   "sign_en": [
+    "5",
+    "2",
+    "3"
+   ],
+   "sign_zh": [
+    "5",
+    "2",
+    "3"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g8_023",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 60 yuan. It is 30% off at the temple fair. What is the new price in yuan?",
+   "q_zh": "一个灯笼 60 元，庙会上便宜 30%，现价多少元？",
+   "choices": [
+    "18",
+    "42",
+    "78",
+    "52"
+   ],
+   "choices_zh": [
+    "18",
+    "42",
+    "78",
+    "52"
+   ],
+   "answer": 1,
+   "explain_en": "60 × (100 - 30) ÷ 100 = 42.",
+   "explain_zh": "60 × (100 - 30) ÷ 100 = 42。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l4g8_024",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Which late-Qing book about Beijing customs already describes tanghulu on bamboo sticks?",
+   "q_zh": "哪本晚清记录北京风俗的书里已经写到用竹签穿的冰糖葫芦？",
+   "choices": [
+    "Romance of the Three Kingdoms",
+    "Yanjing Suishi Ji",
+    "Journey to the West",
+    "Water Margin"
+   ],
+   "choices_zh": [
+    "《三国演义》",
+    "《燕京岁时记》",
+    "《西游记》",
+    "《水浒传》"
+   ],
+   "answer": 1,
+   "explain_en": "Yanjing Suishi Ji describes hawthorn and other fruit on sticks dipped in rock sugar.",
+   "explain_zh": "《燕京岁时记》写到竹签穿山里红等，蘸冰糖。",
+   "qtype": "beijing_food_life",
+   "qtype_zh": "老北京吃食与生活（糖葫芦/鸽哨/烤鸭）"
+  },
+  {
+   "id": "l4g8_025",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 200 hutong doors on the street, and 5/8 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 200 扇门，其中 5/8 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "133",
+    "125",
+    "25"
+   ],
+   "choices_zh": [
+    "133",
+    "125",
+    "25"
+   ],
+   "answer": 1,
+   "explain_en": "200 × 5 ÷ 8 = 125.",
+   "explain_zh": "200 × 5 ÷ 8 = 125。",
+   "sign_en": [
+    "133",
+    "125",
+    "25"
+   ],
+   "sign_zh": [
+    "133",
+    "125",
+    "25"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g8_026",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 400 red envelopes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 400 个红包，今年增长 15%，今年卖了多少个？",
+   "choices": [
+    "460",
+    "470",
+    "415",
+    "340"
+   ],
+   "choices_zh": [
+    "460",
+    "470",
+    "415",
+    "340"
+   ],
+   "answer": 0,
+   "explain_en": "400 × (100 + 15) ÷ 100 = 460.",
+   "explain_zh": "400 × (100 + 15) ÷ 100 = 460。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_027",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 red envelopes last year, and sales grew by 20% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 个红包，今年增长 20%，今年卖了多少个？",
+   "choices": [
+    "610",
+    "100",
+    "400",
+    "600"
+   ],
+   "choices_zh": [
+    "610",
+    "100",
+    "400",
+    "600"
+   ],
+   "answer": 3,
+   "explain_en": "500 × (100 + 20) ÷ 100 = 600.",
+   "explain_zh": "500 × (100 + 20) ÷ 100 = 600。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_028",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 19 + 9k yuan for k km. What is C when k = 2?",
+   "q_zh": "三轮车游胡同的价钱是 C = 19 + 9k 元（k 为千米数），k = 2 时 C 是多少？",
+   "choices": [
+    "18",
+    "173",
+    "56",
+    "37"
+   ],
+   "choices_zh": [
+    "18",
+    "173",
+    "56",
+    "37"
+   ],
+   "answer": 3,
+   "explain_en": "19 + 9 × 2 = 37.",
+   "explain_zh": "19 + 9 × 2 = 37。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_029",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 1200 red envelopes last year, and sales grew by 40% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 1200 个红包，今年增长 40%，今年卖了多少个？",
+   "choices": [
+    "1690",
+    "480",
+    "1680",
+    "1240"
+   ],
+   "choices_zh": [
+    "1690",
+    "480",
+    "1680",
+    "1240"
+   ],
+   "answer": 2,
+   "explain_en": "1200 × (100 + 40) ÷ 100 = 1680.",
+   "explain_zh": "1200 × (100 + 40) ÷ 100 = 1680。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_030",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 42 hutong doors on the street, and 2/6 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 42 扇门，其中 2/6 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "20",
+    "7",
+    "14"
+   ],
+   "choices_zh": [
+    "20",
+    "7",
+    "14"
+   ],
+   "answer": 2,
+   "explain_en": "42 × 2 ÷ 6 = 14.",
+   "explain_zh": "42 × 2 ÷ 6 = 14。",
+   "sign_en": [
+    "20",
+    "7",
+    "14"
+   ],
+   "sign_zh": [
+    "20",
+    "7",
+    "14"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g8_031",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: My two hands meet at the top at midnight on New Year's Eve, and everyone shouts \"Happy New Year!\" What am I?",
+   "q_zh": "灯谜：除夕半夜两只手在顶上相会，大家一起喊“过年好”。打一物，是什么？",
+   "choices": [
+    "A calendar",
+    "A lantern",
+    "A clock",
+    "A firecracker"
+   ],
+   "choices_zh": [
+    "日历",
+    "灯笼",
+    "钟表",
+    "鞭炮"
+   ],
+   "answer": 2,
+   "explain_en": "At 12:00 midnight a clock's hands meet at the top.",
+   "explain_zh": "半夜 12 点，钟的时针分针在顶上重合。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g8_032",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong corner shortcut: walk 20 m east then 21 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 20 米再向北走 21 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "29",
+    "23",
+    "28",
+    "30"
+   ],
+   "choices_zh": [
+    "29",
+    "23",
+    "28",
+    "30"
+   ],
+   "answer": 0,
+   "explain_en": "√(20^2 + 21^2) = 29.",
+   "explain_zh": "√(20^2 + 21^2) = 29。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_033",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Renting a tricycle costs 8 yuan plus 8 yuan per hour. A family pays 80 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 8 元，每小时再付 8 元，一家人共付 80 元，骑了几小时？",
+   "choices": [
+    "10",
+    "9",
+    "11",
+    "8"
+   ],
+   "choices_zh": [
+    "10",
+    "9",
+    "11",
+    "8"
+   ],
+   "answer": 1,
+   "explain_en": "(80 - 8) ÷ 8 = 9.",
+   "explain_zh": "(80 - 8) ÷ 8 = 9。",
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g8_034",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong corner shortcut: walk 5 m east then 12 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 5 米再向北走 12 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "13",
+    "14",
+    "17",
+    "12"
+   ],
+   "choices_zh": [
+    "13",
+    "14",
+    "17",
+    "12"
+   ],
+   "answer": 0,
+   "explain_en": "√(5^2 + 12^2) = 13.",
+   "explain_zh": "√(5^2 + 12^2) = 13。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_035",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "In the couplet line 诗书继世长 (\"Poetry and books carry the family on\"), how is 长 pronounced?",
+   "q_zh": "对联「诗书继世长」里的“长”读什么拼音？",
+   "choices": [
+    "cháng",
+    "chàng",
+    "zhǎng",
+    "zhāng"
+   ],
+   "choices_zh": [
+    "cháng",
+    "chàng",
+    "zhǎng",
+    "zhāng"
+   ],
+   "answer": 0,
+   "explain_en": "It means long-lasting, so it is cháng, a level tone.",
+   "explain_zh": "这里是长久的意思，读 cháng，是平声。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g8_036",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "language",
+   "difficulty": "medium",
+   "q_en": "\"Lanterns danced in the wind\" is ____.",
+   "q_zh": "\"Lanterns danced in the wind\" 用了____。",
+   "choices": [
+    "Rhyme",
+    "Simile",
+    "Personification"
+   ],
+   "choices_zh": [
+    "押韵",
+    "明喻",
+    "拟人"
+   ],
+   "answer": 2,
+   "explain_en": "Lanterns cannot dance: personification.",
+   "explain_zh": "灯笼不会跳舞，是拟人。",
+   "sign_en": [
+    "Rhyme",
+    "Simile",
+    "Personification"
+   ],
+   "sign_zh": [
+    "押韵",
+    "明喻",
+    "拟人"
+   ],
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l4g8_037",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "\"Chang'an Avenue was bustling.\" What does \"bustling\" mean?",
+   "q_zh": "英文句子里说长安街 bustling，bustling 是什么意思？",
+   "choices": [
+    "frozen",
+    "empty",
+    "very quiet",
+    "busy and full of activity"
+   ],
+   "choices_zh": [
+    "冻住了",
+    "空荡荡",
+    "很安静",
+    "热闹繁忙"
+   ],
+   "answer": 3,
+   "explain_en": "Bustling means busy and lively.",
+   "explain_zh": "bustling 意思是热闹、忙碌。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l4g8_038",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "If the front chainring is bigger but the rear sprocket stays the same, each pedal turn makes the wheel turn ____.",
+   "q_zh": "如果前面的大齿轮变大、后面的小齿轮不变，每蹬一圈车轮转____。",
+   "choices": [
+    "fewer times",
+    "the same",
+    "more times",
+    "backwards"
+   ],
+   "choices_zh": [
+    "更少圈",
+    "一样多",
+    "更多圈",
+    "反着转"
+   ],
+   "answer": 2,
+   "explain_en": "Wheel turns = front teeth ÷ rear teeth, so a bigger front gear gives more turns.",
+   "explain_zh": "车轮圈数 = 前齿数 ÷ 后齿数，前齿越多转得越多。",
+   "qtype": "simple_machines",
+   "qtype_zh": "简单机械（轮子/链条/齿轮）"
+  },
+  {
+   "id": "l4g8_039",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped lantern box has edges of 19 cm. How much red paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体灯笼盒棱长 19 厘米，糊满六个面要多少平方厘米红纸？",
+   "choices": [
+    "2185",
+    "114",
+    "6859",
+    "2166"
+   ],
+   "choices_zh": [
+    "2185",
+    "114",
+    "6859",
+    "2166"
+   ],
+   "answer": 3,
+   "explain_en": "6 × 19^2 = 2166.",
+   "explain_zh": "6 × 19^2 = 2166。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l4g8_040",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped lantern box has edges of 15 cm. How much red paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体灯笼盒棱长 15 厘米，糊满六个面要多少平方厘米红纸？",
+   "choices": [
+    "900",
+    "1350",
+    "90",
+    "1365"
+   ],
+   "choices_zh": [
+    "900",
+    "1350",
+    "90",
+    "1365"
+   ],
+   "answer": 1,
+   "explain_en": "6 × 15^2 = 1350.",
+   "explain_zh": "6 × 15^2 = 1350。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l4g8_041",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped lantern box has edges of 4 cm. How much red paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体灯笼盒棱长 4 厘米，糊满六个面要多少平方厘米红纸？",
+   "choices": [
+    "64",
+    "100",
+    "96",
+    "24"
+   ],
+   "choices_zh": [
+    "64",
+    "100",
+    "96",
+    "24"
+   ],
+   "answer": 2,
+   "explain_en": "6 × 4^2 = 96.",
+   "explain_zh": "6 × 4^2 = 96。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l4g8_042",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "spring_festival",
+   "difficulty": "medium",
+   "q_en": "Which zodiac animal is 8th?",
+   "q_zh": "第 8 个生肖是？",
+   "choices": [
+    "Goat",
+    "Horse",
+    "Monkey"
+   ],
+   "choices_zh": [
+    "羊",
+    "马",
+    "猴"
+   ],
+   "answer": 0,
+   "explain_en": "Horse is 7th, Goat 8th, Monkey 9th.",
+   "explain_zh": "马七、羊八、猴九。",
+   "sign_en": [
+    "Goat",
+    "Horse",
+    "Monkey"
+   ],
+   "sign_zh": [
+    "羊",
+    "马",
+    "猴"
+   ],
+   "qtype": "zodiac_order",
+   "qtype_zh": "十二生肖（顺序/轮回）"
+  },
+  {
+   "id": "l4g8_043",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am a stone boat that never sails. I rest by Kunming Lake. What am I?",
+   "q_zh": "灯谜：石头做的船，永远不开走，停在昆明湖边。打一颐和园景物，是什么？",
+   "choices": [
+    "A raft",
+    "A dragon boat",
+    "A ferry",
+    "The Marble Boat"
+   ],
+   "choices_zh": [
+    "木筏",
+    "龙舟",
+    "渡船",
+    "石舫"
+   ],
+   "answer": 3,
+   "explain_en": "The Marble Boat (Qingyan Fang) is built of stone and cannot sail.",
+   "explain_zh": "石舫（清晏舫）是石头砌的，不能航行。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g8_044",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square siheyuan courtyard has an area of 289 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 289 平方米，边长是多少米？",
+   "choices": [
+    "17",
+    "16",
+    "72"
+   ],
+   "choices_zh": [
+    "17",
+    "16",
+    "72"
+   ],
+   "answer": 0,
+   "explain_en": "√289 = 17.",
+   "explain_zh": "√289 = 17。",
+   "sign_en": [
+    "17",
+    "16",
+    "72"
+   ],
+   "sign_zh": [
+    "17",
+    "16",
+    "72"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_045",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square siheyuan courtyard has an area of 121 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 121 平方米，边长是多少米？",
+   "choices": [
+    "22",
+    "11",
+    "10"
+   ],
+   "choices_zh": [
+    "22",
+    "11",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "√121 = 11.",
+   "explain_zh": "√121 = 11。",
+   "sign_en": [
+    "22",
+    "11",
+    "10"
+   ],
+   "sign_zh": [
+    "22",
+    "11",
+    "10"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_046",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a hutong gate is 3 cm wide and 5 cm tall. An enlarged similar copy is 15 cm wide. How tall is it in cm?",
+   "q_zh": "一张胡同门楼照片宽 3 厘米、高 5 厘米，等比放大后宽 15 厘米，高多少厘米？",
+   "choices": [
+    "15",
+    "25",
+    "16"
+   ],
+   "choices_zh": [
+    "15",
+    "25",
+    "16"
+   ],
+   "answer": 1,
+   "explain_en": "5 × 15 ÷ 3 = 25.",
+   "explain_zh": "5 × 15 ÷ 3 = 25。",
+   "sign_en": [
+    "15",
+    "25",
+    "16"
+   ],
+   "sign_zh": [
+    "15",
+    "25",
+    "16"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_047",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A photo of a hutong gate is 4 cm wide and 5 cm tall. An enlarged similar copy is 12 cm wide. How tall is it in cm?",
+   "q_zh": "一张胡同门楼照片宽 4 厘米、高 5 厘米，等比放大后宽 12 厘米，高多少厘米？",
+   "choices": [
+    "18",
+    "13",
+    "15",
+    "20"
+   ],
+   "choices_zh": [
+    "18",
+    "13",
+    "15",
+    "20"
+   ],
+   "answer": 2,
+   "explain_en": "5 × 12 ÷ 4 = 15.",
+   "explain_zh": "5 × 12 ÷ 4 = 15。",
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_048",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 15 + 8k yuan for k km. What is C when k = 12?",
+   "q_zh": "三轮车游胡同的价钱是 C = 15 + 8k 元（k 为千米数），k = 12 时 C 是多少？",
+   "choices": [
+    "119",
+    "276",
+    "111",
+    "96"
+   ],
+   "choices_zh": [
+    "119",
+    "276",
+    "111",
+    "96"
+   ],
+   "answer": 2,
+   "explain_en": "15 + 8 × 12 = 111.",
+   "explain_zh": "15 + 8 × 12 = 111。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_049",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A hutong corner shortcut: walk 10 m east then 24 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 10 米再向北走 24 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "25",
+    "26",
+    "34"
+   ],
+   "choices_zh": [
+    "25",
+    "26",
+    "34"
+   ],
+   "answer": 1,
+   "explain_en": "√(10^2 + 24^2) = 26.",
+   "explain_zh": "√(10^2 + 24^2) = 26。",
+   "sign_en": [
+    "25",
+    "26",
+    "34"
+   ],
+   "sign_zh": [
+    "25",
+    "26",
+    "34"
+   ],
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_050",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical drum for the temple fair has radius 3 dm and height 10 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "庙会上一面圆柱形大鼓底面半径 3 分米、高 10 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "282.6",
+    "565.2",
+    "94.2",
+    "188.4"
+   ],
+   "choices_zh": [
+    "282.6",
+    "565.2",
+    "94.2",
+    "188.4"
+   ],
+   "answer": 0,
+   "explain_en": "3.14 × 3^2 × 10 = 282.6.",
+   "explain_zh": "3.14 × 3^2 × 10 = 282.6。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_051",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cube-shaped lantern box has edges of 16 cm. How much red paper (cm²) covers all six faces?",
+   "q_zh": "一个正方体灯笼盒棱长 16 厘米，糊满六个面要多少平方厘米红纸？",
+   "choices": [
+    "4096",
+    "1024",
+    "1552",
+    "1536"
+   ],
+   "choices_zh": [
+    "4096",
+    "1024",
+    "1552",
+    "1536"
+   ],
+   "answer": 3,
+   "explain_en": "6 × 16^2 = 1536.",
+   "explain_zh": "6 × 16^2 = 1536。",
+   "qtype": "surface_area_cube",
+   "qtype_zh": "正方体表面积"
+  },
+  {
+   "id": "l4g8_052",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a hutong gate is 2 cm wide and 3 cm tall. An enlarged similar copy is 6 cm wide. How tall is it in cm?",
+   "q_zh": "一张胡同门楼照片宽 2 厘米、高 3 厘米，等比放大后宽 6 厘米，高多少厘米？",
+   "choices": [
+    "6",
+    "12",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "12",
+    "9"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 6 ÷ 2 = 9.",
+   "explain_zh": "3 × 6 ÷ 2 = 9。",
+   "sign_en": [
+    "6",
+    "12",
+    "9"
+   ],
+   "sign_zh": [
+    "6",
+    "12",
+    "9"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_053",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 136 hutong doors on the street, and 1/8 of them have new couplets. How many doors have new couplets?",
+   "q_zh": "这条街上有 136 扇门，其中 1/8 贴了新春联，有多少扇门贴了新春联？",
+   "choices": [
+    "119",
+    "18",
+    "17"
+   ],
+   "choices_zh": [
+    "119",
+    "18",
+    "17"
+   ],
+   "answer": 2,
+   "explain_en": "136 × 1 ÷ 8 = 17.",
+   "explain_zh": "136 × 1 ÷ 8 = 17。",
+   "sign_en": [
+    "119",
+    "18",
+    "17"
+   ],
+   "sign_zh": [
+    "119",
+    "18",
+    "17"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l4g8_054",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Blue-green firework colour: ____.",
+   "q_zh": "蓝绿色烟花来自____。",
+   "choices": [
+    "Copper",
+    "Sodium",
+    "Strontium"
+   ],
+   "choices_zh": [
+    "铜",
+    "钠",
+    "锶"
+   ],
+   "answer": 0,
+   "explain_en": "Copper compounds give blue-green.",
+   "explain_zh": "铜的化合物呈蓝绿色。",
+   "sign_en": [
+    "Copper",
+    "Sodium",
+    "Strontium"
+   ],
+   "sign_zh": [
+    "铜",
+    "钠",
+    "锶"
+   ],
+   "qtype": "firework_chemistry",
+   "qtype_zh": "焰色反应（烟花颜色）"
+  },
+  {
+   "id": "l4g8_055",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A hutong corner shortcut: walk 7 m east then 24 m north, or cut straight across. How long is the straight path in metres?",
+   "q_zh": "在胡同拐角，向东走 7 米再向北走 24 米，或者斜着直走，直走的路长多少米？",
+   "choices": [
+    "31",
+    "26",
+    "24",
+    "25"
+   ],
+   "choices_zh": [
+    "31",
+    "26",
+    "24",
+    "25"
+   ],
+   "answer": 3,
+   "explain_en": "√(7^2 + 24^2) = 25.",
+   "explain_zh": "√(7^2 + 24^2) = 25。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_056",
+   "level": 4,
+   "section": "seawall",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "Kunming Lake covers about what fraction of the Summer Palace?",
+   "q_zh": "昆明湖大约占颐和园面积的几分之几？",
+   "choices": [
+    "All of it",
+    "Three quarters",
+    "One twentieth",
+    "One tenth"
+   ],
+   "choices_zh": [
+    "全部",
+    "四分之三",
+    "二十分之一",
+    "十分之一"
+   ],
+   "answer": 1,
+   "explain_en": "The lake is about three quarters of the park.",
+   "explain_zh": "昆明湖约占全园的四分之三。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g8_057",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A cylindrical drum for the temple fair has radius 4 dm and height 10 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "庙会上一面圆柱形大鼓底面半径 4 分米、高 10 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "251.2",
+    "502.4",
+    "505.54"
+   ],
+   "choices_zh": [
+    "251.2",
+    "502.4",
+    "505.54"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 4^2 × 10 = 502.4.",
+   "explain_zh": "3.14 × 4^2 × 10 = 502.4。",
+   "sign_en": [
+    "251.2",
+    "502.4",
+    "505.54"
+   ],
+   "sign_zh": [
+    "251.2",
+    "502.4",
+    "505.54"
+   ],
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_058",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "\"The old hutong whispered stories of the past.\" This is an example of ____.",
+   "q_zh": "英文句子 \"The old hutong whispered stories of the past.\" 用了哪种修辞？",
+   "choices": [
+    "simile",
+    "alliteration",
+    "personification",
+    "a question"
+   ],
+   "choices_zh": [
+    "明喻",
+    "头韵",
+    "拟人",
+    "问句"
+   ],
+   "answer": 2,
+   "explain_en": "A lane cannot whisper: giving it human actions is personification.",
+   "explain_zh": "胡同不会说话，把人的动作给了它，是拟人。",
+   "qtype": "lang_figurative",
+   "qtype_zh": "修辞（比喻/拟人/头韵/矛盾修辞）"
+  },
+  {
+   "id": "l4g8_059",
+   "level": 4,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Why can ice form a floating layer on Kunming Lake?",
+   "q_zh": "为什么昆明湖上的冰能浮在水面？",
+   "choices": [
+    "Ice is less dense than water",
+    "Fish push it up",
+    "Ice is heavier than water",
+    "Wind holds it up"
+   ],
+   "choices_zh": [
+    "冰的密度比水小",
+    "鱼把它顶上来",
+    "冰比水重",
+    "风把它托着"
+   ],
+   "answer": 0,
+   "explain_en": "Ice is about 9% less dense than liquid water, so it floats.",
+   "explain_zh": "冰的密度比水小，所以浮在水面。",
+   "qtype": "density",
+   "qtype_zh": "密度（冰浮在水上）"
+  },
+  {
+   "id": "l4g8_060",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I am narrow and long, with grey walls on both sides. Neighbours' gates open onto me. What am I?",
+   "q_zh": "灯谜：又窄又长，两边灰墙，家家门口朝着我。打一北京地方，是什么？",
+   "choices": [
+    "A tunnel",
+    "A hutong",
+    "A river",
+    "A highway"
+   ],
+   "choices_zh": [
+    "隧道",
+    "胡同",
+    "河",
+    "高速路"
+   ],
+   "answer": 1,
+   "explain_en": "Hutongs are Beijing's narrow lanes lined with courtyard gates.",
+   "explain_zh": "胡同是北京两边是院门的窄巷。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g8_061",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: You shout in an empty hutong and I shout back, but you never see me. What am I?",
+   "q_zh": "灯谜：你在空胡同里喊，我也跟着喊，可你看不见我。打一现象，是什么？",
+   "choices": [
+    "A shadow",
+    "A pigeon",
+    "An echo",
+    "A radio"
+   ],
+   "choices_zh": [
+    "影子",
+    "鸽子",
+    "回声",
+    "收音机"
+   ],
+   "answer": 2,
+   "explain_en": "An echo is sound bouncing back off walls.",
+   "explain_zh": "回声是声音碰到墙反射回来。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g8_062",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A photo of a hutong gate is 2 cm wide and 3 cm tall. An enlarged similar copy is 12 cm wide. How tall is it in cm?",
+   "q_zh": "一张胡同门楼照片宽 2 厘米、高 3 厘米，等比放大后宽 12 厘米，高多少厘米？",
+   "choices": [
+    "13",
+    "24",
+    "18"
+   ],
+   "choices_zh": [
+    "13",
+    "24",
+    "18"
+   ],
+   "answer": 2,
+   "explain_en": "3 × 12 ÷ 2 = 18.",
+   "explain_zh": "3 × 12 ÷ 2 = 18。",
+   "sign_en": [
+    "13",
+    "24",
+    "18"
+   ],
+   "sign_zh": [
+    "13",
+    "24",
+    "18"
+   ],
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_063",
+   "level": 4,
+   "section": "seawall",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "In a traditional couplet, the last character of the first line usually has which kind of tone?",
+   "q_zh": "传统对联中，上联最后一个字通常是什么声调？",
+   "choices": [
+    "No tone",
+    "Any tone",
+    "Level tone (平)",
+    "Oblique tone (仄)"
+   ],
+   "choices_zh": [
+    "不发音",
+    "哪个声调都行",
+    "平声",
+    "仄声"
+   ],
+   "answer": 3,
+   "explain_en": "First line ends oblique (仄), second line ends level (平).",
+   "explain_zh": "上联末字仄声，下联末字平声。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g8_064",
+   "level": 4,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Lantern riddle: I have seventeen eyes over the lake, but I cannot see. People walk across my back. What am I?",
+   "q_zh": "灯谜：湖上十七只眼，却看不见东西，人们从我背上走过。打一颐和园景物，是什么？",
+   "choices": [
+    "The Seventeen-Arch Bridge",
+    "A pagoda",
+    "The Marble Boat",
+    "The Long Corridor"
+   ],
+   "choices_zh": [
+    "十七孔桥",
+    "宝塔",
+    "石舫",
+    "长廊"
+   ],
+   "answer": 0,
+   "explain_en": "The \"eyes\" are the bridge's 17 arches.",
+   "explain_zh": "“十七只眼”就是十七个桥洞。",
+   "qtype": "riddle_object",
+   "qtype_zh": "灯谜·物谜（猜东西）"
+  },
+  {
+   "id": "l4g8_065",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical drum for the temple fair has radius 6 dm and height 15 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "庙会上一面圆柱形大鼓底面半径 6 分米、高 15 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "565.2",
+    "1695.6",
+    "282.6",
+    "3391.2"
+   ],
+   "choices_zh": [
+    "565.2",
+    "1695.6",
+    "282.6",
+    "3391.2"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 6^2 × 15 = 1695.6.",
+   "explain_zh": "3.14 × 6^2 × 15 = 1695.6。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_066",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 200 red envelopes last year, and sales grew by 15% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 200 个红包，今年增长 15%，今年卖了多少个？",
+   "choices": [
+    "30",
+    "230",
+    "170",
+    "240"
+   ],
+   "choices_zh": [
+    "30",
+    "230",
+    "170",
+    "240"
+   ],
+   "answer": 1,
+   "explain_en": "200 × (100 + 15) ÷ 100 = 230.",
+   "explain_zh": "200 × (100 + 15) ÷ 100 = 230。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_067",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 red envelopes last year, and sales grew by 40% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 个红包，今年增长 40%，今年卖了多少个？",
+   "choices": [
+    "700",
+    "710",
+    "200",
+    "540"
+   ],
+   "choices_zh": [
+    "700",
+    "710",
+    "200",
+    "540"
+   ],
+   "answer": 0,
+   "explain_en": "500 × (100 + 40) ÷ 100 = 700.",
+   "explain_zh": "500 × (100 + 40) ÷ 100 = 700。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_068",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A square siheyuan courtyard has an area of 36 m². How long is each side in metres?",
+   "q_zh": "一个正方形四合院的院子面积是 36 平方米，边长是多少米？",
+   "choices": [
+    "6",
+    "5",
+    "9"
+   ],
+   "choices_zh": [
+    "6",
+    "5",
+    "9"
+   ],
+   "answer": 0,
+   "explain_en": "√36 = 6.",
+   "explain_zh": "√36 = 6。",
+   "sign_en": [
+    "6",
+    "5",
+    "9"
+   ],
+   "sign_zh": [
+    "6",
+    "5",
+    "9"
+   ],
+   "qtype": "square_root",
+   "qtype_zh": "已知正方形面积求边长"
+  },
+  {
+   "id": "l4g8_069",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "beijing",
+   "difficulty": "medium",
+   "q_en": "How many sections does the Long Corridor have?",
+   "q_zh": "长廊一共有多少间？",
+   "choices": [
+    "2730",
+    "27",
+    "273"
+   ],
+   "choices_zh": [
+    "2730 间",
+    "27 间",
+    "273 间"
+   ],
+   "answer": 2,
+   "explain_en": "273 sections, 728 m.",
+   "explain_zh": "273 间，全长 728 米。",
+   "sign_en": [
+    "2730",
+    "27",
+    "273"
+   ],
+   "sign_zh": [
+    "2730 间",
+    "27 间",
+    "273 间"
+   ],
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g8_070",
+   "level": 4,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "In 王安石's 《元日》, \"总把新桃换旧符\" mentions peach-wood charms (桃符). What did they later develop into?",
+   "q_zh": "王安石《元日》“总把新桃换旧符”里的桃符，后来演变成了什么？",
+   "choices": [
+    "Red envelopes",
+    "Firecrackers",
+    "Lanterns",
+    "Spring couplets"
+   ],
+   "choices_zh": [
+    "红包",
+    "鞭炮",
+    "灯笼",
+    "春联"
+   ],
+   "answer": 3,
+   "explain_en": "Peach-wood boards hung on doors later became spring couplets.",
+   "explain_zh": "挂在门上的桃木板后来演变成春联。",
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l4g8_071",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A tricycle tour costs C = 5 + 4k yuan for k km. What is C when k = 4?",
+   "q_zh": "三轮车游胡同的价钱是 C = 5 + 4k 元（k 为千米数），k = 4 时 C 是多少？",
+   "choices": [
+    "25",
+    "24",
+    "21",
+    "16"
+   ],
+   "choices_zh": [
+    "25",
+    "24",
+    "21",
+    "16"
+   ],
+   "answer": 2,
+   "explain_en": "5 + 4 × 4 = 21.",
+   "explain_zh": "5 + 4 × 4 = 21。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_072",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 11 yuan plus 8 yuan per hour. A family pays 75 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 11 元，每小时再付 8 元，一家人共付 75 元，骑了几小时？",
+   "choices": [
+    "8",
+    "9",
+    "7"
+   ],
+   "choices_zh": [
+    "8",
+    "9",
+    "7"
+   ],
+   "answer": 0,
+   "explain_en": "(75 - 11) ÷ 8 = 8.",
+   "explain_zh": "(75 - 11) ÷ 8 = 8。",
+   "sign_en": [
+    "8",
+    "9",
+    "7"
+   ],
+   "sign_zh": [
+    "8",
+    "9",
+    "7"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g8_073",
+   "level": 4,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Renting a tricycle costs 13 yuan plus 5 yuan per hour. A family pays 23 yuan. How many hours did they ride?",
+   "q_zh": "租三轮车先付 13 元，每小时再付 5 元，一家人共付 23 元，骑了几小时？",
+   "choices": [
+    "5",
+    "4",
+    "2"
+   ],
+   "choices_zh": [
+    "5",
+    "4",
+    "2"
+   ],
+   "answer": 2,
+   "explain_en": "(23 - 13) ÷ 5 = 2.",
+   "explain_zh": "(23 - 13) ÷ 5 = 2。",
+   "sign_en": [
+    "5",
+    "4",
+    "2"
+   ],
+   "sign_zh": [
+    "5",
+    "4",
+    "2"
+   ],
+   "qtype": "eq_two_step",
+   "qtype_zh": "两步方程（固定费+单价）"
+  },
+  {
+   "id": "l4g8_074",
+   "level": 4,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sold 500 red envelopes last year, and sales grew by 25% this year. How many did it sell this year?",
+   "q_zh": "一个小摊去年卖了 500 个红包，今年增长 25%，今年卖了多少个？",
+   "choices": [
+    "635",
+    "625",
+    "375",
+    "125"
+   ],
+   "choices_zh": [
+    "635",
+    "625",
+    "375",
+    "125"
+   ],
+   "answer": 1,
+   "explain_en": "500 × (100 + 25) ÷ 100 = 625.",
+   "explain_zh": "500 × (100 + 25) ÷ 100 = 625。",
+   "qtype": "percent_increase",
+   "qtype_zh": "百分数增长后是多少"
+  },
+  {
+   "id": "l4g8_075",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "spring_festival",
+   "difficulty": "hard",
+   "q_en": "A gate near the bridge shows the first line 向阳门第春常在. Which second line completes the couplet?",
+   "q_zh": "桥边一扇门上的上联是「向阳门第春常在」。哪一句是它的下联？",
+   "choices": [
+    "春满乾坤福满堂",
+    "春风送暖入屠苏",
+    "诗书继世长",
+    "积善人家庆有余"
+   ],
+   "choices_zh": [
+    "春满乾坤福满堂",
+    "春风送暖入屠苏",
+    "诗书继世长",
+    "积善人家庆有余"
+   ],
+   "answer": 3,
+   "explain_en": "向阳门第春常在 / 积善人家庆有余: seven characters each, ending oblique then level.",
+   "explain_zh": "向阳门第春常在，积善人家庆有余；各七字，上仄下平。",
+   "qtype": "couplet_knowledge",
+   "qtype_zh": "春联知识（对仗/平仄/横批）"
+  },
+  {
+   "id": "l4g8_076",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "beijing",
+   "difficulty": "hard",
+   "q_en": "From the bridge, Flora looks back at the Long Corridor along the shore. Which statement about it is true?",
+   "q_zh": "Flora 在桥上回望岸边的长廊。关于长廊，哪句话是对的？",
+   "choices": [
+    "It is about 7.28 km long with 27 sections",
+    "It is about 728 m long with 273 sections",
+    "It is made of ice every winter",
+    "It was built in 2008"
+   ],
+   "choices_zh": [
+    "全长约 7.28 千米，共 27 间",
+    "全长约 728 米，共 273 间",
+    "每年冬天用冰搭成",
+    "建于 2008 年"
+   ],
+   "answer": 1,
+   "explain_en": "The Long Corridor is 728 m long with 273 sections.",
+   "explain_zh": "长廊全长 728 米，共 273 间。",
+   "qtype": "summer_palace",
+   "qtype_zh": "颐和园常识"
+  },
+  {
+   "id": "l4g8_077",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "From the foot of a lantern pole on the bridge, a string runs to a point 16 m along the deck; the pole is 12 m tall. How long is the string from the top of the pole, in metres?",
+   "q_zh": "桥上一根灯杆高 12 米，从杆顶拉一根彩绳到桥面上离杆脚 16 米的地方，绳长多少米？",
+   "choices": [
+    "19",
+    "21",
+    "18",
+    "20"
+   ],
+   "choices_zh": [
+    "19",
+    "21",
+    "18",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "√(12^2 + 16^2) = 20.",
+   "explain_zh": "√(12^2 + 16^2) = 20。",
+   "qtype": "pythagoras",
+   "qtype_zh": "勾股定理求斜边"
+  },
+  {
+   "id": "l4g8_078",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A cylindrical lantern on the bridge has radius 3 dm and height 30 dm. Using π ≈ 3.14, what is its volume in dm³?",
+   "q_zh": "桥上一个圆柱形灯笼底面半径 3 分米、高 30 分米，π 取 3.14，体积是多少立方分米？",
+   "choices": [
+    "850.94",
+    "1695.6",
+    "282.6",
+    "847.8"
+   ],
+   "choices_zh": [
+    "850.94",
+    "1695.6",
+    "282.6",
+    "847.8"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 3^2 × 30 = 847.8.",
+   "explain_zh": "3.14 × 3^2 × 30 = 847.8。",
+   "qtype": "volume_cylinder",
+   "qtype_zh": "圆柱体积"
+  },
+  {
+   "id": "l4g8_079",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A sketch of the bridge's lantern arch is 3 cm wide and 4 cm tall. A similar banner copy is 15 cm wide. How tall is the banner in cm?",
+   "q_zh": "桥上灯笼拱门的草图宽 3 厘米、高 4 厘米，放大成相似的横幅后宽 15 厘米，高是多少厘米？",
+   "choices": [
+    "25",
+    "12",
+    "16",
+    "20"
+   ],
+   "choices_zh": [
+    "25",
+    "12",
+    "16",
+    "20"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 15 ÷ 3 = 20.",
+   "explain_zh": "4 × 15 ÷ 3 = 20。",
+   "qtype": "similar_figures",
+   "qtype_zh": "相似图形求边"
+  },
+  {
+   "id": "l4g8_080",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The bridge's lantern lighting follows L = 3 + 7n, where n is minutes after sunset. How many lanterns are lit when n = 7?",
+   "q_zh": "桥上灯笼按 L = 3 + 7n 依次点亮，n 是日落后的分钟数。n = 7 时亮了多少盏？",
+   "choices": [
+    "52",
+    "59",
+    "28",
+    "49"
+   ],
+   "choices_zh": [
+    "52",
+    "59",
+    "28",
+    "49"
+   ],
+   "answer": 0,
+   "explain_en": "3 + 7 × 7 = 52.",
+   "explain_zh": "3 + 7 × 7 = 52。",
+   "qtype": "linear_eval",
+   "qtype_zh": "一次函数代入求值"
+  },
+  {
+   "id": "l4g8_081",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "On a park map, 1 cm stands for 250 m. The path from the Long Corridor to the Seventeen-Arch Bridge is 7 cm on the map. How many metres is it really?",
+   "q_zh": "公园地图上 1 厘米代表 250 米，从长廊到十七孔桥的路在图上长 7 厘米，实际是多少米？",
+   "choices": [
+    "175",
+    "257",
+    "1750",
+    "2000"
+   ],
+   "choices_zh": [
+    "175",
+    "257",
+    "1750",
+    "2000"
+   ],
+   "answer": 2,
+   "explain_en": "7 × 250 = 1750.",
+   "explain_zh": "7 × 250 = 1750。",
+   "qtype": "map_scale",
+   "qtype_zh": "比例尺换算"
+  },
+  {
+   "id": "l4g8_082",
+   "level": 4,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round lantern hanging under the bridge has a diameter of 80 cm. Using π ≈ 3.14, how many cm of gold trim go once around it?",
+   "q_zh": "桥下挂着一个直径 80 厘米的圆灯笼，π 取 3.14，绕它一圈的金边要多少厘米？",
+   "choices": [
+    "254.34",
+    "251.2",
+    "5024",
+    "502.4"
+   ],
+   "choices_zh": [
+    "254.34",
+    "251.2",
+    "5024",
+    "502.4"
+   ],
+   "answer": 1,
+   "explain_en": "3.14 × 80 = 251.2.",
+   "explain_zh": "3.14 × 80 = 251.2。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  }
+ ]
+}

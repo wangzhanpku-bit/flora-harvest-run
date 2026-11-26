@@ -1,0 +1,2350 @@
+{
+ "level": 6,
+ "level_name_en": "Hong Kong",
+ "level_name_zh": "香港",
+ "grade": 6,
+ "version": "v1",
+ "fields": "L6 Hong Kong / Mid-Autumn Festival (inline roller skates; Central → Victoria Harbour → The Peak). Same item fields as L3 v3.1 / L4 / L5. Pools keep L3 names so pickSetL2 + l3TypeUniq can be reused: seawall = 月饼摊 Mooncake Stall questions (3–4 choices, timed 30 s; also the retry pool), forest_fork = fork signs (≤3 choices; sign_en/sign_zh must equal choices; EN ≤24 chars, ZH width ≤12 where CJK=1, ASCII=0.5), peak_final = The Peak / 太平山顶 final (exactly 4 choices, hard, situational, no bare arithmetic). Per run: 3 timed stall in segment 1 + 4 fork in segment 2 + 2 timed stall and 1 Peak final in segment 3 = 10 (one stall pool, drawn as 5 then split 3+2; do not place all 5 timed questions in the first segment). Every item has qtype + qtype_zh (each qtype at most once per run). {name} = player name; English on top, Chinese below. No subject capybara/beaver. Festival riddles are object/animal riddles solvable in both languages (subject 'riddle'), labelled Festival riddle: / 中秋谜：. Stems are deduped against all L1–L5 banks (all grades).",
+ "questions": [
+  {
+   "id": "l6g6_001",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "hard",
+   "q_en": "The high lookout where the run ends, above the harbour lights, is ____.",
+   "q_zh": "路线尽头、在海港灯火上方的高处观景台，是____。",
+   "choices": [
+    "a basement garage",
+    "a ship engine room",
+    "a subway platform",
+    "the Peak"
+   ],
+   "choices_zh": [
+    "地下车库",
+    "轮船机舱",
+    "地铁站台",
+    "太平山"
+   ],
+   "answer": 3,
+   "explain_en": "The finish is at the Peak.",
+   "explain_zh": "终点在太平山。",
+   "qtype": "hongkong_landmark",
+   "qtype_zh": "香港地标（中环/维港/太平山）"
+  },
+  {
+   "id": "l6g6_002",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "The moon looks full at Mid-Autumn because the festival is set on a ____ day.",
+   "q_zh": "中秋时月亮看起来是圆的，因为这个节定在____的那天。",
+   "choices": [
+    "day with no moon in any calendar",
+    "full-moon",
+    "solar eclipse only",
+    "new-moon, when the moon is dark"
+   ],
+   "choices_zh": [
+    "任何历法里都没有月亮的日子",
+    "满月",
+    "只有日食的日子",
+    "新月、月亮全黑的"
+   ],
+   "answer": 1,
+   "explain_en": "The 15th of a lunar month is a full-moon date.",
+   "explain_zh": "农历十五是满月的日子。",
+   "qtype": "moon_calendar",
+   "qtype_zh": "月相与农历（中秋日期）"
+  },
+  {
+   "id": "l6g6_003",
+   "level": 6,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "Another English word for a harbour is a ____.",
+   "q_zh": "harbour 的另一个英文说法是____。",
+   "choices": [
+    "port / waterfront",
+    "chimney",
+    "attic",
+    "desert"
+   ],
+   "choices_zh": [
+    "port / waterfront",
+    "chimney",
+    "attic",
+    "desert"
+   ],
+   "answer": 0,
+   "explain_en": "A harbour is a port or waterfront.",
+   "explain_zh": "harbour 也是 port 或水边。",
+   "qtype": "lang_vocab",
+   "qtype_zh": "词义（同义/反义/押韵/词义）"
+  },
+  {
+   "id": "l6g6_004",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I have two decks of windows and roll through Central. Flora switches lanes when I come. What am I?",
+   "q_zh": "中秋谜：我有两层窗户，从中环开过。我来了，Flora 就要换道。打一交通工具，是什么？",
+   "choices": [
+    "A tent",
+    "A double-decker",
+    "A ski",
+    "A rowing scull"
+   ],
+   "choices_zh": [
+    "帐篷",
+    "双层巴士",
+    "滑雪板",
+    "赛艇"
+   ],
+   "answer": 1,
+   "explain_en": "A double-decker bus has two levels.",
+   "explain_zh": "双层巴士有上下两层。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g6_005",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A stall sells 40 mooncakes, and 75% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 40 块月饼，其中 75% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "60",
+    "30",
+    "10"
+   ],
+   "choices_zh": [
+    "60",
+    "30",
+    "10"
+   ],
+   "answer": 1,
+   "explain_en": "40 × 75 ÷ 100 = 30.",
+   "explain_zh": "40 × 75 ÷ 100 = 30。",
+   "sign_en": [
+    "60",
+    "30",
+    "10"
+   ],
+   "sign_zh": [
+    "60",
+    "30",
+    "10"
+   ],
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_006",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi goes 18 km per hour. How many km does it go in 2 hours?",
+   "q_zh": "的士每小时行驶 18 千米，2 小时行驶多少千米？",
+   "choices": [
+    "34",
+    "36",
+    "54",
+    "20"
+   ],
+   "choices_zh": [
+    "34",
+    "36",
+    "54",
+    "20"
+   ],
+   "answer": 1,
+   "explain_en": "18 × 2 = 36.",
+   "explain_zh": "18 × 2 = 36。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_007",
+   "level": 6,
+   "section": "seawall",
+   "subject": "science",
+   "difficulty": "hard",
+   "q_en": "Skating downhill toward the Peak road, Flora speeds up mainly because of ____.",
+   "q_zh": "顺着太平山路向下滑时，Flora 会加快，主要是因为____。",
+   "choices": [
+    "the lanterns pushing her",
+    "the harbour sucking air",
+    "the moon pulling her backpack only",
+    "gravity"
+   ],
+   "choices_zh": [
+    "灯笼在推她",
+    "海港在吸空气",
+    "只是月亮在拉背包",
+    "重力"
+   ],
+   "answer": 3,
+   "explain_en": "Gravity pulls her down the slope.",
+   "explain_zh": "重力把她拉向坡下。",
+   "qtype": "forces_motion",
+   "qtype_zh": "力与运动（摩擦/阻力/牛顿定律）"
+  },
+  {
+   "id": "l6g6_008",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Four stalls sell 35, 39, 44 and 38 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 35、39、44、38 块月饼，平均每摊几块？",
+   "choices": [
+    "39",
+    "44",
+    "38"
+   ],
+   "choices_zh": [
+    "39",
+    "44",
+    "38"
+   ],
+   "answer": 0,
+   "explain_en": "(35 + 39 + 44 + 38) ÷ 4 = 39.",
+   "explain_zh": "(35 + 39 + 44 + 38) ÷ 4 = 39。",
+   "sign_en": [
+    "39",
+    "44",
+    "38"
+   ],
+   "sign_zh": [
+    "39",
+    "44",
+    "38"
+   ],
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_009",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "medium",
+   "q_en": "The small hill bus is a ____.",
+   "q_zh": "上山的小巴士是____。",
+   "choices": [
+    "Minibus",
+    "Sledge",
+    "Balloon"
+   ],
+   "choices_zh": [
+    "小巴",
+    "雪橇",
+    "气球"
+   ],
+   "answer": 0,
+   "explain_en": "It is a minibus.",
+   "explain_zh": "那是小巴。",
+   "sign_en": [
+    "Minibus",
+    "Sledge",
+    "Balloon"
+   ],
+   "sign_zh": [
+    "小巴",
+    "雪橇",
+    "气球"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g6_010",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi goes 11 km per hour. How many km does it go in 4 hours?",
+   "q_zh": "的士每小时行驶 11 千米，4 小时行驶多少千米？",
+   "choices": [
+    "44",
+    "45",
+    "55",
+    "15"
+   ],
+   "choices_zh": [
+    "44",
+    "45",
+    "55",
+    "15"
+   ],
+   "answer": 0,
+   "explain_en": "11 × 4 = 44.",
+   "explain_zh": "11 × 4 = 44。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_011",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 56 stall doors on the street, and 3/8 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 56 个摊位门口，其中 3/8 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "24",
+    "21",
+    "35"
+   ],
+   "choices_zh": [
+    "24",
+    "21",
+    "35"
+   ],
+   "answer": 1,
+   "explain_en": "56 × 3 ÷ 8 = 21.",
+   "explain_zh": "56 × 3 ÷ 8 = 21。",
+   "sign_en": [
+    "24",
+    "21",
+    "35"
+   ],
+   "sign_zh": [
+    "24",
+    "21",
+    "35"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g6_012",
+   "level": 6,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "The character 圆 in 月圆 means ____.",
+   "q_zh": "“月圆”里的“圆”是指____。",
+   "choices": [
+    "round / complete",
+    "sharp",
+    "empty",
+    "frozen"
+   ],
+   "choices_zh": [
+    "圆、完整",
+    "尖",
+    "空",
+    "结冰"
+   ],
+   "answer": 0,
+   "explain_en": "圆 means round or complete.",
+   "explain_zh": "“圆”是圆、完整的意思。",
+   "qtype": "zh_character",
+   "qtype_zh": "汉字字义"
+  },
+  {
+   "id": "l6g6_013",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I smell sweet in autumn courtyards, and my tiny gold flowers are sometimes used to scent tea or cake. What am I?",
+   "q_zh": "中秋谜：秋天的院子里有我甜甜的香味，我细小的金黄花有时会给茶或点心添香。打一植物，是什么？",
+   "choices": [
+    "Seaweed",
+    "Bamboo shoot",
+    "Cactus",
+    "Osmanthus"
+   ],
+   "choices_zh": [
+    "海带",
+    "竹笋",
+    "仙人掌",
+    "桂花"
+   ],
+   "answer": 3,
+   "explain_en": "Osmanthus blooms in autumn and is used for scent.",
+   "explain_zh": "桂花在秋天开，常用来添香。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g6_014",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi goes 16 km per hour. How many km does it go in 5 hours?",
+   "q_zh": "的士每小时行驶 16 千米，5 小时行驶多少千米？",
+   "choices": [
+    "96",
+    "75",
+    "81",
+    "80"
+   ],
+   "choices_zh": [
+    "96",
+    "75",
+    "81",
+    "80"
+   ],
+   "answer": 3,
+   "explain_en": "16 × 5 = 80.",
+   "explain_zh": "16 × 5 = 80。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_015",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular lantern pattern has a base of 14 cm and a height of 11 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 14 厘米、高 11 厘米，面积是多少平方厘米？",
+   "choices": [
+    "77",
+    "154",
+    "91",
+    "66"
+   ],
+   "choices_zh": [
+    "77",
+    "154",
+    "91",
+    "66"
+   ],
+   "answer": 0,
+   "explain_en": "14 × 11 ÷ 2 = 77.",
+   "explain_zh": "14 × 11 ÷ 2 = 77。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_016",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "36 lanterns are green and gold in the ratio 1:3. How many are green?",
+   "q_zh": "36 盏灯笼，绿色和金色的比是 1:3，绿色的有多少盏？",
+   "choices": [
+    "18",
+    "36",
+    "27",
+    "9"
+   ],
+   "choices_zh": [
+    "18",
+    "36",
+    "27",
+    "9"
+   ],
+   "answer": 3,
+   "explain_en": "36 ÷ (1 + 3) × 1 = 9.",
+   "explain_zh": "36 ÷ (1 + 3) × 1 = 9。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_017",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I am baked, often cut into wedges, and shared so everyone at the table gets a piece under the Mid-Autumn moon. What am I?",
+   "q_zh": "中秋谜：我被烤熟，常切成小块，中秋月下桌上的人每人分到一份。打一食物，是什么？",
+   "choices": [
+    "A bowl of soup only",
+    "A raw onion",
+    "A bag of salt",
+    "A mooncake"
+   ],
+   "choices_zh": [
+    "只有汤",
+    "生洋葱",
+    "一袋盐",
+    "月饼"
+   ],
+   "answer": 3,
+   "explain_en": "Mooncakes are shared in pieces at Mid-Autumn.",
+   "explain_zh": "中秋时，人们把月饼分成小块一起吃。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g6_018",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "{name} buys 5 packs of 9 mooncake boxes and gets 7 free ones. How many boxes?",
+   "q_zh": "{name} 买了 5 包月饼盒，每包 9 个，又送了 7 个，一共几个？",
+   "choices": [
+    "53",
+    "80",
+    "52"
+   ],
+   "choices_zh": [
+    "53",
+    "80",
+    "52"
+   ],
+   "answer": 2,
+   "explain_en": "5 × 9 + 7 = 52.",
+   "explain_zh": "5 × 9 + 7 = 52。",
+   "sign_en": [
+    "53",
+    "80",
+    "52"
+   ],
+   "sign_zh": [
+    "53",
+    "80",
+    "52"
+   ],
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g6_019",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Auntie makes 4 trays of 6 mooncakes, then 8 more mooncakes. How many mooncakes in all?",
+   "q_zh": "阿嫲摆了 4 盘月饼，每盘 6 块，又摆了 8 块，一共多少块？",
+   "choices": [
+    "18",
+    "28",
+    "32",
+    "33"
+   ],
+   "choices_zh": [
+    "18",
+    "28",
+    "32",
+    "33"
+   ],
+   "answer": 2,
+   "explain_en": "4 × 6 + 8 = 32.",
+   "explain_zh": "4 × 6 + 8 = 32。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g6_020",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I hop near the mooncake stall, fold my brown wings, and chirp, but I am not the rabbit on the moon. What am I?",
+   "q_zh": "中秋谜：我在月饼摊边跳来跳去，收起棕色的翅膀，还会叫，可我不是月亮上的兔子。打一动物，是什么？",
+   "choices": [
+    "A pony",
+    "A sparrow",
+    "A crab",
+    "A whale"
+   ],
+   "choices_zh": [
+    "小马",
+    "麻雀",
+    "螃蟹",
+    "鲸鱼"
+   ],
+   "answer": 1,
+   "explain_en": "A sparrow hops and chirps near the stall.",
+   "explain_zh": "麻雀会在摊边跳，还会叫。",
+   "qtype": "riddle_animal",
+   "qtype_zh": "中秋谜·动物谜（猜动物）"
+  },
+  {
+   "id": "l6g6_021",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "A skate brake adds ____.",
+   "q_zh": "轮滑刹车是加上____。",
+   "choices": [
+    "Friction",
+    "More oil",
+    "A sail"
+   ],
+   "choices_zh": [
+    "摩擦",
+    "更多油",
+    "帆"
+   ],
+   "answer": 0,
+   "explain_en": "It uses friction.",
+   "explain_zh": "靠的是摩擦。",
+   "sign_en": [
+    "Friction",
+    "More oil",
+    "A sail"
+   ],
+   "sign_zh": [
+    "摩擦",
+    "更多油",
+    "帆"
+   ],
+   "qtype": "simple_machines",
+   "qtype_zh": "简单机械（轮滑轮子/刹车）"
+  },
+  {
+   "id": "l6g6_022",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A bag has 1 green lanterns and 4 gold ones, all equally likely to be drawn. What is the probability of drawing green?",
+   "q_zh": "袋子里有 1 盏绿灯笼和 4 盏金灯笼，每盏被抽到的机会相同，抽到绿灯笼的概率是多少？",
+   "choices": [
+    "1/3",
+    "4/5",
+    "1/5"
+   ],
+   "choices_zh": [
+    "1/3",
+    "4/5",
+    "1/5"
+   ],
+   "answer": 2,
+   "explain_en": "1 ÷ (1 + 4) = 1/5.",
+   "explain_zh": "1 ÷ (1 + 4) = 1/5。",
+   "sign_en": [
+    "1/3",
+    "4/5",
+    "1/5"
+   ],
+   "sign_zh": [
+    "1/3",
+    "4/5",
+    "1/5"
+   ],
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l6g6_023",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "42 lanterns are green and gold in the ratio 3:4. How many are green?",
+   "q_zh": "42 盏灯笼，绿色和金色的比是 3:4，绿色的有多少盏？",
+   "choices": [
+    "18",
+    "6",
+    "14",
+    "24"
+   ],
+   "choices_zh": [
+    "18",
+    "6",
+    "14",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "42 ÷ (3 + 4) × 3 = 18.",
+   "explain_zh": "42 ÷ (3 + 4) × 3 = 18。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_024",
+   "level": 6,
+   "section": "seawall",
+   "subject": "nature",
+   "difficulty": "hard",
+   "q_en": "Osmanthus, whose tiny flowers scent some autumn cakes and teas, blooms mainly in ____.",
+   "q_zh": "桂花能给一些秋点、秋茶添香，它主要在____开放。",
+   "choices": [
+    "the depth of snowy winter only",
+    "under the sea",
+    "autumn",
+    "the first week of spring only"
+   ],
+   "choices_zh": [
+    "只有大雪深冬",
+    "在海底",
+    "秋天",
+    "只有开春第一周"
+   ],
+   "answer": 2,
+   "explain_en": "Osmanthus is an autumn flower.",
+   "explain_zh": "桂花是秋天开的。",
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（柚子/桂花/莲蓉）"
+  },
+  {
+   "id": "l6g6_025",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "60 lanterns are green and gold in the ratio 2:3. How many are green?",
+   "q_zh": "60 盏灯笼，绿色和金色的比是 2:3，绿色的有多少盏？",
+   "choices": [
+    "24",
+    "30",
+    "12",
+    "36"
+   ],
+   "choices_zh": [
+    "24",
+    "30",
+    "12",
+    "36"
+   ],
+   "answer": 0,
+   "explain_en": "60 ÷ (2 + 3) × 2 = 24.",
+   "explain_zh": "60 ÷ (2 + 3) × 2 = 24。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_026",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "Besides lotus paste, a mooncake filling may also be ____.",
+   "q_zh": "除了莲蓉，月饼馅还可以是____。",
+   "choices": [
+    "wet cement",
+    "chalk dust",
+    "motor oil",
+    "sweet red bean"
+   ],
+   "choices_zh": [
+    "湿水泥",
+    "粉笔灰",
+    "机油",
+    "甜豆沙"
+   ],
+   "answer": 3,
+   "explain_en": "Red-bean paste is another common filling.",
+   "explain_zh": "豆沙也是常见的馅。",
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g6_027",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "Lotus paste, a classic mooncake filling, is made mainly from ____.",
+   "q_zh": "莲蓉这种常见月饼馅，主要是用____做的。",
+   "choices": [
+    "lotus seeds",
+    "iron filings",
+    "dry sand",
+    "sea salt blocks"
+   ],
+   "choices_zh": [
+    "莲子",
+    "铁屑",
+    "干沙子",
+    "海盐块"
+   ],
+   "answer": 0,
+   "explain_en": "Lotus paste comes from lotus seeds.",
+   "explain_zh": "莲蓉是用莲子做成的。",
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g6_028",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sells 20 mooncakes, and 15% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 20 块月饼，其中 15% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "1",
+    "6",
+    "3",
+    "13"
+   ],
+   "choices_zh": [
+    "1",
+    "6",
+    "3",
+    "13"
+   ],
+   "answer": 2,
+   "explain_en": "20 × 15 ÷ 100 = 3.",
+   "explain_zh": "20 × 15 ÷ 100 = 3。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_029",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "safety",
+   "difficulty": "medium",
+   "q_en": "A red taxi in your lane? ____.",
+   "q_zh": "的士开进你的道？要____。",
+   "choices": [
+    "Switch lanes",
+    "Sit down",
+    "Grab the door"
+   ],
+   "choices_zh": [
+    "换道",
+    "坐下来",
+    "抓车门"
+   ],
+   "answer": 0,
+   "explain_en": "Switch to a clear lane.",
+   "explain_zh": "换到空道。",
+   "sign_en": [
+    "Switch lanes",
+    "Sit down",
+    "Grab the door"
+   ],
+   "sign_zh": [
+    "换道",
+    "坐下来",
+    "抓车门"
+   ],
+   "qtype": "road_safety",
+   "qtype_zh": "轮滑与交通安全"
+  },
+  {
+   "id": "l6g6_030",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Auntie makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "阿嫲摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "choices": [
+    "61",
+    "60",
+    "51"
+   ],
+   "choices_zh": [
+    "61",
+    "60",
+    "51"
+   ],
+   "answer": 1,
+   "explain_en": "9 × 6 + 6 = 60.",
+   "explain_zh": "9 × 6 + 6 = 60。",
+   "sign_en": [
+    "61",
+    "60",
+    "51"
+   ],
+   "sign_zh": [
+    "61",
+    "60",
+    "51"
+   ],
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g6_031",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A triangular lantern pattern has a base of 30 cm and a height of 6 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 30 厘米、高 6 厘米，面积是多少平方厘米？",
+   "choices": [
+    "180",
+    "90",
+    "84"
+   ],
+   "choices_zh": [
+    "180",
+    "90",
+    "84"
+   ],
+   "answer": 1,
+   "explain_en": "30 × 6 ÷ 2 = 90.",
+   "explain_zh": "30 × 6 ÷ 2 = 90。",
+   "sign_en": [
+    "180",
+    "90",
+    "84"
+   ],
+   "sign_zh": [
+    "180",
+    "90",
+    "84"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_032",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A red taxi goes 18 km per hour. How many km does it go in 4 hours?",
+   "q_zh": "的士每小时行驶 18 千米，4 小时行驶多少千米？",
+   "choices": [
+    "72",
+    "90",
+    "22"
+   ],
+   "choices_zh": [
+    "72",
+    "90",
+    "22"
+   ],
+   "answer": 0,
+   "explain_en": "18 × 4 = 72.",
+   "explain_zh": "18 × 4 = 72。",
+   "sign_en": [
+    "72",
+    "90",
+    "22"
+   ],
+   "sign_zh": [
+    "72",
+    "90",
+    "22"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_033",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "20 lanterns are green and gold in the ratio 2:3. How many are green?",
+   "q_zh": "20 盏灯笼，绿色和金色的比是 2:3，绿色的有多少盏？",
+   "choices": [
+    "12",
+    "8",
+    "4"
+   ],
+   "choices_zh": [
+    "12",
+    "8",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "20 ÷ (2 + 3) × 2 = 8.",
+   "explain_zh": "20 ÷ (2 + 3) × 2 = 8。",
+   "sign_en": [
+    "12",
+    "8",
+    "4"
+   ],
+   "sign_zh": [
+    "12",
+    "8",
+    "4"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_034",
+   "level": 6,
+   "section": "seawall",
+   "subject": "hongkong",
+   "difficulty": "hard",
+   "q_en": "Bamboo poles tied into a frame on a Hong Kong street are a ____.",
+   "q_zh": "香港街上用竹竿绑成的架子，叫做____。",
+   "choices": [
+    "glass greenhouse only",
+    "wool sweater",
+    "metal spring",
+    "bamboo scaffold"
+   ],
+   "choices_zh": [
+    "只有玻璃暖房",
+    "毛衣",
+    "金属弹簧",
+    "竹棚"
+   ],
+   "answer": 3,
+   "explain_en": "Bamboo scaffold is a Hong Kong street sight.",
+   "explain_zh": "竹棚是香港街头常见的。",
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g6_035",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "70 lanterns are green and gold in the ratio 3:4. How many are green?",
+   "q_zh": "70 盏灯笼，绿色和金色的比是 3:4，绿色的有多少盏？",
+   "choices": [
+    "40",
+    "23",
+    "30",
+    "10"
+   ],
+   "choices_zh": [
+    "40",
+    "23",
+    "30",
+    "10"
+   ],
+   "answer": 2,
+   "explain_en": "70 ÷ (3 + 4) × 3 = 30.",
+   "explain_zh": "70 ÷ (3 + 4) × 3 = 30。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_036",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 120 yuan. It is 20% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 120 元，月饼摊便宜 20%，现价多少元？",
+   "choices": [
+    "106",
+    "96",
+    "144",
+    "100"
+   ],
+   "choices_zh": [
+    "106",
+    "96",
+    "144",
+    "100"
+   ],
+   "answer": 1,
+   "explain_en": "120 × (100 - 20) ÷ 100 = 96.",
+   "explain_zh": "120 × (100 - 20) ÷ 100 = 96。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g6_037",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 90 stall doors on the street, and 4/5 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 90 个摊位门口，其中 4/5 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "76",
+    "77",
+    "18",
+    "72"
+   ],
+   "choices_zh": [
+    "76",
+    "77",
+    "18",
+    "72"
+   ],
+   "answer": 3,
+   "explain_en": "90 × 4 ÷ 5 = 72.",
+   "explain_zh": "90 × 4 ÷ 5 = 72。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g6_038",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "midautumn",
+   "difficulty": "medium",
+   "q_en": "People cut the mooncake to ____.",
+   "q_zh": "人们切月饼是为了____。",
+   "choices": [
+    "Share it",
+    "Weigh the moon",
+    "Hide it"
+   ],
+   "choices_zh": [
+    "分着吃",
+    "称月亮",
+    "藏起来"
+   ],
+   "answer": 0,
+   "explain_en": "They share it.",
+   "explain_zh": "是为了分着吃。",
+   "sign_en": [
+    "Share it",
+    "Weigh the moon",
+    "Hide it"
+   ],
+   "sign_zh": [
+    "分着吃",
+    "称月亮",
+    "藏起来"
+   ],
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g6_039",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "nature",
+   "difficulty": "medium",
+   "q_en": "Osmanthus blooms in ____.",
+   "q_zh": "桂花主要在____开。",
+   "choices": [
+    "Autumn",
+    "Under the sea",
+    "Deep winter"
+   ],
+   "choices_zh": [
+    "秋天",
+    "海底",
+    "深冬"
+   ],
+   "answer": 0,
+   "explain_en": "It blooms in autumn.",
+   "explain_zh": "桂花在秋天开。",
+   "sign_en": [
+    "Autumn",
+    "Under the sea",
+    "Deep winter"
+   ],
+   "sign_zh": [
+    "秋天",
+    "海底",
+    "深冬"
+   ],
+   "qtype": "plant_biology",
+   "qtype_zh": "植物（柚子/桂花/莲蓉）"
+  },
+  {
+   "id": "l6g6_040",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "Four stalls sell 3, 8, 14 and 7 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 3、8、14、7 块月饼，平均每摊几块？",
+   "choices": [
+    "32",
+    "8",
+    "7"
+   ],
+   "choices_zh": [
+    "32",
+    "8",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "(3 + 8 + 14 + 7) ÷ 4 = 8.",
+   "explain_zh": "(3 + 8 + 14 + 7) ÷ 4 = 8。",
+   "sign_en": [
+    "32",
+    "8",
+    "7"
+   ],
+   "sign_zh": [
+    "32",
+    "8",
+    "7"
+   ],
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_041",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 360 yuan. It is 25% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 360 元，月饼摊便宜 25%，现价多少元？",
+   "choices": [
+    "90",
+    "335",
+    "450",
+    "270"
+   ],
+   "choices_zh": [
+    "90",
+    "335",
+    "450",
+    "270"
+   ],
+   "answer": 3,
+   "explain_en": "360 × (100 - 25) ÷ 100 = 270.",
+   "explain_zh": "360 × (100 - 25) ÷ 100 = 270。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g6_042",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sells 400 mooncakes, and 60% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 400 块月饼，其中 60% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "480",
+    "6",
+    "240",
+    "160"
+   ],
+   "choices_zh": [
+    "480",
+    "6",
+    "240",
+    "160"
+   ],
+   "answer": 2,
+   "explain_en": "400 × 60 ÷ 100 = 240.",
+   "explain_zh": "400 × 60 ÷ 100 = 240。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_043",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "There are 120 stall doors on the street, and 3/8 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 120 个摊位门口，其中 3/8 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "53",
+    "15",
+    "45"
+   ],
+   "choices_zh": [
+    "53",
+    "15",
+    "45"
+   ],
+   "answer": 2,
+   "explain_en": "120 × 3 ÷ 8 = 45.",
+   "explain_zh": "120 × 3 ÷ 8 = 45。",
+   "sign_en": [
+    "53",
+    "15",
+    "45"
+   ],
+   "sign_zh": [
+    "53",
+    "15",
+    "45"
+   ],
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g6_044",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Four stalls sell 10, 15, 21 and 14 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 10、15、21、14 块月饼，平均每摊几块？",
+   "choices": [
+    "60",
+    "21",
+    "16",
+    "15"
+   ],
+   "choices_zh": [
+    "60",
+    "21",
+    "16",
+    "15"
+   ],
+   "answer": 3,
+   "explain_en": "(10 + 15 + 21 + 14) ÷ 4 = 15.",
+   "explain_zh": "(10 + 15 + 21 + 14) ÷ 4 = 15。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_045",
+   "level": 6,
+   "section": "seawall",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "Why do people cut a mooncake into pieces before eating it at Mid-Autumn?",
+   "q_zh": "中秋吃月饼前，人们为什么先把月饼切开？",
+   "choices": [
+    "To hide it from the lanterns",
+    "To make the moon rise faster",
+    "Because it cannot be held",
+    "So everyone at the table can share it"
+   ],
+   "choices_zh": [
+    "为了不让灯笼看见",
+    "为了让月亮升得更快",
+    "因为根本拿不住",
+    "好让桌上的人都能分到"
+   ],
+   "answer": 3,
+   "explain_en": "Sharing the mooncake is part of the reunion.",
+   "explain_zh": "把月饼分给大家，是团圆的一部分。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g6_046",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "40 lanterns are green and gold in the ratio 2:3. How many are green?",
+   "q_zh": "40 盏灯笼，绿色和金色的比是 2:3，绿色的有多少盏？",
+   "choices": [
+    "16",
+    "20",
+    "24"
+   ],
+   "choices_zh": [
+    "16",
+    "20",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "40 ÷ (2 + 3) × 2 = 16.",
+   "explain_zh": "40 ÷ (2 + 3) × 2 = 16。",
+   "sign_en": [
+    "16",
+    "20",
+    "24"
+   ],
+   "sign_zh": [
+    "16",
+    "20",
+    "24"
+   ],
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_047",
+   "level": 6,
+   "section": "seawall",
+   "subject": "language",
+   "difficulty": "hard",
+   "q_en": "The phrase 花好月圆 is often used at Mid-Autumn. It wishes for ____.",
+   "q_zh": "成语“花好月圆”常在中秋使用，它祝愿____。",
+   "choices": [
+    "a happy, complete reunion",
+    "an empty table",
+    "a broken plate",
+    "a rainy workday only"
+   ],
+   "choices_zh": [
+    "美满团圆",
+    "一张空桌子",
+    "一只破盘子",
+    "只有下雨的工作日"
+   ],
+   "answer": 0,
+   "explain_en": "花好月圆 wishes a happy reunion.",
+   "explain_zh": "“花好月圆”是祝人团圆美满。",
+   "qtype": "zh_idiom_poem",
+   "qtype_zh": "成语与古诗"
+  },
+  {
+   "id": "l6g6_048",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "63 lanterns are green and gold in the ratio 4:5. How many are green?",
+   "q_zh": "63 盏灯笼，绿色和金色的比是 4:5，绿色的有多少盏？",
+   "choices": [
+    "35",
+    "28",
+    "15",
+    "7"
+   ],
+   "choices_zh": [
+    "35",
+    "28",
+    "15",
+    "7"
+   ],
+   "answer": 1,
+   "explain_en": "63 ÷ (4 + 5) × 4 = 28.",
+   "explain_zh": "63 ÷ (4 + 5) × 4 = 28。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_049",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Four stalls sell 9, 14, 20 and 13 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 9、14、20、13 块月饼，平均每摊几块？",
+   "choices": [
+    "15",
+    "14",
+    "20",
+    "13"
+   ],
+   "choices_zh": [
+    "15",
+    "14",
+    "20",
+    "13"
+   ],
+   "answer": 1,
+   "explain_en": "(9 + 14 + 20 + 13) ÷ 4 = 14.",
+   "explain_zh": "(9 + 14 + 20 + 13) ÷ 4 = 14。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_050",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A lantern costs 150 yuan. It is 40% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 150 元，月饼摊便宜 40%，现价多少元？",
+   "choices": [
+    "110",
+    "210",
+    "90"
+   ],
+   "choices_zh": [
+    "110",
+    "210",
+    "90"
+   ],
+   "answer": 2,
+   "explain_en": "150 × (100 - 40) ÷ 100 = 90.",
+   "explain_zh": "150 × (100 - 40) ÷ 100 = 90。",
+   "sign_en": [
+    "110",
+    "210",
+    "90"
+   ],
+   "sign_zh": [
+    "110",
+    "210",
+    "90"
+   ],
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g6_051",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora buys 9 packs of 6 mooncake boxes and gets 7 free ones. How many boxes?",
+   "q_zh": "Flora 买了 9 包月饼盒，每包 6 个，又送了 7 个，一共几个？",
+   "choices": [
+    "61",
+    "22",
+    "52",
+    "117"
+   ],
+   "choices_zh": [
+    "61",
+    "22",
+    "52",
+    "117"
+   ],
+   "answer": 0,
+   "explain_en": "9 × 6 + 7 = 61.",
+   "explain_zh": "9 × 6 + 7 = 61。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g6_052",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sells 20 mooncakes, and 30% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 20 块月饼，其中 30% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "6",
+    "12",
+    "16",
+    "14"
+   ],
+   "choices_zh": [
+    "6",
+    "12",
+    "16",
+    "14"
+   ],
+   "answer": 0,
+   "explain_en": "20 × 30 ÷ 100 = 6.",
+   "explain_zh": "20 × 30 ÷ 100 = 6。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_053",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "science",
+   "difficulty": "medium",
+   "q_en": "Harbour water at night ____ lights.",
+   "q_zh": "夜里海水会把灯光____。",
+   "choices": [
+    "Reflects",
+    "Eats",
+    "Erases"
+   ],
+   "choices_zh": [
+    "反射",
+    "吃掉",
+    "擦掉"
+   ],
+   "answer": 0,
+   "explain_en": "It reflects them.",
+   "explain_zh": "水面会反射光。",
+   "sign_en": [
+    "Reflects",
+    "Eats",
+    "Erases"
+   ],
+   "sign_zh": [
+    "反射",
+    "吃掉",
+    "擦掉"
+   ],
+   "qtype": "sound_light",
+   "qtype_zh": "声与光（海港灯火/回声）"
+  },
+  {
+   "id": "l6g6_054",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A red taxi goes 11 km per hour. How many km does it go in 5 hours?",
+   "q_zh": "的士每小时行驶 11 千米，5 小时行驶多少千米？",
+   "choices": [
+    "16",
+    "50",
+    "66",
+    "55"
+   ],
+   "choices_zh": [
+    "16",
+    "50",
+    "66",
+    "55"
+   ],
+   "answer": 3,
+   "explain_en": "11 × 5 = 55.",
+   "explain_zh": "11 × 5 = 55。",
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_055",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "midautumn",
+   "difficulty": "medium",
+   "q_en": "Lotus paste is made from ____.",
+   "q_zh": "莲蓉主要来自____。",
+   "choices": [
+    "Dry sand",
+    "Iron filings",
+    "Lotus seeds"
+   ],
+   "choices_zh": [
+    "干沙子",
+    "铁屑",
+    "莲子"
+   ],
+   "answer": 2,
+   "explain_en": "It is made from lotus seeds.",
+   "explain_zh": "是用莲子做的。",
+   "sign_en": [
+    "Dry sand",
+    "Iron filings",
+    "Lotus seeds"
+   ],
+   "sign_zh": [
+    "干沙子",
+    "铁屑",
+    "莲子"
+   ],
+   "qtype": "mooncake_food",
+   "qtype_zh": "月饼与食材"
+  },
+  {
+   "id": "l6g6_056",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A triangular lantern pattern has a base of 8 cm and a height of 3 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 8 厘米、高 3 厘米，面积是多少平方厘米？",
+   "choices": [
+    "12",
+    "20",
+    "24"
+   ],
+   "choices_zh": [
+    "12",
+    "20",
+    "24"
+   ],
+   "answer": 0,
+   "explain_en": "8 × 3 ÷ 2 = 12.",
+   "explain_zh": "8 × 3 ÷ 2 = 12。",
+   "sign_en": [
+    "12",
+    "20",
+    "24"
+   ],
+   "sign_zh": [
+    "12",
+    "20",
+    "24"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_057",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A bag has 4 green lanterns and 11 gold ones, all equally likely to be drawn. What is the probability of drawing green?",
+   "q_zh": "袋子里有 4 盏绿灯笼和 11 盏金灯笼，每盏被抽到的机会相同，抽到绿灯笼的概率是多少？",
+   "choices": [
+    "4/11",
+    "4/15",
+    "5/16"
+   ],
+   "choices_zh": [
+    "4/11",
+    "4/15",
+    "5/16"
+   ],
+   "answer": 1,
+   "explain_en": "4 ÷ (4 + 11) = 4/15.",
+   "explain_zh": "4 ÷ (4 + 11) = 4/15。",
+   "sign_en": [
+    "4/11",
+    "4/15",
+    "5/16"
+   ],
+   "sign_zh": [
+    "4/11",
+    "4/15",
+    "5/16"
+   ],
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l6g6_058",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular lantern pattern has a base of 17 cm and a height of 8 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 17 厘米、高 8 厘米，面积是多少平方厘米？",
+   "choices": [
+    "60",
+    "136",
+    "85",
+    "68"
+   ],
+   "choices_zh": [
+    "60",
+    "136",
+    "85",
+    "68"
+   ],
+   "answer": 3,
+   "explain_en": "17 × 8 ÷ 2 = 68.",
+   "explain_zh": "17 × 8 ÷ 2 = 68。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_059",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I am a small bus that climbs the Peak road. I am not a tram on rails. What am I?",
+   "q_zh": "中秋谜：我是往太平山路上爬的小型巴士，我不是走轨道的叮叮车。打一交通工具，是什么？",
+   "choices": [
+    "A wagon wheel",
+    "A minibus",
+    "A ferry bench",
+    "A subway map"
+   ],
+   "choices_zh": [
+    "马车轮",
+    "小巴",
+    "渡轮长凳",
+    "地铁图"
+   ],
+   "answer": 1,
+   "explain_en": "Minibuses run on the Peak road.",
+   "explain_zh": "小巴会走太平山的路。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g6_060",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A stall sells 120 mooncakes, and 30% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 120 块月饼，其中 30% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "72",
+    "36",
+    "4"
+   ],
+   "choices_zh": [
+    "72",
+    "36",
+    "4"
+   ],
+   "answer": 1,
+   "explain_en": "120 × 30 ÷ 100 = 36.",
+   "explain_zh": "120 × 30 ÷ 100 = 36。",
+   "sign_en": [
+    "72",
+    "36",
+    "4"
+   ],
+   "sign_zh": [
+    "72",
+    "36",
+    "4"
+   ],
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_061",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A red taxi goes 18 km per hour. How many km does it go in 5 hours?",
+   "q_zh": "的士每小时行驶 18 千米，5 小时行驶多少千米？",
+   "choices": [
+    "23",
+    "90",
+    "108"
+   ],
+   "choices_zh": [
+    "23",
+    "90",
+    "108"
+   ],
+   "answer": 1,
+   "explain_en": "18 × 5 = 90.",
+   "explain_zh": "18 × 5 = 90。",
+   "sign_en": [
+    "23",
+    "90",
+    "108"
+   ],
+   "sign_zh": [
+    "23",
+    "90",
+    "108"
+   ],
+   "qtype": "rate_time",
+   "qtype_zh": "速度×时间（每小时多少×几小时）"
+  },
+  {
+   "id": "l6g6_062",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "math",
+   "difficulty": "medium",
+   "q_en": "A triangular lantern pattern has a base of 14 cm and a height of 6 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 14 厘米、高 6 厘米，面积是多少平方厘米？",
+   "choices": [
+    "42",
+    "20",
+    "84"
+   ],
+   "choices_zh": [
+    "42",
+    "20",
+    "84"
+   ],
+   "answer": 0,
+   "explain_en": "14 × 6 ÷ 2 = 42.",
+   "explain_zh": "14 × 6 ÷ 2 = 42。",
+   "sign_en": [
+    "42",
+    "20",
+    "84"
+   ],
+   "sign_zh": [
+    "42",
+    "20",
+    "84"
+   ],
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_063",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A lantern costs 60 yuan. It is 10% off at the mooncake stall. What is the new price in yuan?",
+   "q_zh": "一盏灯笼 60 元，月饼摊便宜 10%，现价多少元？",
+   "choices": [
+    "6",
+    "54",
+    "50",
+    "64"
+   ],
+   "choices_zh": [
+    "6",
+    "54",
+    "50",
+    "64"
+   ],
+   "answer": 1,
+   "explain_en": "60 × (100 - 10) ÷ 100 = 54.",
+   "explain_zh": "60 × (100 - 10) ÷ 100 = 54。",
+   "qtype": "percent_discount",
+   "qtype_zh": "打折后价格"
+  },
+  {
+   "id": "l6g6_064",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "There are 12 stall doors on the street, and 1/2 of them have pomelo hung up. How many doors have pomelo?",
+   "q_zh": "这条街上有 12 个摊位门口，其中 1/2 挂了柚子，有多少家挂了柚子？",
+   "choices": [
+    "5",
+    "8",
+    "6",
+    "7"
+   ],
+   "choices_zh": [
+    "5",
+    "8",
+    "6",
+    "7"
+   ],
+   "answer": 2,
+   "explain_en": "12 × 1 ÷ 2 = 6.",
+   "explain_zh": "12 × 1 ÷ 2 = 6。",
+   "qtype": "fraction_of_n",
+   "qtype_zh": "求一个数的几分之几"
+  },
+  {
+   "id": "l6g6_065",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Four stalls sell 20, 22, 25 and 21 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 20、22、25、21 块月饼，平均每摊几块？",
+   "choices": [
+    "22",
+    "21",
+    "88",
+    "23"
+   ],
+   "choices_zh": [
+    "22",
+    "21",
+    "88",
+    "23"
+   ],
+   "answer": 0,
+   "explain_en": "(20 + 22 + 25 + 21) ÷ 4 = 22.",
+   "explain_zh": "(20 + 22 + 25 + 21) ÷ 4 = 22。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_066",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sells 60 mooncakes, and 45% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 60 块月饼，其中 45% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "33",
+    "27",
+    "1",
+    "54"
+   ],
+   "choices_zh": [
+    "33",
+    "27",
+    "1",
+    "54"
+   ],
+   "answer": 1,
+   "explain_en": "60 × 45 ÷ 100 = 27.",
+   "explain_zh": "60 × 45 ÷ 100 = 27。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_067",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A stall sells 60 mooncakes, and 35% are sweet bean. How many mooncakes are sweet bean?",
+   "q_zh": "小摊卖了 60 块月饼，其中 35% 是豆沙馅，豆沙馅的有多少块？",
+   "choices": [
+    "42",
+    "21",
+    "39",
+    "31"
+   ],
+   "choices_zh": [
+    "42",
+    "21",
+    "39",
+    "31"
+   ],
+   "answer": 1,
+   "explain_en": "60 × 35 ÷ 100 = 21.",
+   "explain_zh": "60 × 35 ÷ 100 = 21。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_068",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Flora buys 8 packs of 5 mooncake boxes and gets 3 free ones. How many boxes?",
+   "q_zh": "Flora 买了 8 包月饼盒，每包 5 个，又送了 3 个，一共几个？",
+   "choices": [
+    "16",
+    "35",
+    "43",
+    "44"
+   ],
+   "choices_zh": [
+    "16",
+    "35",
+    "43",
+    "44"
+   ],
+   "answer": 2,
+   "explain_en": "8 × 5 + 3 = 43.",
+   "explain_zh": "8 × 5 + 3 = 43。",
+   "qtype": "mult_add_multistep",
+   "qtype_zh": "两步混合运算"
+  },
+  {
+   "id": "l6g6_069",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Four stalls sell 27, 29, 32 and 28 mooncakes. What is the mean number of mooncakes?",
+   "q_zh": "四个摊位分别卖了 27、29、32、28 块月饼，平均每摊几块？",
+   "choices": [
+    "32",
+    "30",
+    "29",
+    "28"
+   ],
+   "choices_zh": [
+    "32",
+    "30",
+    "29",
+    "28"
+   ],
+   "answer": 2,
+   "explain_en": "(27 + 29 + 32 + 28) ÷ 4 = 29.",
+   "explain_zh": "(27 + 29 + 32 + 28) ÷ 4 = 29。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_070",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A bag has 2 green lanterns and 3 gold ones, all equally likely to be drawn. What is the probability of drawing green?",
+   "q_zh": "袋子里有 2 盏绿灯笼和 3 盏金灯笼，每盏被抽到的机会相同，抽到绿灯笼的概率是多少？",
+   "choices": [
+    "2/3",
+    "1/2",
+    "2/5",
+    "3/5"
+   ],
+   "choices_zh": [
+    "2/3",
+    "1/2",
+    "2/5",
+    "3/5"
+   ],
+   "answer": 2,
+   "explain_en": "2 ÷ (2 + 3) = 2/5.",
+   "explain_zh": "2 ÷ (2 + 3) = 2/5。",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l6g6_071",
+   "level": 6,
+   "section": "forest_fork",
+   "subject": "hongkong",
+   "difficulty": "medium",
+   "q_en": "Poles on the street may form a ____.",
+   "q_zh": "街边的杆子可能绑成____。",
+   "choices": [
+    "Glass vase",
+    "Bamboo scaffold",
+    "Wool sweater"
+   ],
+   "choices_zh": [
+    "玻璃花瓶",
+    "竹棚",
+    "毛衣"
+   ],
+   "answer": 1,
+   "explain_en": "That frame is bamboo scaffold.",
+   "explain_zh": "那是竹棚。",
+   "sign_en": [
+    "Glass vase",
+    "Bamboo scaffold",
+    "Wool sweater"
+   ],
+   "sign_zh": [
+    "玻璃花瓶",
+    "竹棚",
+    "毛衣"
+   ],
+   "qtype": "hongkong_life",
+   "qtype_zh": "香港生活（叮叮车/的士/小巴）"
+  },
+  {
+   "id": "l6g6_072",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular lantern pattern has a base of 4 cm and a height of 13 cm. What is its area in cm²?",
+   "q_zh": "一个三角形灯笼图案底 4 厘米、高 13 厘米，面积是多少平方厘米？",
+   "choices": [
+    "13",
+    "17",
+    "52",
+    "26"
+   ],
+   "choices_zh": [
+    "13",
+    "17",
+    "52",
+    "26"
+   ],
+   "answer": 3,
+   "explain_en": "4 × 13 ÷ 2 = 26.",
+   "explain_zh": "4 × 13 ÷ 2 = 26。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_073",
+   "level": 6,
+   "section": "seawall",
+   "subject": "riddle",
+   "difficulty": "hard",
+   "q_en": "Festival riddle: I hang in strings on the way up the Peak, and Flora must duck when I hang low. I glow. What am I?",
+   "q_zh": "中秋谜：我一串串挂在上太平山的路上，挂得低时 Flora 要蹲下。我会发亮。打一物，是什么？",
+   "choices": [
+    "Paper cups",
+    "Lanterns",
+    "Street puddles",
+    "Traffic cones"
+   ],
+   "choices_zh": [
+    "纸杯",
+    "灯笼",
+    "路上的水洼",
+    "锥桶"
+   ],
+   "answer": 1,
+   "explain_en": "Low lantern strings are ducked under.",
+   "explain_zh": "灯笼挂得低时，要蹲下去。",
+   "qtype": "riddle_object",
+   "qtype_zh": "中秋谜·物谜（猜东西）"
+  },
+  {
+   "id": "l6g6_074",
+   "level": 6,
+   "section": "seawall",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A bag has 2 green lanterns and 9 gold ones, all equally likely to be drawn. What is the probability of drawing green?",
+   "q_zh": "袋子里有 2 盏绿灯笼和 9 盏金灯笼，每盏被抽到的机会相同，抽到绿灯笼的概率是多少？",
+   "choices": [
+    "2/9",
+    "2/11",
+    "9/11",
+    "1/4"
+   ],
+   "choices_zh": [
+    "2/9",
+    "2/11",
+    "9/11",
+    "1/4"
+   ],
+   "answer": 1,
+   "explain_en": "2 ÷ (2 + 9) = 2/11.",
+   "explain_zh": "2 ÷ (2 + 9) = 2/11。",
+   "qtype": "probability_simple",
+   "qtype_zh": "简单概率"
+  },
+  {
+   "id": "l6g6_075",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "midautumn",
+   "difficulty": "hard",
+   "q_en": "At the Peak lookout Auntie cuts the mooncake before handing pieces to Flora. She does this so that ____.",
+   "q_zh": "在太平山观景台，阿嫲先把月饼切开，再递给 Flora。她这样做是为了____。",
+   "choices": [
+    "they can share it together",
+    "Bara can use it as a wheel",
+    "the moon will change colour",
+    "the lanterns will go out"
+   ],
+   "choices_zh": [
+    "好让大家一起分着吃",
+    "让 Bara 拿它当轮子",
+    "让月亮变色",
+    "让灯笼熄灭"
+   ],
+   "answer": 0,
+   "explain_en": "Cutting the mooncake is for sharing.",
+   "explain_zh": "切开月饼是为了分享。",
+   "qtype": "midautumn_custom",
+   "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
+  },
+  {
+   "id": "l6g6_076",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "hongkong",
+   "difficulty": "hard",
+   "q_en": "From the Peak, Flora looks down past lanterns and sees a wide, lit stretch of water. That water is ____.",
+   "q_zh": "在太平山，Flora 越过灯笼向下看，看见一片又宽又亮的水。那是____。",
+   "choices": [
+    "Victoria Harbour",
+    "a desert salt lake",
+    "an indoor swimming pool",
+    "a frozen moat"
+   ],
+   "choices_zh": [
+    "维港",
+    "沙漠盐湖",
+    "室内泳池",
+    "结冰的护城河"
+   ],
+   "answer": 0,
+   "explain_en": "The harbour lies below the Peak.",
+   "explain_zh": "维港就在太平山下方。",
+   "qtype": "hongkong_landmark",
+   "qtype_zh": "香港地标（中环/维港/太平山）"
+  },
+  {
+   "id": "l6g6_077",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "240 visitors stand by the harbour at sunset, and 45% of them watch a tram. How many watch a tram?",
+   "q_zh": "傍晚维港有 240 位游客，其中 45% 在看叮叮车，有多少人在看叮叮车？",
+   "choices": [
+    "118",
+    "216",
+    "132",
+    "108"
+   ],
+   "choices_zh": [
+    "118",
+    "216",
+    "132",
+    "108"
+   ],
+   "answer": 3,
+   "explain_en": "240 × 45 ÷ 100 = 108.",
+   "explain_zh": "240 × 45 ÷ 100 = 108。",
+   "qtype": "percent_of_n",
+   "qtype_zh": "求百分之几是多少"
+  },
+  {
+   "id": "l6g6_078",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "The 45 mooncakes on the Peak trays are sweet-bean and meat in the ratio 2:3. How many are sweet-bean?",
+   "q_zh": "太平山托盘上 45 块月饼，豆沙馅和肉馅的比是 2:3，豆沙馅的有多少块？",
+   "choices": [
+    "27",
+    "18",
+    "9",
+    "22"
+   ],
+   "choices_zh": [
+    "27",
+    "18",
+    "9",
+    "22"
+   ],
+   "answer": 1,
+   "explain_en": "45 ÷ (2 + 3) × 2 = 18.",
+   "explain_zh": "45 ÷ (2 + 3) × 2 = 18。",
+   "qtype": "ratio_find",
+   "qtype_zh": "按比例求数量"
+  },
+  {
+   "id": "l6g6_079",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "Over four evenings, Flora counts 38, 39, 41 and 38 boats passing the harbour. What is the mean number per evening?",
+   "q_zh": "连续四个晚上，Flora 在维港数到 38、39、41、38 条船，平均每晚几条？",
+   "choices": [
+    "156",
+    "40",
+    "39",
+    "38"
+   ],
+   "choices_zh": [
+    "156",
+    "40",
+    "39",
+    "38"
+   ],
+   "answer": 2,
+   "explain_en": "(38 + 39 + 41 + 38) ÷ 4 = 39.",
+   "explain_zh": "(38 + 39 + 41 + 38) ÷ 4 = 39。",
+   "qtype": "mean_average",
+   "qtype_zh": "平均数"
+  },
+  {
+   "id": "l6g6_080",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A triangular banner at the Peak reads \"Happy Mid-Autumn Festival\". Its base is 7 dm and its height is 6 dm. What is its area in dm²?",
+   "q_zh": "太平山一面写着“中秋快乐”的三角形彩旗，底 7 分米、高 6 分米，面积是多少平方分米？",
+   "choices": [
+    "21",
+    "13",
+    "42",
+    "28"
+   ],
+   "choices_zh": [
+    "21",
+    "13",
+    "42",
+    "28"
+   ],
+   "answer": 0,
+   "explain_en": "7 × 6 ÷ 2 = 21.",
+   "explain_zh": "7 × 6 ÷ 2 = 21。",
+   "qtype": "triangle_area",
+   "qtype_zh": "三角形面积"
+  },
+  {
+   "id": "l6g6_081",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A round festival drum at the harbour has a diameter of 20 cm. Using π ≈ 3.14, how many cm of ribbon go once around it?",
+   "q_zh": "维港一面节日圆鼓直径 20 厘米，π 取 3.14，绕它一圈的彩带要多少厘米？",
+   "choices": [
+    "125.6",
+    "65.94",
+    "60",
+    "62.8"
+   ],
+   "choices_zh": [
+    "125.6",
+    "65.94",
+    "60",
+    "62.8"
+   ],
+   "answer": 3,
+   "explain_en": "3.14 × 20 = 62.8.",
+   "explain_zh": "3.14 × 20 = 62.8。",
+   "qtype": "circle_circumference",
+   "qtype_zh": "圆的周长"
+  },
+  {
+   "id": "l6g6_082",
+   "level": 6,
+   "section": "peak_final",
+   "subject": "math",
+   "difficulty": "hard",
+   "q_en": "A gift box of mooncakes at the Peak is 37 cm × 12 cm × 18 cm. What is its volume in cm³?",
+   "q_zh": "太平山一个月饼礼盒长 37 厘米、宽 12 厘米、高 18 厘米，体积是多少立方厘米？",
+   "choices": [
+    "462",
+    "7776",
+    "7992",
+    "8436"
+   ],
+   "choices_zh": [
+    "462",
+    "7776",
+    "7992",
+    "8436"
+   ],
+   "answer": 2,
+   "explain_en": "37 × 12 × 18 = 7992.",
+   "explain_zh": "37 × 12 × 18 = 7992。",
+   "qtype": "volume_box",
+   "qtype_zh": "长方体体积"
+  }
+ ]
+}
