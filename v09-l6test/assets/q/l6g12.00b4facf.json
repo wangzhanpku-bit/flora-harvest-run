@@ -64,8 +64,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "A mooncake-stall puzzle asks for log base 5 of 125. What is it?",
-   "q_zh": "月饼摊的密码题：以 5 为底 125 的对数是多少？",
+   "q_en": "At the bank, the bank lady asks for log base 5 of 125. What is it?",
+   "q_zh": "在银行，银行姐姐问：以 5 为底 125 的对数是多少？",
    "choices": [
     "15",
     "3",
@@ -241,13 +241,13 @@
    "choices": [
     "Su Shi",
     "a tram driver with no name",
-    "Auntie herself in this game",
+    "The officer himself in this game",
     "Flora's dad in the letter only"
    ],
    "choices_zh": [
     "苏轼",
     "一位没有名字的电车司机",
-    "这一关里的阿嫲本人",
+    "这一关里的警察叔叔本人",
     "只出现在信里的爸爸"
    ],
    "answer": 0,
@@ -590,8 +590,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "A mooncake-stall puzzle asks for log base 2 of 16. What is it?",
-   "q_zh": "月饼摊的密码题：以 2 为底 16 的对数是多少？",
+   "q_en": "At the bank, the bank lady asks for log base 2 of 16. What is it?",
+   "q_zh": "在银行，银行姐姐问：以 2 为底 16 的对数是多少？",
    "choices": [
     "8",
     "4",
@@ -953,12 +953,12 @@
    "q_en": "水调歌头 is linked with ____.",
    "q_zh": "《水调歌头》与____有关。",
    "choices": [
-    "Auntie herself",
+    "The officer himself",
     "Su Shi",
     "A tram driver"
    ],
    "choices_zh": [
-    "阿嫲本人",
+    "警察叔叔本人",
     "苏轼",
     "电车司机"
    ],
@@ -966,12 +966,12 @@
    "explain_en": "It is linked with Su Shi.",
    "explain_zh": "与苏轼有关。",
    "sign_en": [
-    "Auntie herself",
+    "The officer himself",
     "Su Shi",
     "A tram driver"
    ],
    "sign_zh": [
-    "阿嫲本人",
+    "警察叔叔本人",
     "苏轼",
     "电车司机"
    ],
@@ -984,8 +984,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "A mooncake-stall puzzle asks for log base 3 of 729. What is it?",
-   "q_zh": "月饼摊的密码题：以 3 为底 729 的对数是多少？",
+   "q_en": "At the bank, the bank lady asks for log base 3 of 729. What is it?",
+   "q_zh": "在银行，银行姐姐问：以 3 为底 729 的对数是多少？",
    "choices": [
     "18",
     "243",
@@ -1062,8 +1062,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "5 independent stall questions, each guessed right with probability 1/2. P(exactly 3 right)?",
-   "q_zh": "5 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 3 道的概率是多少？",
+   "q_en": "5 independent bank questions, each guessed right with probability 1/2. P(exactly 3 right)?",
+   "q_zh": "5 道相互独立的银行题，每道猜对概率 1/2，恰好猜对 3 道的概率是多少？",
    "choices": [
     "1/32",
     "5/32",
@@ -1286,8 +1286,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "A mooncake-stall puzzle asks for log base 2 of 4. What is it?",
-   "q_zh": "月饼摊的密码题：以 2 为底 4 的对数是多少？",
+   "q_en": "At the bank, the bank lady asks for log base 2 of 4. What is it?",
+   "q_zh": "在银行，银行姐姐问：以 2 为底 4 的对数是多少？",
    "choices": [
     "1",
     "4",
@@ -1364,23 +1364,23 @@
    "section": "seawall",
    "subject": "riddle",
    "difficulty": "hard",
-   "q_en": "Festival riddle: I am a kind older woman who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
-   "q_zh": "中秋谜：我是一位和气的长辈，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
+   "q_en": "Festival riddle: I am a kind officer who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
+   "q_zh": "中秋谜：我是一位和气的警察叔叔，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
    "choices": [
     "A ship captain",
     "A lighthouse keeper",
     "A ski coach",
-    "Auntie"
+    "The officer"
    ],
    "choices_zh": [
     "船长",
     "灯塔看守人",
     "滑雪教练",
-    "阿嫲"
+    "警察叔叔"
    ],
    "answer": 3,
-   "explain_en": "The chaser is a Hong Kong auntie.",
-   "explain_zh": "追着 Flora 的是一位香港阿嫲。",
+   "explain_en": "The chaser is a Hong Kong officer.",
+   "explain_zh": "追着 Flora 的是一位香港警察叔叔。",
    "qtype": "riddle_object",
    "qtype_zh": "中秋谜·物谜（猜东西）"
   },
@@ -1604,8 +1604,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "5 independent stall questions, each guessed right with probability 1/2. P(exactly 4 right)?",
-   "q_zh": "5 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 4 道的概率是多少？",
+   "q_en": "5 independent bank questions, each guessed right with probability 1/2. P(exactly 4 right)?",
+   "q_zh": "5 道相互独立的银行题，每道猜对概率 1/2，恰好猜对 4 道的概率是多少？",
    "choices": [
     "1/32",
     "1/2",
@@ -1826,8 +1826,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "3 independent stall questions, each guessed right with probability 1/2. P(exactly 1 right)?",
-   "q_zh": "3 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 1 道的概率是多少？",
+   "q_en": "3 independent bank questions, each guessed right with probability 1/2. P(exactly 1 right)?",
+   "q_zh": "3 道相互独立的银行题，每道猜对概率 1/2，恰好猜对 1 道的概率是多少？",
    "choices": [
     "3/8",
     "3/16",
@@ -1852,8 +1852,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "4 independent stall questions, each guessed right with probability 1/2. P(exactly 1 right)?",
-   "q_zh": "4 道相互独立的摊位题，每道猜对概率 1/2，恰好猜对 1 道的概率是多少？",
+   "q_en": "4 independent bank questions, each guessed right with probability 1/2. P(exactly 1 right)?",
+   "q_zh": "4 道相互独立的银行题，每道猜对概率 1/2，恰好猜对 1 道的概率是多少？",
    "choices": [
     "1/2",
     "1/4",
@@ -1878,8 +1878,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "A mooncake-stall puzzle asks for log base 3 of 243. What is it?",
-   "q_zh": "月饼摊的密码题：以 3 为底 243 的对数是多少？",
+   "q_en": "At the bank, the bank lady asks for log base 3 of 243. What is it?",
+   "q_zh": "在银行，银行姐姐问：以 3 为底 243 的对数是多少？",
    "choices": [
     "5",
     "6",
@@ -2274,8 +2274,8 @@
    "section": "peak_final",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "At the harbour, Flora guesses 4 stall questions, each with a 1/2 chance of being right, independently. What is the probability she gets exactly 1 right?",
-   "q_zh": "在维港，Flora 猜 4 道摊位题，每道猜对的概率都是 1/2，互不影响。恰好猜对 1 道的概率是多少？",
+   "q_en": "At the harbour, Flora guesses 4 bank questions, each with a 1/2 chance of being right, independently. What is the probability she gets exactly 1 right?",
+   "q_zh": "在维港，Flora 猜 4 道银行题，每道猜对的概率都是 1/2，互不影响。恰好猜对 1 道的概率是多少？",
    "choices": [
     "1/16",
     "1/8",

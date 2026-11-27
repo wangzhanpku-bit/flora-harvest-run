@@ -450,8 +450,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "A mooncake recipe contest is held every 12 years. Flora is 10. Auntie also won at the same age and is between 74 and 84. How old is Auntie?",
-   "q_zh": "月饼制作比赛每 12 年举办一次。Flora 10 岁，阿嫲当年也是这个年纪获奖，年龄在 74 到 84 岁之间。阿嫲几岁？",
+   "q_en": "A mooncake recipe contest is held every 12 years. Flora is 10. The baker also won at the same age and is between 74 and 84. How old is the baker?",
+   "q_zh": "月饼制作比赛每 12 年举办一次。Flora 10 岁，饼家师傅当年也是这个年纪获奖，年龄在 74 到 84 岁之间。饼家师傅几岁？",
    "choices": [
     "83",
     "82",

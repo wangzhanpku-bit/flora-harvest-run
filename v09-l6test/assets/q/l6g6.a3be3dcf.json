@@ -520,8 +520,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "Auntie makes 4 trays of 6 mooncakes, then 8 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 4 盘月饼，每盘 6 块，又摆了 8 块，一共多少块？",
+   "q_en": "The baker makes 4 trays of 6 mooncakes, then 8 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 4 盘月饼，每盘 6 块，又摆了 8 块，一共多少块？",
    "choices": [
     "18",
     "28",
@@ -830,8 +830,8 @@
    "section": "forest_fork",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Auntie makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "q_en": "The baker makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
    "choices": [
     "61",
     "60",
@@ -2144,8 +2144,8 @@
    "section": "peak_final",
    "subject": "midautumn",
    "difficulty": "hard",
-   "q_en": "At the Peak lookout Auntie cuts the mooncake before handing pieces to Flora. She does this so that ____.",
-   "q_zh": "在太平山观景台，阿嫲先把月饼切开，再递给 Flora。她这样做是为了____。",
+   "q_en": "At the Peak lookout the officer cuts the mooncake before handing pieces to Flora. He does this so that ____.",
+   "q_zh": "在太平山观景台，警察叔叔先把月饼切开，再递给 Flora。他这样做是为了____。",
    "choices": [
     "they can share it together",
     "Bara can use it as a wheel",

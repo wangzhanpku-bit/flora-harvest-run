@@ -722,12 +722,12 @@
    "q_zh": "《水调歌头》与____有关。",
    "choices": [
     "Su Shi",
-    "Auntie herself",
+    "The officer himself",
     "A tram driver"
    ],
    "choices_zh": [
     "苏轼",
-    "阿嫲本人",
+    "警察叔叔本人",
     "电车司机"
    ],
    "answer": 0,
@@ -735,12 +735,12 @@
    "explain_zh": "与苏轼有关。",
    "sign_en": [
     "Su Shi",
-    "Auntie herself",
+    "The officer himself",
     "A tram driver"
    ],
    "sign_zh": [
     "苏轼",
-    "阿嫲本人",
+    "警察叔叔本人",
     "电车司机"
    ],
    "qtype": "zh_idiom_poem",
@@ -1618,23 +1618,23 @@
    "section": "seawall",
    "subject": "riddle",
    "difficulty": "hard",
-   "q_en": "Festival riddle: I am a kind older woman who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
-   "q_zh": "中秋谜：我是一位和气的长辈，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
+   "q_en": "Festival riddle: I am a kind officer who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
+   "q_zh": "中秋谜：我是一位和气的警察叔叔，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
    "choices": [
     "A lighthouse keeper",
     "A ship captain",
-    "Auntie",
+    "The officer",
     "A ski coach"
    ],
    "choices_zh": [
     "灯塔看守人",
     "船长",
-    "阿嫲",
+    "警察叔叔",
     "滑雪教练"
    ],
    "answer": 2,
-   "explain_en": "The chaser is a Hong Kong auntie.",
-   "explain_zh": "追着 Flora 的是一位香港阿嫲。",
+   "explain_en": "The chaser is a Hong Kong officer.",
+   "explain_zh": "追着 Flora 的是一位香港警察叔叔。",
    "qtype": "riddle_object",
    "qtype_zh": "中秋谜·物谜（猜东西）"
   },
@@ -2144,8 +2144,8 @@
    "section": "peak_final",
    "subject": "language",
    "difficulty": "hard",
-   "q_en": "At the Peak, Auntie says a line on the lookout is in the tradition of 水调歌头. That Mid-Autumn lyric is mainly ____.",
-   "q_zh": "在太平山，阿嫲说观景台上的一句词，走的是《水调歌头》的路子。这首中秋词主要是____。",
+   "q_en": "At the Peak, the officer says a line on the lookout is in the tradition of 水调歌头. That Mid-Autumn lyric is mainly ____.",
+   "q_zh": "在太平山，警察叔叔说观景台上的一句词，走的是《水调歌头》的路子。这首中秋词主要是____。",
    "choices": [
     "a recipe for lotus paste only",
     "a map of minibus stops",

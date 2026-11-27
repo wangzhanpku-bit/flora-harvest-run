@@ -312,8 +312,8 @@
    "section": "forest_fork",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie has 3 packs of 100 mooncake boxes, 2 packs of 10 and 9 single boxes. How many boxes is that?",
-   "q_zh": "阿嫲有 3 包 100 个的月饼盒、2 包 10 个的和 9 个散的，一共多少个？",
+   "q_en": "The baker has 3 packs of 100 mooncake boxes, 2 packs of 10 and 9 single boxes. How many boxes is that?",
+   "q_zh": "饼家师傅有 3 包 100 个的月饼盒、2 包 10 个的和 9 个散的，一共多少个？",
    "choices": [
     "329",
     "239",
@@ -1034,8 +1034,8 @@
    "section": "forest_fork",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie makes 8 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 8 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "q_en": "The baker makes 8 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 8 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
    "choices": [
     "46",
     "54",
@@ -1068,8 +1068,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
+   "q_en": "The baker makes 9 trays of 6 mooncakes, then 6 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 9 盘月饼，每盘 6 块，又摆了 6 块，一共多少块？",
    "choices": [
     "21",
     "60",
@@ -1844,8 +1844,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie makes 8 trays of 4 mooncakes, then 3 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 8 盘月饼，每盘 4 块，又摆了 3 块，一共多少块？",
+   "q_en": "The baker makes 8 trays of 4 mooncakes, then 3 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 8 盘月饼，每盘 4 块，又摆了 3 块，一共多少块？",
    "choices": [
     "15",
     "36",
@@ -2016,8 +2016,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie has 4 packs of 100 mooncake boxes, 3 packs of 10 and 6 single boxes. How many boxes is that?",
-   "q_zh": "阿嫲有 4 包 100 个的月饼盒、3 包 10 个的和 6 个散的，一共多少个？",
+   "q_en": "The baker has 4 packs of 100 mooncake boxes, 3 packs of 10 and 6 single boxes. How many boxes is that?",
+   "q_zh": "饼家师傅有 4 包 100 个的月饼盒、3 包 10 个的和 6 个散的，一共多少个？",
    "choices": [
     "346",
     "437",
@@ -2324,8 +2324,8 @@
    "section": "peak_final",
    "subject": "midautumn",
    "difficulty": "hard",
-   "q_en": "At the Peak lookout, Auntie holds out a warm round pastry for Flora and Bara. What is it?",
-   "q_zh": "在太平山观景台，阿嫲向 Flora 和 Bara 递出一块热乎乎的圆形点心。那是什么？",
+   "q_en": "At the Peak lookout, the officer holds out a warm round pastry for Flora and Bara. What is it?",
+   "q_zh": "在太平山观景台，警察叔叔向 Flora 和 Bara 递出一块热乎乎的圆形点心。那是什么？",
    "choices": [
     "a metal bolt",
     "a mooncake",
@@ -2339,8 +2339,8 @@
     "一袋沙"
    ],
    "answer": 1,
-   "explain_en": "Auntie shares a mooncake at the Peak.",
-   "explain_zh": "阿嫲在山顶把月饼递给她们。",
+   "explain_en": "The officer shares a mooncake at the Peak.",
+   "explain_zh": "警察叔叔在山顶把月饼递给她们。",
    "qtype": "mooncake_food",
    "qtype_zh": "月饼与食材"
   },
@@ -2350,8 +2350,8 @@
    "section": "peak_final",
    "subject": "midautumn",
    "difficulty": "hard",
-   "q_en": "Flora skates all the way to the Peak so that she and Auntie can ____ together.",
-   "q_zh": "Flora 一路滑到太平山，是为了和阿嫲一起____。",
+   "q_en": "Flora skates all the way to the Peak so that she and the officer can ____ together.",
+   "q_zh": "Flora 一路滑到太平山，是为了和警察叔叔一起____。",
    "choices": [
     "dig a snow cave",
     "carve ice statues",
@@ -2366,7 +2366,7 @@
    ],
    "answer": 2,
    "explain_en": "They meet to watch the moon and share food.",
-   "explain_zh": "她们是来赏月、分享食物的。",
+   "explain_zh": "他们是来赏月、分享食物的。",
    "qtype": "midautumn_custom",
    "qtype_zh": "中秋习俗（月饼/灯笼/赏月）"
   },

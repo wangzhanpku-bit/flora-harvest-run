@@ -2540,8 +2540,8 @@
    "section": "peak_final",
    "subject": "midautumn",
    "difficulty": "hard",
-   "q_en": "At the Peak lookout, Auntie holds out a warm round pastry for Flora and Bara. What is it?",
-   "q_zh": "在太平山观景台，阿嫲向 Flora 和 Bara 递出一块热乎乎的圆形点心。那是什么？",
+   "q_en": "At the Peak lookout, the officer holds out a warm round pastry for Flora and Bara. What is it?",
+   "q_zh": "在太平山观景台，警察叔叔向 Flora 和 Bara 递出一块热乎乎的圆形点心。那是什么？",
    "choices": [
     "a mooncake",
     "a metal bolt",
@@ -2555,8 +2555,8 @@
     "一袋沙"
    ],
    "answer": 0,
-   "explain_en": "Auntie shares a mooncake at the Peak.",
-   "explain_zh": "阿嫲在山顶把月饼递给她们。",
+   "explain_en": "The officer shares a mooncake at the Peak.",
+   "explain_zh": "警察叔叔在山顶把月饼递给她们。",
    "qtype": "mooncake_food",
    "qtype_zh": "月饼与食材"
   },
@@ -2566,8 +2566,8 @@
    "section": "peak_final",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "At the Peak, Auntie stacks 2 warm mooncakes on the left tray and 3 on the right tray. How many mooncakes does she stack?",
-   "q_zh": "在太平山，阿嫲左边托盘放了 2 块热月饼，右边放了 3 块，她一共放了几块？",
+   "q_en": "At the Peak, the officer stacks 2 warm mooncakes on the left tray and 3 on the right tray. How many mooncakes does he stack?",
+   "q_zh": "在太平山，警察叔叔左边托盘放了 2 块热月饼，右边放了 3 块，他一共放了几块？",
    "choices": [
     "1",
     "6",
@@ -2592,8 +2592,8 @@
    "section": "peak_final",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "9 warm mooncakes sit at the Peak lookout. Auntie hands out 6 of them. How many mooncakes are still on the tray?",
-   "q_zh": "太平山观景台放着 9 块热月饼，阿嫲送出了 6 块，托盘上还剩几块？",
+   "q_en": "9 warm mooncakes sit at the Peak lookout. The officer hands out 6 of them. How many mooncakes are still on the tray?",
+   "q_zh": "太平山观景台放着 9 块热月饼，警察叔叔送出了 6 块，托盘上还剩几块？",
    "choices": [
     "4",
     "3",

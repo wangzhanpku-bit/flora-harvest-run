@@ -588,8 +588,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "medium",
-   "q_en": "Auntie makes 7 trays of 7 mooncakes, then 2 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 7 盘月饼，每盘 7 块，又摆了 2 块，一共多少块？",
+   "q_en": "The baker makes 7 trays of 7 mooncakes, then 2 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 7 盘月饼，每盘 7 块，又摆了 2 块，一共多少块？",
    "choices": [
     "63",
     "44",
@@ -1644,8 +1644,8 @@
    "section": "forest_fork",
    "subject": "math",
    "difficulty": "easy",
-   "q_en": "Auntie makes 3 trays of 6 mooncakes, then 3 more mooncakes. How many mooncakes in all?",
-   "q_zh": "阿嫲摆了 3 盘月饼，每盘 6 块，又摆了 3 块，一共多少块？",
+   "q_en": "The baker makes 3 trays of 6 mooncakes, then 3 more mooncakes. How many mooncakes in all?",
+   "q_zh": "饼家师傅摆了 3 盘月饼，每盘 6 块，又摆了 3 块，一共多少块？",
    "choices": [
     "21",
     "12",

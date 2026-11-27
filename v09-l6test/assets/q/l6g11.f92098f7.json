@@ -588,8 +588,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "The number of mooncakes in a stall puzzle solves x² + 4x - 7 = 0. What is the discriminant b² - 4ac?",
-   "q_zh": "一道摊位题里的月饼数满足 x² + 4x - 7 = 0，判别式 b² - 4ac 是多少？",
+   "q_en": "The number of mooncakes in a bank puzzle solves x² + 4x - 7 = 0. What is the discriminant b² - 4ac?",
+   "q_zh": "一道银行题里的月饼数满足 x² + 4x - 7 = 0，判别式 b² - 4ac 是多少？",
    "choices": [
     "45",
     "44",
@@ -778,23 +778,23 @@
    "section": "seawall",
    "subject": "riddle",
    "difficulty": "hard",
-   "q_en": "Festival riddle: I am a kind older woman who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
-   "q_zh": "中秋谜：我是一位和气的长辈，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
+   "q_en": "Festival riddle: I am a kind officer who calls after Flora to skate more slowly, then shares a mooncake at the top. Who am I?",
+   "q_zh": "中秋谜：我是一位和气的警察叔叔，一路喊 Flora 慢点滑，到了山顶又分给她月饼。打一个人，是什么？",
    "choices": [
     "A ski coach",
     "A ship captain",
-    "Auntie",
+    "The officer",
     "A lighthouse keeper"
    ],
    "choices_zh": [
     "滑雪教练",
     "船长",
-    "阿嫲",
+    "警察叔叔",
     "灯塔看守人"
    ],
    "answer": 2,
-   "explain_en": "The chaser is a Hong Kong auntie.",
-   "explain_zh": "追着 Flora 的是一位香港阿嫲。",
+   "explain_en": "The chaser is a Hong Kong officer.",
+   "explain_zh": "追着 Flora 的是一位香港警察叔叔。",
    "qtype": "riddle_object",
    "qtype_zh": "中秋谜·物谜（猜东西）"
   },
@@ -1242,8 +1242,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "The number of mooncakes in a stall puzzle solves 2x² + 3x + 2 = 0. What is the discriminant b² - 4ac?",
-   "q_zh": "一道摊位题里的月饼数满足 2x² + 3x + 2 = 0，判别式 b² - 4ac 是多少？",
+   "q_en": "The number of mooncakes in a bank puzzle solves 2x² + 3x + 2 = 0. What is the discriminant b² - 4ac?",
+   "q_zh": "一道银行题里的月饼数满足 2x² + 3x + 2 = 0，判别式 b² - 4ac 是多少？",
    "choices": [
     "-13",
     "-11",
@@ -1584,8 +1584,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "The number of mooncakes in a stall puzzle solves 5x² + 9x - 2 = 0. What is the discriminant b² - 4ac?",
-   "q_zh": "一道摊位题里的月饼数满足 5x² + 9x - 2 = 0，判别式 b² - 4ac 是多少？",
+   "q_en": "The number of mooncakes in a bank puzzle solves 5x² + 9x - 2 = 0. What is the discriminant b² - 4ac?",
+   "q_zh": "一道银行题里的月饼数满足 5x² + 9x - 2 = 0，判别式 b² - 4ac 是多少？",
    "choices": [
     "122",
     "41",
@@ -1790,8 +1790,8 @@
    "section": "seawall",
    "subject": "math",
    "difficulty": "hard",
-   "q_en": "The number of mooncakes in a stall puzzle solves 4x² + 5x + 1 = 0. What is the discriminant b² - 4ac?",
-   "q_zh": "一道摊位题里的月饼数满足 4x² + 5x + 1 = 0，判别式 b² - 4ac 是多少？",
+   "q_en": "The number of mooncakes in a bank puzzle solves 4x² + 5x + 1 = 0. What is the discriminant b² - 4ac?",
+   "q_zh": "一道银行题里的月饼数满足 4x² + 5x + 1 = 0，判别式 b² - 4ac 是多少？",
    "choices": [
     "-11",
     "10",
@@ -1871,12 +1871,12 @@
    "q_en": "水调歌头 is linked with ____.",
    "q_zh": "《水调歌头》与____有关。",
    "choices": [
-    "Auntie herself",
+    "The officer himself",
     "Su Shi",
     "A tram driver"
    ],
    "choices_zh": [
-    "阿嫲本人",
+    "警察叔叔本人",
     "苏轼",
     "电车司机"
    ],
@@ -1884,12 +1884,12 @@
    "explain_en": "It is linked with Su Shi.",
    "explain_zh": "与苏轼有关。",
    "sign_en": [
-    "Auntie herself",
+    "The officer himself",
     "Su Shi",
     "A tram driver"
    ],
    "sign_zh": [
-    "阿嫲本人",
+    "警察叔叔本人",
     "苏轼",
     "电车司机"
    ],
@@ -1959,13 +1959,13 @@
    "choices": [
     "a tram driver with no name",
     "Flora's dad in the letter only",
-    "Auntie herself in this game",
+    "The officer himself in this game",
     "Su Shi"
    ],
    "choices_zh": [
     "一位没有名字的电车司机",
     "只出现在信里的爸爸",
-    "这一关里的阿嫲本人",
+    "这一关里的警察叔叔本人",
     "苏轼"
    ],
    "answer": 3,
@@ -2144,8 +2144,8 @@
    "section": "peak_final",
    "subject": "language",
    "difficulty": "hard",
-   "q_en": "At the Peak, Auntie says a line on the lookout is in the tradition of 水调歌头. That Mid-Autumn lyric is mainly ____.",
-   "q_zh": "在太平山，阿嫲说观景台上的一句词，走的是《水调歌头》的路子。这首中秋词主要是____。",
+   "q_en": "At the Peak, the officer says a line on the lookout is in the tradition of 水调歌头. That Mid-Autumn lyric is mainly ____.",
+   "q_zh": "在太平山，警察叔叔说观景台上的一句词，走的是《水调歌头》的路子。这首中秋词主要是____。",
    "choices": [
     "a map of minibus stops",
     "a recipe for lotus paste only",
