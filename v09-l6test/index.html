@@ -7180,7 +7180,16 @@ function l6PlaceObs(row){
   const sz=l6Sz(base,kind);const y0=ground?l6FlatY():(sz[1]*.42);
   const mid=pair?(row.lanes[0]+row.lanes[1])/2:1;
   addObj('l2obs',mid,row.z,{key:base,kind,sz,flat:ground?1:0,y0:ground?l6FlatY():y0});
-  const o=objs[objs.length-1];if(o){o.key=base;o.lanes=row.lanes.slice();o.l6=row.key;o.look=!!L6.MOVING[row.key]?26:undefined;if(!ground)o.m.position.x=(mid-1)*LANE;}return;
+  const o=objs[objs.length-1];if(o){o.key=base;o.lanes=row.lanes.slice();o.l6=row.key;o.look=!!L6.MOVING[row.key]?26:undefined;if(!ground)o.m.position.x=(mid-1)*LANE;}
+  /* 创意张 2026-11-28 (locked): football = ONLY the ball lane (lanes[0], ball sits on the left of the art) is jump; the kids' lane
+     (lanes[1]) is lane-change (hard: a jump there still hits); the third lane stays clear. The billboard keeps the visual and
+     collides only in the ball lane (see hitTest wrap); an invisible hard collider covers the kids' lane. */
+  if(pair&&row.key==='football'&&o){
+   o.l6ball=1;o.l6ballX=(row.lanes[0]-1)*LANE;
+   addObj('l2obs',row.lanes[1],row.z,{key:base,kind:'hard',sz:[LANE*.9,1.6]});
+   const k=objs[objs.length-1];if(k){k.key=base;k.kind='hard';k.lanes=[row.lanes[1]];k.l6='football_kids';k.l6kids=1;if(k.m)k.m.visible=false;}
+  }
+  return;
  }
  const lanes=row.lanes||[1];
  lanes.forEach((ln,i)=>{
@@ -7195,6 +7204,9 @@ function l6PlaceObs(row){
   const o=objs[objs.length-1];if(o){o.key=tex;o.l6=row.key;o.lanes=row.lanes.slice();if(L6.MOVING[row.key])o.look=26;}
  });
 }
+{const _ht=hitTest;hitTest=function(o){
+ if(o&&o.l6ball&&typeof isL6==='function'&&isL6()&&o.type==='l2obs'&&Math.abs((o.l6ballX||0)-S.x)>1.0)return false;/* football billboard: ball lane only */
+ return _ht.apply(this,arguments);};}
 function l6SpawnAll(){
  L6.OBS.forEach(l6PlaceObs);
  L6.MOONCAKE.forEach(([z,ln])=>{addObj('pumpkin',ln,z,{skin:'pickup_l6_mooncake'});const o=objs[objs.length-1];
