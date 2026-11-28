@@ -6642,11 +6642,23 @@ function l5Paper(){return (typeof TEX!=='undefined')&&(TEX.letter_dad_l5_duanwu_
   const m=new THREE.Mesh(new THREE.PlaneGeometry(h*ar,h),SP('pickup_l5_shengjian'));m.position.y=.5;g.add(m);}
  g.position.y=.2;return root;};}
 L5.SHENG_SECS=3;
+/* 11-28 QA: never cut a live subtitle (section banner "The Bund!" 1250→~1302, first hints, checkpoint, grandma call).
+   Show the shengjian line only when #sub is free, the banner window is over and no first hint is due within 2s; give up when the shield ends. */
+function l5SubBusy(){try{if(typeof L3B1!=='undefined'&&L3B1.banUntil&&L3B1.banUntil>performance.now())return true;}catch(e){}
+ const e=document.getElementById('sub');return !!(e&&e.style.display==='block');}
+function l5HintSoon(sec){try{const v=Math.max(1,S.speed||17.5);return L5.HINTS.some(h=>!h.fired&&h.at>=S.z&&(h.at-S.z)/v<sec);}catch(e){return false;}}
+function l5ShengSay(){const t0=performance.now(),me=S;
+ const tick=()=>{if(S!==me||!S||S.mode==='over'||S.mode==='end')return;
+  const left=(S.l3ShieldEnd||0)-(S.runT||0);if(!S.shield||left<=0.6){(window.__L5EV||(window.__L5EV=[])).push({ev:'shengjian_line_dropped',z:+(S.z||0).toFixed(1)});return;}
+  if(!l5SubBusy()&&!l5HintSoon(2)){try{sub(bi('Shengjian! A tiny shield!','生煎！小护盾！'),Math.min(1800,Math.round(left*1000)));}catch(e){}
+   (window.__L5EV||(window.__L5EV=[])).push({ev:'shengjian_line',z:+(S.z||0).toFixed(1)});return;}
+  if(performance.now()-t0<15000)setTimeout(tick,120);else (window.__L5EV||(window.__L5EV=[])).push({ev:'shengjian_line_dropped',z:+(S.z||0).toFixed(1)});};
+ tick();}
 {const _ig=l3ItemGet;l3ItemGet=function(o){if(!(isL5()&&o&&o.kind==='shengjian'))return _ig.apply(this,arguments);
  try{scene.remove(o.m);}catch(e){}S.itemLog=(S.itemLog||[]);S.itemLog.push('shengjian');
  try{play('sfx_l5_pickup_shengjian');}catch(e){}
  const now=S.runT||0,had=!!S.shield;S.shield=true;S.l3ShieldEnd=had&&S.l3ShieldEnd?Math.max(S.l3ShieldEnd,now+L5.SHENG_SECS):now+L5.SHENG_SECS;
- try{sub(bi('Shengjian! A tiny shield!','生煎！小护盾！'),1800);}catch(e){}
+ l5ShengSay();
  (window.__L5EV||(window.__L5EV=[])).push({ev:'shengjian',t:+now.toFixed(2),z:+(S.z||0).toFixed(1)});};}
 
 {const _bq=l2BuildQuiz;l2BuildQuiz=function(){if(!isL5())return _bq.apply(this,arguments);
