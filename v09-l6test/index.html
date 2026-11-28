@@ -7157,7 +7157,7 @@ function l6Sz(key,kind){
  if(key==='obs_l6_shop_sign'){const ar=l6Ar(key,1100/420);const w=LANE*2.4;return [w,w/ar];}
  if(key==='obs_l6_tram_track'){const ar=l6Ar(key,900/220);const w=LANE*1.7;return [w,w/ar];}
  if(key==='obs_l6_barrier'){const ar=l6Ar(key,800/360);const w=LANE*1.6;return [w,w/ar];}
- if(key==='obs_l6_peak_tram'){const ar=l6Ar(key,1400/900);const w=LANE*1.7;return [w,w/ar];}
+ if(key==='obs_l6_peak_tram'){const ar=l6Ar(key,1400/900);const h=LANE*1.7/ar;/* 创意张 11-28: height unchanged; stretched HORIZONTALLY so the visible art (84% of the canvas, centred) spans lanes 0+1 (-3.3..1.1) and stays out of lane 2: 5.0*.843=4.2 wide -> -3.2..1.0 */const w=LANE*2.27;return [w,h];}
  if(key==='obs_l6_tram'||key==='obs_l6_bus'){const ar=l6Ar(key,1200/700);const w=LANE*1.9;return [w,w/ar];}
  if(key==='obs_l6_bamboo_scaffold'){const ar=l6Ar(key,800/1000);const w=LANE*1.7;return [w,w/ar];}
  if(key==='obs_l6_red_taxi'||key==='obs_l6_minibus'){const ar=l6Ar(key,900/520);const w=LANE*1.6;return [w,w/ar];}
